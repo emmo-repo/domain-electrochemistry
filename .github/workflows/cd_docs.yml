@@ -63,7 +63,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: '${{ env.ONTODOC_DIR }}/{{ env.PUBLISH_DIR }}/'
+          path: '${{ env.ONTODOC_DIR }}/${{ env.PUBLISH_DIR }}/'
 
   deploy:
     if: github.event_name != 'pull_request'
