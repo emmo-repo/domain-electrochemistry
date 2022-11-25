@@ -2017,6 +2017,20 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                            skos:prefLabel "CoatedElectrode"@en .
 
 
+###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_95e4aa95_b7e9_40d7_b78e_4d7dcc31093d
+:EMMO_95e4aa95_b7e9_40d7_b78e_4d7dcc31093d rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_6f2c88c9_5c04_4953_a298_032cc3ab9b77 ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_3bd08946_4e81_455d_9fca_dc7a5ead9315 ;
+                                                             owl:someValuesFrom :EMMO_15b852b5_19cc_49ab_849f_7df6175fb2be
+                                                           ] ,
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :EMMO_3bd08946_4e81_455d_9fca_dc7a5ead9315 ;
+                                                             owl:someValuesFrom :EMMO_865a40fc_2187_4549_a7e1_37aa2458448f
+                                                           ] ;
+                                           skos:prefLabel "ElectrochemicalFlowCell"@en .
+
+
 ###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_9679fc51_d9c2_484a_9dba_d86ab407fcbe
 :EMMO_9679fc51_d9c2_484a_9dba_d86ab407fcbe rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_6f2c88c9_5c04_4953_a298_032cc3ab9b77 ,
@@ -3311,7 +3325,7 @@ of other configurations are used."""@en ;
 
 ###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_f54474fc_5d07_474b_97ae_f5d0349363b4
 :EMMO_f54474fc_5d07_474b_97ae_f5d0349363b4 rdf:type owl:Class ;
-                                           rdfs:subClassOf :ElectrochemicalFlowCell ;
+                                           rdfs:subClassOf :EMMO_95e4aa95_b7e9_40d7_b78e_4d7dcc31093d ;
                                            skos:prefLabel "HybridFlowCell"@en .
 
 
@@ -3512,19 +3526,6 @@ of other configurations are used."""@en ;
                                            rdfs:comment "An expression of the Law of Mass Action."@en ,
                                                         "E_{eq} = E^0 - (R*T/(z*F))*ln(Q)" ;
                                            skos:prefLabel "NernstEquation"@en .
-
-
-###  http://emmo.info/domain-electrochemistry/electrochemistry#ElectrochemicalFlowCell
-:ElectrochemicalFlowCell rdf:type owl:Class ;
-                         rdfs:subClassOf :EMMO_6f2c88c9_5c04_4953_a298_032cc3ab9b77 ,
-                                         [ rdf:type owl:Restriction ;
-                                           owl:onProperty :EMMO_3bd08946_4e81_455d_9fca_dc7a5ead9315 ;
-                                           owl:someValuesFrom :EMMO_15b852b5_19cc_49ab_849f_7df6175fb2be
-                                         ] ,
-                                         [ rdf:type owl:Restriction ;
-                                           owl:onProperty :EMMO_3bd08946_4e81_455d_9fca_dc7a5ead9315 ;
-                                           owl:someValuesFrom :EMMO_865a40fc_2187_4549_a7e1_37aa2458448f
-                                         ] .
 
 
 ###  http://emmo.info/emmo#EMMO_4320c72e_312e_494b_9dcd_edbaa397ceb5
