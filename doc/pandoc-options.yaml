@@ -2,7 +2,7 @@
 # Provide pandoc arguments/options via this file
 #
 input-files:
-  - battinfo-meta.yaml
+  - electrochemistry-meta.yaml
 
 standalone: False
 self-contained: True
@@ -11,4 +11,4 @@ toc-depth: 2
 variables:
   date: now
   logo: tmp/figs/bigmap.png
-  titlegraphic: ../BIG-MAP_concepts.png
+  titlegraphic: img/BIG-MAP_concepts.png
