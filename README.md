@@ -11,7 +11,7 @@ The ontology is based on [EMMO][1].
 
 A reference documentation of the individual classes is available in [html](https://emmo-repo.github.io/domain-electrochemistry/index.html) and [pdf](https://emmo-repo.github.io/domain-electrochemistry/electrochemistry.pdf) formats.
 
-## Obtaining BattINFO
+## Obtaining the ontology
 
 The correct path to the inferred verion `emmo-inferred` is specified in the catalog file, [`catalog-v001.xml`](catalog-v001.xml).
 
