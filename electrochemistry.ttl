@@ -222,6 +222,20 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
                                            skos:prefLabel "ElectrochemicalDevice"@en .
 
 
+###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_0b1f77b8_2349_4433_b440_43dc84a2210f
+:EMMO_0b1f77b8_2349_4433_b440_43dc84a2210f rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_270f239e_33cb_4c6d_a41c_875ec1262d62 ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electrochemical method where traces of solid particles are abrasively transferred onto the surface of an electrode, followed by an electrochemical dissolution (anodic or cathodic dissolution) that is recorded as a current–voltage curve."@en ;
+                                           skos:prefLabel "AbrsiveStrippingVoltammetry"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :EMMO_0b1f77b8_2349_4433_b440_43dc84a2210f ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "Electrochemical method where traces of solid particles are abrasively transferred onto the surface of an electrode, followed by an electrochemical dissolution (anodic or cathodic dissolution) that is recorded as a current–voltage curve."@en ;
+   dcterms:source "Scholz F, Nitschke L, Henrion G (1989) Naturwiss 76:71;"
+ ] .
+
+
 ###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_0cc8f231_0ce5_467e_9c76_29b2c80349ad
 :EMMO_0cc8f231_0ce5_467e_9c76_29b2c80349ad rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_a9873d3d_945b_40ba_b9cd_8dfb64cec88f ,
@@ -243,6 +257,12 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A practical hydrogen electrode whose potential depends on the pH of the solution"@en ;
                                            emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Reversible_hydrogen_electrode"@en ;
                                            skos:prefLabel "ReversibleHydrogenElectrode"@en .
+
+
+###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_0ec0ab2d_173d_4207_a53c_e550471af872
+:EMMO_0ec0ab2d_173d_4207_a53c_e550471af872 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_5dd49895_0489_4324_89fe_862a71f3eb1e ;
+                                           skos:prefLabel "ChronoMethodsHighSpeed"@en .
 
 
 ###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_0f007072-a8dd-4798-b865-1bf9363be627
@@ -623,6 +643,13 @@ Aluminum foil"""@en ;
                                            skos:prefLabel "IonicSubcomponent"@en .
 
 
+###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_270f239e_33cb_4c6d_a41c_875ec1262d62
+:EMMO_270f239e_33cb_4c6d_a41c_875ec1262d62 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_f49b84d4_e1f9_424c_bb22_8cea23c0a7d4 ;
+                                           emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Voltammetry" ;
+                                           skos:prefLabel "Voltammetry"@en .
+
+
 ###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_279ecc9f_bfbc_4108_ae40_3c1c0f735e60
 :EMMO_279ecc9f_bfbc_4108_ae40_3c1c0f735e60 rdf:type owl:Class ;
                                            rdfs:subClassOf emmo:EMMO_f2d5d3ad_2e00_417f_8849_686f3988d929 ;
@@ -718,6 +745,14 @@ Aluminum foil"""@en ;
    owl:annotatedTarget "Accumulation or depletion of electric charges at an electrode, resulting in a difference between the electrode potential with current flow, and the potential without current flow or equilibrium electrode potential."@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
+
+
+###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_2f96eb3e_4115_4236_9203_525fb27fe92d
+:EMMO_2f96eb3e_4115_4236_9203_525fb27fe92d rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_270f239e_33cb_4c6d_a41c_875ec1262d62 ;
+                                           emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "https://dbpedia.org/page/Cyclic_voltammetry" ;
+                                           emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Cyclic_voltammetry" ;
+                                           skos:prefLabel "CyclicVoltammetry"@en .
 
 
 ###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_31187293_5f00_4a36_b469_e16a83652b09
@@ -947,6 +982,20 @@ Aluminum foil"""@en ;
                                            skos:prefLabel "PorousElectrodeCoating"@en .
 
 
+###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_40e3bde2_77d6_4251_9781_8f6e6fa7a160
+:EMMO_40e3bde2_77d6_4251_9781_8f6e6fa7a160 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_f49b84d4_e1f9_424c_bb22_8cea23c0a7d4 ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electrochemical experiments (usually potentiostatic) where the applied constant or linearly changed potential is superimposed by an alternating (sinusoidal) potential signal of small magnitude."@en ;
+                                           skos:prefLabel "ACTechniques"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :EMMO_40e3bde2_77d6_4251_9781_8f6e6fa7a160 ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "Electrochemical experiments (usually potentiostatic) where the applied constant or linearly changed potential is superimposed by an alternating (sinusoidal) potential signal of small magnitude."@en ;
+   dcterms:source "Bard AJ, Faulkner LR (2001) Electrochemical methods, 2nd edn. Wiley, New York, chap 10, pp 368"
+ ] .
+
+
 ###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_43a06daa_3644_429c_953c_4ee49aaf570a
 :EMMO_43a06daa_3644_429c_953c_4ee49aaf570a rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_35cccde9_cb14_4b26_a324_aec97c4f9a15 ,
@@ -978,6 +1027,12 @@ Aluminum foil"""@en ;
 :EMMO_459688a8_0f36_4259_9fb2_98af08d7f9db rdf:type owl:Class ;
                                            rdfs:subClassOf emmo:EMMO_5eb09a10_1b4f_410f_9911_b3e3342d6017 ;
                                            skos:prefLabel "IntercalationStep"@en .
+
+
+###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_468df5e8_f7b0_4761_96e9_1a83cc11027d
+:EMMO_468df5e8_f7b0_4761_96e9_1a83cc11027d rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_5dd49895_0489_4324_89fe_862a71f3eb1e ;
+                                           skos:prefLabel "PotentiostaticChronoamperometry"@en .
 
 
 ###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_4a21f141_64ff_4524_8c2c_93073ee9e364
@@ -1279,6 +1334,13 @@ Aluminum foil"""@en ;
                                                              owl:someValuesFrom :EMMO_58143f50_c3c1_4cba_b8eb_577282b4b026
                                                            ] ;
                                            skos:prefLabel "ElectricPotentialMeasurement"@en .
+
+
+###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_5dd49895_0489_4324_89fe_862a71f3eb1e
+:EMMO_5dd49895_0489_4324_89fe_862a71f3eb1e rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_f49b84d4_e1f9_424c_bb22_8cea23c0a7d4 ;
+                                           emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Amperometry" ;
+                                           skos:prefLabel "AmperometricTechniques"@en .
 
 
 ###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_5f9a9411_05f9_4576_acd3_81d7d41cfe98
@@ -1638,6 +1700,12 @@ The reason for this is that combining the transitivity property of hasPart with 
                                            skos:prefLabel "OxygenElectrochemicalReaction"@en .
 
 
+###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_771e82be_c61d_4aad_bdcf_62ca3e68a939
+:EMMO_771e82be_c61d_4aad_bdcf_62ca3e68a939 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_5dd49895_0489_4324_89fe_862a71f3eb1e ;
+                                           skos:prefLabel "AmperometricCurrentTimeCurve"@en .
+
+
 ###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_7729c34e_1ae9_403d_b933_1765885e7f29
 :EMMO_7729c34e_1ae9_403d_b933_1765885e7f29 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_0f007072-a8dd-4798-b865-1bf9363be627 ,
@@ -1696,6 +1764,12 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
    owl:annotatedTarget "Electrolytic cell in which a chemical reaction is influenced by the absorption of light."@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
+
+
+###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_78a8f60b_10c2_41ee_9946_d35437e1edb5
+:EMMO_78a8f60b_10c2_41ee_9946_d35437e1edb5 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_f49b84d4_e1f9_424c_bb22_8cea23c0a7d4 ;
+                                           skos:prefLabel "GalvanostaticTechniques"@en .
 
 
 ###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_79d1b273-58cd-4be6-a250-434817f7c261
@@ -1767,6 +1841,12 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                            emmo:EMMO_133c2169_c0cc_460b_971d_6cb4e22338ed "\\ce{Zn(OH)4^{2-} + 2e- --> Zn(s) + 4OH-}"@en ;
                                            skos:altLabel "AlkalineZincPlatingReaction"@en ;
                                            skos:prefLabel "OneAqueousZincateIonAndTwoElectronYieldsOneSolidZincAndFourAqueousHydroxideIon"@en .
+
+
+###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_7d20588b_69da_46f7_b05d_5b637f6426cb
+:EMMO_7d20588b_69da_46f7_b05d_5b637f6426cb rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_5dd49895_0489_4324_89fe_862a71f3eb1e ;
+                                           skos:prefLabel "AmperometricDetection"@en .
 
 
 ###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_7f4d74cd_d0a5_4908_9da9_7629fe419917
@@ -1858,6 +1938,12 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                                            ] ;
                                            skos:altLabel "GalvanostaticCharging"@en ;
                                            skos:prefLabel "ConstantCurrentCharging"@en .
+
+
+###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_852542de_832e_473e_b70c_1d5ec235fc33
+:EMMO_852542de_832e_473e_b70c_1d5ec235fc33 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_5dd49895_0489_4324_89fe_862a71f3eb1e ;
+                                           skos:prefLabel "ChronoMethods"@en .
 
 
 ###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_865a40fc_2187_4549_a7e1_37aa2458448f
@@ -1994,6 +2080,21 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
    owl:annotatedTarget "arrangement of cells or batteries wherein the positive terminal of each cell or battery is connected to the negative terminal of the next cell or battery in sequence."@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
+
+
+###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_8ca00b45_5ba6_48a0_aaf6_abd959a7238b
+:EMMO_8ca00b45_5ba6_48a0_aaf6_abd959a7238b rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_270f239e_33cb_4c6d_a41c_875ec1262d62 ,
+                                                           :EMMO_40e3bde2_77d6_4251_9781_8f6e6fa7a160 ;
+                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The analysis of the current response to some amplitude sinusoidal voltage perturbation superimposed on a DC (ramp or constant) potential."@en ;
+                                           skos:altLabel "ACV"@en ;
+                                           skos:prefLabel "ACVoltammetry"@en .
+
+
+###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_916b1863_f417_4b94_9407_9d749ada9ed5
+:EMMO_916b1863_f417_4b94_9407_9d749ada9ed5 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_78a8f60b_10c2_41ee_9946_d35437e1edb5 ;
+                                           skos:prefLabel "PotentiometricStrippingAnalysis"@en .
 
 
 ###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_91ccf64e_9865_4543_824c_9546ccabf551
@@ -2441,6 +2542,15 @@ Conducting Additive"""@en ;
  ] .
 
 
+###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_a9f19bb0_55bc_4908_b0e4_7888077b0019
+:EMMO_a9f19bb0_55bc_4908_b0e4_7888077b0019 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_270f239e_33cb_4c6d_a41c_875ec1262d62 ;
+                                           emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Linear_sweep_voltammetry" ;
+                                           skos:altLabel "LSV"@en ,
+                                                         "LinearPolarization"@en ;
+                                           skos:prefLabel "LinearSweepVoltammetry"@en .
+
+
 ###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_a9fc3f77_e48e_4bce_b118_044d608722f6
 :EMMO_a9fc3f77_e48e_4bce_b118_044d608722f6 rdf:type owl:Class ;
                                            rdfs:subClassOf emmo:EMMO_f2d5d3ad_2e00_417f_8849_686f3988d929 ;
@@ -2806,6 +2916,12 @@ of other configurations are used."""@en ;
  ] .
 
 
+###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_bfbefff0_4df5_47c2_9943_5f42cf268e9e
+:EMMO_bfbefff0_4df5_47c2_9943_5f42cf268e9e rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_78a8f60b_10c2_41ee_9946_d35437e1edb5 ;
+                                           skos:prefLabel "StrippingChronopotentiometry"@en .
+
+
 ###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_c066c562_906a_4372_843a_036b587a597e
 :EMMO_c066c562_906a_4372_843a_036b587a597e rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_66c74bec_dbfb_43c2_a23a_5b6000f1b841 ,
@@ -3009,6 +3125,13 @@ of other configurations are used."""@en ;
                                            skos:prefLabel "ElectrochemicalChargeCarrierIon"@en .
 
 
+###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_d30d9de0_b9bf_4919_a022_0394df9c3672
+:EMMO_d30d9de0_b9bf_4919_a022_0394df9c3672 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_f49b84d4_e1f9_424c_bb22_8cea23c0a7d4 ;
+                                           skos:altLabel "EIS"@en ;
+                                           skos:prefLabel "ElectrochemicalImpedanceSpectroscopy"@en .
+
+
 ###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_d3e2d213_d078_4b9a_8beb_62f063e57d69
 :EMMO_d3e2d213_d078_4b9a_8beb_62f063e57d69 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_f49b84d4_e1f9_424c_bb22_8cea23c0a7d4 ,
@@ -3093,6 +3216,12 @@ of other configurations are used."""@en ;
                                            skos:prefLabel "ZincPlatingReaction"@en .
 
 
+###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_db4f8776_0d92_4641_9202_2591d1624328
+:EMMO_db4f8776_0d92_4641_9202_2591d1624328 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_5dd49895_0489_4324_89fe_862a71f3eb1e ;
+                                           skos:prefLabel "ConstantPotentialChronoamperometry"@en .
+
+
 ###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_dc205ac2_314e_415c_a2b6_b12e8359d54c
 :EMMO_dc205ac2_314e_415c_a2b6_b12e8359d54c rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_b812e9d0_7c58_4455_b3e7_6847f10c8e8a ;
@@ -3107,6 +3236,12 @@ of other configurations are used."""@en ;
                                            rdfs:subClassOf :EMMO_f89bb8bc-ef9b-43d5-b5df-14e12b0d93b8 ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An ElectrochemicalSubcomponent whose primary role is to provide structural integrity."@en ;
                                            skos:prefLabel "StructuralSubcomponent"@en .
+
+
+###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_dded0f27_75da_4a62_ba5e_22050089b726
+:EMMO_dded0f27_75da_4a62_ba5e_22050089b726 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_5dd49895_0489_4324_89fe_862a71f3eb1e ;
+                                           skos:prefLabel "PotentiostaticDCMeasurement"@en .
 
 
 ###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_df78745e_f9db_4830_88f0_8ce074fcb8ff
@@ -3290,7 +3425,7 @@ of other configurations are used."""@en ;
 ###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_f49b84d4_e1f9_424c_bb22_8cea23c0a7d4
 :EMMO_f49b84d4_e1f9_424c_bb22_8cea23c0a7d4 rdf:type owl:Class ;
                                            rdfs:subClassOf emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
-                                           skos:prefLabel "IntentionalElectrochemicalProcess"@en .
+                                           skos:prefLabel "ElectrochemicalMethod"@en .
 
 
 ###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_f4a1323a_ce2b_4c1a_b89d_c80170110ed6
@@ -3491,6 +3626,12 @@ of other configurations are used."""@en ;
    owl:annotatedTarget "Measuring instrument to obtain the electrical charge passed in an experiment, or to produce a known amount of substance in a titration."@en ;
    dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
+
+
+###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_fe333444_1f07_4d67_afcf_05dbd292b9b3
+:EMMO_fe333444_1f07_4d67_afcf_05dbd292b9b3 rdf:type owl:Class ;
+                                           rdfs:subClassOf :EMMO_5dd49895_0489_4324_89fe_862a71f3eb1e ;
+                                           skos:prefLabel "PotentiostaticPolarization"@en .
 
 
 ###  http://emmo.info/domain-electrochemistry/electrochemistry#EMMO_fe3a6c9a_85b8_4da6_aa4f_71c8de74939e
