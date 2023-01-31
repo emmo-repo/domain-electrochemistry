@@ -8,7 +8,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix annotations: <http://emmo.info/emmo/top/annotations#> .
-@base <http://emmo.info/electrochemistry/electrochemistry> .
+@base <https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/electrochemistry.ttl> .
 
 <http://emmo.info/electrochemistry/electrochemistry> rdf:type owl:Ontology ;
                                                       owl:versionIRI <http://emmo.info/electrochemistry/0.4.0/electrochemistry> ;
