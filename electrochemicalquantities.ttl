@@ -12,7 +12,7 @@
 
 <http://emmo.info/electrochemistry/electrochemicalquantities> rdf:type owl:Ontology ;
                                                                owl:versionIRI <http://emmo.info/electrochemistry/chemistry/0.3.0/electrochemicalquantities.ttl> ;
-                                                               owl:imports <https://big-map.github.io/BattINFO/ontology/emmo/1.0.0-beta3/generic-concepts/generic-concepts.ttl> ;
+                                                               owl:imports <http://emmo.info/emmo/reference/1.0.0-beta3> ;
                                                                dcterms:abstract """Everything needed to describe fundamental quantities in electrochemistry common to all electrochemical systems.
 
 Released under the Creative Commons license Attribution 4.0 International (CC BY 4.0)."""@en ;
@@ -23,12 +23,24 @@ Released under the Creative Commons license Attribution 4.0 International (CC BY
 #    Annotation properties
 #################################################################
 
+###  http://emmo.info/emmo#EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f
+emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/abstract
 dcterms:abstract rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/license
 dcterms:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/references
+dcterms:references rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+dcterms:source rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#prefLabel
@@ -386,11 +398,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 
 ###  http://emmo.info/electrochemistry/electrochemistry#EMMO_3bb5ae23_59fa_4bc7_9495_803eb6719f28
 :EMMO_3bb5ae23_59fa_4bc7_9495_803eb6719f28 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
-                                                             owl:someValuesFrom emmo:EMMO_14b629dd_a753_49b2_b6c3_4908eb8b7131
-                                                           ] ;
+                                           rdfs:subClassOf :EMMO_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                            emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-33" ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "quotient of change in open-circuit voltage of a cell or battery by the corresponding change in temperature."@en ;
                                            skos:prefLabel "TemperatureCoefficientOfTheOpenCircuitVoltage"@en .
@@ -759,11 +767,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
 
 ###  http://emmo.info/electrochemistry/electrochemistry#EMMO_8f3ab19f_ce22_424e_a9bf_d5cedb815374
 :EMMO_8f3ab19f_ce22_424e_a9bf_d5cedb815374 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
-                                                             owl:someValuesFrom emmo:EMMO_e6bc751b_5cad_4eb8_92f2_24c041490e43
-                                                           ] ;
+                                           rdfs:subClassOf :EMMO_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                            emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-18" ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "quotient of the change in capacity of a cell by the corresponding change in temperature."@en ;
                                            skos:prefLabel "TemperatureCoefficientOfTheCapacity"@en .
@@ -871,11 +875,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
 
 ###  http://emmo.info/electrochemistry/electrochemistry#EMMO_a17ee4e0_c81a_4a64_9ecb_9c6fa022cf4d
 :EMMO_a17ee4e0_c81a_4a64_9ecb_9c6fa022cf4d rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_4a450a27_b84a_4c70_a3a9_15ec30e2f30b ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
-                                                             owl:someValuesFrom emmo:EMMO_84d23674_b2d6_401a_9d4a_e718ee346baf
-                                                           ] ;
+                                           rdfs:subClassOf :EMMO_4a450a27_b84a_4c70_a3a9_15ec30e2f30b ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Molar conductivity at infinite dilution"@en ;
                                            skos:prefLabel "LimitingMolarConductivity"@en .
 
@@ -1047,11 +1047,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
 
 ###  http://emmo.info/electrochemistry/electrochemistry#EMMO_bcb33f7e_5573_4bc2_b636_4ea313a9dd3a
 :EMMO_bcb33f7e_5573_4bc2_b636_4ea313a9dd3a rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
-                                                             owl:someValuesFrom emmo:EMMO_c9450d0b_caac_4de6_b4cf_a2141d71836f
-                                                           ] ;
+                                           rdfs:subClassOf :EMMO_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                            emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-20" ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "quotient of the capacity of a battery cell or battery by its plane area."@en ;
                                            rdfs:comment "Can also be applied to electrodes."@en ;
@@ -1234,11 +1230,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
 
 ###  http://emmo.info/electrochemistry/electrochemistry#EMMO_e6b63190_acac_4e78_9cba_fb2b10bbe910
 :EMMO_e6b63190_acac_4e78_9cba_fb2b10bbe910 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
-                                                             owl:someValuesFrom emmo:EMMO_badeda5e_cf93_419c_9a16_2cca8fe6ef63
-                                                           ] ;
+                                           rdfs:subClassOf :EMMO_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                            emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-17" ;
                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "quotient of the capacity of a cell or battery by its volume."@en ;
                                            skos:altLabel "VolumetricChargeCapacity"@en ,
