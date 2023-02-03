@@ -135,6 +135,19 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
                                                        skos:prefLabel "SimpleElectrode"@en .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_042d2282_bd2d_4874_b896_2d9dd06b54dd
+:electrochemistry_042d2282_bd2d_4874_b896_2d9dd06b54dd rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Voltammetry in which a square-wave potential waveform is superimposed on an underlying linearly varying potential ramp or staircase ramp. The current is sampled just before the end of the forward- going pulse and of the backward-going pulse and the difference of the two sampled currents is plotted versus the applied potential of the potential or staircase ramp. The square-wave voltammogram is peak- shaped."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
+                                                       rdfs:comment "Most instruments show plots of the current at the end of the forward-going pulse and of the backward-going pulse vs. the potential, as well as their difference. This can give valuable information on the kinetics of the electrode reaction and the electrode process."@en ,
+                                                                    "The sensitivity of SWV depends on the reversibility of the electrode reaction of the analyte."@en ;
+                                                       skos:altLabel "OSWV"@en ,
+                                                                     "Osteryoung square-wave voltammetry"@en ,
+                                                                     "SWV"@en ;
+                                                       skos:prefLabel "SquareWaveVoltammetry"@en .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_048130e3_7448_4c06_b3b3_d039a848aae3
 :electrochemistry_048130e3_7448_4c06_b3b3_d039a848aae3 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_761d64bb_b13a_438c_b2cf_972938904e5d ;
@@ -228,7 +241,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 :electrochemistry_0b1f77b8_2349_4433_b440_43dc84a2210f rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electrochemical method where traces of solid particles are abrasively transferred onto the surface of an electrode, followed by an electrochemical dissolution (anodic or cathodic dissolution) that is recorded as a current–voltage curve."@en ;
-                                                       skos:prefLabel "AbrsiveStrippingVoltammetry"@en .
+                                                       skos:prefLabel "AbrasiveStrippingVoltammetry"@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_0b1f77b8_2349_4433_b440_43dc84a2210f ;
@@ -307,6 +320,14 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
    owl:annotatedTarget "Electron conductor in an electrochemical cell connected to the external circuit."@en ;
    dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_10359c79_cdf2_401a_83ee_d22e7fbb2ad1
+:electrochemistry_10359c79_cdf2_401a_83ee_d22e7fbb2ad1 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_f49b84d4_e1f9_424c_bb22_8cea23c0a7d4 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Analytical methods in which electrochemical processes or phenomena are the core of the measurement principle involving electrochemical cells providing qualitative and quantitative responses."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"^^xsd:anyURI ;
+                                                       skos:prefLabel "ElectroanalyticalTechnique"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_113e0469_8ae0_407f_892d_4b988f8d8a08
@@ -481,6 +502,14 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
  ] .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_183a2337_c35f_4b74_8d9a_08c74d89bedc
+:electrochemistry_183a2337_c35f_4b74_8d9a_08c74d89bedc rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_d95fdd2e_38bf_4065_a857_78eb201ee166 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Hydrodynamic voltammetry using a a rotating disc electrode, where the limiting current is described by the Levich equation."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
+                                                       skos:prefLabel "VoltammetryAtARotatingDiskElectrode"@en .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_187326b9_1089_4122_8e7e_1a0bcba210a1
 :electrochemistry_187326b9_1089_4122_8e7e_1a0bcba210a1 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_2e6933aa_4522_4f16_a437_37110e6cbd0d ;
@@ -591,8 +620,11 @@ Aluminum foil"""@en ;
 
 ###  http://emmo.info/electrochemistry#electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62
 :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_f49b84d4_e1f9_424c_bb22_8cea23c0a7d4 ;
+                                                       rdfs:subClassOf :electrochemistry_10359c79_cdf2_401a_83ee_d22e7fbb2ad1 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Techniques based on the measurement of current as a function of controlled time-dependent applied potential."@en ;
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Voltammetry" ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
+                                                       rdfs:comment "The current vs. potential (I-E) curve is called a voltammogram."@en ;
                                                        skos:prefLabel "Voltammetry"@en .
 
 
@@ -696,8 +728,15 @@ Aluminum foil"""@en ;
 ###  http://emmo.info/electrochemistry#electrochemistry_2f96eb3e_4115_4236_9203_525fb27fe92d
 :electrochemistry_2f96eb3e_4115_4236_9203_525fb27fe92d rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ;
-                                                       emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "https://dbpedia.org/page/Cyclic_voltammetry" ;
-                                                       emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Cyclic_voltammetry" ;
+                                                       emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "https://dbpedia.org/page/Cyclic_voltammetry"^^xsd:anyURI ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Voltammetry in which the electric current is recorded as the electrode potential is varied with time cycli- cally between two potential limits, normally at a constant scan rate."@en ;
+                                                       emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Cyclic_voltammetry"^^xsd:anyURI ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
+                                                       rdfs:comment "Cyclic voltammetry is frequently used for the investigation of mechanisms of electrochemi- cal/electrode reactions. The current-potential curve may be modelled to obtain reaction mechanisms and electrochemical parameters."@en ,
+                                                                    "Normally the initial potential is chosen where no electrode reaction occurs and the switch- ing potential is greater (more positive for an oxidation or more negative for a reduction) than the peak potential of the analyte reaction."@en ,
+                                                                    "The initial potential is usually the negative or positive limit of the cycle but can have any value between the two limits, as can the initial scan direction. The limits of the potential are known as the switching potentials."@en ,
+                                                                    "The plot of current against potential is termed a cyclic voltammogram. Usually peak-shaped responses are obtained for scans in both directions."@en ;
+                                                       skos:altLabel "CV"@en ;
                                                        skos:prefLabel "CyclicVoltammetry"@en .
 
 
@@ -793,6 +832,33 @@ Aluminum foil"""@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A working electrode in the shape of a ring used in a rotating ring disk electrode (RRDE)."@en ;
                                                        skos:altLabel "RingElectrode"@en ;
                                                        skos:prefLabel "AnnularWorkingElectrode"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_3b35e843_3132_41e3_b6df_541cd45ba880
+:electrochemistry_3b35e843_3132_41e3_b6df_541cd45ba880 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Two-step electrochemical measurement in which 1) material is accumulated at an electrode and 2) the amount of an accumulated species is measured by voltammetry. The measured electric current in step 2 is related to the concentration of analyte in the solution by calibration."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
+                                                       rdfs:comment "Anodic stripping voltammetry (ASV) was historically used to measure concentrations of metal ions in solution using cathodic accumulation with mercury to form an amalgam. Due to the toxicity of mercury and its compounds, inductively coupled plasma optical emission spectrometry and inductively coupled plasma mass spectrometry have frequently replaced ASV at mercury electrodes in the laboratory, often sacrificing the probing of speciation and lability in complex matrices. Mercury has now been replaced by non-toxic bismuth or anti- mony as films on a solid electrode support (such as glassy carbon) with equally good sensi- tivity and detection limits."@en ,
+                                                                    "Because the accumulation (pre-concentration) step can be prolonged, increasing the amount of material at the electrode, stripping voltammetry is able to measure very small concentrations of analyte."@en ,
+                                                                    "Often the product of the electrochemical stripping is identical to the analyte before the accumulation."@en ,
+                                                                    "Stripping voltammetry is a calibrated method to establish the relation between amount accumulated in a given time and the concentration of the analyte in solution."@en ,
+                                                                    "Types of stripping voltammetry refer to the kind of accumulation (e.g. adsorptive stripping voltammetry) or the polarity of the stripping electrochemistry (anodic, cathodic stripping voltammetry)."@en ;
+                                                       skos:prefLabel "StrippingVoltammetry"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_3c3972f6_8e1d_454b_a198_48173ba2232b
+:electrochemistry_3c3972f6_8e1d_454b_a198_48173ba2232b rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Voltammetry in which potential pulses of amplitude increasing by a constant increment and with a pulse width of 2 to 200 ms are superimposed on a constant initial potential."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
+                                                       rdfs:comment "Normal pulse polarography is NPV in which a dropping mercury electrode is used as the working electrode. A pulse is applied just before the mechanically enforced end of the drop. The pulse width is usually 10 to 20 % of the drop time. The drop dislodgment is synchro- nized with current sampling, which is carried out just before the end of the pulse, as in NPV."@en ,
+                                                                    "Sigmoidal wave-shaped voltammograms are obtained."@en ,
+                                                                    "The current is sampled at the end of the pulse and then plotted versus the potential of the pulse."@en ,
+                                                                    "The current is sampled just before the end of the pulse, when the charging current is greatly diminished. In this way, the ratio of faradaic current to charging current is enhanced and the negative influence of charging current is partially eliminated. Due to the improved signal (faradaic current) to noise (charging current) ratio, the limit of detec- tion is lowered."@en ,
+                                                                    "The sensitivity of NPV is not affected by the reversibility of the electrode reaction of the analyte."@en ;
+                                                       skos:altLabel "NPV"@en ;
+                                                       skos:prefLabel "NormalPulseVoltammetry"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_3d805c2a_4801_440e_9e4d_0fa5585c76ae
@@ -1046,6 +1112,17 @@ Aluminum foil"""@en ;
                                                        skos:prefLabel "KohlrauschsLaw"@en .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_5a0f3b6a_10b4_43a7_b0b6_4eb5c077980e
+:electrochemistry_5a0f3b6a_10b4_43a7_b0b6_4eb5c077980e rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Linear scan voltammetry with slow scan rate in which a dropping mercury electrode is used as the working electrode."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
+                                                       rdfs:comment "If the whole scan is performed on a single growing drop, the technique should be called single drop scan voltammetry. The term polarography in this context is discouraged."@en ,
+                                                                    "This is the oldest variant of polarographic techniques, introduced by Jaroslav Heyrovský (1890 – 1967)."@en ,
+                                                                    "Usually the drop time is between 1 and 5 s and the pseudo-steady-state wave-shaped dependence on potential is called a polarogram. If the limiting current is controlled by dif- fusion, it is expressed by the Ilkovich equation."@en ;
+                                                       skos:prefLabel "DCPolarography"@en .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_5adb91e0_ffe1_41f3_b779_c6966f65fb0e
 :electrochemistry_5adb91e0_ffe1_41f3_b779_c6966f65fb0e rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_0f007072-a8dd-4798-b865-1bf9363be627 ,
@@ -1145,6 +1222,16 @@ Aluminum foil"""@en ;
                                                        skos:altLabel "AlkalineAqueousElectrolyte"@en ,
                                                                      "AlkalineSolution"@en ;
                                                        skos:prefLabel "AlkalineElectrolyte"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_61740c42_d332_492c_8b37_90a187c7f6d9
+:electrochemistry_61740c42_d332_492c_8b37_90a187c7f6d9 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_3b35e843_3132_41e3_b6df_541cd45ba880 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Stripping voltammetry in which material accumulated at the working electrode is electrochemically reduced in the stripping step."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
+                                                       rdfs:comment "A peak-shaped cathodic stripping voltammogram is obtained. Peak current depends on time of accumulation, mass transport of analyte (stirring), scan rate and mode (linear or pulse), and analyte concentration in solution."@en ;
+                                                       skos:altLabel "CSV"@en ;
+                                                       skos:prefLabel "CathodicStrippingVoltammetry"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_634467ad_feed_4979_adb2_877d98fe1768
@@ -1673,6 +1760,16 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                                        skos:prefLabel "AirElectrode"@en .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_8ba8ec72_abd0_49eb_a06f_83fe5da108f4
+:electrochemistry_8ba8ec72_abd0_49eb_a06f_83fe5da108f4 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_3b35e843_3132_41e3_b6df_541cd45ba880 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Stripping voltammetry in which material accumulated at the working electrode is electrochemically oxi- dized in the stripping step."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
+                                                       rdfs:comment "A peak-shaped anodic stripping voltammogram is obtained. Peak current depends on time of accumulation, mass transport of analyte (stirring), scan rate and mode (linear or pulse), and analyte concentration in solution."@en ,
+                                                                    "A solid electrode, carbon paste or composite electrode, bismuth film electrode, mercury film electrode, or static mercury drop electrode may be used."@en ;
+                                                       skos:prefLabel "AnodicStrippingVoltammetry"@en .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_8c18d60b_c5df_45ce_b64a_91c9b53d322d
 :electrochemistry_8c18d60b_c5df_45ce_b64a_91c9b53d322d rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_6f2c88c9_5c04_4953_a298_032cc3ab9b77 ,
@@ -1711,7 +1808,9 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 :electrochemistry_8ca00b45_5ba6_48a0_aaf6_abd959a7238b rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ,
                                                                        :electrochemistry_40e3bde2_77d6_4251_9781_8f6e6fa7a160 ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The analysis of the current response to some amplitude sinusoidal voltage perturbation superimposed on a DC (ramp or constant) potential."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Voltammetry in which a sinusoidal alternating potential of small amplitude (10 to 50 mV) of constant frequency (10 Hz to 100 kHz) is superimposed on a slowly and linearly varying potential ramp."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
+                                                       rdfs:comment "The resulting alternating current is plotted versus imposed DC potential. The obtained AC voltammogram is peak-shaped."@en ;
                                                        skos:altLabel "ACV"@en ;
                                                        skos:prefLabel "ACVoltammetry"@en .
 
@@ -1881,6 +1980,17 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
  ] .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_a05e7945_c942_45cf_812c_c9a595d15888
+:electrochemistry_a05e7945_c942_45cf_812c_c9a595d15888 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_3b35e843_3132_41e3_b6df_541cd45ba880 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Stripping voltammetry involving pre-concentration by adsorption of the analyte (in contrast to electro- chemical accumulation)."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
+                                                       rdfs:comment "A peak-shaped adsorptive stripping voltammogram is obtained. Peak current depends on time of accumulation, mass transport of analyte (stirring), scan rate and mode (linear or pulse), and analyte concentration in solution."@en ,
+                                                                    "AdSV is usually employed for analysis of organic compounds or metal complexes with organic ligands. Stripping is done by means of an anodic or a cathodic voltammetric scan (linear or pulse), during which the adsorbed compound is oxidized or reduced."@en ;
+                                                       skos:altLabel "AdSV"@en ;
+                                                       skos:prefLabel "AdsorptiveStrippingVoltammetry"@en .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_a0a619d7_da95_41f0_8bc3_9c19d636d543
 :electrochemistry_a0a619d7_da95_41f0_8bc3_9c19d636d543 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_0f007072-a8dd-4798-b865-1bf9363be627 ;
@@ -2042,10 +2152,16 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 ###  http://emmo.info/electrochemistry#electrochemistry_a9f19bb0_55bc_4908_b0e4_7888077b0019
 :electrochemistry_a9f19bb0_55bc_4908_b0e4_7888077b0019 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ;
-                                                       emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Linear_sweep_voltammetry" ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Voltammetry in which the current is recorded as the electrode potential is varied linearly with time."@en ;
+                                                       emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Linear_sweep_voltammetry"^^xsd:anyURI ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
+                                                       rdfs:comment "LSV corresponds to the first half cycle of cyclic voltammetry."@en ,
+                                                                    "The peak current is expressed by the Randles-Ševčík equation."@en ,
+                                                                    "The scan is usually started at a potential where no electrode reaction occurs."@en ;
                                                        skos:altLabel "LSV"@en ,
-                                                                     "LinearPolarization"@en ;
-                                                       skos:prefLabel "LinearSweepVoltammetry"@en .
+                                                                     "LinearPolarization"@en ,
+                                                                     "linear-sweep voltammetry"@en ;
+                                                       skos:prefLabel "LinearScanVoltammetry"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_a9fc3f77_e48e_4bce_b118_044d608722f6
@@ -2107,6 +2223,18 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 :electrochemistry_b2d11f0d_c1b0_4476_8d17_03b73d31e01f rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_331e6cca_f260_4bf8_af55_35304fe1bbe0 ;
                                                        skos:prefLabel "AsymmetricMembrane"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_b3e56313_417c_42b7_a934_0018ce2dffc2
+:electrochemistry_b3e56313_417c_42b7_a934_0018ce2dffc2 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Voltammetry in which small potential pulses (constant height 10 to 100 mV, constant width 10 to 100 ms) are superimposed onto a linearly varying potential or onto a staircase potential ramp. The current is sampled just before the onset of the pulse (e.g. 10 to 20 ms) and for the same sampling time just before the end of the pulse. The difference between the two sampled currents is plotted versus the potential applied before the pulse. Thus, a differential pulse voltammogram is peak-shaped."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
+                                                       rdfs:comment "Differential pulse polarography is differential pulse voltammetry in which a dropping mercury electrode is used as the working electrode. A pulse is applied before the mechani- cally enforced end of the drop and the current is sampled twice: just before the onset of the pulse and just before its end. The pulse width is usually 10 to 20 % of the drop life. The drop dislodgement is synchronized with current sampling, which is carried out as in DPV."@en ,
+                                                                    "The ratio of faradaic current to charging current is enhanced and the negative influence of charging current is partially eliminated in the same way as in normal pulse voltammetry (NPV). Moreover, subtraction of the charging current sampled before the application of the pulse further decreases its negative influence. Due to the more enhanced signal (faradaic current) to noise (charging current) ratio, the limit of detection is lower than with NPV."@en ,
+                                                                    "The sensitivity of DPV depends on the reversibility of the electrode reaction of the analyte."@en ;
+                                                       skos:altLabel "DPV"@en ;
+                                                       skos:prefLabel "DifferentialPulseVoltammetry"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_b525a629_a679_464f_bc5b_b49d2fc82686
@@ -2469,6 +2597,17 @@ of other configurations are used."""@en ;
 :electrochemistry_d8413c07_1c47_4450_ac05_e3350b4c7600 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_213ac5da_3931_43a4_a1ce_fd0a8b42ae58 ;
                                                        skos:prefLabel "ZincPlatingReaction"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_d95fdd2e_38bf_4065_a857_78eb201ee166
+:electrochemistry_d95fdd2e_38bf_4065_a857_78eb201ee166 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Voltammetry with forced flow of the solution towards the electrode surface."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
+                                                       rdfs:comment "A linear potential scan, at sufficiently slow scan rates so as to ensure a steady state response, is usually applied."@en ,
+                                                                    "Mass transport of a redox species enhanced by convection in this way results in a greater electric current. Convective mass transfer occurs up to the diffusion-limiting layer, within which the mass transfer is controlled by diffusion. Electroactive substance depletion outside the diffusion layer is annulled by convective mass transfer, which results in steady- state sigmoidal wave-shaped current-potential curves."@en ,
+                                                                    "The forced flow can be accomplished by movement either of the solution (solution stirring, or channel flow), or of the electrode (electrode rotation or vibration)."@en ;
+                                                       skos:prefLabel "HydrodynamicVoltammetry"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_db4f8776_0d92_4641_9202_2591d1624328
@@ -2852,7 +2991,7 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
 ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -2861,10 +3000,58 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -2894,46 +3081,7 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -2948,16 +3096,10 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -2975,6 +3117,57 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
@@ -2991,60 +3184,6 @@ of other configurations are used."""@en ;
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
