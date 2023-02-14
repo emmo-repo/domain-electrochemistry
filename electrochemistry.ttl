@@ -657,7 +657,7 @@ Aluminum foil"""@en ;
 ###  http://emmo.info/electrochemistry#electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62
 :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_10359c79_cdf2_401a_83ee_d22e7fbb2ad1 ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Techniques based on the measurement of current as a function of controlled time-dependent applied potential."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electrochemical measurement principle in which the electrode potential of a working electrode is controlled and the electric current measured."@en ;
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Voltammetry" ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
                                                        rdfs:comment "The current vs. potential (I-E) curve is called a voltammogram."@en ;
@@ -1456,7 +1456,7 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
 ###  http://emmo.info/electrochemistry#electrochemistry_6e439f86_3d00_4b0b_82ab_1fa25241d4e9
 :electrochemistry_6e439f86_3d00_4b0b_82ab_1fa25241d4e9 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_10359c79_cdf2_401a_83ee_d22e7fbb2ad1 ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electrochemical measurement principle [VIM 2.4] in which the electric charge required to carry out a known electrochemical reaction is measured. By Faraday’s laws of electrolysis, the amount of substance is proportional to the charge."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electrochemical measurement principle in which the electric charge required to carry out a known electrochemical reaction is measured. By Faraday’s laws of electrolysis, the amount of substance is proportional to the charge."@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
                                                        rdfs:comment "Coulometry used to measure the amount of substance is a primary reference measurement procedure [VIM 2.8] not requiring calibration with a standard for a quantity of the same kind (i.e. amount of substance)."@en ,
                                                                     "The coulometric experiment can be carried out at controlled (constant) potential (see direct coulometry at controlled potential) or controlled (constant) current (see direct coulometry at controlled current)."@en ;
@@ -2875,7 +2875,7 @@ of other configurations are used."""@en ;
 ###  http://emmo.info/electrochemistry#electrochemistry_e8cedede_5685_4625_9abe_64f62b5ddcb6
 :electrochemistry_e8cedede_5685_4625_9abe_64f62b5ddcb6 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_10359c79_cdf2_401a_83ee_d22e7fbb2ad1 ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electrochemical measurement principle [VIM 2.4] where the potential difference between an indicator electrode and a reference electrode is measured."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electrochemical measurement principle where the potential difference between an indicator electrode and a reference electrode is measured."@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
                                                        rdfs:comment "For measurements using ion-selective electrodes, the measurement is made under equi- librium conditions what means that the macroscopic electric current is zero and the con- centrations of all species are uniform throughout the solution. The indicator electrode is in direct contact with the analyte solution, whereas the reference electrode is usually separated from the analyte solution by a salt bridge. The potential difference between the indicator and reference electrodes is normally directly proportional to the logarithm of the activity (concentration) of the analyte in the solution (Nernst equation). See also ion selec- tive electrode."@en ;
                                                        skos:prefLabel "Potentiometry"@en .
