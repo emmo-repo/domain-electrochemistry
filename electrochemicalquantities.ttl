@@ -12,8 +12,8 @@
 
 <http://emmo.info/electrochemistry/electrochemicalquantities> rdf:type owl:Ontology ;
                                                                owl:versionIRI <http://emmo.info/electrochemistry/0.3.0/electrochemicalquantities.ttl> ;
-                                                               owl:imports <http://emmo.info/emmo/reference/1.0.0-beta3> ;
-							       owl:imports <http://emmo.info/emmo/1.0.0-beta4/disciplines/isq_big_map> ;
+                                                               owl:imports <http://emmo.info/emmo/1.0.0-beta4/disciplines/isq_big_map> ,
+                                                                           <http://emmo.info/emmo/reference/1.0.0-beta3> ;
                                                                dcterms:abstract """Everything needed to describe fundamental quantities in electrochemistry common to all electrochemical systems.
 
 Released under the Creative Commons license Attribution 4.0 International (CC BY 4.0)."""@en ;
@@ -139,6 +139,18 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
                                                        skos:prefLabel "ElectrochemicalWindow"@en .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_136744ff_0563_4df7_aa03_4219d70392a0
+:electrochemistry_136744ff_0563_4df7_aa03_4219d70392a0 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Parameter defining the ability of an ion-selective electrode to distinguish a particular ion, i.e., a primary ion A from an interfering ion B."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.P04791"@en ;
+                                                       rdfs:comment "The selectivity coefficient is determined by means of the potential difference of the ion- selective electrode in mixed solutions of the primary ion, A, and interfering ion, B (Fixed Interference Method) or, less desirably, in separate solutions of A and B (Separate Solution Method). The activities of the primary ion, A, and the interfering ion, B, at which K is determined should always be specified, as the value of K is defined by a modified Nikolsky-Eisenman equation. The smaller the value of K , the A,B greater the electrode’s preference for the primary ion, A."@en ;
+                                                       skos:altLabel "Selectivity coefficient"@en ,
+                                                                     "Selectivity constant"@en ,
+                                                                     "Selectivity factor"@en ;
+                                                       skos:prefLabel "PotentiometricSelectivityCoefficient"@en .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_1422cde1_929e_46b6_b0dc_1010eebc5dfd
 :electrochemistry_1422cde1_929e_46b6_b0dc_1010eebc5dfd rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_2d896559_eee3_447c_9759_87c854a4266a ,
@@ -212,6 +224,34 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "Faradaic current that is controlled by the rate at which electroactive species diffuse toward (or away from) and electrode-solution interface."@en ;
    dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+ ] .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_1a104474_c326_4a29_ac26_26a05ac8f72c
+:electrochemistry_1a104474_c326_4a29_ac26_26a05ac8f72c rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                                         owl:someValuesFrom emmo:EMMO_02e894c3_b793_4197_b120_3442e08f58d1
+                                                                       ] ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Duration between the time when an ion-selective electrode and an external reference electrode (the two completing the ion-selective electrode cell) are brought into contact with a sample solution (or the time at which the activity of the ion of interest in solution is changed) and the first time at which the slope of the cell potential vs. time plot (ΔE/Δt) becomes equal to a limiting value selected on the basis of the experimental conditions and/or requirements concerning accuracy."@en ;
+                                                       rdfs:comment "Buck and Lindner suggest a slope of 0.6 mV min-1 ."@en ,
+                                                                    """Previously defined response times t95 (corresponding to the 95% change of the potential span) and t* (to 1 mV from the steady value) require prior knowledge of steady-state E values that may not be available. These descriptive quantities underestimate practical response times of ion-selective electrodes in clinical applications where the total span may be narrower than 10 mV. The response time expressed in terms of ΔE/Δt (i.e., rate of cell potential variation with time) seems to be the best choice among non-ideal options. It can be related to t95
+and t* through mathematical models, provided that the long-time potential- determining processes are identified."""@en ;
+                                                       skos:prefLabel "ResponseTimeAtAnISE"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_1a104474_c326_4a29_ac26_26a05ac8f72c ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "Duration between the time when an ion-selective electrode and an external reference electrode (the two completing the ion-selective electrode cell) are brought into contact with a sample solution (or the time at which the activity of the ion of interest in solution is changed) and the first time at which the slope of the cell potential vs. time plot (ΔE/Δt) becomes equal to a limiting value selected on the basis of the experimental conditions and/or requirements concerning accuracy."@en ;
+   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_1a104474_c326_4a29_ac26_26a05ac8f72c ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Buck and Lindner suggest a slope of 0.6 mV min-1 ."@en ;
+   dcterms:source "Buck, Richard P., and Erno Lindner. \"Recommendations for nomenclature of ionselective electrodes (IUPAC Recommendations 1994).\" Pure and Applied Chemistry 66.12 (1994): 2527-2536. DOI: 10.1351/pac199466122527"
  ] .
 
 
@@ -331,6 +371,27 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
                                                        skos:prefLabel "IonicConductivity"@en .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_264f40d1_17c9_4bc7_9c47_5cfb18132278
+:electrochemistry_264f40d1_17c9_4bc7_9c47_5cfb18132278 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                                         owl:someValuesFrom :electrochemistry_38ee287e_ff33_49b7_8841_bfac8eff5d49
+                                                                       ] ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The rate of change of applied potential with time."@en ;
+                                                       skos:altLabel "potential scan rate"@en ,
+                                                                     "potential sweep rate"@en ,
+                                                                     "sweep rate"@en ;
+                                                       skos:prefLabel "ScanRate"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_264f40d1_17c9_4bc7_9c47_5cfb18132278 ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "The rate of change of applied potential with time."@en ;
+   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+ ] .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_2678a656_4a27_4706_8dde_b0a93e9b92fa
 :electrochemistry_2678a656_4a27_4706_8dde_b0a93e9b92fa rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
@@ -357,6 +418,25 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
  ] .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_2705525b_7512_48bf_825b_f2d0409bede4
+:electrochemistry_2705525b_7512_48bf_825b_f2d0409bede4 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                                         owl:someValuesFrom emmo:EMMO_2e7e5796_4a80_4d73_bb84_f31138446c0c
+                                                                       ] ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electric potential of the indicator electrode, in chronopotentiometry at constant current, at the instant when the time that has elapsed since the application of current is equal to one-fourth of the transition time."@en ;
+                                                       rdfs:comment "In practice, appropriate correction for the double-layer charging current is needed."@en ;
+                                                       skos:prefLabel "QuarterTransitionTimePotential"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_2705525b_7512_48bf_825b_f2d0409bede4 ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "Electric potential of the indicator electrode, in chronopotentiometry at constant current, at the instant when the time that has elapsed since the application of current is equal to one-fourth of the transition time."@en ;
+   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109."
+ ] .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_27b3799c_250c_4332_8b71_7992c4a7bb05
 :electrochemistry_27b3799c_250c_4332_8b71_7992c4a7bb05 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7 ;
@@ -379,6 +459,27 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
    owl:annotatedSource :electrochemistry_2a2f59b7_aa16_40aa_9c8b_0de8a2720456 ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "Electric current that results from the electrooxidation or electroreduction of an electroactive substance."@en ;
+   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+ ] .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_2ae53fc6_d44d_41c9_acaf_c5606e6a981d
+:electrochemistry_2ae53fc6_d44d_41c9_acaf_c5606e6a981d rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                                         owl:someValuesFrom emmo:EMMO_2e7e5796_4a80_4d73_bb84_f31138446c0c
+                                                                       ] ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electric potential of a steady-state voltammetric working electrode at the point, on the rising part of the voltammetric wave, where the current is equal to one-half of the limiting current."@en ;
+                                                       rdfs:comment "E1/2 is used in techniques providing a sigmoidal wave-shaped current including DC voltammetry/polarography, normal pulse voltammetry, hydrodynamic voltammetry, and tast polarography."@en ,
+                                                                    "For quasi-reversible and irreversible electrode reactions, the value of E1/2 is also affected by the rate constant of the charge transfer reaction, the difference being greater than that caused by different diffusion coefficients."@en ,
+                                                                    "The quarter-wave potential, Ep/4, the three-quarter-wave potential, Ep3/4 , etc., may be similarly defined."@en ;
+                                                       skos:prefLabel "HalfWavePotential"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_2ae53fc6_d44d_41c9_acaf_c5606e6a981d ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "Electric potential of a steady-state voltammetric working electrode at the point, on the rising part of the voltammetric wave, where the current is equal to one-half of the limiting current."@en ;
    dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
@@ -433,6 +534,16 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
  ] .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_38ee287e_ff33_49b7_8841_bfac8eff5d49
+:electrochemistry_38ee287e_ff33_49b7_8841_bfac8eff5d49 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_9895a1b4_f0a5_4167_ac5e_97db40b8bfcc ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ;
+                                                                         owl:hasValue "T-4 L+2 M+1 I-1 Θ0 N0 J0"
+                                                                       ] ;
+                                                       skos:prefLabel "ElectricPotentialPerTimeDimension"@en .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_39a44af0_0e1a_4859_b550_bdabad64386e
 :electrochemistry_39a44af0_0e1a_4859_b550_bdabad64386e rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_affe07e4_e9bc_4852_86c6_69e26182a17f ;
@@ -451,6 +562,26 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "quotient of change in open-circuit voltage of a cell or battery by the corresponding change in temperature."@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_3cd0e74e_292c_48ed_a831_4cb8753d9a56
+:electrochemistry_3cd0e74e_292c_48ed_a831_4cb8753d9a56 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                                         owl:someValuesFrom emmo:EMMO_02e894c3_b793_4197_b120_3442e08f58d1
+                                                                       ] ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Time interval during which the excitation signal deviates from the base line in normal pulse voltamme- try, differential pulse voltammetry, and related techniques."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.P04947"@en ;
+                                                       rdfs:comment "The pulse duration includes the sampling interval."@en ;
+                                                       skos:prefLabel "PulseDuration"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_3cd0e74e_292c_48ed_a831_4cb8753d9a56 ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "Time interval during which the excitation signal deviates from the base line in normal pulse voltamme- try, differential pulse voltammetry, and related techniques."@en ;
+   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109."
  ] .
 
 
@@ -477,7 +608,11 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 ###  http://emmo.info/electrochemistry#electrochemistry_47ab1dad_cc09_4fd8_af23_acb36fb680dd
 :electrochemistry_47ab1dad_cc09_4fd8_af23_acb36fb680dd rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
-                                                                       emmo:EMMO_96f39f77_44dc_491b_8fa7_30d887fe0890 ;
+                                                                       emmo:EMMO_96f39f77_44dc_491b_8fa7_30d887fe0890 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                                         owl:someValuesFrom emmo:EMMO_33433bb1_c68f_45ee_a466_f01e2c57b214
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Area of electrode - solution interface."@en ;
                                                        rdfs:comment "A"@en ,
                                                                     """The geometric area, A_{geom} , is the interfacial area, determined on the assumption that the interface is truly flat (2-dimensional) and calculated using the geometric data of the involved surfaces. 
@@ -523,6 +658,18 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        skos:prefLabel "ElectrochemicalTransportQuantity"@en .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_4b18c3f9_df10_4259_adb4_cd10842ff0be
+:electrochemistry_4b18c3f9_df10_4259_adb4_cd10842ff0be rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                                         owl:someValuesFrom emmo:EMMO_02e894c3_b793_4197_b120_3442e08f58d1
+                                                                       ] ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The time that elapses between the instants at which two successive drops of liquid metal are detached from the tip of the capillary."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.D01862"@en ;
+                                                       skos:prefLabel "DropTimeInPolarography"@en .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d
 :electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
@@ -558,6 +705,21 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "charged active material remaining in a cell following a discharge to a specified end-of-discharge voltage."@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_52ac73c7_763c_4fda_93cd_a2db9dfc2dab
+:electrochemistry_52ac73c7_763c_4fda_93cd_a2db9dfc2dab rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Time interval during which the current is measured in pulse voltammetry."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.S05465"@en ;
+                                                       skos:prefLabel "SamplingInterval"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_52ac73c7_763c_4fda_93cd_a2db9dfc2dab ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "Time interval during which the current is measured in pulse voltammetry."@en ;
+   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -643,6 +805,27 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
  ] .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_601ff226_59b9_460b_90f5_2593450d96fa
+:electrochemistry_601ff226_59b9_460b_90f5_2593450d96fa rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                                         owl:someValuesFrom emmo:EMMO_2e7e5796_4a80_4d73_bb84_f31138446c0c
+                                                                       ] ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electric potential difference between two solutions separated by an ion-selective membrane in the absence of any electric current flowing through the membrane."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.M03825"@en ;
+                                                       skos:altLabel "Donnan potential"@en ,
+                                                                     "Membrane electromotive force"@en ;
+                                                       skos:prefLabel "MembranePotential"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_601ff226_59b9_460b_90f5_2593450d96fa ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "Electric potential difference between two solutions separated by an ion-selective membrane in the absence of any electric current flowing through the membrane."@en ;
+   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+ ] .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_60741c58_a10d_4aa6_bb68_0066a6ff8e30
 :electrochemistry_60741c58_a10d_4aa6_bb68_0066a6ff8e30 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_1cd1d777_e67b_47eb_81f1_edac35d9f2c6 ,
@@ -665,6 +848,26 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
  ] .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_63a8f9d2_0cf6_484d_b996_2e5c3f0a3c73
+:electrochemistry_63a8f9d2_0cf6_484d_b996_2e5c3f0a3c73 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                                         owl:someValuesFrom :electrochemistry_6e7c2081_284f_48f5_88fb_7d517243d4fa
+                                                                       ] ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Amount of a chemical modifier at an electrode surface per unit area."@en ;
+                                                       rdfs:comment "The total coverage may be distinguished from coverage that is electrochemically reactive or accessible on some given timescale."@en ;
+                                                       skos:altLabel "ElectrodeCoverage"@en ;
+                                                       skos:prefLabel "ElectrodeCoverageDensity"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_63a8f9d2_0cf6_484d_b996_2e5c3f0a3c73 ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "Amount of a chemical modifier at an electrode surface per unit area."@en ;
+   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+ ] .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_6d4f29e8_c0da_4c6e_93fc_ef422c0f9932
 :electrochemistry_6d4f29e8_c0da_4c6e_93fc_ef422c0f9932 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_b6da9be9_aa1d_4044_b030_4fcfefff5bf3 ,
@@ -677,6 +880,16 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        rdfs:subClassOf :electrochemistry_b6da9be9_aa1d_4044_b030_4fcfefff5bf3 ,
                                                                        emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845 ;
                                                        skos:prefLabel "UpperCutoffVoltage"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_6e7c2081_284f_48f5_88fb_7d517243d4fa
+:electrochemistry_6e7c2081_284f_48f5_88fb_7d517243d4fa rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_9895a1b4_f0a5_4167_ac5e_97db40b8bfcc ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ;
+                                                                         owl:hasValue "T0 L-2 M0 I0 Θ0 N+1 J0"
+                                                                       ] ;
+                                                       skos:prefLabel "AmountPerAreaDimension"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_74861991_7da2_4e0f_b6c1_b16713f538bf
@@ -722,6 +935,14 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
    owl:annotatedTarget "maximum electric current density that can be achieved for an electrode reaction at a given concentration of a electrochemically active material in the presence of a large excess of supporting electrolyte."@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_77f9d496_555e_4ae2_ae80_f297ef8335ca
+:electrochemistry_77f9d496_555e_4ae2_ae80_f297ef8335ca rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_f2ca6dd0_0e5f_4392_a92d_cafdae6cfc95 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Fundamental physical constant representing molar elementary charge."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.F02325"@en ;
+                                                       skos:prefLabel "FaradayConstant"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_791c1915_a791_4450_acd8_7f94764743b5
@@ -1108,6 +1329,22 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                        skos:prefLabel "CycleLife"@en .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_ae9882de_d6a2_4525_a84f_80947c10f1cb
+:electrochemistry_ae9882de_d6a2_4525_a84f_80947c10f1cb rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "In chronopotentiometry and related techniques, the duration between the application of current and when the concentration of an electroactive substance at the electrode-solution interface becomes indistinguishable from zero."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.T06472"@en ;
+                                                       rdfs:comment "In experimental practice, the latter is often taken to be the moment when the rate of varia- tion of the potential of the indicator electrode attains a maximum value."@en ;
+                                                       skos:prefLabel "TransitionTime"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_ae9882de_d6a2_4525_a84f_80947c10f1cb ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "In chronopotentiometry and related techniques, the duration between the application of current and when the concentration of an electroactive substance at the electrode-solution interface becomes indistinguishable from zero."@en ;
+   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+ ] .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112
 :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_79751276_b2d0_4e2f_bbd4_99d412f43d55 ;
@@ -1208,6 +1445,27 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                        rdfs:subClassOf :electrochemistry_97582777_3a8f_4f93_aff3_95b32c5acc63 ;
                                                        skos:altLabel "AnionTransportNumber"@en ;
                                                        skos:prefLabel "AnionTransferenceNumber"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_c4d551db_db17_4c33_92e6_aec71638afbc
+:electrochemistry_c4d551db_db17_4c33_92e6_aec71638afbc rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                                         owl:someValuesFrom emmo:EMMO_2e7e5796_4a80_4d73_bb84_f31138446c0c
+                                                                       ] ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "For dynamic voltammetric techniques, the electric potential of the working electrode at which the current is equal to one-half of the peak current."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.H02720"@en ;
+                                                       rdfs:comment "The quarter-peak potential, Ep/4, the three-quarter-peak potential, Ep3/4, etc., may be similarly defined."@en ,
+                                                                    "This term is used in techniques providing peak-shaped responses (linear scan voltammetry, cyclic voltammetry, AC voltammetry, differential pulse voltammetry, square-wave voltam- metry, stripping voltammetry, and derivative techniques)."@en ;
+                                                       skos:prefLabel "HalfPeakPotential"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_c4d551db_db17_4c33_92e6_aec71638afbc ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "For dynamic voltammetric techniques, the electric potential of the working electrode at which the current is equal to one-half of the peak current."@en ;
+   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+ ] .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_c55bcb85_b7b8_4e67_8a78_9a42fe25b6cf
@@ -1373,6 +1631,26 @@ In either case, the magnitude of the catalytic current depends on the applied po
  ] .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_e4a221e0_afc9_4464_91d4_e0c8ecdf79e8
+:electrochemistry_e4a221e0_afc9_4464_91d4_e0c8ecdf79e8 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                                         owl:someValuesFrom emmo:EMMO_2e7e5796_4a80_4d73_bb84_f31138446c0c
+                                                                       ] ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electrode potential of the working electrode at which the peak current is attained."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.P04464"@en ;
+                                                       rdfs:comment "This term is used in dynamic voltammetric techniques providing a peak-shaped current response (linear-sweep voltammetry, triangular-wave voltammetry, cyclic voltammetry, AC voltammetry, differential pulse voltammetry, square-wave voltammetry, stripping voltamme- try and derivative techniques)."@en ;
+                                                       skos:prefLabel "PeakPotential"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_e4a221e0_afc9_4464_91d4_e0c8ecdf79e8 ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "Electrode potential of the working electrode at which the peak current is attained."@en ;
+   rdfs:comment "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109."
+ ] .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_e4d666ee_d637_45cd_a904_dc33941ead4f
 :electrochemistry_e4d666ee_d637_45cd_a904_dc33941ead4f rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
@@ -1429,6 +1707,25 @@ In either case, the magnitude of the catalytic current depends on the applied po
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://goldbook.iupac.org/terms/view/M03777" ;
                                                        skos:altLabel "MeanExchangeCurrentDensity"@en ;
                                                        skos:prefLabel "ExchangeCurrentDensity"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_ecb6dfdf_bd3d_4339_8a1c_d32abbef30ba
+:electrochemistry_ecb6dfdf_bd3d_4339_8a1c_d32abbef30ba rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                                         owl:someValuesFrom emmo:EMMO_02e894c3_b793_4197_b120_3442e08f58d1
+                                                                       ] ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Duration of the sampling interval in pulse voltammetry."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.S05467"@en ;
+                                                       skos:prefLabel "SamplingTime"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_ecb6dfdf_bd3d_4339_8a1c_d32abbef30ba ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "Duration of the sampling interval in pulse voltammetry."@en ;
+   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+ ] .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_f0667139_6428_4e3d_ac0d_08c1dd7f36ea
@@ -1537,6 +1834,34 @@ In either case, the magnitude of the catalytic current depends on the applied po
    owl:annotatedTarget "The interfacial area, determined on the assumption that the interface is truly flat (2-dimensional) and calculated using the geometric data of the involved surfaces."@en ;
    dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_ff7797ed_9ef7_40d0_872b_2c215cd54578
+:electrochemistry_ff7797ed_9ef7_40d0_872b_2c215cd54578 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                                         owl:someValuesFrom emmo:EMMO_2e7e5796_4a80_4d73_bb84_f31138446c0c
+                                                                       ] ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electric potential of an ion-selective electrode (ISE) and activity of an analyte ion at which the potential of the ISE is independent of temperature."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.I03304"@en ;
+                                                       rdfs:comment "The specification of the ISE and outer reference electrode must be described."@en ,
+                                                                    "When an isothermal cell is used with identical internal and external reference electrodes, the isopotential point is the activity of sensed ions for which zero net membrane potential difference is measured, e.g., sensed ion activity is the same in the inner and outer (test) solution. Slopes of calibration plots for different cell temperatures are different, but inter- sect at a common activity point. Cells with temperature gradients are not recommended."@en ;
+                                                       skos:prefLabel "IsopotentialPoint"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_ff7797ed_9ef7_40d0_872b_2c215cd54578 ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "Electric potential of an ion-selective electrode (ISE) and activity of an analyte ion at which the potential of the ISE is independent of temperature."@en ;
+   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+ ] .
+
+
+###  http://emmo.info/emmo#EMMO_e501069c_34d3_4dc7_ac87_c90c7342192b
+emmo:EMMO_e501069c_34d3_4dc7_ac87_c90c7342192b rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                 owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ;
+                                                                 owl:hasValue "T0 L0 M0 I0 Θ0 N+1 J0"
+                                                               ] .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
