@@ -210,6 +210,14 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
                                                        skos:prefLabel "Discharging" .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_07ad0aff_ab59_442d_9c0a_7f8c5cba8982
+:electrochemistry_07ad0aff_ab59_442d_9c0a_7f8c5cba8982 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_10359c79_cdf2_401a_83ee_d22e7fbb2ad1 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Measurement principle in which the complex electric impedance of a system is measured, usually as a function of a small amplitude sinusoidal electrode potential."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
+                                                       skos:prefLabel "Impedimetry"@en .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_0838f0b6_ca9a_4f76_9770_ca964617bf1b
 :electrochemistry_0838f0b6_ca9a_4f76_9770_ca964617bf1b rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_f49b84d4_e1f9_424c_bb22_8cea23c0a7d4 ,
@@ -995,6 +1003,16 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
                                                        skos:prefLabel "AcidicElectrochemicalCell"@en .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_43ce1a7e_8056_40cb_bdbd_4ce991af1821
+:electrochemistry_43ce1a7e_8056_40cb_bdbd_4ce991af1821 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_07ad0aff_ab59_442d_9c0a_7f8c5cba8982 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electrochemical measurement principle based on the measurement of the dielectric constant of a sample resulting from the orientation of particles (molecules or ions) that have a dipole moment in an electric field."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
+                                                       rdfs:comment "Dielectrometric titrations use dielectrometry for the end-point detection."@en ,
+                                                                    "The method is used to monitor the purity of dielectrics, for example to detect small amounts of moisture."@en ;
+                                                       skos:prefLabel "Dielectrometry"@en .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_444992e5_43f8_44a1_9767_b408dbe54330
 :electrochemistry_444992e5_43f8_44a1_9767_b408dbe54330 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_19abaccd_43be_4048_965c_e4fb63c5951b ;
@@ -1451,6 +1469,16 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A type of reference electrode based on the reaction between sliver and silver chloride."@en ;
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Silver_chloride_electrode"@en ;
                                                        skos:prefLabel "SilverChlorideElectrode"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_6f0dc7c0_ba12_4390_9564_f10f85a1779a
+:electrochemistry_6f0dc7c0_ba12_4390_9564_f10f85a1779a rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_5a0f3b6a_10b4_43a7_b0b6_4eb5c077980e ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "DC polarography with current sampling at the end of each drop life mechanically enforced by a knocker at a preset drop time value. The current sampling and mechanical drop dislodge are synchronized."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
+                                                       rdfs:comment "In this way, the ratio of faradaic current to double layer charging current is enhanced and the negative influence of charging current is partially eliminated. Due to the improved signal (faradaic current) to noise (charging current) ratio, the limit of detection is lowered."@en ;
+                                                       skos:altLabel "TASTPolarography"@en ;
+                                                       skos:prefLabel "SampledDCPolarography"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_6f2c88c9_5c04_4953_a298_032cc3ab9b77
@@ -2320,6 +2348,16 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                                        skos:prefLabel "AsymmetricMembrane"@en .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_b3a6d552_b38e_47ad_9d48_e8b77035d63e
+:electrochemistry_b3a6d552_b38e_47ad_9d48_e8b77035d63e rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_10359c79_cdf2_401a_83ee_d22e7fbb2ad1 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Measurement principle in which the electric conductivity of a solution is measured."@en ;
+                                                       emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "Monitoring of the purity of deionized water."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
+                                                       rdfs:comment "The conductivity of a solution depends on the concentration and nature of ions present."@en ;
+                                                       skos:prefLabel "Conductometry"@en .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_b3e56313_417c_42b7_a934_0018ce2dffc2
 :electrochemistry_b3e56313_417c_42b7_a934_0018ce2dffc2 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ;
@@ -2637,7 +2675,11 @@ of other configurations are used."""@en ;
 
 ###  http://emmo.info/electrochemistry#electrochemistry_d30d9de0_b9bf_4919_a022_0394df9c3672
 :electrochemistry_d30d9de0_b9bf_4919_a022_0394df9c3672 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_f49b84d4_e1f9_424c_bb22_8cea23c0a7d4 ;
+                                                       rdfs:subClassOf :electrochemistry_07ad0aff_ab59_442d_9c0a_7f8c5cba8982 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electrochemical measurement method of the complex impedance of an electrochemical system as a function of the frequency of a small amplitude (normally 5 to 10 mV) sinusoidal voltage perturbation superimposed on a fixed value of applied potential or on the open circuit potential."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
+                                                       rdfs:comment "Impedimetric sensors are based on measurement of a concentration-dependent parameter taken from analysis of the respective electrochemical impedance spectra, or from the impedance magnitudes at a chosen fixed frequency."@en ,
+                                                                    "The sinusoidal current response lags behind the sinusoidal voltage perturbation by a phase angle φ. Resistances (e.g. to charge transfer) give a response in phase with the voltage perturbation; capacitances (e.g. double layer) give a response 90° out of phase; combinations of resistances and capacitances give phase angles between 0 and 90°. Plots of the out of phase vs. the in phase component of the impedance for all the frequencies tested are called complex plane (or Nyquist) plots. Plots of the phase angle and the magnitude of the impedance vs. the logarithm of perturbation frequency are called Bode diagrams. Complex plane plots are the more commonly used for electrochemical sensors."@en ;
                                                        skos:altLabel "EIS"@en ;
                                                        skos:prefLabel "ElectrochemicalImpedanceSpectroscopy"@en .
 
@@ -2870,6 +2912,17 @@ of other configurations are used."""@en ;
    owl:annotatedTarget "Electrochemical cell in which electrical energy is converted into chemical energy."@en ;
    dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_e9639083_e9c5_4d0a_97e8_be1e139c179f
+:electrochemistry_e9639083_e9c5_4d0a_97e8_be1e139c179f rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_b3a6d552_b38e_47ad_9d48_e8b77035d63e ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Titration in which the electric conductivity of a solution is measured as a function of the amount of titrant added."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
+                                                       rdfs:comment "The equivalence-point is obtained as the intersection of linear parts of the conductance G, versus titrant volume V, curve (see"@en ,
+                                                                    "The method can be used for deeply coloured or turbid solutions. Acid-base and precipita- tion reactions are most frequently used."@en ,
+                                                                    "The method is based on replacing an ionic species of the analyte with another species, cor- responding to the titrant or the product with significantly different conductance."@en ;
+                                                       skos:prefLabel "ConductometricTitration"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_ebdb68e9_c4b5_4d57_a042_c0f51d446755
@@ -3142,138 +3195,9 @@ of other configurations are used."""@en ;
                                                        skos:prefLabel "NernstEquation"@en .
 
 
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
 ] .
 
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
@@ -3289,15 +3213,6 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
@@ -3320,6 +3235,15 @@ of other configurations are used."""@en ;
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -3337,7 +3261,136 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
