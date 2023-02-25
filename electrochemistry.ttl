@@ -527,7 +527,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Coulometry at an imposed, constant current in the electrochemical cell."@en ;
                                                        rdfs:comment "Direct coulometry at controlled current is usually carried out in convective mass transfer mode. The end-point of the electrolysis, at which the current is stopped, must be determined either from the inflection point in the E–t curve or by using visual or objective end-point indi- cation, similar to volumetric methods. The total electric charge is calculated as the product of the constant current and time of electrolysis or can be measured directly using a coulometer."@en ,
                                                                     "The advantage of this method is that the electric charge consumed during the electrode reaction is directly proportional to the electrolysis time. Care must be taken to avoid the potential region where another electrode reaction may occur."@en ;
-                                                       skos:prefLabel "DIrectCoulometryAtControlledCurrent"@en .
+                                                       skos:prefLabel "DirectCoulometryAtControlledCurrent"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_183a2337_c35f_4b74_8d9a_08c74d89bedc
@@ -1105,21 +1105,6 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
  ] .
 
 
-###  http://emmo.info/electrochemistry#electrochemistry_4f51db30_bed6_4b6e_86ae_191abbe6a325
-:electrochemistry_4f51db30_bed6_4b6e_86ae_191abbe6a325 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_5dc0c44e_6fdc_49fc_8654_b8b2d75d0d2d ;
-                                                       emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-04-12" ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "method of electroanalytical chemistry based on measurement of an electrode potential."@en ;
-                                                       skos:prefLabel "Potentiometry"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource :electrochemistry_4f51db30_bed6_4b6e_86ae_191abbe6a325 ;
-   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-   owl:annotatedTarget "method of electroanalytical chemistry based on measurement of an electrode potential."@en ;
-   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
- ] .
-
-
 ###  http://emmo.info/electrochemistry#electrochemistry_50044b99_b858_433b_a32d_23d1e1cf88b2
 :electrochemistry_50044b99_b858_433b_a32d_23d1e1cf88b2 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_b5ea31c9_bb10_4276_980e_c3eceb1efc82 ;
@@ -1400,7 +1385,7 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
                                                                                                       "Hall effect applied to the measurement of magnetic flux density."@en ,
                                                                                                       "Thermoelectric effect applied to the measurement of temperature."@en ;
                                                        rdfs:comment "The phenomenon can be of a physical, chemical, or biological nature."@en ;
-                                                       skos:altLabel "principle of measurement"@en ;
+                                                       skos:altLabel "PrincipleOfMeasurement"@en ;
                                                        skos:prefLabel "MeasurementPrinciple"@en .
 
 
@@ -2303,7 +2288,7 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                                                     "The scan is usually started at a potential where no electrode reaction occurs."@en ;
                                                        skos:altLabel "LSV"@en ,
                                                                      "LinearPolarization"@en ,
-                                                                     "linear-sweep voltammetry"@en ;
+                                                                     "LinearSweepVoltammetry"@en ;
                                                        skos:prefLabel "LinearScanVoltammetry"@en .
 
 
@@ -2337,13 +2322,6 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
    owl:annotatedTarget "model representing the structure of an electrolyte at an electrode-electrolyte interface by a rigid layer formed by the charge carriers on the surface of the electrode and a diffuse layer formed by mobile ions in the electrolyte."@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
-
-
-###  http://emmo.info/electrochemistry#electrochemistry_ae4cc90d_59ba_4b8e_9ce3_cf1af22cee48
-:electrochemistry_ae4cc90d_59ba_4b8e_9ce3_cf1af22cee48 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_d73c0822_f2eb_4241_b81a_0bc334f3139f ;
-                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
-                                                       skos:prefLabel "CathodicStrippingVoltammetry"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
@@ -2770,14 +2748,6 @@ of other configurations are used."""@en ;
  ] .
 
 
-###  http://emmo.info/electrochemistry#electrochemistry_d73c0822_f2eb_4241_b81a_0bc334f3139f
-:electrochemistry_d73c0822_f2eb_4241_b81a_0bc334f3139f rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Two-step electrochemical measurement in which 1) material is accumulated at an electrode and 2) the amount of an accumulated species is measured by voltammetry. The measured electric current in step 2 is related to the concentration of analyte in the solution by calibration."@en ;
-                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109" ;
-                                                       skos:prefLabel "StrippingVoltammetry"@en .
-
-
 ###  http://emmo.info/electrochemistry#electrochemistry_d8413c07_1c47_4450_ac05_e3350b4c7600
 :electrochemistry_d8413c07_1c47_4450_ac05_e3350b4c7600 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_213ac5da_3931_43a4_a1ce_fd0a8b42ae58 ;
@@ -2889,24 +2859,14 @@ of other configurations are used."""@en ;
                                                        skos:prefLabel "CapacityFade"@en .
 
 
-###  http://emmo.info/electrochemistry#electrochemistry_e583cf67_3e79_469f_87e3_ab68f1a0a962
-:electrochemistry_e583cf67_3e79_469f_87e3_ab68f1a0a962 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_d73c0822_f2eb_4241_b81a_0bc334f3139f ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Stripping voltammetry involving pre-concentration by adsorption of the analyte (in contrast to electro- chemical accumulation)."@en ;
-                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
-                                                       rdfs:comment "A peak-shaped adsorptive stripping voltammogram is obtained. Peak current depends on time of accumulation, mass transport of analyte (stirring), scan rate and mode (linear or pulse), and analyte concentration in solution."@en ,
-                                                                    "AdSV is usually employed for analysis of organic compounds or metal complexes with organic ligands. Stripping is done by means of an anodic or a cathodic voltammetric scan (linear or pulse), during which the adsorbed compound is oxidized or reduced."@en ;
-                                                       skos:altLabel "AdSV"@en ;
-                                                       skos:prefLabel "AdsorptiveStrippingVoltammetry"@en .
-
-
 ###  http://emmo.info/electrochemistry#electrochemistry_e8cedede_5685_4625_9abe_64f62b5ddcb6
 :electrochemistry_e8cedede_5685_4625_9abe_64f62b5ddcb6 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_10359c79_cdf2_401a_83ee_d22e7fbb2ad1 ,
                                                                        :electrochemistry_64bf0969_37a1_4aaf_82e9_68462847ac65 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electrochemical measurement principle where the potential difference between an indicator electrode and a reference electrode is measured."@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
-                                                       rdfs:comment "For measurements using ion-selective electrodes, the measurement is made under equi- librium conditions what means that the macroscopic electric current is zero and the con- centrations of all species are uniform throughout the solution. The indicator electrode is in direct contact with the analyte solution, whereas the reference electrode is usually separated from the analyte solution by a salt bridge. The potential difference between the indicator and reference electrodes is normally directly proportional to the logarithm of the activity (concentration) of the analyte in the solution (Nernst equation). See also ion selec- tive electrode."@en ;
+                                                       rdfs:comment "For measurements using ion-selective electrodes, the measurement is made under equi- librium conditions what means that the macroscopic electric current is zero and the con- centrations of all species are uniform throughout the solution. The indicator electrode is in direct contact with the analyte solution, whereas the reference electrode is usually separated from the analyte solution by a salt bridge. The potential difference between the indicator and reference electrodes is normally directly proportional to the logarithm of the activity (concentration) of the analyte in the solution (Nernst equation). See also ion selec- tive electrode."@en ,
+                                                                    "Method of electroanalytical chemistry based on measurement of an electrode potential."@en ;
                                                        skos:prefLabel "Potentiometry"@en .
 
 
@@ -3055,16 +3015,6 @@ of other configurations are used."""@en ;
 :electrochemistry_f54474fc_5d07_474b_97ae_f5d0349363b4 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_95e4aa95_b7e9_40d7_b78e_4d7dcc31093d ;
                                                        skos:prefLabel "HybridFlowCell"@en .
-
-
-###  http://emmo.info/electrochemistry#electrochemistry_f5ac05fe_3065_467f_8a60_c7108f12e3f8
-:electrochemistry_f5ac05fe_3065_467f_8a60_c7108f12e3f8 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_d73c0822_f2eb_4241_b81a_0bc334f3139f ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Stripping voltammetry in which material accumulated at the working electrode is electrochemically oxi- dized in the stripping step."@en ;
-                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
-                                                       rdfs:comment "A peak-shaped anodic stripping voltammogram is obtained. Peak current depends on time of accumulation, mass transport of analyte (stirring), scan rate and mode (linear or pulse), and analyte concentration in solution."@en ,
-                                                                    "A solid electrode, carbon paste or composite electrode, bismuth film electrode, mercury film electrode, or static mercury drop electrode may be used."@en ;
-                                                       skos:prefLabel "AnodicStrippingVoltammetry"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_f6341d7d_7620_48f5_97b2_99b55c349169
@@ -3224,169 +3174,13 @@ of other configurations are used."""@en ;
                                                        skos:prefLabel "NernstEquation"@en .
 
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
 ] .
 
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -3410,6 +3204,54 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
@@ -3417,6 +3259,114 @@ of other configurations are used."""@en ;
  ] .
 
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
