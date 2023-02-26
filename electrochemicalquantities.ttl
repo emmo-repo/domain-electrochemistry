@@ -134,6 +134,12 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
  ] .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_09e64707_a17d_4405_84cc_ee9d91ed32ef
+:electrochemistry_09e64707_a17d_4405_84cc_ee9d91ed32ef rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ;
+                                                       skos:prefLabel "VoltageChangeLimit"@en .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_0c9655c6_6b0b_4819_a219_f286ad196fa9
 :electrochemistry_0c9655c6_6b0b_4819_a219_f286ad196fa9 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_4a450a27_b84a_4c70_a3a9_15ec30e2f30b ,
@@ -655,6 +661,13 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        skos:prefLabel "DropTimeInPolarography"@en .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_4b62d40a_8e17_47cb_b169_32e7c48233fc
+:electrochemistry_4b62d40a_8e17_47cb_b169_32e7c48233fc rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_637ee9c4_4b3f_4d3a_975b_c0572dfe53ce ,
+                                                                       :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ;
+                                                       skos:prefLabel "SetCurrent"@en .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d
 :electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
@@ -836,6 +849,13 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
  ] .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_637ee9c4_4b3f_4d3a_975b_c0572dfe53ce
+:electrochemistry_637ee9c4_4b3f_4d3a_975b_c0572dfe53ce rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88 ;
+                                                       rdfs:comment "Electric current flowing to or from an electrochemical cell."@en ;
+                                                       skos:prefLabel "CellCurrent"@en .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_63a8f9d2_0cf6_484d_b996_2e5c3f0a3c73
 :electrochemistry_63a8f9d2_0cf6_484d_b996_2e5c3f0a3c73 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
@@ -857,13 +877,6 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
  ] .
 
 
-###  http://emmo.info/electrochemistry#electrochemistry_6d4f29e8_c0da_4c6e_93fc_ef422c0f9932
-:electrochemistry_6d4f29e8_c0da_4c6e_93fc_ef422c0f9932 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ,
-                                                                       emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88 ;
-                                                       skos:prefLabel "ChargeCutoffCurrent"@en .
-
-
 ###  http://emmo.info/electrochemistry#electrochemistry_6dcd5baf_58cd_43f5_a692_51508e036c88
 :electrochemistry_6dcd5baf_58cd_43f5_a692_51508e036c88 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ,
@@ -879,6 +892,12 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                                            ] ;
                                                        rdfs:subClassOf emmo:EMMO_9895a1b4_f0a5_4167_ac5e_97db40b8bfcc ;
                                                        skos:prefLabel "AmountPerAreaDimension"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_71f10616_15eb_4dc4_bc8d_ffaac3838af2
+:electrochemistry_71f10616_15eb_4dc4_bc8d_ffaac3838af2 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ;
+                                                       skos:prefLabel "CurrentChangeLimit"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_74861991_7da2_4e0f_b6c1_b16713f538bf
@@ -1000,6 +1019,13 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://goldbook.iupac.org/terms/view/E01945" ;
                                                        rdfs:comment "Of a substance in a specified phase, the partial molar Gibbs energy of the substance at the specified electric potential."@en ;
                                                        skos:prefLabel "MolarElectrochemicalPotential"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_8427071b_3a01_44b8_9090_5ae0d98675b5
+:electrochemistry_8427071b_3a01_44b8_9090_5ae0d98675b5 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d ,
+                                                                       :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ;
+                                                       skos:prefLabel "SetVoltage"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_86324806_4263_4d80_b5af_1a7be844ab5b
@@ -1603,7 +1629,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
 
 ###  http://emmo.info/electrochemistry#electrochemistry_e4d666ee_d637_45cd_a904_dc33941ead4f
 :electrochemistry_e4d666ee_d637_45cd_a904_dc33941ead4f rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ,
+                                                       rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88 ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-24"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electric current delivered by a battery during its discharge."@en ;
