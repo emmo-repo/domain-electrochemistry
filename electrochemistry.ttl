@@ -198,7 +198,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 :electrochemistry_0838f0b6_ca9a_4f76_9770_ca964617bf1b rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_5548f188_df00_4c05_ae98_7846e92efe36 ,
                                                                        [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty emmo:EMMO_d43af210_f854_4432_a891_ce3022e3b558 ;
+                                                                         owl:onProperty emmo:EMMO_e3850f08_8e79_454b_9d83_c517cab42857 ;
                                                                          owl:someValuesFrom :electrochemistry_cb3c0663_5962_4b79_8e72_1e8242af3977
                                                                        ] ;
                                                        skos:altLabel "IntermittentCurrentInterruptionMethod"@en ;
@@ -344,7 +344,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 
 ###  http://emmo.info/electrochemistry#electrochemistry_11895d59_3f97_4bad_badf_1a90f2347c2a
 :electrochemistry_11895d59_3f97_4bad_badf_1a90f2347c2a rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_78a8f60b_10c2_41ee_9946_d35437e1edb5 ,
+                                                       rdfs:subClassOf :electrochemistry_5548f188_df00_4c05_ae98_7846e92efe36 ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_e3850f08_8e79_454b_9d83_c517cab42857 ;
                                                                          owl:someValuesFrom :electrochemistry_53fe3f58_0802_41cf_af69_4784fc42cc30
@@ -992,7 +992,11 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
 ###  http://emmo.info/electrochemistry#electrochemistry_53fe3f58_0802_41cf_af69_4784fc42cc30
 :electrochemistry_53fe3f58_0802_41cf_af69_4784fc42cc30 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_06d8e1ee_924a_4915_998d_33a69f41dadc ,
-                                                                       :electrochemistry_78a8f60b_10c2_41ee_9946_d35437e1edb5 ;
+                                                                       :electrochemistry_78a8f60b_10c2_41ee_9946_d35437e1edb5 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_0aa934ee_1ad4_4345_8a7f_bc73ec67c7e5 ;
+                                                                         owl:someValuesFrom :electrochemistry_534dd59c_904c_45d9_8550_ae9d2eb6bbc9
+                                                                       ] ;
                                                        owl:disjointWith :electrochemistry_9865e4f9_756d_4d94_a6fd_4102ab795f9e ;
                                                        skos:altLabel "GalvanostaticDischarging"@en ;
                                                        skos:prefLabel "ConstantCurrentDischarging"@en .
@@ -1487,10 +1491,28 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 :electrochemistry_78a8f60b_10c2_41ee_9946_d35437e1edb5 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_5548f188_df00_4c05_ae98_7846e92efe36 ,
                                                                        [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_0aa934ee_1ad4_4345_8a7f_bc73ec67c7e5 ;
+                                                                         owl:someValuesFrom :electrochemistry_4b62d40a_8e17_47cb_b169_32e7c48233fc
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
                                                                          owl:someValuesFrom :electrochemistry_22725105_c941_4b14_a4a2_fcb627958607
                                                                        ] ;
                                                        skos:prefLabel "GalvanostaticProcess"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_79a8802e_8296_459a_b65d_6e5c79e1bf37
+:electrochemistry_79a8802e_8296_459a_b65d_6e5c79e1bf37 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_d3e2d213_d078_4b9a_8beb_62f063e57d69 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_e3850f08_8e79_454b_9d83_c517cab42857 ;
+                                                                         owl:someValuesFrom :electrochemistry_53fe3f58_0802_41cf_af69_4784fc42cc30
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_e3850f08_8e79_454b_9d83_c517cab42857 ;
+                                                                         owl:someValuesFrom :electrochemistry_83f2b1e9_cb67_4dbf_977f_ba54bbae374f
+                                                                       ] ;
+                                                       skos:prefLabel "GalvanostaticCycling"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_79d1b273-58cd-4be6-a250-434817f7c261
@@ -1605,7 +1627,11 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 ###  http://emmo.info/electrochemistry#electrochemistry_83f2b1e9_cb67_4dbf_977f_ba54bbae374f
 :electrochemistry_83f2b1e9_cb67_4dbf_977f_ba54bbae374f rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_78a8f60b_10c2_41ee_9946_d35437e1edb5 ,
-                                                                       :electrochemistry_a9873d3d_945b_40ba_b9cd_8dfb64cec88f ;
+                                                                       :electrochemistry_a9873d3d_945b_40ba_b9cd_8dfb64cec88f ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_0aa934ee_1ad4_4345_8a7f_bc73ec67c7e5 ;
+                                                                         owl:someValuesFrom :electrochemistry_6dcd5baf_58cd_43f5_a692_51508e036c88
+                                                                       ] ;
                                                        skos:altLabel "GalvanostaticCharging"@en ;
                                                        skos:prefLabel "ConstantCurrentCharging"@en .
 
@@ -1872,16 +1898,16 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_a0580fa9_5073_44af_b33e_7adbc83892d0 ;
-   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-   owl:annotatedTarget "Electrode reaction in which oxidation occurs at the anode."@en ;
-   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "An electrode reaction, when the energy of electrons in the working electrode is lower than the HOMO orbital of the substrate."@en ;
+   dcterms:source "A. J. Bard, G. Inzelt, and F. Scholz, Eds., Electrochemical Dictionary, 2nd Edition. Berlin: Springer-Verlag, 2012. DOI: https://doi.org/10.1007/978-3-642-29551-5"
  ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_a0580fa9_5073_44af_b33e_7adbc83892d0 ;
-   owl:annotatedProperty rdfs:comment ;
-   owl:annotatedTarget "An electrode reaction, when the energy of electrons in the working electrode is lower than the HOMO orbital of the substrate."@en ;
-   dcterms:source "A. J. Bard, G. Inzelt, and F. Scholz, Eds., Electrochemical Dictionary, 2nd Edition. Berlin: Springer-Verlag, 2012. DOI: https://doi.org/10.1007/978-3-642-29551-5"
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "Electrode reaction in which oxidation occurs at the anode."@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
 
 
@@ -2078,6 +2104,20 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
    owl:annotatedTarget "Measuring instrument for electric current that controls the potential difference between a working electrode and a reference electrode and measures the electric current between a working electrode and an auxiliary electrode."@en ;
    dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_ac6c2371_995a_4fcb_89a2_15cb6615741e
+:electrochemistry_ac6c2371_995a_4fcb_89a2_15cb6615741e rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_d3e2d213_d078_4b9a_8beb_62f063e57d69 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_e3850f08_8e79_454b_9d83_c517cab42857 ;
+                                                                         owl:someValuesFrom :electrochemistry_0cc8f231_0ce5_467e_9c76_29b2c80349ad
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_e3850f08_8e79_454b_9d83_c517cab42857 ;
+                                                                         owl:someValuesFrom :electrochemistry_53fe3f58_0802_41cf_af69_4784fc42cc30
+                                                                       ] ;
+                                                       skos:prefLabel "CCCVCycling"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_ac9723d1_bac0_4109_874e_32849de9299b
@@ -2408,6 +2448,10 @@ of other configurations are used."""@en ;
 ###  http://emmo.info/electrochemistry#electrochemistry_cb3c0663_5962_4b79_8e72_1e8242af3977
 :electrochemistry_cb3c0663_5962_4b79_8e72_1e8242af3977 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_78a8f60b_10c2_41ee_9946_d35437e1edb5 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_0aa934ee_1ad4_4345_8a7f_bc73ec67c7e5 ;
+                                                                         owl:someValuesFrom :electrochemistry_09e64707_a17d_4405_84cc_ee9d91ed32ef
+                                                                       ] ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_d43af210_f854_4432_a891_ce3022e3b558 ;
                                                                          owl:someValuesFrom :electrochemistry_825a749f_dd07_46fb_947c_db286440911e
@@ -2954,60 +2998,6 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
 ] .
 
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
@@ -3017,34 +3007,7 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
@@ -3059,9 +3022,27 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
@@ -3069,12 +3050,6 @@ of other configurations are used."""@en ;
  ] .
 
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -3101,7 +3076,55 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
@@ -3116,6 +3139,12 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
@@ -3128,25 +3157,40 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
