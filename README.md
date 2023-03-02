@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/570454941.svg)](https://zenodo.org/badge/latestdoi/570454941)
+
 <!-- markdownlint-disable MD033 -->
 
 # Electrochemistry Domain Ontology
