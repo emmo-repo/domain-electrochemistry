@@ -14,6 +14,7 @@
                                                                owl:versionIRI <http://emmo.info/electrochemistry/0.3.0/electrochemicalquantities.ttl> ;
                                                                owl:imports <http://emmo.info/emmo/1.0.0-beta4/disciplines/isq_big_map> ,
 									   <http://emmo.info/emmo/1.0.0-beta4/disciplines/units_big_map> ,
+									   <http://emmo.info/emmo/1.0.0-beta4/disciplines/computerscience_big_map> ,
                                                                            <http://emmo.info/emmo/reference/1.0.0-beta3> ;
                                                                dcterms:abstract """Everything needed to describe fundamental quantities in electrochemistry common to all electrochemical systems.
 
