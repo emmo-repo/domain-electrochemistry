@@ -28,6 +28,12 @@
 #    Classes
 #################################################################
 
+###  http://emmo.info/emmo#EMMO_0b25693d_c8e1_48c7_8330_18a45e4877ec
+<http://emmo.info/emmo#EMMO_0b25693d_c8e1_48c7_8330_18a45e4877ec> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145> ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Record"@en .
+
+
 ###  http://emmo.info/emmo#EMMO_69d3a7c6_fb3e_4aa8_aec9_f4c1508ca4dd
 <http://emmo.info/emmo#EMMO_69d3a7c6_fb3e_4aa8_aec9_f4c1508ca4dd> rdf:type owl:Class ;
                                                                   rdfs:subClassOf <http://emmo.info/emmo#EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145> ;
