@@ -3284,30 +3284,202 @@ of other configurations are used."""@en ;
                                                        skos:prefLabel "Manganese"@en .
 
 
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+###  https://emmo.info/electrochemistry#electrochemistry_09b9a369_2228_44bd_9b63_8abecfec8650
+<https://emmo.info/electrochemistry#electrochemistry_09b9a369_2228_44bd_9b63_8abecfec8650> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
+                                                                                                             owl:someValuesFrom emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88
+                                                                                                           ] ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Linear current ramp followed by a reversal to the initial current (typically I=0), both at the same current change rate."@en ;
+                                                                                           skos:prefLabel "TriangularCurrentWaveform"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_0d3e8340_4229_4fd3_b6dd_763bd566551d
+<https://emmo.info/electrochemistry#electrochemistry_0d3e8340_4229_4fd3_b6dd_763bd566551d> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
+                                                                                                             owl:someValuesFrom emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845
+                                                                                                           ] ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Input signal consisting of a constant applied potential."@en ;
+                                                                                           skos:prefLabel "ConstantPotentialSignal"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_0e33278b_639f_412d_9abd_64c3790026ef
+<https://emmo.info/electrochemistry#electrochemistry_0e33278b_639f_412d_9abd_64c3790026ef> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
+                                                                                                             owl:someValuesFrom emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845
+                                                                                                           ] ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Periodic potential where the amplitude alternates at a steady frequency between fixed minimum and maximum values, with the same duration at minimum and maximum."@en ;
+                                                                                           skos:prefLabel "SquareWavePotentialWaveform"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_210f3520_1ea3_4c86_aa89_4cd9a3bc5a5a
+<https://emmo.info/electrochemistry#electrochemistry_210f3520_1ea3_4c86_aa89_4cd9a3bc5a5a> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
+                                                                                                             owl:someValuesFrom emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845
+                                                                                                           ] ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Square wave potential waveform superimposed to a linear potential ramp or a staircase potential ramp."@en ;
+                                                                                           skos:prefLabel "SquareWaveVoltammetryWaveform"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_29f2a35a_8c09_429d_b9e8_33f3e1fc3671
+<https://emmo.info/electrochemistry#electrochemistry_29f2a35a_8c09_429d_b9e8_33f3e1fc3671> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
+                                                                                                             owl:someValuesFrom emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845
+                                                                                                           ] ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Input signal where the potential is varied linearly from an initial potential."@en ;
+                                                                                           skos:prefLabel "LinearPotentialRamp"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_2dd44ff6_425a_4377_b86e_fa2bd567819f
+<https://emmo.info/electrochemistry#electrochemistry_2dd44ff6_425a_4377_b86e_fa2bd567819f> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
+                                                                                                             owl:someValuesFrom emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845
+                                                                                                           ] ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Sinusoidal alternating potential of small amplitude (10 to 50 mV) of constant frequency (10 Hz to 100 kHz)"@en ;
+                                                                                           skos:prefLabel "PotentialPulse"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_40ca9548_910a_48b6_9a26_f94095d349cd
+<https://emmo.info/electrochemistry#electrochemistry_40ca9548_910a_48b6_9a26_f94095d349cd> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
+                                                                                                             owl:someValuesFrom emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88
+                                                                                                           ] ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Input signal consisting of a constant applied current."@en ;
+                                                                                           skos:prefLabel "ConstantCurrentSignal"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_58a20764_c339_4856_983a_05092b5282e8
+<https://emmo.info/electrochemistry#electrochemistry_58a20764_c339_4856_983a_05092b5282e8> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
+                                                                                                             owl:someValuesFrom emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845
+                                                                                                           ] ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Sinusoidal potential waveform superimposed to a linear potential ramp."@en ;
+                                                                                           skos:prefLabel "ACVoltammetrySignal"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_626f81db_ae4e_410a_96b8_0582aa2a9434
+<https://emmo.info/electrochemistry#electrochemistry_626f81db_ae4e_410a_96b8_0582aa2a9434> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
+                                                                                                             owl:someValuesFrom emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88
+                                                                                                           ] ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Successive current steps that form a signal with a staircase waveform."@en ;
+                                                                                           skos:prefLabel "StaircaseCurrentRamp"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_77be01ef_49bd_4f2e_bec8_eec0894b8562
+<https://emmo.info/electrochemistry#electrochemistry_77be01ef_49bd_4f2e_bec8_eec0894b8562> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
+                                                                                                             owl:someValuesFrom emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845
+                                                                                                           ] ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Potential pulses of amplitude increasing by a constant increment and with a pulse width of 2 to 200 ms are superimposed on a constant initial potential."@en ;
+                                                                                           skos:prefLabel "IncreasingPotentialPulses"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_84d37a37_88bd_47db_9425_31f73a81d38c
+<https://emmo.info/electrochemistry#electrochemistry_84d37a37_88bd_47db_9425_31f73a81d38c> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
+                                                                                                             owl:someValuesFrom emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845
+                                                                                                           ] ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Input signal consisting of a constant applied current."@en ;
+                                                                                           skos:prefLabel "ConstantPotentialPulses"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c
+<https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf emmo:EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490 ,
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
+                                                                                                             owl:someValuesFrom emmo:EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7
+                                                                                                           ] ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Time dependent variation of a quantity, imposed to an electrochemical system in order to generate a measurable response."@en ;
+                                                                                           skos:prefLabel "ElectrochemicalInputSignal"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_96fb2db5_9ce7_4218_98b6_7a2cfdb074d0
+<https://emmo.info/electrochemistry#electrochemistry_96fb2db5_9ce7_4218_98b6_7a2cfdb074d0> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf emmo:EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490 ;
+                                                                                           skos:prefLabel "ElectrochemicalOutputSignal"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_b49e2355_392f_4e83_b630_7ff4581d767b
+<https://emmo.info/electrochemistry#electrochemistry_b49e2355_392f_4e83_b630_7ff4581d767b> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
+                                                                                                             owl:someValuesFrom emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845
+                                                                                                           ] ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Short pulses of potential superimposed to  a linear potential ramp or a staircase potential ramp."@en ;
+                                                                                           skos:prefLabel "DifferentialPotentialPulse"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_c74bb11c_e875_4112_b9cf_00d0890ef1f5
+<https://emmo.info/electrochemistry#electrochemistry_c74bb11c_e875_4112_b9cf_00d0890ef1f5> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
+                                                                                                             owl:someValuesFrom emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845
+                                                                                                           ] ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Sinusoidal alternating potential of small amplitude (10 to 50 mV) of constant frequency (10 Hz to 100 kHz)."@en ;
+                                                                                           skos:prefLabel "SinusoidalPotentialWaveform"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_d359386f_ae2d_4ad4_9616_464e2111b67d
+<https://emmo.info/electrochemistry#electrochemistry_d359386f_ae2d_4ad4_9616_464e2111b67d> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
+                                                                                                             owl:someValuesFrom emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845
+                                                                                                           ] ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Successive potential steps that form a staircase waveform."@en ;
+                                                                                           skos:prefLabel "StaircasePotentialRamp"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_f9af8440_3629_4558_a944_9dfaf3dfd7ec
+<https://emmo.info/electrochemistry#electrochemistry_f9af8440_3629_4558_a944_9dfaf3dfd7ec> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
+                                                                                                             owl:someValuesFrom emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845
+                                                                                                           ] ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Linear potential ramp followed by a reversal to the initial potential. Both forward and reversed signal ramps are applied at the same scan rate."@en ;
+                                                                                           skos:prefLabel "TriangularPotentialWaveform"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_fa774456_718a_4a28_ba6a_6f828887c510
+<https://emmo.info/electrochemistry#electrochemistry_fa774456_718a_4a28_ba6a_6f828887c510> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
+                                                                                                             owl:someValuesFrom emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88
+                                                                                                           ] ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Input signal where the current is varied linearly from an initial current, tipically 0 A."@en ;
+                                                                                           skos:prefLabel "LinearCurrentRamp"@en .
+
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
 ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
@@ -3315,78 +3487,6 @@ of other configurations are used."""@en ;
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
@@ -3402,117 +3502,6 @@ of other configurations are used."""@en ;
  ] .
 
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -3536,16 +3525,7 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -3555,6 +3535,15 @@ of other configurations are used."""@en ;
  ] .
 
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
@@ -3567,6 +3556,210 @@ of other configurations are used."""@en ;
  ] .
 
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
