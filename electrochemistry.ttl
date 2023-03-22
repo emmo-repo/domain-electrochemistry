@@ -1614,6 +1614,10 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
 :electrochemistry_729a1064_d039_4b74_9d1d_759b18a3971c rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_3fe63496_6d87_427a_b2aa_4555bc31ee1a ,
                                                                        [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_0aa934ee_1ad4_4345_8a7f_bc73ec67c7e5 ;
+                                                                         owl:someValuesFrom :electrochemistry_fa01b7ce_c398_45f7_be8b_31a6f6533767
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
                                                                          owl:someValuesFrom <https://emmo.info/electrochemistry#electrochemistry_2dd44ff6_425a_4377_b86e_fa2bd567819f>
                                                                        ] ;
