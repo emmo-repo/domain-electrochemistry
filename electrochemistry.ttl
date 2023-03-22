@@ -136,7 +136,15 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 
 ###  http://emmo.info/electrochemistry#electrochemistry_008201ec_1e44_47a9_bc50_644ed07489ea
 :electrochemistry_008201ec_1e44_47a9_bc50_644ed07489ea rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_10359c79_cdf2_401a_83ee_d22e7fbb2ad1 ;
+                                                       rdfs:subClassOf :electrochemistry_10359c79_cdf2_401a_83ee_d22e7fbb2ad1 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                                         owl:someValuesFrom <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c>
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d ;
+                                                                         owl:someValuesFrom emmo:EMMO_ed4af7ae_63a2_497e_bb88_2309619ea405
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Gravimetry in which the material to be weighed is obtained by electrochemical reaction."@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
                                                        rdfs:comment "The electrolysis can be performed by controlling current or electrode potential or, in the simple two-electrode arrangement, controlling the potential difference between the two electrodes."@en ,
@@ -162,7 +170,11 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 
 ###  http://emmo.info/electrochemistry#electrochemistry_042d2282_bd2d_4874_b896_2d9dd06b54dd
 :electrochemistry_042d2282_bd2d_4874_b896_2d9dd06b54dd rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ;
+                                                       rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                                         owl:someValuesFrom <https://emmo.info/electrochemistry#electrochemistry_210f3520_1ea3_4c86_aa89_4cd9a3bc5a5a>
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Voltammetry in which a square-wave potential waveform is superimposed on an underlying linearly varying potential ramp or staircase ramp. The current is sampled just before the end of the forward- going pulse and of the backward-going pulse and the difference of the two sampled currents is plotted versus the applied potential of the potential or staircase ramp. The square-wave voltammogram is peak- shaped."@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
                                                        rdfs:comment "Most instruments show plots of the current at the end of the forward-going pulse and of the backward-going pulse vs. the potential, as well as their difference. This can give valuable information on the kinetics of the electrode reaction and the electrode process."@en ,
@@ -224,7 +236,11 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 ###  http://emmo.info/electrochemistry#electrochemistry_07ad0aff_ab59_442d_9c0a_7f8c5cba8982
 :electrochemistry_07ad0aff_ab59_442d_9c0a_7f8c5cba8982 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_10359c79_cdf2_401a_83ee_d22e7fbb2ad1 ,
-                                                                       :electrochemistry_64bf0969_37a1_4aaf_82e9_68462847ac65 ;
+                                                                       :electrochemistry_64bf0969_37a1_4aaf_82e9_68462847ac65 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d ;
+                                                                         owl:someValuesFrom emmo:EMMO_79a02de5_b884_4eab_bc18_f67997d597a2
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Measurement principle in which the complex electric impedance of a system is measured, usually as a function of a small amplitude sinusoidal electrode potential."@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
                                                        skos:prefLabel "Impedimetry"@en .
@@ -257,7 +273,11 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 
 ###  http://emmo.info/electrochemistry#electrochemistry_0b1f77b8_2349_4433_b440_43dc84a2210f
 :electrochemistry_0b1f77b8_2349_4433_b440_43dc84a2210f rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ;
+                                                       rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                                         owl:someValuesFrom <https://emmo.info/electrochemistry#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7>
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electrochemical method where traces of solid particles are abrasively transferred onto the surface of an electrode, followed by an electrochemical dissolution (anodic or cathodic dissolution) that is recorded as a current–voltage curve."@en ;
                                                        skos:prefLabel "AbrasiveStrippingVoltammetry"@en .
 
@@ -353,7 +373,11 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 
 ###  http://emmo.info/electrochemistry#electrochemistry_10359c79_cdf2_401a_83ee_d22e7fbb2ad1
 :electrochemistry_10359c79_cdf2_401a_83ee_d22e7fbb2ad1 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_f49b84d4_e1f9_424c_bb22_8cea23c0a7d4 ;
+                                                       rdfs:subClassOf :electrochemistry_f49b84d4_e1f9_424c_bb22_8cea23c0a7d4 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                                         owl:someValuesFrom :electrochemistry_0acd0fc2_1048_4604_8e90_bf4e84bd87df
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Analytical methods in which electrochemical processes or phenomena are the core of the measurement principle involving electrochemical cells providing qualitative and quantitative responses."@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"^^xsd:anyURI ;
                                                        skos:prefLabel "ElectroanalyticalTechnique"@en .
@@ -506,7 +530,11 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 
 ###  http://emmo.info/electrochemistry#electrochemistry_180878b5_8de8_4dd8_b881_1d0bebe326d4
 :electrochemistry_180878b5_8de8_4dd8_b881_1d0bebe326d4 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_6e439f86_3d00_4b0b_82ab_1fa25241d4e9 ;
+                                                       rdfs:subClassOf :electrochemistry_6e439f86_3d00_4b0b_82ab_1fa25241d4e9 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                                         owl:someValuesFrom <https://emmo.info/electrochemistry#electrochemistry_40ca9548_910a_48b6_9a26_f94095d349cd>
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Coulometry at an imposed, constant current in the electrochemical cell."@en ;
                                                        rdfs:comment "Direct coulometry at controlled current is usually carried out in convective mass transfer mode. The end-point of the electrolysis, at which the current is stopped, must be determined either from the inflection point in the E–t curve or by using visual or objective end-point indi- cation, similar to volumetric methods. The total electric charge is calculated as the product of the constant current and time of electrolysis or can be measured directly using a coulometer."@en ,
                                                                     "The advantage of this method is that the electric charge consumed during the electrode reaction is directly proportional to the electrolysis time. Care must be taken to avoid the potential region where another electrode reaction may occur."@en ;
@@ -545,7 +573,11 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 
 ###  http://emmo.info/electrochemistry#electrochemistry_1a7fb32a_743f_4aa6_ac5a_ff7a2ba29dce
 :electrochemistry_1a7fb32a_743f_4aa6_ac5a_ff7a2ba29dce rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_008201ec_1e44_47a9_bc50_644ed07489ea ;
+                                                       rdfs:subClassOf :electrochemistry_008201ec_1e44_47a9_bc50_644ed07489ea ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                                         owl:someValuesFrom :electrochemistry_6202d0be_2dcf_4ec3_8952_bca183ce4e87
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electrogravimetry using an electrochemical quartz crystal microbalance."@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
                                                        rdfs:comment "The change of mass is, for rigid deposits, linearly proportional to the change of the reso- nance frequency of the quartz crystal, according to the Sauerbrey equation. For non- rigid deposits, corrections must be made."@en ;
@@ -634,7 +666,11 @@ Aluminum foil"""@en ;
 ###  http://emmo.info/electrochemistry#electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62
 :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_46957d35_0f8b_4d92_acb3_aded6ce774a1 ,
-                                                                       :electrochemistry_64bf0969_37a1_4aaf_82e9_68462847ac65 ;
+                                                                       :electrochemistry_64bf0969_37a1_4aaf_82e9_68462847ac65 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d ;
+                                                                         owl:someValuesFrom <https://emmo.info/electrochemistry#electrochemistry_904b12e0_4a10_47b0_b7db_592aba215cb6>
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electrochemical measurement principle in which the electrode potential of a working electrode is controlled and the electric current measured."@en ;
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Voltammetry" ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
@@ -754,7 +790,11 @@ Aluminum foil"""@en ;
 
 ###  http://emmo.info/electrochemistry#electrochemistry_2f96eb3e_4115_4236_9203_525fb27fe92d
 :electrochemistry_2f96eb3e_4115_4236_9203_525fb27fe92d rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ;
+                                                       rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                                         owl:someValuesFrom <https://emmo.info/electrochemistry#electrochemistry_f9af8440_3629_4558_a944_9dfaf3dfd7ec>
+                                                                       ] ;
                                                        emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "https://dbpedia.org/page/Cyclic_voltammetry"^^xsd:anyURI ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Voltammetry in which the electric current is recorded as the electrode potential is varied with time cycli- cally between two potential limits, normally at a constant scan rate."@en ;
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Cyclic_voltammetry"^^xsd:anyURI ;
@@ -826,7 +866,11 @@ Aluminum foil"""@en ;
 
 ###  http://emmo.info/electrochemistry#electrochemistry_39536efc_22a6_4f39_b0c2_e8b845a36278
 :electrochemistry_39536efc_22a6_4f39_b0c2_e8b845a36278 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_6e439f86_3d00_4b0b_82ab_1fa25241d4e9 ;
+                                                       rdfs:subClassOf :electrochemistry_6e439f86_3d00_4b0b_82ab_1fa25241d4e9 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                                         owl:someValuesFrom <https://emmo.info/electrochemistry#electrochemistry_0d3e8340_4229_4fd3_b6dd_763bd566551d>
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Coulometry at a preselected constant potential of the working electrode."@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
                                                        rdfs:comment "Direct coulometry at controlled potential is usually carried out in convective mass trans- fer mode using a large surface working electrode. Reference and auxiliary electrodes are placed in separate compartments. The total electric charge is obtained by integration of the I–t curve or can be measured directly using a coulometer."@en ,
@@ -852,7 +896,11 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
 
 ###  http://emmo.info/electrochemistry#electrochemistry_3b35e843_3132_41e3_b6df_541cd45ba880
 :electrochemistry_3b35e843_3132_41e3_b6df_541cd45ba880 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ;
+                                                       rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                                         owl:someValuesFrom <https://emmo.info/electrochemistry#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7>
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Two-step electrochemical measurement in which 1) material is accumulated at an electrode and 2) the amount of an accumulated species is measured by voltammetry. The measured electric current in step 2 is related to the concentration of analyte in the solution by calibration."@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
                                                        rdfs:comment "Anodic stripping voltammetry (ASV) was historically used to measure concentrations of metal ions in solution using cathodic accumulation with mercury to form an amalgam. Due to the toxicity of mercury and its compounds, inductively coupled plasma optical emission spectrometry and inductively coupled plasma mass spectrometry have frequently replaced ASV at mercury electrodes in the laboratory, often sacrificing the probing of speciation and lability in complex matrices. Mercury has now been replaced by non-toxic bismuth or anti- mony as films on a solid electrode support (such as glassy carbon) with equally good sensi- tivity and detection limits."@en ,
@@ -865,7 +913,11 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
 
 ###  http://emmo.info/electrochemistry#electrochemistry_3c3972f6_8e1d_454b_a198_48173ba2232b
 :electrochemistry_3c3972f6_8e1d_454b_a198_48173ba2232b rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ;
+                                                       rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                                         owl:someValuesFrom <https://emmo.info/electrochemistry#electrochemistry_77be01ef_49bd_4f2e_bec8_eec0894b8562>
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Voltammetry in which potential pulses of amplitude increasing by a constant increment and with a pulse width of 2 to 200 ms are superimposed on a constant initial potential."@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
                                                        rdfs:comment "Normal pulse polarography is NPV in which a dropping mercury electrode is used as the working electrode. A pulse is applied just before the mechanically enforced end of the drop. The pulse width is usually 10 to 20 % of the drop time. The drop dislodgment is synchro- nized with current sampling, which is carried out just before the end of the pulse, as in NPV."@en ,
@@ -915,7 +967,11 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
 
 ###  http://emmo.info/electrochemistry#electrochemistry_3fe63496_6d87_427a_b2aa_4555bc31ee1a
 :electrochemistry_3fe63496_6d87_427a_b2aa_4555bc31ee1a rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_10359c79_cdf2_401a_83ee_d22e7fbb2ad1 ;
+                                                       rdfs:subClassOf :electrochemistry_10359c79_cdf2_401a_83ee_d22e7fbb2ad1 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d ;
+                                                                         owl:someValuesFrom <https://emmo.info/electrochemistry#electrochemistry_904b12e0_4a10_47b0_b7db_592aba215cb6>
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electrochemical measurement principle based on measurement of current at a controlled applied potential."@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
                                                        rdfs:comment "Amperometry can be distinguished from voltammetry by the parameter being controlled (electrode potential E) and the parameter being measured (electrode current I which is usually a function of time – see chronoamperometry)."@en ,
@@ -955,7 +1011,11 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
 ###  http://emmo.info/electrochemistry#electrochemistry_43ce1a7e_8056_40cb_bdbd_4ce991af1821
 :electrochemistry_43ce1a7e_8056_40cb_bdbd_4ce991af1821 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_10359c79_cdf2_401a_83ee_d22e7fbb2ad1 ,
-                                                                       :electrochemistry_64bf0969_37a1_4aaf_82e9_68462847ac65 ;
+                                                                       :electrochemistry_64bf0969_37a1_4aaf_82e9_68462847ac65 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d ;
+                                                                         owl:someValuesFrom emmo:EMMO_0ee5779e_d798_4ee5_9bfe_c392d5bea112
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electrochemical measurement principle based on the measurement of the dielectric constant of a sample resulting from the orientation of particles (molecules or ions) that have a dipole moment in an electric field."@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
                                                        rdfs:comment "Dielectrometric titrations use dielectrometry for the end-point detection."@en ,
@@ -1164,7 +1224,11 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
 
 ###  http://emmo.info/electrochemistry#electrochemistry_5a0f3b6a_10b4_43a7_b0b6_4eb5c077980e
 :electrochemistry_5a0f3b6a_10b4_43a7_b0b6_4eb5c077980e rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ;
+                                                       rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                                         owl:someValuesFrom <https://emmo.info/electrochemistry#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7>
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Linear scan voltammetry with slow scan rate in which a dropping mercury electrode is used as the working electrode."@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
                                                        rdfs:comment "If the whole scan is performed on a single growing drop, the technique should be called single drop scan voltammetry. The term polarography in this context is discouraged."@en ,
@@ -1323,7 +1387,11 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
 
 ###  http://emmo.info/electrochemistry#electrochemistry_63dec5af_f3e9_46c9_8b0c_82516231d96b
 :electrochemistry_63dec5af_f3e9_46c9_8b0c_82516231d96b rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_e8cedede_5685_4625_9abe_64f62b5ddcb6 ;
+                                                       rdfs:subClassOf :electrochemistry_e8cedede_5685_4625_9abe_64f62b5ddcb6 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                                         owl:someValuesFrom <https://emmo.info/electrochemistry#electrochemistry_904b12e0_4a10_47b0_b7db_592aba215cb6>
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Potentiometry in which the potential is measured with time following a change in applied current."@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
                                                        rdfs:comment "The change in applied current is usually a step, but cyclic current reversals or linearly increasing currents are also used."@en ;
@@ -1435,7 +1503,11 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
 ###  http://emmo.info/electrochemistry#electrochemistry_6e439f86_3d00_4b0b_82ab_1fa25241d4e9
 :electrochemistry_6e439f86_3d00_4b0b_82ab_1fa25241d4e9 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_10359c79_cdf2_401a_83ee_d22e7fbb2ad1 ,
-                                                                       :electrochemistry_64bf0969_37a1_4aaf_82e9_68462847ac65 ;
+                                                                       :electrochemistry_64bf0969_37a1_4aaf_82e9_68462847ac65 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d ;
+                                                                         owl:someValuesFrom <https://emmo.info/electrochemistry#electrochemistry_276cfa84_3cc0_40c0_9f6a_57a3b776f47c>
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electrochemical measurement principle in which the electric charge required to carry out a known electrochemical reaction is measured. By Faraday’s laws of electrolysis, the amount of substance is proportional to the charge."@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
                                                        rdfs:comment "Coulometry used to measure the amount of substance is a primary reference measurement procedure [VIM 2.8] not requiring calibration with a standard for a quantity of the same kind (i.e. amount of substance)."@en ,
@@ -1540,7 +1612,11 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
 
 ###  http://emmo.info/electrochemistry#electrochemistry_729a1064_d039_4b74_9d1d_759b18a3971c
 :electrochemistry_729a1064_d039_4b74_9d1d_759b18a3971c rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_3fe63496_6d87_427a_b2aa_4555bc31ee1a ;
+                                                       rdfs:subClassOf :electrochemistry_3fe63496_6d87_427a_b2aa_4555bc31ee1a ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                                         owl:someValuesFrom <https://emmo.info/electrochemistry#electrochemistry_2dd44ff6_425a_4377_b86e_fa2bd567819f>
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Amperometry in which the current is measured as a function of time after a change in the applied potential."@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
                                                        rdfs:comment "If the potential step is from a potential at which no current flows (i.e., at which the oxidation or reduction of the electrochemically active species does not take place) to one at which the current is limited by diffusion (see diffusion-limited current), the current obeys the Cottrell equation."@en ;
@@ -1927,7 +2003,11 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 ###  http://emmo.info/electrochemistry#electrochemistry_8ca00b45_5ba6_48a0_aaf6_abd959a7238b
 :electrochemistry_8ca00b45_5ba6_48a0_aaf6_abd959a7238b rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ,
-                                                                       :electrochemistry_40e3bde2_77d6_4251_9781_8f6e6fa7a160 ;
+                                                                       :electrochemistry_40e3bde2_77d6_4251_9781_8f6e6fa7a160 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                                         owl:someValuesFrom <https://emmo.info/electrochemistry#electrochemistry_58a20764_c339_4856_983a_05092b5282e8>
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Voltammetry in which a sinusoidal alternating potential of small amplitude (10 to 50 mV) of constant frequency (10 Hz to 100 kHz) is superimposed on a slowly and linearly varying potential ramp."@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
                                                        rdfs:comment "The resulting alternating current is plotted versus imposed DC potential. The obtained AC voltammogram is peak-shaped."@en ;
@@ -2068,16 +2148,16 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_a0580fa9_5073_44af_b33e_7adbc83892d0 ;
-   owl:annotatedProperty rdfs:comment ;
-   owl:annotatedTarget "An electrode reaction, when the energy of electrons in the working electrode is lower than the HOMO orbital of the substrate."@en ;
-   dcterms:source "A. J. Bard, G. Inzelt, and F. Scholz, Eds., Electrochemical Dictionary, 2nd Edition. Berlin: Springer-Verlag, 2012. DOI: https://doi.org/10.1007/978-3-642-29551-5"
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "Electrode reaction in which oxidation occurs at the anode."@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_a0580fa9_5073_44af_b33e_7adbc83892d0 ;
-   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-   owl:annotatedTarget "Electrode reaction in which oxidation occurs at the anode."@en ;
-   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "An electrode reaction, when the energy of electrons in the working electrode is lower than the HOMO orbital of the substrate."@en ;
+   dcterms:source "A. J. Bard, G. Inzelt, and F. Scholz, Eds., Electrochemical Dictionary, 2nd Edition. Berlin: Springer-Verlag, 2012. DOI: https://doi.org/10.1007/978-3-642-29551-5"
  ] .
 
 
@@ -2254,7 +2334,11 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 
 ###  http://emmo.info/electrochemistry#electrochemistry_a9f19bb0_55bc_4908_b0e4_7888077b0019
 :electrochemistry_a9f19bb0_55bc_4908_b0e4_7888077b0019 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ;
+                                                       rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                                         owl:someValuesFrom <https://emmo.info/electrochemistry#electrochemistry_29f2a35a_8c09_429d_b9e8_33f3e1fc3671>
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Voltammetry in which the current is recorded as the electrode potential is varied linearly with time."@en ;
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Linear_sweep_voltammetry"^^xsd:anyURI ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
@@ -2367,7 +2451,11 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 ###  http://emmo.info/electrochemistry#electrochemistry_b3a6d552_b38e_47ad_9d48_e8b77035d63e
 :electrochemistry_b3a6d552_b38e_47ad_9d48_e8b77035d63e rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_10359c79_cdf2_401a_83ee_d22e7fbb2ad1 ,
-                                                                       :electrochemistry_64bf0969_37a1_4aaf_82e9_68462847ac65 ;
+                                                                       :electrochemistry_64bf0969_37a1_4aaf_82e9_68462847ac65 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d ;
+                                                                         owl:someValuesFrom emmo:EMMO_cde4368c_1d4d_4c94_8548_604749523c6d
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Measurement principle in which the electric conductivity of a solution is measured."@en ;
                                                        emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "Monitoring of the purity of deionized water."@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
@@ -2377,7 +2465,11 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 
 ###  http://emmo.info/electrochemistry#electrochemistry_b3e56313_417c_42b7_a934_0018ce2dffc2
 :electrochemistry_b3e56313_417c_42b7_a934_0018ce2dffc2 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ;
+                                                       rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                                         owl:someValuesFrom <https://emmo.info/electrochemistry#electrochemistry_b49e2355_392f_4e83_b630_7ff4581d767b>
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Voltammetry in which small potential pulses (constant height 10 to 100 mV, constant width 10 to 100 ms) are superimposed onto a linearly varying potential or onto a staircase potential ramp. The current is sampled just before the onset of the pulse (e.g. 10 to 20 ms) and for the same sampling time just before the end of the pulse. The difference between the two sampled currents is plotted versus the potential applied before the pulse. Thus, a differential pulse voltammogram is peak-shaped."@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
                                                        rdfs:comment "Differential pulse polarography is differential pulse voltammetry in which a dropping mercury electrode is used as the working electrode. A pulse is applied before the mechani- cally enforced end of the drop and the current is sampled twice: just before the onset of the pulse and just before its end. The pulse width is usually 10 to 20 % of the drop life. The drop dislodgement is synchronized with current sampling, which is carried out as in DPV."@en ,
@@ -2795,7 +2887,11 @@ of other configurations are used."""@en ;
 
 ###  http://emmo.info/electrochemistry#electrochemistry_d95fdd2e_38bf_4065_a857_78eb201ee166
 :electrochemistry_d95fdd2e_38bf_4065_a857_78eb201ee166 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ;
+                                                       rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                                         owl:someValuesFrom <https://emmo.info/electrochemistry#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7>
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Voltammetry with forced flow of the solution towards the electrode surface."@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
                                                        rdfs:comment "A linear potential scan, at sufficiently slow scan rates so as to ensure a steady state response, is usually applied."@en ,
@@ -2927,7 +3023,11 @@ of other configurations are used."""@en ;
 ###  http://emmo.info/electrochemistry#electrochemistry_e8cedede_5685_4625_9abe_64f62b5ddcb6
 :electrochemistry_e8cedede_5685_4625_9abe_64f62b5ddcb6 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_10359c79_cdf2_401a_83ee_d22e7fbb2ad1 ,
-                                                                       :electrochemistry_64bf0969_37a1_4aaf_82e9_68462847ac65 ;
+                                                                       :electrochemistry_64bf0969_37a1_4aaf_82e9_68462847ac65 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d ;
+                                                                         owl:someValuesFrom <https://emmo.info/electrochemistry#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7>
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electrochemical measurement principle where the potential difference between an indicator electrode and a reference electrode is measured."@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
                                                        rdfs:comment "For measurements using ion-selective electrodes, the measurement is made under equi- librium conditions what means that the macroscopic electric current is zero and the con- centrations of all species are uniform throughout the solution. The indicator electrode is in direct contact with the analyte solution, whereas the reference electrode is usually separated from the analyte solution by a salt bridge. The potential difference between the indicator and reference electrodes is normally directly proportional to the logarithm of the activity (concentration) of the analyte in the solution (Nernst equation). See also ion selec- tive electrode."@en ,
@@ -3076,11 +3176,7 @@ of other configurations are used."""@en ;
 
 ###  http://emmo.info/electrochemistry#electrochemistry_f49b84d4_e1f9_424c_bb22_8cea23c0a7d4
 :electrochemistry_f49b84d4_e1f9_424c_bb22_8cea23c0a7d4 rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ,
-                                                                       [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
-                                                                         owl:someValuesFrom :electrochemistry_0acd0fc2_1048_4604_8e90_bf4e84bd87df
-                                                                       ] ;
+                                                       rdfs:subClassOf emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
                                                        skos:prefLabel "ElectrochemicalMethod"@en .
 
 
@@ -3150,7 +3246,11 @@ of other configurations are used."""@en ;
 
 ###  http://emmo.info/electrochemistry#electrochemistry_f91c9ae3_42b8_4efa_9b67_a406d162d3b5
 :electrochemistry_f91c9ae3_42b8_4efa_9b67_a406d162d3b5 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_6e439f86_3d00_4b0b_82ab_1fa25241d4e9 ;
+                                                       rdfs:subClassOf :electrochemistry_6e439f86_3d00_4b0b_82ab_1fa25241d4e9 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                                         owl:someValuesFrom <https://emmo.info/electrochemistry#electrochemistry_2dd44ff6_425a_4377_b86e_fa2bd567819f>
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Direct coulometry at controlled potential in which the electric charge passed after the application of a potential step perturbation is measured as a function of time (Q-t curve)."@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
                                                        rdfs:comment "Chronocoulometry provides the same information that is provided by chronoamperometry, since it is based on the integration of the I-t curve. Nevertheless, chronocoulometry offers important experimental advantages, such as (i) the measured signal usually increases with time and hence the later parts of the transient can be detected more accurately, (ii) a better signal-to-noise ratio can be achieved, and (iii) other contributions to overall charge passed as a function of time can be discriminated from those due to the diffusion of electroactive substances."@en ;
@@ -3286,84 +3386,91 @@ of other configurations are used."""@en ;
 
 ###  https://emmo.info/electrochemistry#electrochemistry_09b9a369_2228_44bd_9b63_8abecfec8650
 <https://emmo.info/electrochemistry#electrochemistry_09b9a369_2228_44bd_9b63_8abecfec8650> rdf:type owl:Class ;
-                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
-                                                                                                           [ rdf:type owl:Restriction ;
-                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
-                                                                                                             owl:someValuesFrom emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88
-                                                                                                           ] ;
-                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Linear current ramp followed by a reversal to the initial current (typically I=0), both at the same current change rate."@en ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_904b12e0_4a10_47b0_b7db_592aba215cb6> ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Linear ramp of electric current followed by a reversal to the initial current (typically I=0), both at the same current change rate."@en ;
                                                                                            skos:prefLabel "TriangularCurrentWaveform"@en .
 
 
-###  https://emmo.info/electrochemistry#electrochemistry_0d3e8340_4229_4fd3_b6dd_763bd566551d
-<https://emmo.info/electrochemistry#electrochemistry_0d3e8340_4229_4fd3_b6dd_763bd566551d> rdf:type owl:Class ;
+###  https://emmo.info/electrochemistry#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7
+<https://emmo.info/electrochemistry#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7> rdf:type owl:Class ;
                                                                                            rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
                                                                                                            [ rdf:type owl:Restriction ;
                                                                                                              owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
                                                                                                              owl:someValuesFrom emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845
                                                                                                            ] ;
-                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Input signal consisting of a constant applied potential."@en ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Time-dependent variation of electric potential"@en ;
+                                                                                           skos:prefLabel "ElectricPotentialSignal"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_0d3e8340_4229_4fd3_b6dd_763bd566551d
+<https://emmo.info/electrochemistry#electrochemistry_0d3e8340_4229_4fd3_b6dd_763bd566551d> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7> ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Signal consisting of a constant electric potential."@en ;
                                                                                            skos:prefLabel "ConstantPotentialSignal"@en .
 
 
 ###  https://emmo.info/electrochemistry#electrochemistry_0e33278b_639f_412d_9abd_64c3790026ef
 <https://emmo.info/electrochemistry#electrochemistry_0e33278b_639f_412d_9abd_64c3790026ef> rdf:type owl:Class ;
-                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
-                                                                                                           [ rdf:type owl:Restriction ;
-                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
-                                                                                                             owl:someValuesFrom emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845
-                                                                                                           ] ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7> ;
                                                                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Periodic potential where the amplitude alternates at a steady frequency between fixed minimum and maximum values, with the same duration at minimum and maximum."@en ;
+                                                                                           rdfs:comment "In an ideal square wave, the transitions between minimum and maximum are instantaneous."@en ;
                                                                                            skos:prefLabel "SquareWavePotentialWaveform"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <https://emmo.info/electrochemistry#electrochemistry_0e33278b_639f_412d_9abd_64c3790026ef> ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "Periodic potential where the amplitude alternates at a steady frequency between fixed minimum and maximum values, with the same duration at minimum and maximum."@en ;
+   dcterms:source "https://en.wikipedia.org/wiki/Square_wave"
+ ] .
 
 
 ###  https://emmo.info/electrochemistry#electrochemistry_210f3520_1ea3_4c86_aa89_4cd9a3bc5a5a
 <https://emmo.info/electrochemistry#electrochemistry_210f3520_1ea3_4c86_aa89_4cd9a3bc5a5a> rdf:type owl:Class ;
-                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
-                                                                                                           [ rdf:type owl:Restriction ;
-                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
-                                                                                                             owl:someValuesFrom emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845
-                                                                                                           ] ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7> ;
                                                                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Square wave potential waveform superimposed to a linear potential ramp or a staircase potential ramp."@en ;
                                                                                            skos:prefLabel "SquareWaveVoltammetryWaveform"@en .
 
 
+###  https://emmo.info/electrochemistry#electrochemistry_276cfa84_3cc0_40c0_9f6a_57a3b776f47c
+<https://emmo.info/electrochemistry#electrochemistry_276cfa84_3cc0_40c0_9f6a_57a3b776f47c> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Time-dependent variation of electric charge passed through a system."@en ;
+                                                                                           skos:prefLabel "ElectricChargeSignal"@en .
+
+
 ###  https://emmo.info/electrochemistry#electrochemistry_29f2a35a_8c09_429d_b9e8_33f3e1fc3671
 <https://emmo.info/electrochemistry#electrochemistry_29f2a35a_8c09_429d_b9e8_33f3e1fc3671> rdf:type owl:Class ;
-                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
-                                                                                                           [ rdf:type owl:Restriction ;
-                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
-                                                                                                             owl:someValuesFrom emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845
-                                                                                                           ] ;
-                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Input signal where the potential is varied linearly from an initial potential."@en ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7> ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Signal where the electric potential is varied linearly from an initial potential."@en ;
                                                                                            skos:prefLabel "LinearPotentialRamp"@en .
 
 
 ###  https://emmo.info/electrochemistry#electrochemistry_2dd44ff6_425a_4377_b86e_fa2bd567819f
 <https://emmo.info/electrochemistry#electrochemistry_2dd44ff6_425a_4377_b86e_fa2bd567819f> rdf:type owl:Class ;
-                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
-                                                                                                           [ rdf:type owl:Restriction ;
-                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
-                                                                                                             owl:someValuesFrom emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845
-                                                                                                           ] ;
-                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Sinusoidal alternating potential of small amplitude (10 to 50 mV) of constant frequency (10 Hz to 100 kHz)"@en ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7> ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Rapid, transient change in the amplitude of an electric potential, from a baseline value to a higer or lower value, followed by a rapid return to the baseline value."@en ;
                                                                                            skos:prefLabel "PotentialPulse"@en .
 
 
 ###  https://emmo.info/electrochemistry#electrochemistry_40ca9548_910a_48b6_9a26_f94095d349cd
 <https://emmo.info/electrochemistry#electrochemistry_40ca9548_910a_48b6_9a26_f94095d349cd> rdf:type owl:Class ;
-                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
-                                                                                                           [ rdf:type owl:Restriction ;
-                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
-                                                                                                             owl:someValuesFrom emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88
-                                                                                                           ] ;
-                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Input signal consisting of a constant applied current."@en ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_904b12e0_4a10_47b0_b7db_592aba215cb6> ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Signal consisting of a constant electric current."@en ;
+                                                                                           skos:altLabel "DC"@en ;
                                                                                            skos:prefLabel "ConstantCurrentSignal"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_46676855_68b0_4096_ac6c_35400111d46d
+<https://emmo.info/electrochemistry#electrochemistry_46676855_68b0_4096_ac6c_35400111d46d> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_ddade648_2033_47b6_bc36_b562a9af591e> ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Plot of the time-dependent amount of electric charge passed through an electrochemical system due to the application of a electric potential."@en ;
+                                                                                           skos:altLabel "QtCurve"@en ;
+                                                                                           skos:prefLabel "ChargeTimeCurve"@en .
 
 
 ###  https://emmo.info/electrochemistry#electrochemistry_58a20764_c339_4856_983a_05092b5282e8
 <https://emmo.info/electrochemistry#electrochemistry_58a20764_c339_4856_983a_05092b5282e8> rdf:type owl:Class ;
-                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7> ,
                                                                                                            [ rdf:type owl:Restriction ;
                                                                                                              owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
                                                                                                              owl:someValuesFrom emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845
@@ -3374,34 +3481,29 @@ of other configurations are used."""@en ;
 
 ###  https://emmo.info/electrochemistry#electrochemistry_626f81db_ae4e_410a_96b8_0582aa2a9434
 <https://emmo.info/electrochemistry#electrochemistry_626f81db_ae4e_410a_96b8_0582aa2a9434> rdf:type owl:Class ;
-                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
-                                                                                                           [ rdf:type owl:Restriction ;
-                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
-                                                                                                             owl:someValuesFrom emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88
-                                                                                                           ] ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_904b12e0_4a10_47b0_b7db_592aba215cb6> ;
                                                                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Successive current steps that form a signal with a staircase waveform."@en ;
                                                                                            skos:prefLabel "StaircaseCurrentRamp"@en .
 
 
+###  https://emmo.info/electrochemistry#electrochemistry_712c791a_d593_4732_af73_493f7bc50999
+<https://emmo.info/electrochemistry#electrochemistry_712c791a_d593_4732_af73_493f7bc50999> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_904b12e0_4a10_47b0_b7db_592aba215cb6> ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Rapid, transient change in the amplitude of an electric current, from a baseline value to a higer or lower value, followed by a rapid return to the baseline value."@en ;
+                                                                                           skos:prefLabel "CurrentPulse"@en .
+
+
 ###  https://emmo.info/electrochemistry#electrochemistry_77be01ef_49bd_4f2e_bec8_eec0894b8562
 <https://emmo.info/electrochemistry#electrochemistry_77be01ef_49bd_4f2e_bec8_eec0894b8562> rdf:type owl:Class ;
-                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
-                                                                                                           [ rdf:type owl:Restriction ;
-                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
-                                                                                                             owl:someValuesFrom emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845
-                                                                                                           ] ;
-                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Potential pulses of amplitude increasing by a constant increment and with a pulse width of 2 to 200 ms are superimposed on a constant initial potential."@en ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7> ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Pulses of electric potential, of amplitude increasing by a constant increment and with a pulse width of 2 to 200 ms, which are superimposed on a constant initial potential."@en ;
                                                                                            skos:prefLabel "IncreasingPotentialPulses"@en .
 
 
 ###  https://emmo.info/electrochemistry#electrochemistry_84d37a37_88bd_47db_9425_31f73a81d38c
 <https://emmo.info/electrochemistry#electrochemistry_84d37a37_88bd_47db_9425_31f73a81d38c> rdf:type owl:Class ;
-                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
-                                                                                                           [ rdf:type owl:Restriction ;
-                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
-                                                                                                             owl:someValuesFrom emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845
-                                                                                                           ] ;
-                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Input signal consisting of a constant applied current."@en ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7> ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Signal consisting of successive pulses of electric potential of the same magnitude."@en ;
                                                                                            skos:prefLabel "ConstantPotentialPulses"@en .
 
 
@@ -3412,89 +3514,155 @@ of other configurations are used."""@en ;
                                                                                                              owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
                                                                                                              owl:someValuesFrom emmo:EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7
                                                                                                            ] ;
-                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Time dependent variation of a quantity, imposed to an electrochemical system in order to generate a measurable response."@en ;
-                                                                                           skos:prefLabel "ElectrochemicalInputSignal"@en .
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Time dependent variation of an electric quantity."@en ;
+                                                                                           skos:prefLabel "ElectricSignal"@en .
 
 
-###  https://emmo.info/electrochemistry#electrochemistry_96fb2db5_9ce7_4218_98b6_7a2cfdb074d0
-<https://emmo.info/electrochemistry#electrochemistry_96fb2db5_9ce7_4218_98b6_7a2cfdb074d0> rdf:type owl:Class ;
-                                                                                           rdfs:subClassOf emmo:EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490 ;
-                                                                                           skos:prefLabel "ElectrochemicalOutputSignal"@en .
-
-
-###  https://emmo.info/electrochemistry#electrochemistry_b49e2355_392f_4e83_b630_7ff4581d767b
-<https://emmo.info/electrochemistry#electrochemistry_b49e2355_392f_4e83_b630_7ff4581d767b> rdf:type owl:Class ;
-                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
-                                                                                                           [ rdf:type owl:Restriction ;
-                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
-                                                                                                             owl:someValuesFrom emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845
-                                                                                                           ] ;
-                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Short pulses of potential superimposed to  a linear potential ramp or a staircase potential ramp."@en ;
-                                                                                           skos:prefLabel "DifferentialPotentialPulse"@en .
-
-
-###  https://emmo.info/electrochemistry#electrochemistry_c74bb11c_e875_4112_b9cf_00d0890ef1f5
-<https://emmo.info/electrochemistry#electrochemistry_c74bb11c_e875_4112_b9cf_00d0890ef1f5> rdf:type owl:Class ;
-                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
-                                                                                                           [ rdf:type owl:Restriction ;
-                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
-                                                                                                             owl:someValuesFrom emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845
-                                                                                                           ] ;
-                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Sinusoidal alternating potential of small amplitude (10 to 50 mV) of constant frequency (10 Hz to 100 kHz)."@en ;
-                                                                                           skos:prefLabel "SinusoidalPotentialWaveform"@en .
-
-
-###  https://emmo.info/electrochemistry#electrochemistry_d359386f_ae2d_4ad4_9616_464e2111b67d
-<https://emmo.info/electrochemistry#electrochemistry_d359386f_ae2d_4ad4_9616_464e2111b67d> rdf:type owl:Class ;
-                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
-                                                                                                           [ rdf:type owl:Restriction ;
-                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
-                                                                                                             owl:someValuesFrom emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845
-                                                                                                           ] ;
-                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Successive potential steps that form a staircase waveform."@en ;
-                                                                                           skos:prefLabel "StaircasePotentialRamp"@en .
-
-
-###  https://emmo.info/electrochemistry#electrochemistry_f9af8440_3629_4558_a944_9dfaf3dfd7ec
-<https://emmo.info/electrochemistry#electrochemistry_f9af8440_3629_4558_a944_9dfaf3dfd7ec> rdf:type owl:Class ;
-                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
-                                                                                                           [ rdf:type owl:Restriction ;
-                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
-                                                                                                             owl:someValuesFrom emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845
-                                                                                                           ] ;
-                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Linear potential ramp followed by a reversal to the initial potential. Both forward and reversed signal ramps are applied at the same scan rate."@en ;
-                                                                                           skos:prefLabel "TriangularPotentialWaveform"@en .
-
-
-###  https://emmo.info/electrochemistry#electrochemistry_fa774456_718a_4a28_ba6a_6f828887c510
-<https://emmo.info/electrochemistry#electrochemistry_fa774456_718a_4a28_ba6a_6f828887c510> rdf:type owl:Class ;
+###  https://emmo.info/electrochemistry#electrochemistry_904b12e0_4a10_47b0_b7db_592aba215cb6
+<https://emmo.info/electrochemistry#electrochemistry_904b12e0_4a10_47b0_b7db_592aba215cb6> rdf:type owl:Class ;
                                                                                            rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c> ,
                                                                                                            [ rdf:type owl:Restriction ;
                                                                                                              owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
                                                                                                              owl:someValuesFrom emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88
                                                                                                            ] ;
-                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Input signal where the current is varied linearly from an initial current, tipically 0 A."@en ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Time-dependent variation of electric current"@en ;
+                                                                                           skos:prefLabel "ElectricCurrentSignal"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_a2b01d05_b472_4cf5_b388_e0914db56324
+<https://emmo.info/electrochemistry#electrochemistry_a2b01d05_b472_4cf5_b388_e0914db56324> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_ddade648_2033_47b6_bc36_b562a9af591e> ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Plots of the out of phase vs. the in phase component of the impedance for all the frequencies tested in an impedimetry measurement."@en ;
+                                                                                           skos:altLabel "ComplexPlanePlot"@en ;
+                                                                                           skos:prefLabel "NyquistPlot"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_a53d6dee_1547_4854_a311_805b4d557298
+<https://emmo.info/electrochemistry#electrochemistry_a53d6dee_1547_4854_a311_805b4d557298> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_904b12e0_4a10_47b0_b7db_592aba215cb6> ;
+                                                                                           emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://en.wikipedia.org/wiki/Alternating_current"@en ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Periodic current where the amplitude alternates at a steady frequency between fixed minimum and maximum values, with the same duration at minimum and maximum."@en ;
+                                                                                           skos:altLabel "AC"@en ,
+                                                                                                         "AlternatingCurrent"@en ;
+                                                                                           skos:prefLabel "SinusoidalCurrentWaveform"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_b49e2355_392f_4e83_b630_7ff4581d767b
+<https://emmo.info/electrochemistry#electrochemistry_b49e2355_392f_4e83_b630_7ff4581d767b> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7> ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Small pulses of electric potential superimposed to a linear potential ramp or a staircase potential ramp."@en ;
+                                                                                           rdfs:comment "The pulses are usually of constant height 10 to 100 mV and constant width 10 to 100 ms."@en ;
+                                                                                           skos:prefLabel "DifferentialPotentialPulse"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_b99cff7f_b13f_4075_aa88_62c04f8daacc
+<https://emmo.info/electrochemistry#electrochemistry_b99cff7f_b13f_4075_aa88_62c04f8daacc> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_ddade648_2033_47b6_bc36_b562a9af591e> ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Plot of the dependence of instantaneous current on time."@en ;
+                                                                                           skos:prefLabel "CurrentTimeCurve"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <https://emmo.info/electrochemistry#electrochemistry_b99cff7f_b13f_4075_aa88_62c04f8daacc> ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "Plot of the dependence of instantaneous current on time."@en ;
+   emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """Pingarrón, José M., et al. \"Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019).\" Pure and Applied Chemistry
+ 92.4 (2020): 641-694. DOI: https://doi.org/10.1515/pac-2018-0109"""
+ ] .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_b9a72491_8a50_4cac_a131_1e95d72b57ee
+<https://emmo.info/electrochemistry#electrochemistry_b9a72491_8a50_4cac_a131_1e95d72b57ee> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_ddade648_2033_47b6_bc36_b562a9af591e> ,
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
+                                                                                                             owl:someValuesFrom emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845
+                                                                                                           ] ,
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ;
+                                                                                                             owl:someValuesFrom emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88
+                                                                                                           ] ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Plot of current versus applied potential (I-E) for a given system."@en ;
+                                                                                           rdfs:comment "The curve is sigmoidal in hydrodynamic voltammetry, voltammetry at microelectrodes and polarography, or peak-shaped in ac voltammetry, differential pulse voltammetry, square- wave voltammetry, stripping voltammetry, and derivative techniques."@en ;
+                                                                                           skos:prefLabel "CurrentPotentialCurve"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <https://emmo.info/electrochemistry#electrochemistry_b9a72491_8a50_4cac_a131_1e95d72b57ee> ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "Plot of current versus applied potential (I-E) for a given system."@en ;
+   dcterms:source """Pingarrón, José M., et al. \"Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019).\" Pure and Applied Chemistry
+ 92.4 (2020): 641-694. DOI: https://doi.org/10.1515/pac-2018-0109"""
+ ] .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_bbae1ef4_0a95_4e7d_9932_1bf939129eef
+<https://emmo.info/electrochemistry#electrochemistry_bbae1ef4_0a95_4e7d_9932_1bf939129eef> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_b9a72491_8a50_4cac_a131_1e95d72b57ee> ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Current-potential curve in a voltammetry experiment."@en ;
+                                                                                           skos:prefLabel "Voltammogram"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <https://emmo.info/electrochemistry#electrochemistry_bbae1ef4_0a95_4e7d_9932_1bf939129eef> ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "Current-potential curve in a voltammetry experiment."@en ;
+   dcterms:source """Pingarrón, José M., et al. \"Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019).\" Pure and Applied Chemistry
+ 92.4 (2020): 641-694. DOI: https://doi.org/10.1515/pac-2018-0109"""
+ ] .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_c74bb11c_e875_4112_b9cf_00d0890ef1f5
+<https://emmo.info/electrochemistry#electrochemistry_c74bb11c_e875_4112_b9cf_00d0890ef1f5> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7> ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Sinusoidal alternating potential of small amplitude (10 to 50 mV) of constant frequency (10 Hz to 100 kHz)."@en ;
+                                                                                           skos:prefLabel "SinusoidalPotentialWaveform"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_cd7d24a5_db31_4d76_97d9_367c809f099e
+<https://emmo.info/electrochemistry#electrochemistry_cd7d24a5_db31_4d76_97d9_367c809f099e> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_ddade648_2033_47b6_bc36_b562a9af591e> ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Plot of the time-dependence of instantaneous potential following a change in applied current."@en ;
+                                                                                           skos:prefLabel "PotentialTimeCurve"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_d359386f_ae2d_4ad4_9616_464e2111b67d
+<https://emmo.info/electrochemistry#electrochemistry_d359386f_ae2d_4ad4_9616_464e2111b67d> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7> ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Successive steps of electric potential that form a staircase waveform."@en ;
+                                                                                           skos:prefLabel "StaircasePotentialRamp"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_ddade648_2033_47b6_bc36_b562a9af591e
+<https://emmo.info/electrochemistry#electrochemistry_ddade648_2033_47b6_bc36_b562a9af591e> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf emmo:EMMO_eb7de1a1_c30e_4f0d_94c6_fe70414d7e61 ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Graphical representation of a dataset resulting from the measurement of the response of an electrochemical system."@en ;
+                                                                                           rdfs:comment "Shows the relationship between two or more electrochemical variables."@en ;
+                                                                                           skos:prefLabel "ElectrochemicalCurve"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_e0b57b09_68ee_4687_a901_bfb599421972
+<https://emmo.info/electrochemistry#electrochemistry_e0b57b09_68ee_4687_a901_bfb599421972> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_ddade648_2033_47b6_bc36_b562a9af591e> ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Plots of the phase angle and the magnitude of the impedance vs. the logarithm of perturbation frequency at all the frequencies tested in an impedimetry measurement."@en ;
+                                                                                           skos:altLabel "BodePlot"@en ;
+                                                                                           skos:prefLabel "BodeDiagram"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_f9af8440_3629_4558_a944_9dfaf3dfd7ec
+<https://emmo.info/electrochemistry#electrochemistry_f9af8440_3629_4558_a944_9dfaf3dfd7ec> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7> ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Linear ramp of electric potential, followed by a reversal to the initial potential. Both forward and reversed signal ramps are applied at the same scan rate."@en ;
+                                                                                           skos:prefLabel "TriangularPotentialWaveform"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_fa774456_718a_4a28_ba6a_6f828887c510
+<https://emmo.info/electrochemistry#electrochemistry_fa774456_718a_4a28_ba6a_6f828887c510> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_904b12e0_4a10_47b0_b7db_592aba215cb6> ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Signal where an electric current is varied linearly from an initial current, tipically 0 A."@en ;
                                                                                            skos:prefLabel "LinearCurrentRamp"@en .
 
 
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
 ] .
 
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
@@ -3507,6 +3675,12 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
@@ -3516,13 +3690,7 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
@@ -3546,6 +3714,87 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
@@ -3555,139 +3804,25 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -3708,43 +3843,64 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -3756,6 +3912,27 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
@@ -3766,6 +3943,12 @@ of other configurations are used."""@en ;
  ] .
 
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
