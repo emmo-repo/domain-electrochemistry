@@ -82,6 +82,16 @@ emmo:EMMO_cf604b30_42be_44c7_a379_795236967ec2 rdf:type owl:AnnotationProperty ;
 
 
 #################################################################
+#    Object Properties
+#################################################################
+
+###  http://emmo.info/emmo#EMMO_eb940c13_5e6c_479c_9968_f623d1e790e9
+emmo:EMMO_eb940c13_5e6c_479c_9968_f623d1e790e9 rdf:type owl:ObjectProperty ;
+                                               rdfs:subPropertyOf emmo:EMMO_5ceab41b_2aea_4041_9e9c_a243f7562cee ;
+                                               skos:prefLabel "hasMaterial"@en .
+
+
+#################################################################
 #    Classes
 #################################################################
 
