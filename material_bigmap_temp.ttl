@@ -1,0 +1,426 @@
+@prefix : <http://emmo.info/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix emmo: <http://emmo.info/emmo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix annotations: <http://emmo.info/emmo/top/annotations#> .
+@base <http://emmo.info/material/material> .
+
+<http://emmo.info/material/material> rdf:type owl:Ontology ;
+                                      owl:versionIRI <http://emmo.info/material/0.1.0/material> ;
+                                      owl:imports <http://emmo.info/emmo/1.0.0-beta4/disciplines/isq_big_map> ;
+                                      dcterms:abstract "Materials in EMMO"@en ;
+                                      dcterms:creator "Casper Welzel Andersen" ,
+                                                      "Eibar Flores" ,
+                                                      "Jesper Friis" ,
+                                                      "Simon Clark" ;
+                                      dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                                      rdfs:comment """Contacts:
+Simon Clark
+SINTEF Industry
+email: simon.clark@sintef.no
+
+Jesper Friis
+SINTEF Industry
+email: jesper.friis@sintef.no"""@en ;
+                                      owl:versionInfo "0.1.0" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://emmo.info/emmo#EMMO_106e4d07_1b8b_46ab_b6a8_077b3c65b888
+emmo:EMMO_106e4d07_1b8b_46ab_b6a8_077b3c65b888 rdf:type owl:AnnotationProperty ;
+                                               skos:prefLabel "ChEBI"@en ;
+                                               rdfs:subPropertyOf emmo:EMMO_470a4194_4052_4260_9ffb_57e7244138f9 .
+
+
+###  http://emmo.info/emmo#EMMO_371f5265_fa29_4081_b722_2c530b1fdddb
+emmo:EMMO_371f5265_fa29_4081_b722_2c530b1fdddb rdf:type owl:AnnotationProperty ;
+                                               skos:prefLabel "PubChem"@en ;
+                                               rdfs:subPropertyOf emmo:EMMO_470a4194_4052_4260_9ffb_57e7244138f9 .
+
+
+###  http://emmo.info/emmo#EMMO_470a4194_4052_4260_9ffb_57e7244138f9
+emmo:EMMO_470a4194_4052_4260_9ffb_57e7244138f9 rdf:type owl:AnnotationProperty ;
+                                               skos:prefLabel "ChemicalIdentifierReference"@en ;
+                                               rdfs:subPropertyOf rdfs:seeAlso .
+
+
+###  http://emmo.info/emmo#EMMO_4d0b43e3_db34_4bd6_8b59_05171132d79d
+emmo:EMMO_4d0b43e3_db34_4bd6_8b59_05171132d79d rdf:type owl:AnnotationProperty ;
+                                               skos:prefLabel "ChemSpider"@en ;
+                                               rdfs:subPropertyOf emmo:EMMO_470a4194_4052_4260_9ffb_57e7244138f9 .
+
+
+###  http://emmo.info/emmo#EMMO_8b9d927a_91f4_4d6c_8bdb_a59ad6e77028
+emmo:EMMO_8b9d927a_91f4_4d6c_8bdb_a59ad6e77028 rdf:type owl:AnnotationProperty ;
+                                               skos:prefLabel "CanonicalSMILES"@en ;
+                                               rdfs:subPropertyOf emmo:EMMO_470a4194_4052_4260_9ffb_57e7244138f9 .
+
+
+###  http://emmo.info/emmo#EMMO_8d841526_ba33_4436_9344_51b5d6928d82
+emmo:EMMO_8d841526_ba33_4436_9344_51b5d6928d82 rdf:type owl:AnnotationProperty ;
+                                               skos:prefLabel "CAS"@en ;
+                                               rdfs:subPropertyOf emmo:EMMO_470a4194_4052_4260_9ffb_57e7244138f9 .
+
+
+###  http://emmo.info/emmo#EMMO_b292d30e_4d60_43f5_9f3e_9c4e00e17a10
+emmo:EMMO_b292d30e_4d60_43f5_9f3e_9c4e00e17a10 rdf:type owl:AnnotationProperty ;
+                                               skos:prefLabel "InChI"@en ;
+                                               rdfs:subPropertyOf emmo:EMMO_470a4194_4052_4260_9ffb_57e7244138f9 .
+
+
+###  http://emmo.info/emmo#EMMO_cf604b30_42be_44c7_a379_795236967ec2
+emmo:EMMO_cf604b30_42be_44c7_a379_795236967ec2 rdf:type owl:AnnotationProperty ;
+                                               skos:prefLabel "SMILES"@en ;
+                                               rdfs:subPropertyOf emmo:EMMO_470a4194_4052_4260_9ffb_57e7244138f9 .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://emmo.info/emmo#EMMO_011d6907_0941_4dd4_88c6_91532dd46cf5
+emmo:EMMO_011d6907_0941_4dd4_88c6_91532dd46cf5 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
+                                               skos:altLabel "NCA" ;
+                                               skos:prefLabel "LithiumNickelCobaltAluminiumOxide"@en .
+
+
+###  http://emmo.info/emmo#EMMO_02406a36_20f9_4ca7_8533_1a855183c4fd
+emmo:EMMO_02406a36_20f9_4ca7_8533_1a855183c4fd rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
+                                               skos:altLabel "LMO" ;
+                                               skos:prefLabel "LithiumManganeseOxide"@en .
+
+
+###  http://emmo.info/emmo#EMMO_04eaecb0_90fb_42cf_a4e8_7ce3be2cd887
+emmo:EMMO_04eaecb0_90fb_42cf_a4e8_7ce3be2cd887 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
+                                               skos:altLabel "LiCF3SO3" ;
+                                               skos:prefLabel "LithiumTriflate"@en .
+
+
+###  http://emmo.info/emmo#EMMO_05c38ac1_a9cb_4583_ad74_ec979240d422
+emmo:EMMO_05c38ac1_a9cb_4583_ad74_ec979240d422 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
+                                               skos:altLabel "DMC" ;
+                                               skos:prefLabel "DimethylCarbonate"@en .
+
+
+###  http://emmo.info/emmo#EMMO_0cb9e332_ebec_424f_9fcb_4a282889ecc3
+emmo:EMMO_0cb9e332_ebec_424f_9fcb_4a282889ecc3 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_a086af15_a7c3_404c_b4ce_c8e4466f1b4b ;
+                                               skos:prefLabel "Neon"@en .
+
+
+###  http://emmo.info/emmo#EMMO_0dabc3b4_905f_4cca_b39a_4776f4345e51
+emmo:EMMO_0dabc3b4_905f_4cca_b39a_4776f4345e51 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
+                                               skos:altLabel "PC" ;
+                                               skos:prefLabel "PropyleneCarbonate"@en .
+
+
+###  http://emmo.info/emmo#EMMO_0e2732d8_768d_49f8_bfd0_7acac607a7c7
+emmo:EMMO_0e2732d8_768d_49f8_bfd0_7acac607a7c7 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
+                                               emmo:EMMO_371f5265_fa29_4081_b722_2c530b1fdddb 23670860 ;
+                                               emmo:EMMO_4d0b43e3_db34_4bd6_8b59_05171132d79d 11262976 ;
+                                               emmo:EMMO_8b9d927a_91f4_4d6c_8bdb_a59ad6e77028 "[Li].[O].[Co]" ;
+                                               emmo:EMMO_8d841526_ba33_4436_9344_51b5d6928d82 "12190-79-3" ;
+                                               emmo:EMMO_cf604b30_42be_44c7_a379_795236967ec2 "[Li].[Co].[O]" ;
+                                               skos:altLabel "LCO" ;
+                                               skos:prefLabel "LithiumCobaltOxide"@en .
+
+
+###  http://emmo.info/emmo#EMMO_16ffa079_3623_45dc_a42f_34aacf99c0e8
+emmo:EMMO_16ffa079_3623_45dc_a42f_34aacf99c0e8 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_a086af15_a7c3_404c_b4ce_c8e4466f1b4b ;
+                                               skos:prefLabel "Lithium"@en .
+
+
+###  http://emmo.info/emmo#EMMO_19112fab_1b33_4879_9c2b_92056a3969d7
+emmo:EMMO_19112fab_1b33_4879_9c2b_92056a3969d7 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_a086af15_a7c3_404c_b4ce_c8e4466f1b4b ;
+                                               skos:prefLabel "Silver"@en .
+
+
+###  http://emmo.info/emmo#EMMO_1ba7a4bb_83b7_49c5_83e1_f256a8a06aeb
+emmo:EMMO_1ba7a4bb_83b7_49c5_83e1_f256a8a06aeb rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_ec7464a9_d99d_45f8_965b_4e9230ea8356 ;
+                                               skos:prefLabel "StainlessSteel"@en .
+
+
+###  http://emmo.info/emmo#EMMO_23a35b64_9241_4c96_85b9_1e2a6acc2e4d
+emmo:EMMO_23a35b64_9241_4c96_85b9_1e2a6acc2e4d rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_a086af15_a7c3_404c_b4ce_c8e4466f1b4b ;
+                                               skos:prefLabel "Copper"@en .
+
+
+###  http://emmo.info/emmo#EMMO_266bac2e_7ee4_4e26_a79f_609e45d67b34
+emmo:EMMO_266bac2e_7ee4_4e26_a79f_609e45d67b34 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_a086af15_a7c3_404c_b4ce_c8e4466f1b4b ;
+                                               skos:prefLabel "Platinum"@en .
+
+
+###  http://emmo.info/emmo#EMMO_321ea507_e363_4676_80dc_7f7f566ce2e2
+emmo:EMMO_321ea507_e363_4676_80dc_7f7f566ce2e2 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
+                                               skos:altLabel "LFP" ;
+                                               skos:prefLabel "LithiumIronPhosphate"@en .
+
+
+###  http://emmo.info/emmo#EMMO_3c7275df_f77a_44b2_9821_1a42f61951a8
+emmo:EMMO_3c7275df_f77a_44b2_9821_1a42f61951a8 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_a086af15_a7c3_404c_b4ce_c8e4466f1b4b ;
+                                               skos:prefLabel "Carbon"@en .
+
+
+###  http://emmo.info/emmo#EMMO_3c72a4d3_0882_414c_80c9_64c2a8a81e47
+emmo:EMMO_3c72a4d3_0882_414c_80c9_64c2a8a81e47 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_a086af15_a7c3_404c_b4ce_c8e4466f1b4b ;
+                                               skos:prefLabel "Magnesium"@en .
+
+
+###  http://emmo.info/emmo#EMMO_41b81a4e_7811_4f50_b15d_ea7be378b989
+emmo:EMMO_41b81a4e_7811_4f50_b15d_ea7be378b989 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
+                                               skos:altLabel "FEC" ;
+                                               skos:prefLabel "FluoroethyleneCarbonate"@en .
+
+
+###  http://emmo.info/emmo#EMMO_4950a41c_ae32_4ce9_9db9_0076bbcac18f
+emmo:EMMO_4950a41c_ae32_4ce9_9db9_0076bbcac18f rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
+                                               skos:altLabel "NCM" ,
+                                                             "NMC" ;
+                                               skos:prefLabel "LithiumNickelManganeseCobaltOxide"@en .
+
+
+###  http://emmo.info/emmo#EMMO_514673fd_80b8_4624_908a_b1c0fcae36f6
+emmo:EMMO_514673fd_80b8_4624_908a_b1c0fcae36f6 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_a086af15_a7c3_404c_b4ce_c8e4466f1b4b ;
+                                               skos:prefLabel "Silicon"@en .
+
+
+###  http://emmo.info/emmo#EMMO_5805174a_71da_4263_b4d4_c2868cceeef7
+emmo:EMMO_5805174a_71da_4263_b4d4_c2868cceeef7 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
+                                               skos:altLabel "CMC" ;
+                                               skos:prefLabel "CarboxymethylCellulose"@en .
+
+
+###  http://emmo.info/emmo#EMMO_5dd27e7d_c38f_4a81_8d09_d81463806ad7
+emmo:EMMO_5dd27e7d_c38f_4a81_8d09_d81463806ad7 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
+                                               skos:altLabel "C6" ,
+                                                             "Gr" ;
+                                               skos:prefLabel "Graphite"@en .
+
+
+###  http://emmo.info/emmo#EMMO_6184d7a1_057e_4741_9cfc_68d6a1e7d9f4
+emmo:EMMO_6184d7a1_057e_4741_9cfc_68d6a1e7d9f4 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_a086af15_a7c3_404c_b4ce_c8e4466f1b4b ;
+                                               skos:prefLabel "Calcium"@en .
+
+
+###  http://emmo.info/emmo#EMMO_61b69a0d_2f6c_4524_8d31_404f808625ca
+emmo:EMMO_61b69a0d_2f6c_4524_8d31_404f808625ca rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_a086af15_a7c3_404c_b4ce_c8e4466f1b4b ;
+                                               skos:prefLabel "Chlorine"@en .
+
+
+###  http://emmo.info/emmo#EMMO_63a26b9e_9d1c_40e6_8938_e28ba89eb79d
+emmo:EMMO_63a26b9e_9d1c_40e6_8938_e28ba89eb79d rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
+                                               skos:altLabel "VC" ;
+                                               skos:prefLabel "VinyleneCarbonate"@en .
+
+
+###  http://emmo.info/emmo#EMMO_64cb9976_e7a8_4ab2_a93f_2770744d69b7
+emmo:EMMO_64cb9976_e7a8_4ab2_a93f_2770744d69b7 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_a086af15_a7c3_404c_b4ce_c8e4466f1b4b ;
+                                               skos:prefLabel "Oxygen"@en .
+
+
+###  http://emmo.info/emmo#EMMO_6c03b6b7_a50e_4575_9708_0d4f18a3c358
+emmo:EMMO_6c03b6b7_a50e_4575_9708_0d4f18a3c358 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
+                                               skos:altLabel "Kynar" ,
+                                                             "PVDF" ;
+                                               skos:prefLabel "PolyvinylFluoride"@en .
+
+
+###  http://emmo.info/emmo#EMMO_7616c3ac_59fb_460c_9b69_c8571e1047f2
+emmo:EMMO_7616c3ac_59fb_460c_9b69_c8571e1047f2 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_a086af15_a7c3_404c_b4ce_c8e4466f1b4b ;
+                                               skos:prefLabel "Hydrogen"@en .
+
+
+###  http://emmo.info/emmo#EMMO_77384f40_48df_46da_8060_828fadd67930
+emmo:EMMO_77384f40_48df_46da_8060_828fadd67930 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
+                                               skos:altLabel "LiTFSI" ;
+                                               skos:prefLabel "LithiumBistriflimide"@en .
+
+
+###  http://emmo.info/emmo#EMMO_77e4d29e_46ee_4335_9dcf_356eccab9720
+emmo:EMMO_77e4d29e_46ee_4335_9dcf_356eccab9720 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_a086af15_a7c3_404c_b4ce_c8e4466f1b4b ;
+                                               skos:prefLabel "Manganese"@en .
+
+
+###  http://emmo.info/emmo#EMMO_786e1bc4_dce2_469b_aab4_bb022075da2d
+emmo:EMMO_786e1bc4_dce2_469b_aab4_bb022075da2d rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
+                                               skos:altLabel "DEC" ;
+                                               skos:prefLabel "DiethyleneCarbonate"@en .
+
+
+###  http://emmo.info/emmo#EMMO_7f1ff695_0aaa_41fc_9bdc_deefa33be78d
+emmo:EMMO_7f1ff695_0aaa_41fc_9bdc_deefa33be78d rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
+                                               skos:altLabel "LNO" ;
+                                               skos:prefLabel "LithiumNickelOxide"@en .
+
+
+###  http://emmo.info/emmo#EMMO_7fa9d1d0_3653_4fbf_95e0_bad9736e5610
+emmo:EMMO_7fa9d1d0_3653_4fbf_95e0_bad9736e5610 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_a086af15_a7c3_404c_b4ce_c8e4466f1b4b ;
+                                               skos:prefLabel "Zinc"@en .
+
+
+###  http://emmo.info/emmo#EMMO_810da2e1_1cf2_4fea_8dac_dc6f0c5f2b54
+emmo:EMMO_810da2e1_1cf2_4fea_8dac_dc6f0c5f2b54 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
+                                               skos:altLabel "LTO" ;
+                                               skos:prefLabel "LithiumTitanate"@en .
+
+
+###  http://emmo.info/emmo#EMMO_82c4bf03_cff2_457f_8c98_7fbdc50e2d63
+emmo:EMMO_82c4bf03_cff2_457f_8c98_7fbdc50e2d63 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
+                                               skos:altLabel "EMC" ;
+                                               skos:prefLabel "EthylmethylCarbonate"@en .
+
+
+###  http://emmo.info/emmo#EMMO_883a9b8f_616d_4fb6_9a33_e39421ff7837
+emmo:EMMO_883a9b8f_616d_4fb6_9a33_e39421ff7837 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
+                                               skos:altLabel "LiPF6" ;
+                                               skos:prefLabel "LithiumHexafluorophosphate"@en .
+
+
+###  http://emmo.info/emmo#EMMO_8fae0159_fcb6_4d6c_85fc_55d2951dfb26
+emmo:EMMO_8fae0159_fcb6_4d6c_85fc_55d2951dfb26 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_a086af15_a7c3_404c_b4ce_c8e4466f1b4b ;
+                                               skos:prefLabel "Sodium"@en .
+
+
+###  http://emmo.info/emmo#EMMO_8fe12a14_4f24_4732_88c7_c8aae0a1f338
+emmo:EMMO_8fe12a14_4f24_4732_88c7_c8aae0a1f338 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_a086af15_a7c3_404c_b4ce_c8e4466f1b4b ;
+                                               skos:prefLabel "Argon"@en .
+
+
+###  http://emmo.info/emmo#EMMO_a11ee509_e451_4791_b4f1_3e3bbe8a8f26
+emmo:EMMO_a11ee509_e451_4791_b4f1_3e3bbe8a8f26 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
+                                               skos:altLabel "LiClO4" ;
+                                               skos:prefLabel "LithiumPerchlorate"@en .
+
+
+###  http://emmo.info/emmo#EMMO_abe7ba2b_417e_4752_8a32_3f5a6acf3688
+emmo:EMMO_abe7ba2b_417e_4752_8a32_3f5a6acf3688 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_a086af15_a7c3_404c_b4ce_c8e4466f1b4b ;
+                                               skos:prefLabel "Nitrogen"@en .
+
+
+###  http://emmo.info/emmo#EMMO_ad43b56f_c3b7_4cbc_8a9b_9d79b60800f8
+emmo:EMMO_ad43b56f_c3b7_4cbc_8a9b_9d79b60800f8 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
+                                               skos:altLabel "PTFE" ,
+                                                             "Teflon" ;
+                                               skos:prefLabel "Polytetrafluoroethylene"@en .
+
+
+###  http://emmo.info/emmo#EMMO_adf1e420_5f60_4ad7_8c48_ea5d8af6a48e
+emmo:EMMO_adf1e420_5f60_4ad7_8c48_ea5d8af6a48e rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_a086af15_a7c3_404c_b4ce_c8e4466f1b4b ;
+                                               skos:prefLabel "Helium"@en .
+
+
+###  http://emmo.info/emmo#EMMO_b0c8c8ba_eeb7_4c71_946a_095a94d74cdb
+emmo:EMMO_b0c8c8ba_eeb7_4c71_946a_095a94d74cdb rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
+                                               skos:altLabel "SBR" ;
+                                               skos:prefLabel "StyreneButadieneRunner"@en .
+
+
+###  http://emmo.info/emmo#EMMO_b3281f02_ab00_4be6_a725_8c750ef9fa00
+emmo:EMMO_b3281f02_ab00_4be6_a725_8c750ef9fa00 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_a086af15_a7c3_404c_b4ce_c8e4466f1b4b ;
+                                               skos:prefLabel "Iron"@en .
+
+
+###  http://emmo.info/emmo#EMMO_b94222fe_71a8_4c14_a59f_d86da74de03f
+emmo:EMMO_b94222fe_71a8_4c14_a59f_d86da74de03f rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_a086af15_a7c3_404c_b4ce_c8e4466f1b4b ;
+                                               skos:prefLabel "Gold"@en .
+
+
+###  http://emmo.info/emmo#EMMO_bee37ad0_0933_40a3_a221_84a6a35c4a64
+emmo:EMMO_bee37ad0_0933_40a3_a221_84a6a35c4a64 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_a086af15_a7c3_404c_b4ce_c8e4466f1b4b ;
+                                               skos:prefLabel "Sulfur"@en .
+
+
+###  http://emmo.info/emmo#EMMO_c44f2673_082a_42f3_8af9_e9e4db6d069e
+emmo:EMMO_c44f2673_082a_42f3_8af9_e9e4db6d069e rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_5dd27e7d_c38f_4a81_8d09_d81463806ad7 ;
+                                               skos:prefLabel "NaturalGraphite"@en .
+
+
+###  http://emmo.info/emmo#EMMO_c5c2f0a6_9bc6_4c89_b067_8974424f8684
+emmo:EMMO_c5c2f0a6_9bc6_4c89_b067_8974424f8684 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_a086af15_a7c3_404c_b4ce_c8e4466f1b4b ;
+                                               skos:prefLabel "Aluminium"@en .
+
+
+###  http://emmo.info/emmo#EMMO_c9f8891d_4297_43cb_be31_0cb57f1e58d6
+emmo:EMMO_c9f8891d_4297_43cb_be31_0cb57f1e58d6 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_a086af15_a7c3_404c_b4ce_c8e4466f1b4b ;
+                                               skos:prefLabel "Bromine"@en .
+
+
+###  http://emmo.info/emmo#EMMO_cd3014dc_ef17_4bf2_9216_2382e9a03a8f
+emmo:EMMO_cd3014dc_ef17_4bf2_9216_2382e9a03a8f rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_5dd27e7d_c38f_4a81_8d09_d81463806ad7 ;
+                                               skos:prefLabel "SyntheticGraphite"@en .
+
+
+###  http://emmo.info/emmo#EMMO_d986566b_310d_4ae4_bbd3_68cb1b218dac
+emmo:EMMO_d986566b_310d_4ae4_bbd3_68cb1b218dac rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
+                                               skos:altLabel "EC" ;
+                                               skos:prefLabel "EthyleneCarbonate"@en .
+
+
+###  http://emmo.info/emmo#EMMO_e9395465_68c9_4624_b4df_836cbca76da6
+emmo:EMMO_e9395465_68c9_4624_b4df_836cbca76da6 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_a086af15_a7c3_404c_b4ce_c8e4466f1b4b ;
+                                               skos:prefLabel "Potassium"@en .
+
+
+###  http://emmo.info/emmo#EMMO_f39ec5c1_7c94_4c43_b5e8_3497db9b6c92
+emmo:EMMO_f39ec5c1_7c94_4c43_b5e8_3497db9b6c92 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_ec7464a9_d99d_45f8_965b_4e9230ea8356 ;
+                                               skos:prefLabel "SiliconGraphite"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
