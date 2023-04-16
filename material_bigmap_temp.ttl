@@ -11,23 +11,7 @@
 @base <http://emmo.info/material/material> .
 
 <http://emmo.info/material/material> rdf:type owl:Ontology ;
-                                      owl:versionIRI <http://emmo.info/material/0.1.0/material> ;
-                                      owl:imports <http://emmo.info/emmo/1.0.0-beta4/disciplines/isq_big_map> ;
-                                      dcterms:abstract "Materials in EMMO"@en ;
-                                      dcterms:creator "Casper Welzel Andersen" ,
-                                                      "Eibar Flores" ,
-                                                      "Jesper Friis" ,
-                                                      "Simon Clark" ;
-                                      dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                      rdfs:comment """Contacts:
-Simon Clark
-SINTEF Industry
-email: simon.clark@sintef.no
-
-Jesper Friis
-SINTEF Industry
-email: jesper.friis@sintef.no"""@en ;
-                                      owl:versionInfo "0.1.0" .
+                                      owl:versionIRI <http://emmo.info/material/0.1.0/material> .
 
 #################################################################
 #    Annotation properties
