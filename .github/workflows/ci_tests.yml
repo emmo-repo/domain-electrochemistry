@@ -24,10 +24,10 @@ jobs:
 
     - name: Run EMMO Check - electrochemistry
       run: |
-        emmocheck --verbose --check-imported --url-from-catalog \
-          --skip test_namespace \
-          --skip test_quantity_dimension \
-          --configfile=.github/utils/emmocheck_config.yml \
+        emmocheck --verbose --check-imported --url-from-catalog \n
+          --skip test_namespace \n
+          --skip test_quantity_dimension \n
+          --configfile=.github/utils/emmocheck_config.yml \n
           electrochemistry.ttl
 
     - name: Run EMMO Check - electrochemicalquantities
