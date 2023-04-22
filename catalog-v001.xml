@@ -5,8 +5,8 @@
 	<uri name="http://emmo.info/electrochemistry/0.5.0/electrochemistry"             uri="./electrochemistry.ttl"/>
 
 	<uri name="http://emmo.info/electrochemistry/0.5.0/electrochemicalquantities"    uri="./electrochemicalquantities.ttl"/>
-	<uri name="http://emmo.info/emmo/1.0.0-beta"                                     uri="https://emmo-repo.github.io/versions/1.0.0-beta4/emmo-inferred.ttl"/>
-        <uri name="http://emmo.info/emmo/1.0.0-beta4/temp/isq_big_map"                   uri="./isq_big_map.ttl"/>
+	<uri name="http://emmo.info/emmo/1.0.0-beta4"                                    uri="https://raw.githubusercontent.com/emmo-repo/emmo-repo.github.io/master/versions/1.0.0-beta4/emmo-inferred.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta4/temp/isq_big_map"                   uri="./isq_bigmap.ttl"/>
 	<uri name="http://emmo.info/emmo/1.0.0-beta4/temp/unitsextension_bigmap"         uri="./unitsextension_bigmap.ttl"/>
         <uri name="http://emmo.info/material/0.1.0/material"                             uri="./material_bigmap_temp.ttl"/>
     </group>
