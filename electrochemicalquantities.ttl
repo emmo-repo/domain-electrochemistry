@@ -10,17 +10,18 @@
 @prefix annotations: <http://emmo.info/emmo/top/annotations#> .
 @base <http://emmo.info/electrochemistry/electrochemicalquantities> .
 
-<http://emmo.info/electrochemistry/electrochemicalquantities> rdf:type owl:Ontology ;
-                                                               owl:versionIRI <http://emmo.info/electrochemistry/0.5.0/electrochemicalquantities.ttl> ;
-                                                               owl:imports <http://emmo.info/emmo/1.0.0-beta4> ,
-                                                                           <http://emmo.info/emmo/1.0.0-beta4/temp/isq_big_map> ,
-                                                                           <http://emmo.info/emmo/1.0.0-beta4/temp/unitsextension_bigmap> ,
-                                                                           <http://emmo.info/material/0.1.0/material> ;
-                                                               dcterms:abstract """Everything needed to describe fundamental quantities in electrochemistry common to all electrochemical systems.
+<http://emmo.info/electrochemistry/electrochemicalquantities>
+    rdf:type owl:Ontology ;
+    owl:versionIRI <http://emmo.info/electrochemistry/0.5.0/electrochemicalquantities> ;
+    owl:imports <http://emmo.info/emmo/1.0.0-beta4> ,
+        <http://emmo.info/emmo/1.0.0-beta4/temp/isq_bigmap> ,
+        <http://emmo.info/emmo/1.0.0-beta4/temp/unitsextension_bigmap> ,
+        <http://emmo.info/material/0.1.0/material> ;
+    dcterms:abstract """Everything needed to describe fundamental quantities in electrochemistry common to all electrochemical systems.
 
 Released under the Creative Commons license Attribution 4.0 International (CC BY 4.0)."""@en ;
-                                                               dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                                               owl:versionInfo "0.5.0" .
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+    owl:versionInfo "0.5.0" .
 
 #################################################################
 #    Annotation properties
@@ -610,7 +611,7 @@ and t* through mathematical models, provided that the long-time potential- deter
                                                                        emmo:EMMO_96f39f77_44dc_491b_8fa7_30d887fe0890 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Area of electrode - solution interface."@en ;
                                                        rdfs:comment "A"@en ,
-                                                                    """The geometric area, A_{geom} , is the interfacial area, determined on the assumption that the interface is truly flat (2-dimensional) and calculated using the geometric data of the involved surfaces. 
+                                                                    """The geometric area, A_{geom} , is the interfacial area, determined on the assumption that the interface is truly flat (2-dimensional) and calculated using the geometric data of the involved surfaces.
 
 The real (true) area, A_{real}, takes into account non-idealities of the interface (roughness, porosity, etc.) and can be measured by a variety of electrochemical methods. The electroactive area is the area calculated from experiments with model electroactive species and may be different from the real surface area in cases where not all of the surface is electrochemically active or accessible."""@en ;
                                                        skos:prefLabel "ElectrodeSurfaceArea"@en .
@@ -1459,9 +1460,9 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                        rdfs:subClassOf :electrochemistry_2a2f59b7_aa16_40aa_9c8b_0de8a2720456 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Faradaic current measured in a solution containing two electroactive substances, A and B, that exceeds the sum of the faradaic currents that would be obtained for A and B separately under the same experimental conditions."@en ;
                                                        rdfs:comment "I_{cat}"@en ,
-                                                                    """In either of the two following situations, the current increase is termed a catalytic current: 
+                                                                    """In either of the two following situations, the current increase is termed a catalytic current:
 
-(i) The scheme below generates a catalytic or regenerative current: 
+(i) The scheme below generates a catalytic or regenerative current:
 
 B±e→ B′
 B' + A → B

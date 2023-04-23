@@ -9,6 +9,7 @@
 @base <http://emmo.info/emmo/temp/unitsextension> .
 
 <http://emmo.info/emmo/disciplines/unitsextension> rdf:type owl:Ontology ;
+    owl:imports <http://emmo.info/emmo/1.0.0-beta4> ;
                                                     owl:versionIRI <http://emmo.info/emmo/1.0.0-beta4/temp/unitsextension_bigmap> .
 
 #################################################################
