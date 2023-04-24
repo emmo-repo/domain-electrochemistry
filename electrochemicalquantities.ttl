@@ -1451,6 +1451,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
 ###  http://emmo.info/electrochemistry#electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5
 :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Quantities that control electroanalytical measurements."@en ;
                                                        skos:prefLabel "ElectrochemicalControlQuantity"@en .
 
 
@@ -1817,5 +1818,55 @@ In either case, the magnitude of the catalytic current depends on the applied po
 
 
 ###  http://emmo.info/emmo#EMMO_5c78b424_087b_4e31_8c91_6422f1be1e86
+
+###  https://emmo.info/electrochemistry#electrochemistry_4d2b102b_3515_4591_b079_69232c44f9dc
+<https://emmo.info/electrochemistry#electrochemistry_4d2b102b_3515_4591_b079_69232c44f9dc> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ,
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                                                                             owl:someValuesFrom emmo:EMMO_2e7e5796_4a80_4d73_bb84_f31138446c0c
+                                                                                                           ] ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The magnitude of deviation between the pulse excitation potential and a reference potential."@en ;
+                                                                                           skos:prefLabel "PulseAmplitudePotential"@en .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_68059d94_4c21_4065_b329_07faeebc7e87
+<https://emmo.info/electrochemistry#electrochemistry_68059d94_4c21_4065_b329_07faeebc7e87> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ,
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                                                                             owl:someValuesFrom emmo:EMMO_2e7e5796_4a80_4d73_bb84_f31138446c0c
+                                                                                                           ] ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Potential to which the magnitude of an excitation signal is compared to."@en ;
+                                                                                           rdfs:comment "Alternating potential signals such as the ones applied in Electrochemical Impedance Spectroscopy are superimposed to a reference potential, which can be an applied potential or the open circuit potential."@en ;
+                                                                                           skos:altLabel "BaselinePotential"@en ;
+                                                                                           skos:prefLabel "SignalReferencePotential"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <https://emmo.info/electrochemistry#electrochemistry_68059d94_4c21_4065_b329_07faeebc7e87> ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "Alternating potential signals such as the ones applied in Electrochemical Impedance Spectroscopy are superimposed to a reference potential, which can be an applied potential or the open circuit potential."@en ;
+   dcterms:source "PINGARRÓN, José M., et al. Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019). Pure and Applied Chemistry, 2020, 92.4: 641-694."
+ ] .
+
+
+###  https://emmo.info/electrochemistry#electrochemistry_f591a444_89d6_4093_836d_7d53895edce4
+<https://emmo.info/electrochemistry#electrochemistry_f591a444_89d6_4093_836d_7d53895edce4> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ,
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                                                                             owl:someValuesFrom emmo:EMMO_2e7e5796_4a80_4d73_bb84_f31138446c0c
+                                                                                                           ] ;
+                                                                                           emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Magnitude of a periodic potential perturbation within a single time period, with respect to a reference potential value."@en ;
+                                                                                           rdfs:comment "For Electrochemical Impedance Spectroscopy, the Peak Potential Amplitude is usually small, (normally 5 to 10 mV)."@en ;
+                                                                                           skos:prefLabel "PeakPotentialAmplitude"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <https://emmo.info/electrochemistry#electrochemistry_f591a444_89d6_4093_836d_7d53895edce4> ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "For Electrochemical Impedance Spectroscopy, the Peak Potential Amplitude is usually small, (normally 5 to 10 mV)."@en ;
+   dcterms:source "PINGARRÓN, José M., et al. Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019). Pure and Applied Chemistry, 2020, 92.4: 641-694."
+ ] .
+
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
