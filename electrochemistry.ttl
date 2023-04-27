@@ -10,20 +10,19 @@
 @prefix annotations: <http://emmo.info/emmo/top/annotations#> .
 @base <http://emmo.info/electrochemistry/electrochemistry> .
 
-<http://emmo.info/electrochemistry/electrochemistry>
-    rdf:type owl:Ontology ;
-    owl:versionIRI <http://emmo.info/electrochemistry/0.5.0/electrochemistry> ;
-    owl:imports <http://emmo.info/emmo/1.0.0-beta4> ,
-        <http://emmo.info/electrochemistry/0.5.0/electrochemicalquantities> ;
-    dcterms:abstract """Everything needed to describe fundamental concepts in electrochemistry common to all electrochemical systems.
+<http://emmo.info/electrochemistry/electrochemistry> rdf:type owl:Ontology ;
+                                                      owl:versionIRI <http://emmo.info/electrochemistry/0.5.0/electrochemistry> ;
+                                                      owl:imports <http://emmo.info/electrochemistry/0.5.0/electrochemicalquantities> ,
+                                                                  <http://emmo.info/emmo/1.0.0-beta4> ;
+                                                      dcterms:abstract """Everything needed to describe fundamental concepts in electrochemistry common to all electrochemical systems.
 
 Released under the Creative Commons license Attribution 4.0 International (CC BY 4.0)."""@en ;
-    dcterms:creator "Casper Welzel Andersen" ,
-        "Eibar Flores" ,
-        "Jesper Friis" ,
-        "Simon Clark" ;
-    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-    rdfs:comment """Contacts:
+                                                      dcterms:creator "Casper Welzel Andersen" ,
+                                                                      "Eibar Flores" ,
+                                                                      "Jesper Friis" ,
+                                                                      "Simon Clark" ;
+                                                      dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                                                      rdfs:comment """Contacts:
 Simon Clark
 SINTEF Industry
 email: simon.clark@sintef.no
@@ -31,7 +30,7 @@ email: simon.clark@sintef.no
 Jesper Friis
 SINTEF Industry
 email: jesper.friis@sintef.no"""@en ;
-    owl:versionInfo "0.5.0" .
+                                                      owl:versionInfo "0.5.0" .
 
 #################################################################
 #    Annotation properties
@@ -101,14 +100,6 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  http://emmo.info/electrochemistry#electrochemistry_041b1b64_bc96_4c75_b6b1_21d3e6f713b9
-:electrochemistry_041b1b64_bc96_4c75_b6b1_21d3e6f713b9 rdf:type owl:ObjectProperty ;
-                                                       rdfs:subPropertyOf emmo:EMMO_dba27ca1_33c9_4443_a912_1519ce4c39ec ;
-                                                       rdfs:domain emmo:EMMO_2031516a_2be7_48e8_9af7_7e1270e308fe ;
-                                                       rdfs:range emmo:EMMO_4207e895_8b83_4318_996a_72cfb32acd94 ;
-                                                       skos:prefLabel "hasSolvent"@en .
-
-
 ###  http://emmo.info/electrochemistry#electrochemistry_3bd08946_4e81_455d_9fca_dc7a5ead9315
 :electrochemistry_3bd08946_4e81_455d_9fca_dc7a5ead9315 rdf:type owl:ObjectProperty ;
                                                        rdfs:subPropertyOf emmo:EMMO_dba27ca1_33c9_4443_a912_1519ce4c39ec ;
@@ -139,21 +130,6 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
                                                        rdfs:domain :electrochemistry_6f2c88c9_5c04_4953_a298_032cc3ab9b77 ;
                                                        rdfs:range :electrochemistry_7729c34e_1ae9_403d_b933_1765885e7f29 ;
                                                        skos:prefLabel "hasReferenceElectrode"@en .
-
-
-###  http://emmo.info/electrochemistry#electrochemistry_6bf73b4c_bc73_4db1_bf51_12628ce9ea3b
-:electrochemistry_6bf73b4c_bc73_4db1_bf51_12628ce9ea3b rdf:type owl:ObjectProperty ;
-                                                       rdfs:subPropertyOf emmo:EMMO_dba27ca1_33c9_4443_a912_1519ce4c39ec ;
-                                                       rdfs:domain :electrochemistry_0f007072-a8dd-4798-b865-1bf9363be627 ;
-                                                       skos:prefLabel "hasElectrodeConstituent"@en .
-
-
-###  http://emmo.info/electrochemistry#electrochemistry_724533f3_89da_4d2a_a4fd_722297daa2a7
-:electrochemistry_724533f3_89da_4d2a_a4fd_722297daa2a7 rdf:type owl:ObjectProperty ;
-                                                       rdfs:subPropertyOf emmo:EMMO_dba27ca1_33c9_4443_a912_1519ce4c39ec ;
-                                                       rdfs:domain emmo:EMMO_2031516a_2be7_48e8_9af7_7e1270e308fe ;
-                                                       rdfs:range emmo:EMMO_4207e895_8b83_4318_996a_72cfb32acd94 ;
-                                                       skos:prefLabel "hasSolute"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee
@@ -215,13 +191,6 @@ emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d rdf:type owl:ObjectProperty .
 #################################################################
 #    Classes
 #################################################################
-
-###  http://emmo.info/battery#battery_e10d5fef_4a97_40ea_8f24_88f054856671
-<http://emmo.info/battery#battery_e10d5fef_4a97_40ea_8f24_88f054856671> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
-                                                                        skos:altLabel "LithiumNickelDioxide"@en ;
-                                                                        skos:prefLabel "LNO"@en .
-
 
 ###  http://emmo.info/electrochemistry#electrochemistry_008201ec_1e44_47a9_bc50_644ed07489ea
 :electrochemistry_008201ec_1e44_47a9_bc50_644ed07489ea rdf:type owl:Class ;
@@ -299,13 +268,6 @@ emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d rdf:type owl:ObjectProperty .
  ] .
 
 
-###  http://emmo.info/electrochemistry#electrochemistry_05dcd9c7_bdea_4ed2_a2b3_57f04335037b
-:electrochemistry_05dcd9c7_bdea_4ed2_a2b3_57f04335037b rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
-                                                       skos:altLabel "LithiumNickelCobaltAluminiumOxide"@en ;
-                                                       skos:prefLabel "NCA"@en .
-
-
 ###  http://emmo.info/electrochemistry#electrochemistry_06d8e1ee_924a_4915_998d_33a69f41dadc
 :electrochemistry_06d8e1ee_924a_4915_998d_33a69f41dadc rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_f49b84d4_e1f9_424c_bb22_8cea23c0a7d4 ,
@@ -346,6 +308,12 @@ emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d rdf:type owl:ObjectProperty .
                                                        skos:prefLabel "ICI"@en .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_09a7f560_9ddf_4c32_b067_b213eca5b0a1
+:electrochemistry_09a7f560_9ddf_4c32_b067_b213eca5b0a1 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_54e0c2bd_1bb2_4f9c_9b55_5b6cc34651ec ;
+                                                       skos:prefLabel "Coating"@en .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_09e64707_a17d_4405_84cc_ee9d91ed32ef
 :electrochemistry_09e64707_a17d_4405_84cc_ee9d91ed32ef rdf:type owl:Class .
 
@@ -359,7 +327,11 @@ emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d rdf:type owl:ObjectProperty .
 
 ###  http://emmo.info/electrochemistry#electrochemistry_0acd0fc2_1048_4604_8e90_bf4e84bd87df
 :electrochemistry_0acd0fc2_1048_4604_8e90_bf4e84bd87df rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 ;
+                                                       rdfs:subClassOf emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_dba27ca1_33c9_4443_a912_1519ce4c39ec ;
+                                                                         owl:someValuesFrom :electrochemistry_6f2c88c9_5c04_4953_a298_032cc3ab9b77
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A device whose primary function is facilitating the conversion between chemical and electrical energy."@en ;
                                                        skos:prefLabel "ElectrochemicalDevice"@en .
 
@@ -397,12 +369,6 @@ emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d rdf:type owl:ObjectProperty .
                                                        skos:prefLabel "ConstantCurrentConstantVoltageCharging"@en .
 
 
-###  http://emmo.info/electrochemistry#electrochemistry_0d972869_df74_445b_9859_f21973e32a0e
-:electrochemistry_0d972869_df74_445b_9859_f21973e32a0e rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_4207e895_8b83_4318_996a_72cfb32acd94 ;
-                                                       skos:prefLabel "StainlessSteel"@en .
-
-
 ###  http://emmo.info/electrochemistry#electrochemistry_0d9ba00d_04bc_4bdc_85af_3380694f6f68
 :electrochemistry_0d9ba00d_04bc_4bdc_85af_3380694f6f68 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_7729c34e_1ae9_403d_b933_1765885e7f29 ;
@@ -429,7 +395,7 @@ emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d rdf:type owl:ObjectProperty .
                                                                          owl:someValuesFrom :electrochemistry_9c73aff8_1c82_4116_a6be_78e21982b69d
                                                                        ] ,
                                                                        [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty emmo:EMMO_9a084aa3_3d5a_4a62_9fc0_fd88937a19c5 ;
+                                                                         owl:onProperty emmo:EMMO_8785be5a_2493_4b12_8f39_31907ab11748 ;
                                                                          owl:someValuesFrom :electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59
                                                                        ] ,
                                                                        [ rdf:type owl:Restriction ;
@@ -474,12 +440,6 @@ emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d rdf:type owl:ObjectProperty .
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Analytical methods in which electrochemical processes or phenomena are the core of the measurement principle involving electrochemical cells providing qualitative and quantitative responses."@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"^^xsd:anyURI ;
                                                        skos:prefLabel "ElectroanalyticalTechnique"@en .
-
-
-###  http://emmo.info/electrochemistry#electrochemistry_112d1a24_86fb_4ade_acae_4948c48679c8
-:electrochemistry_112d1a24_86fb_4ade_acae_4948c48679c8 rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
-                                                       skos:prefLabel "LiClO4"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_113e0469_8ae0_407f_892d_4b988f8d8a08
@@ -574,8 +534,20 @@ emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d rdf:type owl:ObjectProperty .
 
 ###  http://emmo.info/electrochemistry#electrochemistry_15325775_6d4c_4192_82f1_e4feca9de426
 :electrochemistry_15325775_6d4c_4192_82f1_e4feca9de426 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_331e6cca_f260_4bf8_af55_35304fe1bbe0 ;
+                                                       rdfs:subClassOf emmo:EMMO_a2a68924_b759_4ba4_a25d_126021569fb9 ;
+                                                       emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q21082486" ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A membrane having ion-exchange groups:"@en ;
+                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "a selective barrier that permits the passage of ions of one sign while preventing the passage of ions of opposite sign."@en ;
+                                                       emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Ion-exchange_membrane" ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.IT07155"@en ;
                                                        skos:prefLabel "IonExchangeMembrane"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_15325775_6d4c_4192_82f1_e4feca9de426 ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "A membrane having ion-exchange groups:"@en ;
+   dcterms:source "IUPAC. Compendium of Chemical Terminology, 2nd ed. (the \"Gold Book\"). Compiled by A. D. McNaught and A. Wilkinson. Blackwell Scientific Publications, Oxford (1997). Online version (2019-) created by S. J. Chalk. ISBN 0-9678550-9-8. https://doi.org/10.1351/goldbook."
+ ] .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_158ae038_c64b_4cc0_aa56_650475490705
@@ -613,12 +585,6 @@ emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d rdf:type owl:ObjectProperty .
    owl:annotatedTarget "Electrolyte solution in the cathodic compartment of an electrolysis cell or galvanic cell, i.e., in that part of the cell where the cathode is placed."@en ;
    dcterms:source "A. J. Bard, G. Inzelt, and F. Scholz, Eds., Electrochemical Dictionary, 2nd Edition. Berlin: Springer-Verlag, 2012. DOI: https://doi.org/10.1007/978-3-642-29551-5"
  ] .
-
-
-###  http://emmo.info/electrochemistry#electrochemistry_17278fd7_7b1d_4acd_9dbb_aa72351cd165
-:electrochemistry_17278fd7_7b1d_4acd_9dbb_aa72351cd165 rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
-                                                       skos:prefLabel "Graphite"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_180878b5_8de8_4dd8_b881_1d0bebe326d4
@@ -666,11 +632,7 @@ emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d rdf:type owl:ObjectProperty .
 
 ###  http://emmo.info/electrochemistry#electrochemistry_1a7fb32a_743f_4aa6_ac5a_ff7a2ba29dce
 :electrochemistry_1a7fb32a_743f_4aa6_ac5a_ff7a2ba29dce rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_008201ec_1e44_47a9_bc50_644ed07489ea ,
-                                                                       [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
-                                                                         owl:someValuesFrom :electrochemistry_6202d0be_2dcf_4ec3_8952_bca183ce4e87
-                                                                       ] ;
+                                                       rdfs:subClassOf :electrochemistry_008201ec_1e44_47a9_bc50_644ed07489ea ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electrogravimetry using an electrochemical quartz crystal microbalance."@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1515/pac-2018-0109"@en ;
                                                        rdfs:comment "The change of mass is, for rigid deposits, linearly proportional to the change of the reso- nance frequency of the quartz crystal, according to the Sauerbrey equation. For non- rigid deposits, corrections must be made."@en ;
@@ -695,12 +657,6 @@ emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d rdf:type owl:ObjectProperty .
    owl:annotatedTarget "The symbolic representation of a chemical reaction in the form of symbols and formulae, wherein the reactant entities are given on the left-hand side and the product entities on the right-hand side."@en ;
    dcterms:source "IUPAC. Compendium of Chemical Terminology, 2nd ed. (the \"Gold Book\"). Compiled by A. D. McNaught and A. Wilkinson. Blackwell Scientific Publications, Oxford (1997). Online version (2019-) created by S. J. Chalk. ISBN 0-9678550-9-8. https://doi.org/10.1351/goldbook."
  ] .
-
-
-###  http://emmo.info/electrochemistry#electrochemistry_1f7ba79e_3aaf_47f4_9281_53714416ea26
-:electrochemistry_1f7ba79e_3aaf_47f4_9281_53714416ea26 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_82fef384_8eec_4765_b707_5397054df594 ;
-                                                       skos:prefLabel "CarbonBlack"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_1fc5642c_b7b2_43bf_ad20_f96001db8800
@@ -818,11 +774,18 @@ Aluminum foil"""@en ;
                                                        skos:prefLabel "Carbon"@en .
 
 
-###  http://emmo.info/electrochemistry#electrochemistry_2b43aaba_5148_4311_84ab_db782c8fe5fd
-:electrochemistry_2b43aaba_5148_4311_84ab_db782c8fe5fd rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
-                                                       skos:altLabel "LithiumIronPhosphate"@en ;
-                                                       skos:prefLabel "LFP"@en .
+###  http://emmo.info/electrochemistry#electrochemistry_2b50cdac_581f_48b9_87ca_bad5138ab58d
+:electrochemistry_2b50cdac_581f_48b9_87ca_bad5138ab58d rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_54e0c2bd_1bb2_4f9c_9b55_5b6cc34651ec ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a double layer of charges exists at the interface between two conducting media: One side carries a positive excess charge, which is balanced by a negative excess of equal magnitude on the other side."@en ;
+                                                       skos:prefLabel "DoubleLayer"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_2b50cdac_581f_48b9_87ca_bad5138ab58d ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "a double layer of charges exists at the interface between two conducting media: One side carries a positive excess charge, which is balanced by a negative excess of equal magnitude on the other side."@en ;
+   dcterms:source "A. J. Bard, G. Inzelt, and F. Scholz, Eds., Electrochemical Dictionary, 2nd Edition. Berlin: Springer-Verlag, 2012. DOI: https://doi.org/10.1007/978-3-642-29551-5"
+ ] .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_2d32a81a_2148_41bd_84fb_467aa8de4a8f
@@ -980,13 +943,6 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
                                                        skos:prefLabel "AnnularWorkingElectrode"@en .
 
 
-###  http://emmo.info/electrochemistry#electrochemistry_3a9eddd3_3bee_42e1_9d66_f19332ea2e8a
-:electrochemistry_3a9eddd3_3bee_42e1_9d66_f19332ea2e8a rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
-                                                       skos:altLabel "DimethylCarbonate"@en ;
-                                                       skos:prefLabel "DMC"@en .
-
-
 ###  http://emmo.info/electrochemistry#electrochemistry_3b35e843_3132_41e3_b6df_541cd45ba880
 :electrochemistry_3b35e843_3132_41e3_b6df_541cd45ba880 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62 ,
@@ -1037,15 +993,6 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
                                                        skos:altLabel "FloatCharging"@en ,
                                                                      "PotentiostaticCharging"@en ;
                                                        skos:prefLabel "ConstantVoltageCharging"@en .
-
-
-###  http://emmo.info/electrochemistry#electrochemistry_3f0a19ba_d90c_4ed3_b2e6_b5e16d594af1
-:electrochemistry_3f0a19ba_d90c_4ed3_b2e6_b5e16d594af1 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_79d1b273-58cd-4be6-a250-434817f7c261 ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An electrochemical material that can act as a host lattice in an electrochemical intercalation reaction."@en ;
-                                                       emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "Graphite"@en ;
-                                                       skos:altLabel "IntercalationMaterial"@en ;
-                                                       skos:prefLabel "InsertionMaterial"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_3f9b2956_1465_4fe0_b0df_5e4784dac3b6
@@ -1099,6 +1046,13 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
    owl:annotatedTarget "Electrochemical experiments (usually potentiostatic) where the applied constant or linearly changed potential is superimposed by an alternating (sinusoidal) potential signal of small magnitude."@en ;
    dcterms:source "Bard AJ, Faulkner LR (2001) Electrochemical methods, 2nd edn. Wiley, New York, chap 10, pp 368"
  ] .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_418c59bd_dc9d_438b_bc7c_494fbd1bb4f8
+:electrochemistry_418c59bd_dc9d_438b_bc7c_494fbd1bb4f8 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_92147e31_d015_4889_a092_04fbab033f15 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An electrode that is coated on only one side of the current collector."@en ;
+                                                       skos:prefLabel "SingleSidedElectrode"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_43ce1a7e_8056_40cb_bdbd_4ce991af1821
@@ -1229,8 +1183,9 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
 
 ###  http://emmo.info/electrochemistry#electrochemistry_50044b99_b858_433b_a32d_23d1e1cf88b2
 :electrochemistry_50044b99_b858_433b_a32d_23d1e1cf88b2 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_b5ea31c9_bb10_4276_980e_c3eceb1efc82 ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The boundary between two electrochemical materials, at which electrochemical reactions normally take place."@en ;
+                                                       rdfs:subClassOf emmo:EMMO_fcae603e_aa6e_4940_9fa1_9f0909cabf3b ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The two-dimensional space comprising the boundary between two electrochemical constituents."@en ;
+                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The area where electrochemical reactions normally take place."@en ;
                                                        skos:prefLabel "ElectrochemicalInterface"@en .
 
 
@@ -1262,8 +1217,17 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
 
 ###  http://emmo.info/electrochemistry#electrochemistry_54e0c2bd_1bb2_4f9c_9b55_5b6cc34651ec
 :electrochemistry_54e0c2bd_1bb2_4f9c_9b55_5b6cc34651ec rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_b5ea31c9_bb10_4276_980e_c3eceb1efc82 ;
-                                                       skos:prefLabel "InterfacialLayer"@en .
+                                                       rdfs:subClassOf emmo:EMMO_4f226cf3_6d02_4d35_8566_a9e641bc6ff3 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A spatial region at the interface be-tween two bulk phases in contact, which is different chemically and physically from both phases in contact."@en ;
+                                                       emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "SEI, double layer"@en ;
+                                                       skos:prefLabel "Interphase"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_54e0c2bd_1bb2_4f9c_9b55_5b6cc34651ec ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "A spatial region at the interface be-tween two bulk phases in contact, which is different chemically and physically from both phases in contact."@en ;
+   dcterms:source "A. J. Bard, G. Inzelt, and F. Scholz, Eds., Electrochemical Dictionary, 2nd Edition. Berlin: Springer-Verlag, 2012. DOI: https://doi.org/10.1007/978-3-642-29551-5"
+ ] .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_5548f188_df00_4c05_ae98_7846e92efe36
@@ -1285,6 +1249,13 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
    owl:annotatedTarget "Movement of a fluid through a diaphragm, produced by application of an electric field."@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_56f85b19_1384_4e88_b130_cb8e7984db83
+:electrochemistry_56f85b19_1384_4e88_b130_cb8e7984db83 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_92147e31_d015_4889_a092_04fbab033f15 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An electrode that is coated on both sides of the current collector."@en ;
+                                                       skos:prefLabel "DoubleSidedElectrode"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_579eed46_6918_4275_9a70_dfd0409ab418
@@ -1340,8 +1311,7 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
 
 ###  http://emmo.info/electrochemistry#electrochemistry_5adb91e0_ffe1_41f3_b779_c6966f65fb0e
 :electrochemistry_5adb91e0_ffe1_41f3_b779_c6966f65fb0e rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_0f007072-a8dd-4798-b865-1bf9363be627 ,
-                                                                       :electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc ;
+                                                       rdfs:subClassOf :electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An electrode in which the actve electrochemical material is a metal."@en ;
                                                        skos:prefLabel "MetalElectrode"@en .
 
@@ -1406,13 +1376,6 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
                                                        skos:prefLabel "LiquidElectrolyte"@en .
 
 
-###  http://emmo.info/electrochemistry#electrochemistry_60c3f48a_df8c_4d61_a0a3_2d9117c9b1e2
-:electrochemistry_60c3f48a_df8c_4d61_a0a3_2d9117c9b1e2 rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
-                                                       skos:altLabel "LithiumNickelManganeseCobaltOxide"@en ;
-                                                       skos:prefLabel "NMC"@en .
-
-
 ###  http://emmo.info/electrochemistry#electrochemistry_60c5b2e5_164a_4ce6_8409_f386f5e50c03
 :electrochemistry_60c5b2e5_164a_4ce6_8409_f386f5e50c03 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_579eed46_6918_4275_9a70_dfd0409ab418 ;
@@ -1447,16 +1410,6 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
                                                        rdfs:comment "A peak-shaped cathodic stripping voltammogram is obtained. Peak current depends on time of accumulation, mass transport of analyte (stirring), scan rate and mode (linear or pulse), and analyte concentration in solution."@en ;
                                                        skos:altLabel "CSV"@en ;
                                                        skos:prefLabel "CathodicStrippingVoltammetry"@en .
-
-
-###  http://emmo.info/electrochemistry#electrochemistry_6202d0be_2dcf_4ec3_8952_bca183ce4e87
-:electrochemistry_6202d0be_2dcf_4ec3_8952_bca183ce4e87 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_6f2c88c9_5c04_4953_a298_032cc3ab9b77 ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electrochemical cell in which the working electrode is located on one surface of a piezoelectric quartz crystal, the oscillation frequency of which is measured."@en ;
-                                                       dcterms:source "Pingarrón, José M., et al. \"Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019).\" Pure and Applied Chemistry 92.4 (2020): 641-694. https://doi.org/10.1515/pac-2018-0109."@en ;
-                                                       rdfs:comment "The change in resonant frequency (proportional to mass changes) is measured during elec- trochemical processes, such as linear scan voltammetry or cyclic voltammetry, giving simul- taneous information on changes in mass and charge transfer."@en ,
-                                                                    "The electrode may be chemically modified."@en ;
-                                                       skos:prefLabel "ElectrochemicalQuartzCrystalMicrobalance"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_634467ad_feed_4979_adb2_877d98fe1768
@@ -1577,13 +1530,6 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
                                                        skos:prefLabel "Binder"@en .
 
 
-###  http://emmo.info/electrochemistry#electrochemistry_6aa337cd_4016_46e9_b844_231036b1544a
-:electrochemistry_6aa337cd_4016_46e9_b844_231036b1544a rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
-                                                       skos:altLabel "LithiumHexafluorophosphate"@en ;
-                                                       skos:prefLabel "LiPF6"@en .
-
-
 ###  http://emmo.info/electrochemistry#electrochemistry_6c421175_477f_45e0_8b6c_c3464f5351c5
 :electrochemistry_6c421175_477f_45e0_8b6c_c3464f5351c5 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_0f007072-a8dd-4798-b865-1bf9363be627 ;
@@ -1646,22 +1592,20 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
                                                                          owl:someValuesFrom :electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59
                                                                        ] ,
                                                                        [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty :electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138 ;
-                                                                         owl:someValuesFrom :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
+                                                                         owl:onProperty :electrochemistry_578c41e9_ee01_4840_9c8c_04ab6e4e6241 ;
+                                                                         owl:someValuesFrom :electrochemistry_35c650ab_3b23_4938_b312_1b0dede2e6d5
                                                                        ] ,
                                                                        [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty :electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616 ;
-                                                                         owl:someValuesFrom :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
+                                                                         owl:onProperty :electrochemistry_578c41e9_ee01_4840_9c8c_04ab6e4e6241 ;
+                                                                         owl:someValuesFrom :electrochemistry_b6319c74_d2ce_48c0_a75a_63156776b302
                                                                        ] ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-01"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A system containing two electrodes that allow transport of electrons, separated by an electrolyte that allows movement of ions but blocks movement of electrons."@en ;
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Electrochemical_cell"@en ;
                                                        rdfs:comment "Composite system in which the supplied electric energy mainly produces chemical reactions or, conversely, in which the energy released by chemical reactions is mainly delivered by the system as electric energy."@en ,
                                                                     "If processes of interest occur at both the anode and the cathode of a cell (as in differential amperometry or controlled-current potentiometric titration with two indicator electrodes), the cell should be said to comprise two indicator or two working electrodes."@en ,
-                                                                    "In electrochemistry the term “cell” is commonly qualified to describe the particular device on which electrochemical reactions take place. Examples of galvanic and electrolytic cells are standard cells, electrochemical sensor cells, conductivity cells, spectroelectrochemical cells, fuel cells, batteries, electrochemical measuring cells, and two- and three-electrode cells."@en ,
-                                                                    "System that consists of at least two electron conductors (electrodes) in contact with ionic conductors (electrolytes)."@en ,
-                                                                    "The current flow through the electrochemical cell may be zero or non-zero. An electrochemical cell with current flow can operate either as a galvanic cell or as an electrolytic cell."@en ,
-                                                                    "The two electrodes may be a working electrode and an auxiliary electrode or, for zero- current measurements (potentiometric mode), an indicator electrode and a reference electrode. There may be a third electrode, the cell having a separate auxiliary electrode (to carry current) and reference electrode (for measurement of electrode potential) in addition to a working electrode (See three-electrode cell)."@en ;
+                                                                    "In electrochemistry the term “cell” is commonly qualified to describe the particular device on which electrochemical reactions take place. It is important to distinguish between the concept of an electrochemical cell (two electrodes separated by electrolyte) and an electrochemical device (a manufactured object for making practical use of an electrochemical cell, e.g. for measurement or energy storage purposes)."@en ,
+                                                                    "System that consists of at least two electron conductors (electrodes) in contact with ionic conductors (electrolytes)."@en ;
                                                        skos:prefLabel "ElectrochemicalCell"@en .
 
 [ rdf:type owl:Axiom ;
@@ -1696,7 +1640,7 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
 :electrochemistry_6fec8cc1_4e6c_428e_8343_6cf3c286a185 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_5adb91e0_ffe1_41f3_b779_c6966f65fb0e ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Foil, wire or disc electrode made of gold which is easily fabricated into a variety of electrode geometries."@en ;
-                                                       rdfs:comment "At positive potentials, Au forms an oxide and/or chemisorbed oxygen layer, while in the presence of com- plexing anions, such as chloride or cyanide, it readily undergoes oxidation and dissolution, limiting its working potential range and its applications."@en ;
+                                                       rdfs:comment "At positive potentials, Au forms an oxide and/or chemisorbed oxygen layer, while in the presence of complexing anions, such as chloride or cyanide, it readily undergoes oxidation and dissolution, limiting its working potential range and its applications."@en ;
                                                        skos:altLabel "AuElectrode"@en ;
                                                        skos:prefLabel "GoldElectrode"@en .
 
@@ -1706,13 +1650,6 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
    owl:annotatedTarget "Foil, wire or disc electrode made of gold which is easily fabricated into a variety of electrode geometries."@en ;
    dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
-
-
-###  http://emmo.info/electrochemistry#electrochemistry_70611656_2082_4da0_8d92_5ef5669d03d3
-:electrochemistry_70611656_2082_4da0_8d92_5ef5669d03d3 rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
-                                                       skos:altLabel "VinyleneCarbonate"@en ;
-                                                       skos:prefLabel "VC"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_729a1064_d039_4b74_9d1d_759b18a3971c
@@ -1734,20 +1671,10 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
 
 ###  http://emmo.info/electrochemistry#electrochemistry_757eae08_4d43_42d4_8b4e_8a0bfd2f9a1c
 :electrochemistry_757eae08_4d43_42d4_8b4e_8a0bfd2f9a1c rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc ,
-                                                                       [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
-                                                                         owl:someValuesFrom :electrochemistry_3f0a19ba_d90c_4ed3_b2e6_b5e16d594af1
-                                                                       ] ;
+                                                       rdfs:subClassOf :electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An electrode at which the predominant electrochemical reaction is an intercalation."@en ;
                                                        skos:altLabel "IntercalationElectrode"@en ;
                                                        skos:prefLabel "InsertionElectrode"@en .
-
-
-###  http://emmo.info/electrochemistry#electrochemistry_761d6620_0959_43bc_8a97_e4ffdb7e7881
-:electrochemistry_761d6620_0959_43bc_8a97_e4ffdb7e7881 rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_4207e895_8b83_4318_996a_72cfb32acd94 ;
-                                                       skos:prefLabel "SiliconGraphite"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_771e82be_c61d_4aad_bdcf_62ca3e68a939
@@ -1848,10 +1775,8 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                                                        :electrochemistry_ebdb68e9_c4b5_4d57_a042_c0f51d446755 ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-14"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Material that is oxidized or reduced at an electrode in an electrochemical cell."@en ;
-                                                       rdfs:comment "If an electroactive substance B is formed, in the solution or at the electrode surface, by a chemical reaction from another substance C, the substance C should be called the precursor of B." ,
-                                                                    "Substance that undergoes a change of oxidation state, or whose chemical bonds are broken or formed, in a charge-transfer reaction at an electrode."@en ;
+                                                       rdfs:comment "If an electroactive substance B is formed, in the solution or at the electrode surface, by a chemical reaction from another substance C, the substance C should be called the precursor of B." ;
                                                        skos:altLabel "ActiveElectrochemicalMaterial"@en ,
-                                                                     "ElectroactiveSubstance"@en ,
                                                                      "ElectrochemicallyActiveMaterial"@en ;
                                                        skos:prefLabel "ActiveMaterial"@en .
 
@@ -1860,13 +1785,6 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "Material that is oxidized or reduced at an electrode in an electrochemical cell."@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource :electrochemistry_79d1b273-58cd-4be6-a250-434817f7c261 ;
-   owl:annotatedProperty rdfs:comment ;
-   owl:annotatedTarget "Substance that undergoes a change of oxidation state, or whose chemical bonds are broken or formed, in a charge-transfer reaction at an electrode."@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -1928,7 +1846,13 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 
 ###  http://emmo.info/electrochemistry#electrochemistry_82fef384_8eec_4765_b707_5397054df594
 :electrochemistry_82fef384_8eec_4765_b707_5397054df594 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_b5ea31c9_bb10_4276_980e_c3eceb1efc82 ;
+                                                       rdfs:subClassOf :electrochemistry_b5ea31c9_bb10_4276_980e_c3eceb1efc82 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty [ owl:inverseOf emmo:EMMO_dba27ca1_33c9_4443_a912_1519ce4c39ec
+                                                                                        ] ;
+                                                                         owl:someValuesFrom :electrochemistry_0f007072-a8dd-4798-b865-1bf9363be627
+                                                                       ] ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a material added to an electrode for the purpose of increasing its electronic conductivity."@en ;
                                                        skos:altLabel "ElectronicallyConductiveElectrodeAdditive"@en ;
                                                        skos:prefLabel "ConductiveAdditive"@en .
 
@@ -2050,6 +1974,7 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-08"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electrochemical cell that has two half-cells separated by a wall permeable to ions, both containing the same electrolyte differing only in their ion concentrations."@en ;
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Concentration_cell"@en ;
+                                                       rdfs:comment "A concentration cell produces a voltage as it attempts to reach equilibrium, which will occur when the concentration in both cells is equal." ;
                                                        skos:prefLabel "ConcentrationCell"@en .
 
 [ rdf:type owl:Axiom ;
@@ -2086,12 +2011,6 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                                        rdfs:comment "A peak-shaped anodic stripping voltammogram is obtained. Peak current depends on time of accumulation, mass transport of analyte (stirring), scan rate and mode (linear or pulse), and analyte concentration in solution."@en ,
                                                                     "A solid electrode, carbon paste or composite electrode, bismuth film electrode, mercury film electrode, or static mercury drop electrode may be used."@en ;
                                                        skos:prefLabel "AnodicStrippingVoltammetry"@en .
-
-
-###  http://emmo.info/electrochemistry#electrochemistry_8c51e9ce_8b1d_4e8e_9c05_e1f5f96eea32
-:electrochemistry_8c51e9ce_8b1d_4e8e_9c05_e1f5f96eea32 rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
-                                                       skos:prefLabel "LiTFSI"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_8c71739c_27c1_4d19_a0ff_02545296af43
@@ -2141,20 +2060,6 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                                        skos:prefLabel "CoatedElectrode"@en .
 
 
-###  http://emmo.info/electrochemistry#electrochemistry_929a9efc_eda1_4d0d_920c_540c0409d7f3
-:electrochemistry_929a9efc_eda1_4d0d_920c_540c0409d7f3 rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
-                                                       skos:altLabel "LithiumTitanate"@en ;
-                                                       skos:prefLabel "LTO"@en .
-
-
-###  http://emmo.info/electrochemistry#electrochemistry_92b09a6a_e933_49c8_89cc_0c39798ce117
-:electrochemistry_92b09a6a_e933_49c8_89cc_0c39798ce117 rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
-                                                       skos:altLabel "LithiumManganeseOxide"@en ;
-                                                       skos:prefLabel "LMO"@en .
-
-
 ###  http://emmo.info/electrochemistry#electrochemistry_95e4aa95_b7e9_40d7_b78e_4d7dcc31093d
 :electrochemistry_95e4aa95_b7e9_40d7_b78e_4d7dcc31093d rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_6f2c88c9_5c04_4953_a298_032cc3ab9b77 ,
@@ -2166,7 +2071,8 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                                                          owl:onProperty :electrochemistry_3bd08946_4e81_455d_9fca_dc7a5ead9315 ;
                                                                          owl:someValuesFrom :electrochemistry_865a40fc_2187_4549_a7e1_37aa2458448f
                                                                        ] ;
-                                                       skos:prefLabel "ElectrochemicalFlowCell"@en .
+                                                       skos:altLabel "ElectrochemicalFlowCell"@en ;
+                                                       skos:prefLabel "FlowCell"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_9865e4f9_756d_4d94_a6fd_4102ab795f9e
@@ -2225,10 +2131,19 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 
 ###  http://emmo.info/electrochemistry#electrochemistry_9da958fc_f76d_4654_8a78_99b5f98c118c
 :electrochemistry_9da958fc_f76d_4654_8a78_99b5f98c118c rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_b9522e56_1fac_4766_97e6_428605fabd3e ;
+                                                       rdfs:subClassOf emmo:EMMO_b9522e56_1fac_4766_97e6_428605fabd3e ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :electrochemistry_3bd08946_4e81_455d_9fca_dc7a5ead9315 ;
+                                                                         owl:someValuesFrom :electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :electrochemistry_578c41e9_ee01_4840_9c8c_04ab6e4e6241 ;
+                                                                         owl:someValuesFrom :electrochemistry_0f007072-a8dd-4798-b865-1bf9363be627
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A system comprising one electrode in contact with an ionic conductor."@en ;
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Half-cell"@en ;
-                                                       skos:prefLabel "ElectrochemicalHalfCell"@en .
+                                                       skos:altLabel "ElectrochemicalHalfCell" ;
+                                                       skos:prefLabel "HalfCell"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_9f466223_e20a_474d_ac4d_6d4b6131c275
@@ -2475,12 +2390,6 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
  ] .
 
 
-###  http://emmo.info/electrochemistry#electrochemistry_ab6a2363_b86a_4d3f_bb23_2affc00bab71
-:electrochemistry_ab6a2363_b86a_4d3f_bb23_2affc00bab71 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_17278fd7_7b1d_4acd_9dbb_aa72351cd165 ;
-                                                       skos:prefLabel "SyntheticGraphite"@en .
-
-
 ###  http://emmo.info/electrochemistry#electrochemistry_ac6c2371_995a_4fcb_89a2_15cb6615741e
 :electrochemistry_ac6c2371_995a_4fcb_89a2_15cb6615741e rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_d3e2d213_d078_4b9a_8beb_62f063e57d69 ,
@@ -2497,12 +2406,12 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 
 ###  http://emmo.info/electrochemistry#electrochemistry_ac9723d1_bac0_4109_874e_32849de9299b
 :electrochemistry_ac9723d1_bac0_4109_874e_32849de9299b rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_54e0c2bd_1bb2_4f9c_9b55_5b6cc34651ec ;
+                                                       rdfs:subClassOf emmo:EMMO_d7788d1a_020d_4c78_85a1_13563fcec168 ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-19" ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "model representing the structure of an electrolyte at an electrode-electrolyte interface by a rigid layer formed by the charge carriers on the surface of the electrode and a diffuse layer formed by mobile ions in the electrolyte."@en ;
                                                        skos:altLabel "ElectricalDoubleLayer"@en ,
                                                                      "ElectricalPolarizationLayer"@en ;
-                                                       skos:prefLabel "DoubleLayer"@en .
+                                                       skos:prefLabel "DoubleLayerModel"@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_ac9723d1_bac0_4109_874e_32849de9299b ;
@@ -2510,12 +2419,6 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
    owl:annotatedTarget "model representing the structure of an electrolyte at an electrode-electrolyte interface by a rigid layer formed by the charge carriers on the surface of the electrode and a diffuse layer formed by mobile ions in the electrolyte."@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
-
-
-###  http://emmo.info/electrochemistry#electrochemistry_ae7a048c_3b53_4fc0_907f_27e9ed64d7df
-:electrochemistry_ae7a048c_3b53_4fc0_907f_27e9ed64d7df rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
-                                                       skos:prefLabel "LiCF3SO3"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
@@ -2543,8 +2446,17 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 
 ###  http://emmo.info/electrochemistry#electrochemistry_b2d11f0d_c1b0_4476_8d17_03b73d31e01f
 :electrochemistry_b2d11f0d_c1b0_4476_8d17_03b73d31e01f rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_331e6cca_f260_4bf8_af55_35304fe1bbe0 ;
+                                                       rdfs:subClassOf emmo:EMMO_a2a68924_b759_4ba4_a25d_126021569fb9 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Membrane constituted of two or more structural planes of non-identical morphologies."@en ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.AT06862" ;
                                                        skos:prefLabel "AsymmetricMembrane"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_b2d11f0d_c1b0_4476_8d17_03b73d31e01f ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "Membrane constituted of two or more structural planes of non-identical morphologies."@en ;
+   dcterms:source "IUPAC. Compendium of Chemical Terminology, 2nd ed. (the \"Gold Book\"). Compiled by A. D. McNaught and A. Wilkinson. Blackwell Scientific Publications, Oxford (1997). Online version (2019-) created by S. J. Chalk. ISBN 0-9678550-9-8. https://doi.org/10.1351/goldbook."
+ ] .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_b2e7fd5d_6eec_41a7_a621_51aff19c3114
@@ -2619,6 +2531,7 @@ of other configurations are used."""@en ;
 ###  http://emmo.info/electrochemistry#electrochemistry_b5ea31c9_bb10_4276_980e_c3eceb1efc82
 :electrochemistry_b5ea31c9_bb10_4276_980e_c3eceb1efc82 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_ceaaf9f7_fd11_424b_8fda_9afa186af186 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A constituent in an electrochemical system."@en ;
                                                        skos:prefLabel "ElectrochemicalConstituent"@en .
 
 
@@ -2665,20 +2578,6 @@ of other configurations are used."""@en ;
  ] .
 
 
-###  http://emmo.info/electrochemistry#electrochemistry_b7795bcc_7a91_48ab_b8fa_7c8e3b95ddad
-:electrochemistry_b7795bcc_7a91_48ab_b8fa_7c8e3b95ddad rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
-                                                       skos:altLabel "FluoroethyleneCarbonate"@en ;
-                                                       skos:prefLabel "FEC"@en .
-
-
-###  http://emmo.info/electrochemistry#electrochemistry_b7ae249f_8626_40c4_a57d_86a0e681d52d
-:electrochemistry_b7ae249f_8626_40c4_a57d_86a0e681d52d rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
-                                                       skos:altLabel "DiethyleneCarbonate"@en ;
-                                                       skos:prefLabel "DEC"@en .
-
-
 ###  http://emmo.info/electrochemistry#electrochemistry_b812e9d0_7c58_4455_b3e7_6847f10c8e8a
 :electrochemistry_b812e9d0_7c58_4455_b3e7_6847f10c8e8a rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_fa22874b_76a9_4043_8b8f_6086c88746de ,
@@ -2723,6 +2622,7 @@ of other configurations are used."""@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electrochemical cell with a working electrode, reference electrode, and auxiliary electrode."@en ;
                                                        rdfs:comment "A potentiostat can be used to maintain a potential difference between the working and ref- erence electrodes."@en ,
                                                                     "Electric current flows between the working and auxiliary electrodes. Electrode potential may be measured between the working and reference electrodes."@en ;
+                                                       skos:altLabel "ThreeElectrodeElectrochemicalCell" ;
                                                        skos:prefLabel "ThreeElectrodeCell"@en .
 
 [ rdf:type owl:Axiom ;
@@ -2863,7 +2763,16 @@ of other configurations are used."""@en ;
 ###  http://emmo.info/electrochemistry#electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
 :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_0f007072-a8dd-4798-b865-1bf9363be627 ;
+                                                       emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=151-13-04" ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "for a device having two electrodes, that electrode having the lower electric potential."@en ;
                                                        skos:prefLabel "NegativeElectrode"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "for a device having two electrodes, that electrode having the lower electric potential."@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_cb3c0663_5962_4b79_8e72_1e8242af3977
@@ -2891,12 +2800,6 @@ of other configurations are used."""@en ;
                                                        skos:prefLabel "Zinc"@en .
 
 
-###  http://emmo.info/electrochemistry#electrochemistry_cec0fff5_6031_445c_be3c_0f96cbcd51f8
-:electrochemistry_cec0fff5_6031_445c_be3c_0f96cbcd51f8 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_17278fd7_7b1d_4acd_9dbb_aa72351cd165 ;
-                                                       skos:prefLabel "NaturalGraphite"@en .
-
-
 ###  http://emmo.info/electrochemistry#electrochemistry_cf596ea1_c313_4fe1_bd7f_c18afc8a24e3
 :electrochemistry_cf596ea1_c313_4fe1_bd7f_c18afc8a24e3 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_158ae038_c64b_4cc0_aa56_650475490705 ,
@@ -2915,13 +2818,22 @@ of other configurations are used."""@en ;
                                                                                         ] ;
                                                                          owl:someValuesFrom :electrochemistry_2e3e14f9_4cb8_45b2_908e_47eec893dec8
                                                                        ] ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "charge carrier ion in an electrolyte of an electrochemical cell."@en ;
-                                                       skos:prefLabel "ChargeCarrierIon"@en .
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a generic denomination of particles or quasiparticles responsible for electric charge transport."@en ;
+                                                       emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "electron, hole, ion"@en ;
+                                                       skos:prefLabel "ChargeCarrier"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_d11b0e66_c35b_4da7_80a1_037ce89b77fb
+:electrochemistry_d11b0e66_c35b_4da7_80a1_037ce89b77fb rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_331e6cca_f260_4bf8_af55_35304fe1bbe0 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a separator is composed of a mass of intermeshed glass fibers."@en ;
+                                                       skos:prefLabel "GlassFibreSeparator"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_d16eec87_c646_4566_bda6_7d3357cda061
 :electrochemistry_d16eec87_c646_4566_bda6_7d3357cda061 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_54e0c2bd_1bb2_4f9c_9b55_5b6cc34651ec ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An interfacial layer of an electrode surface, that causes the electrode to become passivated."@en ;
                                                        skos:prefLabel "PassivationLayer"@en .
 
 
@@ -3115,20 +3027,6 @@ of other configurations are used."""@en ;
                                                        skos:prefLabel "Iron"@en .
 
 
-###  http://emmo.info/electrochemistry#electrochemistry_e7e86b0b_80a1_47e7_b7a5_b4bb99532020
-:electrochemistry_e7e86b0b_80a1_47e7_b7a5_b4bb99532020 rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
-                                                       skos:altLabel "PropyleneCarbonate"@en ;
-                                                       skos:prefLabel "PC"@en .
-
-
-###  http://emmo.info/electrochemistry#electrochemistry_e8a38497_7b79_4051_a845_d345b98054c0
-:electrochemistry_e8a38497_7b79_4051_a845_d345b98054c0 rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
-                                                       skos:altLabel "EthylMethylCarbonate"@en ;
-                                                       skos:prefLabel "EMC"@en .
-
-
 ###  http://emmo.info/electrochemistry#electrochemistry_e8cedede_5685_4625_9abe_64f62b5ddcb6
 :electrochemistry_e8cedede_5685_4625_9abe_64f62b5ddcb6 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_10359c79_cdf2_401a_83ee_d22e7fbb2ad1 ,
@@ -3195,13 +3093,6 @@ of other configurations are used."""@en ;
                                                        skos:prefLabel "ElectrochemicalMaterial"@en .
 
 
-###  http://emmo.info/electrochemistry#electrochemistry_ec506ea8_e8db_4041_9f25_76eea1bb52d0
-:electrochemistry_ec506ea8_e8db_4041_9f25_76eea1bb52d0 rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
-                                                       skos:altLabel "LithiumCobaltOxide"@en ;
-                                                       skos:prefLabel "LCO"@en .
-
-
 ###  http://emmo.info/electrochemistry#electrochemistry_ec6f3d6f_bdf5_418f_9314_3ef2ff528103
 :electrochemistry_ec6f3d6f_bdf5_418f_9314_3ef2ff528103 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_b0a0dddb_d942_4af2_b6a7_d7165f4253f1 ;
@@ -3226,8 +3117,9 @@ of other configurations are used."""@en ;
 
 ###  http://emmo.info/electrochemistry#electrochemistry_ecf136cb_2584_4cb1_98b7_2d2b3d22e40d
 :electrochemistry_ecf136cb_2584_4cb1_98b7_2d2b3d22e40d rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_d16eec87_c646_4566_bda6_7d3357cda061 ;
+                                                       rdfs:subClassOf :electrochemistry_54e0c2bd_1bb2_4f9c_9b55_5b6cc34651ec ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An interfacial layer that forms between an electrode phase and and electrolyte phase, due to the decomposition of the electrolyte."@en ;
+                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Although the definition could apply to any electrode, it is conventionally used to describe interfacial layers that form on the anode of an electrochemical cell."@en ;
                                                        skos:altLabel "SEI"@en ;
                                                        skos:prefLabel "SolidElectrolyteInterphase"@en .
 
@@ -3279,7 +3171,8 @@ of other configurations are used."""@en ;
 
 ###  http://emmo.info/electrochemistry#electrochemistry_f1c7eacb_9f21_4100_925c_3974f266e06f
 :electrochemistry_f1c7eacb_9f21_4100_925c_3974f266e06f rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_331e6cca_f260_4bf8_af55_35304fe1bbe0 ;
+                                                       rdfs:subClassOf emmo:EMMO_a2a68924_b759_4ba4_a25d_126021569fb9 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a membrane composed of two layers, typically with different chemical properties or functional roles."@en ;
                                                        skos:prefLabel "BilayerMembrane"@en .
 
 
@@ -3353,6 +3246,12 @@ of other configurations are used."""@en ;
  ] .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_f8e0d532_cf44_403c_9188_e00ee161a3c1
+:electrochemistry_f8e0d532_cf44_403c_9188_e00ee161a3c1 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_ecf136cb_2584_4cb1_98b7_2d2b3d22e40d ;
+                                                       skos:prefLabel "CathodeElectrolyteInterphase"@en .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_f91c9ae3_42b8_4efa_9b67_a406d162d3b5
 :electrochemistry_f91c9ae3_42b8_4efa_9b67_a406d162d3b5 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_6e439f86_3d00_4b0b_82ab_1fa25241d4e9 ,
@@ -3378,11 +3277,7 @@ of other configurations are used."""@en ;
 ###  http://emmo.info/electrochemistry#electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59
 :electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_b5ea31c9_bb10_4276_980e_c3eceb1efc82 ,
-                                                                       :electrochemistry_ebdb68e9_c4b5_4d57_a042_c0f51d446755 ,
-                                                                       [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
-                                                                         owl:someValuesFrom :electrochemistry_d1042a12_e4be_4992_86cb_59420ef4e05c
-                                                                       ] ;
+                                                                       :electrochemistry_ebdb68e9_c4b5_4d57_a042_c0f51d446755 ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-01-02"@en ;
                                                        emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "https://dbpedia.org/page/Electrolyte"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A material in which the mobile species are ions and free movement of electrons is blocked." ;
@@ -3415,13 +3310,6 @@ of other configurations are used."""@en ;
    owl:annotatedTarget "Liquid or solid substance containing mobile ions that render it conductive."@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
-
-
-###  http://emmo.info/electrochemistry#electrochemistry_fb2f2265_2de9_4133_8c52_4f22887804db
-:electrochemistry_fb2f2265_2de9_4133_8c52_4f22887804db rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075 ;
-                                                       skos:altLabel "EthyleneCarbonate"@en ;
-                                                       skos:prefLabel "EC"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_fb988878_ee54_4350_9ee9_228c00c3ad35
@@ -3491,6 +3379,21 @@ of other configurations are used."""@en ;
 :electrochemistry_ff18b85b_f236_42db_ae58_291d2b45055c rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_a086af15_a7c3_404c_b4ce_c8e4466f1b4b ;
                                                        skos:prefLabel "Manganese"@en .
+
+
+###  http://emmo.info/emmo#EMMO_a2a68924_b759_4ba4_a25d_126021569fb9
+emmo:EMMO_a2a68924_b759_4ba4_a25d_126021569fb9 rdf:type owl:Class ;
+                                               rdfs:subClassOf :electrochemistry_331e6cca_f260_4bf8_af55_35304fe1bbe0 ;
+                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A general term which refers to a continuous layer, usually consisting of a semi-permeable material, with controlled permeability covering a structure, such as carbon or an inert metal, or separating two electrolyte solutions."@en ;
+                                               emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.M03823" ;
+                                               skos:prefLabel "Membrane"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource emmo:EMMO_a2a68924_b759_4ba4_a25d_126021569fb9 ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "A general term which refers to a continuous layer, usually consisting of a semi-permeable material, with controlled permeability covering a structure, such as carbon or an inert metal, or separating two electrolyte solutions."@en ;
+   dcterms:source "IUPAC. Compendium of Chemical Terminology, 2nd ed. (the \"Gold Book\"). Compiled by A. D. McNaught and A. Wilkinson. Blackwell Scientific Publications, Oxford (1997). Online version (2019-) created by S. J. Chalk. ISBN 0-9678550-9-8. https://doi.org/10.1351/goldbook."
+ ] .
 
 
 ###  https://emmo.info/electrochemistry#electrochemistry_09b9a369_2228_44bd_9b63_8abecfec8650
@@ -3769,15 +3672,9 @@ of other configurations are used."""@en ;
                                                                                            skos:prefLabel "LinearCurrentRamp"@en .
 
 
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
 ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
@@ -3793,49 +3690,7 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -3848,9 +3703,6 @@ of other configurations are used."""@en ;
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
@@ -3871,16 +3723,28 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
@@ -3889,16 +3753,10 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
@@ -3910,22 +3768,10 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
@@ -3934,16 +3780,7 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -3976,76 +3813,16 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
@@ -4066,6 +3843,12 @@ of other configurations are used."""@en ;
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
@@ -4073,6 +3856,126 @@ of other configurations are used."""@en ;
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
