@@ -498,6 +498,26 @@ emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d rdf:type owl:ObjectProperty .
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_e3850f08_8e79_454b_9d83_c517cab42857 ;
                                                                          owl:someValuesFrom :electrochemistry_cb3c0663_5962_4b79_8e72_1e8242af3977
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <http://emmo.info/emmo/perspectives/manufacturing#EMMO_36e69413_8c59_4799_946c_10b05d266e22> ;
+                                                                         owl:someValuesFrom :electrochemistry_346519a4_006c_496d_8f36_74e38814ed2d
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <http://emmo.info/emmo/perspectives/manufacturing#EMMO_36e69413_8c59_4799_946c_10b05d266e22> ;
+                                                                         owl:someValuesFrom :electrochemistry_3cd0e74e_292c_48ed_a831_4cb8753d9a56
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <http://emmo.info/emmo/perspectives/manufacturing#EMMO_36e69413_8c59_4799_946c_10b05d266e22> ;
+                                                                         owl:someValuesFrom :electrochemistry_534dd59c_904c_45d9_8550_ae9d2eb6bbc9
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <http://emmo.info/emmo/perspectives/manufacturing#EMMO_36e69413_8c59_4799_946c_10b05d266e22> ;
+                                                                         owl:someValuesFrom :electrochemistry_6dcd5baf_58cd_43f5_a692_51508e036c88
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <http://emmo.info/emmo/perspectives/manufacturing#EMMO_36e69413_8c59_4799_946c_10b05d266e22> ;
+                                                                         owl:someValuesFrom emmo:EMMO_90e59882_4592_4036_a75d_5fbefb22dc80
                                                                        ] ;
                                                        skos:altLabel "GalvanostaticIntermittentTitrationTechnique"@en ;
                                                        skos:prefLabel "GITT"@en .
@@ -1922,6 +1942,22 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_e3850f08_8e79_454b_9d83_c517cab42857 ;
                                                                          owl:someValuesFrom :electrochemistry_83f2b1e9_cb67_4dbf_977f_ba54bbae374f
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <http://emmo.info/emmo/perspectives/manufacturing#EMMO_36e69413_8c59_4799_946c_10b05d266e22> ;
+                                                                         owl:someValuesFrom :electrochemistry_534dd59c_904c_45d9_8550_ae9d2eb6bbc9
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <http://emmo.info/emmo/perspectives/manufacturing#EMMO_36e69413_8c59_4799_946c_10b05d266e22> ;
+                                                                         owl:someValuesFrom :electrochemistry_6dcd5baf_58cd_43f5_a692_51508e036c88
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <http://emmo.info/emmo/perspectives/manufacturing#EMMO_36e69413_8c59_4799_946c_10b05d266e22> ;
+                                                                         owl:someValuesFrom :electrochemistry_79551e01_4bc6_4292_916e_08fe28a84600
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <http://emmo.info/emmo/perspectives/manufacturing#EMMO_36e69413_8c59_4799_946c_10b05d266e22> ;
+                                                                         owl:someValuesFrom :electrochemistry_e4d666ee_d637_45cd_a904_dc33941ead4f
                                                                        ] ;
                                                        skos:prefLabel "GalvanostaticCycling"@en .
 
@@ -2615,6 +2651,14 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_e3850f08_8e79_454b_9d83_c517cab42857 ;
                                                                          owl:someValuesFrom :electrochemistry_53fe3f58_0802_41cf_af69_4784fc42cc30
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <http://emmo.info/emmo/perspectives/manufacturing#EMMO_36e69413_8c59_4799_946c_10b05d266e22> ;
+                                                                         owl:someValuesFrom :electrochemistry_09e64707_a17d_4405_84cc_ee9d91ed32ef
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty <http://emmo.info/emmo/perspectives/manufacturing#EMMO_36e69413_8c59_4799_946c_10b05d266e22> ;
+                                                                         owl:someValuesFrom :electrochemistry_79551e01_4bc6_4292_916e_08fe28a84600
                                                                        ] ;
                                                        skos:prefLabel "CCCVCycling"@en .
 
