@@ -44,7 +44,7 @@ jobs:
           --skip test_namespace \
           --skip test_quantity_dimension \
           --configfile=.github/utils/emmocheck_config.yml \
-          emmo_concepts.ttl
+          emmo-concepts.ttl
 
     - name: Run EMMO Check - electrochemicalquantities
       run: |
