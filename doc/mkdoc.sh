@@ -13,7 +13,11 @@ mkdir -p ${tmpdir}/figs
 cp -u ${rootdir}/doc/img/bigmap.png ${tmpdir}/figs/.
 
 ontograph -m ${rootdir}/electrochemistry.ttl ${tmpdir}/electrochemistry-structure.png
-ontoconvert -si -- ${rootdir}/electrochemistry.ttl ${tmpdir}/electrochemistry-inferred.ttl
+
+# Resoning is too time-consuming and needs to be fixed. Documentation on inferred version
+# will then be re-enabled.
+#ontoconvert -si -- ${rootdir}/electrochemistry.ttl ${tmpdir}/electrochemistry-inferred.ttl
+ontoconvert -s -- ${rootdir}/electrochemistry.ttl ${tmpdir}/electrochemistry-inferred.ttl
 
 ontodoc --template=electrochemistry.md --format=html ${tmpdir}/electrochemistry-inferred.ttl \
         ${tmpdir}/electrochemistry.html

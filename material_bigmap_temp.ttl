@@ -11,7 +11,8 @@
 @base <http://emmo.info/material/material> .
 
 <http://emmo.info/material/material> rdf:type owl:Ontology ;
-                                      owl:versionIRI <http://emmo.info/material/0.1.0/material> .
+                                      owl:versionIRI <http://emmo.info/material/0.1.0/material> ;
+				      owl:imports <http://emmo.info/emmo/1.0.0-beta4> .
 
 #################################################################
 #    Annotation properties
