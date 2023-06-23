@@ -6,15 +6,19 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <http://emmo.info/emmo/temp/unitsextension> .
+@base <http://emmo.info/emmo/disciplines/unitsextension> .
 
 <http://emmo.info/emmo/disciplines/unitsextension> rdf:type owl:Ontology ;
-    owl:imports <http://emmo.info/emmo/1.0.0-beta4> ;
-                                                    owl:versionIRI <http://emmo.info/emmo/1.0.0-beta4/temp/unitsextension_bigmap> .
+                                                    owl:versionIRI <http://emmo.info/emmo/1.0.0-beta4/temp/unitsextension_bigmap> ;
+                                                    owl:imports <http://emmo.info/emmo/1.0.0-beta4> .
 
 #################################################################
 #    Classes
 #################################################################
+
+###  http://emmo.info/emmo#EMMO_002e4002_58c7_4aea_ac1f_bba5188818ff
+:EMMO_002e4002_58c7_4aea_ac1f_bba5188818ff rdf:type owl:Class .
+
 
 ###  http://emmo.info/emmo#EMMO_00779785_4116_4923_9da0_cc8bb7c9ab51
 :EMMO_00779785_4116_4923_9da0_cc8bb7c9ab51 rdf:type owl:Class ;
@@ -94,6 +98,10 @@
                                            skos:prefLabel "Microhenry"@en .
 
 
+###  http://emmo.info/emmo#EMMO_01cd670e_d37c_424f_b91e_c2c2bbb5ea43
+:EMMO_01cd670e_d37c_424f_b91e_c2c2bbb5ea43 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_01d5add3_9a3e_4fd2_b1ea_a26d28a9a838
 :EMMO_01d5add3_9a3e_4fd2_b1ea_a26d28a9a838 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_1273eb34_de48_43a9_925f_104110469dd2 ,
@@ -125,6 +133,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/TON_Metric-PER-DAY" ;
                                            skos:prefLabel "TonnePerDay"@en .
+
+
+###  http://emmo.info/emmo#EMMO_02a935c8_c2d4_4a00_bd6f_b89d05aac79e
+:EMMO_02a935c8_c2d4_4a00_bd6f_b89d05aac79e rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_02eced32_1e7b_4074_b000_fa20c7858132
@@ -244,6 +256,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/TORR" ;
                                            skos:prefLabel "Torr"@en .
+
+
+###  http://emmo.info/emmo#EMMO_052e9796_1144_43ae_a798_c5755cd6cd81
+:EMMO_052e9796_1144_43ae_a798_c5755cd6cd81 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_054d2aa8_5db6_4105_8e47_c17a712dd1dc
@@ -379,6 +395,14 @@
                                            skos:prefLabel "MegaelectronvoltFemtometre"@en .
 
 
+###  http://emmo.info/emmo#EMMO_071b87fd_8ac8_4287_bfc6_9fcd8ce6674c
+:EMMO_071b87fd_8ac8_4287_bfc6_9fcd8ce6674c rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo#EMMO_07f571cd_252b_4421_8f98_94b6690d2ab9
+:EMMO_07f571cd_252b_4421_8f98_94b6690d2ab9 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_0804c71b_ed3c_4503_a6be_9de8086a3515
 :EMMO_0804c71b_ed3c_4503_a6be_9de8086a3515 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_1273eb34_de48_43a9_925f_104110469dd2 ,
@@ -429,6 +453,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/V_Ab-SEC" ;
                                            skos:prefLabel "AbvoltSecond"@en .
+
+
+###  http://emmo.info/emmo#EMMO_09cee580_aed5_4541_ab94_ec5bb1c64a7c
+:EMMO_09cee580_aed5_4541_ab94_ec5bb1c64a7c rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_0a571e1b_3625_4138_ba82_089c033c704d
@@ -554,21 +582,6 @@
                                            skos:prefLabel "DegreeCelsiusPerHour"@en .
 
 
-###  http://emmo.info/emmo#EMMO_0bee430b_6c2c_4bfa_a147_0959dabf89c3
-:EMMO_0bee430b_6c2c_4bfa_a147_0959dabf89c3 rdf:type owl:Class ;
-                                           rdfs:subClassOf :EMMO_feb03a8a_bbb6_4918_a891_46713ef557f4 ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty :EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
-                                                             owl:someValuesFrom :EMMO_515b5579_d526_4842_9e6f_ecc34db6f368
-                                                           ] ,
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty :EMMO_23b579e1_8088_45b5_9975_064014026c42 ;
-                                                             owl:hasValue "kat"
-                                                           ] ;
-                                           :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/KAT" ;
-                                           skos:prefLabel "Katal"@en .
-
-
 ###  http://emmo.info/emmo#EMMO_0c1c40c5_daf4_4fd8_b12f_c525bd68ad62
 :EMMO_0c1c40c5_daf4_4fd8_b12f_c525bd68ad62 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106 ,
@@ -658,6 +671,14 @@
                                            skos:prefLabel "SquareDecimetre"@en .
 
 
+###  http://emmo.info/emmo#EMMO_0cd4c619_b123_4ae4_b778_3c9adaad65e7
+:EMMO_0cd4c619_b123_4ae4_b778_3c9adaad65e7 rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo#EMMO_0d4bdfcd_f4f0_4b8f_b470_e3f654e37d33
+:EMMO_0d4bdfcd_f4f0_4b8f_b470_e3f654e37d33 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_0ee180b3_10ff_488f_9390_74edb7a992ba
 :EMMO_0ee180b3_10ff_488f_9390_74edb7a992ba rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106 ,
@@ -694,6 +715,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/DPI" ;
                                            skos:prefLabel "DotsPerInch"@en .
+
+
+###  http://emmo.info/emmo#EMMO_0f3ec0ad_3fcf_42b2_8f34_6dca89e35a4f
+:EMMO_0f3ec0ad_3fcf_42b2_8f34_6dca89e35a4f rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_0fd38927_eb74_477e_adaf_2d795106f211
@@ -758,6 +783,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/PPTR_VOL" ;
                                            skos:prefLabel "PartsPerTrillionByVolume"@en .
+
+
+###  http://emmo.info/emmo#EMMO_109e8c69_4148_4cb0_9ceb_fbd526befca0
+:EMMO_109e8c69_4148_4cb0_9ceb_fbd526befca0 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_109f4b0e_8674_49d0_bccf_1c7a9eb26eb0
@@ -827,6 +856,10 @@
                                            skos:prefLabel "KilogramPerSquareKilometre"@en .
 
 
+###  http://emmo.info/emmo#EMMO_10f703b5_8b2a_4c5a_a734_f0cfb29622ad
+:EMMO_10f703b5_8b2a_4c5a_a734_f0cfb29622ad rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_10f8ff60_b015_4ee5_8557_b6ca2d154244
 :EMMO_10f8ff60_b015_4ee5_8557_b6ca2d154244 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_1273eb34_de48_43a9_925f_104110469dd2 ,
@@ -836,6 +869,14 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/PA-M-PER-SEC2" ;
                                            skos:prefLabel "PascalMetrePerSquareSecond"@en .
+
+
+###  http://emmo.info/emmo#EMMO_11708648_fc62_46c6_bae5_3a10693e416e
+:EMMO_11708648_fc62_46c6_bae5_3a10693e416e rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo#EMMO_1275ac79_7280_4d99_ab61_3d98e00c053e
+:EMMO_1275ac79_7280_4d99_ab61_3d98e00c053e rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_12c78f4d_b369_46ab_8957_63fe6937eceb
@@ -925,6 +966,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/N-M-SEC-PER-RAD" ;
                                            skos:prefLabel "NewtonMetreSecondPerRadian"@en .
+
+
+###  http://emmo.info/emmo#EMMO_14235b93_650f_4452_8395_a23b8f645c9a
+:EMMO_14235b93_650f_4452_8395_a23b8f645c9a rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_14361282_08b8_481d_974b_ef02e1234fba
@@ -1167,6 +1212,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/ERG-PER-GM-SEC" ;
                                            skos:prefLabel "ErgPerGramSecond"@en .
+
+
+###  http://emmo.info/emmo#EMMO_183f6fac_8543_44e0_bd59_434aa7054f4c
+:EMMO_183f6fac_8543_44e0_bd59_434aa7054f4c rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_188df9c7_c12b_4f80_9a27_cf4b28193031
@@ -1578,6 +1627,14 @@
                                            skos:prefLabel "KilovoltAmpereReactive"@en .
 
 
+###  http://emmo.info/emmo#EMMO_21a91e48_b6d3_4558_b08f_246433d43860
+:EMMO_21a91e48_b6d3_4558_b08f_246433d43860 rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo#EMMO_21bc99ae_f2ba_4eb3_90c1_d81968c429e2
+:EMMO_21bc99ae_f2ba_4eb3_90c1_d81968c429e2 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_21bd0870_3abf_492a_8494_f917e88ee166
 :EMMO_21bd0870_3abf_492a_8494_f917e88ee166 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_60b78cc3_6011_4134_95ab_956f56d4bdc1 ,
@@ -1856,6 +1913,10 @@
                                            skos:prefLabel "AmpereSquareMetre"@en .
 
 
+###  http://emmo.info/emmo#EMMO_27c8e4db_eb18_402c_951e_6a38751cf1d0
+:EMMO_27c8e4db_eb18_402c_951e_6a38751cf1d0 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_27e3ef7e_dd58_4764_96d5_4cb6bc0e6ede
 :EMMO_27e3ef7e_dd58_4764_96d5_4cb6bc0e6ede rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_1273eb34_de48_43a9_925f_104110469dd2 ,
@@ -1960,6 +2021,10 @@
                                            skos:prefLabel "SquareMetrePerKilogram"@en .
 
 
+###  http://emmo.info/emmo#EMMO_2a068ad0_582c_4f50_90d2_89d9e28977c1
+:EMMO_2a068ad0_582c_4f50_90d2_89d9e28977c1 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_2a0e0329_f56e_4e6c_ad86_b1cf764c7cf3
 :EMMO_2a0e0329_f56e_4e6c_ad86_b1cf764c7cf3 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_1273eb34_de48_43a9_925f_104110469dd2 ,
@@ -2047,6 +2112,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/DEG-PER-M" ;
                                            skos:prefLabel "DegreePerMetre"@en .
+
+
+###  http://emmo.info/emmo#EMMO_2c224eb4_cb86_44a4_a067_8969ead598d7
+:EMMO_2c224eb4_cb86_44a4_a067_8969ead598d7 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_2c49c407_4b0a_4d86_a08b_2584f1ae2845
@@ -2148,6 +2217,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/K-DAY" ;
                                            skos:prefLabel "KelvinDay"@en .
+
+
+###  http://emmo.info/emmo#EMMO_2d66cf6d_9396_40c8_bb82_324ab19067ce
+:EMMO_2d66cf6d_9396_40c8_bb82_324ab19067ce rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_2d78c6b9_973f_4283_82f1_6fde7ead7b3d
@@ -2254,6 +2327,10 @@
                                            skos:prefLabel "JoulePerMole"@en .
 
 
+###  http://emmo.info/emmo#EMMO_2f31340f_59ca_4a57_8513_269837af3796
+:EMMO_2f31340f_59ca_4a57_8513_269837af3796 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_2f5b0fcf_adcd_4fa0_bfa6_fbebf08dfc1c
 :EMMO_2f5b0fcf_adcd_4fa0_bfa6_fbebf08dfc1c rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_1273eb34_de48_43a9_925f_104110469dd2 ,
@@ -2278,6 +2355,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MegaJ-PER-K" ;
                                            skos:prefLabel "MegajoulePerKelvin"@en .
+
+
+###  http://emmo.info/emmo#EMMO_30261696_a8a4_44ce_9bf5_b18201a83c76
+:EMMO_30261696_a8a4_44ce_9bf5_b18201a83c76 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_3029e396_b870_4150_a006_eb2ebf854333
@@ -2529,6 +2610,10 @@
                                            skos:prefLabel "Decacoulomb"@en .
 
 
+###  http://emmo.info/emmo#EMMO_3371fb68_5f07_467c_ada6_5aa3da3808d0
+:EMMO_3371fb68_5f07_467c_ada6_5aa3da3808d0 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_338ce99f_aa6c_4d70_8295_f21fd9eddfe2
 :EMMO_338ce99f_aa6c_4d70_8295_f21fd9eddfe2 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_60b78cc3_6011_4134_95ab_956f56d4bdc1 ,
@@ -2553,6 +2638,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/M6" ;
                                            skos:prefLabel "SexticMetre"@en .
+
+
+###  http://emmo.info/emmo#EMMO_33b6c84d_e139_418c_8f8c_f1d45f94df46
+:EMMO_33b6c84d_e139_418c_8f8c_f1d45f94df46 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_33cd5929_b862_4d3b_82d4_826f316db872
@@ -2633,6 +2722,10 @@
                                            skos:prefLabel "WattPerSquareMetrePascal"@en .
 
 
+###  http://emmo.info/emmo#EMMO_3532cc67_472a_4227_96f4_04b93146cec3
+:EMMO_3532cc67_472a_4227_96f4_04b93146cec3 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_356da1de_96d0_4f05_b687_6e93b448445b
 :EMMO_356da1de_96d0_4f05_b687_6e93b448445b rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_08b308d4_31cd_4779_a784_aa92fc730f39 ,
@@ -2689,6 +2782,10 @@
                                            skos:prefLabel "KilomolePerCubicMetre"@en .
 
 
+###  http://emmo.info/emmo#EMMO_360adeca_9eee_4bb9_a5ca_728756c1ed4a
+:EMMO_360adeca_9eee_4bb9_a5ca_728756c1ed4a rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_362b1079_f1cd_450f_99a5_4e9aede7fc4f
 :EMMO_362b1079_f1cd_450f_99a5_4e9aede7fc4f rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_1273eb34_de48_43a9_925f_104110469dd2 ,
@@ -2713,6 +2810,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/KiloYR" ;
                                            skos:prefLabel "Kiloyear"@en .
+
+
+###  http://emmo.info/emmo#EMMO_36e03182_1be9_497c_bb71_e26fbb9160d2
+:EMMO_36e03182_1be9_497c_bb71_e26fbb9160d2 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_36f73d93_5397_45ad_8e07_0f75db331363
@@ -2979,6 +3080,10 @@
                                            skos:prefLabel "MolePerGramPerHour"@en .
 
 
+###  http://emmo.info/emmo#EMMO_3cb55500_dc5b_4586_bbf3_1d4158afac35
+:EMMO_3cb55500_dc5b_4586_bbf3_1d4158afac35 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_3cdbbf46_6027_40b6_b069_432e5c13ae0b
 :EMMO_3cdbbf46_6027_40b6_b069_432e5c13ae0b rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_60b78cc3_6011_4134_95ab_956f56d4bdc1 ,
@@ -2992,6 +3097,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MilliC-PER-KiloGM" ;
                                            skos:prefLabel "MillicoulombPerKilogram"@en .
+
+
+###  http://emmo.info/emmo#EMMO_3d254432_6f8f_4a6d_9eb3_4ab54388171b
+:EMMO_3d254432_6f8f_4a6d_9eb3_4ab54388171b rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_3d74750d_d2a9_4910_8d2f_bda167e63abf
@@ -3014,6 +3123,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/GigaPA" ;
                                            skos:prefLabel "Gigapascal"@en .
+
+
+###  http://emmo.info/emmo#EMMO_3df1408c_df34_4037_8584_c25f854bb346
+:EMMO_3df1408c_df34_4037_8584_c25f854bb346 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_3e43ca5f_2efe_436a_aac8_2270ddb50a7c
@@ -3066,6 +3179,14 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/GM-PER-GM" ;
                                            skos:prefLabel "GramPerGram"@en .
+
+
+###  http://emmo.info/emmo#EMMO_3fe66e46_9343_4a36_b101_a732ad5f4f76
+:EMMO_3fe66e46_9343_4a36_b101_a732ad5f4f76 rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo#EMMO_4007522b_7ab7_4855_acd2_e99e2a0690b6
+:EMMO_4007522b_7ab7_4855_acd2_e99e2a0690b6 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_4023993c_0216_4300_b247_da3e1715ccd0
@@ -3168,6 +3289,10 @@
                                            skos:prefLabel "KilogramForcePerSquareMetre"@en .
 
 
+###  http://emmo.info/emmo#EMMO_43e499a1_ca67_4380_ac08_cfc52a93ad04
+:EMMO_43e499a1_ca67_4380_ac08_cfc52a93ad04 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_441466e8_6bbc_4759_805e_0026efb76d4b
 :EMMO_441466e8_6bbc_4759_805e_0026efb76d4b rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_08b308d4_31cd_4779_a784_aa92fc730f39 ,
@@ -3222,6 +3347,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/GM-PER-KiloM" ;
                                            skos:prefLabel "GramPerKilometre"@en .
+
+
+###  http://emmo.info/emmo#EMMO_44ddbe46_0112_4185_b595_132866e902da
+:EMMO_44ddbe46_0112_4185_b595_132866e902da rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_450405ad_a484_48af_b625_a3d4081b545b
@@ -3447,6 +3576,10 @@
                                            skos:prefLabel "PercentPerDay"@en .
 
 
+###  http://emmo.info/emmo#EMMO_4817e479_e401_437e_a49b_54540b93d2a1
+:EMMO_4817e479_e401_437e_a49b_54540b93d2a1 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_487411d2_990d_4101_b05a_c8339f6299a1
 :EMMO_487411d2_990d_4101_b05a_c8339f6299a1 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106 ,
@@ -3610,6 +3743,10 @@
                                            skos:prefLabel "Revolution"@en .
 
 
+###  http://emmo.info/emmo#EMMO_4b2c223f_89fb_4407_b1b6_24774b7fe770
+:EMMO_4b2c223f_89fb_4407_b1b6_24774b7fe770 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_4b392d1f_5d28_49a5_9521_505c1a3e757c
 :EMMO_4b392d1f_5d28_49a5_9521_505c1a3e757c rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_08b308d4_31cd_4779_a784_aa92fc730f39 ,
@@ -3668,6 +3805,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/KiloJ-PER-K" ;
                                            skos:prefLabel "KilojoulePerKelvin"@en .
+
+
+###  http://emmo.info/emmo#EMMO_4dbe2b16_3e84_4049_898d_eb89bcc925a2
+:EMMO_4dbe2b16_3e84_4049_898d_eb89bcc925a2 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_4dd39a8c_80e4_4d4c_b905_664e7be4bdf5
@@ -3770,6 +3911,10 @@
                                            skos:prefLabel "NewtonMetreSecond"@en .
 
 
+###  http://emmo.info/emmo#EMMO_4f245147_f072_4431_b535_6241e8e87eb8
+:EMMO_4f245147_f072_4431_b535_6241e8e87eb8 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_4f6fcf95_1d7f_446b_9a9e_4ca0f9225e68
 :EMMO_4f6fcf95_1d7f_446b_9a9e_4ca0f9225e68 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_60b78cc3_6011_4134_95ab_956f56d4bdc1 ,
@@ -3798,6 +3943,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/OHM_Ab" ;
                                            skos:prefLabel "Abohm"@en .
+
+
+###  http://emmo.info/emmo#EMMO_4fdf946a_9c40_4d71_80ab_e4221ff6a534
+:EMMO_4fdf946a_9c40_4d71_80ab_e4221ff6a534 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_4fe31391_581e_4f8a_a451_07147fa75512
@@ -3923,6 +4072,10 @@
                                            skos:prefLabel "GigabitPerSecond"@en .
 
 
+###  http://emmo.info/emmo#EMMO_52b029aa_e525_4907_95d8_759298b04f97
+:EMMO_52b029aa_e525_4907_95d8_759298b04f97 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_52c7c771_6f5c_4ee3_994a_da3d59ebc436
 :EMMO_52c7c771_6f5c_4ee3_994a_da3d59ebc436 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_60b78cc3_6011_4134_95ab_956f56d4bdc1 ,
@@ -3943,6 +4096,14 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/TeraJ" ;
                                            skos:prefLabel "Terajoule"@en .
+
+
+###  http://emmo.info/emmo#EMMO_539d8d92_d3a5_4f46_858f_081fed5b4190
+:EMMO_539d8d92_d3a5_4f46_858f_081fed5b4190 rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo#EMMO_53b10105_52c7_4746_ab73_a5a30bd198e2
+:EMMO_53b10105_52c7_4746_ab73_a5a30bd198e2 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_53c242c4_63d8_4167_9e06_bdc593463743
@@ -4146,6 +4307,10 @@
                                            skos:prefLabel "MetrePerFarad"@en .
 
 
+###  http://emmo.info/emmo#EMMO_578f7da0_10f8_4fc2_9fd0_79b79f47f975
+:EMMO_578f7da0_10f8_4fc2_9fd0_79b79f47f975 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_57d1ccb0_fd00_44e3_9025_62e9dc86b015
 :EMMO_57d1ccb0_fd00_44e3_9025_62e9dc86b015 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106 ,
@@ -4213,6 +4378,10 @@
                                            skos:prefLabel "Millihenry"@en .
 
 
+###  http://emmo.info/emmo#EMMO_58c5b65c_c896_4740_80d9_ff9a7643c7e8
+:EMMO_58c5b65c_c896_4740_80d9_ff9a7643c7e8 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_58d5be18_55bd_47b0_b57f_38868aa30335
 :EMMO_58d5be18_55bd_47b0_b57f_38868aa30335 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_08b308d4_31cd_4779_a784_aa92fc730f39 ,
@@ -4237,6 +4406,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/N-SEC-PER-M3" ;
                                            skos:prefLabel "NewtonSecondPerCubicMetre"@en .
+
+
+###  http://emmo.info/emmo#EMMO_59197cce_b8b6_4216_a08d_26fb83c032af
+:EMMO_59197cce_b8b6_4216_a08d_26fb83c032af rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_596662bf_ff1d_4cb7_9e84_99bea5a970e6
@@ -4347,6 +4520,10 @@
                                            skos:prefLabel "Week"@en .
 
 
+###  http://emmo.info/emmo#EMMO_5d2d48c4_4fb6_4f33_bfc0_273129429c30
+:EMMO_5d2d48c4_4fb6_4f33_bfc0_273129429c30 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_5d3e69f9_4404_4abc_ba09_faab39fea413
 :EMMO_5d3e69f9_4404_4abc_ba09_faab39fea413 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106 ,
@@ -4434,6 +4611,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/PA-M-PER-SEC" ;
                                            skos:prefLabel "PascalMetrePerSecond"@en .
+
+
+###  http://emmo.info/emmo#EMMO_5f375229_de0c_46bf_b11f_da9d3b742253
+:EMMO_5f375229_de0c_46bf_b11f_da9d3b742253 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_6010f351_40a7_4a26_834c_c6d78ef01b0f
@@ -4542,6 +4723,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/EV-PER-T" ;
                                            skos:prefLabel "ElectronVoltPerTesla"@en .
+
+
+###  http://emmo.info/emmo#EMMO_61eec472_f9af_4861_bedd_d741f022a7e5
+:EMMO_61eec472_f9af_4861_bedd_d741f022a7e5 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_61f22b7d_652f_4b1a_aa4c_fcf6d79d6e2c
@@ -4940,6 +5125,10 @@
                                            skos:prefLabel "Milliampere"@en .
 
 
+###  http://emmo.info/emmo#EMMO_66e91d9a_05c1_4906_9731_3f4d8c4f3fd8
+:EMMO_66e91d9a_05c1_4906_9731_3f4d8c4f3fd8 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_66f1a70f_f6be_4007_bdeb_e3d719769680
 :EMMO_66f1a70f_f6be_4007_bdeb_e3d719769680 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_1273eb34_de48_43a9_925f_104110469dd2 ,
@@ -4975,6 +5164,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/GibiBYTE" ;
                                            skos:prefLabel "GibiByte"@en .
+
+
+###  http://emmo.info/emmo#EMMO_6726fbb8_c40a_4b55_a2d5_bf49352d1e73
+:EMMO_6726fbb8_c40a_4b55_a2d5_bf49352d1e73 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_67479e40_a540_4a99_9562_3a8b80a6c3e8
@@ -5046,6 +5239,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/W-PER-M-K" ;
                                            skos:prefLabel "WattPerMetreKelvin"@en .
+
+
+###  http://emmo.info/emmo#EMMO_6837b106_7220_4ec6_b7c9_d549d6163672
+:EMMO_6837b106_7220_4ec6_b7c9_d549d6163672 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_683846ae_23ba_4cd7_9257_62b1e14dcbc3
@@ -5271,6 +5468,10 @@
                                            skos:prefLabel "CubicCentimetrePerSecond"@en .
 
 
+###  http://emmo.info/emmo#EMMO_6bcf334d_efeb_49f8_9dd0_dbcbb31514d3
+:EMMO_6bcf334d_efeb_49f8_9dd0_dbcbb31514d3 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_6c03345c_eb8b_4fa2_8d63_70d12d67ae50
 :EMMO_6c03345c_eb8b_4fa2_8d63_70d12d67ae50 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ,
@@ -5349,6 +5550,10 @@
                                            skos:prefLabel "Milligram"@en .
 
 
+###  http://emmo.info/emmo#EMMO_6cfc5b82_b47b_47bc_bb45_c23c273d2e06
+:EMMO_6cfc5b82_b47b_47bc_bb45_c23c273d2e06 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_6d5bcd91_33b2_453d_bd59_d148646786f4
 :EMMO_6d5bcd91_33b2_453d_bd59_d148646786f4 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_08b308d4_31cd_4779_a784_aa92fc730f39 ,
@@ -5362,6 +5567,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/V_Ab-PER-CentiM" ;
                                            skos:prefLabel "AbvoltPerCentimetre"@en .
+
+
+###  http://emmo.info/emmo#EMMO_6d753e0c_a967_4de4_ad22_c2fecb3913be
+:EMMO_6d753e0c_a967_4de4_ad22_c2fecb3913be rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_6db55327_c4fd_4f9e_af97_a3d2fd399033
@@ -5466,6 +5675,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "https://qudt.org/vocab/unit/failures-in-time" ;
                                            skos:prefLabel "FailuresInTime"@en .
+
+
+###  http://emmo.info/emmo#EMMO_6f76f9bf_feb3_4e27_9bcb_45b5f3526050
+:EMMO_6f76f9bf_feb3_4e27_9bcb_45b5f3526050 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_6f8b42bb_218d_400f_88ad_89eab0295528
@@ -5616,6 +5829,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/BAR-L-PER-SEC" ;
                                            skos:prefLabel "BarLitrePerSecond"@en .
+
+
+###  http://emmo.info/emmo#EMMO_720a469f_a19c_4a88_900c_29b3938f5092
+:EMMO_720a469f_a19c_4a88_900c_29b3938f5092 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_722c6689_1588_46df_ac5c_e63328588cf5
@@ -5971,6 +6188,14 @@
                                            skos:prefLabel "JouleSquareMetre"@en .
 
 
+###  http://emmo.info/emmo#EMMO_78487bf1_c0bc_4db8_99dd_d8b7cc8b3bac
+:EMMO_78487bf1_c0bc_4db8_99dd_d8b7cc8b3bac rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo#EMMO_7855043d_a466_4585_97a9_b9fe4ce0c12d
+:EMMO_7855043d_a466_4585_97a9_b9fe4ce0c12d rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_78ba5f8c_7045_4985_9aa4_f394dde537fc
 :EMMO_78ba5f8c_7045_4985_9aa4_f394dde537fc rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_52e4cb25_da39_45e2_a6db_063ec5730499 ,
@@ -6039,6 +6264,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/NUM-PER-HectoGM" ;
                                            skos:prefLabel "NumberPer100Gram"@en .
+
+
+###  http://emmo.info/emmo#EMMO_793f3567_b351_42ef_a1d4_5111d53999c4
+:EMMO_793f3567_b351_42ef_a1d4_5111d53999c4 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_7947afef_30ad_4a31_a1fc_caf8c2d85403
@@ -6127,6 +6356,14 @@
                                            skos:prefLabel "VoltPerMetre"@en .
 
 
+###  http://emmo.info/emmo#EMMO_7cef5aae_baae_42d1_959a_ee70a7cf7a73
+:EMMO_7cef5aae_baae_42d1_959a_ee70a7cf7a73 rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo#EMMO_7cfbe969_6ced_47a2_86c6_de33673c45d0
+:EMMO_7cfbe969_6ced_47a2_86c6_de33673c45d0 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_7d3f1401_7b9f_41f7_97f0_5a94623b1241
 :EMMO_7d3f1401_7b9f_41f7_97f0_5a94623b1241 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106 ,
@@ -6151,6 +6388,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/CentiM3-PER-HR" ;
                                            skos:prefLabel "CubicCentimetrePerHour"@en .
+
+
+###  http://emmo.info/emmo#EMMO_7e12fb41_da9d_4587_a79e_c36d99c51b5f
+:EMMO_7e12fb41_da9d_4587_a79e_c36d99c51b5f rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_7e84129b_e0e2_48d6_a86d_699597331b75
@@ -6693,6 +6934,10 @@
                                            skos:prefLabel "PascalPerHour"@en .
 
 
+###  http://emmo.info/emmo#EMMO_8455fa05_a877_48d7_b8a3_8e3bfad119bf
+:EMMO_8455fa05_a877_48d7_b8a3_8e3bfad119bf rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_845b6e55_0a47_43f4_99ed_b2f4ff0e94b0
 :EMMO_845b6e55_0a47_43f4_99ed_b2f4ff0e94b0 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106 ,
@@ -6752,6 +6997,10 @@
                                            skos:prefLabel "MegaelectronvoltPerSpeedOfLight"@en .
 
 
+###  http://emmo.info/emmo#EMMO_85d72920_708d_4eb9_89ce_8a588b0ce66d
+:EMMO_85d72920_708d_4eb9_89ce_8a588b0ce66d rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_85da8516_2c20_4a22_9293_65cff3947f15
 :EMMO_85da8516_2c20_4a22_9293_65cff3947f15 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_08b308d4_31cd_4779_a784_aa92fc730f39 ,
@@ -6761,6 +7010,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/PER-HR" ;
                                            skos:prefLabel "ReciprocalHour"@en .
+
+
+###  http://emmo.info/emmo#EMMO_860ef96c_e93e_4549_b3a3_099a625a26a5
+:EMMO_860ef96c_e93e_4549_b3a3_099a625a26a5 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_861571c4_5657_4353_9bed_e1bcbc3ed0d7
@@ -6850,6 +7103,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/S-PER-CentiM" ;
                                            skos:prefLabel "SiemensPerCentimetre"@en .
+
+
+###  http://emmo.info/emmo#EMMO_869e6e4f_a9b5_4db8_a978_8ad050239933
+:EMMO_869e6e4f_a9b5_4db8_a978_8ad050239933 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_86d50ba6_a9c3_407a_809a_934c7f598a3e
@@ -6946,6 +7203,18 @@
                                            skos:prefLabel "Barye"@en .
 
 
+###  http://emmo.info/emmo#EMMO_87b5dd20_e4fe_422d_9e70_1eee54ec9496
+:EMMO_87b5dd20_e4fe_422d_9e70_1eee54ec9496 rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo#EMMO_87deb5a8_7a85_49c3_97b2_e62c8484aa1a
+:EMMO_87deb5a8_7a85_49c3_97b2_e62c8484aa1a rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo#EMMO_8826aefb_0bf6_4378_8732_fc80aa95654c
+:EMMO_8826aefb_0bf6_4378_8732_fc80aa95654c rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_8843c871_7652_4a21_8846_e42a6d8179fb
 :EMMO_8843c871_7652_4a21_8846_e42a6d8179fb rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_08b308d4_31cd_4779_a784_aa92fc730f39 ,
@@ -6959,6 +7228,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MilliM-PER-K" ;
                                            skos:prefLabel "MillimetrePerKelvin"@en .
+
+
+###  http://emmo.info/emmo#EMMO_886eb0fb_4d36_4b7d_99e4_e5915a06aff1
+:EMMO_886eb0fb_4d36_4b7d_99e4_e5915a06aff1 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_88addbf1_9a7b_478b_b2ef_dddea0590f6a
@@ -6989,6 +7262,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/CentiM3-PER-MIN" ;
                                            skos:prefLabel "CubicCentimetrePerMinute"@en .
+
+
+###  http://emmo.info/emmo#EMMO_88f36585_bd30_4160_b975_61362f3468a9
+:EMMO_88f36585_bd30_4160_b975_61362f3468a9 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_89454f44_8a4c_4a8f_bb8a_4bc97c12ef7d
@@ -7037,6 +7314,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/BAN" ;
                                            skos:prefLabel "Ban"@en .
+
+
+###  http://emmo.info/emmo#EMMO_8a582db1_c561_42f6_80ff_0fd8f252b129
+:EMMO_8a582db1_c561_42f6_80ff_0fd8f252b129 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_8a7dcc60_3b8a_47a9_999b_4187b2f2aa59
@@ -7207,6 +7488,10 @@
                                            skos:prefLabel "Byte"@en .
 
 
+###  http://emmo.info/emmo#EMMO_8cf32f24_ada1_4350_af2c_50eb0e5f6415
+:EMMO_8cf32f24_ada1_4350_af2c_50eb0e5f6415 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_8d2c0c16_bad8_43fc_9514_eb924ab96930
 :EMMO_8d2c0c16_bad8_43fc_9514_eb924ab96930 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106 ,
@@ -7352,6 +7637,14 @@
                                            skos:prefLabel "Decibel"@en .
 
 
+###  http://emmo.info/emmo#EMMO_8f36559a_a494_4b00_abc5_60bbc1475009
+:EMMO_8f36559a_a494_4b00_abc5_60bbc1475009 rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo#EMMO_8f3a9f9f_6f56_49dc_b39e_1aee57ffdc58
+:EMMO_8f3a9f9f_6f56_49dc_b39e_1aee57ffdc58 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_8f478b6c_e8c9_4ad4_9fe8_224634e8ae94
 :EMMO_8f478b6c_e8c9_4ad4_9fe8_224634e8ae94 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_08b308d4_31cd_4779_a784_aa92fc730f39 ,
@@ -7376,6 +7669,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/V-A_Reactive-HR" ;
                                            skos:prefLabel "VoltAmpereReactiveHour"@en .
+
+
+###  http://emmo.info/emmo#EMMO_8fb052e8_fcca_43ce_85db_55266baf2d7c
+:EMMO_8fb052e8_fcca_43ce_85db_55266baf2d7c rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_8fba8513_8e33_4e6b_8aa2_9ba8f8b2ab50
@@ -7466,6 +7763,10 @@
                                            skos:prefLabel "VoltPerSecond"@en .
 
 
+###  http://emmo.info/emmo#EMMO_92aaff7b_3a7c_4c1a_b149_d422e9682106
+:EMMO_92aaff7b_3a7c_4c1a_b149_d422e9682106 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_92d5bc4a_e1c7_4eb8_ad97_d3ba93b83edf
 :EMMO_92d5bc4a_e1c7_4eb8_ad97_d3ba93b83edf rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106 ,
@@ -7516,6 +7817,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/CentiM-PER-KiloYR" ;
                                            skos:prefLabel "CentimetrePerThousandYears"@en .
+
+
+###  http://emmo.info/emmo#EMMO_93681c53_4316_415d_8243_a42a0e171de6
+:EMMO_93681c53_4316_415d_8243_a42a0e171de6 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_93a1f7d7_d053_4288_9c5e_f4bc5124a6bf
@@ -7641,6 +7946,18 @@
                                            skos:prefLabel "PartsPerThousandPerHour"@en .
 
 
+###  http://emmo.info/emmo#EMMO_95971713_d589_4002_a5a7_affc5c74cfdb
+:EMMO_95971713_d589_4002_a5a7_affc5c74cfdb rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo#EMMO_959c9715_14fb_4ce8_a93b_79678b2959b9
+:EMMO_959c9715_14fb_4ce8_a93b_79678b2959b9 rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo#EMMO_95a9bf22_eabc_4a84_863d_9ea398c8a52e
+:EMMO_95a9bf22_eabc_4a84_863d_9ea398c8a52e rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_9661c711_f97a_4db4_a28a_b58f1f817959
 :EMMO_9661c711_f97a_4db4_a28a_b58f1f817959 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106 ,
@@ -7685,6 +8002,14 @@
                                            skos:prefLabel "Centimetre"@en .
 
 
+###  http://emmo.info/emmo#EMMO_96ffda63_71e7_451b_85ee_2cc8e341ff11
+:EMMO_96ffda63_71e7_451b_85ee_2cc8e341ff11 rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo#EMMO_971b3dff_28b4_4538_b082_3ec9fa5af294
+:EMMO_971b3dff_28b4_4538_b082_3ec9fa5af294 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_972c54df_92dd_4889_b4aa_863631dabc44
 :EMMO_972c54df_92dd_4889_b4aa_863631dabc44 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_60b78cc3_6011_4134_95ab_956f56d4bdc1 ,
@@ -7700,6 +8025,10 @@
                                            skos:prefLabel "CubicCentimetre"@en .
 
 
+###  http://emmo.info/emmo#EMMO_973656ed_870e_40ba_8bc0_c879687a335a
+:EMMO_973656ed_870e_40ba_8bc0_c879687a335a rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_973daf7f_d5ec_446c_acc0_1c50189ae10b
 :EMMO_973daf7f_d5ec_446c_acc0_1c50189ae10b rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_08b308d4_31cd_4779_a784_aa92fc730f39 ,
@@ -7713,6 +8042,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/ERG-PER-CentiM2-SEC" ;
                                            skos:prefLabel "ErgPerSquareCentimetreSecond"@en .
+
+
+###  http://emmo.info/emmo#EMMO_9794a778_47d7_45d5_b4ab_ae6a8db04c78
+:EMMO_9794a778_47d7_45d5_b4ab_ae6a8db04c78 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_987a8dff_577b_4521_a969_b60b5c3c12bd
@@ -7794,6 +8127,10 @@
                                            skos:prefLabel "MillimolePerCubicMetre"@en .
 
 
+###  http://emmo.info/emmo#EMMO_9b075686_4ac2_43bb_b2a3_17b3ea24ff17
+:EMMO_9b075686_4ac2_43bb_b2a3_17b3ea24ff17 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_9b672ca9_aec6_42a7_a405_b6b6d0c5dca1
 :EMMO_9b672ca9_aec6_42a7_a405_b6b6d0c5dca1 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_08b308d4_31cd_4779_a784_aa92fc730f39 ,
@@ -7803,6 +8140,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/NUM-PER-NanoL" ;
                                            skos:prefLabel "NumberPerNanolitre"@en .
+
+
+###  http://emmo.info/emmo#EMMO_9ba91622_e39f_43e3_b95f_290937928d7e
+:EMMO_9ba91622_e39f_43e3_b95f_290937928d7e rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_9bbd5e04_9b29_4564_bf15_6ed51e5175f4
@@ -7896,6 +8237,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MicroN-M" ;
                                            skos:prefLabel "MicronewtonMetre"@en .
+
+
+###  http://emmo.info/emmo#EMMO_9cffc70d_4b60_4187_a7cd_706f5740ae87
+:EMMO_9cffc70d_4b60_4187_a7cd_706f5740ae87 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_9d1aad38_a3c8_445a_af6d_1a0f458a1981
@@ -7992,6 +8337,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MegaPA" ;
                                            skos:prefLabel "Megapascal"@en .
+
+
+###  http://emmo.info/emmo#EMMO_9f0338b9_326f_44c2_893c_2d815b763130
+:EMMO_9f0338b9_326f_44c2_893c_2d815b763130 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_9fd2d776_0452_4a22_a50b_2e09fa9ffe13
@@ -8322,6 +8671,10 @@
                                            skos:prefLabel "MegavoltAmpereHour"@en .
 
 
+###  http://emmo.info/emmo#EMMO_a5111335_6d14_49d9_ba7a_10c10b2189e7
+:EMMO_a5111335_6d14_49d9_ba7a_10c10b2189e7 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_a57f1843_be1c_4582_a8d1_019a21a47ce6
 :EMMO_a57f1843_be1c_4582_a8d1_019a21a47ce6 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_08b308d4_31cd_4779_a784_aa92fc730f39 ,
@@ -8452,6 +8805,10 @@
                                            skos:prefLabel "Megaampere"@en .
 
 
+###  http://emmo.info/emmo#EMMO_a88475b9_c745_4a47_9403_ab0d158b9b1b
+:EMMO_a88475b9_c745_4a47_9403_ab0d158b9b1b rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_a8ffdd84_d762_45bc_879e_c568a9790aa5
 :EMMO_a8ffdd84_d762_45bc_879e_c568a9790aa5 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ,
@@ -8487,6 +8844,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/M-PER-K" ;
                                            skos:prefLabel "MetrePerKelvin"@en .
+
+
+###  http://emmo.info/emmo#EMMO_a94aec97_71ff_4574_b111_a52d77d2c230
+:EMMO_a94aec97_71ff_4574_b111_a52d77d2c230 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_a96cd69a_75f8_4d7d_90cc_812b968336c0
@@ -8574,6 +8935,10 @@
                                            skos:prefLabel "KilogramPerCubicCentimetre"@en .
 
 
+###  http://emmo.info/emmo#EMMO_aa7397ff_2815_434e_9b99_e4c6a80e034e
+:EMMO_aa7397ff_2815_434e_9b99_e4c6a80e034e rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_aab59eba_4382_4d1e_b721_704fdbd50516
 :EMMO_aab59eba_4382_4d1e_b721_704fdbd50516 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_08b308d4_31cd_4779_a784_aa92fc730f39 ,
@@ -8617,6 +8982,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MegaC-PER-M3" ;
                                            skos:prefLabel "MegacoulombPerCubicMetre"@en .
+
+
+###  http://emmo.info/emmo#EMMO_ab2ee5cd_4de3_46b6_bec5_29e293b33422
+:EMMO_ab2ee5cd_4de3_46b6_bec5_29e293b33422 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_ab372f6b_4d27_461f_9591_8e82e90828da
@@ -8799,6 +9168,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MegaN" ;
                                            skos:prefLabel "Meganewton"@en .
+
+
+###  http://emmo.info/emmo#EMMO_aef218f9_6ded_4db9_9263_e78eed55e5d6
+:EMMO_aef218f9_6ded_4db9_9263_e78eed55e5d6 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_af13f77d_e1ab_4102_b809_86c83a2bf2c7
@@ -9087,6 +9460,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/EV-PER-ANGSTROM" ;
                                            skos:prefLabel "ElectronVoltPerÅngström"@en .
+
+
+###  http://emmo.info/emmo#EMMO_b33cc5b5_a9dc_4082_b497_14d1654c5591
+:EMMO_b33cc5b5_a9dc_4082_b497_14d1654c5591 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_b33f0aac_d8ca_449c_8843_2abc62378f41
@@ -9732,6 +10109,10 @@
                                            skos:prefLabel "ReciprocalSquareMetre"@en .
 
 
+###  http://emmo.info/emmo#EMMO_bc73913a_3bb6_4205_8d36_79bc72ca9891
+:EMMO_bc73913a_3bb6_4205_8d36_79bc72ca9891 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_bcfbb85a_ffe2_4f8b_b337_0e4afb467c1e
 :EMMO_bcfbb85a_ffe2_4f8b_b337_0e4afb467c1e rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ,
@@ -9802,6 +10183,10 @@
                                            skos:prefLabel "Centimole"@en .
 
 
+###  http://emmo.info/emmo#EMMO_bdee99f6_389b_4816_8a1c_a7903a2df00a
+:EMMO_bdee99f6_389b_4816_8a1c_a7903a2df00a rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_be2c3018_5f12_488b_83f1_cbca4155550e
 :EMMO_be2c3018_5f12_488b_83f1_cbca4155550e rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_1273eb34_de48_43a9_925f_104110469dd2 ,
@@ -9845,6 +10230,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/BQ-PER-KG" ;
                                            skos:prefLabel "BecquerelPerKilogram"@en .
+
+
+###  http://emmo.info/emmo#EMMO_bf106e62_ce1c_4ccc_9f45_c10326078a5a
+:EMMO_bf106e62_ce1c_4ccc_9f45_c10326078a5a rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_bf1d988d_8767_4ddc_bbb9_1c4514db8da7
@@ -9986,6 +10375,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MicroFARAD-PER-KiloM" ;
                                            skos:prefLabel "MicrofaradPerKilometre"@en .
+
+
+###  http://emmo.info/emmo#EMMO_c0f32e02_44d7_4c99_986e_c368d7219e4c
+:EMMO_c0f32e02_44d7_4c99_986e_c368d7219e4c rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_c106225f_92c9_4319_abff_fbe89ec50f3c
@@ -10254,6 +10647,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MicroMOL-PER-M2-DAY" ;
                                            skos:prefLabel "MicromolePerSquareMetrePerDay"@en .
+
+
+###  http://emmo.info/emmo#EMMO_c5ac5c53_14de_47ce_b424_2576d042d241
+:EMMO_c5ac5c53_14de_47ce_b424_2576d042d241 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_c5af74fa_e017_4e56_bc5d_3df35c26a44d
@@ -10547,6 +10944,10 @@
                                            skos:prefLabel "DegreeRankinePerSecond"@en .
 
 
+###  http://emmo.info/emmo#EMMO_ca54593a_6828_491b_8fda_22b0ad85e446
+:EMMO_ca54593a_6828_491b_8fda_22b0ad85e446 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_ca679a9a_3f54_40ba_acf1_e34778616747
 :EMMO_ca679a9a_3f54_40ba_acf1_e34778616747 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_60b78cc3_6011_4134_95ab_956f56d4bdc1 ,
@@ -10638,6 +11039,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MicroFARAD-PER-M" ;
                                            skos:prefLabel "MicrofaradPerMetre"@en .
+
+
+###  http://emmo.info/emmo#EMMO_cb77e107_43ed_4a97_bf39_03b3587404d3
+:EMMO_cb77e107_43ed_4a97_bf39_03b3587404d3 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_cbca673a_a120_4ba2_b782_c4e8a2603364
@@ -10733,6 +11138,10 @@
                                            skos:prefLabel "JoulePerMetre"@en .
 
 
+###  http://emmo.info/emmo#EMMO_cd9ad446_04f7_44ff_b9ea_ae7389574fa6
+:EMMO_cd9ad446_04f7_44ff_b9ea_ae7389574fa6 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_ce44fca7_b81f_40b0_91fb_ab527f2ad08a
 :EMMO_ce44fca7_b81f_40b0_91fb_ab527f2ad08a rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_60b78cc3_6011_4134_95ab_956f56d4bdc1 ,
@@ -10816,6 +11225,10 @@
                                            skos:prefLabel "GramPerCubicCentimetre"@en .
 
 
+###  http://emmo.info/emmo#EMMO_ceaa4c6b_f5b7_46f4_bfcd_16eb4afab945
+:EMMO_ceaa4c6b_f5b7_46f4_bfcd_16eb4afab945 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_ceb06de0_2591_4a00_bf20_6ca08b196938
 :EMMO_ceb06de0_2591_4a00_bf20_6ca08b196938 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_08b308d4_31cd_4779_a784_aa92fc730f39 ,
@@ -10844,6 +11257,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MilliC-PER-M2" ;
                                            skos:prefLabel "MillicoulombPerSquareMetre"@en .
+
+
+###  http://emmo.info/emmo#EMMO_cf1684cc_277a_4518_aa26_64924bfa4ec3
+:EMMO_cf1684cc_277a_4518_aa26_64924bfa4ec3 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_cf2b62cc_f036_4ba0_baf8_c4f084bbe439
@@ -10915,6 +11332,14 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/LunarMass" ;
                                            skos:prefLabel "LunarMass"@en .
+
+
+###  http://emmo.info/emmo#EMMO_cff9f930_f3f7_43c6_9228_28bf3e1ec706
+:EMMO_cff9f930_f3f7_43c6_9228_28bf3e1ec706 rdf:type owl:Class .
+
+
+###  http://emmo.info/emmo#EMMO_d02c92e0_99ba_4c09_b01f_0d7a7dd7b24e
+:EMMO_d02c92e0_99ba_4c09_b01f_0d7a7dd7b24e rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_d0a320b8_868d_4ff8_b873_77a9da4f4af5
@@ -11057,6 +11482,10 @@
                                            skos:prefLabel "WeberPerMetre"@en .
 
 
+###  http://emmo.info/emmo#EMMO_d2a20142_b3a4_4d3b_a7e1_e17597e7f177
+:EMMO_d2a20142_b3a4_4d3b_a7e1_e17597e7f177 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_d30825d1_736d_4b12_93db_e1511d977938
 :EMMO_d30825d1_736d_4b12_93db_e1511d977938 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106 ,
@@ -11096,6 +11525,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/BARAD" ;
                                            skos:prefLabel "Barad"@en .
+
+
+###  http://emmo.info/emmo#EMMO_d46e131b_f51a_4ae7_9301_824d718c56fa
+:EMMO_d46e131b_f51a_4ae7_9301_824d718c56fa rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_d49f1137_f033_4ed6_8162_9909ec950d20
@@ -11159,6 +11592,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/DEG_C-PER-SEC" ;
                                            skos:prefLabel "DegreeCelsiusPerSecond"@en .
+
+
+###  http://emmo.info/emmo#EMMO_d5b6a25a_408a_408d_aebc_e017260d885d
+:EMMO_d5b6a25a_408a_408d_aebc_e017260d885d rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_d6d492c2_a8f5_416a_ac80_9abd528f0619
@@ -11371,6 +11808,10 @@
                                            skos:prefLabel "ReciprocalCubicMetre"@en .
 
 
+###  http://emmo.info/emmo#EMMO_dafdcae3_f8ec_4993_8269_2c9299a75158
+:EMMO_dafdcae3_f8ec_4993_8269_2c9299a75158 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_db48b531_e59d_46d7_8b6d_e1f1514f6c42
 :EMMO_db48b531_e59d_46d7_8b6d_e1f1514f6c42 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_60b78cc3_6011_4134_95ab_956f56d4bdc1 ,
@@ -11442,6 +11883,10 @@
                                            skos:prefLabel "HectopascalPerHour"@en .
 
 
+###  http://emmo.info/emmo#EMMO_ddcc1e64_69cc_4a0c_9ee8_08aca78b3c85
+:EMMO_ddcc1e64_69cc_4a0c_9ee8_08aca78b3c85 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_ddda1981_2d4b_4f6c_be21_a1e9350b83a6
 :EMMO_ddda1981_2d4b_4f6c_be21_a1e9350b83a6 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_60b78cc3_6011_4134_95ab_956f56d4bdc1 ,
@@ -11503,6 +11948,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/PA-PER-K" ;
                                            skos:prefLabel "PascalPerKelvin"@en .
+
+
+###  http://emmo.info/emmo#EMMO_df1d3a25_eba2_4530_9803_d82d349f4051
+:EMMO_df1d3a25_eba2_4530_9803_d82d349f4051 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_df628c99_73aa_4e17_866c_d54a7aa5030b
@@ -11778,6 +12227,10 @@
                                            skos:prefLabel "KilowattHour"@en .
 
 
+###  http://emmo.info/emmo#EMMO_e35d4936_b2e3_4cd6_a437_f1c864b3d450
+:EMMO_e35d4936_b2e3_4cd6_a437_f1c864b3d450 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_e3854e86_c0c1_48f2_ae22_55e92545fecd
 :EMMO_e3854e86_c0c1_48f2_ae22_55e92545fecd rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_1273eb34_de48_43a9_925f_104110469dd2 ,
@@ -11813,6 +12266,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/KiloBYTE" ;
                                            skos:prefLabel "Kilobyte"@en .
+
+
+###  http://emmo.info/emmo#EMMO_e467cc3f_676c_432e_b70e_19237d1bcc78
+:EMMO_e467cc3f_676c_432e_b70e_19237d1bcc78 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_e4e0c9b3_f7da_4171_916d_00e948fb18f1
@@ -11865,6 +12322,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MilliBQ-PER-KiloGM" ;
                                            skos:prefLabel "MillibecquerelPerKilogram"@en .
+
+
+###  http://emmo.info/emmo#EMMO_e6110006_88b9_45cd_9f9c_a2a91c0c21f8
+:EMMO_e6110006_88b9_45cd_9f9c_a2a91c0c21f8 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_e6563c68_ab31_4f31_af8f_35aeaf0ed7dd
@@ -12179,6 +12640,10 @@
                                            skos:prefLabel "Barn"@en .
 
 
+###  http://emmo.info/emmo#EMMO_ebf9a5c6_ca80_45d4_a991_24a1bf4b6720
+:EMMO_ebf9a5c6_ca80_45d4_a991_24a1bf4b6720 rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_ec0a8268_35f0_4f88_a72f_10144a88844c
 :EMMO_ec0a8268_35f0_4f88_a72f_10144a88844c rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_08b308d4_31cd_4779_a784_aa92fc730f39 ,
@@ -12229,6 +12694,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/PER-KiloV-A-HR" ;
                                            skos:prefLabel "ReciprocalKilovoltAmpereHour"@en .
+
+
+###  http://emmo.info/emmo#EMMO_ed7dd267_e2ee_4565_8117_e5c1eafa3e66
+:EMMO_ed7dd267_e2ee_4565_8117_e5c1eafa3e66 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_ed8d3371_8657_4a6d_8b98_dd6838708b09
@@ -12562,6 +13031,10 @@
                                            skos:prefLabel "Decilitre"@en .
 
 
+###  http://emmo.info/emmo#EMMO_f2c1a072_4ccb_46c4_a0f8_ac801d328d0f
+:EMMO_f2c1a072_4ccb_46c4_a0f8_ac801d328d0f rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_f2f29140_ff23_4ca0_ab5a_eac4583ca908
 :EMMO_f2f29140_ff23_4ca0_ab5a_eac4583ca908 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_08b308d4_31cd_4779_a784_aa92fc730f39 ,
@@ -12649,6 +13122,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/KiloMOL" ;
                                            skos:prefLabel "Kilomole"@en .
+
+
+###  http://emmo.info/emmo#EMMO_f508dec1_e2d8_43d5_ae65_c386c7b330f9
+:EMMO_f508dec1_e2d8_43d5_ae65_c386c7b330f9 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_f50f2ba4_889f_4f7f_8103_975278889c3c
@@ -12794,6 +13271,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/KiloPA-PER-K" ;
                                            skos:prefLabel "KilopascalPerKelvin"@en .
+
+
+###  http://emmo.info/emmo#EMMO_f6fac54d_6b6d_4255_b217_4363a83f1834
+:EMMO_f6fac54d_6b6d_4255_b217_4363a83f1834 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_f720fbc2_e6bd_4838_a350_bbd447887f20
@@ -13148,6 +13629,10 @@
                                            skos:prefLabel "Nanotesla"@en .
 
 
+###  http://emmo.info/emmo#EMMO_fced2382_9c23_47a1_8246_a5dcd45ad99c
+:EMMO_fced2382_9c23_47a1_8246_a5dcd45ad99c rdf:type owl:Class .
+
+
 ###  http://emmo.info/emmo#EMMO_fd107cee_3f03_416b_8551_927d5fcef6ef
 :EMMO_fd107cee_3f03_416b_8551_927d5fcef6ef rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_591e02fd_8d37_45a6_9d11_bb21cef391a0 ,
@@ -13276,6 +13761,10 @@
                                                            ] ;
                                            :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/PicoMOL-PER-M-W-SEC" ;
                                            skos:prefLabel "PicomolePerMetrePerWattPerSecond"@en .
+
+
+###  http://emmo.info/emmo#EMMO_ffbacbc4_c3be_4cc5_9539_94344e72f7a6
+:EMMO_ffbacbc4_c3be_4cc5_9539_94344e72f7a6 rdf:type owl:Class .
 
 
 ###  http://emmo.info/emmo#EMMO_fff1034a_681d_428e_b52d_68625b58e631
