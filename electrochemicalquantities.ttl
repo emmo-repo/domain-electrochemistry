@@ -749,7 +749,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
    owl:annotatedSource :electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "Voltage between the terminals of an electrochemical cell."@en ;
-   emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
 
 
