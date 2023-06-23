@@ -213,14 +213,14 @@ emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d rdf:type owl:ObjectProperty .
 ###  http://emmo.info/electrochemistry#electrochemistry_01260656_ac32_472e_9513_a607366538ec
 :electrochemistry_01260656_ac32_472e_9513_a607366538ec rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_19abaccd_43be_4048_965c_e4fb63c5951b ;
-                                                       emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "Formation of compounds that reduces the conductivity at the surface of an electrode."@en ,
-                                                                                                      "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-16"@en ;
+                                                       emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-16"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Formation of compounds that reduces the conductivity at the surface of an electrode."@en ;
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Passivation_(chemistry)"@en ;
                                                        skos:prefLabel "ElectrodePassivation"@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_01260656_ac32_472e_9513_a607366538ec ;
-   owl:annotatedProperty emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "Formation of compounds that reduces the conductivity at the surface of an electrode."@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
@@ -238,7 +238,7 @@ emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d rdf:type owl:ObjectProperty .
                                                        rdfs:comment "Most instruments show plots of the current at the end of the forward-going pulse and of the backward-going pulse vs. the potential, as well as their difference. This can give valuable information on the kinetics of the electrode reaction and the electrode process."@en ,
                                                                     "The sensitivity of SWV depends on the reversibility of the electrode reaction of the analyte."@en ;
                                                        skos:altLabel "OSWV"@en ,
-                                                                     "Osteryoung square-wave voltammetry"@en ,
+                                                                     "OsteryoungSquareWaveVoltammetry"@en ,
                                                                      "SWV"@en ;
                                                        skos:prefLabel "SquareWaveVoltammetry"@en .
 
@@ -3046,8 +3046,8 @@ of other configurations are used."""@en ;
 :electrochemistry_e931087f_7681_4096_b200_5223bcc47eb4 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_6f2c88c9_5c04_4953_a298_032cc3ab9b77 ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-06"@en ;
-                                                       emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "Electrochemical cell intended to produce chemical reactions."@en ,
-                                                                                                      "https://dbpedia.org/page/Electrolytic_cell"@en ;
+                                                       emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "https://dbpedia.org/page/Electrolytic_cell"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electrochemical cell intended to produce chemical reactions."@en ;
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Electrolytic_cell"@en ;
                                                        rdfs:comment "An electrochemical cell that requires input of work to drive the reaction."@en ,
                                                                     "Electrochemical cell in which electrical energy is converted into chemical energy."@en ;
@@ -3055,7 +3055,7 @@ of other configurations are used."""@en ;
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_e931087f_7681_4096_b200_5223bcc47eb4 ;
-   owl:annotatedProperty emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "Electrochemical cell intended to produce chemical reactions."@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
@@ -3552,8 +3552,8 @@ emmo:EMMO_a2a68924_b759_4ba4_a25d_126021569fb9 rdf:type owl:Class ;
 ###  https://emmo.info/electrochemistry#electrochemistry_a53d6dee_1547_4854_a311_805b4d557298
 <https://emmo.info/electrochemistry#electrochemistry_a53d6dee_1547_4854_a311_805b4d557298> rdf:type owl:Class ;
                                                                                            rdfs:subClassOf <https://emmo.info/electrochemistry#electrochemistry_904b12e0_4a10_47b0_b7db_592aba215cb6> ;
-                                                                                           emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://en.wikipedia.org/wiki/Alternating_current"@en ;
                                                                                            emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Periodic current where the amplitude alternates at a steady frequency between fixed minimum and maximum values, with the same duration at minimum and maximum."@en ;
+                                                                                           emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Alternating_current"@en ;
                                                                                            skos:altLabel "AC"@en ,
                                                                                                          "AlternatingCurrent"@en ;
                                                                                            skos:prefLabel "SinusoidalCurrentWaveform"@en .
@@ -3672,7 +3672,7 @@ emmo:EMMO_a2a68924_b759_4ba4_a25d_126021569fb9 rdf:type owl:Class ;
                                                                                            skos:prefLabel "LinearCurrentRamp"@en .
 
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
 ] .
 
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
@@ -3684,93 +3684,6 @@ emmo:EMMO_a2a68924_b759_4ba4_a25d_126021569fb9 rdf:type owl:Class ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
@@ -3780,34 +3693,10 @@ emmo:EMMO_a2a68924_b759_4ba4_a25d_126021569fb9 rdf:type owl:Class ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -3822,13 +3711,13 @@ emmo:EMMO_a2a68924_b759_4ba4_a25d_126021569fb9 rdf:type owl:Class ;
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -3846,22 +3735,7 @@ emmo:EMMO_a2a68924_b759_4ba4_a25d_126021569fb9 rdf:type owl:Class ;
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
@@ -3870,40 +3744,7 @@ emmo:EMMO_a2a68924_b759_4ba4_a25d_126021569fb9 rdf:type owl:Class ;
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -3927,28 +3768,16 @@ emmo:EMMO_a2a68924_b759_4ba4_a25d_126021569fb9 rdf:type owl:Class ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -3966,10 +3795,67 @@ emmo:EMMO_a2a68924_b759_4ba4_a25d_126021569fb9 rdf:type owl:Class ;
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
@@ -3979,6 +3865,120 @@ emmo:EMMO_a2a68924_b759_4ba4_a25d_126021569fb9 rdf:type owl:Class ;
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
