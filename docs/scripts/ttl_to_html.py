@@ -141,17 +141,7 @@ def rendering_workflow():
          {"filename":"electrochemistry.html", 
          "page title":"Electrochemistry Concepts",
          "page intro": "",
-         "path":"https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/electrochemistry.ttl"},
-
-         {"filename":"batteries.html", 
-         "page title":"Battery Concepts",
-         "page intro": "",
-         "path":"https://raw.githubusercontent.com/emmo-repo/domain-battery/master/battery.ttl"},
-
-         {"filename":"batteryquantities.html", 
-         "page title":"Battery Quantities",
-         "page intro": "",
-         "path":"https://raw.githubusercontent.com/emmo-repo/domain-battery/master/batteryquantities.ttl"},
+         "path":"https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/electrochemistry.ttl"}
     ]
 
 
