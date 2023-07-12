@@ -136,12 +136,12 @@ def rendering_workflow():
         {"filename":"electrochemicalquantities.html", 
          "page title":"Quantities used in Electrochemistry",
          "page intro": "",
-         "path":"https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/electrochemicalquantities.ttl"},
+         "path":"./electrochemicalquantities.ttl"},
 
          {"filename":"electrochemistry.html", 
          "page title":"Electrochemistry Concepts",
          "page intro": "",
-         "path":"https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/electrochemistry.ttl"}
+         "path":"./electrochemistry.ttl"}
     ]
 
 
