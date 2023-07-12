@@ -1,7 +1,6 @@
 
 | [**About**](./about.html) | [**Contribute**](./contribute.html) | [![BattINFO Github](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com/emmo-repo/domain-electrochemistry)
 
-# TESTING IF DOCS UPDATE
 An electrochemistry domain ontology developed in the [BIG-MAP][2] project.
 The ontology is a part of the [Battery Interface Domain Ontology (BattINFO)](https://github.com/BIG-MAP/BattINFO).
 
