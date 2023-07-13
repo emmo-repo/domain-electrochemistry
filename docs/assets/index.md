@@ -11,11 +11,8 @@ The Electrochemistry Domain ontology is a digital resource to support interopera
 This ontology consists of a list of entities representing concepts used in electrochemistry. Each entity has a unique identifier (IRI) and is annotated with additional information, such as its preferred name ("prefLabel"), alternative names, definition, references, etc. As users link their research resources to ontology entities, they are effectively describing their resource using a common vocabulary. Resources can be datasets, documents, persons, organizations, equipment, samples... anything linked to the common vocabulary described in this ontology, becomes part of an ecosystem of Findable resources.
 
 
-## List of Entities
-Here you can find the entities described in this ontology, classified in two categories.  
+### [See list of entities](./electrochemistry.html)
 
-| [**Electrochemistry**](./electrochemistry.html)  |  [**Electrochemical Quantities**](./electrochemicalquantities.html) |
-   
  
 [1]: https://github.com/emmo-repo/EMMO
 [2]: https://www.big-map.eu
