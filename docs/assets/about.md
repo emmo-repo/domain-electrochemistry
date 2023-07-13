@@ -1,7 +1,7 @@
 # About Electrochemistry Domain Ontology
 
 
-## Contributors
+## Contributors 
 
 * Simon Clark, SINTEF, Norway
 * Eibar Flores, SINTEF, Norway
