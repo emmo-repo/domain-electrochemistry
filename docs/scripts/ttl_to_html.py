@@ -132,37 +132,35 @@ def rendering_workflow():
 
     # PAGES 
     
-    pages = [
-        {"filename":"electrochemicalquantities.html", 
-         "page title":"Quantities used in Electrochemistry",
-         "page intro": "",
+    ttl_modules = [
+        {"section title":"Quantities used in Electrochemistry",
          "path":"./electrochemicalquantities.ttl"},
 
-         {"filename":"electrochemistry.html", 
-         "page title":"Electrochemistry Concepts",
-         "page intro": "",
+         {"section title":"Electrochemistry Concepts",
          "path":"./electrochemistry.ttl"}
     ]
 
 
 
     # GENERATE PAGES 
+    html_filename = "electrochemistry.html"
 
-    for page in pages:
+    html = render_html_top()
 
-        g = load_ttl_from_url(page["path"])
+    for module in ttl_modules:
+
+        g = load_ttl_from_url(module["path"])
 
         entities_list = extract_terms_info_sparql(g)
-
-
-        html = render_html_top()
-        page_title = page["page title"]
+        
+        page_title = module["section title"]        
         html += f"<h1>{page_title}</h1>\n"
         html += entities_to_html(entities_list)
-        html += render_html_bottom()
 
-        with open("./docs/"+page["filename"], "w", encoding="utf-8") as f:
-            f.write(html)
+    html += render_html_bottom()
+
+    with open("./docs/"+ html_filename, "w", encoding="utf-8") as f:
+        f.write(html)
 
 
 
