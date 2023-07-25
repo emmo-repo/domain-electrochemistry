@@ -8,7 +8,7 @@
 
 <http://emmo.info/emmo/emmo-concepts> rdf:type owl:Ontology ;
                                        owl:versionIRI <http://emmo.info/emmo/0.1.0/emmo-concepts> ;
-                                       owl:imports <http://emmo.info/emmo/1.0.0-beta3> .
+                                       owl:imports <http://emmo.info/emmo/1.0.0-beta4> .
 
 #################################################################
 #    Annotation properties

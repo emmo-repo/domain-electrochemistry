@@ -24,7 +24,7 @@ jobs:
 
     - name: Run EMMO Check - electrochemistry
       run: |
-        emmocheck --verbose --check-imported --url-from-catalog \
+        emmocheck --verbose --url-from-catalog \
           --skip test_namespace \
           --skip test_quantity_dimension \
           --configfile=.github/utils/emmocheck_config.yml \
@@ -32,8 +32,32 @@ jobs:
 
     - name: Run EMMO Check - electrochemicalquantities
       run: |
-        emmocheck --verbose --check-imported --url-from-catalog \
+        emmocheck --verbose --url-from-catalog \
           --skip test_namespace \
           --skip test_quantity_dimension \
           --configfile=.github/utils/emmocheck_config.yml \
           electrochemicalquantities.ttl
+
+    - name: Run EMMO Check - emmo-concepts
+      run: |
+        emmocheck --verbose --url-from-catalog \
+          --skip test_namespace \
+          --skip test_quantity_dimension \
+          --configfile=.github/utils/emmocheck_config.yml \
+          emmo-concepts.ttl
+
+    - name: Run EMMO Check - isq_bigmap
+      run: |
+        emmocheck --verbose --url-from-catalog \
+          --skip test_namespace \
+          --skip test_quantity_dimension \
+          --configfile=.github/utils/emmocheck_config.yml \
+          isq_bigmap.ttl
+
+    - name: Run EMMO Check - material_bigmap_temp
+      run: |
+        emmocheck --verbose --url-from-catalog \
+          --skip test_namespace \
+          --skip test_quantity_dimension \
+          --configfile=.github/utils/emmocheck_config.yml \
+          material_bigmap_temp.ttl
