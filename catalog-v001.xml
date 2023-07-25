@@ -4,6 +4,5 @@
         <uri name="http://emmo.info/electrochemistry/0.6.0/electrochemistry" uri="./electrochemistry.ttl"/>
         <uri name="http://emmo.info/electrochemistry/0.6.0/electrochemicalquantities" uri="./electrochemicalquantities.ttl"/>
         <uri name="http://emmo.info/1.0.0-beta5/emmo-inferred" uri="https://emmo-repo.github.io/versions/1.0.0-beta5/emmo-inferred.ttl"/>
-        <uri name="http://emmo.info/emmo/disciplines/units/unclassifiedunits-inferred" uri="./unclassifiedunits-inferred.ttl"/>
     </group>
 </catalog>
