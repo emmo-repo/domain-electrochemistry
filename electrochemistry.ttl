@@ -3510,6 +3510,12 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                                        skos:prefLabel "R2335"@en .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_88d2d4bc_4244_4419_a260_ad099a62d580
+:electrochemistry_88d2d4bc_4244_4419_a260_ad099a62d580 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc ;
+                                                       skos:prefLabel "SulfurElectrode"@en .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_8968eb7a_9a65_4286_a596_c31b998df329
 :electrochemistry_8968eb7a_9a65_4286_a596_c31b998df329 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5 ;
