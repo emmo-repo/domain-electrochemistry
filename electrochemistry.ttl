@@ -199,6 +199,22 @@ emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d rdf:type owl:ObjectProperty .
 #    Classes
 #################################################################
 
+###  http://emmo.info/battery#battery_02aefb7a_d6ce_4b6e_b854_f7b3d641f670
+<http://emmo.info/battery#battery_02aefb7a_d6ce_4b6e_b854_f7b3d641f670> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf :electrochemistry_a9873d3d_945b_40ba_b9cd_8dfb64cec88f ;
+                                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-37" ;
+                                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "accelerated charge applied at greater than normal values of electric currents or of voltages (for a particular design) during a short time interval"@en ;
+                                                                        skos:altLabel "FastCharge"@en ;
+                                                                        skos:prefLabel "BoostCharge"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource <http://emmo.info/battery#battery_02aefb7a_d6ce_4b6e_b854_f7b3d641f670> ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "accelerated charge applied at greater than normal values of electric currents or of voltages (for a particular design) during a short time interval"@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
+
+
 ###  http://emmo.info/battery#battery_e73cb0b7_e2af_4c1a_b05b_503df25a8bf5
 <http://emmo.info/battery#battery_e73cb0b7_e2af_4c1a_b05b_503df25a8bf5> rdf:type owl:Class ;
                                                                         rdfs:subClassOf :electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37 ;
@@ -305,15 +321,15 @@ emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d rdf:type owl:ObjectProperty .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_04f28ce3_251d_429e_aa85_ab3eb45bbcd2 ;
-   owl:annotatedProperty rdfs:comment ;
-   owl:annotatedTarget "in lithium batteries thermal runaway may cause melting of lithium"@en ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "unstable condition arising during constant voltage charge in which the rate of heat dissipation capability, causing a continuous temperature increase with resulting further charge current increase, which can lead to the destruction of the battery"@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_04f28ce3_251d_429e_aa85_ab3eb45bbcd2 ;
-   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-   owl:annotatedTarget "unstable condition arising during constant voltage charge in which the rate of heat dissipation capability, causing a continuous temperature increase with resulting further charge current increase, which can lead to the destruction of the battery"@en ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "in lithium batteries thermal runaway may cause melting of lithium"@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
 
@@ -905,6 +921,21 @@ emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d rdf:type owl:ObjectProperty .
                                                        skos:prefLabel "ElectrochemicalPhenomenon"@en .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_1a2eb6db_c927_4039_aea0_8dfab060fd27
+:electrochemistry_1a2eb6db_c927_4039_aea0_8dfab060fd27 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_f76884f7_964e_488e_9bb7_1b2453e9e817 ;
+                                                       emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-18" ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "ridges in the bottom of the case which support the plate pack (electrode stack) and thus create a space which allows the active material detached from the plates (electrodes) to settle without causing a short-circuit between the plates (electrodes)"@en ;
+                                                       skos:prefLabel "Mudrib"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_1a2eb6db_c927_4039_aea0_8dfab060fd27 ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "ridges in the bottom of the case which support the plate pack (electrode stack) and thus create a space which allows the active material detached from the plates (electrodes) to settle without causing a short-circuit between the plates (electrodes)"@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_1a7fb32a_743f_4aa6_ac5a_ff7a2ba29dce
 :electrochemistry_1a7fb32a_743f_4aa6_ac5a_ff7a2ba29dce rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_14d0358f_f65d_44f9_8b85_40b38f17c4ed ;
@@ -1418,15 +1449,15 @@ Aluminum foil"""@en ;
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_328c6e36_3706_4d92_abae_432fa3adb2a0 ;
-   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-   owl:annotatedTarget "internal component used to reduce the amount of electrolyte loss due to electrolyte spray being carried in the gas and/or by electrolyte movement"@en ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "a cell baffle has a second function in protecting the plate pack from damage by objects inserted through the filling hole"@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_328c6e36_3706_4d92_abae_432fa3adb2a0 ;
-   owl:annotatedProperty rdfs:comment ;
-   owl:annotatedTarget "a cell baffle has a second function in protecting the plate pack from damage by objects inserted through the filling hole"@en ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "internal component used to reduce the amount of electrolyte loss due to electrolyte spray being carried in the gas and/or by electrolyte movement"@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
 
@@ -3601,6 +3632,29 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                                        skos:prefLabel "ACVoltammetry"@en .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_8d3bf304_78e4_4e99_abe1_6ab429e44ed1
+:electrochemistry_8d3bf304_78e4_4e99_abe1_6ab429e44ed1 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_0acd0fc2_1048_4604_8e90_bf4e84bd87df ;
+                                                       emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-17"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "cell which remains closed and does not release either gas or liquid when operated within the limits specified by the manufacturer"@en ;
+                                                       rdfs:comment "a sealed cell may be equipped with a safety device to prevent a dangerously high internal pressure and is designed to operate during its life in its original sealed state"@en ;
+                                                       skos:prefLabel "SealedCell"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_8d3bf304_78e4_4e99_abe1_6ab429e44ed1 ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "cell which remains closed and does not release either gas or liquid when operated within the limits specified by the manufacturer"@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_8d3bf304_78e4_4e99_abe1_6ab429e44ed1 ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "a sealed cell may be equipped with a safety device to prevent a dangerously high internal pressure and is designed to operate during its life in its original sealed state"@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_900d95fb_863d_4142_a96d_369fb39e2639
 :electrochemistry_900d95fb_863d_4142_a96d_369fb39e2639 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_0acd0fc2_1048_4604_8e90_bf4e84bd87df ;
@@ -3733,6 +3787,21 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 :electrochemistry_98d5101e_cd11_4a0d_b856_6fcd8aad132e rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_872b11e1_8bb3_4a2a_af90_bbaa0055d01e ;
                                                        skos:prefLabel "BellevilleWasher"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_990d19b8_672a_4219_a2b3_0a25bfa13f69
+:electrochemistry_990d19b8_672a_4219_a2b3_0a25bfa13f69 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_a9873d3d_945b_40ba_b9cd_8dfb64cec88f ;
+                                                       emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-40" ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "extended charge to ensure an equal state of charge of all cells in a battery"@en ;
+                                                       skos:prefLabel "EqualizationCharge"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_990d19b8_672a_4219_a2b3_0a25bfa13f69 ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "extended charge to ensure an equal state of charge of all cells in a battery"@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_99475d6c_304c_4d6b_9eca_fbc42f768be5
@@ -3877,6 +3946,29 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 :electrochemistry_9e24d403_8531_416e_a9ec_d1ec5508bcb1 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5 ;
                                                        skos:prefLabel "SodiumCobaltPhosphateElectrode"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_9ee6e728_e8f5_4b36_a045_d63da69dfc85
+:electrochemistry_9ee6e728_e8f5_4b36_a045_d63da69dfc85 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_a9873d3d_945b_40ba_b9cd_8dfb64cec88f ;
+                                                       emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-44" ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "continued charging of a fully charged secondary cell or battery"@en ;
+                                                       rdfs:comment "overcharge is also the act of charging beyond a certain limit specified by the manufacturer"@en ;
+                                                       skos:prefLabel "Overcharge"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_9ee6e728_e8f5_4b36_a045_d63da69dfc85 ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "continued charging of a fully charged secondary cell or battery"@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_9ee6e728_e8f5_4b36_a045_d63da69dfc85 ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "overcharge is also the act of charging beyond a certain limit specified by the manufacturer"@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_9f1ffb54_4403_4541_98c1_3a821c6d060f
@@ -4970,6 +5062,29 @@ of other configurations are used."""@en ;
                                                        skos:prefLabel "TungstenElectrode"@en .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_c610d869_cc03_44f0_b40d_ca86e945b9c9
+:electrochemistry_c610d869_cc03_44f0_b40d_ca86e945b9c9 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_0acd0fc2_1048_4604_8e90_bf4e84bd87df ;
+                                                       emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-16" ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "cell from which electrolyte cannot escape regardless of its orientation"@en ;
+                                                       rdfs:comment "some vented cells or batteries are designed so as to be non-spillable when operated within the limits specified by the manufacturer"@en ;
+                                                       skos:prefLabel "NonSpillableCell"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_c610d869_cc03_44f0_b40d_ca86e945b9c9 ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "cell from which electrolyte cannot escape regardless of its orientation"@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_c610d869_cc03_44f0_b40d_ca86e945b9c9 ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "some vented cells or batteries are designed so as to be non-spillable when operated within the limits specified by the manufacturer"@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_c6146f71_5862_4e78_ba44_c77989b7bcf4
 :electrochemistry_c6146f71_5862_4e78_ba44_c77989b7bcf4 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_43dffe12_df9b_4ab6_a556_1276c9e33486 ;
@@ -5130,6 +5245,21 @@ of other configurations are used."""@en ;
 :electrochemistry_cc0468a2_1851_4d3d_92a6_b4059db0c056 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5 ;
                                                        skos:prefLabel "SodiumManganesePhosphateElectrode"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_cc1f854a_ba6c_436e_bd18_c8b9159bbf52
+:electrochemistry_cc1f854a_ba6c_436e_bd18_c8b9159bbf52 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_f76884f7_964e_488e_9bb7_1b2453e9e817 ;
+                                                       emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-23" ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "component fitted into the filling hole of a cell with a provision of allowing the venting of electrolysis gas from the cell¨"@en ;
+                                                       skos:prefLabel "VentCap"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_cc1f854a_ba6c_436e_bd18_c8b9159bbf52 ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "component fitted into the filling hole of a cell with a provision of allowing the venting of electrolysis gas from the cell¨"@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_cc4e178c_bc1f_4502_b6c2_33f304ef6bab
