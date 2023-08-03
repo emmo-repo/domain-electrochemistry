@@ -1408,6 +1408,29 @@ Aluminum foil"""@en ;
                                                        skos:prefLabel "R721"@en .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_328c6e36_3706_4d92_abae_432fa3adb2a0
+:electrochemistry_328c6e36_3706_4d92_abae_432fa3adb2a0 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_f76884f7_964e_488e_9bb7_1b2453e9e817 ;
+                                                       emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-13" ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "internal component used to reduce the amount of electrolyte loss due to electrolyte spray being carried in the gas and/or by electrolyte movement"@en ;
+                                                       rdfs:comment "a cell baffle has a second function in protecting the plate pack from damage by objects inserted through the filling hole"@en ;
+                                                       skos:prefLabel "CellBaffle"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_328c6e36_3706_4d92_abae_432fa3adb2a0 ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "internal component used to reduce the amount of electrolyte loss due to electrolyte spray being carried in the gas and/or by electrolyte movement"@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_328c6e36_3706_4d92_abae_432fa3adb2a0 ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "a cell baffle has a second function in protecting the plate pack from damage by objects inserted through the filling hole"@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_32ab2ea8_6263_42a8_8682_2fe0343f8bea
 :electrochemistry_32ab2ea8_6263_42a8_8682_2fe0343f8bea rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_64bf0969_37a1_4aaf_82e9_68462847ac65 ,
@@ -4325,6 +4348,29 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
  ] .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_ae56cce3_7a7c_4e53_bb58_31e0d642d47e
+:electrochemistry_ae56cce3_7a7c_4e53_bb58_31e0d642d47e rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_f76884f7_964e_488e_9bb7_1b2453e9e817 ;
+                                                       emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-11" ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "vent of special design which provides protection against the propagation of a flame front from or into the interior of a secondary cell"@en ;
+                                                       rdfs:comment "this flame front may originate from a spark or an external naked flame igniting combustible electrolysis gas"@en ;
+                                                       skos:prefLabel "FlameArrestorVent"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_ae56cce3_7a7c_4e53_bb58_31e0d642d47e ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "vent of special design which provides protection against the propagation of a flame front from or into the interior of a secondary cell"@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_ae56cce3_7a7c_4e53_bb58_31e0d642d47e ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "this flame front may originate from a spark or an external naked flame igniting combustible electrolysis gas"@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_af92a3ae_e870_4676_9ae7_cda277b1e6e1
 :electrochemistry_af92a3ae_e870_4676_9ae7_cda277b1e6e1 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37 ;
@@ -5661,6 +5707,21 @@ of other configurations are used."""@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a coin case with a nominal diameter of 9.5 mm and a height of 1.6 mm"@en ;
                                                        skos:altLabel "R68" ;
                                                        skos:prefLabel "R916"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_ec1dce8b_bb46_41a9_b532_6bed381aa557
+:electrochemistry_ec1dce8b_bb46_41a9_b532_6bed381aa557 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_0acd0fc2_1048_4604_8e90_bf4e84bd87df ;
+                                                       emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-14" ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "secondary cell having a cover provided with an opening through which products of electrolysis and evaporation are allowed to escape freely from the cell to the atmosphere"@en ;
+                                                       skos:prefLabel "VentedCell"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_ec1dce8b_bb46_41a9_b532_6bed381aa557 ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "secondary cell having a cover provided with an opening through which products of electrolysis and evaporation are allowed to escape freely from the cell to the atmosphere"@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_ec6f3d6f_bdf5_418f_9314_3ef2ff528103
