@@ -51,6 +51,13 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 #    Classes
 #################################################################
 
+###  http://emmo.info/electrochemistry#electrochemistry_0141b5c2_9f15_46f4_82e6_92a104faa476
+:electrochemistry_0141b5c2_9f15_46f4_82e6_92a104faa476 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_791c1915_a791_4450_acd8_7f94764743b5 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "capacity delivered during a discharge process"@en ;
+                                                       skos:prefLabel "DischargeCapacity"@en .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634
 :electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
@@ -159,6 +166,13 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
                                                                        emmo:EMMO_ffb73b1e_5786_43e4_a964_cb32ac7affb7 ;
                                                        rdfs:comment "inverse of internal resistance"@en ;
                                                        skos:prefLabel "InternalConductance"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_10763eb0_dbc9_4d34_bd1a_7b8996590d45
+:electrochemistry_10763eb0_dbc9_4d34_bd1a_7b8996590d45 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_791c1915_a791_4450_acd8_7f94764743b5 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "capacity delivered during a charge process"@en ;
+                                                       skos:prefLabel "ChargeCapacity"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_10eb778d_da60_4832_a355_4ee74baea650
@@ -544,6 +558,13 @@ and t* through mathematical models, provided that the long-time potential- deter
  ] .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_2ab7af60_da58_4243_b3bc_cbb2155cac53
+:electrochemistry_2ab7af60_da58_4243_b3bc_cbb2155cac53 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_46376e5d_9627_4514_9881_9e62083625c3 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "energy delivered by a deviced under some specific charge conditions"@en ;
+                                                       skos:prefLabel "ChargeEnergy"@en .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_2ae53fc6_d44d_41c9_acaf_c5606e6a981d
 :electrochemistry_2ae53fc6_d44d_41c9_acaf_c5606e6a981d rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
@@ -683,6 +704,16 @@ and t* through mathematical models, provided that the long-time potential- deter
                                                                        :electrochemistry_74de2c33_84fc_4c2f_afe1_56d169149114 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the maximum current approved for pulse discharge of an electrochemical device"@en ;
                                                        skos:prefLabel "MaximumPulseDischargeCurrent"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_46376e5d_9627_4514_9881_9e62083625c3
+:electrochemistry_46376e5d_9627_4514_9881_9e62083625c3 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634 ,
+                                                                       emmo:EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2 ;
+                                                       emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-21"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "amount of energy that can be stored in a device under specific conditions"@en ;
+                                                       skos:altLabel "BatteryEnergy"@en ;
+                                                       skos:prefLabel "EnergyStorageCapability"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_47287d09_6108_45ca_ac65_8b9451b1065e
@@ -882,6 +913,14 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
    owl:annotatedTarget "fraction of the electric current passing through an electrochemical cell which accomplishes the desired chemical reaction"@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_5766a819_c319_48ba_ab9a_ce3bd8fedee8
+:electrochemistry_5766a819_c319_48ba_ab9a_ce3bd8fedee8 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
+                                                                       emmo:EMMO_ba882f34_0d71_4e4f_9d92_0c076c633a2c ;
+                                                       skos:altLabel "CycleIndex"@en ;
+                                                       skos:prefLabel "CycleNumber"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_5eae657f_5914_4252_85c6_3fc772dea113
@@ -1137,7 +1176,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                                        emmo:EMMO_1604f495_328a_4f28_9962_f4cc210739dd ,
                                                                        emmo:EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064 ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-14" ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electric charge which a cell or battery can deliver under specified discharge conditions"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electric charge which a cell or battery can deliver under specified conditions"@en ;
                                                        rdfs:comment "the SI unit for electric charge is the coulomb (1 C = 1 A·s) but in practice, capacity is usually expressed in ampere hours (A·h)"@en ;
                                                        skos:altLabel "ChargeCapacity"@en ,
                                                                      "ElectricChargeCapacity"@en ,
@@ -1147,7 +1186,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_791c1915_a791_4450_acd8_7f94764743b5 ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-   owl:annotatedTarget "electric charge which a cell or battery can deliver under specified discharge conditions"@en ;
+   owl:annotatedTarget "electric charge which a cell or battery can deliver under specified conditions"@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
 
@@ -1835,6 +1874,13 @@ In either case, the magnitude of the catalytic current depends on the applied po
                                                                        emmo:EMMO_afea89af_ef16_4bdb_99d5_f3b2f4c85a6c ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "mass of a material per unit area"@en ;
                                                        skos:prefLabel "MassLoading"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_ca36cbf3_1fed_4b88_9177_b4e16ad00cf7
+:electrochemistry_ca36cbf3_1fed_4b88_9177_b4e16ad00cf7 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_46376e5d_9627_4514_9881_9e62083625c3 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "energy delivered by a deviced under some specific discharge conditions"@en ;
+                                                       skos:prefLabel "DischargeEnergy"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_cc519a19_b8d5_4e3f_b893_3a884888ad79
