@@ -91,6 +91,15 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
  ] .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_05012606_b93d_4016_bbc7_8a927efdf723
+:electrochemistry_05012606_b93d_4016_bbc7_8a927efdf723 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
+                                                                       emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "quotient of the capacity of the negative electrode and the capacity of the positive electrode in a cell"@en ;
+                                                       skos:altLabel "NToPRatio"@en ;
+                                                       skos:prefLabel "NPRatio"@en .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_05cf26ef_782a_4f66_a196_7004dd973f8e
 :electrochemistry_05cf26ef_782a_4f66_a196_7004dd973f8e rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
@@ -658,6 +667,15 @@ and t* through mathematical models, provided that the long-time potential- deter
                                                        skos:prefLabel "AmbientThermodynamicTemperature"@en .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_3b938708_e7e4_4ac0_a959_9c04306302e7
+:electrochemistry_3b938708_e7e4_4ac0_a959_9c04306302e7 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
+                                                                       emmo:EMMO_43003c86_9d15_433b_9789_ee2940920656 ;
+                                                       owl:disjointWith :electrochemistry_f9e1c862_c510_4b11_9141_bc91045df817 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "thickness of the coating before any additional treatment is applied"@en ;
+                                                       skos:prefLabel "CoatingThickness"@en .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_3bb5ae23_59fa_4bc7_9495_803eb6719f28
 :electrochemistry_3bb5ae23_59fa_4bc7_9495_803eb6719f28 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
@@ -756,6 +774,13 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        skos:prefLabel "NumberOfCellsConnectedInParallel"@en .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_4882cf2f_aab7_4a3a_a103_7f56b55fbed3
+:electrochemistry_4882cf2f_aab7_4a3a_a103_7f56b55fbed3 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_1e3dc60d_dd6b_47d6_8161_70004fc5ee30 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "quotient of the capacity of a cell or battery [ or electrode or active material ] obtained during a charge process by its mass."@en ;
+                                                       skos:prefLabel "SpecificChargeCapacity"@en .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_49efb72a_f8e6_4f50_acac_975302200d47
 :electrochemistry_49efb72a_f8e6_4f50_acac_975302200d47 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_900e357f_2ee3_425a_a0b6_322661117787 ;
@@ -821,6 +846,14 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
    owl:annotatedTarget "difference of electric potentials measured between identical metallic leads to two electrodes of an electrochemical cell"@en ;
    dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_520995f8_ec9c_4b3c_bb64_2cd691947379
+:electrochemistry_520995f8_ec9c_4b3c_bb64_2cd691947379 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
+                                                                       emmo:EMMO_06448f64_8db6_4304_8b2c_e785dba82044 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "density after calendering"@en ;
+                                                       skos:prefLabel "CalenderedDensity"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_526bf81a_0572_49ff_a8cc_85efc343c1c2
@@ -1332,6 +1365,13 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
 :electrochemistry_86324806_4263_4d80_b5af_1a7be844ab5b rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_f0667139_6428_4e3d_ac0d_08c1dd7f36ea ;
                                                        skos:prefLabel "MinimumStoichiometry"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_884650fd_6cc6_4ec6_8264_c18fbe6b90ee
+:electrochemistry_884650fd_6cc6_4ec6_8264_c18fbe6b90ee rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_1e3dc60d_dd6b_47d6_8161_70004fc5ee30 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "quotient of the capacity of a cell or battery [ or electrode or active material ] obtained during a discharge process by its mass."@en ;
+                                                       skos:prefLabel "SpecificDischargeCapacity"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_8de9735b_374a_4a0f_b29f_71a50794cf94
@@ -2218,6 +2258,13 @@ In either case, the magnitude of the catalytic current depends on the applied po
    owl:annotatedTarget "internal apparent resistance is expressed in ohms"@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_f9e1c862_c510_4b11_9141_bc91045df817
+:electrochemistry_f9e1c862_c510_4b11_9141_bc91045df817 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "thickness of the coating after a calendering process"@en ;
+                                                       skos:prefLabel "CalenderedCoatingThickness"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_fa7790d6_07bb_4b0f_9965_55966828f5f3
