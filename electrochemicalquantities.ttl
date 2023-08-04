@@ -455,6 +455,34 @@ and t* through mathematical models, provided that the long-time potential- deter
                                                        skos:prefLabel "IonicConductivity"@en .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_25e20915_c35d_4bee_ad31_736235a79780
+:electrochemistry_25e20915_c35d_4bee_ad31_736235a79780 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
+                                                                       emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
+                                                       emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-25" ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "[an indicator of the] electric current at which a battery is discharged"@en ;
+                                                       rdfs:comment "in practice, the term CRate is often used to mean DRate"@en ,
+                                                                    "the discharge rate is calculated as the rated capacity divided by the corresponding discharge time which results in an electric current"@en ,
+                                                                    "the quantity DRate is not used for energy-decoupled batteries like Redox Flox batteries"@en ;
+                                                       rdfs:seeAlso "CRate"@en ;
+                                                       skos:altLabel "DischargeRate"@en ;
+                                                       skos:prefLabel "DRate"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_25e20915_c35d_4bee_ad31_736235a79780 ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "[an indicator of the] electric current at which a battery is discharged"@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_25e20915_c35d_4bee_ad31_736235a79780 ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "the discharge rate is calculated as the rated capacity divided by the corresponding discharge time which results in an electric current"@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_264f40d1_17c9_4bc7_9c47_5cfb18132278
 :electrochemistry_264f40d1_17c9_4bc7_9c47_5cfb18132278 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ,
@@ -848,6 +876,23 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
  ] .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_50674621_09ae_4f03_8ee9_3997b88c8b2a
+:electrochemistry_50674621_09ae_4f03_8ee9_3997b88c8b2a rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee ;
+                                                       emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-46" ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "[an indicator of the] electric current at which a battery is charged towards the end of charge"@en ;
+                                                       rdfs:comment "the quantity CRate is not used for energy-decoupled batteries like Redox Flox batteries"@en ;
+                                                       skos:altLabel "FinishingChargeRate"@en ;
+                                                       skos:prefLabel "FinishingCRate"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_50674621_09ae_4f03_8ee9_3997b88c8b2a ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "[an indicator of the] electric current at which a battery is charged towards the end of charge"@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_520995f8_ec9c_4b3c_bb64_2cd691947379
 :electrochemistry_520995f8_ec9c_4b3c_bb64_2cd691947379 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
@@ -1086,6 +1131,14 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                                        emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the magnitude of the current step in chronopotentiometry and related techniques"@en ;
                                                        skos:prefLabel "StepSignalCurrent"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_6d981c04_3ace_4f1b_b0f8_770776cceb6f
+:electrochemistry_6d981c04_3ace_4f1b_b0f8_770776cceb6f rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
+                                                                       emmo:EMMO_ba882f34_0d71_4e4f_9d92_0c076c633a2c ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the total number of cycles carried out on a specific device under a given set of conditions"@en ;
+                                                       skos:prefLabel "TotalNumberOfCycles"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_6dcd5baf_58cd_43f5_a692_51508e036c88
@@ -2053,6 +2106,34 @@ In either case, the magnitude of the catalytic current depends on the applied po
 :electrochemistry_db40df7e_1aa5_49a7_85cb_2aa2c1c70489 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_affe07e4_e9bc_4852_86c6_69e26182a17f ;
                                                        skos:prefLabel "ReferenceThermodynamicTemperature"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee
+:electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
+                                                                       emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
+                                                       emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-45" ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "[an indicator of the] electric current at which a secondary cell or battery is charged"@en ;
+                                                       rdfs:comment "in practice, the term CRate is often used to mean DRate"@en ,
+                                                                    "the charge rate is expressed as the reference current It = Cr/n where Cr is the rated capacity declared by the manufacturer and n is the time base in hours for which the rated capacity is declared"@en ,
+                                                                    "the quantity CRate is not used for energy-decoupled batteries like Redox Flox batteries"@en ;
+                                                       rdfs:seeAlso "DRate"@en ;
+                                                       skos:altLabel "ChargeRate"@en ;
+                                                       skos:prefLabel "CRate"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "[an indicator of the] electric current at which a secondary cell or battery is charged"@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "the charge rate is expressed as the reference current It = Cr/n where Cr is the rated capacity declared by the manufacturer and n is the time base in hours for which the rated capacity is declared"@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_e2514bf9_d012_4990_b68b_6f37443f18f6

@@ -199,41 +199,6 @@ emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d rdf:type owl:ObjectProperty .
 #    Classes
 #################################################################
 
-###  http://emmo.info/battery#battery_02aefb7a_d6ce_4b6e_b854_f7b3d641f670
-<http://emmo.info/battery#battery_02aefb7a_d6ce_4b6e_b854_f7b3d641f670> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf :electrochemistry_a9873d3d_945b_40ba_b9cd_8dfb64cec88f ;
-                                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-37" ;
-                                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "accelerated charge applied at greater than normal values of electric currents or of voltages (for a particular design) during a short time interval"@en ;
-                                                                        skos:altLabel "FastCharge"@en ;
-                                                                        skos:prefLabel "BoostCharge"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource <http://emmo.info/battery#battery_02aefb7a_d6ce_4b6e_b854_f7b3d641f670> ;
-   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-   owl:annotatedTarget "accelerated charge applied at greater than normal values of electric currents or of voltages (for a particular design) during a short time interval"@en ;
-   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
- ] .
-
-
-###  http://emmo.info/battery#battery_5186239a_2af7_4dbf_92ca_22e8e583c528
-<http://emmo.info/battery#battery_5186239a_2af7_4dbf_92ca_22e8e583c528> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf :electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc ,
-                                                                                        [ rdf:type owl:Restriction ;
-                                                                                          owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
-                                                                                          owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
-                                                                                          owl:onClass emmo:EMMO_df96cbb6_b5ee_4222_8eab_b3675df24bea
-                                                                                        ] ;
-                                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an active electrode with a blend of two or more active materials"@en ;
-                                                                        skos:prefLabel "BlendedActiveElectrode"@en .
-
-
-###  http://emmo.info/battery#battery_e73cb0b7_e2af_4c1a_b05b_503df25a8bf5
-<http://emmo.info/battery#battery_e73cb0b7_e2af_4c1a_b05b_503df25a8bf5> rdf:type owl:Class ;
-                                                                        rdfs:subClassOf :electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37 ;
-                                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a coin case with a nominal diameter of 10.0 mm and a height of 2.5 mm"@en ;
-                                                                        skos:prefLabel "R1025"@en .
-
-
 ###  http://emmo.info/electrochemistry#electrochemistry_01260656_ac32_472e_9513_a607366538ec
 :electrochemistry_01260656_ac32_472e_9513_a607366538ec rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_19abaccd_43be_4048_965c_e4fb63c5951b ,
@@ -273,6 +238,22 @@ emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d rdf:type owl:ObjectProperty .
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a coin case with a nominal diameter of 7.9 mm and a height of 5.4 mm"@en ;
                                                        skos:altLabel "R48" ;
                                                        skos:prefLabel "R754"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_02aefb7a_d6ce_4b6e_b854_f7b3d641f670
+:electrochemistry_02aefb7a_d6ce_4b6e_b854_f7b3d641f670 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_a9873d3d_945b_40ba_b9cd_8dfb64cec88f ;
+                                                       emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-37" ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "accelerated charge applied at greater than normal values of electric currents or of voltages (for a particular design) during a short time interval"@en ;
+                                                       skos:altLabel "FastCharge"@en ;
+                                                       skos:prefLabel "BoostCharge"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_02aefb7a_d6ce_4b6e_b854_f7b3d641f670 ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "accelerated charge applied at greater than normal values of electric currents or of voltages (for a particular design) during a short time interval"@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_042d2282_bd2d_4874_b896_2d9dd06b54dd
@@ -1437,7 +1418,7 @@ Aluminum foil"""@en ;
 
 ###  http://emmo.info/electrochemistry#electrochemistry_2fd5964b_0c65_4413_8b8c_849639e6d1e7
 :electrochemistry_2fd5964b_0c65_4413_8b8c_849639e6d1e7 rdf:type owl:Class ;
-                                                       rdfs:subClassOf <http://emmo.info/battery#battery_5186239a_2af7_4dbf_92ca_22e8e583c528> ;
+                                                       rdfs:subClassOf :electrochemistry_5186239a_2af7_4dbf_92ca_22e8e583c528 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode with blended silicon oxide and graphite active materials"@en ;
                                                        skos:prefLabel "SiliconOxideGraphiteElectrode"@en .
 
@@ -1476,15 +1457,15 @@ Aluminum foil"""@en ;
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_328c6e36_3706_4d92_abae_432fa3adb2a0 ;
-   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-   owl:annotatedTarget "internal component used to reduce the amount of electrolyte loss due to electrolyte spray being carried in the gas and/or by electrolyte movement"@en ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "a cell baffle has a second function in protecting the plate pack from damage by objects inserted through the filling hole"@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_328c6e36_3706_4d92_abae_432fa3adb2a0 ;
-   owl:annotatedProperty rdfs:comment ;
-   owl:annotatedTarget "a cell baffle has a second function in protecting the plate pack from damage by objects inserted through the filling hole"@en ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "internal component used to reduce the amount of electrolyte loss due to electrolyte spray being carried in the gas and/or by electrolyte movement"@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
 
@@ -2042,7 +2023,7 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
 
 ###  http://emmo.info/electrochemistry#electrochemistry_4839708a_3864_47eb_b719_373ff8874c61
 :electrochemistry_4839708a_3864_47eb_b719_373ff8874c61 rdf:type owl:Class ;
-                                                       rdfs:subClassOf <http://emmo.info/battery#battery_5186239a_2af7_4dbf_92ca_22e8e583c528> ,
+                                                       rdfs:subClassOf :electrochemistry_5186239a_2af7_4dbf_92ca_22e8e583c528 ,
                                                                        :electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode consisting of two metal oxide active materials"@en ;
                                                        skos:prefLabel "BimetallicOxideElectrode"@en .
@@ -2267,6 +2248,18 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
 :electrochemistry_510e4061_c4fa_49aa_a052_23ad56098eda rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_5adb91e0_ffe1_41f3_b779_c6966f65fb0e ;
                                                        skos:prefLabel "ChromiumElectrode"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_5186239a_2af7_4dbf_92ca_22e8e583c528
+:electrochemistry_5186239a_2af7_4dbf_92ca_22e8e583c528 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
+                                                                         owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                                         owl:onClass emmo:EMMO_df96cbb6_b5ee_4222_8eab_b3675df24bea
+                                                                       ] ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an active electrode with a blend of two or more active materials"@en ;
+                                                       skos:prefLabel "BlendedActiveElectrode"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_522f0c0b_cf33_4328_af71_12e38dae6798
@@ -3477,7 +3470,7 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 
 ###  http://emmo.info/electrochemistry#electrochemistry_86be0987_5e21_43ec_b975_8f679999d328
 :electrochemistry_86be0987_5e21_43ec_b975_8f679999d328 rdf:type owl:Class ;
-                                                       rdfs:subClassOf <http://emmo.info/battery#battery_5186239a_2af7_4dbf_92ca_22e8e583c528> ,
+                                                       rdfs:subClassOf :electrochemistry_5186239a_2af7_4dbf_92ca_22e8e583c528 ,
                                                                        :electrochemistry_5adb91e0_ffe1_41f3_b779_c6966f65fb0e ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrode containing two different metals (e.g. platinum and ruthenium) on its surface (e.g. to modify its electrocatalytic properties)"@en ;
                                                        skos:prefLabel "BimetallicElectrode"@en .
@@ -3858,6 +3851,15 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                                        rdfs:subClassOf :electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a coin case with a nominal diameter of 30.0 mm and a height of 3.2 mm"@en ;
                                                        skos:prefLabel "R3032"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_99bdbd45_c3ea_4fb9_ae50_ed1ab6bb1dff
+:electrochemistry_99bdbd45_c3ea_4fb9_ae50_ed1ab6bb1dff rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_63dec5af_f3e9_46c9_8b0c_82516231d96b ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrochemical method that measures the voltage drop of a cell resulting from a square wave current load"@en ;
+                                                       skos:altLabel "HybridPulsePowerCharacterisation"@en ,
+                                                                     "HybridPulsePowerCharacterization"@en ;
+                                                       skos:prefLabel "HPPC"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_9a23f61b_fef0_40f8_84f9_2057f90f6a95
@@ -4443,16 +4445,8 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_e3850f08_8e79_454b_9d83_c517cab42857 ;
                                                                          owl:someValuesFrom :electrochemistry_53fe3f58_0802_41cf_af69_4784fc42cc30
-                                                                       ] ,
-                                                                       [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty <http://emmo.info/emmo/perspectives/manufacturing#EMMO_36e69413_8c59_4799_946c_10b05d266e22> ;
-                                                                         owl:someValuesFrom :electrochemistry_09e64707_a17d_4405_84cc_ee9d91ed32ef
-                                                                       ] ,
-                                                                       [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty <http://emmo.info/emmo/perspectives/manufacturing#EMMO_36e69413_8c59_4799_946c_10b05d266e22> ;
-                                                                         owl:someValuesFrom :electrochemistry_79551e01_4bc6_4292_916e_08fe28a84600
                                                                        ] ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a cycling protocol in which an electrochemical cell is first put through a CCCV charging process followed by a galvanostatic (constant current) discharge process"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a cycling protocol in which an electrochemical cell is first put through a CCCV charging process followed by a constant current discharge process"@en ;
                                                        skos:prefLabel "CCCVCycling"@en .
 
 
@@ -5748,6 +5742,13 @@ of other configurations are used."""@en ;
                                                        skos:prefLabel "MetalOxideElectrode"@en .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_e73cb0b7_e2af_4c1a_b05b_503df25a8bf5
+:electrochemistry_e73cb0b7_e2af_4c1a_b05b_503df25a8bf5 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a coin case with a nominal diameter of 10.0 mm and a height of 2.5 mm"@en ;
+                                                       skos:prefLabel "R1025"@en .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_e84e691a_df58_465c_9771_7a7fe2212ed5
 :electrochemistry_e84e691a_df58_465c_9771_7a7fe2212ed5 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_615cff2a_be95_4e65_9471_98db23f4c878 ;
@@ -5756,7 +5757,7 @@ of other configurations are used."""@en ;
 
 ###  http://emmo.info/electrochemistry#electrochemistry_e8c39ecc_29d1_4172_996e_d5b05dc88015
 :electrochemistry_e8c39ecc_29d1_4172_996e_d5b05dc88015 rdf:type owl:Class ;
-                                                       rdfs:subClassOf <http://emmo.info/battery#battery_5186239a_2af7_4dbf_92ca_22e8e583c528> ;
+                                                       rdfs:subClassOf :electrochemistry_5186239a_2af7_4dbf_92ca_22e8e583c528 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode with blended silicon and graphite active materials"@en ;
                                                        skos:prefLabel "SiliconGraphiteElectrode"@en .
 
@@ -6711,49 +6712,16 @@ emmo:EMMO_a2a68924_b759_4ba4_a25d_126021569fb9 rdf:type owl:Class ;
                                                                                            skos:prefLabel "LinearCurrentRamp"@en .
 
 
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
 ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
@@ -6768,43 +6736,28 @@ emmo:EMMO_a2a68924_b759_4ba4_a25d_126021569fb9 rdf:type owl:Class ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -6819,9 +6772,6 @@ emmo:EMMO_a2a68924_b759_4ba4_a25d_126021569fb9 rdf:type owl:Class ;
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
@@ -6829,6 +6779,12 @@ emmo:EMMO_a2a68924_b759_4ba4_a25d_126021569fb9 rdf:type owl:Class ;
  ] .
 
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -6846,10 +6802,40 @@ emmo:EMMO_a2a68924_b759_4ba4_a25d_126021569fb9 rdf:type owl:Class ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -6876,69 +6862,6 @@ emmo:EMMO_a2a68924_b759_4ba4_a25d_126021569fb9 rdf:type owl:Class ;
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
@@ -6946,6 +6869,42 @@ emmo:EMMO_a2a68924_b759_4ba4_a25d_126021569fb9 rdf:type owl:Class ;
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
@@ -6963,6 +6922,36 @@ emmo:EMMO_a2a68924_b759_4ba4_a25d_126021569fb9 rdf:type owl:Class ;
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
@@ -6972,7 +6961,46 @@ emmo:EMMO_a2a68924_b759_4ba4_a25d_126021569fb9 rdf:type owl:Class ;
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -6990,15 +7018,6 @@ emmo:EMMO_a2a68924_b759_4ba4_a25d_126021569fb9 rdf:type owl:Class ;
 [ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
@@ -7006,24 +7025,6 @@ emmo:EMMO_a2a68924_b759_4ba4_a25d_126021569fb9 rdf:type owl:Class ;
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
