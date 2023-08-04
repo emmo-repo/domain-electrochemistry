@@ -215,6 +215,18 @@ emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d rdf:type owl:ObjectProperty .
  ] .
 
 
+###  http://emmo.info/battery#battery_5186239a_2af7_4dbf_92ca_22e8e583c528
+<http://emmo.info/battery#battery_5186239a_2af7_4dbf_92ca_22e8e583c528> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf :electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc ,
+                                                                                        [ rdf:type owl:Restriction ;
+                                                                                          owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
+                                                                                          owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+                                                                                          owl:onClass emmo:EMMO_df96cbb6_b5ee_4222_8eab_b3675df24bea
+                                                                                        ] ;
+                                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an active electrode with a blend of two or more active materials"@en ;
+                                                                        skos:prefLabel "BlendedActiveElectrode"@en .
+
+
 ###  http://emmo.info/battery#battery_e73cb0b7_e2af_4c1a_b05b_503df25a8bf5
 <http://emmo.info/battery#battery_e73cb0b7_e2af_4c1a_b05b_503df25a8bf5> rdf:type owl:Class ;
                                                                         rdfs:subClassOf :electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37 ;
@@ -468,6 +480,14 @@ emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d rdf:type owl:ObjectProperty .
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrochemical method that measures the voltage response of an electrochemical cell under galvanostatic conditions to short interruptions in the current"@en ;
                                                        skos:altLabel "IntermittentCurrentInterruptionMethod"@en ;
                                                        skos:prefLabel "ICI"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_098690e3_9010_437e_8042_cee1656efa9b
+:electrochemistry_098690e3_9010_437e_8042_cee1656efa9b rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_4839708a_3864_47eb_b719_373ff8874c61 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode with blended lithium nickel manganese cobalt oxide (NMC) and lithium cobalt oxide (LCO) active materials"@en ;
+                                                       skos:altLabel "NMCLCOElectrode"@en ;
+                                                       skos:prefLabel "LithiumNickelManganeseCobaltOxideLithiumCobaltOxideElectrode"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_09a7f560_9ddf_4c32_b067_b213eca5b0a1
@@ -1415,6 +1435,13 @@ Aluminum foil"""@en ;
                                                        skos:prefLabel "CyclicVoltammetry"@en .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_2fd5964b_0c65_4413_8b8c_849639e6d1e7
+:electrochemistry_2fd5964b_0c65_4413_8b8c_849639e6d1e7 rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://emmo.info/battery#battery_5186239a_2af7_4dbf_92ca_22e8e583c528> ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode with blended silicon oxide and graphite active materials"@en ;
+                                                       skos:prefLabel "SiliconOxideGraphiteElectrode"@en .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_30c8fb1b_3c75_49f5_9395_c15dfaf71b12
 :electrochemistry_30c8fb1b_3c75_49f5_9395_c15dfaf71b12 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37 ;
@@ -1449,15 +1476,15 @@ Aluminum foil"""@en ;
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_328c6e36_3706_4d92_abae_432fa3adb2a0 ;
-   owl:annotatedProperty rdfs:comment ;
-   owl:annotatedTarget "a cell baffle has a second function in protecting the plate pack from damage by objects inserted through the filling hole"@en ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "internal component used to reduce the amount of electrolyte loss due to electrolyte spray being carried in the gas and/or by electrolyte movement"@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_328c6e36_3706_4d92_abae_432fa3adb2a0 ;
-   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-   owl:annotatedTarget "internal component used to reduce the amount of electrolyte loss due to electrolyte spray being carried in the gas and/or by electrolyte movement"@en ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "a cell baffle has a second function in protecting the plate pack from damage by objects inserted through the filling hole"@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
 
@@ -1872,6 +1899,12 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
                                                        skos:prefLabel "PorousElectrodeCoating"@en .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_4143b1c2_2d21_419e_af45_247d4c78ce7e
+:electrochemistry_4143b1c2_2d21_419e_af45_247d4c78ce7e rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5 ;
+                                                       skos:prefLabel "SiliconOxideElectrode"@en .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_418c59bd_dc9d_438b_bc7c_494fbd1bb4f8
 :electrochemistry_418c59bd_dc9d_438b_bc7c_494fbd1bb4f8 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_a1ec9e3c_c624_4848_af13_89a6bc54d77c ;
@@ -2009,9 +2042,18 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
 
 ###  http://emmo.info/electrochemistry#electrochemistry_4839708a_3864_47eb_b719_373ff8874c61
 :electrochemistry_4839708a_3864_47eb_b719_373ff8874c61 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5 ;
+                                                       rdfs:subClassOf <http://emmo.info/battery#battery_5186239a_2af7_4dbf_92ca_22e8e583c528> ,
+                                                                       :electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode consisting of two metal oxide active materials"@en ;
                                                        skos:prefLabel "BimetallicOxideElectrode"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_48e380c3_0441_4761_a80f_3e448cb2f0ba
+:electrochemistry_48e380c3_0441_4761_a80f_3e448cb2f0ba rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_4839708a_3864_47eb_b719_373ff8874c61 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode with blended lithium nickel manganese cobalt oxide (NMC) and lithium manganese oxide (LMO) active materials"@en ;
+                                                       skos:altLabel "NMCLMOElectrode"@en ;
+                                                       skos:prefLabel "LithiumNickelMananeseCobaltOxideLithiumManganeseOxideElectrode"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_49263a32_eca6_4644_8144_0d3b14c26d0a
@@ -3435,7 +3477,8 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 
 ###  http://emmo.info/electrochemistry#electrochemistry_86be0987_5e21_43ec_b975_8f679999d328
 :electrochemistry_86be0987_5e21_43ec_b975_8f679999d328 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_5adb91e0_ffe1_41f3_b779_c6966f65fb0e ;
+                                                       rdfs:subClassOf <http://emmo.info/battery#battery_5186239a_2af7_4dbf_92ca_22e8e583c528> ,
+                                                                       :electrochemistry_5adb91e0_ffe1_41f3_b779_c6966f65fb0e ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrode containing two different metals (e.g. platinum and ruthenium) on its surface (e.g. to modify its electrocatalytic properties)"@en ;
                                                        skos:prefLabel "BimetallicElectrode"@en .
 
@@ -4864,6 +4907,14 @@ of other configurations are used."""@en ;
                                                        skos:prefLabel "R712"@en .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_bb710d71_98fa_48a1_85bc_d8f1ef2200da
+:electrochemistry_bb710d71_98fa_48a1_85bc_d8f1ef2200da rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_4839708a_3864_47eb_b719_373ff8874c61 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode with blended lithium nickel manganese oxide (LNMO) and lithium iron phosphate (LFP) active materials"@en ;
+                                                       skos:altLabel "LNMOLFPElectrode"@en ;
+                                                       skos:prefLabel "LithiumNickelManganeseOxideLithiumIronPhosphateElectrode"@en .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_bbb1d95b_72d1_44f6_b07e_a3d7d41ac215
 :electrochemistry_bbb1d95b_72d1_44f6_b07e_a3d7d41ac215 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_3663991d-9319-4f7a-922b-f0e428b58801 ,
@@ -5703,6 +5754,13 @@ of other configurations are used."""@en ;
                                                        skos:prefLabel "AqueousLithiumHydroxideSolution"@en .
 
 
+###  http://emmo.info/electrochemistry#electrochemistry_e8c39ecc_29d1_4172_996e_d5b05dc88015
+:electrochemistry_e8c39ecc_29d1_4172_996e_d5b05dc88015 rdf:type owl:Class ;
+                                                       rdfs:subClassOf <http://emmo.info/battery#battery_5186239a_2af7_4dbf_92ca_22e8e583c528> ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode with blended silicon and graphite active materials"@en ;
+                                                       skos:prefLabel "SiliconGraphiteElectrode"@en .
+
+
 ###  http://emmo.info/electrochemistry#electrochemistry_e8cedede_5685_4625_9abe_64f62b5ddcb6
 :electrochemistry_e8cedede_5685_4625_9abe_64f62b5ddcb6 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_10359c79_cdf2_401a_83ee_d22e7fbb2ad1 ,
@@ -6329,6 +6387,14 @@ of other configurations are used."""@en ;
                                                        rdfs:comment "An expression of the Law of Mass Action."@en ,
                                                                     "E_{eq} = E^0 - (R*T/(z*F))*ln(Q)" ;
                                                        skos:prefLabel "NernstEquation"@en .
+
+
+###  http://emmo.info/electrochemistry#electrochemistry_fffc3dad_6946_4c32_a9d3_f5f311339881
+:electrochemistry_fffc3dad_6946_4c32_a9d3_f5f311339881 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_4839708a_3864_47eb_b719_373ff8874c61 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode with blended lithium manganese oxide (LMO) and lithium iron phosphate (LFP) active materials"@en ;
+                                                       skos:altLabel "LMOLFPElectrode"@en ;
+                                                       skos:prefLabel "LithiumManganeseOxideLithiumIronPhosphateElectrode"@en .
 
 
 ###  http://emmo.info/emmo#EMMO_a2a68924_b759_4ba4_a25d_126021569fb9
