@@ -853,7 +853,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
 ###  http://emmo.info/electrochemistry#electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d
 :electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
-                                                                       emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845 ;
+                                                                       emmo:EMMO_17b031fb_4695_49b6_bb69_189ec63df3ee ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-10" ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "voltage between the terminals of an electrochemical cell"@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.A00424"@en ;
@@ -1083,7 +1083,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
 
 ###  http://emmo.info/electrochemistry#electrochemistry_639b844a_e801_436b_985d_28926129ead6
 :electrochemistry_639b844a_e801_436b_985d_28926129ead6 rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845 ;
+                                                       rdfs:subClassOf emmo:EMMO_17b031fb_4695_49b6_bb69_189ec63df3ee ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-31"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "suitable approximate value of the voltage used to designate or identify a cell, a battery or an electrochemical system"@en ;
                                                        skos:prefLabel "NominalVoltage"@en .
@@ -2298,9 +2298,9 @@ In either case, the magnitude of the catalytic current depends on the applied po
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electric potential at an electrode, reported as the difference in potential relative to a reference electrode"@en ;
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Electrode_potential" ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://goldbook.iupac.org/terms/view/E01956" ;
-                                                       rdfs:comment "Cell source voltage when the electrodes of the electrochemical cell are a reference electrode and the electrode in question."@en ,
-                                                                    "E, U"@en ,
-                                                                    "The absolute value of the electrode potential cannot be measured, so E is always reported relative to the potential of a reference electrode, e.g. that of a standard hydrogen electrode (SHE)."@en ;
+                                                       rdfs:comment "E, U"@en ,
+                                                                    "The absolute value of the electrode potential cannot be measured, so E is always reported relative to the potential of a reference electrode, e.g. that of a standard hydrogen electrode (SHE)."@en ,
+                                                                    "cell source voltage when the electrodes of the electrochemical cell are a reference electrode and the electrode in question."@en ;
                                                        skos:prefLabel "ElectrodePotential"@en .
 
 [ rdf:type owl:Axiom ;
@@ -2313,7 +2313,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_f509645f_eb27_470e_9112_7ab828ed40d3 ;
    owl:annotatedProperty rdfs:comment ;
-   owl:annotatedTarget "Cell source voltage when the electrodes of the electrochemical cell are a reference electrode and the electrode in question."@en ;
+   owl:annotatedTarget "cell source voltage when the electrodes of the electrochemical cell are a reference electrode and the electrode in question."@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
 
