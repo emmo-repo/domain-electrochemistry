@@ -785,6 +785,7 @@ emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d rdf:type owl:ObjectProperty .
 :electrochemistry_14377ecb_5ead_431e_831e_159d622bd0ea rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_0f007072-a8dd-4798-b865-1bf9363be627 ;
                                                        owl:disjointWith :electrochemistry_a8bfac4f_3f30_4e6d_8d8e_34b1eeecb614 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode in the shapre of a rectangle"@en ;
                                                        skos:prefLabel "RectangularElectrode"@en .
 
 
@@ -959,6 +960,7 @@ emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d rdf:type owl:ObjectProperty .
 ###  http://emmo.info/electrochemistry#electrochemistry_1c0c8f43_7349_4646_94e3_c36727c5c2e3
 :electrochemistry_1c0c8f43_7349_4646_94e3_c36727c5c2e3 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_dc205ac2_314e_415c_a2b6_b12e8359d54c ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a combination of salts (mostly NaCl) dissolved in water"@en ;
                                                        skos:prefLabel "Seawater"@en .
 
 
@@ -1089,13 +1091,13 @@ Aluminum foil"""@en ;
                                                                          owl:onProperty <http://emmo.info/emmo/perspectives/manufacturing#EMMO_36e69413_8c59_4799_946c_10b05d266e22> ;
                                                                          owl:someValuesFrom emmo:EMMO_90e59882_4592_4036_a75d_5fbefb22dc80
                                                                        ] ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Chronopotentiometry where the change in applied current undergoes a cyclic current reversal."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "chronopotentiometry where the change in applied current undergoes a cyclic current reversal"@en ;
                                                        skos:prefLabel "CyclicChronopotentiometry"@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_225cb9b8_d413_451e_9e36_fb6d1344b16e ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-   owl:annotatedTarget "Chronopotentiometry where the change in applied current undergoes a cyclic current reversal."@en ;
+   owl:annotatedTarget "chronopotentiometry where the change in applied current undergoes a cyclic current reversal"@en ;
    dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109."
  ] .
 
@@ -1149,7 +1151,10 @@ Aluminum foil"""@en ;
 ###  http://emmo.info/electrochemistry#electrochemistry_26a0dc36_8171_4a84_88dd_0f5dd7cb2d20
 :electrochemistry_26a0dc36_8171_4a84_88dd_0f5dd7cb2d20 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_615cff2a_be95_4e65_9471_98db23f4c878 ;
-                                                       skos:prefLabel "AqueousPotassiumHydroxideSolution"@en .
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a solution of potassium hydroxide (LiOH) dissolved in water (H2O)"@en ;
+                                                       skos:altLabel "AqueousPotassiumHydroxideSolution"@en ,
+                                                                     "KOHSolution"@en ;
+                                                       skos:prefLabel "PotassiumHydroxideSolution"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_26b19a7c_59ca_4e1b_8fb9_ba061c22531e
@@ -1534,6 +1539,7 @@ Aluminum foil"""@en ;
 ###  http://emmo.info/electrochemistry#electrochemistry_334b3acd_e35d_4d5a_b8b5_6d13cbebbc57
 :electrochemistry_334b3acd_e35d_4d5a_b8b5_6d13cbebbc57 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_6592d8cc_4ce4_42ca_b010_6bfc4a8444d2 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a solution of sulfuric acid (H2SO4) dissolved in water (H2O)"@en ;
                                                        skos:prefLabel "SulfuricAcidSolution"@en .
 
 
@@ -1809,7 +1815,9 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
 ###  http://emmo.info/electrochemistry#electrochemistry_3f67016b_32b9_4419_a3f8_a5ffb5e92538
 :electrochemistry_3f67016b_32b9_4419_a3f8_a5ffb5e92538 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_dc205ac2_314e_415c_a2b6_b12e8359d54c ;
-                                                       skos:prefLabel "AqueousAmmoniumChlorideSolution"@en .
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a solution of ammonium chloride (NH4Cl) dissolved in water (H2O)"@en ;
+                                                       skos:altLabel "AqueousAmmoniumChlorideSolution"@en ;
+                                                       skos:prefLabel "AmmoniumChlorideSolution"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_3f6c9e09_5f23_41cc_9f85_7de365cef089
@@ -2013,6 +2021,7 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
 ###  http://emmo.info/electrochemistry#electrochemistry_46957d35_0f8b_4d92_acb3_aded6ce774a1
 :electrochemistry_46957d35_0f8b_4d92_acb3_aded6ce774a1 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_f49b84d4_e1f9_424c_bb22_8cea23c0a7d4 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a process in which the voltage is controlled"@en ;
                                                        skos:prefLabel "VoltageControlledProcess"@en .
 
 
@@ -2372,6 +2381,7 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
 ###  http://emmo.info/electrochemistry#electrochemistry_5548f188_df00_4c05_ae98_7846e92efe36
 :electrochemistry_5548f188_df00_4c05_ae98_7846e92efe36 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_f49b84d4_e1f9_424c_bb22_8cea23c0a7d4 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a process in which the electric current is controlled"@en ;
                                                        skos:prefLabel "CurrentControlledProcess"@en .
 
 
@@ -2633,13 +2643,13 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
                                                                          owl:onProperty <http://emmo.info/emmo/perspectives/manufacturing#EMMO_36e69413_8c59_4799_946c_10b05d266e22> ;
                                                                          owl:someValuesFrom :electrochemistry_f046d602_22ea_4f9b_9101_319f510d39f0
                                                                        ] ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Chronopotentiometry where the applied current is changed linearly."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "chronopotentiometry where the applied current is changed linearly"@en ;
                                                        skos:prefLabel "LinearChronopotentiometry"@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_618538fa_6607_45a3_ad06_6a5f98febcbd ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-   owl:annotatedTarget "Chronopotentiometry where the applied current is changed linearly."@en ;
+   owl:annotatedTarget "chronopotentiometry where the applied current is changed linearly"@en ;
    dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109."
  ] .
 
@@ -2691,6 +2701,9 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
 ###  http://emmo.info/electrochemistry#electrochemistry_6385e07f_f40d_46b2_b998_c439950d75cb
 :electrochemistry_6385e07f_f40d_46b2_b998_c439950d75cb rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_872b11e1_8bb3_4a2a_af90_bbaa0055d01e ;
+                                                       emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q11288626" ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a spring made of pre-hardened flat wire, formed into a wavy washer shape"@en ;
+                                                       emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Wave_spring"@en ;
                                                        skos:prefLabel "WaveSpring"@en .
 
 
@@ -2766,7 +2779,11 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
 
 ###  http://emmo.info/electrochemistry#electrochemistry_65c90d8d_9712_4f3f_b830_d8163ec4cfcc
 :electrochemistry_65c90d8d_9712_4f3f_b830_d8163ec4cfcc rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_5adb91e0_ffe1_41f3_b779_c6966f65fb0e ;
+                                                       rdfs:subClassOf :electrochemistry_5adb91e0_ffe1_41f3_b779_c6966f65fb0e ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
+                                                                         owl:someValuesFrom emmo:material_dc5fb846_1824_40f8_9834_81f118aa1c2d
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrode made of a solid amalgam of an appropriate metal"@en ;
                                                        rdfs:comment "Liquid and paste amalgams can also be used."@en ,
                                                                     "Solid amalgam electrodes are electrochemically similar to the hanging mercury drop electrode. Their main advantages are high hydrogen overpotential (similar to liquid mercury); a wide working potential range; the simple mechanical, chemical, and electrochemical regeneration of the surface; a long lifetime; low toxicity of material (comparable with that of dental amalgams); applicability for field measurements; compatibility with flow-through systems; simple construction, without mobile parts; and easy miniaturization."@en ;
@@ -3009,7 +3026,9 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
 ###  http://emmo.info/electrochemistry#electrochemistry_7393f12f_e3b9_42d6_bffb_e5613f53108f
 :electrochemistry_7393f12f_e3b9_42d6_bffb_e5613f53108f rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_dc205ac2_314e_415c_a2b6_b12e8359d54c ;
-                                                       skos:prefLabel "AqueousZincChlorideSolution"@en .
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a solution of zinc chloride (ZnCl) dissolved in water (H2O)"@en ;
+                                                       skos:altLabel "AqueousZincChlorideSolution"@en ;
+                                                       skos:prefLabel "ZincChlorideSolution"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_7416a831_ba72_447c_bf83_3989ba2dfe37
@@ -3023,13 +3042,13 @@ charge passed at infinite time, D is the diffusion coefficient of the electroact
                                                                          owl:onProperty <http://emmo.info/emmo/perspectives/manufacturing#EMMO_36e69413_8c59_4799_946c_10b05d266e22> ;
                                                                          owl:someValuesFrom :electrochemistry_85e39686_9658_4c74_bb91_a935704c174a
                                                                        ] ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Chronopotentiometry where the applied current is changed in steps."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "chronopotentiometry where the applied current is changed in steps"@en ;
                                                        skos:prefLabel "StepChronopotentiometry"@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_7416a831_ba72_447c_bf83_3989ba2dfe37 ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-   owl:annotatedTarget "Chronopotentiometry where the applied current is changed in steps."@en ;
+   owl:annotatedTarget "chronopotentiometry where the applied current is changed in steps"@en ;
    dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109."
  ] .
 
@@ -3155,6 +3174,7 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 ###  http://emmo.info/electrochemistry#electrochemistry_78f75a64_55b6_4243_a35e_3d279c83209b
 :electrochemistry_78f75a64_55b6_4243_a35e_3d279c83209b rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_6592d8cc_4ce4_42ca_b010_6bfc4a8444d2 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a solution of phosphoric acid (H3PO4) dissolved in water (H2O)"@en ;
                                                        skos:prefLabel "PhosphoricAcidSolution"@en .
 
 
@@ -3341,7 +3361,10 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 ###  http://emmo.info/electrochemistry#electrochemistry_7ffe1cb6_f87e_4b4a_8ce7_c98e2a584cb1
 :electrochemistry_7ffe1cb6_f87e_4b4a_8ce7_c98e2a584cb1 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_5adb91e0_ffe1_41f3_b779_c6966f65fb0e ,
-                                                                       emmo:material_99e61c41_9038_418a_b98c_ab225bd6bec1 ;
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
+                                                                         owl:someValuesFrom emmo:material_99e61c41_9038_418a_b98c_ab225bd6bec1
+                                                                       ] ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrode in which the active material is ruthenium"@en ;
                                                        skos:prefLabel "RutheniumElectrode"@en .
 
@@ -3353,6 +3376,7 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                                                          owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
                                                                          owl:someValuesFrom emmo:material_73d4606c_7460_4a5c_9413_793bdf35753e
                                                                        ] ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a liquid electrode with an active material of gallium"@en ;
                                                        skos:prefLabel "LiquidGalliumElectrode"@en .
 
 
@@ -3561,6 +3585,9 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 ###  http://emmo.info/electrochemistry#electrochemistry_872b11e1_8bb3_4a2a_af90_bbaa0055d01e
 :electrochemistry_872b11e1_8bb3_4a2a_af90_bbaa0055d01e rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_f76884f7_964e_488e_9bb7_1b2453e9e817 ;
+                                                       emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q102836" ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an elastic device"@en ;
+                                                       emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Spring_(device)"@en ;
                                                        skos:prefLabel "Spring"@en .
 
 
@@ -3796,7 +3823,48 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 ###  http://emmo.info/electrochemistry#electrochemistry_916b1863_f417_4b94_9407_9d749ada9ed5
 :electrochemistry_916b1863_f417_4b94_9407_9d749ada9ed5 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_78a8f60b_10c2_41ee_9946_d35437e1edb5 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "two-step electrochemical measurement in which 1) material is accumulated at an electrode and 2) the material is removed by chemical reaction or electrochemically at constant current with measurement of electrode potential"@en ;
+                                                       rdfs:comment "historically for the analysis of metal ions, mercury ions were added to the test solution to form a mercury amalgam when reduced. Alternatively, an HMDE or MFE was used and the oxidizing agent added after amalgam formation. However, the toxicity of mercury and its compounds have all but precluded the present-day use of mercury"@en ,
+                                                                    "the accumulation is similar to that used in stripping voltammetry"@en ,
+                                                                    "the stripping potentiogram shows staircase curves of potential as a function of time. Frequently, the first derivative is displayed (dE/dt=f(t)), as this produces peak-shaped signals. The time between transitions (peaks) is proportional to the concentration of analyte in the test solution"@en ,
+                                                                    "the time between changes in potential in step 2 is related to the concentration of analyte in the solution"@en ;
+                                                       skos:altLabel "PSA"@en ;
                                                        skos:prefLabel "PotentiometricStrippingAnalysis"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_916b1863_f417_4b94_9407_9d749ada9ed5 ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "two-step electrochemical measurement in which 1) material is accumulated at an electrode and 2) the material is removed by chemical reaction or electrochemically at constant current with measurement of electrode potential"@en ;
+   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_916b1863_f417_4b94_9407_9d749ada9ed5 ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "historically for the analysis of metal ions, mercury ions were added to the test solution to form a mercury amalgam when reduced. Alternatively, an HMDE or MFE was used and the oxidizing agent added after amalgam formation. However, the toxicity of mercury and its compounds have all but precluded the present-day use of mercury"@en ;
+   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_916b1863_f417_4b94_9407_9d749ada9ed5 ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "the accumulation is similar to that used in stripping voltammetry"@en ;
+   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_916b1863_f417_4b94_9407_9d749ada9ed5 ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "the stripping potentiogram shows staircase curves of potential as a function of time. Frequently, the first derivative is displayed (dE/dt=f(t)), as this produces peak-shaped signals. The time between transitions (peaks) is proportional to the concentration of analyte in the test solution"@en ;
+   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_916b1863_f417_4b94_9407_9d749ada9ed5 ;
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "the time between changes in potential in step 2 is related to the concentration of analyte in the solution"@en ;
+   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+ ] .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_92147e31_d015_4889_a092_04fbab033f15
@@ -3887,6 +3955,8 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 ###  http://emmo.info/electrochemistry#electrochemistry_98d5101e_cd11_4a0d_b856_6fcd8aad132e
 :electrochemistry_98d5101e_cd11_4a0d_b856_6fcd8aad132e rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_872b11e1_8bb3_4a2a_af90_bbaa0055d01e ;
+                                                       emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q3056595"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a type of spring, in the form of a conical washer"@en ;
                                                        skos:prefLabel "BellevilleWasher"@en .
 
 
@@ -4382,6 +4452,7 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 ###  http://emmo.info/electrochemistry#electrochemistry_a8bfac4f_3f30_4e6d_8d8e_34b1eeecb614
 :electrochemistry_a8bfac4f_3f30_4e6d_8d8e_34b1eeecb614 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_0f007072-a8dd-4798-b865-1bf9363be627 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode in the shape of a circle"@en ;
                                                        skos:prefLabel "RoundElectrode"@en .
 
 
@@ -5343,6 +5414,7 @@ of other configurations are used."""@en ;
 ###  http://emmo.info/electrochemistry#electrochemistry_cb223440_51bd_4f16_a536_96ec408e7de4
 :electrochemistry_cb223440_51bd_4f16_a536_96ec408e7de4 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_d3e2d213_d078_4b9a_8beb_62f063e57d69 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the cycling of a cell after manufacturing, usually for the purpose of forming interfacial layers"@en ;
                                                        skos:prefLabel "FormationCycling"@en .
 
 
@@ -5354,6 +5426,7 @@ of other configurations are used."""@en ;
                                                                          owl:onProperty emmo:EMMO_d43af210_f854_4432_a891_ce3022e3b558 ;
                                                                          owl:someValuesFrom :electrochemistry_825a749f_dd07_46fb_947c_db286440911e
                                                                        ] ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a process in which the electric current is kept constant at 0 (i.e., open-circuit conditions)"@en ;
                                                        skos:altLabel "OCVHold"@en ;
                                                        skos:prefLabel "OpenCircuitHold"@en .
 
@@ -5875,7 +5948,10 @@ of other configurations are used."""@en ;
 ###  http://emmo.info/electrochemistry#electrochemistry_e84e691a_df58_465c_9771_7a7fe2212ed5
 :electrochemistry_e84e691a_df58_465c_9771_7a7fe2212ed5 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_615cff2a_be95_4e65_9471_98db23f4c878 ;
-                                                       skos:prefLabel "AqueousLithiumHydroxideSolution"@en .
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a solution of lithium hydroxide (LiOH) dissolved in water (H2O)"@en ;
+                                                       skos:altLabel "AqueousLithiumHydroxideSolution"@en ,
+                                                                     "LiOHSolution"@en ;
+                                                       skos:prefLabel "LithiumHydroxideSolution"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_e8c39ecc_29d1_4172_996e_d5b05dc88015
@@ -6019,7 +6095,10 @@ of other configurations are used."""@en ;
 ###  http://emmo.info/electrochemistry#electrochemistry_ebd01982_6b0c_48e7_90ef_7b7342009449
 :electrochemistry_ebd01982_6b0c_48e7_90ef_7b7342009449 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_615cff2a_be95_4e65_9471_98db23f4c878 ;
-                                                       skos:prefLabel "AqueousSodiumHydroxideSolution"@en .
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a solution of sodium hydroxide (LiOH) dissolved in water (H2O)"@en ;
+                                                       skos:altLabel "AqueousSodiumHydroxideSolution"@en ,
+                                                                     "NaOHSolution"@en ;
+                                                       skos:prefLabel "SodiumHydroxideSolution"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_ebdb68e9_c4b5_4d57_a042_c0f51d446755
@@ -6129,6 +6208,7 @@ of other configurations are used."""@en ;
                                                                          owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
                                                                          owl:someValuesFrom :electrochemistry_a9fc3f77_e48e_4bce_b118_044d608722f6
                                                                        ] ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a process in which the voltage is kept constant"@en ;
                                                        skos:prefLabel "PotentiostaticProcess"@en .
 
 
@@ -6390,7 +6470,10 @@ of other configurations are used."""@en ;
 ###  http://emmo.info/electrochemistry#electrochemistry_f9e2e676_5cd1_4e22_a776_af45838d4027
 :electrochemistry_f9e2e676_5cd1_4e22_a776_af45838d4027 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_615cff2a_be95_4e65_9471_98db23f4c878 ;
-                                                       skos:prefLabel "AqueousAmmoniaSolution"@en .
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a solution of ammonia (NH3) dissolved in water (H2O)"@en ;
+                                                       rdfs:comment "the solution can also be made by dissolving ammonium hydroxide (NH4OH) in water"@en ;
+                                                       skos:altLabel "AqueousAmmoniaSolution"@en ;
+                                                       skos:prefLabel "AmmoniaSolution"@en .
 
 
 ###  http://emmo.info/electrochemistry#electrochemistry_f9f056bb_a38b_43bd_a6bd_99d618431f4d
