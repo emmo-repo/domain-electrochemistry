@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://emmo.info/emmo/1.0.0-beta5" uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta5/emmo.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base="">
-        <uri name="http://emmo.info/electrochemistry/0.6.0/electrochemistry" uri="./electrochemistry.ttl"/>
-        <uri name="http://emmo.info/electrochemistry/0.6.0/electrochemicalquantities" uri="./electrochemicalquantities.ttl"/>
+        <uri name="http://emmo.info/electrochemistry/0.7.0/electrochemistry" uri="./electrochemistry.ttl"/>
+        <uri name="http://emmo.info/electrochemistry/0.7.0/electrochemicalquantities" uri="./electrochemicalquantities.ttl"/>
         <uri name="http://emmo.info/material/0.1.0/material" uri="./material.ttl"/>
-        <uri name="http://emmo.info/1.0.0-beta5/emmo-inferred" uri="https://emmo-repo.github.io/versions/1.0.0-beta5/emmo-inferred.ttl"/>
+        <uri name="http://emmo.info/emmo/1.0.0-beta5-inferred" uri="./emmo-inferred.ttl"/>
     </group>
 </catalog>
