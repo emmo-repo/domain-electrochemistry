@@ -793,7 +793,7 @@ and t* through mathematical models, provided that the long-time potential- deter
 ###  http://emmo.info/electrochemistry#electrochemistry_457aed58_6e7e_42d5_9d78_b424c8d60aa3
 :electrochemistry_457aed58_6e7e_42d5_9d78_b424c8d60aa3 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
-                                                       skos:altLabel "the percentage of the total discharge capacity that is obtained during a constant current discharge process"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the percentage of the total discharge capacity that is obtained during a constant current discharge process"@en ;
                                                        skos:hiddenLabel "DC-Per"@en ,
                                                                         "DC-Per/%"@en ;
                                                        skos:prefLabel "ConstantCurrentDischargePercentage"@en .
