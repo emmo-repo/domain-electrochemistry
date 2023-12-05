@@ -36,29 +36,14 @@ electrochemistry = get_ontology('/path/to/domain-electrochemistry/electrochemist
 # Loading from web
 electrochemistry = get_ontology('https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/electrochemistry.ttl').load()
 ```
-## Attributions and credits
 
-### Contributors
+### Acknowledgements
 
-* Simon Clark, SINTEF, Norway
-* Eibar Flores, SINTEF, Norway
-* Francesca Lønstad Bleken, SINTEF, Norway
-* Jesper Friis, SINTEF, Norway
-* Casper Welzel Andersen, SINTEF, Norway
-* Martin Uhrin, EPFL, Switzerland
-* Simon Stier, Fraunhofer, Germany
-* Marek Marcinek, Warsaw University of Technology, Poland
-* Anna Szczesna, Warsaw University of Technology, Poland
-* Miran Gaberscek, National Institute of Chemistry, Slovenia
-* Deyana Stoytcheva, ICMAB, Spain
-* Rosa Palacin, ICMAB, Spain
-* Ingeborg-Helene Svenum, SINTEF, Norway
-* Inga Gudem Ringdalen, SINTEF, Norway
-* Emanuele Farhi, SOLEIL synchrotron, France
+<img src="documentation/images/flag_of_europe.png" alt="EU-Flag" width="100">
 
-### Projects
+This project has received support from European Union research and innovation programs, under grant agreement numbers:
 
-* [BIG-MAP](http://www.big-map.eu/); Grant Agreement No: 957189 <img src="bigmap.png" alt="BIG-MAP" width="30">
+* 957189 - [BIG-MAP](http://www.big-map.eu/) 
 
 ## License
 
