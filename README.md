@@ -11,7 +11,12 @@ A reference documentation is available in [html](https://emmo-repo.github.io/dom
 
 ## Integration with EMMO
 
-The Electrochemistry Domain Ontology is an official domain on the EMMO. It consists of two files `electrochemistry.ttl` and `electrochemicalquantities.ttl`. The physical quantities related to the electrochemistry domain are included in `electrochemicalquantities.ttl` file, which is encapsulated to allow it to be imported by other EMMO domains without needing to import the entire ontology. The electrochemistry domain also imports the [Chemical Substance Domain Ontology](https://github.com/emmo-repo/domain-chemical-substance) from EMMO to support material annotations in electrochemical (meta)data.
+The Electrochemistry Domain Ontology is an official domain on the EMMO. It consists of two files:
+- `electrochemistry.ttl`: describes terms and object properties for the electrochemistry domain.
+- `electrochemicalquantities.ttl`: describes the physical quantities related to the electrochemistry domain. It is encapsulated to allow it to be imported by other EMMO domains without needing to import the entire ontology.
+
+The electrochemistry domain also imports:
+- the [Chemical Substance Domain Ontology](https://github.com/emmo-repo/domain-chemical-substance): provides material annotations for electrochemical (meta)data.
 
 ## Obtaining the ontology
 
