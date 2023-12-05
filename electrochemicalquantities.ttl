@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/emmo/electrochemistry#> .
+@prefix : <https://w3id.org/emmo/domain/electrochemistry#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -8,16 +8,14 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix annotations: <http://emmo.info/emmo/top/annotations#> .
-@base <https://w3id.org/emmo/electrochemistry/electrochemicalquantities> .
+@base <https://w3id.org/emmo/domain/electrochemistry/electrochemicalquantities> .
 
-<https://w3id.org/emmo/electrochemistry/electrochemicalquantities> rdf:type owl:Ontology ;
-                                                               owl:versionIRI <https://w3id.org/emmo/electrochemistry/0.8.0/electrochemicalquantities> ;
+<https://w3id.org/emmo/domain/electrochemistry/electrochemicalquantities> rdf:type owl:Ontology ;
+                                                               owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.7.0-alpha/electrochemicalquantities> ;
                                                                owl:imports <http://emmo.info/emmo/1.0.0-beta5> ;
-                                                               dcterms:abstract """Everything needed to describe fundamental quantities in electrochemistry common to all electrochemical systems.
-
-Released under the Creative Commons license Attribution 4.0 International (CC BY 4.0)."""@en ;
+                                                               dcterms:abstract """This electrochemical quantities ontology is a domain of the Elementary Multiperspective Materials Ontology (EMMO). It is a specialized framework designed to represent and organize knowledge about electrochemical quantities. It is designed to integrate with the electrochemistry domain ontology or other ontologies from the EMMO ecosystem. The main focus of this ontology is to provide machine-readable descriptions of common electrochemical quantities, linking both to the larger descriptions of physical quantities in EMMO as well as other sources of information like the IEC, QUDT, Wikidata, etc. It should be used to support linked data generation in the electrochemistry domain."""@en ;
                                                                dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                                               owl:versionInfo "0.8.0" .
+                                                               owl:versionInfo "0.7.0-alpha" .
 
 #################################################################
 #    Annotation properties
@@ -51,7 +49,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
 #    Classes
 #################################################################
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_0141b5c2_9f15_46f4_82e6_92a104faa476
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0141b5c2_9f15_46f4_82e6_92a104faa476
 :electrochemistry_0141b5c2_9f15_46f4_82e6_92a104faa476 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_791c1915_a791_4450_acd8_7f94764743b5 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "capacity delivered during a discharge process"@en ;
@@ -62,19 +60,19 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
                                                        skos:prefLabel "DischargeCapacity"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_02d2d1d1_241c_429b_b4e7_31f2c3dc4835
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_02d2d1d1_241c_429b_b4e7_31f2c3dc4835
 :electrochemistry_02d2d1d1_241c_429b_b4e7_31f2c3dc4835 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
                                                        skos:prefLabel "D95ParticleSize"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634
 :electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                                        skos:prefLabel "ElectrochemicalPerformanceQuantity"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_0335e3f6_d1d8_4daa_8376_a9285f1bc9f1
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0335e3f6_d1d8_4daa_8376_a9285f1bc9f1
 :electrochemistry_0335e3f6_d1d8_4daa_8376_a9285f1bc9f1 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_21745019_2830_4395_bca7_15ddfd266673 ,
                                                                        emmo:EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064 ;
@@ -84,7 +82,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
                                                        skos:prefLabel "ReactionRateConstant"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_03a6ce70_5085_4683_bb4e_fc3c18f7143a
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_03a6ce70_5085_4683_bb4e_fc3c18f7143a
 :electrochemistry_03a6ce70_5085_4683_bb4e_fc3c18f7143a rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_1cd1d777_e67b_47eb_81f1_edac35d9f2c6 ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-09" ;
@@ -101,7 +99,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_05012606_b93d_4016_bbc7_8a927efdf723
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_05012606_b93d_4016_bbc7_8a927efdf723
 :electrochemistry_05012606_b93d_4016_bbc7_8a927efdf723 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
@@ -110,7 +108,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
                                                        skos:prefLabel "NPRatio"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_05cf26ef_782a_4f66_a196_7004dd973f8e
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_05cf26ef_782a_4f66_a196_7004dd973f8e
 :electrochemistry_05cf26ef_782a_4f66_a196_7004dd973f8e rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_96f39f77_44dc_491b_8fa7_30d887fe0890 ;
@@ -121,7 +119,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
                                                        skos:prefLabel "SurfaceArea"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_07e219c3_890f_488f_bd96_bee8e445d764
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_07e219c3_890f_488f_bd96_bee8e445d764
 :electrochemistry_07e219c3_890f_488f_bd96_bee8e445d764 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88 ;
@@ -140,7 +138,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_0853b072_3b80_4864_8147_24ce35407ade
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0853b072_3b80_4864_8147_24ce35407ade
 :electrochemistry_0853b072_3b80_4864_8147_24ce35407ade rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_f4fadc4e_ca7d_4e4e_89cf_eacf45b4041e ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-07" ;
@@ -156,7 +154,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_08833ed2_6324_411a_b34b_fe64c44cd5ef
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_08833ed2_6324_411a_b34b_fe64c44cd5ef
 :electrochemistry_08833ed2_6324_411a_b34b_fe64c44cd5ef rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_0141b5c2_9f15_46f4_82e6_92a104faa476 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the capacity obtained during constant current discharging of an electrochemical device"@en ;
@@ -165,7 +163,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
                                                        skos:prefLabel "ConstantCurrentDischargeCapacity"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_09e64707_a17d_4405_84cc_ee9d91ed32ef
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_09e64707_a17d_4405_84cc_ee9d91ed32ef
 :electrochemistry_09e64707_a17d_4405_84cc_ee9d91ed32ef rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ,
                                                                        [ rdf:type owl:Restriction ;
@@ -177,7 +175,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
                                                        skos:prefLabel "VoltageChangeLimit"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_0bf1ed19_2fc9_4e6d_87ec_62015985a9a6
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0bf1ed19_2fc9_4e6d_87ec_62015985a9a6
 :electrochemistry_0bf1ed19_2fc9_4e6d_87ec_62015985a9a6 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ,
                                                                        [ rdf:type owl:Restriction ;
@@ -188,7 +186,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
                                                        skos:prefLabel "StepSignalVoltage"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_0c9655c6_6b0b_4819_a219_f286ad196fa9
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0c9655c6_6b0b_4819_a219_f286ad196fa9
 :electrochemistry_0c9655c6_6b0b_4819_a219_f286ad196fa9 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_4a450a27_b84a_4c70_a3a9_15ec30e2f30b ,
                                                                        emmo:EMMO_ffb73b1e_5786_43e4_a964_cb32ac7affb7 ;
@@ -196,7 +194,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
                                                        skos:prefLabel "InternalConductance"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_10763eb0_dbc9_4d34_bd1a_7b8996590d45
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_10763eb0_dbc9_4d34_bd1a_7b8996590d45
 :electrochemistry_10763eb0_dbc9_4d34_bd1a_7b8996590d45 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_791c1915_a791_4450_acd8_7f94764743b5 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "capacity delivered during a charge process"@en ;
@@ -207,7 +205,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
                                                        skos:prefLabel "ChargeCapacity"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_10eb778d_da60_4832_a355_4ee74baea650
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_10eb778d_da60_4832_a355_4ee74baea650
 :electrochemistry_10eb778d_da60_4832_a355_4ee74baea650 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ,
                                                                        emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88 ;
@@ -216,7 +214,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
                                                        skos:prefLabel "AmplitudeOfAlternatingCurrent"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_129926b6_fc30_441d_b359_29b44c988514
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_129926b6_fc30_441d_b359_29b44c988514
 :electrochemistry_129926b6_fc30_441d_b359_29b44c988514 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_2d896559_eee3_447c_9759_87c854a4266a ,
                                                                        emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845 ;
@@ -227,7 +225,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
                                                        skos:prefLabel "ElectrochemicalWindow"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_136744ff_0563_4df7_aa03_4219d70392a0
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_136744ff_0563_4df7_aa03_4219d70392a0
 :electrochemistry_136744ff_0563_4df7_aa03_4219d70392a0 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "parameter defining the ability of an ion-selective electrode to distinguish a particular ion, i.e., a primary ion A from an interfering ion B"@en ;
@@ -246,7 +244,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_1422cde1_929e_46b6_b0dc_1010eebc5dfd
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1422cde1_929e_46b6_b0dc_1010eebc5dfd
 :electrochemistry_1422cde1_929e_46b6_b0dc_1010eebc5dfd rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_2d896559_eee3_447c_9759_87c854a4266a ,
                                                                        emmo:EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064 ,
@@ -276,7 +274,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_14577b99_a8a9_4358_9bc5_ab8c401dd34b
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_14577b99_a8a9_4358_9bc5_ab8c401dd34b
 :electrochemistry_14577b99_a8a9_4358_9bc5_ab8c401dd34b rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_2a2f59b7_aa16_40aa_9c8b_0de8a2720456 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "algebraic sum of faradaic currents flowing through an electrode"@en ;
@@ -291,7 +289,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_16a5de33_a2ca_4563_80d4_6caeb08d97ca
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_16a5de33_a2ca_4563_80d4_6caeb08d97ca
 :electrochemistry_16a5de33_a2ca_4563_80d4_6caeb08d97ca rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_900e357f_2ee3_425a_a0b6_322661117787 ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-14" ;
@@ -306,7 +304,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_17626b8e_dfce_4d3a_ae6c_5a7215d43a90
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_17626b8e_dfce_4d3a_ae6c_5a7215d43a90
 :electrochemistry_17626b8e_dfce_4d3a_ae6c_5a7215d43a90 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_2a2f59b7_aa16_40aa_9c8b_0de8a2720456 ;
                                                        emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q1224527" ;
@@ -325,7 +323,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_1900143f_cbc0_415f_9057_9382022a7bfe
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1900143f_cbc0_415f_9057_9382022a7bfe
 :electrochemistry_1900143f_cbc0_415f_9057_9382022a7bfe rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ,
                                                                        emmo:EMMO_3789d3c5_77f4_456e_b7ed_40e670f47e52 ;
@@ -341,7 +339,7 @@ skos:prefLabel rdf:type owl:AnnotationProperty .
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_1a104474_c326_4a29_ac26_26a05ac8f72c
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1a104474_c326_4a29_ac26_26a05ac8f72c
 :electrochemistry_1a104474_c326_4a29_ac26_26a05ac8f72c rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        [ rdf:type owl:Restriction ;
@@ -369,7 +367,7 @@ and t* through mathematical models, provided that the long-time potential- deter
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_1cd1d777_e67b_47eb_81f1_edac35d9f2c6
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1cd1d777_e67b_47eb_81f1_edac35d9f2c6
 :electrochemistry_1cd1d777_e67b_47eb_81f1_edac35d9f2c6 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845 ;
@@ -399,7 +397,7 @@ and t* through mathematical models, provided that the long-time potential- deter
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_1e3dc60d_dd6b_47d6_8161_70004fc5ee30
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1e3dc60d_dd6b_47d6_8161_70004fc5ee30
 :electrochemistry_1e3dc60d_dd6b_47d6_8161_70004fc5ee30 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634 ,
                                                                        emmo:EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064 ,
@@ -423,7 +421,7 @@ and t* through mathematical models, provided that the long-time potential- deter
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_214d925c_76c4_4f69_9afc_056a1ea82fc6
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_214d925c_76c4_4f69_9afc_056a1ea82fc6
 :electrochemistry_214d925c_76c4_4f69_9afc_056a1ea82fc6 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88 ;
@@ -441,14 +439,14 @@ and t* through mathematical models, provided that the long-time potential- deter
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_21745019_2830_4395_bca7_15ddfd266673
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_21745019_2830_4395_bca7_15ddfd266673
 :electrochemistry_21745019_2830_4395_bca7_15ddfd266673 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An ElectrochemicalQuantity that relates to the kinetics of a reaction."@en ;
                                                        skos:prefLabel "ElectrochemicalKineticQuantity"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_22cec04f_c7f3_4ff8_a34b_e512379c9dcb
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_22cec04f_c7f3_4ff8_a34b_e512379c9dcb
 :electrochemistry_22cec04f_c7f3_4ff8_a34b_e512379c9dcb rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_4a450a27_b84a_4c70_a3a9_15ec30e2f30b ,
                                                                        emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88 ;
@@ -466,7 +464,7 @@ and t* through mathematical models, provided that the long-time potential- deter
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_25dabdc2_68bf_4a38_8cbe_11be017358bc
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_25dabdc2_68bf_4a38_8cbe_11be017358bc
 :electrochemistry_25dabdc2_68bf_4a38_8cbe_11be017358bc rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_4a450a27_b84a_4c70_a3a9_15ec30e2f30b ,
                                                                        emmo:EMMO_cde4368c_1d4d_4c94_8548_604749523c6d ;
@@ -478,7 +476,7 @@ and t* through mathematical models, provided that the long-time potential- deter
                                                        skos:prefLabel "IonicConductivity"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_25e20915_c35d_4bee_ad31_736235a79780
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_25e20915_c35d_4bee_ad31_736235a79780
 :electrochemistry_25e20915_c35d_4bee_ad31_736235a79780 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
@@ -506,7 +504,7 @@ and t* through mathematical models, provided that the long-time potential- deter
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_264f40d1_17c9_4bc7_9c47_5cfb18132278
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_264f40d1_17c9_4bc7_9c47_5cfb18132278
 :electrochemistry_264f40d1_17c9_4bc7_9c47_5cfb18132278 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ,
                                                                        emmo:EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064 ,
@@ -528,7 +526,7 @@ and t* through mathematical models, provided that the long-time potential- deter
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_265bb4d6_5eec_40f6_a3fa_59b3bd08e9af
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_265bb4d6_5eec_40f6_a3fa_59b3bd08e9af
 :electrochemistry_265bb4d6_5eec_40f6_a3fa_59b3bd08e9af rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-12" ;
@@ -544,7 +542,7 @@ and t* through mathematical models, provided that the long-time potential- deter
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_2678a656_4a27_4706_8dde_b0a93e9b92fa
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2678a656_4a27_4706_8dde_b0a93e9b92fa
 :electrochemistry_2678a656_4a27_4706_8dde_b0a93e9b92fa rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ,
                                                                        emmo:EMMO_0adabf6f_7404_44cb_9f65_32d83d8101a3 ;
@@ -553,7 +551,7 @@ and t* through mathematical models, provided that the long-time potential- deter
                                                        skos:prefLabel "RestingTime"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_269ddd97_1437_4545_b272_0df75a12c68a
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_269ddd97_1437_4545_b272_0df75a12c68a
 :electrochemistry_269ddd97_1437_4545_b272_0df75a12c68a rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d ,
                                                                        :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ;
@@ -570,7 +568,7 @@ and t* through mathematical models, provided that the long-time potential- deter
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_2705525b_7512_48bf_825b_f2d0409bede4
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2705525b_7512_48bf_825b_f2d0409bede4
 :electrochemistry_2705525b_7512_48bf_825b_f2d0409bede4 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        [ rdf:type owl:Restriction ;
@@ -589,7 +587,7 @@ and t* through mathematical models, provided that the long-time potential- deter
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_27b3799c_250c_4332_8b71_7992c4a7bb05
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_27b3799c_250c_4332_8b71_7992c4a7bb05
 :electrochemistry_27b3799c_250c_4332_8b71_7992c4a7bb05 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7 ;
@@ -599,7 +597,7 @@ and t* through mathematical models, provided that the long-time potential- deter
                                                        skos:prefLabel "TestTime"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_2a2f59b7_aa16_40aa_9c8b_0de8a2720456
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2a2f59b7_aa16_40aa_9c8b_0de8a2720456
 :electrochemistry_2a2f59b7_aa16_40aa_9c8b_0de8a2720456 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88 ;
@@ -620,7 +618,7 @@ and t* through mathematical models, provided that the long-time potential- deter
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_2ab7af60_da58_4243_b3bc_cbb2155cac53
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2ab7af60_da58_4243_b3bc_cbb2155cac53
 :electrochemistry_2ab7af60_da58_4243_b3bc_cbb2155cac53 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_46376e5d_9627_4514_9881_9e62083625c3 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "energy delivered by a deviced under some specific charge conditions"@en ;
@@ -631,7 +629,7 @@ and t* through mathematical models, provided that the long-time potential- deter
                                                        skos:prefLabel "ChargeEnergy"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_2ae53fc6_d44d_41c9_acaf_c5606e6a981d
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2ae53fc6_d44d_41c9_acaf_c5606e6a981d
 :electrochemistry_2ae53fc6_d44d_41c9_acaf_c5606e6a981d rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845 ;
@@ -650,14 +648,14 @@ and t* through mathematical models, provided that the long-time potential- deter
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_2d896559_eee3_447c_9759_87c854a4266a
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2d896559_eee3_447c_9759_87c854a4266a
 :electrochemistry_2d896559_eee3_447c_9759_87c854a4266a rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A thermodynamically derived ElectrochemicalQuantity."@en ;
                                                        skos:prefLabel "ElectrochemicalThermodynamicQuantity"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_327eb3e1_f74a_4076_96de_5a2e3f63cb65
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_327eb3e1_f74a_4076_96de_5a2e3f63cb65
 :electrochemistry_327eb3e1_f74a_4076_96de_5a2e3f63cb65 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88 ;
@@ -675,7 +673,7 @@ and t* through mathematical models, provided that the long-time potential- deter
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_33e6986c_b35a_4cae_9a94_acb23248065c
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_33e6986c_b35a_4cae_9a94_acb23248065c
 :electrochemistry_33e6986c_b35a_4cae_9a94_acb23248065c rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_dd4a7f3e_ef56_466c_ac1a_d2716b5f87ec ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a target quantity in a control system"@en ;
@@ -684,7 +682,7 @@ and t* through mathematical models, provided that the long-time potential- deter
                                                        skos:prefLabel "ControlProperty"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_346519a4_006c_496d_8f36_74e38814ed2d
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_346519a4_006c_496d_8f36_74e38814ed2d
 :electrochemistry_346519a4_006c_496d_8f36_74e38814ed2d rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ,
                                                                        emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88 ;
@@ -693,13 +691,13 @@ and t* through mathematical models, provided that the long-time potential- deter
                                                        skos:prefLabel "MagnitudeOfCurrentPulse"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607
 :electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064 ;
                                                        skos:prefLabel "Diffusivity"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_37c38b7e_9ded_481a_85fd_a467f1ee2b9f
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_37c38b7e_9ded_481a_85fd_a467f1ee2b9f
 :electrochemistry_37c38b7e_9ded_481a_85fd_a467f1ee2b9f rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_10763eb0_dbc9_4d34_bd1a_7b8996590d45 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the capacity obtained during constant current charging of an electrochemical device"@en ;
@@ -708,7 +706,7 @@ and t* through mathematical models, provided that the long-time potential- deter
                                                        skos:prefLabel "ConstantCurrentChargeCapacity"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_382b10dc_83aa_4e77_a1d5_1edd06fd1e05
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_382b10dc_83aa_4e77_a1d5_1edd06fd1e05
 :electrochemistry_382b10dc_83aa_4e77_a1d5_1edd06fd1e05 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88 ;
@@ -727,13 +725,13 @@ and t* through mathematical models, provided that the long-time potential- deter
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_39a44af0_0e1a_4859_b550_bdabad64386e
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_39a44af0_0e1a_4859_b550_bdabad64386e
 :electrochemistry_39a44af0_0e1a_4859_b550_bdabad64386e rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_affe07e4_e9bc_4852_86c6_69e26182a17f ;
                                                        skos:prefLabel "AmbientThermodynamicTemperature"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_3b938708_e7e4_4ac0_a959_9c04306302e7
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3b938708_e7e4_4ac0_a959_9c04306302e7
 :electrochemistry_3b938708_e7e4_4ac0_a959_9c04306302e7 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_43003c86_9d15_433b_9789_ee2940920656 ;
@@ -742,7 +740,7 @@ and t* through mathematical models, provided that the long-time potential- deter
                                                        skos:prefLabel "CoatingThickness"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_3bb5ae23_59fa_4bc7_9495_803eb6719f28
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3bb5ae23_59fa_4bc7_9495_803eb6719f28
 :electrochemistry_3bb5ae23_59fa_4bc7_9495_803eb6719f28 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-33" ;
@@ -757,7 +755,7 @@ and t* through mathematical models, provided that the long-time potential- deter
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_3cd0e74e_292c_48ed_a831_4cb8753d9a56
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3cd0e74e_292c_48ed_a831_4cb8753d9a56
 :electrochemistry_3cd0e74e_292c_48ed_a831_4cb8753d9a56 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ,
                                                                        emmo:EMMO_0adabf6f_7404_44cb_9f65_32d83d8101a3 ;
@@ -774,7 +772,7 @@ and t* through mathematical models, provided that the long-time potential- deter
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_3cfdfc10_a5cb_4e3e_b1a1_281010d1465c
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3cfdfc10_a5cb_4e3e_b1a1_281010d1465c
 :electrochemistry_3cfdfc10_a5cb_4e3e_b1a1_281010d1465c rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
@@ -782,7 +780,7 @@ and t* through mathematical models, provided that the long-time potential- deter
                                                        skos:prefLabel "D50ParticleSize"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_3e54f9e3_a31d_4821_9bfb_ef953a42c35b
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3e54f9e3_a31d_4821_9bfb_ef953a42c35b
 :electrochemistry_3e54f9e3_a31d_4821_9bfb_ef953a42c35b rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_346519a4_006c_496d_8f36_74e38814ed2d ,
                                                                        :electrochemistry_74de2c33_84fc_4c2f_afe1_56d169149114 ;
@@ -790,7 +788,7 @@ and t* through mathematical models, provided that the long-time potential- deter
                                                        skos:prefLabel "MaximumPulseDischargeCurrent"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_457aed58_6e7e_42d5_9d78_b424c8d60aa3
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_457aed58_6e7e_42d5_9d78_b424c8d60aa3
 :electrochemistry_457aed58_6e7e_42d5_9d78_b424c8d60aa3 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the percentage of the total discharge capacity that is obtained during a constant current discharge process"@en ;
@@ -799,7 +797,7 @@ and t* through mathematical models, provided that the long-time potential- deter
                                                        skos:prefLabel "ConstantCurrentDischargePercentage"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_46376e5d_9627_4514_9881_9e62083625c3
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_46376e5d_9627_4514_9881_9e62083625c3
 :electrochemistry_46376e5d_9627_4514_9881_9e62083625c3 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634 ,
                                                                        emmo:EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2 ;
@@ -812,21 +810,21 @@ and t* through mathematical models, provided that the long-time potential- deter
                                                        skos:prefLabel "EnergyStorageCapability"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_47287d09_6108_45ca_ac65_8b9451b1065e
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_47287d09_6108_45ca_ac65_8b9451b1065e
 :electrochemistry_47287d09_6108_45ca_ac65_8b9451b1065e rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_5eae657f_5914_4252_85c6_3fc772dea113 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the maximum amount concentration of a species in a phase, either imposed or naturally occurring"@en ;
                                                        skos:prefLabel "MaximumConcentration"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_4747c51d_86ab_4684_a4fb_b05f5c405ea3
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4747c51d_86ab_4684_a4fb_b05f5c405ea3
 :electrochemistry_4747c51d_86ab_4684_a4fb_b05f5c405ea3 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_82fce40c_434d_4640_a3d2_e26379b6acae ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the minimum allowable temperature"@en ;
                                                        skos:prefLabel "MiniumumTemperature"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_47ab1dad_cc09_4fd8_af23_acb36fb680dd
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_47ab1dad_cc09_4fd8_af23_acb36fb680dd
 :electrochemistry_47ab1dad_cc09_4fd8_af23_acb36fb680dd rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_05cf26ef_782a_4f66_a196_7004dd973f8e ,
                                                                        :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
@@ -845,14 +843,14 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_482173dc_7779_4f12_982c_b19f2cda2dac
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_482173dc_7779_4f12_982c_b19f2cda2dac
 :electrochemistry_482173dc_7779_4f12_982c_b19f2cda2dac rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_ba882f34_0d71_4e4f_9d92_0c076c633a2c ;
                                                        skos:prefLabel "NumberOfCellsConnectedInParallel"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_4882cf2f_aab7_4a3a_a103_7f56b55fbed3
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4882cf2f_aab7_4a3a_a103_7f56b55fbed3
 :electrochemistry_4882cf2f_aab7_4a3a_a103_7f56b55fbed3 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_1e3dc60d_dd6b_47d6_8161_70004fc5ee30 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "quotient of the capacity of a cell or battery [ or electrode or active material ] obtained during a charge process by its mass."@en ;
@@ -861,7 +859,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        skos:prefLabel "SpecificChargeCapacity"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_49efb72a_f8e6_4f50_acac_975302200d47
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_49efb72a_f8e6_4f50_acac_975302200d47
 :electrochemistry_49efb72a_f8e6_4f50_acac_975302200d47 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_900e357f_2ee3_425a_a0b6_322661117787 ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-35" ;
@@ -878,14 +876,14 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_4a450a27_b84a_4c70_a3a9_15ec30e2f30b
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4a450a27_b84a_4c70_a3a9_15ec30e2f30b
 :electrochemistry_4a450a27_b84a_4c70_a3a9_15ec30e2f30b rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An ElectrochemicalQuantity related to the transport of mass, charge, or energy."@en ;
                                                        skos:prefLabel "ElectrochemicalTransportQuantity"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_4aa1b96e_44a0_4b1a_a0ac_723d0223d80b
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4aa1b96e_44a0_4b1a_a0ac_723d0223d80b
 :electrochemistry_4aa1b96e_44a0_4b1a_a0ac_723d0223d80b rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the quotient of the energy of an energy-storage device or system and its volume"@en ;
@@ -893,7 +891,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        skos:prefLabel "EnergyDensityOfStorage"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_4b18c3f9_df10_4259_adb4_cd10842ff0be
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4b18c3f9_df10_4259_adb4_cd10842ff0be
 :electrochemistry_4b18c3f9_df10_4259_adb4_cd10842ff0be rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_0adabf6f_7404_44cb_9f65_32d83d8101a3 ;
@@ -902,7 +900,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        skos:prefLabel "DropTimeInPolarography"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_4d2b102b_3515_4591_b079_69232c44f9dc
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4d2b102b_3515_4591_b079_69232c44f9dc
 :electrochemistry_4d2b102b_3515_4591_b079_69232c44f9dc rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d ,
                                                                        :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ;
@@ -911,7 +909,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        skos:prefLabel "MagnitudeOfPotentialPulse"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d
 :electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_17b031fb_4695_49b6_bb69_189ec63df3ee ;
@@ -940,7 +938,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_50674621_09ae_4f03_8ee9_3997b88c8b2a
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_50674621_09ae_4f03_8ee9_3997b88c8b2a
 :electrochemistry_50674621_09ae_4f03_8ee9_3997b88c8b2a rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-46" ;
@@ -957,7 +955,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_520995f8_ec9c_4b3c_bb64_2cd691947379
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_520995f8_ec9c_4b3c_bb64_2cd691947379
 :electrochemistry_520995f8_ec9c_4b3c_bb64_2cd691947379 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_06448f64_8db6_4304_8b2c_e785dba82044 ;
@@ -965,7 +963,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        skos:prefLabel "CalenderedDensity"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_526bf81a_0572_49ff_a8cc_85efc343c1c2
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_526bf81a_0572_49ff_a8cc_85efc343c1c2
 :electrochemistry_526bf81a_0572_49ff_a8cc_85efc343c1c2 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        [ rdf:type owl:Restriction ;
@@ -984,7 +982,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_52ac73c7_763c_4fda_93cd_a2db9dfc2dab
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_52ac73c7_763c_4fda_93cd_a2db9dfc2dab
 :electrochemistry_52ac73c7_763c_4fda_93cd_a2db9dfc2dab rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ,
                                                                        emmo:EMMO_0adabf6f_7404_44cb_9f65_32d83d8101a3 ;
@@ -1000,7 +998,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_534dd59c_904c_45d9_8550_ae9d2eb6bbc9
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_534dd59c_904c_45d9_8550_ae9d2eb6bbc9
 :electrochemistry_534dd59c_904c_45d9_8550_ae9d2eb6bbc9 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_5ebeea80_af22_456b_9087_78c2a8465c58 ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-30" ;
@@ -1023,7 +1021,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_565c0b10_70fe_441a_b76a_b9a8e08ca7b7
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_565c0b10_70fe_441a_b76a_b9a8e08ca7b7
 :electrochemistry_565c0b10_70fe_441a_b76a_b9a8e08ca7b7 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_f4fadc4e_ca7d_4e4e_89cf_eacf45b4041e ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-06" ;
@@ -1039,7 +1037,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_5696453c_9da7_41e2_bbda_603c1b90a8fc
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5696453c_9da7_41e2_bbda_603c1b90a8fc
 :electrochemistry_5696453c_9da7_41e2_bbda_603c1b90a8fc rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634 ,
                                                                        emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
@@ -1059,7 +1057,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_5766a819_c319_48ba_ab9a_ce3bd8fedee8
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5766a819_c319_48ba_ab9a_ce3bd8fedee8
 :electrochemistry_5766a819_c319_48ba_ab9a_ce3bd8fedee8 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_ba882f34_0d71_4e4f_9d92_0c076c633a2c ;
@@ -1072,7 +1070,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        skos:prefLabel "Cycle"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_5ce6a328_713c_4383_ad63_26c902c30e34
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5ce6a328_713c_4383_ad63_26c902c30e34
 :electrochemistry_5ce6a328_713c_4383_ad63_26c902c30e34 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_06448f64_8db6_4304_8b2c_e785dba82044 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the density of a powdered or granular material when it is subjected to tapping or mechanical vibration"@en ;
@@ -1080,7 +1078,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        skos:prefLabel "TappedDensity"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_5e4490b8_c1dd_4e00_980b_c484e1bf4904
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5e4490b8_c1dd_4e00_980b_c484e1bf4904
 :electrochemistry_5e4490b8_c1dd_4e00_980b_c484e1bf4904 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_ccdfed06_6d24_47e4_98af_ce3ffe7bd09e ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the specific energy of an electrochemical device obtained during a charge process"@en ;
@@ -1089,7 +1087,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        skos:prefLabel "SpecificEnergyCharge"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_5eae657f_5914_4252_85c6_3fc772dea113
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5eae657f_5914_4252_85c6_3fc772dea113
 :electrochemistry_5eae657f_5914_4252_85c6_3fc772dea113 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_b395a244_3a75_4737_be38_981bfa1277fe ,
                                                                        emmo:EMMO_d5be1faf_0c56_4f5a_9b78_581e6dee949f ;
@@ -1097,7 +1095,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        skos:prefLabel "ConcentrationLimit"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_5ebeea80_af22_456b_9087_78c2a8465c58
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5ebeea80_af22_456b_9087_78c2a8465c58
 :electrochemistry_5ebeea80_af22_456b_9087_78c2a8465c58 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_b395a244_3a75_4737_be38_981bfa1277fe ,
                                                                        emmo:EMMO_17b031fb_4695_49b6_bb69_189ec63df3ee ;
@@ -1105,7 +1103,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        skos:prefLabel "VoltageLimit"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_5fb7a03f_d6dd_47ee_9317_0629681c7d00
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5fb7a03f_d6dd_47ee_9317_0629681c7d00
 :electrochemistry_5fb7a03f_d6dd_47ee_9317_0629681c7d00 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_17626b8e_dfce_4d3a_ae6c_5a7215d43a90 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "diffusion current of the potential-independent value that is approached as the rate of the charge-transfer process is increased by varying the applied potential, being greater than the rate of mass transport controlled by diffusion"@en ;
@@ -1122,7 +1120,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_601ff226_59b9_460b_90f5_2593450d96fa
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_601ff226_59b9_460b_90f5_2593450d96fa
 :electrochemistry_601ff226_59b9_460b_90f5_2593450d96fa rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_2d896559_eee3_447c_9759_87c854a4266a ,
                                                                        emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845 ;
@@ -1140,7 +1138,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_60741c58_a10d_4aa6_bb68_0066a6ff8e30
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_60741c58_a10d_4aa6_bb68_0066a6ff8e30
 :electrochemistry_60741c58_a10d_4aa6_bb68_0066a6ff8e30 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_1cd1d777_e67b_47eb_81f1_edac35d9f2c6 ,
                                                                        [ rdf:type owl:Restriction ;
@@ -1162,7 +1160,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_637ee9c4_4b3f_4d3a_975b_c0572dfe53ce
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_637ee9c4_4b3f_4d3a_975b_c0572dfe53ce
 :electrochemistry_637ee9c4_4b3f_4d3a_975b_c0572dfe53ce rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88 ;
                                                        rdfs:comment "electric current flowing to or from an electrochemical cell."@en ;
@@ -1173,7 +1171,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        skos:prefLabel "CellCurrent"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_639b844a_e801_436b_985d_28926129ead6
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_639b844a_e801_436b_985d_28926129ead6
 :electrochemistry_639b844a_e801_436b_985d_28926129ead6 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_17b031fb_4695_49b6_bb69_189ec63df3ee ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-31"@en ;
@@ -1188,7 +1186,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_63a8f9d2_0cf6_484d_b996_2e5c3f0a3c73
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_63a8f9d2_0cf6_484d_b996_2e5c3f0a3c73
 :electrochemistry_63a8f9d2_0cf6_484d_b996_2e5c3f0a3c73 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064 ,
@@ -1209,7 +1207,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_666f0b69_9c74_49a3_80b3_96a188332462
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_666f0b69_9c74_49a3_80b3_96a188332462
 :electrochemistry_666f0b69_9c74_49a3_80b3_96a188332462 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ,
                                                                        emmo:EMMO_852b4ab8_fc29_4749_a8c7_b92d4fca7d5a ;
@@ -1217,7 +1215,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        skos:prefLabel "UpperFrequencyLimit"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_6769536b_5320_4b48_a2d8_ac285ec635a8
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6769536b_5320_4b48_a2d8_ac285ec635a8
 :electrochemistry_6769536b_5320_4b48_a2d8_ac285ec635a8 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ,
                                                                        emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88 ;
@@ -1225,7 +1223,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        skos:prefLabel "StepSignalCurrent"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_68059d94_4c21_4065_b329_07faeebc7e87
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_68059d94_4c21_4065_b329_07faeebc7e87
 :electrochemistry_68059d94_4c21_4065_b329_07faeebc7e87 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ,
                                                                        [ rdf:type owl:Restriction ;
@@ -1245,7 +1243,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_6d981c04_3ace_4f1b_b0f8_770776cceb6f
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6d981c04_3ace_4f1b_b0f8_770776cceb6f
 :electrochemistry_6d981c04_3ace_4f1b_b0f8_770776cceb6f rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_ba882f34_0d71_4e4f_9d92_0c076c633a2c ;
@@ -1253,7 +1251,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        skos:prefLabel "TotalNumberOfCycles"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_6dcd5baf_58cd_43f5_a692_51508e036c88
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6dcd5baf_58cd_43f5_a692_51508e036c88
 :electrochemistry_6dcd5baf_58cd_43f5_a692_51508e036c88 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_5ebeea80_af22_456b_9087_78c2a8465c58 ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-55" ;
@@ -1264,13 +1262,13 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        skos:prefLabel "UpperVoltageLimit"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_71f10616_15eb_4dc4_bc8d_ffaac3838af2
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_71f10616_15eb_4dc4_bc8d_ffaac3838af2
 :electrochemistry_71f10616_15eb_4dc4_bc8d_ffaac3838af2 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ;
                                                        skos:prefLabel "CurrentChangeLimit"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_74861991_7da2_4e0f_b6c1_b16713f538bf
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_74861991_7da2_4e0f_b6c1_b16713f538bf
 :electrochemistry_74861991_7da2_4e0f_b6c1_b16713f538bf rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_c7b26177_21bf_4787_b656_8e78edf27f88 ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-29"@en ;
@@ -1286,7 +1284,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_74de2c33_84fc_4c2f_afe1_56d169149114
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_74de2c33_84fc_4c2f_afe1_56d169149114
 :electrochemistry_74de2c33_84fc_4c2f_afe1_56d169149114 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_b395a244_3a75_4737_be38_981bfa1277fe ,
                                                                        emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88 ;
@@ -1294,7 +1292,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        skos:prefLabel "CurrentLimit"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_75c28dc8_3d7d_4b6e_861e_6c8b1ad7d644
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_75c28dc8_3d7d_4b6e_861e_6c8b1ad7d644
 :electrochemistry_75c28dc8_3d7d_4b6e_861e_6c8b1ad7d644 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_637ee9c4_4b3f_4d3a_975b_c0572dfe53ce ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-26" ;
@@ -1317,7 +1315,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_762ba55f_9b56_4c31_865f_cff2e7d0a94b
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_762ba55f_9b56_4c31_865f_cff2e7d0a94b
 :electrochemistry_762ba55f_9b56_4c31_865f_cff2e7d0a94b rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_dd4a7f3e_ef56_466c_ac1a_d2716b5f87ec ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-03-03" ;
@@ -1325,7 +1323,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        skos:prefLabel "PulseMagnitude"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_76e7e556_f47e_47e2_b2ef_67aeed09c63e
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_76e7e556_f47e_47e2_b2ef_67aeed09c63e
 :electrochemistry_76e7e556_f47e_47e2_b2ef_67aeed09c63e rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634 ,
                                                                        emmo:EMMO_7c8007b0_58a7_4486_bf1c_4772852caca0 ;
@@ -1341,7 +1339,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_77f9d496_555e_4ae2_ae80_f297ef8335ca
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_77f9d496_555e_4ae2_ae80_f297ef8335ca
 :electrochemistry_77f9d496_555e_4ae2_ae80_f297ef8335ca rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_f2ca6dd0_0e5f_4392_a92d_cafdae6cfc95 ;
@@ -1352,7 +1350,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        skos:prefLabel "FaradayConstant"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_79198264_cdf5_4fc3_8bcf_e5140a52547a
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79198264_cdf5_4fc3_8bcf_e5140a52547a
 :electrochemistry_79198264_cdf5_4fc3_8bcf_e5140a52547a rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634 ,
                                                                        emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
@@ -1369,7 +1367,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_791c1915_a791_4450_acd8_7f94764743b5
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_791c1915_a791_4450_acd8_7f94764743b5
 :electrochemistry_791c1915_a791_4450_acd8_7f94764743b5 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_1604f495_328a_4f28_9962_f4cc210739dd ,
@@ -1401,7 +1399,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_79551e01_4bc6_4292_916e_08fe28a84600
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79551e01_4bc6_4292_916e_08fe28a84600
 :electrochemistry_79551e01_4bc6_4292_916e_08fe28a84600 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_637ee9c4_4b3f_4d3a_975b_c0572dfe53ce ,
                                                                        :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
@@ -1410,7 +1408,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        skos:prefLabel "ChargingCurrent"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_7f073272_8925_4344_995c_a5a6dd1fcde6
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7f073272_8925_4344_995c_a5a6dd1fcde6
 :electrochemistry_7f073272_8925_4344_995c_a5a6dd1fcde6 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the percentage of the total charge capacity that is obtained during a constant current charge process"@en ;
@@ -1419,13 +1417,13 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        skos:prefLabel "ConstantCurrentChargePercentage"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_7f381c19_cf07_47a8_ab10_0b14d46901e8
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7f381c19_cf07_47a8_ab10_0b14d46901e8
 :electrochemistry_7f381c19_cf07_47a8_ab10_0b14d46901e8 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064 ;
                                                        skos:prefLabel "SurfaceAreaPerVolume"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_7fa406b0_512a_4d59_9e0c_5d8aba0103ae
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7fa406b0_512a_4d59_9e0c_5d8aba0103ae
 :electrochemistry_7fa406b0_512a_4d59_9e0c_5d8aba0103ae rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_1cd1d777_e67b_47eb_81f1_edac35d9f2c6 ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-05"@en ;
@@ -1441,7 +1439,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_7fc10197_41d9_4c1e_a107_928f03eb2d36
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7fc10197_41d9_4c1e_a107_928f03eb2d36
 :electrochemistry_7fc10197_41d9_4c1e_a107_928f03eb2d36 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_d91940f0_c8b6_4505_9b68_6bf6cfc5c544 ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-13" ;
@@ -1470,7 +1468,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_7fe804b8_6126_4132_be8f_b4985d61b1f6
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7fe804b8_6126_4132_be8f_b4985d61b1f6
 :electrochemistry_7fe804b8_6126_4132_be8f_b4985d61b1f6 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_2d896559_eee3_447c_9759_87c854a4266a ,
                                                                        emmo:EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064 ,
@@ -1484,7 +1482,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                        skos:prefLabel "MolarElectrochemicalPotential"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_80ca00f8_c891_4493_87a2_7d39b9d1e098
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_80ca00f8_c891_4493_87a2_7d39b9d1e098
 :electrochemistry_80ca00f8_c891_4493_87a2_7d39b9d1e098 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_d4f7d378_5e3b_468a_baa1_a7e98358cda7 ;
@@ -1493,7 +1491,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                        skos:prefLabel "StepTime"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_8177eae6_1631_430d_99f2_942669bcb784
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8177eae6_1631_430d_99f2_942669bcb784
 :electrochemistry_8177eae6_1631_430d_99f2_942669bcb784 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_2d896559_eee3_447c_9759_87c854a4266a ,
                                                                        emmo:EMMO_d5be1faf_0c56_4f5a_9b78_581e6dee949f ;
@@ -1502,7 +1500,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                        skos:prefLabel "IonConcentration"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_82fce40c_434d_4640_a3d2_e26379b6acae
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_82fce40c_434d_4640_a3d2_e26379b6acae
 :electrochemistry_82fce40c_434d_4640_a3d2_e26379b6acae rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_b395a244_3a75_4737_be38_981bfa1277fe ,
                                                                        emmo:EMMO_66bc9029_f473_45ff_bab9_c3509ff37a22 ;
@@ -1510,7 +1508,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                        skos:prefLabel "TemperatureLimit"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_838a927f_775e_4c6d_8e39_7865548608c2
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_838a927f_775e_4c6d_8e39_7865548608c2
 :electrochemistry_838a927f_775e_4c6d_8e39_7865548608c2 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an entry in a dataset, typically consisting of one line."@en ;
@@ -1518,7 +1516,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                        skos:prefLabel "Record"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_83928dce_9746_4452_a9f9_da4366a20ca4
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_83928dce_9746_4452_a9f9_da4366a20ca4
 :electrochemistry_83928dce_9746_4452_a9f9_da4366a20ca4 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_900e357f_2ee3_425a_a0b6_322661117787 ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-31" ;
@@ -1533,7 +1531,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_83fbc038_0c2e_4d04_91d7_cdf30f8a5535
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_83fbc038_0c2e_4d04_91d7_cdf30f8a5535
 :electrochemistry_83fbc038_0c2e_4d04_91d7_cdf30f8a5535 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_900e357f_2ee3_425a_a0b6_322661117787 ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-38" ;
@@ -1548,7 +1546,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_85e39686_9658_4c74_bb91_a935704c174a
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_85e39686_9658_4c74_bb91_a935704c174a
 :electrochemistry_85e39686_9658_4c74_bb91_a935704c174a rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ,
                                                                        emmo:EMMO_0adabf6f_7404_44cb_9f65_32d83d8101a3 ;
@@ -1557,13 +1555,13 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                        skos:prefLabel "StepDuration"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_86324806_4263_4d80_b5af_1a7be844ab5b
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_86324806_4263_4d80_b5af_1a7be844ab5b
 :electrochemistry_86324806_4263_4d80_b5af_1a7be844ab5b rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_f0667139_6428_4e3d_ac0d_08c1dd7f36ea ;
                                                        skos:prefLabel "MinimumStoichiometry"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_884650fd_6cc6_4ec6_8264_c18fbe6b90ee
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_884650fd_6cc6_4ec6_8264_c18fbe6b90ee
 :electrochemistry_884650fd_6cc6_4ec6_8264_c18fbe6b90ee rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_1e3dc60d_dd6b_47d6_8161_70004fc5ee30 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "quotient of the capacity of a cell or battery [ or electrode or active material ] obtained during a discharge process by its mass."@en ;
@@ -1572,7 +1570,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                        skos:prefLabel "SpecificDischargeCapacity"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_8de9735b_374a_4a0f_b29f_71a50794cf94
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8de9735b_374a_4a0f_b29f_71a50794cf94
 :electrochemistry_8de9735b_374a_4a0f_b29f_71a50794cf94 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_f4fadc4e_ca7d_4e4e_89cf_eacf45b4041e ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-04" ;
@@ -1588,13 +1586,13 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_8e943e12_ecc0_4093_899e_7226be6be7f2
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8e943e12_ecc0_4093_899e_7226be6be7f2
 :electrochemistry_8e943e12_ecc0_4093_899e_7226be6be7f2 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
                                                        skos:prefLabel "D90ParticleSize"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_8f3ab19f_ce22_424e_a9bf_d5cedb815374
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8f3ab19f_ce22_424e_a9bf_d5cedb815374
 :electrochemistry_8f3ab19f_ce22_424e_a9bf_d5cedb815374 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-18" ;
@@ -1609,7 +1607,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_8f4b90ef_fea4_47c9_99f5_a9b3290a505d
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8f4b90ef_fea4_47c9_99f5_a9b3290a505d
 :electrochemistry_8f4b90ef_fea4_47c9_99f5_a9b3290a505d rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_2d896559_eee3_447c_9759_87c854a4266a ,
                                                                        emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845 ;
@@ -1617,19 +1615,19 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                        skos:prefLabel "ElectrochemicalStabilityLimit"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_900e357f_2ee3_425a_a0b6_322661117787
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_900e357f_2ee3_425a_a0b6_322661117787
 :electrochemistry_900e357f_2ee3_425a_a0b6_322661117787 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_909415d1_7c43_4d5e_bbeb_7e1910159f66 ;
                                                        skos:prefLabel "ElectrochemicalProperty"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_95ef8c3c_62fe_467f_b5d4_dd0cd18a7ea8
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_95ef8c3c_62fe_467f_b5d4_dd0cd18a7ea8
 :electrochemistry_95ef8c3c_62fe_467f_b5d4_dd0cd18a7ea8 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_f0667139_6428_4e3d_ac0d_08c1dd7f36ea ;
                                                        skos:prefLabel "MaximumStoichiometry"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_98b6e9d7_d5df_46a5_87dd_79642b8b2e4b
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_98b6e9d7_d5df_46a5_87dd_79642b8b2e4b
 :electrochemistry_98b6e9d7_d5df_46a5_87dd_79642b8b2e4b rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_2a2f59b7_aa16_40aa_9c8b_0de8a2720456 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "faradaic current of an electroactive substance B formed by a prior chemical reaction from another substance Y that is no electroactive at the potential at which B is electrochemically transformed"@en ;
@@ -1645,7 +1643,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26
 :electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_791c1915_a791_4450_acd8_7f94764743b5 ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-15"@en ;
@@ -1660,7 +1658,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_9bf40017_3f58_4030_ada7_cb37a3dfda2d
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9bf40017_3f58_4030_ada7_cb37a3dfda2d
 :electrochemistry_9bf40017_3f58_4030_ada7_cb37a3dfda2d rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634 ,
                                                                        emmo:EMMO_e88f75d6_9a17_4cfc_bdf7_43d7cea5a9a1 ;
@@ -1673,7 +1671,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                        skos:prefLabel "InternalResistance"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b
 :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b rdf:type owl:Class ;
                                                        owl:equivalentClass emmo:EMMO_5c78b424_087b_4e31_8c91_6422f1be1e86 ;
                                                        rdfs:subClassOf :electrochemistry_2d896559_eee3_447c_9759_87c854a4266a ,
@@ -1711,13 +1709,13 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_9c9b80a4_a00b_4b91_8e17_3a7831f2bf2f
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9c9b80a4_a00b_4b91_8e17_3a7831f2bf2f
 :electrochemistry_9c9b80a4_a00b_4b91_8e17_3a7831f2bf2f rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_affe07e4_e9bc_4852_86c6_69e26182a17f ;
                                                        skos:prefLabel "InititalThermodynamicTemperature"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_9d57962c_e150_4e64_962b_8fd6a92c9234
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9d57962c_e150_4e64_962b_8fd6a92c9234
 :electrochemistry_9d57962c_e150_4e64_962b_8fd6a92c9234 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_ccdfed06_6d24_47e4_98af_ce3ffe7bd09e ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the specific energy of an electrochemical device obtained during a discharge process"@en ;
@@ -1726,14 +1724,14 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                        skos:prefLabel "SpecificEnergyDischarge"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_9d6a52ed_a53d_4327_a391_f173677a4b1d
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9d6a52ed_a53d_4327_a391_f173677a4b1d
 :electrochemistry_9d6a52ed_a53d_4327_a391_f173677a4b1d rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_ba882f34_0d71_4e4f_9d92_0c076c633a2c ;
                                                        skos:prefLabel "NumberOfCellsConnectedInSeries"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_9ed7210c_c4fa_467b_822d_ba12f885bdf4
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9ed7210c_c4fa_467b_822d_ba12f885bdf4
 :electrochemistry_9ed7210c_c4fa_467b_822d_ba12f885bdf4 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_1cd1d777_e67b_47eb_81f1_edac35d9f2c6 ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-08"@en ;
@@ -1761,7 +1759,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_a17ee4e0_c81a_4a64_9ecb_9c6fa022cf4d
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a17ee4e0_c81a_4a64_9ecb_9c6fa022cf4d
 :electrochemistry_a17ee4e0_c81a_4a64_9ecb_9c6fa022cf4d rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_4a450a27_b84a_4c70_a3a9_15ec30e2f30b ,
                                                                        emmo:EMMO_9e955e04_2977_457e_a91a_bc6a541c9a9e ;
@@ -1772,7 +1770,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                        skos:prefLabel "LimitingMolarConductivity"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_a24f8581_a5a4_41a4_bb45_d0fdd5c0d810
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a24f8581_a5a4_41a4_bb45_d0fdd5c0d810
 :electrochemistry_a24f8581_a5a4_41a4_bb45_d0fdd5c0d810 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88 ;
@@ -1791,7 +1789,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_a4dfa5c1_55a9_4285_b71d_90cf6613ca31
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a4dfa5c1_55a9_4285_b71d_90cf6613ca31
 :electrochemistry_a4dfa5c1_55a9_4285_b71d_90cf6613ca31 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_21745019_2830_4395_bca7_15ddfd266673 ,
                                                                        emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
@@ -1815,7 +1813,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_a5571263_f153_448f_84a3_cd18092cf8fa
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a5571263_f153_448f_84a3_cd18092cf8fa
 :electrochemistry_a5571263_f153_448f_84a3_cd18092cf8fa rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                                        emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q766786" ;
@@ -1825,7 +1823,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                        skos:prefLabel "VolumetricSurfaceArea"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_a56fc557_9dea_42e6_b936_e9d62dcaf84f
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a56fc557_9dea_42e6_b936_e9d62dcaf84f
 :electrochemistry_a56fc557_9dea_42e6_b936_e9d62dcaf84f rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88 ;
@@ -1841,7 +1839,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_a5962e05_466d_46a4_8951_bea59d7326e5
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a5962e05_466d_46a4_8951_bea59d7326e5
 :electrochemistry_a5962e05_466d_46a4_8951_bea59d7326e5 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634 ,
                                                                        emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
@@ -1857,14 +1855,14 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_a7eb870c_4ef7_4ccd_85e8_4b7b726d7a2a
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a7eb870c_4ef7_4ccd_85e8_4b7b726d7a2a
 :electrochemistry_a7eb870c_4ef7_4ccd_85e8_4b7b726d7a2a rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the quotient of the power of an energy-storage device or system and its volume"@en ;
                                                        skos:prefLabel "VolumetricPowerDensityofStorage"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_a82e16c3_b766_482f_be94_b8e9af37f6fc
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a82e16c3_b766_482f_be94_b8e9af37f6fc
 :electrochemistry_a82e16c3_b766_482f_be94_b8e9af37f6fc rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_47ab1dad_cc09_4fd8_af23_acb36fb680dd ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "surface area of an electrode that takes into account non-idealities of the interface (roughness, porosity, etc.) and can be measured by a variety of electrochemical methods"@en ;
@@ -1880,14 +1878,14 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_a9873707_8103_4bb4_9e51_83db1e89b1bd
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a9873707_8103_4bb4_9e51_83db1e89b1bd
 :electrochemistry_a9873707_8103_4bb4_9e51_83db1e89b1bd rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_5eae657f_5914_4252_85c6_3fc772dea113 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the minimum amount concentration of a species in a phase, either imposed or naturally occuring"@en ;
                                                        skos:prefLabel "MiniumumConcentration"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_abfadc99_6e43_4d37_9b04_7fc5b0f327ae
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_abfadc99_6e43_4d37_9b04_7fc5b0f327ae
 :electrochemistry_abfadc99_6e43_4d37_9b04_7fc5b0f327ae rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_21745019_2830_4395_bca7_15ddfd266673 ,
                                                                        emmo:EMMO_ba882f34_0d71_4e4f_9d92_0c076c633a2c ;
@@ -1907,7 +1905,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_ae782b14_88ce_4cdd_9418_12aca00be937
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ae782b14_88ce_4cdd_9418_12aca00be937
 :electrochemistry_ae782b14_88ce_4cdd_9418_12aca00be937 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634 ,
                                                                        emmo:EMMO_ba882f34_0d71_4e4f_9d92_0c076c633a2c ;
@@ -1917,7 +1915,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                        skos:prefLabel "CycleLife"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_ae9882de_d6a2_4525_a84f_80947c10f1cb
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ae9882de_d6a2_4525_a84f_80947c10f1cb
 :electrochemistry_ae9882de_d6a2_4525_a84f_80947c10f1cb rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "in chronopotentiometry and related techniques, the duration between the application of current and when the concentration of an electroactive substance at the electrode-solution interface becomes indistinguishable from zero"@en ;
@@ -1933,14 +1931,14 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112
 :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_79751276_b2d0_4e2f_bbd4_99d412f43d55 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Physical quantities defined within the domain of electrochemistry."@en ;
                                                        skos:prefLabel "ElectrochemicalQuantity"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_b21de1ef_6c15_4d63_b320_c9b96fbf186f
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b21de1ef_6c15_4d63_b320_c9b96fbf186f
 :electrochemistry_b21de1ef_6c15_4d63_b320_c9b96fbf186f rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_d91940f0_c8b6_4505_9b68_6bf6cfc5c544 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "equilibrium electrode potential under conditions of unit concentration of species involved in the electrode reaction"@en ;
@@ -1958,14 +1956,14 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_b395a244_3a75_4737_be38_981bfa1277fe
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b395a244_3a75_4737_be38_981bfa1277fe
 :electrochemistry_b395a244_3a75_4737_be38_981bfa1277fe rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a limit quantity in a control system"@en ;
                                                        skos:prefLabel "LimitQuantity"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_b66d6553_6136_4754_902a_707e414210c2
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b66d6553_6136_4754_902a_707e414210c2
 :electrochemistry_b66d6553_6136_4754_902a_707e414210c2 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ,
                                                                        emmo:EMMO_852b4ab8_fc29_4749_a8c7_b92d4fca7d5a ;
@@ -1973,7 +1971,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                        skos:prefLabel "LowerFrequencyLimit"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_b7781ebc_90a7_4f19_997f_aed28dee1b01
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b7781ebc_90a7_4f19_997f_aed28dee1b01
 :electrochemistry_b7781ebc_90a7_4f19_997f_aed28dee1b01 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_791c1915_a791_4450_acd8_7f94764743b5 ,
                                                                        :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
@@ -1981,13 +1979,13 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                        skos:prefLabel "TheoreticalCapacity"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_b83c6435_6edf_470e_9725_538a853e08f7
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b83c6435_6edf_470e_9725_538a853e08f7
 :electrochemistry_b83c6435_6edf_470e_9725_538a853e08f7 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
                                                        skos:prefLabel "D10ParticleSize"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_b92e382f_5109_4f60_ab5e_c89d340419a9
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b92e382f_5109_4f60_ab5e_c89d340419a9
 :electrochemistry_b92e382f_5109_4f60_ab5e_c89d340419a9 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_32dcd601_47c7_4028_b7fa_5e972ae57f12 ;
@@ -1995,14 +1993,14 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                        skos:prefLabel "ParticleRadius"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_ba7ac581_0e13_4815_b888_013c378932f5
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ba7ac581_0e13_4815_b888_013c378932f5
 :electrochemistry_ba7ac581_0e13_4815_b888_013c378932f5 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_74de2c33_84fc_4c2f_afe1_56d169149114 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the maximum current approved for continuous discharge for a given electrochemical device"@en ;
                                                        skos:prefLabel "MaximumContinuousDischargeCurrent"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_bad1b6f4_1b26_40e2_b552_6d53873e3973
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bad1b6f4_1b26_40e2_b552_6d53873e3973
 :electrochemistry_bad1b6f4_1b26_40e2_b552_6d53873e3973 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_47ab1dad_cc09_4fd8_af23_acb36fb680dd ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=485-02-09" ;
@@ -2020,7 +2018,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_bcb33f7e_5573_4bc2_b636_4ea313a9dd3a
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bcb33f7e_5573_4bc2_b636_4ea313a9dd3a
 :electrochemistry_bcb33f7e_5573_4bc2_b636_4ea313a9dd3a rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634 ,
                                                                        emmo:EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064 ;
@@ -2038,7 +2036,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_c39b2498_783e_48e1_9814_6164bd99823c
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c39b2498_783e_48e1_9814_6164bd99823c
 :electrochemistry_c39b2498_783e_48e1_9814_6164bd99823c rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845 ;
@@ -2055,7 +2053,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_c4d551db_db17_4c33_92e6_aec71638afbc
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c4d551db_db17_4c33_92e6_aec71638afbc
 :electrochemistry_c4d551db_db17_4c33_92e6_aec71638afbc rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845 ;
@@ -2073,14 +2071,14 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5
 :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "quantities that control electroanalytical techniques"@en ;
                                                        skos:prefLabel "ElectrochemicalControlQuantity"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_c55bcb85_b7b8_4e67_8a78_9a42fe25b6cf
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c55bcb85_b7b8_4e67_8a78_9a42fe25b6cf
 :electrochemistry_c55bcb85_b7b8_4e67_8a78_9a42fe25b6cf rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_2a2f59b7_aa16_40aa_9c8b_0de8a2720456 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "faradaic current measured in a solution containing two electroactive substances, A and B, that exceeds the sum of the faradaic currents that would be obtained for A and B separately under the same experimental conditions"@en ;
@@ -2106,14 +2104,14 @@ In either case, the magnitude of the catalytic current depends on the applied po
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_c762a928_5a74_46fd_9929_4ac2d7a3a8d7
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c762a928_5a74_46fd_9929_4ac2d7a3a8d7
 :electrochemistry_c762a928_5a74_46fd_9929_4ac2d7a3a8d7 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the quotient of the power of an energy-storage device or system and its mass"@en ;
                                                        skos:prefLabel "SpecificPowerOfStorage"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_c7b26177_21bf_4787_b656_8e78edf27f88
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c7b26177_21bf_4787_b656_8e78edf27f88
 :electrochemistry_c7b26177_21bf_4787_b656_8e78edf27f88 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "voltage between the terminals of a cell or battery when being discharged"@en ;
@@ -2129,7 +2127,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_c955c089_6ee1_41a2_95fc_d534c5cfd3d5
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c955c089_6ee1_41a2_95fc_d534c5cfd3d5
 :electrochemistry_c955c089_6ee1_41a2_95fc_d534c5cfd3d5 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_afea89af_ef16_4bdb_99d5_f3b2f4c85a6c ;
@@ -2137,7 +2135,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
                                                        skos:prefLabel "MassLoading"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_ca36cbf3_1fed_4b88_9177_b4e16ad00cf7
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ca36cbf3_1fed_4b88_9177_b4e16ad00cf7
 :electrochemistry_ca36cbf3_1fed_4b88_9177_b4e16ad00cf7 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_46376e5d_9627_4514_9881_9e62083625c3 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "energy delivered by a deviced under some specific discharge conditions"@en ;
@@ -2148,14 +2146,14 @@ In either case, the magnitude of the catalytic current depends on the applied po
                                                        skos:prefLabel "DischargeEnergy"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_cc519a19_b8d5_4e3f_b893_3a884888ad79
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cc519a19_b8d5_4e3f_b893_3a884888ad79
 :electrochemistry_cc519a19_b8d5_4e3f_b893_3a884888ad79 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_82fce40c_434d_4640_a3d2_e26379b6acae ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the maximum allowable temperature"@en ;
                                                        skos:prefLabel "MaximumTemperature"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_ccde24bb_790a_40ca_a06e_cea156a61031
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ccde24bb_790a_40ca_a06e_cea156a61031
 :electrochemistry_ccde24bb_790a_40ca_a06e_cea156a61031 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_21745019_2830_4395_bca7_15ddfd266673 ,
                                                                        emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88 ;
@@ -2166,7 +2164,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
                                                        skos:prefLabel "ExchangeCurrent"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_ccdfed06_6d24_47e4_98af_ce3ffe7bd09e
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ccdfed06_6d24_47e4_98af_ce3ffe7bd09e
 :electrochemistry_ccdfed06_6d24_47e4_98af_ce3ffe7bd09e rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634 ,
                                                                        emmo:EMMO_e218c625_6a39_47a9_8d08_a2ef41c152a9 ;
@@ -2175,7 +2173,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
                                                        skos:prefLabel "SpecificEnergyOfStorage"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_ce74d2dc_d496_4116_b2fb_3e83d88bc744
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ce74d2dc_d496_4116_b2fb_3e83d88bc744
 :electrochemistry_ce74d2dc_d496_4116_b2fb_3e83d88bc744 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_cde4368c_1d4d_4c94_8548_604749523c6d ;
@@ -2183,7 +2181,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
                                                        skos:prefLabel "ElectronicConductivity"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_cf54e7c1_f359_4715_b61d_0350b890d597
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cf54e7c1_f359_4715_b61d_0350b890d597
 :electrochemistry_cf54e7c1_f359_4715_b61d_0350b890d597 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        [ rdf:type owl:Restriction ;
@@ -2197,7 +2195,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
                                                        skos:prefLabel "SpecificSurfaceArea"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_d47985f1_6bd7_4c4f_894f_13a6cab38bb5
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d47985f1_6bd7_4c4f_894f_13a6cab38bb5
 :electrochemistry_d47985f1_6bd7_4c4f_894f_13a6cab38bb5 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_791c1915_a791_4450_acd8_7f94764743b5 ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-16" ;
@@ -2212,7 +2210,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_d5ac8868_d318_4065_aa23_72140ae888ae
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d5ac8868_d318_4065_aa23_72140ae888ae
 :electrochemistry_d5ac8868_d318_4065_aa23_72140ae888ae rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_2a2f59b7_aa16_40aa_9c8b_0de8a2720456 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "faradaic current that is approached as the rate of the charge-transfer process is increased by varying the applied potential, being greater than the rate of mass transport controlled by diffusion"@en ;
@@ -2228,7 +2226,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_d5dc0c1d_0926_4268_89f0_4519a326eabc
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d5dc0c1d_0926_4268_89f0_4519a326eabc
 :electrochemistry_d5dc0c1d_0926_4268_89f0_4519a326eabc rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_3cd0e74e_292c_48ed_a831_4cb8753d9a56 ,
                                                                        :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ;
@@ -2236,7 +2234,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
                                                        skos:prefLabel "MaximumPulseDischargeDuration"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_d78b696d_9832_4352_a264_28a2ea7d82e4
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d78b696d_9832_4352_a264_28a2ea7d82e4
 :electrochemistry_d78b696d_9832_4352_a264_28a2ea7d82e4 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_ba882f34_0d71_4e4f_9d92_0c076c633a2c ;
@@ -2245,7 +2243,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
                                                        skos:prefLabel "StepIndex"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_d91940f0_c8b6_4505_9b68_6bf6cfc5c544
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d91940f0_c8b6_4505_9b68_6bf6cfc5c544
 :electrochemistry_d91940f0_c8b6_4505_9b68_6bf6cfc5c544 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b ,
                                                                        :electrochemistry_f509645f_eb27_470e_9112_7ab828ed40d3 ;
@@ -2275,13 +2273,13 @@ In either case, the magnitude of the catalytic current depends on the applied po
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_db40df7e_1aa5_49a7_85cb_2aa2c1c70489
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_db40df7e_1aa5_49a7_85cb_2aa2c1c70489
 :electrochemistry_db40df7e_1aa5_49a7_85cb_2aa2c1c70489 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_affe07e4_e9bc_4852_86c6_69e26182a17f ;
                                                        skos:prefLabel "ReferenceThermodynamicTemperature"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee
 :electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
@@ -2308,7 +2306,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_e2514bf9_d012_4990_b68b_6f37443f18f6
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e2514bf9_d012_4990_b68b_6f37443f18f6
 :electrochemistry_e2514bf9_d012_4990_b68b_6f37443f18f6 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_21745019_2830_4395_bca7_15ddfd266673 ;
                                                        emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q3394849" ;
@@ -2318,7 +2316,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
                                                        skos:prefLabel "ReactionRate"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_e38f11d0_a16f_4fe8_8ec5_3fe4493b7759
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e38f11d0_a16f_4fe8_8ec5_3fe4493b7759
 :electrochemistry_e38f11d0_a16f_4fe8_8ec5_3fe4493b7759 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845 ;
@@ -2334,7 +2332,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_e4a221e0_afc9_4464_91d4_e0c8ecdf79e8
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e4a221e0_afc9_4464_91d4_e0c8ecdf79e8
 :electrochemistry_e4a221e0_afc9_4464_91d4_e0c8ecdf79e8 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        [ rdf:type owl:Restriction ;
@@ -2354,7 +2352,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_e4d666ee_d637_45cd_a904_dc33941ead4f
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e4d666ee_d637_45cd_a904_dc33941ead4f
 :electrochemistry_e4d666ee_d637_45cd_a904_dc33941ead4f rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_637ee9c4_4b3f_4d3a_975b_c0572dfe53ce ,
                                                                        :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
@@ -2370,7 +2368,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_e6b63190_acac_4e78_9cba_fb2b10bbe910
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e6b63190_acac_4e78_9cba_fb2b10bbe910
 :electrochemistry_e6b63190_acac_4e78_9cba_fb2b10bbe910 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-17" ;
@@ -2387,7 +2385,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_e8ec76bf_2a60_4982_8cde_02dfbd2e626f
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e8ec76bf_2a60_4982_8cde_02dfbd2e626f
 :electrochemistry_e8ec76bf_2a60_4982_8cde_02dfbd2e626f rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634 ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-47" ;
@@ -2403,7 +2401,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_e9fd9ef9_adfe_46cb_b2f9_4558468a25e7
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e9fd9ef9_adfe_46cb_b2f9_4558468a25e7
 :electrochemistry_e9fd9ef9_adfe_46cb_b2f9_4558468a25e7 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_21745019_2830_4395_bca7_15ddfd266673 ,
                                                                        emmo:EMMO_7c8007b0_58a7_4486_bf1c_4772852caca0 ;
@@ -2414,7 +2412,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
                                                        skos:prefLabel "ExchangeCurrentDensity"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_ecb6dfdf_bd3d_4339_8a1c_d32abbef30ba
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ecb6dfdf_bd3d_4339_8a1c_d32abbef30ba
 :electrochemistry_ecb6dfdf_bd3d_4339_8a1c_d32abbef30ba rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ,
                                                                        emmo:EMMO_0adabf6f_7404_44cb_9f65_32d83d8101a3 ;
@@ -2430,7 +2428,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_f046d602_22ea_4f9b_9101_319f510d39f0
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f046d602_22ea_4f9b_9101_319f510d39f0
 :electrochemistry_f046d602_22ea_4f9b_9101_319f510d39f0 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_637ee9c4_4b3f_4d3a_975b_c0572dfe53ce ,
                                                                        :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ;
@@ -2439,13 +2437,13 @@ In either case, the magnitude of the catalytic current depends on the applied po
                                                        skos:prefLabel "CurrentScanRate"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_f0667139_6428_4e3d_ac0d_08c1dd7f36ea
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f0667139_6428_4e3d_ac0d_08c1dd7f36ea
 :electrochemistry_f0667139_6428_4e3d_ac0d_08c1dd7f36ea rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_ba882f34_0d71_4e4f_9d92_0c076c633a2c ;
                                                        skos:prefLabel "Stoichiometry"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_f4fadc4e_ca7d_4e4e_89cf_eacf45b4041e
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f4fadc4e_ca7d_4e4e_89cf_eacf45b4041e
 :electrochemistry_f4fadc4e_ca7d_4e4e_89cf_eacf45b4041e rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_1cd1d777_e67b_47eb_81f1_edac35d9f2c6 ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-10"@en ;
@@ -2462,7 +2460,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_f509645f_eb27_470e_9112_7ab828ed40d3
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f509645f_eb27_470e_9112_7ab828ed40d3
 :electrochemistry_f509645f_eb27_470e_9112_7ab828ed40d3 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845 ;
@@ -2490,7 +2488,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_f591a444_89d6_4093_836d_7d53895edce4
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f591a444_89d6_4093_836d_7d53895edce4
 :electrochemistry_f591a444_89d6_4093_836d_7d53895edce4 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ,
                                                                        emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845 ;
@@ -2508,7 +2506,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_f94678d6_1386_48fc_8e54_024921924401
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f94678d6_1386_48fc_8e54_024921924401
 :electrochemistry_f94678d6_1386_48fc_8e54_024921924401 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_9bf40017_3f58_4030_ada7_cb37a3dfda2d ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-36" ;
@@ -2531,14 +2529,14 @@ In either case, the magnitude of the catalytic current depends on the applied po
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_f9e1c862_c510_4b11_9141_bc91045df817
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f9e1c862_c510_4b11_9141_bc91045df817
 :electrochemistry_f9e1c862_c510_4b11_9141_bc91045df817 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "thickness of the coating after a calendering process"@en ;
                                                        skos:prefLabel "CalenderedCoatingThickness"@en .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_fa7790d6_07bb_4b0f_9965_55966828f5f3
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fa7790d6_07bb_4b0f_9965_55966828f5f3
 :electrochemistry_fa7790d6_07bb_4b0f_9965_55966828f5f3 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_47ab1dad_cc09_4fd8_af23_acb36fb680dd ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the interfacial area, determined on the assumption that the interface is truly flat (2-dimensional) and calculated using the geometric data of the involved surfaces"@en ;
@@ -2553,7 +2551,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
  ] .
 
 
-###  https://w3id.org/emmo/electrochemistry#electrochemistry_ff7797ed_9ef7_40d0_872b_2c215cd54578
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ff7797ed_9ef7_40d0_872b_2c215cd54578
 :electrochemistry_ff7797ed_9ef7_40d0_872b_2c215cd54578 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845 ;
