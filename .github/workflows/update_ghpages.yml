@@ -27,7 +27,8 @@ jobs:
         pip install Markdown==3.4.3 rdflib==6.3.2  # Add any other dependencies if needed
 
     - name: Copy .ttl file to pages
-      run: cp electrochemistry.ttl ${GITHUB_WORKSPACE}/.
+      run: |
+        cp ${GITHUB_WORKSPACE}/electrochemistry.ttl ${GITHUB_WORKSPACE}/docs/.
 
     - name: Render documentation from ttl
       run: python docs/scripts/ttl_to_html.py
