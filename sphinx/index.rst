@@ -1,8 +1,11 @@
 
-|DOI|
-
 .. toctree::
+   :includehidden:
+   :hidden:
 
+   self
+   electrochemistry
+   
 
 Electrochemistry Domain Ontology
 ================================
@@ -196,7 +199,7 @@ Commons Attribution 4.0
 International <https://creativecommons.org/licenses/by/4.0/legalcode>`__
 license (CC BY 4.0).
 
-   
 .. |DOI| image:: https://zenodo.org/badge/570454941.svg
    :target: https://zenodo.org/badge/latestdoi/570454941
 
+   

@@ -14,10 +14,6 @@
 from __future__ import unicode_literals
 import sys
 import os
-import docutils
-import errno
-from docutils.parsers.rst import roles
-from sphinx.util.docutils import ReferenceRole
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -31,7 +27,7 @@ autodoc_member_order = 'bysource'
 # -- General configuration ------------------------------------------------
 
 # If your documentation needs a minimal Sphinx version, state it here.
-#needs_sphinx = '1.0'
+# needs_sphinx = '1.0'
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -40,7 +36,6 @@ extensions = ['sphinxcontrib.globalsubs',
               'sphinx.ext.intersphinx',
               'sphinx.ext.autosectionlabel',
               ]
-bibtex_bibfiles = ['refs.bib']
 
 autosectionlabel_prefix_document = True
 
@@ -121,14 +116,10 @@ html_theme = 'pydata_sphinx_theme'
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-# html_theme_options = {
-#     # Toc options
-#     'collapse_navigation': False,
-#     'sticky_navigation': True,
-#     'navigation_depth': 4,
-#     'includehidden': True,
-#     'titles_only': False
-#     }
+
+html_theme_options = {
+  # "show_nav_level": 4
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []

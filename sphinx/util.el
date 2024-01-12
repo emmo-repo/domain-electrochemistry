@@ -5,7 +5,7 @@
 
 (pcase (user-login-name)
   ("xavier" (progn
-              (pyvenv-activate "~/Python/battinfodoc-env/")
+              (pyvenv-activate "~/Python/battinfodoc.env/")
               (setq docdir "/home/xavier/Python/domain-electrochemistry/sphinx/")
               (setq testdir "/home/xavier/Python/BattInfo-doc-test/")
               ))
@@ -52,7 +52,7 @@
     (shell-command "git commit -m \"update in doc\"")
     (shell-command "git push -f" )
     )
-  (browse-url "https://github.com/BattMoTeam/battinfo-doc-test/actions")
-  (browse-url "https://battmoteam.github.io/Battinfo-doc-test/")
+  (browse-url "https://github.com/BattMoTeam/BattInfo-doc-test/actions")
+  (browse-url "https://battmoteam.github.io/BattInfo-doc-test/")
   )
 
