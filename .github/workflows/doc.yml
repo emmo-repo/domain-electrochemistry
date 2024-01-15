@@ -31,21 +31,11 @@ jobs:
     - name: Render documentation from ttl
       run: python docs/scripts/ttl_to_html.py
 
-    - name: Render documentation from md
-      run: python docs/scripts/md_to_html.py
-
-    - name: Commit updated documentation
-      run: |
-        cd ${GITHUB_WORKSPACE}
-        git config --global user.email "${GIT_USER_EMAIL}"
-        git config --global user.name "${GIT_USER_NAME}"
-        git config pull.rebase false
-        git add .
-        git commit -m "Automatic update of github pages"
-        git push origin master
         
   sphinx-build:
 
+    needs: updatepages
+    
     runs-on: ubuntu-latest
 
     permissions:
