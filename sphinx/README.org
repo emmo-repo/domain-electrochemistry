@@ -5,7 +5,7 @@
    #+begin_src
      pip install sphinx
    #+end_src
-** install sphinx rtd theme
+** install sphinx pydata theme
    https://pydata-sphinx-theme.readthedocs.io/en/latest/index.html
    #+begin_src
      pip install pydata-sphinx-theme
@@ -14,14 +14,6 @@
    #+begin_src
      pip install sphinxcontrib-globalsubs
    #+end_src
-** youtube
-   #+begin_src shell
-     pip install sphinxcontrib-youtube
-   #+end_src
-** collapse
-   #+begin_src shell
-     python -m pip install sphinx_collapse
-   #+end_src   
 ** autosectionlabel
    - part of default distribution
    - We use ~autosectionlabel_prefix_document = True~ which means that the internal link must be prefixed by the file
