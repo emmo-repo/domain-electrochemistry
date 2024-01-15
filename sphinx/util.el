@@ -5,7 +5,7 @@
 
 (pcase (user-login-name)
   ("xavier" (progn
-              (pyvenv-activate "~/Python/battinfodoc.env/")
+              (pyvenv-activate "~/Python/battinfo-doc-3.7-env/")
               (setq docdir "/home/xavier/Python/domain-electrochemistry/sphinx/")
               (setq testdir "/home/xavier/Python/BattInfo-doc-test/")
               ))
