@@ -6,6 +6,8 @@ References
 Quantities used in Electrochemistry
 ===================================
 
+.. _electrochemistry_7fa406b0_512a_4d59_9e0c_5d8aba0103ae:
+
 ActivationOverpotential
 -----------------------
 
@@ -17,6 +19,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-05
 
 
+.. _electrochemistry_214d925c_76c4_4f69_9afc_056a1ea82fc6:
+
 AdsorptionCurrent
 -----------------
 
@@ -26,10 +30,14 @@ IUPAC Reference:
    https://goldbook.iupac.org/terms/view/A00159
 
 
+.. _electrochemistry_39a44af0_0e1a_4859_b550_bdabad64386e:
+
 AmbientThermodynamicTemperature
 -------------------------------
 
 
+
+.. _electrochemistry_10eb778d_da60_4832_a355_4ee74baea650:
 
 AmplitudeOfAlternatingCurrent
 -----------------------------
@@ -40,6 +48,8 @@ IUPAC Reference:
    https://doi.org/10.1351/goldbook.A00310
 
 
+.. _electrochemistry_f591a444_89d6_4093_836d_7d53895edce4:
+
 AmplitudeOfAlternatingVoltage
 -----------------------------
 
@@ -48,6 +58,8 @@ Elucidation:
 IUPAC Reference:
    https://doi.org/10.1351/goldbook.A00311
 
+
+.. _electrochemistry_565c0b10_70fe_441a_b76a_b9a8e08ca7b7:
 
 AnodicOverpotential
 -------------------
@@ -60,6 +72,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-06
 
 
+.. _electrochemistry_bcb33f7e_5573_4bc2_b636_4ea313a9dd3a:
+
 AreicCapacity
 -------------
 
@@ -71,12 +85,16 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-20
 
 
+.. _electrochemistry_269ddd97_1437_4545_b272_0df75a12c68a:
+
 BaselineCellVoltage
 -------------------
 
 Elucidation:
    In electrochemical measurements, the voltage of an electrochemical cell to which a voltage signal is superimposed.
 
+
+.. _electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee:
 
 CRate
 -----
@@ -89,6 +107,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-45
 
 
+.. _electrochemistry_f9e1c862_c510_4b11_9141_bc91045df817:
+
 CalenderedCoatingThickness
 --------------------------
 
@@ -96,12 +116,16 @@ Elucidation:
    thickness of the coating after a calendering process
 
 
+.. _electrochemistry_520995f8_ec9c_4b3c_bb64_2cd691947379:
+
 CalenderedDensity
 -----------------
 
 Elucidation:
    density after calendering
 
+
+.. _electrochemistry_791c1915_a791_4450_acd8_7f94764743b5:
 
 Capacity
 --------
@@ -114,6 +138,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-14
 
 
+.. _electrochemistry_c55bcb85_b7b8_4e67_8a78_9a42fe25b6cf:
+
 CatalyticCurrent
 ----------------
 
@@ -122,6 +148,8 @@ Elucidation:
 IUPAC Reference:
    https://doi.org/10.1351/goldbook.C00889
 
+
+.. _electrochemistry_0853b072_3b80_4864_8147_24ce35407ade:
 
 CathodicOverpotential
 ---------------------
@@ -134,10 +162,14 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-07
 
 
+.. _electrochemistry_637ee9c4_4b3f_4d3a_975b_c0572dfe53ce:
+
 CellCurrent
 -----------
 
 
+
+.. _electrochemistry_265bb4d6_5eec_40f6_a3fa_59b3bd08e9af:
 
 CellPolarisationPotential
 -------------------------
@@ -149,6 +181,8 @@ Alternative Label(s):
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-12
 
+
+.. _electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d:
 
 CellVoltage
 -----------
@@ -163,12 +197,16 @@ IUPAC Reference:
    https://doi.org/10.1351/goldbook.A00424
 
 
+.. _electrochemistry_10763eb0_dbc9_4d34_bd1a_7b8996590d45:
+
 ChargeCapacity
 --------------
 
 Elucidation:
    capacity delivered during a charge process
 
+
+.. _electrochemistry_a5962e05_466d_46a4_8951_bea59d7326e5:
 
 ChargeEfficiency
 ----------------
@@ -179,12 +217,16 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-39
 
 
+.. _electrochemistry_2ab7af60_da58_4243_b3bc_cbb2155cac53:
+
 ChargeEnergy
 ------------
 
 Elucidation:
    energy delivered by a deviced under some specific charge conditions
 
+
+.. _electrochemistry_49efb72a_f8e6_4f50_acac_975302200d47:
 
 ChargeRetention
 ---------------
@@ -197,6 +239,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-35
 
 
+.. _electrochemistry_a4dfa5c1_55a9_4285_b71d_90cf6613ca31:
+
 ChargeTransferCoefficient
 -------------------------
 
@@ -206,12 +250,16 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Charge_transfer_coefficient
 
 
+.. _electrochemistry_79551e01_4bc6_4292_916e_08fe28a84600:
+
 ChargingCurrent
 ---------------
 
 Elucidation:
    electric current applied to a battery during a charging process
 
+
+.. _electrochemistry_3b938708_e7e4_4ac0_a959_9c04306302e7:
 
 CoatingThickness
 ----------------
@@ -220,12 +268,16 @@ Elucidation:
    thickness of the coating before any additional treatment is applied
 
 
+.. _electrochemistry_5eae657f_5914_4252_85c6_3fc772dea113:
+
 ConcentrationLimit
 ------------------
 
 Elucidation:
    limit on the amount concentration of a species in a phase, either imposed or naturally occurring
 
+
+.. _electrochemistry_9ed7210c_c4fa_467b_822d_ba12f885bdf4:
 
 ConcentrationOverpotential
 --------------------------
@@ -242,12 +294,16 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Overpotential#Concentration_overpotential
 
 
+.. _electrochemistry_37c38b7e_9ded_481a_85fd_a467f1ee2b9f:
+
 ConstantCurrentChargeCapacity
 -----------------------------
 
 Elucidation:
    the capacity obtained during constant current charging of an electrochemical device
 
+
+.. _electrochemistry_7f073272_8925_4344_995c_a5a6dd1fcde6:
 
 ConstantCurrentChargePercentage
 -------------------------------
@@ -256,6 +312,8 @@ Elucidation:
    the percentage of the total charge capacity that is obtained during a constant current charge process
 
 
+.. _electrochemistry_08833ed2_6324_411a_b34b_fe64c44cd5ef:
+
 ConstantCurrentDischargeCapacity
 --------------------------------
 
@@ -263,12 +321,16 @@ Elucidation:
    the capacity obtained during constant current discharging of an electrochemical device
 
 
+.. _electrochemistry_457aed58_6e7e_42d5_9d78_b424c8d60aa3:
+
 ConstantCurrentDischargePercentage
 ----------------------------------
 
 Elucidation:
    the percentage of the total discharge capacity that is obtained during a constant current discharge process
 
+
+.. _electrochemistry_33e6986c_b35a_4cae_9a94_acb23248065c:
 
 ControlProperty
 ---------------
@@ -278,6 +340,8 @@ Elucidation:
 Alternative Label(s):
    ControlledQuantity, SetQuantity
 
+
+.. _electrochemistry_5696453c_9da7_41e2_bbda_603c1b90a8fc:
 
 CoulombicEfficiency
 -------------------
@@ -290,6 +354,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-07
 
 
+.. _electrochemistry_8de9735b_374a_4a0f_b29f_71a50794cf94:
+
 CrystalizationOverpotential
 ---------------------------
 
@@ -301,10 +367,14 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-04
 
 
+.. _electrochemistry_71f10616_15eb_4dc4_bc8d_ffaac3838af2:
+
 CurrentChangeLimit
 ------------------
 
 
+
+.. _electrochemistry_76e7e556_f47e_47e2_b2ef_67aeed09c63e:
 
 CurrentDensityLimit
 -------------------
@@ -315,6 +385,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-13
 
 
+.. _electrochemistry_74de2c33_84fc_4c2f_afe1_56d169149114:
+
 CurrentLimit
 ------------
 
@@ -322,12 +394,16 @@ Elucidation:
    limit on the electric current of an electrical system
 
 
+.. _electrochemistry_f046d602_22ea_4f9b_9101_319f510d39f0:
+
 CurrentScanRate
 ---------------
 
 Elucidation:
    The rate of change of an applied current with time.
 
+
+.. _electrochemistry_5766a819_c319_48ba_ab9a_ce3bd8fedee8:
 
 Cycle
 -----
@@ -338,6 +414,8 @@ Alternative Label(s):
    CycleIndex, CycleNumber
 
 
+.. _electrochemistry_ae782b14_88ce_4cdd_9418_12aca00be937:
+
 CycleLife
 ---------
 
@@ -347,10 +425,14 @@ Alternative Label(s):
    ElectrochemicalCycleLife
 
 
+.. _electrochemistry_b83c6435_6edf_470e_9725_538a853e08f7:
+
 D10ParticleSize
 ---------------
 
 
+
+.. _electrochemistry_3cfdfc10_a5cb_4e3e_b1a1_281010d1465c:
 
 D50ParticleSize
 ---------------
@@ -359,15 +441,21 @@ Elucidation:
    in particle size distribution measurements, the mass-median-diameter, considered to be the average particle size by mass
 
 
+.. _electrochemistry_8e943e12_ecc0_4093_899e_7226be6be7f2:
+
 D90ParticleSize
 ---------------
 
 
 
+.. _electrochemistry_02d2d1d1_241c_429b_b4e7_31f2c3dc4835:
+
 D95ParticleSize
 ---------------
 
 
+
+.. _electrochemistry_25e20915_c35d_4bee_ad31_736235a79780:
 
 DRate
 -----
@@ -380,6 +468,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-25
 
 
+.. _electrochemistry_e38f11d0_a16f_4fe8_8ec5_3fe4493b7759:
+
 DiffuseLayerPotential
 ---------------------
 
@@ -388,6 +478,8 @@ Elucidation:
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-20
 
+
+.. _electrochemistry_17626b8e_dfce_4d3a_ae6c_5a7215d43a90:
 
 DiffusionCurrent
 ----------------
@@ -400,6 +492,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Diffusion_current
 
 
+.. _electrochemistry_5fb7a03f_d6dd_47ee_9317_0629681c7d00:
+
 DiffusionLimitedCurrent
 -----------------------
 
@@ -411,10 +505,14 @@ IUPAC Reference:
    https://goldbook.iupac.org/terms/view/L03534
 
 
+.. _electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607:
+
 Diffusivity
 -----------
 
 
+
+.. _electrochemistry_0141b5c2_9f15_46f4_82e6_92a104faa476:
 
 DischargeCapacity
 -----------------
@@ -422,6 +520,8 @@ DischargeCapacity
 Elucidation:
    capacity delivered during a discharge process
 
+
+.. _electrochemistry_e4d666ee_d637_45cd_a904_dc33941ead4f:
 
 DischargeCurrent
 ----------------
@@ -432,12 +532,16 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-24
 
 
+.. _electrochemistry_ca36cbf3_1fed_4b88_9177_b4e16ad00cf7:
+
 DischargeEnergy
 ---------------
 
 Elucidation:
    energy delivered by a deviced under some specific discharge conditions
 
+
+.. _electrochemistry_c7b26177_21bf_4787_b656_8e78edf27f88:
 
 DischargeVoltage
 ----------------
@@ -448,6 +552,8 @@ Alternative Label(s):
    ClosedCircuitVoltage
 
 
+.. _electrochemistry_a56fc557_9dea_42e6_b936_e9d62dcaf84f:
+
 DoubleLayerCurrent
 ------------------
 
@@ -456,6 +562,8 @@ Elucidation:
 IUPAC Reference:
    https://goldbook.iupac.org/terms/view/D01847
 
+
+.. _electrochemistry_4b18c3f9_df10_4259_adb4_cd10842ff0be:
 
 DropTimeInPolarography
 ----------------------
@@ -466,12 +574,16 @@ IUPAC Reference:
    https://doi.org/10.1351/goldbook.D01862
 
 
+.. _electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5:
+
 ElectrochemicalControlQuantity
 ------------------------------
 
 Elucidation:
    quantities that control electroanalytical techniques
 
+
+.. _electrochemistry_21745019_2830_4395_bca7_15ddfd266673:
 
 ElectrochemicalKineticQuantity
 ------------------------------
@@ -480,10 +592,14 @@ Elucidation:
    An ElectrochemicalQuantity that relates to the kinetics of a reaction.
 
 
+.. _electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634:
+
 ElectrochemicalPerformanceQuantity
 ----------------------------------
 
 
+
+.. _electrochemistry_1422cde1_929e_46b6_b0dc_1010eebc5dfd:
 
 ElectrochemicalPotential
 ------------------------
@@ -496,10 +612,14 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrochemical_potential
 
 
+.. _electrochemistry_900e357f_2ee3_425a_a0b6_322661117787:
+
 ElectrochemicalProperty
 -----------------------
 
 
+
+.. _electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112:
 
 ElectrochemicalQuantity
 -----------------------
@@ -508,12 +628,16 @@ Elucidation:
    Physical quantities defined within the domain of electrochemistry.
 
 
+.. _electrochemistry_8f4b90ef_fea4_47c9_99f5_a9b3290a505d:
+
 ElectrochemicalStabilityLimit
 -----------------------------
 
 Elucidation:
    electric potential at which a material undergoes an oxidation or reduction decomposition
 
+
+.. _electrochemistry_2d896559_eee3_447c_9759_87c854a4266a:
 
 ElectrochemicalThermodynamicQuantity
 ------------------------------------
@@ -522,12 +646,16 @@ Elucidation:
    A thermodynamically derived ElectrochemicalQuantity.
 
 
+.. _electrochemistry_4a450a27_b84a_4c70_a3a9_15ec30e2f30b:
+
 ElectrochemicalTransportQuantity
 --------------------------------
 
 Elucidation:
    An ElectrochemicalQuantity related to the transport of mass, charge, or energy.
 
+
+.. _electrochemistry_129926b6_fc30_441d_b359_29b44c988514:
 
 ElectrochemicalWindow
 ---------------------
@@ -540,6 +668,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrochemical_window
 
 
+.. _electrochemistry_bad1b6f4_1b26_40e2_b552_6d53873e3973:
+
 ElectrochemicallyActiveSurfaceArea
 ----------------------------------
 
@@ -551,6 +681,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=485-02-09
 
 
+.. _electrochemistry_63a8f9d2_0cf6_484d_b996_2e5c3f0a3c73:
+
 ElectrodeCoverageDensity
 ------------------------
 
@@ -560,12 +692,16 @@ Alternative Label(s):
    ElectrodeCoverage
 
 
+.. _electrochemistry_fa7790d6_07bb_4b0f_9965_55966828f5f3:
+
 ElectrodeGeometricSurfaceArea
 -----------------------------
 
 Elucidation:
    the interfacial area, determined on the assumption that the interface is truly flat (2-dimensional) and calculated using the geometric data of the involved surfaces
 
+
+.. _electrochemistry_f509645f_eb27_470e_9112_7ab828ed40d3:
 
 ElectrodePotential
 ------------------
@@ -580,6 +716,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrode_potential
 
 
+.. _electrochemistry_a82e16c3_b766_482f_be94_b8e9af37f6fc:
+
 ElectrodeRealSurfaceArea
 ------------------------
 
@@ -587,12 +725,16 @@ Elucidation:
    surface area of an electrode that takes into account non-idealities of the interface (roughness, porosity, etc.) and can be measured by a variety of electrochemical methods
 
 
+.. _electrochemistry_47ab1dad_cc09_4fd8_af23_acb36fb680dd:
+
 ElectrodeSurfaceArea
 --------------------
 
 Elucidation:
    area of electrode - solution interface.
 
+
+.. _electrochemistry_83928dce_9746_4452_a9f9_da4366a20ca4:
 
 ElectrolyteContainment
 ----------------------
@@ -602,6 +744,8 @@ Elucidation:
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-31
 
+
+.. _electrochemistry_abfadc99_6e43_4d37_9b04_7fc5b0f327ae:
 
 ElectronNumberOfAnElectrochemicalReaction
 -----------------------------------------
@@ -614,12 +758,16 @@ IUPAC Reference:
    https://goldbook.iupac.org/terms/view/C00995
 
 
+.. _electrochemistry_ce74d2dc_d496_4116_b2fb_3e83d88bc744:
+
 ElectronicConductivity
 ----------------------
 
 Elucidation:
    measure of a substance's tendency towards electronic conduction
 
+
+.. _electrochemistry_4aa1b96e_44a0_4b1a_a0ac_723d0223d80b:
 
 EnergyDensityOfStorage
 ----------------------
@@ -630,6 +778,8 @@ Alternative Label(s):
    EnergyDensity
 
 
+.. _electrochemistry_79198264_cdf5_4fc3_8bcf_e5140a52547a:
+
 EnergyEfficiency
 ----------------
 
@@ -638,6 +788,8 @@ Elucidation:
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-53
 
+
+.. _electrochemistry_46376e5d_9627_4514_9881_9e62083625c3:
 
 EnergyStorageCapability
 -----------------------
@@ -649,6 +801,8 @@ Alternative Label(s):
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-21
 
+
+.. _electrochemistry_d91940f0_c8b6_4505_9b68_6bf6cfc5c544:
 
 EquilibriumElectrodePotential
 -----------------------------
@@ -663,6 +817,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Reversal_potential
 
 
+.. _electrochemistry_ccde24bb_790a_40ca_a06e_cea156a61031:
+
 ExchangeCurrent
 ---------------
 
@@ -671,6 +827,8 @@ Elucidation:
 IUPAC Reference:
    https://goldbook.iupac.org/terms/view/E02238
 
+
+.. _electrochemistry_e9fd9ef9_adfe_46cb_b2f9_4558468a25e7:
 
 ExchangeCurrentDensity
 ----------------------
@@ -685,6 +843,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Exchange_current_density
 
 
+.. _electrochemistry_2a2f59b7_aa16_40aa_9c8b_0de8a2720456:
+
 FaradaicCurrent
 ---------------
 
@@ -695,6 +855,8 @@ IUPAC Reference:
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Faradaic_current
 
+
+.. _electrochemistry_77f9d496_555e_4ae2_ae80_f297ef8335ca:
 
 FaradayConstant
 ---------------
@@ -707,6 +869,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Faraday_constant
 
 
+.. _electrochemistry_50674621_09ae_4f03_8ee9_3997b88c8b2a:
+
 FinishingCRate
 --------------
 
@@ -718,6 +882,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-46
 
 
+.. _electrochemistry_b21de1ef_6c15_4d63_b320_c9b96fbf186f:
+
 FormalElectrodePotential
 ------------------------
 
@@ -726,6 +892,8 @@ Elucidation:
 Alternative Label(s):
    FormalPotential
 
+
+.. _electrochemistry_c4d551db_db17_4c33_92e6_aec71638afbc:
 
 HalfPeakPotential
 -----------------
@@ -736,6 +904,8 @@ IUPAC Reference:
    https://doi.org/10.1351/goldbook.H02720
 
 
+.. _electrochemistry_2ae53fc6_d44d_41c9_acaf_c5606e6a981d:
+
 HalfWavePotential
 -----------------
 
@@ -744,6 +914,8 @@ Elucidation:
 IUPAC Reference:
    https://doi.org/10.1351/goldbook.H02722
 
+
+.. _electrochemistry_74861991_7da2_4e0f_b6c1_b16713f538bf:
 
 InitialDischargeVoltage
 -----------------------
@@ -756,10 +928,14 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-29
 
 
+.. _electrochemistry_9c9b80a4_a00b_4b91_8e17_3a7831f2bf2f:
+
 InititalThermodynamicTemperature
 --------------------------------
 
 
+
+.. _electrochemistry_a24f8581_a5a4_41a4_bb45_d0fdd5c0d810:
 
 InstantaneousCurrent
 --------------------
@@ -770,6 +946,8 @@ IUPAC Reference:
    https://goldbook.iupac.org/terms/view/I03062
 
 
+.. _electrochemistry_f94678d6_1386_48fc_8e54_024921924401:
+
 InternalApparentResistance
 --------------------------
 
@@ -779,10 +957,14 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-36
 
 
+.. _electrochemistry_0c9655c6_6b0b_4819_a219_f286ad196fa9:
+
 InternalConductance
 -------------------
 
 
+
+.. _electrochemistry_9bf40017_3f58_4030_ada7_cb37a3dfda2d:
 
 InternalResistance
 ------------------
@@ -795,6 +977,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Internal_resistance
 
 
+.. _electrochemistry_8177eae6_1631_430d_99f2_942669bcb784:
+
 IonConcentration
 ----------------
 
@@ -803,6 +987,8 @@ Elucidation:
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-01-16
 
+
+.. _electrochemistry_25dabdc2_68bf_4a38_8cbe_11be017358bc:
 
 IonicConductivity
 -----------------
@@ -815,6 +1001,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Ionic_conductivity_(solid_state)
 
 
+.. _electrochemistry_ff7797ed_9ef7_40d0_872b_2c215cd54578:
+
 IsopotentialPoint
 -----------------
 
@@ -823,6 +1011,8 @@ Elucidation:
 IUPAC Reference:
    https://doi.org/10.1351/goldbook.I03304
 
+
+.. _electrochemistry_98b6e9d7_d5df_46a5_87dd_79642b8b2e4b:
 
 KineticCurrent
 --------------
@@ -833,12 +1023,16 @@ IUPAC Reference:
    https://goldbook.iupac.org/terms/view/K03399
 
 
+.. _electrochemistry_b395a244_3a75_4737_be38_981bfa1277fe:
+
 LimitQuantity
 -------------
 
 Elucidation:
    a limit quantity in a control system
 
+
+.. _electrochemistry_d5ac8868_d318_4065_aa23_72140ae888ae:
 
 LimitingCurrent
 ---------------
@@ -849,6 +1043,8 @@ IUPAC Reference:
    https://goldbook.iupac.org/terms/view/L03532
 
 
+.. _electrochemistry_a17ee4e0_c81a_4a64_9ecb_9c6fa022cf4d:
+
 LimitingMolarConductivity
 -------------------------
 
@@ -858,12 +1054,16 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Molar_conductivity#Variation_of_molar_conductivity_with_dilution
 
 
+.. _electrochemistry_b66d6553_6136_4754_902a_707e414210c2:
+
 LowerFrequencyLimit
 -------------------
 
 Elucidation:
    the lower end of the interval of frequencies tested in impedimetry and related techniques
 
+
+.. _electrochemistry_534dd59c_904c_45d9_8550_ae9d2eb6bbc9:
 
 LowerVoltageLimit
 -----------------
@@ -876,6 +1076,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-30
 
 
+.. _electrochemistry_346519a4_006c_496d_8f36_74e38814ed2d:
+
 MagnitudeOfCurrentPulse
 -----------------------
 
@@ -884,6 +1086,8 @@ Elucidation:
 Alternative Label(s):
    PulseMagnitudeCurrent
 
+
+.. _electrochemistry_4d2b102b_3515_4591_b079_69232c44f9dc:
 
 MagnitudeOfPotentialPulse
 -------------------------
@@ -894,12 +1098,16 @@ Alternative Label(s):
    PulseMagnitudePotential
 
 
+.. _electrochemistry_c955c089_6ee1_41a2_95fc_d534c5cfd3d5:
+
 MassLoading
 -----------
 
 Elucidation:
    mass of a material per unit area
 
+
+.. _electrochemistry_47287d09_6108_45ca_ac65_8b9451b1065e:
 
 MaximumConcentration
 --------------------
@@ -908,12 +1116,16 @@ Elucidation:
    the maximum amount concentration of a species in a phase, either imposed or naturally occurring
 
 
+.. _electrochemistry_ba7ac581_0e13_4815_b888_013c378932f5:
+
 MaximumContinuousDischargeCurrent
 ---------------------------------
 
 Elucidation:
    the maximum current approved for continuous discharge for a given electrochemical device
 
+
+.. _electrochemistry_3e54f9e3_a31d_4821_9bfb_ef953a42c35b:
 
 MaximumPulseDischargeCurrent
 ----------------------------
@@ -922,6 +1134,8 @@ Elucidation:
    the maximum current approved for pulse discharge of an electrochemical device
 
 
+.. _electrochemistry_d5dc0c1d_0926_4268_89f0_4519a326eabc:
+
 MaximumPulseDischargeDuration
 -----------------------------
 
@@ -929,10 +1143,14 @@ Elucidation:
    the maximum duration of a pulse discharge for a given electrochemical device
 
 
+.. _electrochemistry_95ef8c3c_62fe_467f_b5d4_dd0cd18a7ea8:
+
 MaximumStoichiometry
 --------------------
 
 
+
+.. _electrochemistry_cc519a19_b8d5_4e3f_b893_3a884888ad79:
 
 MaximumTemperature
 ------------------
@@ -940,6 +1158,8 @@ MaximumTemperature
 Elucidation:
    the maximum allowable temperature
 
+
+.. _electrochemistry_601ff226_59b9_460b_90f5_2593450d96fa:
 
 MembranePotential
 -----------------
@@ -952,6 +1172,8 @@ IUPAC Reference:
    https://doi.org/10.1351/goldbook.M03825
 
 
+.. _electrochemistry_22cec04f_c7f3_4ff8_a34b_e512379c9dcb:
+
 MigrationCurrent
 ----------------
 
@@ -961,10 +1183,14 @@ IUPAC Reference:
    https://goldbook.iupac.org/terms/view/M03921
 
 
+.. _electrochemistry_86324806_4263_4d80_b5af_1a7be844ab5b:
+
 MinimumStoichiometry
 --------------------
 
 
+
+.. _electrochemistry_a9873707_8103_4bb4_9e51_83db1e89b1bd:
 
 MiniumumConcentration
 ---------------------
@@ -973,12 +1199,16 @@ Elucidation:
    the minimum amount concentration of a species in a phase, either imposed or naturally occuring
 
 
+.. _electrochemistry_4747c51d_86ab_4684_a4fb_b05f5c405ea3:
+
 MiniumumTemperature
 -------------------
 
 Elucidation:
    the minimum allowable temperature
 
+
+.. _electrochemistry_7fe804b8_6126_4132_be8f_b4985d61b1f6:
 
 MolarElectrochemicalPotential
 -----------------------------
@@ -989,6 +1219,8 @@ IUPAC Reference:
    https://goldbook.iupac.org/terms/view/E01945
 
 
+.. _electrochemistry_05012606_b93d_4016_bbc7_8a927efdf723:
+
 NPRatio
 -------
 
@@ -998,12 +1230,16 @@ Alternative Label(s):
    NToPRatio
 
 
+.. _electrochemistry_14577b99_a8a9_4358_9bc5_ab8c401dd34b:
+
 NetFaradaicCurrent
 ------------------
 
 Elucidation:
    algebraic sum of faradaic currents flowing through an electrode
 
+
+.. _electrochemistry_639b844a_e801_436b_985d_28926129ead6:
 
 NominalVoltage
 --------------
@@ -1014,15 +1250,21 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-31
 
 
+.. _electrochemistry_482173dc_7779_4f12_982c_b19f2cda2dac:
+
 NumberOfCellsConnectedInParallel
 --------------------------------
 
 
 
+.. _electrochemistry_9d6a52ed_a53d_4327_a391_f173677a4b1d:
+
 NumberOfCellsConnectedInSeries
 ------------------------------
 
 
+
+.. _electrochemistry_03a6ce70_5085_4683_bb4e_fc3c18f7143a:
 
 OhmicOverpotential
 ------------------
@@ -1034,6 +1276,8 @@ Alternative Label(s):
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-09
 
+
+.. _electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b:
 
 OpenCircuitVoltage
 ------------------
@@ -1047,6 +1291,8 @@ IEC Reference:
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Open-circuit_voltage
 
+
+.. _electrochemistry_1cd1d777_e67b_47eb_81f1_edac35d9f2c6:
 
 Overpotential
 -------------
@@ -1063,12 +1309,16 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Overpotential
 
 
+.. _electrochemistry_b92e382f_5109_4f60_ab5e_c89d340419a9:
+
 ParticleRadius
 --------------
 
 Elucidation:
    radius of a particle
 
+
+.. _electrochemistry_382b10dc_83aa_4e77_a1d5_1edd06fd1e05:
 
 PeakCurrent
 -----------
@@ -1079,6 +1329,8 @@ IUPAC Reference:
    https://goldbook.iupac.org/terms/view/P04457
 
 
+.. _electrochemistry_e4a221e0_afc9_4464_91d4_e0c8ecdf79e8:
+
 PeakPotential
 -------------
 
@@ -1087,6 +1339,8 @@ Elucidation:
 IUPAC Reference:
    https://doi.org/10.1351/goldbook.P04464
 
+
+.. _electrochemistry_16a5de33_a2ca_4563_80d4_6caeb08d97ca:
 
 Polarity
 --------
@@ -1097,6 +1351,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-14
 
 
+.. _electrochemistry_264f40d1_17c9_4bc7_9c47_5cfb18132278:
+
 PotentialScanRate
 -----------------
 
@@ -1105,6 +1361,8 @@ Elucidation:
 Alternative Label(s):
    PotentialSweepRate, ScanRate, SweepRate
 
+
+.. _electrochemistry_136744ff_0563_4df7_aa03_4219d70392a0:
 
 PotentiometricSelectivityCoefficient
 ------------------------------------
@@ -1117,6 +1375,8 @@ IUPAC Reference:
    https://doi.org/10.1351/goldbook.P04791
 
 
+.. _electrochemistry_83fbc038_0c2e_4d04_91d7_cdf30f8a5535:
+
 Prismatic
 ---------
 
@@ -1125,6 +1385,8 @@ Elucidation:
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-38
 
+
+.. _electrochemistry_3cd0e74e_292c_48ed_a831_4cb8753d9a56:
 
 PulseDuration
 -------------
@@ -1135,6 +1397,8 @@ IUPAC Reference:
    https://doi.org/10.1351/goldbook.P04947
 
 
+.. _electrochemistry_762ba55f_9b56_4c31_865f_cff2e7d0a94b:
+
 PulseMagnitude
 --------------
 
@@ -1144,12 +1408,16 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-03-03
 
 
+.. _electrochemistry_2705525b_7512_48bf_825b_f2d0409bede4:
+
 QuarterTransitionTimePotential
 ------------------------------
 
 Elucidation:
    electric potential of the indicator electrode, in chronopotentiometry at constant current, at the instant when the time that has elapsed since the application of current is equal to one-fourth of the transition time
 
+
+.. _electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26:
 
 RatedCapacity
 -------------
@@ -1159,6 +1427,8 @@ Elucidation:
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-15
 
+
+.. _electrochemistry_f4fadc4e_ca7d_4e4e_89cf_eacf45b4041e:
 
 ReactionOverpotential
 ---------------------
@@ -1171,6 +1441,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-10
 
 
+.. _electrochemistry_e2514bf9_d012_4990_b68b_6f37443f18f6:
+
 ReactionRate
 ------------
 
@@ -1182,6 +1454,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Reaction_rate
 
 
+.. _electrochemistry_0335e3f6_d1d8_4daa_8376_a9285f1bc9f1:
+
 ReactionRateConstant
 --------------------
 
@@ -1191,6 +1465,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Reaction_rate_constant
 
 
+.. _electrochemistry_838a927f_775e_4c6d_8e39_7865548608c2:
+
 Record
 ------
 
@@ -1198,10 +1474,14 @@ Elucidation:
    an entry in a dataset, typically consisting of one line.
 
 
+.. _electrochemistry_db40df7e_1aa5_49a7_85cb_2aa2c1c70489:
+
 ReferenceThermodynamicTemperature
 ---------------------------------
 
 
+
+.. _electrochemistry_526bf81a_0572_49ff_a8cc_85efc343c1c2:
 
 ResidualActiveMass
 ------------------
@@ -1212,6 +1492,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-37
 
 
+.. _electrochemistry_d47985f1_6bd7_4c4f_894f_13a6cab38bb5:
+
 ResidualCapacity
 ----------------
 
@@ -1220,6 +1502,8 @@ Elucidation:
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-16
 
+
+.. _electrochemistry_07e219c3_890f_488f_bd96_bee8e445d764:
 
 ResidualCurrent
 ---------------
@@ -1232,12 +1516,16 @@ IUPAC Reference:
    https://goldbook.iupac.org/terms/view/R05311
 
 
+.. _electrochemistry_1a104474_c326_4a29_ac26_26a05ac8f72c:
+
 ResponseTimeAtAnISE
 -------------------
 
 Elucidation:
    Duration between the time when an ion-selective electrode and an external reference electrode (the two completing the ion-selective electrode cell) are brought into contact with a sample solution (or the time at which the activity of the ion of interest in solution is changed) and the first time at which the slope of the cell potential vs. time plot (ΔE/Δt) becomes equal to a limiting value selected on the basis of the experimental conditions and/or requirements concerning accuracy.
 
+
+.. _electrochemistry_2678a656_4a27_4706_8dde_b0a93e9b92fa:
 
 RestingTime
 -----------
@@ -1246,12 +1534,16 @@ Alternative Label(s):
    RestingDuration, the duration during which an electrochemical device is kept at open-circuit conditions
 
 
+.. _electrochemistry_1900143f_cbc0_415f_9057_9382022a7bfe:
+
 RotatingDiskSpeed
 -----------------
 
 Elucidation:
    rotational frequency of a rotating component in a rotating disk electrode
 
+
+.. _electrochemistry_52ac73c7_763c_4fda_93cd_a2db9dfc2dab:
 
 SamplingInterval
 ----------------
@@ -1262,6 +1554,8 @@ IUPAC Reference:
    https://doi.org/10.1351/goldbook.S05465
 
 
+.. _electrochemistry_ecb6dfdf_bd3d_4339_8a1c_d32abbef30ba:
+
 SamplingTime
 ------------
 
@@ -1270,6 +1564,8 @@ Elucidation:
 IUPAC Reference:
    https://doi.org/10.1351/goldbook.S05467
 
+
+.. _electrochemistry_e8ec76bf_2a60_4982_8cde_02dfbd2e626f:
 
 ShelfLife
 ---------
@@ -1282,6 +1578,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-47
 
 
+.. _electrochemistry_75c28dc8_3d7d_4b6e_861e_6c8b1ad7d644:
+
 ShortCircuitCurrent
 -------------------
 
@@ -1291,6 +1589,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-26
 
 
+.. _electrochemistry_68059d94_4c21_4065_b329_07faeebc7e87:
+
 SignalReferencePotential
 ------------------------
 
@@ -1299,6 +1599,8 @@ Elucidation:
 Alternative Label(s):
    BaselinePotential
 
+
+.. _electrochemistry_1e3dc60d_dd6b_47d6_8161_70004fc5ee30:
 
 SpecificCapacity
 ----------------
@@ -1311,12 +1613,16 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-19
 
 
+.. _electrochemistry_4882cf2f_aab7_4a3a_a103_7f56b55fbed3:
+
 SpecificChargeCapacity
 ----------------------
 
 Elucidation:
    quotient of the capacity of a cell or battery [ or electrode or active material ] obtained during a charge process by its mass.
 
+
+.. _electrochemistry_884650fd_6cc6_4ec6_8264_c18fbe6b90ee:
 
 SpecificDischargeCapacity
 -------------------------
@@ -1325,6 +1631,8 @@ Elucidation:
    quotient of the capacity of a cell or battery [ or electrode or active material ] obtained during a discharge process by its mass.
 
 
+.. _electrochemistry_5e4490b8_c1dd_4e00_980b_c484e1bf4904:
+
 SpecificEnergyCharge
 --------------------
 
@@ -1332,12 +1640,16 @@ Elucidation:
    the specific energy of an electrochemical device obtained during a charge process
 
 
+.. _electrochemistry_9d57962c_e150_4e64_962b_8fd6a92c9234:
+
 SpecificEnergyDischarge
 -----------------------
 
 Elucidation:
    the specific energy of an electrochemical device obtained during a discharge process
 
+
+.. _electrochemistry_ccdfed06_6d24_47e4_98af_ce3ffe7bd09e:
 
 SpecificEnergyOfStorage
 -----------------------
@@ -1348,12 +1660,16 @@ Alternative Label(s):
    SpecificEnergy
 
 
+.. _electrochemistry_c762a928_5a74_46fd_9929_4ac2d7a3a8d7:
+
 SpecificPowerOfStorage
 ----------------------
 
 Elucidation:
    the quotient of the power of an energy-storage device or system and its mass
 
+
+.. _electrochemistry_cf54e7c1_f359_4715_b61d_0350b890d597:
 
 SpecificSurfaceArea
 -------------------
@@ -1366,6 +1682,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Specific_surface_area
 
 
+.. _electrochemistry_327eb3e1_f74a_4076_96de_5a2e3f63cb65:
+
 SquareWaveCurrent
 -----------------
 
@@ -1374,6 +1692,8 @@ Elucidation:
 IUPAC Reference:
    https://goldbook.iupac.org/terms/view/S05897
 
+
+.. _electrochemistry_7fc10197_41d9_4c1e_a107_928f03eb2d36:
 
 StandardElectrodePotential
 --------------------------
@@ -1388,12 +1708,16 @@ IUPAC Reference:
    https://goldbook.iupac.org/terms/view/S05912
 
 
+.. _electrochemistry_85e39686_9658_4c74_bb91_a935704c174a:
+
 StepDuration
 ------------
 
 Elucidation:
    the duration between two consecutive steps in a staircase signal
 
+
+.. _electrochemistry_d78b696d_9832_4352_a264_28a2ea7d82e4:
 
 StepIndex
 ---------
@@ -1402,12 +1726,16 @@ Elucidation:
    number describing the step in a protocol
 
 
+.. _electrochemistry_6769536b_5320_4b48_a2d8_ac285ec635a8:
+
 StepSignalCurrent
 -----------------
 
 Elucidation:
    the magnitude of the current step in chronopotentiometry and related techniques
 
+
+.. _electrochemistry_0bf1ed19_2fc9_4e6d_87ec_62015985a9a6:
 
 StepSignalVoltage
 -----------------
@@ -1416,6 +1744,8 @@ Elucidation:
    the magnitude of the voltage step in step voltammetry and related techniques
 
 
+.. _electrochemistry_80ca00f8_c891_4493_87a2_7d39b9d1e098:
+
 StepTime
 --------
 
@@ -1423,10 +1753,14 @@ Elucidation:
    time of a measurement relative to the start of the step (t = 0)
 
 
+.. _electrochemistry_f0667139_6428_4e3d_ac0d_08c1dd7f36ea:
+
 Stoichiometry
 -------------
 
 
+
+.. _electrochemistry_05cf26ef_782a_4f66_a196_7004dd973f8e:
 
 SurfaceArea
 -----------
@@ -1437,10 +1771,14 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Surface_area
 
 
+.. _electrochemistry_7f381c19_cf07_47a8_ab10_0b14d46901e8:
+
 SurfaceAreaPerVolume
 --------------------
 
 
+
+.. _electrochemistry_60741c58_a10d_4aa6_bb68_0066a6ff8e30:
 
 SurfaceOverpotential
 --------------------
@@ -1451,6 +1789,8 @@ Alternative Label(s):
    SurfacePolarization
 
 
+.. _electrochemistry_5ce6a328_713c_4383_ad63_26c902c30e34:
+
 TappedDensity
 -------------
 
@@ -1459,6 +1799,8 @@ Elucidation:
 Alternative Label(s):
    TapDensity
 
+
+.. _electrochemistry_8f3ab19f_ce22_424e_a9bf_d5cedb815374:
 
 TemperatureCoefficientOfTheCapacity
 -----------------------------------
@@ -1469,6 +1811,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-18
 
 
+.. _electrochemistry_3bb5ae23_59fa_4bc7_9495_803eb6719f28:
+
 TemperatureCoefficientOfTheOpenCircuitVoltage
 ---------------------------------------------
 
@@ -1478,12 +1822,16 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-33
 
 
+.. _electrochemistry_82fce40c_434d_4640_a3d2_e26379b6acae:
+
 TemperatureLimit
 ----------------
 
 Elucidation:
    limit on the temperature of a system
 
+
+.. _electrochemistry_27b3799c_250c_4332_8b71_7992c4a7bb05:
 
 TestTime
 --------
@@ -1492,6 +1840,8 @@ Elucidation:
    time of a measurement relative to the start of the test (t = 0)
 
 
+.. _electrochemistry_b7781ebc_90a7_4f19_997f_aed28dee1b01:
+
 TheoreticalCapacity
 -------------------
 
@@ -1499,12 +1849,16 @@ Alternative Label(s):
    TheoreticalChargeCapacity
 
 
+.. _electrochemistry_6d981c04_3ace_4f1b_b0f8_770776cceb6f:
+
 TotalNumberOfCycles
 -------------------
 
 Elucidation:
    the total number of cycles carried out on a specific device under a given set of conditions
 
+
+.. _electrochemistry_ae9882de_d6a2_4525_a84f_80947c10f1cb:
 
 TransitionTime
 --------------
@@ -1515,12 +1869,16 @@ IUPAC Reference:
    https://doi.org/10.1351/goldbook.T06472
 
 
+.. _electrochemistry_666f0b69_9c74_49a3_80b3_96a188332462:
+
 UpperFrequencyLimit
 -------------------
 
 Elucidation:
    the higher end of the interval of frequencies tested in impedimetry and related techniques
 
+
+.. _electrochemistry_6dcd5baf_58cd_43f5_a692_51508e036c88:
 
 UpperVoltageLimit
 -----------------
@@ -1533,6 +1891,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-55
 
 
+.. _electrochemistry_09e64707_a17d_4405_84cc_ee9d91ed32ef:
+
 VoltageChangeLimit
 ------------------
 
@@ -1542,12 +1902,16 @@ Alternative Label(s):
    dV/dt
 
 
+.. _electrochemistry_5ebeea80_af22_456b_9087_78c2a8465c58:
+
 VoltageLimit
 ------------
 
 Elucidation:
    limit on the voltage of an electrical system
 
+
+.. _electrochemistry_e6b63190_acac_4e78_9cba_fb2b10bbe910:
 
 VolumetricCapacity
 ------------------
@@ -1560,12 +1924,16 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-17
 
 
+.. _electrochemistry_a7eb870c_4ef7_4ccd_85e8_4b7b726d7a2a:
+
 VolumetricPowerDensityofStorage
 -------------------------------
 
 Elucidation:
    the quotient of the power of an energy-storage device or system and its volume
 
+
+.. _electrochemistry_a5571263_f153_448f_84a3_cd18092cf8fa:
 
 VolumetricSurfaceArea
 ---------------------
@@ -1578,6 +1946,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Surface-area-to-volume_ratio
 
 
+.. _electrochemistry_c39b2498_783e_48e1_9814_6164bd99823c:
+
 WorkingPotentialRange
 ---------------------
 
@@ -1587,6 +1957,8 @@ Elucidation:
 
 Electrochemistry Concepts
 =========================
+
+.. _electrochemistry_8ca00b45_5ba6_48a0_aaf6_abd959a7238b:
 
 ACVoltammetry
 -------------
@@ -1599,6 +1971,8 @@ IUPAC Reference:
    https://doi.org/10.1515/pac-2018-0109
 
 
+.. _electrochemistry_58a20764_c339_4856_983a_05092b5282e8:
+
 ACVoltammetrySignal
 -------------------
 
@@ -1606,12 +1980,16 @@ Elucidation:
    Sinusoidal potential waveform superimposed to a linear potential ramp.
 
 
+.. _electrochemistry_0b1f77b8_2349_4433_b440_43dc84a2210f:
+
 AbrasiveStrippingVoltammetry
 ----------------------------
 
 Elucidation:
    electrochemical method where traces of solid particles are abrasively transferred onto the surface of an electrode, followed by an electrochemical dissolution (anodic or cathodic dissolution) that is recorded as a current–voltage curve
 
+
+.. _electrochemistry_6592d8cc_4ce4_42ca_b010_6bfc4a8444d2:
 
 AcidicElectrolyte
 -----------------
@@ -1622,6 +2000,8 @@ Alternative Label(s):
    AcidicAqueousElectrolyte, AcidicSolution
 
 
+.. _electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc:
+
 ActiveElectrode
 ---------------
 
@@ -1630,6 +2010,8 @@ Elucidation:
 Alternative Label(s):
    NonInertElectrode, ReactiveElectrode
 
+
+.. _electrochemistry_79d1b273_58cd_4be6_a250_434817f7c261:
 
 ActiveMaterial
 --------------
@@ -1642,6 +2024,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-14
 
 
+.. _electrochemistry_81833d8a_b03d_4250_be84_6385415beb01:
+
 ActiveMaterialMix
 -----------------
 
@@ -1651,12 +2035,16 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-34
 
 
+.. _electrochemistry_f6341d7d_7620_48f5_97b2_99b55c349169:
+
 ActiveMaterialParticleCracking
 ------------------------------
 
 Elucidation:
    a degradation mechanism in electrochemical cells in which fractures in the active material particles increase cell resistance.
 
+
+.. _electrochemistry_a05e7945_c942_45cf_812c_c9a595d15888:
 
 AdsorptiveStrippingVoltammetry
 ------------------------------
@@ -1669,12 +2057,16 @@ IUPAC Reference:
    https://doi.org/10.1515/pac-2018-0109
 
 
+.. _electrochemistry_8b40856f_1ca2_4137_9616_7fb624671909:
+
 AirElectrode
 ------------
 
 Elucidation:
    a gas diffusion electrode in which the gas is air
 
+
+.. _electrochemistry_615cff2a_be95_4e65_9471_98db23f4c878:
 
 AlkalineElectrolyte
 -------------------
@@ -1684,6 +2076,8 @@ Elucidation:
 Alternative Label(s):
    AlkalineAqueousElectrolyte, AlkalineSolution
 
+
+.. _electrochemistry_a53d6dee_1547_4854_a311_805b4d557298:
 
 AlternatingCurrent
 ------------------
@@ -1698,6 +2092,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Alternating_current
 
 
+.. _electrochemistry_952c8c3a_df21_4dd1_8d8c_380e43dc8c78:
+
 AluminiumElectrode
 ------------------
 
@@ -1705,12 +2101,16 @@ Elucidation:
    electrode in which the active material is aluminium
 
 
+.. _electrochemistry_1c6cef85_811f_45d0_a0fd_2bc2d9369ea4:
+
 AluminiumInsertionElectrode
 ---------------------------
 
 Elucidation:
    an insertion electrode in which the guest molecule is aluminium
 
+
+.. _electrochemistry_f9e2e676_5cd1_4e22_a776_af45838d4027:
 
 AmmoniaSolution
 ---------------
@@ -1721,6 +2121,8 @@ Alternative Label(s):
    AqueousAmmoniaSolution
 
 
+.. _electrochemistry_3f67016b_32b9_4419_a3f8_a5ffb5e92538:
+
 AmmoniumChlorideSolution
 ------------------------
 
@@ -1729,6 +2131,8 @@ Elucidation:
 Alternative Label(s):
    AqueousAmmoniumChlorideSolution
 
+
+.. _electrochemistry_3fe63496_6d87_427a_b2aa_4555bc31ee1a:
 
 Amperometry
 -----------
@@ -1739,6 +2143,8 @@ IUPAC Reference:
    https://doi.org/10.1515/pac-2018-0109
 
 
+.. _electrochemistry_3a77b5e7_9646_4154_bf8f_5f798989e5f3:
+
 AnnularWorkingElectrode
 -----------------------
 
@@ -1747,6 +2153,8 @@ Elucidation:
 Alternative Label(s):
    RingElectrode
 
+
+.. _electrochemistry_b6319c74_d2ce_48c0_a75a_63156776b302:
 
 Anode
 -----
@@ -1761,6 +2169,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Anode
 
 
+.. _electrochemistry_28213033_4c74_441c_81c4_a0cad05f9eb6:
+
 AnodicPolarisation
 ------------------
 
@@ -1771,6 +2181,8 @@ Alternative Label(s):
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-17
 
+
+.. _electrochemistry_a0580fa9_5073_44af_b33e_7adbc83892d0:
 
 AnodicReaction
 --------------
@@ -1783,6 +2195,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-09
 
 
+.. _electrochemistry_8ba8ec72_abd0_49eb_a06f_83fe5da108f4:
+
 AnodicStrippingVoltammetry
 --------------------------
 
@@ -1791,6 +2205,8 @@ Elucidation:
 IUPAC Reference:
    https://doi.org/10.1515/pac-2018-0109
 
+
+.. _electrochemistry_865a40fc_2187_4549_a7e1_37aa2458448f:
 
 Anolyte
 -------
@@ -1801,12 +2217,16 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-19
 
 
+.. _electrochemistry_38755e67_9d3b_4a82_bd8d_ef40a70379c1:
+
 AnolyteTank
 -----------
 
 Elucidation:
    a tank for holding anolyte
 
+
+.. _electrochemistry_b812e9d0_7c58_4455_b3e7_6847f10c8e8a:
 
 AqueousElectrolyte
 ------------------
@@ -1817,6 +2237,8 @@ Alternative Label(s):
    AqueousElectrolyticSolution
 
 
+.. _electrochemistry_b2d11f0d_c1b0_4476_8d17_03b73d31e01f:
+
 AsymmetricMembrane
 ------------------
 
@@ -1826,12 +2248,16 @@ IUPAC Reference:
    https://doi.org/10.1351/goldbook.AT06862
 
 
+.. _electrochemistry_98d5101e_cd11_4a0d_b856_6fcd8aad132e:
+
 BellevilleWasher
 ----------------
 
 Elucidation:
    a type of spring, in the form of a conical washer
 
+
+.. _electrochemistry_f1c7eacb_9f21_4100_925c_3974f266e06f:
 
 BilayerMembrane
 ---------------
@@ -1840,12 +2266,16 @@ Elucidation:
    an asymmetric membrane composed of two layers, typically with different chemical properties or functional roles
 
 
+.. _electrochemistry_86be0987_5e21_43ec_b975_8f679999d328:
+
 BimetallicElectrode
 -------------------
 
 Elucidation:
    electrode containing two different metals (e.g. platinum and ruthenium) on its surface (e.g. to modify its electrocatalytic properties)
 
+
+.. _electrochemistry_4839708a_3864_47eb_b719_373ff8874c61:
 
 BimetallicOxideElectrode
 ------------------------
@@ -1854,12 +2284,16 @@ Elucidation:
    an electrode consisting of two metal oxide active materials
 
 
+.. _electrochemistry_4e02d727_07fe_41fd_886c_041317342086:
+
 BinaryElectrolyte
 -----------------
 
 Elucidation:
    an electrolyte consisting of anions and cations with equal absolute charge numbers.
 
+
+.. _electrochemistry_68eb5e35_5bd8_47b1_9b7f_f67224fa291e:
 
 Binder
 ------
@@ -1872,6 +2306,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Binder_(material)
 
 
+.. _electrochemistry_eb09ca25_90c9_4b55_9165_76fbf7fb5a46:
+
 BismuthElectrode
 ----------------
 
@@ -1879,12 +2315,16 @@ Elucidation:
    electrode in which the active material is bismuth
 
 
+.. _electrochemistry_5186239a_2af7_4dbf_92ca_22e8e583c528:
+
 BlendedActiveElectrode
 ----------------------
 
 Elucidation:
    an active electrode with a blend of two or more active materials
 
+
+.. _electrochemistry_4bdd6359_1422_4c50_ac0c_5d8042dd65fc:
 
 BockrisDevanathanMuellerModel
 -----------------------------
@@ -1894,6 +2334,8 @@ Elucidation:
 Alternative Label(s):
    BDM
 
+
+.. _electrochemistry_e0b57b09_68ee_4687_a901_bfb599421972:
 
 BodePlot
 --------
@@ -1906,6 +2348,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Bode_plot
 
 
+.. _electrochemistry_02aefb7a_d6ce_4b6e_b854_f7b3d641f670:
+
 BoostCharge
 -----------
 
@@ -1916,6 +2360,8 @@ Alternative Label(s):
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-37
 
+
+.. _electrochemistry_d48ea516_5cac_4f86_bc88_21b6276c0938:
 
 ButlerVolmerEquation
 --------------------
@@ -1928,12 +2374,16 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Butler%E2%80%93Volmer_equation
 
 
+.. _electrochemistry_ac6c2371_995a_4fcb_89a2_15cb6615741e:
+
 CCCVCycling
 -----------
 
 Elucidation:
    a cycling protocol in which an electrochemical cell is first put through a CCCV charging process followed by a constant current discharge process
 
+
+.. _electrochemistry_dd4c5ffa_6228_41d8_8a44_a40a2b22723e:
 
 CadmiumElectrode
 ----------------
@@ -1942,6 +2392,8 @@ Elucidation:
    electrode in which the active material is cadmium
 
 
+.. _electrochemistry_7cc8b738_3462_4592_ba83_951a8d50fef7:
+
 CaesiumElectrode
 ----------------
 
@@ -1949,10 +2401,14 @@ Elucidation:
    electrode in which the active material is caesium
 
 
+.. _electrochemistry_4f2348dd_d9ea_4448_af8c_a4a38f3d04b4:
+
 CalciumElectrode
 ----------------
 
 
+
+.. _electrochemistry_90103be0_9096_4f98_89c7_b5db01197858:
 
 CalciumInsertionElectrode
 -------------------------
@@ -1960,6 +2416,8 @@ CalciumInsertionElectrode
 Elucidation:
    an insertion electrode in which the guest molecule is calcium
 
+
+.. _electrochemistry_e3d3d21c_cb9a_498c_bdb0_63c964f0d3c6:
 
 CapacityFade
 ------------
@@ -1972,6 +2430,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Capacity_loss
 
 
+.. _electrochemistry_ec6f3d6f_bdf5_418f_9314_3ef2ff528103:
+
 CarbonInkElectrode
 ------------------
 
@@ -1979,12 +2439,16 @@ Elucidation:
    development of a carbon paste electrode that is screen printed using a carbon/polymer mixture of suitable composition
 
 
+.. _electrochemistry_5c0fdc09_166e_40a6_ad74_be66f0db51bc:
+
 CarbonMonofluorideElectrode
 ---------------------------
 
 Elucidation:
    electrode in which the active material is carbon monofluoride
 
+
+.. _electrochemistry_b0a0dddb_d942_4af2_b6a7_d7165f4253f1:
 
 CarbonPasteElectrode
 --------------------
@@ -1997,12 +2461,16 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Carbon_paste_electrode
 
 
+.. _electrochemistry_573be62a_5aae_4984_9a51_7c50845493df:
+
 CardonDioxideElectrode
 ----------------------
 
 Elucidation:
    a gas diffusion electrode in which the active material is carbon dioxide (CO2)
 
+
+.. _electrochemistry_1aec4cc0_82d5_4042_a657_ed7fe291c3d8:
 
 Case
 ----
@@ -2015,12 +2483,16 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-14
 
 
+.. _electrochemistry_8ab1e656_38ff_48e6_ab09_293d76bc9044:
+
 Catalyst
 --------
 
 Elucidation:
    substance that increases chemical reaction speed, and which is conserved after the reaction
 
+
+.. _electrochemistry_35c650ab_3b23_4938_b312_1b0dede2e6d5:
 
 Cathode
 -------
@@ -2033,12 +2505,16 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Cathode
 
 
+.. _electrochemistry_f8e0d532_cf44_403c_9188_e00ee161a3c1:
+
 CathodeElectrolyteInterphase
 ----------------------------
 
 Elucidation:
    a type of solid electrolyte interface that forms on the surface of the electrode designated as the "cathode" or positive electrode
 
+
+.. _electrochemistry_187326b9_1089_4122_8e7e_1a0bcba210a1:
 
 CathodicPolarisation
 --------------------
@@ -2051,6 +2527,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-18
 
 
+.. _electrochemistry_c936bfbe_7a0c_4185_a317_db1ce2c3c38c:
+
 CathodicProtection
 ------------------
 
@@ -2059,6 +2537,8 @@ IEC Reference:
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Cathodic_protection
 
+
+.. _electrochemistry_f4a1323a_ce2b_4c1a_b89d_c80170110ed6:
 
 CathodicReaction
 ----------------
@@ -2071,6 +2551,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-10
 
 
+.. _electrochemistry_61740c42_d332_492c_8b37_90a187c7f6d9:
+
 CathodicStrippingVoltammetry
 ----------------------------
 
@@ -2082,6 +2564,8 @@ IUPAC Reference:
    https://doi.org/10.1515/pac-2018-0109
 
 
+.. _electrochemistry_15b852b5_19cc_49ab_849f_7df6175fb2be:
+
 Catholyte
 ---------
 
@@ -2091,12 +2575,16 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-18
 
 
+.. _electrochemistry_9b6853e7_3412_463d_b5a9_82c14acebf7d:
+
 CatholyteTank
 -------------
 
 Elucidation:
    a tank for holding catholyte
 
+
+.. _electrochemistry_328c6e36_3706_4d92_abae_432fa3adb2a0:
 
 CellBaffle
 ----------
@@ -2107,6 +2595,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-13
 
 
+.. _electrochemistry_4a5660bd_1c1a_40e5_8a41_463c720d3903:
+
 CellCan
 -------
 
@@ -2115,6 +2605,8 @@ Elucidation:
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-13
 
+
+.. _electrochemistry_1e33e37e_d7c9_4701_ba6d_a09456a13aaf:
 
 CellLid
 -------
@@ -2125,6 +2617,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-15
 
 
+.. _electrochemistry_bea04148_10d9_4eda_9cd5_8f609d7e9ff8:
+
 CelsiusTemperatureMeasurement
 -----------------------------
 
@@ -2132,10 +2626,14 @@ Elucidation:
    measurement of temperature
 
 
+.. _electrochemistry_2dea31c2_5061_4464_ab76_5336bef23629:
+
 CelsiusTemperatureMeasurementResult
 -----------------------------------
 
 
+
+.. _electrochemistry_efaca8db_a3e0_4188_9c9b_ed0037966725:
 
 CelsiusTemperatureVector
 ------------------------
@@ -2143,6 +2641,8 @@ CelsiusTemperatureVector
 Elucidation:
    vector containing at least two values for the quantity celsius temperature
 
+
+.. _electrochemistry_a9873d3d_945b_40ba_b9cd_8dfb64cec88f:
 
 Charge
 ------
@@ -2155,6 +2655,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-27
 
 
+.. _electrochemistry_d1042a12_e4be_4992_86cb_59420ef4e05c:
+
 ChargeCarrier
 -------------
 
@@ -2164,6 +2666,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Charge_carrier
 
 
+.. _electrochemistry_46676855_68b0_4096_ac6c_35400111d46d:
+
 ChargeTimePlot
 --------------
 
@@ -2172,6 +2676,8 @@ Elucidation:
 Alternative Label(s):
    ChargeTimeCurve, ElectricChargeTimeCurve, ElectricChargeTimePlot, QtCurve
 
+
+.. _electrochemistry_8a1c9a7b_978c_4421_a9c1_d0b07b42aab9:
 
 ChemicalReaction
 ----------------
@@ -2184,12 +2690,16 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Chemical_reaction
 
 
+.. _electrochemistry_510e4061_c4fa_49aa_a052_23ad56098eda:
+
 ChromiumElectrode
 -----------------
 
 Elucidation:
    electrode in which the active material is chromium
 
+
+.. _electrochemistry_729a1064_d039_4b74_9d1d_759b18a3971c:
 
 Chronoamperometry
 -----------------
@@ -2202,6 +2712,8 @@ IUPAC Reference:
    https://doi.org/10.1515/pac-2018-0109
 
 
+.. _electrochemistry_f91c9ae3_42b8_4efa_9b67_a406d162d3b5:
+
 Chronocoulometry
 ----------------
 
@@ -2211,6 +2723,8 @@ IUPAC Reference:
    https://doi.org/10.1515/pac-2018-0109
 
 
+.. _electrochemistry_63dec5af_f3e9_46c9_8b0c_82516231d96b:
+
 Chronopotentiometry
 -------------------
 
@@ -2219,6 +2733,8 @@ Elucidation:
 IUPAC Reference:
    https://doi.org/10.1515/pac-2018-0109
 
+
+.. _electrochemistry_92147e31_d015_4889_a092_04fbab033f15:
 
 CoatedElectrode
 ---------------
@@ -2231,6 +2747,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-02
 
 
+.. _electrochemistry_09a7f560_9ddf_4c32_b067_b213eca5b0a1:
+
 Coating
 -------
 
@@ -2240,12 +2758,16 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Coating
 
 
+.. _electrochemistry_7b811780_7251_481b_a4d3_97d437955099:
+
 CobaltElectrode
 ---------------
 
 Elucidation:
    electrode in which the active material is cobalt
 
+
+.. _electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37:
 
 CoinCase
 --------
@@ -2255,6 +2777,8 @@ Alternative Label(s):
 IEC Reference:
    a round-type case with a height that is less than the diameter
 
+
+.. _electrochemistry_8a5083b0_cd23_4f8c_99e8_b9ccd6f9f3a2:
 
 ConcentrationCell
 -----------------
@@ -2267,6 +2791,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Concentration_cell
 
 
+.. _electrochemistry_82fef384_8eec_4765_b707_5397054df594:
+
 ConductiveAdditive
 ------------------
 
@@ -2276,12 +2802,16 @@ Alternative Label(s):
    ElectronicallyConductiveElectrodeAdditive
 
 
+.. _electrochemistry_b525a629_a679_464f_bc5b_b49d2fc82686:
+
 ConductivityCell
 ----------------
 
 Elucidation:
    an electrochemical cell for conductivity measurements
 
+
+.. _electrochemistry_e9639083_e9c5_4d0a_97e8_be1e139c179f:
 
 ConductometricTitration
 -----------------------
@@ -2291,6 +2821,8 @@ Elucidation:
 IUPAC Reference:
    https://doi.org/10.1515/pac-2018-0109
 
+
+.. _electrochemistry_b3a6d552_b38e_47ad_9d48_e8b77035d63e:
 
 Conductometry
 -------------
@@ -2303,6 +2835,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Conductometry
 
 
+.. _electrochemistry_d8a78cd2_8107_46dd_a198_0b64676efc00:
+
 Connector
 ---------
 
@@ -2311,6 +2845,8 @@ Elucidation:
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-37
 
+
+.. _electrochemistry_83f2b1e9_cb67_4dbf_977f_ba54bbae374f:
 
 ConstantCurrentCharge
 ---------------------
@@ -2323,6 +2859,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-38
 
 
+.. _electrochemistry_0cc8f231_0ce5_467e_9c76_29b2c80349ad:
+
 ConstantCurrentConstantVoltageCharge
 ------------------------------------
 
@@ -2331,6 +2869,8 @@ Elucidation:
 Alternative Label(s):
    CCCV
 
+
+.. _electrochemistry_53fe3f58_0802_41cf_af69_4784fc42cc30:
 
 ConstantCurrentDischarging
 --------------------------
@@ -2341,6 +2881,8 @@ Alternative Label(s):
    GalvanostaticDischarging
 
 
+.. _electrochemistry_84d37a37_88bd_47db_9425_31f73a81d38c:
+
 ConstantPotentialPulses
 -----------------------
 
@@ -2348,12 +2890,16 @@ Elucidation:
    Signal consisting of successive pulses of electric potential of the same magnitude.
 
 
+.. _electrochemistry_0d3e8340_4229_4fd3_b6dd_763bd566551d:
+
 ConstantPotentialSignal
 -----------------------
 
 Elucidation:
    Signal consisting of a constant electric potential.
 
+
+.. _electrochemistry_3e7fe02d_c888_4c49_8e05_ccd9785607a6:
 
 ConstantVoltageCharge
 ---------------------
@@ -2366,6 +2912,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-49
 
 
+.. _electrochemistry_9865e4f9_756d_4d94_a6fd_4102ab795f9e:
+
 ConstantVoltageDischarge
 ------------------------
 
@@ -2374,6 +2922,8 @@ Elucidation:
 Alternative Label(s):
    PotentiostaticDischarging
 
+
+.. _electrochemistry_25d01d13_3ca5_4619_98c1_8ebbd01ad794:
 
 ContinuousServiceTest
 ---------------------
@@ -2384,12 +2934,16 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-48
 
 
+.. _electrochemistry_26b19a7c_59ca_4e1b_8fb9_ba061c22531e:
+
 CopperElectrode
 ---------------
 
 Alternative Label(s):
    metal electrode in which the active material is copper
 
+
+.. _electrochemistry_a8edd38f_f8a5_41fb_9fc7_48f1866fd699:
 
 CopperOxideElectrode
 --------------------
@@ -2399,6 +2953,8 @@ Elucidation:
 Alternative Label(s):
    CupricOxideElectrode
 
+
+.. _electrochemistry_fb9bf7cb_dd4b_4391_99a1_628263dd6940:
 
 Coulometer
 ----------
@@ -2411,12 +2967,16 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Voltameter
 
 
+.. _electrochemistry_52501237_0c13_4bfb_aa3a_441c6a9ae3a6:
+
 CoulometricTitration
 --------------------
 
 Elucidation:
    titration in which the titrant is generated electrochemically, either by constant current or at constant potential. The titrant reacts stoichiometrically with the analyte, the amount of which is calculated using Faraday’s laws of electrolysis from the electric charge required to reach the end-point
 
+
+.. _electrochemistry_6e439f86_3d00_4b0b_82ab_1fa25241d4e9:
 
 Coulometry
 ----------
@@ -2431,6 +2991,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Coulometry
 
 
+.. _electrochemistry_871bc4a4_2d17_4b88_9b0f_7ab85f14afea:
+
 CounterElectrode
 ----------------
 
@@ -2444,6 +3006,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Auxiliary_electrode
 
 
+.. _electrochemistry_212af058_3bbb_419f_a9c6_90ba9ebb3706:
+
 CurrentCollector
 ----------------
 
@@ -2455,12 +3019,16 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=485-06-07
 
 
+.. _electrochemistry_5548f188_df00_4c05_ae98_7846e92efe36:
+
 CurrentControlledProcess
 ------------------------
 
 Elucidation:
    a process in which the electric current is controlled
 
+
+.. _electrochemistry_b9a72491_8a50_4cac_a131_1e95d72b57ee:
 
 CurrentPotentialPlot
 --------------------
@@ -2471,6 +3039,8 @@ Alternative Label(s):
    CurrentPotentialCurve, ElectricCurrentPotentialCurve
 
 
+.. _electrochemistry_712c791a_d593_4732_af73_493f7bc50999:
+
 CurrentPulse
 ------------
 
@@ -2478,12 +3048,16 @@ Elucidation:
    rapid, transient change in the amplitude of an electric current, from a baseline value to a higer or lower value, followed by a rapid return to the baseline value.
 
 
+.. _electrochemistry_9f1ffb54_4403_4541_98c1_3a821c6d060f:
+
 CurrentPulse
 ------------
 
 Elucidation:
    the process of applying a current pulse
 
+
+.. _electrochemistry_b99cff7f_b13f_4075_aa88_62c04f8daacc:
 
 CurrentTimePlot
 ---------------
@@ -2494,12 +3068,16 @@ Alternative Label(s):
    CurrentTimeCurve
 
 
+.. _electrochemistry_d2f6f1a6_4dee_4c5e_9a69_32b9fe990d2f:
+
 CycleDomainMatrix
 -----------------
 
 Elucidation:
    a series of data points indexed in cycle order
 
+
+.. _electrochemistry_ca48d41c_f5ea_4bf8_84ce_2d67fd9dad98:
 
 CycleNumberVector
 -----------------
@@ -2508,12 +3086,16 @@ Elucidation:
    vector containing at least two values for the quantity cycle number
 
 
+.. _electrochemistry_225cb9b8_d413_451e_9e36_fb6d1344b16e:
+
 CyclicChronopotentiometry
 -------------------------
 
 Elucidation:
    chronopotentiometry where the change in applied current undergoes a cyclic current reversal
 
+
+.. _electrochemistry_2f96eb3e_4115_4236_9203_525fb27fe92d:
 
 CyclicVoltammetry
 -----------------
@@ -2528,6 +3110,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Cyclic_voltammetry
 
 
+.. _electrochemistry_d3e2d213_d078_4b9a_8beb_62f063e57d69:
+
 Cycling
 -------
 
@@ -2541,12 +3125,16 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Charge_cycle
 
 
+.. _electrochemistry_b1cf9fee_2164_4f95_8204_90f717373a8a:
+
 CylindricalCase
 ---------------
 
 IEC Reference:
    a round-type case with a height that is greater than or equal to the diameter
 
+
+.. _electrochemistry_5a0f3b6a_10b4_43a7_b0b6_4eb5c077980e:
 
 DCPolarography
 --------------
@@ -2556,6 +3144,8 @@ Elucidation:
 IUPAC Reference:
    https://doi.org/10.1515/pac-2018-0109
 
+
+.. _electrochemistry_34bc54e3_de4c_41f8_8d3a_d77c951ee23a:
 
 Dendrite
 --------
@@ -2570,6 +3160,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Dendrite_(crystal)
 
 
+.. _electrochemistry_43ce1a7e_8056_40cb_bdbd_4ce991af1821:
+
 Dielectrometry
 --------------
 
@@ -2579,6 +3171,8 @@ IUPAC Reference:
    https://doi.org/10.1515/pac-2018-0109
 
 
+.. _electrochemistry_81b7c95b_8671_4ba7_b4f8_ec19a25096eb:
+
 DifferentialLinearPulseVoltammetry
 ----------------------------------
 
@@ -2586,12 +3180,16 @@ Elucidation:
    Differential Pulse Voltammetry in which small potential pulses are superimposed onto a linearly varying potential.
 
 
+.. _electrochemistry_b49e2355_392f_4e83_b630_7ff4581d767b:
+
 DifferentialPotentialPulse
 --------------------------
 
 Elucidation:
    Small pulses of electric potential superimposed to a linear potential ramp or a staircase potential ramp.
 
+
+.. _electrochemistry_b3e56313_417c_42b7_a934_0018ce2dffc2:
 
 DifferentialPulseVoltammetry
 ----------------------------
@@ -2606,6 +3204,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Differential_pulse_voltammetry
 
 
+.. _electrochemistry_56da3bb3_a0ce_40ed_b152_d3c14329d31a:
+
 DifferentialStaircasePulseVoltammetry
 -------------------------------------
 
@@ -2613,12 +3213,16 @@ Elucidation:
    Differential Pulse Voltammetry in which small potential pulses are superimposed onto a staircase potential ramp.
 
 
+.. _electrochemistry_180878b5_8de8_4dd8_b881_1d0bebe326d4:
+
 DirectCoulometryAtControlledCurrent
 -----------------------------------
 
 Elucidation:
    coulometry at an imposed, constant current in the electrochemical cell
 
+
+.. _electrochemistry_39536efc_22a6_4f39_b0c2_e8b845a36278:
 
 DirectCoulometryAtControlledPotential
 -------------------------------------
@@ -2628,6 +3232,8 @@ Elucidation:
 IUPAC Reference:
    https://doi.org/10.1515/pac-2018-0109
 
+
+.. _electrochemistry_40ca9548_910a_48b6_9a26_f94095d349cd:
 
 DirectCurrent
 -------------
@@ -2642,6 +3248,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Constant_current
 
 
+.. _electrochemistry_885b462e_f6bc_412d_8b94_9425e13af0c7:
+
 DirectCurrent
 -------------
 
@@ -2655,6 +3263,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Direct_current
 
 
+.. _electrochemistry_06d8e1ee_924a_4915_998d_33a69f41dadc:
+
 Discharge
 ---------
 
@@ -2665,6 +3275,8 @@ Alternative Label(s):
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-23
 
+
+.. _electrochemistry_b3b3868f_6edd_4ce8_a984_08f9cf391f90:
 
 Dissociation
 ------------
@@ -2677,6 +3289,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Dissociation_(chemistry)
 
 
+.. _electrochemistry_49263a32_eca6_4644_8144_0d3b14c26d0a:
+
 Dissolution
 -----------
 
@@ -2686,12 +3300,16 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-01-04
 
 
+.. _electrochemistry_56f85b19_1384_4e88_b130_cb8e7984db83:
+
 DoubleCoatedElectrode
 ---------------------
 
 Elucidation:
    an electrode that is coated on both sides of the current collector
 
+
+.. _electrochemistry_2b50cdac_581f_48b9_87ca_bad5138ab58d:
 
 DoubleLayer
 -----------
@@ -2703,6 +3321,8 @@ Alternative Label(s):
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Double_layer_(surface_science)
 
+
+.. _electrochemistry_ac9723d1_bac0_4109_874e_32849de9299b:
 
 DoubleLayerModel
 ----------------
@@ -2717,6 +3337,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Double_layer_(surface_science)
 
 
+.. _electrochemistry_b76a778f_253f_4210_a67f_fb6444d0de26:
+
 DroppingMercuryElectrode
 ------------------------
 
@@ -2728,6 +3350,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Dropping_mercury_electrode
 
 
+.. _electrochemistry_bbc77932_643b_4603_a4e8_970ef06a76ad:
+
 EdgeInsulator
 -------------
 
@@ -2737,12 +3361,16 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-19
 
 
+.. _electrochemistry_276cfa84_3cc0_40c0_9f6a_57a3b776f47c:
+
 ElectricChargeSignal
 --------------------
 
 Elucidation:
    Time-dependent variation of electric charge passed through a system.
 
+
+.. _electrochemistry_158ae038_c64b_4cc0_aa56_650475490705:
 
 ElectricCurrentMeasurement
 --------------------------
@@ -2751,10 +3379,14 @@ Elucidation:
    measurement of electric current
 
 
+.. _electrochemistry_7beef5fb_a406_4284_b85a_87d55cf46a0e:
+
 ElectricCurrentMeasurementResult
 --------------------------------
 
 
+
+.. _electrochemistry_f693b744_930c_42ac_8e6f_627b22c6da3f:
 
 ElectricCurrentMeasuringSystem
 ------------------------------
@@ -2763,12 +3395,16 @@ Elucidation:
    a system for measuing electric current
 
 
+.. _electrochemistry_904b12e0_4a10_47b0_b7db_592aba215cb6:
+
 ElectricCurrentSignal
 ---------------------
 
 Elucidation:
    Time-dependent variation of electric current
 
+
+.. _electrochemistry_4920de95_3a48_4669_b762_5a0b5232b52f:
 
 ElectricCurrentVector
 ---------------------
@@ -2777,12 +3413,16 @@ Elucidation:
    vector containing at least two values for the quantity electric current
 
 
+.. _electrochemistry_3f9b2956_1465_4fe0_b0df_5e4784dac3b6:
+
 ElectricPotentialMeasuringSystem
 --------------------------------
 
 Elucidation:
    a system for measuring electric potential
 
+
+.. _electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7:
 
 ElectricPotentialSignal
 -----------------------
@@ -2791,12 +3431,16 @@ Elucidation:
    Time-dependent variation of electric potential
 
 
+.. _electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c:
+
 ElectricSignal
 --------------
 
 Elucidation:
    Time dependent variation of an electric quantity.
 
+
+.. _electrochemistry_10359c79_cdf2_401a_83ee_d22e7fbb2ad1:
 
 ElectroanalyticalTechnique
 --------------------------
@@ -2806,6 +3450,8 @@ Elucidation:
 IUPAC Reference:
    https://doi.org/10.1515/pac-2018-0109
 
+
+.. _electrochemistry_5cb5548f_f774_4668_ad02_f0742581f2f1:
 
 Electrocapillarity
 ------------------
@@ -2818,6 +3464,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrocapillarity
 
 
+.. _electrochemistry_4d6f7f50_b343_4bd6_8612_2b8521a99c9b:
+
 Electrocatalysis
 ----------------
 
@@ -2826,6 +3474,8 @@ Elucidation:
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-04-15
 
+
+.. _electrochemistry_a3b53904_22b1_42a9_a515_c8a3aed7e841:
 
 Electrocatalyst
 ---------------
@@ -2838,6 +3488,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrocatalyst
 
 
+.. _electrochemistry_6f2c88c9_5c04_4953_a298_032cc3ab9b77:
+
 ElectrochemicalCell
 -------------------
 
@@ -2849,12 +3501,16 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrochemical_cell
 
 
+.. _electrochemistry_b5ea31c9_bb10_4276_980e_c3eceb1efc82:
+
 ElectrochemicalConstituent
 --------------------------
 
 Elucidation:
    A constituent in an electrochemical system.
 
+
+.. _electrochemistry_0a0de817_addc_46a5_8ba2_255d48cdf366:
 
 ElectrochemicalDegradationPhenomenon
 ------------------------------------
@@ -2863,12 +3519,16 @@ Elucidation:
    A phenomenon that causes an electrochemical system to deviate from its ideal behaviour.
 
 
+.. _electrochemistry_0acd0fc2_1048_4604_8e90_bf4e84bd87df:
+
 ElectrochemicalDevice
 ---------------------
 
 Elucidation:
    a device whose primary function is facilitating the conversion between chemical and electrical energy.
 
+
+.. _electrochemistry_b91180e7_97ae_49e2_bf82_5bf720e7fa66:
 
 ElectrochemicalDoubleLayerCapacitor
 -----------------------------------
@@ -2878,6 +3538,8 @@ Elucidation:
 Alternative Label(s):
    DoubleLayerCapacitor, EDLC, ElectrochemicalCapacitor
 
+
+.. _electrochemistry_9da958fc_f76d_4654_8a78_99b5f98c118c:
 
 ElectrochemicalHalfCell
 -----------------------
@@ -2890,6 +3552,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Half-cell
 
 
+.. _electrochemistry_4bc38e99_1978_4143_a766_fbb57f2cf46e:
+
 ElectrochemicalImmunity
 -----------------------
 
@@ -2898,6 +3562,8 @@ Elucidation:
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-04-03
 
+
+.. _electrochemistry_d30d9de0_b9bf_4919_a022_0394df9c3672:
 
 ElectrochemicalImpedanceSpectroscopy
 ------------------------------------
@@ -2910,12 +3576,16 @@ IUPAC Reference:
    https://doi.org/10.1515/pac-2018-0109
 
 
+.. _electrochemistry_50044b99_b858_433b_a32d_23d1e1cf88b2:
+
 ElectrochemicalInterface
 ------------------------
 
 Elucidation:
    The two-dimensional space comprising the boundary between two electrochemical constituents.
 
+
+.. _electrochemistry_ebdb68e9_c4b5_4d57_a042_c0f51d446755:
 
 ElectrochemicalMaterial
 -----------------------
@@ -2924,10 +3594,14 @@ Elucidation:
    A material that undergoes electrochemical changes.
 
 
+.. _electrochemistry_f49b84d4_e1f9_424c_bb22_8cea23c0a7d4:
+
 ElectrochemicalMethod
 ---------------------
 
 
+
+.. _electrochemistry_63ea1c9b_0bda_4a69_9745_efb08e6be685:
 
 ElectrochemicalMigration
 ------------------------
@@ -2940,12 +3614,16 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrochemical_migration
 
 
+.. _electrochemistry_19abaccd_43be_4048_965c_e4fb63c5951b:
+
 ElectrochemicalPhenomenon
 -------------------------
 
 Elucidation:
    A chemical phenomenon that is accompanied by the flow of electric current
 
+
+.. _electrochemistry_1a7fb32a_743f_4aa6_ac5a_ff7a2ba29dce:
 
 ElectrochemicalPiezoelectricMicrogravimetry
 -------------------------------------------
@@ -2956,12 +3634,16 @@ IUPAC Reference:
    https://doi.org/10.1515/pac-2018-0109
 
 
+.. _electrochemistry_ddade648_2033_47b6_bc36_b562a9af591e:
+
 ElectrochemicalPlot
 -------------------
 
 Elucidation:
    Graphical representation of a dataset resulting from the measurement of the response of an electrochemical system.
 
+
+.. _electrochemistry_ca0527c1_f682_4eea_aca5_f3ae66a9ddce:
 
 ElectrochemicalPseudocapacitor
 ------------------------------
@@ -2971,6 +3653,8 @@ Elucidation:
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Pseudocapacitor
 
+
+.. _electrochemistry_a6a69e90_06b5_45b1_83cf_7c0bf39b2914:
 
 ElectrochemicalReaction
 -----------------------
@@ -2983,12 +3667,16 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-01
 
 
+.. _electrochemistry_3d805c2a_4801_440e_9e4d_0fa5585c76ae:
+
 ElectrochemicalRelation
 -----------------------
 
 Elucidation:
    A material relation in electrochemistry.
 
+
+.. _electrochemistry_96309fa9_e157_48fe_9fda_41003860a3c0:
 
 Electrochemiluminescence
 ------------------------
@@ -3003,6 +3691,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrochemiluminescence
 
 
+.. _electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627:
+
 Electrode
 ---------
 
@@ -3013,6 +3703,8 @@ IEC Reference:
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrode
 
+
+.. _electrochemistry_9c73aff8_1c82_4116_a6be_78e21982b69d:
 
 ElectrodeElectrolyteInterface
 -----------------------------
@@ -3025,6 +3717,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-05
 
 
+.. _electrochemistry_d907805f_678b_4ab6_8b56_59631684f84b:
+
 ElectrodePair
 -------------
 
@@ -3035,6 +3729,8 @@ Alternative Label(s):
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-09
 
+
+.. _electrochemistry_01260656_ac32_472e_9513_a607366538ec:
 
 ElectrodePassivation
 --------------------
@@ -3049,6 +3745,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Passivation_(chemistry)
 
 
+.. _electrochemistry_2e6933aa_4522_4f16_a437_37110e6cbd0d:
+
 ElectrodePolarisation
 ---------------------
 
@@ -3062,6 +3760,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Polarization_(electrochemistry)
 
 
+.. _electrochemistry_2e3e14f9_4cb8_45b2_908e_47eec893dec8:
+
 ElectrodeReaction
 -----------------
 
@@ -3072,6 +3772,8 @@ IEC Reference:
 IUPAC Reference:
    https://doi.org/10.1351/goldbook.E01960
 
+
+.. _electrochemistry_27662d03_1bcf_4393_a239_32e31b760839:
 
 ElectrodeStack
 --------------
@@ -3084,6 +3786,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-08
 
 
+.. _electrochemistry_f0c24970_4c14_4207_bd78_5f2181a67085:
+
 Electrodeposition
 -----------------
 
@@ -3091,12 +3795,16 @@ Elucidation:
    the process of forming a film or a bulk material using an electrochemical process where the electrons are supplied by an external power supply
 
 
+.. _electrochemistry_4df84ec1_8a1a_4770_963f_bf48009bd043:
+
 Electrodissolution
 ------------------
 
 Elucidation:
    the electrochemical dissolution of a material to soluble species
 
+
+.. _electrochemistry_14d0358f_f65d_44f9_8b85_40b38f17c4ed:
 
 Electrogravimetry
 -----------------
@@ -3109,6 +3817,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrogravimetry
 
 
+.. _electrochemistry_e2a1dae1_05e4_4bd1_a39d_0eb10db482bc:
+
 Electrolysis
 ------------
 
@@ -3119,6 +3829,8 @@ IEC Reference:
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrolysis
 
+
+.. _electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59:
 
 Electrolyte
 -----------
@@ -3131,6 +3843,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrolyte
 
 
+.. _electrochemistry_3f6c9e09_5f23_41cc_9f85_7de365cef089:
+
 ElectrolyteCreep
 ----------------
 
@@ -3139,6 +3853,8 @@ Elucidation:
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-30
 
+
+.. _electrochemistry_c05692eb_ae92_4e03_b355_f259f9089cb8:
 
 ElectrolyteLevelIndicator
 -------------------------
@@ -3149,6 +3865,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-52
 
 
+.. _electrochemistry_fa22874b_76a9_4043_8b8f_6086c88746de:
+
 ElectrolyteSolution
 -------------------
 
@@ -3157,6 +3875,8 @@ Elucidation:
 Alternative Label(s):
    ElectrolyticSolution
 
+
+.. _electrochemistry_900d95fb_863d_4142_a96d_369fb39e2639:
 
 ElectrolyticCapacitor
 ---------------------
@@ -3169,6 +3889,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrolytic_capacitor
 
 
+.. _electrochemistry_e931087f_7681_4096_b200_5223bcc47eb4:
+
 ElectrolyticCell
 ----------------
 
@@ -3180,6 +3902,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrolytic_cell
 
 
+.. _electrochemistry_5641910f_6e69_4ce4_be84_4b1bf14b8916:
+
 Electroosmosis
 --------------
 
@@ -3190,6 +3914,8 @@ IEC Reference:
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electro-osmosis
 
+
+.. _electrochemistry_a2b92d2e_4431_411e_8da5_a4c08bac2c0e:
 
 Electroplating
 --------------
@@ -3204,6 +3930,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electroplating
 
 
+.. _electrochemistry_990d19b8_672a_4219_a2b3_0a25bfa13f69:
+
 EqualizationCharge
 ------------------
 
@@ -3212,6 +3940,8 @@ Elucidation:
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-40
 
+
+.. _electrochemistry_1152ae6b_8b57_4d99_912e_40c6a29342fb:
 
 FaradaysFirstLawOfElectrolysis
 ------------------------------
@@ -3224,6 +3954,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Faraday%27s_laws_of_electrolysis#First_law
 
 
+.. _electrochemistry_60c5b2e5_164a_4ce6_8409_f386f5e50c03:
+
 FaradaysSecondLawOfElectrolysis
 -------------------------------
 
@@ -3232,6 +3964,8 @@ Elucidation:
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Faraday%27s_laws_of_electrolysis#Second_law
 
+
+.. _electrochemistry_ae56cce3_7a7c_4e53_bb58_31e0d642d47e:
 
 FlameArrestorVent
 -----------------
@@ -3242,6 +3976,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-11
 
 
+.. _electrochemistry_95e4aa95_b7e9_40d7_b78e_4d7dcc31093d:
+
 FlowCell
 --------
 
@@ -3250,6 +3986,8 @@ Elucidation:
 Alternative Label(s):
    ElectrochemicalFlowCell
 
+
+.. _electrochemistry_339e1ba1_2006_4f22_aac4_3ce75edf1088:
 
 FluorineDopedTinOxideElectrode
 ------------------------------
@@ -3260,10 +3998,14 @@ Alternative Label(s):
    FTOElectrode
 
 
+.. _electrochemistry_1d5377a7_9f2b_4fdf_958a_7eeadce158d6:
+
 Foil
 ----
 
 
+
+.. _electrochemistry_cb223440_51bd_4f16_a536_96ec408e7de4:
 
 FormationCycling
 ----------------
@@ -3271,6 +4013,8 @@ FormationCycling
 Elucidation:
    the cycling of a cell after manufacturing, usually for the purpose of forming interfacial layers
 
+
+.. _electrochemistry_279ecc9f_bfbc_4108_ae40_3c1c0f735e60:
 
 FrequencyResponseAnalyser
 -------------------------
@@ -3280,6 +4024,8 @@ Elucidation:
 Alternative Label(s):
    FRA, FrequencyResponseAnalyzer
 
+
+.. _electrochemistry_bd33779c_6f40_4354_ab5d_f6c17396414d:
 
 FuelCell
 --------
@@ -3292,6 +4038,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Fuel_cell
 
 
+.. _electrochemistry_11895d59_3f97_4bad_badf_1a90f2347c2a:
+
 GITT
 ----
 
@@ -3300,6 +4048,8 @@ Elucidation:
 Alternative Label(s):
    GalvanostaticIntermittentTitrationTechnique
 
+
+.. _electrochemistry_e248373f_294f_4ca4_9edf_0ad6653bb64f:
 
 GalvanicCell
 ------------
@@ -3312,6 +4062,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Galvanic_cell
 
 
+.. _electrochemistry_22725105_c941_4b14_a4a2_fcb627958607:
+
 Galvanostat
 -----------
 
@@ -3323,6 +4075,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Galvanostat
 
 
+.. _electrochemistry_79a8802e_8296_459a_b65d_6e5c79e1bf37:
+
 GalvanostaticCycling
 --------------------
 
@@ -3330,12 +4084,16 @@ Elucidation:
    a cycling protocol in which an electrochemical cell is subject to alternating galvanostatic charging and discharging processes
 
 
+.. _electrochemistry_78a8f60b_10c2_41ee_9946_d35437e1edb5:
+
 GalvanostaticProcess
 --------------------
 
 Elucidation:
    a process in which the electric current is kept constant
 
+
+.. _electrochemistry_bbb1d95b_72d1_44f6_b07e_a3d7d41ac215:
 
 GasDiffusionElectrode
 ---------------------
@@ -3350,12 +4108,16 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Gas_diffusion_electrode
 
 
+.. _electrochemistry_0c9017b4_6efd_4e2b_8e24_48b60ebe9315:
+
 GasDissolution
 --------------
 
 Elucidation:
    the dissolution of molecules from a gas into another phase
 
+
+.. _electrochemistry_4288b145_ba79_4989_92f8_86086679b0fe:
 
 GasEvolution
 ------------
@@ -3368,6 +4130,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Gas_evolution_reaction
 
 
+.. _electrochemistry_0f827b54_370d_4c63_99a6_80f13b24e55e:
+
 GassingOfACell
 --------------
 
@@ -3376,6 +4140,8 @@ Elucidation:
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-51
 
+
+.. _electrochemistry_d11b0e66_c35b_4da7_80a1_037ce89b77fb:
 
 GlassFibreSeparator
 -------------------
@@ -3386,6 +4152,8 @@ Alternative Label(s):
    FibreglassSeparator
 
 
+.. _electrochemistry_057bb143_639c_472b_99ed_ffa1867f6e63:
+
 GlassyCarbonElectrode
 ---------------------
 
@@ -3394,6 +4162,8 @@ Elucidation:
 Alternative Label(s):
    GCE
 
+
+.. _electrochemistry_6fec8cc1_4e6c_428e_8343_6cf3c286a185:
 
 GoldElectrode
 -------------
@@ -3404,12 +4174,16 @@ Alternative Label(s):
    AuElectrode
 
 
+.. _electrochemistry_fa54f95d_b49e_43b5_84c3_35520d0fb2f6:
+
 GouyChapmanModel
 ----------------
 
 Elucidation:
    an extension of the Helmholtz model that describes the distribution of ions as a function of distance from the electrode surface to the bulk of the electroylte
 
+
+.. _electrochemistry_7f168ebc_4c78_459c_9a39_bddaa57e214c:
 
 GrahameModel
 ------------
@@ -3418,12 +4192,16 @@ Elucidation:
    a modification of the Stern model that considers the double layer as three regions separated by the inner Helmholtz plane and the outer Helmholtz plane
 
 
+.. _electrochemistry_c831d963_629a_41ab_850f_97fb6841b739:
+
 GraphiteElectrode
 -----------------
 
 Elucidation:
    electrode in which the active material is graphite
 
+
+.. _electrochemistry_32ab2ea8_6263_42a8_8682_2fe0343f8bea:
 
 GravimetricAnalysis
 -------------------
@@ -3438,6 +4216,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Gravimetric_analysis
 
 
+.. _electrochemistry_99bdbd45_c3ea_4fb9_ae50_ed1ab6bb1dff:
+
 HPPC
 ----
 
@@ -3447,6 +4227,8 @@ Alternative Label(s):
    HybridPulsePowerCharacterisation, HybridPulsePowerCharacterization
 
 
+.. _electrochemistry_6235cc7c_2eee_432a_93af_47d7e05db007:
+
 HardCarbonElectrode
 -------------------
 
@@ -3454,12 +4236,16 @@ Elucidation:
    electrode in which the active material is hard carbon
 
 
+.. _electrochemistry_9bc02662_9799_4593_906d_638a841d7352:
+
 HelmholtzModel
 --------------
 
 Elucidation:
    a structural representation of the double layer that states that the accumulation of electric charge on the surface of the electrode is balanced by a layer of ions in the electrolyte
 
+
+.. _electrochemistry_c14ae9b3_e4ba_4129_a7b6_afd2d4571de6:
 
 HermeticallySealedCell
 ----------------------
@@ -3470,12 +4256,16 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-01
 
 
+.. _electrochemistry_f54474fc_5d07_474b_97ae_f5d0349363b4:
+
 HybridFlowCell
 --------------
 
 Elucidation:
    a flow cell that uses one or more electroactive components deposited as a solid layer
 
+
+.. _electrochemistry_d95fdd2e_38bf_4065_a857_78eb201ee166:
 
 HydrodynamicVoltammetry
 -----------------------
@@ -3488,6 +4278,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Hydrodynamic_voltammetry
 
 
+.. _electrochemistry_c4a778c7_33da_4e1a_960e_402a210bfeff:
+
 HydrogenElectrode
 -----------------
 
@@ -3496,6 +4288,8 @@ Elucidation:
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-16
 
+
+.. _electrochemistry_0838f0b6_ca9a_4f76_9770_ca964617bf1b:
 
 ICI
 ---
@@ -3506,6 +4300,8 @@ Alternative Label(s):
    IntermittentCurrentInterruptionMethod
 
 
+.. _electrochemistry_07ad0aff_ab59_442d_9c0a_7f8c5cba8982:
+
 Impedimetry
 -----------
 
@@ -3515,12 +4311,16 @@ IUPAC Reference:
    https://doi.org/10.1515/pac-2018-0109
 
 
+.. _electrochemistry_77be01ef_49bd_4f2e_bec8_eec0894b8562:
+
 IncreasingPotentialPulses
 -------------------------
 
 Elucidation:
    Pulses of electric potential, of amplitude increasing by a constant increment and with a pulse width of 2 to 200 ms, which are superimposed on a constant initial potential.
 
+
+.. _electrochemistry_f6fcd255_248d_4603_b128_04dab960a676:
 
 IndicatorElectrode
 ------------------
@@ -3531,12 +4331,16 @@ IUPAC Reference:
    https://goldbook.iupac.org/terms/view/I03006
 
 
+.. _electrochemistry_7b9db6b3_36f0_4b5d_acbb_9284a9054a09:
+
 IndiumElectrode
 ---------------
 
 Elucidation:
    electrode in which the active material is indium
 
+
+.. _electrochemistry_c63baed9_48dd_4b5c_9e8c_03011010ffb6:
 
 IndiumTinOxideElectrode
 -----------------------
@@ -3547,6 +4351,8 @@ Alternative Label(s):
    ITO
 
 
+.. _electrochemistry_a0a619d7_da95_41f0_8bc3_9c19d636d543:
+
 InertElectrode
 --------------
 
@@ -3556,6 +4362,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-08
 
 
+.. _electrochemistry_757eae08_4d43_42d4_8b4e_8a0bfd2f9a1c:
+
 InsertionElectrode
 ------------------
 
@@ -3564,6 +4372,8 @@ Elucidation:
 Alternative Label(s):
    IntercalationElectrode
 
+
+.. _electrochemistry_54e0c2bd_1bb2_4f9c_9b55_5b6cc34651ec:
 
 Interphase
 ----------
@@ -3576,10 +4386,14 @@ IUPAC Reference:
    https://goldbook.iupac.org/terms/view/I03085
 
 
+.. _electrochemistry_402598d9_0eea_405d_b0d0_3b8b79deba6f:
+
 InterphaseGrowth
 ----------------
 
 
+
+.. _electrochemistry_15325775_6d4c_4192_82f1_e4feca9de426:
 
 IonExchangeMembrane
 -------------------
@@ -3592,6 +4406,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Ion-exchange_membrane
 
 
+.. _electrochemistry_c3f4b34a_0e2c_46f3_baab_4ebd2682d26f:
+
 IonicLiquidElectrolyte
 ----------------------
 
@@ -3603,12 +4419,16 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Ionic_liquid
 
 
+.. _electrochemistry_3e6a7d5f_3700_46b3_b1b8_f34e37e6f931:
+
 IridiumElectrode
 ----------------
 
 Elucidation:
    electrode in which the active material is iridium
 
+
+.. _electrochemistry_cba03815_eaa8_493d_b9e4_52856b57fde6:
 
 IridiumOxideElectrode
 ---------------------
@@ -3619,6 +4439,8 @@ Alternative Label(s):
    IrO2Electrode
 
 
+.. _electrochemistry_d2726dd5_69f0_4cb1_bd3c_4c48813e57e7:
+
 IronDisulfideElectrode
 ----------------------
 
@@ -3626,12 +4448,16 @@ Elucidation:
    an electrode in which the active material is iron disulfide
 
 
+.. _electrochemistry_cc4e178c_bc1f_4502_b6c2_33f304ef6bab:
+
 IronElectrode
 -------------
 
 Elucidation:
    electrode in which the active material is iron
 
+
+.. _electrochemistry_a0fcb105_587f_45d8_a89a_46dc8f745069:
 
 Jacket
 ------
@@ -3642,6 +4468,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-20
 
 
+.. _electrochemistry_598ae3d0_76e9_429c_a0e1_8694525cb574:
+
 KohlrauschsLaw
 --------------
 
@@ -3650,6 +4478,8 @@ Elucidation:
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Molar_conductivity#Kohlrausch's_law_of_independent_migration_of_ions
 
+
+.. _electrochemistry_5a7a3028_db9e_4045_ab68_054c6afc91fc:
 
 LawOfMassAction
 ---------------
@@ -3660,10 +4490,14 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Law_of_mass_action
 
 
+.. _electrochemistry_610f0bc8_557d_455b_a8ed_272d5d1813c9:
+
 LeadElectrode
 -------------
 
 
+
+.. _electrochemistry_f6223121_7df5_42f8_902c_d26fa2fc4f04:
 
 LeadOxideElectrode
 ------------------
@@ -3674,6 +4508,8 @@ Alternative Label(s):
    PbOElectrode
 
 
+.. _electrochemistry_c55ec02c_b727_4df1_97ce_91d7bb5d5e91:
+
 Leakage
 -------
 
@@ -3683,12 +4519,16 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-32
 
 
+.. _electrochemistry_23b30468_be7b_45a9_bc11_a8219bc3ab8b:
+
 LeclancheElectrolyte
 --------------------
 
 Elucidation:
    an aqueous mixture of ammonium chloride and zinc chloride
 
+
+.. _electrochemistry_6559c04d_75bc_41ea_8ed8_8d3c09dae6b0:
 
 LidSealingCompound
 ------------------
@@ -3699,12 +4539,16 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-16
 
 
+.. _electrochemistry_618538fa_6607_45a3_ad06_6a5f98febcbd:
+
 LinearChronopotentiometry
 -------------------------
 
 Elucidation:
    chronopotentiometry where the applied current is changed linearly
 
+
+.. _electrochemistry_fa774456_718a_4a28_ba6a_6f828887c510:
 
 LinearCurrentRamp
 -----------------
@@ -3713,12 +4557,16 @@ Elucidation:
    signal where an electric current is varied linearly from an initial current, typically 0 A
 
 
+.. _electrochemistry_29f2a35a_8c09_429d_b9e8_33f3e1fc3671:
+
 LinearPotentialRamp
 -------------------
 
 Elucidation:
    Signal where the electric potential is varied linearly from an initial potential.
 
+
+.. _electrochemistry_a9f19bb0_55bc_4908_b0e4_7888077b0019:
 
 LinearScanVoltammetry
 ---------------------
@@ -3733,6 +4581,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Linear_sweep_voltammetry
 
 
+.. _electrochemistry_609b340f_3450_4a10_95c2_c457e3eb8a89:
+
 LiquidElectrolyte
 -----------------
 
@@ -3740,12 +4590,16 @@ Elucidation:
    an electrolyte in the liquid phase.
 
 
+.. _electrochemistry_80fdbd63_9b7a_462b_a8cb_b50f5f6ab182:
+
 LiquidGalliumElectrode
 ----------------------
 
 Elucidation:
    a liquid electrode with an active material of gallium
 
+
+.. _electrochemistry_634467ad_feed_4979_adb2_877d98fe1768:
 
 LiquidJunction
 --------------
@@ -3756,6 +4610,8 @@ IUPAC Reference:
    https://goldbook.iupac.org/terms/view/L03584
 
 
+.. _electrochemistry_9fd49892_cf6d_482e_a6c3_5f763948ec29:
+
 LiquidMetalElectrode
 --------------------
 
@@ -3764,6 +4620,8 @@ Elucidation:
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Liquid_metal_electrode
 
+
+.. _electrochemistry_fd7caf39_0a43_4fbf_958e_a62067aa9007:
 
 LithiumCobaltOxideElectrode
 ---------------------------
@@ -3774,12 +4632,16 @@ Alternative Label(s):
    LCOElectrode
 
 
+.. _electrochemistry_47346d85_b9be_4480_8993_6307b1c58fcd:
+
 LithiumElectrode
 ----------------
 
 Elucidation:
    metal electrode in which the active material is lithium
 
+
+.. _electrochemistry_e84e691a_df58_465c_9771_7a7fe2212ed5:
 
 LithiumHydroxideSolution
 ------------------------
@@ -3790,12 +4652,16 @@ Alternative Label(s):
    AqueousLithiumHydroxideSolution, LiOHSolution
 
 
+.. _electrochemistry_4c3ee364_829b_41a4_b895_ca4a041efb2a:
+
 LithiumInsertionElectrode
 -------------------------
 
 Elucidation:
    an insertion electrode in which the guest molecule is lithium
 
+
+.. _electrochemistry_1d0f15cb_d6b5_4c27_89ca_fe78adc1ce5b:
 
 LithiumIronPhosphateElectrode
 -----------------------------
@@ -3806,6 +4672,8 @@ Alternative Label(s):
    LFPElectrode
 
 
+.. _electrochemistry_9109b3f6_112b_456d_ae45_b82c271c656b:
+
 LithiumManganeseIronPhosphateElectrode
 --------------------------------------
 
@@ -3814,6 +4682,8 @@ Elucidation:
 Alternative Label(s):
    LMFPElectrode
 
+
+.. _electrochemistry_c231227b_f318_4e59_ad90_6e91072903ed:
 
 LithiumManganeseOxideElectrode
 ------------------------------
@@ -3824,6 +4694,8 @@ Alternative Label(s):
    LMOElectrode
 
 
+.. _electrochemistry_fffc3dad_6946_4c32_a9d3_f5f311339881:
+
 LithiumManganeseOxideLithiumIronPhosphateElectrode
 --------------------------------------------------
 
@@ -3832,6 +4704,8 @@ Elucidation:
 Alternative Label(s):
    LMOLFPElectrode
 
+
+.. _electrochemistry_713200a1_952b_49e2_90b7_deba229f6bbe:
 
 LithiumManganesePhosphateElectrode
 ----------------------------------
@@ -3842,6 +4716,8 @@ Alternative Label(s):
    LMPElectrode
 
 
+.. _electrochemistry_f19d3b4f_d59b_4a92_a547_54a6f59cc9b4:
+
 LithiumNickelCobaltAluminumOxideElectrode
 -----------------------------------------
 
@@ -3850,6 +4726,8 @@ Elucidation:
 Alternative Label(s):
    NCAElectrode
 
+
+.. _electrochemistry_48e380c3_0441_4761_a80f_3e448cb2f0ba:
 
 LithiumNickelMananeseCobaltOxideLithiumManganeseOxideElectrode
 --------------------------------------------------------------
@@ -3860,6 +4738,8 @@ Alternative Label(s):
    NMCLMOElectrode
 
 
+.. _electrochemistry_b3eb8c65_5644_45e3_9e17_0be6277c7962:
+
 LithiumNickelManganeseCobaltOxideElectrode
 ------------------------------------------
 
@@ -3868,6 +4748,8 @@ Elucidation:
 Alternative Label(s):
    NMCElectrode
 
+
+.. _electrochemistry_098690e3_9010_437e_8042_cee1656efa9b:
 
 LithiumNickelManganeseCobaltOxideLithiumCobaltOxideElectrode
 ------------------------------------------------------------
@@ -3878,6 +4760,8 @@ Alternative Label(s):
    NMCLCOElectrode
 
 
+.. _electrochemistry_41ddf723_245f_4ce8_b9b1_7d9b3b9eea7d:
+
 LithiumNickelManganeseOxideElectrode
 ------------------------------------
 
@@ -3886,6 +4770,8 @@ Elucidation:
 Alternative Label(s):
    LNMOElectrode
 
+
+.. _electrochemistry_bb710d71_98fa_48a1_85bc_d8f1ef2200da:
 
 LithiumNickelManganeseOxideLithiumIronPhosphateElectrode
 --------------------------------------------------------
@@ -3896,6 +4782,8 @@ Alternative Label(s):
    LNMOLFPElectrode
 
 
+.. _electrochemistry_cab66388_3feb_4101_82bc_f4441f0b60e3:
+
 LithiumNickelOxideElectrode
 ---------------------------
 
@@ -3904,6 +4792,8 @@ Elucidation:
 Alternative Label(s):
    LNOElectrode
 
+
+.. _electrochemistry_6d0fe07e_a629_479c_ab24_2846f209bb0b:
 
 LithiumTitanateElectrode
 ------------------------
@@ -3914,6 +4804,8 @@ Alternative Label(s):
    LTOElectrode
 
 
+.. _electrochemistry_b5e91259_cd97_4ed6_9ab2_4b18ef68a35a:
+
 LithiumVanadiumOxideElectrode
 -----------------------------
 
@@ -3921,10 +4813,14 @@ Elucidation:
    electrode in which the active material is lithium vanadium oxide
 
 
+.. _electrochemistry_2a177462_ff01_4b83_ab9f_032e93c9ec69:
+
 MagnesiumElectrode
 ------------------
 
 
+
+.. _electrochemistry_d9888f1f_2226_4ce3_9cb3_91fd9bd1bf22:
 
 MagnesiumInsertionElectrode
 ---------------------------
@@ -3932,6 +4828,8 @@ MagnesiumInsertionElectrode
 Elucidation:
    an insertion electrode in which the guest molecule is magnesium
 
+
+.. _electrochemistry_ca4d9efc_70be_441e_b358_d927aa4c36c4:
 
 ManganeseDioxideElectrode
 -------------------------
@@ -3941,6 +4839,8 @@ Elucidation:
 Alternative Label(s):
    MnO2Electrode
 
+
+.. _electrochemistry_64bf0969_37a1_4aaf_82e9_68462847ac65:
 
 MeasurementPrinciple
 --------------------
@@ -3953,6 +4853,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=112-04-03
 
 
+.. _electrochemistry_df78745e_f9db_4830_88f0_8ce074fcb8ff:
+
 MercuryElectrode
 ----------------
 
@@ -3962,6 +4864,8 @@ Alternative Label(s):
    HgElectrode
 
 
+.. _electrochemistry_5adb91e0_ffe1_41f3_b779_c6966f65fb0e:
+
 MetalElectrode
 --------------
 
@@ -3969,12 +4873,16 @@ Elucidation:
    an electrode in which the actve electrochemical material is a metal
 
 
+.. _electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5:
+
 MetalOxideElectrode
 -------------------
 
 Elucidation:
    electrode in which the active material is a metal oxide
 
+
+.. _electrochemistry_acdeaa89_0e99_4941_8821_d5dea3d34912:
 
 ModifiedConstantVoltageCharge
 -----------------------------
@@ -3985,6 +4893,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-50
 
 
+.. _electrochemistry_e94f6d42_35e4_4f9f_bb74_5e0628bbd454:
+
 MonoblocContainer
 -----------------
 
@@ -3993,6 +4903,8 @@ Elucidation:
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-18
 
+
+.. _electrochemistry_1a2eb6db_c927_4039_aea0_8dfab060fd27:
 
 Mudrib
 ------
@@ -4003,6 +4915,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-18
 
 
+.. _electrochemistry_dc205ac2_314e_415c_a2b6_b12e8359d54c:
+
 NearNeutralElectrolyte
 ----------------------
 
@@ -4011,6 +4925,8 @@ Elucidation:
 Alternative Label(s):
    NearNeutralAqueousElectrolyte, NearNeutralSolution
 
+
+.. _electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c:
 
 NegativeElectrode
 -----------------
@@ -4023,6 +4939,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=151-13-04
 
 
+.. _electrochemistry_b851c7e9_60bf_4d3d_abe1_8d08d3d85124:
+
 NegativeTerminal
 ----------------
 
@@ -4031,6 +4949,8 @@ Elucidation:
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-24
 
+
+.. _electrochemistry_9d7e5fea_a49a_4a19_a8de_8e24c60e420c:
 
 NernstEinsteinEquation
 ----------------------
@@ -4041,6 +4961,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Einstein_relation_(kinetic_theory)#Nernst%E2%80%93Einstein_equation
 
 
+.. _electrochemistry_fe3a6c9a_85b8_4da6_aa4f_71c8de74939e:
+
 NernstEquation
 --------------
 
@@ -4049,6 +4971,8 @@ Elucidation:
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Nernst_equation
 
+
+.. _electrochemistry_0471ec77_91bc_4a78_be31_b6af613e5966:
 
 Neutralisation
 --------------
@@ -4061,12 +4985,16 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-01-11
 
 
+.. _electrochemistry_b8dc138f_8024_4f15_8350_192425d23a4d:
+
 NickelElectrode
 ---------------
 
 Alternative Label(s):
    metal electrode in which the active material is nickel
 
+
+.. _electrochemistry_76e461aa_5948_4a68_8337_284d11e0fd7d:
 
 NickelOxideElectrode
 --------------------
@@ -4077,6 +5005,8 @@ Alternative Label(s):
    NiOElectrode
 
 
+.. _electrochemistry_344ed3a6_481a_499f_afef_631f1cece9ef:
+
 NickelOxideHydroxideElectrode
 -----------------------------
 
@@ -4085,6 +5015,8 @@ Elucidation:
 Alternative Label(s):
    NiOOHElectrode, NickelOxyhydroxideElectrode
 
+
+.. _electrochemistry_5f9a9411_05f9_4576_acd3_81d7d41cfe98:
 
 NonAqueousElectrolyte
 ---------------------
@@ -4095,12 +5027,16 @@ Alternative Label(s):
    NonAqueousElectrolyticSolution, NonAqueousSolution
 
 
+.. _electrochemistry_9f466223_e20a_474d_ac4d_6d4b6131c275:
+
 NonPolarizableElectrode
 -----------------------
 
 Elucidation:
    an electrode that holds its potential essentially constant by efficiently allowing electric current to pass
 
+
+.. _electrochemistry_c610d869_cc03_44f0_b40d_ca86e945b9c9:
 
 NonSpillableCell
 ----------------
@@ -4111,6 +5047,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-16
 
 
+.. _electrochemistry_83ee23b3_2f5c_4afa_b972_ac85e91d7306:
+
 NormalHydrogenElectrode
 -----------------------
 
@@ -4119,6 +5057,8 @@ Elucidation:
 Alternative Label(s):
    NHE
 
+
+.. _electrochemistry_3c3972f6_8e1d_454b_a198_48173ba2232b:
 
 NormalPulseVoltammetry
 ----------------------
@@ -4131,6 +5071,8 @@ IUPAC Reference:
    https://doi.org/10.1515/pac-2018-0109
 
 
+.. _electrochemistry_a2b01d05_b472_4cf5_b388_e0914db56324:
+
 NyquistPlot
 -----------
 
@@ -4142,6 +5084,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Nyquist_stability_criterion#Nyquist_plot
 
 
+.. _electrochemistry_cb3c0663_5962_4b79_8e72_1e8242af3977:
+
 OpenCircuitHold
 ---------------
 
@@ -4151,12 +5095,16 @@ Alternative Label(s):
    OCVHold
 
 
+.. _electrochemistry_564d31be_91cb_4a8f_8369_2a55f1180499:
+
 OrganicElectrolyte
 ------------------
 
 Elucidation:
    an electrolyte solution with an organic solvent
 
+
+.. _electrochemistry_76df6e7b_fc3b_4a1f_98b1_0ca9c0539e4c:
 
 OutputCable
 -----------
@@ -4167,6 +5115,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-36
 
 
+.. _electrochemistry_9ee6e728_e8f5_4b36_a045_d63da69dfc85:
+
 Overcharge
 ----------
 
@@ -4176,6 +5126,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-44
 
 
+.. _electrochemistry_e2c91edd_dd01_4309_9735_6fe5280261d4:
+
 OxygenElectrode
 ---------------
 
@@ -4183,12 +5135,16 @@ Elucidation:
    a gas diffusion electrode in which the active material is oxygen (O2)
 
 
+.. _electrochemistry_f9f056bb_a38b_43bd_a6bd_99d618431f4d:
+
 PalladiumElectrode
 ------------------
 
 Elucidation:
    electrode in which the active material is palladium
 
+
+.. _electrochemistry_efc4f7ab_850d_443c_a17f_184983021f96:
 
 ParallelConnection
 ------------------
@@ -4199,6 +5155,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-39
 
 
+.. _electrochemistry_d5da9948_e95b_4f12_a2d2_10a48f390c52:
+
 ParallelSeriesConnection
 ------------------------
 
@@ -4207,6 +5165,8 @@ Elucidation:
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-40
 
+
+.. _electrochemistry_b79d4f9e_5727_4895_8d7f_5fc18d83eb90:
 
 ParasiticReaction
 -----------------
@@ -4217,12 +5177,16 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-07
 
 
+.. _electrochemistry_d16eec87_c646_4566_bda6_7d3357cda061:
+
 PassivationLayer
 ----------------
 
 Elucidation:
    an interfacial layer of an electrode surface, that causes the electrode to become passivated
 
+
+.. _electrochemistry_a1ec9e3c_c624_4848_af13_89a6bc54d77c:
 
 PastedPlate
 -----------
@@ -4235,12 +5199,16 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-03
 
 
+.. _electrochemistry_78f75a64_55b6_4243_a35e_3d279c83209b:
+
 PhosphoricAcidSolution
 ----------------------
 
 Elucidation:
    a solution of phosphoric acid (H3PO4) dissolved in water (H2O)
 
+
+.. _electrochemistry_7760b241_775f_4be1_b827_59f9bde9e5b2:
 
 PhotoelectrolyticCell
 ---------------------
@@ -4251,6 +5219,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-04-19
 
 
+.. _electrochemistry_457a8f92_0a19_4773_8114_a42edff32248:
+
 PlateGroup
 ----------
 
@@ -4260,6 +5230,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-04
 
 
+.. _electrochemistry_2d32a81a_2148_41bd_84fb_467aa8de4a8f:
+
 PlatinumElectrode
 -----------------
 
@@ -4268,6 +5240,8 @@ Elucidation:
 Alternative Label(s):
    PtElectrode
 
+
+.. _electrochemistry_83d2c2d4_ffa9_42f4_9264_a0c59c657607:
 
 PolarityReversal
 ----------------
@@ -4280,12 +5254,16 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-03
 
 
+.. _electrochemistry_c2024587_3237_474e_8df9_91d10db2df47:
+
 PolarizableElectrode
 --------------------
 
 Elucidation:
    electrode whose potential changes with an applied potential
 
+
+.. _electrochemistry_c6d6c0a1_a06b_437a_978f_a469d3071ca9:
 
 PolymerElectrolyte
 ------------------
@@ -4296,12 +5274,16 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Polymer_electrolytes
 
 
+.. _electrochemistry_3663991d_9319_4f7a_922b_f0e428b58801:
+
 PorousElectrode
 ---------------
 
 Elucidation:
    porous electrodes consist of porous matrices of a single reactive electronic conductor or a mixture of solids that include essentially non-conducting, reactive materials in addition to electronic conductors. An electrolytic solution fills the void spaces of the porous matrix.
 
+
+.. _electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56:
 
 PorousElectrodeCoating
 ----------------------
@@ -4310,12 +5292,16 @@ Elucidation:
    a porous electrode which is coated onto a non-porous substrate, typically a metallic foil current collector.
 
 
+.. _electrochemistry_58413d4e_2885_459e_ac06_8d45e661cf91:
+
 PorousSeparator
 ---------------
 
 Elucidation:
    a separator with a porosity greater than 0
 
+
+.. _electrochemistry_aff732a9_238a_4734_977c_b2ba202af126:
 
 PositiveElectrode
 -----------------
@@ -4328,6 +5314,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=151-13-05
 
 
+.. _electrochemistry_522f0c0b_cf33_4328_af71_12e38dae6798:
+
 PositiveTerminal
 ----------------
 
@@ -4337,10 +5325,14 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-25
 
 
+.. _electrochemistry_0afe79ed_dc0d_4b3e_88fa_ae0c7b1e88b5:
+
 PotassiumElectrode
 ------------------
 
 
+
+.. _electrochemistry_26a0dc36_8171_4a84_88dd_0f5dd7cb2d20:
 
 PotassiumHydroxideSolution
 --------------------------
@@ -4351,6 +5343,8 @@ Alternative Label(s):
    AqueousPotassiumHydroxideSolution, KOHSolution
 
 
+.. _electrochemistry_c183f697_8995_477c_9ccd_5c12d98e3633:
+
 PotassiumInsertionElectrode
 ---------------------------
 
@@ -4358,12 +5352,16 @@ Elucidation:
    an insertion electrode in which the guest molecule is potassium
 
 
+.. _electrochemistry_2dd44ff6_425a_4377_b86e_fa2bd567819f:
+
 PotentialPulse
 --------------
 
 Elucidation:
    Rapid, transient change in the amplitude of an electric potential, from a baseline value to a higer or lower value, followed by a rapid return to the baseline value.
 
+
+.. _electrochemistry_cd7d24a5_db31_4d76_97d9_367c809f099e:
 
 PotentialTimePlot
 -----------------
@@ -4374,6 +5372,8 @@ Alternative Label(s):
    ElectricPotentialTimeCurve, ElectricPotentialTimePlot, PotentialTimeCurve
 
 
+.. _electrochemistry_916b1863_f417_4b94_9407_9d749ada9ed5:
+
 PotentiometricStrippingAnalysis
 -------------------------------
 
@@ -4382,6 +5382,8 @@ Elucidation:
 Alternative Label(s):
    PSA
 
+
+.. _electrochemistry_b5039bc8_f595_4797_908a_7e86131fbde4:
 
 PotentiometricStrippingAnalysis
 -------------------------------
@@ -4394,6 +5396,8 @@ IUPAC Reference:
    https://doi.org/10.1515/pac-2018-0109
 
 
+.. _electrochemistry_e8cedede_5685_4625_9abe_64f62b5ddcb6:
+
 Potentiometry
 -------------
 
@@ -4405,6 +5409,8 @@ IUPAC Reference:
    https://doi.org/10.1515/pac-2018-0109
 
 
+.. _electrochemistry_a9fc3f77_e48e_4bce_b118_044d608722f6:
+
 Potentiostat
 ------------
 
@@ -4414,12 +5420,16 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Potentiostat
 
 
+.. _electrochemistry_f07be701_9d6a_415b_ac6d_63202297a7a1:
+
 PotentiostaticProcess
 ---------------------
 
 Elucidation:
    a process in which the voltage is kept constant
 
+
+.. _electrochemistry_74459386_875c_4303_b774_60125b599d06:
 
 PouchCase
 ---------
@@ -4428,10 +5438,14 @@ Elucidation:
    a soft pouch case that is described by its length, width, and height
 
 
+.. _electrochemistry_ee479886_6805_4018_95e1_500185e44215:
+
 Powder
 ------
 
 
+
+.. _electrochemistry_f330680b_347e_45b3_9113_5ce09d18d60b:
 
 PressureReliefVent
 ------------------
@@ -4442,12 +5456,16 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-41
 
 
+.. _electrochemistry_43cd6e14_dd43_41b5_b5b4_344d53841603:
+
 PrismaticCase
 -------------
 
 Elucidation:
    a rigid prismatic case that is described by characteristic length, width, and height
 
+
+.. _electrochemistry_11a774f3_d20a_4741_bd81_cae53230bd0c:
 
 ProtonInsertionElectrode
 ------------------------
@@ -4456,6 +5474,8 @@ Elucidation:
    an insertion electrode in which the guest molecule is a proton (hydrogen)
 
 
+.. _electrochemistry_e73cb0b7_e2af_4c1a_b05b_503df25a8bf5:
+
 R1025
 -----
 
@@ -4463,12 +5483,16 @@ Elucidation:
    a coin case with a nominal diameter of 10.0 mm and a height of 2.5 mm
 
 
+.. _electrochemistry_dac5067c_e6f2_4fca_a915_5b7b918ca1c4:
+
 R11108
 ------
 
 Elucidation:
    a coin case with a nominal diameter of 11.6 mm and a height of 10.8 mm
 
+
+.. _electrochemistry_31b7ac6a_b1eb_45e7_a075_b6063080c949:
 
 R1121
 -----
@@ -4479,6 +5503,8 @@ Alternative Label(s):
    R55
 
 
+.. _electrochemistry_cf6eebea_24f6_48d2_8389_65eba0393762:
+
 R1126
 -----
 
@@ -4488,12 +5514,16 @@ Alternative Label(s):
    R56
 
 
+.. _electrochemistry_39c6f5a0_5dc8_4112_b432_b9fece568ca2:
+
 R1130
 -----
 
 Elucidation:
    a coin case with a nominal diameter of 11.5 mm and a height of 3.0 mm
 
+
+.. _electrochemistry_b442217f_02f6_4991_aadf_22d81369223c:
 
 R1131
 -----
@@ -4504,6 +5534,8 @@ Alternative Label(s):
    R54
 
 
+.. _electrochemistry_21eef598_0799_4cb1_b2d5_6e072a8579a3:
+
 R1136
 -----
 
@@ -4512,6 +5544,8 @@ Elucidation:
 Alternative Label(s):
    R42
 
+
+.. _electrochemistry_abffe8cd_14d3_4437_84e6_5dfc61b057e8:
 
 R1142
 -----
@@ -4522,6 +5556,8 @@ Alternative Label(s):
    R43
 
 
+.. _electrochemistry_fe054d02_41c7_40e9_8206_3440ab6a67b2:
+
 R1154
 -----
 
@@ -4531,12 +5567,16 @@ Alternative Label(s):
    R44
 
 
+.. _electrochemistry_36e05f2f_d279_4816_b5ae_6bb4cef02736:
+
 R1216
 -----
 
 Elucidation:
    a coin case with a nominal diameter of 12.5 mm and a height of 1.6 mm
 
+
+.. _electrochemistry_296b95b0_c4cb_45db_a8ca_f638379870c4:
 
 R1220
 -----
@@ -4545,12 +5585,16 @@ Elucidation:
    a coin case with a nominal diameter of 12.5 mm and a height of 2.0 mm
 
 
+.. _electrochemistry_f7e253da_b12e_40b0_ba51_8cb039839ab6:
+
 R1225
 -----
 
 Elucidation:
    a coin case with a nominal diameter of 12.05 mm and a height of 2.5 mm
 
+
+.. _electrochemistry_ce4352a7_f0b1_4f27_9184_6deebf8bbe96:
 
 R1511
 -----
@@ -4561,12 +5605,16 @@ Alternative Label(s):
    R52
 
 
+.. _electrochemistry_d5f67a0c_ed56_479d_9b68_6003142f98b0:
+
 R1616
 -----
 
 Elucidation:
    a coin case with a nominal diameter of 16.0 mm and a height of 1.6 mm
 
+
+.. _electrochemistry_f2cf71c1_f2d7_4131_82e0_2701cdecea55:
 
 R1632
 -----
@@ -4575,12 +5623,16 @@ Elucidation:
    a coin case with a nominal diameter of 16.0 mm and a height of 3.2 mm
 
 
+.. _electrochemistry_9c0e683b_40d7_4786_b31f_910dd68b2ea8:
+
 R2012
 -----
 
 Elucidation:
    a coin case with a nominal diameter of 20.0 mm and a height of 1.2 mm
 
+
+.. _electrochemistry_30c8fb1b_3c75_49f5_9395_c15dfaf71b12:
 
 R2016
 -----
@@ -4589,12 +5641,16 @@ Elucidation:
    a coin case with a nominal diameter of 20.0 mm and a height of 1.6 mm
 
 
+.. _electrochemistry_9017b8b9_e21e_4961_a3c1_c0aeef3fe795:
+
 R2020
 -----
 
 Elucidation:
    a coin case with a nominal diameter of 20.0 mm and a height of 2.0 mm
 
+
+.. _electrochemistry_9ceffffd_b918_48c2_aad9_5db16fa6149d:
 
 R2025
 -----
@@ -4603,12 +5659,16 @@ Elucidation:
    a coin case with a nominal diameter of 20.0 mm and a height of 2.5 mm
 
 
+.. _electrochemistry_94497aca_52a0_48e3_9b76_157b050e35b3:
+
 R2032
 -----
 
 Elucidation:
    a coin case with a nominal diameter of 20.0 mm and a height of 3.2 mm
 
+
+.. _electrochemistry_fab4bd12_c4ed_417a_92a3_bcb109000d82:
 
 R2040
 -----
@@ -4617,12 +5677,16 @@ Elucidation:
    a coin case with a nominal diameter of 20.0 mm and a height of 4.0 mm
 
 
+.. _electrochemistry_400cb3e0_27b5_4d9a_be80_f86ad2757763:
+
 R2050
 -----
 
 Elucidation:
    a coin case with a nominal diameter of 20.0 mm and a height of 5.0 mm
 
+
+.. _electrochemistry_fbf40756_3265_4468_bcdb_88d162afc539:
 
 R2320
 -----
@@ -4631,12 +5695,16 @@ Elucidation:
    a coin case with a nominal diameter of 23.0 mm and a height of 2.0 mm
 
 
+.. _electrochemistry_0689e6fc_cda7_4e04_b1eb_41459a0a4736:
+
 R2325
 -----
 
 Elucidation:
    a coin case with a nominal diameter of 23.0 mm and a height of 2.5 mm
 
+
+.. _electrochemistry_11579b47_cbf8_45ac_aed3_343ea533b346:
 
 R2330
 -----
@@ -4645,12 +5713,16 @@ Elucidation:
    a coin case with a nominal diameter of 23.0 mm and a height of 3.0 mm
 
 
+.. _electrochemistry_885ffc4d_2b29_42d6_8597_6fc879c21d60:
+
 R2335
 -----
 
 Elucidation:
    a coin case with a nominal diameter of 23.0 mm and a height of 3.5 mm
 
+
+.. _electrochemistry_af92a3ae_e870_4676_9ae7_cda277b1e6e1:
 
 R2354
 -----
@@ -4659,12 +5731,16 @@ Elucidation:
    a coin case with a nominal diameter of 23.0 mm and a height of 5.4 mm
 
 
+.. _electrochemistry_a4e7c3d6_45bd_402a_962f_5d4b88af84ff:
+
 R2412
 -----
 
 Elucidation:
    a coin case with a nominal diameter of 24.5 mm and a height of 1.2 mm
 
+
+.. _electrochemistry_11e9f765_4fea_456b_bd8e_4624b9c752ae:
 
 R2430
 -----
@@ -4673,12 +5749,16 @@ Elucidation:
    a coin case with a nominal diameter of 24.5 mm and a height of 3.0 mm
 
 
+.. _electrochemistry_aaafc5d6_050a_4c51_b1ca_db5839aad4de:
+
 R2450
 -----
 
 Elucidation:
    a coin case with a nominal diameter of 24.5 mm and a height of 5.0 mm
 
+
+.. _electrochemistry_a87d4b9d_ba91_4549_aed4_508d1160c0c0:
 
 R2477
 -----
@@ -4687,12 +5767,16 @@ Elucidation:
    a coin case with a nominal diameter of 24.5 mm and a height of 7.7 mm
 
 
+.. _electrochemistry_99475d6c_304c_4d6b_9eca_fbc42f768be5:
+
 R3032
 -----
 
 Elucidation:
    a coin case with a nominal diameter of 30.0 mm and a height of 3.2 mm
 
+
+.. _electrochemistry_027d437e_3bbf_4eda_940b_e509f8d2b993:
 
 R416
 ----
@@ -4701,12 +5785,16 @@ Elucidation:
    a coin case with a nominal diameter of 4.8 mm and a height of 1.6 mm
 
 
+.. _electrochemistry_94209cd8_f68f_40e6_ac70_cfb97a16e593:
+
 R512
 ----
 
 Elucidation:
    a coin case with a nominal diameter of 5.8 mm and a height of 1.3 mm
 
+
+.. _electrochemistry_76318e8e_c1ba_49ac_8029_a951bd9dc955:
 
 R516
 ----
@@ -4717,6 +5805,8 @@ Alternative Label(s):
    R62
 
 
+.. _electrochemistry_0a5038d4_24af_4ea8_8d56_a156faeb98e2:
+
 R521
 ----
 
@@ -4725,6 +5815,8 @@ Elucidation:
 Alternative Label(s):
    R63
 
+
+.. _electrochemistry_b56a95e6_eea5_4a58_99aa_045fd28e75d3:
 
 R527
 ----
@@ -4735,6 +5827,8 @@ Alternative Label(s):
    R64
 
 
+.. _electrochemistry_dc019f3f_e5f3_4eeb_bab9_a845a02223a0:
+
 R616
 ----
 
@@ -4743,6 +5837,8 @@ Elucidation:
 Alternative Label(s):
    R65
 
+
+.. _electrochemistry_15ec346a_6d3c_4161_95e1_9cf889965f85:
 
 R621
 ----
@@ -4753,14 +5849,7 @@ Alternative Label(s):
    R60
 
 
-R626
-----
-
-Elucidation:
-   a coin case with a nominal diameter of 6.8 mm and a height of 2.6 mm
-Alternative Label(s):
-   R66
-
+.. _electrochemistry_68c1c36e_1548_4247_bae2_fe7102a2c4ff:
 
 R626
 ----
@@ -4770,6 +5859,19 @@ Elucidation:
 Alternative Label(s):
    R66
 
+
+.. _electrochemistry_6b275583_433f_46f7_aafd_ebc9409257cc:
+
+R626
+----
+
+Elucidation:
+   a coin case with a nominal diameter of 6.8 mm and a height of 2.6 mm
+Alternative Label(s):
+   R66
+
+
+.. _electrochemistry_bb2faf17_b819_4876_b17f_fa82917cf85d:
 
 R712
 ----
@@ -4777,6 +5879,8 @@ R712
 Elucidation:
    a coin case with a nominal diameter of 7.9 mm and a height of 1.3 mm
 
+
+.. _electrochemistry_34cb7ea7_2436_46e0_806e_a3c7835ae228:
 
 R716
 ----
@@ -4787,6 +5891,8 @@ Alternative Label(s):
    R67
 
 
+.. _electrochemistry_3279f575_1c62_4bf2_a6e8_de4c7ff36f8e:
+
 R721
 ----
 
@@ -4795,6 +5901,8 @@ Elucidation:
 Alternative Label(s):
    R58
 
+
+.. _electrochemistry_06db7d9e_d224_4360_b926_734f0349d396:
 
 R726
 ----
@@ -4805,6 +5913,8 @@ Alternative Label(s):
    R59
 
 
+.. _electrochemistry_88100e2c_0f6e_4483_afbf_30029a6702c6:
+
 R731
 ----
 
@@ -4812,12 +5922,16 @@ Elucidation:
    a coin case with a nominal diameter of 7.9 mm and a height of 3.1 mm
 
 
+.. _electrochemistry_0c09df01_b251_4f75_b6e3_2578ba1a10c9:
+
 R736
 ----
 
 Alternative Label(s):
    R41, a coin case with a nominal diameter of 7.9 mm and a height of 3.6 mm
 
+
+.. _electrochemistry_028069a2_4e03_409e_8af2_4c8df32b5c5e:
 
 R754
 ----
@@ -4828,12 +5942,16 @@ Alternative Label(s):
    R48
 
 
+.. _electrochemistry_e0869e7a_36fe_4e33_9843_a5dc19fcb488:
+
 R9
 --
 
 Elucidation:
    a coin case with a nominal diameter of 15.5 mm and a height of 6.0 mm
 
+
+.. _electrochemistry_ebf314c7_81ad_4d77_9da4_b454520fda0e:
 
 R916
 ----
@@ -4844,6 +5962,8 @@ Alternative Label(s):
    R68
 
 
+.. _electrochemistry_eb1c9aa3_ad4f_4f2a_80f6_d6c8a8bc0d9a:
+
 R921
 ----
 
@@ -4852,6 +5972,8 @@ Elucidation:
 Alternative Label(s):
    R69
 
+
+.. _electrochemistry_a277e420_2483_44d5_a2bc_4e421dea231a:
 
 R926
 ----
@@ -4862,6 +5984,8 @@ Alternative Label(s):
    R57
 
 
+.. _electrochemistry_387e1e59_e511_4acb_b5ec_fa7360ec7557:
+
 R927
 ----
 
@@ -4869,12 +5993,16 @@ Alternative Label(s):
    a coin case with a nominal diameter of 9.5 mm and a height of 2.7 mm
 
 
+.. _electrochemistry_9a23f61b_fef0_40f8_84f9_2057f90f6a95:
+
 R932
 ----
 
 Elucidation:
    a coin case with a nominal diameter of 9.3 mm and a height of 3.2 mm
 
+
+.. _electrochemistry_d67a0921_15e4_4c73_804e_97b2d66452b8:
 
 R936
 ----
@@ -4885,6 +6013,8 @@ Alternative Label(s):
    R45
 
 
+.. _electrochemistry_59c041fc_eaa1_40fc_9b3e_1a6aca6119fd:
+
 Record
 ------
 
@@ -4892,12 +6022,16 @@ Elucidation:
    a measurement of one or more quantities, usually at a given time
 
 
+.. _electrochemistry_14377ecb_5ead_431e_831e_159d622bd0ea:
+
 RectangularElectrode
 --------------------
 
 Elucidation:
    an electrode in the shapre of a rectangle
 
+
+.. _electrochemistry_7729c34e_1ae9_403d_b933_1765885e7f29:
 
 ReferenceElectrode
 ------------------
@@ -4910,6 +6044,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Reference_electrode
 
 
+.. _electrochemistry_0d9ba00d_04bc_4bdc_85af_3380694f6f68:
+
 ReversibleHydrogenElectrode
 ---------------------------
 
@@ -4919,12 +6055,16 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Reversible_hydrogen_electrode
 
 
+.. _electrochemistry_399b10cd_8a2e_47be_96b8_295890bd2460:
+
 RhodiumElectrode
 ----------------
 
 Elucidation:
    electrode in which the active material is rhodium
 
+
+.. _electrochemistry_6c421175_477f_45e0_8b6c_c3464f5351c5:
 
 RotatingDiskElectrode
 ---------------------
@@ -4937,6 +6077,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Rotating_disk_electrode
 
 
+.. _electrochemistry_7f4d74cd_d0a5_4908_9da9_7629fe419917:
+
 RotatingRingDiskElectrode
 -------------------------
 
@@ -4948,12 +6090,16 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Rotating_ring-disk_electrode
 
 
+.. _electrochemistry_eacb141f_6ab4_491f_8603_a3e025cefc82:
+
 RoundCase
 ---------
 
 Elucidation:
    a case that is described by its diameter and height
 
+
+.. _electrochemistry_a8bfac4f_3f30_4e6d_8d8e_34b1eeecb614:
 
 RoundElectrode
 --------------
@@ -4962,12 +6108,16 @@ Elucidation:
    an electrode in the shape of a circle
 
 
+.. _electrochemistry_7ffe1cb6_f87e_4b4a_8ce7_c98e2a584cb1:
+
 RutheniumElectrode
 ------------------
 
 Elucidation:
    electrode in which the active material is ruthenium
 
+
+.. _electrochemistry_10a91aba_da41_4309_a926_ddc0f285c2c1:
 
 RutheniumOxideElectrode
 -----------------------
@@ -4978,6 +6128,8 @@ Alternative Label(s):
    RuO2Electrode
 
 
+.. _electrochemistry_637c576e_a50e_47ae_8c74_2024ce4c6d0f:
+
 SaltBridge
 ----------
 
@@ -4986,6 +6138,8 @@ Elucidation:
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Salt_bridge
 
+
+.. _electrochemistry_6f0dc7c0_ba12_4390_9564_f10f85a1779a:
 
 SampledDCPolarography
 ---------------------
@@ -4998,6 +6152,8 @@ IUPAC Reference:
    https://doi.org/10.1515/pac-2018-0109
 
 
+.. _electrochemistry_82b66bfe_ec25_417b_ba65_b631ddaaca0e:
+
 SaturatedCalomelElectrode
 -------------------------
 
@@ -5006,6 +6162,8 @@ Elucidation:
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Saturated_calomel_electrode
 
+
+.. _electrochemistry_27a81a51_e8d7_42fb_834f_0d068fa45d89:
 
 SaturatedSolution
 -----------------
@@ -5018,6 +6176,8 @@ IUPAC Reference:
    https://doi.org/10.1351/goldbook.S05471
 
 
+.. _electrochemistry_8d3bf304_78e4_4e99_abe1_6ab429e44ed1:
+
 SealedCell
 ----------
 
@@ -5027,12 +6187,16 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-17
 
 
+.. _electrochemistry_1c0c8f43_7349_4646_94e3_c36727c5c2e3:
+
 Seawater
 --------
 
 Elucidation:
    a combination of salts (mostly NaCl) dissolved in water
 
+
+.. _electrochemistry_444992e5_43f8_44a1_9767_b408dbe54330:
 
 SelfDischarge
 -------------
@@ -5044,6 +6208,8 @@ IEC Reference:
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Self-discharge
 
+
+.. _electrochemistry_331e6cca_f260_4bf8_af55_35304fe1bbe0:
 
 Separator
 ---------
@@ -5058,6 +6224,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Separator_(electricity)
 
 
+.. _electrochemistry_8c71739c_27c1_4d19_a0ff_02545296af43:
+
 SeriesConnection
 ----------------
 
@@ -5067,6 +6235,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-41
 
 
+.. _electrochemistry_bed5b5f9_b89d_45e3_a8c2_81b70ae21847:
+
 SeriesParallelConnection
 ------------------------
 
@@ -5075,6 +6245,8 @@ Elucidation:
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-42
 
+
+.. _electrochemistry_f47611a2_e081_47f0_b287_3fda5f706154:
 
 SideReaction
 ------------
@@ -5089,12 +6261,16 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Side_reaction
 
 
+.. _electrochemistry_79e12290_d1e5_4c41_916c_18f1e4d7fb51:
+
 SiliconElectrode
 ----------------
 
 Elucidation:
    electrode in which the active material is silicon
 
+
+.. _electrochemistry_e8c39ecc_29d1_4172_996e_d5b05dc88015:
 
 SiliconGraphiteElectrode
 ------------------------
@@ -5103,6 +6279,8 @@ Elucidation:
    an electrode with blended silicon and graphite active materials
 
 
+.. _electrochemistry_4143b1c2_2d21_419e_af45_247d4c78ce7e:
+
 SiliconOxideElectrode
 ---------------------
 
@@ -5110,12 +6288,16 @@ Elucidation:
    electrode in which the active material is silicon oxide
 
 
+.. _electrochemistry_2fd5964b_0c65_4413_8b8c_849639e6d1e7:
+
 SiliconOxideGraphiteElectrode
 -----------------------------
 
 Elucidation:
    an electrode with blended silicon oxide and graphite active materials
 
+
+.. _electrochemistry_6ec59f99_5f26_4a7d_9b90_b52e0f8ad190:
 
 SilverChlorideElectrode
 -----------------------
@@ -5126,6 +6308,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Silver_chloride_electrode
 
 
+.. _electrochemistry_a462859d_d8bd_48ea_8bde_1576f1248a1e:
+
 SilverElectrode
 ---------------
 
@@ -5135,12 +6319,16 @@ Alternative Label(s):
    AgElectrode
 
 
+.. _electrochemistry_a3745142_b97a_4e19_b7ed_03599f56e81d:
+
 SilverOxideElectrode
 --------------------
 
 Elucidation:
    electrode in which the active material is silver oxide
 
+
+.. _electrochemistry_418c59bd_dc9d_438b_bc7c_494fbd1bb4f8:
 
 SingleCoatedElectrode
 ---------------------
@@ -5149,12 +6337,16 @@ Elucidation:
    an electrode that is coated on only one side of the current collector
 
 
+.. _electrochemistry_d61deb36_b397_4811_bf7a_66d8e4578c6e:
+
 SinusoidalCurrentWaveform
 -------------------------
 
 Elucidation:
    alternating current consistent with a sinusoidal waveform
 
+
+.. _electrochemistry_c74bb11c_e875_4112_b9cf_00d0890ef1f5:
 
 SinusoidalPotentialWaveform
 ---------------------------
@@ -5163,12 +6355,16 @@ Elucidation:
    Sinusoidal alternating potential of small amplitude (10 to 50 mV) of constant frequency (10 Hz to 100 kHz).
 
 
+.. _electrochemistry_f8f81b27_1d6c_42d8_a7e9_5a2534102562:
+
 SodiumChromiumOxideElectrode
 ----------------------------
 
 Elucidation:
    electrode in which the active material is sodium chromium oxide
 
+
+.. _electrochemistry_ee0278fb_932d_48cd_a20a_c1b89b29d68b:
 
 SodiumCobaltOxideElectrode
 --------------------------
@@ -5177,6 +6373,8 @@ Elucidation:
    electrode in which the active material is sodium cobalt oxide
 
 
+.. _electrochemistry_9e24d403_8531_416e_a9ec_d1ec5508bcb1:
+
 SodiumCobaltPhosphateElectrode
 ------------------------------
 
@@ -5184,10 +6382,14 @@ Elucidation:
    electrode in which the active material is sodium cobalt phosphate
 
 
+.. _electrochemistry_df4dd678_9642_47c9_84dd_4bb09f369f53:
+
 SodiumElectrode
 ---------------
 
 
+
+.. _electrochemistry_ebd01982_6b0c_48e7_90ef_7b7342009449:
 
 SodiumHydroxideSolution
 -----------------------
@@ -5198,12 +6400,16 @@ Alternative Label(s):
    AqueousSodiumHydroxideSolution, NaOHSolution
 
 
+.. _electrochemistry_d936c767_1530_419c_93f4_59e08f0d702c:
+
 SodiumInsertionElectrode
 ------------------------
 
 Elucidation:
    an insertion electrode in which the guest molecule is sodium
 
+
+.. _electrochemistry_8968eb7a_9a65_4286_a596_c31b998df329:
 
 SodiumIronHexacyanoferrateElectrode
 -----------------------------------
@@ -5212,12 +6418,16 @@ Elucidation:
    electrode in which the active material is sodium iron hexacyanoferrate
 
 
+.. _electrochemistry_502a98a3_ce47_421f_8e0a_016ed171c900:
+
 SodiumIronPhosphateElectrode
 ----------------------------
 
 Elucidation:
    electrode in which the active material is sodium iron phosphate
 
+
+.. _electrochemistry_4edb47d6_107c_40a2_be7c_6b26e9d296da:
 
 SodiumManganeseHexacyanoferrateElectrode
 ----------------------------------------
@@ -5226,12 +6436,16 @@ Elucidation:
    electrode in which the active material is sodium manganese hexacyanoferrate
 
 
+.. _electrochemistry_e8d9e091_a56d_4a24_a305_d1bac55cfce3:
+
 SodiumManganeseOxideElectrode
 -----------------------------
 
 Elucidation:
    electrode in which the active material is sodium manganese oxide
 
+
+.. _electrochemistry_cc0468a2_1851_4d3d_92a6_b4059db0c056:
 
 SodiumManganesePhosphateElectrode
 ---------------------------------
@@ -5240,12 +6454,16 @@ Elucidation:
    electrode in which the active material is sodium manganese phosphate
 
 
+.. _electrochemistry_103c9e6c_9c26_430a_9fb9_f4f041e970b0:
+
 SodiumMetatitanateElectrode
 ---------------------------
 
 Elucidation:
    electrode in which the active material is sodium metatitanate
 
+
+.. _electrochemistry_4a13e538_4c08_4ba9_8ebc_98a866208e01:
 
 SodiumNickelPhosphateElectrode
 ------------------------------
@@ -5254,6 +6472,8 @@ Elucidation:
    electrode in which the active material is sodium nickel phosphate
 
 
+.. _electrochemistry_c5f51531_1452_4654_82e5_0505491c2c7d:
+
 SodiumTitaniumOxideElectrode
 ----------------------------
 
@@ -5261,12 +6481,16 @@ Elucidation:
    electrode in which the active material is sodium titanium oxide
 
 
+.. _electrochemistry_cff80dd5_19a9_4357_8fb9_410a978153e2:
+
 SodiumTitaniumPhosphateElectrode
 --------------------------------
 
 Elucidation:
    electrode in which the active material is sodium titanium phosphate
 
+
+.. _electrochemistry_65c90d8d_9712_4f3f_b830_d8163ec4cfcc:
 
 SolidAmalgamElectrode
 ---------------------
@@ -5277,6 +6501,8 @@ Alternative Label(s):
    SAE
 
 
+.. _electrochemistry_0508a114_544a_4f54_a7de_9b947fb4b618:
+
 SolidElectrolyte
 ----------------
 
@@ -5286,6 +6512,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Fast_ion_conductor
 
 
+.. _electrochemistry_ecf136cb_2584_4cb1_98b7_2d2b3d22e40d:
+
 SolidElectrolyteInterphase
 --------------------------
 
@@ -5294,6 +6522,8 @@ Elucidation:
 Alternative Label(s):
    SEI
 
+
+.. _electrochemistry_e3f6eacc_f661_404e_ac16_45d2fa1f5d89:
 
 SpaceChargeLayer
 ----------------
@@ -5308,6 +6538,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Depletion_region
 
 
+.. _electrochemistry_49909cd1_44f4_41b4_877a_82a52845a5cb:
+
 Spacer
 ------
 
@@ -5316,6 +6548,8 @@ Elucidation:
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-10
 
+
+.. _electrochemistry_872b11e1_8bb3_4a2a_af90_bbaa0055d01e:
 
 Spring
 ------
@@ -5326,12 +6560,16 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Spring_(device)
 
 
+.. _electrochemistry_0e33278b_639f_412d_9abd_64c3790026ef:
+
 SquareWavePotentialWaveform
 ---------------------------
 
 Elucidation:
    Periodic potential where the amplitude alternates at a steady frequency between fixed minimum and maximum values, with the same duration at minimum and maximum.
 
+
+.. _electrochemistry_042d2282_bd2d_4874_b896_2d9dd06b54dd:
 
 SquareWaveVoltammetry
 ---------------------
@@ -5346,12 +6584,16 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Squarewave_voltammetry
 
 
+.. _electrochemistry_210f3520_1ea3_4c86_aa89_4cd9a3bc5a5a:
+
 SquareWaveVoltammetryWaveform
 -----------------------------
 
 Elucidation:
    Square wave potential waveform superimposed to a linear potential ramp or a staircase potential ramp.
 
+
+.. _electrochemistry_626f81db_ae4e_410a_96b8_0582aa2a9434:
 
 StaircaseCurrentRamp
 --------------------
@@ -5360,12 +6602,16 @@ Elucidation:
    Successive current steps that form a signal with a staircase waveform.
 
 
+.. _electrochemistry_d359386f_ae2d_4ad4_9616_464e2111b67d:
+
 StaircasePotentialRamp
 ----------------------
 
 Elucidation:
    Successive steps of electric potential that form a staircase waveform.
 
+
+.. _electrochemistry_2a40b878_7d09_49db_91b2_d0ee30192284:
 
 StandardHydrogenElectrode
 -------------------------
@@ -5380,6 +6626,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Standard_hydrogen_electrode
 
 
+.. _electrochemistry_7416a831_ba72_447c_bf83_3989ba2dfe37:
+
 StepChronopotentiometry
 -----------------------
 
@@ -5387,12 +6635,16 @@ Elucidation:
    chronopotentiometry where the applied current is changed in steps
 
 
+.. _electrochemistry_aa5ed981_c11b_4c4f_b1fd_8c432e009484:
+
 SternModel
 ----------
 
 Elucidation:
    describes the double layer as divided into two parts separated by the Stern plane, located about one hydrated ion radius from the electrode surface
 
+
+.. _electrochemistry_1e72986e_e19f_4c24_8663_cadd4318bd72:
 
 StoichiometricEquation
 ----------------------
@@ -5407,6 +6659,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Chemical_equation
 
 
+.. _electrochemistry_c91164b8_5e56_4c94_bad1_d7ada576b0e7:
+
 StorageTest
 -----------
 
@@ -5416,10 +6670,14 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-45
 
 
+.. _electrochemistry_bfbefff0_4df5_47c2_9943_5f42cf268e9e:
+
 StrippingChronopotentiometry
 ----------------------------
 
 
+
+.. _electrochemistry_3b35e843_3132_41e3_b6df_541cd45ba880:
 
 StrippingVoltammetry
 --------------------
@@ -5432,12 +6690,16 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrochemical_stripping_analysis
 
 
+.. _electrochemistry_46ac0fd3_2b8e_40aa_bf5d_19cf1dd39052:
+
 StrontiumElectrode
 ------------------
 
 Elucidation:
    electrode in which the active material is strontium
 
+
+.. _electrochemistry_88d2d4bc_4244_4419_a260_ad099a62d580:
 
 SulfurElectrode
 ---------------
@@ -5446,12 +6708,16 @@ Elucidation:
    electrode in which the active material is sulfur
 
 
+.. _electrochemistry_334b3acd_e35d_4d5a_b8b5_6d13cbebbc57:
+
 SulfuricAcidSolution
 --------------------
 
 Elucidation:
    a solution of sulfuric acid (H2SO4) dissolved in water (H2O)
 
+
+.. _electrochemistry_dc6abae7_39b0_4d22_b52e_14d088a4bd5f:
 
 Supercapacitor
 --------------
@@ -5463,6 +6729,8 @@ IEC Reference:
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Supercapacitor
 
+
+.. _electrochemistry_1fc5642c_b7b2_43bf_ad20_f96001db8800:
 
 SupportingElectrolyte
 ---------------------
@@ -5477,12 +6745,16 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Supporting_electrolyte
 
 
+.. _electrochemistry_cd1b7943_42ce_46bd_8588_1c3161268270:
+
 SwagelokCase
 ------------
 
 Elucidation:
    a container for an electrochemical cell manufactured by the company Swagelok
 
+
+.. _electrochemistry_3f70e5c5_67f0_483e_998b_b83b7739c4bc:
 
 Terminal
 --------
@@ -5492,6 +6764,8 @@ Elucidation:
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-22
 
+
+.. _electrochemistry_60bc27f0_8290_4113_8c3b_011433a733c7:
 
 TerminalProtector
 -----------------
@@ -5504,6 +6778,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-23
 
 
+.. _electrochemistry_04f28ce3_251d_429e_aa85_ab3eb45bbcd2:
+
 ThermalRunaway
 --------------
 
@@ -5512,6 +6788,8 @@ Elucidation:
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-54
 
+
+.. _electrochemistry_113e0469_8ae0_407f_892d_4b988f8d8a08:
 
 ThermogalvanicCell
 ------------------
@@ -5526,12 +6804,16 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Thermogalvanic_cell
 
 
+.. _electrochemistry_4977521c_0438_4659_bc81_1c77fae836bb:
+
 ThionylChlorideElectrode
 ------------------------
 
 Elucidation:
    electrode in which the active material is thionyl chloride
 
+
+.. _electrochemistry_b9bece97_a511_4cb9_88a2_b5bd5c5e5d74:
 
 ThreeElectrodeCell
 ------------------
@@ -5542,6 +6824,8 @@ Alternative Label(s):
    ThreeElectrodeElectrochemicalCell
 
 
+.. _electrochemistry_7fdf65c1_b86a_4cbe_8c06_56321b425d4e:
+
 TimeMeasurement
 ---------------
 
@@ -5549,10 +6833,14 @@ Elucidation:
    measurement of time
 
 
+.. _electrochemistry_496c8f31_9732_42c1_8eae_dd73979c06eb:
+
 TimeMeasurementResult
 ---------------------
 
 
+
+.. _electrochemistry_7fa74f69_047f_4c86_a02c_e7805d6f5b77:
 
 TimeSeries
 ----------
@@ -5563,12 +6851,16 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Time_series
 
 
+.. _electrochemistry_58ad1d22_3803_4c95_a137_207cfebe242a:
+
 TimeVector
 ----------
 
 Elucidation:
    a vector of discrete times
 
+
+.. _electrochemistry_31e8052d_bede_43c6_8b41_d51bb24c9489:
 
 TimeseriesElectricalDataset
 ---------------------------
@@ -5577,10 +6869,14 @@ Elucidation:
    a time series of electrical quantities
 
 
+.. _electrochemistry_a10ede13_c895_4f56_a728_b1aab512b31b:
+
 TinElectrode
 ------------
 
 
+
+.. _electrochemistry_76fe8fb2_868e_48eb_95ca_fc6acd6f5fc9:
 
 TitaniumDioxideElectrode
 ------------------------
@@ -5591,12 +6887,16 @@ Alternative Label(s):
    TiO2Electrode
 
 
+.. _electrochemistry_d90221a0_0da7_4876_9cac_0e943e445f6f:
+
 TitaniumElectrode
 -----------------
 
 Elucidation:
    electrode in which the active material is titanium
 
+
+.. _electrochemistry_f57a7dac_2ec2_4d51_b697_01a844c4467f:
 
 TrasattiBuzzancaModel
 ---------------------
@@ -5605,6 +6905,8 @@ Elucidation:
    considers the effects of specific adsorbed ions in the double layer
 
 
+.. _electrochemistry_09b9a369_2228_44bd_9b63_8abecfec8650:
+
 TriangularCurrentWaveform
 -------------------------
 
@@ -5612,12 +6914,16 @@ Elucidation:
    Linear ramp of electric current followed by a reversal to the initial current (typically I=0), both at the same current change rate.
 
 
+.. _electrochemistry_f9af8440_3629_4558_a944_9dfaf3dfd7ec:
+
 TriangularPotentialWaveform
 ---------------------------
 
 Elucidation:
    Linear ramp of electric potential, followed by a reversal to the initial potential. Both forward and reversed signal ramps are applied at the same scan rate.
 
+
+.. _electrochemistry_6b1f594f_2c0a_46a0_8805_d6ab08baa75e:
 
 TubularPlate
 ------------
@@ -5628,12 +6934,16 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-07
 
 
+.. _electrochemistry_c5fd7b61_40f1_4225_a173_5caa3c5f4773:
+
 TungstenElectrode
 -----------------
 
 Elucidation:
    electrode in which the active material is tungsten
 
+
+.. _electrochemistry_3fdc81d5_eef3_4408_a6e4_3c51c5b1c8dc:
 
 TungstenOxideElectrode
 ----------------------
@@ -5644,6 +6954,8 @@ Alternative Label(s):
    WO3Electrode
 
 
+.. _electrochemistry_aac51107_dbe5_4e63_b08a_9d6cf88f4b69:
+
 TwoStepCharge
 -------------
 
@@ -5652,6 +6964,8 @@ Elucidation:
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-48
 
+
+.. _electrochemistry_a2f4dca3_829f_412b_9025_bd7581aad82a:
 
 Valve
 -----
@@ -5662,6 +6976,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-12
 
 
+.. _electrochemistry_cc1f854a_ba6c_436e_bd18_c8b9159bbf52:
+
 VentCap
 -------
 
@@ -5670,6 +6986,8 @@ Elucidation:
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-23
 
+
+.. _electrochemistry_ec1dce8b_bb46_41a9_b532_6bed381aa557:
 
 VentedCell
 ----------
@@ -5680,12 +6998,16 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-14
 
 
+.. _electrochemistry_46957d35_0f8b_4d92_acb3_aded6ce774a1:
+
 VoltageControlledProcess
 ------------------------
 
 Elucidation:
    a process in which the voltage is controlled
 
+
+.. _electrochemistry_825a749f_dd07_46fb_947c_db286440911e:
 
 VoltageMeasurement
 ------------------
@@ -5696,10 +7018,14 @@ Alternative Label(s):
    ElectrochemicalCellVoltageMeasurement
 
 
+.. _electrochemistry_a76072fe_ca6e_48ad_8b4a_ab98a2bc9abb:
+
 VoltageMeasurementResult
 ------------------------
 
 
+
+.. _electrochemistry_4d09ddc4_7e71_4712_afab_b33d8df38983:
 
 VoltageVector
 -------------
@@ -5707,6 +7033,8 @@ VoltageVector
 Elucidation:
    vector containing at least two values for the quantity voltage
 
+
+.. _electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62:
 
 Voltammetry
 -----------
@@ -5721,6 +7049,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Voltammetry
 
 
+.. _electrochemistry_183a2337_c35f_4b74_8d9a_08c74d89bedc:
+
 VoltammetryAtARotatingDiskElectrode
 -----------------------------------
 
@@ -5729,6 +7059,8 @@ Elucidation:
 IUPAC Reference:
    https://doi.org/10.1515/pac-2018-0109
 
+
+.. _electrochemistry_bbae1ef4_0a95_4e7d_9932_1bf939129eef:
 
 Voltammogram
 ------------
@@ -5739,6 +7071,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Voltammetry#Voltammograms
 
 
+.. _electrochemistry_1355816f_a2b5_4800_8001_fc888f5d6b1b:
+
 Voltmeter
 ---------
 
@@ -5748,6 +7082,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=313-01-03
 
 
+.. _electrochemistry_6385e07f_f40d_46b2_b998_c439950d75cb:
+
 WaveSpring
 ----------
 
@@ -5756,6 +7092,8 @@ Elucidation:
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Wave_spring
 
+
+.. _electrochemistry_fb988878_ee54_4350_9ee9_228c00c3ad35:
 
 WorkingElectrode
 ----------------
@@ -5768,6 +7106,8 @@ Wikipedia Reference:
    https://en.wikipedia.org/wiki/Working_electrode
 
 
+.. _electrochemistry_7393f12f_e3b9_42d6_bffb_e5613f53108f:
+
 ZincChlorideSolution
 --------------------
 
@@ -5777,6 +7117,8 @@ Alternative Label(s):
    AqueousZincChlorideSolution
 
 
+.. _electrochemistry_d0a26dc2_fde9_4a11_ac26_7c18499d28a5:
+
 ZincElectrode
 -------------
 
@@ -5784,12 +7126,16 @@ Elucidation:
    metal electrode in which the active material is zinc
 
 
+.. _electrochemistry_245c9442_ca1d_4070_a624_182b92d30b10:
+
 ZincInsertionElectrode
 ----------------------
 
 Elucidation:
    an insertion electrode in which the guest molecule is zinc
 
+
+.. _electrochemistry_82c70935_0aea_454b_92bf_17fb0b488012:
 
 ZincOxideElectrode
 ------------------
@@ -5800,45 +7146,63 @@ Alternative Label(s):
    ZnOElectrode
 
 
+.. _electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee:
+
 hasActiveMaterial
 -----------------
 
 
+
+.. _electrochemistry_0ac306fd_e98b_4af9_8cd6_5ed34f7f7d8a:
 
 hasAnolyte
 ----------
 
 
 
+.. _electrochemistry_3dcfe33d_6825_43c0_a798_68e871a68d39:
+
 hasCase
 -------
 
 
+
+.. _electrochemistry_b62a6b15_236a_48bf_a323_ccbfc295f934:
 
 hasCatholyte
 ------------
 
 
 
+.. _electrochemistry_578c41e9_ee01_4840_9c8c_04ab6e4e6241:
+
 hasElectrode
 ------------
 
 
+
+.. _electrochemistry_3bd08946_4e81_455d_9fca_dc7a5ead9315:
 
 hasElectrolyte
 --------------
 
 
 
+.. _electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138:
+
 hasNegativeElectrode
 --------------------
 
 
 
+.. _electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616:
+
 hasPositiveElectrode
 --------------------
 
 
+
+.. _electrochemistry_5eb197ea_0c3e_4ea2_8392_81152ee91515:
 
 hasReferenceElectrode
 ---------------------

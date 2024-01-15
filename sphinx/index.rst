@@ -13,7 +13,7 @@ Electrochemistry Domain Ontology
 .. raw:: html
 
    <!-- [![CI tests](https://github.com/emmo-repo/domain-electrochemistry/workflows/CI%20tests/badge.svg)](https://github.com/emmo-repo/domain-electrochemistry/actions/) -->
-
+   
 The Electrochemistry Domain Ontology is a specialized domain within the
 Elementary Multiperspective Materials Ontology
 `(EMMO) <https://github.com/emmo-repo/EMMO>`__, that encompasses
