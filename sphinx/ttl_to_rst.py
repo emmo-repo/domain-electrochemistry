@@ -83,13 +83,16 @@ def entities_to_rst(entities: list[dict]) -> str:
 
         iri_prefix, iri_suffix = item['IRI'].split("#")
 
+        rst += ".. raw:: html\n\n"
+        rst += "   <div id=\"" + iri_suffix + "\"></div>\n\n"
+        
         rst += item['prefLabel'] + "\n"
         for ind in range(len(item['prefLabel'])):
             rst += "-"
         rst += "\n\n"
-        # rst += f"""<p class="entity"><a href=#'{item['IRI']}'>{item['IRI']}</a></p>"""
-        # rst += "* " + item['IRI'] + "\n"
 
+        rst += "* " + item['IRI'] + "\n\n"
+        
         for key, value in item.items():
 
             if (key not in ['IRI', 'prefLabel']) & (value != "None") & (value != ""):
