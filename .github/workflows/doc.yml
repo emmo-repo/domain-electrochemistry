@@ -5,6 +5,9 @@ on:
     branches:
       - 'master'
     
+env:
+  GIT_USER_NAME: BattINFO Developers
+  GIT_USER_EMAIL: "BattINFO@big-map.org"
     
 jobs:
 
