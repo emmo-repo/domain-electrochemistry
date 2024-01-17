@@ -28,10 +28,10 @@ jobs:
 
     - name: Copy .ttl file to pages
       run: |
-        cp ${GITHUB_WORKSPACE}/electrochemistry.ttl ${GITHUB_WORKSPACE}/docs/.
+        cp ${GITHUB_WORKSPACE}/electrochemistry.ttl ${GITHUB_WORKSPACE}/sphinx/.
 
     - name: Render documentation from ttl
-      run: python docs/scripts/ttl_to_html.py
+      run: python sphinx/ttl_to_rst.py
 
         
   sphinx-build:
