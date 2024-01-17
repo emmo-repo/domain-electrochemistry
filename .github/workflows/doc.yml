@@ -15,6 +15,9 @@ jobs:
     
     runs-on: ubuntu-latest
     
+    permissions:
+      contents: write
+      
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -46,29 +49,17 @@ jobs:
         git commit -m "Automatic update of github pages"
         git push origin master
       
-        
-  sphinx-build:
-
-    needs: updatepages
-    
-    runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
-
-    steps:
-    - name: checkout repository
-      uses: actions/checkout@v4
-      
     - name: Build HTML
       uses: ammaraskar/sphinx-action@master
       with:
         docs-folder: "sphinx/"
+
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
         name: documentationHTML
         path: sphinx/_build/html/
+        
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       if: github.ref == 'refs/heads/master'
