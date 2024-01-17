@@ -1,20 +1,26 @@
-name: Update GitHub Pages
+name: "Sphinx: Render docs"
 
-on:
+on: 
   push:
     branches:
-      - master  # Replace with the branch name you want to trigger the workflow on
-
+      - 'master'
+    
 env:
   GIT_USER_NAME: BattINFO Developers
   GIT_USER_EMAIL: "BattINFO@big-map.org"
-
+    
 jobs:
+
   updatepages:
+    
     runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+      
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
 
     - name: Set up Python
       uses: actions/setup-python@v4 #Uses python install action from here: https://github.com/marketplace?type=actions
@@ -26,11 +32,30 @@ jobs:
         python -m pip install --upgrade pip
         pip install Markdown==3.4.3 rdflib==6.3.2  # Add any other dependencies if needed
 
-    - name: Render documentation from ttl
-      run: python docs/scripts/ttl_to_html.py
+    - name: Copy .ttl file to pages
+      run: |
+        cp ${GITHUB_WORKSPACE}/electrochemistry.ttl ${GITHUB_WORKSPACE}/sphinx/.
 
-    - name: Render documentation from md
-      run: python docs/scripts/md_to_html.py
+    - name: Render documentation from ttl
+      run: python sphinx/ttl_to_rst.py
+
+    - name: Build HTML
+      uses: ammaraskar/sphinx-action@master
+      with:
+        docs-folder: "sphinx/"
+
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: documentationHTML
+        path: sphinx/_build/html/
+        
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/master'
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: sphinx/_build/html
 
     - name: Commit updated documentation
       run: |
@@ -39,5 +64,6 @@ jobs:
         git config --global user.name "${GIT_USER_NAME}"
         git config pull.rebase false
         git add .
-        git commit -m "Automatic update of github pages"
+        git commit --allow-empty -m "Automatic update of github pages"
         git push origin master
+      
