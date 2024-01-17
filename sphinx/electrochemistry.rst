@@ -2708,7 +2708,7 @@ ACVoltammetry
 * https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8ca00b45_5ba6_48a0_aaf6_abd959a7238b
 
 Elucidation:
-   voltammetry in which a sinusoidal alternating potential of small amplitude (10 to 50 mV) of constant frequency (10 Hz to 100 kHz) is superimposed on a slowly and linearly varying potential ramp.
+   voltammetry in which a sinusoidal alternating potential of small amplitude (10 to 50 mV) of constant frequency (10 Hz to 100 kHz) is superimposed on a slowly and linearly varying potential ramp..
 Alternative Label(s):
    ACV
 IUPAC Reference:
