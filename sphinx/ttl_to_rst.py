@@ -66,8 +66,6 @@ def render_rst_top() -> str:
 References
 ==========
 
-complete list
-
 """
 
     return top_rst

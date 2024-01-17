@@ -64,6 +64,6 @@ jobs:
         git config --global user.name "${GIT_USER_NAME}"
         git config pull.rebase false
         git add .
-        git commit -m "Automatic update of github pages"
+        git commit --allow-empty -m "Automatic update of github pages"
         git push origin master
       
