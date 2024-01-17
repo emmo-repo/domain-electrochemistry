@@ -7833,7 +7833,7 @@ R2325
 * https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0689e6fc_cda7_4e04_b1eb_41459a0a4736
 
 Elucidation:
-   a coin case with a nominal diameter of 23.0 mm and a height of 2.5 mm
+   a coin cell case with a nominal diameter of 23.0 mm and a height of 2.5 mm
 Alternative Label(s):
    R23/3
 
