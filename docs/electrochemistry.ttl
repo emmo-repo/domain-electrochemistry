@@ -299,6 +299,7 @@ email: jesper.friis@sintef.no"""@en ;
 :electrochemistry_0689e6fc_cda7_4e04_b1eb_41459a0a4736 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a coin case with a nominal diameter of 23.0 mm and a height of 2.5 mm"@en ;
+                                                       skos:altLabel "R23/3"@en ;
                                                        skos:prefLabel "R2325"@en .
 
 
