@@ -2700,23 +2700,6 @@ Electrochemistry Concepts
 
 .. raw:: html
 
-   <div id="electrochemistry_8ca00b45_5ba6_48a0_aaf6_abd959a7238b"></div>
-
-ACVoltammetry
--------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8ca00b45_5ba6_48a0_aaf6_abd959a7238b
-
-Elucidation:
-   voltammetry in which a sinusoidal alternating potential of small amplitude (10 to 50 mV) of constant frequency (10 Hz to 100 kHz) is superimposed on a slowly and linearly varying potential ramp.
-Alternative Label(s):
-   ACV
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
-
-
-.. raw:: html
-
    <div id="electrochemistry_58a20764_c339_4856_983a_05092b5282e8"></div>
 
 ACVoltammetrySignal
@@ -2726,19 +2709,6 @@ ACVoltammetrySignal
 
 Elucidation:
    Sinusoidal potential waveform superimposed to a linear potential ramp.
-
-
-.. raw:: html
-
-   <div id="electrochemistry_0b1f77b8_2349_4433_b440_43dc84a2210f"></div>
-
-AbrasiveStrippingVoltammetry
-----------------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0b1f77b8_2349_4433_b440_43dc84a2210f
-
-Elucidation:
-   electrochemical method where traces of solid particles are abrasively transferred onto the surface of an electrode, followed by an electrochemical dissolution (anodic or cathodic dissolution) that is recorded as a current–voltage curve
 
 
 .. raw:: html
@@ -2814,23 +2784,6 @@ ActiveMaterialParticleCracking
 
 Elucidation:
    a degradation mechanism in electrochemical cells in which fractures in the active material particles increase cell resistance.
-
-
-.. raw:: html
-
-   <div id="electrochemistry_a05e7945_c942_45cf_812c_c9a595d15888"></div>
-
-AdsorptiveStrippingVoltammetry
-------------------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a05e7945_c942_45cf_812c_c9a595d15888
-
-Elucidation:
-   Stripping voltammetry involving pre-concentration by adsorption of the analyte (in contrast to electro- chemical accumulation).
-Alternative Label(s):
-   AdSV
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
 
 
 .. raw:: html
@@ -2938,21 +2891,6 @@ Alternative Label(s):
 
 .. raw:: html
 
-   <div id="electrochemistry_3fe63496_6d87_427a_b2aa_4555bc31ee1a"></div>
-
-Amperometry
------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3fe63496_6d87_427a_b2aa_4555bc31ee1a
-
-Elucidation:
-   techniques based on measurement of current at a constant controlled potential
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
-
-
-.. raw:: html
-
    <div id="electrochemistry_3a77b5e7_9646_4154_bf8f_5f798989e5f3"></div>
 
 AnnularWorkingElectrode
@@ -3017,21 +2955,6 @@ Alternative Label(s):
    Electrooxidation, ElectrooxidationReaction
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-09
-
-
-.. raw:: html
-
-   <div id="electrochemistry_8ba8ec72_abd0_49eb_a06f_83fe5da108f4"></div>
-
-AnodicStrippingVoltammetry
---------------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8ba8ec72_abd0_49eb_a06f_83fe5da108f4
-
-Elucidation:
-   Stripping voltammetry in which material accumulated at the working electrode is electrochemically oxi- dized in the stripping step.
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
 
 
 .. raw:: html
@@ -3348,6 +3271,19 @@ Wikipedia Reference:
 
 .. raw:: html
 
+   <div id="electrochemistry_f2c33088_224f_4fdb_857a_7cb62e3dddca"></div>
+
+CarbonBasedElectrode
+--------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f2c33088_224f_4fdb_857a_7cb62e3dddca
+
+Elucidation:
+   an electrode which contains mostly materials based on carbon
+
+
+.. raw:: html
+
    <div id="electrochemistry_ec6f3d6f_bdf5_418f_9314_3ef2ff528103"></div>
 
 CarbonInkElectrode
@@ -3414,7 +3350,7 @@ Case
 Elucidation:
    container for the plate pack or packs and electrolyte of a cell or cells made of a material impervious to the electrolyte
 Alternative Label(s):
-   Container, Housing
+   Can, Container, Housing
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-14
 
@@ -3509,23 +3445,6 @@ Alternative Label(s):
    Electroreduction, Electroreduction, ElectroreductionReaction, ElectroreductionReaction
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-10
-
-
-.. raw:: html
-
-   <div id="electrochemistry_61740c42_d332_492c_8b37_90a187c7f6d9"></div>
-
-CathodicStrippingVoltammetry
-----------------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_61740c42_d332_492c_8b37_90a187c7f6d9
-
-Elucidation:
-   stripping voltammetry in which material accumulated at the working electrode is electrochemically reduced in the stripping step
-Alternative Label(s):
-   CSV
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
 
 
 .. raw:: html
@@ -3717,53 +3636,6 @@ Elucidation:
 
 .. raw:: html
 
-   <div id="electrochemistry_729a1064_d039_4b74_9d1d_759b18a3971c"></div>
-
-Chronoamperometry
------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_729a1064_d039_4b74_9d1d_759b18a3971c
-
-Elucidation:
-   amperometry in which the current is measured as a function of time after a change in the applied potential
-Alternative Label(s):
-   AmperiometricDetection, AmperometricCurrentTimeCurve
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
-
-
-.. raw:: html
-
-   <div id="electrochemistry_f91c9ae3_42b8_4efa_9b67_a406d162d3b5"></div>
-
-Chronocoulometry
-----------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f91c9ae3_42b8_4efa_9b67_a406d162d3b5
-
-Elucidation:
-   direct coulometry at controlled potential in which the electric charge passed after the application of a potential step perturbation is measured as a function of time (Q-t curve)
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
-
-
-.. raw:: html
-
-   <div id="electrochemistry_63dec5af_f3e9_46c9_8b0c_82516231d96b"></div>
-
-Chronopotentiometry
--------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_63dec5af_f3e9_46c9_8b0c_82516231d96b
-
-Elucidation:
-   potentiometry in which the potential is measured with time following a change in applied current
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
-
-
-.. raw:: html
-
    <div id="electrochemistry_92147e31_d015_4889_a092_04fbab033f15"></div>
 
 CoatedElectrode
@@ -3796,6 +3668,19 @@ Wikipedia Reference:
 
 .. raw:: html
 
+   <div id="electrochemistry_838c115b_6bc9_4ce8_9f8d_86a6bf67742a"></div>
+
+CobaltBasedElectrode
+--------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_838c115b_6bc9_4ce8_9f8d_86a6bf67742a
+
+Elucidation:
+   an electrode which contains mostly materials based on cobalt
+
+
+.. raw:: html
+
    <div id="electrochemistry_7b811780_7251_481b_a4d3_97d437955099"></div>
 
 CobaltElectrode
@@ -3809,6 +3694,17 @@ Elucidation:
 
 .. raw:: html
 
+   <div id="electrochemistry_2522cbd8_5382_457f_b9b5_775860f83357"></div>
+
+Coin
+----
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2522cbd8_5382_457f_b9b5_775860f83357
+
+
+
+.. raw:: html
+
    <div id="electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37"></div>
 
 CoinCase
@@ -3816,10 +3712,10 @@ CoinCase
 
 * https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37
 
+Elucidation:
+   a round-type case with a height that is less than the diameter
 Alternative Label(s):
    ButtonCase
-IEC Reference:
-   a round-type case with a height that is less than the diameter
 
 
 .. raw:: html
@@ -3865,38 +3761,6 @@ ConductivityCell
 
 Elucidation:
    an electrochemical cell for conductivity measurements
-
-
-.. raw:: html
-
-   <div id="electrochemistry_e9639083_e9c5_4d0a_97e8_be1e139c179f"></div>
-
-ConductometricTitration
------------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e9639083_e9c5_4d0a_97e8_be1e139c179f
-
-Elucidation:
-   titration in which the electric conductivity of a solution is measured as a function of the amount of titrant added
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
-
-
-.. raw:: html
-
-   <div id="electrochemistry_b3a6d552_b38e_47ad_9d48_e8b77035d63e"></div>
-
-Conductometry
--------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b3a6d552_b38e_47ad_9d48_e8b77035d63e
-
-Elucidation:
-   measurement principle in which the electric conductivity of a solution is measured
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
-Wikipedia Reference:
-   https://en.wikipedia.org/wiki/Conductometry
 
 
 .. raw:: html
@@ -4081,38 +3945,6 @@ Wikipedia Reference:
 
 .. raw:: html
 
-   <div id="electrochemistry_52501237_0c13_4bfb_aa3a_441c6a9ae3a6"></div>
-
-CoulometricTitration
---------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_52501237_0c13_4bfb_aa3a_441c6a9ae3a6
-
-Elucidation:
-   titration in which the titrant is generated electrochemically, either by constant current or at constant potential. The titrant reacts stoichiometrically with the analyte, the amount of which is calculated using Faraday’s laws of electrolysis from the electric charge required to reach the end-point
-
-
-.. raw:: html
-
-   <div id="electrochemistry_6e439f86_3d00_4b0b_82ab_1fa25241d4e9"></div>
-
-Coulometry
-----------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6e439f86_3d00_4b0b_82ab_1fa25241d4e9
-
-Elucidation:
-   electrochemical measurement principle in which the electric charge required to carry out a known electrochemical reaction is measured. By Faraday’s laws of electrolysis, the amount of substance is proportional to the charge
-IEC Reference:
-   https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-04-13
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
-Wikipedia Reference:
-   https://en.wikipedia.org/wiki/Coulometry
-
-
-.. raw:: html
-
    <div id="electrochemistry_871bc4a4_2d17_4b88_9b0f_7ab85f14afea"></div>
 
 CounterElectrode
@@ -4244,38 +4076,6 @@ Elucidation:
 
 .. raw:: html
 
-   <div id="electrochemistry_225cb9b8_d413_451e_9e36_fb6d1344b16e"></div>
-
-CyclicChronopotentiometry
--------------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_225cb9b8_d413_451e_9e36_fb6d1344b16e
-
-Elucidation:
-   chronopotentiometry where the change in applied current undergoes a cyclic current reversal
-
-
-.. raw:: html
-
-   <div id="electrochemistry_2f96eb3e_4115_4236_9203_525fb27fe92d"></div>
-
-CyclicVoltammetry
------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2f96eb3e_4115_4236_9203_525fb27fe92d
-
-Elucidation:
-   voltammetry in which the electric current is recorded as the electrode potential is varied with time cycli- cally between two potential limits, normally at a constant scan rate
-Alternative Label(s):
-   CV
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
-Wikipedia Reference:
-   https://en.wikipedia.org/wiki/Cyclic_voltammetry
-
-
-.. raw:: html
-
    <div id="electrochemistry_d3e2d213_d078_4b9a_8beb_62f063e57d69"></div>
 
 Cycling
@@ -4295,6 +4095,17 @@ Wikipedia Reference:
 
 .. raw:: html
 
+   <div id="electrochemistry_780aeb7b_9eb2_4324_ba2d_1a874136b4e5"></div>
+
+Cylindrical
+-----------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_780aeb7b_9eb2_4324_ba2d_1a874136b4e5
+
+
+
+.. raw:: html
+
    <div id="electrochemistry_b1cf9fee_2164_4f95_8204_90f717373a8a"></div>
 
 CylindricalCase
@@ -4302,23 +4113,8 @@ CylindricalCase
 
 * https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b1cf9fee_2164_4f95_8204_90f717373a8a
 
-IEC Reference:
-   a round-type case with a height that is greater than or equal to the diameter
-
-
-.. raw:: html
-
-   <div id="electrochemistry_5a0f3b6a_10b4_43a7_b0b6_4eb5c077980e"></div>
-
-DCPolarography
---------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5a0f3b6a_10b4_43a7_b0b6_4eb5c077980e
-
 Elucidation:
-   linear scan voltammetry with slow scan rate in which a dropping mercury electrode is used as the working electrode
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
+   a round-type case with a height that is greater than or equal to the diameter
 
 
 .. raw:: html
@@ -4342,34 +4138,6 @@ Wikipedia Reference:
 
 .. raw:: html
 
-   <div id="electrochemistry_43ce1a7e_8056_40cb_bdbd_4ce991af1821"></div>
-
-Dielectrometry
---------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_43ce1a7e_8056_40cb_bdbd_4ce991af1821
-
-Elucidation:
-   electrochemical measurement principle based on the measurement of the dielectric constant of a sample resulting from the orientation of particles (molecules or ions) that have a dipole moment in an electric field
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
-
-
-.. raw:: html
-
-   <div id="electrochemistry_81b7c95b_8671_4ba7_b4f8_ec19a25096eb"></div>
-
-DifferentialLinearPulseVoltammetry
-----------------------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_81b7c95b_8671_4ba7_b4f8_ec19a25096eb
-
-Elucidation:
-   Differential Pulse Voltammetry in which small potential pulses are superimposed onto a linearly varying potential.
-
-
-.. raw:: html
-
    <div id="electrochemistry_b49e2355_392f_4e83_b630_7ff4581d767b"></div>
 
 DifferentialPotentialPulse
@@ -4379,66 +4147,6 @@ DifferentialPotentialPulse
 
 Elucidation:
    Small pulses of electric potential superimposed to a linear potential ramp or a staircase potential ramp.
-
-
-.. raw:: html
-
-   <div id="electrochemistry_b3e56313_417c_42b7_a934_0018ce2dffc2"></div>
-
-DifferentialPulseVoltammetry
-----------------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b3e56313_417c_42b7_a934_0018ce2dffc2
-
-Elucidation:
-   voltammetry in which small potential pulses (constant height 10 to 100 mV, constant width 10 to 100 ms) are superimposed onto a linearly varying potential or onto a staircase potential ramp. The current is sampled just before the onset of the pulse (e.g. 10 to 20 ms) and for the same sampling time just before the end of the pulse. The difference between the two sampled currents is plotted versus the potential applied before the pulse. Thus, a differential pulse voltammogram is peak-shaped
-Alternative Label(s):
-   DPV
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
-Wikipedia Reference:
-   https://en.wikipedia.org/wiki/Differential_pulse_voltammetry
-
-
-.. raw:: html
-
-   <div id="electrochemistry_56da3bb3_a0ce_40ed_b152_d3c14329d31a"></div>
-
-DifferentialStaircasePulseVoltammetry
--------------------------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_56da3bb3_a0ce_40ed_b152_d3c14329d31a
-
-Elucidation:
-   Differential Pulse Voltammetry in which small potential pulses are superimposed onto a staircase potential ramp.
-
-
-.. raw:: html
-
-   <div id="electrochemistry_180878b5_8de8_4dd8_b881_1d0bebe326d4"></div>
-
-DirectCoulometryAtControlledCurrent
------------------------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_180878b5_8de8_4dd8_b881_1d0bebe326d4
-
-Elucidation:
-   coulometry at an imposed, constant current in the electrochemical cell
-
-
-.. raw:: html
-
-   <div id="electrochemistry_39536efc_22a6_4f39_b0c2_e8b845a36278"></div>
-
-DirectCoulometryAtControlledPotential
--------------------------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_39536efc_22a6_4f39_b0c2_e8b845a36278
-
-Elucidation:
-   coulometry at a preselected constant potential of the working electrode
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
 
 
 .. raw:: html
@@ -4726,21 +4434,6 @@ Elucidation:
 
 .. raw:: html
 
-   <div id="electrochemistry_10359c79_cdf2_401a_83ee_d22e7fbb2ad1"></div>
-
-ElectroanalyticalTechnique
---------------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_10359c79_cdf2_401a_83ee_d22e7fbb2ad1
-
-Elucidation:
-   analytical methods in which electrochemical processes or phenomena are the core of the measurement principle involving electrochemical cells providing qualitative and quantitative responses.
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
-
-
-.. raw:: html
-
    <div id="electrochemistry_5cb5548f_f774_4668_ad02_f0742581f2f1"></div>
 
 Electrocapillarity
@@ -4893,23 +4586,6 @@ IEC Reference:
 
 .. raw:: html
 
-   <div id="electrochemistry_d30d9de0_b9bf_4919_a022_0394df9c3672"></div>
-
-ElectrochemicalImpedanceSpectroscopy
-------------------------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d30d9de0_b9bf_4919_a022_0394df9c3672
-
-Elucidation:
-   electrochemical measurement method of the complex impedance of an electrochemical system as a function of the frequency of a small amplitude (normally 5 to 10 mV) sinusoidal voltage perturbation superimposed on a fixed value of applied potential or on the open circuit potential
-Alternative Label(s):
-   EIS
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
-
-
-.. raw:: html
-
    <div id="electrochemistry_50044b99_b858_433b_a32d_23d1e1cf88b2"></div>
 
 ElectrochemicalInterface
@@ -4973,21 +4649,6 @@ ElectrochemicalPhenomenon
 
 Elucidation:
    A chemical phenomenon that is accompanied by the flow of electric current
-
-
-.. raw:: html
-
-   <div id="electrochemistry_1a7fb32a_743f_4aa6_ac5a_ff7a2ba29dce"></div>
-
-ElectrochemicalPiezoelectricMicrogravimetry
--------------------------------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1a7fb32a_743f_4aa6_ac5a_ff7a2ba29dce
-
-Elucidation:
-   Electrogravimetry using an electrochemical quartz crystal microbalance.
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
 
 
 .. raw:: html
@@ -5082,6 +4743,19 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-03
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrode
+
+
+.. raw:: html
+
+   <div id="electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56"></div>
+
+ElectrodeCoating
+----------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
+
+Elucidation:
+   an electrode which is coated onto a substrate, typically a metallic foil current collector.
 
 
 .. raw:: html
@@ -5214,23 +4888,6 @@ Electrodissolution
 
 Elucidation:
    the electrochemical dissolution of a material to soluble species
-
-
-.. raw:: html
-
-   <div id="electrochemistry_14d0358f_f65d_44f9_8b85_40b38f17c4ed"></div>
-
-Electrogravimetry
------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_14d0358f_f65d_44f9_8b85_40b38f17c4ed
-
-Elucidation:
-   method of electroanalytical chemistry used to separate by electrolyse ions of a substance and to derive the amount of this substance from the increase in mass of an electrode.
-IEC Reference:
-   https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-04-14
-Wikipedia Reference:
-   https://en.wikipedia.org/wiki/Electrogravimetry
 
 
 .. raw:: html
@@ -5487,6 +5144,17 @@ Foil
 
 .. raw:: html
 
+   <div id="electrochemistry_1586ef26_6d30_49e3_ae32_b4c9fc181941"></div>
+
+FormFactor
+----------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1586ef26_6d30_49e3_ae32_b4c9fc181941
+
+
+
+.. raw:: html
+
    <div id="electrochemistry_cb223440_51bd_4f16_a536_96ec408e7de4"></div>
 
 FormationCycling
@@ -5528,21 +5196,6 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-05
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Fuel_cell
-
-
-.. raw:: html
-
-   <div id="electrochemistry_11895d59_3f97_4bad_badf_1a90f2347c2a"></div>
-
-GITT
-----
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_11895d59_3f97_4bad_badf_1a90f2347c2a
-
-Elucidation:
-   electrochemical method that applies current pulses to an electrochemical cell at rest and measures the voltage response
-Alternative Label(s):
-   GalvanostaticIntermittentTitrationTechnique
 
 
 .. raw:: html
@@ -5755,40 +5408,6 @@ Elucidation:
 
 .. raw:: html
 
-   <div id="electrochemistry_32ab2ea8_6263_42a8_8682_2fe0343f8bea"></div>
-
-GravimetricAnalysis
--------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_32ab2ea8_6263_42a8_8682_2fe0343f8bea
-
-Elucidation:
-   quantitative determination of a chemical species based on its mass
-Alternative Label(s):
-   GravimetricMethod
-IUPAC Reference:
-   https://goldbook.iupac.org/terms/view/G02694
-Wikipedia Reference:
-   https://en.wikipedia.org/wiki/Gravimetric_analysis
-
-
-.. raw:: html
-
-   <div id="electrochemistry_99bdbd45_c3ea_4fb9_ae50_ed1ab6bb1dff"></div>
-
-HPPC
-----
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_99bdbd45_c3ea_4fb9_ae50_ed1ab6bb1dff
-
-Elucidation:
-   electrochemical method that measures the voltage drop of a cell resulting from a square wave current load
-Alternative Label(s):
-   HybridPulsePowerCharacterisation, HybridPulsePowerCharacterization
-
-
-.. raw:: html
-
    <div id="electrochemistry_6235cc7c_2eee_432a_93af_47d7e05db007"></div>
 
 HardCarbonElectrode
@@ -5843,23 +5462,6 @@ Elucidation:
 
 .. raw:: html
 
-   <div id="electrochemistry_d95fdd2e_38bf_4065_a857_78eb201ee166"></div>
-
-HydrodynamicVoltammetry
------------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d95fdd2e_38bf_4065_a857_78eb201ee166
-
-Elucidation:
-   voltammetry with forced flow of the solution towards the electrode surface
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
-Wikipedia Reference:
-   https://en.wikipedia.org/wiki/Hydrodynamic_voltammetry
-
-
-.. raw:: html
-
    <div id="electrochemistry_c4a778c7_33da_4e1a_960e_402a210bfeff"></div>
 
 HydrogenElectrode
@@ -5871,36 +5473,6 @@ Elucidation:
    platinized platinum electrode saturated by a stream of pure gaseous hydrogen
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-16
-
-
-.. raw:: html
-
-   <div id="electrochemistry_0838f0b6_ca9a_4f76_9770_ca964617bf1b"></div>
-
-ICI
----
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0838f0b6_ca9a_4f76_9770_ca964617bf1b
-
-Elucidation:
-   electrochemical method that measures the voltage response of an electrochemical cell under galvanostatic conditions to short interruptions in the current
-Alternative Label(s):
-   IntermittentCurrentInterruptionMethod
-
-
-.. raw:: html
-
-   <div id="electrochemistry_07ad0aff_ab59_442d_9c0a_7f8c5cba8982"></div>
-
-Impedimetry
------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_07ad0aff_ab59_442d_9c0a_7f8c5cba8982
-
-Elucidation:
-   measurement principle in which the complex electric impedance of a system is measured, usually as a function of a small amplitude sinusoidal electrode potential
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
 
 
 .. raw:: html
@@ -6081,6 +5653,19 @@ Alternative Label(s):
 
 .. raw:: html
 
+   <div id="electrochemistry_5e1136d3_df00_40f7_a4bc_8259341053a1"></div>
+
+IronBasedElectrode
+------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5e1136d3_df00_40f7_a4bc_8259341053a1
+
+Elucidation:
+   an electrode which contains mostly materials based on iron
+
+
+.. raw:: html
+
    <div id="electrochemistry_d2726dd5_69f0_4cb1_bd3c_4c48813e57e7"></div>
 
 IronDisulfideElectrode
@@ -6103,6 +5688,19 @@ IronElectrode
 
 Elucidation:
    electrode in which the active material is iron
+
+
+.. raw:: html
+
+   <div id="electrochemistry_d54f6aac_7cd2_4d52_9bca_2f19bb1eaec4"></div>
+
+IronPhosphateBasedElectrode
+---------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d54f6aac_7cd2_4d52_9bca_2f19bb1eaec4
+
+Elucidation:
+   an electrode which contains mostly materials based on iron phosphate
 
 
 .. raw:: html
@@ -6221,19 +5819,6 @@ IEC Reference:
 
 .. raw:: html
 
-   <div id="electrochemistry_618538fa_6607_45a3_ad06_6a5f98febcbd"></div>
-
-LinearChronopotentiometry
--------------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_618538fa_6607_45a3_ad06_6a5f98febcbd
-
-Elucidation:
-   chronopotentiometry where the applied current is changed linearly
-
-
-.. raw:: html
-
    <div id="electrochemistry_fa774456_718a_4a28_ba6a_6f828887c510"></div>
 
 LinearCurrentRamp
@@ -6256,25 +5841,6 @@ LinearPotentialRamp
 
 Elucidation:
    Signal where the electric potential is varied linearly from an initial potential.
-
-
-.. raw:: html
-
-   <div id="electrochemistry_a9f19bb0_55bc_4908_b0e4_7888077b0019"></div>
-
-LinearScanVoltammetry
----------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a9f19bb0_55bc_4908_b0e4_7888077b0019
-
-Elucidation:
-   Voltammetry in which the current is recorded as the electrode potential is varied linearly with time.
-Alternative Label(s):
-   LSV, LinearPolarization, LinearSweepVoltammetry
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
-Wikipedia Reference:
-   https://en.wikipedia.org/wiki/Linear_sweep_voltammetry
 
 
 .. raw:: html
@@ -6623,6 +6189,19 @@ Elucidation:
 
 .. raw:: html
 
+   <div id="electrochemistry_b1ac8d0c_a215_4e60_82b0_38272eff5131"></div>
+
+ManganeseBasedElectrode
+-----------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b1ac8d0c_a215_4e60_82b0_38272eff5131
+
+Elucidation:
+   an electrode which contains mostly materials based on manganese
+
+
+.. raw:: html
+
    <div id="electrochemistry_ca4d9efc_70be_441e_b358_d927aa4c36c4"></div>
 
 ManganeseDioxideElectrode
@@ -6638,19 +6217,15 @@ Alternative Label(s):
 
 .. raw:: html
 
-   <div id="electrochemistry_64bf0969_37a1_4aaf_82e9_68462847ac65"></div>
+   <div id="electrochemistry_468b3b63_b62a_4110_8c7e_40fffd5fdfd6"></div>
 
-MeasurementPrinciple
---------------------
+ManganesePhosphateBasedElectrode
+--------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_64bf0969_37a1_4aaf_82e9_68462847ac65
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_468b3b63_b62a_4110_8c7e_40fffd5fdfd6
 
 Elucidation:
-   phenomenon serving as the basis of a measurement
-Alternative Label(s):
-   PrincipleOfMeasurement
-IEC Reference:
-   https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=112-04-03
+   an electrode which contains mostly materials based on manganese phosphate
 
 
 .. raw:: html
@@ -6835,6 +6410,19 @@ IEC Reference:
 
 .. raw:: html
 
+   <div id="electrochemistry_0d2aaaf4_1a8a_4a32_abd8_7d0fdf0ae9d2"></div>
+
+NickelBasedElectrode
+--------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0d2aaaf4_1a8a_4a32_abd8_7d0fdf0ae9d2
+
+Elucidation:
+   an electrode which contains mostly materials based on nickel
+
+
+.. raw:: html
+
    <div id="electrochemistry_b8dc138f_8024_4f15_8350_192425d23a4d"></div>
 
 NickelElectrode
@@ -6936,23 +6524,6 @@ Alternative Label(s):
 
 .. raw:: html
 
-   <div id="electrochemistry_3c3972f6_8e1d_454b_a198_48173ba2232b"></div>
-
-NormalPulseVoltammetry
-----------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3c3972f6_8e1d_454b_a198_48173ba2232b
-
-Elucidation:
-   voltammetry in which potential pulses of amplitude increasing by a constant increment and with a pulse width of 2 to 200 ms are superimposed on a constant initial potential
-Alternative Label(s):
-   NPV
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
-
-
-.. raw:: html
-
    <div id="electrochemistry_a2b01d05_b472_4cf5_b388_e0914db56324"></div>
 
 NyquistPlot
@@ -6966,21 +6537,6 @@ Alternative Label(s):
    ComplexPlanePlot, NyquistDiagram
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Nyquist_stability_criterion#Nyquist_plot
-
-
-.. raw:: html
-
-   <div id="electrochemistry_cb3c0663_5962_4b79_8e72_1e8242af3977"></div>
-
-OpenCircuitHold
----------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cb3c0663_5962_4b79_8e72_1e8242af3977
-
-Elucidation:
-   a process in which the electric current is kept constant at 0 (i.e., open-circuit conditions)
-Alternative Label(s):
-   OCVHold
 
 
 .. raw:: html
@@ -7037,6 +6593,351 @@ OxygenElectrode
 
 Elucidation:
    a gas diffusion electrode in which the active material is oxygen (O2)
+
+
+.. raw:: html
+
+   <div id="electrochemistry_27f95593_47f1_4494_b6bb_ac0733df185d"></div>
+
+P12103310
+---------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_27f95593_47f1_4494_b6bb_ac0733df185d
+
+Elucidation:
+   a prismatic case with a nominal length of 12 mm, width of 103 mm, and height of 310 mm
+Alternative Label(s):
+   P12/103/310
+
+
+.. raw:: html
+
+   <div id="electrochemistry_c54fbb75_0528_49c0_97e0_258798a947e4"></div>
+
+P1212080
+--------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c54fbb75_0528_49c0_97e0_258798a947e4
+
+Elucidation:
+   a prismatic case with a nominal length of 12 mm, width of 120 mm, and height of 80 mm
+Alternative Label(s):
+   P12/120/80
+
+
+.. raw:: html
+
+   <div id="electrochemistry_d1199193_b203_4fcb_971c_ccf6332973ae"></div>
+
+P1212081
+--------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d1199193_b203_4fcb_971c_ccf6332973ae
+
+Elucidation:
+   a prismatic case with a nominal length of 12 mm, width of 120 mm, and height of 81 mm
+Alternative Label(s):
+   HEV2, P12/120/81
+
+
+.. raw:: html
+
+   <div id="electrochemistry_4ca551d2_2969_4c18_96ce_db99831ed0af"></div>
+
+P1212085
+--------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4ca551d2_2969_4c18_96ce_db99831ed0af
+
+Elucidation:
+   a prismatic case with a nominal length of 12 mm, width of 120 mm, and height of 85 mm
+Alternative Label(s):
+   P12/120/85
+
+
+.. raw:: html
+
+   <div id="electrochemistry_93358d9b_8976_42d0_84ae_e5a2400c3ea7"></div>
+
+P1312085
+--------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_93358d9b_8976_42d0_84ae_e5a2400c3ea7
+
+Elucidation:
+   a prismatic case with a nominal length of 13 mm, width of 120 mm, and height of 85 mm
+Alternative Label(s):
+   HEV1, P13/120/85
+
+
+.. raw:: html
+
+   <div id="electrochemistry_56def0d5_fe57_40d7_85e3_97872fa2a3e1"></div>
+
+P1714891
+--------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_56def0d5_fe57_40d7_85e3_97872fa2a3e1
+
+Elucidation:
+   a prismatic case with a nominal length of 17 mm, width of 148 mm, and height of 91 mm
+Alternative Label(s):
+   P17/148/91, PHEV2
+
+
+.. raw:: html
+
+   <div id="electrochemistry_289da03d_606a_4668_a195_e81627bc80b7"></div>
+
+P1865140
+--------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_289da03d_606a_4668_a195_e81627bc80b7
+
+Elucidation:
+   a prismatic case with a nominal length of 18 mm, width of 65 mm, and height of 140 mm
+Alternative Label(s):
+   P18/65/140
+
+
+.. raw:: html
+
+   <div id="electrochemistry_d1bf3cdd_d618_40e3_b055_a952ef632157"></div>
+
+P1868107
+--------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d1bf3cdd_d618_40e3_b055_a952ef632157
+
+Elucidation:
+   a prismatic case with a nominal length of 18 mm, width of 68 mm, and height of 107 mm
+Alternative Label(s):
+   P18/68/107
+
+
+.. raw:: html
+
+   <div id="electrochemistry_bba6b94e_c0d7_40bf_a9d6_413ff458397c"></div>
+
+P20100141
+---------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bba6b94e_c0d7_40bf_a9d6_413ff458397c
+
+Elucidation:
+   a prismatic case with a nominal length of 20 mm, width of 100 mm, and height of 141 mm
+Alternative Label(s):
+   P20/100/141
+
+
+.. raw:: html
+
+   <div id="electrochemistry_0e366263_fded_4509_bddd_392d839013e4"></div>
+
+P21148128
+---------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0e366263_fded_4509_bddd_392d839013e4
+
+Elucidation:
+   a prismatic case with a nominal length of 21 mm, width of 148 mm, and height of 128 mm
+Alternative Label(s):
+   P21/148/128
+
+
+.. raw:: html
+
+   <div id="electrochemistry_3b714a22_4212_4f4f_b578_140c357b18de"></div>
+
+P2117385
+--------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3b714a22_4212_4f4f_b578_140c357b18de
+
+Elucidation:
+   a prismatic case with a nominal length of 21 mm, width of 173 mm, and height of 85 mm
+Alternative Label(s):
+   P21/173/85, PHEV1
+
+
+.. raw:: html
+
+   <div id="electrochemistry_619c2e56_077d_4bb4_9062_65fb75763651"></div>
+
+P27148129
+---------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_619c2e56_077d_4bb4_9062_65fb75763651
+
+Elucidation:
+   a prismatic case with a nominal length of 27 mm, width of 148 mm, and height of 129 mm
+Alternative Label(s):
+   P27/148/129
+
+
+.. raw:: html
+
+   <div id="electrochemistry_f4a6a682_fd7c_43df_bed2_df70848d6026"></div>
+
+P2714891
+--------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f4a6a682_fd7c_43df_bed2_df70848d6026
+
+Elucidation:
+   a prismatic case with a nominal length of 27 mm, width of 148 mm, and height of 91 mm
+Alternative Label(s):
+   P27/148/91
+
+
+.. raw:: html
+
+   <div id="electrochemistry_50d9652c_6b68_457c_bd72_f89a8e549bcf"></div>
+
+P2714898
+--------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_50d9652c_6b68_457c_bd72_f89a8e549bcf
+
+Elucidation:
+   a prismatic case with a nominal length of 27 mm, width of 148 mm, and height of 98 mm
+Alternative Label(s):
+   P27/148/98
+
+
+.. raw:: html
+
+   <div id="electrochemistry_a5c1b56f_5c82_4e3b_800e_5a280331348b"></div>
+
+P2770102
+--------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a5c1b56f_5c82_4e3b_800e_5a280331348b
+
+Elucidation:
+   a prismatic case with a nominal length of 27 mm, width of 70 mm, and height of 102 mm
+Alternative Label(s):
+   P27/70/102
+
+
+.. raw:: html
+
+   <div id="electrochemistry_7018bd4e_6ca1_44eb_a558_6585c0bf8547"></div>
+
+P2770120
+--------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7018bd4e_6ca1_44eb_a558_6585c0bf8547
+
+Elucidation:
+   a prismatic case with a nominal length of 27 mm, width of 70 mm, and height of 120 mm
+Alternative Label(s):
+   P27/70/120
+
+
+.. raw:: html
+
+   <div id="electrochemistry_afe918c7_0634_40c1_9421_78ea2fe707e3"></div>
+
+P2770131
+--------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_afe918c7_0634_40c1_9421_78ea2fe707e3
+
+Elucidation:
+   a prismatic case with a nominal length of 27 mm, width of 70 mm, and height of 131 mm
+Alternative Label(s):
+   P27/70/131
+
+
+.. raw:: html
+
+   <div id="electrochemistry_37504d4d_2aff_4f7f_9f46_a24e258028e8"></div>
+
+P29135214
+---------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_37504d4d_2aff_4f7f_9f46_a24e258028e8
+
+Elucidation:
+   a prismatic case with a nominal length of 29 mm, width of 135 mm, and height of 214 mm
+Alternative Label(s):
+   P29/135/214
+
+
+.. raw:: html
+
+   <div id="electrochemistry_8112c7ba_e58a_463b_8661_b836bb6d7c86"></div>
+
+P32173115
+---------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8112c7ba_e58a_463b_8661_b836bb6d7c86
+
+Elucidation:
+   a prismatic case with a nominal length of 32 mm, width of 173 mm, and height of 115 mm
+Alternative Label(s):
+   BEV1, P32/173/115
+
+
+.. raw:: html
+
+   <div id="electrochemistry_948234f6_4095_4419_af30_00ab297a7694"></div>
+
+P32173225
+---------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_948234f6_4095_4419_af30_00ab297a7694
+
+Elucidation:
+   a prismatic case with a nominal length of 32 mm, width of 173 mm, and height of 225
+Alternative Label(s):
+   BEV3, P32/173/225
+
+
+.. raw:: html
+
+   <div id="electrochemistry_41ab11ec_af9f_401d_b80d_474c1dc86cd6"></div>
+
+P4014895
+--------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_41ab11ec_af9f_401d_b80d_474c1dc86cd6
+
+Elucidation:
+   a prismatic case with a nominal length of 40 mm, width of 148 mm, and height of 95 mm
+Alternative Label(s):
+   P40/148/95
+
+
+.. raw:: html
+
+   <div id="electrochemistry_36444184_1100_4271_869f_7f2d983aaecb"></div>
+
+P45173115
+---------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_36444184_1100_4271_869f_7f2d983aaecb
+
+Elucidation:
+   a prismatic case with a nominal length of 45 mm, width of 173 mm, and height of 115 mm
+Alternative Label(s):
+   BEV2, P45/173/115
+
+
+.. raw:: html
+
+   <div id="electrochemistry_2c63d7f4_09ba_4ca9_baa2_a1da899bf477"></div>
+
+P45173225
+---------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2c63d7f4_09ba_4ca9_baa2_a1da899bf477
+
+Elucidation:
+   a prismatic case with a nominal length of 45 mm, width of 173 mm, and height of 225 mm
+Alternative Label(s):
+   BEV4, P45/173/225
 
 
 .. raw:: html
@@ -7245,19 +7146,6 @@ Elucidation:
 
 .. raw:: html
 
-   <div id="electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56"></div>
-
-PorousElectrodeCoating
-----------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
-
-Elucidation:
-   a porous electrode which is coated onto a non-porous substrate, typically a metallic foil current collector.
-
-
-.. raw:: html
-
    <div id="electrochemistry_58413d4e_2885_459e_ac06_8d45e661cf91"></div>
 
 PorousSeparator
@@ -7385,40 +7273,6 @@ Alternative Label(s):
 
 .. raw:: html
 
-   <div id="electrochemistry_b5039bc8_f595_4797_908a_7e86131fbde4"></div>
-
-PotentiometricStrippingAnalysis
--------------------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b5039bc8_f595_4797_908a_7e86131fbde4
-
-Elucidation:
-   two-step electrochemical measurement in which 1) material is accumulated at an electrode and 2) the material is removed by chemical reaction or electrochemically at constant current with measurement of electrode potential. The time between changes in potential in step 2 is related to the concentration of analyte in the solution
-Alternative Label(s):
-   PSA
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
-
-
-.. raw:: html
-
-   <div id="electrochemistry_e8cedede_5685_4625_9abe_64f62b5ddcb6"></div>
-
-Potentiometry
--------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e8cedede_5685_4625_9abe_64f62b5ddcb6
-
-Elucidation:
-   techniques based on the measurement of potential at controlled current (constant or equal to zero)
-IEC Reference:
-   https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-04-12
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
-
-
-.. raw:: html
-
    <div id="electrochemistry_a9fc3f77_e48e_4bce_b118_044d608722f6"></div>
 
 Potentiostat
@@ -7443,6 +7297,17 @@ PotentiostaticProcess
 
 Elucidation:
    a process in which the voltage is kept constant
+
+
+.. raw:: html
+
+   <div id="electrochemistry_af751d07_f0b7_43c7_911d_cba864189b2b"></div>
+
+Pouch
+-----
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_af751d07_f0b7_43c7_911d_cba864189b2b
+
 
 
 .. raw:: html
@@ -7482,6 +7347,17 @@ Elucidation:
    vent of special design which allows to release gas from a cell in order to avoid excessive internal pressure and thereby to preclude rupture or explosion of the cell container
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-41
+
+
+.. raw:: html
+
+   <div id="electrochemistry_6775b232_c58a_4303_8164_137261329db6"></div>
+
+Prismatic
+---------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6775b232_c58a_4303_8164_137261329db6
+
 
 
 .. raw:: html
@@ -7721,6 +7597,36 @@ Elucidation:
 
 .. raw:: html
 
+   <div id="electrochemistry_3d2f9945_2319_4a08_899b_6a5ffabd4925"></div>
+
+R18650
+------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3d2f9945_2319_4a08_899b_6a5ffabd4925
+
+Elucidation:
+   a cylindrical case with a nominal diameter of 18 mm and height of 65 mm
+Alternative Label(s):
+   R18/65, R1865
+
+
+.. raw:: html
+
+   <div id="electrochemistry_9dc236d9_c962_4fcc_94db_911a25241472"></div>
+
+R19660
+------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9dc236d9_c962_4fcc_94db_911a25241472
+
+Elucidation:
+   a cylindrical case with a nominal diameter of 19 mm and height of 66 mm
+Alternative Label(s):
+   R19/66
+
+
+.. raw:: html
+
    <div id="electrochemistry_9c0e683b_40d7_4786_b31f_910dd68b2ea8"></div>
 
 R2012
@@ -7808,6 +7714,21 @@ R2050
 
 Elucidation:
    a coin case with a nominal diameter of 20.0 mm and a height of 5.0 mm
+
+
+.. raw:: html
+
+   <div id="electrochemistry_3b048a62_8591_4bf1_8fac_3d647beb9323"></div>
+
+R21700
+------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3b048a62_8591_4bf1_8fac_3d647beb9323
+
+Elucidation:
+   a cylindrical case with a nominal diameter of 21 mm and height of 70 mm
+Alternative Label(s):
+   R21/70, R2170
 
 
 .. raw:: html
@@ -7931,6 +7852,51 @@ Elucidation:
 
 .. raw:: html
 
+   <div id="electrochemistry_95d841eb_2002_4411_9f8e_927d6c60e4b3"></div>
+
+R26650
+------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_95d841eb_2002_4411_9f8e_927d6c60e4b3
+
+Elucidation:
+   a cylindrical case with a nominal diameter of 26 mm and height of 65 mm
+Alternative Label(s):
+   R26/65
+
+
+.. raw:: html
+
+   <div id="electrochemistry_f2251de5_0a7d_4887_8bd1_c906db84abee"></div>
+
+R26700
+------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f2251de5_0a7d_4887_8bd1_c906db84abee
+
+Elucidation:
+   a cylindrical case with a nominal diameter of 26 mm and height of 70 mm
+Alternative Label(s):
+   R26/70
+
+
+.. raw:: html
+
+   <div id="electrochemistry_6ee40e33_ccbf_410e_a8fa_047a9eae0362"></div>
+
+R27660
+------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6ee40e33_ccbf_410e_a8fa_047a9eae0362
+
+Elucidation:
+   a cylindrical case with a nominal diameter of 27 mm and height of 66 mm
+Alternative Label(s):
+   R27/66
+
+
+.. raw:: html
+
    <div id="electrochemistry_99475d6c_304c_4d6b_9eca_fbc42f768be5"></div>
 
 R3032
@@ -7944,6 +7910,96 @@ Elucidation:
 
 .. raw:: html
 
+   <div id="electrochemistry_c066bf32_ed62_4a11_bf4f_25fe6e8e68b5"></div>
+
+R32134
+------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c066bf32_ed62_4a11_bf4f_25fe6e8e68b5
+
+Elucidation:
+   a cylindrical case with a nominal diameter of 32 mm and height of 134 mm
+Alternative Label(s):
+   R32/134
+
+
+.. raw:: html
+
+   <div id="electrochemistry_ad9cdad6_66e8_471e_a7c6_b79f37c20814"></div>
+
+R32700
+------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ad9cdad6_66e8_471e_a7c6_b79f37c20814
+
+Elucidation:
+   a cylindrical case with a nominal diameter of 32 mm and height of 70 mm
+Alternative Label(s):
+   R32/70
+
+
+.. raw:: html
+
+   <div id="electrochemistry_f58476a9_f008_4502_ac94_2f1ebbce1fe3"></div>
+
+R38136
+------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f58476a9_f008_4502_ac94_2f1ebbce1fe3
+
+Elucidation:
+   a cylindrical case with a nominal diameter of 38 mm and height of 136 mm
+Alternative Label(s):
+   R38/136
+
+
+.. raw:: html
+
+   <div id="electrochemistry_169fb6e4_cbed_4b00_ace0_8731123a35b4"></div>
+
+R38138
+------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_169fb6e4_cbed_4b00_ace0_8731123a35b4
+
+Elucidation:
+   a cylindrical case with a nominal diameter of 38 mm and height of 138 mm
+Alternative Label(s):
+   R38/138
+
+
+.. raw:: html
+
+   <div id="electrochemistry_56177336_3ae5_48cb_93ca_a8c73216ea73"></div>
+
+R40108
+------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_56177336_3ae5_48cb_93ca_a8c73216ea73
+
+Elucidation:
+   a cylindrical case with a nominal diameter of 40 mm and height of 108 mm
+Alternative Label(s):
+   R40/108
+
+
+.. raw:: html
+
+   <div id="electrochemistry_6eaa3c0d_e1f3_4c6e_91a6_9b8c5a21b8cb"></div>
+
+R40920
+------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6eaa3c0d_e1f3_4c6e_91a6_9b8c5a21b8cb
+
+Elucidation:
+   a cylindrical case with a nominal diameter of 40 mm and height of 92 mm
+Alternative Label(s):
+   R40/92
+
+
+.. raw:: html
+
    <div id="electrochemistry_027d437e_3bbf_4eda_940b_e509f8d2b993"></div>
 
 R416
@@ -7953,6 +8009,21 @@ R416
 
 Elucidation:
    a coin case with a nominal diameter of 4.8 mm and a height of 1.6 mm
+
+
+.. raw:: html
+
+   <div id="electrochemistry_1afa2c7e_6ddd_4a9b_9623_40975131a304"></div>
+
+R46800
+------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1afa2c7e_6ddd_4a9b_9623_40975131a304
+
+Elucidation:
+   a cylindrical case with a nominal diameter of 46 mm and height of 80 mm
+Alternative Label(s):
+   R46/80, R4680
 
 
 .. raw:: html
@@ -8011,6 +8082,36 @@ Elucidation:
    a coin case with a nominal diameter of 5.8 mm and a height of 2.7 mm
 Alternative Label(s):
    R64
+
+
+.. raw:: html
+
+   <div id="electrochemistry_69e59b3d_b19d_4f8e_8b9c_84eb64307626"></div>
+
+R54137
+------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_69e59b3d_b19d_4f8e_8b9c_84eb64307626
+
+Elucidation:
+   a cylindrical case with a nominal diameter of 54 mm and height of 137 mm
+Alternative Label(s):
+   R54/137
+
+
+.. raw:: html
+
+   <div id="electrochemistry_fc9e7ba3_5084_4c2a_b488_c6a96af99232"></div>
+
+R54215
+------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fc9e7ba3_5084_4c2a_b488_c6a96af99232
+
+Elucidation:
+   a cylindrical case with a nominal diameter of 54 mm and height of 215 mm
+Alternative Label(s):
+   R54/215
 
 
 .. raw:: html
@@ -8443,23 +8544,6 @@ Elucidation:
    means of making electrolytic connection between two half cells without introducing a significant liquid junction potential.
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Salt_bridge
-
-
-.. raw:: html
-
-   <div id="electrochemistry_6f0dc7c0_ba12_4390_9564_f10f85a1779a"></div>
-
-SampledDCPolarography
----------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6f0dc7c0_ba12_4390_9564_f10f85a1779a
-
-Elucidation:
-   DC polarography with current sampling at the end of each drop life mechanically enforced by a knocker at a preset drop time value. The current sampling and mechanical drop dislodge are synchronized.
-Alternative Label(s):
-   TASTPolarography
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
 
 
 .. raw:: html
@@ -9045,25 +9129,6 @@ Elucidation:
 
 .. raw:: html
 
-   <div id="electrochemistry_042d2282_bd2d_4874_b896_2d9dd06b54dd"></div>
-
-SquareWaveVoltammetry
----------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_042d2282_bd2d_4874_b896_2d9dd06b54dd
-
-Elucidation:
-   voltammetry in which a square-wave potential waveform is superimposed on an underlying linearly varying potential ramp or staircase ramp
-Alternative Label(s):
-   OSWV, OsteryoungSquareWaveVoltammetry, SWV
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
-Wikipedia Reference:
-   https://en.wikipedia.org/wiki/Squarewave_voltammetry
-
-
-.. raw:: html
-
    <div id="electrochemistry_210f3520_1ea3_4c86_aa89_4cd9a3bc5a5a"></div>
 
 SquareWaveVoltammetryWaveform
@@ -9122,19 +9187,6 @@ Wikipedia Reference:
 
 .. raw:: html
 
-   <div id="electrochemistry_7416a831_ba72_447c_bf83_3989ba2dfe37"></div>
-
-StepChronopotentiometry
------------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7416a831_ba72_447c_bf83_3989ba2dfe37
-
-Elucidation:
-   chronopotentiometry where the applied current is changed in steps
-
-
-.. raw:: html
-
    <div id="electrochemistry_aa5ed981_c11b_4c4f_b1fd_8c432e009484"></div>
 
 SternModel
@@ -9189,23 +9241,6 @@ StrippingChronopotentiometry
 
 * https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bfbefff0_4df5_47c2_9943_5f42cf268e9e
 
-
-
-.. raw:: html
-
-   <div id="electrochemistry_3b35e843_3132_41e3_b6df_541cd45ba880"></div>
-
-StrippingVoltammetry
---------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3b35e843_3132_41e3_b6df_541cd45ba880
-
-Elucidation:
-   two-step electrochemical measurement in which 1) material is accumulated at an electrode and 2) the amount of an accumulated species is measured by voltammetry. The measured electric current in step 2 is related to the concentration of analyte in the solution by calibration.
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
-Wikipedia Reference:
-   https://en.wikipedia.org/wiki/Electrochemical_stripping_analysis
 
 
 .. raw:: html
@@ -9468,6 +9503,19 @@ TinElectrode
 
 .. raw:: html
 
+   <div id="electrochemistry_9c557caa_61e2_4fa9_a517_4bad01a68122"></div>
+
+TitaniumBasedElectrode
+----------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9c557caa_61e2_4fa9_a517_4bad01a68122
+
+Elucidation:
+   an electrode which contains mostly materials based on titanium
+
+
+.. raw:: html
+
    <div id="electrochemistry_76fe8fb2_868e_48eb_95ca_fc6acd6f5fc9"></div>
 
 TitaniumDioxideElectrode
@@ -9608,6 +9656,19 @@ IEC Reference:
 
 .. raw:: html
 
+   <div id="electrochemistry_0ee59786_b090_444d_a46d_505797d07ca4"></div>
+
+VanadiumBasedElectrode
+----------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0ee59786_b090_444d_a46d_505797d07ca4
+
+Elucidation:
+   an electrode which contains mostly materials based on vanadium
+
+
+.. raw:: html
+
    <div id="electrochemistry_cc1f854a_ba6c_436e_bd18_c8b9159bbf52"></div>
 
 VentCap
@@ -9686,40 +9747,6 @@ VoltageVector
 
 Elucidation:
    vector containing at least two values for the quantity voltage
-
-
-.. raw:: html
-
-   <div id="electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62"></div>
-
-Voltammetry
------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_270f239e_33cb_4c6d_a41c_875ec1262d62
-
-Elucidation:
-   techniques based on the measurement of current as a function of controlled time-dependent applied potential
-IEC Reference:
-   https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-04-11
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
-Wikipedia Reference:
-   https://en.wikipedia.org/wiki/Voltammetry
-
-
-.. raw:: html
-
-   <div id="electrochemistry_183a2337_c35f_4b74_8d9a_08c74d89bedc"></div>
-
-VoltammetryAtARotatingDiskElectrode
------------------------------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_183a2337_c35f_4b74_8d9a_08c74d89bedc
-
-Elucidation:
-   hydrodynamic voltammetry using a a rotating disc electrode, where the limiting current is described by the Levich equation
-IUPAC Reference:
-   https://doi.org/10.1515/pac-2018-0109
 
 
 .. raw:: html
@@ -9886,6 +9913,28 @@ hasCatholyte
 
 .. raw:: html
 
+   <div id="electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383"></div>
+
+hasCoating
+----------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383
+
+
+
+.. raw:: html
+
+   <div id="electrochemistry_cc8c2c5d_cf3d_444d_a7e8_44ec4c06a88e"></div>
+
+hasCurrentCollector
+-------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cc8c2c5d_cf3d_444d_a7e8_44ec4c06a88e
+
+
+
+.. raw:: html
+
    <div id="electrochemistry_578c41e9_ee01_4840_9c8c_04ab6e4e6241"></div>
 
 hasElectrode
@@ -9903,6 +9952,17 @@ hasElectrolyte
 --------------
 
 * https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3bd08946_4e81_455d_9fca_dc7a5ead9315
+
+
+
+.. raw:: html
+
+   <div id="electrochemistry_c17b514b_57f2_4f72_9b95_c2950dd2aa7f"></div>
+
+hasFormFactor
+-------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c17b514b_57f2_4f72_9b95_c2950dd2aa7f
 
 
 
