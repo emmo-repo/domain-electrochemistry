@@ -39,16 +39,6 @@ jobs:
     - name: Render documentation from ttl
       run: python sphinx/ttl_to_rst.py
 
-    - name: Commit updated documentation
-      run: |
-        cd ${GITHUB_WORKSPACE}
-        git config --global user.email "${GIT_USER_EMAIL}"
-        git config --global user.name "${GIT_USER_NAME}"
-        git config pull.rebase false
-        git add .
-        git commit -m "Automatic update of github pages"
-        git push origin master
-      
     - name: Build HTML
       uses: ammaraskar/sphinx-action@master
       with:
@@ -67,3 +57,13 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: sphinx/_build/html
 
+    - name: Commit updated documentation
+      run: |
+        cd ${GITHUB_WORKSPACE}
+        git config --global user.email "${GIT_USER_EMAIL}"
+        git config --global user.name "${GIT_USER_NAME}"
+        git config pull.rebase false
+        git add .
+        git commit -m "Automatic update of github pages"
+        git push origin master
+      
