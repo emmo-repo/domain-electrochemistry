@@ -36,6 +36,8 @@ Elucidation:
    electric current that accompanies the adsorption of a species
 IUPAC Reference:
    https://goldbook.iupac.org/terms/view/A00159
+Comment:
+   I_{ads}
 
 
 .. raw:: html
@@ -77,6 +79,8 @@ Elucidation:
    half of the peak-to-peak amplitude of a periodic voltage perturbation within a single time period, with respect to a reference potential value
 IUPAC Reference:
    https://doi.org/10.1351/goldbook.A00311
+Comment:
+   For Electrochemical Impedance Spectroscopy, the Peak Potential Amplitude is usually small, (normally 5 to 10 mV).
 
 
 .. raw:: html
@@ -111,6 +115,8 @@ Alternative Label(s):
    ArealCapacity
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-20
+Comment:
+   Can also be applied to electrodes.
 
 
 .. raw:: html
@@ -138,9 +144,11 @@ CRate
 Elucidation:
    [an indicator of the] electric current at which a secondary cell or battery is charged
 Alternative Label(s):
-   ChargeRate
+   ChargeRate, ChargeRate, ChargeRate
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-45
+Comment:
+   in practice, the term CRate is often used to mean DRate
 
 
 .. raw:: html
@@ -184,6 +192,8 @@ Alternative Label(s):
    ChargeCapacity, ElectricChargeCapacity, StorageCapacity
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-14
+Comment:
+   the SI unit for electric charge is the coulomb (1 C = 1 A·s) but in practice, capacity is usually expressed in ampere hours (A·h)
 
 
 .. raw:: html
@@ -199,6 +209,8 @@ Elucidation:
    faradaic current measured in a solution containing two electroactive substances, A and B, that exceeds the sum of the faradaic currents that would be obtained for A and B separately under the same experimental conditions
 IUPAC Reference:
    https://doi.org/10.1351/goldbook.C00889
+Comment:
+   I_{cat}
 
 
 .. raw:: html
@@ -227,6 +239,8 @@ CellCurrent
 
 * https://w3id.org/emmo/domain/electrochemistry#electrochemistry_637ee9c4_4b3f_4d3a_975b_c0572dfe53ce
 
+Comment:
+   electric current flowing to or from an electrochemical cell.
 
 
 .. raw:: html
@@ -263,6 +277,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-10
 IUPAC Reference:
    https://doi.org/10.1351/goldbook.A00424
+Comment:
+   difference of electric potentials measured between identical metallic leads to two electrodes of an electrochemical cell
 
 
 .. raw:: html
@@ -336,6 +352,8 @@ Elucidation:
    the fraction of the electrostatic potential energy affecting the reduction rate in an electrode reaction, with the remaining fraction affecting the corresponding oxidation rate
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Charge_transfer_coefficient
+Comment:
+   The cathodic transfer coefficient αc is defined as –(RT/nF)(dlnkc /dE), where kc is the electroreduction rate constant, E is the applied potential, and R, T, and F have their usual significance. This definition is equivalent to the other, -(RT/nF)(dln|jc |/dE), where jc is the cathodic current density corrected for any changes in the reactant concentration at the electrode surface with respect to its bulk value.
 
 
 .. raw:: html
@@ -396,6 +414,8 @@ IUPAC Reference:
    https://goldbook.iupac.org/terms/view/C01230
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Overpotential#Concentration_overpotential
+Comment:
+   part of the electrode polarization arising from concentration gradients of electrode reactants and products.
 
 
 .. raw:: html
@@ -579,6 +599,8 @@ Elucidation:
    the maximum number of cycles achieved in an electrochemical device before reaching some end-of-life criterion
 Alternative Label(s):
    ElectrochemicalCycleLife
+Comment:
+   a typical end-of-life criterion in the battery domain is 80% of the initial capacity of the device
 
 
 .. raw:: html
@@ -639,9 +661,11 @@ DRate
 Elucidation:
    [an indicator of the] electric current at which a battery is discharged
 Alternative Label(s):
-   DischargeRate
+   DischargeRate, DischargeRate, DischargeRate
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-25
+Comment:
+   in practice, the term CRate is often used to mean DRate
 
 
 .. raw:: html
@@ -674,6 +698,10 @@ IUPAC Reference:
    https://goldbook.iupac.org/terms/view/D01722
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Diffusion_current
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q1224527
+Comment:
+   Diffusion current is governed by Fick’s Laws of diffusion. It is the principle on which many electroana- lytical methods are based, because the current is proportional to the bulk concentration of the diffusing species. I_{d} = z*F*A*D*\grad(c)_{x=0}, where z is the electron number of an electrochemical reaction, F the Faraday constant, A the electrode surface area, D the diffusion coefficient of electroactive substance, and (∂c/∂x)x=0 the gradient of the amount concentration at the electrode surface position x = 0.
 
 
 .. raw:: html
@@ -691,6 +719,8 @@ Alternative Label(s):
    LimitingDiffusionCurrent
 IUPAC Reference:
    https://goldbook.iupac.org/terms/view/L03534
+Comment:
+   I_{d,lim}
 
 
 .. raw:: html
@@ -842,6 +872,10 @@ IUPAC Reference:
    https://goldbook.iupac.org/terms/view/E01945
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrochemical_potential
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q62525
+Comment:
+   in quantum mechanical terms, electrochemical potential is defined as the energy level of the electron orbitals in the species that have a 50 percent probability of occupancy
 
 
 .. raw:: html
@@ -922,6 +956,8 @@ Alternative Label(s):
    ElectrochemicalStabilityWindow
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrochemical_window
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q759643
 
 
 .. raw:: html
@@ -954,6 +990,8 @@ Elucidation:
    amount of a chemical modifier at an electrode surface per unit area
 Alternative Label(s):
    ElectrodeCoverage
+Comment:
+   The total coverage may be distinguished from coverage that is electrochemically reactive or accessible on some given timescale.
 
 
 .. raw:: html
@@ -967,6 +1005,8 @@ ElectrodeGeometricSurfaceArea
 
 Elucidation:
    the interfacial area, determined on the assumption that the interface is truly flat (2-dimensional) and calculated using the geometric data of the involved surfaces
+Comment:
+   A_{geom}
 
 
 .. raw:: html
@@ -986,6 +1026,8 @@ IUPAC Reference:
    https://goldbook.iupac.org/terms/view/E01956
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrode_potential
+Comment:
+   E, U
 
 
 .. raw:: html
@@ -999,6 +1041,8 @@ ElectrodeRealSurfaceArea
 
 Elucidation:
    surface area of an electrode that takes into account non-idealities of the interface (roughness, porosity, etc.) and can be measured by a variety of electrochemical methods
+Comment:
+   A_{real}
 
 
 .. raw:: html
@@ -1012,6 +1056,8 @@ ElectrodeSurfaceArea
 
 Elucidation:
    area of electrode - solution interface.
+Comment:
+   A
 
 
 .. raw:: html
@@ -1041,9 +1087,11 @@ ElectronNumberOfAnElectrochemicalReaction
 Elucidation:
    number of electrons transferred in a charge transfer reaction between an electrode and a single entity (ion, radical-ion, or molecule) of an electroactive substance, whose identity must be specified
 Alternative Label(s):
-   ChargeNumber, NumberOfElectronsTransferred
+   ChargeNumber, ChargeNumber, NumberOfElectronsTransferred, NumberOfElectronsTransferred
 IUPAC Reference:
    https://goldbook.iupac.org/terms/view/C00995
+Comment:
+   Symbol n is commonly used when there is no risk of confusion with an amount of substance.
 
 
 .. raw:: html
@@ -1118,11 +1166,13 @@ EquilibriumElectrodePotential
 Elucidation:
    potential of an electrode when no electric current flows through the cell and all local charge transfer equilibria across phase boundaries that are represented in the cell diagram (except at possible electrolyte-electrolyte junctions) and local chemical equilibria are established
 Alternative Label(s):
-   EquilibriumPotential, NernstPotential, ReversiblePotential
+   EquilibriumPotential, EquilibriumPotential, EquilibriumPotential, NernstPotential, NernstPotential, NernstPotential, ReversiblePotential, ReversiblePotential, ReversiblePotential
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-12
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Reversal_potential
+Comment:
+   Eeq is related to the standard electrode potential by the Nernst equation.
 
 
 .. raw:: html
@@ -1138,6 +1188,8 @@ Elucidation:
    the common value (i0) of the anodic and cathodic partial currents when the reaction is at equilibrium
 IUPAC Reference:
    https://goldbook.iupac.org/terms/view/E02238
+Comment:
+   For an electrode at equilibrium at which only one reaction is significant i = 0. When more than one reaction is significant at a given electrode, subscripts to i0 may be used to distinguish exchange currents. i is not usually zero when only one of these reactions is at equilibrium.
 
 
 .. raw:: html
@@ -1174,6 +1226,10 @@ IUPAC Reference:
    https://goldbook.iupac.org/terms/view/F02321
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Faradaic_current
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q5434687
+Comment:
+   Current that is produced by other processes, for example by diffusion of charged species, is termed ‘non- faradaic current’.
 
 
 .. raw:: html
@@ -1191,6 +1247,8 @@ IUPAC Reference:
    https://doi.org/10.1351/goldbook.F02325
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Faraday_constant
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q192819
 
 
 .. raw:: html
@@ -1208,6 +1266,8 @@ Alternative Label(s):
    FinishingChargeRate
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-46
+Comment:
+   the quantity CRate is not used for energy-decoupled batteries like Redox Flox batteries
 
 
 .. raw:: html
@@ -1222,7 +1282,9 @@ FormalElectrodePotential
 Elucidation:
    equilibrium electrode potential under conditions of unit concentration of species involved in the electrode reaction
 Alternative Label(s):
-   FormalPotential
+   FormalPotential, FormalPotential, FormalPotential
+Comment:
+   E^{\circ '}
 
 
 .. raw:: html
@@ -1238,6 +1300,8 @@ Elucidation:
    for dynamic voltammetric techniques, the electric potential of the working electrode at which the current is equal to one-half of the peak current
 IUPAC Reference:
    https://doi.org/10.1351/goldbook.H02720
+Comment:
+   The quarter-peak potential, Ep/4, the three-quarter-peak potential, Ep3/4, etc., may be similarly defined.
 
 
 .. raw:: html
@@ -1253,6 +1317,8 @@ Elucidation:
    electric potential of a steady-state voltammetric working electrode at the point, on the rising part of the voltammetric wave, where the current is equal to one-half of the limiting current
 IUPAC Reference:
    https://doi.org/10.1351/goldbook.H02722
+Comment:
+   E1/2 is used in techniques providing a sigmoidal wave-shaped current including DC voltammetry/polarography, normal pulse voltammetry, hydrodynamic voltammetry, and tast polarography.
 
 
 .. raw:: html
@@ -1296,6 +1362,10 @@ Elucidation:
    value of an electric current at an instant in time
 IUPAC Reference:
    https://goldbook.iupac.org/terms/view/I03062
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q108057717
+Comment:
+   I_{t}
 
 
 .. raw:: html
@@ -1311,6 +1381,8 @@ Elucidation:
    quotient of change of voltage of a battery by the corresponding change in discharge current under specified conditions.
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-36
+Comment:
+   internal apparent resistance is expressed in ohms
 
 
 .. raw:: html
@@ -1322,6 +1394,8 @@ InternalConductance
 
 * https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0c9655c6_6b0b_4819_a219_f286ad196fa9
 
+Comment:
+   inverse of internal resistance
 
 
 .. raw:: html
@@ -1339,6 +1413,10 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=485-15-04
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Internal_resistance
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q2527701
+Comment:
+   According to to Thévenin's theorem can any linear electric curcuit be replaced with a voltage source in series with an impedance. This impedance is for historical reasons termed "internal resistance".
 
 
 .. raw:: html
@@ -1371,6 +1449,8 @@ IUPAC Reference:
    https://doi.org/10.1351/goldbook.I03175
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Ionic_conductivity_(solid_state)
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q6063658
 
 
 .. raw:: html
@@ -1386,6 +1466,8 @@ Elucidation:
    electric potential of an ion-selective electrode (ISE) and activity of an analyte ion at which the potential of the ISE is independent of temperature
 IUPAC Reference:
    https://doi.org/10.1351/goldbook.I03304
+Comment:
+   The specification of the ISE and outer reference electrode must be described.
 
 
 .. raw:: html
@@ -1401,6 +1483,8 @@ Elucidation:
    faradaic current of an electroactive substance B formed by a prior chemical reaction from another substance Y that is no electroactive at the potential at which B is electrochemically transformed
 IUPAC Reference:
    https://goldbook.iupac.org/terms/view/K03399
+Comment:
+   The kinetic current is partially or entirely controlled by the rate of the chemical reaction. This reaction may be heterogeneous, occurring at an electrode-solution interface (surface reaction), or it may be homo- geneous, occurring at some distance from the interface (bulk reaction).
 
 
 .. raw:: html
@@ -1429,6 +1513,8 @@ Elucidation:
    faradaic current that is approached as the rate of the charge-transfer process is increased by varying the applied potential, being greater than the rate of mass transport controlled by diffusion
 IUPAC Reference:
    https://goldbook.iupac.org/terms/view/L03532
+Comment:
+   A limiting current is reached when the overpotential is sufficiently large that the faradaic current is deter- mined solely by the ability to supply electroactive species by mass transport. A limiting current is there- fore independent of applied potential over a corresponding finite potential range. A limiting current may have the character of an adsorption, catalytic, diffusion, or kinetic current, and may include a migration current.
 
 
 .. raw:: html
@@ -1474,6 +1560,8 @@ Alternative Label(s):
    CutOffVoltage, DischargeCutoffVoltage, EndOfDischargeVoltage, EndPointVoltage, EndVoltage, FinalVoltage, LowerCutoffVoltage
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-30
+Comment:
+   specified voltage of a battery at which the battery discharge is terminated.
 
 
 .. raw:: html
@@ -1625,6 +1713,8 @@ Elucidation:
    component of electric current due to transport of ions in the electric field between the electrodes
 IUPAC Reference:
    https://goldbook.iupac.org/terms/view/M03921
+Comment:
+   I_{m}
 
 
 .. raw:: html
@@ -1677,6 +1767,8 @@ Elucidation:
    electrochemical potential per mole.
 IUPAC Reference:
    https://goldbook.iupac.org/terms/view/E01945
+Comment:
+   Of a substance in a specified phase, the partial molar Gibbs energy of the substance at the specified electric potential.
 
 
 .. raw:: html
@@ -1705,6 +1797,8 @@ NetFaradaicCurrent
 
 Elucidation:
    algebraic sum of faradaic currents flowing through an electrode
+Comment:
+   I
 
 
 .. raw:: html
@@ -1773,11 +1867,15 @@ OpenCircuitVoltage
 Elucidation:
    electrode potential of working electrode relative to the reference electrode when no potential or electric current is being applied to the electrochemical cell
 Alternative Label(s):
-   OCP, OCV, OpenCircuitPotential
+   OCP, OCP, OCV, OCV, OpenCircuitPotential, OpenCircuitPotential
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-32
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Open-circuit_voltage
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q1812203
+Comment:
+   In the case of a reversible electrode system, the OCP is also referred to as the equilibrium electrode potential. Otherwise, it is called the rest potential, or the corrosion potential, depending on the system being studied.
 
 
 .. raw:: html
@@ -1792,13 +1890,15 @@ Overpotential
 Elucidation:
    electrode potential (E) minus the equilibrium electrode potential (Eeq) of an electrochemical reaction
 Alternative Label(s):
-   ElectrodePolarization, Overvoltage, PolarizationPotential
+   ElectrodePolarization, ElectrodePolarization, Overvoltage, Overvoltage, PolarizationPotential, PolarizationPotential
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-02
 IUPAC Reference:
    https://goldbook.iupac.org/terms/view/O04358
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Overpotential
+Comment:
+   difference between the electrode potential with current flow, and the electrode potential without current flow, i.e. the equilibrium potential
 
 
 .. raw:: html
@@ -1827,6 +1927,8 @@ Elucidation:
    in dynamic voltammetric techniques, the maximum value of the faradaic current attained by varying the applied potential in the current-potential or I-E curve
 IUPAC Reference:
    https://goldbook.iupac.org/terms/view/P04457
+Comment:
+   I_{p}
 
 
 .. raw:: html
@@ -1842,6 +1944,8 @@ Elucidation:
    electrode potential of the working electrode at which the peak current is attained
 IUPAC Reference:
    https://doi.org/10.1351/goldbook.P04464
+Comment:
+   This term is used in dynamic voltammetric techniques providing a peak-shaped current response (linear-sweep voltammetry, triangular-wave voltammetry, cyclic voltammetry, AC voltammetry, differential pulse voltammetry, square-wave voltammetry, stripping voltamme- try and derivative techniques).
 
 
 .. raw:: html
@@ -1889,6 +1993,8 @@ Alternative Label(s):
    SelectivityCoefficient, SelectivityConstant, SelectivityFactor
 IUPAC Reference:
    https://doi.org/10.1351/goldbook.P04791
+Comment:
+   The selectivity coefficient is determined by means of the potential difference of the ion- selective electrode in mixed solutions of the primary ion, A, and interfering ion, B (Fixed Interference Method) or, less desirably, in separate solutions of A and B (Separate Solution Method). The activities of the primary ion, A, and the interfering ion, B, at which K is determined should always be specified, as the value of K is defined by a modified Nikolsky-Eisenman equation. The smaller the value of K , the A,B greater the electrode’s preference for the primary ion, A.
 
 
 .. raw:: html
@@ -1919,6 +2025,8 @@ Elucidation:
    time interval during which the excitation signal deviates from the base line in normal pulse voltamme- try, differential pulse voltammetry, and related techniques
 IUPAC Reference:
    https://doi.org/10.1351/goldbook.P04947
+Comment:
+   The pulse duration includes the sampling interval.
 
 
 .. raw:: html
@@ -1947,6 +2055,8 @@ QuarterTransitionTimePotential
 
 Elucidation:
    electric potential of the indicator electrode, in chronopotentiometry at constant current, at the instant when the time that has elapsed since the application of current is equal to one-fourth of the transition time
+Comment:
+   In practice, appropriate correction for the double-layer charging current is needed.
 
 
 .. raw:: html
@@ -1996,6 +2106,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-02
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Reaction_rate
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q3394849
 
 
 .. raw:: html
@@ -2011,6 +2123,8 @@ Elucidation:
    a proportionality constant which quantifies the rate and direction of a chemical reaction by relating it with the concentration of reactants
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Reaction_rate_constant
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q658700
 
 
 .. raw:: html
@@ -2079,9 +2193,11 @@ ResidualCurrent
 Elucidation:
    Electric current that flows, at a particular value of the applied potential, in the absence of the substance whose electrode behaviour is being investigated, i.e. a "blank" solution.
 Alternative Label(s):
-   BackgroundCurrent
+   BackgroundCurrent, BackgroundCurrent
 IUPAC Reference:
    https://goldbook.iupac.org/terms/view/R05311
+Comment:
+   I_{r}
 
 
 .. raw:: html
@@ -2095,6 +2211,8 @@ ResponseTimeAtAnISE
 
 Elucidation:
    Duration between the time when an ion-selective electrode and an external reference electrode (the two completing the ion-selective electrode cell) are brought into contact with a sample solution (or the time at which the activity of the ion of interest in solution is changed) and the first time at which the slope of the cell potential vs. time plot (ΔE/Δt) becomes equal to a limiting value selected on the basis of the experimental conditions and/or requirements concerning accuracy.
+Comment:
+   Buck and Lindner suggest a slope of 0.6 mV min-1 .
 
 
 .. raw:: html
@@ -2183,6 +2301,8 @@ Elucidation:
    maximum current which should be delivered by a cell or battery into an external circuit with zero electric resistance, or an external circuit which depresses the cell or battery voltage to approximately zero volt
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-26
+Comment:
+   zero electric resistance is a hypothetical condition and in practice the short-circuit current is the peak current flowing in a circuit of very low resistance compared to the internal resistance of the battery
 
 
 .. raw:: html
@@ -2198,6 +2318,8 @@ Elucidation:
    Potential to which the magnitude of an excitation signal is compared to.
 Alternative Label(s):
    BaselinePotential
+Comment:
+   Alternating potential signals such as the ones applied in Electrochemical Impedance Spectroscopy are superimposed to a reference potential, which can be an applied potential or the open circuit potential.
 
 
 .. raw:: html
@@ -2215,6 +2337,8 @@ Alternative Label(s):
    GravimetricCapacity, SpecificChargeCapacity, SpecificElectricChargeCapacity
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-19
+Comment:
+   Can also be applied to electrodes.
 
 
 .. raw:: html
@@ -2312,6 +2436,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=485-02-10
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Specific_surface_area
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q622205
 
 
 .. raw:: html
@@ -2327,6 +2453,8 @@ Elucidation:
    component of an electric current that is associated with the presence of an analyate in square-wave voltammetry
 IUPAC Reference:
    https://goldbook.iupac.org/terms/view/S05897
+Comment:
+   I_{SW}
 
 
 .. raw:: html
@@ -2341,11 +2469,14 @@ StandardElectrodePotential
 Elucidation:
    equilibrium electrode potential of an electrode under standard conditions
 Alternative Label(s):
-   StandardPotential
+   StandardPotential, StandardPotential, StandardPotential
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-13
 IUPAC Reference:
    https://goldbook.iupac.org/terms/view/S05912
+Comment:
+   E° is related to the standard Gibbs Energy of the electrode reaction, Δr
+G° or ΔrG , written as a reduction with respect to that of the standard hydrogen electrode (SHE) E° = −ΔrG°/zF.
 
 
 .. raw:: html
@@ -2437,6 +2568,8 @@ Elucidation:
    a measure of the total area that the surface of a solid object occupies
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Surface_area
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q1379273
 
 
 .. raw:: html
@@ -2462,7 +2595,9 @@ SurfaceOverpotential
 Elucidation:
    The potential of a working electrode relative to a reference electrode of the same kinds placed in the solution adjacent to the surface of the working electrode (just outside the double layer).
 Alternative Label(s):
-   SurfacePolarization
+   SurfacePolarization, SurfacePolarization, SurfacePolarization
+Comment:
+   A positive surface overpotential produces a positive (anodic) current.
 
 
 .. raw:: html
@@ -2575,6 +2710,8 @@ Elucidation:
    in chronopotentiometry and related techniques, the duration between the application of current and when the concentration of an electroactive substance at the electrode-solution interface becomes indistinguishable from zero
 IUPAC Reference:
    https://doi.org/10.1351/goldbook.T06472
+Comment:
+   In experimental practice, the latter is often taken to be the moment when the rate of varia- tion of the potential of the indicator electrode attains a maximum value.
 
 
 .. raw:: html
@@ -2680,6 +2817,8 @@ Alternative Label(s):
    SurfaceAreaToVolumeRatio
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Surface-area-to-volume_ratio
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q766786
 
 
 .. raw:: html
@@ -2693,6 +2832,8 @@ WorkingPotentialRange
 
 Elucidation:
    range of electrode potentials of a given working electrode in a given electrolyte, where the electric current from reactions of the electrode or electrolyte is negligible compared with the current from reactions of the system under investigation
+Comment:
+   Because the working potential range is a function of a specific electrode/electrolyte system, only approximate ranges can be given for generic systems.
 
 
 Electrochemistry Concepts
@@ -2724,6 +2865,8 @@ Elucidation:
    an aqueous electrolyte with a nominal pH values less than 7
 Alternative Label(s):
    AcidicAqueousElectrolyte, AcidicSolution
+Comment:
+   typical alkaline electrolytes have a pH in the range 0 < x < 4
 
 
 .. raw:: html
@@ -2739,6 +2882,8 @@ Elucidation:
    an electrode which is chemically altered by the electrode reaction
 Alternative Label(s):
    NonInertElectrode, ReactiveElectrode
+Comment:
+   the opposite of an inert electrode
 
 
 .. raw:: html
@@ -2753,9 +2898,13 @@ ActiveMaterial
 Elucidation:
    material that is oxidized or reduced at an electrode in an electrochemical cell
 Alternative Label(s):
-   ActiveElectrochemicalMaterial, ActiveElectrochemicalMaterial, ElectrochemicallyActiveMaterial, ElectrochemicallyActiveMaterial
+   ActiveElectrochemicalMaterial, ActiveElectrochemicalMaterial, ActiveElectrochemicalMaterial, ActiveElectrochemicalMaterial, ElectrochemicallyActiveMaterial, ElectrochemicallyActiveMaterial, ElectrochemicallyActiveMaterial, ElectrochemicallyActiveMaterial
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-14
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q120907375
+Comment:
+   in secondary cells, the active material is restored to its original state during charge
 
 
 .. raw:: html
@@ -2797,6 +2946,8 @@ AirElectrode
 
 Elucidation:
    a gas diffusion electrode in which the gas is air
+Comment:
+   The reaction occuring in an air electrode is typically the oxygen reduction reaction (ORR).
 
 
 .. raw:: html
@@ -2812,6 +2963,8 @@ Elucidation:
    an aqueous electrolyte with a nominal pH greater than 7
 Alternative Label(s):
    AlkalineAqueousElectrolyte, AlkalineSolution
+Comment:
+   typical alkaline electrolytes have a pH in the range 13 < x < 15
 
 
 .. raw:: html
@@ -2831,6 +2984,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=131-11-24
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Alternating_current
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q124164
 
 
 .. raw:: html
@@ -2872,6 +3027,8 @@ Elucidation:
    a solution of ammonia (NH3) dissolved in water (H2O)
 Alternative Label(s):
    AqueousAmmoniaSolution
+Comment:
+   the solution can also be made by dissolving ammonium hydroxide (NH4OH) in water
 
 
 .. raw:: html
@@ -2921,6 +3078,10 @@ IUPAC Reference:
    https://goldbook.iupac.org/terms/view/A00370
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Anode
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q181232
+Comment:
+   at an anode, electrons are produced in a galvanic cell or extracted in an electrolytic cell
 
 
 .. raw:: html
@@ -2952,9 +3113,11 @@ AnodicReaction
 Elucidation:
    electrode reaction in which oxidation occurs at the anode
 Alternative Label(s):
-   Electrooxidation, ElectrooxidationReaction
+   Electrooxidation, Electrooxidation, ElectrooxidationReaction, ElectrooxidationReaction
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-09
+Comment:
+   an electrode reaction, when the energy of electrons in the working electrode is lower than the HOMO orbital of the substrate
 
 
 .. raw:: html
@@ -2970,6 +3133,8 @@ Elucidation:
    electrolyte on the anode side of an electrochemical cell that is divided into compartments
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-19
+Comment:
+   Electrolyte solution in the anodic compartment of an electrolysis cell or galvanic cell, i.e., in that part of the cell where the anode is placed.
 
 
 .. raw:: html
@@ -2983,6 +3148,8 @@ AnolyteTank
 
 Elucidation:
    a tank for holding anolyte
+Comment:
+   usually used in a flow cell system
 
 
 .. raw:: html
@@ -2998,6 +3165,8 @@ Elucidation:
    an ion-transport medium, which may be immobilized, in which water is the solvent.
 Alternative Label(s):
    AqueousElectrolyticSolution
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q120906632
 
 
 .. raw:: html
@@ -3013,6 +3182,8 @@ Elucidation:
    membrane constituted of two or more structural planes of non-identical morphologies
 IUPAC Reference:
    https://doi.org/10.1351/goldbook.AT06862
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q120965018
 
 
 .. raw:: html
@@ -3026,6 +3197,8 @@ BellevilleWasher
 
 Elucidation:
    a type of spring, in the form of a conical washer
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q3056595
 
 
 .. raw:: html
@@ -3095,6 +3268,8 @@ Alternative Label(s):
    ElectrodeBinder
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Binder_(material)
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q863583
 
 
 .. raw:: html
@@ -3136,6 +3311,8 @@ Elucidation:
    a model for the double layer that includes the action of the solvent on the surface
 Alternative Label(s):
    BDM
+Comment:
+   proposed by John Bockris, M. A. V. Devanathan, and Klaus Mueller in 1963
 
 
 .. raw:: html
@@ -3153,6 +3330,8 @@ Alternative Label(s):
    BodeDiagram
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Bode_plot
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q245627
 
 
 .. raw:: html
@@ -3187,6 +3366,10 @@ Alternative Label(s):
    ButlerVolmerApproximation, ErdeyGruzVolmerEquation
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Butler%E2%80%93Volmer_equation
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q903846
+Comment:
+   i = i0 * (exp(alpha*n*F*eta/(R*T)) – exp(-(1-alpha)*n*F*eta/(R*T)))
 
 
 .. raw:: html
@@ -3237,6 +3420,8 @@ CalciumElectrode
 
 * https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4f2348dd_d9ea_4448_af8c_a4a38f3d04b4
 
+Comment:
+   electrode in which the active material is calcium
 
 
 .. raw:: html
@@ -3267,6 +3452,8 @@ Alternative Label(s):
    CapacityLoss
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Capacity_loss
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q16851742
 
 
 .. raw:: html
@@ -3280,6 +3467,8 @@ CarbonBasedElectrode
 
 Elucidation:
    an electrode which contains mostly materials based on carbon
+Comment:
+   often represented in cell designations by the letter I
 
 
 .. raw:: html
@@ -3293,6 +3482,10 @@ CarbonInkElectrode
 
 Elucidation:
    development of a carbon paste electrode that is screen printed using a carbon/polymer mixture of suitable composition
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q120907443
+Comment:
+   These electrodes can easily be chemically modified by the incorporation of reagents (electrocatalysts, redox mediators, complexation agents, enzymes, etc.) and by the attachment of micro- or nanoparticles to prepare electrochemical sensors for analytical applications.
 
 
 .. raw:: html
@@ -3320,9 +3513,13 @@ CarbonPasteElectrode
 Elucidation:
    Electrode of a composite of carbon powder and a pasting liquid (including mineral oil, Nujol, bromoform, bromonaphthalene).
 Alternative Label(s):
-   CPE
+   CPE, CPE
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Carbon_paste_electrode
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q5037987
+Comment:
+   The CPE was first described by Adams in 1958. A CPE is typically housed in a Teflon holder, contacted by a conductive wire (occasionally a piston is used to renew the surface by extrusion of the used paste). Problems are long-term stability of the paste and that the binder can influence its properties.
 
 
 .. raw:: html
@@ -3366,6 +3563,8 @@ Catalyst
 
 Elucidation:
    substance that increases chemical reaction speed, and which is conserved after the reaction
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q12385831
 
 
 .. raw:: html
@@ -3383,6 +3582,10 @@ IUPAC Reference:
    https://goldbook.iupac.org/terms/view/C00905
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Cathode
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q175233
+Comment:
+   electrode of an electrochemical cell through which net electric current flows and at which the predominating electrochemical reaction is a reduction
 
 
 .. raw:: html
@@ -3396,6 +3599,8 @@ CathodeElectrolyteInterphase
 
 Elucidation:
    a type of solid electrolyte interface that forms on the surface of the electrode designated as the "cathode" or positive electrode
+Comment:
+   used to distinguish the interphase on the cathode surface from that on the anode, which is typically called the solid electrolyte interphase (SEI)
 
 
 .. raw:: html
@@ -3428,6 +3633,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-04-05
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Cathodic_protection
+Wikidata Reference:
+   electrochemical immunity produced by an appropriate cathodic polarization.
 
 
 .. raw:: html
@@ -3442,9 +3649,11 @@ CathodicReaction
 Elucidation:
    electrode reaction in which reduction  occurs at the cathode
 Alternative Label(s):
-   Electroreduction, Electroreduction, ElectroreductionReaction, ElectroreductionReaction
+   Electroreduction, Electroreduction, Electroreduction, Electroreduction, ElectroreductionReaction, ElectroreductionReaction, ElectroreductionReaction, ElectroreductionReaction
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-10
+Comment:
+   electrode reaction involving an electrochemical reduction
 
 
 .. raw:: html
@@ -3460,6 +3669,8 @@ Elucidation:
    electrolyte on the cathode side of an electrochemical cell that is divided into compartments.
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-18
+Comment:
+   Electrolyte solution in the cathodic compartment of an electrolysis cell or galvanic cell, i.e., in that part of the cell where the cathode is placed.
 
 
 .. raw:: html
@@ -3473,6 +3684,8 @@ CatholyteTank
 
 Elucidation:
    a tank for holding catholyte
+Comment:
+   usually used in a flow cell system
 
 
 .. raw:: html
@@ -3488,6 +3701,8 @@ Elucidation:
    internal component used to reduce the amount of electrolyte loss due to electrolyte spray being carried in the gas and/or by electrolyte movement
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-13
+Comment:
+   a cell baffle has a second function in protecting the plate pack from damage by objects inserted through the filling hole
 
 
 .. raw:: html
@@ -3572,6 +3787,8 @@ Alternative Label(s):
    ElectrochemicalCharging
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-27
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q11388109
 
 
 .. raw:: html
@@ -3587,6 +3804,8 @@ Elucidation:
    a generic denomination of particles or quasiparticles responsible for electric charge transport.
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Charge_carrier
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q865807
 
 
 .. raw:: html
@@ -3619,6 +3838,8 @@ IUPAC Reference:
    https://doi.org/10.1351/goldbook.C01033
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Chemical_reaction
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q36534
 
 
 .. raw:: html
@@ -3664,6 +3885,8 @@ Elucidation:
    a covering on the surface of an object
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Coating
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q1570182
 
 
 .. raw:: html
@@ -3677,6 +3900,8 @@ CobaltBasedElectrode
 
 Elucidation:
    an electrode which contains mostly materials based on cobalt
+Comment:
+   often represented in cell designations by the letter C
 
 
 .. raw:: html
@@ -3733,6 +3958,10 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-08
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Concentration_cell
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q903563
+Comment:
+   a concentration cell produces a voltage as it attempts to reach equilibrium, which will occur when the concentration in both cells is equal.
 
 
 .. raw:: html
@@ -3761,6 +3990,9 @@ ConductivityCell
 
 Elucidation:
    an electrochemical cell for conductivity measurements
+Comment:
+   Formed, in theory, by two 1 cm2 reversible electrodes spaced 1 cm apart, providing a uniform distribution of electrical field. In practice, however, a number
+of other configurations are used.
 
 
 .. raw:: html
@@ -3938,9 +4170,13 @@ Coulometer
 Elucidation:
    measuring instrument to obtain the electrical charge passed in an experiment, or to produce a known amount of substance in a titration.
 Alternative Label(s):
-   Voltameter
+   Voltameter, Voltameter
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Voltameter
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q905539
+Comment:
+   Modern instruments for measuring trace water by Karl Fischer titration use the passage of a measured charge to produce iodine from iodide solution. They are known as Karl Fischer coulometers
 
 
 .. raw:: html
@@ -3955,11 +4191,15 @@ CounterElectrode
 Elucidation:
    electrode whose function is to carry the electric current flowing through the electrical circuit of an electrochemical cell, the electrochemical processes on its surface not being of interest
 Alternative Label(s):
-   AuxiliaryElectrode
+   AuxiliaryElectrode, AuxiliaryElectrode
 IUPAC Reference:
    https://goldbook.iupac.org/terms/view/A00535
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Auxiliary_electrode
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q1768785
+Comment:
+   An auxiliary electrode is used in any three-electrode cell, together with a working electrode and reference electrode.
 
 
 .. raw:: html
@@ -3977,6 +4217,8 @@ Alternative Label(s):
    ElectrodeCurrentCollector
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=485-06-07
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q120907411
 
 
 .. raw:: html
@@ -4005,6 +4247,8 @@ Elucidation:
    plot of current versus applied potential (I-E) for a given system
 Alternative Label(s):
    CurrentPotentialCurve, ElectricCurrentPotentialCurve
+Comment:
+   The curve is sigmoidal in hydrodynamic voltammetry, voltammetry at microelectrodes and polarography, or peak-shaped in ac voltammetry, differential pulse voltammetry, square- wave voltammetry, stripping voltammetry, and derivative techniques.
 
 
 .. raw:: html
@@ -4018,6 +4262,8 @@ CurrentPulse
 
 Elucidation:
    rapid, transient change in the amplitude of an electric current, from a baseline value to a higer or lower value, followed by a rapid return to the baseline value.
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q114979515
 
 
 .. raw:: html
@@ -4086,11 +4332,15 @@ Cycling
 Elucidation:
    set of operations that is carried out on a secondary cell or battery and is repeated regularly in the same sequence.
 Alternative Label(s):
-   ChargeCycle, ElectrochemicalCycling
+   ChargeCycle, ChargeCycle, ElectrochemicalCycling, ElectrochemicalCycling
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-28
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Charge_cycle
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q5074261
+Comment:
+   in a secondary battery these operations may consist of a sequence of a discharge followed by a charge or a charge followed by a discharge under specified conditions
 
 
 .. raw:: html
@@ -4134,6 +4384,8 @@ IUPAC Reference:
    https://doi.org/10.1351/goldbook.D01588
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Dendrite_(crystal)
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q190136
 
 
 .. raw:: html
@@ -4147,6 +4399,8 @@ DifferentialPotentialPulse
 
 Elucidation:
    Small pulses of electric potential superimposed to a linear potential ramp or a staircase potential ramp.
+Comment:
+   The pulses are usually of constant height 10 to 100 mV and constant width 10 to 100 ms.
 
 
 .. raw:: html
@@ -4166,6 +4420,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=131-11-22
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Constant_current
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q5163647
 
 
 .. raw:: html
@@ -4180,11 +4436,15 @@ DirectCurrent
 Elucidation:
    electric current that flows in a constant direction, i.e. a current with a constant sign
 Alternative Label(s):
-   DC
+   DC, DC
 IUPAC Reference:
    https://goldbook.iupac.org/terms/view/D01767
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Direct_current
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q159241
+Comment:
+   I_{DC}
 
 
 .. raw:: html
@@ -4202,6 +4462,8 @@ Alternative Label(s):
    ElectrochemicalDischarging
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-23
+Comment:
+   the opposite of a charging process
 
 
 .. raw:: html
@@ -4219,6 +4481,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-01-08
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Dissociation_(chemistry)
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q189673
 
 
 .. raw:: html
@@ -4234,6 +4498,8 @@ Elucidation:
    mixing of a substance into another substance with formation of one new homogeneous substance
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-01-04
+Comment:
+   the result of the dissolution of one or more solutes into a solvent is a solution
 
 
 .. raw:: html
@@ -4264,6 +4530,8 @@ Alternative Label(s):
    DL, EDL, ElectricalDoubleLayer
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Double_layer_(surface_science)
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q904857
 
 
 .. raw:: html
@@ -4297,9 +4565,13 @@ DroppingMercuryElectrode
 Elucidation:
    mercury electrode formed by sequence of mercury drops falling from a small aperture
 Alternative Label(s):
-   DME
+   DME, DME
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Dropping_mercury_electrode
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q962292
+Comment:
+   Other kinds of mercury drop electrodes are the static mercury drop electrode (SMDE), in which a drop is held at constant radius before being mechanically knocked off, and the hanging mercury drop elec- trode (HMDE), in which the whole experiment is performed on a single drop of mercury.
 
 
 .. raw:: html
@@ -4447,6 +4719,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-04-02
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrocapillarity
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q9252431
 
 
 .. raw:: html
@@ -4462,6 +4736,8 @@ Elucidation:
    increasing the rate of an electrode reaction by adding specific material to the electrode.
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-04-15
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q100318565
 
 
 .. raw:: html
@@ -4479,6 +4755,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-04-16
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrocatalyst
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q5357962
 
 
 .. raw:: html
@@ -4496,6 +4774,10 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-01
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrochemical_cell
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q80097
+Comment:
+   If processes of interest occur at both the anode and the cathode of a cell (as in differential amperometry or controlled-current potentiometric titration with two indicator electrodes), the cell should be said to comprise two indicator or two working electrodes.
 
 
 .. raw:: html
@@ -4509,6 +4791,8 @@ ElectrochemicalConstituent
 
 Elucidation:
    A constituent in an electrochemical system.
+Comment:
+   a constituent is essential to the functioning of the system and cannot be replaced by a comparable thing without altering the behaviour of the system
 
 
 .. raw:: html
@@ -4535,6 +4819,8 @@ ElectrochemicalDevice
 
 Elucidation:
    a device whose primary function is facilitating the conversion between chemical and electrical energy.
+Comment:
+   an electrochemical device contains at least one electrochemical cell plus the apparati required to make it work as a practical device (e.g. terminals, container, etc.)
 
 
 .. raw:: html
@@ -4550,6 +4836,8 @@ Elucidation:
    Device that stores electrical energy using a double layer in an electrochemical cell.
 Alternative Label(s):
    DoubleLayerCapacitor, EDLC, ElectrochemicalCapacitor
+Comment:
+   stores energy electrostatically in the Helmholtz Layer
 
 
 .. raw:: html
@@ -4567,6 +4855,8 @@ Alternative Label(s):
    HalfCell
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Half-cell
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q903509
 
 
 .. raw:: html
@@ -4636,6 +4926,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-04-06
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrochemical_migration
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q30587730
 
 
 .. raw:: html
@@ -4662,6 +4954,8 @@ ElectrochemicalPlot
 
 Elucidation:
    Graphical representation of a dataset resulting from the measurement of the response of an electrochemical system.
+Comment:
+   Shows the relationship between two or more electrochemical variables.
 
 
 .. raw:: html
@@ -4677,6 +4971,10 @@ Elucidation:
    a type of supercapacitor that uses metal oxide or conducting polymer electrodes with a high amount of electrochemical pseudocapacitance additional to the double-layer capacitance
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Pseudocapacitor
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q7254569
+Comment:
+   stores energy electrochemically via Faradaic mechanisms
 
 
 .. raw:: html
@@ -4691,9 +4989,13 @@ ElectrochemicalReaction
 Elucidation:
    a chemical reaction in an electrolyte involving a transfer of electrons between chemical components or between chemical components and an electrode
 Alternative Label(s):
-   ChargeTransferReaction, ChargeTransferReaction
+   ChargeTransferReaction, ChargeTransferReaction, ChargeTransferReaction, ChargeTransferReaction, ChargeTransferReaction, ChargeTransferReaction
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-01
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q120892494
+Comment:
+   any process either caused or accompanied by the passage of an electric current and involving in most cases the transfer of electrons between two substances
 
 
 .. raw:: html
@@ -4726,6 +5028,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-04-18
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrochemiluminescence
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q755961
 
 
 .. raw:: html
@@ -4743,6 +5047,10 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-03
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrode
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q176140
+Comment:
+   Alternative definition: Half-cell consisting of at least one electron conductor and at least one ionic conductor (electrolyte). - Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019)
 
 
 .. raw:: html
@@ -4809,6 +5117,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-16
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Passivation_(chemistry)
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q917260
 
 
 .. raw:: html
@@ -4828,6 +5138,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-15
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Polarization_(electrochemistry)
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q2698605
 
 
 .. raw:: html
@@ -4845,6 +5157,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-04
 IUPAC Reference:
    https://doi.org/10.1351/goldbook.E01960
+Comment:
+   An interfacial reaction that necessarily involves a charge-transfer step.
 
 
 .. raw:: html
@@ -4888,6 +5202,8 @@ Electrodissolution
 
 Elucidation:
    the electrochemical dissolution of a material to soluble species
+Comment:
+   It can be regarded as the reversal of electrodeposition.
 
 
 .. raw:: html
@@ -4905,6 +5221,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-04-09
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrolysis
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q64403
 
 
 .. raw:: html
@@ -4922,6 +5240,10 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-01-02
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrolyte
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q162908
+Comment:
+   A solid electrolyte is a solid material where the predominant charge carriers are ions. For example: NASICON (Na Super Ionic Conductor), which has the general formula Na1+xZr2P3-xSix O12 , 0 < x < 3.
 
 
 .. raw:: html
@@ -4937,6 +5259,8 @@ Elucidation:
    gradual and slow spreading of an electrolyte film on the external surface of a cell or battery
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-30
+Comment:
+   electrolyte creep is sometimes indicated by the presence of a visible solid deposit or wet spots
 
 
 .. raw:: html
@@ -4984,6 +5308,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-04
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrolytic_capacitor
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q1326992
 
 
 .. raw:: html
@@ -5001,6 +5327,10 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-06
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electrolytic_cell
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q2608426
+Comment:
+   An electrochemical cell that requires input of work to drive the reaction.
 
 
 .. raw:: html
@@ -5018,6 +5348,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-04-01
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electro-osmosis
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q241065
 
 
 .. raw:: html
@@ -5037,6 +5369,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-04-17
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Electroplating
+Comment:
+   The process of depositing a usually thin layer of metal upon a usually metallic substrate (or any other conductor, e.g. graphite), in order to improve the appearance, and/or to change the surface properties of the substrate.
 
 
 .. raw:: html
@@ -5084,6 +5418,8 @@ Elucidation:
    when the same electric charge (quantity of electricity) Q is passed through several electrolytes, the mass, m_i, of the substances deposited are proportional to their respective chemical equivalent molar mass, M_i/z_i.
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Faraday%27s_laws_of_electrolysis#Second_law
+Comment:
+   m_1/m_2 = (M_1/z_1) / (M_2/z_2)
 
 
 .. raw:: html
@@ -5099,6 +5435,8 @@ Elucidation:
    vent of special design which provides protection against the propagation of a flame front from or into the interior of a secondary cell
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-11
+Comment:
+   this flame front may originate from a spark or an external naked flame igniting combustible electrolysis gas
 
 
 .. raw:: html
@@ -5179,6 +5517,8 @@ Elucidation:
    analyzes the output signal of a stimulated system
 Alternative Label(s):
    FRA, FrequencyResponseAnalyzer
+Comment:
+   based on the Fourier Transform analysis
 
 
 .. raw:: html
@@ -5196,6 +5536,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-05
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Fuel_cell
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q180253
 
 
 .. raw:: html
@@ -5213,6 +5555,10 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-02
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Galvanic_cell
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q209440
+Comment:
+   An electrochemical cell that spontaneously produces work.
 
 
 .. raw:: html
@@ -5230,6 +5576,8 @@ Alternative Label(s):
    Amperostat
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Galvanostat
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q5519411
 
 
 .. raw:: html
@@ -5270,11 +5618,15 @@ GasDiffusionElectrode
 Elucidation:
    a type of electrode specifically designed for gaseous reactants or products or both
 Alternative Label(s):
-   GDE
+   GDE, GDE, GDE
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=485-02-02
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Gas_diffusion_electrode
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q909759
+Comment:
+   A gas diffusion electrode usually comprises one or more porous layers, like the gas diffusion layer and the catalyst layer.
 
 
 .. raw:: html
@@ -5305,6 +5657,8 @@ Alternative Label(s):
    Gassing
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Gas_evolution_reaction
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q5526337
 
 
 .. raw:: html
@@ -5349,7 +5703,9 @@ GlassyCarbonElectrode
 Elucidation:
    electrode made of glassy carbon material with an intertwined graphitic ribbon structure, formed by pyrolysis of a resol precursor at temperatures up to 3000 °C
 Alternative Label(s):
-   GCE
+   GCE, GCE, GCE
+Comment:
+   extremely resistant to many chemicals, impermeable to gases and liquids, and has good electrical conductivity, high hardness and strength, and biocompatibility
 
 
 .. raw:: html
@@ -5365,6 +5721,8 @@ Elucidation:
    foil, wire or disc electrode made of gold which is easily fabricated into a variety of electrode geometries
 Alternative Label(s):
    AuElectrode
+Comment:
+   At positive potentials, Au forms an oxide and/or chemisorbed oxygen layer, while in the presence of complexing anions, such as chloride or cyanide, it readily undergoes oxidation and dissolution, limiting its working potential range and its applications.
 
 
 .. raw:: html
@@ -5378,6 +5736,8 @@ GouyChapmanModel
 
 Elucidation:
    an extension of the Helmholtz model that describes the distribution of ions as a function of distance from the electrode surface to the bulk of the electroylte
+Comment:
+   this model fails for highly charged double layers
 
 
 .. raw:: html
@@ -5391,6 +5751,8 @@ GrahameModel
 
 Elucidation:
    a modification of the Stern model that considers the double layer as three regions separated by the inner Helmholtz plane and the outer Helmholtz plane
+Comment:
+   proposed by D. C. Grahame in 1947
 
 
 .. raw:: html
@@ -5430,6 +5792,8 @@ HelmholtzModel
 
 Elucidation:
    a structural representation of the double layer that states that the accumulation of electric charge on the surface of the electrode is balanced by a layer of ions in the electrolyte
+Comment:
+   proposed by Hermann von Helmholtz in 1853
 
 
 .. raw:: html
@@ -5473,6 +5837,8 @@ Elucidation:
    platinized platinum electrode saturated by a stream of pure gaseous hydrogen
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-16
+Comment:
+   A platinized platinum electrode consists of a platinum rod covered by compact platinum powder called platinum black.
 
 
 .. raw:: html
@@ -5501,6 +5867,10 @@ Elucidation:
    electrode that responds to one, or more than one, species in the solution being investigated, with no appreciable change of bulk solution composition during the measurement
 IUPAC Reference:
    https://goldbook.iupac.org/terms/view/I03006
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q120907462
+Comment:
+   If processes of interest occur both at the anode and the cathode of a cell (as in differential amperometry or controlled-current potentiometric titration with two indicator electrodes), the cell should be said to comprise two indicator or working electrodes.
 
 
 .. raw:: html
@@ -5544,6 +5914,10 @@ Elucidation:
    electrode that serves only as a source or sink for electrons without playing a chemical role in the electrode reaction
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-08
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q120907475
+Comment:
+   Noble metals, mercury, and carbon are typically used as (nearly) inert electrodes.
 
 
 .. raw:: html
@@ -5604,6 +5978,8 @@ IUPAC Reference:
    https://doi.org/10.1351/goldbook.IT07155
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Ion-exchange_membrane
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q21082486
 
 
 .. raw:: html
@@ -5662,6 +6038,8 @@ IronBasedElectrode
 
 Elucidation:
    an electrode which contains mostly materials based on iron
+Comment:
+   often represented in cell designations by the letter F
 
 
 .. raw:: html
@@ -5701,6 +6079,8 @@ IronPhosphateBasedElectrode
 
 Elucidation:
    an electrode which contains mostly materials based on iron phosphate
+Comment:
+   often represented in cell designations by the letter Fp
 
 
 .. raw:: html
@@ -5716,6 +6096,8 @@ Elucidation:
    partial or complete external covering of a cell
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-20
+Comment:
+   a jacket may be made of metal (insulated from the cell terminals), plastic, paper or other suitable material
 
 
 .. raw:: html
@@ -5731,6 +6113,10 @@ Elucidation:
    For any electrolyte A_xB_y, the limiting molar conductivity is expressed as x times the limiting molar conductivity of A^{y+} and y times the limiting molar conductivity of B^{x-}.
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Molar_conductivity#Kohlrausch's_law_of_independent_migration_of_ions
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q3258329
+Comment:
+   proposed by Friedrich Kohlrausch between 1875-1879
 
 
 .. raw:: html
@@ -5746,6 +6132,8 @@ Elucidation:
    the rate of the chemical reaction is directly proportional to the product of the activities or concentrations of the reactants
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Law_of_mass_action
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q899494
 
 
 .. raw:: html
@@ -5757,6 +6145,8 @@ LeadElectrode
 
 * https://w3id.org/emmo/domain/electrochemistry#electrochemistry_610f0bc8_557d_455b_a8ed_272d5d1813c9
 
+Comment:
+   metal electrode in which the active material is lead
 
 
 .. raw:: html
@@ -5882,6 +6272,8 @@ Elucidation:
    any junction between two electrolyte solutions of different composition.
 IUPAC Reference:
    https://goldbook.iupac.org/terms/view/L03584
+Comment:
+   Across such a junction there arises a potential difference, called the liquid junction potential.
 
 
 .. raw:: html
@@ -5897,6 +6289,10 @@ Elucidation:
    an electrode that uses a liquid metal
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Liquid_metal_electrode
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q6557456
+Comment:
+   they can be used in electrocapillarity, voltammetry, and impedance measurements
 
 
 .. raw:: html
@@ -6172,6 +6568,8 @@ MagnesiumElectrode
 
 * https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2a177462_ff01_4b83_ab9f_032e93c9ec69
 
+Comment:
+   metal electrode in which the active material is magnesium
 
 
 .. raw:: html
@@ -6198,6 +6596,8 @@ ManganeseBasedElectrode
 
 Elucidation:
    an electrode which contains mostly materials based on manganese
+Comment:
+   often represented in cell designations by the letter M
 
 
 .. raw:: html
@@ -6226,6 +6626,8 @@ ManganesePhosphateBasedElectrode
 
 Elucidation:
    an electrode which contains mostly materials based on manganese phosphate
+Comment:
+   often represented in cell designations by the letter Mp
 
 
 .. raw:: html
@@ -6240,7 +6642,9 @@ MercuryElectrode
 Elucidation:
    liquid metal electrode used in polarography
 Alternative Label(s):
-   HgElectrode
+   HgElectrode, HgElectrode
+Comment:
+   A mercury film electrode (MFE) or thin mercury film electrode (TMFE) is formed by coating a conducting substrate, usually glassy carbon, with a layer of mercury (thin film, amalgam, or array of microdrops), often by electrodeposition from a solution containing Hg(II). The electrode area is normally in the range of 0.1 to 0.5 cm2 and mercury film thickness typically ranges from 10 to 1000 nm, producing a film of large surface area-to-volume ratio that results in a high analyte pre-concentration during the deposition step of anodic stripping voltammetry. Compared to an HMDE, the MFE provides high sensitivity and resolution; however, it is somewhat less reproducible and more prone to interferences from intermetallic formation and surface-active substances.
 
 
 .. raw:: html
@@ -6254,6 +6658,8 @@ MetalElectrode
 
 Elucidation:
    an electrode in which the actve electrochemical material is a metal
+Comment:
+   the term metal is meant to loosely cover alkali metals, alkaline earth metals, transition metals, post-transition metals, and metalloids
 
 
 .. raw:: html
@@ -6327,6 +6733,8 @@ Elucidation:
    an aqueous electrolyte with a nominal pH value between 4 and 10.
 Alternative Label(s):
    NearNeutralAqueousElectrolyte, NearNeutralSolution
+Comment:
+   this covers the pH domain typically described as "weakly acidic", "neutral", and "weakly alkaline"
 
 
 .. raw:: html
@@ -6344,6 +6752,10 @@ Alternative Label(s):
    NegativePlate, NegativePlate
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=151-13-04
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q120907506
+Comment:
+   by convention, an oxidation reaction occurs during discharge
 
 
 .. raw:: html
@@ -6374,6 +6786,10 @@ Elucidation:
    an equation relating the limiting molar conductivity Λ_m^0  to the ionic diffusion coefficients.
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Einstein_relation_(kinetic_theory)#Nernst%E2%80%93Einstein_equation
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q9325636
+Comment:
+   \Lambda_m^0 = (F^2/(R*T)) * (v_{+} * z_{+}^2 * D_{+} + v_{–} * z_{–}^2 * D_{–})
 
 
 .. raw:: html
@@ -6389,6 +6805,10 @@ Elucidation:
    An equation that relates the reduction potential of an electrochemical reaction (half-cell or full cell reaction) to the standard electrode potential, temperature, and activities (often approximated by concentrations) of the chemical species undergoing reduction and oxidation.
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Nernst_equation
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q751124
+Comment:
+   An expression of the Law of Mass Action.
 
 
 .. raw:: html
@@ -6419,6 +6839,8 @@ NickelBasedElectrode
 
 Elucidation:
    an electrode which contains mostly materials based on nickel
+Comment:
+   often represented in cell designations by the letter N
 
 
 .. raw:: html
@@ -6490,6 +6912,8 @@ NonPolarizableElectrode
 
 Elucidation:
    an electrode that holds its potential essentially constant by efficiently allowing electric current to pass
+Comment:
+   this is a desirable characteristic for a reference electrode
 
 
 .. raw:: html
@@ -6505,6 +6929,8 @@ Elucidation:
    cell from which electrolyte cannot escape regardless of its orientation
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-16
+Comment:
+   some vented cells or batteries are designed so as to be non-spillable when operated within the limits specified by the manufacturer
 
 
 .. raw:: html
@@ -6520,6 +6946,10 @@ Elucidation:
    potential of a platinum electrode in 1 M acid solution.
 Alternative Label(s):
    NHE
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q115694592
+Comment:
+   hydrogen gas at 1 atm pressures is bubbled through the acid solution
 
 
 .. raw:: html
@@ -6537,6 +6967,8 @@ Alternative Label(s):
    ComplexPlanePlot, NyquistDiagram
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Nyquist_stability_criterion#Nyquist_plot
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q1333343
 
 
 .. raw:: html
@@ -6580,6 +7012,8 @@ Elucidation:
    continued charging of a fully charged secondary cell or battery
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-44
+Comment:
+   overcharge is also the act of charging beyond a certain limit specified by the manufacturer
 
 
 .. raw:: html
@@ -6966,6 +7400,8 @@ Elucidation:
    arrangement of cells or batteries wherein all the positive terminals and all the negative terminals, respectively, are connected together.
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-39
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q302489
 
 
 .. raw:: html
@@ -6996,6 +7432,8 @@ Elucidation:
    an unwanted side reaction
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-07
+Comment:
+   in a galvanic cell, parasitic reactions may cause inefficiencies or loss of performance
 
 
 .. raw:: html
@@ -7084,6 +7522,10 @@ Elucidation:
    foil, wire, disc, or mesh electrode made of platinum, which is the most commonly used metallic working electrode in electrochemistry
 Alternative Label(s):
    PtElectrode
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q20851363
+Comment:
+   Pt has a very small overpotential for hydrogen evolution, which determines the negative potential limit in protic solvents. Pt adsorbs hydrogen, resulting in hydrogen adsorption/desorption waves. However, the positive potential limit in polar aprotic solvents free of oxygen and water is higher than that for any other commonly used electrode materials. In the presence of water and/or oxygen, Pt forms a film of oxide (and/or chemisorbed oxygen), resulting in potentially interfering waves or peaks.
 
 
 .. raw:: html
@@ -7129,6 +7571,8 @@ Elucidation:
    a polymer matrix capable of ion conduction
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Polymer_electrolytes
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q107223477
 
 
 .. raw:: html
@@ -7172,6 +7616,10 @@ Alternative Label(s):
    PositivePlate, PositivePlate
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=151-13-05
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q120907518
+Comment:
+   by convention, a reduction reaction occurs during discharge
 
 
 .. raw:: html
@@ -7198,6 +7646,8 @@ PotassiumElectrode
 
 * https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0afe79ed_dc0d_4b3e_88fa_ae0c7b1e88b5
 
+Comment:
+   electrode in which the active material is potassium
 
 
 .. raw:: html
@@ -7268,7 +7718,9 @@ PotentiometricStrippingAnalysis
 Elucidation:
    two-step electrochemical measurement in which 1) material is accumulated at an electrode and 2) the material is removed by chemical reaction or electrochemically at constant current with measurement of electrode potential
 Alternative Label(s):
-   PSA
+   PSA, PSA, PSA, PSA
+Comment:
+   historically for the analysis of metal ions, mercury ions were added to the test solution to form a mercury amalgam when reduced. Alternatively, an HMDE or MFE was used and the oxidizing agent added after amalgam formation. However, the toxicity of mercury and its compounds have all but precluded the present-day use of mercury
 
 
 .. raw:: html
@@ -7321,6 +7773,8 @@ PouchCase
 
 Elucidation:
    a soft pouch case that is described by its length, width, and height
+Comment:
+   often represented in cell designations by the letter P
 
 
 .. raw:: html
@@ -7371,6 +7825,8 @@ PrismaticCase
 
 Elucidation:
    a rigid prismatic case that is described by characteristic length, width, and height
+Comment:
+   often represented in cell designations by the letter P
 
 
 .. raw:: html
@@ -7649,6 +8105,8 @@ R2016
 
 Elucidation:
    a coin case with a nominal diameter of 20.0 mm and a height of 1.6 mm
+Comment:
+   often used in wrist watches
 
 
 .. raw:: html
@@ -7675,6 +8133,8 @@ R2025
 
 Elucidation:
    a coin case with a nominal diameter of 20.0 mm and a height of 2.5 mm
+Comment:
+   often used in wrist watches and automobile remotes
 
 
 .. raw:: html
@@ -7688,6 +8148,8 @@ R2032
 
 Elucidation:
    a coin case with a nominal diameter of 20.0 mm and a height of 3.2 mm
+Comment:
+   very common case for lithim metal cells
 
 
 .. raw:: html
@@ -8172,6 +8634,8 @@ Elucidation:
    a coin case with a nominal diameter of 6.8 mm and a height of 2.6 mm
 Alternative Label(s):
    R66
+Comment:
+   often used in wrist watches
 
 
 .. raw:: html
@@ -8355,6 +8819,8 @@ R932
 
 Elucidation:
    a coin case with a nominal diameter of 9.3 mm and a height of 3.2 mm
+Comment:
+   8 of these in series are used to form an A23 battery
 
 
 .. raw:: html
@@ -8413,6 +8879,10 @@ IUPAC Reference:
    https://goldbook.iupac.org/terms/view/R05229
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Reference_electrode
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q653954
+Comment:
+   Electrode that maintains an essentially constant potential under the conditions prevailing in an electrochemical measurement, and that serves for observation, measurement, or control of the potential of the indicator or working electrode.
 
 
 .. raw:: html
@@ -8428,6 +8898,8 @@ Elucidation:
    a practical hydrogen electrode whose potential depends on the pH of the solution
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Reversible_hydrogen_electrode
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q900576
 
 
 .. raw:: html
@@ -8455,9 +8927,13 @@ RotatingDiskElectrode
 Elucidation:
    A disc electrode that is embedded in the centre of a cylinder which rotates in solution around the longitudinal cylinder axis.
 Alternative Label(s):
-   RDE
+   RDE, RDE
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Rotating_disk_electrode
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q3587619
+Comment:
+   The current is directly proportional to the electrode area and the electrode is uniformly accessible.
 
 
 .. raw:: html
@@ -8475,6 +8951,10 @@ Alternative Label(s):
    RRDE
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Rotating_ring-disk_electrode
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q5829908
+Comment:
+   This arrangement is largely used in mechanistic studies.
 
 
 .. raw:: html
@@ -8488,6 +8968,8 @@ RoundCase
 
 Elucidation:
    a case that is described by its diameter and height
+Comment:
+   often represented in cell designations by the letter R
 
 
 .. raw:: html
@@ -8544,6 +9026,10 @@ Elucidation:
    means of making electrolytic connection between two half cells without introducing a significant liquid junction potential.
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Salt_bridge
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q899119
+Comment:
+   A typical construction is a tube of an inert material (e.g. agar agar) filled with a solution containing an electrolyte with approximately equal ion mobilities of the cation and the anion (e.g., KNO3, KCl), with the ends of the tube immersed in the electrolyte solution of the half cells.
 
 
 .. raw:: html
@@ -8559,6 +9045,8 @@ Elucidation:
    A reference electrode based on the reaction between elemental mercury and mercury(I) chloride.
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Saturated_calomel_electrode
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q898591
 
 
 .. raw:: html
@@ -8591,6 +9079,8 @@ Elucidation:
    cell which remains closed and does not release either gas or liquid when operated within the limits specified by the manufacturer
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-17
+Comment:
+   a sealed cell may be equipped with a safety device to prevent a dangerously high internal pressure and is designed to operate during its life in its original sealed state
 
 
 .. raw:: html
@@ -8621,6 +9111,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-27
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Self-discharge
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q1418367
 
 
 .. raw:: html
@@ -8640,6 +9132,10 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-17
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Separator_(electricity)
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q1718181
+Comment:
+   Membranes and diaphragms are special forms of electrochemical separators.
 
 
 .. raw:: html
@@ -8689,6 +9185,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-06
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Side_reaction
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q22117434
 
 
 .. raw:: html
@@ -8756,6 +9254,8 @@ Elucidation:
    A type of reference electrode based on the reaction between sliver and silver chloride.
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Silver_chloride_electrode
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q900939
 
 
 .. raw:: html
@@ -8771,6 +9271,10 @@ Elucidation:
    electrode in the form of foil, mesh, wire, rod, tube, powder, pellets, or single crystal of silver
 Alternative Label(s):
    AgElectrode
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q20851418
+Comment:
+   Ag electrodes were first used in potentiometry for the determination of Cl−, Br−, I−, as well as for Ag+ ions, to which they are sensitive.
 
 
 .. raw:: html
@@ -8873,6 +9377,8 @@ SodiumElectrode
 
 * https://w3id.org/emmo/domain/electrochemistry#electrochemistry_df4dd678_9642_47c9_84dd_4bb09f369f53
 
+Comment:
+   metal electrode in which the active material is sodium
 
 
 .. raw:: html
@@ -9032,7 +9538,9 @@ SolidAmalgamElectrode
 Elucidation:
    electrode made of a solid amalgam of an appropriate metal
 Alternative Label(s):
-   SAE
+   SAE, SAE
+Comment:
+   Liquid and paste amalgams can also be used.
 
 
 .. raw:: html
@@ -9082,6 +9590,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=521-02-82
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Depletion_region
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q288224
 
 
 .. raw:: html
@@ -9112,6 +9622,8 @@ Elucidation:
    an elastic device
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Spring_(device)
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q102836
 
 
 .. raw:: html
@@ -9125,6 +9637,8 @@ SquareWavePotentialWaveform
 
 Elucidation:
    Periodic potential where the amplitude alternates at a steady frequency between fixed minimum and maximum values, with the same duration at minimum and maximum.
+Comment:
+   In an ideal square wave, the transitions between minimum and maximum are instantaneous.
 
 
 .. raw:: html
@@ -9183,6 +9697,10 @@ IUPAC Reference:
    https://goldbook.iupac.org/terms/view/S05917
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Standard_hydrogen_electrode
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q898559
+Comment:
+   Potential of a platinum electrode in a theoretical ideal solution (the current standard for zero potential for all temperatures)
 
 
 .. raw:: html
@@ -9196,6 +9714,8 @@ SternModel
 
 Elucidation:
    describes the double layer as divided into two parts separated by the Stern plane, located about one hydrated ion radius from the electrode surface
+Comment:
+   proposed by Otto Stern in 1924
 
 
 .. raw:: html
@@ -9215,6 +9735,8 @@ IUPAC Reference:
    https://doi.org/10.1351/goldbook.C01034
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Chemical_equation
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q182527
 
 
 .. raw:: html
@@ -9297,6 +9819,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-03
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Supercapacitor
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q754523
 
 
 .. raw:: html
@@ -9376,6 +9900,8 @@ Elucidation:
    unstable condition arising during constant voltage charge in which the rate of heat dissipation capability, causing a continuous temperature increase with resulting further charge current increase, which can lead to the destruction of the battery
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-54
+Comment:
+   in lithium batteries thermal runaway may cause melting of lithium
 
 
 .. raw:: html
@@ -9395,6 +9921,8 @@ IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-09
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Thermogalvanic_cell
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q25304247
 
 
 .. raw:: html
@@ -9422,7 +9950,9 @@ ThreeElectrodeCell
 Elucidation:
    electrochemical cell with a working electrode, reference electrode, and auxiliary electrode
 Alternative Label(s):
-   ThreeElectrodeElectrochemicalCell
+   ThreeElectrodeElectrochemicalCell, ThreeElectrodeElectrochemicalCell
+Comment:
+   A potentiostat can be used to maintain a potential difference between the working and ref- erence electrodes.
 
 
 .. raw:: html
@@ -9462,6 +9992,8 @@ Elucidation:
    a series of data points indexed in time order
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Time_series
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q186588
 
 
 .. raw:: html
@@ -9499,6 +10031,8 @@ TinElectrode
 
 * https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a10ede13_c895_4f56_a728_b1aab512b31b
 
+Comment:
+   metal electrode in which the active material is tin
 
 
 .. raw:: html
@@ -9512,6 +10046,8 @@ TitaniumBasedElectrode
 
 Elucidation:
    an electrode which contains mostly materials based on titanium
+Comment:
+   often represented in cell designations by the letter T
 
 
 .. raw:: html
@@ -9553,6 +10089,8 @@ TrasattiBuzzancaModel
 
 Elucidation:
    considers the effects of specific adsorbed ions in the double layer
+Comment:
+   proposed by Sergio Trasatti and Giovanni Buzzanca in 1971
 
 
 .. raw:: html
@@ -9652,6 +10190,8 @@ Elucidation:
    component of a cell which permits the flow of gas in one direction only
 IEC Reference:
    https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-12
+Comment:
+   a valve has a characteristic venting or opening and closing pressure
 
 
 .. raw:: html
@@ -9665,6 +10205,8 @@ VanadiumBasedElectrode
 
 Elucidation:
    an electrode which contains mostly materials based on vanadium
+Comment:
+   often represented in cell designations by the letter V
 
 
 .. raw:: html
@@ -9792,6 +10334,8 @@ Elucidation:
    a spring made of pre-hardened flat wire, formed into a wavy washer shape
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Wave_spring
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q11288626
 
 
 .. raw:: html
@@ -9809,6 +10353,10 @@ IUPAC Reference:
    https://goldbook.iupac.org/terms/view/W06686
 Wikipedia Reference:
    https://en.wikipedia.org/wiki/Working_electrode
+Wikidata Reference:
+   https://www.wikidata.org/wiki/Q477099
+Comment:
+   If processes of interest occur both at the anode and the cathode of a cell (as in differential amperometry or controlled-current potentiometric titration with two indicator electrodes), the cell should be said to comprise two indicator or working electrodes.
 
 
 .. raw:: html
