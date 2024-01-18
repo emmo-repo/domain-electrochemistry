@@ -23,12 +23,13 @@ def extract_terms_info_sparql(g: Graph)-> list:
     PREFIXES = """
         PREFIX emmo: <http://emmo.info/emmo#>
         PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         """
 
-    list_entity_types = ["IRI", "prefLabel", "Elucidation", "Alternative Label(s)", "IEC Reference", "IUPAC Reference", "Wikipedia Reference"]
+    list_entity_types = ["IRI", "prefLabel", "Elucidation", "Alternative Label(s)", "IEC Reference", "IUPAC Reference", "Wikipedia Reference", "Wikidata Reference", "Comment", ]
 
     query =  PREFIXES  + """
-        SELECT ?iri ?prefLabel ?elucidation (GROUP_CONCAT(?altLabel; SEPARATOR=", ") AS ?altLabels) ?iecref ?iupacref ?wikipediaref
+        SELECT ?iri ?prefLabel ?elucidation (GROUP_CONCAT(?altLabel; SEPARATOR=", ") AS ?altLabels) ?iecref ?iupacref ?wikipediaref ?wikidataref ?comment
         WHERE {
             ?iri skos:prefLabel ?prefLabel.
 
@@ -37,6 +38,8 @@ def extract_terms_info_sparql(g: Graph)-> list:
             OPTIONAL { ?iri emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f ?iecref . }
             OPTIONAL { ?iri emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 ?iupacref . }
             OPTIONAL { ?iri emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d ?wikipediaref . }
+            OPTIONAL { ?iri emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 ?wikidataref . }
+            OPTIONAL { ?iri rdfs:comment ?comment . }
         }
 
         GROUP BY ?iri ?prefLabel ?elucidation
