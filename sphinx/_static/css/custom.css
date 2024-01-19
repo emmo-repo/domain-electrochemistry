@@ -1,0 +1,25 @@
+td.element-table-key, td.element-table-value {
+    vertical-align: top;
+}
+
+td.element-table-key {
+    text-align: right;
+    padding-right: 2mm;
+}
+
+span.element-table-key {
+    font-weight: bold;
+}
+
+table.element-table {
+    margin-left: 0;
+    text-align: left;
+}
+
+table.element-table tr:nth-child(odd) td{
+   background-color: Gainsboro;
+}
+
+table.element-table tr:nth-child(even) td{
+   background-color: GhostWhite;
+}

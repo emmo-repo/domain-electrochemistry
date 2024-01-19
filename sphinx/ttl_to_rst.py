@@ -95,17 +95,22 @@ def entities_to_rst(entities: list[dict]) -> str:
         rst += "\n\n"
 
         rst += "* " + item['IRI'] + "\n\n"
-        
+
+        rst += ".. raw:: html\n\n"
+        indent = "  "
+        rst += indent + "<table class=\"element-table\">\n"
         for key, value in item.items():
 
             if (key not in ['IRI', 'prefLabel']) & (value != "None") & (value != ""):
 
-                # if value.startswith("http"):
-                    # rst += f"""<p class="entity"><i>{key}</i>: <a href='{value}'>{value}</a></p>"""
-                # else:
-                    rst += key + ":\n"
-                    rst += "   " + value + "\n"                    
-
+                rst += indent + "<tr>\n"
+                rst += indent + "<td class=\"element-table-key\"><span class=\"element-table-key\">" + key + "</span></td>\n"
+                if value.startswith("http"):
+                    value = f"""<a href='{value}'>{value}</a>"""
+                rst += indent + "<td class=\"element-table-value\">" + value + "</td>\n"
+                rst += indent + "</tr>\n"
+                
+        rst += indent + "</table>\n"
         rst += "\n\n"
 
     return rst
