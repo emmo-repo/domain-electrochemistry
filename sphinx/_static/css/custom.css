@@ -17,10 +17,18 @@ table.element-table {
     text-align: left;
 }
 
-table.element-table tr:nth-child(odd) td{
+html table.element-table tr:nth-child(odd) td{
    background-color: Gainsboro;
 }
 
 table.element-table tr:nth-child(even) td{
    background-color: GhostWhite;
+}
+
+html[data-theme=dark] table.element-table tr:nth-child(odd) td{
+   background-color: black;
+}
+
+html[data-theme=dark] table.element-table tr:nth-child(even) td{
+   background-color: black;
 }
