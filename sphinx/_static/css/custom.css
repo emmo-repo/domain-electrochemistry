@@ -5,6 +5,7 @@ td.element-table-key, td.element-table-value {
 td.element-table-key {
     text-align: right;
     padding-right: 2mm;
+    width: 20%;
 }
 
 span.element-table-key {
