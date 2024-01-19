@@ -5,7 +5,7 @@
 
 (pcase (user-login-name)
   ("xavier" (progn
-              (pyvenv-activate "~/Python/battinfo-doc-3.7-env/")
+              (pyvenv-activate "~/Python/battinfo-doc-3.12-env/")
               (setq docdir "/home/xavier/Python/domain-electrochemistry/sphinx/")
               (setq testdir "/home/xavier/Python/BattInfo-doc-test/")
               ))
@@ -18,14 +18,17 @@
   (browse-url (concat docdir "_build/html/index.html"))
   )
 
+
 (defun battinfodoc-build ()
   "Build BattMo documentation"
   (interactive)
-  (let* ((default-directory docdir)
+  (let* (
          (outputbuffer (get-buffer-create "*buildoutput*"))
          )
     (delete-directory (concat docdir "_build") t)
     (pop-to-buffer outputbuffer)
+    (pyvenv-activate "~/Python/battinfo-doc-3.12-env/")
+    (cd docdir)
     (erase-buffer)
     (start-process "battinfo-build" outputbuffer "make" "html")
     )
