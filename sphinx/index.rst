@@ -175,6 +175,12 @@ directly from the web. Commands for both options are given below:
    # Loading from web
    electrochemistry = get_ontology('https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/inferred_version/electrochemistry-inferred.ttl').load()
 
+.. raw:: html
+         
+   <div style="position: relative; padding-top: 56.25%; height: 0;">
+   <iframe src="https://json-ld.org/playground/" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
+   </div>
+   
 Contributing
 ------------
 
@@ -182,6 +188,7 @@ We welcome contributions from the community to enhance and expand the
 ontology. If you have suggestions, improvements, or additional chemical
 substance information to contribute, please refer to our `Contribution
 Guidelines <CONTRIBUTING.md>`__.
+
 
 Acknowledgements
 ~~~~~~~~~~~~~~~~
