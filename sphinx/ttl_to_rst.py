@@ -143,7 +143,7 @@ def rendering_workflow():
     ]
 
     # GENERATE PAGES
-    rst_filename = "references.rst"
+    rst_filename = "electrochemistry.rst"
 
     rst = render_rst_top()
 
