@@ -12,7 +12,7 @@
 
 <https://w3id.org/emmo/domain/electrochemistry/electrochemicalquantities> rdf:type owl:Ontology ;
                                                                owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.8.0-alpha/electrochemicalquantities> ;
-                                                               owl:imports <http://emmo.info/emmo/1.0.0-beta5> ;
+                                                               owl:imports <http://emmo.info/emmo/1.0.0-beta5/disciplines/isq> ;
                                                                dcterms:abstract """This electrochemical quantities ontology is a domain of the Elementary Multiperspective Materials Ontology (EMMO). It is a specialized framework designed to represent and organize knowledge about electrochemical quantities. It is designed to integrate with the electrochemistry domain ontology or other ontologies from the EMMO ecosystem. The main focus of this ontology is to provide machine-readable descriptions of common electrochemical quantities, linking both to the larger descriptions of physical quantities in EMMO as well as other sources of information like the IEC, QUDT, Wikidata, etc. It should be used to support linked data generation in the electrochemistry domain."""@en ;
                                                                dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
                                                                owl:versionInfo "0.8.0-alpha" .
