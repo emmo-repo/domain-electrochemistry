@@ -4,14 +4,8 @@
 ;; (cond '(compare-strings user-login-name "xavier")
 
 (pcase (user-login-name)
-  ("xavier" (progn
-              ;; (pyvenv-activate "~/Python/battinfo-doc-3.12-env/")
-              (pyvenv-activate "/home/xavier/Python/battinfodoc.env")
-              (setq docdir "/home/xavier/Python/domain-electrochemistry/sphinx/")
-              (setq testdir "/home/xavier/Python/BattInfo-doc-test/")
-              ))
-
-  )
+  ("xavier"  (setq docdir "/home/xavier/Python/domain-electrochemistry/sphinx/")
+   ))
 
 (defun battinfodoc-local-open ()
   "Open locally built documentation in browser"
