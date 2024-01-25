@@ -1,5 +1,5 @@
-About
-=====
+About Battery Domain Ontology
+=============================
 
 Contributors
 ------------
