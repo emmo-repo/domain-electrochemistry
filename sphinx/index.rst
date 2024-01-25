@@ -3,8 +3,10 @@
    :includehidden:
    :hidden:
 
+   about
    self
    electrochemistry
+   contribute
    
 
 Electrochemistry Domain Ontology
