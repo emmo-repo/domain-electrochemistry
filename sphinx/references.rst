@@ -297,7 +297,7 @@ Capacity
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
-  <td class="element-table-value">the SI unit for electric charge is the coulomb (1 C = 1 A·s) but in practice, capacity is usually expressed in ampere hours (A·h)</td>
+  <td class="element-table-value">the SI unit for electric charge is the coulomb (1 C = 1 A&#183;s) but in practice, capacity is usually expressed in ampere hours (A&#183;h)</td>
   </tr>
   </table>
 
@@ -547,7 +547,7 @@ ChargeTransferCoefficient
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
-  <td class="element-table-value">The cathodic transfer coefficient αc is defined as –(RT/nF)(dlnkc /dE), where kc is the electroreduction rate constant, E is the applied potential, and R, T, and F have their usual significance. This definition is equivalent to the other, -(RT/nF)(dln|jc |/dE), where jc is the cathodic current density corrected for any changes in the reactant concentration at the electrode surface with respect to its bulk value.</td>
+  <td class="element-table-value">The cathodic transfer coefficient &#945;c is defined as &#8211;(RT/nF)(dlnkc /dE), where kc is the electroreduction rate constant, E is the applied potential, and R, T, and F have their usual significance. This definition is equivalent to the other, -(RT/nF)(dln|jc |/dE), where jc is the cathodic current density corrected for any changes in the reactant concentration at the electrode surface with respect to its bulk value.</td>
   </tr>
   </table>
 
@@ -1075,7 +1075,7 @@ DiffusionCurrent
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
-  <td class="element-table-value">Diffusion current is governed by Fick’s Laws of diffusion. It is the principle on which many electroana- lytical methods are based, because the current is proportional to the bulk concentration of the diffusing species. I_{d} = z*F*A*D*\grad(c)_{x=0}, where z is the electron number of an electrochemical reaction, F the Faraday constant, A the electrode surface area, D the diffusion coefficient of electroactive substance, and (∂c/∂x)x=0 the gradient of the amount concentration at the electrode surface position x = 0.</td>
+  <td class="element-table-value">Diffusion current is governed by Fick&#8217;s Laws of diffusion. It is the principle on which many electroana- lytical methods are based, because the current is proportional to the bulk concentration of the diffusing species. I_{d} = z*F*A*D*\grad(c)_{x=0}, where z is the electron number of an electrochemical reaction, F the Faraday constant, A the electrode surface area, D the diffusion coefficient of electroactive substance, and (&#8706;c/&#8706;x)x=0 the gradient of the amount concentration at the electrode surface position x = 0.</td>
   </tr>
   </table>
 
@@ -1893,7 +1893,7 @@ FaradaicCurrent
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
-  <td class="element-table-value">Current that is produced by other processes, for example by diffusion of charged species, is termed ‘non- faradaic current’.</td>
+  <td class="element-table-value">Current that is produced by other processes, for example by diffusion of charged species, is termed &#8216;non- faradaic current&#8217;.</td>
   </tr>
   </table>
 
@@ -2174,7 +2174,7 @@ InternalResistance
   <table class="element-table">
   <tr>
   <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">impedance of a linear circuit's Thévenin representation</td>
+  <td class="element-table-value">impedance of a linear circuit's Th&#233;venin representation</td>
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
@@ -2190,7 +2190,7 @@ InternalResistance
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
-  <td class="element-table-value">According to to Thévenin's theorem can any linear electric curcuit be replaced with a voltage source in series with an impedance. This impedance is for historical reasons termed "internal resistance".</td>
+  <td class="element-table-value">According to to Th&#233;venin's theorem can any linear electric curcuit be replaced with a voltage source in series with an impedance. This impedance is for historical reasons termed "internal resistance".</td>
   </tr>
   </table>
 
@@ -3080,7 +3080,7 @@ PotentiometricSelectivityCoefficient
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
-  <td class="element-table-value">The selectivity coefficient is determined by means of the potential difference of the ion- selective electrode in mixed solutions of the primary ion, A, and interfering ion, B (Fixed Interference Method) or, less desirably, in separate solutions of A and B (Separate Solution Method). The activities of the primary ion, A, and the interfering ion, B, at which K is determined should always be specified, as the value of K is defined by a modified Nikolsky-Eisenman equation. The smaller the value of K , the A,B greater the electrode’s preference for the primary ion, A.</td>
+  <td class="element-table-value">The selectivity coefficient is determined by means of the potential difference of the ion- selective electrode in mixed solutions of the primary ion, A, and interfering ion, B (Fixed Interference Method) or, less desirably, in separate solutions of A and B (Separate Solution Method). The activities of the primary ion, A, and the interfering ion, B, at which K is determined should always be specified, as the value of K is defined by a modified Nikolsky-Eisenman equation. The smaller the value of K , the A,B greater the electrode&#8217;s preference for the primary ion, A.</td>
   </tr>
   </table>
 
@@ -3414,7 +3414,7 @@ ResponseTimeAtAnISE
   <table class="element-table">
   <tr>
   <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">Duration between the time when an ion-selective electrode and an external reference electrode (the two completing the ion-selective electrode cell) are brought into contact with a sample solution (or the time at which the activity of the ion of interest in solution is changed) and the first time at which the slope of the cell potential vs. time plot (ΔE/Δt) becomes equal to a limiting value selected on the basis of the experimental conditions and/or requirements concerning accuracy.</td>
+  <td class="element-table-value">Duration between the time when an ion-selective electrode and an external reference electrode (the two completing the ion-selective electrode cell) are brought into contact with a sample solution (or the time at which the activity of the ion of interest in solution is changed) and the first time at which the slope of the cell potential vs. time plot (&#916;E/&#916;t) becomes equal to a limiting value selected on the basis of the experimental conditions and/or requirements concerning accuracy.</td>
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
@@ -3825,8 +3825,8 @@ StandardElectrodePotential
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
-  <td class="element-table-value">E° is related to the standard Gibbs Energy of the electrode reaction, Δr
-G° or ΔrG , written as a reduction with respect to that of the standard hydrogen electrode (SHE) E° = −ΔrG°/zF.</td>
+  <td class="element-table-value">E&#176; is related to the standard Gibbs Energy of the electrode reaction, &#916;r
+  G&#176; or &#916;rG , written as a reduction with respect to that of the standard hydrogen electrode (SHE) E&#176; = &#8722;&#916;rG&#176;/zF.</td>
   </tr>
   </table>
 
@@ -5203,7 +5203,7 @@ ButlerVolmerEquation
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
-  <td class="element-table-value">i = i0 * (exp(alpha*n*F*eta/(R*T)) – exp(-(1-alpha)*n*F*eta/(R*T)))</td>
+  <td class="element-table-value">i = i0 * (exp(alpha*n*F*eta/(R*T)) &#8211; exp(-(1-alpha)*n*F*eta/(R*T)))</td>
   </tr>
   </table>
 
@@ -6168,7 +6168,7 @@ ConductivityCell
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
   <td class="element-table-value">Formed, in theory, by two 1 cm2 reversible electrodes spaced 1 cm apart, providing a uniform distribution of electrical field. In practice, however, a number
-of other configurations are used.</td>
+  of other configurations are used.</td>
   </tr>
   </table>
 
@@ -8378,7 +8378,7 @@ FaradaysFirstLawOfElectrolysis
   <table class="element-table">
   <tr>
   <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">mass m of electrochemically-transformed substance is proportional to the charge Q passed, m ∝ Q.</td>
+  <td class="element-table-value">mass m of electrochemically-transformed substance is proportional to the charge Q passed, m &#8733; Q.</td>
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
@@ -8851,7 +8851,7 @@ GlassyCarbonElectrode
   <table class="element-table">
   <tr>
   <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">electrode made of glassy carbon material with an intertwined graphitic ribbon structure, formed by pyrolysis of a resol precursor at temperatures up to 3000 °C</td>
+  <td class="element-table-value">electrode made of glassy carbon material with an intertwined graphitic ribbon structure, formed by pyrolysis of a resol precursor at temperatures up to 3000 &#176;C</td>
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
@@ -9300,7 +9300,7 @@ IonicLiquidElectrolyte
   <table class="element-table">
   <tr>
   <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">An ionic liquid is an electrolyte composed of a salt that is liquid below 100 °C. Ionic liquids have found uses in electrochemical analysis, because their unconventional properties include a negligible vapor pressure, a high thermal and electrochemical stability, and exceptional dissolution properties for both organic and inorganic chemical species.</td>
+  <td class="element-table-value">An ionic liquid is an electrolyte composed of a salt that is liquid below 100 &#176;C. Ionic liquids have found uses in electrochemical analysis, because their unconventional properties include a negligible vapor pressure, a high thermal and electrochemical stability, and exceptional dissolution properties for both organic and inorganic chemical species.</td>
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
@@ -10511,7 +10511,7 @@ NernstEinsteinEquation
   <table class="element-table">
   <tr>
   <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">an equation relating the limiting molar conductivity Λ_m^0  to the ionic diffusion coefficients.</td>
+  <td class="element-table-value">an equation relating the limiting molar conductivity &#923;_m^0  to the ionic diffusion coefficients.</td>
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Wikipedia Reference</span></td>
@@ -10523,7 +10523,7 @@ NernstEinsteinEquation
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
-  <td class="element-table-value">\Lambda_m^0 = (F^2/(R*T)) * (v_{+} * z_{+}^2 * D_{+} + v_{–} * z_{–}^2 * D_{–})</td>
+  <td class="element-table-value">\Lambda_m^0 = (F^2/(R*T)) * (v_{+} * z_{+}^2 * D_{+} + v_{&#8211;} * z_{&#8211;}^2 * D_{&#8211;})</td>
   </tr>
   </table>
 
@@ -14324,7 +14324,7 @@ SilverElectrode
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
-  <td class="element-table-value">Ag electrodes were first used in potentiometry for the determination of Cl−, Br−, I−, as well as for Ag+ ions, to which they are sensitive.</td>
+  <td class="element-table-value">Ag electrodes were first used in potentiometry for the determination of Cl&#8722;, Br&#8722;, I&#8722;, as well as for Ag+ ions, to which they are sensitive.</td>
   </tr>
   </table>
 
@@ -15759,7 +15759,7 @@ VentCap
   <table class="element-table">
   <tr>
   <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">component fitted into the filling hole of a cell with a provision of allowing the venting of electrolysis gas from the cell¨</td>
+  <td class="element-table-value">component fitted into the filling hole of a cell with a provision of allowing the venting of electrolysis gas from the cell&#168;</td>
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
