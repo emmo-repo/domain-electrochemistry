@@ -5,7 +5,8 @@
 
 (pcase (user-login-name)
   ("xavier" (progn
-              (pyvenv-activate "~/Python/battinfo-doc-3.12-env/")
+              ;; (pyvenv-activate "~/Python/battinfo-doc-3.12-env/")
+              (pyvenv-activate "/home/xavier/Python/battinfodoc.env")
               (setq docdir "/home/xavier/Python/domain-electrochemistry/sphinx/")
               (setq testdir "/home/xavier/Python/BattInfo-doc-test/")
               ))
@@ -27,7 +28,8 @@
          )
     (delete-directory (concat docdir "_build") t)
     (pop-to-buffer outputbuffer)
-    (pyvenv-activate "~/Python/battinfo-doc-3.12-env/")
+    ;; (pyvenv-activate "~/Python/battinfo-doc-3.12-env/")
+    (pyvenv-activate "/home/xavier/Python/battinfodoc.env")
     (cd docdir)
     (erase-buffer)
     (start-process "battinfo-build" outputbuffer "make" "html")
