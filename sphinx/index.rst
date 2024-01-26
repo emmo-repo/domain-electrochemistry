@@ -29,7 +29,7 @@ progress in electrochemical research and development.
     .. grid-item-card::
         :link: about.html
 
-        Quick Start
+        :octicon:`report;1em;sd-text-info` Quick Start
         ^^^^^^^^^^^
         Let's go! Here is some information to help you get started
 
