@@ -5,7 +5,8 @@
 
    About <about>
    self
-   References <electrochemistry>
+   Class Index <electrochemistry>
+   Examples <examples>
    Contribute <contribute>
    
 
@@ -177,12 +178,6 @@ directly from the web. Commands for both options are given below:
    # Loading from web
    electrochemistry = get_ontology('https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/inferred_version/electrochemistry-inferred.ttl').load()
 
-.. raw:: html
-         
-   <div style="position: relative; padding-top: 56.25%; height: 0;">
-   <iframe src="https://json-ld.org/playground/" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
-   </div>
-   
 Contributing
 ------------
 

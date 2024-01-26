@@ -65,9 +65,9 @@ def extract_terms_info_sparql(g: Graph)-> list:
 def render_rst_top() -> str:
 
     top_rst = """
-==========
-References
-==========
+===========
+Class Index
+===========
 
 """
 
