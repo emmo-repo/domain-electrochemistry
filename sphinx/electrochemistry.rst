@@ -1,7 +1,7 @@
 
-==========
-References
-==========
+===========
+Class Index
+===========
 
 Quantities used in Electrochemistry
 ===================================
