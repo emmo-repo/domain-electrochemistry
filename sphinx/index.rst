@@ -7,6 +7,7 @@
    self
    Class Index <electrochemistry>
    Examples <examples>
+   Resources <resources>
    Contribute <contribute>
    
 
