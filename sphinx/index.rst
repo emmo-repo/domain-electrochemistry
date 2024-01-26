@@ -8,35 +8,50 @@
    Examples <examples>
    Resources <resources>
    Contribute <contribute>
-   
+
+Electrochemistry Domain Ontology
+================================
+
+The Electrochemistry Domain Ontology is a specialized domain within the
+Elementary Multiperspective Materials Ontology
+`(EMMO) <https://github.com/emmo-repo/EMMO>`__, that encompasses
+essential terms and relationships for electrochemical systems,
+materials, methods, and data. Its primary objective is to enable the
+creation of linked and FAIR (Findable, Accessible, Interoperable, and
+Reusable) data, thereby fostering advancements in research and
+innovation within the realm of electrochemistry. This ontology serves as
+a foundational resource for harmonizing electrochemical knowledge
+representation, enhancing data interoperability, and accelerating
+progress in electrochemical research and development.
 
 .. grid::
 
     .. grid-item-card::
+        :link: about.html
 
         Quick Start
         ^^^^^^^^^^^
-        panel 1 content
-        more content
+        Let's go! Here is some information to help you get started
 
     .. grid-item-card::
+        :link: electrochemistry.html
 
         Class Index
         ^^^^^^^^^^^
-        panel 2 content
+        A complete list of terms and some human-readable annotations
 
 .. grid::
 
     .. grid-item-card::
-        :link: <examples>
+        :link: examples.html
 
         Examples
         ^^^^^^^^
-        panel 1 content
-        more content
+        Here are some examples that demonstrate basic usage of the ontology
 
     .. grid-item-card::
+        :link: contribute.html
 
         Contribute
         ^^^^^^^^^^
-        panel 2 content
+        Help us develop the ontology by following these guidelines
