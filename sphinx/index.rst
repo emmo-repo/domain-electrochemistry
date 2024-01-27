@@ -3,7 +3,7 @@
    :includehidden:
    :hidden:
 
-   About <about>
+   Quick Start <quickstart>
    Class Index <electrochemistry>
    Examples <examples>
    Resources <resources>
@@ -27,7 +27,7 @@ progress in electrochemical research and development.
 .. grid::
 
     .. grid-item-card::
-        :link: about.html
+        :link: quickstart.html
 
         :octicon:`rocket;1em;sd-text-info`  Quick Start
         ^^^^^^^^^^^

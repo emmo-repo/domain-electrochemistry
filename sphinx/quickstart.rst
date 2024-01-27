@@ -1,27 +1,14 @@
 Electrochemistry Domain Ontology
 ================================
 
-.. raw:: html
+.. grid::
 
-   <!-- [![CI tests](https://github.com/emmo-repo/domain-electrochemistry/workflows/CI%20tests/badge.svg)](https://github.com/emmo-repo/domain-electrochemistry/actions/) -->
-   
-The Electrochemistry Domain Ontology is a specialized domain within the
-Elementary Multiperspective Materials Ontology
-`(EMMO) <https://github.com/emmo-repo/EMMO>`__, that encompasses
-essential terms and relationships for electrochemical systems,
-materials, methods, and data. Its primary objective is to enable the
-creation of linked and FAIR (Findable, Accessible, Interoperable, and
-Reusable) data, thereby fostering advancements in research and
-innovation within the realm of electrochemistry. This ontology serves as
-a foundational resource for harmonizing electrochemical knowledge
-representation, enhancing data interoperability, and accelerating
-progress in electrochemical research and development.
+    .. grid-item-card::
+        :link: tools.html
 
-A reference documentation is available in
-`html <https://emmo-repo.github.io/domain-electrochemistry/index.html>`__
-and
-`pdf <https://emmo-repo.github.io/domain-electrochemistry/electrochemistry.pdf>`__
-formats.
+        :octicon:`tools;1em;sd-text-info`  Tools
+        ^^^^^^^^^^^
+        The right tool for the right job. Here are some tools that can help you work with ontologies, knowledge graphs, and linked data. 
 
 Persistent Identifiers
 ~~~~~~~~~~~~~~~~~~~~~~
