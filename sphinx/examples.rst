@@ -123,5 +123,5 @@ Electrochemical Cell
 
 .. raw:: html
 
-    <img src="img/ElectrochemicalCell.svg" style="background-color: transparent;" />
+    <img src="/img/ElectrochemicalCell.svg" style="background-color: transparent;" />
 
