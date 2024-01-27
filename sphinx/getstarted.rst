@@ -12,6 +12,14 @@ Quick Start
 
 What do I use this for?
 ~~~~~~~~~~~~~~~~~~~~~~~
+This ontology is used mostly for generating linked data and complying with the FAIR data guidelines (although it can also do much more!). It provides machine-readable persistent identifiers for terms and semantic relations that help describe how things are related to each other. Terms and elucidations are derived from authoritative sources like the IEC and IUPAC, so you can be sure that your data & metadata are properly annotated.
+
+How do I use it?
+~~~~~~~~~~~~~~~~
+The easiest way is to use it to create JSON-LD files. 
+
+Why should I do this?
+~~~~~~~~~~~~~~~~~~~~~
 
 Persistent identifiers
 ----------------------

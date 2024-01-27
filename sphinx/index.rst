@@ -7,6 +7,7 @@
    Class Index <electrochemistry>
    Examples <examples>
    Resources <resources>
+   FAQ <faq>
    About <about>
 
 Electrochemistry Domain Ontology
