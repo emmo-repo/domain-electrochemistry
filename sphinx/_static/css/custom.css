@@ -32,7 +32,8 @@ html[data-theme=dark] table.element-table tr:nth-child(odd) td{
 html[data-theme=dark] table.element-table tr:nth-child(even) td{
    background-color: black;
 }
-img, svg {
+body img, body svg {
     background-color: transparent;
 }
+
 
