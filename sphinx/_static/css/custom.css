@@ -49,6 +49,12 @@ html:not([data-theme='light']) .bd-content svg.my-svg {
     fill: black !important;
     stroke: black !important;
 }
+.faq-section summary {
+    font-size: 1.2em; /* Adjust the size as needed */
+    color: #3D98B6; /* This is a bluish color */
+    font-weight: bold; /* Makes the font bold */
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+}
 
 
 
