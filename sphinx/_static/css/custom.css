@@ -35,9 +35,27 @@ html[data-theme=dark] table.element-table tr:nth-child(even) td{
 body img, body svg {
     background-color: transparent;
 }
-html[data-theme='dark'] img,
-html[data-theme='dark'] svg {
+html[data-theme='dark'] .bd-content img,
+html[data-theme='dark'] .bd-content svg {
     background-color: transparent !important;
+}
+
+/* Light mode styles */
+html:not([data-theme='dark']) img.my-svg,
+html:not([data-theme='dark']) svg.my-svg {
+    /* Define styles for light mode */
+    color: black; /* or other properties */
+    fill: black; /* for SVG paths, texts, etc. */
+    stroke: black; /* for SVG lines, borders, etc. */
+}
+
+/* Dark mode styles */
+html[data-theme='dark'] img.my-svg,
+html[data-theme='dark'] svg.my-svg {
+    /* Define styles for dark mode */
+    color: white;
+    fill: white;
+    stroke: white;
 }
 
 

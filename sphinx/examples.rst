@@ -122,3 +122,4 @@ Electrochemical Cell
 
 
 .. image:: /img/ElectrochemicalCell.svg
+   :class: my-svg
