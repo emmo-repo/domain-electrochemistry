@@ -3,37 +3,40 @@ FAQ Page
 
 .. raw:: html
 
-    <div itemscope itemtype="https://schema.org/FAQPage">
-        <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-            <h2 itemprop="name">What is the Electrochemistry Ontology?</h2>
+    <div class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+        <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+            <summary itemprop="name">What is the Electrochemistry Ontology?</summary>
             <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-                <div itemprop="text">
-                    A resource for creating semantic linked data related to electrochemical materials, components, cells, and testing data. It is part of the EMMO universe. 
-                </div>
+                <p itemprop="text">
+                    A resource for creating semantic linked data related to electrochemical materials, components, cells, and testing data. It is part of the EMMO universe.
+                </p>
             </div>
-        </div>
-        <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-            <h2 itemprop="name">What do I use the Electrochemistry Ontology for?</h2>
+        </details>
+        <!-- Repeat for each question -->
+        <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+            <summary itemprop="name">What do I use the Electrochemistry Ontology for?</summary>
             <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-                <div itemprop="text">
-                    This ontology is used mostly for generating linked data and complying with the FAIR data guidelines (although it can also do much more!). It provides machine-readable persistent identifiers for terms and semantic relations that help describe how things are related to each other. Terms and elucidations are derived from authoritative sources like the IEC and IUPAC, so you can be sure that your data & metadata are properly annotated.
-                </div>
+                <p itemprop="text">
+                    This ontology is used mostly for generating linked data in the Semantic Web and complying with the FAIR data guidelines (although it can also do much more!). It provides machine-readable persistent identifiers for terms and semantic relations that help describe how things are related to each other. Terms and elucidations are derived from authoritative sources like the IEC and IUPAC, so you can be sure that your data & metadata are properly annotated.
+                </p>
             </div>
-        </div>
-        <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-            <h2 itemprop="name">How do I use the Electrochemistry Ontology?</h2>
+        </details>
+        <!-- Add more questions as needed -->
+        <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+            <summary itemprop="name">How do I use the Electrochemistry Ontology?</summary>
             <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-                <div itemprop="text">
-                    The easiest way is to use it to create JSON-LD files.
-                </div>
+                <p itemprop="text">
+                    Most people use the ontology is to annotate the terms in (meta)data schemas. A common and simple way to use the ontology is as a vocabulary in JSON-LD files. Check out our :doc:`examples` to see how to do it. You can also visit the <a href="https://json-ld.org/playground/" target="_blank" rel="noopener noreferrer">JSON-LD Playground</a> for more detailed information. 
+                </p>
             </div>
-        </div>
-        <div itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-            <h2 itemprop="name">Why shoud I use the Electrochemistry Ontology?</h2>
+        </details>
+        <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+            <summary itemprop="name">Why shoud I use the Electrochemistry Ontology?</summary>
             <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
-                <div itemprop="text">
+                <p itemprop="text">
                     Get more value from your data and comply with the FAIR guidelines.
-                </div>
+                </p>
             </div>
-        </div>
+        </details>
     </div>
+
