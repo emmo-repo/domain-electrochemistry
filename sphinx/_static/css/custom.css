@@ -35,5 +35,10 @@ html[data-theme=dark] table.element-table tr:nth-child(even) td{
 body img, body svg {
     background-color: transparent;
 }
+html[data-theme=dark] body img,
+html[data-theme=dark] body svg {
+    background-color: transparent;
+}
+
 
 
