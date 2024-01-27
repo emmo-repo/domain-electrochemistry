@@ -3,11 +3,11 @@
    :includehidden:
    :hidden:
 
-   Quick Start <quickstart>
+   Get Started <getstarted>
    Class Index <electrochemistry>
    Examples <examples>
    Resources <resources>
-   Contribute <contribute>
+   About <about>
 
 Electrochemistry Domain Ontology
 ================================
@@ -27,7 +27,7 @@ progress in electrochemical research and development.
 .. grid::
 
     .. grid-item-card::
-        :link: quickstart.html
+        :link: getstarted.html
 
         :octicon:`rocket;1em;sd-text-info`  Quick Start
         ^^^^^^^^^^^

@@ -1,17 +1,8 @@
-Electrochemistry Domain Ontology
-================================
+About
+=====
 
-.. grid::
-
-    .. grid-item-card::
-        :link: tools.html
-
-        :octicon:`tools;1em;sd-text-info`  Tools
-        ^^^^^^^^^^^
-        The right tool for the right job. Here are some tools that can help you work with ontologies, knowledge graphs, and linked data. 
-
-Persistent Identifiers
-~~~~~~~~~~~~~~~~~~~~~~
+Persistent identifiers
+----------------------
 
 This ontology assigns persistent machine-readable identifiers to
 concepts from the electrochemistry domain. These identifiers facilitate
@@ -21,7 +12,7 @@ includes annotations to other sources of information including
 `Wikidata <https://www.wikidata.org/>`__.
 
 Standardized Nomenclature
-~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------
 
 The ontology builds on standardized nomenclature for electrochemistry,
 relying on recognized authorities including
@@ -95,72 +86,6 @@ ontology <inferred_version/electrochemistry-inferred.ttl>`__. This is
 the result of running the asserted source files through a semantic
 reasoner and includes both asserted and inferred properties in a clear
 graph.
-
-Getting Started
----------------
-
-Prerequisites
-~~~~~~~~~~~~~
-
-Before you begin, we recommend that you install the following tools.
-They are not all required, but greatly simplify the process of working
-with ontologies:
-
--  `Protégé <https://protege.stanford.edu/>`__ (a graphical ontology
-   editor)
-
-   -  Installation instructions are available
-      `here <https://protege.stanford.edu/software.php#desktop-protege>`__.
-
--  `EMMOntoPy <https://github.com/emmo-repo/EMMOntoPy>`__ (python
-   package for working with EMMO ontologies)
-
-   -  Installation instructions are available
-      `here <https://github.com/emmo-repo/EMMOntoPy#installation>`__.
-
--  `RDFLib <https://rdflib.readthedocs.io/en/stable/>`__ (optional,
-   python package for working with RDF graphs)
-
-   -  Installation instructions are available
-      `here <https://rdflib.readthedocs.io/en/stable/gettingstarted.html>`__.
-
--  `VS Studio Code <https://code.visualstudio.com/>`__ (optional, a code
-   editor with extensions for RDF formats like TTL and JSON-LD)
-
-   -  Installation instructions are available
-      `here <https://code.visualstudio.com/download>`__.
-
-Quick Start
-~~~~~~~~~~~
-
-To quickly explore and make use of the ontology, first download the
-pre-inferred version `pre-inferred
-ontology <inferred_version/electrochemistry-inferred.ttl>`__. You can
-then simply open the file in Protégé and explore its content or load the
-ontology into python using EMMOntoPy.
-
-In `EMMOntoPy <https://github.com/emmo-repo/EMMOntoPy>`__, you can
-choose to import the ontology from your local downloaded copy or
-directly from the web. Commands for both options are given below:
-
-.. code:: python
-
-   from ontopy import get_ontology
-
-   # Loading from local repository
-   electrochemistry = get_ontology('/path/to/domain-electrochemistry/electrochemistry-inferred.ttl').load(url_from_catalog=True)
-
-   # Loading from web
-   electrochemistry = get_ontology('https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/inferred_version/electrochemistry-inferred.ttl').load()
-
-Contributing
-------------
-
-We welcome contributions from the community to enhance and expand the
-ontology. If you have suggestions, improvements, or additional chemical
-substance information to contribute, please refer to our `Contribution
-Guidelines <CONTRIBUTING.md>`__.
-
 
 Acknowledgements
 ~~~~~~~~~~~~~~~~
