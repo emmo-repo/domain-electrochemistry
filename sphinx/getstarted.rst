@@ -74,22 +74,35 @@ Step 5: Make your own linked data!
 
 Now you can make your own piece of linked data using ontology terms and JSON-LD. Let's make a linked data description of a simple electrochemical cell consisting of a zinc negative electrode, a manganese dioxide positive electrode, and an alkaline electrolyte. This is expressed in JSON-LD as:
 
-.. code-block:: json
-   :linenos:
-   
-   {
-      "@context": "https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/context.json",
-      "@type": "ElectrochemicalCell",
-      "hasNegativeElectrode": {
-         "@type": "ZincElectrode"
-      },
-      "hasPositiveElectrode": {
-         "@type": "ManganeseDioxideElectrode"
-      },
-      "hasElectrolyte": {
-         "@type": "AlkalineElectrolyte"
-      }
-   }
+.. tab-set::
+
+   .. tab-item:: JSON
+
+      .. code-block:: json
+         :linenos:
+
+         {
+            "@context": "https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/context.json",
+            "@type": "ElectrochemicalCell",
+            "hasNegativeElectrode": {
+               "@type": "ZincElectrode"
+            },
+            "hasPositiveElectrode": {
+               "@type": "ManganeseDioxideElectrode"
+            },
+            "hasElectrolyte": {
+               "@type": "AlkalineElectrolyte"
+            }
+         }
+
+   .. tab-item:: JSON-LD Playground
+
+      .. raw:: html
+         
+         <div style="position: relative; padding-top: 56.25%; height: 0;">
+            <iframe src="https://json-ld.org/playground/#startTab=tab-table&json-ld=%7B%22%40context%22%3A%22https%3A%2F%2Fraw.githubusercontent.com%2Femmo-repo%2Fdomain-electrochemistry%2Fmaster%2Fcontext.json%22%2C%22%40type%22%3A%22ElectrochemicalCell%22%2C%22hasNegativeElectrode%22%3A%7B%22%40type%22%3A%22ZincElectrode%22%7D%2C%22hasPositiveElectrode%22%3A%7B%22%40type%22%3A%22ManganeseDioxideElectrode%22%7D%2C%22hasElectrolyte%22%3A%7B%22%40type%22%3A%22AlkalineElectrolyte%22%7D%7D" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
+         </div>
+
 
 First, we use the ``@context`` keyword to establish the context for machines to process the file by pointing to our pre-inferred context file on GitHub. 
 
@@ -99,10 +112,6 @@ Next, we use object properties that are defined in the ontology like ``hasNegati
 
 Finally, you can use the `JSON-LD Playground <https://json-ld.org/playground/>`__ to see how machines can process the linked data file.
 
-.. raw:: html
-         
-   <div style="position: relative; padding-top: 56.25%; height: 0;">
-   <iframe src="https://json-ld.org/playground/#startTab=tab-table&json-ld=%7B%22%40context%22%3A%22https%3A%2F%2Fraw.githubusercontent.com%2Femmo-repo%2Fdomain-electrochemistry%2Fmaster%2Fcontext.json%22%2C%22%40type%22%3A%22ElectrochemicalCell%22%2C%22hasNegativeElectrode%22%3A%7B%22%40type%22%3A%22ZincElectrode%22%7D%2C%22hasPositiveElectrode%22%3A%7B%22%40type%22%3A%22ManganeseDioxideElectrode%22%7D%2C%22hasElectrolyte%22%3A%7B%22%40type%22%3A%22AlkalineElectrolyte%22%7D%7D" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
-   </div>
-
 And that's it! You did it! Check out our examples to see some more advanced topics. 
+
+

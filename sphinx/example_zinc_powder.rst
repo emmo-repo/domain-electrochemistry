@@ -1,5 +1,5 @@
-Material
-========
+Zinc Powder
+===========
 
 This example, let's describe an instance of some zinc powder with a set of properties defined in the specification sheet from the manufacturer. This example highlights a few things:
 

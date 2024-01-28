@@ -4,18 +4,18 @@ Examples
 .. grid::
 
     .. grid-item-card::
-        :link: example_material.html
+        :link: example_zinc_powder.html
 
-        :octicon:`ruby;1em;sd-text-info`  Material
+        :octicon:`ruby;1em;sd-text-info`  Zinc Powder
         ^^^^^^^^^^^
-        A material from a manufacturer with properties defined in a specification sheet.
+        A zinc powder material from a manufacturer with properties defined in a specification sheet.
 
     .. grid-item-card::
-        :link: electrochemistry.html
+        :link: example_zinc_electrode.html
 
-        :octicon:`book;1em;sd-text-info`  Class Index
+        :octicon:`book;1em;sd-text-info`  Zinc Electrode
         ^^^^^^^^^^^
-        A complete list of terms and some human-readable annotations
+        A zinc foil electrode manufactured by a person at a research institute with a mix of properties from a specification sheet and measured.
 
 .. grid::
 
