@@ -26,7 +26,7 @@ FAQ Page
             <summary itemprop="name">How do I use the Electrochemistry Ontology?</summary>
             <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
                 <p itemprop="text">
-                    Most people use the ontology is to annotate the terms in (meta)data schemas. A common and simple way to use the ontology is as a vocabulary in JSON-LD files. Check out our :doc:`examples` to see how to do it. You can also visit the <a href="https://json-ld.org/playground/" target="_blank" rel="noopener noreferrer">JSON-LD Playground</a> for more detailed information. 
+                    Most people use the ontology is to annotate the terms in (meta)data schemas. A common and simple way to use the ontology is as a vocabulary in JSON-LD files. Check out our Examples to see how to do it. You can also visit the <a href="https://json-ld.org/playground/" target="_blank" rel="noopener noreferrer">JSON-LD Playground</a> for more detailed information. 
                 </p>
             </div>
         </details>

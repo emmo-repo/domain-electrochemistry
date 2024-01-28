@@ -6,7 +6,6 @@
    Get Started <getstarted>
    Class Index <electrochemistry>
    Examples <examples>
-   Resources <resources>
    FAQ <faq>
    About <about>
 
@@ -30,7 +29,7 @@ progress in electrochemical research and development.
     .. grid-item-card::
         :link: getstarted.html
 
-        :octicon:`rocket;1em;sd-text-info`  Quick Start
+        :octicon:`rocket;1em;sd-text-info`  Get Started
         ^^^^^^^^^^^
         Let's go! Here is some information to help you get started
 
