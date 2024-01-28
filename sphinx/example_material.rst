@@ -11,7 +11,7 @@ This example, let's describe an instance of some zinc powder with a set of prope
 
 The JSON-LD description of the material is given below:
 
-.. sd-tabs::
+.. tab-set::
 
    .. tab-item:: JSON
 
