@@ -7,27 +7,26 @@ An easy way to get started is to use the ontology vocabulary to create semantic 
 
 .. grid::
 
-   .. grid-item-card::
-      :link: tools.html
+    .. grid-item-card::
+        :link: tools.html
 
-      :octicon:`tools;1em;sd-text-info`  Tools
-      ^^^^^^^^^^^
-      The right tool for the right job. Here are some tools that can help you work with ontologies, knowledge graphs, and linked data. 
+        :octicon:`tools;1em;sd-text-info`  Tools
+        ^^^^^^^^^^^
+        The right tool for the right job. Here are some tools that can help you work with ontologies, knowledge graphs, and linked data.
 
-   .. grid-item-card::
-         :link: examples.html
+    .. grid-item-card::
+        :link: resources.html
 
-         :octicon:`pencil;1em;sd-text-info`  Examples
-         ^^^^^^^^
-         Here are some examples that demonstrate basic usage of the ontology
+        :octicon:`book;1em;sd-text-info`  Resources
+        ^^^^^^^^^^^
+        Here are some other resources and best practices for creating linked data on the web.
 
-   .. grid-item-card::
-      :link: resources.html
+    .. grid-item-card::
+        :link: examples.html
 
-      :octicon:`book;1em;sd-text-info`  Resources
-      ^^^^^^^^^^^
-      Here are some other resources and best practices for creating linked data on the web.
-
+        :octicon:`pencil;1em;sd-text-info`  Examples
+        ^^^^^^^^
+        Here are some examples that demonstrate basic usage of the ontology
 
 But if you are new to working with ontologies, we recommend you follow this step-by-step guide to understand the background and make your first piece of linked data in just 5 easy steps!
 
@@ -69,6 +68,9 @@ Step 4: Explore the JSON-LD context file
 JSON-LD is one of the easiest and most common file formats for creating linked data. JSON-LD uses the same key-value pair structure of traditional JSON, but adds a few keywords to support semantic linked data. One of these is the @context keyword, which points to a dictionary that pairs human readable term labels with machine readable IRIs. For convenience, we provide a JSON-LD context file that is generated from the pre-inferred version of the ontology that pairs prefLabels with IRIs. You can find the `context file on the GitHub repository <https://github.com/emmo-repo/domain-electrochemistry/blob/master/context.json>`__  or access it anytime using this URL:
 
 https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/context.json
+
+Step 5: Make your own linked data!
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Step 5: Make your own linked data!
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
