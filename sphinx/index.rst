@@ -4,28 +4,18 @@
    :hidden:
 
    Get Started <getstarted>
-   Class Index <electrochemistry>
    Examples <examples>
-   FAQ <faq>
+   Class Index <electrochemistry>
    About <about>
+   FAQ <faq>
 
-Electrochemistry Domain Ontology
+Electrochemistry Ontology
 ================================
 
-The Electrochemistry Domain Ontology is a specialized domain within the
-Elementary Multiperspective Materials Ontology
-`(EMMO) <https://github.com/emmo-repo/EMMO>`__, that encompasses
-essential terms and relationships for electrochemical systems,
-materials, methods, and data. Its primary objective is to enable the
-creation of linked and FAIR (Findable, Accessible, Interoperable, and
-Reusable) data, thereby fostering advancements in research and
-innovation within the realm of electrochemistry. This ontology serves as
-a foundational resource for harmonizing electrochemical knowledge
-representation, enhancing data interoperability, and accelerating
-progress in electrochemical research and development.
+Welcome to the **EMMO Electrochemistry Domain Ontology**, a semantic resource with essential terms and relationships to describe electrochemical systems, materials, methods, and data.
 
-A Simple Example
-~~~~~~~~~~~~~~~~
+Here's a simple example
+-----------------------
 .. code-block:: json
          :linenos:
 

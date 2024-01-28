@@ -1,6 +1,8 @@
 Examples
 ========
 
+Here are some examples to help you get started. You are free to re-use or modify them as needed to fit your needs. 
+
 .. grid::
 
     .. grid-item-card::
@@ -29,14 +31,6 @@ Examples
     .. grid-item-card::
         :link: example_alkaline_electrochemical_cell.html
 
-        :octicon:`thumbsup;1em;sd-text-info`  Alkaline Electrochemical Cell
+        :octicon:`bolt;1em;sd-text-info`  Alkaline Electrochemical Cell
         ^^^^^^^^^^
         An alkaline electrochemical cell.
-
-
-Electrochemical Cell
---------------------
-
-
-.. image:: /img/ElectrochemicalCell.svg
-   :class: my-svg
