@@ -24,6 +24,25 @@ a foundational resource for harmonizing electrochemical knowledge
 representation, enhancing data interoperability, and accelerating
 progress in electrochemical research and development.
 
+A Simple Example
+~~~~~~~~~~~~~~~~
+.. code-block:: json
+         :linenos:
+
+         {
+            "@context": "https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/context.json",
+            "@type": "ElectrochemicalCell",
+            "hasNegativeElectrode": {
+               "@type": "ZincElectrode"
+            },
+            "hasPositiveElectrode": {
+               "@type": "ManganeseDioxideElectrode"
+            },
+            "hasElectrolyte": {
+               "@type": "AlkalineElectrolyte"
+            }
+         }
+
 .. grid::
 
     .. grid-item-card::

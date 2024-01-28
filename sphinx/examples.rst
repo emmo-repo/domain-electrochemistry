@@ -13,25 +13,25 @@ Examples
     .. grid-item-card::
         :link: example_zinc_electrode.html
 
-        :octicon:`book;1em;sd-text-info`  Zinc Electrode
+        :octicon:`plus;1em;sd-text-info`  Zinc Electrode
         ^^^^^^^^^^^
         A zinc foil electrode manufactured by a person at a research institute with a mix of properties from a specification sheet and measured.
 
 .. grid::
 
     .. grid-item-card::
-        :link: examples.html
+        :link: example_aqueous_electrolyte_KOH.html
 
-        :octicon:`pencil;1em;sd-text-info`  Examples
+        :octicon:`plus-circle;1em;sd-text-info`  Aqueous KOH Electrolyte
         ^^^^^^^^
-        Here are some examples that demonstrate basic usage of the ontology
+        An aqueous potassium hydroxide electrolyte with some properties. 
 
     .. grid-item-card::
-        :link: contribute.html
+        :link: example_alkaline_electrochemical_cell.html
 
-        :octicon:`thumbsup;1em;sd-text-info`  Contribute
+        :octicon:`thumbsup;1em;sd-text-info`  Alkaline Electrochemical Cell
         ^^^^^^^^^^
-        Help us develop the ontology by following these guidelines
+        An alkaline electrochemical cell.
 
 
 Electrochemical Cell
