@@ -3,33 +3,33 @@ Get Started
 
 This ontology is used mostly for generating linked data and complying with the FAIR data guidelines (although it can also do much more!). It provides machine-readable persistent identifiers for terms and semantic relations that help describe what things are and how they are related to each other.
 
-An easy way to get started is to use the ontology vocabulary to create semantic linked data using JSON-LD files. We've provided some examples that you are free to re-use or modify for your own needs. 
+An easy way to get started is to use the ontology vocabulary to create semantic linked data using JSON-LD files. We've provided some recommendations for tools and examples that you are free to re-use or modify for your own needs. 
 
 .. grid::
 
-    .. grid-item-card::
-        :link: tools.html
+   .. grid-item-card::
+      :link: tools.html
 
-        :octicon:`tools;1em;sd-text-info`  Tools
-        ^^^^^^^^^^^
-        The right tool for the right job. Here are some tools that can help you work with ontologies, knowledge graphs, and linked data. 
+      :octicon:`tools;1em;sd-text-info`  Tools
+      ^^^^^^^^^^^
+      The right tool for the right job. Here are some tools that can help you work with ontologies, knowledge graphs, and linked data. 
 
    .. grid-item-card::
-        :link: examples.html
+         :link: examples.html
 
-        :octicon:`pencil;1em;sd-text-info`  Examples
-        ^^^^^^^^
-        Here are some examples that demonstrate basic usage of the ontology
+         :octicon:`pencil;1em;sd-text-info`  Examples
+         ^^^^^^^^
+         Here are some examples that demonstrate basic usage of the ontology
 
-    .. grid-item-card::
-        :link: resources.html
+   .. grid-item-card::
+      :link: resources.html
 
-        :octicon:`book;1em;sd-text-info`  Resources
-        ^^^^^^^^^^^
-        Here are some other resources and best practices for creating linked data on the web.
+      :octicon:`book;1em;sd-text-info`  Resources
+      ^^^^^^^^^^^
+      Here are some other resources and best practices for creating linked data on the web.
 
 
-But if you are new to working with ontologies, we recommend you follow this step-by-step guide to understand the background and make your first piece of linked data. 
+But if you are new to working with ontologies, we recommend you follow this step-by-step guide to understand the background and make your first piece of linked data in just 5 easy steps!
 
 Step 1: Install Protégé
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -49,7 +49,13 @@ Step 3: Open and explore the ontology file in Protégé
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Within Protégé, you can explore the class hierarchy that contains all the "things" that are included in the ontology, as well as the object properties that describe how those things are related to each other. There are a few things to notice:
 
-#. **Each item has a unique, persistent, and machine readable identifier called an IRI.** An IRI (Internationalized Reference Identifier) is the official identifier for that term. It is the anchor to which all other information is linked. In the EMMO universe, IRIs usually contain some Universal Unique Identifier (UUID) character sequence that ensures their uniqueness, but also makes them hard for humans to read. But fear not! Each term also comes with a set of human readable labels called prefLabel and altLabel.
+#. **Each item has a unique, persistent, and machine readable identifier called an IRI.** An IRI (Internationalized Reference Identifier) is the official identifier for that term. It is the anchor to which all other information is linked. In the EMMO universe, IRIs usually contain some Universal Unique Identifier (UUID) character sequence that ensures their uniqueness. For example, the IRI for ElectrochemicalCell is:
+
+https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6f2c88c9_5c04_4953_a298_032cc3ab9b77
+
+Clicking the link will take you to human-readable documentation. But if the request comes from an application or if you add a trailing slash / character to the IRI, then it will take you to a machine-readable turtle file. 
+
+As you can see, the use of UUIDs in the IRIs make it difficult for humans to read and understand. But fear not! Each term also comes with a set of human readable labels called prefLabel and altLabel.
 
 #. **Each item has one human-readable preferred label and can have many alternative labels.** The EMMO universe uses the SKOS terminology for labelling items. The main label for the term is called its prefLabel (short for preferred label) and is often expressed in the source files as skos:prefLabel. But sometimes, there can be multiple labels for the same thing. In that case we use skos:altLabel to list possible alternative labels.
 
@@ -71,6 +77,7 @@ Now you can make your own piece of linked data using ontology terms and JSON-LD.
 
 .. code-block:: json
    :linenos:
+   
    {
       "@context": "https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/context.json",
       "@type": "ElectrochemicalCell",
