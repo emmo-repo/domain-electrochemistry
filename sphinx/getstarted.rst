@@ -3,32 +3,7 @@ Get Started
 
 This ontology is used mostly for generating linked data and complying with the FAIR data guidelines (although it can also do much more!). It provides machine-readable persistent identifiers for terms and semantic relations that help describe what things are and how they are related to each other.
 
-An easy way to get started is to use the ontology vocabulary to create semantic linked data using JSON-LD files. We've provided some recommendations for tools and examples that you are free to re-use or modify for your own needs. 
-
-.. grid::
-
-    .. grid-item-card::
-        :link: tools.html
-
-        :octicon:`tools;1em;sd-text-info`  Tools
-        ^^^^^^^^^^^
-        The right tool for the right job. Here are some tools that can help you work with ontologies, knowledge graphs, and linked data.
-
-    .. grid-item-card::
-        :link: resources.html
-
-        :octicon:`book;1em;sd-text-info`  Resources
-        ^^^^^^^^^^^
-        Here are some other resources and best practices for creating linked data on the web.
-
-    .. grid-item-card::
-        :link: examples.html
-
-        :octicon:`pencil;1em;sd-text-info`  Examples
-        ^^^^^^^^
-        Here are some examples that demonstrate basic usage of the ontology
-
-**But if you are new to working with ontologies, we recommend you follow this step-by-step guide to understand the background and make your first piece of linked data in just 5 easy steps!**
+An easy way to get started is to use the ontology vocabulary to create semantic linked data using JSON-LD files. We recommend you follow this step-by-step guide to understand the background and **make your first piece of linked data in just 5 easy steps!**
 
 Step 1: Install Protégé
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -114,4 +89,27 @@ Finally, you can use the `JSON-LD Playground <https://json-ld.org/playground/>`_
 
 And that's it! You did it! Check out our examples to see some more advanced topics. 
 
+We've provided some recommendations for tools and examples that you are free to re-use or modify for your own needs. 
 
+.. grid::
+
+    .. grid-item-card::
+        :link: tools.html
+
+        :octicon:`tools;1em;sd-text-info`  Tools
+        ^^^^^^^^^^^
+        The right tool for the right job. Here are some tools that can help you work with ontologies, knowledge graphs, and linked data.
+
+    .. grid-item-card::
+        :link: resources.html
+
+        :octicon:`book;1em;sd-text-info`  Resources
+        ^^^^^^^^^^^
+        Here are some other resources and best practices for creating linked data on the web.
+
+    .. grid-item-card::
+        :link: examples.html
+
+        :octicon:`pencil;1em;sd-text-info`  Examples
+        ^^^^^^^^
+        Here are some examples that demonstrate basic usage of the ontology

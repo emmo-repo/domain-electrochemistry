@@ -45,8 +45,8 @@ Here are some examples to help you get started. You are free to re-use or modify
         Raw data from a cyclic voltammetry measurement. 
 
     .. grid-item-card::
-        :link: example_alkaline_electrochemical_cell.html
+        :link: example_eis_nyquist.html
 
-        :octicon:`zap;1em;sd-text-info`  Alkaline Electrochemical Cell
+        :octicon:`graph;1em;sd-text-info`  EIS Nyquist Plot Data
         ^^^^^^^^^^
-        An alkaline electrochemical cell.
+        Processed data from an EIS Nyquist plot.
