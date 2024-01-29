@@ -32,6 +32,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install Markdown==3.4.3 rdflib==6.3.2  # Add any other dependencies if needed
 
+    - name: Install Pandoc
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y pandoc
+
     - name: Render documentation from ttl
       run: python sphinx/ttl_to_rst.py
 
