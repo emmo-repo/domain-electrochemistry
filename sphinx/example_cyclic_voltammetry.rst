@@ -9,7 +9,7 @@ This example, let's describe an instance of some data resulting from a cyclic vo
 
       .. raw:: html
 
-      <iframe src="https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/sphinx/assets/data/example-cyclic-voltammetry.csv" width="100%" height="300"></iframe>
+         <iframe src="https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/sphinx/assets/data/example-cyclic-voltammetry.csv" width="100%" height="300"></iframe>
 
 
    .. tab-item:: JSON
