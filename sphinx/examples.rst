@@ -34,3 +34,19 @@ Here are some examples to help you get started. You are free to re-use or modify
         :octicon:`zap;1em;sd-text-info`  Alkaline Electrochemical Cell
         ^^^^^^^^^^
         An alkaline electrochemical cell.
+
+.. grid::
+
+    .. grid-item-card::
+        :link: example_cyclic_voltammetry.html
+
+        :octicon:`pulse;1em;sd-text-info`  Cyclic Voltammetry Data
+        ^^^^^^^^
+        Raw data from a cyclic voltammetry measurement. 
+
+    .. grid-item-card::
+        :link: example_alkaline_electrochemical_cell.html
+
+        :octicon:`zap;1em;sd-text-info`  Alkaline Electrochemical Cell
+        ^^^^^^^^^^
+        An alkaline electrochemical cell.
