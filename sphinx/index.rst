@@ -44,8 +44,8 @@ Welcome to the **EMMO Electrochemistry Domain Ontology**, a semantic resource wi
          </div>
 
 
-Still interested? Check this out
---------------------------------
+Check out these resources to get started!
+-----------------------------------------
 .. grid::
 
     .. grid-item-card::

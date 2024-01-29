@@ -35,9 +35,9 @@ The ontology builds on standardized nomenclature for electrochemistry, relying o
 
 Through a set of term annotations, the ontology also provides links to equivalent terms in other digital knowledge bases, including:
 
-#. `DBpedia https://www.dbpedia.org/>`__
-#. `WikiData https://www.wikidata.org/>`__
-#. `Wikipedia https://www.wikipedia.org/>`__
+#. `DBpedia <https://www.dbpedia.org/>`__
+#. `WikiData <https://www.wikidata.org/>`__
+#. `Wikipedia <https://www.wikipedia.org/>`__
 
 Structure and Integration with EMMO
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
