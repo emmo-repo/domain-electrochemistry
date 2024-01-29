@@ -7,7 +7,8 @@ This example, let's describe an instance of some data resulting from a cyclic vo
 
    .. tab-item:: Raw Data
 
-      Here is a sample of the raw data. The full dataset is available `here <https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/sphinx/assets/data/example-cyclic-voltammetry.csv>`__ 
+      Here is a sample of the raw data. The full dataset is available `here <https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/sphinx/assets/data/example-cyclic-voltammetry.csv>`__.
+
       .. code-block:: text
 
          Potential vs. Li,    I,                   Current density \
