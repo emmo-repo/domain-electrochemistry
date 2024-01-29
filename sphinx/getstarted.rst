@@ -50,11 +50,11 @@ Within Protégé, you can explore the class hierarchy that contains all the "thi
 
 #. **Each item has a unique, persistent, and machine readable identifier called an IRI.** An IRI (Internationalized Reference Identifier) is the official identifier for that term. It is the anchor to which all other information is linked. In the EMMO universe, IRIs usually contain some Universal Unique Identifier (UUID) character sequence that ensures their uniqueness. For example, the IRI for ElectrochemicalCell is:
 
-https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6f2c88c9_5c04_4953_a298_032cc3ab9b77
+   https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6f2c88c9_5c04_4953_a298_032cc3ab9b77
 
-Clicking the link will take you to human-readable documentation. But if the request comes from an application or if you add a trailing slash / character to the IRI, then it will take you to a machine-readable turtle file. 
+   Clicking the link will take you to human-readable documentation. But if the request comes from an application or if you add a trailing slash / character to the IRI, then it will take you to a machine-readable turtle file. 
 
-As you can see, the use of UUIDs in the IRIs make it difficult for humans to read and understand. But fear not! Each term also comes with a set of human readable labels called prefLabel and altLabel.
+   As you can see, the use of UUIDs in the IRIs make it difficult for humans to read and understand. But fear not! Each term also comes with a set of human readable labels called prefLabel and altLabel.
 
 #. **Each item has one human-readable preferred label and can have many alternative labels.** The EMMO universe uses the SKOS terminology for labelling items. The main label for the term is called its prefLabel (short for preferred label) and is often expressed in the source files as skos:prefLabel. But sometimes, there can be multiple labels for the same thing. In that case we use skos:altLabel to list possible alternative labels.
 

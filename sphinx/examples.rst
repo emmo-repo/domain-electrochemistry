@@ -31,6 +31,6 @@ Here are some examples to help you get started. You are free to re-use or modify
     .. grid-item-card::
         :link: example_alkaline_electrochemical_cell.html
 
-        :octicon:`bolt;1em;sd-text-info`  Alkaline Electrochemical Cell
+        :octicon:`zap;1em;sd-text-info`  Alkaline Electrochemical Cell
         ^^^^^^^^^^
         An alkaline electrochemical cell.
