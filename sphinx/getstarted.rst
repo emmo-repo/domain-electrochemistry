@@ -82,7 +82,7 @@ Now you can make your own piece of linked data using ontology terms and JSON-LD.
 
       .. raw:: html
 
-         <iframe src="https://colab.research.google.com/drive/14XqRJPWs07RUQgZmDZEu3yb2m1xGvxEQ?usp=sharing" width="700" height="480"></iframe>
+         <iframe src="https://colab.research.google.com/drive/14XqRJPWs07RUQgZmDZEu3yb2m1xGvxEQ?usp=embed" width="700" height="480"></iframe>
 
 
 
