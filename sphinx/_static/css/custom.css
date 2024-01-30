@@ -63,6 +63,11 @@ html:not([data-theme='light']) .bd-content svg.my-svg {
   height: 100vh;
   border: none;
 }
+/* this fixes darkmode within the json-ld playground iframe
+by inverting all colors if darkmode is active */
+html[data-theme="dark"] iframe[src*="json-ld.org/playground"] {
+   filter: invert(0.9);
+}
 
 
 
