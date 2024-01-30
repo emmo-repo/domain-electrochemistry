@@ -1,5 +1,6 @@
 .. toctree::
-
+   :hidden:
+      
    example_person_jsonld_nb.ipynb
 
 
