@@ -1,3 +1,8 @@
+.. toctree::
+
+   example_person_jsonld_nb.ipynb
+
+
 Get Started
 ================================
 
@@ -8,12 +13,12 @@ An easy way to get started is to use the ontology vocabulary to create semantic 
 Step 1: Install Protégé
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-`Protégé <https://protege.stanford.edu/>`__ is a graphical ontology editor developed by Stanford University. It is free and one of the most widely used tools for ontology development. You can read more about it in the tools section. 
+`Protégé <https://protege.stanford.edu/>`__ is a graphical ontology editor developed by Stanford University. It is free and one of the most widely used tools for ontology development. You can read more about it in the tools section.
 
 Step 2: Download the pre-inferred version of the ontology
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Ontologies within the EMMO universe import many different modules to try to re-use knowledge and terms from other domains. We then run a tool called a "reasoner" to make logical inferrences about how terms from different domains are connected, and lump them into one ontology. 
+Ontologies within the EMMO universe import many different modules to try to re-use knowledge and terms from other domains. We then run a tool called a "reasoner" to make logical inferrences about how terms from different domains are connected, and lump them into one ontology.
 
 We make it easy for you by providing a pre-inferred version in advance. You can `download it from the GitHub repository <https://github.com/emmo-repo/domain-electrochemistry/blob/master/electrochemistry-inferred.ttl>`__  or access it at anytime using this URL:
 
@@ -27,7 +32,7 @@ Within Protégé, you can explore the class hierarchy that contains all the "thi
 
    https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6f2c88c9_5c04_4953_a298_032cc3ab9b77
 
-   Clicking the link will take you to human-readable documentation. But if the request comes from an application or if you add a trailing slash / character to the IRI, then it will take you to a machine-readable turtle file. 
+   Clicking the link will take you to human-readable documentation. But if the request comes from an application or if you add a trailing slash / character to the IRI, then it will take you to a machine-readable turtle file.
 
    As you can see, the use of UUIDs in the IRIs make it difficult for humans to read and understand. But fear not! Each term also comes with a set of human readable labels called prefLabel and altLabel.
 
@@ -73,7 +78,7 @@ Now you can make your own piece of linked data using ontology terms and JSON-LD.
    .. tab-item:: JSON-LD Playground
 
       .. raw:: html
-         
+
          <div style="position: relative; padding-top: 56.25%; height: 0;">
             <iframe src="https://json-ld.org/playground/#startTab=tab-table&json-ld=%7B%22%40context%22%3A%22https%3A%2F%2Fraw.githubusercontent.com%2Femmo-repo%2Fdomain-electrochemistry%2Fmaster%2Fcontext.json%22%2C%22%40type%22%3A%22ElectrochemicalCell%22%2C%22hasNegativeElectrode%22%3A%7B%22%40type%22%3A%22ZincElectrode%22%7D%2C%22hasPositiveElectrode%22%3A%7B%22%40type%22%3A%22ManganeseDioxideElectrode%22%7D%2C%22hasElectrolyte%22%3A%7B%22%40type%22%3A%22AlkalineElectrolyte%22%7D%7D" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
          </div>
@@ -84,17 +89,17 @@ Now you can make your own piece of linked data using ontology terms and JSON-LD.
 
 
 
-First, we use the ``@context`` keyword to establish the context for machines to process the file by pointing to our pre-inferred context file on GitHub. 
+First, we use the ``@context`` keyword to establish the context for machines to process the file by pointing to our pre-inferred context file on GitHub.
 
-Then, we use the keyword ``@type`` to describe what type of thing we are describing, in this case an ``ElectrochemicalCell``. When a machine processes this file, it is going to check in the context and retrieve the IRI that is associated to the label ``ElectrochemicalCell``. 
+Then, we use the keyword ``@type`` to describe what type of thing we are describing, in this case an ``ElectrochemicalCell``. When a machine processes this file, it is going to check in the context and retrieve the IRI that is associated to the label ``ElectrochemicalCell``.
 
 Next, we use object properties that are defined in the ontology like ``hasNegativeElectrode``, ``hasPositiveElectrode``, and ``hasElectrolyte`` to define links to other things. In this example, we say that our electrochemical cell has a ngeative electrode, and that electrode is of the type ``ZincElectrode``.
 
 Finally, you can use the `JSON-LD Playground <https://json-ld.org/playground/>`__ to see how machines can process the linked data file.
 
-And that's it! You did it! Check out our examples to see some more advanced topics. 
+And that's it! You did it! Check out our examples to see some more advanced topics.
 
-We've provided some recommendations for tools and examples that you are free to re-use or modify for your own needs. 
+We've provided some recommendations for tools and examples that you are free to re-use or modify for your own needs.
 
 .. grid::
 
