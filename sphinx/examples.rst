@@ -1,7 +1,7 @@
 .. toctree::
    :hidden:
       
-   example_person_jsonld_nb.ipynb
+   example_linked_data_zinc_powder.ipynb
 
 Examples
 ========
@@ -11,7 +11,7 @@ Here are some examples to help you get started. You are free to re-use or modify
 .. grid::
 
     .. grid-item-card::
-        :link: example_person_jsonld_nb.html
+        :link: example_linked_data_zinc_powder.html
 
         :octicon:`ruby;1em;sd-text-info`  Zinc Powder
         ^^^^^^^^^^^
