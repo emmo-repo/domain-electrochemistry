@@ -35,14 +35,6 @@ Welcome to the **EMMO Electrochemistry Domain Ontology**, a semantic resource wi
             }
          }
 
-   .. tab-item:: JSON Crack
-
-      .. raw:: html
-            
-         <div style="position: relative; padding-top: 56.25%;">  <!-- Aspect ratio of 16:9 -->
-            <iframe id="jsoncrackEmbed" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://jsoncrack.com/widget?json=https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/sphinx/assets/jsonld/example_electrochemical_cell.json"></iframe>
-         </div>
-
    .. tab-item:: JSON-LD Playground
 
       .. raw:: html
