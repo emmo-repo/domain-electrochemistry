@@ -40,7 +40,7 @@ Welcome to the **EMMO Electrochemistry Domain Ontology**, a semantic resource wi
       .. raw:: html
          
          <div style="position: relative; padding-top: 56.25%; height: 0;">
-            <iframe src="https://json-ld.org/playground/#startTab=tab-table&json-ld=%7B%22%40context%22%3A%22https%3A%2F%2Fraw.githubusercontent.com%2Femmo-repo%2Fdomain-electrochemistry%2Fmaster%2Fcontext.json%22%2C%22%40type%22%3A%22ElectrochemicalCell%22%2C%22hasNegativeElectrode%22%3A%7B%22%40type%22%3A%22ZincElectrode%22%7D%2C%22hasPositiveElectrode%22%3A%7B%22%40type%22%3A%22ManganeseDioxideElectrode%22%7D%2C%22hasElectrolyte%22%3A%7B%22%40type%22%3A%22AlkalineElectrolyte%22%7D%7D" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://jsoncrack.com/widget?json=https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/sphinx/assets/jsonld/example_electrochemical_cell.json" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
          </div>
 
 
