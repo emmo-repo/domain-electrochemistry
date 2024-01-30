@@ -39,9 +39,7 @@ Welcome to the **EMMO Electrochemistry Domain Ontology**, a semantic resource wi
 
       .. raw:: html
          
-         <div style="position: relative; padding-top: 56.25%; height: 0;">
-            <iframe src="https://jsoncrack.com/widget?json=https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/sphinx/assets/jsonld/example_electrochemical_cell.json" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" allowfullscreen></iframe>
-         </div>
+         <iframe id="jsoncrackEmbed" width="100%" height="500" src="https://jsoncrack.com/widget?json=https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/sphinx/assets/jsonld/example_electrochemical_cell.json"></iframe>
 
 
 Check out these resources to get started!
