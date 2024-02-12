@@ -1,5 +1,5 @@
 ---
-name: New term request
+name: Request new term
 about: Suggest a new term for the ontology
 title: "[TERM]"
 labels: enhancement
