@@ -11,12 +11,12 @@ assignees: jsimonclark
 A clear and concise description of why the term is needed.
 
 **Required information for your proposed new term**
-skos:prefLabel : MyTermLabel
+[skos:prefLabel](https://www.w3.org/2012/09/odrl/semantic/draft/doco/skos_prefLabel.html) : MyTermLabel
 
-elucidation : a short 1 sentence description of the concept behind the term
+[elucidation](https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9) : a short 1 sentence description of the concept behind the term
 
 **Optional information for your proposed new term**
-rdf:type : (IRI for where your proposed term fits in the taxonomy)
+[rdf:type](https://www.w3.org/TR/rdf12-schema/#ch_type) : (IRI for where your proposed term fits in the taxonomy)
 
 wikidataReference : (URL of the term in [Wikidata](https://www.wikidata.org/))
 
