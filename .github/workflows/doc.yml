@@ -45,7 +45,7 @@ jobs:
       run: python sphinx/ttl_to_context.py
 
     - name: Copy context file to HTML directory
-      run: sudo cp context/context.json sphinx/_build/html/
+      run: sudo cp context/context.json sphinx/_build/html/context/
 
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
