@@ -43,14 +43,15 @@ jobs:
 
     - name: Create context file from ttl
       run: python sphinx/ttl_to_context.py
+
+    - name: Copy context file to HTML directory
+      run: cp context/context.json sphinx/_build/html/
       
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
         name: documentationHTML
-        path: |
-          sphinx/_build/html/
-          context/context.json
+        path: sphinx/_build/html/
         
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
