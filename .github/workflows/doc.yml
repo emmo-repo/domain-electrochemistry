@@ -44,6 +44,9 @@ jobs:
     - name: Create context file from ttl
       run: python sphinx/ttl_to_context.py
 
+    - name: Create HTML context directory
+      run: mkdir -p sphinx/_build/html/context/
+
     - name: Copy context file to HTML directory
       run: sudo cp context/context.json sphinx/_build/html/context/
 
