@@ -48,7 +48,9 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: documentationHTML
-        path: sphinx/_build/html/
+        path: |
+          sphinx/_build/html/
+          context/context.json
         
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
