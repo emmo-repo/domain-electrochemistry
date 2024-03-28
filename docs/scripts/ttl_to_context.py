@@ -21,6 +21,9 @@ def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.or
     """
     g = rdflib.Graph()
     g.parse(ttl_file, format='ttl')
+    
+    CHAMEO = rdflib.Namespace("https://w3id.org/emmo/domain/chameo#")
+    g.bind('chameo', CHAMEO)
 
     context = {}
     object_properties  = {}
@@ -44,13 +47,15 @@ def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.or
         elif p == predicate:
             # Normal context entry
             # Use the label as key if it exists
-            label_value = g.value(s, label) if g.value(s, label) else str(s)
+            #label_value = g.value(s, label) if g.value(s, label) else str(s)
+            label_value = str(s)
             other_entries[str(o)] = str(label_value)
             
 
     # Add namespace prefixes to the context
     for prefix, uri in g.namespace_manager.namespaces():
-        namespace_prefixes[prefix] = str(uri)
+        if len(prefix) >= 2:
+            namespace_prefixes[prefix] = str(uri)
 
     # Sort the entries alphabetically
     sorted_object_properties = dict(sorted(object_properties.items()))
@@ -58,7 +63,18 @@ def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.or
     sorted_namespace_prefixes = dict(sorted(namespace_prefixes.items()))
 
     # Merge the sorted entries
-    context = {**sorted_namespace_prefixes, **sorted_object_properties, **sorted_other_entries}
+    context = {
+        "@context": {
+            **sorted_namespace_prefixes,
+            **sorted_object_properties,
+            **sorted_other_entries
+        }
+    }
+    
+    print("Namespaces:")
+    for prefix, uri in g.namespace_manager.namespaces():
+        print(f"{prefix}: {uri}")
+
     
     return context
 
