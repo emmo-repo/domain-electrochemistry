@@ -91,10 +91,7 @@ predicate_uri = 'http://www.w3.org/2004/02/skos/core#prefLabel'
 context = generate_jsonld_context(file_uri, predicate_uri)
 
 # Determine the path for saving the context file in the same directory as the HTML docs
-context_file_path = os.path.join(os.path.dirname(file_path), 'sphinx/_build/html/context/context.json')
-
-# Create the directory if it doesn't exist
-os.makedirs(os.path.dirname(context_file_path), exist_ok=True)
+context_file_path = os.path.join(os.path.dirname(parent_dir), 'context/context.json')
 
 # Save to JSON file
 with open(context_file_path, 'w') as f:
