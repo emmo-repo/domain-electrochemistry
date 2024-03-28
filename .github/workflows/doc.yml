@@ -35,6 +35,9 @@ jobs:
     - name: Render documentation from ttl
       run: python sphinx/ttl_to_rst.py
 
+    - name: Create context file from ttl
+      run: python sphinx/ttl_to_context.py
+
     - name: Build HTML
       uses: ammaraskar/sphinx-action@master
       with:
@@ -52,6 +55,8 @@ jobs:
       if: github.ref == 'refs/heads/master'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: sphinx/_build/html
+        publish_dir: |
+          sphinx/_build/html
+          context
 
       
