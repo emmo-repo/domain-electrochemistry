@@ -25,6 +25,9 @@ def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.or
     CHAMEO = rdflib.Namespace("https://w3id.org/emmo/domain/chameo#")
     g.bind('chameo', CHAMEO)
 
+    EMMO = rdflib.Namespace("https://w3id.org/emmo#")
+    g.bind('emmo', EMMO)
+
     context = {}
     object_properties  = {}
     other_entries = {}
