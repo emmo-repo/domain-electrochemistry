@@ -61,12 +61,10 @@ jobs:
         git fetch --tags
         git tag | while read TAG; do
           mkdir -p "versions/$TAG"
-          cp {DOMAIN}.ttl "versions/$TAG/"
-          cp {DOMAIN}-inferred.ttl "versions/$TAG/"
-          cp electrochemicalquantities.ttl "versions/$TAG/"
+          cp "electrochemistry.ttl" "versions/$TAG/"
+          cp "electrochemistry-inferred.ttl" "versions/$TAG/"
+          cp "electrochemicalquantities.ttl" "versions/$TAG/"
         done
-      env:
-        DOMAIN: 'electrochemistry' # Replace with your actual domain
 
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
