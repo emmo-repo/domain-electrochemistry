@@ -94,6 +94,12 @@ jobs:
         fi
         done
 
+    - name: Copy TTL files to HTML directory
+      run: |
+        sudo cp "electrochemistry.ttl" "docs/_build/html/electrochemistry.ttl"
+        sudo cp "electrochemicalquantities.ttl" "docs/_build/html/electrochemicalquantities.ttl"
+        sudo cp "electrochemistry-inferred.ttl" "docs/_build/html/electrochemistry-inferred.ttl"
+
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
