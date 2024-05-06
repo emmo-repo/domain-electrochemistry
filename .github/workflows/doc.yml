@@ -56,6 +56,23 @@ jobs:
     - name: Copy context file to HTML directory
       run: sudo cp context/context.json sphinx/_build/html/context/
 
+    - name: Fetch all tags
+      run: |
+        git fetch --tags
+        TAGS=$(git tag)
+        echo "TAGS=$TAGS" >> $GITHUB_ENV
+
+    - name: Create version directories and copy files
+      run: |
+        for TAG in $TAGS; do
+          mkdir -p "versions/$TAG"
+          cp {DOMAIN}.ttl "versions/$TAG/"
+          cp {DOMAIN}-inferred.ttl "versions/$TAG/"
+          cp electrochemicalquantities.ttl "versions/$TAG/"
+        done
+      env:
+        DOMAIN: 'electrochemistry' # Replace with your actual domain
+
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
