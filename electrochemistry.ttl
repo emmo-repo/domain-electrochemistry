@@ -5308,10 +5308,6 @@ of other configurations are used."""@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrode in which the active material is iron"@en .
 
 
-###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ccdfed06_6d24_47e4_98af_ce3ffe7bd09e
-:electrochemistry_ccdfed06_6d24_47e4_98af_ce3ffe7bd09e rdf:type owl:Class .
-
-
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cd1b7943_42ce_46bd_8588_1c3161268270
 :electrochemistry_cd1b7943_42ce_46bd_8588_1c3161268270 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_1aec4cc0_82d5_4042_a657_ed7fe291c3d8 ;
