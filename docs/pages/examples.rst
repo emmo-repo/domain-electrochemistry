@@ -11,14 +11,14 @@ Here are some examples to help you get started. You are free to re-use or modify
 .. grid::
 
     .. grid-item-card::
-        :link: example_linked_data_zinc_powder.html
+        :link: ../examples/example_linked_data_zinc_powder.html
 
         :octicon:`ruby;1em;sd-text-info`  Zinc Powder
         ^^^^^^^^^^^
         A zinc powder material from a manufacturer with properties defined in a specification sheet.
 
     .. grid-item-card::
-        :link: example_zinc_electrode.html
+        :link: ../examples/example_zinc_electrode.html
 
         :octicon:`plus;1em;sd-text-info`  Zinc Electrode
         ^^^^^^^^^^^
@@ -27,14 +27,14 @@ Here are some examples to help you get started. You are free to re-use or modify
 .. grid::
 
     .. grid-item-card::
-        :link: example_aqueous_electrolyte_KOH.html
+        :link: ../examples/example_aqueous_electrolyte_KOH.html
 
         :octicon:`plus-circle;1em;sd-text-info`  Aqueous KOH Electrolyte
         ^^^^^^^^
         An aqueous potassium hydroxide electrolyte with some properties. 
 
     .. grid-item-card::
-        :link: example_alkaline_electrochemical_cell.html
+        :link: ../examples/example_alkaline_electrochemical_cell.html
 
         :octicon:`zap;1em;sd-text-info`  Alkaline Electrochemical Cell
         ^^^^^^^^^^
@@ -43,14 +43,14 @@ Here are some examples to help you get started. You are free to re-use or modify
 .. grid::
 
     .. grid-item-card::
-        :link: example_cyclic_voltammetry.html
+        :link: ../examples/example_cyclic_voltammetry.html
 
         :octicon:`pulse;1em;sd-text-info`  Cyclic Voltammetry Data
         ^^^^^^^^
         Raw data from a cyclic voltammetry measurement. 
 
     .. grid-item-card::
-        :link: example_eis_nyquist.html
+        :link: ../examples/example_eis_nyquist.html
 
         :octicon:`graph;1em;sd-text-info`  EIS Nyquist Plot Data
         ^^^^^^^^^^
