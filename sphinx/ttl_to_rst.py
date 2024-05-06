@@ -83,6 +83,10 @@ def entities_to_rst(entities: list[dict]) -> str:
     rst = ""
 
     for item in entities:
+        # Check if '#' is in the IRI
+        if '#' not in item['IRI']:
+            print(f"Skipping IRI without '#': {item['IRI']}")
+            continue  # Skip this entity if no hash is present
 
         iri_prefix, iri_suffix = item['IRI'].split("#")
 
