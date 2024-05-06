@@ -42,7 +42,7 @@ Step 4: Explore the JSON-LD context file
 
 JSON-LD is one of the easiest and most common file formats for creating linked data. JSON-LD uses the same key-value pair structure of traditional JSON, but adds a few keywords to support semantic linked data. One of these is the @context keyword, which points to a dictionary that pairs human readable term labels with machine readable IRIs. For convenience, we provide a JSON-LD context file that is generated from the pre-inferred version of the ontology that pairs prefLabels with IRIs. You can find the `context file on the GitHub repository <https://github.com/emmo-repo/domain-electrochemistry/blob/master/context.json>`__  or access it anytime using this URL:
 
-https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/context.json
+https://w3id.org/emmo/domain/electrochemistry/context
 
 Step 5: Make your own linked data!
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -57,7 +57,7 @@ Now you can make your own piece of linked data using ontology terms and JSON-LD.
          :linenos:
 
          {
-            "@context": "https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/context.json",
+            "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
             "@type": "ElectrochemicalCell",
             "hasNegativeElectrode": {
                "@type": "ZincElectrode"

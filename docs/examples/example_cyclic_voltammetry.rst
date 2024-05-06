@@ -27,7 +27,7 @@ This example, let's describe an instance of some data resulting from a cyclic vo
          :linenos:
 
          {
-            "@context": "https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/context.json",
+            "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
             "@type": "MeasurementResult",
             "csvw:url": "https://archive.big-map.eu/records/24mdd-z2x02/files/LNO%20CV.csv",
             "dc:title": "Example Cyclic Voltammetry Data",

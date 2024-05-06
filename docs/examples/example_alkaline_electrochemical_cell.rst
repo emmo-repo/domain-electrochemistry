@@ -17,7 +17,7 @@ The JSON-LD description of the material is given below:
          :linenos:
 
          {
-            "@context": "https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/context.json",
+            "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
             "@type": "ElectrochemicalCell",
             "hasNegativeElectrode": {
                "@type": "ZincElectrode"

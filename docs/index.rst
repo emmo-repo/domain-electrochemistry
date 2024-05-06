@@ -22,7 +22,7 @@ Welcome to the **EMMO Electrochemistry Domain Ontology**, a semantic resource wi
          :linenos:
 
          {
-            "@context": "https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/context.json",
+            "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
             "@type": "ElectrochemicalCell",
             "hasNegativeElectrode": {
                "@type": "ZincElectrode"
