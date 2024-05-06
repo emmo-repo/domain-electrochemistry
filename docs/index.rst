@@ -50,14 +50,14 @@ Check out these resources to get started!
 .. grid::
 
     .. grid-item-card::
-        :link: getstarted.html
+        :link: pages/getstarted.html
 
         :octicon:`rocket;1em;sd-text-info`  Get Started
         ^^^^^^^^^^^
         Let's go! Here is some information to help you get started
 
     .. grid-item-card::
-        :link: electrochemistry.html
+        :link: pages/electrochemistry.html
 
         :octicon:`book;1em;sd-text-info`  Class Index
         ^^^^^^^^^^^
@@ -66,14 +66,14 @@ Check out these resources to get started!
 .. grid::
 
     .. grid-item-card::
-        :link: examples.html
+        :link: pages/examples.html
 
         :octicon:`pencil;1em;sd-text-info`  Examples
         ^^^^^^^^
         Here are some examples that demonstrate basic usage of the ontology
 
     .. grid-item-card::
-        :link: contribute.html
+        :link: pages/contribute.html
 
         :octicon:`thumbsup;1em;sd-text-info`  Contribute
         ^^^^^^^^^^
