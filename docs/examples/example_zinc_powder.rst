@@ -11,7 +11,7 @@ This example, let's describe an instance of some zinc powder with a set of prope
          :linenos:
 
          {
-            "@context": "https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/context.json",
+            "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
             "@type": ["Zinc", "Powder"],
             "schema:manufacturer": {
                "@id": "https://www.wikidata.org/wiki/Q680841",

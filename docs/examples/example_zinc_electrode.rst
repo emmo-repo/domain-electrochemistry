@@ -11,7 +11,7 @@ This example, let's describe an instance of some electrode made by a specific pe
          :linenos:
 
          {
-            "@context": "https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/context.json",
+            "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
             "@type": "Electrode",
             "schema:manufacturer": {
                "@id": "https://www.wikidata.org/wiki/Q3041255",

@@ -11,7 +11,7 @@ This example, let's describe an instance of some aqueous potassium hydroxide (KO
          :linenos:
 
          {
-            "@context": "https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/context.json",
+            "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
             "@type": "Electrolyte",
             "hasSolvent": {
                "@type": "Water"
