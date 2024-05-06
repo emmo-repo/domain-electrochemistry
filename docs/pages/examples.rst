@@ -1,7 +1,7 @@
 .. toctree::
    :hidden:
       
-   example_linked_data_zinc_powder.ipynb
+   ../examples/example_linked_data_zinc_powder.ipynb
 
 Examples
 ========
