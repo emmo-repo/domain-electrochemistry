@@ -3,11 +3,11 @@
    :includehidden:
    :hidden:
 
-   Get Started <getstarted>
-   Examples <examples>
-   Class Index <electrochemistry>
-   About <about>
-   FAQ <faq>
+   Get Started <pages/getstarted>
+   Examples <pages/examples>
+   Class Index <pages/electrochemistry>
+   About <pages/about>
+   FAQ <pages/faq>
 
 Electrochemistry Ontology
 ================================

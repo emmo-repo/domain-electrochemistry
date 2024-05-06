@@ -42,12 +42,12 @@ is configured to create IRIs in the right format:
 
    | |Protege config.|
    | Here is the “Specified IRI” for you to copy:
-     ``https://emmo.info/electrochemistry#``
+     ``https://w3id.org/emmo/domain/electrochemistry#``
 
 -  Once you have made your changes, commit them to your fork and `create
    a pull
    request <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request>`__.
 -  We will merge the request after assessing it.
 
-.. |Protege config.| image:: ../doc/img/protege_config_contribute.png
+.. |Protege config.| image:: ../docs/img/protege_config_contribute.png
 
