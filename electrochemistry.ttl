@@ -8,20 +8,20 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix chemsub: <https://w3id.org/emmo/domain/chemicalsubstance#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix annotations: <https://w3id.org/emmo/top/annotations#> .
 @base <https://w3id.org/emmo/domain/electrochemistry/electrochemistry> .
 
 <https://w3id.org/emmo/domain/electrochemistry/electrochemistry> rdf:type owl:Ontology ;
-                                                                  owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.11.0-beta/electrochemistry> ;
+                                                                  owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.12.0-beta/electrochemistry> ;
                                                                   owl:imports <https://w3id.org/emmo/domain/chameo/1.0.0-beta3/chameo> ,
                                                                               <https://w3id.org/emmo/domain/chemicalsubstance/0.4.0-beta/chemicalsubstance> ,
-                                                                              <https://w3id.org/emmo/domain/electrochemistry/0.11.0-beta/electrochemicalquantities> ;
+                                                                              <https://w3id.org/emmo/domain/electrochemistry/0.12.0-beta/electrochemicalquantities> ;
                                                                   dcterms:abstract "The Electrochemistry Domain Ontology, a specialized domain within the Elementary Multiperspective Materials Ontology (EMMO), encompasses essential terms and relationships for electrochemical systems, materials, methods, and data. Its primary objective is to enable the creation of linked and FAIR (Findable, Accessible, Interoperable, and Reusable) data, thereby fostering advancements in research and innovation within the realm of electrochemistry. This ontology serves as a foundational resource for harmonizing electrochemical knowledge representation, enhancing data interoperability, and accelerating progress in electrochemical research and development."@en ;
-                                                                  dcterms:contributor "Casper Welzel Andersen" ,
-                                                                                      "Francesca Lonstad Bleken" ,
-                                                                                      "Jesper Friis" ;
-                                                                  dcterms:creator "Eibar Flores" ,
-                                                                                  "Simon Clark" ;
+                                                                  dcterms:contributor <https://orcid.org/0000-0002-2547-155X>,
+                                                                                      <https://orcid.org/0000-0001-8869-3718>,
+                                                                                      <https://orcid.org/0000-0002-1560-809X>;
+                                                                  dcterms:creator <https://orcid.org/0000-0002-8758-6109>, <https://orcid.org/0000-0003-2954-1233>;
                                                                   dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
                                                                   rdfs:comment """Contacts:
 Simon Clark
@@ -31,7 +31,39 @@ email: simon.clark@sintef.no
 Jesper Friis
 SINTEF Industry
 email: jesper.friis@sintef.no"""@en ;
-                                                                  owl:versionInfo "0.11.0-beta" .
+                                                                  owl:versionInfo "0.12.0-beta" .
+
+
+<https://orcid.org/0000-0002-8758-6109> a foaf:Person ;
+	rdfs:label "Simon Clark" ;
+	skos:prefLabel "Simon Clark" ;
+	foaf:name "Simon Clark" ;
+	rdfs:comment "" .
+
+<https://orcid.org/0000-0003-2954-1233> a foaf:Person ;
+	rdfs:label "Eibar Flores" ;
+	skos:prefLabel "Eibar Flores" ;
+	foaf:name "Eibar Flores" ;
+	rdfs:comment "" .
+
+<https://orcid.org/0000-0002-2547-155X> a foaf:Person;
+	rdfs:label "Casper Welzel Andersen" ;
+	skos:prefLabel "Casper Welzel Andersen" ;
+	foaf:name "Casper Welzel Andersen" ;
+	rdfs:comment "" .
+
+<https://orcid.org/0000-0001-8869-3718> a foaf:Person;
+	rdfs:label "Francesca Lonstad Bleken" ;
+	skos:prefLabel "Francesca Lonstad Bleken" ;
+	foaf:name "Francesca Lonstad Bleken" ;
+	rdfs:comment "" .
+
+<https://orcid.org/0000-0002-1560-809X> a foaf:Person;
+	rdfs:label "Jesper Friis" ;
+	skos:prefLabel "Jesper Friis" ;
+	foaf:name "Jesper Friis" ;
+	rdfs:comment "" .
+
 
 #################################################################
 #    Object Properties
@@ -5274,10 +5306,6 @@ of other configurations are used."""@en ;
                                                                        ] ;
                                                        skos:prefLabel "IronElectrode"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrode in which the active material is iron"@en .
-
-
-###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ccdfed06_6d24_47e4_98af_ce3ffe7bd09e
-:electrochemistry_ccdfed06_6d24_47e4_98af_ce3ffe7bd09e rdf:type owl:Class .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cd1b7943_42ce_46bd_8588_1c3161268270
