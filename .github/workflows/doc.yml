@@ -75,9 +75,9 @@ jobs:
         if [ -d "context" ]; then
           echo "Context directory exists, copying context.json to $TAG"
           # Make sure the context directory exists in the version-specific directory
-          mkdir -p "sphinx/_build/html/version/$TAG/context"
+          sudo mkdir -p "sphinx/_build/html/version/$TAG/context"
           # Copy context.json to the tag-specific context directory
-          cp "context/context.json" "sphinx/_build/html/version/$TAG/context"
+          sudo cp "context/context.json" "sphinx/_build/html/version/$TAG/context"
         else
           echo "No context directory found in the source directory."
         fi
