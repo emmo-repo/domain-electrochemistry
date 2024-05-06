@@ -33,35 +33,35 @@ jobs:
         pip install Markdown==3.4.3 rdflib==6.3.2  pandoc # Add any other dependencies if needed
         
     - name: Render documentation from ttl
-      run: python sphinx/ttl_to_rst.py
+      run: python docs/ttl_to_rst.py
 
     - name: Build HTML
       uses: ammaraskar/sphinx-action@master
       with:
-        docs-folder: "sphinx/"
+        docs-folder: "docs/"
         pre-build-command: "apt-get update -y; apt-get install -y pandoc"
 
     - name: Create context file from ttl
-      run: python sphinx/ttl_to_context.py
+      run: python docs/ttl_to_context.py
 
     - name: Check if HTML context directory exists
       run: |
-        if [ ! -d "sphinx/_build/html/context/" ]; then
+        if [ ! -d "docs/_build/html/context/" ]; then
           echo "Creating HTML context directory"
-          sudo mkdir -p sphinx/_build/html/context/
+          sudo mkdir -p docs/_build/html/context/
         else
           echo "HTML context directory already exists"
         fi
 
-        if [ ! -d "sphinx/_build/html/version/" ]; then
+        if [ ! -d "docs/_build/html/version/" ]; then
           echo "Creating HTML versions directory"
-          sudo mkdir -p sphinx/_build/html/version/
+          sudo mkdir -p docs/_build/html/version/
         else
           echo "HTML version directory already exists"
         fi
     
     - name: Copy context file to HTML directory
-      run: sudo cp context/context.json sphinx/_build/html/context/
+      run: sudo cp context/context.json docs/_build/html/context/
 
     - name: Commit changes
       run: |
@@ -78,17 +78,17 @@ jobs:
       run: |
         git fetch --tags
         git tag | while read TAG; do
-          sudo mkdir -p "sphinx/_build/html/version/$TAG"
-          sudo cp "electrochemistry.ttl" "sphinx/_build/html/version/$TAG/"
-          sudo cp "electrochemistry-inferred.ttl" "sphinx/_build/html/version/$TAG/"
-          sudo cp "electrochemicalquantities.ttl" "sphinx/_build/html/version/$TAG/"
+          sudo mkdir -p "docs/_build/html/version/$TAG"
+          sudo cp "electrochemistry.ttl" "docs/_build/html/version/$TAG/"
+          sudo cp "electrochemistry-inferred.ttl" "docs/_build/html/version/$TAG/"
+          sudo cp "electrochemicalquantities.ttl" "docs/_build/html/version/$TAG/"
 
         if [ -d "context" ]; then
           echo "Context directory exists, copying context.json to $TAG"
           # Make sure the context directory exists in the version-specific directory
-          sudo mkdir -p "sphinx/_build/html/version/$TAG/context"
+          sudo mkdir -p "docs/_build/html/version/$TAG/context"
           # Copy context.json to the tag-specific context directory
-          sudo cp "context/context.json" "sphinx/_build/html/version/$TAG/context"
+          sudo cp "context/context.json" "docs/_build/html/version/$TAG/context"
         else
           echo "No context directory found in the source directory."
         fi
@@ -98,13 +98,13 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: documentationHTML
-        path: sphinx/_build/html/
+        path: docs/_build/html/
         
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       if: github.ref == 'refs/heads/master'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: sphinx/_build/html
+        publish_dir: docs/_build/html
 
       
