@@ -84,7 +84,7 @@ def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.or
 
 # Example usage
 filename = 'electrochemistry-inferred.ttl'
-parent_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 file_path = os.path.join(parent_dir, '..', filename)
 
 # Convert the file path to a file URI
