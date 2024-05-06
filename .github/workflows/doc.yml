@@ -52,6 +52,13 @@ jobs:
         else
           echo "HTML context directory already exists"
         fi
+
+        if [ ! -d "sphinx/_build/html/version/" ]; then
+          echo "Creating HTML versions directory"
+          mkdir -p sphinx/_build/html/version/
+        else
+          echo "HTML version directory already exists"
+        fi
     
     - name: Copy context file to HTML directory
       run: sudo cp context/context.json sphinx/_build/html/context/
@@ -60,10 +67,10 @@ jobs:
       run: |
         git fetch --tags
         git tag | while read TAG; do
-          mkdir -p "versions/$TAG"
-          cp "electrochemistry.ttl" "versions/$TAG/"
-          cp "electrochemistry-inferred.ttl" "versions/$TAG/"
-          cp "electrochemicalquantities.ttl" "versions/$TAG/"
+          mkdir -p "sphinx/_build/html/version/$TAG"
+          cp "electrochemistry.ttl" "sphinx/_build/html/version/$TAG/"
+          cp "electrochemistry-inferred.ttl" "sphinx/_build/html/version/$TAG/"
+          cp "electrochemicalquantities.ttl" "sphinx/_build/html/version/$TAG/"
         done
 
     - name: Upload artifacts
