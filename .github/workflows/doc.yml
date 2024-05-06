@@ -56,15 +56,10 @@ jobs:
     - name: Copy context file to HTML directory
       run: sudo cp context/context.json sphinx/_build/html/context/
 
-    - name: Fetch all tags
+    - name: Fetch all tags and create version directories
       run: |
         git fetch --tags
-        TAGS=$(git tag)
-        echo "TAGS=$TAGS" >> $GITHUB_ENV
-
-    - name: Create version directories and copy files
-      run: |
-        for TAG in $TAGS; do
+        git tag | while read TAG; do
           mkdir -p "versions/$TAG"
           cp {DOMAIN}.ttl "versions/$TAG/"
           cp {DOMAIN}-inferred.ttl "versions/$TAG/"
