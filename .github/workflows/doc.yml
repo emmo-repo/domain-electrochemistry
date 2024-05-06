@@ -55,7 +55,7 @@ jobs:
 
         if [ ! -d "sphinx/_build/html/version/" ]; then
           echo "Creating HTML versions directory"
-          mkdir -p sphinx/_build/html/version/
+          sudo mkdir -p sphinx/_build/html/version/
         else
           echo "HTML version directory already exists"
         fi
@@ -67,10 +67,10 @@ jobs:
       run: |
         git fetch --tags
         git tag | while read TAG; do
-          mkdir -p "sphinx/_build/html/version/$TAG"
-          cp "electrochemistry.ttl" "sphinx/_build/html/version/$TAG/"
-          cp "electrochemistry-inferred.ttl" "sphinx/_build/html/version/$TAG/"
-          cp "electrochemicalquantities.ttl" "sphinx/_build/html/version/$TAG/"
+          sudo mkdir -p "sphinx/_build/html/version/$TAG"
+          sudo cp "electrochemistry.ttl" "sphinx/_build/html/version/$TAG/"
+          sudo cp "electrochemistry-inferred.ttl" "sphinx/_build/html/version/$TAG/"
+          sudo cp "electrochemicalquantities.ttl" "sphinx/_build/html/version/$TAG/"
         done
 
     - name: Upload artifacts
