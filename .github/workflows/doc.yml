@@ -53,12 +53,22 @@ jobs:
           echo "HTML context directory already exists"
         fi
 
+        if [ ! -d "docs/_build/html/assets/" ]; then
+          echo "Creating HTML context directory"
+          sudo mkdir -p docs/_build/html/assets/
+        else
+          echo "HTML assets directory already exists"
+        fi
+
         if [ ! -d "docs/_build/html/version/" ]; then
           echo "Creating HTML versions directory"
           sudo mkdir -p docs/_build/html/version/
         else
           echo "HTML version directory already exists"
         fi
+
+    - name: Copy assets directory to HTML directory
+      run: sudo cp -r assets docs/_build/html/
     
     - name: Copy context file to HTML directory
       run: sudo cp context/context.json docs/_build/html/context/
