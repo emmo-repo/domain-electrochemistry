@@ -40,3 +40,7 @@ FAQ Page
         </details>
     </div>
 
+.. raw:: html
+
+    <iframe src="../assets/img/graph.html" width="800" height="500"></iframe>
+
