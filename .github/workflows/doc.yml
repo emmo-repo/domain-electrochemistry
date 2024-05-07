@@ -68,7 +68,7 @@ jobs:
         fi
 
     - name: Copy assets directory to HTML directory
-      run: sudo cp -r --parents assets/* docs/_build/html/
+      run: sudo cp -r docs/assets/* docs/_build/html/assets/
     
     - name: Copy context file to HTML directory
       run: sudo cp context/context.json docs/_build/html/context/
