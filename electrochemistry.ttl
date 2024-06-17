@@ -184,7 +184,8 @@ schema:name rdf:type owl:AnnotationProperty .
 #################################################################
 
 ###  https://schema.org/Person
-schema:Person rdf:type owl:Class .
+schema:Person rdf:type owl:Class ;
+              skos:prefLabel "Person"@en .
 
 
 ###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_424bf750_7df5_49b5_ba73_ba74397a166b
@@ -237,7 +238,8 @@ schema:Person rdf:type owl:Class .
 
 
 ###  https://w3id.org/emmo/domain/chameo#Signal
-<https://w3id.org/emmo/domain/chameo#Signal> rdf:type owl:Class .
+<https://w3id.org/emmo/domain/chameo#Signal> rdf:type owl:Class ;
+                                             skos:prefLabel "Signal"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_01260656_ac32_472e_9513_a607366538ec
