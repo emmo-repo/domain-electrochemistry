@@ -84,11 +84,81 @@ emmo:EMMO_e218c625_6a39_47a9_8d08_a2ef41c152a9 rdfs:subClassOf :electrochemistry
                                                skos:altLabel "GravimetricEnergyDensity"@en .
 
 
+###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_0ed0362e_b7ae_482c_a7d0_2ca2eebda648
+<https://w3id.org/emmo/domain//electrochemistry#electrochemistry_0ed0362e_b7ae_482c_a7d0_2ca2eebda648> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
+                                                                                                       skos:prefLabel "D30ParticleSize"@en ;
+                                                                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 30% of the sample's particles fall."@en .
+
+
 ###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_14d93129_d94d_42ff_a6f2_e8fca36ffec4
 <https://w3id.org/emmo/domain//electrochemistry#electrochemistry_14d93129_d94d_42ff_a6f2_e8fca36ffec4> rdf:type owl:Class ;
                                                                                                        rdfs:subClassOf emmo:EMMO_79751276_b2d0_4e2f_bbd4_99d412f43d55 ;
                                                                                                        skos:prefLabel "EffectivePorousMediaQuantity"@en ;
                                                                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a physical quantity that is adjusted to consider the effects of porous media structure"@en .
+
+
+###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_2e2d92f4_9fd5_4965_b15a_30b43c68e3e5
+<https://w3id.org/emmo/domain//electrochemistry#electrochemistry_2e2d92f4_9fd5_4965_b15a_30b43c68e3e5> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
+                                                                                                       skos:prefLabel "D5ParticleSize"@en ;
+                                                                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 5% of the sample's particles fall."@en .
+
+
+###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_62e03250_8987_497b_85d5_1399aca9a0aa
+<https://w3id.org/emmo/domain//electrochemistry#electrochemistry_62e03250_8987_497b_85d5_1399aca9a0aa> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
+                                                                                                       skos:prefLabel "D20ParticleSize"@en ;
+                                                                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 20% of the sample's particles fall."@en .
+
+
+###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_7f17f6bb_c1f9_4f4a_bfdf_d8974443d07b
+<https://w3id.org/emmo/domain//electrochemistry#electrochemistry_7f17f6bb_c1f9_4f4a_bfdf_d8974443d07b> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
+                                                                                                       skos:prefLabel "D25ParticleSize"@en ;
+                                                                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 25% of the sample's particles fall."@en .
+
+
+###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_8768c8f4_eaa8_4670_a3a0_91524e59a7f6
+<https://w3id.org/emmo/domain//electrochemistry#electrochemistry_8768c8f4_eaa8_4670_a3a0_91524e59a7f6> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
+                                                                                                       skos:prefLabel "D60ParticleSize"@en ;
+                                                                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 60% of the sample's particles fall."@en .
+
+
+###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_92fc0dba_6f11_4019_a8cb_db2a5b1634f5
+<https://w3id.org/emmo/domain//electrochemistry#electrochemistry_92fc0dba_6f11_4019_a8cb_db2a5b1634f5> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
+                                                                                                       skos:prefLabel "D15ParticleSize"@en ;
+                                                                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 15% of the sample's particles fall."@en .
+
+
+###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_9d60c4ab_d9ac_4dda_af0c_c64059326916
+<https://w3id.org/emmo/domain//electrochemistry#electrochemistry_9d60c4ab_d9ac_4dda_af0c_c64059326916> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
+                                                                                                       skos:prefLabel "D45ParticleSize"@en ;
+                                                                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 45% of the sample's particles fall."@en .
+
+
+###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_b095e977_dbc2_4a9e_9930_6af0dab089f1
+<https://w3id.org/emmo/domain//electrochemistry#electrochemistry_b095e977_dbc2_4a9e_9930_6af0dab089f1> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
+                                                                                                       skos:prefLabel "D55ParticleSize"@en ;
+                                                                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 55% of the sample's particles fall."@en .
+
+
+###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_c1c1288c_97c1_4f1f_8f42_6dfd34d028fd
+<https://w3id.org/emmo/domain//electrochemistry#electrochemistry_c1c1288c_97c1_4f1f_8f42_6dfd34d028fd> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
+                                                                                                       skos:prefLabel "D35ParticleSize"@en ;
+                                                                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 35% of the sample's particles fall."@en .
+
+
+###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_c8abaf09_300a_4008_a42a_2f4a3953ca7a
+<https://w3id.org/emmo/domain//electrochemistry#electrochemistry_c8abaf09_300a_4008_a42a_2f4a3953ca7a> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
+                                                                                                       skos:prefLabel "D40ParticleSize"@en ;
+                                                                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 40% of the sample's particles fall."@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0141b5c2_9f15_46f4_82e6_92a104faa476
@@ -2118,17 +2188,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b83c6435_6edf_470e_9725_538a853e08f7
 :electrochemistry_b83c6435_6edf_470e_9725_538a853e08f7 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
-                                                       skos:prefLabel "D10ParticleSize"@en ,
-                                                                      "D15ParticleSize"@en ,
-                                                                      "D20ParticleSize"@en ,
-                                                                      "D25ParticleSize"@en ,
-                                                                      "D30ParticleSize"@en ,
-                                                                      "D35ParticleSize"@en ,
-                                                                      "D40ParticleSize"@en ,
-                                                                      "D45ParticleSize"@en ,
-                                                                      "D55ParticleSize"@en ,
-                                                                      "D5ParticleSize"@en ,
-                                                                      "D60ParticleSize"@en ;
+                                                       skos:prefLabel "D10ParticleSize"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 10% of the sample's particles fall."@en .
 
 
