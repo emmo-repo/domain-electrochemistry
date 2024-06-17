@@ -12,7 +12,7 @@
 @base <https://w3id.org/emmo/domain/electrochemistry/electrochemicalquantities> .
 
 <https://w3id.org/emmo/domain/electrochemistry/electrochemicalquantities> rdf:type owl:Ontology ;
-                                                                           owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.12.1-beta/electrochemicalquantities> ;
+                                                                           owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.13.0-beta/electrochemicalquantities> ;
                                                                            owl:imports <https://w3id.org/emmo/1.0.0-beta7/disciplines/isq> ;
                                                                            dcterms:abstract "This electrochemical quantities ontology is a domain of the Elementary Multiperspective Materials Ontology (EMMO). It is a specialized framework designed to represent and organize knowledge about electrochemical quantities. It is designed to integrate with the electrochemistry domain ontology or other ontologies from the EMMO ecosystem. The main focus of this ontology is to provide machine-readable descriptions of common electrochemical quantities, linking both to the larger descriptions of physical quantities in EMMO as well as other sources of information like the IEC, QUDT, Wikidata, etc. It should be used to support linked data generation in the electrochemistry domain."@en ;
                                                                            dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
@@ -21,7 +21,7 @@
                                                                            dcterms:creator <https://orcid.org/0000-0002-8758-6109> ,
                                                                                            <https://orcid.org/0000-0003-2954-1233> ;
                                                                            dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                                                           owl:versionInfo "0.12.1-beta" .
+                                                                           owl:versionInfo "0.13.0-beta" .
 
 #################################################################
 #    Annotation properties
@@ -61,7 +61,11 @@ emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f rdf:type owl:AnnotationProperty .
 
 ###  http://xmlns.com/foaf/0.1/Person
 foaf:Person rdf:type owl:Class ;
-skos:prefLabel "Person"@en .
+            skos:prefLabel "Person"@en .
+
+
+###  https://w3id.org/emmo#EMMO_1744d51d_0dac_4f48_8b50_fde6c7c2ab39
+emmo:EMMO_1744d51d_0dac_4f48_8b50_fde6c7c2ab39 rdfs:subClassOf <https://w3id.org/emmo/domain//electrochemistry#electrochemistry_14d93129_d94d_42ff_a6f2_e8fca36ffec4> .
 
 
 ###  https://w3id.org/emmo#EMMO_5c78b424_087b_4e31_8c91_6422f1be1e86
@@ -69,12 +73,92 @@ emmo:EMMO_5c78b424_087b_4e31_8c91_6422f1be1e86 owl:equivalentClass :electrochemi
 
 
 ###  https://w3id.org/emmo#EMMO_931a725b_926d_4f60_8955_61fe17fce98b
-emmo:EMMO_931a725b_926d_4f60_8955_61fe17fce98b rdfs:subClassOf :electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607 .
+emmo:EMMO_931a725b_926d_4f60_8955_61fe17fce98b rdfs:subClassOf :electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607 ;
+                                               skos:altLabel "MassDiffusivity"@en ;
+                                               emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q604008"@en ;
+                                               emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Mass_diffusivity"@en .
 
 
 ###  https://w3id.org/emmo#EMMO_e218c625_6a39_47a9_8d08_a2ef41c152a9
 emmo:EMMO_e218c625_6a39_47a9_8d08_a2ef41c152a9 rdfs:subClassOf :electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634 ;
                                                skos:altLabel "GravimetricEnergyDensity"@en .
+
+
+###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_0ed0362e_b7ae_482c_a7d0_2ca2eebda648
+<https://w3id.org/emmo/domain//electrochemistry#electrochemistry_0ed0362e_b7ae_482c_a7d0_2ca2eebda648> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
+                                                                                                       skos:prefLabel "D30ParticleSize"@en ;
+                                                                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 30% of the sample's particles fall."@en .
+
+
+###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_14d93129_d94d_42ff_a6f2_e8fca36ffec4
+<https://w3id.org/emmo/domain//electrochemistry#electrochemistry_14d93129_d94d_42ff_a6f2_e8fca36ffec4> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf emmo:EMMO_79751276_b2d0_4e2f_bbd4_99d412f43d55 ;
+                                                                                                       skos:prefLabel "EffectivePorousMediaQuantity"@en ;
+                                                                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a physical quantity that is adjusted to consider the effects of porous media structure"@en .
+
+
+###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_2e2d92f4_9fd5_4965_b15a_30b43c68e3e5
+<https://w3id.org/emmo/domain//electrochemistry#electrochemistry_2e2d92f4_9fd5_4965_b15a_30b43c68e3e5> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
+                                                                                                       skos:prefLabel "D5ParticleSize"@en ;
+                                                                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 5% of the sample's particles fall."@en .
+
+
+###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_62e03250_8987_497b_85d5_1399aca9a0aa
+<https://w3id.org/emmo/domain//electrochemistry#electrochemistry_62e03250_8987_497b_85d5_1399aca9a0aa> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
+                                                                                                       skos:prefLabel "D20ParticleSize"@en ;
+                                                                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 20% of the sample's particles fall."@en .
+
+
+###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_7f17f6bb_c1f9_4f4a_bfdf_d8974443d07b
+<https://w3id.org/emmo/domain//electrochemistry#electrochemistry_7f17f6bb_c1f9_4f4a_bfdf_d8974443d07b> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
+                                                                                                       skos:prefLabel "D25ParticleSize"@en ;
+                                                                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 25% of the sample's particles fall."@en .
+
+
+###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_8768c8f4_eaa8_4670_a3a0_91524e59a7f6
+<https://w3id.org/emmo/domain//electrochemistry#electrochemistry_8768c8f4_eaa8_4670_a3a0_91524e59a7f6> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
+                                                                                                       skos:prefLabel "D60ParticleSize"@en ;
+                                                                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 60% of the sample's particles fall."@en .
+
+
+###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_92fc0dba_6f11_4019_a8cb_db2a5b1634f5
+<https://w3id.org/emmo/domain//electrochemistry#electrochemistry_92fc0dba_6f11_4019_a8cb_db2a5b1634f5> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
+                                                                                                       skos:prefLabel "D15ParticleSize"@en ;
+                                                                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 15% of the sample's particles fall."@en .
+
+
+###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_9d60c4ab_d9ac_4dda_af0c_c64059326916
+<https://w3id.org/emmo/domain//electrochemistry#electrochemistry_9d60c4ab_d9ac_4dda_af0c_c64059326916> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
+                                                                                                       skos:prefLabel "D45ParticleSize"@en ;
+                                                                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 45% of the sample's particles fall."@en .
+
+
+###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_b095e977_dbc2_4a9e_9930_6af0dab089f1
+<https://w3id.org/emmo/domain//electrochemistry#electrochemistry_b095e977_dbc2_4a9e_9930_6af0dab089f1> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
+                                                                                                       skos:prefLabel "D55ParticleSize"@en ;
+                                                                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 55% of the sample's particles fall."@en .
+
+
+###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_c1c1288c_97c1_4f1f_8f42_6dfd34d028fd
+<https://w3id.org/emmo/domain//electrochemistry#electrochemistry_c1c1288c_97c1_4f1f_8f42_6dfd34d028fd> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
+                                                                                                       skos:prefLabel "D35ParticleSize"@en ;
+                                                                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 35% of the sample's particles fall."@en .
+
+
+###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_c8abaf09_300a_4008_a42a_2f4a3953ca7a
+<https://w3id.org/emmo/domain//electrochemistry#electrochemistry_c8abaf09_300a_4008_a42a_2f4a3953ca7a> rdf:type owl:Class ;
+                                                                                                       rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
+                                                                                                       skos:prefLabel "D40ParticleSize"@en ;
+                                                                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 40% of the sample's particles fall."@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0141b5c2_9f15_46f4_82e6_92a104faa476
@@ -87,13 +171,14 @@ emmo:EMMO_e218c625_6a39_47a9_8d08_a2ef41c152a9 rdfs:subClassOf :electrochemistry
                                                                         "Q discharge/mA.h"@en ;
                                                        skos:prefLabel "DischargingCapacity"@en ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-14" ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "capacity delivered during a discharge process"@en .
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electric charge which an energy storage device can deliver under specified discharging conditions"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_02d2d1d1_241c_429b_b4e7_31f2c3dc4835
 :electrochemistry_02d2d1d1_241c_429b_b4e7_31f2c3dc4835 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
-                                                       skos:prefLabel "D95ParticleSize"@en .
+                                                       skos:prefLabel "D95ParticleSize"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 95% of the sample's particles fall."@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634
@@ -236,7 +321,7 @@ emmo:EMMO_e218c625_6a39_47a9_8d08_a2ef41c152a9 rdfs:subClassOf :electrochemistry
                                                                         "CapC/mAh"@en ,
                                                                         "Q charge/mA.h"@en ;
                                                        skos:prefLabel "ChargingCapacity"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "capacity delivered during a charge process"@en .
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electric charge which an energy storage device can deliver under specified charging conditions"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_10eb778d_da60_4832_a355_4ee74baea650
@@ -289,7 +374,7 @@ emmo:EMMO_e218c625_6a39_47a9_8d08_a2ef41c152a9 rdfs:subClassOf :electrochemistry
                                                        rdfs:comment "in quantum mechanical terms, electrochemical potential is defined as the energy level of the electron orbitals in the species that have a 50 percent probability of occupancy"@en ;
                                                        skos:prefLabel "ElectrochemicalPotential"@en ;
                                                        emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q62525" ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the electrochemical potential is the chemical potential of an ion in the presence of an electric potential"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the chemical potential of an ion in the presence of an electric potential"@en ;
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Electrochemical_potential"@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://goldbook.iupac.org/terms/view/E01945" .
 
@@ -303,7 +388,7 @@ emmo:EMMO_e218c625_6a39_47a9_8d08_a2ef41c152a9 rdfs:subClassOf :electrochemistry
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_1422cde1_929e_46b6_b0dc_1010eebc5dfd ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-   owl:annotatedTarget "the electrochemical potential is the chemical potential of an ion in the presence of an electric potential"@en ;
+   owl:annotatedTarget "the chemical potential of an ion in the presence of an electric potential"@en ;
    dcterms:source "Atkins and DePaula, Aktins' Physical Chemistry, 8th ed., p.952"
  ] .
 
@@ -399,6 +484,13 @@ and t* through mathematical models, provided that the long-time potential- deter
    owl:annotatedTarget "Duration between the time when an ion-selective electrode and an external reference electrode (the two completing the ion-selective electrode cell) are brought into contact with a sample solution (or the time at which the activity of the ion of interest in solution is changed) and the first time at which the slope of the cell potential vs. time plot (ΔE/Δt) becomes equal to a limiting value selected on the basis of the experimental conditions and/or requirements concerning accuracy."@en ;
    dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1be95f7c_7381_4d60_a4fb_25b3db63be97
+:electrochemistry_1be95f7c_7381_4d60_a4fb_25b3db63be97 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
+                                                       skos:prefLabel "D65ParticleSize"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 10% of the sample's particles fall."@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1cd1d777_e67b_47eb_81f1_edac35d9f2c6
@@ -736,7 +828,9 @@ and t* through mathematical models, provided that the long-time potential- deter
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607
 :electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064 ;
-                                                       skos:prefLabel "Diffusivity"@en .
+                                                       rdfs:comment "not to be confused with MassDiffusivity (i.e., DiffusionCoefficient)"@en ;
+                                                       skos:prefLabel "Diffusivity"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a measure of the rate at which particles or heat or fluids spread"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_37c38b7e_9ded_481a_85fd_a467f1ee2b9f
@@ -825,8 +919,10 @@ and t* through mathematical models, provided that the long-time potential- deter
 :electrochemistry_3cfdfc10_a5cb_4e3e_b1a1_281010d1465c rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ,
                                                                        :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
+                                                       rdfs:comment "in particle size distribution measurements, the mass-median-diameter, considered to be the average particle size by mass"@en ;
+                                                       skos:altLabel "MassMedianDiameter"@en ;
                                                        skos:prefLabel "D50ParticleSize"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "in particle size distribution measurements, the mass-median-diameter, considered to be the average particle size by mass"@en .
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 50% of the sample's particles fall."@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3e54f9e3_a31d_4821_9bfb_ef953a42c35b
@@ -1471,19 +1567,12 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                                         "Capacity/mAh"@en ,
                                                                         "mAmp-hr"@en ;
                                                        skos:prefLabel "Capacity"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electric charge which a cell or battery can deliver under specified conditions"@en .
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electric charge which an energy storage device can deliver under specified conditions"@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_791c1915_a791_4450_acd8_7f94764743b5 ;
    owl:annotatedProperty rdfs:comment ;
    owl:annotatedTarget "the SI unit for electric charge is the coulomb (1 C = 1 A·s) but in practice, capacity is usually expressed in ampere hours (A·h)"@en ;
-   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource :electrochemistry_791c1915_a791_4450_acd8_7f94764743b5 ;
-   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-   owl:annotatedTarget "electric charge which a cell or battery can deliver under specified conditions"@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
 
@@ -1681,7 +1770,8 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8e943e12_ecc0_4093_899e_7226be6be7f2
 :electrochemistry_8e943e12_ecc0_4093_899e_7226be6be7f2 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
-                                                       skos:prefLabel "D90ParticleSize"@en .
+                                                       skos:prefLabel "D90ParticleSize"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 90% of the sample's particles fall."@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8f3ab19f_ce22_424e_a9bf_d5cedb815374
@@ -1720,6 +1810,13 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The maximum allowed value for stoichiometric coefficient for an entity in a chemical substance"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_97bc06e6_6141_47ec_9e81_fd9e6a5b07c7
+:electrochemistry_97bc06e6_6141_47ec_9e81_fd9e6a5b07c7 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
+                                                       skos:prefLabel "D80ParticleSize"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 10% of the sample's particles fall."@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_98b6e9d7_d5df_46a5_87dd_79642b8b2e4b
 :electrochemistry_98b6e9d7_d5df_46a5_87dd_79642b8b2e4b rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_2a2f59b7_aa16_40aa_9c8b_0de8a2720456 ;
@@ -1741,12 +1838,12 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                        rdfs:subClassOf :electrochemistry_791c1915_a791_4450_acd8_7f94764743b5 ;
                                                        skos:prefLabel "RatedCapacity"@en ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-15"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "capacity value of a battery [or electrochemical device] determined under specified conditions and declared by the manufacturer"@en .
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "capacity value of a battery [or electrode or electrochemical device] determined under specified conditions and declared by the manufacturer"@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26 ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-   owl:annotatedTarget "capacity value of a battery [or electrochemical device] determined under specified conditions and declared by the manufacturer"@en ;
+   owl:annotatedTarget "capacity value of a battery [or electrode or electrochemical device] determined under specified conditions and declared by the manufacturer"@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
 
@@ -1805,6 +1902,13 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
 :electrochemistry_9c9b80a4_a00b_4b91_8e17_3a7831f2bf2f rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_affe07e4_e9bc_4852_86c6_69e26182a17f ;
                                                        skos:prefLabel "InititalThermodynamicTemperature"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9cf8e627_a3d2_4f86_9bdc_e0e77996acde
+:electrochemistry_9cf8e627_a3d2_4f86_9bdc_e0e77996acde rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
+                                                       skos:prefLabel "D75ParticleSize"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 10% of the sample's particles fall."@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9d57962c_e150_4e64_962b_8fd6a92c9234
@@ -2084,7 +2188,8 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b83c6435_6edf_470e_9725_538a853e08f7
 :electrochemistry_b83c6435_6edf_470e_9725_538a853e08f7 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
-                                                       skos:prefLabel "D10ParticleSize"@en .
+                                                       skos:prefLabel "D10ParticleSize"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 10% of the sample's particles fall."@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b92e382f_5109_4f60_ab5e_c89d340419a9
@@ -2372,16 +2477,16 @@ In either case, the magnitude of the catalytic current depends on the applied po
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_d91940f0_c8b6_4505_9b68_6bf6cfc5c544 ;
-   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-   owl:annotatedTarget "potential of an electrode when no electric current flows through the cell and all local charge transfer equilibria across phase boundaries that are represented in the cell diagram (except at possible electrolyte-electrolyte junctions) and local chemical equilibria are established"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "electrode potential when the electrode reaction is in equilibrium."@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_d91940f0_c8b6_4505_9b68_6bf6cfc5c544 ;
-   owl:annotatedProperty rdfs:comment ;
-   owl:annotatedTarget "electrode potential when the electrode reaction is in equilibrium."@en ;
-   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "potential of an electrode when no electric current flows through the cell and all local charge transfer equilibria across phase boundaries that are represented in the cell diagram (except at possible electrolyte-electrolyte junctions) and local chemical equilibria are established"@en ;
+   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -2389,6 +2494,13 @@ In either case, the magnitude of the catalytic current depends on the applied po
 :electrochemistry_db40df7e_1aa5_49a7_85cb_2aa2c1c70489 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_affe07e4_e9bc_4852_86c6_69e26182a17f ;
                                                        skos:prefLabel "ReferenceThermodynamicTemperature"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e03f6800_92c5_4218_bb6d_1c919abaa063
+:electrochemistry_e03f6800_92c5_4218_bb6d_1c919abaa063 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
+                                                       skos:prefLabel "D70ParticleSize"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 10% of the sample's particles fall."@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee
@@ -2678,6 +2790,13 @@ In either case, the magnitude of the catalytic current depends on the applied po
    owl:annotatedTarget "the interfacial area, determined on the assumption that the interface is truly flat (2-dimensional) and calculated using the geometric data of the involved surfaces"@en ;
    dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fbaa2d5e_b8f7_4a2f_9497_41c3698eb0ff
+:electrochemistry_fbaa2d5e_b8f7_4a2f_9497_41c3698eb0ff rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
+                                                       skos:prefLabel "D85ParticleSize"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 10% of the sample's particles fall."@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ff7797ed_9ef7_40d0_872b_2c215cd54578
