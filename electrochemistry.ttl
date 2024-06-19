@@ -14,10 +14,10 @@
 @base <https://w3id.org/emmo/domain/electrochemistry> .
 
 <https://w3id.org/emmo/domain/electrochemistry> rdf:type owl:Ontology ;
-                                                 owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.13.0-beta/electrochemistry> ;
+                                                 owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.14.0-beta/electrochemistry> ;
                                                  owl:imports <https://w3id.org/emmo/domain/characterisation-methodology/chameo> ,
-                                                             <https://w3id.org/emmo/domain/chemicalsubstance/0.4.0-beta/chemicalsubstance> ,
-                                                             <https://w3id.org/emmo/domain/electrochemistry/0.13.0-beta/electrochemicalquantities> ;
+                                                             <https://w3id.org/emmo/domain/chemicalsubstance/0.5.0-beta/chemicalsubstance> ,
+                                                             <https://w3id.org/emmo/domain/electrochemistry/0.14.0-beta/electrochemicalquantities> ;
                                                  dcterms:abstract "The Electrochemistry Domain Ontology, a specialized domain within the Elementary Multiperspective Materials Ontology (EMMO), encompasses essential terms and relationships for electrochemical systems, materials, methods, and data. Its primary objective is to enable the creation of linked and FAIR (Findable, Accessible, Interoperable, and Reusable) data, thereby fostering advancements in research and innovation within the realm of electrochemistry. This ontology serves as a foundational resource for harmonizing electrochemical knowledge representation, enhancing data interoperability, and accelerating progress in electrochemical research and development."@en ;
                                                  dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
                                                                      <https://orcid.org/0000-0002-1560-809X> ,
@@ -33,7 +33,7 @@ email: simon.clark@sintef.no
 Jesper Friis
 SINTEF Industry
 email: jesper.friis@sintef.no"""@en ;
-                                                 owl:versionInfo "0.13.0-beta" .
+                                                 owl:versionInfo "0.14.0-beta" .
 
 #################################################################
 #    Annotation properties
@@ -81,6 +81,14 @@ schema:name rdf:type owl:AnnotationProperty .
                                                        skos:prefLabel "hasAnolyte"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3b8dd629_7777_4908_957d_d2304031e8b9
+:electrochemistry_3b8dd629_7777_4908_957d_d2304031e8b9 rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf emmo:EMMO_dba27ca1_33c9_4443_a912_1519ce4c39ec ;
+                                                       rdfs:domain emmo:EMMO_2031516a_2be7_48e8_9af7_7e1270e308fe ;
+                                                       rdfs:range chemsub:substance_0f2f65a7_5cc4_4c86_a4d0_676771c646f1 ;
+                                                       skos:prefLabel "hasSolvent"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3bd08946_4e81_455d_9fca_dc7a5ead9315
 :electrochemistry_3bd08946_4e81_455d_9fca_dc7a5ead9315 rdf:type owl:ObjectProperty ;
                                                        rdfs:subPropertyOf emmo:EMMO_dba27ca1_33c9_4443_a912_1519ce4c39ec ;
@@ -102,6 +110,14 @@ schema:name rdf:type owl:AnnotationProperty .
                                                        rdfs:subPropertyOf emmo:EMMO_dba27ca1_33c9_4443_a912_1519ce4c39ec ;
                                                        rdfs:range :electrochemistry_09a7f560_9ddf_4c32_b067_b213eca5b0a1 ;
                                                        skos:prefLabel "hasCoating"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_535a1157_896f_4e17_8c5d_a5981303e3cb
+:electrochemistry_535a1157_896f_4e17_8c5d_a5981303e3cb rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf emmo:EMMO_dba27ca1_33c9_4443_a912_1519ce4c39ec ;
+                                                       rdfs:domain emmo:EMMO_2031516a_2be7_48e8_9af7_7e1270e308fe ;
+                                                       rdfs:range chemsub:substance_3899a9c9_9b34_443e_8ce6_0257589bb38a ;
+                                                       skos:prefLabel "hasSolute"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_578c41e9_ee01_4840_9c8c_04ab6e4e6241
