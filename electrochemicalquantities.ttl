@@ -12,7 +12,7 @@
 @base <https://w3id.org/emmo/domain/electrochemistry/electrochemicalquantities> .
 
 <https://w3id.org/emmo/domain/electrochemistry/electrochemicalquantities> rdf:type owl:Ontology ;
-                                                                           owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.14.0-beta/electrochemicalquantities> ;
+                                                                           owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.15.0-beta/electrochemicalquantities> ;
                                                                            owl:imports <https://w3id.org/emmo/1.0.0-beta7/disciplines/isq> ;
                                                                            dcterms:abstract "This electrochemical quantities ontology is a domain of the Elementary Multiperspective Materials Ontology (EMMO). It is a specialized framework designed to represent and organize knowledge about electrochemical quantities. It is designed to integrate with the electrochemistry domain ontology or other ontologies from the EMMO ecosystem. The main focus of this ontology is to provide machine-readable descriptions of common electrochemical quantities, linking both to the larger descriptions of physical quantities in EMMO as well as other sources of information like the IEC, QUDT, Wikidata, etc. It should be used to support linked data generation in the electrochemistry domain."@en ;
                                                                            dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
@@ -21,7 +21,7 @@
                                                                            dcterms:creator <https://orcid.org/0000-0002-8758-6109> ,
                                                                                            <https://orcid.org/0000-0003-2954-1233> ;
                                                                            dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                                                           owl:versionInfo "0.14.0-beta" .
+                                                                           owl:versionInfo "0.15.0-beta" .
 
 #################################################################
 #    Annotation properties
@@ -486,6 +486,14 @@ and t* through mathematical models, provided that the long-time potential- deter
  ] .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1b2a7137_64d4_483a_8437_dcb3bedcb6da
+:electrochemistry_1b2a7137_64d4_483a_8437_dcb3bedcb6da rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_74de2c33_84fc_4c2f_afe1_56d169149114 ;
+                                                       skos:altLabel "MaximumPulseChargeCurrent"@en ;
+                                                       skos:prefLabel "MaximumPulseCurrentCharging"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the maximum current approved for pulse charge of an electrochemical device"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1be95f7c_7381_4d60_a4fb_25b3db63be97
 :electrochemistry_1be95f7c_7381_4d60_a4fb_25b3db63be97 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
@@ -873,6 +881,14 @@ and t* through mathematical models, provided that the long-time potential- deter
 :electrochemistry_39a44af0_0e1a_4859_b550_bdabad64386e rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_affe07e4_e9bc_4852_86c6_69e26182a17f ;
                                                        skos:prefLabel "AmbientThermodynamicTemperature"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_39d8a6ee_cd55_4855_8b5b_d42bef95ac78
+:electrochemistry_39d8a6ee_cd55_4855_8b5b_d42bef95ac78 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_74de2c33_84fc_4c2f_afe1_56d169149114 ;
+                                                       skos:altLabel "MaximumContinuousChargeCurrent"@en ;
+                                                       skos:prefLabel "MaximumContinuousCurrentCharging"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the maximum current approved for continuous charge for a given electrochemical device"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3b938708_e7e4_4ac0_a959_9c04306302e7

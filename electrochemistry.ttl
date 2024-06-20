@@ -14,10 +14,10 @@
 @base <https://w3id.org/emmo/domain/electrochemistry> .
 
 <https://w3id.org/emmo/domain/electrochemistry> rdf:type owl:Ontology ;
-                                                 owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.14.0-beta/electrochemistry> ;
+                                                 owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.15.0-beta/electrochemistry> ;
                                                  owl:imports <https://w3id.org/emmo/domain/characterisation-methodology/chameo> ,
                                                              <https://w3id.org/emmo/domain/chemicalsubstance/0.5.0-beta/chemicalsubstance> ,
-                                                             <https://w3id.org/emmo/domain/electrochemistry/0.14.0-beta/electrochemicalquantities> ;
+                                                             <https://w3id.org/emmo/domain/electrochemistry/0.15.0-beta/electrochemicalquantities> ;
                                                  dcterms:abstract "The Electrochemistry Domain Ontology, a specialized domain within the Elementary Multiperspective Materials Ontology (EMMO), encompasses essential terms and relationships for electrochemical systems, materials, methods, and data. Its primary objective is to enable the creation of linked and FAIR (Findable, Accessible, Interoperable, and Reusable) data, thereby fostering advancements in research and innovation within the realm of electrochemistry. This ontology serves as a foundational resource for harmonizing electrochemical knowledge representation, enhancing data interoperability, and accelerating progress in electrochemical research and development."@en ;
                                                  dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
                                                                      <https://orcid.org/0000-0002-1560-809X> ,
@@ -33,7 +33,7 @@ email: simon.clark@sintef.no
 Jesper Friis
 SINTEF Industry
 email: jesper.friis@sintef.no"""@en ;
-                                                 owl:versionInfo "0.14.0-beta" .
+                                                 owl:versionInfo "0.15.0-beta" .
 
 #################################################################
 #    Annotation properties
