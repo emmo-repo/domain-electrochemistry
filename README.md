@@ -1,4 +1,5 @@
 [![DOI](https://zenodo.org/badge/570454941.svg)](https://zenodo.org/badge/latestdoi/570454941)
+![docs](https://github.com/emmo-repo/domain-electrochemistry/actions/workflows/doc.yml/badge.svg)
 
 <!-- markdownlint-disable MD033 -->
 
