@@ -1,0 +1,30 @@
+name: Ontology CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  reasoning:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Java
+      uses: actions/setup-java@v1
+      with:
+        java-version: '11'
+
+    - name: Download HermiT Reasoner
+      run: |
+        wget -O hermit-reasoner.jar http://www.hermit-reasoner.com/1.4.3.456/hermit-reasoner-1.4.3.456.jar
+
+    - name: Run HermiT Reasoner
+      run: |
+        java -cp hermit-reasoner.jar org.semanticweb.HermiT.cli.CommandLine --input-format=turtle --input electrochemistry.ttl --ontology electrochemistry.ttl
+      env:
+        JAVA_HOME: /usr/lib/jvm/java-11-openjdk
