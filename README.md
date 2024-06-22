@@ -20,23 +20,63 @@ This ontology assigns persistent machine-readable identifiers to concepts from t
 
 The ontology builds on standardized nomenclature for electrochemistry, relying on recognized authorities including [IUPAC](https://iupac.org/what-we-do/nomenclature/) and the [IEC](https://www.electropedia.org/). IUPAC is the universally-recognized authority on chemical nomenclature and terminology, and IEC is the the world's leading organization that prepares and publishes International Standards for all electrical, electronic and related technologies. This consistency in naming conventions enhances collaboration and data sharing.
 
-## Key Features
-
-- Seamless integration with the EMMO ontology.
-- Provides persistent machine-readable identifiers for electorchemical systems, devices, methods, datasets, and quantities.
-- Standardized nomenclature for electrochemical entities.
-- Facilitates data exchange and interoperability within the EMMO ecosystem.
-
 ## Usage
 
-Researchers, domain experts, and developers within the electrochemical communities can utilize the ontology for various purposes, including:
+This domain ontology can be used to generate Linked Data in any RDF-supported format. Below is an example desecribing a zinc foil electrode with some creator information and properties. Please see the documentation for [more examples](https://emmo-repo.github.io/domain-electrochemistry/pages/examples.html). 
 
-- Incorporating consistent and standardized information into their modeling and simulation activities.
-- Enhancing data interoperability between modeling tools, databases, and platforms.
-- Supporting research projects that require precise and standardized electrochemical knowledge representation.
-- Building applications, databases, or knowledge graphs that leverage EMMO and require electrochemical information.
-- Generating linked data in the semantic web.
-- Complying with FAIR data mandates (FAIR Guidelines available [here](FAIR.md))
+```json
+{
+    "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
+    "@type": "Electrode",
+    "schema:manufacturer": {
+       "@type": "schema:ResearchOrganization",
+       "@id": "https://www.wikidata.org/wiki/Q3041255",
+       "schema:name": "SINTEF"
+    },
+    "schema:creator": {
+       "@type": "schema:Person",
+       "@id": "https://orcid.org/0000-0002-8758-6109",
+       "schema:name": "Simon Clark"
+    },
+    "hasActiveMaterial": {
+       "@type": ["Zinc", "Foil"]
+    },
+    "hasProperty": [
+       {
+             "@type": ["SpecificCapacity", "MeasuredProperty"],
+             "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 800
+             },
+             "hasMeasurementUnit": "emmo:MilliAmpereHourPerGram"
+       },
+       {
+             "@type": ["Thickness", "ConventionalProperty"],
+             "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 250
+             },
+             "hasMeasurementUnit": "emmo:MicroMetre"
+       },
+       {
+             "@type": ["Diameter", "MeasuredProperty"],
+             "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 2
+             },
+             "hasMeasurementUnit": "emmo:CentiMetre"
+       },
+       {
+             "@type": ["Mass", "MeasuredProperty"],
+             "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 2.5
+             },
+             "hasMeasurementUnit": "emmo:Gram"
+       }
+    ]
+}
+```
 
 ## Structure and Integration with EMMO
 
@@ -95,7 +135,7 @@ We welcome contributions from the community to enhance and expand the ontology. 
 
 ### Acknowledgements
 
-<img src="docs/assets/images/flag_of_europe.png" alt="EU-Flag" width="100">
+<img src="docs/assets/img/Flag_of_Europe.png" alt="EU-Flag" width="100">
 
 This project has received support from European Union research and innovation programs, under grant agreement numbers:
 
