@@ -1,4 +1,4 @@
-name: Ontology CI
+name: reasoning
 
 on:
   push:
@@ -14,17 +14,17 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Set up Java
-      uses: actions/setup-java@v1
+    - name: Set up Python
+      uses: actions/setup-python@v2
       with:
-        java-version: '11'
+        python-version: '3.x'
 
-    - name: Download HermiT Reasoner
+    - name: Install dependencies
       run: |
-        wget -O hermit-reasoner.jar http://www.hermit-reasoner.com/1.4.3.456/hermit-reasoner-1.4.3.456.jar
+        python -m pip install --upgrade pip
+        pip install rdflib owlrl
 
-    - name: Run HermiT Reasoner
+    - name: Run reasoning script
       run: |
-        java -cp hermit-reasoner.jar org.semanticweb.HermiT.cli.CommandLine --input-format=turtle --input electrochemistry.ttl --ontology electrochemistry.ttl
-      env:
-        JAVA_HOME: /usr/lib/jvm/java-11-openjdk
+        cd docs/scripts
+        python check_reasoner.py
