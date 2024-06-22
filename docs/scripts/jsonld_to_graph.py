@@ -2,6 +2,8 @@ import json
 import networkx as nx
 from pyvis.network import Network
 import requests
+import matplotlib.pyplot as plt
+
 
 def fetch_context(context_url):
     try:
@@ -59,6 +61,14 @@ def visualize_graph_from_jsonld(jsonld):
         net.add_edge(src, dst, label=data['label'], font={'align': 'top'}, smooth={'type': 'horizontal'})
 
     net.write_html("network_graph.html")
+    
+    # Create the static graph using matplotlib
+    plt.figure(figsize=(12, 12))
+    pos = nx.spring_layout(G)
+    nx.draw(G, pos, with_labels=True, node_size=2000, node_color='lightblue', font_size=10, font_weight='bold', edge_color='gray')
+    edge_labels = nx.get_edge_attributes(G, 'label')
+    nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels)
+    plt.savefig("network_graph.png")
 
 
 # Example JSON-LD data

@@ -1,0 +1,51 @@
+{
+    "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
+    "@type": "Electrode",
+    "schema:manufacturer": {
+       "@type": "schema:ResearchOrganization",
+       "@id": "https://www.wikidata.org/wiki/Q3041255",
+       "schema:name": "SINTEF"
+    },
+    "schema:creator": {
+       "@type": "schema:Person",
+       "@id": "https://orcid.org/0000-0002-8758-6109",
+       "schema:name": "Simon Clark"
+    },
+    "hasActiveMaterial": {
+       "@type": ["Zinc", "Foil"]
+    },
+    "hasProperty": [
+       {
+             "@type": ["SpecificCapacity", "MeasuredProperty"],
+             "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 800
+             },
+             "hasMeasurementUnit": "emmo:MilliAmpereHourPerGram"
+       },
+       {
+             "@type": ["Thickness", "ConventionalProperty"],
+             "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 250
+             },
+             "hasMeasurementUnit": "emmo:MicroMetre"
+       },
+       {
+             "@type": ["Diameter", "MeasuredProperty"],
+             "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 2
+             },
+             "hasMeasurementUnit": "emmo:CentiMetre"
+       },
+       {
+             "@type": ["Mass", "MeasuredProperty"],
+             "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 2.5
+             },
+             "hasMeasurementUnit": "emmo:Gram"
+       }
+    ]
+ }

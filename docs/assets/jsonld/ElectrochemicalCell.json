@@ -1,0 +1,13 @@
+{
+    "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
+    "@type": "ElectrochemicalCell",
+    "hasNegativeElectrode": {
+        "@type": "Electrode"
+    },
+    "hasPositiveElectrode": {
+        "@type": "Electrode"
+    },
+    "hasElectrolyte": {
+        "@type": "Electrolyte"
+    }
+}
