@@ -78,6 +78,12 @@ This domain ontology can be used to generate Linked Data in any RDF-supported fo
 }
 ```
 
+# Network Graph Visualization
+
+Here is an interactive network graph:
+
+<iframe src="docs/scripts/network_graph.html" width="100%" height="500px" style="border:none;"></iframe>
+
 ## Structure and Integration with EMMO
 
 The Electrochemistry Domain Ontology is an official domain on the EMMO. The asserted source consists of two files:
