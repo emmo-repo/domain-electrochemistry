@@ -1,4 +1,4 @@
-name: reasoning
+name: reasoner
 
 on:
   push:
