@@ -129,7 +129,8 @@ This domain ontology supports the creation of Linked Data in any RDF-supported f
 
 This project has received support from European Union research and innovation programs, under grant agreement numbers:
 
-* 957189 - [BIG-MAP](http://www.big-map.eu/) 
+* [957189 - BIG-MAP](http://www.big-map.eu/)
+* [101104022 - Battery2030+](https://battery2030.eu/)
 
 ## License
 
