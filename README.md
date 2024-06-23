@@ -15,7 +15,7 @@ Reference documentation is available [here](https://emmo-repo.github.io/domain-e
 
 # Quick Start
 
-Here is some information to help you get started working with the ontology in python and creating you own instances of Linked Data. For more information, please see the[Getting Started](https://emmo-repo.github.io/domain-electrochemistry/pages/getstarted.html) and [Examples](https://emmo-repo.github.io/domain-electrochemistry/pages/examples.html) section of the documentation. 
+Here is some information to help you get started working with the ontology in python and creating you own instances of Linked Data. For more information, please see the [Getting Started](https://emmo-repo.github.io/domain-electrochemistry/pages/getstarted.html) and [Examples](https://emmo-repo.github.io/domain-electrochemistry/pages/examples.html) section of the documentation. 
 
 ## Reference IRIs
 
@@ -133,7 +133,7 @@ This project has received support from European Union research and innovation pr
 
 ## License
 
-The Battery Interface Domain Ontology is released under the [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode) license (CC BY 4.0).
+The Electrochemistry Domain Ontology is released under the [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode) license (CC BY 4.0).
 
 [1]: https://github.com/emmo-repo/EMMO
 [2]: https://www.big-map.eu
