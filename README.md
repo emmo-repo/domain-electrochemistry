@@ -3,28 +3,54 @@
 ![docs](https://github.com/emmo-repo/domain-electrochemistry/actions/workflows/doc.yml/badge.svg)
 [![DOI](https://zenodo.org/badge/570454941.svg)](https://zenodo.org/badge/latestdoi/570454941)
 
-
 <!-- markdownlint-disable MD033 -->
 # Electrochemistry Domain Ontology
 
 <img src="docs/assets/img/fig/svg/domain-electrochemistry-logo.svg" alt="domain-electrochemistry-logo" width="100%">
 
 <!-- [![CI tests](https://github.com/emmo-repo/domain-electrochemistry/workflows/CI%20tests/badge.svg)](https://github.com/emmo-repo/domain-electrochemistry/actions/) -->
-The Electrochemistry Domain Ontology is a specialized domain within the Elementary Multiperspective Materials Ontology [(EMMO)][1], that encompasses essential terms and relationships for electrochemical systems, materials, methods, and data. Its primary objective is to enable the creation of linked and FAIR (Findable, Accessible, Interoperable, and Reusable) data, thereby fostering advancements in research and innovation within the realm of electrochemistry. This ontology serves as a foundational resource for harmonizing electrochemical knowledge representation, enhancing data interoperability, and accelerating progress in electrochemical research and development.
+The Electrochemistry Domain Ontology is a domain of the Elementary Multiperspective Materials Ontology [(EMMO)][1], for describing electrochemical systems, materials, methods, and data. Its primary objective is to support the creation of [FAIR](https://www.go-fair.org/fair-principles/), [Linked Data](https://en.wikipedia.org/wiki/Linked_data) within the field of electrochemistry. This ontology serves as a foundational resource for harmonizing electrochemical knowledge representation, enhancing data interoperability, and accelerating progress in electrochemical research and development.
 
-A reference documentation is available in [html](https://emmo-repo.github.io/domain-electrochemistry/index.html) and [pdf](https://emmo-repo.github.io/domain-electrochemistry/electrochemistry.pdf) formats.
+Reference documentation is available [here](https://emmo-repo.github.io/domain-electrochemistry/index.html).
 
-### Persistent Identifiers
+# Quick Start
 
-This ontology assigns persistent machine-readable identifiers to concepts from the electrochemistry domain. These identifiers facilitate data exchange and interoperability among various tools and systems. It includes annotations to other sources of information including [DBPedia](https://www.dbpedia.org/) and [Wikidata](https://www.wikidata.org/). 
+Here is some information to help you get started working with the ontology in python and creating you own instances of Linked Data. For more information, please see the Getting Started and Examples section of the documentation. 
 
-### Standardized Nomenclature
+## Python
+There are two common ways to work with the ontology in python: loading the ontology as a graph using [rdflib](https://rdflib.readthedocs.io/en/stable/) or exploring the content of the ontology using [EMMOntoPy](https://github.com/emmo-repo/EMMOntoPy). Examples of both are provided below.
 
-The ontology builds on standardized nomenclature for electrochemistry, relying on recognized authorities including [IUPAC](https://iupac.org/what-we-do/nomenclature/) and the [IEC](https://www.electropedia.org/). IUPAC is the universally-recognized authority on chemical nomenclature and terminology, and IEC is the the world's leading organization that prepares and publishes International Standards for all electrical, electronic and related technologies. This consistency in naming conventions enhances collaboration and data sharing.
+### rdflib
+In [rdflib](https://rdflib.readthedocs.io/en/stable/), you can import the ontology as a graph, e.g. to run SPARQL queries:
+
+```python
+from rdflib import Graph
+
+# Define the IRI of the ontology
+echo = "https://w3id.org/emmo/domain/electrochemistry"
+
+# Create an empty graph
+g = Graph()
+
+# Load the ontology from the IRI
+g.parse(echo, format="ttl")
+
+# Print the number of triples in the graph
+print(f"Graph has {len(g)} triples.")
+```
+### EMMOntoPy
+In [EMMOntoPy](https://github.com/emmo-repo/EMMOntoPy), you can choose to import the ontology directly from the web:
+
+```python
+from ontopy import get_ontology
+
+# Loading from web
+echo = get_ontology('https://w3id.org/emmo/domain/electrochemistry').load()
+```
 
 ## Usage
 
-This domain ontology can be used to generate Linked Data in any RDF-supported format. Below is an example desecribing a zinc foil electrode with some creator information and properties. Please see the documentation for [more examples](https://emmo-repo.github.io/domain-electrochemistry/pages/examples.html). 
+This domain ontology supports the creation of Linked Data in any RDF-supported format. Below is an example using [JSON-LD](https://json-ld.org/) to desecribe a zinc foil electrode with some creator information and properties. Please see the documentation for [more examples](https://emmo-repo.github.io/domain-electrochemistry/pages/examples.html). 
 
 ```json
 {
@@ -80,12 +106,6 @@ This domain ontology can be used to generate Linked Data in any RDF-supported fo
 }
 ```
 
-# Network Graph Visualization
-
-Here is an interactive network graph:
-
-<iframe src="docs/scripts/network_graph.html" width="100%" height="500px" style="border:none;"></iframe>
-
 ## Structure and Integration with EMMO
 
 The Electrochemistry Domain Ontology is an official domain on the EMMO. The asserted source consists of two files:
@@ -102,44 +122,6 @@ The import structure is summarized in the following table:
 | chemical-substance  | 0.2.0-alpha       |
 
 For simplicity, we complie the source files and other imports into a [pre-inferred ontology](inferred_version/electrochemistry-inferred.ttl). This is the result of running the asserted source files through a semantic reasoner and includes both asserted and inferred properties in a clear graph. 
-
-## Getting Started
-
-### Prerequisites
-
-Before you begin, we recommend that you install the following tools. They are not all required, but greatly simplify the process of working with ontologies:
-
-- [Protégé](https://protege.stanford.edu/) (a graphical ontology editor)
-  - Installation instructions are available [here](https://protege.stanford.edu/software.php#desktop-protege).
-
-- [EMMOntoPy](https://github.com/emmo-repo/EMMOntoPy) (python package for working with EMMO ontologies)
-  - Installation instructions are available [here](https://github.com/emmo-repo/EMMOntoPy#installation).
-
-- [RDFLib](https://rdflib.readthedocs.io/en/stable/) (optional, python package for working with RDF graphs)
-  - Installation instructions are available [here](https://rdflib.readthedocs.io/en/stable/gettingstarted.html).
-
-- [VS Studio Code](https://code.visualstudio.com/) (optional, a code editor with extensions for RDF formats like TTL and JSON-LD)
-  - Installation instructions are available [here](https://code.visualstudio.com/download).
-
-### Quick Start
-
-To quickly explore and make use of the ontology, first download the pre-inferred version [pre-inferred ontology](inferred_version/electrochemistry-inferred.ttl). You can then simply open the file in Protégé and explore its content or load the ontology into python using EMMOntoPy.
-
-In [EMMOntoPy](https://github.com/emmo-repo/EMMOntoPy), you can choose to import the ontology from your local downloaded copy or directly from the web. Commands for both options are given below:
-
-```python
-from ontopy import get_ontology
-
-# Loading from local repository
-electrochemistry = get_ontology('/path/to/domain-electrochemistry/electrochemistry-inferred.ttl').load(url_from_catalog=True)
-
-# Loading from web
-electrochemistry = get_ontology('https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/master/inferred_version/electrochemistry-inferred.ttl').load()
-```
-
-## Contributing
-
-We welcome contributions from the community to enhance and expand the ontology. If you have suggestions, improvements, or additional chemical substance information to contribute, please refer to our [Contribution Guidelines](CONTRIBUTING.md).
 
 ### Acknowledgements
 
