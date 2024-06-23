@@ -9,13 +9,13 @@
 <img src="docs/assets/img/fig/svg/domain-electrochemistry-logo.svg" alt="domain-electrochemistry-logo" width="100%">
 
 <!-- [![CI tests](https://github.com/emmo-repo/domain-electrochemistry/workflows/CI%20tests/badge.svg)](https://github.com/emmo-repo/domain-electrochemistry/actions/) -->
-The Electrochemistry Domain Ontology is a domain of the Elementary Multiperspective Materials Ontology [(EMMO)][1], for describing electrochemical systems, materials, methods, and data. Its primary objective is to support the creation of [FAIR](https://www.go-fair.org/fair-principles/), [Linked Data](https://en.wikipedia.org/wiki/Linked_data) within the field of electrochemistry. This ontology serves as a foundational resource for harmonizing electrochemical knowledge representation, enhancing data interoperability, and accelerating progress in electrochemical research and development.
+The Electrochemistry Domain Ontology is a domain of the [Elementary Multiperspective Materials Ontology (EMMO)][1], for describing electrochemical systems, materials, methods, and data. Its primary objective is to support the creation of [FAIR](https://www.go-fair.org/fair-principles/), [Linked Data](https://en.wikipedia.org/wiki/Linked_data) within the field of electrochemistry. This ontology serves as a foundational resource for harmonizing electrochemical knowledge representation, enhancing data interoperability, and accelerating progress in electrochemical research and development.
 
 Reference documentation is available [here](https://emmo-repo.github.io/domain-electrochemistry/index.html).
 
 # Quick Start
 
-Here is some information to help you get started working with the ontology in python and creating you own instances of Linked Data. For more information, please see the Getting Started and Examples section of the documentation. 
+Here is some information to help you get started working with the ontology in python and creating you own instances of Linked Data. For more information, please see the[Getting Started](https://emmo-repo.github.io/domain-electrochemistry/pages/getstarted.html) and [Examples](https://emmo-repo.github.io/domain-electrochemistry/pages/examples.html) section of the documentation. 
 
 ## Reference IRIs
 
@@ -122,23 +122,6 @@ This domain ontology supports the creation of Linked Data in any RDF-supported f
     ]
 }
 ```
-
-## Structure and Integration with EMMO
-
-The Electrochemistry Domain Ontology is an official domain on the EMMO. The asserted source consists of two files:
-- `electrochemistry.ttl`: describes terms and object properties for the electrochemistry domain.
-- `electrochemicalquantities.ttl`: describes the physical quantities related to the electrochemistry domain. It is encapsulated to allow it to be imported by other EMMO domains without needing to import the entire ontology.
-
-The electrochemistry domain also imports other EMMO domains:
-- [Chemical Substance Domain Ontology](https://github.com/emmo-repo/domain-chemical-substance): provides material annotations for electrochemical (meta)data.
-
-The import structure is summarized in the following table:
-| Imported Ontologies | Version           |
-| ------------------- | ----------------- |
-| EMMO                | 1.0.0-beta5       |
-| chemical-substance  | 0.2.0-alpha       |
-
-For simplicity, we complie the source files and other imports into a [pre-inferred ontology](inferred_version/electrochemistry-inferred.ttl). This is the result of running the asserted source files through a semantic reasoner and includes both asserted and inferred properties in a clear graph. 
 
 ### Acknowledgements
 
