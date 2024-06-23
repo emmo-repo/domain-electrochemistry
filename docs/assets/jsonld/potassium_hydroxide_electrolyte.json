@@ -1,0 +1,30 @@
+{
+    "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
+    "@type": "AqueousElectrolyte",
+    "hasSolvent": {
+        "@type": "Water"
+    },
+    "hasSolute": {
+        "@type": "PotassiumHydroxide",
+        "hasProperty": {
+            "@type": "MassFraction",
+            "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 0.3
+            },
+            "hasMeasurementUnit": "emmo:UnitOne"
+        }
+    },
+    "hasProperety": {
+        "@type": ["Density", "ConventionalProperty"],
+        "hasNumericalPart": {
+            "@type": "Real",
+            "hasNumericalValue": 1.28799
+        },
+        "hasMeasurementUnit": "emmo:GramPerCubicCentiMetre",
+        "rdfs:comment": "at 20 degrees Celsius",
+        "dcterms:Source": {
+            "@id": "https://doi.org/10.1021/ja01849a054"
+        }
+    }
+}

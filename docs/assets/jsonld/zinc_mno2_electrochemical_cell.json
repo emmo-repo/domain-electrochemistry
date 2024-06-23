@@ -1,0 +1,28 @@
+{
+    "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
+    "@type": "ElectrochemicalCell",
+    "rdfs:label": "Alkaline Zn-MnO2 Electrochemical Cell",
+    "hasNegativeElectrode": {
+        "@type": "ZincElectrode"
+    },
+    "hasPositiveElectrode": {
+        "@type": "ManganeseDioxideElectrode"
+    },
+    "hasElectrolyte": {
+        "@type": "AqueousElectrolyte",
+        "hasSolvent": {
+            "@type": "Water"
+        },
+        "hasSolute": {
+            "@type": "PotassiumHydroxide",
+            "hasProperty": {
+                "@type": "AmountConcentration",
+                "hasNumericalPart": {
+                    "@type": "Real",
+                    "hasNumericalValue": 6
+                },
+                "hasMeasurementUnit": "emmo:MolePerLitre"
+            }
+        }
+    }
+}
