@@ -1,4 +1,4 @@
-name: "Sphinx: Render docs"
+name: "docs"
 
 on: 
   push:
@@ -89,9 +89,11 @@ jobs:
         git fetch --tags
         git tag | while read TAG; do
           sudo mkdir -p "docs/_build/html/versions/$TAG"
-          sudo cp "electrochemistry.ttl" "docs/_build/html/versions/$TAG/"
+          python convert_ttl.py electrochemistry.ttl electrochemistry-foops.ttl
+          python convert_ttl.py electrochemicalquantities.ttl electrochemicalquantities-foops.ttl
+          sudo cp "electrochemistry-foops.ttl" "docs/_build/html/versions/$TAG/electrochemistry.ttl"
+          sudo cp "electrochemicalquantities-foops.ttl" "docs/_build/html/versions/$TAG/electrochemicalquantities.ttl"
           sudo cp "electrochemistry-inferred.ttl" "docs/_build/html/versions/$TAG/"
-          sudo cp "electrochemicalquantities.ttl" "docs/_build/html/versions/$TAG/"
 
         if [ -d "context" ]; then
           echo "Context directory exists, copying context.json to $TAG"
@@ -106,8 +108,10 @@ jobs:
 
     - name: Copy TTL files to HTML directory
       run: |
-        sudo cp "electrochemistry.ttl" "docs/_build/html/electrochemistry.ttl"
-        sudo cp "electrochemicalquantities.ttl" "docs/_build/html/electrochemicalquantities.ttl"
+        python convert_ttl.py electrochemistry.ttl electrochemistry-foops.ttl
+        python convert_ttl.py electrochemicalquantities.ttl electrochemicalquantities-foops.ttl
+        sudo cp "electrochemistry-foops.ttl" "docs/_build/html/electrochemistry.ttl"
+        sudo cp "electrochemicalquantities-foops.ttl" "docs/_build/html/electrochemicalquantities.ttl"
         sudo cp "electrochemistry-inferred.ttl" "docs/_build/html/electrochemistry-inferred.ttl"
 
     - name: Upload artifacts
