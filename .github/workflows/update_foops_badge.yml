@@ -33,7 +33,7 @@ jobs:
 
     - name: Fetch FOOPS score and update badge
       run: |
-        python docs/scripts/generate_badge.py
+        python docs/scripts/generate_foops_badge.py
 
     - name: Commit changes
       run: |
