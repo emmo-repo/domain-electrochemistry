@@ -13,7 +13,7 @@ def update_readme(badge_url):
     with open(readme_file, "w") as file:
         for line in content:
             if line.startswith("![FOOPS Score]"):
-                file.write(f"![FOOPS Score]({badge_url})\n")
+                file.write(f"[![FOOPS Score]({badge_url})](https://foops.linkeddata.es/FAIR_validator.html)\n")
             else:
                 file.write(line)
 
