@@ -89,8 +89,8 @@ jobs:
         git fetch --tags
         git tag | while read TAG; do
           sudo mkdir -p "docs/_build/html/versions/$TAG"
-          python apply_foops_recommendations.py electrochemistry.ttl electrochemistry-foops.ttl
-          python apply_foops_recommendations.py electrochemicalquantities.ttl electrochemicalquantities-foops.ttl
+          python docs/scripts/apply_foops_recommendations.py electrochemistry.ttl electrochemistry-foops.ttl
+          python docs/scripts/apply_foops_recommendations.py electrochemicalquantities.ttl electrochemicalquantities-foops.ttl
           sudo cp "electrochemistry-foops.ttl" "docs/_build/html/versions/$TAG/electrochemistry.ttl"
           sudo cp "electrochemicalquantities-foops.ttl" "docs/_build/html/versions/$TAG/electrochemicalquantities.ttl"
           sudo cp "electrochemistry-inferred.ttl" "docs/_build/html/versions/$TAG/"
@@ -108,8 +108,8 @@ jobs:
 
     - name: Copy TTL files to HTML directory
       run: |
-        python apply_foops_recommendations.py electrochemistry.ttl electrochemistry-foops.ttl
-        python apply_foops_recommendations.py electrochemicalquantities.ttl electrochemicalquantities-foops.ttl
+        python docs/scripts/apply_foops_recommendations.py electrochemistry.ttl electrochemistry-foops.ttl
+        python docs/scripts/apply_foops_recommendations.py electrochemicalquantities.ttl electrochemicalquantities-foops.ttl
         sudo cp "electrochemistry-foops.ttl" "docs/_build/html/electrochemistry.ttl"
         sudo cp "electrochemicalquantities-foops.ttl" "docs/_build/html/electrochemicalquantities.ttl"
         sudo cp "electrochemistry-inferred.ttl" "docs/_build/html/electrochemistry-inferred.ttl"
