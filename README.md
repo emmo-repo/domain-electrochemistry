@@ -17,6 +17,23 @@ Reference documentation is available [here](https://emmo-repo.github.io/domain-e
 
 Here is some information to help you get started working with the ontology in python and creating you own instances of Linked Data. For more information, please see the Getting Started and Examples section of the documentation. 
 
+## Reference IRIs
+
+The table below contains a quick cheat sheet of IRIs for accessing different files from the ontology
+The import structure is summarized in the following table:
+
+| IRI                                                            | Description                   |
+| -------------------------------------------------------------- | ----------------------------- |
+| `https://w3id.org/emmo/domain/electrochemistry`                | Base Asserted Ontology*       |
+| `https://w3id.org/emmo/domain/electrochemistry/inferred`       | Base Pre-Inferred Ontology*   |
+| `https://w3id.org/emmo/domain/electrochemistry/latest`         | Latest Asserted Ontology*     |
+| `https://w3id.org/emmo/domain/electrochemistry/source`         | Source of Asserted Ontology*  |
+| `https://w3id.org/emmo/domain/electrochemistry/context`        | Latest JSON-LD Context File   |
+| `https://w3id.org/emmo/domain/electrochemistry/{VERSION}`      | Version of Asserted Ontology* |
+| `https://w3id.org/emmo/domain/electrochemistry/{VERSION}/...`  | ... follows same logic above  |
+
+*IRI directs to human readable documentation if called from the web browser and to the source .ttl file if called from an application
+
 ## Python
 There are two common ways to work with the ontology in python: loading the ontology as a graph using [rdflib](https://rdflib.readthedocs.io/en/stable/) or exploring the content of the ontology using [EMMOntoPy](https://github.com/emmo-repo/EMMOntoPy). Examples of both are provided below.
 
