@@ -1,4 +1,4 @@
-![FOOPS Score](https://img.shields.io/badge/FOOPS%20Score-87.0%25-brightgreen)
+![FOOPS Score](https://img.shields.io/badge/FOOPS%20Score-91.0%25-brightgreen)
 ![reason](https://github.com/emmo-repo/domain-electrochemistry/actions/workflows/reason.yml/badge.svg)
 ![docs](https://github.com/emmo-repo/domain-electrochemistry/actions/workflows/doc.yml/badge.svg)
 [![DOI](https://zenodo.org/badge/570454941.svg)](https://zenodo.org/badge/latestdoi/570454941)
