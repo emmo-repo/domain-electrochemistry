@@ -8,9 +8,16 @@ on:
       - master
   workflow_dispatch:
 
+env:
+  GIT_USER_NAME: BattINFO Developers
+  GIT_USER_EMAIL: "BattINFO@big-map.org"
+
 jobs:
   update-badge:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
 
     steps:
     - name: Checkout repository
@@ -26,14 +33,18 @@ jobs:
 
     - name: Fetch FOOPS score and update badge
       run: |
-        python docs/scripts/generate_foops_badge.py
+        python docs/scripts/generate_badge.py
 
-    - name: Commit and push changes
+    - name: Commit changes
       run: |
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.email "${{ env.GIT_USER_EMAIL }}"
+        git config --local user.name "${{ env.GIT_USER_NAME }}"
         git add README.md
-        git commit -m "Update FOOPS score badge"
-        git push
+        git diff --staged --quiet || git commit -m "Update FOOPS score badge"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Push changes
+      run: git push origin HEAD:main
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
