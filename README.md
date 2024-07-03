@@ -1,6 +1,8 @@
 [![FOOPS Score](https://img.shields.io/badge/FOOPS%20Score-91.0%25-brightgreen)](https://foops.linkeddata.es/FAIR_validator.html)
 ![reason](https://github.com/emmo-repo/domain-electrochemistry/actions/workflows/reason.yml/badge.svg)
 ![docs](https://github.com/emmo-repo/domain-electrochemistry/actions/workflows/doc.yml/badge.svg)
+[![unstable](http://badges.github.io/stability-badges/dist/unstable.svg)](http://github.com/badges/stability-badges)  
+
 [![DOI](https://zenodo.org/badge/570454941.svg)](https://zenodo.org/badge/latestdoi/570454941)
 
 <!-- markdownlint-disable MD033 -->
@@ -129,7 +131,8 @@ This domain ontology supports the creation of Linked Data in any RDF-supported f
 
 This project has received support from European Union research and innovation programs, under grant agreement numbers:
 
-* 957189 - [BIG-MAP](http://www.big-map.eu/) 
+* [957189 - BIG-MAP](http://www.big-map.eu/)
+* [101104022 - Battery2030+](https://battery2030.eu/)
 
 ## License
 
