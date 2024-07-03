@@ -3,7 +3,7 @@
 ![docs](https://github.com/emmo-repo/domain-electrochemistry/actions/workflows/doc.yml/badge.svg)
 [![unstable](http://badges.github.io/stability-badges/dist/unstable.svg)](http://github.com/badges/stability-badges)  
 
-[![DOI](https://zenodo.org/badge/570454941.svg)](https://zenodo.org/badge/latestdoi/570454941)
+[![DOI](https://zenodo.org/badge/570454941.svg)](https://zenodo.org/badge/latestdoi/570454941)  
 
 <!-- markdownlint-disable MD033 -->
 # Electrochemistry Domain Ontology
