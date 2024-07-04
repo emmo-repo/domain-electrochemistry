@@ -1,0 +1,244 @@
+{
+    "@context": "https://w3id.org/emmo/domain/battery/context",
+    "@type": "csvw:TableSchema",
+    "@id": "https://w3id.org/emmo/application/cycler-data#",
+    "dc:identifier": "https://doi.org/10.1234/example.doi",
+    "dc:title": "Biologic Cycler Data Table Schema",
+    "dc:description": "A table schema describing csv files exported from battery cycler equipment manufactured by Biologic",
+    "dc:subject": ["battery", "data", "biologic", "cycler", "cycling"],
+    "dc:language": "en",
+    "dc:license": {
+        "@id": "https://spdx.org/licenses/MIT.html"
+    },
+    "dc:accessRights": "public",
+    "dc:publisher": {
+        "@type": "schema:ResearchOrganization",
+        "@id": "https://ror.org/01f677e56",
+        "schema:name": "SINTEF AS"
+    },
+    "dc:creator": {
+        "@type": "schema:Person",
+        "@id": "https://orcid.org/0000-0002-8758-6109",
+        "schema:name": "Simon Clark",
+        "schema:affiliation": {
+            "@type": "schema:ResearchOrganization",
+            "@id": "https://ror.org/01f677e56",
+            "schema:name": "SINTEF"
+        }
+    },
+    "dc:modified": {
+        "@value": "2024-07-03",
+        "@type": "xsd:date"
+    },
+    "dc:created": {
+        "@value": "2024-07-03",
+        "@type": "xsd:date"
+    },
+    "dc:hasVersion": "1.0.0",
+    "dc:format": "application/ld+json",
+    "schema:name": "Biologic Cycler Data Table Schema",
+    "schema:description": "A table schema describing csv files exported from battery cycler equipment manufactured by Biologic",
+    "schema:version": "1.0.0",
+    "schema:contactPoint": {
+        "@type": "schema:ContactPoint",
+        "schema:contactType": "creator",
+        "schema:email": "mailto:simon.clark@sintef.no"
+    },
+    "schema:encodingFormat": "application/ld+json",
+    "csvw:columns": [
+      {
+        "@type": "csvw:Column",
+        "csvw:name": "cycle number",
+        "csvw:titles": "Cycle Index",
+        "dc:description": "the current cycle number in the test",
+        "csvw:propertyUrl": {
+          "@type": "CycleNumber"
+        },
+        "hasMeasurementUnit": [
+          {
+            "@id": "emmo:UnitOne"
+          },
+          {
+            "@id": "unit:UNITLESS"
+          }
+        ],
+        "schema:unitCode": [
+        {
+            "@id": "emmo:UnitOne"
+        },
+        {
+            "@id": "unit:UNITLESS"
+        }
+        ],
+        "csvw:datatype": "xsd:integer",
+        "csvw:required": "false"
+      },
+      {
+        "@type": "csvw:Column",
+        "csvw:name": "half cycle",
+        "csvw:titles": "Half Cycle",
+        "dc:description": "unknown",
+        "csvw:datatype": "xsd:integer",
+        "csvw:required": "false"
+      },
+      {
+        "@type": "csvw:Column",
+        "csvw:name": "Ecell/V",
+        "csvw:titles": "Voltage",
+        "csvw:propertyUrl": {
+          "@type": "CellVoltage"
+        },
+        "hasMeasurementUnit": [
+          {
+            "@id": "emmo:Volt"
+          },
+          {
+            "@id": "unit:V"
+          }
+        ],
+        "schema:unitCode": [
+          {
+            "@id": "emmo:Volt"
+          },
+          {
+            "@id": "unit:V"
+          }
+        ],
+        "csvw:datatype": "xsd:decimal",
+        "csvw:required": "true"
+      },
+      {
+        "@type": "csvw:Column",
+        "csvw:name": "I/mA",
+        "csvw:titles": "Current",
+        "csvw:propertyUrl": {
+          "@type": "CellCurrent"
+        },
+        "hasMeasurementUnit": [
+          {
+            "@id": "emmo:MilliAmpere"
+          },
+          {
+            "@id": "unit:MilliA"
+          }
+        ],
+        "schema:unitCode": [
+          {
+            "@id": "emmo:MilliAmpere"
+          },
+          {
+            "@id": "unit:MilliA"
+          }
+        ],
+        "csvw:datatype": "xsd:decimal",
+        "csvw:required": "true"
+      },
+      {
+        "@type": "csvw:Column",
+        "csvw:name": "Q discharge/mA.h",
+        "csvw:titles": "Discharging Capacity",
+        "dc:description": "the capacity that has passed through the cell during discharging",
+        "csvw:propertyUrl": {
+          "@type": "DischaringCapacity"
+        },
+        "hasMeasurementUnit": [
+          {
+            "@id": "emmo:MilliAmpereHour"
+          },
+          {
+            "@id": "unit:MilliA-HR"
+          }
+        ],
+        "schema:unitCode": [
+          {
+            "@id": "emmo:MilliAmpereHour"
+          },
+          {
+            "@id": "unit:MilliA-HR"
+          }
+        ],
+        "csvw:datatype": "xsd:decimal",
+        "csvw:required": "false"
+      },
+      {
+        "@type": "csvw:Column",
+        "csvw:name": "Q charge/mA.h",
+        "csvw:titles": "Charging Capacity",
+        "dc:description": "the capacity that has passed through the cell during charging",
+        "csvw:propertyUrl": {
+          "@type": "CharingCapacity"
+        },
+        "hasMeasurementUnit": [
+          {
+            "@id": "emmo:MilliAmpereHour"
+          },
+          {
+            "@id": "unit:MilliA-HR"
+          }
+        ],
+        "schema:unitCode": [
+          {
+            "@id": "emmo:MilliAmpereHour"
+          },
+          {
+            "@id": "unit:MilliA-HR"
+          }
+        ],
+        "csvw:datatype": "xsd:decimal",
+        "csvw:required": "false"
+      },
+      {
+        "@type": "csvw:Column",
+        "csvw:name": "Energy charge/W.h",
+        "csvw:titles": "Charging Energy",
+        "csvw:propertyUrl": {
+          "@type": "ChargingEnergy"
+        },
+        "hasMeasurementUnit": [
+          {
+            "@id": "emmo:WattHour"
+          },
+          {
+            "@id": "unit:W-HR"
+          }
+        ],
+        "schema:unitCode": [
+          {
+            "@id": "emmo:WattHour"
+          },
+          {
+            "@id": "unit:W-HR"
+          }
+        ],
+        "csvw:datatype": "xsd:decimal",
+        "csvw:required": "false"
+      },
+      {
+        "@type": "csvw:Column",
+        "csvw:name": "Energy discharge/W.h",
+        "csvw:titles": "Disharging Energy",
+        "csvw:propertyUrl": {
+          "@type": "DishargingEnergy"
+        },
+        "hasMeasurementUnit": [
+          {
+            "@id": "emmo:WattHour"
+          },
+          {
+            "@id": "unit:W-HR"
+          }
+        ],
+        "schema:unitCode": [
+          {
+            "@id": "emmo:WattHour"
+          },
+          {
+            "@id": "unit:W-HR"
+          }
+        ],
+        "csvw:datatype": "xsd:decimal",
+        "csvw:required": "false"
+      }
+    ]
+  }
+  
