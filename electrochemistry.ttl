@@ -10,7 +10,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix schema: <https://schema.org/> .
-@prefix chemsub: <https://w3id.org/emmo/domain/chemicalsubstance#> .
+@prefix chemsub: <https://w3id.org/emmo/domain/chemical-substance#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix annotations: <https://w3id.org/emmo/top/annotations#> .
 @base <https://w3id.org/emmo/domain/electrochemistry> .
@@ -267,166 +267,6 @@ schema:Person rdf:type owl:Class ;
 ###  https://w3id.org/emmo/domain/chameo#Signal
 <https://w3id.org/emmo/domain/chameo#Signal> rdf:type owl:Class ;
                                              skos:prefLabel "Signal"@en .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_0139937b_2724_4864_84fb_f14bcfb83538
-chemsub:substance_0139937b_2724_4864_84fb_f14bcfb83538 rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_0bdf0bb9_41fc_455d_af11_a249e24acdf6
-chemsub:substance_0bdf0bb9_41fc_455d_af11_a249e24acdf6 rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_0f2f65a7_5cc4_4c86_a4d0_676771c646f1
-chemsub:substance_0f2f65a7_5cc4_4c86_a4d0_676771c646f1 rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_250fa43e_1f26_4ed8_b787_91a2325a8e7b
-chemsub:substance_250fa43e_1f26_4ed8_b787_91a2325a8e7b rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_25f6ff4c_53ad_4837_97c4_aa6f06099bb5
-chemsub:substance_25f6ff4c_53ad_4837_97c4_aa6f06099bb5 rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_2a540939_3908_4f85_92f9_c46da7d4e9cb
-chemsub:substance_2a540939_3908_4f85_92f9_c46da7d4e9cb rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_2a87ca10_fc6a_4d61_b48c_d9790a566ee3
-chemsub:substance_2a87ca10_fc6a_4d61_b48c_d9790a566ee3 rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_3899a9c9_9b34_443e_8ce6_0257589bb38a
-chemsub:substance_3899a9c9_9b34_443e_8ce6_0257589bb38a rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_3ac62305_acd6_4312_9e31_4f824bd2530d
-chemsub:substance_3ac62305_acd6_4312_9e31_4f824bd2530d rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_4126ee09_b9c6_4694_bf33_0d8970e05f72
-chemsub:substance_4126ee09_b9c6_4694_bf33_0d8970e05f72 rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_4c62d334_a124_40b3_9fd1_fe713d01a6af
-chemsub:substance_4c62d334_a124_40b3_9fd1_fe713d01a6af rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_5088ad54_b37d_4ee1_a086_d6c17e644f9a
-chemsub:substance_5088ad54_b37d_4ee1_a086_d6c17e644f9a rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_5cee19d2_f916_4264_a8ed_efed13a808d2
-chemsub:substance_5cee19d2_f916_4264_a8ed_efed13a808d2 rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_68c0876b_cb62_41cd_846d_95cc9d9a8733
-chemsub:substance_68c0876b_cb62_41cd_846d_95cc9d9a8733 rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_68f9b85e_340f_46ec_96da_ebb6bd62f5fd
-chemsub:substance_68f9b85e_340f_46ec_96da_ebb6bd62f5fd rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_73d4606c_7460_4a5c_9413_793bdf35753e
-chemsub:substance_73d4606c_7460_4a5c_9413_793bdf35753e rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_7dc738d6_74f2_489e_ae84_a6dbdf627f2e
-chemsub:substance_7dc738d6_74f2_489e_ae84_a6dbdf627f2e rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_848003a2_71ee_4967_8039_354c907ec7f4
-chemsub:substance_848003a2_71ee_4967_8039_354c907ec7f4 rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_97439fbb_155f_433d_9edd_d510cd491f24
-chemsub:substance_97439fbb_155f_433d_9edd_d510cd491f24 rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_9bd78e1c_a4dc_41b6_8013_adb51df1ffdc
-chemsub:substance_9bd78e1c_a4dc_41b6_8013_adb51df1ffdc rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_9da78aea_d436_40e2_a68f_c3dee32b825e
-chemsub:substance_9da78aea_d436_40e2_a68f_c3dee32b825e rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_aa8e9cc4_5f66_4307_b1c8_26fac7653a90
-chemsub:substance_aa8e9cc4_5f66_4307_b1c8_26fac7653a90 rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_acdb232f_8041_4e11_8a11_5db2d2baae4d
-chemsub:substance_acdb232f_8041_4e11_8a11_5db2d2baae4d rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_b01771a9_218a_4b01_b20f_4021cfa0b7d5
-chemsub:substance_b01771a9_218a_4b01_b20f_4021cfa0b7d5 rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_b3815a7f_f64a_48f6_b0ce_d0032578c699
-chemsub:substance_b3815a7f_f64a_48f6_b0ce_d0032578c699 rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_c109ca45_08c7_4436_a818_a9c575785e2f
-chemsub:substance_c109ca45_08c7_4436_a818_a9c575785e2f rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_c28a0967_ed23_48cc_a14e_a651d75a19db
-chemsub:substance_c28a0967_ed23_48cc_a14e_a651d75a19db rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_c5582dae_ccff_4fbe_adaa_078091054640
-chemsub:substance_c5582dae_ccff_4fbe_adaa_078091054640 rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_c728b6b9_449a_45ff_b5ae_6b7968708f0d
-chemsub:substance_c728b6b9_449a_45ff_b5ae_6b7968708f0d rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_cd17ca33_ae3d_4738_8930_547673bf6c1f
-chemsub:substance_cd17ca33_ae3d_4738_8930_547673bf6c1f rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_cdd18f0c_e7b3_4d09_b3dd_c09fe4b1adba
-chemsub:substance_cdd18f0c_e7b3_4d09_b3dd_c09fe4b1adba rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_d53259a7_0d9c_48b9_a6c1_4418169df303
-chemsub:substance_d53259a7_0d9c_48b9_a6c1_4418169df303 rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_d673ceb2_3045_4e2e_8cad_56f5169b542f
-chemsub:substance_d673ceb2_3045_4e2e_8cad_56f5169b542f rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_db74b6b7_09fc_40db_a7d5_6eb86b69192a
-chemsub:substance_db74b6b7_09fc_40db_a7d5_6eb86b69192a rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_dc5fb846_1824_40f8_9834_81f118aa1c2d
-chemsub:substance_dc5fb846_1824_40f8_9834_81f118aa1c2d rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_dcdbdbed_2e20_40d1_a7a5_5761de7f0618
-chemsub:substance_dcdbdbed_2e20_40d1_a7a5_5761de7f0618 rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_e1e6ff98_0725_4d27_ab21_2ca5a95371f0
-chemsub:substance_e1e6ff98_0725_4d27_ab21_2ca5a95371f0 rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_e8fafdc8_6cd3_4dd0_9630_10ca8e3f1827
-chemsub:substance_e8fafdc8_6cd3_4dd0_9630_10ca8e3f1827 rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_f3e7979a_e3ef_450a_8762_7d8778afe478
-chemsub:substance_f3e7979a_e3ef_450a_8762_7d8778afe478 rdf:type owl:Class .
-
-
-###  https://w3id.org/emmo/domain/chemicalsubstance#substance_f7525766_90cf_43e9_8932_7cb3b14f676f
-chemsub:substance_f7525766_90cf_43e9_8932_7cb3b14f676f rdf:type owl:Class .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_01260656_ac32_472e_9513_a607366538ec
@@ -2943,13 +2783,6 @@ Aluminum foil"""@en .
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
 
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource :electrochemistry_6f2c88c9_5c04_4953_a298_032cc3ab9b77 ;
-   owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
-   owl:annotatedTarget "system that consists of at least two electron conductors (electrodes) in contact with ionic conductors (electrolytes)"@en ;
-   emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
- ] .
-
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6fec8cc1_4e6c_428e_8343_6cf3c286a185
 :electrochemistry_6fec8cc1_4e6c_428e_8343_6cf3c286a185 rdf:type owl:Class ;
@@ -3195,13 +3028,6 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "material that is oxidized or reduced at an electrode in an electrochemical cell"@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
- ] .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource :electrochemistry_79d1b273_58cd_4be6_a250_434817f7c261 ;
-   owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
-   owl:annotatedTarget "in secondary cells, the active material is restored to its original state during charge"@en ;
-   emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
 
 [ rdf:type owl:Axiom ;
@@ -4184,13 +4010,6 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-03"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "plate in which the active material is applied as a paste to a conductive current collector"@en .
 
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource :electrochemistry_a1ec9e3c_c624_4848_af13_89a6bc54d77c ;
-   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-   owl:annotatedTarget "plate in which the active material is applied as a paste to a conductive current collector"@en ;
-   emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
- ] .
-
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a277e420_2483_44d5_a2bc_4e421dea231a
 :electrochemistry_a277e420_2483_44d5_a2bc_4e421dea231a rdf:type owl:Class ;
@@ -5018,13 +4837,6 @@ of other configurations are used."""@en .
                                                        emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "https://dbpedia.org/page/Fuel_cell"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "galvanic cell that transforms chemical energy from continuously supplied reactants to electric energy by an electrochemical process."@en ;
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Fuel_cell"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource :electrochemistry_bd33779c_6f40_4354_ab5d_f6c17396414d ;
-   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-   owl:annotatedTarget "galvanic cell that transforms chemical energy from continuously supplied reactants to electric energy by an electrochemical process."@en ;
-   emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
- ] .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bea04148_10d9_4eda_9cd5_8f609d7e9ff8
