@@ -1081,6 +1081,13 @@ and t* through mathematical models, provided that the long-time potential- deter
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 50% of the sample's particles fall."@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3dac5115_6337_40a6_a2ab_317087fe3b45
+:electrochemistry_3dac5115_6337_40a6_a2ab_317087fe3b45 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_74de2c33_84fc_4c2f_afe1_56d169149114 ;
+                                                       skos:prefLabel "UpperCurrentLimit"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the upper bounding limit on the current used in the definition of an electrochemical testing protocol"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3e54f9e3_a31d_4821_9bfb_ef953a42c35b
 :electrochemistry_3e54f9e3_a31d_4821_9bfb_ef953a42c35b rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_346519a4_006c_496d_8f36_74e38814ed2d ,
@@ -1812,6 +1819,13 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electric current applied to an electrochemical device during a charging process"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7db845e7_0e5b_47d4_b954_2a2b8e85deea
+:electrochemistry_7db845e7_0e5b_47d4_b954_2a2b8e85deea rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_74de2c33_84fc_4c2f_afe1_56d169149114 ;
+                                                       skos:prefLabel "LowerCurrentLimit"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the lower bounding limit on the current used in the definition of an electrochemical testing protocol"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7f073272_8925_4344_995c_a5a6dd1fcde6
 :electrochemistry_7f073272_8925_4344_995c_a5a6dd1fcde6 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
@@ -1978,6 +1992,13 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                                         "SpeCapD/mAh/g"@en ;
                                                        skos:prefLabel "DischargingSpecificCapacity"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "quotient of the capacity of a cell or battery [ or electrode or active material ] obtained during a discharge process by its mass."@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_88dd2bce_fb17_4705_905d_892681812290
+:electrochemistry_88dd2bce_fb17_4705_905d_892681812290 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_ba882f34_0d71_4e4f_9d92_0c076c633a2c ;
+                                                       skos:prefLabel "NumberOfIterations"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the number of times an iterative process should occur"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8abde9d0_84f6_4b4f_a87e_86028a397100
