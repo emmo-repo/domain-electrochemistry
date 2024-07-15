@@ -70,14 +70,6 @@ schema:name rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_fd1fae29_a182_4692_98b8_919764b07b00
-<https://w3id.org/emmo/domain//electrochemistry#electrochemistry_fd1fae29_a182_4692_98b8_919764b07b00> rdf:type owl:ObjectProperty ;
-                                                                                                       rdfs:subPropertyOf emmo:EMMO_dba27ca1_33c9_4443_a912_1519ce4c39ec ;
-                                                                                                       rdfs:domain :electrochemistry_757eae08_4d43_42d4_8b4e_8a0bfd2f9a1c ;
-                                                                                                       rdfs:range emmo:EMMO_21205421_5783_4d3e_81e5_10c5d894a88a ;
-                                                                                                       skos:prefLabel "hasInsertedEntity"@en .
-
-
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_056a5fab_3d99_46bd_8eb1_6e89a368e1a7
 :electrochemistry_056a5fab_3d99_46bd_8eb1_6e89a368e1a7 rdf:type owl:ObjectProperty ;
                                                        rdfs:subPropertyOf emmo:EMMO_dba27ca1_33c9_4443_a912_1519ce4c39ec ;
@@ -208,67 +200,20 @@ schema:name rdf:type owl:AnnotationProperty .
                                                        skos:prefLabel "hasCurrentCollector"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fd1fae29_a182_4692_98b8_919764b07b00
+:electrochemistry_fd1fae29_a182_4692_98b8_919764b07b00 rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf emmo:EMMO_dba27ca1_33c9_4443_a912_1519ce4c39ec ;
+                                                       rdfs:domain :electrochemistry_757eae08_4d43_42d4_8b4e_8a0bfd2f9a1c ;
+                                                       rdfs:range emmo:EMMO_21205421_5783_4d3e_81e5_10c5d894a88a ;
+                                                       skos:prefLabel "hasInsertedEntity"@en .
+
+
 #################################################################
 #    Classes
 #################################################################
 
-###  https://schema.org/Person
-schema:Person rdf:type owl:Class ;
-              skos:prefLabel "Person"@en .
-
-
-###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_424bf750_7df5_49b5_ba73_ba74397a166b
-<https://w3id.org/emmo/domain//electrochemistry#electrochemistry_424bf750_7df5_49b5_ba73_ba74397a166b> rdf:type owl:Class ;
-                                                                                                       rdfs:subClassOf :electrochemistry_5adb91e0_ffe1_41f3_b779_c6966f65fb0e ,
-                                                                                                                       :electrochemistry_d0a26dc2_fde9_4a11_ac26_7c18499d28a5 ,
-                                                                                                                       [ rdf:type owl:Restriction ;
-                                                                                                                         owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
-                                                                                                                         owl:someValuesFrom chemsub:substance_9bd78e1c_a4dc_41b6_8013_adb51df1ffdc
-                                                                                                                       ] ;
-                                                                                                       skos:prefLabel "ZincElectrode"@en ;
-                                                                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode in which the main active material is zinc metal"@en ;
-                                                                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "the combination with manganese dioxide and an alkali metal hydoxide electrolyte is designated using IEC electrochemical system letter code L"@en ,
-                                                                                                                                                      "the combination with nickel oxide hydroxide and an alkali metal hydoxide electrolyte is designated using IEC electrochemical system letter code Z"@en ,
-                                                                                                                                                      "the combination with oxygen and an alkali metal hydoxide electrolyte is designated using IEC electrochemical system letter code P"@en ,
-                                                                                                                                                      "the combination with oxygen and an ammonium chloride zinc chloride electrolyte is designated using IEC electrochemical system letter code A"@en ,
-                                                                                                                                                      "the combination with silver oxide and an alkali metal hydoxide electrolyte is designated using IEC electrochemical system letter code S"@en .
-
-
-###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_52547692_f773_4e3f_8c8b_1d9d39bc3c8c
-<https://w3id.org/emmo/domain//electrochemistry#electrochemistry_52547692_f773_4e3f_8c8b_1d9d39bc3c8c> rdf:type owl:Class ;
-                                                                                                       rdfs:subClassOf :electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc ;
-                                                                                                       skos:prefLabel "GoldBasedElectrode"@en ;
-                                                                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode in which the primary active material consists of gold or gold compounds"@en .
-
-
-###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_55775b50_b9d9_4d68_8cb5_38fcd7b9b54d
-<https://w3id.org/emmo/domain//electrochemistry#electrochemistry_55775b50_b9d9_4d68_8cb5_38fcd7b9b54d> rdf:type owl:Class ;
-                                                                                                       rdfs:subClassOf :electrochemistry_47346d85_b9be_4480_8993_6307b1c58fcd ,
-                                                                                                                       [ rdf:type owl:Restriction ;
-                                                                                                                         owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
-                                                                                                                         owl:someValuesFrom chemsub:substance_c109ca45_08c7_4436_a818_a9c575785e2f
-                                                                                                                       ] ;
-                                                                                                       skos:prefLabel "LithiumElectrode"@en ;
-                                                                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode in which the active material is lithium metal" .
-
-
-###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_d8a9a88e_d437_4fef_bc3c_65a1fe627061
-<https://w3id.org/emmo/domain//electrochemistry#electrochemistry_d8a9a88e_d437_4fef_bc3c_65a1fe627061> rdf:type owl:Class ;
-                                                                                                       rdfs:subClassOf :electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc ;
-                                                                                                       skos:prefLabel "PlatinumBasedElectrode"@en ;
-                                                                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode in which the primary active material consists of platinum or platinum compounds"@en .
-
-
-###  https://w3id.org/emmo/domain//electrochemistry#electrochemistry_f897db90_afd6_42e7_8d1f_0fcba856e45a
-<https://w3id.org/emmo/domain//electrochemistry#electrochemistry_f897db90_afd6_42e7_8d1f_0fcba856e45a> rdf:type owl:Class ;
-                                                                                                       rdfs:subClassOf :electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc ;
-                                                                                                       skos:prefLabel "SilverBasedElectrode"@en ;
-                                                                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode in which the primary active material consists of silver or silver compounds"@en .
-
-
 ###  https://w3id.org/emmo/domain/chameo#Signal
-<https://w3id.org/emmo/domain/chameo#Signal> rdf:type owl:Class ;
-                                             skos:prefLabel "Signal"@en .
+<https://w3id.org/emmo/domain/chameo#Signal> rdf:type owl:Class .
 
 
 ###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical
@@ -281,6 +226,11 @@ schema:Person rdf:type owl:Class ;
                                                                                                      owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
                                                                                                      owl:someValuesFrom <https://w3id.org/emmo/domain/characterisation-methodology/chameo#SamplePreparation>
                                                                                                    ] .
+
+
+###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#Signal
+<https://w3id.org/emmo/domain/characterisation-methodology/chameo#Signal> rdf:type owl:Class ;
+                                                                          skos:prefLabel "Signal"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_01260656_ac32_472e_9513_a607366538ec
@@ -1320,7 +1270,7 @@ Aluminum foil"""@en .
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2d32a81a_2148_41bd_84fb_467aa8de4a8f
 :electrochemistry_2d32a81a_2148_41bd_84fb_467aa8de4a8f rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain//electrochemistry#electrochemistry_d8a9a88e_d437_4fef_bc3c_65a1fe627061> ,
+                                                       rdfs:subClassOf :electrochemistry_d8a9a88e_d437_4fef_bc3c_65a1fe627061 ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
                                                                          owl:someValuesFrom chemsub:substance_25f6ff4c_53ad_4837_97c4_aa6f06099bb5
@@ -1910,6 +1860,23 @@ Aluminum foil"""@en .
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrode in which the active material is lithium nickel manganese oxide"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_424bf750_7df5_49b5_ba73_ba74397a166b
+:electrochemistry_424bf750_7df5_49b5_ba73_ba74397a166b rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_5adb91e0_ffe1_41f3_b779_c6966f65fb0e ,
+                                                                       :electrochemistry_d0a26dc2_fde9_4a11_ac26_7c18499d28a5 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
+                                                                         owl:someValuesFrom chemsub:substance_9bd78e1c_a4dc_41b6_8013_adb51df1ffdc
+                                                                       ] ;
+                                                       skos:prefLabel "ZincElectrode"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode in which the main active material is zinc metal"@en ;
+                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "the combination with manganese dioxide and an alkali metal hydoxide electrolyte is designated using IEC electrochemical system letter code L"@en ,
+                                                                                                      "the combination with nickel oxide hydroxide and an alkali metal hydoxide electrolyte is designated using IEC electrochemical system letter code Z"@en ,
+                                                                                                      "the combination with oxygen and an alkali metal hydoxide electrolyte is designated using IEC electrochemical system letter code P"@en ,
+                                                                                                      "the combination with oxygen and an ammonium chloride zinc chloride electrolyte is designated using IEC electrochemical system letter code A"@en ,
+                                                                                                      "the combination with silver oxide and an alkali metal hydoxide electrolyte is designated using IEC electrochemical system letter code S"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4288b145_ba79_4989_92f8_86086679b0fe
 :electrochemistry_4288b145_ba79_4989_92f8_86086679b0fe rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_8a1c9a7b_978c_4421_a9c1_d0b07b42aab9 ;
@@ -2314,6 +2281,13 @@ Aluminum foil"""@en .
  ] .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_52547692_f773_4e3f_8c8b_1d9d39bc3c8c
+:electrochemistry_52547692_f773_4e3f_8c8b_1d9d39bc3c8c rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc ;
+                                                       skos:prefLabel "GoldBasedElectrode"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode in which the primary active material consists of gold or gold compounds"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_53fe3f58_0802_41cf_af69_4784fc42cc30
 :electrochemistry_53fe3f58_0802_41cf_af69_4784fc42cc30 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_06d8e1ee_924a_4915_998d_33a69f41dadc ,
@@ -2362,6 +2336,17 @@ Aluminum foil"""@en .
                                                        rdfs:subClassOf :electrochemistry_f4ce4df2_d7e6_470f_8eab_3a911adaaf0f ;
                                                        skos:prefLabel "CurrentControlledProcess"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a process in which the electric current is controlled"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_55775b50_b9d9_4d68_8cb5_38fcd7b9b54d
+:electrochemistry_55775b50_b9d9_4d68_8cb5_38fcd7b9b54d rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_47346d85_b9be_4480_8993_6307b1c58fcd ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
+                                                                         owl:someValuesFrom chemsub:substance_c109ca45_08c7_4436_a818_a9c575785e2f
+                                                                       ] ;
+                                                       skos:prefLabel "LithiumElectrode"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode in which the active material is lithium metal" .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_56177336_3ae5_48cb_93ca_a8c73216ea73
@@ -2895,7 +2880,7 @@ Aluminum foil"""@en .
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6fec8cc1_4e6c_428e_8343_6cf3c286a185
 :electrochemistry_6fec8cc1_4e6c_428e_8343_6cf3c286a185 rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain//electrochemistry#electrochemistry_52547692_f773_4e3f_8c8b_1d9d39bc3c8c> ,
+                                                       rdfs:subClassOf :electrochemistry_52547692_f773_4e3f_8c8b_1d9d39bc3c8c ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
                                                                          owl:someValuesFrom chemsub:substance_b3815a7f_f64a_48f6_b0ce_d0032578c699
@@ -2959,7 +2944,7 @@ Aluminum foil"""@en .
 :electrochemistry_757eae08_4d43_42d4_8b4e_8a0bfd2f9a1c rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc ,
                                                                        [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty <https://w3id.org/emmo/domain//electrochemistry#electrochemistry_fd1fae29_a182_4692_98b8_919764b07b00> ;
+                                                                         owl:onProperty :electrochemistry_fd1fae29_a182_4692_98b8_919764b07b00 ;
                                                                          owl:someValuesFrom emmo:EMMO_21205421_5783_4d3e_81e5_10c5d894a88a
                                                                        ] ;
                                                        skos:altLabel "IntercalationElectrode"@en ;
@@ -4272,7 +4257,7 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a462859d_d8bd_48ea_8bde_1576f1248a1e
 :electrochemistry_a462859d_d8bd_48ea_8bde_1576f1248a1e rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain//electrochemistry#electrochemistry_f897db90_afd6_42e7_8d1f_0fcba856e45a> ,
+                                                       rdfs:subClassOf :electrochemistry_f897db90_afd6_42e7_8d1f_0fcba856e45a ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
                                                                          owl:someValuesFrom chemsub:substance_e1e6ff98_0725_4d27_ab21_2ca5a95371f0
@@ -5712,6 +5697,13 @@ of other configurations are used."""@en .
  ] .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d8a9a88e_d437_4fef_bc3c_65a1fe627061
+:electrochemistry_d8a9a88e_d437_4fef_bc3c_65a1fe627061 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc ;
+                                                       skos:prefLabel "PlatinumBasedElectrode"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode in which the primary active material consists of platinum or platinum compounds"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d90221a0_0da7_4876_9cac_0e943e445f6f
 :electrochemistry_d90221a0_0da7_4876_9cac_0e943e445f6f rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc ;
@@ -6471,6 +6463,13 @@ of other configurations are used."""@en .
                                                        rdfs:subClassOf :electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37 ;
                                                        skos:prefLabel "R1225" ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a coin case with a nominal diameter of 12.05 mm and a height of 2.5 mm"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f897db90_afd6_42e7_8d1f_0fcba856e45a
+:electrochemistry_f897db90_afd6_42e7_8d1f_0fcba856e45a rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc ;
+                                                       skos:prefLabel "SilverBasedElectrode"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode in which the primary active material consists of silver or silver compounds"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f8e0d532_cf44_403c_9188_e00ee161a3c1
