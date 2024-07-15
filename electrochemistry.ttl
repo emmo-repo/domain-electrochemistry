@@ -212,10 +212,6 @@ schema:name rdf:type owl:AnnotationProperty .
 #    Classes
 #################################################################
 
-###  https://w3id.org/emmo/domain/chameo#Signal
-<https://w3id.org/emmo/domain/chameo#Signal> rdf:type owl:Class .
-
-
 ###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical
 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> owl:equivalentClass :electrochemistry_830d02dd_f897_4c3c_95a7_c5e5eafa346a ;
                                                                                    rdfs:subClassOf [ rdf:type owl:Restriction ;
@@ -226,11 +222,6 @@ schema:name rdf:type owl:AnnotationProperty .
                                                                                                      owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
                                                                                                      owl:someValuesFrom <https://w3id.org/emmo/domain/characterisation-methodology/chameo#SamplePreparation>
                                                                                                    ] .
-
-
-###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#Signal
-<https://w3id.org/emmo/domain/characterisation-methodology/chameo#Signal> rdf:type owl:Class ;
-                                                                          skos:prefLabel "Signal"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_01260656_ac32_472e_9513_a607366538ec
@@ -3521,7 +3512,7 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c
 :electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/chameo#Signal> ;
+                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Signal> ;
                                                        skos:prefLabel "ElectricSignal"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Time dependent variation of an electric quantity."@en .
 
