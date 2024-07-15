@@ -12,7 +12,7 @@
 @base <https://w3id.org/emmo/domain/electrochemistry/electrochemicalquantities> .
 
 <https://w3id.org/emmo/domain/electrochemistry/electrochemicalquantities> rdf:type owl:Ontology ;
-                                                                           owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.18.0-beta/electrochemicalquantities> ;
+                                                                           owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.19.0-beta/electrochemicalquantities> ;
                                                                            owl:imports <https://w3id.org/emmo/1.0.0-beta7/disciplines/isq> ;
                                                                            dcterms:abstract "This electrochemical quantities ontology is a domain of the Elementary Multiperspective Materials Ontology (EMMO). It is a specialized framework designed to represent and organize knowledge about electrochemical quantities. It is designed to integrate with the electrochemistry domain ontology or other ontologies from the EMMO ecosystem. The main focus of this ontology is to provide machine-readable descriptions of common electrochemical quantities, linking both to the larger descriptions of physical quantities in EMMO as well as other sources of information like the IEC, QUDT, Wikidata, etc. It should be used to support linked data generation in the electrochemistry domain."@en ;
                                                                            dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
@@ -21,7 +21,7 @@
                                                                            dcterms:creator <https://orcid.org/0000-0002-8758-6109> ,
                                                                                            <https://orcid.org/0000-0003-2954-1233> ;
                                                                            dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                                                           owl:versionInfo "0.18.0-beta" .
+                                                                           owl:versionInfo "0.19.0-beta" .
 
 #################################################################
 #    Annotation properties
@@ -250,7 +250,8 @@ emmo:EMMO_e218c625_6a39_47a9_8d08_a2ef41c152a9 rdfs:subClassOf :electrochemistry
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634
 :electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
-                                                       skos:prefLabel "ElectrochemicalPerformanceQuantity"@en .
+                                                       skos:prefLabel "ElectrochemicalPerformanceQuantity"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a quantity that indicates the performance of an electrochemical device"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0335e3f6_d1d8_4daa_8376_a9285f1bc9f1
@@ -687,7 +688,7 @@ and t* through mathematical models, provided that the long-time potential- deter
 :electrochemistry_21745019_2830_4395_bca7_15ddfd266673 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                                        skos:prefLabel "ElectrochemicalKineticQuantity"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An ElectrochemicalQuantity that relates to the kinetics of a reaction."@en .
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a quantity that relates to the kinetics of a reaction."@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_22cec04f_c7f3_4ff8_a34b_e512379c9dcb
@@ -724,8 +725,7 @@ and t* through mathematical models, provided that the long-time potential- deter
 :electrochemistry_25e20915_c35d_4bee_ad31_736235a79780 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ,
                                                                        :electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee ;
-                                                       rdfs:comment "in practice, the term CRate is often used to mean DRate"@en ,
-                                                                    "the discharge rate is calculated as the rated capacity divided by the corresponding discharge time which results in an electric current"@en ,
+                                                       rdfs:comment "the discharge rate is calculated as the rated capacity divided by the corresponding discharge time which results in an electric current"@en ,
                                                                     "the quantity DRate is not used for energy-decoupled batteries like Redox Flox batteries"@en ;
                                                        rdfs:seeAlso "CRate"@en ;
                                                        skos:altLabel "DRate"@en ,
@@ -927,7 +927,7 @@ and t* through mathematical models, provided that the long-time potential- deter
 :electrochemistry_2d896559_eee3_447c_9759_87c854a4266a rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                                        skos:prefLabel "ElectrochemicalThermodynamicQuantity"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A thermodynamically derived ElectrochemicalQuantity."@en .
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrochemical quantity describing concepts from thermodynamics"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_31a74e23_bb07_41d0_bb8f_1d8cca157503
@@ -968,8 +968,9 @@ and t* through mathematical models, provided that the long-time potential- deter
 :electrochemistry_346519a4_006c_496d_8f36_74e38814ed2d rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88 ,
                                                                        :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ;
-                                                       skos:altLabel "PulseMagnitudeCurrent"@en ;
-                                                       skos:prefLabel "MagnitudeOfCurrentPulse"@en ;
+                                                       skos:altLabel "MagnitudeOfCurrentPulse"@en ,
+                                                                     "PulseMagnitudeCurrent"@en ;
+                                                       skos:prefLabel "PulseCurrent"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the magnitude of a current pulse applied to an electrochemical cell during pulsed potentiometry and related techniques"@en .
 
 
@@ -1095,6 +1096,13 @@ and t* through mathematical models, provided that the long-time potential- deter
                                                        skos:altLabel "MaximumPulseDischargeCurrent"@en ;
                                                        skos:prefLabel "MaximumPulseDischargingCurrent"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the maximum current approved for pulse discharge of an electrochemical device"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_44a67eb4_52e8_433c_aef7_a928c2b9906c
+:electrochemistry_44a67eb4_52e8_433c_aef7_a928c2b9906c rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ;
+                                                       skos:prefLabel "TerminationQuantity"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a quantity that is used to express the termination criteria for an electrochemical process"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_457aed58_6e7e_42d5_9d78_b424c8d60aa3
@@ -1226,7 +1234,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
 :electrochemistry_4a450a27_b84a_4c70_a3a9_15ec30e2f30b rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                                        skos:prefLabel "ElectrochemicalTransportQuantity"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An ElectrochemicalQuantity related to the transport of mass, charge, or energy."@en .
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrochemical quantity related to the transport of mass, charge, or energy."@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4aa1b96e_44a0_4b1a_a0ac_723d0223d80b
@@ -1257,8 +1265,9 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
 :electrochemistry_4d2b102b_3515_4591_b079_69232c44f9dc rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d ,
                                                                        :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ;
-                                                       skos:altLabel "PulseMagnitudePotential"@en ;
-                                                       skos:prefLabel "MagnitudeOfPotentialPulse"@en ;
+                                                       skos:altLabel "MagnitudeOfPotentialPulse"@en ,
+                                                                     "PulseMagnitudePotential"@en ;
+                                                       skos:prefLabel "PulseVoltage"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The magnitude of a voltage pulse applied to an electrochemical cell during pulsed amperometry and related techniques."@en .
 
 
@@ -1817,6 +1826,13 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        owl:disjointWith :electrochemistry_e4d666ee_d637_45cd_a904_dc33941ead4f ;
                                                        skos:prefLabel "ChargingCurrent"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electric current applied to an electrochemical device during a charging process"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79a9e1be_35b0_4c3c_8087_b5f967ca0e87
+:electrochemistry_79a9e1be_35b0_4c3c_8087_b5f967ca0e87 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d ;
+                                                       skos:prefLabel "ChargingVoltage"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "voltage between the terminals of a cell or battery when being charged"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7db845e7_0e5b_47d4_b954_2a2b8e85deea
