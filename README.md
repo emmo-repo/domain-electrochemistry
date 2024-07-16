@@ -19,22 +19,12 @@ Reference documentation is available [here](https://emmo-repo.github.io/domain-e
 
 Here is some information to help you get started working with the ontology in python and creating you own instances of Linked Data. For more information, please see the [Getting Started](https://emmo-repo.github.io/domain-electrochemistry/pages/getstarted.html) and [Examples](https://emmo-repo.github.io/domain-electrochemistry/pages/examples.html) section of the documentation. 
 
-## Reference IRIs
+## Protégé
 
-The table below contains a quick cheat sheet of IRIs for accessing different files from the ontology
-The import structure is summarized in the following table:
-
-| IRI                                                            | Description                   |
-| -------------------------------------------------------------- | ----------------------------- |
-| `https://w3id.org/emmo/domain/electrochemistry`                | Base Asserted Ontology*       |
-| `https://w3id.org/emmo/domain/electrochemistry/inferred`       | Base Pre-Inferred Ontology*   |
-| `https://w3id.org/emmo/domain/electrochemistry/latest`         | Latest Asserted Ontology*     |
-| `https://w3id.org/emmo/domain/electrochemistry/source`         | Source of Asserted Ontology*  |
-| `https://w3id.org/emmo/domain/electrochemistry/context`        | Latest JSON-LD Context File   |
-| `https://w3id.org/emmo/domain/electrochemistry/{VERSION}`      | Version of Asserted Ontology* |
-| `https://w3id.org/emmo/domain/electrochemistry/{VERSION}/...`  | ... follows same logic above  |
-
-*IRI directs to human readable documentation if called from the web browser and to the source .ttl file if called from an application
+Protege is a open-source graphical editor for creating and exploring ontologies. You can [download a local copy](https://protege.stanford.edu/) or explore the pre-inferred ontology in a [web-based instance](https://webprotege.stanford.edu/#projects/1f6fd01b-b127-4bc0-a998-ee269797be87/edit/Classes) (requires registering for a free account). Some suggested entry points for new users are:  
+- [ElectrochemicalCell](https://webprotege.stanford.edu/#projects/1f6fd01b-b127-4bc0-a998-ee269797be87/edit/Classes?selection=Class(%3Chttps://w3id.org/emmo/domain/electrochemistry%23electrochemistry_6f2c88c9_5c04_4953_a298_032cc3ab9b77%3E))
+- [Electrode](https://webprotege.stanford.edu/#projects/1f6fd01b-b127-4bc0-a998-ee269797be87/edit/Classes?selection=Class(%3Chttps://w3id.org/emmo/domain/electrochemistry%23electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627%3E))
+- [Electrolyte](https://webprotege.stanford.edu/#projects/1f6fd01b-b127-4bc0-a998-ee269797be87/edit/Classes?selection=Class(%3Chttps://w3id.org/emmo/domain/electrochemistry%23electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59%3E))  
 
 ## Python
 There are two common ways to work with the ontology in python: loading the ontology as a graph using [rdflib](https://rdflib.readthedocs.io/en/stable/) or exploring the content of the ontology using [EMMOntoPy](https://github.com/emmo-repo/EMMOntoPy). Examples of both are provided below.
@@ -124,8 +114,24 @@ This domain ontology supports the creation of Linked Data in any RDF-supported f
     ]
 }
 ```
+## Reference IRIs
 
-### Acknowledgements
+The table below contains a quick cheat sheet of IRIs for accessing different files from the ontology
+The import structure is summarized in the following table:
+
+| IRI                                                            | Description                   |
+| -------------------------------------------------------------- | ----------------------------- |
+| `https://w3id.org/emmo/domain/electrochemistry`                | Base Asserted Ontology*       |
+| `https://w3id.org/emmo/domain/electrochemistry/inferred`       | Base Pre-Inferred Ontology*   |
+| `https://w3id.org/emmo/domain/electrochemistry/latest`         | Latest Asserted Ontology*     |
+| `https://w3id.org/emmo/domain/electrochemistry/source`         | Source of Asserted Ontology*  |
+| `https://w3id.org/emmo/domain/electrochemistry/context`        | Latest JSON-LD Context File   |
+| `https://w3id.org/emmo/domain/electrochemistry/{VERSION}`      | Version of Asserted Ontology* |
+| `https://w3id.org/emmo/domain/electrochemistry/{VERSION}/...`  | ... follows same logic above  |
+
+*IRI directs to human readable documentation if called from the web browser and to the source .ttl file if called from an application.
+
+# Acknowledgements
 
 <img src="docs/assets/img/Flag_of_Europe.png" alt="EU-Flag" width="100">
 
@@ -133,10 +139,6 @@ This project has received support from European Union research and innovation pr
 
 * [957189 - BIG-MAP](http://www.big-map.eu/)
 * [101104022 - Battery2030+](https://battery2030.eu/)
-
-## License
-
-The Electrochemistry Domain Ontology is released under the [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode) license (CC BY 4.0).
 
 [1]: https://github.com/emmo-repo/EMMO
 [2]: https://www.big-map.eu
