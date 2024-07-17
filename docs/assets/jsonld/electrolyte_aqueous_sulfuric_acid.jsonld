@@ -1,0 +1,17 @@
+{
+    "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
+    "@type": "AcidicElectrolyte",
+    "rdfs:label": "1 M Sulfuric Acid in Water",
+    "rdfs:comment": ["This example demonstrates how to describe an electrolyte using the type 'AcidicElectrolyte', which is a subclass of 'AqueousElectrolyte' and implies that the solvent is 'Water'."],
+    "hasSolute": {
+        "@type": "SulfuricAcid",
+        "hasProperty": {
+            "@type": "AmountConcentration",
+            "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 1
+            },
+            "hasMeasurementUnit": "emmo:MolePerLitre"
+        }
+    }
+}

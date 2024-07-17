@@ -1,0 +1,27 @@
+{
+    "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
+    "@type": "AlkalineElectrolyte",    
+    "rdfs:label": "0.3 Mass Fraction KOH in Water",
+    "rdfs:comment": ["This example demonstrates how to describe an electrolyte using the type 'AlkalineElectrolyte', which is a subclass of 'AqueousElectrolyte' and implies that the solvent is 'Water'.", "This example shows how to assign the value of a property to the electrolyte with a link to the source."],
+    "hasSolute": {
+        "@type": "PotassiumHydroxide",
+        "hasProperty": {
+            "@type": "MassFraction",
+            "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 0.3
+            },
+            "hasMeasurementUnit": "emmo:UnitOne"
+        }
+    },
+    "hasProperety": {
+        "@type": "Density",
+        "hasNumericalPart": {
+            "@type": "Real",
+            "hasNumericalValue": 1.28799
+        },
+        "hasMeasurementUnit": "emmo:GramPerCubicCentiMetre",
+        "rdfs:comment": "density at 20 degrees Celsius",
+        "dcterms:source": "https://doi.org/10.1021/ja01849a054"
+    }
+}

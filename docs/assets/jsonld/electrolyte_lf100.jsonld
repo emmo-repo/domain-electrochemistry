@@ -1,0 +1,55 @@
+{
+    "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
+    "@type": "Electrolyte",
+    "rdfs:label": "LF100",
+    "rdfs:comment": ["This example demonstates custom electrolyte composition descriptions using properties 'hasSolvent' and 'hasSolute'.", "Quantities like 'MassFraction' that are defined with respect to some total value refer back to the nearest holistic whole that they are part of. For example, the mass fraction of ethylene carbonate is defined with respect to the total mass of the solvent, while the mass fraction of the lithium salt is defined with respect to the whole electrolyte.", "The notation LF100 is derived from a manufacturer-specific product line and doesn not have general applicability. It has been adopted as a shorthand in the domain, but it is not a regulated descriptive code."],
+    "hasSolvent": {
+        "@type": "Solvent",
+        "hasConstituent": [
+            {
+                "@type": "EthyleneCarbonate",
+                "hasProperty": {
+                    "@type": "MassFraction",
+                    "hasNumericalPart": {
+                        "@type": "Real",
+                        "hasNumericalValue": 0.2
+                    },
+                    "hasMeasurementUnit": "emmo:UnitOne"
+                }
+            },
+            {
+                "@type": "PropyleneCarbonate",
+                "hasProperty": {
+                    "@type": "MassFraction",
+                    "hasNumericalPart": {
+                        "@type": "Real",
+                        "hasNumericalValue": 0.2
+                    },
+                    "hasMeasurementUnit": "emmo:UnitOne"
+                }
+            },
+            {
+                "@type": "DimethylCarbonate",
+                "hasProperty": {
+                    "@type": "MassFraction",
+                    "hasNumericalPart": {
+                        "@type": "Real",
+                        "hasNumericalValue": 0.6
+                    },
+                    "hasMeasurementUnit": "emmo:UnitOne"
+                }
+            }
+        ]
+    },
+    "hasSolute": {
+        "@type": "LithiumBisfluorosulfonylimide",
+        "hasProperty": {
+            "@type": "MassFraction",
+            "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 0.1146
+            },
+            "hasMeasurementUnit": "emmo:UnitOne"
+        }
+    }
+}

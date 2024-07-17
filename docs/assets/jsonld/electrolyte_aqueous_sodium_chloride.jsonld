@@ -1,0 +1,20 @@
+{
+    "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
+    "@type": "Electrolyte",
+    "rdfs:label": "2 M Sodium Chloride in Water",
+    "rdfs:comment": "This example explicity states that the solvent is water, as a demonstration. This could also be implied by using 'AqueousElectrolyte' as the value of @type. The example also demonstrates how to state the amount in terms of molality.",
+    "hasSolvent": {
+        "@type": "Water"
+    },
+    "hasSolute": {
+        "@type": "SodiumChloride",
+        "hasProperty": {
+            "@type": "Molality",
+            "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 1
+            },
+            "hasMeasurementUnit": "emmo:MolePerKiloGram"
+        }
+    }
+}

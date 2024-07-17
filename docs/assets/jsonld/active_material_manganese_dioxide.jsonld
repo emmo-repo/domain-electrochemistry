@@ -1,0 +1,38 @@
+{
+    "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
+    "@type": ["ActiveMaterial", "ManganeseDioxide", "Powder"],
+    "hasProperty": [
+       {
+             "@type": "SpecificCapacity",
+             "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 308
+             },
+             "hasMeasurementUnit": "emmo:MilliAmpereHourPerGram"
+       },
+       {    
+             "@type": "Density",
+             "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 5.03
+             },
+             "hasMeasurementUnit": "emmo:GramPerCubicCentiMetre"
+       },
+       {
+             "@type": "D50ParticleSize",
+             "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 10
+             },
+             "hasMeasurementUnit": "emmo:MicroMetre"
+       },
+       {
+             "@type": "MolarMass",
+             "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 86.94
+             },
+             "hasMeasurementUnit": "emmo:GramPerMole"
+       }
+    ]
+ }

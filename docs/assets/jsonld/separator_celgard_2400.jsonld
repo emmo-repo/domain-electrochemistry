@@ -1,0 +1,30 @@
+{
+    "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
+    "@type": "Separator",
+    "schema:manufacturer": {
+        "@type": "schema:Corporation",
+        "@id": "https://www.wikidata.org/wiki/Q122199856",
+        "schema:name": "Celgard"
+    },
+    "schema:productID": "2400",
+    "hasProperty": [
+       {
+             "@type": "Thickness",
+             "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 25
+             },
+             "hasMeasurementUnit": "emmo:MicroMetre",
+             "dc:source": "https://www.celgard.com/storage/components/2400_com_october2021_20033.pdf"
+       },
+       {
+             "@type": "Porosity",
+             "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 0.41
+             },
+             "hasMeasurementUnit": "emmo:UnitOne",
+             "dc:source": "https://www.celgard.com/storage/components/2400_com_october2021_20033.pdf"
+       }
+    ]
+ }
