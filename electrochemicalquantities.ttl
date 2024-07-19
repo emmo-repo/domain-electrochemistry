@@ -589,6 +589,16 @@ and t* through mathematical models, provided that the long-time potential- deter
  ] .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1acab8af_9798_45df_a64b_a7030c57a4de
+:electrochemistry_1acab8af_9798_45df_a64b_a7030c57a4de rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ,
+                                                                       :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
+                                                       skos:altLabel "DoD"@en ;
+                                                       skos:prefLabel "DepthOfDischarge"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the ratio of the discharged capacity to the rated capacity of an electrochemical device"@en ;
+                                                       emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Depth_of_discharge" .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1b2a7137_64d4_483a_8437_dcb3bedcb6da
 :electrochemistry_1b2a7137_64d4_483a_8437_dcb3bedcb6da rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_74de2c33_84fc_4c2f_afe1_56d169149114 ;
@@ -2057,6 +2067,16 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the rated capacity that is representative of the typical value associated with a cell as stated by the manufacturer"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8b2aaa50_bbe1_45da_8778_8898326246a2
+:electrochemistry_8b2aaa50_bbe1_45da_8778_8898326246a2 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ,
+                                                                       :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
+                                                       skos:altLabel "SoC"@en ;
+                                                       skos:prefLabel "StateOfCharge"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the ratio of the charged capacity to the rated capacity of an electrochemical device"@en ;
+                                                       emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/State_of_charge" .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8de9735b_374a_4a0f_b29f_71a50794cf94
 :electrochemistry_8de9735b_374a_4a0f_b29f_71a50794cf94 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_f4fadc4e_ca7d_4e4e_89cf_eacf45b4041e ;
@@ -2107,6 +2127,13 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
 :electrochemistry_900e357f_2ee3_425a_a0b6_322661117787 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_909415d1_7c43_4d5e_bbeb_7e1910159f66 ;
                                                        skos:prefLabel "ElectrochemicalProperty"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_93f000d8_efc1_4364_896c_c9ebc4c7ce3a
+:electrochemistry_93f000d8_efc1_4364_896c_c9ebc4c7ce3a rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_c4120ce7_f1ff_4917_b59e_002454a65040 ;
+                                                       skos:prefLabel "ChargingPRate"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an indicator of the electric power at which an electrochemical device is charged"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_95ef8c3c_62fe_467f_b5d4_dd0cd18a7ea8
@@ -2532,6 +2559,13 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the lower end of the interval of frequencies tested in impedimetry and related techniques"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b6f33044_1892_41a4_ae89_8683d4225f8d
+:electrochemistry_b6f33044_1892_41a4_ae89_8683d4225f8d rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_c4120ce7_f1ff_4917_b59e_002454a65040 ;
+                                                       skos:prefLabel "DischargingPRate"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an indicator of the electric power at which an electrochemical device is discharged"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b7781ebc_90a7_4f19_997f_aed28dee1b01
 :electrochemistry_b7781ebc_90a7_4f19_997f_aed28dee1b01 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26 ,
@@ -2629,6 +2663,14 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
    owl:annotatedTarget "range of electrode potentials of a given working electrode in a given electrolyte, where the electric current from reactions of the electrode or electrolyte is negligible compared with the current from reactions of the system under investigation"@en ;
    dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c4120ce7_f1ff_4917_b59e_002454a65040
+:electrochemistry_c4120ce7_f1ff_4917_b59e_002454a65040 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ,
+                                                                       :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
+                                                       skos:prefLabel "PRate"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an indicator of the electric power at which an electrochemical device is operated"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c4d551db_db17_4c33_92e6_aec71638afbc

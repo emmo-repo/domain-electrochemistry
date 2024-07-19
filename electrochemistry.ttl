@@ -209,6 +209,20 @@ schema:name rdf:type owl:AnnotationProperty .
 
 
 #################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1f2d401c_eede_4178_9ff5_e5392bc2cb92
+:electrochemistry_1f2d401c_eede_4178_9ff5_e5392bc2cb92 rdf:type owl:DatatypeProperty ;
+                                                       skos:prefLabel "hasIECCode"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_eac15067_9594_4eab_a440_b537b0fd2075
+:electrochemistry_eac15067_9594_4eab_a440_b537b0fd2075 rdf:type owl:DatatypeProperty ;
+                                                       skos:prefLabel "hasANSICode"@en .
+
+
+#################################################################
 #    Classes
 #################################################################
 
@@ -766,7 +780,7 @@ schema:name rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_15325775_6d4c_4192_82f1_e4feca9de426
 :electrochemistry_15325775_6d4c_4192_82f1_e4feca9de426 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_b5ea31c9_bb10_4276_980e_c3eceb1efc82 ;
+                                                       rdfs:subClassOf :electrochemistry_331e6cca_f260_4bf8_af55_35304fe1bbe0 ;
                                                        skos:prefLabel "IonExchangeMembrane"@en ;
                                                        emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q21082486" ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A membrane having ion-exchange groups:"@en ;
@@ -1403,7 +1417,7 @@ Aluminum foil"""@en .
                                                                          owl:onProperty emmo:EMMO_dba27ca1_33c9_4443_a912_1519ce4c39ec ;
                                                                          owl:someValuesFrom :electrochemistry_efaca8db_a3e0_4188_9c9b_ed0037966725
                                                                        ] ;
-                                                       skos:prefLabel "TimeseriesElectricalDataset"@en ;
+                                                       skos:prefLabel "TimeSeriesElectricalDataSet"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a time series of electrical quantities"@en .
 
 
@@ -2391,7 +2405,8 @@ Aluminum foil"""@en .
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_564d31be_91cb_4a8f_8369_2a55f1180499
 :electrochemistry_564d31be_91cb_4a8f_8369_2a55f1180499 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_fa22874b_76a9_4043_8b8f_6086c88746de ;
+                                                       rdfs:subClassOf :electrochemistry_5f9a9411_05f9_4576_acd3_81d7d41cfe98 ,
+                                                                       :electrochemistry_fa22874b_76a9_4043_8b8f_6086c88746de ;
                                                        skos:prefLabel "OrganicElectrolyte"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrolyte solution with an organic solvent"@en .
 
@@ -2422,6 +2437,7 @@ Aluminum foil"""@en .
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_58413d4e_2885_459e_ac06_8d45e661cf91
 :electrochemistry_58413d4e_2885_459e_ac06_8d45e661cf91 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_331e6cca_f260_4bf8_af55_35304fe1bbe0 ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
                                                        skos:prefLabel "PorousSeparator"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a separator with a porosity greater than 0"@en .
 
@@ -2537,7 +2553,7 @@ Aluminum foil"""@en .
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5f9a9411_05f9_4576_acd3_81d7d41cfe98
 :electrochemistry_5f9a9411_05f9_4576_acd3_81d7d41cfe98 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59 ;
+                                                       rdfs:subClassOf :electrochemistry_609b340f_3450_4a10_95c2_c457e3eb8a89 ;
                                                        skos:altLabel "NonAqueousElectrolyticSolution"@en ,
                                                                      "NonAqueousSolution"@en ;
                                                        skos:prefLabel "NonAqueousElectrolyte"@en ;
@@ -3214,7 +3230,7 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                                                          owl:onProperty emmo:EMMO_dba27ca1_33c9_4443_a912_1519ce4c39ec ;
                                                                          owl:someValuesFrom :electrochemistry_496c8f31_9732_42c1_8eae_dd73979c06eb
                                                                        ] ;
-                                                       skos:prefLabel "TimeSeriesDataset"@en ;
+                                                       skos:prefLabel "TimeSeriesDataSet"@en ;
                                                        emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q186588" ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a series of data points indexed in time order"@en ;
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Time_series"@en .
@@ -3487,6 +3503,16 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                                        emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q102836" ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an elastic device"@en ;
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Spring_(device)"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_87340877_e8ed_4061_ac2f_cb1c121e7193
+:electrochemistry_87340877_e8ed_4061_ac2f_cb1c121e7193 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_dc1af38d_438e_40c2_8a68_0d631a8f46f2 ;
+                                                       skos:altLabel "ConstantPowerOperation"@en ,
+                                                                     "FonctionnementAPuissanceConstante"@fr ;
+                                                       skos:prefLabel "PowerHold"@en ;
+                                                       emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=485-11-02" ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a process in which the electric power is kept constant"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_88100e2c_0f6e_4483_afbf_30029a6702c6
@@ -4247,6 +4273,13 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
  ] .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a2f65954_1ed8_4faf_9efe_597018d03e8d
+:electrochemistry_a2f65954_1ed8_4faf_9efe_597018d03e8d rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_87340877_e8ed_4061_ac2f_cb1c121e7193 ;
+                                                       skos:prefLabel "ConstantPowerDischarging"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "discharge during which the electric power is maintained at a constant value"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a3745142_b97a_4e19_b7ed_03599f56e81d
 :electrochemistry_a3745142_b97a_4e19_b7ed_03599f56e81d rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5 ,
@@ -4448,7 +4481,8 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_aac51107_dbe5_4e63_b08a_9d6cf88f4b69
 :electrochemistry_aac51107_dbe5_4e63_b08a_9d6cf88f4b69 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_a9873d3d_945b_40ba_b9cd_8dfb64cec88f ;
+                                                       rdfs:subClassOf emmo:EMMO_57ba1bf0_4314_432c_a9bb_6a6720c8dab5 ,
+                                                                       :electrochemistry_a9873d3d_945b_40ba_b9cd_8dfb64cec88f ;
                                                        skos:prefLabel "TwoStepCharging"@en ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-48"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "charging method applied to a secondary battery using two levels of charge rate with feedback control to initiate the changeover from a high to a low charge rate"@en .
@@ -4555,6 +4589,13 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a cylindrical case with a nominal diameter of 32 mm and height of 70 mm"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_addf91e1_ba8c_4a3e_b1e9_092e3e1cc2b3
+:electrochemistry_addf91e1_ba8c_4a3e_b1e9_092e3e1cc2b3 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_5f9a9411_05f9_4576_acd3_81d7d41cfe98 ;
+                                                       skos:prefLabel "NonAqueousInorganicElectrolyte"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrolyte solution that contains no water and no organic species"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ae56cce3_7a7c_4e53_bb58_31e0d642d47e
 :electrochemistry_ae56cce3_7a7c_4e53_bb58_31e0d642d47e rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_f76884f7_964e_488e_9bb7_1b2453e9e817 ;
@@ -4656,7 +4697,7 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b2d11f0d_c1b0_4476_8d17_03b73d31e01f
 :electrochemistry_b2d11f0d_c1b0_4476_8d17_03b73d31e01f rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_b5ea31c9_bb10_4276_980e_c3eceb1efc82 ;
+                                                       rdfs:subClassOf :electrochemistry_331e6cca_f260_4bf8_af55_35304fe1bbe0 ;
                                                        skos:prefLabel "AsymmetricMembrane"@en ;
                                                        emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q120965018" ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "membrane constituted of two or more structural planes of non-identical morphologies"@en ;
@@ -5159,7 +5200,7 @@ of other configurations are used."""@en .
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c3f4b34a_0e2c_46f3_baab_4ebd2682d26f
 :electrochemistry_c3f4b34a_0e2c_46f3_baab_4ebd2682d26f rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_609b340f_3450_4a10_95c2_c457e3eb8a89 ;
+                                                       rdfs:subClassOf :electrochemistry_5f9a9411_05f9_4576_acd3_81d7d41cfe98 ;
                                                        skos:altLabel "IonicLiquid"@en ;
                                                        skos:prefLabel "IonicLiquidElectrolyte"@en ;
                                                        emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "https://dbpedia.org/page/Ionic_liquid"@en ;
@@ -5565,7 +5606,7 @@ of other configurations are used."""@en .
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d11b0e66_c35b_4da7_80a1_037ce89b77fb
 :electrochemistry_d11b0e66_c35b_4da7_80a1_037ce89b77fb rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_58413d4e_2885_459e_ac06_8d45e661cf91 ;
+                                                       rdfs:subClassOf :electrochemistry_331e6cca_f260_4bf8_af55_35304fe1bbe0 ;
                                                        skos:altLabel "FibreglassSeparator"@en ;
                                                        skos:prefLabel "GlassFibreSeparator"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a separator is composed of a mass of intermeshed glass fibers."@en .
@@ -5799,6 +5840,13 @@ of other configurations are used."""@en .
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a coin case with a nominal diameter of 6.8 mm and a height of 1.65 mm"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dc1af38d_438e_40c2_8a68_0d631a8f46f2
+:electrochemistry_dc1af38d_438e_40c2_8a68_0d631a8f46f2 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_f4ce4df2_d7e6_470f_8eab_3a911adaaf0f ;
+                                                       skos:prefLabel "PowerControlledProcess"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a process in which the electric power is controlled"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dc205ac2_314e_415c_a2b6_b12e8359d54c
 :electrochemistry_dc205ac2_314e_415c_a2b6_b12e8359d54c rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_b812e9d0_7c58_4455_b3e7_6847f10c8e8a ;
@@ -5818,6 +5866,13 @@ of other configurations are used."""@en .
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-03"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "type of capacitor characterized by high capacitance, high specific and volumetric energy density, and low voltage limits"@en ;
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Supercapacitor"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dcd4a15d_52cf_44fb_b826_df18e4baa89c
+:electrochemistry_dcd4a15d_52cf_44fb_b826_df18e4baa89c rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_87340877_e8ed_4061_ac2f_cb1c121e7193 ;
+                                                       skos:prefLabel "ConstantPowerCharging"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "charge during which the electric power is maintained at a constant value"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dd4c5ffa_6228_41d8_8a44_a40a2b22723e
