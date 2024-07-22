@@ -10,6 +10,7 @@
        "@type": "dc:LicenseDocument",
        "@id": "http://opendefinition.org/licenses/cc-by/"
     },
+    "schema:license": "http://opendefinition.org/licenses/cc-by/",
     "dc:format": "application/ld+json",
     "dc:accessRights": "public",
     "dc:rights": "public",
@@ -19,6 +20,16 @@
             "schema:name": "SINTEF"
     },
     "dc:creator": {
+        "@type": "schema:Person",
+        "@id": "https://orcid.org/0000-0002-8758-6109",
+        "schema:name": "Simon Clark",
+        "schema:affiliation": {
+            "@type": "schema:ResearchOrganization",
+            "@id": "https://ror.org/01f677e56",
+            "schema:name": "SINTEF"
+        }
+    },
+    "schema:creator": {
         "@type": "schema:Person",
         "@id": "https://orcid.org/0000-0002-8758-6109",
         "schema:name": "Simon Clark",
