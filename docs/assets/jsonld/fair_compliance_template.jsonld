@@ -10,7 +10,7 @@
        "@type": "dc:LicenseDocument",
        "@id": "http://opendefinition.org/licenses/cc-by/"
     },
-    "schema:license": "http://opendefinition.org/licenses/cc-by/",
+    "http://schema.org/license": "http://opendefinition.org/licenses/cc-by/",
     "dc:format": "application/ld+json",
     "dc:accessRights": "public",
     "dc:rights": "public",
