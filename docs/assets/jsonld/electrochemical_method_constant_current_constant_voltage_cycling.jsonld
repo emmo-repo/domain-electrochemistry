@@ -9,9 +9,9 @@
         "rdfs:label": "SimonClark"
     },
     "hasLab": {
-        "@type": "Lab",
+        "@type": "Laboratory",
         "@id": "https://www.wikidata.org/wiki/Q127510279",
-        "rdfs:label": "SINTEFBatteryLab"
+        "rdfs:label": "SINTEF Battery Lab"
     },
     "hasCharacterisationEnvironment": {
         "@type": "CharacterisationEnvironment",

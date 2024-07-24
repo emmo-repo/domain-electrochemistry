@@ -4023,6 +4023,25 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Einstein_relation_(kinetic_theory)#Nernst%E2%80%93Einstein_equation"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9d97c7ff_b0c7_4ba2_a3cb_c6509b6798a8
+:electrochemistry_9d97c7ff_b0c7_4ba2_a3cb_c6509b6798a8 rdf:type owl:Class ;
+                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#MeasurementDataPostProcessing> ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
+                                                                         owl:someValuesFrom :electrochemistry_4920de95_3a48_4669_b762_5a0b5232b52f
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
+                                                                         owl:someValuesFrom :electrochemistry_58ad1d22_3803_4c95_a137_207cfebe242a
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
+                                                                         owl:someValuesFrom :electrochemistry_791c1915_a791_4450_acd8_7f94764743b5
+                                                                       ] ;
+                                                       skos:prefLabel "CapacityCalculation"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "data processing procedure that determines the capacity based on time data and electric current data"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9da958fc_f76d_4654_8a78_99b5f98c118c
 :electrochemistry_9da958fc_f76d_4654_8a78_99b5f98c118c rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_b9522e56_1fac_4766_97e6_428605fabd3e ,
@@ -5486,6 +5505,28 @@ of other configurations are used."""@en .
                                                        skos:altLabel "IrO2Electrode"@en ;
                                                        skos:prefLabel "IridiumOxideElectrode"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrode in which the active material is iridium oxide"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cbb95634_450c_4332_980c_d37baadd7619
+:electrochemistry_cbb95634_450c_4332_980c_d37baadd7619 rdf:type owl:Class ;
+                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#MeasurementDataPostProcessing> ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
+                                                                         owl:someValuesFrom :electrochemistry_4920de95_3a48_4669_b762_5a0b5232b52f
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
+                                                                         owl:someValuesFrom :electrochemistry_4d09ddc4_7e71_4712_afab_b33d8df38983
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
+                                                                         owl:someValuesFrom :electrochemistry_58ad1d22_3803_4c95_a137_207cfebe242a
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
+                                                                         owl:someValuesFrom :electrochemistry_46376e5d_9627_4514_9881_9e62083625c3
+                                                                       ] ;
+                                                       skos:prefLabel "EnergyCalculation"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cc0468a2_1851_4d3d_92a6_b4059db0c056
