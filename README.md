@@ -21,10 +21,12 @@ Here is some information to help you get started working with the ontology in py
 
 ## Protégé
 
-Protege is a open-source graphical editor for exploring and editing ontologies. You can [download a local copy](https://protege.stanford.edu/) or explore the pre-inferred ontology in a [web-based instance](https://webprotege.stanford.edu/#projects/1f6fd01b-b127-4bc0-a998-ee269797be87/edit/Classes) (requires registering for a free account). Some suggested entry points for new users are:  
+Protege is a open-source graphical editor for exploring and editing ontologies. You can explore the pre-inferred ontology in a [web-based instance](https://webprotege.stanford.edu/#projects/1f6fd01b-b127-4bc0-a998-ee269797be87/edit/Classes) (requires registering for a free account). Some suggested entry points for new users are:  
 - [ElectrochemicalCell](https://webprotege.stanford.edu/#projects/1f6fd01b-b127-4bc0-a998-ee269797be87/edit/Classes?selection=Class(%3Chttps://w3id.org/emmo/domain/electrochemistry%23electrochemistry_6f2c88c9_5c04_4953_a298_032cc3ab9b77%3E))
 - [Electrode](https://webprotege.stanford.edu/#projects/1f6fd01b-b127-4bc0-a998-ee269797be87/edit/Classes?selection=Class(%3Chttps://w3id.org/emmo/domain/electrochemistry%23electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627%3E))
 - [Electrolyte](https://webprotege.stanford.edu/#projects/1f6fd01b-b127-4bc0-a998-ee269797be87/edit/Classes?selection=Class(%3Chttps://w3id.org/emmo/domain/electrochemistry%23electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59%3E))  
+
+You can also [download a local copy](https://protege.stanford.edu/) to explore the ontology on your machine.
 
 ## Python
 There are two common ways to work with the ontology in python: loading the ontology as a graph using [rdflib](https://rdflib.readthedocs.io/en/stable/) or exploring the content of the ontology using [EMMOntoPy](https://github.com/emmo-repo/EMMOntoPy). Examples of both are provided below.
