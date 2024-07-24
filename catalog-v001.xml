@@ -4,8 +4,8 @@
   <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base="">
     <uri name="https://w3id.org/emmo/domain/chemical-substance/0.7.0-beta/chemical-substance" uri="https://raw.githubusercontent.com/emmo-repo/domain-chemical-substance/main/chemical-substance.ttl"/>
     <uri name="https://w3id.org/emmo/domain/characterisation-methodology/chameo" uri="https://raw.githubusercontent.com/emmo-repo/domain-characterisation-methodology/main/chameo.ttl"/>
-    <uri name="https://w3id.org/emmo/domain/electrochemistry/0.19.0-beta/electrochemistry" uri="./electrochemistry.ttl"/>
-    <uri name="https://w3id.org/emmo/domain/electrochemistry/0.19.0-beta/electrochemicalquantities" uri="./electrochemicalquantities.ttl"/>
+    <uri name="https://w3id.org/emmo/domain/electrochemistry/0.20.0-beta/electrochemistry" uri="./electrochemistry.ttl"/>
+    <uri name="https://w3id.org/emmo/domain/electrochemistry/0.20.0-beta/electrochemicalquantities" uri="./electrochemicalquantities.ttl"/>
 
     <uri name="https://w3id.org/emmo/1.0.0-beta7/mereocausality"                  uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0-beta7/mereocausality/mereocausality.ttl"/>
 
