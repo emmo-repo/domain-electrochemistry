@@ -1,0 +1,134 @@
+{
+    "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
+    "@type": ["CyclicVoltammetry", "IterativeWorkflow"],
+    "rdfs:label": "Example Cyclic Voltammetry Measurement",
+    "rdfs:comment": "an example of a description of a cyclic voltammetry process",
+    "hasOperator": {
+        "@type": "schema:Person",
+        "@id": "https://orcid.org/0000-0002-8758-6109",
+        "rdfs:label": "SimonClark"
+    },
+    "hasLab": {
+        "@type": "Laboratory",
+        "@id": "https://www.wikidata.org/wiki/Q127510279",
+        "rdfs:label": "SINTEFBatteryLab"
+    },
+    "hasCharacterisationEnvironment": {
+        "@type": "CharacterisationEnvironment",
+        "rdfs:label": "ExampleEnvironment",
+        "rdfs:comment": "the environment where the test is performed",
+        "hasCharacterisationEnvironmentProperty": [
+            {
+                "@type": "AmbientCelsiusTemperature",
+                "hasNumericalPart": {
+                    "@type": "Real",
+                    "hasNumericalValue": 20
+                },
+                "hasMeasurementUnit": "emmo:DegreeCelsius"
+            }
+        ]
+    },
+    "hasInput": {
+        "@type": "ThreeElectrodeCell",
+        "hasWorkingElectrode": {
+            "@type": "GlassyCarbonElectrode"
+        },
+        "hasCounterElectrode": {
+            "@type": "PlatinumElectrode"
+        },
+        "hasReferenceElectrode": {
+            "@type": "ReversibleHydrogenElectrode"
+        }, 
+        "hasElectrolyte": {
+            "@type": "AlkalineElectroylte",
+            "hasSolute": {
+                "@type": "PotassiumHydroxide",
+                "hasProperty": {
+                    "@type": "AmountConcentration",
+                    "hasNumericalPart": {
+                        "@type": "Real",
+                        "hasNumericalValue": 1
+                    },
+                    "hasMeasurementUnit": "emmo:MolePerLitre"
+                }
+            }
+        }
+    },
+    "hasOutput": [
+        {
+            "@type": "TimeSeriesDataSet",
+            "hasConstituent": [
+                {
+                    "@type": "TimeData"
+                },
+                {
+                    "@type": "VoltageData"
+                },
+                {
+                    "@type": "CurrentData"
+                }
+            ]
+        }
+    ],
+    "hasTemporaryParticipant": {
+        "@type": "Potentiostat"
+    },
+    "hasTask": {
+        "@type": "ForwardVoltageSweep",
+        "hasMeasurementParameter": [
+            {
+                "@type": "PotentialScanRate",
+                "hasNumericalPart": {
+                    "@type": "Real",
+                    "hasNumericalValue": 10
+                },
+                "hasMeasurementUnit": "emmo:MilliVoltPerSecond"
+            },
+            {
+                "@type": ["LowerVoltageLimit"],
+                "hasNumericalPart": {
+                    "@type": "Real",
+                    "hasNumericalValue": -0.2
+                },
+                "hasMeasurementUnit": "emmo:Volt"
+            },
+            {
+                "@type": ["UpperVoltageLimit"],
+                "hasNumericalPart": {
+                    "@type": "Real",
+                    "hasNumericalValue": 1.2
+                },
+                "hasMeasurementUnit": "emmo:Volt"
+            }
+        ],
+        "hasNext": {
+            "@type": "ReverseVoltageSweep",
+            "hasMeasurementParameter": [
+                {
+                    "@type": "PotentialScanRate",
+                    "hasNumericalPart": {
+                        "@type": "Real",
+                        "hasNumericalValue": 10
+                    },
+                    "hasMeasurementUnit": "emmo:MilliVoltPerSecond"
+                },
+                {
+                    "@type": ["LowerVoltageLimit"],
+                    "hasNumericalPart": {
+                        "@type": "Real",
+                        "hasNumericalValue": -0.2
+                    },
+                    "hasMeasurementUnit": "emmo:Volt"
+                },
+                {
+                    "@type": ["UpperVoltageLimit"],
+                    "hasNumericalPart": {
+                        "@type": "Real",
+                        "hasNumericalValue": 1.2
+                    },
+                    "hasMeasurementUnit": "emmo:Volt"
+                }
+            ]
+        }
+    }
+}

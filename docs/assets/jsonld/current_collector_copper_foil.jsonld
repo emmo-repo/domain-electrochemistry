@@ -1,0 +1,38 @@
+{
+    "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
+    "@type": ["CurrentCollector", "Copper", "Foil"],
+    "hasProperty": [
+       {
+             "@type": "Thickness",
+             "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 10
+             },
+             "hasMeasurementUnit": "emmo:MicroMetre"
+       },
+       {
+             "@type": "Length",
+             "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 100
+             },
+             "hasMeasurementUnit": "emmo:MilliMetre"
+       },
+       {
+             "@type": "Width",
+             "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 50
+             },
+             "hasMeasurementUnit": "emmo:MilliMetre"
+       },
+       {
+             "@type": "Mass",
+             "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 0.5
+             },
+             "hasMeasurementUnit": "emmo:Gram"
+       }
+    ]
+ }

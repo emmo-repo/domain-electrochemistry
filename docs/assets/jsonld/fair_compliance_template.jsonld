@@ -1,0 +1,51 @@
+{
+    "@context": "https://w3id.org/emmo/domain/battery/context",
+    "@type": "dcat:Resource",
+    "@id": "https://doi.org/10.5281/zenodo.12784051",
+    "dc:identifier": "https://doi.org/10.5281/zenodo.12784051",
+    "dc:title": "A JSON-LD Metadata Template for FAIR Compliance",
+    "dc:description": "This is an example JSON-LD file that demonstrates how to comply with FAIR data requirements. Note that it only covers high-level metadata terms related to authorship, versioning, licensing, etc. and does not cover data-specific metadata terms.",
+    "dc:language": "en",
+    "dc:license": {
+       "@type": "dc:LicenseDocument",
+       "@id": "http://opendefinition.org/licenses/cc-by/"
+    },
+    "http://schema.org/license": "http://opendefinition.org/licenses/cc-by/",
+    "dc:format": "application/ld+json",
+    "dc:accessRights": "public",
+    "dc:rights": "public",
+    "dc:publisher": {
+        "@type": "schema:ResearchOrganization",
+            "@id": "https://ror.org/01f677e56",
+            "schema:name": "SINTEF"
+    },
+    "dc:creator": {
+        "@type": "schema:Person",
+        "@id": "https://orcid.org/0000-0002-8758-6109",
+        "schema:name": "Simon Clark",
+        "schema:affiliation": {
+            "@type": "schema:ResearchOrganization",
+            "@id": "https://ror.org/01f677e56",
+            "schema:name": "SINTEF"
+        }
+    },
+    "schema:creator": {
+        "@type": "schema:Person",
+        "@id": "https://orcid.org/0000-0002-8758-6109",
+        "schema:name": "Simon Clark",
+        "schema:affiliation": {
+            "@type": "schema:ResearchOrganization",
+            "@id": "https://ror.org/01f677e56",
+            "schema:name": "SINTEF"
+        }
+    },
+    "dc:modified": {
+       "@value": "2024-07-19",
+       "@type": "xsd:date"
+    },
+    "dc:created": {
+       "@value": "2024-07-19",
+       "@type": "xsd:date"
+    },
+    "dc:hasVersion": "0.1.0"
+}

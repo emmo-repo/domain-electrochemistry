@@ -12,7 +12,7 @@
 @base <https://w3id.org/emmo/domain/electrochemistry/electrochemicalquantities> .
 
 <https://w3id.org/emmo/domain/electrochemistry/electrochemicalquantities> rdf:type owl:Ontology ;
-                                                                           owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.19.0-beta/electrochemicalquantities> ;
+                                                                           owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.20.0-beta/electrochemicalquantities> ;
                                                                            owl:imports <https://w3id.org/emmo/1.0.0-beta7/disciplines/isq> ;
                                                                            dcterms:abstract "This electrochemical quantities ontology is a domain of the Elementary Multiperspective Materials Ontology (EMMO). It is a specialized framework designed to represent and organize knowledge about electrochemical quantities. It is designed to integrate with the electrochemistry domain ontology or other ontologies from the EMMO ecosystem. The main focus of this ontology is to provide machine-readable descriptions of common electrochemical quantities, linking both to the larger descriptions of physical quantities in EMMO as well as other sources of information like the IEC, QUDT, Wikidata, etc. It should be used to support linked data generation in the electrochemistry domain."@en ;
                                                                            dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
@@ -21,7 +21,7 @@
                                                                            dcterms:creator <https://orcid.org/0000-0002-8758-6109> ,
                                                                                            <https://orcid.org/0000-0003-2954-1233> ;
                                                                            dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                                                           owl:versionInfo "0.19.0-beta" .
+                                                                           owl:versionInfo "0.20.0-beta" .
 
 #################################################################
 #    Annotation properties
@@ -348,6 +348,14 @@ emmo:EMMO_e218c625_6a39_47a9_8d08_a2ef41c152a9 rdfs:subClassOf :electrochemistry
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the capacity obtained during constant current discharging of an electrochemical device"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_08b6d07a_0f6c_4932_afbd_fb6b699164ae
+:electrochemistry_08b6d07a_0f6c_4932_afbd_fb6b699164ae rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_b395a244_3a75_4737_be38_981bfa1277fe ,
+                                                                       :electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee ;
+                                                       skos:prefLabel "LowerCRateLimit"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the lower value for C-Rate that is used to indicate a change in an electrochemical measurement process"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_09e64707_a17d_4405_84cc_ee9d91ed32ef
 :electrochemistry_09e64707_a17d_4405_84cc_ee9d91ed32ef rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ,
@@ -589,6 +597,16 @@ and t* through mathematical models, provided that the long-time potential- deter
  ] .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1acab8af_9798_45df_a64b_a7030c57a4de
+:electrochemistry_1acab8af_9798_45df_a64b_a7030c57a4de rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ,
+                                                                       :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
+                                                       skos:altLabel "DoD"@en ;
+                                                       skos:prefLabel "DepthOfDischarge"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the ratio of the discharged capacity to the rated capacity of an electrochemical device"@en ;
+                                                       emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Depth_of_discharge" .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1b2a7137_64d4_483a_8437_dcb3bedcb6da
 :electrochemistry_1b2a7137_64d4_483a_8437_dcb3bedcb6da rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_74de2c33_84fc_4c2f_afe1_56d169149114 ;
@@ -636,7 +654,7 @@ and t* through mathematical models, provided that the long-time potential- deter
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1cdeedbf_7f9a_4e1f_a297_204a6e16b718
 :electrochemistry_1cdeedbf_7f9a_4e1f_a297_204a6e16b718 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_46376e5d_9627_4514_9881_9e62083625c3 ;
+                                                       rdfs:subClassOf :electrochemistry_da215d1a_196a_465f_9de8_89f6fbb76982 ;
                                                        skos:prefLabel "MaximumStorageEnergy"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the maximum amount of energy that can be reversible stored within an electrochemical device, component, or material - operated at an infinitely low rate - based on its chemical composition and design"@en .
 
@@ -664,6 +682,13 @@ and t* through mathematical models, provided that the long-time potential- deter
    owl:annotatedTarget "quotient of the capacity of a cell or battery [ or electrode or active material ] by its mass."@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1eeb0e2a_229a_43f1_b197_348d475067ff
+:electrochemistry_1eeb0e2a_229a_43f1_b197_348d475067ff rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_c955c089_6ee1_41a2_95fc_d534c5cfd3d5 ;
+                                                       skos:prefLabel "ActiveMassLoading"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the mass of active material per unit area"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_214d925c_76c4_4f69_9afc_056a1ea82fc6
@@ -911,6 +936,19 @@ and t* through mathematical models, provided that the long-time potential- deter
    owl:annotatedTarget "electric potential of a steady-state voltammetric working electrode at the point, on the rising part of the voltammetric wave, where the current is equal to one-half of the limiting current"@en ;
    dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2c0e66c8_d58d_44b2_b0ce_ba55194bd505
+:electrochemistry_2c0e66c8_d58d_44b2_b0ce_ba55194bd505 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_cf386c1e_e62b_43ef_9b0e_e5e58935d63f ;
+                                                       skos:prefLabel "WeightPercent"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2cfea66b_756d_4642_986f_9a41abbd7034
+:electrochemistry_2cfea66b_756d_4642_986f_9a41abbd7034 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_c955c089_6ee1_41a2_95fc_d534c5cfd3d5 ;
+                                                       skos:prefLabel "InactiveMassLoading"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the mass of inactive material per unit area"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2d58b059_2ef0_418e_9337_13aa2de4b07f
@@ -1691,6 +1729,14 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        skos:prefLabel "CurrentChangeLimit"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_73f169de_d189_4d7c_893f_a2549771825c
+:electrochemistry_73f169de_d189_4d7c_893f_a2549771825c rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26 ;
+                                                       skos:altLabel "RecoveryCapacity"@en ;
+                                                       skos:prefLabel "RecoveredCapacity"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the capacity that can be obtained from an electrochemical device after it has been subjected to some specified conditions, then recharged and discharged according to a recommended protocol"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_74861991_7da2_4e0f_b6c1_b16713f538bf
 :electrochemistry_74861991_7da2_4e0f_b6c1_b16713f538bf rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_c7b26177_21bf_4787_b656_8e78edf27f88 ;
@@ -1778,6 +1824,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
 :electrochemistry_79198264_cdf5_4fc3_8bcf_e5140a52547a rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ,
                                                                        :electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634 ;
+                                                       skos:altLabel "RoundTripEfficiency"@en ;
                                                        skos:hiddenLabel "EnergyEfficiency/%"@en ;
                                                        skos:prefLabel "EnergyEfficiency"@en ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-53" ;
@@ -1984,6 +2031,19 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
  ] .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8430be19_6cae_4a15_a570_3c15d0d190eb
+:electrochemistry_8430be19_6cae_4a15_a570_3c15d0d190eb rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_c2f5ee66_579c_44c6_a2e9_fa2eaa9fa4da ;
+                                                       skos:prefLabel "PercentUnit"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8541f8b7_c55e_452d_b3f8_db29dcb2a61d
+:electrochemistry_8541f8b7_c55e_452d_b3f8_db29dcb2a61d rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_c955c089_6ee1_41a2_95fc_d534c5cfd3d5 ;
+                                                       skos:prefLabel "TotalMassLoading"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the mass of all material (active and inactive) per unit area"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_85e39686_9658_4c74_bb91_a935704c174a
 :electrochemistry_85e39686_9658_4c74_bb91_a935704c174a rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_0adabf6f_7404_44cb_9f65_32d83d8101a3 ,
@@ -2022,6 +2082,16 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                        rdfs:subClassOf :electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26 ;
                                                        skos:prefLabel "NominalCapacity"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the rated capacity that is representative of the typical value associated with a cell as stated by the manufacturer"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8b2aaa50_bbe1_45da_8778_8898326246a2
+:electrochemistry_8b2aaa50_bbe1_45da_8778_8898326246a2 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ,
+                                                                       :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
+                                                       skos:altLabel "SoC"@en ;
+                                                       skos:prefLabel "StateOfCharge"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the ratio of the charged capacity to the rated capacity of an electrochemical device"@en ;
+                                                       emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/State_of_charge" .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8de9735b_374a_4a0f_b29f_71a50794cf94
@@ -2074,6 +2144,13 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
 :electrochemistry_900e357f_2ee3_425a_a0b6_322661117787 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_909415d1_7c43_4d5e_bbeb_7e1910159f66 ;
                                                        skos:prefLabel "ElectrochemicalProperty"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_93f000d8_efc1_4364_896c_c9ebc4c7ce3a
+:electrochemistry_93f000d8_efc1_4364_896c_c9ebc4c7ce3a rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_c4120ce7_f1ff_4917_b59e_002454a65040 ;
+                                                       skos:prefLabel "ChargingPRate"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an indicator of the electric power at which an electrochemical device is charged"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_95ef8c3c_62fe_467f_b5d4_dd0cd18a7ea8
@@ -2499,9 +2576,16 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the lower end of the interval of frequencies tested in impedimetry and related techniques"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b6f33044_1892_41a4_ae89_8683d4225f8d
+:electrochemistry_b6f33044_1892_41a4_ae89_8683d4225f8d rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_c4120ce7_f1ff_4917_b59e_002454a65040 ;
+                                                       skos:prefLabel "DischargingPRate"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an indicator of the electric power at which an electrochemical device is discharged"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b7781ebc_90a7_4f19_997f_aed28dee1b01
 :electrochemistry_b7781ebc_90a7_4f19_997f_aed28dee1b01 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_791c1915_a791_4450_acd8_7f94764743b5 ,
+                                                       rdfs:subClassOf :electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26 ,
                                                                        :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                                        skos:altLabel "TheoreticalChargeCapacity"@en ;
                                                        skos:prefLabel "MaximumStorageCapacity"@en ;
@@ -2513,6 +2597,13 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                        rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
                                                        skos:prefLabel "D10ParticleSize"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 10% of the sample's particles fall."@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b8d4042d_329a_450f_9088_2fc0e16a8667
+:electrochemistry_b8d4042d_329a_450f_9088_2fc0e16a8667 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26 ;
+                                                       skos:prefLabel "RetainedCapacity"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the capacity that an electrochemical device can deliver after being stored under some specified conditions"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b90b1ad7_b9a8_44df_ad45_bfd25aac2e49
@@ -2596,6 +2687,14 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
    owl:annotatedTarget "range of electrode potentials of a given working electrode in a given electrolyte, where the electric current from reactions of the electrode or electrolyte is negligible compared with the current from reactions of the system under investigation"@en ;
    dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c4120ce7_f1ff_4917_b59e_002454a65040
+:electrochemistry_c4120ce7_f1ff_4917_b59e_002454a65040 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ,
+                                                                       :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
+                                                       skos:prefLabel "PRate"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an indicator of the electric power at which an electrochemical device is operated"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c4d551db_db17_4c33_92e6_aec71638afbc
@@ -2725,6 +2824,16 @@ In either case, the magnitude of the catalytic current depends on the applied po
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "measure of a substance's tendency towards electronic conduction"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cf386c1e_e62b_43ef_9b0e_e5e58935d63f
+:electrochemistry_cf386c1e_e62b_43ef_9b0e_e5e58935d63f rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 ;
+                                                                         owl:someValuesFrom :electrochemistry_8430be19_6cae_4a15_a570_3c15d0d190eb
+                                                                       ] ;
+                                                       skos:prefLabel "PercentQuantity"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cf54e7c1_f359_4715_b61d_0350b890d597
 :electrochemistry_cf54e7c1_f359_4715_b61d_0350b890d597 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
@@ -2836,6 +2945,19 @@ In either case, the magnitude of the catalytic current depends on the applied po
    owl:annotatedTarget "potential of an electrode when no electric current flows through the cell and all local charge transfer equilibria across phase boundaries that are represented in the cell diagram (except at possible electrolyte-electrolyte junctions) and local chemical equilibria are established"@en ;
    dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_da215d1a_196a_465f_9de8_89f6fbb76982
+:electrochemistry_da215d1a_196a_465f_9de8_89f6fbb76982 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_46376e5d_9627_4514_9881_9e62083625c3 ;
+                                                       skos:prefLabel "RatedEnergy"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the amount of energy that an electrochemical device can store under some specific conditions"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_db37b358_b2f0_4e06_b6ae_8c56c8fbb6ba
+:electrochemistry_db37b358_b2f0_4e06_b6ae_8c56c8fbb6ba rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_cf386c1e_e62b_43ef_9b0e_e5e58935d63f ;
+                                                       skos:prefLabel "VolumePercent"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_db40df7e_1aa5_49a7_85cb_2aa2c1c70489

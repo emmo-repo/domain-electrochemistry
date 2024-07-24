@@ -1,0 +1,331 @@
+{
+    "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
+    "@type": ["CapacityRetentionAndRecoveryTest", "SerialWorkflow"],
+    "rdfs:label": "Example Capacity Retention and Recovery Test",
+    "rdfs:comment": "This is an example of how to describe a capacity retention and recovery test, that also builds on the domain for characterisation methodology (CHAMEO).",
+    "hasOperator": {
+        "@type": "schema:Person",
+        "@id": "https://orcid.org/0000-0002-8758-6109",
+        "rdfs:label": "Simon Clark",
+        "rdfs:comment": "The person who performs the test"
+    },
+    "hasLaboratory": {
+        "@type": "Laboratory",
+        "@id": "https://www.wikidata.org/wiki/Q127510279",
+        "rdfs:label": "SINTEF Battery Laboratory",
+        "rdfs:comment": "The laboratory where the test is performed"
+    },
+    "hasCharacterisationEnvironment": {
+        "@type": "CharacterisationEnvironment",
+        "rdfs:label": "Example Environment",
+        "rdfs:comment": "The environment where the test is performed",
+        "hasCharacterisationEnvironmentProperty": [
+            {
+                "@type": "AmbientCelsiusTemperature",
+                "hasNumericalPart": {
+                    "@type": "Real",
+                    "hasNumericalValue": 20
+                },
+                "hasMeasurementUnit": "emmo:DegreeCelsius"
+            }
+        ]
+    },
+    "hasTask": {
+        "@type": ["SamplePreparation", "ConstantCurrentDischarging"],
+        "hasMeasurementParameter": [
+            {
+                "@type": "DischargingCRate",
+                "hasNumericalPart": {
+                    "@type": "Real",
+                    "hasNumericalValue": 0.2
+                },
+                "hasMeasurementUnit": "emmo:AmperePerAmpereHour"
+            },
+            {
+                "@type": ["LowerVoltageLimit", "TerminationQuantity"],
+                "hasNumericalPart": {
+                    "@type": "Real",
+                    "hasNumericalValue": 2.4
+                },
+                "hasMeasurementUnit": "emmo:Volt"
+            }
+        ],
+        "hasNext": {
+            "@type": ["SamplePreparation", "ConstantCurrentConstantVoltageCharging", "SerialWorkflow"],
+            "rdfs:label": "Example of device charging preparation",
+            "rdfs:comment": "This process prepares the electrochemical device for testing by first charging it using a CCCV protocol at C/5 to an upper voltage limit of 4.2 V.",
+            "hasTask": {
+                "@type": "ConstantCurrentCharging",
+                "hasMeasurementParameter": [
+                    {
+                        "@type": "ChargingCRate",
+                        "hasNumericalPart": {
+                            "@type": "Real",
+                            "hasNumericalValue": 0.2
+                        },
+                        "hasMeasurementUnit": "emmo:AmperePerAmpereHour"
+                    },
+                    {
+                        "@type": ["UpperVoltageLimit", "TerminationQuantity"],
+                        "hasNumericalPart": {
+                            "@type": "Real",
+                            "hasNumericalValue": 4.2
+                        },
+                        "hasMeasurementUnit": "emmo:Volt"
+                    }
+                ],
+                "hasInput": {
+                    "@type": "ElectrochemicalDevice"
+                },
+                "hasOutput": [
+                    {
+                        "@type": "ElectrochemicalDevice",
+                        "rdfs:comment": "the output of the process is the same persistent device as the input, but in a different state, i.e., partially charged"
+                    },
+                    {
+                        "@type": "TimeSeriesElectricalDataSet"
+                    }
+                ],
+                "hasNext": {
+                    "@type": "ConstantVoltageCharging",
+                    "hasMeasurementParameter": [
+                        {
+                            "@type": "ChargingVoltage",
+                            "hasNumericalPart": {
+                                "@type": "Real",
+                                "hasNumericalValue": 4.2
+                            },
+                            "hasMeasurementUnit": "emmo:Volt"
+                        },
+                        {
+                            "@type": ["LowerCRateLimit", "TerminationQuantity"],
+                            "hasNumericalPart": {
+                                "@type": "Real",
+                                "hasNumericalValue": 0.01
+                            },
+                            "hasMeasurementUnit": "emmo:AmperePerAmpereHour"
+                        }
+                    ],
+                    "hasInput": {
+                        "@type": "ElectrochemicalDevice"
+                    },
+                    "hasOutput": [
+                        {
+                            "@type": "ElectrochemicalDevice",
+                        "rdfs:comment": "the output of the process is the same persistent device as the input, but in a different state, i.e., fully charged"
+                        },
+                        {
+                            "@type": "TimeSeriesElectricalDataSet"
+                        }
+                    ],
+                    "hasNext": {
+                        "@type": "Resting",
+                        "hasMeasurementParameter": {
+                            "@type": ["RestingTime", "TerminationQuantity"],
+                            "hasNumericalPart": {
+                                "@type": "Real",
+                                "hasNumericalValue": 28
+                            },
+                            "hasMeasurementUnit": "emmo:Day"
+                        }
+                    }
+                }
+            },
+            "hasNext": {
+                "@type": "ConstantCurrentDischarging",
+                "hasMeasurementParameter": [
+                    {
+                        "@type": "DischargingCRate",
+                        "hasNumericalPart": {
+                            "@type": "Real",
+                            "hasNumericalValue": 0.2
+                        },
+                        "hasMeasurementUnit": "emmo:AmperePerAmpereHour"
+                    },
+                    {
+                        "@type": ["LowerVoltageLimit", "TerminationQuantity"],
+                        "hasNumericalPart": {
+                            "@type": "Real",
+                            "hasNumericalValue": 2.4
+                        },
+                        "hasMeasurementUnit": "emmo:Volt"
+                    }
+                ],
+                "hasInput": {
+                    "@type": "ElectrochemicalDevice"
+                },
+                "hasOutput": [
+                    {
+                        "@type": "ElectrochemicalDevice"
+                    },
+                    {
+                        "@type": "TimeSeriesElectricalDataSet",
+                        "hasConstituent": [
+                            {
+                                "@type": "TimeData"
+                            },
+                            {
+                                "@type": "VoltageData"
+                            },
+                            {
+                                "@type": "ElectricCurrentData"
+                            }
+                        ]
+                    }
+                ],
+                "hasNext": {
+                    "@type": "CapacityCalculation",
+                    "hasInput": [
+                        {
+                            "@type": "TimeData"
+                        },
+                        {
+                            "@type": "ElectricCurrentData"
+                        }
+                    ],
+                    "hasOutput": {
+                        "@type": "RetainedCapacity",
+                        "@reverse": {
+                            "hasProperty": {
+                                "@type": "ElectrochemicalDevice"
+                            }
+                        }
+                    },
+                    "hasNext": {
+                        "@type": ["SamplePreparation", "ConstantCurrentConstantVoltageCharging", "SerialWorkflow"],
+                        "rdfs:label": "Example of device charging preparation",
+                        "rdfs:comment": "This process prepares the electrochemical device for testing by first charging it using a CCCV protocol at C/5 to an upper voltage limit of 4.2 V.",
+                        "hasTask": {
+                            "@type": "ConstantCurrentCharging",
+                            "hasMeasurementParameter": [
+                                {
+                                    "@type": "ChargingCRate",
+                                    "hasNumericalPart": {
+                                        "@type": "Real",
+                                        "hasNumericalValue": 0.2
+                                    },
+                                    "hasMeasurementUnit": "emmo:AmperePerAmpereHour"
+                                },
+                                {
+                                    "@type": ["UpperVoltageLimit", "TerminationQuantity"],
+                                    "hasNumericalPart": {
+                                        "@type": "Real",
+                                        "hasNumericalValue": 4.2
+                                    },
+                                    "hasMeasurementUnit": "emmo:Volt"
+                                }
+                            ],
+                            "hasInput": {
+                                "@type": "ElectrochemicalDevice"
+                            },
+                            "hasOutput": [
+                                {
+                                    "@type": "ElectrochemicalDevice",
+                                    "rdfs:comment": "the output of the process is the same persistent device as the input, but in a different state, i.e., partially charged"
+                                },
+                                {
+                                    "@type": "TimeSeriesElectricalDataSet"
+                                }
+                            ],
+                            "hasNext": {
+                                "@type": "ConstantVoltageCharging",
+                                "hasMeasurementParameter": [
+                                    {
+                                        "@type": "ChargingVoltage",
+                                        "hasNumericalPart": {
+                                            "@type": "Real",
+                                            "hasNumericalValue": 4.2
+                                        },
+                                        "hasMeasurementUnit": "emmo:Volt"
+                                    },
+                                    {
+                                        "@type": ["LowerCRateLimit", "TerminationQuantity"],
+                                        "hasNumericalPart": {
+                                            "@type": "Real",
+                                            "hasNumericalValue": 0.01
+                                        },
+                                        "hasMeasurementUnit": "emmo:AmperePerAmpereHour"
+                                    }
+                                ],
+                                "hasInput": {
+                                    "@type": "ElectrochemicalDevice"
+                                },
+                                "hasOutput": [
+                                    {
+                                        "@type": "ElectrochemicalDevice",
+                                    "rdfs:comment": "the output of the process is the same persistent device as the input, but in a different state, i.e., fully charged"
+                                    },
+                                    {
+                                        "@type": "TimeSeriesElectricalDataSet"
+                                    }
+                                ],
+                                "hasNext": {
+                                    "@type": "ConstantCurrentDischarging",
+                                    "hasMeasurementParameter": [
+                                        {
+                                            "@type": "DischargingCRate",
+                                            "hasNumericalPart": {
+                                                "@type": "Real",
+                                                "hasNumericalValue": 0.2
+                                            },
+                                            "hasMeasurementUnit": "emmo:AmperePerAmpereHour"
+                                        },
+                                        {
+                                            "@type": ["LowerVoltageLimit", "TerminationQuantity"],
+                                            "hasNumericalPart": {
+                                                "@type": "Real",
+                                                "hasNumericalValue": 2.4
+                                            },
+                                            "hasMeasurementUnit": "emmo:Volt"
+                                        }
+                                    ],
+                                    "hasInput": {
+                                        "@type": "ElectrochemicalDevice"
+                                    },
+                                    "hasOutput": [
+                                        {
+                                            "@type": "ElectrochemicalDevice"
+                                        },
+                                        {
+                                            "@type": "TimeSeriesElectricalDataSet",
+                                            "hasConstituent": [
+                                                {
+                                                    "@type": "TimeData"
+                                                },
+                                                {
+                                                    "@type": "VoltageData"
+                                                },
+                                                {
+                                                    "@type": "ElectricCurrentData"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "hasNext": {
+                                        "@type": "CapacityCalculation",
+                                        "hasInput": [
+                                            {
+                                                "@type": "TimeData"
+                                            },
+                                            {
+                                                "@type": "ElectricCurrentData"
+                                            }
+                                        ],
+                                        "hasOutput": {
+                                            "@type": "RecoveredCapacity",
+                                            "@reverse": {
+                                                "hasProperty": {
+                                                    "@type": "ElectrochemicalDevice"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

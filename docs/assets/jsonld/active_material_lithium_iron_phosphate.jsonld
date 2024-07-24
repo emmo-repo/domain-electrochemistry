@@ -1,0 +1,167 @@
+{
+    "@context": [
+        "https://w3id.org/emmo/domain/electrochemistry/context",
+        {
+            "isOutputOf": { "@reverse": "hasOutput" }
+        }
+    ],
+    "@type": ["ActiveMaterial", "LithiumIronPhosphate", "Powder"],
+    "rdfs:comment": ["This is an example to show how to describe an active material like lithium iron phosphate (LFP) using the type of information that is typically found in a specification or safety data sheet (SDS).", "This example uses a common material that has a dedicated term in the ontology, i.e. 'LithiumIronPhosphate'. More general materials can be described with a simple type definition like 'ActiveMaterial'.", "This example shows how to use the JSON-LD keyword '@reverse' to make a custom property definition 'isOutputOf' from 'hasOutput'"],
+    "molecularFormula": "LiFePO4 ",
+    "pubChemReference": "https://pubchem.ncbi.nlm.nih.gov/compound/15320824",
+    "hasConstituent": [
+        {
+            "@type": "CarbonAtom",
+            "hasProperty": {
+                "@type": "MassFraction",
+                "hasNumericalPart": {
+                   "@type": "Real",
+                   "hasNumericalValue": 0.0115
+                },
+                "hasMeasurementUnit": "emmo:UnitOne"
+            }
+        },
+        {
+            "@type": "LithiumAtom",
+            "hasProperty": {
+                "@type": "MassFraction",
+                "hasNumericalPart": {
+                   "@type": "Real",
+                   "hasNumericalValue": 0.0440
+                },
+                "hasMeasurementUnit": "emmo:UnitOne"
+            }
+        },
+        {
+            "@type": "IronAtom",
+            "hasProperty": {
+                "@type": "MassFraction",
+                "hasNumericalPart": {
+                   "@type": "Real",
+                   "hasNumericalValue": 0.345
+                },
+                "hasMeasurementUnit": "emmo:UnitOne"
+            }
+        },
+        {
+            "@type": "PhosphorusAtom",
+            "hasProperty": {
+                "@type": "MassFraction",
+                "hasNumericalPart": {
+                   "@type": "Real",
+                   "hasNumericalValue": 0.195
+                },
+                "hasMeasurementUnit": "emmo:UnitOne"
+            }
+        },
+        {
+            "@type": "OxygenAtom",
+            "hasProperty": {
+                "@type": "MassFraction",
+                "hasNumericalPart": {
+                   "@type": "Real",
+                   "hasNumericalValue": 0.404
+                },
+                "hasMeasurementUnit": "emmo:UnitOne"
+            }
+        }
+    ],
+    "hasProperty": [
+        {
+            "@type": "D10ParticleSize",
+            "hasNumericalPart": {
+               "@type": "Real",
+               "hasNumericalValue": 1.0
+            },
+            "hasMeasurementUnit": "emmo:MicroMetre"
+       },
+       {
+            "@type": "D50ParticleSize",
+            "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 3.5
+            },
+            "hasMeasurementUnit": "emmo:MicroMetre"
+       },
+       {
+            "@type": "D90ParticleSize",
+            "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 15
+            },
+            "hasMeasurementUnit": "emmo:MicroMetre"
+       },
+       {
+            "@type": "TappedDensity",
+            "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 1.45
+            },
+            "hasMeasurementUnit": "emmo:GramPerCubicCentiMetre"
+       },
+       {
+            "@type": "SpecificSurfaceArea",
+            "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 11.0
+            },
+            "hasMeasurementUnit": "emmo:SquareMetrePerGram"
+       },
+       {
+             "@type": "SpecificCapacity",
+             "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 150
+             },
+             "hasMeasurementUnit": "emmo:MilliAmpereHourPerGram",
+             "isOutputOf": {
+                "@type": "ConstantCurrentDischarging",
+                "hasMeasurementParameter": {
+                    "@type": "CRate",
+                    "hasNumericalPart": {
+                        "@type": "Real",
+                        "hasNumericalValue": 0.1
+                    },
+                    "hasMeasurementUnit": "emmo:AmperePerAmpereHour"
+                }
+             }
+       },
+       {    
+             "@type": "FirstCycleEfficiency",
+             "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 0.90
+             },
+             "hasMeasurementUnit": "emmo:UnitOne",
+             "isOutputOf": {
+                "@type": "ConstantCurrentConstantVoltageCycling",
+                "hasMeasurementParameter": [
+                    {
+                        "@type": "CRate",
+                        "hasNumericalPart": {
+                            "@type": "Real",
+                            "hasNumericalValue": 0.1
+                        },
+                        "hasMeasurementUnit": "emmo:AmperePerAmpereHour"
+                    },
+                    {
+                        "@type": "UpperVoltageLimit",
+                        "hasNumericalPart": {
+                            "@type": "Real",
+                            "hasNumericalValue": 3.65
+                        },
+                        "hasMeasurementUnit": "emmo:Volt"
+                    },
+                    {
+                        "@type": "LowerVoltageLimit",
+                        "hasNumericalPart": {
+                            "@type": "Real",
+                            "hasNumericalValue": 2.00
+                        },
+                        "hasMeasurementUnit": "emmo:Volt"
+                    }
+                ]
+             }
+       }
+    ]
+ }

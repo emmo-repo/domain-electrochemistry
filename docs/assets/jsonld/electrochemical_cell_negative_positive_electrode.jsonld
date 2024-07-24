@@ -1,0 +1,15 @@
+{
+    "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
+    "@type": "ElectrochemicalCell",
+    "rdfs:label": "Demo Electrochemical Cell with Negative/Positive Electrode",
+    "rdfs:comment": ["This is a simple example to show the basic format to describe an electrochemical cell using negative and positive electrode terms.", "For secondary cells, this is more robust than using anode and cathode terms, since those have very specific definitions related to the type of electrochemical reaction that is taking place.", "Remember that an electrochemical cell is just the combination of at least two electrodes in contact with an electrolyte. A functioning device with a case and terminals is an 'ElectrochemicalDevice'"],
+    "hasNegativeElectrode": {
+        "@type": "NegativeElectrode"
+    },
+    "hasPositiveElectrode": {
+        "@type": "PositiveElectrode"
+    },
+    "hasElectrolyte": {
+        "@type": "Electrolyte"
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
+    "@type": ["ActiveMaterial", "LithiumNickelManganeseCobalOxide", "Powder"],
+    "rdfs:comment": "This example shows how to describe an active material.",
+    "molecularFormula": "LiNi0.8Mn0.1Co0.1O2",
+    "pubChemReference": "https://pubchem.ncbi.nlm.nih.gov/compound/169407970",
+    "hasProperty": [
+       {
+             "@type": "SpecificCapacity",
+             "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 212
+             },
+             "hasMeasurementUnit": "emmo:MilliAmpereHourPerGram"
+       },
+       {    
+             "@type": "Density",
+             "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 4.65
+             },
+             "hasMeasurementUnit": "emmo:GramPerCubicCentiMetre"
+       },
+       {
+             "@type": "D50ParticleSize",
+             "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 15
+             },
+             "hasMeasurementUnit": "emmo:MicroMetre"
+       },
+       {
+             "@type": "MolarMass",
+             "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 97.27
+             },
+             "hasMeasurementUnit": "emmo:GramPerMole"
+       }
+    ]
+ }

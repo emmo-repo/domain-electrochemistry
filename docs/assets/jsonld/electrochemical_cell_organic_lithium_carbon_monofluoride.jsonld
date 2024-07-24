@@ -1,0 +1,25 @@
+{
+    "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
+    "@type": "ElectrochemicalCell",
+    "rdfs:label": "Organic Lithium Carbon Monofluoride Electrochemical Cell",
+    "rdfs:comment": ["This example shows how to describe an IEC/ANSI regulated electrochemical cell definition.", "This is a organic lithium | carbon monofluoride cell, which has IEC letter code 'B' and ANSI letter code 'LB'.", "Electrode types that are needed to describe IEC regulated electrochemical cell definitions are included in the ontology (e.g. 'ZincElectrode'). Use 'hasActiveMaterial' as a more flexible alternative to define other electrode types that are outside the scope of specific regulations."],
+    "hasIECCode": "B",
+    "hasANSICode": "LB",
+    "hasNegativeElectrode": {
+        "@type": "LithiumElectrode"
+    },
+    "hasPositiveElectrode": {
+        "@type": "CarbonMonofluorideElectrode"
+    },
+    "hasElectrolyte": {
+        "@type": "OrganicElectrolyte"
+    },
+    "hasProperty": {
+        "@type": "NominalVoltage",
+        "hasNumericalPart": {
+            "@type": "Real",
+            "hasNumericalValue": 3.0
+        },
+        "hasMeasurementUnit": "emmo:Volt"
+    }
+}
