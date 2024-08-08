@@ -116,6 +116,24 @@ This domain ontology supports the creation of Linked Data in any RDF-supported f
     ]
 }
 ```
+This data can be read into an RDF graph and queried using SPARQL. For example, the following SPARQL query retrieves the value and unit for the diameter of the electrode:
+```sparql
+SELECT ?diameterValue ?measurementUnit
+WHERE {
+  ?electrode a <{echo.Electrode.iri}> ;
+             <{echo.hasProperty.iri}> ?property .
+
+  ?property a <{echo.Diameter.iri}> ;
+            <{echo.hasNumericalPart.iri}> ?numericalPart ;
+            <{echo.hasMeasurementUnit.iri}> ?measurementUnit .
+
+  ?numericalPart <{echo.hasNumericalValue.iri}> ?diameterValue .
+}
+```
+and returns the result:
+```
+2 https://w3id.org/emmo#CentiMetre
+```
 ## Reference IRIs
 
 The table below contains a quick cheat sheet of IRIs for accessing different files from the ontology
