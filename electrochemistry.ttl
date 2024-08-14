@@ -16,10 +16,10 @@
 @base <https://w3id.org/emmo/domain/electrochemistry> .
 
 <https://w3id.org/emmo/domain/electrochemistry> rdf:type owl:Ontology ;
-                                                 owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.20.0-beta/electrochemistry> ;
+                                                 owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.21.0-beta/electrochemistry> ;
                                                  owl:imports <https://w3id.org/emmo/domain/characterisation-methodology/chameo> ,
-                                                             <https://w3id.org/emmo/domain/chemical-substance/0.7.0-beta/chemical-substance> ,
-                                                             <https://w3id.org/emmo/domain/electrochemistry/0.20.0-beta/electrochemicalquantities> ;
+                                                             <https://w3id.org/emmo/domain/chemical-substance/0.8.0-beta/chemical-substance> ,
+                                                             <https://w3id.org/emmo/domain/electrochemistry/0.21.0-beta/electrochemicalquantities> ;
                                                  dcterms:abstract "The Electrochemistry Domain Ontology, a specialized domain within the Elementary Multiperspective Materials Ontology (EMMO), encompasses essential terms and relationships for electrochemical systems, materials, methods, and data. Its primary objective is to enable the creation of linked and FAIR (Findable, Accessible, Interoperable, and Reusable) data, thereby fostering advancements in research and innovation within the realm of electrochemistry. This ontology serves as a foundational resource for harmonizing electrochemical knowledge representation, enhancing data interoperability, and accelerating progress in electrochemical research and development."@en ;
                                                  dcterms:bibliographicCitation "https://doi.org/10.5281/zenodo.7693664" ;
                                                  dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
@@ -28,9 +28,9 @@
                                                  dcterms:created "2022-11-25"^^xsd:date ;
                                                  dcterms:creator <https://orcid.org/0000-0002-8758-6109> ,
                                                                  <https://orcid.org/0000-0003-2954-1233> ;
-                                                 dcterms:issued "2024-07-24"^^xsd:date ;
+                                                 dcterms:issued "2024-08-14"^^xsd:date ;
                                                  dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                                 dcterms:modified "2024-07-05"^^xsd:date ;
+                                                 dcterms:modified "2024-08-14"^^xsd:date ;
                                                  dcterms:publisher "EMMO" ;
                                                  dcterms:source <https://www.electropedia.org> ,
                                                                 <https://doi.org/10.1109/IEEESTD.2016.7552407> ,
@@ -41,9 +41,9 @@
                                                  bibo:status "unstable" ;
                                                  vann:preferredNamespacePrefix "echem" ;
                                                  vann:preferredNamespaceUri "https://w3id.org/emmo/domain/electrochemistry" ;
-                                                 owl:backwardCompatibleWith "0.19.0-beta" ;
-                                                 owl:priorVersion "0.19.0-beta" ;
-                                                 owl:versionInfo "0.20.0-beta" ;
+                                                 owl:backwardCompatibleWith "0.20.0-beta" ;
+                                                 owl:priorVersion "0.20.0-beta" ;
+                                                 owl:versionInfo "0.21.0-beta" ;
                                                  foaf:logo "https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/gh-pages/assets/img/fig/png/domain-electrochemistry-logo.png" .
 
 #################################################################
@@ -236,6 +236,13 @@ schema:name rdf:type owl:AnnotationProperty .
                                                                                                      owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
                                                                                                      owl:someValuesFrom <https://w3id.org/emmo/domain/characterisation-methodology/chameo#SamplePreparation>
                                                                                                    ] .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_00244072_8d24_4e34_9f6a_c7b2b132b2c8
+:electrochemistry_00244072_8d24_4e34_9f6a_c7b2b132b2c8 rdf:type owl:Class ;
+                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ;
+                                                       skos:prefLabel "PseudoOpenCircuitVoltageTest"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a test where an electrochemical device is operated at a very low current, approximating equilibrium behaviour, in order to extract a pseudo-open-circuit-voltage profile"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_01260656_ac32_472e_9513_a607366538ec
@@ -1411,10 +1418,6 @@ Aluminum foil"""@en .
                                                                        ] ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_dba27ca1_33c9_4443_a912_1519ce4c39ec ;
-                                                                         owl:someValuesFrom :electrochemistry_58ad1d22_3803_4c95_a137_207cfebe242a
-                                                                       ] ,
-                                                                       [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty emmo:EMMO_dba27ca1_33c9_4443_a912_1519ce4c39ec ;
                                                                          owl:someValuesFrom :electrochemistry_efaca8db_a3e0_4188_9c9b_ed0037966725
                                                                        ] ;
                                                        skos:prefLabel "TimeSeriesElectricalDataSet"@en ;
@@ -2276,6 +2279,13 @@ Aluminum foil"""@en .
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a prismatic case with a nominal length of 27 mm, width of 148 mm, and height of 98 mm"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_50fef664_83c3_4ca5_808c_efaa1acc51b2
+:electrochemistry_50fef664_83c3_4ca5_808c_efaa1acc51b2 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ;
+                                                       skos:prefLabel "DiffusionData"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "data that describes the mass diffusivity of some particle under some stated conditions"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_510e4061_c4fa_49aa_a052_23ad56098eda
 :electrochemistry_510e4061_c4fa_49aa_a052_23ad56098eda rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc ;
@@ -2425,6 +2435,13 @@ Aluminum foil"""@en .
                                                        rdfs:subClassOf :electrochemistry_92147e31_d015_4889_a092_04fbab033f15 ;
                                                        skos:prefLabel "DoubleCoatedElectrode"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode that is coated on both sides of the current collector"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_571c1ae9_c4bf_48ab_babf_536153d22a0b
+:electrochemistry_571c1ae9_c4bf_48ab_babf_536153d22a0b rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ;
+                                                       skos:prefLabel "ElectrolyticConductivityData"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "data that describes the electrolytic conductivitysome material under some stated conditions"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_573be62a_5aae_4984_9a51_7c50845493df
@@ -3228,7 +3245,7 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                                                        emmo:EMMO_1cba0b27_15d0_4326_933f_379d0b3565b6 ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_dba27ca1_33c9_4443_a912_1519ce4c39ec ;
-                                                                         owl:someValuesFrom :electrochemistry_496c8f31_9732_42c1_8eae_dd73979c06eb
+                                                                         owl:someValuesFrom :electrochemistry_58ad1d22_3803_4c95_a137_207cfebe242a
                                                                        ] ;
                                                        skos:prefLabel "TimeSeriesDataSet"@en ;
                                                        emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q186588" ;
@@ -4216,6 +4233,13 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                                        emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "an electrode in which the primary active material consists of tin or tin compounds"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a17b9fd0_b005_41eb_b685_e212fc4cecea
+:electrochemistry_a17b9fd0_b005_41eb_b685_e212fc4cecea rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ;
+                                                       skos:prefLabel "DischargingData"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "data that is obtained from experiment or simulation during a discharging process"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a1ec9e3c_c624_4848_af13_89a6bc54d77c
 :electrochemistry_a1ec9e3c_c624_4848_af13_89a6bc54d77c rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_92147e31_d015_4889_a092_04fbab033f15 ;
@@ -4348,6 +4372,15 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
    owl:annotatedTarget "electrode in the form of foil, mesh, wire, rod, tube, powder, pellets, or single crystal of silver"@en ;
    dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a49d9cd1_bec8_4d1d_9657_d47983e9135d
+:electrochemistry_a49d9cd1_bec8_4d1d_9657_d47983e9135d rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_31e8052d_bede_43c6_8b41_d51bb24c9489 ;
+                                                       skos:altLabel "POCVData"@en ,
+                                                                     "PseudoOCVData"@en ;
+                                                       skos:prefLabel "PseudoOpenCircuitVoltageData"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a dataset resulting from a pseudo-open-circuit voltage experiment or simulation"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a4e7c3d6_45bd_402a_962f_5d4b88af84ff
@@ -4520,6 +4553,14 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                                        skos:altLabel "R43" ;
                                                        skos:prefLabel "R1142" ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a coin case with a nominal diameter of 11.6 mm and a height of 4.2 mm"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ac2ffdd9_09cf_42a7_ba6a_1c6968e9a8a5
+:electrochemistry_ac2ffdd9_09cf_42a7_ba6a_1c6968e9a8a5 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_31e8052d_bede_43c6_8b41_d51bb24c9489 ;
+                                                       skos:altLabel "GITTData"@en ;
+                                                       skos:prefLabel "GalvanostaticIntermittentTitrationTechniqueData"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a dataset resulting from a galvanostatic intermittent titration technique experiment or simulation"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ac6c2371_995a_4fcb_89a2_15cb6615741e
@@ -4912,6 +4953,20 @@ of other configurations are used."""@en .
  ] .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b7ea60b2_18f4_4588_bf19_55539c8e8888
+:electrochemistry_b7ea60b2_18f4_4588_bf19_55539c8e8888 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ;
+                                                       skos:prefLabel "ExchangeCurrentDensityData"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "data that describes the exchange current density of some material or electrode under some stated conditions"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b7f05e67_d7e8_469f_971f_0cb4d4c7e857
+:electrochemistry_b7f05e67_d7e8_469f_971f_0cb4d4c7e857 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_31e8052d_bede_43c6_8b41_d51bb24c9489 ;
+                                                       skos:prefLabel "PulseResponseData"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "time series data that contains a controlled pulse and the response of a system"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b812e9d0_7c58_4455_b3e7_6847f10c8e8a
 :electrochemistry_b812e9d0_7c58_4455_b3e7_6847f10c8e8a rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_5cb107ba_7daa_46dd_8f9f_da22a6eac676 ,
@@ -5136,11 +5191,26 @@ of other configurations are used."""@en .
  ] .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bf7bfbcb_0698_47af_8678_af92b2f10414
+:electrochemistry_bf7bfbcb_0698_47af_8678_af92b2f10414 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ;
+                                                       skos:prefLabel "ChargingData"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "data that is obtained from experiment or simulation during a charging process"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bfbefff0_4df5_47c2_9943_5f42cf268e9e
 :electrochemistry_bfbefff0_4df5_47c2_9943_5f42cf268e9e rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_5548f188_df00_4c05_ae98_7846e92efe36 ;
                                                        skos:prefLabel "StrippingChronopotentiometry"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electroanalytical technique that involves applying a constant current to a working electrode to strip previously deposited analyte from the electrode surface while measuring the potential change over time"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c052cab7_46eb_4a87_b7a4_05be2572db22
+:electrochemistry_c052cab7_46eb_4a87_b7a4_05be2572db22 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ;
+                                                       skos:altLabel "EISData"@en ;
+                                                       skos:prefLabel "ElectrochemicalImpedanceSpectroscopyData"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a dataset resulting from an electrochemical impedance spectroscopy experiment or simulation"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c05692eb_ae92_4e03_b355_f259f9089cb8

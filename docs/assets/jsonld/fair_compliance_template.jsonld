@@ -12,8 +12,7 @@
     },
     "http://schema.org/license": "http://opendefinition.org/licenses/cc-by/",
     "dc:format": "application/ld+json",
-    "dc:accessRights": "public",
-    "dc:rights": "public",
+    "dc:accessRights": "open access",
     "dc:publisher": {
         "@type": "schema:ResearchOrganization",
             "@id": "https://ror.org/01f677e56",
