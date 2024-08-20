@@ -28,6 +28,19 @@
             }
         ]
     },
+    "hasInput": [
+        {
+            "@type": "ElectrochemicalDevice"
+        },
+        {
+            "@type": "NumberOfIterations",
+            "hasNumericalPart": {
+                "@type": "Real",
+                "hasNumericalValue": 10
+            },
+            "hasMeasurementUnit": "emmo:UnitOne"
+        }
+    ],        
     "hasOutput": [
         {
             "@type": "TimeSeriesDataSet",
@@ -39,14 +52,63 @@
                     "@type": "VoltageData"
                 },
                 {
-                    "@type": "CurrentData"
+                    "@type": "ElectricCurrentData"
+                }
+            ]
+        }
+    ],
+    "hasTemporaryParticipant": {
+        "@type": "ElectrochemicalWorkstation"
+    },
+    "hasSubProcess": [
+        {
+            "@type": ["VoltageMeasurement", "TimeSeriesMeasurement"],
+            "hasMeasurementParameter": [
+                {
+                    "@type": "SamplingRate"
+                },
+                {
+                    "@type": "Precision"
+                }
+            ]
+        },
+        {
+            "@type": ["ElectricCurrentMeasurement", "TimeSeriesMeasurement"],
+            "hasMeasurementParameter": [
+                {
+                    "@type": "SamplingRate"
+                },
+                {
+                    "@type": "Precision"
+                }
+            ]
+        },
+        {
+            "@type": ["TimeMeasurement", "TimeSeriesMeasurement"],
+            "hasMeasurementParameter": [
+                {
+                    "@type": "SamplingRate"
+                },
+                {
+                    "@type": "Precision"
+                }
+            ]
+        },
+        {
+            "@type": ["TemperatureMeasurement", "TimeSeriesMeasurement"],
+            "hasMeasurementParameter": [
+                {
+                    "@type": "SamplingRate"
+                },
+                {
+                    "@type": "Precision"
                 }
             ]
         }
     ],
     "hasTask": {
         "@type": "ConstantCurrentDischarging",
-        "hasMeasurementParameter": [
+        "hasInput": [
             {
                 "@type": "DischargingCurrent",
                 "hasNumericalPart": {
@@ -56,7 +118,7 @@
                 "hasMeasurementUnit": "emmo:Ampere"
             },
             {
-                "@type": ["LowerVoltageLimit", "TerminationQuantity"],
+                "@type": ["LowerVoltageLimit"],
                 "hasNumericalPart": {
                     "@type": "Real",
                     "hasNumericalValue": 2.4
@@ -66,7 +128,7 @@
         ],
         "hasNext": {
             "@type": "ConstantCurrentCharging",
-            "hasMeasurementParameter": [
+            "hasInput": [
                 {
                     "@type": "ChargingCurrent",
                     "hasNumericalPart": {
@@ -76,7 +138,7 @@
                     "hasMeasurementUnit": "emmo:Ampere"
                 },
                 {
-                    "@type": ["UpperVoltageLimit", "TerminationQuantity"],
+                    "@type": ["UpperVoltageLimit"],
                     "hasNumericalPart": {
                         "@type": "Real",
                         "hasNumericalValue": 4.2
@@ -85,8 +147,8 @@
                 }
             ],
             "hasNext": {
-                "@type": "ConstantVoltageCharging",
-                "hasMeasurementParameter": [
+                "@type": ["ConstantVoltageCharging", "EndTask"],
+                "hasInput": [
                     {
                         "@type": "ChargingVoltage",
                         "hasNumericalPart": {
@@ -96,7 +158,7 @@
                         "hasMeasurementUnit": "emmo:Volt"
                     },
                     {
-                        "@type": ["UpperCurrentLimit", "TerminationQuantity"],
+                        "@type": ["LowerCurrentLimit"],
                         "hasNumericalPart": {
                             "@type": "Real",
                             "hasNumericalValue": 10

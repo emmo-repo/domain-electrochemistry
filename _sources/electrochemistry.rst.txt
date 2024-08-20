@@ -7605,6 +7605,25 @@ Charging
 
 .. raw:: html
 
+   <div id="electrochemistry_bf7bfbcb_0698_47af_8678_af92b2f10414"></div>
+
+ChargingData
+------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bf7bfbcb_0698_47af_8678_af92b2f10414
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">data that is obtained from experiment or simulation during a charging process</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
    <div id="electrochemistry_8a1c9a7b_978c_4421_a9c1_d0b07b42aab9"></div>
 
 ChemicalReaction
@@ -8583,6 +8602,25 @@ DifferentialPotentialPulse
 
 .. raw:: html
 
+   <div id="electrochemistry_50fef664_83c3_4ca5_808c_efaa1acc51b2"></div>
+
+DiffusionData
+-------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_50fef664_83c3_4ca5_808c_efaa1acc51b2
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">data that describes the mass diffusivity of some particle under some stated conditions</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
    <div id="electrochemistry_40ca9548_910a_48b6_9a26_f94095d349cd"></div>
 
 DirectCurrent
@@ -8674,6 +8712,25 @@ Discharging
   <tr>
   <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-23'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-23</a></td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_a17b9fd0_b005_41eb_b685_e212fc4cecea"></div>
+
+DischargingData
+---------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a17b9fd0_b005_41eb_b685_e212fc4cecea
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">data that is obtained from experiment or simulation during a discharging process</td>
   </tr>
   </table>
 
@@ -9284,6 +9341,29 @@ ElectrochemicalImmunity
   <tr>
   <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-04-03'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-04-03</a></td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_c052cab7_46eb_4a87_b7a4_05be2572db22"></div>
+
+ElectrochemicalImpedanceSpectroscopyData
+----------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c052cab7_46eb_4a87_b7a4_05be2572db22
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a dataset resulting from an electrochemical impedance spectroscopy experiment or simulation</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-value">EISData</td>
   </tr>
   </table>
 
@@ -10040,6 +10120,25 @@ ElectrolyticCell
 
 .. raw:: html
 
+   <div id="electrochemistry_571c1ae9_c4bf_48ab_babf_536153d22a0b"></div>
+
+ElectrolyticConductivityData
+----------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_571c1ae9_c4bf_48ab_babf_536153d22a0b
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">data that describes the electrolytic conductivitysome material under some stated conditions</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
    <div id="electrochemistry_5641910f_6e69_4ce4_be84_4b1bf14b8916"></div>
 
 Electroosmosis
@@ -10134,6 +10233,25 @@ EqualizationCharge
   <tr>
   <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-40'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-40</a></td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_b7ea60b2_18f4_4588_bf19_55539c8e8888"></div>
+
+ExchangeCurrentDensityData
+--------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b7ea60b2_18f4_4588_bf19_55539c8e8888
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">data that describes the exchange current density of some material or electrode under some stated conditions</td>
   </tr>
   </table>
 
@@ -10518,6 +10636,29 @@ GalvanostaticCycling
   <tr>
   <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
   <td class="element-table-value">a cycling protocol in which an electrochemical cell is subject to alternating galvanostatic charging and discharging processes</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_ac2ffdd9_09cf_42a7_ba6a_1c6968e9a8a5"></div>
+
+GalvanostaticIntermittentTitrationTechniqueData
+-----------------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ac2ffdd9_09cf_42a7_ba6a_1c6968e9a8a5
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a dataset resulting from a galvanostatic intermittent titration technique experiment or simulation</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-value">GITTData</td>
   </tr>
   </table>
 
@@ -14027,6 +14168,48 @@ ProtonInsertionElectrode
 
 .. raw:: html
 
+   <div id="electrochemistry_a49d9cd1_bec8_4d1d_9657_d47983e9135d"></div>
+
+PseudoOpenCircuitVoltageData
+----------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a49d9cd1_bec8_4d1d_9657_d47983e9135d
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a dataset resulting from a pseudo-open-circuit voltage experiment or simulation</td>
+  </tr>
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-value">POCVData, PseudoOCVData</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_00244072_8d24_4e34_9f6a_c7b2b132b2c8"></div>
+
+PseudoOpenCircuitVoltageTest
+----------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_00244072_8d24_4e34_9f6a_c7b2b132b2c8
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a test where an electrochemical device is operated at a very low current, approximating equilibrium behaviour, in order to extract a pseudo-open-circuit-voltage profile</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
    <div id="electrochemistry_8372fdaa_dc01_4abf_9b75_442d0b28f263"></div>
 
 PulseCharging
@@ -14059,6 +14242,25 @@ PulseDischarging
   <tr>
   <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
   <td class="element-table-value">discharging an electrochemical device at a given charging current for a defined short duration</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_b7f05e67_d7e8_469f_971f_0cb4d4c7e857"></div>
+
+PulseResponseData
+-----------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b7f05e67_d7e8_469f_971f_0cb4d4c7e857
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">time series data that contains a controlled pulse and the response of a system</td>
   </tr>
   </table>
 

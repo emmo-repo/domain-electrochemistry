@@ -1221,8 +1221,8 @@ emmo:EMMO_931a725b_926d_4f60_8955_61fe17fce98b rdfs:subClassOf :electrochemistry
         <https://orcid.org/0000-0003-2954-1233> ;
     dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
     owl:imports <https://w3id.org/emmo/1.0.0-beta7/disciplines/isq> ;
-    owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.20.0-beta/electrochemicalquantities> ;
-    owl:versionInfo "0.20.0-beta" .
+    owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.21.0-beta/electrochemicalquantities> ;
+    owl:versionInfo "0.21.0-beta" .
 
 <https://orcid.org/0000-0001-8869-3718> a owl:NamedIndividual,
         foaf:Person ;
