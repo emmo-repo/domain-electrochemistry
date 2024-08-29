@@ -19,7 +19,7 @@
                                                  owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.21.0-beta/electrochemistry> ;
                                                  owl:imports <https://w3id.org/emmo/domain/characterisation-methodology/chameo> ,
                                                              <https://w3id.org/emmo/domain/chemical-substance/0.8.0-beta/chemical-substance> ,
-                                                             <https://w3id.org/emmo/domain/electrochemistry/0.21.0-beta/electrochemicalquantities> ;
+                                                             <https://w3id.org/emmo/domain/electrochemistry/0.21.0-beta/modules/electrochemistry-quantities> ;
                                                  dcterms:abstract "The Electrochemistry Domain Ontology, a specialized domain within the Elementary Multiperspective Materials Ontology (EMMO), encompasses essential terms and relationships for electrochemical systems, materials, methods, and data. Its primary objective is to enable the creation of linked and FAIR (Findable, Accessible, Interoperable, and Reusable) data, thereby fostering advancements in research and innovation within the realm of electrochemistry. This ontology serves as a foundational resource for harmonizing electrochemical knowledge representation, enhancing data interoperability, and accelerating progress in electrochemical research and development."@en ;
                                                  dcterms:bibliographicCitation "https://doi.org/10.5281/zenodo.7693664" ;
                                                  dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
