@@ -9,10 +9,10 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix annotations: <https://w3id.org/emmo/top/annotations#> .
-@base <https://w3id.org/emmo/domain/electrochemistry/modules/electrochemistry-quantities> .
+@base <https://w3id.org/emmo/domain/electrochemistry/modules/quantities> .
 
-<https://w3id.org/emmo/domain/electrochemistry/modules/electrochemistry-quantities> rdf:type owl:Ontology ;
-                                                                           owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.22.0-beta/modules/electrochemistry-quantities> ;
+<https://w3id.org/emmo/domain/electrochemistry/modules/quantities> rdf:type owl:Ontology ;
+                                                                           owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.22.0-beta/modules/quantities> ;
                                                                            owl:imports <https://w3id.org/emmo/1.0.0-beta7/disciplines/isq> ;
                                                                            dcterms:abstract "This electrochemical quantities ontology is a domain of the Elementary Multiperspective Materials Ontology (EMMO). It is a specialized framework designed to represent and organize knowledge about electrochemical quantities. It is designed to integrate with the electrochemistry domain ontology or other ontologies from the EMMO ecosystem. The main focus of this ontology is to provide machine-readable descriptions of common electrochemical quantities, linking both to the larger descriptions of physical quantities in EMMO as well as other sources of information like the IEC, QUDT, Wikidata, etc. It should be used to support linked data generation in the electrochemistry domain."@en ;
                                                                            dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
