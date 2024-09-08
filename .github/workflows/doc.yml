@@ -89,10 +89,23 @@ jobs:
         git fetch --tags
         git tag | while read TAG; do
           sudo mkdir -p "docs/_build/html/versions/$TAG"
+
+          # Apply foops recommendations and handle old/new file locations
+          if [ -f "electrochemicalquantities.ttl" ]; then
+            # For older versions
+            python docs/scripts/apply_foops_recommendations.py electrochemicalquantities.ttl electrochemicalquantities-foops.ttl
+            sudo cp "electrochemicalquantities-foops.ttl" "docs/_build/html/versions/$TAG/electrochemicalquantities.ttl"
+          elif [ -f "modules/electrochemistry-quantities.ttl" ]; then
+            # For newer versions
+            python docs/scripts/apply_foops_recommendations.py modules/electrochemistry-quantities.ttl electrochemistry-quantities-foops.ttl
+            sudo cp "electrochemistry-quantities-foops.ttl" "docs/_build/html/versions/$TAG/electrochemistry-quantities.ttl"
+          else
+            echo "File not found!"
+            exit 1
+          fi
+          
           python docs/scripts/apply_foops_recommendations.py electrochemistry.ttl electrochemistry-foops.ttl
-          python docs/scripts/apply_foops_recommendations.py electrochemicalquantities.ttl electrochemicalquantities-foops.ttl
           sudo cp "electrochemistry-foops.ttl" "docs/_build/html/versions/$TAG/electrochemistry.ttl"
-          sudo cp "electrochemicalquantities-foops.ttl" "docs/_build/html/versions/$TAG/electrochemicalquantities.ttl"
           sudo cp "electrochemistry-inferred.ttl" "docs/_build/html/versions/$TAG/"
 
         if [ -d "context" ]; then
@@ -108,10 +121,21 @@ jobs:
 
     - name: Copy TTL files to HTML directory
       run: |
+        # Check if electrochemicalquantities.ttl is in the old or new location
+        if [ -f "electrochemicalquantities.ttl" ]; then
+          python docs/scripts/apply_foops_recommendations.py electrochemicalquantities.ttl electrochemicalquantities-foops.ttl
+          sudo cp "electrochemicalquantities-foops.ttl" "docs/_build/html/electrochemicalquantities.ttl"
+        elif [ -f "modules/electrochemistry-quantities.ttl" ]; then
+          python docs/scripts/apply_foops_recommendations.py modules/electrochemistry-quantities.ttl electrochemistry-quantities-foops.ttl
+          sudo cp "electrochemistry-quantities-foops.ttl" "docs/_build/html/electrochemistry-quantities.ttl"
+        else
+          echo "Electrochemical quantities file not found!"
+          exit 1
+        fi
+    
+        # Apply foops recommendations to the electrochemistry file
         python docs/scripts/apply_foops_recommendations.py electrochemistry.ttl electrochemistry-foops.ttl
-        python docs/scripts/apply_foops_recommendations.py electrochemicalquantities.ttl electrochemicalquantities-foops.ttl
         sudo cp "electrochemistry-foops.ttl" "docs/_build/html/electrochemistry.ttl"
-        sudo cp "electrochemicalquantities-foops.ttl" "docs/_build/html/electrochemicalquantities.ttl"
         sudo cp "electrochemistry-inferred.ttl" "docs/_build/html/electrochemistry-inferred.ttl"
 
     - name: Upload artifacts
