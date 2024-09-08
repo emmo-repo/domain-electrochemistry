@@ -24,17 +24,32 @@ jobs:
 
     - name: Run EMMO Check - electrochemistry
       run: |
-        emmocheck --verbose --url-from-catalog \
-          --skip test_namespace \
-          --skip test_quantity_dimension \
-          --configfile=.github/utils/emmocheck_config.yml \
-          electrochemistry.ttl
+        if [ -f "electrochemistry.ttl" ]; then
+          emmocheck --verbose --url-from-catalog \
+            --skip test_namespace \
+            --skip test_quantity_dimension \
+            --configfile=.github/utils/emmocheck_config.yml \
+            electrochemistry.ttl
+        else
+          echo "electrochemistry.ttl not found!"
+          exit 1
+        fi
 
     - name: Run EMMO Check - electrochemicalquantities
       run: |
-        emmocheck --verbose --url-from-catalog \
-          --skip test_namespace \
-          --skip test_quantity_dimension \
-          --configfile=.github/utils/emmocheck_config.yml \
-          electrochemicalquantities.ttl
-
+        if [ -f "electrochemicalquantities.ttl" ]; then
+          emmocheck --verbose --url-from-catalog \
+            --skip test_namespace \
+            --skip test_quantity_dimension \
+            --configfile=.github/utils/emmocheck_config.yml \
+            electrochemicalquantities.ttl
+        elif [ -f "modules/quantities.ttl" ]; then
+          emmocheck --verbose --url-from-catalog \
+            --skip test_namespace \
+            --skip test_quantity_dimension \
+            --configfile=.github/utils/emmocheck_config.yml \
+            modules/quantities.ttl
+        else
+          echo "electrochemicalquantities.ttl or modules/quantities.ttl not found!"
+          exit 1
+        fi

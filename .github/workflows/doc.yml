@@ -4,7 +4,10 @@ on:
   push:
     branches:
       - 'master'
-    
+  pull_request:
+    branches:
+      - '*'  # To ensure it runs on all PRs
+
 env:
   GIT_USER_NAME: BattINFO Developers
   GIT_USER_EMAIL: "BattINFO@big-map.org"
@@ -23,14 +26,14 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v4 #Uses python install action from here: https://github.com/marketplace?type=actions
+      uses: actions/setup-python@v4
       with:
-        python-version: '3.10'  # Replace with the desired Python version
+        python-version: '3.10'
 
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install Markdown==3.4.3 rdflib==6.3.2  pandoc # Add any other dependencies if needed
+        pip install Markdown==3.4.3 rdflib==6.3.2 pandoc
         
     - name: Render documentation from ttl
       run: python docs/scripts/ttl_to_rst.py
@@ -47,24 +50,13 @@ jobs:
     - name: Check if HTML context directory exists
       run: |
         if [ ! -d "docs/_build/html/context/" ]; then
-          echo "Creating HTML context directory"
           sudo mkdir -p docs/_build/html/context/
-        else
-          echo "HTML context directory already exists"
         fi
-
         if [ ! -d "docs/_build/html/assets/" ]; then
-          echo "Creating HTML context directory"
           sudo mkdir -p docs/_build/html/assets/
-        else
-          echo "HTML assets directory already exists"
         fi
-
         if [ ! -d "docs/_build/html/versions/" ]; then
-          echo "Creating HTML versions directory"
           sudo mkdir -p docs/_build/html/versions/
-        else
-          echo "HTML version directory already exists"
         fi
 
     - name: Copy assets directory to HTML directory
@@ -78,10 +70,14 @@ jobs:
         git config --local user.email "${{ env.GIT_USER_EMAIL }}"
         git config --local user.name "${{ env.GIT_USER_NAME }}"
         git add context/context.json
-        # Check for any changes to commit
         git diff --staged --quiet || git commit -m "Update context.json file"
 
+    - name: Pull latest changes
+      if: github.event_name == 'push'  # Only pull changes during push events
+      run: git pull origin master --rebase
+
     - name: Push changes
+      if: github.event_name == 'push' && github.ref == 'refs/heads/master'  # Only push during push events on master
       run: git push origin HEAD:master
 
     - name: Fetch all tags and create version directories
@@ -89,29 +85,43 @@ jobs:
         git fetch --tags
         git tag | while read TAG; do
           sudo mkdir -p "docs/_build/html/versions/$TAG"
+
+          if [ -f "electrochemicalquantities.ttl" ]; then
+            python docs/scripts/apply_foops_recommendations.py electrochemicalquantities.ttl electrochemicalquantities-foops.ttl
+            sudo cp "electrochemicalquantities-foops.ttl" "docs/_build/html/versions/$TAG/electrochemicalquantities.ttl"
+          elif [ -f "modules/quantities.ttl" ]; then
+            python docs/scripts/apply_foops_recommendations.py modules/quantities.ttl quantities-foops.ttl
+            sudo cp "quantities-foops.ttl" "docs/_build/html/versions/$TAG/quantities.ttl"
+          else
+            echo "File not found!"
+            exit 1
+          fi
+          
           python docs/scripts/apply_foops_recommendations.py electrochemistry.ttl electrochemistry-foops.ttl
-          python docs/scripts/apply_foops_recommendations.py electrochemicalquantities.ttl electrochemicalquantities-foops.ttl
           sudo cp "electrochemistry-foops.ttl" "docs/_build/html/versions/$TAG/electrochemistry.ttl"
-          sudo cp "electrochemicalquantities-foops.ttl" "docs/_build/html/versions/$TAG/electrochemicalquantities.ttl"
           sudo cp "electrochemistry-inferred.ttl" "docs/_build/html/versions/$TAG/"
 
-        if [ -d "context" ]; then
-          echo "Context directory exists, copying context.json to $TAG"
-          # Make sure the context directory exists in the version-specific directory
-          sudo mkdir -p "docs/_build/html/versions/$TAG/context"
-          # Copy context.json to the tag-specific context directory
-          sudo cp "context/context.json" "docs/_build/html/versions/$TAG/context"
-        else
-          echo "No context directory found in the source directory."
-        fi
+          if [ -d "context" ]; then
+            sudo mkdir -p "docs/_build/html/versions/$TAG/context"
+            sudo cp "context/context.json" "docs/_build/html/versions/$TAG/context"
+          fi
         done
 
     - name: Copy TTL files to HTML directory
       run: |
+        if [ -f "electrochemicalquantities.ttl" ]; then
+          python docs/scripts/apply_foops_recommendations.py electrochemicalquantities.ttl electrochemicalquantities-foops.ttl
+          sudo cp "electrochemicalquantities-foops.ttl" "docs/_build/html/electrochemicalquantities.ttl"
+        elif [ -f "modules/quantities.ttl" ]; then
+          python docs/scripts/apply_foops_recommendations.py modules/quantities.ttl quantities-foops.ttl
+          sudo cp "quantities-foops.ttl" "docs/_build/html/quantities.ttl"
+        else
+          echo "Electrochemical quantities file not found!"
+          exit 1
+        fi
+    
         python docs/scripts/apply_foops_recommendations.py electrochemistry.ttl electrochemistry-foops.ttl
-        python docs/scripts/apply_foops_recommendations.py electrochemicalquantities.ttl electrochemicalquantities-foops.ttl
         sudo cp "electrochemistry-foops.ttl" "docs/_build/html/electrochemistry.ttl"
-        sudo cp "electrochemicalquantities-foops.ttl" "docs/_build/html/electrochemicalquantities.ttl"
         sudo cp "electrochemistry-inferred.ttl" "docs/_build/html/electrochemistry-inferred.ttl"
 
     - name: Upload artifacts
@@ -121,10 +131,8 @@ jobs:
         path: docs/_build/html/
         
     - name: Deploy
+      if: github.ref == 'refs/heads/master' && github.event_name == 'push'  # Only deploy during push events on master
       uses: peaceiris/actions-gh-pages@v3
-      if: github.ref == 'refs/heads/master'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: docs/_build/html
-
-      
