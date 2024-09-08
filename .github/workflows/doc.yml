@@ -95,10 +95,10 @@ jobs:
             # For older versions
             python docs/scripts/apply_foops_recommendations.py electrochemicalquantities.ttl electrochemicalquantities-foops.ttl
             sudo cp "electrochemicalquantities-foops.ttl" "docs/_build/html/versions/$TAG/electrochemicalquantities.ttl"
-          elif [ -f "modules/electrochemistry-quantities.ttl" ]; then
+          elif [ -f "modules/quantities.ttl" ]; then
             # For newer versions
-            python docs/scripts/apply_foops_recommendations.py modules/electrochemistry-quantities.ttl electrochemistry-quantities-foops.ttl
-            sudo cp "electrochemistry-quantities-foops.ttl" "docs/_build/html/versions/$TAG/electrochemistry-quantities.ttl"
+            python docs/scripts/apply_foops_recommendations.py modules/quantities.ttl quantities-foops.ttl
+            sudo cp "quantities-foops.ttl" "docs/_build/html/versions/$TAG/quantities.ttl"
           else
             echo "File not found!"
             exit 1
@@ -125,9 +125,9 @@ jobs:
         if [ -f "electrochemicalquantities.ttl" ]; then
           python docs/scripts/apply_foops_recommendations.py electrochemicalquantities.ttl electrochemicalquantities-foops.ttl
           sudo cp "electrochemicalquantities-foops.ttl" "docs/_build/html/electrochemicalquantities.ttl"
-        elif [ -f "modules/electrochemistry-quantities.ttl" ]; then
-          python docs/scripts/apply_foops_recommendations.py modules/electrochemistry-quantities.ttl electrochemistry-quantities-foops.ttl
-          sudo cp "electrochemistry-quantities-foops.ttl" "docs/_build/html/electrochemistry-quantities.ttl"
+        elif [ -f "modules/quantities.ttl" ]; then
+          python docs/scripts/apply_foops_recommendations.py modules/quantities.ttl quantities-foops.ttl
+          sudo cp "quantities-foops.ttl" "docs/_build/html/quantities.ttl"
         else
           echo "Electrochemical quantities file not found!"
           exit 1

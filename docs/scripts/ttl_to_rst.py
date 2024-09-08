@@ -1,4 +1,5 @@
 from rdflib import Graph
+import os
 
 
 
@@ -142,8 +143,8 @@ def rendering_workflow():
     # Check for old structure (root directory)
     if os.path.isfile("./electrochemicalquantities.ttl"):
         ttl_modules.append({"section title": "Quantities used in Electrochemistry", "path": "./electrochemicalquantities.ttl"})
-    elif os.path.isfile("./modules/electrochemistry-quantities.ttl"):
-        ttl_modules.append({"section title": "Quantities used in Electrochemistry", "path": "./modules/electrochemistry-quantities.ttl"})
+    elif os.path.isfile("./modules/quantities.ttl"):
+        ttl_modules.append({"section title": "Quantities used in Electrochemistry", "path": "./modules/quantities.ttl"})
     else:
         raise FileNotFoundError("No suitable TTL file found for electrochemical quantities.")
 
