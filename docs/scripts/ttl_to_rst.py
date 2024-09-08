@@ -135,38 +135,40 @@ def render_rst_bottom() -> str:
 
 ########### RUN THE RENDERING WORKFLOW ##############
 
-
 def rendering_workflow():
+    # Adapt based on file structure
+    ttl_modules = []
 
-    # PAGES
-    ttl_modules = [
-        {"section title": "Quantities used in Electrochemistry",
-         "path": "./electrochemicalquantities.ttl"},
-        {"section title": "Electrochemistry Concepts",
-         "path": "./electrochemistry.ttl"}
-    ]
+    # Check for old structure (root directory)
+    if os.path.isfile("./electrochemicalquantities.ttl"):
+        ttl_modules.append({"section title": "Quantities used in Electrochemistry", "path": "./electrochemicalquantities.ttl"})
+    elif os.path.isfile("./modules/electrochemistry-quantities.ttl"):
+        ttl_modules.append({"section title": "Quantities used in Electrochemistry", "path": "./modules/electrochemistry-quantities.ttl"})
+    else:
+        raise FileNotFoundError("No suitable TTL file found for electrochemical quantities.")
+
+    # Check for the electrochemistry file in the correct directory
+    if os.path.isfile("./electrochemistry.ttl"):
+        ttl_modules.append({"section title": "Electrochemistry Concepts", "path": "./electrochemistry.ttl"})
+    else:
+        raise FileNotFoundError("No suitable TTL file found for electrochemistry concepts.")
 
     # GENERATE PAGES
     rst_filename = "electrochemistry.rst"
-
     rst = render_rst_top()
 
     for module in ttl_modules:
-
         g = load_ttl_from_url(module["path"])
-
         entities_list = extract_terms_info_sparql(g)
         
         page_title = module["section title"]
         rst += page_title + "\n"
-        for ind in range(len(page_title)):
-            rst += "="
-        rst += "\n\n"
+        rst += "=" * len(page_title) + "\n\n"
         rst += entities_to_rst(entities_list)
 
     rst += render_rst_bottom()
 
-    with open("./docs/"+ rst_filename, "w+", encoding="utf-8") as f:
+    with open("./docs/" + rst_filename, "w+", encoding="utf-8") as f:
         f.write(rst)
 
 
