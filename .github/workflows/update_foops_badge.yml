@@ -5,7 +5,6 @@ on:
     workflows: ["docs"]
     types:
       - completed
-  pull_request:  # Add this to run on pull request
 
 env:
   GIT_USER_NAME: BattINFO Developers
@@ -53,7 +52,6 @@ jobs:
         git diff --staged --quiet || git commit -m "Update FOOPS score badge"
 
     - name: Push changes
-      if: github.ref == 'refs/heads/master'  # Only push changes when on master
       run: git push origin HEAD:master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
