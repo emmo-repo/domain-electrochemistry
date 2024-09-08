@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - 'master'
+  pull_request:
+    branches:
+      - '*'  # To ensure it runs on all PRs
     
 env:
   GIT_USER_NAME: BattINFO Developers
