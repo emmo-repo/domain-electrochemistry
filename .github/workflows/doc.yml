@@ -73,10 +73,11 @@ jobs:
         git diff --staged --quiet || git commit -m "Update context.json file"
 
     - name: Pull latest changes
+      if: github.event_name == 'push'  # Only pull changes during push events
       run: git pull origin master --rebase
 
     - name: Push changes
-      if: github.ref == 'refs/heads/master'
+      if: github.event_name == 'push' && github.ref == 'refs/heads/master'  # Only push during push events on master
       run: git push origin HEAD:master
 
     - name: Fetch all tags and create version directories
@@ -130,8 +131,8 @@ jobs:
         path: docs/_build/html/
         
     - name: Deploy
+      if: github.ref == 'refs/heads/master' && github.event_name == 'push'  # Only deploy during push events on master
       uses: peaceiris/actions-gh-pages@v3
-      if: github.ref == 'refs/heads/master'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: docs/_build/html
