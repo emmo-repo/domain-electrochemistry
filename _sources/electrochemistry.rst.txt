@@ -39,6 +39,82 @@ ActivationEnergy
 
 .. raw:: html
 
+   <div id="electrochemistry_56de36fe_e8e1_486c_8d29_061ac8d28c13"></div>
+
+ActivationEnergyOfChargeCarrierDiffusivityInElectrolyte
+-------------------------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_56de36fe_e8e1_486c_8d29_061ac8d28c13
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the activation energy barrier in an Arrhenius expression for the diffusivity of lithium in an electrolyte</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_8c16cb12_41c1_43bd_9e7c_2eea7b06a1f0"></div>
+
+ActivationEnergyOfElectrolyteConductivity
+-----------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8c16cb12_41c1_43bd_9e7c_2eea7b06a1f0
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the activation energy barrier in an Arrhenius expression for the ionic conductivity of an electrolyte</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_86af4487_33c1_4562_a00b_3a8252ffe378"></div>
+
+ActivationEnergyOfGuestDiffusivityInNegativeElectrodeActiveMaterial
+-------------------------------------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_86af4487_33c1_4562_a00b_3a8252ffe378
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the activation energy barrier in an Arrhenius expression for the diffusivity of lithium in the negative electrode</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_4d69edda_d2fa_40b0_9c1e_52e08debf578"></div>
+
+ActivationEnergyOfGuestDiffusivityInPositiveElectrodeActiveMaterial
+-------------------------------------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4d69edda_d2fa_40b0_9c1e_52e08debf578
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the activation energy barrier in an Arrhenius expression for the diffusivity of lithium in the positive electrode</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
    <div id="electrochemistry_7fa406b0_512a_4d59_9e0c_5d8aba0103ae"></div>
 
 ActivationOverpotential
@@ -267,6 +343,25 @@ BaselineCellVoltage
   <tr>
   <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
   <td class="element-table-value">In electrochemical measurements, the voltage of an electrochemical cell to which a voltage signal is superimposed.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_f2f36f22_3738_49dd_b43b_7469db6675df"></div>
+
+BoundaryCondition
+-----------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f2f36f22_3738_49dd_b43b_7469db6675df
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a property whose value is controlled on some surface or domain</td>
   </tr>
   </table>
 
@@ -517,6 +612,44 @@ CellVoltage
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
   <td class="element-table-value">difference of electric potentials measured between identical metallic leads to two electrodes of an electrochemical cell</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_4c274506_af5b_4ef1_8217_829ffd459f28"></div>
+
+ChargeCarrierDiffusivityInElectrolyte
+-------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4c274506_af5b_4ef1_8217_829ffd459f28
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the diffusivity of lithium in an electrolyte</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_e3e78df2_d568_4ab7_8c0d_d3a2ee3ae282"></div>
+
+ChargeCarrierTransportNumber
+----------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e3e78df2_d568_4ab7_8c0d_d3a2ee3ae282
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">transport number of lithium ion in electrolyte</td>
   </tr>
   </table>
 
@@ -1183,7 +1316,7 @@ D10ParticleSize
 D15ParticleSize
 ---------------
 
-* https://w3id.org/emmo/domain//electrochemistry#electrochemistry_92fc0dba_6f11_4019_a8cb_db2a5b1634f5
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_92fc0dba_6f11_4019_a8cb_db2a5b1634f5
 
 .. raw:: html
 
@@ -1202,7 +1335,7 @@ D15ParticleSize
 D20ParticleSize
 ---------------
 
-* https://w3id.org/emmo/domain//electrochemistry#electrochemistry_62e03250_8987_497b_85d5_1399aca9a0aa
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_62e03250_8987_497b_85d5_1399aca9a0aa
 
 .. raw:: html
 
@@ -1221,7 +1354,7 @@ D20ParticleSize
 D25ParticleSize
 ---------------
 
-* https://w3id.org/emmo/domain//electrochemistry#electrochemistry_7f17f6bb_c1f9_4f4a_bfdf_d8974443d07b
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7f17f6bb_c1f9_4f4a_bfdf_d8974443d07b
 
 .. raw:: html
 
@@ -1240,7 +1373,7 @@ D25ParticleSize
 D30ParticleSize
 ---------------
 
-* https://w3id.org/emmo/domain//electrochemistry#electrochemistry_0ed0362e_b7ae_482c_a7d0_2ca2eebda648
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0ed0362e_b7ae_482c_a7d0_2ca2eebda648
 
 .. raw:: html
 
@@ -1259,7 +1392,7 @@ D30ParticleSize
 D35ParticleSize
 ---------------
 
-* https://w3id.org/emmo/domain//electrochemistry#electrochemistry_c1c1288c_97c1_4f1f_8f42_6dfd34d028fd
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c1c1288c_97c1_4f1f_8f42_6dfd34d028fd
 
 .. raw:: html
 
@@ -1278,7 +1411,7 @@ D35ParticleSize
 D40ParticleSize
 ---------------
 
-* https://w3id.org/emmo/domain//electrochemistry#electrochemistry_c8abaf09_300a_4008_a42a_2f4a3953ca7a
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c8abaf09_300a_4008_a42a_2f4a3953ca7a
 
 .. raw:: html
 
@@ -1297,7 +1430,7 @@ D40ParticleSize
 D45ParticleSize
 ---------------
 
-* https://w3id.org/emmo/domain//electrochemistry#electrochemistry_9d60c4ab_d9ac_4dda_af0c_c64059326916
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9d60c4ab_d9ac_4dda_af0c_c64059326916
 
 .. raw:: html
 
@@ -1343,7 +1476,7 @@ D50ParticleSize
 D55ParticleSize
 ---------------
 
-* https://w3id.org/emmo/domain//electrochemistry#electrochemistry_b095e977_dbc2_4a9e_9930_6af0dab089f1
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b095e977_dbc2_4a9e_9930_6af0dab089f1
 
 .. raw:: html
 
@@ -1362,7 +1495,7 @@ D55ParticleSize
 D5ParticleSize
 --------------
 
-* https://w3id.org/emmo/domain//electrochemistry#electrochemistry_2e2d92f4_9fd5_4965_b15a_30b43c68e3e5
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2e2d92f4_9fd5_4965_b15a_30b43c68e3e5
 
 .. raw:: html
 
@@ -1381,7 +1514,7 @@ D5ParticleSize
 D60ParticleSize
 ---------------
 
-* https://w3id.org/emmo/domain//electrochemistry#electrochemistry_8768c8f4_eaa8_4670_a3a0_91524e59a7f6
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8768c8f4_eaa8_4670_a3a0_91524e59a7f6
 
 .. raw:: html
 
@@ -1555,6 +1688,63 @@ DepthOfDischarge
 
 .. raw:: html
 
+   <div id="electrochemistry_0ea21f71_d1bd_4714_a260_b991e6d4bcf7"></div>
+
+DeviceDensity
+-------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0ea21f71_d1bd_4714_a260_b991e6d4bcf7
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the overall density of an electrochemical device, calculated as the quotient of the total mass and the total volume</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_9cba2158_26ba_4dd7_b082_ba66dbb960c7"></div>
+
+DeviceLumpedSpecificHeatCapacity
+--------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9cba2158_26ba_4dd7_b082_ba66dbb960c7
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the lumped specific heat capacity of an electrochemical device</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_ccde4e5f_ace4_41d1_b4d8_cbd63e6376e6"></div>
+
+DeviceSurfaceArea
+-----------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ccde4e5f_ace4_41d1_b4d8_cbd63e6376e6
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the external surface area of an electrochemical device</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
    <div id="electrochemistry_463950b9_fd8d_48de_a52d_b29cab026391"></div>
 
 DeviceTemperature
@@ -1568,6 +1758,25 @@ DeviceTemperature
   <tr>
   <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
   <td class="element-table-value">the temperature of an electrochemical device</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_b4184e46_c53c_47cc_9bfc_186fd77836a5"></div>
+
+DeviceVolume
+------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b4184e46_c53c_47cc_9bfc_186fd77836a5
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the total volume of an electrochemical device, determined by its external dimensions</td>
   </tr>
   </table>
 
@@ -1994,7 +2203,7 @@ DropTimeInPolarography
 EffectivePorousMediaQuantity
 ----------------------------
 
-* https://w3id.org/emmo/domain//electrochemistry#electrochemistry_14d93129_d94d_42ff_a6f2_e8fca36ffec4
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_14d93129_d94d_42ff_a6f2_e8fca36ffec4
 
 .. raw:: html
 
@@ -2693,6 +2902,44 @@ FormalElectrodePotential
 
 .. raw:: html
 
+   <div id="electrochemistry_50247e71_75fe_4986_959e_fd06c6be98db"></div>
+
+GuestDiffusivityInNegativeElectrodeActiveMaterial
+-------------------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_50247e71_75fe_4986_959e_fd06c6be98db
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the diffusivity of lithium in the negative electrode</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_e59188bb_ce66_49f6_84aa_ecb98e76941e"></div>
+
+GuestDiffusivityInPositiveElectrodeActiveMaterial
+-------------------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e59188bb_ce66_49f6_84aa_ecb98e76941e
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the diffusivity of lithium in the positive electrode</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
    <div id="electrochemistry_c4d551db_db17_4c33_92e6_aec71638afbc"></div>
 
 HalfPeakPotential
@@ -2779,6 +3026,44 @@ InactiveMassLoading
   <tr>
   <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
   <td class="element-table-value">the mass of inactive material per unit area</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_098f98dc_e015_4dbd_b358_a7ac3b3ecff3"></div>
+
+InitialChargeCarrierConcentrationInElectrolyte
+----------------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_098f98dc_e015_4dbd_b358_a7ac3b3ecff3
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the initial amount concentration of lithium in an electrolyte</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_2c4c2626_7db5_440c_a65e_95ed2986ee01"></div>
+
+InitialCondition
+----------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2c4c2626_7db5_440c_a65e_95ed2986ee01
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the initial value of a property at the start of a simulation or experiment</td>
   </tr>
   </table>
 
@@ -3750,6 +4035,198 @@ NPRatio
 
 .. raw:: html
 
+   <div id="electrochemistry_fda9539d_5232_471c_8945_b9a8ec7247fe"></div>
+
+NegativeElectrodeActivationEnergyOfReaction
+-------------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fda9539d_5232_471c_8945_b9a8ec7247fe
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_21da0fe9_9fb6_4840_a12f_fbcc1ba84fb3"></div>
+
+NegativeElectrodeActiveMaterialGuestStoichiometricCoefficientAtSOC0
+-------------------------------------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_21da0fe9_9fb6_4840_a12f_fbcc1ba84fb3
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_8c336ae9_1818_4b08_a660_4bb83b28351f"></div>
+
+NegativeElectrodeActiveMaterialGuestStoichiometricCoefficientAtSOC100
+---------------------------------------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8c336ae9_1818_4b08_a660_4bb83b28351f
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_e808a26a_5812_49e9_894c_b793c7fe0c38"></div>
+
+NegativeElectrodeActiveMaterialMaximumGuestConcentration
+--------------------------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e808a26a_5812_49e9_894c_b793c7fe0c38
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">maximum concentration of lithium in the negative electrode</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_0e2f4fe6_570a_4d13_81e9_de1d4f9987af"></div>
+
+NegativeElectrodeActiveMaterialOpenCircuitVoltage
+-------------------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0e2f4fe6_570a_4d13_81e9_de1d4f9987af
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_bfe553c2_a63e_49b6_a209_0855dfc39724"></div>
+
+NegativeElectrodeActiveMaterialParticleRadius
+---------------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bfe553c2_a63e_49b6_a209_0855dfc39724
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_c5f9b91e_a770_4e9b_837e_fa2a76019111"></div>
+
+NegativeElectrodeActiveMaterialVolumetricSurfaceArea
+----------------------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c5f9b91e_a770_4e9b_837e_fa2a76019111
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_5cb403c4_4f28_46cb_81c4_21c5c47ef14a"></div>
+
+NegativeElectrodeCoatingPorosity
+--------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5cb403c4_4f28_46cb_81c4_21c5c47ef14a
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_cdc91ec0_9fc5_4551_bbd9_6824c2920124"></div>
+
+NegativeElectrodeCoatingThickness
+---------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cdc91ec0_9fc5_4551_bbd9_6824c2920124
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">thickness of the negative electrode coating</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_be3da3e2_58a9_4e58_adc2_7336d312717c"></div>
+
+NegativeElectrodeElectronicConductivity
+---------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_be3da3e2_58a9_4e58_adc2_7336d312717c
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the electronic conductivity of the negative electrode</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_eac57b09_5cc9_41d7_b2c8_40218d7fd47c"></div>
+
+NegativeElectrodeEntropicChangeCoefficient
+------------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_eac57b09_5cc9_41d7_b2c8_40218d7fd47c
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_c5dcb1a2_f2cf_421a_b8ae_47a88a61fce3"></div>
+
+NegativeElectrodeReactionRateConstant
+-------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c5dcb1a2_f2cf_421a_b8ae_47a88a61fce3
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+
+.. raw:: html
+
    <div id="electrochemistry_14577b99_a8a9_4358_9bc5_ab8c401dd34b"></div>
 
 NetFaradaicCurrent
@@ -4216,6 +4693,194 @@ Polarity
   <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-14'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-14</a></td>
   </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_80920875_62ac_4e29_b970_ec4316e76aa5"></div>
+
+PositiveElectrodeActiveMaterialGuestStoichiometricCoefficientAtSOC0
+-------------------------------------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_80920875_62ac_4e29_b970_ec4316e76aa5
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_99041897_5c08_40ed_9118_3e77e9b0e191"></div>
+
+PositiveElectrodeActiveMaterialGuestStoichiometricCoefficientAtSOC100
+---------------------------------------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_99041897_5c08_40ed_9118_3e77e9b0e191
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_c69a9d55_823f_4113_a305_ebc89dde7de3"></div>
+
+PositiveElectrodeActiveMaterialMaximumGuestConcentration
+--------------------------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c69a9d55_823f_4113_a305_ebc89dde7de3
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">maximum concentration of lithium in the positive electrode</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_52ab4fdd_f945_4541_9ce6_cd6fd3a05861"></div>
+
+PositiveElectrodeActiveMaterialOpenCircuitVoltage
+-------------------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_52ab4fdd_f945_4541_9ce6_cd6fd3a05861
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_58400817_3282_46e5_942e_3a1538631403"></div>
+
+PositiveElectrodeActiveMaterialParticleRadius
+---------------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_58400817_3282_46e5_942e_3a1538631403
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_0a1e73c5_e91b_4365_88d4_1e1f476bf776"></div>
+
+PositiveElectrodeActiveMaterialVolumetricSurfaceArea
+----------------------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0a1e73c5_e91b_4365_88d4_1e1f476bf776
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_7481c4c9_c247_4248_a045_a1077230acba"></div>
+
+PositiveElectrodeCoatingPorosity
+--------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7481c4c9_c247_4248_a045_a1077230acba
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_62f5beeb_6d1e_442a_8048_3ebe08882964"></div>
+
+PositiveElectrodeCoatingThickness
+---------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_62f5beeb_6d1e_442a_8048_3ebe08882964
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">thickness of the positive electrode coating</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_43f77743_1af6_4a0f_9cc6_285c2a450549"></div>
+
+PositiveElectrodeElectronicConductivity
+---------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_43f77743_1af6_4a0f_9cc6_285c2a450549
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_9d558b56_d3b8_429a_a4e2_d2ffab895e42"></div>
+
+PositiveElectrodeEntropicChangeCoefficient
+------------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9d558b56_d3b8_429a_a4e2_d2ffab895e42
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_404126e0_cb1b_44e4_98dc_2474185767a1"></div>
+
+PositiveElectrodeReactionRateConstant
+-------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_404126e0_cb1b_44e4_98dc_2474185767a1
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_56b9cd1f_5397_4385_9292_30d93d9e7a05"></div>
+
+PostiveElectrodeActivationEnergyOfReaction
+------------------------------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_56b9cd1f_5397_4385_9292_30d93d9e7a05
+
+.. raw:: html
+
+  <table class="element-table">
   </table>
 
 
@@ -4849,6 +5514,36 @@ SamplingTime
   <td class="element-table-key"><span class="element-table-key">IUPAC Reference</span></td>
   <td class="element-table-value"><a href='https://doi.org/10.1351/goldbook.S05467'>https://doi.org/10.1351/goldbook.S05467</a></td>
   </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_a4858e4d_dd3b_48ce_97ba_3eeb8571b633"></div>
+
+SeparatorPorosity
+-----------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a4858e4d_dd3b_48ce_97ba_3eeb8571b633
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_47288277_4aed_447e_b659_0c975d031406"></div>
+
+SeparatorThickness
+------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_47288277_4aed_447e_b659_0c975d031406
+
+.. raw:: html
+
+  <table class="element-table">
   </table>
 
 
@@ -5939,6 +6634,21 @@ batteryArchiveLabel
 
 .. raw:: html
 
+   <div id="electrochemistry_e5e86474_8623_48ea_a1cf_502bdb10aa14"></div>
+
+battmoKey
+---------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e5e86474_8623_48ea_a1cf_502bdb10aa14
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+
+.. raw:: html
+
    <div id="electrochemistry_69022178_77b8_4669_97e2_351d45356e5a"></div>
 
 biologicLabel
@@ -5953,6 +6663,36 @@ biologicLabel
   <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
   <td class="element-table-value">the label of a term used in resources from Biologic</td>
   </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37"></div>
+
+bpxKey
+------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30"></div>
+
+cidemodKey
+----------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30
+
+.. raw:: html
+
+  <table class="element-table">
   </table>
 
 
