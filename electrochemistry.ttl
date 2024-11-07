@@ -249,6 +249,7 @@ schema:name rdf:type owl:AnnotationProperty .
                                                                                                      owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
                                                                                                      owl:someValuesFrom <https://w3id.org/emmo/domain/characterisation-methodology/chameo#SamplePreparation>
                                                                                                    ] ;
+                                                                                   skos:prefLabel "Electrochemical"@en ;
                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a characterisation method used in electrochemistry"@en .
 
 
