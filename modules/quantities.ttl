@@ -12,16 +12,16 @@
 @base <https://w3id.org/emmo/domain/electrochemistry/modules/quantities> .
 
 <https://w3id.org/emmo/domain/electrochemistry/modules/quantities> rdf:type owl:Ontology ;
-                                                                           owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.23.0-beta/modules/quantities> ;
-                                                                           owl:imports <https://w3id.org/emmo/1.0.0-beta7/disciplines/isq> ;
-                                                                           dcterms:abstract "This electrochemical quantities ontology is a domain of the Elementary Multiperspective Materials Ontology (EMMO). It is a specialized framework designed to represent and organize knowledge about electrochemical quantities. It is designed to integrate with the electrochemistry domain ontology or other ontologies from the EMMO ecosystem. The main focus of this ontology is to provide machine-readable descriptions of common electrochemical quantities, linking both to the larger descriptions of physical quantities in EMMO as well as other sources of information like the IEC, QUDT, Wikidata, etc. It should be used to support linked data generation in the electrochemistry domain."@en ;
-                                                                           dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
-                                                                                               <https://orcid.org/0000-0002-1560-809X> ,
-                                                                                               <https://orcid.org/0000-0002-2547-155X> ;
-                                                                           dcterms:creator <https://orcid.org/0000-0002-8758-6109> ,
-                                                                                           <https://orcid.org/0000-0003-2954-1233> ;
-                                                                           dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                                                           owl:versionInfo "0.23.0-beta" .
+                                                                    owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.23.0-beta/modules/quantities> ;
+                                                                    owl:imports <https://w3id.org/emmo/1.0.0-beta7/disciplines/isq> ;
+                                                                    dcterms:abstract "This electrochemical quantities ontology is a domain of the Elementary Multiperspective Materials Ontology (EMMO). It is a specialized framework designed to represent and organize knowledge about electrochemical quantities. It is designed to integrate with the electrochemistry domain ontology or other ontologies from the EMMO ecosystem. The main focus of this ontology is to provide machine-readable descriptions of common electrochemical quantities, linking both to the larger descriptions of physical quantities in EMMO as well as other sources of information like the IEC, QUDT, Wikidata, etc. It should be used to support linked data generation in the electrochemistry domain."@en ;
+                                                                    dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
+                                                                                        <https://orcid.org/0000-0002-1560-809X> ,
+                                                                                        <https://orcid.org/0000-0002-2547-155X> ;
+                                                                    dcterms:creator <https://orcid.org/0000-0002-8758-6109> ,
+                                                                                    <https://orcid.org/0000-0003-2954-1233> ;
+                                                                    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                                                                    owl:versionInfo "0.23.0-beta" .
 
 #################################################################
 #    Annotation properties
@@ -827,6 +827,7 @@ and t* through mathematical models, provided that the long-time potential- deter
                                                        skos:prefLabel "RestingTime"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the duration during which an electrochemical device is kept at open-circuit conditions"@en .
 
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_269ddd97_1437_4545_b272_0df75a12c68a
 :electrochemistry_269ddd97_1437_4545_b272_0df75a12c68a rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d ,
@@ -1084,7 +1085,6 @@ and t* through mathematical models, provided that the long-time potential- deter
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the ambient thermodynamic temperature"@en .
 
 
-
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_39d8a6ee_cd55_4855_8b5b_d42bef95ac78
 :electrochemistry_39d8a6ee_cd55_4855_8b5b_d42bef95ac78 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_74de2c33_84fc_4c2f_afe1_56d169149114 ;
@@ -1278,7 +1278,6 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the number of electrochemical cells connected in parallel"@en .
 
 
-
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4882cf2f_aab7_4a3a_a103_7f56b55fbed3
 :electrochemistry_4882cf2f_aab7_4a3a_a103_7f56b55fbed3 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_1e3dc60d_dd6b_47d6_8161_70004fc5ee30 ;
@@ -1356,7 +1355,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        rdfs:subClassOf :electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607 ;
                                                        skos:prefLabel "ChargeCarrierDiffusivityInElectrolyte"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the diffusivity of lithium in an electrolyte"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Electrolyte','Diffusivity [m2.s-1]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['electrolyte','diffusion_constant','value']"@en .
 
@@ -1753,12 +1752,12 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_637ee9c4_4b3f_4d3a_975b_c0572dfe53ce
 :electrochemistry_637ee9c4_4b3f_4d3a_975b_c0572dfe53ce rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_a24f8581_a5a4_41a4_bb45_d0fdd5c0d810 ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electric current flowing to or from an electrochemical cell or device"@en ;
                                                        skos:hiddenLabel "<I>/mA"@en ,
                                                                         "Amps"@en ,
                                                                         "Current/mA"@en ,
                                                                         "mAmps"@en ;
                                                        skos:prefLabel "CellCurrent"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electric current flowing to or from an electrochemical cell or device"@en ;
                                                        :electrochemistry_097ea615_c209_4edd_a1a1_5eea71d98fe8 "amps"@en ;
                                                        :electrochemistry_1b717a20_17e3_4480_8c60_c4ae94058f05 "Current (A)"@en ;
                                                        :electrochemistry_69022178_77b8_4669_97e2_351d45356e5a "I/mA"@en ;
@@ -2065,7 +2064,6 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        rdfs:subClassOf emmo:EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064 ;
                                                        skos:prefLabel "SurfaceAreaPerVolume"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the quotient of the surface area of some object and its total volume"@en .
-
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7fa406b0_512a_4d59_9e0c_5d8aba0103ae
@@ -2479,8 +2477,8 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9c9b80a4_a00b_4b91_8e17_3a7831f2bf2f
 :electrochemistry_9c9b80a4_a00b_4b91_8e17_3a7831f2bf2f rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_affe07e4_e9bc_4852_86c6_69e26182a17f ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the thermodynamic temperature at some point in time designated to be the initial state"@en ;
-                                                       skos:prefLabel "InititalThermodynamicTemperature"@en .
+                                                       skos:prefLabel "InititalThermodynamicTemperature"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the thermodynamic temperature at some point in time designated to be the initial state"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9cba2158_26ba_4dd7_b082_ba66dbb960c7
@@ -2531,7 +2529,6 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
                                                                        :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                                        skos:prefLabel "NumberOfCellsConnectedInSeries"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the number of electrochemical cells connected in series"@en .
-
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9ed7210c_c4fa_467b_822d_ba12f885bdf4
@@ -3074,7 +3071,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
                                                        rdfs:subClassOf :electrochemistry_47287d09_6108_45ca_ac65_8b9451b1065e ;
                                                        skos:prefLabel "PositiveElectrodeActiveMaterialMaximumGuestConcentration"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "maximum concentration of lithium in the positive electrode"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Maximum concentration [mol.m-3]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','active_materials',0,'maximum_concentration','value']"@en .
 
@@ -3270,8 +3267,8 @@ In either case, the magnitude of the catalytic current depends on the applied po
                                                        rdfs:subClassOf emmo:EMMO_f675294e_6f30_4b1d_a68e_a74e59f3b2fc ;
                                                        skos:altLabel "ArrheniusActivationEnergy"@en ;
                                                        skos:prefLabel "ActivationEnergy"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the activation energy in an arrhenius formulation"@en; 
                                                        emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q190474"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the activation energy in an arrhenius formulation"@en ;
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Activation_energy"@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.A00102"@en .
 
@@ -3320,13 +3317,11 @@ In either case, the magnitude of the catalytic current depends on the applied po
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the ratio of a constituent volume to the total volume"@en .
 
 
-
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_db40df7e_1aa5_49a7_85cb_2aa2c1c70489
 :electrochemistry_db40df7e_1aa5_49a7_85cb_2aa2c1c70489 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_affe07e4_e9bc_4852_86c6_69e26182a17f ;
                                                        skos:prefLabel "ReferenceThermodynamicTemperature"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the thermodynamic temperature that is the reference for a calculation"@en .
-
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_de612af2_a029_4a02_8090_4a75ab13271d
