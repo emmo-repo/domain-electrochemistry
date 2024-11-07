@@ -1249,7 +1249,7 @@ Aluminum foil"""@en .
 :electrochemistry_2a177462_ff01_4b83_ab9f_032e93c9ec69 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc ;
                                                        skos:prefLabel "MagnesiumBasedElectrode"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "an electrode in which the primary active material consists of magnesium or magnesium compounds"@en .
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode in which the primary active material consists of magnesium or magnesium compounds"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2a40b878_7d09_49db_91b2_d0ee30192284
