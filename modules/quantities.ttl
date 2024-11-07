@@ -12,16 +12,16 @@
 @base <https://w3id.org/emmo/domain/electrochemistry/modules/quantities> .
 
 <https://w3id.org/emmo/domain/electrochemistry/modules/quantities> rdf:type owl:Ontology ;
-                                                                           owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.22.0-beta/modules/quantities> ;
-                                                                           owl:imports <https://w3id.org/emmo/1.0.0-beta7/disciplines/isq> ;
-                                                                           dcterms:abstract "This electrochemical quantities ontology is a domain of the Elementary Multiperspective Materials Ontology (EMMO). It is a specialized framework designed to represent and organize knowledge about electrochemical quantities. It is designed to integrate with the electrochemistry domain ontology or other ontologies from the EMMO ecosystem. The main focus of this ontology is to provide machine-readable descriptions of common electrochemical quantities, linking both to the larger descriptions of physical quantities in EMMO as well as other sources of information like the IEC, QUDT, Wikidata, etc. It should be used to support linked data generation in the electrochemistry domain."@en ;
-                                                                           dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
-                                                                                               <https://orcid.org/0000-0002-1560-809X> ,
-                                                                                               <https://orcid.org/0000-0002-2547-155X> ;
-                                                                           dcterms:creator <https://orcid.org/0000-0002-8758-6109> ,
-                                                                                           <https://orcid.org/0000-0003-2954-1233> ;
-                                                                           dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                                                           owl:versionInfo "0.22.0-beta" .
+                                                                    owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.23.0-beta/modules/quantities> ;
+                                                                    owl:imports <https://w3id.org/emmo/1.0.0-beta7/disciplines/isq> ;
+                                                                    dcterms:abstract "This electrochemical quantities ontology is a domain of the Elementary Multiperspective Materials Ontology (EMMO). It is a specialized framework designed to represent and organize knowledge about electrochemical quantities. It is designed to integrate with the electrochemistry domain ontology or other ontologies from the EMMO ecosystem. The main focus of this ontology is to provide machine-readable descriptions of common electrochemical quantities, linking both to the larger descriptions of physical quantities in EMMO as well as other sources of information like the IEC, QUDT, Wikidata, etc. It should be used to support linked data generation in the electrochemistry domain."@en ;
+                                                                    dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
+                                                                                        <https://orcid.org/0000-0002-1560-809X> ,
+                                                                                        <https://orcid.org/0000-0002-2547-155X> ;
+                                                                    dcterms:creator <https://orcid.org/0000-0002-8758-6109> ,
+                                                                                    <https://orcid.org/0000-0003-2954-1233> ;
+                                                                    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                                                                    owl:versionInfo "0.23.0-beta" .
 
 #################################################################
 #    Annotation properties
@@ -330,7 +330,7 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 :electrochemistry_0a1e73c5_e91b_4365_88d4_1e1f476bf776 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_a5571263_f153_448f_84a3_cd18092cf8fa ;
                                                        skos:prefLabel "PositiveElectrodeActiveMaterialVolumetricSurfaceArea"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Surface area per unit volume [m-1]']"@en .
 
 
@@ -350,7 +350,8 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        rdfs:subClassOf emmo:EMMO_ffb73b1e_5786_43e4_a964_cb32ac7affb7 ,
                                                                        :electrochemistry_4a450a27_b84a_4c70_a3a9_15ec30e2f30b ;
                                                        rdfs:comment "inverse of internal resistance"@en ;
-                                                       skos:prefLabel "InternalConductance"@en .
+                                                       skos:prefLabel "InternalConductance"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the internal conductance of an electrochemical device"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0ddfd57a_d338_4690_be45_b26884ed6302
@@ -364,7 +365,7 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 :electrochemistry_0e2f4fe6_570a_4d13_81e9_de1d4f9987af rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b ;
                                                        skos:prefLabel "NegativeElectrodeActiveMaterialOpenCircuitVoltage"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','OCP [V]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','active_materials',0,'OCP','value']"@en .
 
@@ -717,7 +718,7 @@ and t* through mathematical models, provided that the long-time potential- deter
 :electrochemistry_21da0fe9_9fb6_4840_a12f_fbcc1ba84fb3 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_f22bd1ec_faca_4335_92a5_a1687154c622 ;
                                                        skos:prefLabel "NegativeElectrodeActiveMaterialGuestStoichiometricCoefficientAtSOC0"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Minimum stoichiometry']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','active_materials',0,'stoichiometry0','value']"@en .
 
@@ -822,9 +823,9 @@ and t* through mathematical models, provided that the long-time potential- deter
 :electrochemistry_2678a656_4a27_4706_8dde_b0a93e9b92fa rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_0adabf6f_7404_44cb_9f65_32d83d8101a3 ,
                                                                        :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ;
-                                                       skos:altLabel "RestingDuration"@en ,
-                                                                     "the duration during which an electrochemical device is kept at open-circuit conditions"@en ;
-                                                       skos:prefLabel "RestingTime"@en .
+                                                       skos:altLabel "RestingDuration"@en ;
+                                                       skos:prefLabel "RestingTime"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the duration during which an electrochemical device is kept at open-circuit conditions"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_269ddd97_1437_4545_b272_0df75a12c68a
@@ -947,7 +948,8 @@ and t* through mathematical models, provided that the long-time potential- deter
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2c0e66c8_d58d_44b2_b0ce_ba55194bd505
 :electrochemistry_2c0e66c8_d58d_44b2_b0ce_ba55194bd505 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_cf386c1e_e62b_43ef_9b0e_e5e58935d63f ;
-                                                       skos:prefLabel "WeightPercent"@en .
+                                                       skos:prefLabel "WeightPercent"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the percentage quantity relating the weight of a constituent to the total weight"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2c4c2626_7db5_440c_a65e_95ed2986ee01
@@ -1079,7 +1081,8 @@ and t* through mathematical models, provided that the long-time potential- deter
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_39a44af0_0e1a_4859_b550_bdabad64386e
 :electrochemistry_39a44af0_0e1a_4859_b550_bdabad64386e rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_affe07e4_e9bc_4852_86c6_69e26182a17f ;
-                                                       skos:prefLabel "AmbientThermodynamicTemperature"@en .
+                                                       skos:prefLabel "AmbientThermodynamicTemperature"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the ambient thermodynamic temperature"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_39d8a6ee_cd55_4855_8b5b_d42bef95ac78
@@ -1160,7 +1163,7 @@ and t* through mathematical models, provided that the long-time potential- deter
 :electrochemistry_404126e0_cb1b_44e4_98dc_2474185767a1 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_0335e3f6_d1d8_4daa_8376_a9285f1bc9f1 ;
                                                        skos:prefLabel "PositiveElectrodeReactionRateConstant"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Reaction rate constant [mol.m-2.s-1]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','active_materials',0,'kinetic_constant','value']"@en .
 
@@ -1169,7 +1172,7 @@ and t* through mathematical models, provided that the long-time potential- deter
 :electrochemistry_43f77743_1af6_4a0f_9cc6_285c2a450549 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_ce74d2dc_d496_4116_b2fb_3e83d88bc744 ;
                                                        skos:prefLabel "PositiveElectrodeElectronicConductivity"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Conductivity [S.m-1]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','electronic_conductivity','value']"@en .
 
@@ -1228,6 +1231,7 @@ and t* through mathematical models, provided that the long-time potential- deter
 :electrochemistry_47288277_4aed_447e_b659_0c975d031406 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_43003c86_9d15_433b_9789_ee2940920656 ;
                                                        skos:prefLabel "SeparatorThickness"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the thickness of a separator"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Separator','Thickness [m]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['separator','thickness','value']"@en .
 
@@ -1270,7 +1274,8 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
 :electrochemistry_482173dc_7779_4f12_982c_b19f2cda2dac rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_41efdf5d_0c9c_4ea0_bb65_f8236e663be5 ,
                                                                        :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
-                                                       skos:prefLabel "NumberOfCellsConnectedInParallel"@en .
+                                                       skos:prefLabel "NumberOfCellsConnectedInParallel"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the number of electrochemical cells connected in parallel"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4882cf2f_aab7_4a3a_a103_7f56b55fbed3
@@ -1476,7 +1481,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
 :electrochemistry_52ab4fdd_f945_4541_9ce6_cd6fd3a05861 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b ;
                                                        skos:prefLabel "PositiveElectrodeActiveMaterialOpenCircuitVoltage"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','OCP [V]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','active_materials',0,'OCP','value']"@en .
 
@@ -1560,6 +1565,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
 :electrochemistry_56b9cd1f_5397_4385_9292_30d93d9e7a05 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526 ;
                                                        skos:prefLabel "PostiveElectrodeActivationEnergyOfReaction"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the activation energy barrier in an Arrhenius expression for the positive electrode charge transfer reaction"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Reaction rate constant activation energy [J.mol-1]']"@en .
 
 
@@ -1596,7 +1602,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
 :electrochemistry_58400817_3282_46e5_942e_3a1538631403 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_b92e382f_5109_4f60_ab5e_c89d340419a9 ;
                                                        skos:prefLabel "PositiveElectrodeActiveMaterialParticleRadius"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Particle radius [m]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','active_materials',0,'particle_radius','value']"@en .
 
@@ -1630,7 +1636,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
 :electrochemistry_5cb403c4_4f28_46cb_81c4_21c5c47ef14a rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_3a6578ac_aee0_43b9_9bc6_1eb208c8c9a9 ;
                                                        skos:prefLabel "NegativeElectrodeCoatingPorosity"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Porosity']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','porosity','value']"@en .
 
@@ -1746,12 +1752,12 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_637ee9c4_4b3f_4d3a_975b_c0572dfe53ce
 :electrochemistry_637ee9c4_4b3f_4d3a_975b_c0572dfe53ce rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_a24f8581_a5a4_41a4_bb45_d0fdd5c0d810 ;
-                                                       rdfs:comment "electric current flowing to or from an electrochemical cell or device"@en ;
                                                        skos:hiddenLabel "<I>/mA"@en ,
                                                                         "Amps"@en ,
                                                                         "Current/mA"@en ,
                                                                         "mAmps"@en ;
                                                        skos:prefLabel "CellCurrent"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electric current flowing to or from an electrochemical cell or device"@en ;
                                                        :electrochemistry_097ea615_c209_4edd_a1a1_5eea71d98fe8 "amps"@en ;
                                                        :electrochemistry_1b717a20_17e3_4480_8c60_c4ae94058f05 "Current (A)"@en ;
                                                        :electrochemistry_69022178_77b8_4669_97e2_351d45356e5a "I/mA"@en ;
@@ -1863,7 +1869,8 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_71f10616_15eb_4dc4_bc8d_ffaac3838af2
 :electrochemistry_71f10616_15eb_4dc4_bc8d_ffaac3838af2 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ;
-                                                       skos:prefLabel "CurrentChangeLimit"@en .
+                                                       skos:prefLabel "CurrentChangeLimit"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the limit on the value of the time change of the electric current"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_73f169de_d189_4d7c_893f_a2549771825c
@@ -1878,7 +1885,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
 :electrochemistry_7481c4c9_c247_4248_a045_a1077230acba rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_3a6578ac_aee0_43b9_9bc6_1eb208c8c9a9 ;
                                                        skos:prefLabel "PositiveElectrodeCoatingPorosity"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Porosity']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','porosity','value']"@en .
 
@@ -2055,7 +2062,8 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7f381c19_cf07_47a8_ab10_0b14d46901e8
 :electrochemistry_7f381c19_cf07_47a8_ab10_0b14d46901e8 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064 ;
-                                                       skos:prefLabel "SurfaceAreaPerVolume"@en .
+                                                       skos:prefLabel "SurfaceAreaPerVolume"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the quotient of the surface area of some object and its total volume"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7fa406b0_512a_4d59_9e0c_5d8aba0103ae
@@ -2121,7 +2129,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
 :electrochemistry_80920875_62ac_4e29_b970_ec4316e76aa5 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_f22bd1ec_faca_4335_92a5_a1687154c622 ;
                                                        skos:prefLabel "PositiveElectrodeActiveMaterialGuestStoichiometricCoefficientAtSOC0"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Minimum stoichiometry']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','active_materials',0,'stoichiometry0','value']"@en .
 
@@ -2196,7 +2204,8 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8430be19_6cae_4a15_a570_3c15d0d190eb
 :electrochemistry_8430be19_6cae_4a15_a570_3c15d0d190eb rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_c2f5ee66_579c_44c6_a2e9_fa2eaa9fa4da ;
-                                                       skos:prefLabel "PercentUnit"@en .
+                                                       skos:prefLabel "PercentUnit"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "unit of percentage"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8541f8b7_c55e_452d_b3f8_db29dcb2a61d
@@ -2286,7 +2295,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
 :electrochemistry_8c336ae9_1818_4b08_a660_4bb83b28351f rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_38ab058e_3912_48c2_a7eb_76d25d000820 ;
                                                        skos:prefLabel "NegativeElectrodeActiveMaterialGuestStoichiometricCoefficientAtSOC100"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Maximum stoichiometry']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','active_materials',0,'stoichiometry1','value']"@en .
 
@@ -2340,7 +2349,8 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_900e357f_2ee3_425a_a0b6_322661117787
 :electrochemistry_900e357f_2ee3_425a_a0b6_322661117787 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_909415d1_7c43_4d5e_bbeb_7e1910159f66 ;
-                                                       skos:prefLabel "ElectrochemicalProperty"@en .
+                                                       skos:prefLabel "ElectrochemicalProperty"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a property that is typical in the electrochemistry domain"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_92fc0dba_6f11_4019_a8cb_db2a5b1634f5
@@ -2391,7 +2401,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
 :electrochemistry_99041897_5c08_40ed_9118_3e77e9b0e191 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_38ab058e_3912_48c2_a7eb_76d25d000820 ;
                                                        skos:prefLabel "PositiveElectrodeActiveMaterialGuestStoichiometricCoefficientAtSOC100"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Maximum stoichiometry']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','active_materials',0,'stoichiometry1','value']"@en .
 
@@ -2467,7 +2477,8 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9c9b80a4_a00b_4b91_8e17_3a7831f2bf2f
 :electrochemistry_9c9b80a4_a00b_4b91_8e17_3a7831f2bf2f rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_affe07e4_e9bc_4852_86c6_69e26182a17f ;
-                                                       skos:prefLabel "InititalThermodynamicTemperature"@en .
+                                                       skos:prefLabel "InititalThermodynamicTemperature"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the thermodynamic temperature at some point in time designated to be the initial state"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9cba2158_26ba_4dd7_b082_ba66dbb960c7
@@ -2490,7 +2501,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
 :electrochemistry_9d558b56_d3b8_429a_a4e2_d2ffab895e42 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_3bb5ae23_59fa_4bc7_9495_803eb6719f28 ;
                                                        skos:prefLabel "PositiveElectrodeEntropicChangeCoefficient"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Entropic change coefficient [V.K-1]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','active_materials',0,'entropy_coefficient','value']"@en .
 
@@ -2516,7 +2527,8 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
 :electrochemistry_9d6a52ed_a53d_4327_a391_f173677a4b1d rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_41efdf5d_0c9c_4ea0_bb65_f8236e663be5 ,
                                                                        :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
-                                                       skos:prefLabel "NumberOfCellsConnectedInSeries"@en .
+                                                       skos:prefLabel "NumberOfCellsConnectedInSeries"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the number of electrochemical cells connected in series"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9ed7210c_c4fa_467b_822d_ba12f885bdf4
@@ -2581,6 +2593,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
 :electrochemistry_a4858e4d_dd3b_48ce_97ba_3eeb8571b633 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_3a6578ac_aee0_43b9_9bc6_1eb208c8c9a9 ;
                                                        skos:prefLabel "SeparatorPorosity"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the porosity of a separator"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Separator','Porosity']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['separator','porosity','value']"@en .
 
@@ -2941,7 +2954,7 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
 :electrochemistry_bfe553c2_a63e_49b6_a209_0855dfc39724 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_b92e382f_5109_4f60_ab5e_c89d340419a9 ;
                                                        skos:prefLabel "NegativeElectrodeActiveMaterialParticleRadius"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Particle radius [m]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','active_materials',0,'particle_radius','value']"@en .
 
@@ -3040,7 +3053,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
 :electrochemistry_c5dcb1a2_f2cf_421a_b8ae_47a88a61fce3 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_0335e3f6_d1d8_4daa_8376_a9285f1bc9f1 ;
                                                        skos:prefLabel "NegativeElectrodeReactionRateConstant"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Reaction rate constant [mol.m-2.s-1]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','active_materials',0,'kinetic_constant','value']"@en .
 
@@ -3049,7 +3062,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
 :electrochemistry_c5f9b91e_a770_4e9b_837e_fa2a76019111 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_a5571263_f153_448f_84a3_cd18092cf8fa ;
                                                        skos:prefLabel "NegativeElectrodeActiveMaterialVolumetricSurfaceArea"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Surface area per unit volume [m-1]']"@en .
 
 
@@ -3172,7 +3185,8 @@ In either case, the magnitude of the catalytic current depends on the applied po
                                                                          owl:onProperty emmo:EMMO_67fc0a36_8dcb_4ffa_9a43_31074efa3296 ;
                                                                          owl:someValuesFrom :electrochemistry_8430be19_6cae_4a15_a570_3c15d0d190eb
                                                                        ] ;
-                                                       skos:prefLabel "PercentQuantity"@en .
+                                                       skos:prefLabel "PercentQuantity"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a quantity that is expressed as a percentage"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cf54e7c1_f359_4715_b61d_0350b890d597
@@ -3254,6 +3268,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
                                                        skos:altLabel "ArrheniusActivationEnergy"@en ;
                                                        skos:prefLabel "ActivationEnergy"@en ;
                                                        emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q190474"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the activation energy in an arrhenius formulation"@en ;
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Activation_energy"@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.A00102"@en .
 
@@ -3298,13 +3313,15 @@ In either case, the magnitude of the catalytic current depends on the applied po
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_db37b358_b2f0_4e06_b6ae_8c56c8fbb6ba
 :electrochemistry_db37b358_b2f0_4e06_b6ae_8c56c8fbb6ba rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_cf386c1e_e62b_43ef_9b0e_e5e58935d63f ;
-                                                       skos:prefLabel "VolumePercent"@en .
+                                                       skos:prefLabel "VolumePercent"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the ratio of a constituent volume to the total volume"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_db40df7e_1aa5_49a7_85cb_2aa2c1c70489
 :electrochemistry_db40df7e_1aa5_49a7_85cb_2aa2c1c70489 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_affe07e4_e9bc_4852_86c6_69e26182a17f ;
-                                                       skos:prefLabel "ReferenceThermodynamicTemperature"@en .
+                                                       skos:prefLabel "ReferenceThermodynamicTemperature"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the thermodynamic temperature that is the reference for a calculation"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_de612af2_a029_4a02_8090_4a75ab13271d
@@ -3492,7 +3509,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
 :electrochemistry_eac57b09_5cc9_41d7_b2c8_40218d7fd47c rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_3bb5ae23_59fa_4bc7_9495_803eb6719f28 ;
                                                        skos:prefLabel "NegativeElectrodeEntropicChangeCoefficient"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Entropic change coefficient [V.K-1]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','active_materials',0,'entropy_coefficient','value']"@en .
 
@@ -3678,7 +3695,7 @@ In either case, the magnitude of the catalytic current depends on the applied po
 :electrochemistry_fda9539d_5232_471c_8945_b9a8ec7247fe rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526 ;
                                                        skos:prefLabel "NegativeElectrodeActivationEnergyOfReaction"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Reaction rate constant activation energy [J.mol-1]']"@en .
 
 
