@@ -19,6 +19,10 @@ ActivationEnergy
 
   <table class="element-table">
   <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the activation energy in an arrhenius formulation</td>
+  </tr>
+  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
   <td class="element-table-value">ArrheniusActivationEnergy</td>
   </tr>
@@ -217,6 +221,10 @@ AmbientThermodynamicTemperature
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the ambient thermodynamic temperature</td>
+  </tr>
   </table>
 
 
@@ -548,7 +556,7 @@ CellCurrent
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
   <td class="element-table-value">electric current flowing to or from an electrochemical cell or device</td>
   </tr>
   </table>
@@ -1157,6 +1165,10 @@ CurrentChangeLimit
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the limit on the value of the time change of the electric current</td>
+  </tr>
   </table>
 
 
@@ -2319,6 +2331,10 @@ ElectrochemicalProperty
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a property that is typical in the electrochemistry domain</td>
+  </tr>
   </table>
 
 
@@ -3107,6 +3123,10 @@ InititalThermodynamicTemperature
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the thermodynamic temperature at some point in time designated to be the initial state</td>
+  </tr>
   </table>
 
 
@@ -3203,6 +3223,10 @@ InternalConductance
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the internal conductance of an electrochemical device</td>
+  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Comment</span></td>
   <td class="element-table-value">inverse of internal resistance</td>
@@ -4045,6 +4069,10 @@ NegativeElectrodeActivationEnergyOfReaction
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases.</td>
+  </tr>
   </table>
 
 
@@ -4060,6 +4088,10 @@ NegativeElectrodeActiveMaterialGuestStoichiometricCoefficientAtSOC0
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases.</td>
+  </tr>
   </table>
 
 
@@ -4075,6 +4107,10 @@ NegativeElectrodeActiveMaterialGuestStoichiometricCoefficientAtSOC100
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases.</td>
+  </tr>
   </table>
 
 
@@ -4109,6 +4145,10 @@ NegativeElectrodeActiveMaterialOpenCircuitVoltage
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases.</td>
+  </tr>
   </table>
 
 
@@ -4124,6 +4164,10 @@ NegativeElectrodeActiveMaterialParticleRadius
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases.</td>
+  </tr>
   </table>
 
 
@@ -4139,6 +4183,10 @@ NegativeElectrodeActiveMaterialVolumetricSurfaceArea
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases.</td>
+  </tr>
   </table>
 
 
@@ -4154,6 +4202,10 @@ NegativeElectrodeCoatingPorosity
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases.</td>
+  </tr>
   </table>
 
 
@@ -4207,6 +4259,10 @@ NegativeElectrodeEntropicChangeCoefficient
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases.</td>
+  </tr>
   </table>
 
 
@@ -4222,6 +4278,10 @@ NegativeElectrodeReactionRateConstant
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases.</td>
+  </tr>
   </table>
 
 
@@ -4302,6 +4362,10 @@ NumberOfCellsConnectedInParallel
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the number of electrochemical cells connected in parallel</td>
+  </tr>
   </table>
 
 
@@ -4317,6 +4381,10 @@ NumberOfCellsConnectedInSeries
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the number of electrochemical cells connected in series</td>
+  </tr>
   </table>
 
 
@@ -4655,6 +4723,10 @@ PercentQuantity
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a quantity that is expressed as a percentage</td>
+  </tr>
   </table>
 
 
@@ -4670,6 +4742,10 @@ PercentUnit
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">unit of percentage</td>
+  </tr>
   </table>
 
 
@@ -4708,6 +4784,10 @@ PositiveElectrodeActiveMaterialGuestStoichiometricCoefficientAtSOC0
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases.</td>
+  </tr>
   </table>
 
 
@@ -4723,6 +4803,10 @@ PositiveElectrodeActiveMaterialGuestStoichiometricCoefficientAtSOC100
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases.</td>
+  </tr>
   </table>
 
 
@@ -4757,6 +4841,10 @@ PositiveElectrodeActiveMaterialOpenCircuitVoltage
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases.</td>
+  </tr>
   </table>
 
 
@@ -4772,6 +4860,10 @@ PositiveElectrodeActiveMaterialParticleRadius
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases.</td>
+  </tr>
   </table>
 
 
@@ -4787,6 +4879,10 @@ PositiveElectrodeActiveMaterialVolumetricSurfaceArea
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases.</td>
+  </tr>
   </table>
 
 
@@ -4802,6 +4898,10 @@ PositiveElectrodeCoatingPorosity
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases.</td>
+  </tr>
   </table>
 
 
@@ -4836,6 +4936,10 @@ PositiveElectrodeElectronicConductivity
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases.</td>
+  </tr>
   </table>
 
 
@@ -4851,6 +4955,10 @@ PositiveElectrodeEntropicChangeCoefficient
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases.</td>
+  </tr>
   </table>
 
 
@@ -4866,6 +4974,10 @@ PositiveElectrodeReactionRateConstant
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases.</td>
+  </tr>
   </table>
 
 
@@ -4881,6 +4993,10 @@ PostiveElectrodeActivationEnergyOfReaction
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the activation energy barrier in an Arrhenius expression for the positive electrode charge transfer reaction</td>
+  </tr>
   </table>
 
 
@@ -5311,6 +5427,10 @@ ReferenceThermodynamicTemperature
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the thermodynamic temperature that is the reference for a calculation</td>
+  </tr>
   </table>
 
 
@@ -5427,8 +5547,12 @@ RestingTime
 
   <table class="element-table">
   <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the duration during which an electrochemical device is kept at open-circuit conditions</td>
+  </tr>
+  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
-  <td class="element-table-value">RestingDuration, the duration during which an electrochemical device is kept at open-circuit conditions</td>
+  <td class="element-table-value">RestingDuration</td>
   </tr>
   </table>
 
@@ -5529,6 +5653,10 @@ SeparatorPorosity
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the porosity of a separator</td>
+  </tr>
   </table>
 
 
@@ -5544,6 +5672,10 @@ SeparatorThickness
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the thickness of a separator</td>
+  </tr>
   </table>
 
 
@@ -6071,6 +6203,10 @@ SurfaceAreaPerVolume
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the quotient of the surface area of some object and its total volume</td>
+  </tr>
   </table>
 
 
@@ -6495,6 +6631,10 @@ VolumePercent
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the ratio of a constituent volume to the total volume</td>
+  </tr>
   </table>
 
 
@@ -6568,6 +6708,10 @@ WeightPercent
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the percentage quantity relating the weight of a constituent to the total weight</td>
+  </tr>
   </table>
 
 
@@ -7654,6 +7798,10 @@ CalciumBasedElectrode
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">an electrode in which the primary active material consists of calcium or calcium compounds</td>
+  </tr>
   </table>
 
 
@@ -8053,6 +8201,10 @@ CathodicProtection
 
   <table class="element-table">
   <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">electrochemical immunity produced by an appropriate cathodic polarization.</td>
+  </tr>
+  <tr>
   <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-04-05'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-04-05</a></td>
   </tr>
@@ -8062,7 +8214,7 @@ CathodicProtection
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
-  <td class="element-table-value">electrochemical immunity produced by an appropriate cathodic polarization.</td>
+  <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q15152527'>https://www.wikidata.org/wiki/Q15152527</a></td>
   </tr>
   </table>
 
@@ -8900,7 +9052,7 @@ CopperBasedElectrode
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
   <td class="element-table-value">an electrode in which the primary active material consists of copper or copper compounds</td>
   </tr>
   </table>
@@ -9733,6 +9885,10 @@ ElectricCurrentMeasurementResult
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the result of an electric current measurement</td>
+  </tr>
   </table>
 
 
@@ -9916,6 +10072,25 @@ Electrocatalyst
   <tr>
   <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
   <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q5357962'>https://www.wikidata.org/wiki/Q5357962</a></td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="Electrochemical"></div>
+
+Electrochemical
+---------------
+
+* https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a characterisation method used in electrochemistry</td>
   </tr>
   </table>
 
@@ -10177,6 +10352,10 @@ ElectrochemicalMethod
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a method used in electrochemistry</td>
+  </tr>
   </table>
 
 
@@ -10951,6 +11130,10 @@ EnergyCalculation
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">data processing procedure that determines the energy based on time data, voltage data, and electric current data</td>
+  </tr>
   </table>
 
 
@@ -11103,33 +11286,6 @@ FloatCharging
   <tr>
   <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
   <td class="element-table-value">charge during which the voltage is maintained at a constant value regardless of charge current or temperature</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
-  <td class="element-table-value">ConstantVoltageCharging, PotentiostaticCharging</td>
-  </tr>
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
-  <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-49'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-49</a></td>
-  </tr>
-  </table>
-
-
-.. raw:: html
-
-   <div id="electrochemistry_3e7fe02d_c888_4c49_8e05_ccd9785607a6"></div>
-
-FloatCharging
--------------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3e7fe02d_c888_4c49_8e05_ccd9785607a6
-
-.. raw:: html
-
-  <table class="element-table">
-  <tr>
-  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
-  <td class="element-table-value">charging process during which the voltage is maintained at a constant value regardless of charge current or temperature</td>
   </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
@@ -12258,6 +12414,10 @@ LeadBasedElectrode
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">an electrode in which the primary active material consists of lead or lead compounds</td>
+  </tr>
   </table>
 
 
@@ -12908,6 +13068,10 @@ MagnesiumBasedElectrode
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">an electrode in which the primary active material consists of magnesium or magnesium compounds</td>
+  </tr>
   </table>
 
 
@@ -14575,6 +14739,10 @@ PotassiumBasedElectrode
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">an electrode in which the primary active material consists of potassium or potassium compounds</td>
+  </tr>
   </table>
 
 
@@ -14777,6 +14945,10 @@ Powder
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a material comprised of many particles</td>
+  </tr>
   </table>
 
 
@@ -16309,8 +16481,12 @@ R736
 
   <table class="element-table">
   <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">a coin case with a nominal diameter of 7.9 mm and a height of 3.6 mm</td>
+  </tr>
+  <tr>
   <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
-  <td class="element-table-value">R41, a coin case with a nominal diameter of 7.9 mm and a height of 3.6 mm</td>
+  <td class="element-table-value">R41</td>
   </tr>
   </table>
 
@@ -16439,7 +16615,7 @@ R927
 
   <table class="element-table">
   <tr>
-  <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
   <td class="element-table-value">a coin case with a nominal diameter of 9.5 mm and a height of 2.7 mm</td>
   </tr>
   </table>
@@ -16537,6 +16713,10 @@ ReferenceElectrode
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">Electrode with a well-defined and constant equilibrium potential with respect to which it is possible to measure or calculate electrode potentials of other electrodes by including them in an appropriate electrochemical cell.</td>
+  </tr>
   <tr>
   <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
   <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-15'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-15</a></td>
@@ -17289,6 +17469,10 @@ SodiumBasedElectrode
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">an electrode in which the primary active material consists of sodium or sodium compounds</td>
+  </tr>
   </table>
 
 
@@ -18269,6 +18453,10 @@ TimeMeasurementResult
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the reseult of a time measurement</td>
+  </tr>
   </table>
 
 
@@ -18330,6 +18518,10 @@ TinBasedElectrode
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">an electrode in which the primary active material consists of tin or tin compounds</td>
+  </tr>
   </table>
 
 
@@ -18723,6 +18915,10 @@ VoltageMeasurementResult
 .. raw:: html
 
   <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">the result of a voltage measurement</td>
+  </tr>
   </table>
 
 
@@ -19074,6 +19270,21 @@ hasConductiveAdditive
 
 .. raw:: html
 
+   <div id="electrochemistry_e08d43cf_93e4_49c6_bcb6_472be52ae7fc"></div>
+
+hasCounterElectrode
+-------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e08d43cf_93e4_49c6_bcb6_472be52ae7fc
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+
+.. raw:: html
+
    <div id="electrochemistry_cc8c2c5d_cf3d_444d_a7e8_44ec4c06a88e"></div>
 
 hasCurrentCollector
@@ -19245,6 +19456,21 @@ hasSolvent
 ----------
 
 * https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3b8dd629_7777_4908_957d_d2304031e8b9
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_c76dbfeb_f3d9_44d4_9cbe_0946924f311f"></div>
+
+hasWorkingElectrode
+-------------------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c76dbfeb_f3d9_44d4_9cbe_0946924f311f
 
 .. raw:: html
 
