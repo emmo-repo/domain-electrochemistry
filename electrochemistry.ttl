@@ -70,12 +70,6 @@ schema:name rdf:type owl:AnnotationProperty .
 #    Object Properties
 #################################################################
 
-###  https://w3id.org/emmo/domain/battery#battery_7df82c48_b599_4b02_bef0_9facc9c39410
-<https://w3id.org/emmo/domain/battery#battery_7df82c48_b599_4b02_bef0_9facc9c39410> rdf:type owl:ObjectProperty ;
-                                                                                    rdfs:subPropertyOf emmo:EMMO_dba27ca1_33c9_4443_a912_1519ce4c39ec ;
-                                                                                    skos:prefLabel "hasAdditive"@en .
-
-
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_056a5fab_3d99_46bd_8eb1_6e89a368e1a7
 :electrochemistry_056a5fab_3d99_46bd_8eb1_6e89a368e1a7 rdf:type owl:ObjectProperty ;
                                                        rdfs:subPropertyOf emmo:EMMO_dba27ca1_33c9_4443_a912_1519ce4c39ec ;
@@ -153,6 +147,12 @@ schema:name rdf:type owl:AnnotationProperty .
                                                        rdfs:domain :electrochemistry_6f2c88c9_5c04_4953_a298_032cc3ab9b77 ;
                                                        rdfs:range :electrochemistry_7729c34e_1ae9_403d_b933_1765885e7f29 ;
                                                        skos:prefLabel "hasReferenceElectrode"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7df82c48_b599_4b02_bef0_9facc9c39410
+:electrochemistry_7df82c48_b599_4b02_bef0_9facc9c39410 rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf emmo:EMMO_dba27ca1_33c9_4443_a912_1519ce4c39ec ;
+                                                       skos:prefLabel "hasAdditive"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee
@@ -1865,7 +1865,19 @@ Aluminum foil"""@en .
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
 :electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_09a7f560_9ddf_4c32_b067_b213eca5b0a1 ;
+                                                       rdfs:subClassOf :electrochemistry_09a7f560_9ddf_4c32_b067_b213eca5b0a1 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :electrochemistry_056a5fab_3d99_46bd_8eb1_6e89a368e1a7 ;
+                                                                         owl:someValuesFrom :electrochemistry_68eb5e35_5bd8_47b1_9b7f_f67224fa291e
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :electrochemistry_7df82c48_b599_4b02_bef0_9facc9c39410 ;
+                                                                         owl:someValuesFrom :electrochemistry_0a399f3f_b873_41f5_be1f_9b6df75cc30a
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
+                                                                         owl:someValuesFrom :electrochemistry_79d1b273_58cd_4be6_a250_434817f7c261
+                                                                       ] ;
                                                        skos:prefLabel "ElectrodeCoating"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode which is coated onto a substrate, typically a metallic foil current collector."@en .
 
