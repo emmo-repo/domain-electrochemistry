@@ -13157,6 +13157,25 @@ ManganesePhosphateBasedElectrode
 
 .. raw:: html
 
+   <div id="MeasurementDataPostProcessing"></div>
+
+MeasurementDataPostProcessing
+-----------------------------
+
+* https://w3id.org/emmo/domain/characterisation-methodology/chameo#MeasurementDataPostProcessing
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+  <td class="element-table-value">A class from CHAMEO</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
    <div id="electrochemistry_df78745e_f9db_4830_88f0_8ce074fcb8ff"></div>
 
 MercuryElectrode
@@ -19171,6 +19190,21 @@ hasActiveMaterial
 -----------------
 
 * https://w3id.org/emmo/domain/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee
+
+.. raw:: html
+
+  <table class="element-table">
+  </table>
+
+
+.. raw:: html
+
+   <div id="electrochemistry_7df82c48_b599_4b02_bef0_9facc9c39410"></div>
+
+hasAdditive
+-----------
+
+* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7df82c48_b599_4b02_bef0_9facc9c39410
 
 .. raw:: html
 
