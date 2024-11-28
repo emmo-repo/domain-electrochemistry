@@ -260,7 +260,10 @@ schema:name rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#MeasurementDataPostProcessing
-<https://w3id.org/emmo/domain/characterisation-methodology/chameo#MeasurementDataPostProcessing> rdf:type owl:Class .
+<https://w3id.org/emmo/domain/characterisation-methodology/chameo#MeasurementDataPostProcessing> rdf:type owl:Class ;
+                                                       skos:prefLabel "MeasurementDataPostProcessing"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A class from CHAMEO"@en .
+
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_00244072_8d24_4e34_9f6a_c7b2b132b2c8
