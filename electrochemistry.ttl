@@ -16,10 +16,10 @@
 @base <https://w3id.org/emmo/domain/electrochemistry> .
 
 <https://w3id.org/emmo/domain/electrochemistry> rdf:type owl:Ontology ;
-                                                 owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.23.0-beta/electrochemistry> ;
+                                                 owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.24.0-beta/electrochemistry> ;
                                                  owl:imports <https://w3id.org/emmo/domain/characterisation-methodology/chameo> ,
                                                              <https://w3id.org/emmo/domain/chemical-substance/0.8.0-beta/chemical-substance> ,
-                                                             <https://w3id.org/emmo/domain/electrochemistry/0.23.0-beta/modules/quantities> ;
+                                                             <https://w3id.org/emmo/domain/electrochemistry/0.24.0-beta/modules/quantities> ;
                                                  dcterms:abstract "The Electrochemistry Domain Ontology, a specialized domain within the Elementary Multiperspective Materials Ontology (EMMO), encompasses essential terms and relationships for electrochemical systems, materials, methods, and data. Its primary objective is to enable the creation of linked and FAIR (Findable, Accessible, Interoperable, and Reusable) data, thereby fostering advancements in research and innovation within the realm of electrochemistry. This ontology serves as a foundational resource for harmonizing electrochemical knowledge representation, enhancing data interoperability, and accelerating progress in electrochemical research and development."@en ;
                                                  dcterms:bibliographicCitation "https://doi.org/10.5281/zenodo.7693664" ;
                                                  dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
@@ -28,9 +28,9 @@
                                                  dcterms:created "2022-11-25"^^xsd:date ;
                                                  dcterms:creator <https://orcid.org/0000-0002-8758-6109> ,
                                                                  <https://orcid.org/0000-0003-2954-1233> ;
-                                                 dcterms:issued "2024-011-07"^^xsd:date ;
+                                                 dcterms:issued "2024-11-28"^^xsd:date ;
                                                  dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                                 dcterms:modified "2024-11-07"^^xsd:date ;
+                                                 dcterms:modified "2024-11-28"^^xsd:date ;
                                                  dcterms:publisher "EMMO" ;
                                                  dcterms:source <https://www.electropedia.org> ,
                                                                 <https://doi.org/10.1109/IEEESTD.2016.7552407> ,
@@ -41,9 +41,9 @@
                                                  bibo:status "unstable" ;
                                                  vann:preferredNamespacePrefix "echem" ;
                                                  vann:preferredNamespaceUri "https://w3id.org/emmo/domain/electrochemistry" ;
-                                                 owl:backwardCompatibleWith "0.22.0-beta" ;
-                                                 owl:priorVersion "0.22.0-beta" ;
-                                                 owl:versionInfo "0.23.0-beta" ;
+                                                 owl:backwardCompatibleWith "0.23.0-beta" ;
+                                                 owl:priorVersion "0.23.0-beta" ;
+                                                 owl:versionInfo "0.24.0-beta" ;
                                                  foaf:logo "https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/gh-pages/assets/img/fig/png/domain-electrochemistry-logo.png" .
 
 #################################################################
@@ -149,6 +149,12 @@ schema:name rdf:type owl:AnnotationProperty .
                                                        skos:prefLabel "hasReferenceElectrode"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7df82c48_b599_4b02_bef0_9facc9c39410
+:electrochemistry_7df82c48_b599_4b02_bef0_9facc9c39410 rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf emmo:EMMO_dba27ca1_33c9_4443_a912_1519ce4c39ec ;
+                                                       skos:prefLabel "hasAdditive"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee
 :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee rdf:type owl:ObjectProperty ;
                                                        rdfs:subPropertyOf emmo:EMMO_dba27ca1_33c9_4443_a912_1519ce4c39ec ;
@@ -251,6 +257,13 @@ schema:name rdf:type owl:AnnotationProperty .
                                                                                                    ] ;
                                                                                    skos:prefLabel "Electrochemical"@en ;
                                                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a characterisation method used in electrochemistry"@en .
+
+
+###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#MeasurementDataPostProcessing
+<https://w3id.org/emmo/domain/characterisation-methodology/chameo#MeasurementDataPostProcessing> rdf:type owl:Class ;
+                                                       skos:prefLabel "MeasurementDataPostProcessing"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A class from CHAMEO"@en .
+
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_00244072_8d24_4e34_9f6a_c7b2b132b2c8
@@ -644,6 +657,14 @@ schema:name rdf:type owl:AnnotationProperty .
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_dba27ca1_33c9_4443_a912_1519ce4c39ec ;
                                                                          owl:someValuesFrom :electrochemistry_50044b99_b858_433b_a32d_23d1e1cf88b2
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :electrochemistry_056a5fab_3d99_46bd_8eb1_6e89a368e1a7 ;
+                                                                         owl:someValuesFrom :electrochemistry_68eb5e35_5bd8_47b1_9b7f_f67224fa291e
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
+                                                                         owl:someValuesFrom :electrochemistry_79d1b273_58cd_4be6_a250_434817f7c261
                                                                        ] ;
                                                        skos:prefLabel "Electrode"@en ;
                                                        emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q176140" ;
@@ -1847,7 +1868,19 @@ Aluminum foil"""@en .
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
 :electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_09a7f560_9ddf_4c32_b067_b213eca5b0a1 ;
+                                                       rdfs:subClassOf :electrochemistry_09a7f560_9ddf_4c32_b067_b213eca5b0a1 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :electrochemistry_056a5fab_3d99_46bd_8eb1_6e89a368e1a7 ;
+                                                                         owl:someValuesFrom :electrochemistry_68eb5e35_5bd8_47b1_9b7f_f67224fa291e
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :electrochemistry_7df82c48_b599_4b02_bef0_9facc9c39410 ;
+                                                                         owl:someValuesFrom :electrochemistry_0a399f3f_b873_41f5_be1f_9b6df75cc30a
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
+                                                                         owl:someValuesFrom :electrochemistry_79d1b273_58cd_4be6_a250_434817f7c261
+                                                                       ] ;
                                                        skos:prefLabel "ElectrodeCoating"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode which is coated onto a substrate, typically a metallic foil current collector."@en .
 
