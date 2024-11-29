@@ -19469,36 +19469,6 @@ hasSeparator
 
 .. raw:: html
 
-   <div id="electrochemistry_535a1157_896f_4e17_8c5d_a5981303e3cb"></div>
-
-hasSolute
----------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_535a1157_896f_4e17_8c5d_a5981303e3cb
-
-.. raw:: html
-
-  <table class="element-table">
-  </table>
-
-
-.. raw:: html
-
-   <div id="electrochemistry_3b8dd629_7777_4908_957d_d2304031e8b9"></div>
-
-hasSolvent
-----------
-
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3b8dd629_7777_4908_957d_d2304031e8b9
-
-.. raw:: html
-
-  <table class="element-table">
-  </table>
-
-
-.. raw:: html
-
    <div id="electrochemistry_c76dbfeb_f3d9_44d4_9cbe_0946924f311f"></div>
 
 hasWorkingElectrode
