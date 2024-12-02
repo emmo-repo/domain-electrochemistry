@@ -227,7 +227,7 @@ schema:name rdf:type owl:AnnotationProperty .
 #################################################################
 
 ###  https://w3id.org/emmo#EMMO_57d977ab_0036_4779_b59a_e47620afdb9c
-emmo:EMMO_57d977ab_0036_4779_b59a_e47620afdb9c rdfs:subClassOf emmo:EMMO_65a007dc_2550_46b0_b394_3346c67fbb69 .
+emmo:EMMO_57d977ab_0036_4779_b59a_e47620afdb9c rdfs:subClassOf emmo:EMMO_38b579de_4331_40e0_803d_09efa298e726 .
 
 
 ###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical
