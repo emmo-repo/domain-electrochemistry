@@ -6,6 +6,7 @@
    Get Started <pages/getstarted>
    Examples <pages/examples>
    Class Index <pages/electrochemistry>
+   User Guide <userguide/index>
    About <pages/about>
    FAQ <pages/faq>
 
@@ -18,10 +19,23 @@ Welcome to the **EMMO Electrochemistry Domain Ontology**, a semantic resource wi
 
    .. tab-item:: JSON
 
-      .. literalinclude:: ../examples/snippets/example_alkaline_zinc_electrochemical_cell.json
-         :language: json
+      .. code-block:: json
          :linenos:
-         
+
+         {
+            "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
+            "@type": "ElectrochemicalCell",
+            "hasNegativeElectrode": {
+               "@type": "ZincElectrode"
+            },
+            "hasPositiveElectrode": {
+               "@type": "ManganeseDioxideElectrode"
+            },
+            "hasElectrolyte": {
+               "@type": "AlkalineElectrolyte"
+            }
+         }
+
    .. tab-item:: JSON-LD Playground
 
       .. raw:: html
