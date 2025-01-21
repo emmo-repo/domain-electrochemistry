@@ -161,18 +161,33 @@
                 
 
                     <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../userguide/index.html">
+                        User Guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
                       <a class="nav-link nav-internal" href="../pages/about.html">
                         About
                       </a>
                     </li>
                 
-
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="../pages/faq.html">
                         FAQ
                       </a>
                     </li>
                 
+                </div>
+            </div>
+            
   </ul>
 </nav></div>
       
@@ -272,18 +287,33 @@ document.write(`
                 
 
                     <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../userguide/index.html">
+                        User Guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
                       <a class="nav-link nav-internal" href="../pages/about.html">
                         About
                       </a>
                     </li>
                 
-
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="../pages/faq.html">
                         FAQ
                       </a>
                     </li>
                 
+                </div>
+            </div>
+            
   </ul>
 </nav></div>
         
@@ -451,8 +481,6 @@ Successfully installed isodate-0.6.1 rdflib-7.0.0
         <span class="s2">&quot;@type&quot;</span><span class="p">:</span> <span class="s2">&quot;ResearchOrganization&quot;</span>
     <span class="p">}</span>
 <span class="p">}</span>
-
-<span class="c1"># email to: simon.clark@sintef.no</span>
 </pre></div>
 </div>
 </div>
@@ -470,7 +498,7 @@ Successfully installed isodate-0.6.1 rdflib-7.0.0
             <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
             <span class="s2">&quot;minLength&quot;</span><span class="p">:</span> <span class="mi">1</span>
         <span class="p">},</span>
-        <span class="s2">&quot;birthDate&quot;</span><span class="p">:</span> <span class="p">{</span>   <span class="c1"># Replacing age with birthdate</span>
+        <span class="s2">&quot;birthDate&quot;</span><span class="p">:</span> <span class="p">{</span>
             <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
             <span class="s2">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;date&quot;</span><span class="p">,</span>
             <span class="s2">&quot;pattern&quot;</span><span class="p">:</span> <span class="s2">&quot;^[0-9]</span><span class="si">{4}</span><span class="s2">-[0-1][0-9]-[0-3][0-9]$&quot;</span>
@@ -482,7 +510,7 @@ Successfully installed isodate-0.6.1 rdflib-7.0.0
             <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;object&quot;</span>
         <span class="p">}</span>
     <span class="p">},</span>
-    <span class="s2">&quot;required&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;firstName&quot;</span><span class="p">,</span> <span class="s2">&quot;lastName&quot;</span><span class="p">,</span> <span class="s2">&quot;birthDate&quot;</span><span class="p">,</span> <span class="s2">&quot;affiliation&quot;</span><span class="p">]</span>  <span class="c1"># Updated age to birthdate</span>
+    <span class="s2">&quot;required&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;firstName&quot;</span><span class="p">,</span> <span class="s2">&quot;lastName&quot;</span><span class="p">,</span> <span class="s2">&quot;birthDate&quot;</span><span class="p">,</span> <span class="s2">&quot;affiliation&quot;</span><span class="p">]</span>
 <span class="p">}</span>
 
 <span class="c1"># Function to validate JSON data against the schema</span>

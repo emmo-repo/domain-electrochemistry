@@ -124,9 +124,7 @@
         "        \"@id\": \"https://ror.org/01f677e56\",\n",
         "        \"@type\": \"ResearchOrganization\"\n",
         "    }\n",
-        "}\n",
-        "\n",
-        "# email to: simon.clark@sintef.no"
+        "}"
       ]
     },
     {
@@ -159,7 +157,7 @@
         "            \"type\": \"string\",\n",
         "            \"minLength\": 1\n",
         "        },\n",
-        "        \"birthDate\": {   # Replacing age with birthdate\n",
+        "        \"birthDate\": {\n",
         "            \"type\": \"string\",\n",
         "            \"format\": \"date\",\n",
         "            \"pattern\": \"^[0-9]{4}-[0-1][0-9]-[0-3][0-9]$\"\n",
@@ -171,7 +169,7 @@
         "            \"type\": \"object\"\n",
         "        }\n",
         "    },\n",
-        "    \"required\": [\"firstName\", \"lastName\", \"birthDate\", \"affiliation\"]  # Updated age to birthdate\n",
+        "    \"required\": [\"firstName\", \"lastName\", \"birthDate\", \"affiliation\"]\n",
         "}\n",
         "\n",
         "# Function to validate JSON data against the schema\n",

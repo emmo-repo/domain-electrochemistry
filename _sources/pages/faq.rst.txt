@@ -12,7 +12,7 @@ FAQ Page
                 </p>
             </div>
         </details>
-        <!-- Repeat for each question -->
+
         <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
             <summary itemprop="name">What do I use the Electrochemistry Ontology for?</summary>
             <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
@@ -21,7 +21,7 @@ FAQ Page
                 </p>
             </div>
         </details>
-        <!-- Add more questions as needed -->
+
         <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
             <summary itemprop="name">How do I use the Electrochemistry Ontology?</summary>
             <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
@@ -38,9 +38,169 @@ FAQ Page
                 </p>
             </div>
         </details>
+        <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+            <summary itemprop="name">How do I query the ontology?</summary>
+            <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                <p itemprop="text">
+                    Answer
+                </p>
+            </div>
+        </details>
+        <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+            <summary itemprop="name">What if I can't find a term in the ontology?</summary>
+            <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                <p itemprop="text">
+                    Answer
+                </p>
+            </div>
+        </details>
+        <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+            <summary itemprop="name">What tools exist for working with the ontology?</summary>
+            <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                <p itemprop="text">
+                    Answer
+                </p>
+            </div>
+        </details>
+        <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+            <summary itemprop="name">How do I use the ontology in python?</summary>
+            <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                <p itemprop="text">
+                    Answer
+                </p>
+            </div>
+        </details>
+        <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+            <summary itemprop="name">Where can I find metadata templates?</summary>
+            <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                <p itemprop="text">
+                    Answer
+                </p>
+            </div>
+        </details>
+        <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+            <summary itemprop="name">What if I find a mistake in the ontology?</summary>
+            <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                <p itemprop="text">
+                    Answer
+                </p>
+            </div>
+        </details>
+        <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+            <summary itemprop="name">How do I integrate my data with the ontology?</summary>
+            <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                <p itemprop="text">
+                    Answer
+                </p>
+            </div>
+        </details>
+        <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+            <summary itemprop="name">How do I express a quantitative property with the ontology?</summary>
+            <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                <p itemprop="text">
+                    Answer
+                </p>
+            </div>
+        </details>
+        <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+            <summary itemprop="name">How do I describe an active material with the ontology?</summary>
+            <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                <p itemprop="text">
+                    Answer
+                </p>
+            </div>
+        </details>
+        <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+            <summary itemprop="name">How do I describe an electrode with the ontology?</summary>
+            <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                <p itemprop="text">
+                    Answer
+                </p>
+            </div>
+        </details>
+        <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+            <summary itemprop="name">How do I describe an electrolyte with the ontology?</summary>
+            <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                <p itemprop="text">
+                    Answer
+                </p>
+            </div>
+        </details>
+        <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+            <summary itemprop="name">How do I describe an electrochemical cell with the ontology?</summary>
+            <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                <p itemprop="text">
+                    Answer
+                </p>
+            </div>
+        </details>
+        <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+            <summary itemprop="name">How do I describe an electrochemical device with the ontology?</summary>
+            <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                <p itemprop="text">
+                    Answer
+                </p>
+            </div>
+        </details>
+        <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+            <summary itemprop="name">What is the difference between an electrochemical cell and an electrochemical device?</summary>
+            <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                <p itemprop="text">
+                    Answer
+                </p>
+            </div>
+        </details>
+        <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+            <summary itemprop="name">How do I describe a half-cell with the ontology?</summary>
+            <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                <p itemprop="text">
+                    Answer
+                </p>
+            </div>
+        </details>
+        <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+            <summary itemprop="name">How do I describe an experiment or test with the ontology?</summary>
+            <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                <p itemprop="text">
+                    Answer
+                </p>
+            </div>
+        </details>
+        <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+            <summary itemprop="name">How do I describe my data with the ontology?</summary>
+            <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                <p itemprop="text">
+                    Answer
+                </p>
+            </div>
+        </details>
+        <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+            <summary itemprop="name">What do I need to do to be compliant with the FAIR data principles?</summary>
+            <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                <p itemprop="text">
+                    Answer
+                </p>
+            </div>
+        </details>
+        <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+            <summary itemprop="name">Who are the developers of this ontology?</summary>
+            <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                <p itemprop="text">
+                    Answer
+                </p>
+            </div>
+        </details>
+        <details itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+            <summary itemprop="name">Where can I learn more about this ontology?</summary>
+            <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+                <p itemprop="text">
+                    Answer
+                </p>
+            </div>
+        </details>
     </div>
 
 .. raw:: html
 
-    <iframe src="../assets/img/graph.html" width="800" height="500"></iframe>
+    .. <iframe src="../assets/img/graph.html" width="800" height="500"></iframe>
 
