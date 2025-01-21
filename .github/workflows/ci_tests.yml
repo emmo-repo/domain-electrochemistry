@@ -43,13 +43,13 @@ jobs:
             --skip test_quantity_dimension \
             --configfile=.github/utils/emmocheck_config.yml \
             electrochemicalquantities.ttl
-        elif [ -f "modules/quantities.ttl" ]; then
+        elif [ -f "shared/electrochemistry-quantities.ttl" ]; then
           emmocheck --verbose --url-from-catalog \
             --skip test_namespace \
             --skip test_quantity_dimension \
             --configfile=.github/utils/emmocheck_config.yml \
-            modules/quantities.ttl
+            shared/electrochemistry-quantities.ttl
         else
-          echo "electrochemicalquantities.ttl or modules/quantities.ttl not found!"
+          echo "electrochemicalquantities.ttl or shared/electrochemistry-quantities.ttl not found!"
           exit 1
         fi
