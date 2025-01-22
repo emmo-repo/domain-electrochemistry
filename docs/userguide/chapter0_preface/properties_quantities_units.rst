@@ -1,5 +1,5 @@
-Properties and Quantities
--------------------------
+Properties, Quantities, and Units
+---------------------------------
 
 A **property** is a characteristic or feature of something that can be described, measured, or categorized. Think of it as a way to answer specific questions about an object or system, like:
 
@@ -12,7 +12,7 @@ In the EMMO framework, a property is very precise, focusing on one clear aspect 
 Properties are like labels or codes that help us describe the world in an organized way, using agreed-upon standards to ensure everyone interprets the information the same way.
 
 Types of Properties in EMMO
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **1. Objective Properties**
 An objective property is a property determined through a well-defined procedure, ensuring systematic and repeatable results. There are three key types of objective properties:
@@ -36,7 +36,7 @@ A physical quantity refers to measurable aspects of physical systems, such as ma
 An ordinal quantity is a property that allows comparison or ordering but does not permit algebraic operations. For example, Rockwell C hardness values can rank material hardness but are not mathematically additive.
 
 Quantities in EMMO
-------------------
+~~~~~~~~~~~~~~~~~~
 Quantities follow the SI convention, where they are expressed as a combination of a numerical value and a unit. This ensures consistency and standardization across all linked data.
 
 - Examples of Quantities:
@@ -45,7 +45,7 @@ Quantities follow the SI convention, where they are expressed as a combination o
   - Electric Resistance: "50 ohms"
 
 Units
------
+~~~~~
 
 Units are essential for expressing quantities. EMMO supports both SI and non-SI units.
 
