@@ -36,4 +36,4 @@ This user guide provides a comprehensive overview of the materials, components, 
    Objects <chapter3_objects/index>
    Processes <chapter4_processes/index>
    Data <chapter5_data/index>
-   Summary <chapter6_data/index>
+   Summary <chapter6_summary/index>

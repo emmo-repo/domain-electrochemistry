@@ -49,7 +49,7 @@
     <link rel="shortcut icon" href="../../_static/battinfologo.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Introduction to Linked Data" href="linked_data.html" />
+    <link rel="next" title="Ontology" href="ontology.html" />
     <link rel="prev" title="User Guide" href="../index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -344,14 +344,11 @@ document.write(`
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">User Guide</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Preface</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ontology.html">Ontology</a></li>
 <li class="toctree-l2"><a class="reference internal" href="linked_data.html">Introduction to Linked Data</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="jsonld.html">JSON for Linked Data (JSON-LD)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jsonld.html">Introduction to JSON-LD</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="emmo.html">Elementary Multiperspective Materials Ontology (EMMO)</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="properties_quantities_units.html">Properties and Quantities</a></li>
-
-
-
+<li class="toctree-l3"><a class="reference internal" href="properties_quantities_units.html">Properties, Quantities, and Units</a></li>
 </ul>
 </li>
 </ul>
@@ -369,6 +366,7 @@ document.write(`
 <li class="toctree-l1 has-children"><a class="reference internal" href="../chapter5_data/index.html">Data</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6_summary/index.html">Summary</a></li>
 </ul>
 </div>
 </nav></div>
@@ -430,27 +428,23 @@ document.write(`
 <h1>Preface<a class="headerlink" href="#preface" title="Permalink to this heading">#</a></h1>
 <p>Contents:</p>
 <div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">User Guide Sections</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="ontology.html">Ontology</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ontology.html#background">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ontology.html#semantic-reasoning">Semantic Reasoning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ontology.html#semantic-querying">Semantic Querying</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ontology.html#modularity-in-ontologies">Modularity in Ontologies</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="linked_data.html">Introduction to Linked Data</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="linked_data.html#what-is-linked-data">What is Linked Data?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="linked_data.html#everyday-analogy">Everyday Analogy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="linked_data.html#background">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="linked_data.html#key-concepts-in-linked-data">Key Concepts in Linked Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="linked_data.html#why-linked-data-matters">Why Linked Data Matters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="linked_data.html#the-5-stars-of-linked-data">The 5 Stars of Linked Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="linked_data.html#how-does-linked-data-work">How Does Linked Data Work?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="linked_data.html#getting-started-with-linked-data">Getting Started with Linked Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="linked_data.html#linked-data-resources">Linked Data Resources</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="linked_data.html#introduction-to-json-ld">Introduction to JSON-LD</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="linked_data.html#why-json-ld">Why JSON-LD?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="linked_data.html#key-features">Key Features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="linked_data.html#json-ld-in-practice">JSON-LD in Practice</a></li>
-<li class="toctree-l2"><a class="reference internal" href="linked_data.html#getting-started-with-json-ld">Getting Started with JSON-LD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="linked_data.html#advantages-of-json-ld">Advantages of JSON-LD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="linked_data.html#resources-to-learn-more">Resources to Learn More</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="jsonld.html">JSON for Linked Data (JSON-LD)</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="jsonld.html">Introduction to JSON-LD</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="jsonld.html#why-json-ld">Why JSON-LD?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="jsonld.html#key-features">Key Features</a></li>
 <li class="toctree-l2"><a class="reference internal" href="jsonld.html#getting-started-with-json-ld">Getting Started with JSON-LD</a></li>
@@ -460,15 +454,11 @@ document.write(`
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="emmo.html">Elementary Multiperspective Materials Ontology (EMMO)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="properties_quantities_units.html">Properties and Quantities</a></li>
-<li class="toctree-l2"><a class="reference internal" href="properties_quantities_units.html#types-of-properties-in-emmo">Types of Properties in EMMO</a></li>
-<li class="toctree-l2"><a class="reference internal" href="properties_quantities_units.html#quantities-in-emmo">Quantities in EMMO</a></li>
-<li class="toctree-l2"><a class="reference internal" href="properties_quantities_units.html#units">Units</a></li>
+<li class="toctree-l2"><a class="reference internal" href="properties_quantities_units.html">Properties, Quantities, and Units</a></li>
 </ul>
 </li>
 </ul>
 </div>
-<p>—</p>
 </section>
 
 
@@ -492,11 +482,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="linked_data.html"
+       href="ontology.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Introduction to Linked Data</p>
+        <p class="prev-next-title">Ontology</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
