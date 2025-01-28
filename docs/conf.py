@@ -36,7 +36,8 @@ extensions = ['sphinxcontrib.globalsubs',
               'sphinx.ext.intersphinx',
               'sphinx.ext.autosectionlabel',
               'sphinx_design',
-              'nbsphinx'
+              'nbsphinx',
+              'sphinx_copybutton',
               ]
 
 autosectionlabel_prefix_document = True
