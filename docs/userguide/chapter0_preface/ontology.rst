@@ -1,9 +1,9 @@
 Ontology
 ========
 
-In the 1999 movie *The Matrix*, Keanu Reeves' character is having a rough day. He needs to master every martial art in just a few hours. But he's in luck. In the future, humans can download knowledge from computers directly into their brains. After a few swift clicks, Keanu dramatically turns towards the camera and says, `"I know Kung Fu!" <https://youtu.be/OrzgxUhnYjY?si=lpgV8uk4jBrx1lFD&t=70>`__.
+In the 1999 movie *The Matrix*, Keanu Reeves' character is having a rough day. He needs to master every martial art in just a few hours. But he's in luck. In the future, humans can download knowledge from computers directly into their brains. After a few swift clicks, Keanu turns towards the camera and dramatically says, `"I know Kung Fu!" <https://youtu.be/OrzgxUhnYjY?si=lpgV8uk4jBrx1lFD&t=70>`__.
 
-He was saved because someone had encoded all the world's **knowledge** about Kung Fu into a **meaningful language** that machines and humans can understand. *That's an ontology*. It is a formal representation of knowledge, expressed as a conceptual network that conveys meaning in a way that both humans and machines can process.
+He was saved because someone had encoded all the world's **knowledge** about Kung Fu into a **meaningful language** that machines and humans can understand. *That's an ontology*. Put another way, an ontology is a formal representation of knowledge, expressed as a conceptual network that conveys meaning in a way that both humans and machines can process.
 
 Far from being a far-out science fiction concept, ontologies form the backbone of many tools we use every day. They are foundational to the modern World Wide Web, social media networks, and media streaming platforms. Ontologies are immensely powerful tools for sharing knowledge, linking resources, and assigning meaning to data.
 
@@ -14,16 +14,16 @@ The roots of modern ontologies trace back to ancient Greece. Ontology, as a bran
 
 In information science, ontologies were reinvented in the mid-20th century to bridge the gap between how humans and computers process information. For humans, information is understood as a set of concepts with meaningful, logically consistent relationships. For computers, however, information is represented as binary code: a sequence of ones and zeros.
 
-.. admonition:: *The Salad Bar Thought Experiment*
+.. admonition:: The Salad Bar Thought Experiment
 
-   Imagine you have built a robot to do your bidding. You ask it to go to a restaurant, make a salad at the salad bar, and bring it back to you. What information does the robot need to know to accomplish that task? 
+   Imagine you have built a robot to do your bidding. You ask it to go to a restaurant, make a salad at the salad bar, and bring it back to you. What information does the robot need to know to accomplish that task?
 
-    - It needs to know where the restaurant is and how to get there 
-    - It needs to know the recipe for a salad and how to select the ingredients from the salad bar 
-    - It needs to know that a salad comes in a bowl and is proportioned as a meal for one or more people
-    - etc. 
+   - It needs to know where the restaurant is and how to get there
+   - It needs to know the recipe for a salad and how to select the ingredients from the salad bar
+   - It needs to know that a salad comes in a bowl and is proportioned as a meal for one or more people
+   - etc.
 
-    Even this seemingly simple task requires a vast amount of information across multiple domains. However, the challenge isn’t just the volume of information—it’s also the need for this information to be linked together in a logically consistent way. This linkage allows the robot to reason about aspects of the task that are not explicitly stated.
+   Even this seemingly simple task requires a vast amount of information across multiple domains. However, the challenge isn’t just the volume of information—it’s also the need for this information to be linked together in a logically consistent way. This linkage allows the robot to reason about aspects of the task that are not explicitly stated.
 
 To get over this barrier, researchers developed ontologies in the form of network graphs. These graphs link concepts using relationships in node-edge-node statements called *triples*. The concepts within the graph can then be mapped to computer datasets, effectively assigning meaning to the data and enabling machines to process and reason about it.
 
@@ -81,7 +81,7 @@ Modularity in Ontologies
 
 Ontologies are not monolithic structures; instead, they are often modular and designed to be extended. This modularity ensures flexibility, scalability, and reusability, allowing ontologies to be tailored for specific domains and applications while remaining consistent with broader frameworks.
 
-.. note:: The Benefits of Modularity
+.. admonition:: **The Benefits of Modularity**
 
     **Scalability:** Modular ontologies can grow incrementally by adding new modules without overhauling the entire system.
 
