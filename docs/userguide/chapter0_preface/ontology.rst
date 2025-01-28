@@ -14,13 +14,15 @@ The roots of modern ontologies trace back to ancient Greece. Ontology, as a bran
 
 In information science, ontologies were reinvented in the mid-20th century to bridge the gap between how humans and computers process information. For humans, information is understood as a set of concepts with meaningful, logically consistent relationships. For computers, however, information is represented as binary code: a sequence of ones and zeros.
 
-.. admonition:: The Salad Bar Thought Experiment
+.. admonition:: Thought Experiment: The Robot at the Salad Bar
 
    Imagine you have built a robot to do your bidding. You ask it to go to a restaurant, make a salad at the salad bar, and bring it back to you. What information does the robot need to know to accomplish that task?
 
-   - It needs to know where the restaurant is and how to get there
-   - It needs to know the recipe for a salad and how to select the ingredients from the salad bar
-   - It needs to know that a salad comes in a bowl and is proportioned as a meal for one or more people
+   It needs to know...
+
+   - where the restaurant is and how to get there
+   - the recipe for a salad and how to select the ingredients from the salad bar
+   - that a salad comes in a bowl and is proportioned as a meal for one or more people
    - etc.
 
    Even this seemingly simple task requires a vast amount of information across multiple domains. However, the challenge isn’t just the volume of information—it’s also the need for this information to be linked together in a logically consistent way. This linkage allows the robot to reason about aspects of the task that are not explicitly stated.
@@ -48,7 +50,7 @@ This inferencing capability is crucial for solving complex problems and answerin
 
 For instance, reasoning systems are used in healthcare to determine potential drug interactions based on patient data and medical ontologies. Similarly, in battery science, reasoning can help identify optimal materials by linking experimental results with material properties and performance metrics.
 
-.. admonition:: *The One-Armed Person Thought Experiment*
+.. admonition:: Thought Experiment: The One-Armed Person
 
    Imagine we want to describe humans in an ontology. We might include some relationships like:
 
@@ -59,9 +61,9 @@ For instance, reasoning systems are used in healthcare to determine potential dr
    - A woman is human
    - etc. 
 
-   We might then create an individual called *Sykes* and make the statement that 'Sykes is a man'. Reasoning according to the knowledge in the ontology will return that because 'Sykes is a man' and 'a man is a human', then it follows that 'Sykes is a human'.
+   We might then create an individual called *Jesper* and make the statement that 'Jesper is a man'. Reasoning according to the knowledge in the ontology will return that because 'Jesper is a man' and 'a man is a human', then it follows that 'Jesper is a human'.
 
-   But then Sykes loses an arm in some terrible accident. We append the statement 'Sykes has one arm'. Reasoning again will create a logical inconsistency because if 'Sykes has one arm' and 'a human as two arms', then it follows that Sykes cannot be a human. 
+   But then Jesper loses an arm in some terrible accident. We append the statement 'Jesper has one arm'. Reasoning again will create a logical inconsistency because if 'Jesper has one arm' and 'a human as two arms', then it follows that Jesper cannot be a human. 
 
    This demonstrates how tricky it can be to maintain internal logical consistency, especially for complex ontologies, and how important it is to support correct reasoning and inferrence. 
 
@@ -70,7 +72,9 @@ By enabling machines to "think" beyond the explicit data provided, reasoning tra
 Semantic Querying
 -----------------
 
-One of the most transformative applications of ontologies is their support for semantic querying. Unlike traditional keyword-based searches, semantic queries leverage the structured knowledge within ontologies to deliver precise and meaningful results. By understanding the relationships between concepts, machines can interpret queries in a way that mimics human reasoning. For instance, if an ontology knows that "Golden Retriever" is a type of "dog," a query for "animal" can return results that include Golden Retrievers, even if they were not explicitly mentioned.
+One of the most transformative applications of ontologies is their support for semantic querying. Unlike traditional keyword-based searches, semantic queries leverage the structured knowledge within ontologies to deliver precise and meaningful results. By understanding the relationships between concepts, machines can interpret queries in a way that mimics human reasoning. 
+
+For example, if an ontology knows that "Golden Retriever" is a type of "dog," and a "dog" is an "animal", then a query for "animal" can return results that include Golden Retrievers, even if they were not explicitly mentioned.
 
 Semantic querying is powered by languages such as SPARQL, a query language designed for RDF-based data. SPARQL allows users to retrieve and manipulate structured data by specifying patterns to match within the ontology’s graph. For example, a SPARQL allows users to transform natural human queries like, "Which restaurants serve vegetarian salads?" or "What materials are compatible with a specific battery type?" into a graph pattern to retrieve compatible answers. The ontology’s structure enables the system to traverse relationships and return accurate answers based on the data.
 

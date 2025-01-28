@@ -123,6 +123,23 @@ Example: Electrochemical Cell in JSON-LD
 }
 ```
 
+.. example:: Example: A Simple Description of a Person
+
+   Below is an example of JSON-LD code for describing a person:
+
+   .. code-block:: json
+
+      {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Marie Curie",
+          "birthDate": "1867-11-07",
+          "spouse": {
+              "@type": "Person",
+              "name": "Pierre Curie"
+          }
+      }
+
 Learn More
 ----------
 
