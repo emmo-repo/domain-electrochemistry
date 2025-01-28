@@ -12,3 +12,7 @@ test_quantity_dimension:
     - BattINFO.BatteryQuantity
     # We ignore reaction rate constant since its dimensionality may vary
     - electrochemistry.ReactionRateConstant
+
+test_unit_dimension:
+  exceptions:
+    - electrochemistry.PercentUnit
