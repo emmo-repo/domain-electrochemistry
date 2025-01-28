@@ -436,13 +436,14 @@ document.write(`
 <h2>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h2>
 <p>The roots of modern ontologies trace back to ancient Greece. Ontology, as a branch of metaphysics, deals with the nature of being. These philosophical origins are still evident in the way we conceptualize and structure knowledge in modern ontologies. You can explore more about the philosophical aspects of ontology here.</p>
 <p>In information science, ontologies were reinvented in the mid-20th century to bridge the gap between how humans and computers process information. For humans, information is understood as a set of concepts with meaningful, logically consistent relationships. For computers, however, information is represented as binary code: a sequence of ones and zeros.</p>
-<div class="admonition-the-salad-bar-thought-experiment admonition">
-<p class="admonition-title">The Salad Bar Thought Experiment</p>
+<div class="admonition-thought-experiment-the-robot-at-the-salad-bar admonition">
+<p class="admonition-title">Thought Experiment: The Robot at the Salad Bar</p>
 <p>Imagine you have built a robot to do your bidding. You ask it to go to a restaurant, make a salad at the salad bar, and bring it back to you. What information does the robot need to know to accomplish that task?</p>
+<p>It needs to know…</p>
 <ul class="simple">
-<li><p>It needs to know where the restaurant is and how to get there</p></li>
-<li><p>It needs to know the recipe for a salad and how to select the ingredients from the salad bar</p></li>
-<li><p>It needs to know that a salad comes in a bowl and is proportioned as a meal for one or more people</p></li>
+<li><p>where the restaurant is and how to get there</p></li>
+<li><p>the recipe for a salad and how to select the ingredients from the salad bar</p></li>
+<li><p>that a salad comes in a bowl and is proportioned as a meal for one or more people</p></li>
 <li><p>etc.</p></li>
 </ul>
 <p>Even this seemingly simple task requires a vast amount of information across multiple domains. However, the challenge isn’t just the volume of information—it’s also the need for this information to be linked together in a logically consistent way. This linkage allows the robot to reason about aspects of the task that are not explicitly stated.</p>
@@ -462,8 +463,8 @@ document.write(`
 <li><p><strong>Discover Relationships:</strong> Identify hidden connections between concepts, enhancing data integration and discovery.</p></li>
 </ul>
 <p>For instance, reasoning systems are used in healthcare to determine potential drug interactions based on patient data and medical ontologies. Similarly, in battery science, reasoning can help identify optimal materials by linking experimental results with material properties and performance metrics.</p>
-<div class="admonition-the-one-armed-person-thought-experiment admonition">
-<p class="admonition-title"><em>The One-Armed Person Thought Experiment</em></p>
+<div class="admonition-thought-experiment-the-one-armed-person admonition">
+<p class="admonition-title">Thought Experiment: The One-Armed Person</p>
 <p>Imagine we want to describe humans in an ontology. We might include some relationships like:</p>
 <ul class="simple">
 <li><p>A human is a mammal</p></li>
@@ -473,15 +474,16 @@ document.write(`
 <li><p>A woman is human</p></li>
 <li><p>etc.</p></li>
 </ul>
-<p>We might then create an individual called <em>Sykes</em> and make the statement that ‘Sykes is a man’. Reasoning according to the knowledge in the ontology will return that because ‘Sykes is a man’ and ‘a man is a human’, then it follows that ‘Sykes is a human’.</p>
-<p>But then Sykes loses an arm in some terrible accident. We append the statement ‘Sykes has one arm’. Reasoning again will create a logical inconsistency because if ‘Sykes has one arm’ and ‘a human as two arms’, then it follows that Sykes cannot be a human.</p>
+<p>We might then create an individual called <em>Jesper</em> and make the statement that ‘Jesper is a man’. Reasoning according to the knowledge in the ontology will return that because ‘Jesper is a man’ and ‘a man is a human’, then it follows that ‘Jesper is a human’.</p>
+<p>But then Jesper loses an arm in some terrible accident. We append the statement ‘Jesper has one arm’. Reasoning again will create a logical inconsistency because if ‘Jesper has one arm’ and ‘a human as two arms’, then it follows that Jesper cannot be a human.</p>
 <p>This demonstrates how tricky it can be to maintain internal logical consistency, especially for complex ontologies, and how important it is to support correct reasoning and inferrence.</p>
 </div>
 <p>By enabling machines to “think” beyond the explicit data provided, reasoning transforms ontologies into dynamic tools for problem-solving and decision-making.</p>
 </section>
 <section id="semantic-querying">
 <h2>Semantic Querying<a class="headerlink" href="#semantic-querying" title="Permalink to this heading">#</a></h2>
-<p>One of the most transformative applications of ontologies is their support for semantic querying. Unlike traditional keyword-based searches, semantic queries leverage the structured knowledge within ontologies to deliver precise and meaningful results. By understanding the relationships between concepts, machines can interpret queries in a way that mimics human reasoning. For instance, if an ontology knows that “Golden Retriever” is a type of “dog,” a query for “animal” can return results that include Golden Retrievers, even if they were not explicitly mentioned.</p>
+<p>One of the most transformative applications of ontologies is their support for semantic querying. Unlike traditional keyword-based searches, semantic queries leverage the structured knowledge within ontologies to deliver precise and meaningful results. By understanding the relationships between concepts, machines can interpret queries in a way that mimics human reasoning.</p>
+<p>For example, if an ontology knows that “Golden Retriever” is a type of “dog,” and a “dog” is an “animal”, then a query for “animal” can return results that include Golden Retrievers, even if they were not explicitly mentioned.</p>
 <p>Semantic querying is powered by languages such as SPARQL, a query language designed for RDF-based data. SPARQL allows users to retrieve and manipulate structured data by specifying patterns to match within the ontology’s graph. For example, a SPARQL allows users to transform natural human queries like, “Which restaurants serve vegetarian salads?” or “What materials are compatible with a specific battery type?” into a graph pattern to retrieve compatible answers. The ontology’s structure enables the system to traverse relationships and return accurate answers based on the data.</p>
 <p>This capability is invaluable in fields like healthcare, where semantic queries can identify drug interactions or link patient symptoms to potential diagnoses. Similarly, in environmental research, semantic querying can connect datasets on climate patterns, biodiversity, and conservation efforts. By enabling machines to “understand” data, ontologies transform how we access and utilize information, making semantic querying a cornerstone of modern knowledge systems.</p>
 </section>
