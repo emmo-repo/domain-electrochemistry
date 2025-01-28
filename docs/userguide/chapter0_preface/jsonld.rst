@@ -123,7 +123,7 @@ Example: Electrochemical Cell in JSON-LD
 }
 ```
 
-.. example:: Example: A Simple Description of a Person
+.. admonition:: Example: A Simple Description of a Person
 
    Below is an example of JSON-LD code for describing a person:
 
