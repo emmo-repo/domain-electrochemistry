@@ -5,6 +5,16 @@ Data often exists in silos, scattered across different formats and systems. Link
 
 Put simply, linked data is a way to structure and connect data, so that it can be better understood and utilized. The linked data framework is designed to be understood by both humans and machines. It represents data as a network graph of interconnected data points, each described using a shared vocabulary and unique identifiers. By linking pieces of information, linked data facilitates interoperability between systems and helps users extract meaningful insights across different datasets.
 
+Contents:
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Linked Data Sections
+
+   linked_data_jsonld
+
+---
+
 Background
 ----------
 

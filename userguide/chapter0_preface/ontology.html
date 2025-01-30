@@ -52,7 +52,7 @@
     <link rel="shortcut icon" href="../../_static/battinfologo.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Introduction to Linked Data" href="linked_data.html" />
+    <link rel="next" title="&lt;no title&gt;" href="ontology_background.html" />
     <link rel="prev" title="Preface" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -347,10 +347,20 @@ document.write(`
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">User Guide</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Preface</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Ontology</a></li>
-<li class="toctree-l2"><a class="reference internal" href="linked_data.html">Introduction to Linked Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="jsonld.html">Introduction to JSON-LD</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="emmo.html">Elementary Multiperspective Materials Ontology (EMMO)</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">Ontology</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="ontology_structure.html">Ontology Structure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ontology_capabilities.html">Ontology Capabilities</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="rdf.html">Resource Description Framework (RDF)</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="rdf_classes_properties_triples.html">Classes, Properties, and Triples</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="linked_data.html">Introduction to Linked Data</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="linked_data_jsonld.html">Introduction to JSON-LD</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="emmo.html">Elementary Multiperspective Materials Ontology (EMMO)</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="emmo_naming_conventions.html">Naming Conventions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="emmo_units_quantities_properties.html">Units, Quantities, and Properties</a></li>
 </ul>
@@ -358,16 +368,16 @@ document.write(`
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../chapter2_quantities/index.html">Quantities</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter3_objects/index.html">Objects</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter3_objects/index.html">Objects</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../chapter3_objects/materials.html">Materials</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter3_objects/components.html">Components</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter3_objects/devices.html">Devices</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter4_processes/index.html">Processes</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter4_processes/index.html">Processes</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter5_data/index.html">Data</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter5_data/index.html">Data</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../chapter6_summary/index.html">Summary</a></li>
@@ -436,191 +446,25 @@ document.write(`
 <p>In the 1999 movie <em>The Matrix</em>, Keanu Reeves’ character is having a rough day. He needs to master every martial art in just a few hours. But he’s in luck. In the future, humans can download knowledge from computers directly into their brains. After a few swift clicks, Keanu turns towards the camera and dramatically says, <a class="reference external" href="https://youtu.be/OrzgxUhnYjY?si=lpgV8uk4jBrx1lFD&amp;t=70">“I know Kung Fu!”</a>.</p>
 <p>Keanu was saved because someone had encoded all the world’s <strong>knowledge</strong> about Kung Fu into a <strong>meaningful language</strong> that machines and humans can understand. <em>That’s an ontology</em>. Put another way, an ontology is a formal representation of knowledge, expressed as a conceptual network that conveys meaning in a way that both humans and machines can process.</p>
 <p>Far from being a far-out science fiction concept, ontologies form the backbone of many tools we use every day. They are foundational to the modern World Wide Web, social media networks, and media streaming platforms. Ontologies are immensely powerful tools for sharing knowledge, linking resources, and assigning meaning to data.</p>
-<section id="background">
-<h2>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h2>
-<p>The roots of modern ontologies trace back to ancient Greece. Ontology, as a branch of metaphysics, deals with the nature of being. These philosophical origins are still evident in the way we conceptualize and structure knowledge in modern ontologies. You can explore more about the philosophical aspects of ontology here.</p>
-<p>In information science, ontologies were reinvented in the mid-20th century to bridge the gap between how humans and computers process information. For humans, information is understood as a set of concepts with meaningful, logically consistent relationships. For computers, however, information is represented as binary code: a sequence of ones and zeros.</p>
-<div class="admonition-thought-experiment-the-robot-at-the-salad-bar admonition">
-<p class="admonition-title">Thought Experiment: The Robot at the Salad Bar</p>
-<p>Imagine you have built a robot to do your bidding. You ask it to go to a restaurant, make a salad at the salad bar, and bring it back to you. What information does the robot need to know to accomplish that task?</p>
-<p>It needs to know…</p>
-<ul class="simple">
-<li><p>where the restaurant is and how to get there</p></li>
-<li><p>the recipe for a salad and how to select the ingredients from the salad bar</p></li>
-<li><p>that a salad comes in a bowl and is proportioned as a meal for one or more people</p></li>
-<li><p>etc.</p></li>
+<p>Contents:</p>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Ontology Sections</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ontology_structure.html">Ontology Structure</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ontology_structure.html#top-level-ontologies">Top-Level Ontologies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ontology_structure.html#domain-ontologies">Domain Ontologies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ontology_structure.html#application-ontologies">Application Ontologies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ontology_structure.html#knowledge-graphs">Knowledge Graphs</a></li>
 </ul>
-<p>Even this seemingly simple task requires a vast amount of information across multiple domains. However, the challenge isn’t just the volume of information—it’s also the need for this information to be linked together in a logically consistent way. This linkage allows the robot to reason about aspects of the task that are not explicitly stated.</p>
-</div>
-<p>To get over this barrier, researchers developed ontologies in the form of network graphs. These graphs link concepts using relationships in node-edge-node statements called <em>triples</em>. The concepts within the graph can then be mapped to computer datasets, effectively assigning meaning to the data and enabling machines to process and reason about it.</p>
-<p>The next major step came in 1989 from a quiet corner of Switzerland. A 34-year-old researcher at CERN named Tim Berners-Lee was trying to develop a way to manage the vast amount of data generated by the nuclear research facility. He proposed a knowledge management system using hypertext to link documents and datasets. He called this system <em>The Mesh</em>, but within a few short years, it would be known by another name: <em>The World Wide Web</em>.</p>
-<p>After the invention of the World Wide Web, the volume of information available to humans and computers grew exponentially. It quickly became evident that merely linking resources with hypertext was not sufficient to navigate the wilderness of data. The answer was <em>The Semantic Web</em>, an extension of the World Wide Web that uses ontologies and other semantic tools to describe the meaning of data and the nature of its connections.</p>
-<p>To build the Semantic Web, the World Wide Web Consortium (W3C) created a core technology stack expressed as a system of standards, including the Resource Description Framework (RDF) and the Web Ontology Language (OWL). RDF provides a basic model for representing data as triples (subject-predicate-object) in a graph structure. OWL extends RDF and is designed to represent rich and complex knowledge about things, groups of things, and relationships between them. These Semantic Web standards - among others - are the foundation of much of today’s ontology development.</p>
-</section>
-<section id="semantic-reasoning">
-<h2>Semantic Reasoning<a class="headerlink" href="#semantic-reasoning" title="Permalink to this heading">#</a></h2>
-<p>One of the most powerful features of ontologies is their ability to enable reasoning. Reasoning allows machines to infer new knowledge from existing data. For example, if an ontology defines that all salads are food and Caesar salads are a type of salad, a reasoning system can conclude that Caesar salad is food—even if this specific relationship is not explicitly stated in the data.</p>
-<p>This inferencing capability is crucial for solving complex problems and answering questions that go beyond surface-level information. Reasoning in ontologies is supported by formal logic and rules embedded within frameworks like OWL. These rules allow machines to:</p>
-<ul class="simple">
-<li><p><strong>Classify Data:</strong> Automatically categorize new items based on their properties and relationships.</p></li>
-<li><p><strong>Check Consistency:</strong> Ensure that data does not contain logical contradictions (e.g., an object cannot simultaneously be defined as “hot” and “cold”).</p></li>
-<li><p><strong>Discover Relationships:</strong> Identify hidden connections between concepts, enhancing data integration and discovery.</p></li>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ontology_capabilities.html">Ontology Capabilities</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ontology_capabilities.html#semantic-reasoning">Semantic Reasoning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ontology_capabilities.html#semantic-querying">Semantic Querying</a></li>
 </ul>
-<p>For instance, reasoning systems are used in healthcare to determine potential drug interactions based on patient data and medical ontologies. Similarly, in battery science, reasoning can help identify optimal materials by linking experimental results with material properties and performance metrics.</p>
-<div class="admonition-thought-experiment-the-one-armed-person admonition">
-<p class="admonition-title">Thought Experiment: The One-Armed Person</p>
-<p>Imagine we want to describe humans in an ontology. We might include some relationships like:</p>
-<ul class="simple">
-<li><p>A human is a mammal</p></li>
-<li><p>A human has one brain</p></li>
-<li><p>A human has two arms</p></li>
-<li><p>A man is a human</p></li>
-<li><p>A woman is human</p></li>
-<li><p>etc.</p></li>
+</li>
 </ul>
-<p>We might then create an individual called <em>Jesper</em> and make the statement that ‘Jesper is a man’. Reasoning according to the knowledge in the ontology will return that because ‘Jesper is a man’ and ‘a man is a human’, then it follows that ‘Jesper is a human’.</p>
-<p>But then Jesper loses an arm in some terrible accident. We append the statement ‘Jesper has one arm’. Reasoning again will create a logical inconsistency because if ‘Jesper has one arm’ and ‘a human as two arms’, then it follows that Jesper cannot be a human.</p>
-<p>This demonstrates how tricky it can be to maintain internal logical consistency, especially for complex ontologies, and how important it is to support correct reasoning and inferrence.</p>
 </div>
-<p>By enabling machines to “think” beyond the explicit data provided, reasoning transforms ontologies into dynamic tools for problem-solving and decision-making.</p>
-</section>
-<section id="semantic-querying">
-<h2>Semantic Querying<a class="headerlink" href="#semantic-querying" title="Permalink to this heading">#</a></h2>
-<p>One of the most transformative applications of ontologies is their support for semantic querying. Unlike traditional keyword-based searches, semantic queries leverage the structured knowledge within ontologies to deliver precise and meaningful results. By understanding the relationships between concepts, machines can interpret queries in a way that mimics human reasoning.</p>
-<p>For example, if an ontology knows that “Golden Retriever” is a type of “dog,” and a “dog” is an “animal”, then a query for “animal” can return results that include Golden Retrievers, even if they were not explicitly mentioned.</p>
-<p>Semantic querying is powered by languages such as SPARQL, a query language designed for RDF-based data. SPARQL allows users to retrieve and manipulate structured data by specifying patterns to match within the ontology’s graph. For example, a SPARQL allows users to transform natural human queries like, “Which restaurants serve vegetarian salads?” or “What materials are compatible with a specific battery type?” into a graph pattern to retrieve compatible answers. The ontology’s structure enables the system to traverse relationships and return accurate answers based on the data.</p>
-<p>This capability is invaluable in fields like healthcare, where semantic queries can identify drug interactions or link patient symptoms to potential diagnoses. Similarly, in environmental research, semantic querying can connect datasets on climate patterns, biodiversity, and conservation efforts. By enabling machines to “understand” data, ontologies transform how we access and utilize information, making semantic querying a cornerstone of modern knowledge systems.</p>
-</section>
-<section id="modularity-in-ontologies">
-<h2>Modularity in Ontologies<a class="headerlink" href="#modularity-in-ontologies" title="Permalink to this heading">#</a></h2>
-<p>Ontologies are not monolithic structures; instead, they are often modular and designed to be extended. This modularity ensures flexibility, scalability, and reusability, allowing ontologies to be tailored for specific domains and applications while remaining consistent with broader frameworks.</p>
-<div class="admonition-the-benefits-of-modularity admonition">
-<p class="admonition-title"><strong>The Benefits of Modularity</strong></p>
-<p><strong>Scalability:</strong> Modular ontologies can grow incrementally by adding new modules without overhauling the entire system.</p>
-<p><strong>Reusability:</strong> Common frameworks and domain ontologies can be reused across multiple applications, reducing duplication of effort.</p>
-<p><strong>Interoperability:</strong> Modular design ensures compatibility between different ontologies, enabling seamless data integration and exchange.</p>
-</div>
-<p>The modular nature of ontologies reflects their purpose: to provide a structured yet flexible way to represent and share knowledge, making them indispensable tools for modern information systems.</p>
-<section id="top-level-ontologies">
-<h3>Top-Level Ontologies<a class="headerlink" href="#top-level-ontologies" title="Permalink to this heading">#</a></h3>
-<p>At the source of many ontologies are top-level frameworks, often called upper ontologies. These define the most general concepts and relationships that apply across multiple domains. Top-level ontology frameworks establish the rules and shared vocabulary for creating domain-specific ontologies. They provide the “grammar” for more specialized knowledge representations and promote the re-use of existing concepts within their internal systems. Some notable exmaples of top-level ontologies include Basic Formal Ontology (BFO), Descriptive Ontology for Linguistic and Cognitive Engineering (DOLCE), and the Elementary Multiperspective Materials Ontology (EMMO).</p>
-<div class="admonition-some-common-top-level-ontologies admonition">
-<p class="admonition-title"><em>Some Common Top-Level Ontologies</em></p>
-<p>BFO is a widely used top-level ontology in science and healthcare. It provides a framework for domain-specific extensions by focusing on general concepts such as objects, processes, and their interrelations. It emphasizes simplicity and consistency, making it a reliable backbone for more specialized ontologies.</p>
-<p>DOLCE is designed to represent common human experiences and conceptualizations. It captures everyday knowledge and cognitive structures. Its focus on common sense reasoning makes it particularly valuable for applications in linguistics, cognitive science, and AI.</p>
-<p>EMMO is specialized ontology developed for materials science and engineering. It integrates perspectives from physics, chemistry, and engineering to create a cohesive framework for modeling materials and their properties. It supports data interoperability and advanced simulations across disciplines.</p>
-</div>
-</section>
-<section id="domain-ontologies">
-<h3>Domain Ontologies<a class="headerlink" href="#domain-ontologies" title="Permalink to this heading">#</a></h3>
-<p>Domain ontologies take the foundational concepts provided by top-level frameworks and expand them to cover knowledge specific to particular fields. For instance, the Gene Ontology (GO) delves into the intricacies of biological processes, cellular components, and molecular functions, offering a structured way to describe the complexity of life at a molecular level. Similarly, the Battery Ontology focuses on standardizing the representation of materials, components, and processes involved in battery research. By building on the shared principles of top-level ontologies, domain ontologies create a consistent and interoperable framework, enabling seamless integration of data across diverse fields.</p>
-</section>
-<section id="application-ontologies">
-<h3>Application Ontologies<a class="headerlink" href="#application-ontologies" title="Permalink to this heading">#</a></h3>
-<p>Application ontologies extend general and domain-specific knowledge to address specialized needs. For example, a healthcare ontology might focus on patient management by detailing intake processes, diagnostic tools, and treatment plans, tailoring it to hospital operations. Similarly, an agricultural ontology could describe crop cycles, soil management, and pest control practices to meet farming requirements. These extensions achieve a balance between addressing unique needs and staying compatible with broader frameworks.</p>
-</section>
-<section id="knowledge-graphs">
-<h3>Knowledge Graphs<a class="headerlink" href="#knowledge-graphs" title="Permalink to this heading">#</a></h3>
-<p>Knowledge graphs are a practical implementation of ontologies that represent specific instances of data as a dynamic network of interconnected entities and relationships. While ontologies focus on defining general concepts and their relationships, knowledge graphs concentrate on specific instances or individuals, connecting them to form a rich and navigable web of knowledge.</p>
-<p>Powered by ontologies, knowledge graphs enhance integration, discovery, and reasoning across specific data instances. They are widely used in search engines (e.g., Google Knowledge Graph), recommendation systems, and intelligent assistants, providing context-aware results that mimic human-like understanding of data.</p>
-</section>
-</section>
-<section id="fundamentals">
-<h2>Fundamentals<a class="headerlink" href="#fundamentals" title="Permalink to this heading">#</a></h2>
-<p>Ontologies are built on a few simple foundational components that can be combined to express knowledge. These include:
-- Identifiers
-- Classes
-- Properties
-- Triples</p>
-<p>These components each build upon eachother to create an ontological framework, and we will introduce them one-by-one.</p>
-<section id="identifiers">
-<h3>Identifiers<a class="headerlink" href="#identifiers" title="Permalink to this heading">#</a></h3>
-<p>If an ontology is a language, then its identifiers are like the words. Identifiers are unique, persistent, and (ideally) resolvable strings that are used to identify some concept. They enable humans and machines to uniquely reference and access information about entities, concepts, and relationships.</p>
-<p>Identifiers serve as the “name tags” for entities in an ontology. Without identifiers, there would be no way to distinguish one concept from another, particularly when integrating information across multiple datasets or domains. A good identifier ensures clarity, consistency, and interoperability.</p>
-<div class="admonition-thought-experiment-who-says-the-taj-mahal-is-in-india admonition">
-<p class="admonition-title">Thought Experiment: Who says the Taj Mahal is in India?</p>
-<p>One day you’re having a chat with your friend and mention:</p>
-<p><strong>You</strong>: “I’m in New York City, and I can’t wait to see Taj Mahal later!”
-<strong>Friend</strong>: “New York City? You’ve got a long way to go…the Taj Mahal is in India!”
-<strong>You</strong>: “No, not that Taj Mahal…the other one! Here’s a link… <a class="reference external" href="https://en.wikipedia.org/wiki/Taj_Mahal_(musician)">https://en.wikipedia.org/wiki/Taj_Mahal_(musician)</a>”
-<strong>Friend</strong>: “Ok! I thought you meant the building <a class="reference external" href="https://en.wikipedia.org/wiki/Taj_Mahal">https://en.wikipedia.org/wiki/Taj_Mahal</a> Have fun!”</p>
-<p>You and your friend used identifiers (in this case URLs) to clear up a misunderstanding about the meaning of the term “Taj Mahal”. Encoded into the URL is an explicit disambiguation about the term, i.e. <code class="code docutils literal notranslate"><span class="pre">Taj_Mahal_(musician)</span></code> v. <code class="code docutils literal notranslate"><span class="pre">Taj_Mahal</span></code>, but clicking on the link also takes you to an article with much more information and context about those particular things.</p>
-<p>Ontologies use identifiers in the same way. They are unique identifiers that describe concepts and point to places where you can get more information about them, which can be accessed by people and machines.</p>
-</div>
-<section id="types-of-identifiers">
-<h4>Types of Identifiers<a class="headerlink" href="#types-of-identifiers" title="Permalink to this heading">#</a></h4>
-<section id="uniform-resource-identifier-uri">
-<h5>Uniform Resource Identifier (URI)<a class="headerlink" href="#uniform-resource-identifier-uri" title="Permalink to this heading">#</a></h5>
-<p>There are a few ways to construct identifiers in an ontology. The basic type of identifier is called a <strong>Uniform Resource Identifier (URI)</strong>. A URI is a globally unique identifier used to reference a resource. It often takes the form of a web address (URL), but it can also refer to non-resolvable identifiers. For example, a resolvable identifier may take the form <code class="code docutils literal notranslate"><span class="pre">https://example.com/ontology#Person</span></code>, while a non-resolveable identifer could be structured as <code class="code docutils literal notranslate"><span class="pre">urn:isbn:0451450523</span></code>. Resolvable identifiers are used when creating public-facing ontologies designed for interoperability and linked open data. Non-resolvable identifiers are used more for closed systems or internal workflows.</p>
-</section>
-<section id="internationalized-resource-identifier-iri">
-<h5>Internationalized Resource Identifier (IRI)<a class="headerlink" href="#internationalized-resource-identifier-iri" title="Permalink to this heading">#</a></h5>
-<p>While URIs are limited to using an allowed set of US-ASCII characters, IRIs may additionally contain most characters from the Universal Character Set (Unicode/ISO 10646), including Chinese, Japanese, Korean, and Cyrillic characters. This makes them more inclusive for international use.</p>
-</section>
-<section id="blank-nodes">
-<h5>Blank Nodes<a class="headerlink" href="#blank-nodes" title="Permalink to this heading">#</a></h5>
-<p>Sometimes resources are defined without stating an explicit identifier. Although this is not the best practice for ontologies, it can occur when creating instances of linked data, e.g. in JSON-LD files, where a globally unique name is not strictly necessary. To deal with this, instead of creating a URI or IRI, RDF interpreters can create so-called blank nodes.</p>
-<p>A <strong>blank node</strong> is an unnamed resource in an RDF graph that does not have a persistent, globally unique identifier. Instead, it is assigned an internal system-generated identifier (e.g., _bnode123) that is only meaningful within the scope of the specific dataset or query. Blank nodes are useful when an entity needs to exist in the data structure but does not require an explicit name.</p>
-</section>
-</section>
-<section id="structure-of-identifiers">
-<h4>Structure of Identifiers<a class="headerlink" href="#structure-of-identifiers" title="Permalink to this heading">#</a></h4>
-<p>Identifiers are usually structured with three parts: a namespace, a delimiter, and a term name. These take the structure, <code class="code docutils literal notranslate"><span class="pre">&lt;namespace&gt;&lt;delimiter&gt;&lt;term_name&gt;</span></code>.</p>
-<p>A <strong>namespace</strong> groups related identifiers under a common domain. For example, the namespace for core EMMO terms is: <code class="code docutils literal notranslate"><span class="pre">https://w3id.org/emmo</span></code>.</p>
-<p><strong>Delimiters</strong> are typically either a slash <code class="code docutils literal notranslate"><span class="pre">/</span></code> or a hashtag <code class="code docutils literal notranslate"><span class="pre">#</span></code>. A slash (<code class="code docutils literal notranslate"><span class="pre">/</span></code>) indicates a hierarchical structure, where additional subpaths may exist beyond the term. This is useful when identifiers represent distinct resources that might have further subdivisions. A hashtag (<code class="code docutils literal notranslate"><span class="pre">#</span></code>) is used when the term is self-contained and does not require further hierarchy. It is often used in ontologies where all terms are defined within a single document or namespace.</p>
-<p>The combination of namespaces and delimiters can often become long and cumbersome to write. That’s why a <strong>prefix</strong> is often used to simplify the notation of identifiers. A prefix is like a variable that stands in for the namespace and delimiter combination. For example, identifiers in the RDF vocabulary take the form: <code class="code docutils literal notranslate"><span class="pre">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</span></code>. This can be difficult for people to read and write. So a prefix is defined like <code class="code docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">rdf:</span> <span class="pre">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span> <span class="pre">.</span></code>, which allows the identifier to be written more concisely as <code class="code docutils literal notranslate"><span class="pre">rdf:type</span></code>.</p>
-<p>The <strong>term name</strong> identifies the term within the namespace. It can be a human-readable name or a unique alpha-numeric identifier like a UUID. <em>Human-readable names</em> are easy to understand and remember, making ontologies more accessible for people. But they can face challenges when the same name can be used to describe two different resources (e.g. like the Taj Mahal example). An example of an identifier with a human-readable term name is: <code class="code docutils literal notranslate"><span class="pre">https://schema.org/Person</span></code></p>
-<p><em>UUIDs</em> ensure absolute uniqueness but are not human-readable. UUIDs are useful when term names may not be stable or where name conflicts need to be avoided across distributed systems. An example of an identifier with a UUID term name is: <code class="code docutils literal notranslate"><span class="pre">https://w3id.org/emmo#EMMO_ed4af7ae_63a2_497e_bb88_2309619ea405</span></code></p>
-<section id="permanent-urls-purls">
-<h5>Permanent URLs (PURLs)<a class="headerlink" href="#permanent-urls-purls" title="Permalink to this heading">#</a></h5>
-<p>Identifiers should be persistent and not change over long-term use. This can create challenges for maintanence of ontology resources, if maintainers change organizations or funding for certain domain names runs out. It sometimes becomes necessary to change the domain where ontology resources are hosted. Permanent URL (PURL) services can be help deal with this challenge.</p>
-<p>PURLs are design to offer permanent, persistent identifiers that can be modified to redirect requests to different domains. This allows the structure of the identifier to remain the same, even if the place where the information is hosted changes. There are a few common PURL services. Two of the most common are <a class="reference external" href="https://w3id.org/">w3id.org</a> and <a class="reference external" href="https://purl.org/">purl.org</a>. EMMO uses the w3id service.</p>
-</section>
-</section>
-</section>
-<section id="classes-properties-and-triples">
-<h3>Classes, Properties, and Triples<a class="headerlink" href="#classes-properties-and-triples" title="Permalink to this heading">#</a></h3>
-<p>Like any language, an ontology consists of different types of words that define concepts and relationships. <strong>Classes</strong> function like <em>nouns</em>, representing people, places, things, and ideas. While classes typically act like common nouns, describing general categories of things (e.g., <code class="code docutils literal notranslate"><span class="pre">schema:Person</span></code> for people), <strong>individuals</strong> act more like proper nouns, identifying specific instances of those classes (e.g., <code class="code docutils literal notranslate"><span class="pre">ex:MarieCurie</span></code> as an instance of <code class="code docutils literal notranslate"><span class="pre">schema:Person</span></code>).</p>
-<p><strong>Properties</strong> function like <em>verbs</em>, linking classes and individuals by defining relationships or attributes. These relationships and attributes form <strong>triples</strong>, which are the basic building blocks of RDF-based ontologies. A triple consists of three components: a <strong>subject</strong>, a <strong>predicate</strong>, and an <strong>object</strong>, analogous to a simple sentence structure.</p>
-<p>For example, we can define the class <strong>CreativeWork</strong> (<code class="code docutils literal notranslate"><span class="pre">schema:CreativeWork</span></code>) and a subclass <strong>Book</strong> (<code class="code docutils literal notranslate"><span class="pre">schema:Book</span></code>). To indicate that a book is a type of creative work, we use the property <code class="code docutils literal notranslate"><span class="pre">rdf:type</span></code>, which expresses an “is a” relationship. This can be written as:</p>
-<p><code class="code docutils literal notranslate"><span class="pre">schema:Book</span> <span class="pre">rdf:type</span> <span class="pre">schema:CreativeWork</span> <span class="pre">.</span></code></p>
-<p>In natural language, this translates to:
-<em>“A book is a creative work.”</em></p>
-<p>In this triple:
-- <strong>Subject</strong>: <code class="code docutils literal notranslate"><span class="pre">schema:Book</span></code> (the entity being described)
-- <strong>Predicate</strong>: <code class="code docutils literal notranslate"><span class="pre">rdf:type</span></code> (the relationship)
-- <strong>Object</strong>: <code class="code docutils literal notranslate"><span class="pre">schema:CreativeWork</span></code> (the entity that the subject is linked to)</p>
-<p>Predicates are always <strong>properties</strong>, while subjects and objects can be <strong>classes, individuals, or literal values</strong>.</p>
-<p>Properties in ontologies define relationships between entities and can specify <strong>constraints</strong> on how they are used. Every property has:
-- <strong>Domain</strong>: The class or set of classes that can appear as the subject.
-- <strong>Range</strong>: The class or set of classes that can appear as the object.</p>
-<p>For example, consider the property <code class="code docutils literal notranslate"><span class="pre">ex:hasAuthor</span></code>, where:
-- <strong>Domain</strong>: <code class="code docutils literal notranslate"><span class="pre">schema:CreativeWork</span></code> (a creative work can have an author)
-- <strong>Range</strong>: <code class="code docutils literal notranslate"><span class="pre">schema:Person</span></code> (the author must be a person)</p>
-<p>A valid use of this property:
-<code class="code docutils literal notranslate"><span class="pre">ex:MyBook</span> <span class="pre">ex:hasAuthor</span> <span class="pre">ex:Alice</span> <span class="pre">.</span></code></p>
-<p>An <strong>invalid</strong> use of this property:
-<code class="code docutils literal notranslate"><span class="pre">ex:Alice</span> <span class="pre">ex:hasAuthor</span> <span class="pre">ex:MyBook</span> <span class="pre">.</span></code></p>
-<p>To allow statements in the reverse direction, ontologies sometimes define <strong>inverse properties</strong>. For instance, an inverse property of <code class="code docutils literal notranslate"><span class="pre">ex:hasAuthor</span></code> could be <code class="code docutils literal notranslate"><span class="pre">ex:isAuthorOf</span></code>, allowing:</p>
-<p><code class="code docutils literal notranslate"><span class="pre">ex:Alice</span> <span class="pre">ex:isAuthorOf</span> <span class="pre">ex:MyBook</span> <span class="pre">.</span></code></p>
-<p>RDF Ontologies define different types of properties based on their function:</p>
-<ol class="arabic simple">
-<li><p><strong>Object Properties</strong>: Connect two classes or individuals.
-Example:
-<code class="code docutils literal notranslate"><span class="pre">ex:MyBook</span> <span class="pre">ex:hasAuthor</span> <span class="pre">ex:Alice</span> <span class="pre">.</span></code>
-<em>(This states that “MyBook” was written by Alice.)</em></p></li>
-<li><p><strong>Annotation Properties</strong>: Provide metadata such as labels, descriptions, or documentation.
-Example:
-<code class="code docutils literal notranslate"><span class="pre">schema:Book</span> <span class="pre">rdfs:comment</span> <span class="pre">&quot;A</span> <span class="pre">written</span> <span class="pre">work,</span> <span class="pre">typically</span> <span class="pre">bound</span> <span class="pre">and</span> <span class="pre">published.&quot;</span> <span class="pre">.</span></code>
-<em>(This provides a human-readable description of a book.)</em></p></li>
-<li><p><strong>Data Properties</strong>: Link a class or individual to literal values (e.g., numbers, strings, or dates).
-Example:
-<code class="code docutils literal notranslate"><span class="pre">ex:Alice</span> <span class="pre">schema:birthDate</span> <span class="pre">&quot;1965-07-20&quot;^^xsd:date</span> <span class="pre">.</span></code>
-<em>(This states that Alice was born on July 20, 1965.)</em></p></li>
-</ol>
-<p>Together, <strong>classes, properties, and triples</strong> form the foundation of an ontology, structuring knowledge in a way that is both human-readable and machine-processable.</p>
-</section>
-</section>
+<p>—</p>
 </section>
 
 
@@ -644,11 +488,11 @@ Example:
       </div>
     </a>
     <a class="right-next"
-       href="linked_data.html"
+       href="ontology_background.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Introduction to Linked Data</p>
+        <p class="prev-next-title">&lt;no title&gt;</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -663,42 +507,6 @@ Example:
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> On this page
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#semantic-reasoning">Semantic Reasoning</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#semantic-querying">Semantic Querying</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modularity-in-ontologies">Modularity in Ontologies</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#top-level-ontologies">Top-Level Ontologies</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#domain-ontologies">Domain Ontologies</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#application-ontologies">Application Ontologies</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#knowledge-graphs">Knowledge Graphs</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamentals">Fundamentals</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identifiers">Identifiers</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-identifiers">Types of Identifiers</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#uniform-resource-identifier-uri">Uniform Resource Identifier (URI)</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#internationalized-resource-identifier-iri">Internationalized Resource Identifier (IRI)</a></li>
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#blank-nodes">Blank Nodes</a></li>
-</ul>
-</li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#structure-of-identifiers">Structure of Identifiers</a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#permanent-urls-purls">Permanent URLs (PURLs)</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classes-properties-and-triples">Classes, Properties, and Triples</a></li>
-</ul>
-</li>
-</ul>
-  </nav></div>
 
   <div class="sidebar-secondary-item">
   <div class="tocsection sourcelink">

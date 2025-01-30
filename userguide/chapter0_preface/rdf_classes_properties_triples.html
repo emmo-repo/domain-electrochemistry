@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>Introduction to JSON-LD &#8212; BattInfo  documentation</title>
+    <title>Classes, Properties, and Triples &#8212; BattInfo  documentation</title>
   
   
   
@@ -48,12 +48,12 @@
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/design-tabs.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'userguide/chapter0_preface/jsonld';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'userguide/chapter0_preface/rdf_classes_properties_triples';</script>
     <link rel="shortcut icon" href="../../_static/battinfologo.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Elementary Multiperspective Materials Ontology (EMMO)" href="emmo.html" />
-    <link rel="prev" title="Introduction to Linked Data" href="linked_data.html" />
+    <link rel="next" title="Introduction to Linked Data" href="linked_data.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="rdf_identifiers.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -347,10 +347,20 @@ document.write(`
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">User Guide</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Preface</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="ontology.html">Ontology</a></li>
-<li class="toctree-l2"><a class="reference internal" href="linked_data.html">Introduction to Linked Data</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Introduction to JSON-LD</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="emmo.html">Elementary Multiperspective Materials Ontology (EMMO)</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="ontology.html">Ontology</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="ontology_structure.html">Ontology Structure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ontology_capabilities.html">Ontology Capabilities</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="rdf.html">Resource Description Framework (RDF)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Classes, Properties, and Triples</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="linked_data.html">Introduction to Linked Data</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="linked_data_jsonld.html">Introduction to JSON-LD</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="emmo.html">Elementary Multiperspective Materials Ontology (EMMO)</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="emmo_naming_conventions.html">Naming Conventions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="emmo_units_quantities_properties.html">Units, Quantities, and Properties</a></li>
 </ul>
@@ -358,16 +368,16 @@ document.write(`
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../chapter2_quantities/index.html">Quantities</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter3_objects/index.html">Objects</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter3_objects/index.html">Objects</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../chapter3_objects/materials.html">Materials</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter3_objects/components.html">Components</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../chapter3_objects/devices.html">Devices</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter4_processes/index.html">Processes</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter4_processes/index.html">Processes</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter5_data/index.html">Data</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter5_data/index.html">Data</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../chapter6_summary/index.html">Summary</a></li>
@@ -400,6 +410,8 @@ document.write(`
 
 
 
+
+
 <nav aria-label="Breadcrumbs">
   <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
     
@@ -412,9 +424,12 @@ document.write(`
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">User Guide</a></li>
     
     
-    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Preface</a></li>
+    <li class="breadcrumb-item"><i class="fa-solid fa-ellipsis"></i></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Introduction to JSON-LD</li>
+    
+    <li class="breadcrumb-item"><a href="rdf.html" class="nav-link">Resource Description Framework (RDF)</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Classes, Properties, and Triples</li>
   </ul>
 </nav>
 </div>
@@ -431,164 +446,49 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="introduction-to-json-ld">
-<h1>Introduction to JSON-LD<a class="headerlink" href="#introduction-to-json-ld" title="Permalink to this heading">#</a></h1>
-<p>JSON-LD (JavaScript Object Notation for Linked Data) is a lightweight data interchange format designed to integrate linked data principles with the simplicity of JSON. It is widely used to describe and share structured data on the web in a machine-readable format, making it ideal for semantic web applications.</p>
-<section id="why-json-ld">
-<h2>Why JSON-LD?<a class="headerlink" href="#why-json-ld" title="Permalink to this heading">#</a></h2>
-<p>JSON-LD provides a way to:</p>
-<ul class="simple">
-<li><p>Link data across different systems and domains using globally unique identifiers (IRIs).</p></li>
-<li><p>Maintain compatibility with standard JSON, making it accessible to developers already familiar with JSON.</p></li>
-<li><p>Enhance data interoperability and reusability by embedding semantics directly in the data.</p></li>
-<li><p>Enable easy integration with linked data tools and ontologies like EMMO.</p></li>
-</ul>
-</section>
-<section id="key-features">
-<h2>Key Features<a class="headerlink" href="#key-features" title="Permalink to this heading">#</a></h2>
-<ol class="arabic">
-<li><p><strong>Context</strong>:
-The <cite>&#64;context</cite> keyword defines the mapping between JSON terms and their corresponding IRIs, allowing data to be unambiguously understood across different systems.</p>
-<p>Example:
-<a href="#id1"><span class="problematic" id="id2">``</span></a><a href="#id3"><span class="problematic" id="id4">`</span></a>json
-{</p>
-<blockquote>
-<div><dl class="simple">
-<dt>“&#64;context”: {</dt><dd><p>“name”: “<a class="reference external" href="http://schema.org/name">http://schema.org/name</a>”,
-“age”: “<a class="reference external" href="http://schema.org/age">http://schema.org/age</a>”</p>
-</dd>
-</dl>
-<p>},
-“name”: “Alice”,
-“age”: 30</p>
-</div></blockquote>
-</li>
-<li><p><strong>Identifiers</strong>:
-JSON-LD uses the <cite>&#64;id</cite> keyword to define unique identifiers for objects, enabling linking between entities.</p>
-<p>Example:
-<a href="#id5"><span class="problematic" id="id6">``</span></a><a href="#id7"><span class="problematic" id="id8">`</span></a>json
-{</p>
-<blockquote>
-<div><p>“&#64;id”: “<a class="reference external" href="http://example.org/person/alice">http://example.org/person/alice</a>”,
-“name”: “Alice”</p>
-</div></blockquote>
-</li>
-<li><p><strong>Types</strong>:
-The <cite>&#64;type</cite> keyword specifies the type of an object, often linked to an ontology class.</p>
-<p>Example:
-<a href="#id9"><span class="problematic" id="id10">``</span></a><a href="#id11"><span class="problematic" id="id12">`</span></a>json
-{</p>
-<blockquote>
-<div><p>“&#64;type”: “<a class="reference external" href="http://schema.org/Person">http://schema.org/Person</a>”,
-“name”: “Alice”</p>
-</div></blockquote>
-</li>
-<li><p><strong>Relationships</strong>:
-JSON-LD uses properties to define relationships between entities.</p>
-<p>Example:
-<a href="#id13"><span class="problematic" id="id14">``</span></a><a href="#id15"><span class="problematic" id="id16">`</span></a>json
-{</p>
-<blockquote>
-<div><dl class="simple">
-<dt>“&#64;context”: {</dt><dd><p>“friend”: “<a class="reference external" href="http://schema.org/knows">http://schema.org/knows</a>”,
-“Person”: “<a class="reference external" href="http://schema.org/Person">http://schema.org/Person</a>”</p>
-</dd>
-</dl>
-<p>},
-“&#64;type”: “Person”,
-“name”: “Alice”,
-“friend”: {</p>
-<blockquote>
-<div><p>“&#64;type”: “Person”,
-“name”: “Bob”</p>
-</div></blockquote>
-<p>}</p>
-</div></blockquote>
-</li>
-</ol>
-</section>
-<section id="getting-started-with-json-ld">
-<h2>Getting Started with JSON-LD<a class="headerlink" href="#getting-started-with-json-ld" title="Permalink to this heading">#</a></h2>
+  <section id="classes-properties-and-triples">
+<h1>Classes, Properties, and Triples<a class="headerlink" href="#classes-properties-and-triples" title="Permalink to this heading">#</a></h1>
+<p>Like any language, an ontology consists of different types of words that define concepts and relationships. <strong>Classes</strong> function like <em>nouns</em>, representing people, places, things, and ideas. While classes typically act like common nouns, describing general categories of things (e.g., <code class="code docutils literal notranslate"><span class="pre">schema:Person</span></code> for people), <strong>individuals</strong> act more like proper nouns, identifying specific instances of those classes (e.g., <code class="code docutils literal notranslate"><span class="pre">ex:MarieCurie</span></code> as an instance of <code class="code docutils literal notranslate"><span class="pre">schema:Person</span></code>).</p>
+<p><strong>Properties</strong> function like <em>verbs</em>, linking classes and individuals by defining relationships or attributes. These relationships and attributes form <strong>triples</strong>, which are the basic building blocks of RDF-based ontologies. A triple consists of three components: a <strong>subject</strong>, a <strong>predicate</strong>, and an <strong>object</strong>, analogous to a simple sentence structure.</p>
+<p>For example, we can define the class <strong>CreativeWork</strong> (<code class="code docutils literal notranslate"><span class="pre">schema:CreativeWork</span></code>) and a subclass <strong>Book</strong> (<code class="code docutils literal notranslate"><span class="pre">schema:Book</span></code>). To indicate that a book is a type of creative work, we use the property <code class="code docutils literal notranslate"><span class="pre">rdf:type</span></code>, which expresses an “is a” relationship. This can be written as:</p>
+<p><code class="code docutils literal notranslate"><span class="pre">schema:Book</span> <span class="pre">rdf:type</span> <span class="pre">schema:CreativeWork</span> <span class="pre">.</span></code></p>
+<p>In natural language, this translates to:
+<em>“A book is a creative work.”</em></p>
+<p>In this triple:
+- <strong>Subject</strong>: <code class="code docutils literal notranslate"><span class="pre">schema:Book</span></code> (the entity being described)
+- <strong>Predicate</strong>: <code class="code docutils literal notranslate"><span class="pre">rdf:type</span></code> (the relationship)
+- <strong>Object</strong>: <code class="code docutils literal notranslate"><span class="pre">schema:CreativeWork</span></code> (the entity that the subject is linked to)</p>
+<p>Predicates are always <strong>properties</strong>, while subjects and objects can be <strong>classes, individuals, or literal values</strong>.</p>
+<section id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this heading">#</a></h2>
+<p>Properties in ontologies define relationships between entities and can specify <strong>constraints</strong> on how they are used. Every property has:
+- <strong>Domain</strong>: The class or set of classes that can appear as the subject.
+- <strong>Range</strong>: The class or set of classes that can appear as the object.</p>
+<p>For example, consider the property <code class="code docutils literal notranslate"><span class="pre">ex:hasAuthor</span></code>, where:
+- <strong>Domain</strong>: <code class="code docutils literal notranslate"><span class="pre">schema:CreativeWork</span></code> (a creative work can have an author)
+- <strong>Range</strong>: <code class="code docutils literal notranslate"><span class="pre">schema:Person</span></code> (the author must be a person)</p>
+<p>A valid use of this property:
+<code class="code docutils literal notranslate"><span class="pre">ex:MyBook</span> <span class="pre">ex:hasAuthor</span> <span class="pre">ex:Alice</span> <span class="pre">.</span></code></p>
+<p>An <strong>invalid</strong> use of this property:
+<code class="code docutils literal notranslate"><span class="pre">ex:Alice</span> <span class="pre">ex:hasAuthor</span> <span class="pre">ex:MyBook</span> <span class="pre">.</span></code></p>
+<p>To allow statements in the reverse direction, ontologies sometimes define <strong>inverse properties</strong>. For instance, an inverse property of <code class="code docutils literal notranslate"><span class="pre">ex:hasAuthor</span></code> could be <code class="code docutils literal notranslate"><span class="pre">ex:isAuthorOf</span></code>, allowing:</p>
+<p><code class="code docutils literal notranslate"><span class="pre">ex:Alice</span> <span class="pre">ex:isAuthorOf</span> <span class="pre">ex:MyBook</span> <span class="pre">.</span></code></p>
+<p>RDF Ontologies define different types of properties based on their function:</p>
 <ol class="arabic simple">
-<li><p><strong>Define a Context</strong>:
-The context maps your terms to IRIs. Use existing vocabularies like Schema.org or create your own.</p></li>
-<li><p><strong>Model Your Data</strong>:
-Identify the entities, properties, and relationships in your domain.</p></li>
-<li><p><strong>Use Ontologies</strong>:
-Integrate ontologies like EMMO to provide semantic meaning to your data.</p></li>
-<li><p><strong>Validate Your Data</strong>:
-Use tools like the [JSON-LD Playground](<a class="reference external" href="https://json-ld.org/playground/">https://json-ld.org/playground/</a>) to test and validate your JSON-LD.</p></li>
+<li><p><strong>Object Properties</strong>: Connect two classes or individuals.
+Example:
+<code class="code docutils literal notranslate"><span class="pre">ex:MyBook</span> <span class="pre">ex:hasAuthor</span> <span class="pre">ex:Alice</span> <span class="pre">.</span></code>
+<em>(This states that “MyBook” was written by Alice.)</em></p></li>
+<li><p><strong>Annotation Properties</strong>: Provide metadata such as labels, descriptions, or documentation.
+Example:
+<code class="code docutils literal notranslate"><span class="pre">schema:Book</span> <span class="pre">rdfs:comment</span> <span class="pre">&quot;A</span> <span class="pre">written</span> <span class="pre">work,</span> <span class="pre">typically</span> <span class="pre">bound</span> <span class="pre">and</span> <span class="pre">published.&quot;</span> <span class="pre">.</span></code>
+<em>(This provides a human-readable description of a book.)</em></p></li>
+<li><p><strong>Data Properties</strong>: Link a class or individual to literal values (e.g., numbers, strings, or dates).
+Example:
+<code class="code docutils literal notranslate"><span class="pre">ex:Alice</span> <span class="pre">schema:birthDate</span> <span class="pre">&quot;1965-07-20&quot;^^xsd:date</span> <span class="pre">.</span></code>
+<em>(This states that Alice was born on July 20, 1965.)</em></p></li>
 </ol>
-</section>
-<section id="advantages-of-json-ld">
-<h2>Advantages of JSON-LD<a class="headerlink" href="#advantages-of-json-ld" title="Permalink to this heading">#</a></h2>
-<ul class="simple">
-<li><p><strong>Human-Readable and Developer-Friendly</strong>:
-JSON-LD retains the simplicity of JSON while embedding powerful linked data capabilities.</p></li>
-<li><p><strong>Extensible</strong>:
-JSON-LD can be easily extended with new terms and vocabularies.</p></li>
-<li><p><strong>Integration with the Web</strong>:
-JSON-LD is supported by major search engines and tools for rich semantic annotations.</p></li>
-</ul>
-</section>
-<section id="example-electrochemical-cell-in-json-ld">
-<h2>Example: Electrochemical Cell in JSON-LD<a class="headerlink" href="#example-electrochemical-cell-in-json-ld" title="Permalink to this heading">#</a></h2>
-<p><a href="#id17"><span class="problematic" id="id18">``</span></a><a href="#id19"><span class="problematic" id="id20">`</span></a>json
-{</p>
-<blockquote>
-<div><dl class="simple">
-<dt>“&#64;context”: {</dt><dd><p>“&#64;vocab”: “<a class="reference external" href="https://w3id.org/emmo/domain">https://w3id.org/emmo/domain</a>/electrochemistry#”,
-“hasNegativeElectrode”: “<a class="reference external" href="https://w3id.org/emmo/domain/electrochemistry#hasNegativeElectrode">https://w3id.org/emmo/domain/electrochemistry#hasNegativeElectrode</a>”,
-“hasPositiveElectrode”: “<a class="reference external" href="https://w3id.org/emmo/domain/electrochemistry#hasPositiveElectrode">https://w3id.org/emmo/domain/electrochemistry#hasPositiveElectrode</a>”,
-“hasElectrolyte”: “<a class="reference external" href="https://w3id.org/emmo/domain/electrochemistry#hasElectrolyte">https://w3id.org/emmo/domain/electrochemistry#hasElectrolyte</a>”</p>
-</dd>
-</dl>
-<p>},
-“&#64;type”: “ElectrochemicalCell”,
-“hasNegativeElectrode”: {</p>
-<blockquote>
-<div><p>“&#64;type”: “ZincElectrode”</p>
-</div></blockquote>
-<p>},
-“hasPositiveElectrode”: {</p>
-<blockquote>
-<div><p>“&#64;type”: “ManganeseDioxideElectrode”</p>
-</div></blockquote>
-<p>},
-“hasElectrolyte”: {</p>
-<blockquote>
-<div><p>“&#64;type”: “AlkalineElectrolyte”</p>
-</div></blockquote>
-<p>}</p>
-</div></blockquote>
-<section id="id21">
-<h3>}<a class="headerlink" href="#id21" title="Permalink to this heading">#</a></h3>
-<div class="admonition-example-a-simple-description-of-a-person admonition">
-<p class="admonition-title">Example: A Simple Description of a Person</p>
-<p>Below is an example of JSON-LD code for describing a person:</p>
-<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://schema.org&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Person&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Marie Curie&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;birthDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1867-11-07&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;spouse&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Person&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Pierre Curie&quot;</span>
-<span class="w">    </span><span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-</div>
-</section>
-</section>
-<section id="learn-more">
-<h2>Learn More<a class="headerlink" href="#learn-more" title="Permalink to this heading">#</a></h2>
-<p>To dive deeper into JSON-LD, explore the following resources:</p>
-<ul class="simple">
-<li><p>[JSON-LD Official Website](<a class="reference external" href="https://json-ld.org/">https://json-ld.org/</a>)</p></li>
-<li><p>[JSON-LD Playground](<a class="reference external" href="https://json-ld.org/playground/">https://json-ld.org/playground/</a>)</p></li>
-<li><p>[W3C JSON-LD Specification](<a class="reference external" href="https://www.w3.org/TR/json-ld/">https://www.w3.org/TR/json-ld/</a>)</p></li>
-</ul>
+<p>Together, <strong>classes, properties, and triples</strong> form the foundation of an ontology, structuring knowledge in a way that is both human-readable and machine-processable.</p>
 </section>
 </section>
 
@@ -604,20 +504,20 @@ JSON-LD is supported by major search engines and tools for rich semantic annotat
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="linked_data.html"
+       href="rdf_identifiers.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Introduction to Linked Data</p>
+        <p class="prev-next-title">&lt;no title&gt;</p>
       </div>
     </a>
     <a class="right-next"
-       href="emmo.html"
+       href="linked_data.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Elementary Multiperspective Materials Ontology (EMMO)</p>
+        <p class="prev-next-title">Introduction to Linked Data</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -639,21 +539,13 @@ JSON-LD is supported by major search engines and tools for rich semantic annotat
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-json-ld">Why JSON-LD?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-features">Key Features</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#getting-started-with-json-ld">Getting Started with JSON-LD</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#advantages-of-json-ld">Advantages of JSON-LD</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-electrochemical-cell-in-json-ld">Example: Electrochemical Cell in JSON-LD</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id21">}</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#learn-more">Learn More</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#properties">Properties</a></li>
 </ul>
   </nav></div>
 
   <div class="sidebar-secondary-item">
   <div class="tocsection sourcelink">
-    <a href="../../_sources/userguide/chapter0_preface/jsonld.rst.txt">
+    <a href="../../_sources/userguide/chapter0_preface/rdf_classes_properties_triples.rst.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>
