@@ -8,9 +8,6 @@ Contents:
    :maxdepth: 2
 
    ontology
+   rdf
    linked_data
-   jsonld
    emmo
-
-
-
