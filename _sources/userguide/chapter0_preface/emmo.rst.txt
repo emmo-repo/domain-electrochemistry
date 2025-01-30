@@ -7,6 +7,7 @@ Contents:
    :maxdepth: 2
    :caption: User Guide Sections
 
-   properties_quantities_units
+   emmo_naming_conventions
+   emmo_units_quantities_properties
 
 ---

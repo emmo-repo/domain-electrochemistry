@@ -351,7 +351,8 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="linked_data.html">Introduction to Linked Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="jsonld.html">Introduction to JSON-LD</a></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="emmo.html">Elementary Multiperspective Materials Ontology (EMMO)</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="properties_quantities_units.html">Properties, Quantities, and Units</a></li>
+<li class="toctree-l3"><a class="reference internal" href="emmo_naming_conventions.html">Naming Conventions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="emmo_units_quantities_properties.html">Units, Quantities, and Properties</a></li>
 </ul>
 </li>
 </ul>
@@ -433,7 +434,7 @@ document.write(`
   <section id="ontology">
 <h1>Ontology<a class="headerlink" href="#ontology" title="Permalink to this heading">#</a></h1>
 <p>In the 1999 movie <em>The Matrix</em>, Keanu Reeves’ character is having a rough day. He needs to master every martial art in just a few hours. But he’s in luck. In the future, humans can download knowledge from computers directly into their brains. After a few swift clicks, Keanu turns towards the camera and dramatically says, <a class="reference external" href="https://youtu.be/OrzgxUhnYjY?si=lpgV8uk4jBrx1lFD&amp;t=70">“I know Kung Fu!”</a>.</p>
-<p>He was saved because someone had encoded all the world’s <strong>knowledge</strong> about Kung Fu into a <strong>meaningful language</strong> that machines and humans can understand. <em>That’s an ontology</em>. Put another way, an ontology is a formal representation of knowledge, expressed as a conceptual network that conveys meaning in a way that both humans and machines can process.</p>
+<p>Keanu was saved because someone had encoded all the world’s <strong>knowledge</strong> about Kung Fu into a <strong>meaningful language</strong> that machines and humans can understand. <em>That’s an ontology</em>. Put another way, an ontology is a formal representation of knowledge, expressed as a conceptual network that conveys meaning in a way that both humans and machines can process.</p>
 <p>Far from being a far-out science fiction concept, ontologies form the backbone of many tools we use every day. They are foundational to the modern World Wide Web, social media networks, and media streaming platforms. Ontologies are immensely powerful tools for sharing knowledge, linking resources, and assigning meaning to data.</p>
 <section id="background">
 <h2>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h2>
@@ -524,6 +525,102 @@ document.write(`
 <p>Powered by ontologies, knowledge graphs enhance integration, discovery, and reasoning across specific data instances. They are widely used in search engines (e.g., Google Knowledge Graph), recommendation systems, and intelligent assistants, providing context-aware results that mimic human-like understanding of data.</p>
 </section>
 </section>
+<section id="fundamentals">
+<h2>Fundamentals<a class="headerlink" href="#fundamentals" title="Permalink to this heading">#</a></h2>
+<p>Ontologies are built on a few simple foundational components that can be combined to express knowledge. These include:
+- Identifiers
+- Classes
+- Properties
+- Triples</p>
+<p>These components each build upon eachother to create an ontological framework, and we will introduce them one-by-one.</p>
+<section id="identifiers">
+<h3>Identifiers<a class="headerlink" href="#identifiers" title="Permalink to this heading">#</a></h3>
+<p>If an ontology is a language, then its identifiers are like the words. Identifiers are unique, persistent, and (ideally) resolvable strings that are used to identify some concept. They enable humans and machines to uniquely reference and access information about entities, concepts, and relationships.</p>
+<p>Identifiers serve as the “name tags” for entities in an ontology. Without identifiers, there would be no way to distinguish one concept from another, particularly when integrating information across multiple datasets or domains. A good identifier ensures clarity, consistency, and interoperability.</p>
+<div class="admonition-thought-experiment-who-says-the-taj-mahal-is-in-india admonition">
+<p class="admonition-title">Thought Experiment: Who says the Taj Mahal is in India?</p>
+<p>One day you’re having a chat with your friend and mention:</p>
+<p><strong>You</strong>: “I’m in New York City, and I can’t wait to see Taj Mahal later!”
+<strong>Friend</strong>: “New York City? You’ve got a long way to go…the Taj Mahal is in India!”
+<strong>You</strong>: “No, not that Taj Mahal…the other one! Here’s a link… <a class="reference external" href="https://en.wikipedia.org/wiki/Taj_Mahal_(musician)">https://en.wikipedia.org/wiki/Taj_Mahal_(musician)</a>”
+<strong>Friend</strong>: “Ok! I thought you meant the building <a class="reference external" href="https://en.wikipedia.org/wiki/Taj_Mahal">https://en.wikipedia.org/wiki/Taj_Mahal</a> Have fun!”</p>
+<p>You and your friend used identifiers (in this case URLs) to clear up a misunderstanding about the meaning of the term “Taj Mahal”. Encoded into the URL is an explicit disambiguation about the term, i.e. <code class="code docutils literal notranslate"><span class="pre">Taj_Mahal_(musician)</span></code> v. <code class="code docutils literal notranslate"><span class="pre">Taj_Mahal</span></code>, but clicking on the link also takes you to an article with much more information and context about those particular things.</p>
+<p>Ontologies use identifiers in the same way. They are unique identifiers that describe concepts and point to places where you can get more information about them, which can be accessed by people and machines.</p>
+</div>
+<section id="types-of-identifiers">
+<h4>Types of Identifiers<a class="headerlink" href="#types-of-identifiers" title="Permalink to this heading">#</a></h4>
+<section id="uniform-resource-identifier-uri">
+<h5>Uniform Resource Identifier (URI)<a class="headerlink" href="#uniform-resource-identifier-uri" title="Permalink to this heading">#</a></h5>
+<p>There are a few ways to construct identifiers in an ontology. The basic type of identifier is called a <strong>Uniform Resource Identifier (URI)</strong>. A URI is a globally unique identifier used to reference a resource. It often takes the form of a web address (URL), but it can also refer to non-resolvable identifiers. For example, a resolvable identifier may take the form <code class="code docutils literal notranslate"><span class="pre">https://example.com/ontology#Person</span></code>, while a non-resolveable identifer could be structured as <code class="code docutils literal notranslate"><span class="pre">urn:isbn:0451450523</span></code>. Resolvable identifiers are used when creating public-facing ontologies designed for interoperability and linked open data. Non-resolvable identifiers are used more for closed systems or internal workflows.</p>
+</section>
+<section id="internationalized-resource-identifier-iri">
+<h5>Internationalized Resource Identifier (IRI)<a class="headerlink" href="#internationalized-resource-identifier-iri" title="Permalink to this heading">#</a></h5>
+<p>While URIs are limited to using an allowed set of US-ASCII characters, IRIs may additionally contain most characters from the Universal Character Set (Unicode/ISO 10646), including Chinese, Japanese, Korean, and Cyrillic characters. This makes them more inclusive for international use.</p>
+</section>
+<section id="blank-nodes">
+<h5>Blank Nodes<a class="headerlink" href="#blank-nodes" title="Permalink to this heading">#</a></h5>
+<p>Sometimes resources are defined without stating an explicit identifier. Although this is not the best practice for ontologies, it can occur when creating instances of linked data, e.g. in JSON-LD files, where a globally unique name is not strictly necessary. To deal with this, instead of creating a URI or IRI, RDF interpreters can create so-called blank nodes.</p>
+<p>A <strong>blank node</strong> is an unnamed resource in an RDF graph that does not have a persistent, globally unique identifier. Instead, it is assigned an internal system-generated identifier (e.g., _bnode123) that is only meaningful within the scope of the specific dataset or query. Blank nodes are useful when an entity needs to exist in the data structure but does not require an explicit name.</p>
+</section>
+</section>
+<section id="structure-of-identifiers">
+<h4>Structure of Identifiers<a class="headerlink" href="#structure-of-identifiers" title="Permalink to this heading">#</a></h4>
+<p>Identifiers are usually structured with three parts: a namespace, a delimiter, and a term name. These take the structure, <code class="code docutils literal notranslate"><span class="pre">&lt;namespace&gt;&lt;delimiter&gt;&lt;term_name&gt;</span></code>.</p>
+<p>A <strong>namespace</strong> groups related identifiers under a common domain. For example, the namespace for core EMMO terms is: <code class="code docutils literal notranslate"><span class="pre">https://w3id.org/emmo</span></code>.</p>
+<p><strong>Delimiters</strong> are typically either a slash <code class="code docutils literal notranslate"><span class="pre">/</span></code> or a hashtag <code class="code docutils literal notranslate"><span class="pre">#</span></code>. A slash (<code class="code docutils literal notranslate"><span class="pre">/</span></code>) indicates a hierarchical structure, where additional subpaths may exist beyond the term. This is useful when identifiers represent distinct resources that might have further subdivisions. A hashtag (<code class="code docutils literal notranslate"><span class="pre">#</span></code>) is used when the term is self-contained and does not require further hierarchy. It is often used in ontologies where all terms are defined within a single document or namespace.</p>
+<p>The combination of namespaces and delimiters can often become long and cumbersome to write. That’s why a <strong>prefix</strong> is often used to simplify the notation of identifiers. A prefix is like a variable that stands in for the namespace and delimiter combination. For example, identifiers in the RDF vocabulary take the form: <code class="code docutils literal notranslate"><span class="pre">http://www.w3.org/1999/02/22-rdf-syntax-ns#type</span></code>. This can be difficult for people to read and write. So a prefix is defined like <code class="code docutils literal notranslate"><span class="pre">&#64;prefix</span> <span class="pre">rdf:</span> <span class="pre">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span> <span class="pre">.</span></code>, which allows the identifier to be written more concisely as <code class="code docutils literal notranslate"><span class="pre">rdf:type</span></code>.</p>
+<p>The <strong>term name</strong> identifies the term within the namespace. It can be a human-readable name or a unique alpha-numeric identifier like a UUID. <em>Human-readable names</em> are easy to understand and remember, making ontologies more accessible for people. But they can face challenges when the same name can be used to describe two different resources (e.g. like the Taj Mahal example). An example of an identifier with a human-readable term name is: <code class="code docutils literal notranslate"><span class="pre">https://schema.org/Person</span></code></p>
+<p><em>UUIDs</em> ensure absolute uniqueness but are not human-readable. UUIDs are useful when term names may not be stable or where name conflicts need to be avoided across distributed systems. An example of an identifier with a UUID term name is: <code class="code docutils literal notranslate"><span class="pre">https://w3id.org/emmo#EMMO_ed4af7ae_63a2_497e_bb88_2309619ea405</span></code></p>
+<section id="permanent-urls-purls">
+<h5>Permanent URLs (PURLs)<a class="headerlink" href="#permanent-urls-purls" title="Permalink to this heading">#</a></h5>
+<p>Identifiers should be persistent and not change over long-term use. This can create challenges for maintanence of ontology resources, if maintainers change organizations or funding for certain domain names runs out. It sometimes becomes necessary to change the domain where ontology resources are hosted. Permanent URL (PURL) services can be help deal with this challenge.</p>
+<p>PURLs are design to offer permanent, persistent identifiers that can be modified to redirect requests to different domains. This allows the structure of the identifier to remain the same, even if the place where the information is hosted changes. There are a few common PURL services. Two of the most common are <a class="reference external" href="https://w3id.org/">w3id.org</a> and <a class="reference external" href="https://purl.org/">purl.org</a>. EMMO uses the w3id service.</p>
+</section>
+</section>
+</section>
+<section id="classes-properties-and-triples">
+<h3>Classes, Properties, and Triples<a class="headerlink" href="#classes-properties-and-triples" title="Permalink to this heading">#</a></h3>
+<p>Like any language, an ontology consists of different types of words that define concepts and relationships. <strong>Classes</strong> function like <em>nouns</em>, representing people, places, things, and ideas. While classes typically act like common nouns, describing general categories of things (e.g., <code class="code docutils literal notranslate"><span class="pre">schema:Person</span></code> for people), <strong>individuals</strong> act more like proper nouns, identifying specific instances of those classes (e.g., <code class="code docutils literal notranslate"><span class="pre">ex:MarieCurie</span></code> as an instance of <code class="code docutils literal notranslate"><span class="pre">schema:Person</span></code>).</p>
+<p><strong>Properties</strong> function like <em>verbs</em>, linking classes and individuals by defining relationships or attributes. These relationships and attributes form <strong>triples</strong>, which are the basic building blocks of RDF-based ontologies. A triple consists of three components: a <strong>subject</strong>, a <strong>predicate</strong>, and an <strong>object</strong>, analogous to a simple sentence structure.</p>
+<p>For example, we can define the class <strong>CreativeWork</strong> (<code class="code docutils literal notranslate"><span class="pre">schema:CreativeWork</span></code>) and a subclass <strong>Book</strong> (<code class="code docutils literal notranslate"><span class="pre">schema:Book</span></code>). To indicate that a book is a type of creative work, we use the property <code class="code docutils literal notranslate"><span class="pre">rdf:type</span></code>, which expresses an “is a” relationship. This can be written as:</p>
+<p><code class="code docutils literal notranslate"><span class="pre">schema:Book</span> <span class="pre">rdf:type</span> <span class="pre">schema:CreativeWork</span> <span class="pre">.</span></code></p>
+<p>In natural language, this translates to:
+<em>“A book is a creative work.”</em></p>
+<p>In this triple:
+- <strong>Subject</strong>: <code class="code docutils literal notranslate"><span class="pre">schema:Book</span></code> (the entity being described)
+- <strong>Predicate</strong>: <code class="code docutils literal notranslate"><span class="pre">rdf:type</span></code> (the relationship)
+- <strong>Object</strong>: <code class="code docutils literal notranslate"><span class="pre">schema:CreativeWork</span></code> (the entity that the subject is linked to)</p>
+<p>Predicates are always <strong>properties</strong>, while subjects and objects can be <strong>classes, individuals, or literal values</strong>.</p>
+<p>Properties in ontologies define relationships between entities and can specify <strong>constraints</strong> on how they are used. Every property has:
+- <strong>Domain</strong>: The class or set of classes that can appear as the subject.
+- <strong>Range</strong>: The class or set of classes that can appear as the object.</p>
+<p>For example, consider the property <code class="code docutils literal notranslate"><span class="pre">ex:hasAuthor</span></code>, where:
+- <strong>Domain</strong>: <code class="code docutils literal notranslate"><span class="pre">schema:CreativeWork</span></code> (a creative work can have an author)
+- <strong>Range</strong>: <code class="code docutils literal notranslate"><span class="pre">schema:Person</span></code> (the author must be a person)</p>
+<p>A valid use of this property:
+<code class="code docutils literal notranslate"><span class="pre">ex:MyBook</span> <span class="pre">ex:hasAuthor</span> <span class="pre">ex:Alice</span> <span class="pre">.</span></code></p>
+<p>An <strong>invalid</strong> use of this property:
+<code class="code docutils literal notranslate"><span class="pre">ex:Alice</span> <span class="pre">ex:hasAuthor</span> <span class="pre">ex:MyBook</span> <span class="pre">.</span></code></p>
+<p>To allow statements in the reverse direction, ontologies sometimes define <strong>inverse properties</strong>. For instance, an inverse property of <code class="code docutils literal notranslate"><span class="pre">ex:hasAuthor</span></code> could be <code class="code docutils literal notranslate"><span class="pre">ex:isAuthorOf</span></code>, allowing:</p>
+<p><code class="code docutils literal notranslate"><span class="pre">ex:Alice</span> <span class="pre">ex:isAuthorOf</span> <span class="pre">ex:MyBook</span> <span class="pre">.</span></code></p>
+<p>RDF Ontologies define different types of properties based on their function:</p>
+<ol class="arabic simple">
+<li><p><strong>Object Properties</strong>: Connect two classes or individuals.
+Example:
+<code class="code docutils literal notranslate"><span class="pre">ex:MyBook</span> <span class="pre">ex:hasAuthor</span> <span class="pre">ex:Alice</span> <span class="pre">.</span></code>
+<em>(This states that “MyBook” was written by Alice.)</em></p></li>
+<li><p><strong>Annotation Properties</strong>: Provide metadata such as labels, descriptions, or documentation.
+Example:
+<code class="code docutils literal notranslate"><span class="pre">schema:Book</span> <span class="pre">rdfs:comment</span> <span class="pre">&quot;A</span> <span class="pre">written</span> <span class="pre">work,</span> <span class="pre">typically</span> <span class="pre">bound</span> <span class="pre">and</span> <span class="pre">published.&quot;</span> <span class="pre">.</span></code>
+<em>(This provides a human-readable description of a book.)</em></p></li>
+<li><p><strong>Data Properties</strong>: Link a class or individual to literal values (e.g., numbers, strings, or dates).
+Example:
+<code class="code docutils literal notranslate"><span class="pre">ex:Alice</span> <span class="pre">schema:birthDate</span> <span class="pre">&quot;1965-07-20&quot;^^xsd:date</span> <span class="pre">.</span></code>
+<em>(This states that Alice was born on July 20, 1965.)</em></p></li>
+</ol>
+<p>Together, <strong>classes, properties, and triples</strong> form the foundation of an ontology, structuring knowledge in a way that is both human-readable and machine-processable.</p>
+</section>
+</section>
 </section>
 
 
@@ -581,6 +678,23 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#domain-ontologies">Domain Ontologies</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#application-ontologies">Application Ontologies</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#knowledge-graphs">Knowledge Graphs</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fundamentals">Fundamentals</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identifiers">Identifiers</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-identifiers">Types of Identifiers</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#uniform-resource-identifier-uri">Uniform Resource Identifier (URI)</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#internationalized-resource-identifier-iri">Internationalized Resource Identifier (IRI)</a></li>
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#blank-nodes">Blank Nodes</a></li>
+</ul>
+</li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#structure-of-identifiers">Structure of Identifiers</a><ul class="nav section-nav flex-column">
+<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#permanent-urls-purls">Permanent URLs (PURLs)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#classes-properties-and-triples">Classes, Properties, and Triples</a></li>
 </ul>
 </li>
 </ul>

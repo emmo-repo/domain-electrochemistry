@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>Properties, Quantities, and Units &#8212; BattInfo  documentation</title>
+    <title>Naming Conventions &#8212; BattInfo  documentation</title>
   
   
   
@@ -48,11 +48,11 @@
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/design-tabs.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'userguide/chapter0_preface/properties_quantities_units';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'userguide/chapter0_preface/emmo_naming_conventions';</script>
     <link rel="shortcut icon" href="../../_static/battinfologo.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Quantities in Electrochemistry" href="../chapter2_quantities/index.html" />
+    <link rel="next" title="Units, Quantities, and Properties" href="emmo_units_quantities_properties.html" />
     <link rel="prev" title="Elementary Multiperspective Materials Ontology (EMMO)" href="emmo.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -351,7 +351,8 @@ document.write(`
 <li class="toctree-l2"><a class="reference internal" href="linked_data.html">Introduction to Linked Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="jsonld.html">Introduction to JSON-LD</a></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="emmo.html">Elementary Multiperspective Materials Ontology (EMMO)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">Properties, Quantities, and Units</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Naming Conventions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="emmo_units_quantities_properties.html">Units, Quantities, and Properties</a></li>
 </ul>
 </li>
 </ul>
@@ -418,7 +419,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="emmo.html" class="nav-link">Elementary Multiperspective Materials Ontology (EMMO)</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Properties, Quantities, and Units</li>
+    <li class="breadcrumb-item active" aria-current="page">Naming Conventions</li>
   </ul>
 </nav>
 </div>
@@ -435,53 +436,10 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="properties-quantities-and-units">
-<h1>Properties, Quantities, and Units<a class="headerlink" href="#properties-quantities-and-units" title="Permalink to this heading">#</a></h1>
-<p>A <strong>property</strong> is a characteristic or feature of something that can be described, measured, or categorized. Think of it as a way to answer specific questions about an object or system, like:</p>
-<ul class="simple">
-<li><p>What color is it? (e.g., black, red)</p></li>
-<li><p>How heavy is it? (e.g., 1.4 kg)</p></li>
-<li><p>What is its hardness? (e.g., “Vickers hardness” measures how hard a material is using a standard test)</p></li>
-</ul>
-<p>In the EMMO framework, a property is very precise, focusing on one clear aspect of an object or system. For example, “red” could be a property of a list of colors, or “1.4 kg” could describe the weight of an object.</p>
-<p>Properties are like labels or codes that help us describe the world in an organized way, using agreed-upon standards to ensure everyone interprets the information the same way.</p>
-<section id="types-of-properties-in-emmo">
-<h2>Types of Properties in EMMO<a class="headerlink" href="#types-of-properties-in-emmo" title="Permalink to this heading">#</a></h2>
-<p><strong>1. Objective Properties</strong>
-An objective property is a property determined through a well-defined procedure, ensuring systematic and repeatable results. There are three key types of objective properties:</p>
-<ul class="simple">
-<li><p><strong>Conventional Property</strong>:
-A property whose value is determined by convention or agreement. For example, a copper sample’s thermal conductivity provided in a vendor specification sheet.</p></li>
-<li><p><strong>Measured Property</strong>:
-A property explicitly measured through direct observation or instrumentation. For instance, measuring the mass of an object using a scale.</p></li>
-<li><p><strong>Modelled Property</strong>:
-A property calculated using a well-defined model. For example, a diffusion coefficient derived from experimental data using a mathematical model.</p></li>
-</ul>
-<p><strong>2. Subjective Properties</strong>
-These are properties whose values cannot be objectively measured and depend on the perception or opinion of an agent (e.g., a person or community). For instance, “beauty on a scale of 1 to 10.”</p>
-<p><strong>3. Physical Quantities</strong>
-A physical quantity refers to measurable aspects of physical systems, such as mass, length, or temperature. These are often represented by numerical values and units, following SI conventions.</p>
-<p><strong>4. Ordinal Quantities</strong>
-An ordinal quantity is a property that allows comparison or ordering but does not permit algebraic operations. For example, Rockwell C hardness values can rank material hardness but are not mathematically additive.</p>
-</section>
-<section id="quantities-in-emmo">
-<h2>Quantities in EMMO<a class="headerlink" href="#quantities-in-emmo" title="Permalink to this heading">#</a></h2>
-<p>Quantities follow the SI convention, where they are expressed as a combination of a numerical value and a unit. This ensures consistency and standardization across all linked data.</p>
-<ul class="simple">
-<li><p>Examples of Quantities:
-- Length: “2 meters”
-- Mass: “1.4 kilograms”
-- Electric Resistance: “50 ohms”</p></li>
-</ul>
-</section>
-<section id="units">
-<h2>Units<a class="headerlink" href="#units" title="Permalink to this heading">#</a></h2>
-<p>Units are essential for expressing quantities. EMMO supports both SI and non-SI units.</p>
-<ul class="simple">
-<li><p><strong>SI Units</strong>: These are the standard units defined by the International System of Units (e.g., meter, kilogram, second).</p></li>
-<li><p><strong>Non-SI Units</strong>: These include units accepted for use alongside SI units (e.g., liter, minute) or domain-specific units like electronvolt (eV) in physics.</p></li>
-</ul>
-</section>
+  <section id="naming-conventions">
+<h1>Naming Conventions<a class="headerlink" href="#naming-conventions" title="Permalink to this heading">#</a></h1>
+<p>EMMO uses <code class="code docutils literal notranslate"><span class="pre">skos:prefLabel</span></code> for human readable names. Within one ontology (or namespace), all SKOS:prefLabel’s should be unique. Each entity should have <strong>one and only one</strong> <code class="code docutils literal notranslate"><span class="pre">skos:prefLabel</span></code>. Use <code class="code docutils literal notranslate"><span class="pre">skos:altLabel</span></code> for alternative labels. It is good practice to also keep values for <code class="code docutils literal notranslate"><span class="pre">skos:altLabel</span></code> unique within a namespace.</p>
+<p>Class labels should be singular nouns and PascalCase. Property labels should be lowerCamelCase. Object and data properties should (normally) start with “has” followed by a noun. EMMO top and middle does not explicitely define inverse relations (but uses <code class="code docutils literal notranslate"><span class="pre">inverse(has&lt;Something&gt;)</span></code> instead). Instance labels should be <code class="code docutils literal notranslate"><span class="pre">lowercase_with_underscores</span></code>.</p>
 </section>
 
 
@@ -505,11 +463,11 @@ An ordinal quantity is a property that allows comparison or ordering but does no
       </div>
     </a>
     <a class="right-next"
-       href="../chapter2_quantities/index.html"
+       href="emmo_units_quantities_properties.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Quantities in Electrochemistry</p>
+        <p class="prev-next-title">Units, Quantities, and Properties</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -526,20 +484,8 @@ An ordinal quantity is a property that allows comparison or ordering but does no
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
   <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> On this page
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-properties-in-emmo">Types of Properties in EMMO</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantities-in-emmo">Quantities in EMMO</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#units">Units</a></li>
-</ul>
-  </nav></div>
-
-  <div class="sidebar-secondary-item">
   <div class="tocsection sourcelink">
-    <a href="../../_sources/userguide/chapter0_preface/properties_quantities_units.rst.txt">
+    <a href="../../_sources/userguide/chapter0_preface/emmo_naming_conventions.rst.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>

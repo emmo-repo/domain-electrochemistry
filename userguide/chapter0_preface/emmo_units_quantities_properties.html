@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>Summary &#8212; BattInfo  documentation</title>
+    <title>Units, Quantities, and Properties &#8212; BattInfo  documentation</title>
   
   
   
@@ -48,12 +48,12 @@
     <script src="../../_static/copybutton.js"></script>
     <script src="../../_static/design-tabs.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'userguide/chapter6_summary/index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'userguide/chapter0_preface/emmo_units_quantities_properties';</script>
     <link rel="shortcut icon" href="../../_static/battinfologo.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="About the Electrochemistry Ontology (ECHO)" href="../../pages/about.html" />
-    <link rel="prev" title="Data" href="../chapter5_data/index.html" />
+    <link rel="next" title="Quantities in Electrochemistry" href="../chapter2_quantities/index.html" />
+    <link rel="prev" title="Naming Conventions" href="emmo_naming_conventions.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -346,13 +346,13 @@ document.write(`
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">User Guide</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter0_preface/index.html">Preface</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../chapter0_preface/ontology.html">Ontology</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter0_preface/linked_data.html">Introduction to Linked Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter0_preface/jsonld.html">Introduction to JSON-LD</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../chapter0_preface/emmo.html">Elementary Multiperspective Materials Ontology (EMMO)</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../chapter0_preface/emmo_naming_conventions.html">Naming Conventions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../chapter0_preface/emmo_units_quantities_properties.html">Units, Quantities, and Properties</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Preface</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ontology.html">Ontology</a></li>
+<li class="toctree-l2"><a class="reference internal" href="linked_data.html">Introduction to Linked Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="jsonld.html">Introduction to JSON-LD</a></li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="emmo.html">Elementary Multiperspective Materials Ontology (EMMO)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="emmo_naming_conventions.html">Naming Conventions</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Units, Quantities, and Properties</a></li>
 </ul>
 </li>
 </ul>
@@ -370,7 +370,7 @@ document.write(`
 <li class="toctree-l1 has-children"><a class="reference internal" href="../chapter5_data/index.html">Data</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter6_summary/index.html">Summary</a></li>
 </ul>
 </div>
 </nav></div>
@@ -400,6 +400,8 @@ document.write(`
 
 
 
+
+
 <nav aria-label="Breadcrumbs">
   <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
     
@@ -411,7 +413,13 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">User Guide</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Summary</li>
+    
+    <li class="breadcrumb-item"><i class="fa-solid fa-ellipsis"></i></li>
+    
+    
+    <li class="breadcrumb-item"><a href="emmo.html" class="nav-link">Elementary Multiperspective Materials Ontology (EMMO)</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Units, Quantities, and Properties</li>
   </ul>
 </nav>
 </div>
@@ -428,8 +436,131 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="summary">
-<h1>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h1>
+  <section id="units-quantities-and-properties">
+<h1>Units, Quantities, and Properties<a class="headerlink" href="#units-quantities-and-properties" title="Permalink to this heading">#</a></h1>
+<section id="units">
+<h2>Units<a class="headerlink" href="#units" title="Permalink to this heading">#</a></h2>
+<p>Units of measurement are essential in ontologies, ensuring precision and standardization when describing quantities. Without a structured representation of units, data exchange across domains becomes error-prone and inconsistent. Scientific and engineering ontologies address this by explicitly defining units and their relationships, ensuring clarity and interoperability.</p>
+<div class="admonition-case-study-the-mars-climate-orbiter-on-september-23-1999-nasa-s-mars-climate-orbiter-was-lost-due-to-a-unit-mismatch-a-subcontractors-software-provided-motor-impulse-values-in-pound-force-seconds-while-nasas-software-expected-values-in-newton-seconds-the-resulting-miscalculation-caused-the-spacecraft-to-enter-an-incorrect-trajectory-leading-to-its-destruction admonition">
+<p class="admonition-title">Case Study: The Mars Climate Orbiter
+On September 23, 1999, NASA’s Mars Climate Orbiter was lost due to a unit mismatch. A subcontractor’s software provided motor impulse values in <strong>pound-force seconds</strong>, while NASA’s software expected values in <strong>Newton seconds</strong>. The resulting miscalculation caused the spacecraft to enter an incorrect trajectory, leading to its destruction.</p>
+<p>This highlights the dangers of inconsistent unit representation in software. Even when numerical data is correct, if the unit is misinterpreted, the consequences can be severe. Ontologies help prevent such errors by enforcing explicit unit definitions.</p>
+</div>
+<p>Several widely used ontological frameworks express units, including <a class="reference external" href="https://www.qudt.org/">Quantities, Units, Dimensions, and Data Types Ontologies (QUDT)</a> and <a class="reference external" href="https://eclipse-esmf.github.io/samm-specification/snapshot/units.html">Semantic Aspect Meta Model (SAMM)</a>.</p>
+<p>EMMO also provides a structured approach for unit representation, ensuring self-consistency within the EMMO framework. By aligning with QUDT, which offers a comprehensive and standards-compliant unit representation, EMMO ensures compatibility across multiple ontological systems.</p>
+<section id="expressing-units-in-emmo">
+<h3>Expressing Units in EMMO<a class="headerlink" href="#expressing-units-in-emmo" title="Permalink to this heading">#</a></h3>
+<p>EMMO provides human-readable IRIs for units, making them intuitive and easy to use. The unit IRIs follow the structure:</p>
+<p><code class="code docutils literal notranslate"><span class="pre">&lt;namespace&gt;#&lt;unit_name&gt;</span></code></p>
+<p>For example, the IRI for “metre” in EMMO is:</p>
+<p><code class="code docutils literal notranslate"><span class="pre">https://w3id.org/emmo#Metre</span></code></p>
+<p>To simplify handling, EMMO defines a namespace prefix, allowing for the shorthand form:</p>
+<p><code class="code docutils literal notranslate"><span class="pre">emmo:Metre</span></code></p>
+<p>Units follow Pascal case naming conventions:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">emmo</span><span class="p">:</span><span class="n">MilliVolt</span>
+<span class="n">emmo</span><span class="p">:</span><span class="n">CentiMetre</span>
+<span class="n">emmo</span><span class="p">:</span><span class="n">KiloWatt</span>
+</pre></div>
+</div>
+<p>An exception is <code class="code docutils literal notranslate"><span class="pre">emmo:Kilogram</span></code>, as the SI base unit is the kilogram rather than the gram. Compound units are expressed similarly:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">emmo</span><span class="p">:</span><span class="n">MetrePerSecond</span>
+<span class="n">emmo</span><span class="p">:</span><span class="n">AmpereHour</span>
+<span class="n">emmo</span><span class="p">:</span><span class="n">MilliGramPerSquareCentiMetre</span>
+<span class="n">emmo</span><span class="p">:</span><span class="n">KilogramPerCubicMetre</span>
+</pre></div>
+</div>
+<p>This ensures units remain both machine-readable and human-interpretable, reducing ambiguity and improving usability.</p>
+</section>
+<section id="unit-features">
+<h3>Unit Features<a class="headerlink" href="#unit-features" title="Permalink to this heading">#</a></h3>
+<p>EMMO supports unit conversion by providing data properties such as <code class="code docutils literal notranslate"><span class="pre">hasSIConversionMultiplier</span></code> and <code class="code docutils literal notranslate"><span class="pre">hasSIConversionOffset</span></code>. These properties define conversion factors relative to SI units:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">emmo</span><span class="p">:</span><span class="n">CentiMetre</span> <span class="n">hasSIConversionMultiplier</span> <span class="mf">0.01</span>
+<span class="n">emmo</span><span class="p">:</span><span class="n">MilliGram</span> <span class="n">hasSIConversionMultiplier</span> <span class="mf">1E-6</span>
+</pre></div>
+</div>
+<p>Units in EMMO are also classified by physical dimensionality. For example:</p>
+<ul class="simple">
+<li><p><code class="code docutils literal notranslate"><span class="pre">emmo:Kilogram</span></code> is a <code class="code docutils literal notranslate"><span class="pre">MassUnit</span></code></p></li>
+<li><p><code class="code docutils literal notranslate"><span class="pre">emmo:MilliMetre</span></code> is a <code class="code docutils literal notranslate"><span class="pre">LengthUnit</span></code></p></li>
+</ul>
+<p>This classification enables automated reasoning. If an instance of <code class="code docutils literal notranslate"><span class="pre">Mass</span></code> is assigned the unit <code class="code docutils literal notranslate"><span class="pre">MicroGram</span></code>, the system will validate it. However, assigning a length-based unit like <code class="code docutils literal notranslate"><span class="pre">CentiMetre</span></code> to mass would trigger an inconsistency.</p>
+</section>
+<section id="supported-systems-of-units">
+<h3>Supported Systems of Units<a class="headerlink" href="#supported-systems-of-units" title="Permalink to this heading">#</a></h3>
+<p>EMMO supports both SI and non-SI units:</p>
+<ul class="simple">
+<li><p><strong>SI Units</strong>: The standard units defined by the International System of Units (e.g., metre, kilogram, second).</p></li>
+<li><p><strong>Non-SI Units</strong>: Includes units commonly used alongside SI (e.g., liter, minute) and domain-specific units such as electronvolt (eV).</p></li>
+</ul>
+</section>
+</section>
+<section id="quantities-in-emmo">
+<h2>Quantities in EMMO<a class="headerlink" href="#quantities-in-emmo" title="Permalink to this heading">#</a></h2>
+<p>The <a class="reference external" href="https://physics.nist.gov/cuu/pdf/sp811.pdf">SI handbook</a> defines a quantity as “the product of a number and a unit.” For example,</p>
+<ul class="simple">
+<li><p>Diameter: <cite>“1.8 cm”</cite></p></li>
+<li><p>Mass: <cite>“1.4 kg”</cite></p></li>
+<li><p>Electric Resistance: <cite>“50 ohm”</cite></p></li>
+</ul>
+<p>EMMO follows this convention and structures a quantity using two parts: a <strong>numerical part</strong> and a <strong>unit</strong>. To express a quantity in EMMO, we first define the type of quantity, and then link it to its numerical part (<code class="code docutils literal notranslate"><span class="pre">hasNumericalPart</span></code>) and its unit (<code class="code docutils literal notranslate"><span class="pre">hasMeasurementUnit</span></code>).</p>
+<div class="admonition-example-expressing-a-quantity-in-emmo admonition">
+<p class="admonition-title">Example: Expressing a Quantity in EMMO</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://w3id.org/emmo/domain/electrochemistry/context&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Diameter&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;hasNumericalPart&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;RealData&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;hasNumberValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.8</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;hasMeasurementUnit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;emmo:CentiMetre&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this heading">#</a></h2>
+<p>A <strong>semiotic property</strong> in EMMO is a well-defined, measurable characteristic (it should not be confused with an RDF property, which represents relationships in linked data). A property is a characteristic that describes an object or system. Properties answer specific questions such as:</p>
+<ul class="simple">
+<li><p>What color is it? (e.g., black, red)</p></li>
+<li><p>How heavy is it? (e.g., 1.4 kg)</p></li>
+<li><p>What is its hardness? (e.g., 10000 HV)</p></li>
+</ul>
+</section>
+<section id="types-of-properties-in-emmo">
+<h2>Types of Properties in EMMO<a class="headerlink" href="#types-of-properties-in-emmo" title="Permalink to this heading">#</a></h2>
+<p><strong>1. Objective Properties</strong>
+These are properties that can be determined through a well-defined, systematic procedure:</p>
+<ul class="simple">
+<li><p><strong>Conventional Property</strong>: A value determined by agreement, such as a vendor-specified material property.</p></li>
+<li><p><strong>Measured Property</strong>: A property obtained through direct observation or instrumentation (e.g., measuring mass with a scale).</p></li>
+<li><p><strong>Modelled Property</strong>: A property derived from experimental data using a computational model.</p></li>
+</ul>
+<p><strong>2. Subjective Properties</strong>
+These properties are based on perception rather than measurement, such as aesthetic preferences (e.g., “beauty on a scale of 1 to 10”).</p>
+<p><strong>3. Physical Quantities</strong>
+These refer to measurable attributes such as mass, length, and temperature. They are represented by numerical values and units.</p>
+<p><strong>4. Ordinal Quantities</strong>
+These allow comparison but not algebraic operations. For example, Rockwell C hardness values indicate hardness rankings but cannot be added or subtracted meaningfully.</p>
+<div class="admonition-example-expressing-a-property-in-emmo admonition">
+<p class="admonition-title">Example: Expressing a Property in EMMO</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://w3id.org/emmo/domain/electrochemistry/context&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Device&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;hasProperty&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Mass&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;hasNumericalPart&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;RealData&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;hasNumberValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="nt">&quot;hasMeasurementUnit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;emmo:Kilogram&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<p>This structured approach ensures that <strong>units, quantities, and properties</strong> in EMMO are clearly defined, machine-readable, and interoperable with other ontological frameworks.</p>
+</section>
 </section>
 
 
@@ -444,20 +575,20 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../chapter5_data/index.html"
+       href="emmo_naming_conventions.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Data</p>
+        <p class="prev-next-title">Naming Conventions</p>
       </div>
     </a>
     <a class="right-next"
-       href="../../pages/about.html"
+       href="../chapter2_quantities/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">About the Electrochemistry Ontology (ECHO)</p>
+        <p class="prev-next-title">Quantities in Electrochemistry</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -474,8 +605,26 @@ document.write(`
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
   <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#units">Units</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#expressing-units-in-emmo">Expressing Units in EMMO</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#unit-features">Unit Features</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#supported-systems-of-units">Supported Systems of Units</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#quantities-in-emmo">Quantities in EMMO</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#properties">Properties</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-properties-in-emmo">Types of Properties in EMMO</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
   <div class="tocsection sourcelink">
-    <a href="../../_sources/userguide/chapter6_summary/index.rst.txt">
+    <a href="../../_sources/userguide/chapter0_preface/emmo_units_quantities_properties.rst.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>
