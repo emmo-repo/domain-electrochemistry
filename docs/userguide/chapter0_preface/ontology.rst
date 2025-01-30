@@ -3,7 +3,7 @@ Ontology
 
 In the 1999 movie *The Matrix*, Keanu Reeves' character is having a rough day. He needs to master every martial art in just a few hours. But he's in luck. In the future, humans can download knowledge from computers directly into their brains. After a few swift clicks, Keanu turns towards the camera and dramatically says, `"I know Kung Fu!" <https://youtu.be/OrzgxUhnYjY?si=lpgV8uk4jBrx1lFD&t=70>`__.
 
-He was saved because someone had encoded all the world's **knowledge** about Kung Fu into a **meaningful language** that machines and humans can understand. *That's an ontology*. Put another way, an ontology is a formal representation of knowledge, expressed as a conceptual network that conveys meaning in a way that both humans and machines can process.
+Keanu was saved because someone had encoded all the world's **knowledge** about Kung Fu into a **meaningful language** that machines and humans can understand. *That's an ontology*. Put another way, an ontology is a formal representation of knowledge, expressed as a conceptual network that conveys meaning in a way that both humans and machines can process.
 
 Far from being a far-out science fiction concept, ontologies form the backbone of many tools we use every day. They are foundational to the modern World Wide Web, social media networks, and media streaming platforms. Ontologies are immensely powerful tools for sharing knowledge, linking resources, and assigning meaning to data.
 
@@ -124,3 +124,129 @@ Knowledge Graphs
 Knowledge graphs are a practical implementation of ontologies that represent specific instances of data as a dynamic network of interconnected entities and relationships. While ontologies focus on defining general concepts and their relationships, knowledge graphs concentrate on specific instances or individuals, connecting them to form a rich and navigable web of knowledge.
 
 Powered by ontologies, knowledge graphs enhance integration, discovery, and reasoning across specific data instances. They are widely used in search engines (e.g., Google Knowledge Graph), recommendation systems, and intelligent assistants, providing context-aware results that mimic human-like understanding of data.
+
+Fundamentals
+------------
+
+Ontologies are built on a few simple foundational components that can be combined to express knowledge. These include:
+- Identifiers
+- Classes
+- Properties
+- Triples
+
+These components each build upon eachother to create an ontological framework, and we will introduce them one-by-one.
+
+Identifiers
+~~~~~~~~~~~
+If an ontology is a language, then its identifiers are like the words. Identifiers are unique, persistent, and (ideally) resolvable strings that are used to identify some concept. They enable humans and machines to uniquely reference and access information about entities, concepts, and relationships.
+
+Identifiers serve as the "name tags" for entities in an ontology. Without identifiers, there would be no way to distinguish one concept from another, particularly when integrating information across multiple datasets or domains. A good identifier ensures clarity, consistency, and interoperability.
+
+.. admonition:: Thought Experiment: Who says the Taj Mahal is in India?
+
+   One day you're having a chat with your friend and mention:
+
+   **You**: "I'm in New York City, and I can't wait to see Taj Mahal later!"
+   **Friend**: "New York City? You've got a long way to go...the Taj Mahal is in India!"
+   **You**: "No, not that Taj Mahal...the other one! Here's a link... `https://en.wikipedia.org/wiki/Taj_Mahal_(musician) <https://en.wikipedia.org/wiki/Taj_Mahal_(musician)>`__"
+   **Friend**: "Ok! I thought you meant the building `https://en.wikipedia.org/wiki/Taj_Mahal <https://en.wikipedia.org/wiki/Taj_Mahal>`__ Have fun!"
+
+   You and your friend used identifiers (in this case URLs) to clear up a misunderstanding about the meaning of the term "Taj Mahal". Encoded into the URL is an explicit disambiguation about the term, i.e. :code:`Taj_Mahal_(musician)` v. :code:`Taj_Mahal`, but clicking on the link also takes you to an article with much more information and context about those particular things. 
+
+   Ontologies use identifiers in the same way. They are unique identifiers that describe concepts and point to places where you can get more information about them, which can be accessed by people and machines.  
+
+Types of Identifiers
+^^^^^^^^^^^^^^^^^^^^
+
+Uniform Resource Identifier (URI)
+"""""""""""""""""""""""""""""""""
+There are a few ways to construct identifiers in an ontology. The basic type of identifier is called a **Uniform Resource Identifier (URI)**. A URI is a globally unique identifier used to reference a resource. It often takes the form of a web address (URL), but it can also refer to non-resolvable identifiers. For example, a resolvable identifier may take the form :code:`https://example.com/ontology#Person`, while a non-resolveable identifer could be structured as :code:`urn:isbn:0451450523`. Resolvable identifiers are used when creating public-facing ontologies designed for interoperability and linked open data. Non-resolvable identifiers are used more for closed systems or internal workflows.
+
+Internationalized Resource Identifier (IRI)
+"""""""""""""""""""""""""""""""""""""""""""
+While URIs are limited to using an allowed set of US-ASCII characters, IRIs may additionally contain most characters from the Universal Character Set (Unicode/ISO 10646), including Chinese, Japanese, Korean, and Cyrillic characters. This makes them more inclusive for international use.
+
+Blank Nodes
+"""""""""""
+Sometimes resources are defined without stating an explicit identifier. Although this is not the best practice for ontologies, it can occur when creating instances of linked data, e.g. in JSON-LD files, where a globally unique name is not strictly necessary. To deal with this, instead of creating a URI or IRI, RDF interpreters can create so-called blank nodes.
+
+A **blank node** is an unnamed resource in an RDF graph that does not have a persistent, globally unique identifier. Instead, it is assigned an internal system-generated identifier (e.g., _bnode123) that is only meaningful within the scope of the specific dataset or query. Blank nodes are useful when an entity needs to exist in the data structure but does not require an explicit name.
+
+Structure of Identifiers
+^^^^^^^^^^^^^^^^^^^^^^^^
+Identifiers are usually structured with three parts: a namespace, a delimiter, and a term name. These take the structure, :code:`<namespace><delimiter><term_name>`. 
+
+A **namespace** groups related identifiers under a common domain. For example, the namespace for core EMMO terms is: :code:`https://w3id.org/emmo`. 
+
+**Delimiters** are typically either a slash :code:`/` or a hashtag :code:`#`. A slash (:code:`/`) indicates a hierarchical structure, where additional subpaths may exist beyond the term. This is useful when identifiers represent distinct resources that might have further subdivisions. A hashtag (:code:`#`) is used when the term is self-contained and does not require further hierarchy. It is often used in ontologies where all terms are defined within a single document or namespace.
+
+The combination of namespaces and delimiters can often become long and cumbersome to write. That's why a **prefix** is often used to simplify the notation of identifiers. A prefix is like a variable that stands in for the namespace and delimiter combination. For example, identifiers in the RDF vocabulary take the form: :code:`http://www.w3.org/1999/02/22-rdf-syntax-ns#type`. This can be difficult for people to read and write. So a prefix is defined like :code:`@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .`, which allows the identifier to be written more concisely as :code:`rdf:type`.
+
+The **term name** identifies the term within the namespace. It can be a human-readable name or a unique alpha-numeric identifier like a UUID. *Human-readable names* are easy to understand and remember, making ontologies more accessible for people. But they can face challenges when the same name can be used to describe two different resources (e.g. like the Taj Mahal example). An example of an identifier with a human-readable term name is: :code:`https://schema.org/Person`
+
+*UUIDs* ensure absolute uniqueness but are not human-readable. UUIDs are useful when term names may not be stable or where name conflicts need to be avoided across distributed systems. An example of an identifier with a UUID term name is: :code:`https://w3id.org/emmo#EMMO_ed4af7ae_63a2_497e_bb88_2309619ea405` 
+
+Permanent URLs (PURLs)
+""""""""""""""""""""""
+Identifiers should be persistent and not change over long-term use. This can create challenges for maintanence of ontology resources, if maintainers change organizations or funding for certain domain names runs out. It sometimes becomes necessary to change the domain where ontology resources are hosted. Permanent URL (PURL) services can be help deal with this challenge. 
+
+PURLs are design to offer permanent, persistent identifiers that can be modified to redirect requests to different domains. This allows the structure of the identifier to remain the same, even if the place where the information is hosted changes. There are a few common PURL services. Two of the most common are `w3id.org <https://w3id.org/>`__ and `purl.org <https://purl.org/>`__. EMMO uses the w3id service.  
+
+Classes, Properties, and Triples
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Like any language, an ontology consists of different types of words that define concepts and relationships. **Classes** function like *nouns*, representing people, places, things, and ideas. While classes typically act like common nouns, describing general categories of things (e.g., :code:`schema:Person` for people), **individuals** act more like proper nouns, identifying specific instances of those classes (e.g., :code:`ex:MarieCurie` as an instance of :code:`schema:Person`).
+
+**Properties** function like *verbs*, linking classes and individuals by defining relationships or attributes. These relationships and attributes form **triples**, which are the basic building blocks of RDF-based ontologies. A triple consists of three components: a **subject**, a **predicate**, and an **object**, analogous to a simple sentence structure.
+
+For example, we can define the class **CreativeWork** (:code:`schema:CreativeWork`) and a subclass **Book** (:code:`schema:Book`). To indicate that a book is a type of creative work, we use the property :code:`rdf:type`, which expresses an "is a" relationship. This can be written as:
+
+:code:`schema:Book rdf:type schema:CreativeWork .`
+
+In natural language, this translates to:
+*"A book is a creative work."*
+
+In this triple:
+- **Subject**: :code:`schema:Book` (the entity being described)
+- **Predicate**: :code:`rdf:type` (the relationship)
+- **Object**: :code:`schema:CreativeWork` (the entity that the subject is linked to)
+
+Predicates are always **properties**, while subjects and objects can be **classes, individuals, or literal values**.
+
+Properties
+""""""""""""
+Properties in ontologies define relationships between entities and can specify **constraints** on how they are used. Every property has:
+- **Domain**: The class or set of classes that can appear as the subject.
+- **Range**: The class or set of classes that can appear as the object.
+
+For example, consider the property :code:`ex:hasAuthor`, where:
+- **Domain**: :code:`schema:CreativeWork` (a creative work can have an author)
+- **Range**: :code:`schema:Person` (the author must be a person)
+
+A valid use of this property:
+:code:`ex:MyBook ex:hasAuthor ex:Alice .`
+
+An **invalid** use of this property:
+:code:`ex:Alice ex:hasAuthor ex:MyBook .`
+
+To allow statements in the reverse direction, ontologies sometimes define **inverse properties**. For instance, an inverse property of :code:`ex:hasAuthor` could be :code:`ex:isAuthorOf`, allowing:
+
+:code:`ex:Alice ex:isAuthorOf ex:MyBook .`
+
+RDF Ontologies define different types of properties based on their function:
+
+1. **Object Properties**: Connect two classes or individuals.
+   Example:
+   :code:`ex:MyBook ex:hasAuthor ex:Alice .`
+   *(This states that "MyBook" was written by Alice.)*
+
+2. **Annotation Properties**: Provide metadata such as labels, descriptions, or documentation.
+   Example:
+   :code:`schema:Book rdfs:comment "A written work, typically bound and published." .`
+   *(This provides a human-readable description of a book.)*
+
+3. **Data Properties**: Link a class or individual to literal values (e.g., numbers, strings, or dates).
+   Example:
+   :code:`ex:Alice schema:birthDate "1965-07-20"^^xsd:date .`
+   *(This states that Alice was born on July 20, 1965.)*
+
+Together, **classes, properties, and triples** form the foundation of an ontology, structuring knowledge in a way that is both human-readable and machine-processable.
