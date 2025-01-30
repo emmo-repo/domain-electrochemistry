@@ -6,10 +6,11 @@ Units
 
 Units of measurement are essential in ontologies, ensuring precision and standardization when describing quantities. Without a structured representation of units, data exchange across domains becomes error-prone and inconsistent. Scientific and engineering ontologies address this by explicitly defining units and their relationships, ensuring clarity and interoperability.
 
-.. admonition:: Case Study: The Mars Climate Orbiter
-  On September 23, 1999, NASA's Mars Climate Orbiter was lost due to a unit mismatch. A subcontractor’s software provided motor impulse values in **pound-force seconds**, while NASA’s software expected values in **Newton seconds**. The resulting miscalculation caused the spacecraft to enter an incorrect trajectory, leading to its destruction.
+.. admonition:: Case Study: The Mars Climate Orbiter  
 
-  This highlights the dangers of inconsistent unit representation in software. Even when numerical data is correct, if the unit is misinterpreted, the consequences can be severe. Ontologies help prevent such errors by enforcing explicit unit definitions.
+    On September 23, 1999, NASA's Mars Climate Orbiter was lost due to a unit mismatch. A subcontractor’s software provided motor impulse values in **pound-force seconds**, while NASA’s software expected values in **Newton seconds**. The resulting miscalculation caused the spacecraft to enter an incorrect trajectory, leading to its destruction.
+    
+    This highlights the dangers of inconsistent unit representation in software. Even when numerical data is correct, if the unit is misinterpreted, the consequences can be severe. Ontologies help prevent such errors by enforcing explicit unit definitions.
 
 Several widely used ontological frameworks express units, including `Quantities, Units, Dimensions, and Data Types Ontologies (QUDT) <https://www.qudt.org/>`__ and `Semantic Aspect Meta Model (SAMM) <https://eclipse-esmf.github.io/samm-specification/snapshot/units.html>`__. 
 
@@ -17,9 +18,7 @@ EMMO also provides a structured approach for unit representation, ensuring self-
 
 Expressing Units in EMMO
 ^^^^^^^^^^^^^^^^^^^^^^^^
-EMMO provides human-readable IRIs for units, making them intuitive and easy to use. The unit IRIs follow the structure:
-
-:code:`<namespace>#<unit_name>`
+EMMO provides human-readable IRIs for units, making them intuitive and easy to use. The unit IRIs follow the structure: :code:`<namespace>#<unit_name>`
 
 For example, the IRI for "metre" in EMMO is:
 
@@ -54,8 +53,8 @@ EMMO supports unit conversion by providing data properties such as :code:`hasSIC
 
 .. code-block::
 
-   emmo:CentiMetre hasSIConversionMultiplier 0.01
-   emmo:MilliGram hasSIConversionMultiplier 1E-6
+   emmo:CentiMetre hasSIConversionMultiplier 0.01 .
+   emmo:MilliGram hasSIConversionMultiplier 1E-6 .
 
 Units in EMMO are also classified by physical dimensionality. For example:
 
