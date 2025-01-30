@@ -52,7 +52,7 @@
     <link rel="shortcut icon" href="../../_static/battinfologo.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="rdf_identifiers.html" />
+    <link rel="next" title="Identifiers" href="rdf_identifiers.html" />
     <link rel="prev" title="Ontology Capabilities" href="ontology_capabilities.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -348,12 +348,16 @@ document.write(`
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Preface</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 has-children"><a class="reference internal" href="ontology.html">Ontology</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="ontology_background.html">Background</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ontology_structure.html">Ontology Structure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ontology_capabilities.html">Ontology Capabilities</a></li>
 </ul>
 </li>
 <li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">Resource Description Framework (RDF)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="rdf_identifiers.html">Identifiers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="rdf_classes_properties_triples.html">Classes, Properties, and Triples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdf_graphs.html">Building RDF Graphs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdf_formats.html">RDF Formats</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="linked_data.html">Introduction to Linked Data</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -443,18 +447,45 @@ document.write(`
                   
   <section id="resource-description-framework-rdf">
 <h1>Resource Description Framework (RDF)<a class="headerlink" href="#resource-description-framework-rdf" title="Permalink to this heading">#</a></h1>
-<p>Ontologies are built on a few simple foundational components that can be combined to express knowledge. These include:
-- Identifiers
-- Classes
-- Properties
-- Triples</p>
-<p>These components each build upon eachother to create an ontological framework, and we will introduce them one-by-one.</p>
+<p>Conceptually, ontologies seem pretty great, right? But how are they implemented from a practical perspective? The <strong>Resource Description Framework (RDF)</strong> provides the answer. RDF is a fundamental standard for encoding, exchanging, and using graph data on the web. Developed and maintained by the World Wide Web Consortium (W3C), it serves as the digital foundation for expressing ontologies in a machine-readable format.</p>
+<p>Think of RDF as a universal language for describing <em>things</em> and their <em>relationships</em>. In RDF, everything we want to talk about is called a <strong>resource</strong> - this could be a physical object (like a steel sample), an abstract concept (like ductility), a dataset (like a csv file), or even a mathematical relationship (like Hooke’s law). Just as human languages use subjects, verbs, and objects to express meaning, RDF uses a similar pattern to create statements that computers can process.</p>
+<p>At its core, RDF expresses information as directed graphs, which are built from a few key concepts:</p>
+<ol class="arabic simple">
+<li><p><strong>Identifiers</strong> serve as unique names for every entity or concept we want to talk about. In RDF, these typically take the form of URIs (Uniform Resource Identifiers), ensuring that each thing we reference has a precise, unambiguous identity.</p></li>
+<li><p><strong>Classes</strong> represent categories or types of things. For example, in EMMO, we might have classes for different types of materials, physical properties, or measurement units. Classes help us organize and group related concepts.</p></li>
+<li><p><strong>Properties</strong> describe relationships between things or specify characteristics of entities. They allow us to express how different concepts are connected or what attributes they possess.</p></li>
+<li><p><strong>Triples</strong> are the basic building blocks of RDF statements. Each triple consists of a subject, predicate, and object - similar to how we construct basic sentences in natural language. By combining triples, we can build complex networks of interconnected information.</p></li>
+</ol>
+<p>As we explore these components in more detail, you’ll see how they work together to create a robust framework for representing knowledge. The power of RDF lies not just in its ability to describe individual facts, but in how it enables us to connect and integrate information from different sources into a coherent whole.</p>
 <p>Contents:</p>
 <div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">RDF Sections</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">RDF Section Contents</span></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="rdf_identifiers.html">Identifiers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rdf_identifiers.html#types-of-identifiers">Types of Identifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rdf_identifiers.html#structure-of-identifiers">Structure of Identifiers</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="rdf_classes_properties_triples.html">Classes, Properties, and Triples</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rdf_classes_properties_triples.html#classes-and-individuals">Classes and Individuals</a></li>
 <li class="toctree-l2"><a class="reference internal" href="rdf_classes_properties_triples.html#properties">Properties</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rdf_classes_properties_triples.html#building-statements-with-triples">Building Statements with Triples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rdf_classes_properties_triples.html#types-of-properties">Types of Properties</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rdf_graphs.html">Building RDF Graphs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rdf_graphs.html#constructing-an-rdf-graph">Constructing an RDF Graph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rdf_graphs.html#expanding-a-graph">Expanding a Graph</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rdf_graphs.html#using-rdf-graphs">Using RDF Graphs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rdf_graphs.html#common-graph-patterns">Common Graph Patterns</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rdf_formats.html">RDF Formats</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rdf_formats.html#turtle-terse-rdf-triple-language">Turtle (Terse RDF Triple Language)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rdf_formats.html#json-ld-json-for-linked-data">JSON-LD (JSON for Linked Data)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rdf_formats.html#rdf-xml">RDF/XML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rdf_formats.html#n-triples-and-n-quads">N-Triples and N-Quads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rdf_formats.html#choosing-an-rdf-format">Choosing an RDF Format</a></li>
 </ul>
 </li>
 </ul>
@@ -487,7 +518,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Identifiers</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

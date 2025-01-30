@@ -52,8 +52,8 @@
     <link rel="shortcut icon" href="../../_static/battinfologo.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Introduction to Linked Data" href="linked_data.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="rdf_identifiers.html" />
+    <link rel="next" title="Building RDF Graphs" href="rdf_graphs.html" />
+    <link rel="prev" title="Identifiers" href="rdf_identifiers.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -348,12 +348,16 @@ document.write(`
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Preface</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 has-children"><a class="reference internal" href="ontology.html">Ontology</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="ontology_background.html">Background</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ontology_structure.html">Ontology Structure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ontology_capabilities.html">Ontology Capabilities</a></li>
 </ul>
 </li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="rdf.html">Resource Description Framework (RDF)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="rdf_identifiers.html">Identifiers</a></li>
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">Classes, Properties, and Triples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdf_graphs.html">Building RDF Graphs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdf_formats.html">RDF Formats</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="linked_data.html">Introduction to Linked Data</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -448,47 +452,81 @@ document.write(`
                   
   <section id="classes-properties-and-triples">
 <h1>Classes, Properties, and Triples<a class="headerlink" href="#classes-properties-and-triples" title="Permalink to this heading">#</a></h1>
-<p>Like any language, an ontology consists of different types of words that define concepts and relationships. <strong>Classes</strong> function like <em>nouns</em>, representing people, places, things, and ideas. While classes typically act like common nouns, describing general categories of things (e.g., <code class="code docutils literal notranslate"><span class="pre">schema:Person</span></code> for people), <strong>individuals</strong> act more like proper nouns, identifying specific instances of those classes (e.g., <code class="code docutils literal notranslate"><span class="pre">ex:MarieCurie</span></code> as an instance of <code class="code docutils literal notranslate"><span class="pre">schema:Person</span></code>).</p>
-<p><strong>Properties</strong> function like <em>verbs</em>, linking classes and individuals by defining relationships or attributes. These relationships and attributes form <strong>triples</strong>, which are the basic building blocks of RDF-based ontologies. A triple consists of three components: a <strong>subject</strong>, a <strong>predicate</strong>, and an <strong>object</strong>, analogous to a simple sentence structure.</p>
-<p>For example, we can define the class <strong>CreativeWork</strong> (<code class="code docutils literal notranslate"><span class="pre">schema:CreativeWork</span></code>) and a subclass <strong>Book</strong> (<code class="code docutils literal notranslate"><span class="pre">schema:Book</span></code>). To indicate that a book is a type of creative work, we use the property <code class="code docutils literal notranslate"><span class="pre">rdf:type</span></code>, which expresses an “is a” relationship. This can be written as:</p>
-<p><code class="code docutils literal notranslate"><span class="pre">schema:Book</span> <span class="pre">rdf:type</span> <span class="pre">schema:CreativeWork</span> <span class="pre">.</span></code></p>
-<p>In natural language, this translates to:
-<em>“A book is a creative work.”</em></p>
-<p>In this triple:
-- <strong>Subject</strong>: <code class="code docutils literal notranslate"><span class="pre">schema:Book</span></code> (the entity being described)
-- <strong>Predicate</strong>: <code class="code docutils literal notranslate"><span class="pre">rdf:type</span></code> (the relationship)
-- <strong>Object</strong>: <code class="code docutils literal notranslate"><span class="pre">schema:CreativeWork</span></code> (the entity that the subject is linked to)</p>
-<p>Predicates are always <strong>properties</strong>, while subjects and objects can be <strong>classes, individuals, or literal values</strong>.</p>
+<p>Like any language, an ontology has different types of “words” that we use to express meaning. Let’s break these down:</p>
+<section id="classes-and-individuals">
+<h2>Classes and Individuals<a class="headerlink" href="#classes-and-individuals" title="Permalink to this heading">#</a></h2>
+<p><strong>Classes</strong> are like categories or types of things. Think of them as nouns in a sentence:</p>
+<ul class="simple">
+<li><p>A Person (<code class="docutils literal notranslate"><span class="pre">schema:Person</span></code>)</p></li>
+<li><p>A Book (<code class="docutils literal notranslate"><span class="pre">schema:Book</span></code>)</p></li>
+<li><p>A Material (<code class="docutils literal notranslate"><span class="pre">emmo:Material</span></code>)</p></li>
+</ul>
+<p><strong>Individuals</strong> are specific instances of these classes. If “Person” is the class, then “Marie Curie” would be an individual belonging to that class. We express this relationship like this:</p>
+<div class="highlight-turtle notranslate"><div class="highlight"><pre><span></span><span class="nn">ex</span><span class="p">:</span><span class="nt">MarieCurie</span> <span class="nn">rdf</span><span class="p">:</span><span class="nt">type</span> <span class="nn">schema</span><span class="p">:</span><span class="nt">Person</span> <span class="p">.</span>
+</pre></div>
+</div>
+</section>
 <section id="properties">
 <h2>Properties<a class="headerlink" href="#properties" title="Permalink to this heading">#</a></h2>
-<p>Properties in ontologies define relationships between entities and can specify <strong>constraints</strong> on how they are used. Every property has:
-- <strong>Domain</strong>: The class or set of classes that can appear as the subject.
-- <strong>Range</strong>: The class or set of classes that can appear as the object.</p>
-<p>For example, consider the property <code class="code docutils literal notranslate"><span class="pre">ex:hasAuthor</span></code>, where:
-- <strong>Domain</strong>: <code class="code docutils literal notranslate"><span class="pre">schema:CreativeWork</span></code> (a creative work can have an author)
-- <strong>Range</strong>: <code class="code docutils literal notranslate"><span class="pre">schema:Person</span></code> (the author must be a person)</p>
-<p>A valid use of this property:
-<code class="code docutils literal notranslate"><span class="pre">ex:MyBook</span> <span class="pre">ex:hasAuthor</span> <span class="pre">ex:Alice</span> <span class="pre">.</span></code></p>
-<p>An <strong>invalid</strong> use of this property:
-<code class="code docutils literal notranslate"><span class="pre">ex:Alice</span> <span class="pre">ex:hasAuthor</span> <span class="pre">ex:MyBook</span> <span class="pre">.</span></code></p>
-<p>To allow statements in the reverse direction, ontologies sometimes define <strong>inverse properties</strong>. For instance, an inverse property of <code class="code docutils literal notranslate"><span class="pre">ex:hasAuthor</span></code> could be <code class="code docutils literal notranslate"><span class="pre">ex:isAuthorOf</span></code>, allowing:</p>
-<p><code class="code docutils literal notranslate"><span class="pre">ex:Alice</span> <span class="pre">ex:isAuthorOf</span> <span class="pre">ex:MyBook</span> <span class="pre">.</span></code></p>
-<p>RDF Ontologies define different types of properties based on their function:</p>
-<ol class="arabic simple">
-<li><p><strong>Object Properties</strong>: Connect two classes or individuals.
-Example:
-<code class="code docutils literal notranslate"><span class="pre">ex:MyBook</span> <span class="pre">ex:hasAuthor</span> <span class="pre">ex:Alice</span> <span class="pre">.</span></code>
-<em>(This states that “MyBook” was written by Alice.)</em></p></li>
-<li><p><strong>Annotation Properties</strong>: Provide metadata such as labels, descriptions, or documentation.
-Example:
-<code class="code docutils literal notranslate"><span class="pre">schema:Book</span> <span class="pre">rdfs:comment</span> <span class="pre">&quot;A</span> <span class="pre">written</span> <span class="pre">work,</span> <span class="pre">typically</span> <span class="pre">bound</span> <span class="pre">and</span> <span class="pre">published.&quot;</span> <span class="pre">.</span></code>
-<em>(This provides a human-readable description of a book.)</em></p></li>
-<li><p><strong>Data Properties</strong>: Link a class or individual to literal values (e.g., numbers, strings, or dates).
-Example:
-<code class="code docutils literal notranslate"><span class="pre">ex:Alice</span> <span class="pre">schema:birthDate</span> <span class="pre">&quot;1965-07-20&quot;^^xsd:date</span> <span class="pre">.</span></code>
-<em>(This states that Alice was born on July 20, 1965.)</em></p></li>
+<p><strong>Properties</strong> are like verbs - they describe relationships between things or their characteristics. For example:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">hasAuthor</span></code> (connects a book to its author)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">birthDate</span></code> (specifies when someone was born)</p></li>
+</ul>
+<p>Every property has rules about what it can connect:</p>
+<ul class="simple">
+<li><p>The <strong>domain</strong> specifies what can appear at the start of the relationship</p></li>
+<li><p>The <strong>range</strong> specifies what can appear at the end</p></li>
+</ul>
+<p>For example, <code class="docutils literal notranslate"><span class="pre">hasAuthor</span></code> might have:</p>
+<ul class="simple">
+<li><p>Domain: Creative works (only creative works can have authors)</p></li>
+<li><p>Range: Persons (only persons can be authors)</p></li>
+</ul>
+</section>
+<section id="building-statements-with-triples">
+<h2>Building Statements with Triples<a class="headerlink" href="#building-statements-with-triples" title="Permalink to this heading">#</a></h2>
+<p>In RDF, we combine classes, individuals, and properties to make statements called <strong>triples</strong>. Each triple has three parts:</p>
+<ul class="simple">
+<li><p>Subject (what we’re talking about)</p></li>
+<li><p>Predicate (the property or relationship)</p></li>
+<li><p>Object (what we’re saying about the subject)</p></li>
+</ul>
+<p>For example:</p>
+<div class="highlight-turtle notranslate"><div class="highlight"><pre><span></span><span class="c"># A class relationship</span>
+<span class="nn">schema</span><span class="p">:</span><span class="nt">Book</span> <span class="nn">rdf</span><span class="p">:</span><span class="nt">type</span> <span class="nn">schema</span><span class="p">:</span><span class="nt">CreativeWork</span> <span class="p">.</span>
+<span class="c"># Means: &quot;A Book is a type of Creative Work&quot;</span>
+
+<span class="c"># An individual relationship</span>
+<span class="nn">ex</span><span class="p">:</span><span class="nt">MyBook</span> <span class="nn">ex</span><span class="p">:</span><span class="nt">hasAuthor</span> <span class="nn">ex</span><span class="p">:</span><span class="nt">Alice</span> <span class="p">.</span>
+<span class="c"># Means: &quot;MyBook was written by Alice&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="types-of-properties">
+<h2>Types of Properties<a class="headerlink" href="#types-of-properties" title="Permalink to this heading">#</a></h2>
+<p>Properties come in three main flavors:</p>
+<ol class="arabic">
+<li><p><strong>Object Properties</strong> connect things to other things:</p>
+<div class="highlight-turtle notranslate"><div class="highlight"><pre><span></span><span class="nn">ex</span><span class="p">:</span><span class="nt">MyBook</span> <span class="nn">ex</span><span class="p">:</span><span class="nt">hasAuthor</span> <span class="nn">ex</span><span class="p">:</span><span class="nt">Alice</span> <span class="p">.</span>
+<span class="c"># Connects one resource to another resource</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Data Properties</strong> connect things to values:</p>
+<div class="highlight-turtle notranslate"><div class="highlight"><pre><span></span><span class="nn">ex</span><span class="p">:</span><span class="nt">Alice</span> <span class="nn">schema</span><span class="p">:</span><span class="nt">birthDate</span> <span class="s">&quot;1965-07-20&quot;</span><span class="p">^^</span><span class="nn">xsd</span><span class="p">:</span><span class="nt">date</span> <span class="p">.</span>
+<span class="c"># Connects a resource to a specific value</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Annotation Properties</strong> add human-readable information:</p>
+<div class="highlight-turtle notranslate"><div class="highlight"><pre><span></span><span class="nn">schema</span><span class="p">:</span><span class="nt">Book</span> <span class="nn">rdfs</span><span class="p">:</span><span class="nt">comment</span> <span class="s">&quot;A written work, typically bound and published.&quot;</span> <span class="p">.</span>
+<span class="c"># Adds documentation or metadata</span>
+</pre></div>
+</div>
+</li>
 </ol>
-<p>Together, <strong>classes, properties, and triples</strong> form the foundation of an ontology, structuring knowledge in a way that is both human-readable and machine-processable.</p>
+<p>Together, classes, properties, and triples form the foundation of an ontology, structuring knowledge in a way that is both human-readable and machine-processable.</p>
 </section>
 </section>
 
@@ -509,15 +547,15 @@ Example:
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Identifiers</p>
       </div>
     </a>
     <a class="right-next"
-       href="linked_data.html"
+       href="rdf_graphs.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Introduction to Linked Data</p>
+        <p class="prev-next-title">Building RDF Graphs</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -539,7 +577,10 @@ Example:
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#classes-and-individuals">Classes and Individuals</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#properties">Properties</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-statements-with-triples">Building Statements with Triples</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-properties">Types of Properties</a></li>
 </ul>
   </nav></div>
 

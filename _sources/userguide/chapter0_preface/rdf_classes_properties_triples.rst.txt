@@ -1,58 +1,81 @@
 Classes, Properties, and Triples
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Like any language, an ontology consists of different types of words that define concepts and relationships. **Classes** function like *nouns*, representing people, places, things, and ideas. While classes typically act like common nouns, describing general categories of things (e.g., :code:`schema:Person` for people), **individuals** act more like proper nouns, identifying specific instances of those classes (e.g., :code:`ex:MarieCurie` as an instance of :code:`schema:Person`).
+Like any language, an ontology has different types of "words" that we use to express meaning. Let's break these down:
 
-**Properties** function like *verbs*, linking classes and individuals by defining relationships or attributes. These relationships and attributes form **triples**, which are the basic building blocks of RDF-based ontologies. A triple consists of three components: a **subject**, a **predicate**, and an **object**, analogous to a simple sentence structure.
+Classes and Individuals
+"""""""""""""""""""""""
+**Classes** are like categories or types of things. Think of them as nouns in a sentence:
 
-For example, we can define the class **CreativeWork** (:code:`schema:CreativeWork`) and a subclass **Book** (:code:`schema:Book`). To indicate that a book is a type of creative work, we use the property :code:`rdf:type`, which expresses an "is a" relationship. This can be written as:  
+* A Person (``schema:Person``)
+* A Book (``schema:Book``)
+* A Material (``emmo:Material``)
 
-:code:`schema:Book rdf:type schema:CreativeWork .`
+**Individuals** are specific instances of these classes. If "Person" is the class, then "Marie Curie" would be an individual belonging to that class. We express this relationship like this:
 
-In natural language, this translates to:  
-*"A book is a creative work."*
+.. code-block:: turtle
 
-In this triple:
-- **Subject**: :code:`schema:Book` (the entity being described)  
-- **Predicate**: :code:`rdf:type` (the relationship)  
-- **Object**: :code:`schema:CreativeWork` (the entity that the subject is linked to)  
-
-Predicates are always **properties**, while subjects and objects can be **classes, individuals, or literal values**.
+    ex:MarieCurie rdf:type schema:Person .
 
 Properties
-""""""""""""
-Properties in ontologies define relationships between entities and can specify **constraints** on how they are used. Every property has:
-- **Domain**: The class or set of classes that can appear as the subject.  
-- **Range**: The class or set of classes that can appear as the object.  
+""""""""""
+**Properties** are like verbs - they describe relationships between things or their characteristics. For example:
 
-For example, consider the property :code:`ex:hasAuthor`, where:
-- **Domain**: :code:`schema:CreativeWork` (a creative work can have an author)  
-- **Range**: :code:`schema:Person` (the author must be a person)  
+* ``hasAuthor`` (connects a book to its author)  
+* ``birthDate`` (specifies when someone was born)  
 
-A valid use of this property:  
-:code:`ex:MyBook ex:hasAuthor ex:Alice .`  
+Every property has rules about what it can connect:
 
-An **invalid** use of this property:  
-:code:`ex:Alice ex:hasAuthor ex:MyBook .`  
+* The **domain** specifies what can appear at the start of the relationship  
+* The **range** specifies what can appear at the end  
 
-To allow statements in the reverse direction, ontologies sometimes define **inverse properties**. For instance, an inverse property of :code:`ex:hasAuthor` could be :code:`ex:isAuthorOf`, allowing:  
+For example, ``hasAuthor`` might have:
 
-:code:`ex:Alice ex:isAuthorOf ex:MyBook .`
+* Domain: Creative works (only creative works can have authors)
+* Range: Persons (only persons can be authors)
 
-RDF Ontologies define different types of properties based on their function:
+Building Statements with Triples
+""""""""""""""""""""""""""""""""
+In RDF, we combine classes, individuals, and properties to make statements called **triples**. Each triple has three parts:
 
-1. **Object Properties**: Connect two classes or individuals.  
-   Example:  
-   :code:`ex:MyBook ex:hasAuthor ex:Alice .`  
-   *(This states that "MyBook" was written by Alice.)*  
+* Subject (what we're talking about)  
+* Predicate (the property or relationship)  
+* Object (what we're saying about the subject)  
 
-2. **Annotation Properties**: Provide metadata such as labels, descriptions, or documentation.  
-   Example:  
-   :code:`schema:Book rdfs:comment "A written work, typically bound and published." .`  
-   *(This provides a human-readable description of a book.)*  
+For example:
 
-3. **Data Properties**: Link a class or individual to literal values (e.g., numbers, strings, or dates).  
-   Example:  
-   :code:`ex:Alice schema:birthDate "1965-07-20"^^xsd:date .`  
-   *(This states that Alice was born on July 20, 1965.)*  
+.. code-block:: turtle
 
-Together, **classes, properties, and triples** form the foundation of an ontology, structuring knowledge in a way that is both human-readable and machine-processable.
+    # A class relationship
+    schema:Book rdf:type schema:CreativeWork .
+    # Means: "A Book is a type of Creative Work"
+
+    # An individual relationship
+    ex:MyBook ex:hasAuthor ex:Alice .
+    # Means: "MyBook was written by Alice"
+
+Types of Properties
+"""""""""""""""""
+Properties come in three main flavors:
+
+1. **Object Properties** connect things to other things:
+
+   .. code-block:: turtle
+
+       ex:MyBook ex:hasAuthor ex:Alice .
+       # Connects one resource to another resource
+
+2. **Data Properties** connect things to values:
+
+   .. code-block:: turtle
+
+       ex:Alice schema:birthDate "1965-07-20"^^xsd:date .
+       # Connects a resource to a specific value
+
+3. **Annotation Properties** add human-readable information:
+
+   .. code-block:: turtle
+
+       schema:Book rdfs:comment "A written work, typically bound and published." .
+       # Adds documentation or metadata
+
+Together, classes, properties, and triples form the foundation of an ontology, structuring knowledge in a way that is both human-readable and machine-processable.

@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>&lt;no title&gt; &#8212; BattInfo  documentation</title>
+    <title>Identifiers &#8212; BattInfo  documentation</title>
   
   
   
@@ -345,15 +345,19 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">User Guide</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="index.html">Preface</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Preface</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 has-children"><a class="reference internal" href="ontology.html">Ontology</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="ontology_background.html">Background</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ontology_structure.html">Ontology Structure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ontology_capabilities.html">Ontology Capabilities</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="rdf.html">Resource Description Framework (RDF)</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="rdf.html">Resource Description Framework (RDF)</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Identifiers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="rdf_classes_properties_triples.html">Classes, Properties, and Triples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdf_graphs.html">Building RDF Graphs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdf_formats.html">RDF Formats</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="linked_data.html">Introduction to Linked Data</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -429,7 +433,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="rdf.html" class="nav-link">Resource Description Framework (RDF)</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">&lt;no title&gt;</li>
+    <li class="breadcrumb-item active" aria-current="page">Identifiers</li>
   </ul>
 </nav>
 </div>
@@ -446,7 +450,51 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  
+  <section id="identifiers">
+<h1>Identifiers<a class="headerlink" href="#identifiers" title="Permalink to this heading">#</a></h1>
+<p>If an ontology is a language, then its identifiers are like the words. Identifiers are unique, persistent strings used to identify concepts and resources. They enable both humans and machines to uniquely reference and access information, ensuring clarity and interoperability across datasets.</p>
+<div class="admonition-thought-experiment-who-says-the-taj-mahal-is-in-india admonition">
+<p class="admonition-title">Thought Experiment: Who says the Taj Mahal is in India?</p>
+<p><strong>You</strong>: “I’m in New York City, and I can’t wait to see Taj Mahal later!”
+<strong>Friend</strong>: “New York City? You’ve got a long way to go…the Taj Mahal is in India!”
+<strong>You</strong>: “No, not that Taj Mahal…the musician! Here’s a link… <cite>https://en.wikipedia.org/wiki/Taj_Mahal_(musician)</cite>”</p>
+<p>This example shows how identifiers (URLs in this case) help disambiguate terms and point to more detailed information about specific concepts.</p>
+</div>
+<section id="types-of-identifiers">
+<h2>Types of Identifiers<a class="headerlink" href="#types-of-identifiers" title="Permalink to this heading">#</a></h2>
+<section id="uniform-resource-identifier-uri">
+<h3>Uniform Resource Identifier (URI)<a class="headerlink" href="#uniform-resource-identifier-uri" title="Permalink to this heading">#</a></h3>
+<p>A URI is a globally unique identifier used to reference a resource. It often takes the form of a web address that can be resolved (like <cite>https://example.com/ontology#Person</cite>), but can also be non-resolvable (like <cite>urn:isbn:0451450523</cite>).</p>
+</section>
+<section id="internationalized-resource-identifier-iri">
+<h3>Internationalized Resource Identifier (IRI)<a class="headerlink" href="#internationalized-resource-identifier-iri" title="Permalink to this heading">#</a></h3>
+<p>IRIs extend URIs to include Unicode characters (like Chinese, Japanese, or Cyrillic), making them more inclusive for international use.</p>
+</section>
+<section id="blank-nodes">
+<h3>Blank Nodes<a class="headerlink" href="#blank-nodes" title="Permalink to this heading">#</a></h3>
+<p>Blank nodes are unnamed resources without persistent identifiers. They’re useful when an entity needs to exist in the data structure but doesn’t require a global identifier.</p>
+</section>
+</section>
+<section id="structure-of-identifiers">
+<h2>Structure of Identifiers<a class="headerlink" href="#structure-of-identifiers" title="Permalink to this heading">#</a></h2>
+<p>Identifiers have three parts: <cite>&lt;namespace&gt;&lt;delimiter&gt;&lt;term_name&gt;</cite></p>
+<ul class="simple">
+<li><p><strong>Namespace</strong>: Groups related identifiers (e.g., <cite>https://w3id.org/emmo</cite>)</p></li>
+<li><p><strong>Delimiter</strong>: Either <cite>/</cite> or <cite>#</cite>, indicating hierarchy or self-contained terms</p></li>
+<li><p><strong>Term name</strong>: Either human-readable (like <cite>Person</cite>) or a UUID for guaranteed uniqueness</p></li>
+</ul>
+<p>To simplify long identifiers, prefixes are used. For example:
+<code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">&#64;prefix</span> <span class="pre">rdf:</span> <span class="pre">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span> <span class="pre">.</span>
+<span class="pre">rdf:type</span>&#160; <span class="pre">#</span> <span class="pre">Instead</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">full</span> <span class="pre">URI</span>
+<span class="pre">`</span></code></p>
+<section id="permanent-urls-purls">
+<h3>Permanent URLs (PURLs)<a class="headerlink" href="#permanent-urls-purls" title="Permalink to this heading">#</a></h3>
+<p>PURLs provide persistent identifiers that can redirect to different locations, ensuring stability even if hosting changes. EMMO uses the w3id.org service for this purpose.</p>
+</section>
+</section>
+</section>
+
 
                 </article>
               
@@ -493,9 +541,18 @@ document.write(`
     <i class="fa-solid fa-list"></i> On this page
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-identifiers">Types of Identifiers</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uniform-resource-identifier-uri">Uniform Resource Identifier (URI)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#internationalized-resource-identifier-iri">Internationalized Resource Identifier (IRI)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#blank-nodes">Blank Nodes</a></li>
 </ul>
-
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#structure-of-identifiers">Structure of Identifiers</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#permanent-urls-purls">Permanent URLs (PURLs)</a></li>
+</ul>
+</li>
+</ul>
   </nav></div>
 
   <div class="sidebar-secondary-item">

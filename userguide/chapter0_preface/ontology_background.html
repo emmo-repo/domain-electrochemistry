@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
-    <title>&lt;no title&gt; &#8212; BattInfo  documentation</title>
+    <title>Background &#8212; BattInfo  documentation</title>
   
   
   
@@ -345,15 +345,19 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">User Guide</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="index.html">Preface</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="ontology.html">Ontology</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Preface</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="ontology.html">Ontology</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Background</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ontology_structure.html">Ontology Structure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ontology_capabilities.html">Ontology Capabilities</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="rdf.html">Resource Description Framework (RDF)</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="rdf_identifiers.html">Identifiers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="rdf_classes_properties_triples.html">Classes, Properties, and Triples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdf_graphs.html">Building RDF Graphs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rdf_formats.html">RDF Formats</a></li>
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="linked_data.html">Introduction to Linked Data</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -429,7 +433,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="ontology.html" class="nav-link">Ontology</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">&lt;no title&gt;</li>
+    <li class="breadcrumb-item active" aria-current="page">Background</li>
   </ul>
 </nav>
 </div>
@@ -446,7 +450,28 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  
+  <section id="background">
+<h1>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h1>
+<p>The roots of modern ontologies trace back to ancient Greece. Ontology, as a branch of metaphysics, deals with the nature of being. These philosophical origins are still evident in the way we conceptualize and structure knowledge in modern ontologies. You can explore more about the philosophical aspects of ontology here.</p>
+<p>In information science, ontologies were reinvented in the mid-20th century to bridge the gap between how humans and computers process information. For humans, information is understood as a set of concepts with meaningful, logically consistent relationships. For computers, however, information is represented as binary code: a sequence of ones and zeros.</p>
+<div class="admonition-thought-experiment-the-robot-at-the-salad-bar admonition">
+<p class="admonition-title">Thought Experiment: The Robot at the Salad Bar</p>
+<p>Imagine you have built a robot to do your bidding. You ask it to go to a restaurant, make a salad at the salad bar, and bring it back to you. What information does the robot need to know to accomplish that task?</p>
+<p>It needs to know…</p>
+<ul class="simple">
+<li><p>where the restaurant is and how to get there</p></li>
+<li><p>the recipe for a salad and how to select the ingredients from the salad bar</p></li>
+<li><p>that a salad comes in a bowl and is proportioned as a meal for one or more people</p></li>
+<li><p>etc.</p></li>
+</ul>
+<p>Even this seemingly simple task requires a vast amount of information across multiple domains. However, the challenge isn’t just the volume of information—it’s also the need for this information to be linked together in a logically consistent way. This linkage allows the robot to reason about aspects of the task that are not explicitly stated.</p>
+</div>
+<p>To get over this barrier, researchers developed ontologies in the form of network graphs. These graphs link concepts using relationships in node-edge-node statements called <em>triples</em>. The concepts within the graph can then be mapped to computer datasets, effectively assigning meaning to the data and enabling machines to process and reason about it.</p>
+<p>The next major step came in 1989 from a quiet corner of Switzerland. A 34-year-old researcher at CERN named Tim Berners-Lee was trying to develop a way to manage the vast amount of data generated by the nuclear research facility. He proposed a knowledge management system using hypertext to link documents and datasets. He called this system <em>The Mesh</em>, but within a few short years, it would be known by another name: <em>The World Wide Web</em>.</p>
+<p>After the invention of the World Wide Web, the volume of information available to humans and computers grew exponentially. It quickly became evident that merely linking resources with hypertext was not sufficient to navigate the wilderness of data. The answer was <em>The Semantic Web</em>, an extension of the World Wide Web that uses ontologies and other semantic tools to describe the meaning of data and the nature of its connections.</p>
+<p>To build the Semantic Web, the World Wide Web Consortium (W3C) created a core technology stack expressed as a system of standards, including the Resource Description Framework (RDF) and the Web Ontology Language (OWL). RDF provides a basic model for representing data as triples (subject-predicate-object) in a graph structure. OWL extends RDF and is designed to represent rich and complex knowledge about things, groups of things, and relationships between them. These Semantic Web standards - among others - are the foundation of much of today’s ontology development.</p>
+</section>
+
 
                 </article>
               
@@ -487,16 +512,6 @@ document.write(`
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> On this page
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-  </nav></div>
 
   <div class="sidebar-secondary-item">
   <div class="tocsection sourcelink">
