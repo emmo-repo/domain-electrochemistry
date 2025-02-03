@@ -1,5 +1,0 @@
-Devices
-=======
-
-IEC Notation
-~~~~~~~~~~~~

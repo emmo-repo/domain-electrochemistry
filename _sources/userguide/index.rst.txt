@@ -32,8 +32,8 @@ This user guide provides a comprehensive overview of the materials, components, 
 
    Preface <chapter0_preface/index>
    Introduction <chatper1_introduction/index>
-   Objects <chapter2_objects/index>
-   Quantities <chapter3_quantities/index>
+   Quantities <chapter2_quantities/index>
+   Physical Objects <chapter3_physical_objects/index>
    Processes <chapter4_processes/index>
    Data <chapter5_data/index>
    Summary <chapter6_summary/index>

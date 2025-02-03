@@ -26,6 +26,6 @@ The following sections will explore how we represent these different aspects of 
    :maxdepth: 2
    :caption: Physical Objects Contents
    
-   physical_materials
+   physical_functional_materials
    physical_components
    physical_devices
