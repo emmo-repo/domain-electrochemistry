@@ -32,6 +32,7 @@ Guidelines for Use
    Use the ``hasConductiveAdditive`` property to connect it to an ``ElectrodeCoating``.
 
 **Example:** Defining and linking **Carbon Black**:
+
 .. code-block:: json
 
    {

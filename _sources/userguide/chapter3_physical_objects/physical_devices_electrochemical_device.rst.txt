@@ -15,7 +15,8 @@ To represent an **Electrochemical Device** in the ontology, follow three key ste
 1. **Identify the Electrochemical Device**  
    Define the component using the **ElectrochemicalDevice** class and specify its type (e.g., Battery, Fuel Cell, Supercapacitor, Electrolyzer).
 
-   .. code-block:: json
+   
+.. code-block:: json
 
       {
         "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
@@ -26,7 +27,8 @@ To represent an **Electrochemical Device** in the ontology, follow three key ste
 2. **Assign Properties**  
    Specify attributes such as **Nominal Voltage**, **Capacity**, **Operating Temperature**, and **Efficiency**.
 
-   .. code-block:: json
+   
+.. code-block:: json
 
       {
         "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
@@ -54,7 +56,8 @@ To represent an **Electrochemical Device** in the ontology, follow three key ste
 3. **Link the Device to its Components**  
    Associate the device with its structural components, such as electrodes, separators, electrolytes, current collectors, and cases.
 
-   .. code-block:: json
+   
+.. code-block:: json
 
       {
         "@context": "https://w3id.org/emmo/domain/electrochemistry/context",

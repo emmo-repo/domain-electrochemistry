@@ -50,6 +50,7 @@ Step 1: Identifying the Active Material
 Begin by defining the **chemical identity** of the material. This includes assigning it a **class** and a **name** that aligns with established chemical substance ontologies.
 
 **Example:** Defining **Zinc** as an active material:
+
 .. code-block:: json
 
    {
@@ -70,6 +71,7 @@ Once the material is identified, define its **intrinsic properties** using annot
   - ``SpecificCapacity``: Describes the charge storage capacity per unit mass.
 
 **Example:** Adding properties to **Zinc**:
+
 .. code-block:: json
 
    {
@@ -102,6 +104,7 @@ Step 3: Linking the Active Material to a Functional Whole
 The final step is to **associate the active material with a functional component**, such as an ``Electrode`` or ``ElectrodeCoating``, using the ``hasActiveMaterial`` property.
 
 **Example:** Linking **Zinc** to an **Electrode**:
+
 .. code-block:: json
 
    {
@@ -113,6 +116,7 @@ The final step is to **associate the active material with a functional component
    }
 
 **Example:** Linking **Zinc** to an **Electrode Coating**:
+
 .. code-block:: json
 
    {
@@ -135,7 +139,8 @@ By following these three steps — **identifying the material, assigning propert
    For example, the ``ZincElectrode`` class in the ontology already links the active material ``Zinc`` to the electrode.
 
    **To represent a generic zinc electrode**:
-   .. code-block:: json
+   
+.. code-block:: json
 
       {
         "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
@@ -143,7 +148,8 @@ By following these three steps — **identifying the material, assigning propert
       }
 
    For cases where you want to say that your electrode uses a **specific kind of zinc material**, then you can still use the ``hasActiveMaterial`` property in the same way:
-   .. code-block:: json
+   
+.. code-block:: json
 
       {
         "@context": "https://w3id.org/emmo/domain/electrochemistry/context",

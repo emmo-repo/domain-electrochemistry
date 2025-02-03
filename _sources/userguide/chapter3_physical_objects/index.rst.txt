@@ -23,7 +23,7 @@ Each of these physical objects plays a specific role, has particular properties,
 The following sections will explore how we represent these different aspects of physical objects in the ontology, starting with basic laboratory equipment and moving on to more specialized apparatus. We'll see how these representations help maintain consistent descriptions across different experiments and laboratories.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Physical Objects Contents
    
    physical_functional_materials

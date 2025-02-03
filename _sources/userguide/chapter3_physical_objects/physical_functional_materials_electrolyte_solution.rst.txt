@@ -22,6 +22,7 @@ Define the electrolyte using the **ElectrolyteSolution** class. If desired, use 
 - **OrganicElectrolyte**
 
 **Example:** Defining a generic **Aqueous Electrolyte**:
+
 .. code-block:: json
 
    {
@@ -38,6 +39,7 @@ Electrolyte solutions are typically mixtures of multiple components. Use the obj
 - **hasAdditive** to include any stabilizers or functional additives.
 
 **Example:** Defining an **aqueous potassium hydroxide electrolyte**:
+
 .. code-block:: json
 
    {
@@ -64,6 +66,7 @@ Each component of the electrolyte can be described with **annotation and objecti
   - ``AmountConcentration``: Specifies the concentration of the solute.
 
 **Example:** Adding properties to **Potassium Hydroxide**:
+
 .. code-block:: json
 
    {
@@ -98,6 +101,7 @@ Beyond the properties of individual components, the electrolyte solution itself 
   - ``Viscosity``: Describes the fluid dynamics.
 
 **Example:** Assigning properties to an **Aqueous Potassium Hydroxide Electrolyte**:
+
 .. code-block:: json
 
    {
@@ -146,6 +150,7 @@ Step 5: Linking the Electrolyte to a Functional Whole
 The final step is to associate the **Electrolyte Solution** with a functional component, such as a **BatteryCell** or **ElectrochemicalSystem**, using the ``hasElectrolyte`` property.
 
 **Example:** Linking an **Aqueous Potassium Hydroxide Electrolyte** to a **Battery Cell**:
+
 .. code-block:: json
 
    {

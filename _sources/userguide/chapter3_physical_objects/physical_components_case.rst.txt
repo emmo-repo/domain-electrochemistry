@@ -11,7 +11,8 @@ Guidelines for Use
 ~~~~~~~~~~~~~~~~~~
 
 1. **Identify the Case**  
-   .. code-block:: json
+   
+.. code-block:: json
 
       {
         "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
@@ -19,7 +20,8 @@ Guidelines for Use
       }
 
 2. **Assign Properties**  
-   .. code-block:: json
+   
+.. code-block:: json
 
       {
         "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
@@ -37,7 +39,8 @@ Guidelines for Use
       }
 
 3. **Link the Case to a Functional Whole**  
-   .. code-block:: json
+   
+.. code-block:: json
 
       {
         "@context": "https://w3id.org/emmo/domain/electrochemistry/context",

@@ -13,7 +13,8 @@ Guidelines for Use
 To represent a **Current Collector** in the ontology, follow three key steps:
 
 1. **Identify the Current Collector**  
-   .. code-block:: json
+   
+.. code-block:: json
 
       {
         "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
@@ -21,7 +22,8 @@ To represent a **Current Collector** in the ontology, follow three key steps:
       }
 
 2. **Assign Properties**  
-   .. code-block:: json
+   
+.. code-block:: json
 
       {
         "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
@@ -39,7 +41,8 @@ To represent a **Current Collector** in the ontology, follow three key steps:
       }
 
 3. **Link the Current Collector to a Functional Whole**  
-   .. code-block:: json
+   
+.. code-block:: json
 
       {
         "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
