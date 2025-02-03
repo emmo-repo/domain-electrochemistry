@@ -38,3 +38,8 @@ In the following sections, we'll explore how to:
 * Query and analyze electrochemical data
 
 Whether you're new to ontologies or just want to make your electrochemical data more accessible, this guide will help you get started with structured data representation in electrochemistry.
+
+.. toctree::
+   :maxdepth: 2
+
+   ontology_structure
