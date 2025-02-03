@@ -78,6 +78,8 @@ The `SI handbook <https://physics.nist.gov/cuu/pdf/sp811.pdf>`__ defines a quant
 - Mass: `"1.4 kg"`
 - Electric Resistance: `"50 ohm"`
 
+.. image:: ../../assets/img/fig/png/Diameter.png
+
 EMMO follows this convention and structures a quantity using two parts: a **numerical part** and a **unit**. To express a quantity in EMMO, we first define the type of quantity, and then link it to its numerical part (:code:`hasNumericalPart`) and its unit (:code:`hasMeasurementUnit`). 
 
 .. admonition:: Example: Expressing a Quantity in EMMO
