@@ -43,6 +43,7 @@ Step 1: Identifying the Binder
 """""""""""""""""""""""""""""""
 
 **Example:** Defining **PVDF** as a binder:
+
 .. code-block:: json
 
    {
@@ -54,6 +55,7 @@ Step 2: Assigning Properties
 """"""""""""""""""""""""""""
 
 **Example:** Adding properties to **PVDF**:
+
 .. code-block:: json
 
    {
@@ -76,6 +78,7 @@ Step 3: Linking the Binder to a Functional Whole
 """""""""""""""""""""""""""""""""""""""""""""""""""
 
 **Example:** Associating PVDF with an electrode coating:
+
 .. code-block:: json
 
    {

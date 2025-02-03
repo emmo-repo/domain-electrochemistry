@@ -15,7 +15,8 @@ Guidelines for Use
 ~~~~~~~~~~~~~~~~~~
 
 1. **Identify the Electrode**  
-   .. code-block:: json
+   
+.. code-block:: json
 
       {
         "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
@@ -23,7 +24,8 @@ Guidelines for Use
       }
 
 2. **Assign Properties**  
-   .. code-block:: json
+   
+.. code-block:: json
 
       {
         "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
@@ -41,7 +43,8 @@ Guidelines for Use
       }
 
 3. **Link the Electrode to a Functional Whole or Other Components**  
-   .. code-block:: json
+   
+.. code-block:: json
 
       {
         "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
