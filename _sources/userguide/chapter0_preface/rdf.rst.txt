@@ -27,6 +27,5 @@ Contents:
    rdf_classes_properties_triples
    rdf_graphs
    rdf_formats
-   rdf_tools
 
 ---

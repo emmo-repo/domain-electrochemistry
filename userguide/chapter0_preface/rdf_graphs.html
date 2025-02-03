@@ -366,22 +366,18 @@ document.write(`
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="emmo.html">Elementary Multiperspective Materials Ontology (EMMO)</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="emmo_naming_conventions.html">Naming Conventions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="emmo_holistic_perspective.html">Holistic Perspective</a></li>
 <li class="toctree-l3"><a class="reference internal" href="emmo_units_quantities_properties.html">Units, Quantities, and Properties</a></li>
+<li class="toctree-l3"><a class="reference internal" href="emmo_data.html">Data</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter2_quantities/index.html">Quantities</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter3_objects/index.html">Objects</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../chapter3_objects/materials.html">Materials</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter3_objects/components.html">Components</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter3_objects/devices.html">Devices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../chapter3_quantities/index.html">Quantities</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter4_processes/index.html">Processes</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter4_processes/index.html">Processes</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter5_data/index.html">Data</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter5_data/index.html">Data</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../chapter6_summary/index.html">Summary</a></li>
@@ -452,67 +448,104 @@ document.write(`
                   
   <section id="building-rdf-graphs">
 <h1>Building RDF Graphs<a class="headerlink" href="#building-rdf-graphs" title="Permalink to this heading">#</a></h1>
-<p>RDF graphs provide a structured way to represent knowledge by connecting entities through relationships. Unlike hierarchical databases or spreadsheets, RDF graphs allow for <strong>flexible, interconnected representations</strong> of information, making them ideal for linked data. This section explores how graphs are constructed, visualized, and used to model complex relationships.</p>
-<section id="constructing-an-rdf-graph">
-<h2>Constructing an RDF Graph<a class="headerlink" href="#constructing-an-rdf-graph" title="Permalink to this heading">#</a></h2>
-<p>An RDF graph consists of <strong>nodes</strong> (entities or values) and <strong>edges</strong> (relationships between nodes). Each node represents an entity, which could be a class, an individual, or a literal value. Edges represent <strong>properties</strong> that connect these nodes.</p>
-<p>For example, in a dataset describing books, we might connect books to their authors, genres, and publication years:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">The</span> <span class="n">Hobbit</span><span class="p">]</span> <span class="o">----</span> <span class="n">hasAuthor</span> <span class="o">----&gt;</span> <span class="p">[</span><span class="n">J</span><span class="o">.</span><span class="n">R</span><span class="o">.</span><span class="n">R</span><span class="o">.</span> <span class="n">Tolkien</span><span class="p">]</span>
-       <span class="o">|</span>                               <span class="o">|</span>
-       <span class="o">|</span>                               <span class="o">|</span>
- <span class="n">hasGenre</span><span class="o">|</span>                               <span class="o">|</span><span class="n">hasBirthYear</span>
-       <span class="n">v</span>                               <span class="n">v</span>
- <span class="p">[</span><span class="n">Fantasy</span><span class="p">]</span>                         <span class="p">[</span><span class="s2">&quot;1892&quot;</span><span class="p">]</span>
-</pre></div>
-</div>
-<p>Each edge in this structure corresponds to an RDF <strong>triple</strong>, but rather than seeing data as isolated statements, we recognize that <strong>the graph itself is the knowledge model</strong>—allowing for new insights and connections.</p>
-</section>
-<section id="expanding-a-graph">
-<h2>Expanding a Graph<a class="headerlink" href="#expanding-a-graph" title="Permalink to this heading">#</a></h2>
-<p>One of the core strengths of RDF graphs is their ability to grow <strong>dynamically</strong>. By linking new data to existing entities, we continuously expand the network without rigid schema constraints. Consider extending our book example to include information about the publisher:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">The</span> <span class="n">Hobbit</span><span class="p">]</span> <span class="o">--</span> <span class="n">hasPublisher</span> <span class="o">--&gt;</span> <span class="p">[</span><span class="n">George</span> <span class="n">Allen</span> <span class="o">&amp;</span> <span class="n">Unwin</span><span class="p">]</span>
-</pre></div>
-</div>
-<p>Or linking Tolkien to his birthplace:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">J</span><span class="o">.</span><span class="n">R</span><span class="o">.</span><span class="n">R</span><span class="o">.</span> <span class="n">Tolkien</span><span class="p">]</span> <span class="o">--</span> <span class="n">bornIn</span> <span class="o">--&gt;</span> <span class="p">[</span><span class="n">Bloemfontein</span><span class="p">]</span>
-</pre></div>
-</div>
-<p>Since RDF graphs are <strong>schema-less</strong>, they support incremental expansion, making them well-suited for evolving datasets.</p>
-</section>
-<section id="using-rdf-graphs">
-<h2>Using RDF Graphs<a class="headerlink" href="#using-rdf-graphs" title="Permalink to this heading">#</a></h2>
-<p>RDF graphs are used for <strong>data integration, knowledge discovery, and reasoning</strong>. Some key applications include:</p>
-<ul class="simple">
-<li><p><strong>Semantic Search &amp; Queries</strong>
-- Query structured knowledge with SPARQL to retrieve insights beyond keyword searches.
-- Example: <em>Find all books written by authors born before 1900</em>.</p></li>
-<li><p><strong>Data Interoperability</strong>
-- RDF graphs enable seamless data integration across different datasets and ontologies.
-- Example: Linking an internal book catalog to external author information from Wikidata.</p></li>
-<li><p><strong>Inference &amp; Reasoning</strong>
-- RDF graphs allow logical reasoning, such as inferring that <em>all books authored by Tolkien are fantasy books</em> if we define a rule that Tolkien writes in the fantasy genre.</p></li>
-<li><p><strong>Visualization &amp; Analysis</strong>
-- Tools like GraphDB, WebVOWL, and Neo4j can render RDF graphs for exploration, making relationships more intuitive.</p></li>
-</ul>
+<p>While individual triples are useful for making simple statements, the real power of RDF comes from connecting multiple triples together to form a graph. A graph allows us to represent complex relationships and build up rich descriptions of things we encounter every day.</p>
+<section id="what-is-a-graph">
+<h2>What is a Graph?<a class="headerlink" href="#what-is-a-graph" title="Permalink to this heading">#</a></h2>
+<p>In RDF, a graph is simply a collection of connected triples. Each triple can be visualized as two nodes (the subject and object) connected by an arrow (the predicate). When multiple triples share common nodes, they form a network structure.</p>
+<p>Let’s build up a simple example about a book and its author:</p>
+<p>This can be visualized as a graph where:
+* Nodes represent resources (books, people, organizations)
+* Arrows represent properties (relationships)
+* Text in quotation marks represents literal values</p>
+<figure class="align-center" id="id1">
+<img alt="RDF graph of book and author" src="userguide/chapter0_preface/images/book_graph.svg" /><figcaption>
+<p><span class="caption-text">A simple RDF graph describing a book and its author</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
 <section id="common-graph-patterns">
 <h2>Common Graph Patterns<a class="headerlink" href="#common-graph-patterns" title="Permalink to this heading">#</a></h2>
-<p>RDF graphs follow recurring patterns that help structure data:</p>
+<p>Certain patterns appear frequently in RDF graphs. Here are some of the most common:</p>
+<section id="star-pattern">
+<h3>Star Pattern<a class="headerlink" href="#star-pattern" title="Permalink to this heading">#</a></h3>
+<p>A single subject connected to multiple objects, like spokes on a wheel. This pattern is common when describing various properties of an item:</p>
+</section>
+<section id="chain-pattern">
+<h3>Chain Pattern<a class="headerlink" href="#chain-pattern" title="Permalink to this heading">#</a></h3>
+<p>Resources connected in sequence, forming a path. This is useful for representing sequences of events or relationships:</p>
+</section>
+<section id="tree-pattern">
+<h3>Tree Pattern<a class="headerlink" href="#tree-pattern" title="Permalink to this heading">#</a></h3>
+<p>Hierarchical relationships, often used for classification or organizational structures:</p>
+</section>
+</section>
+<section id="connecting-graphs-together">
+<h2>Connecting Graphs Together<a class="headerlink" href="#connecting-graphs-together" title="Permalink to this heading">#</a></h2>
+<p>One of the most powerful features of RDF is the ability to combine graphs from different sources. Let’s see how information about a movie might be combined from different databases:</p>
+<p>Movie Database:</p>
+<p>Review Database:</p>
+<p>Because both sources use the same identifier (<code class="docutils literal notranslate"><span class="pre">ex:Inception</span></code>), we can automatically combine this information into a single, comprehensive description of the movie.</p>
+</section>
+<section id="common-modeling-patterns">
+<h2>Common Modeling Patterns<a class="headerlink" href="#common-modeling-patterns" title="Permalink to this heading">#</a></h2>
+<p>Here are some typical patterns you might encounter when building graphs:</p>
+<section id="event-planning">
+<h3>Event Planning<a class="headerlink" href="#event-planning" title="Permalink to this heading">#</a></h3>
+<p>Representing an event with multiple associated entities:</p>
+</section>
+</section>
+<section id="best-practices-for-building-graphs">
+<h2>Best Practices for Building Graphs<a class="headerlink" href="#best-practices-for-building-graphs" title="Permalink to this heading">#</a></h2>
+<p>When building RDF graphs, consider these guidelines:</p>
 <ol class="arabic simple">
-<li><p><strong>Hierarchies (Classifications)</strong>
-- Example: <cite>“The Hobbit” rdf:type schema:Book</cite>
-- Useful for <strong>categorization and taxonomies</strong>.</p></li>
-<li><p><strong>Part-Whole Relationships</strong>
-- Example: <cite>“Car” hasPart “Wheel”</cite>
-- Represents <strong>physical or conceptual components</strong>.</p></li>
-<li><p><strong>Social or Networked Data</strong>
-- Example: <cite>“Alice” knows “Bob”</cite>
-- Used in <strong>social networks, academic citations, and organizational structures</strong>.</p></li>
-<li><p><strong>Event-Based Models</strong>
-- Example: <cite>“Conference2024” rdf:type schema:Event</cite>
-- Tracks <strong>historical records, meetings, and interactions</strong>.</p></li>
+<li><p><strong>Keep it Connected</strong></p></li>
 </ol>
-<p>By constructing RDF graphs thoughtfully, we can represent knowledge in a flexible, extensible way that enables <strong>querying, reasoning, and linking across different domains</strong>.</p>
+<blockquote>
+<div><p>Make sure all parts of your graph are connected - avoid isolated “islands” of information.</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p><strong>Use Standard Patterns</strong></p></li>
+</ol>
+<blockquote>
+<div><p>Reuse common patterns when possible. This makes your data more predictable and easier to query.</p>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p><strong>Balance Detail and Complexity</strong></p></li>
+</ol>
+<blockquote>
+<div><p>Include enough detail to be useful, but don’t add relationships that won’t be used.</p>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p><strong>Think About Queries</strong></p></li>
+</ol>
+<blockquote>
+<div><p>Consider how the graph will be queried. Structure it to make common queries straightforward.</p>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><p><strong>Maintain Consistency</strong></p></li>
+</ol>
+<blockquote>
+<div><p>Use consistent patterns for similar types of information.</p>
+</div></blockquote>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
+<p>RDF graphs allow us to represent complex, interconnected information in a way that’s both human-readable and machine-processable. By understanding common patterns and structures, we can:</p>
+<ul class="simple">
+<li><p>Build meaningful connections between different pieces of information</p></li>
+<li><p>Combine data from multiple sources</p></li>
+<li><p>Create flexible, extensible data models</p></li>
+<li><p>Represent real-world relationships clearly</p></li>
+</ul>
+<p>Remember these key points when building your own graphs:</p>
+<ol class="arabic simple">
+<li><p>Start simple and build up complexity gradually</p></li>
+<li><p>Use standard vocabularies like schema.org where possible</p></li>
+<li><p>Keep your graph connected - avoid isolated pieces of information</p></li>
+<li><p>Choose the right patterns for your use case</p></li>
+<li><p>Consider how your data will be queried and used</p></li>
+</ol>
+<p>The next section will explore how to query these graphs using SPARQL, allowing us to extract specific information from our connected data.</p>
 </section>
 </section>
 
@@ -563,10 +596,20 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#constructing-an-rdf-graph">Constructing an RDF Graph</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#expanding-a-graph">Expanding a Graph</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#using-rdf-graphs">Using RDF Graphs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#common-graph-patterns">Common Graph Patterns</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-a-graph">What is a Graph?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#common-graph-patterns">Common Graph Patterns</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#star-pattern">Star Pattern</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#chain-pattern">Chain Pattern</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tree-pattern">Tree Pattern</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting-graphs-together">Connecting Graphs Together</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#common-modeling-patterns">Common Modeling Patterns</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#event-planning">Event Planning</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#best-practices-for-building-graphs">Best Practices for Building Graphs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
 </ul>
   </nav></div>
 
