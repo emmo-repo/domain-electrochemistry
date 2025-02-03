@@ -1,7 +1,13 @@
 Materials
 =========
 
-This section provides an overview of materials, components, and devices used in electrochemical systems.
+Materials are the physical substances that make up electrochemical systems. Understanding how to represent materials in the ontology is crucial for:
+- Describing experimental setups  
+- Ensuring reproducibility  
+- Enabling data comparison  
+- Supporting material selection  
+
+This section provides an overview for how materials are used in the EMMO universe generally, along with specific examples from the electrochemistry domain. 
 
 Active Material
 ---------------
