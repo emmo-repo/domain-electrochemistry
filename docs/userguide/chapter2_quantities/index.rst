@@ -4,8 +4,6 @@ Quantities in Electrochemistry
 
 In the EMMO ontology, **quantities** are used to represent measurable properties of electrochemical systems. These quantities provide critical information about the performance, efficiency, and behavior of electrochemical devices.
 
-By defining electrochemical quantities in terms of their **type, properties, and measurement units**, the ontology provides a structured and interoperable framework for describing performance characteristics in electrochemical systems.
-
 Quantities are defined using the following structure:
 
 1. **Type**: Identifies the type of quantity (e.g., `CellVoltage`, `SpecificCapacity`).

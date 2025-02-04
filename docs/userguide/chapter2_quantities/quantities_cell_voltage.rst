@@ -2,7 +2,7 @@ Cell Voltage
 ------------------
 The **cell voltage** is the potential difference between the anode and cathode at a given state of operation.
 
-**Example:** Representing a cell voltage of 3.2V:
+**Example:** Representing a cell voltage of 3.2 V:
 
 .. code-block:: json
 

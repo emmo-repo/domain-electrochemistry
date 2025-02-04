@@ -1,5 +1,5 @@
-Ontology
-========
+What is an Ontology?
+====================
 
 In the 1999 movie *The Matrix*, Keanu Reeves' character is having a rough day. He needs to master every martial art in just a few hours. But he's in luck. In the future, humans can download knowledge from computers directly into their brains! After a few swift clicks, Keanu turns towards the camera and dramatically says, `"I know Kung Fu!" <https://youtu.be/OrzgxUhnYjY?si=lpgV8uk4jBrx1lFD&t=70>`__.
 
