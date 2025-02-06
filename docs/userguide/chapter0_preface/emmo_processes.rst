@@ -117,6 +117,26 @@ An **Iterative Workflow** repeats the same task multiple times.
      }
    }
 
+SubProcesses
+------------
+A **SubProcess** is a process that occurs within another process as a **spatial part** of it. For example, **Breathing** is a subprocess of **Living**. This concept is useful for breaking down complex processes into more detailed parts while maintaining their connection to the larger event.
+
+Representing a SubProcess
+~~~~~~~~~~~~~~~~~~~~~~~~~
+To define a **SubProcess** in EMMO, use the `hasSubProcess` property to link a process to its subprocess.
+
+**Example:** Defining Breathing as a SubProcess of Living
+
+.. code-block:: json
+
+   {
+     "@context": "https://w3id.org/emmo/context",
+     "@type": "LivingProcess",
+     "hasSubProcess": {
+       "@type": "Breathing"
+     }
+   }
+
 Object Properties for Processes
 -------------------------------
 Processes in EMMO use specific relationships to describe their structure:
@@ -126,6 +146,7 @@ Processes in EMMO use specific relationships to describe their structure:
 - **hasOutput**: Defines an entity as the result of a process.
 - **precedes**: Shows the sequence of events in time.
 - **hasTask**: Connects a workflow to its tasks.
+- **hasSubProcess**: Links a process to a subprocess occurring within it.
 
 **Example:** Defining a process with input, output, and sequence.
 

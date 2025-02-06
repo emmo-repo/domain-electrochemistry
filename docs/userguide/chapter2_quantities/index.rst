@@ -37,10 +37,14 @@ This section provides guidelines for representing these key electrochemical quan
    :maxdepth: 1
    :caption: Quantities Contents
    
-   quantities_cell_voltage
-   quantities_nominal_voltage
-   quantities_overpotential
-   quantities_specific_capacity
-   quantities_rated_capacity
-   quantities_specific_energy
-   quantities_energy_density
+   quantities_chemical_potential
+   quantities_electric_potential
+   quantities_electric_current
+   quantities_electric_resistance
+   quantities_capacity
+   quantities_energy
+   quantities_power
+   quantities_indicative_rate
+   quantities_sox
+   quantities_efficiency
+   quantities_manufacturing
