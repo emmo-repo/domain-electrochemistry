@@ -43,7 +43,7 @@ schema:name a owl:AnnotationProperty .
     vann:preferredNamespaceUri "https://w3id.org/emmo/domain/electrochemistry" ;
     owl:backwardCompatibleWith "0.24.2-beta" ;
     owl:imports <https://w3id.org/emmo/domain/characterisation-methodology/chameo>,
-        <https://w3id.org/emmo/domain/chemical-substance/0.10.0-beta/chemical-substance>,
+        <https://w3id.org/emmo/domain/chemical-substance/0.11.0-beta/chemical-substance>,
         <https://w3id.org/emmo/domain/electrochemistry/0.26.0-beta/shared/electrochemistry-quantities> ;
     owl:priorVersion "0.24.2-beta" ;
     owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.26.0-beta/electrochemistry> ;

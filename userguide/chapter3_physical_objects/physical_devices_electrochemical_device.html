@@ -52,7 +52,7 @@
     <link rel="shortcut icon" href="../../_static/battinfologo.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Processes" href="../chapter4_processes/index.html" />
+    <link rel="next" title="About the Electrochemistry Ontology (ECHO)" href="../../pages/about.html" />
     <link rel="prev" title="Devices in Electrochemistry" href="physical_devices.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -347,7 +347,7 @@ document.write(`
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">User Guide</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../chapter0_preface/index.html">Preface</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../chapter0_preface/ontology.html">Ontology</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../chapter0_preface/ontology.html">What is an Ontology?</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../chapter0_preface/ontology_background.html">Background</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../chapter0_preface/ontology_structure.html">Ontology Structure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../chapter0_preface/ontology_capabilities.html">Ontology Capabilities</a></li>
@@ -378,43 +378,60 @@ document.write(`
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../chapter2_quantities/index.html">Quantities</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../chapter2_quantities/quantities_cell_voltage.html">Cell Voltage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter2_quantities/quantities_nominal_voltage.html">Nominal Voltage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter2_quantities/quantities_overpotential.html">Overpotential</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter2_quantities/quantities_specific_capacity.html">Specific Capacity</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter2_quantities/quantities_rated_capacity.html">Rated Capacity</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter2_quantities/quantities_specific_energy.html">Specific Energy</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../chapter2_quantities/quantities_energy_density.html">Energy Density</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../chapter2_quantities/quantities_chemical_potential.html">Chemical Potential</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Physical Objects</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2 has-children"><a class="reference internal" href="physical_functional_materials.html">Functional Materials</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../chapter2_quantities/quantities_electric_potential.html">Electric Potential</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../chapter2_quantities/quantities_electric_current.html">Electric Current</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../chapter2_quantities/quantities_electric_resistance.html">Electric Resistance</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../chapter2_quantities/quantities_capacity.html">Electric Capacity</a><input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../chapter2_quantities/quantities_energy.html">Energy</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../chapter2_quantities/quantities_power.html">Power</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../chapter2_quantities/quantities_indicative_rate.html">Indicative Rates</a><input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-14"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../chapter2_quantities/quantities_sox.html">State-of-X (SoX) Quantities</a><input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-15"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../chapter2_quantities/quantities_efficiency.html">Efficiency</a><input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-16"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../chapter2_quantities/quantities_manufacturing.html">Manufacturing Quantities</a><input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-17"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Physical Objects</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-18"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="physical_functional_materials.html">Functional Materials</a><input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-19"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="physical_functional_materials_active_material.html">Active Material</a></li>
 <li class="toctree-l3"><a class="reference internal" href="physical_functional_materials_binder.html">Binder</a></li>
 <li class="toctree-l3"><a class="reference internal" href="physical_functional_materials_conductive_additive.html">Conductive Additive</a></li>
 <li class="toctree-l3"><a class="reference internal" href="physical_functional_materials_electrolyte_solution.html">Electrolyte Solution</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="physical_components.html">Components in Electrochemistry</a><input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-10"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="physical_components.html">Components in Electrochemistry</a><input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-20"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="physical_components_current_collector.html">Current Collector</a></li>
 <li class="toctree-l3"><a class="reference internal" href="physical_components_electrode.html">Electrode</a></li>
 <li class="toctree-l3"><a class="reference internal" href="physical_components_separator.html">Separator</a></li>
 <li class="toctree-l3"><a class="reference internal" href="physical_components_case.html">Case</a></li>
 </ul>
 </li>
-<li class="toctree-l2 current active has-children"><a class="reference internal" href="physical_devices.html">Devices in Electrochemistry</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-11"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="physical_devices.html">Devices in Electrochemistry</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-21"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">Electrochemical Device</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter4_processes/index.html">Processes</a><input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-12"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../chapter5_data/index.html">Data</a><input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-13"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="../chapter6_summary/index.html">Summary</a></li>
 </ul>
 </div>
 </nav></div>
@@ -490,21 +507,18 @@ document.write(`
 <section id="guidelines-for-use">
 <h2>Guidelines for Use<a class="headerlink" href="#guidelines-for-use" title="Permalink to this heading">#</a></h2>
 <p>To represent an <strong>Electrochemical Device</strong> in the ontology, follow three key steps:</p>
-<ol class="arabic simple">
+<ol class="arabic">
 <li><p><strong>Identify the Electrochemical Device</strong>
-Define the component using the <strong>ElectrochemicalDevice</strong> class and specify its type (e.g., Battery, Fuel Cell, Supercapacitor, Electrolyzer).</p></li>
-</ol>
+Define the component using the <strong>ElectrochemicalDevice</strong> class and specify its type (e.g., Battery, Fuel Cell, Supercapacitor, Electrolyzer).</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://w3id.org/emmo/domain/electrochemistry/context&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ElectrochemicalDevice&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;hasDeviceType&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Battery&quot;</span>
+<span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ElectrochemicalDevice&quot;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
-<ol class="arabic simple" start="2">
+</li>
 <li><p><strong>Assign Properties</strong>
-Specify attributes such as <strong>Nominal Voltage</strong>, <strong>Capacity</strong>, <strong>Operating Temperature</strong>, and <strong>Efficiency</strong>.</p></li>
-</ol>
+Specify attributes such as <strong>Nominal Voltage</strong>, <strong>Capacity</strong>, <strong>Operating Temperature</strong>, and <strong>Efficiency</strong>.</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://w3id.org/emmo/domain/electrochemistry/context&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ElectrochemicalDevice&quot;</span><span class="p">,</span>
@@ -529,10 +543,9 @@ Specify attributes such as <strong>Nominal Voltage</strong>, <strong>Capacity</s
 <span class="p">}</span>
 </pre></div>
 </div>
-<ol class="arabic simple" start="3">
+</li>
 <li><p><strong>Link the Device to its Components</strong>
-Associate the device with its structural components, such as electrodes, separators, electrolytes, current collectors, and cases.</p></li>
-</ol>
+Associate the device with its structural components, such as electrodes, separators, electrolytes, current collectors, and cases.</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://w3id.org/emmo/domain/electrochemistry/context&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ElectrochemicalDevice&quot;</span><span class="p">,</span>
@@ -567,12 +580,13 @@ Associate the device with its structural components, such as electrodes, separat
 <span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">},</span>
 <span class="w">  </span><span class="nt">&quot;hasCase&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Case&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nt">&quot;hasMaterial&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Aluminum&quot;</span>
+<span class="w">    </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;R2032&quot;</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 </div>
+</li>
+</ol>
 <p>By defining <strong>Electrochemical Devices</strong> in terms of their <strong>type, properties, and components</strong>, the ontology provides a structured and interoperable framework for modeling a wide variety of electrochemical energy systems.</p>
 </section>
 </section>
@@ -598,11 +612,11 @@ Associate the device with its structural components, such as electrodes, separat
       </div>
     </a>
     <a class="right-next"
-       href="../chapter4_processes/index.html"
+       href="../../pages/about.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Processes</p>
+        <p class="prev-next-title">About the Electrochemistry Ontology (ECHO)</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

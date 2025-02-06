@@ -5,6 +5,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 dcterms:abstract a owl:AnnotationProperty .
 
@@ -16,18 +17,78 @@ dcterms:source a owl:AnnotationProperty .
 
 skos:prefLabel a owl:AnnotationProperty .
 
+skos:scopeNote a owl:AnnotationProperty ;
+    rdfs:comment "a note that helps to clarify the meaning and/or the use of a concept"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a note that helps to clarify the meaning and/or the use of a concept"@en .
+
 foaf:name a owl:AnnotationProperty .
 
+emmo:EMMO_0fa6566e_500f_4d24_baa9_b2b22c9a0b72 a owl:AnnotationProperty ;
+    rdfs:label "warning"@en ;
+    rdfs:comment "q critical alert about potential dangers, system failures, or serious misuse of a concept."@en ;
+    rdfs:subPropertyOf skos:note ;
+    skos:prefLabel "warning"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "q critical alert about potential dangers, system failures, or serious misuse of a concept."@en .
+
 emmo:EMMO_1744d51d_0dac_4f48_8b50_fde6c7c2ab39 rdfs:subClassOf :electrochemistry_14d93129_d94d_42ff_a6f2_e8fca36ffec4 .
+
+emmo:EMMO_32214c66_8bce_40f5_b22d_5059f6cf571b a owl:AnnotationProperty ;
+    rdfs:label "error"@en ;
+    rdfs:comment "marks an error or incorrect usage"@en ;
+    rdfs:subPropertyOf skos:note ;
+    skos:prefLabel "error"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "marks an error or incorrect usage"@en .
+
+emmo:EMMO_4c8480cf_56de_41da_8699_f12a9033313a a owl:AnnotationProperty ;
+    rdfs:label "important"@en ;
+    rdfs:comment "highlights crucial points users must be aware of"@en ;
+    rdfs:subPropertyOf skos:note ;
+    skos:prefLabel "important"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "highlights crucial points users must be aware of"@en .
 
 emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f a owl:AnnotationProperty .
 
 emmo:EMMO_5c78b424_087b_4e31_8c91_6422f1be1e86 owl:equivalentClass :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b .
 
+emmo:EMMO_5f7abc2a_5b50_41c3_8def_c8ba7c3b083e a owl:AnnotationProperty ;
+    rdfs:label "tip"@en ;
+    rdfs:comment "a best practice or helpful suggestion related to the concept."@en ;
+    rdfs:subPropertyOf skos:note ;
+    skos:prefLabel "tip"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a best practice or helpful suggestion related to the concept."@en .
+
+emmo:EMMO_709ee08d_76b1_4fee_be22_925412ac313b a owl:AnnotationProperty ;
+    rdfs:label "admonition"@en ;
+    rdfs:comment "a customized callout for information not covered by default note types"@en ;
+    rdfs:subPropertyOf skos:note ;
+    skos:prefLabel "admonition"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a customized callout for information not covered by default note types"@en .
+
 emmo:EMMO_931a725b_926d_4f60_8955_61fe17fce98b rdfs:subClassOf :electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607 ;
     skos:altLabel "MassDiffusivity"@en ;
     emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q604008"@en ;
     emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Mass_diffusivity"@en .
+
+emmo:EMMO_95317324_4b53_4665_a087_82c3a2a0540b a owl:AnnotationProperty ;
+    rdfs:label "danger"@en ;
+    rdfs:comment "indicates a serious risk, often safety-related"@en ;
+    rdfs:subPropertyOf skos:note ;
+    skos:prefLabel "danger"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "indicates a serious risk, often safety-related"@en .
+
+emmo:EMMO_b6730304_cabc_4104_b415_14218466445c a owl:AnnotationProperty ;
+    rdfs:label "caution"@en ;
+    rdfs:comment "a moderate-level advisory about possible pitfalls, errors, or inefficiencies"@en ;
+    rdfs:subPropertyOf skos:note ;
+    skos:prefLabel "caution"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a moderate-level advisory about possible pitfalls, errors, or inefficiencies"@en .
+
+emmo:EMMO_cc65321f_1964_4f16_aea3_2a8edf2f3394 a owl:AnnotationProperty ;
+    rdfs:label "typicalUnit"@en ;
+    rdfs:comment "links a quantity to the typical unit(s) that are commonly used"@en ;
+    rdfs:subPropertyOf emmo:EMMO_58e7c821_4af0_4394_89f7_a9649735f4d2 ;
+    skos:prefLabel "typicalUnit"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "links a quantity to the typical unit(s) that are commonly used"@en .
 
 emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry_25dabdc2_68bf_4a38_8cbe_11be017358bc ;
     :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Electrolyte','Conductivity [S.m-1]']"@en ;
@@ -66,7 +127,9 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
     skos:hiddenLabel "DC-Cap"@en,
         "DC-Cap/mAh"@en ;
     skos:prefLabel "ConstantCurrentDischargingCapacity"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the capacity obtained during constant current discharging of an electrochemical device"@en .
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the capacity obtained during constant current discharging of an electrochemical device"@en ;
+    emmo:EMMO_cc65321f_1964_4f16_aea3_2a8edf2f3394 emmo:AmpereHour,
+        emmo:MilliAmpereHour .
 
 :electrochemistry_08b6d07a_0f6c_4932_afbd_fb6b699164ae a owl:Class ;
     rdfs:label "LowerCRateLimit"@en ;
@@ -367,15 +430,31 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
     skos:prefLabel "ChargingEnergyDensity"@en ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the energy density of a device obtained during a charging process"@en .
 
+:electrochemistry_372c89d0_adab_4585_9662_33c912acef23 a owl:Class ;
+    rdfs:label "TheoreticalCapacity"@en ;
+    rdfs:comment "the amount of electric charge that can be stored in a material, component, or device, under infinitely low current, and derived from first principles"@en ;
+    rdfs:subClassOf :electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26 ;
+    skos:prefLabel "TheoreticalCapacity"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the amount of electric charge that can be stored in a material, component, or device, under infinitely low current, and derived from first principles"@en ;
+    emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "The value of the practically achieve able capacity is often much lower than the theoretical value."@en ;
+    emmo:EMMO_cc65321f_1964_4f16_aea3_2a8edf2f3394 emmo:AmpereHour,
+        emmo:Coulomb,
+        emmo:MilliAmpereHour .
+
 :electrochemistry_37c38b7e_9ded_481a_85fd_a467f1ee2b9f a owl:Class ;
     rdfs:label "ConstantCurrentChargingCapacity"@en ;
     rdfs:comment "the capacity obtained during constant current charging of an electrochemical device"@en ;
+    rdfs:seeAlso :electrochemistry_0cc8f231_0ce5_467e_9c76_29b2c80349ad,
+        :electrochemistry_a7a4614f_2426_46f3_8475_cda4a9fabfce ;
     rdfs:subClassOf :electrochemistry_10763eb0_dbc9_4d34_bd1a_7b8996590d45 ;
     skos:altLabel "ConstantCurrentChargeCapacity" ;
     skos:hiddenLabel "CC-Cap"@en,
         "CC-Cap/mAh"@en ;
     skos:prefLabel "ConstantCurrentChargingCapacity"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the capacity obtained during constant current charging of an electrochemical device"@en .
+    skos:scopeNote "Constant current charging capacity is often used to assess device performance and state-of-health. In a CC-CV charging process, if this value is significantly lower than the rated capacity under the same conditions, it may indicate underlying limitations. A decline over multiple cycles can be a sign of degradation."@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the capacity obtained during constant current charging of an electrochemical device"@en ;
+    emmo:EMMO_cc65321f_1964_4f16_aea3_2a8edf2f3394 emmo:AmpereHour,
+        emmo:MilliAmpereHour .
 
 :electrochemistry_39a44af0_0e1a_4859_b550_bdabad64386e a owl:Class ;
     rdfs:label "AmbientThermodynamicTemperature"@en ;
@@ -738,7 +817,9 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
     rdfs:subClassOf :electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26 ;
     skos:altLabel "RecoveryCapacity"@en ;
     skos:prefLabel "RecoveredCapacity"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the capacity that can be obtained from an electrochemical device after it has been subjected to some specified conditions, then recharged and discharged according to a recommended protocol"@en .
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the capacity that can be obtained from an electrochemical device after it has been subjected to some specified conditions, then recharged and discharged according to a recommended protocol"@en ;
+    emmo:EMMO_cc65321f_1964_4f16_aea3_2a8edf2f3394 emmo:AmpereHour,
+        emmo:MilliAmpereHour .
 
 :electrochemistry_7481c4c9_c247_4248_a045_a1077230acba a owl:Class ;
     rdfs:label "PositiveElectrodeCoatingPorosity"@en ;
@@ -936,13 +1017,6 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
     rdfs:subClassOf emmo:EMMO_ba882f34_0d71_4e4f_9d92_0c076c633a2c ;
     skos:prefLabel "NumberOfIterations"@en ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the number of times an iterative process should occur"@en .
-
-:electrochemistry_8abde9d0_84f6_4b4f_a87e_86028a397100 a owl:Class ;
-    rdfs:label "NominalCapacity"@en ;
-    rdfs:comment "the rated capacity that is representative of the typical value associated with a cell as stated by the manufacturer"@en ;
-    rdfs:subClassOf :electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26 ;
-    skos:prefLabel "NominalCapacity"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the rated capacity that is representative of the typical value associated with a cell as stated by the manufacturer"@en .
 
 :electrochemistry_8b2aaa50_bbe1_45da_8778_8898326246a2 a owl:Class ;
     rdfs:label "StateOfCharge"@en ;
@@ -1195,15 +1269,6 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
     skos:prefLabel "DischargingPRate"@en ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an indicator of the electric power at which an electrochemical device is discharged"@en .
 
-:electrochemistry_b7781ebc_90a7_4f19_997f_aed28dee1b01 a owl:Class ;
-    rdfs:label "MaximumStorageCapacity"@en ;
-    rdfs:comment "the maximum amount of electric charge that can be reversible stored within an electrochemical device, component, or material - operated at an infinitely low rate - based on its chemical composition and design"@en ;
-    rdfs:subClassOf :electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26,
-        :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
-    skos:altLabel "TheoreticalChargeCapacity"@en ;
-    skos:prefLabel "MaximumStorageCapacity"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the maximum amount of electric charge that can be reversible stored within an electrochemical device, component, or material - operated at an infinitely low rate - based on its chemical composition and design"@en .
-
 :electrochemistry_b83c6435_6edf_470e_9725_538a853e08f7 a owl:Class ;
     rdfs:label "D10ParticleSize"@en ;
     rdfs:comment "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 10% of the sample's particles fall."@en ;
@@ -1216,7 +1281,9 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
     rdfs:comment "the capacity that an electrochemical device can deliver after being stored under some specified conditions"@en ;
     rdfs:subClassOf :electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26 ;
     skos:prefLabel "RetainedCapacity"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the capacity that an electrochemical device can deliver after being stored under some specified conditions"@en .
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the capacity that an electrochemical device can deliver after being stored under some specified conditions"@en ;
+    emmo:EMMO_cc65321f_1964_4f16_aea3_2a8edf2f3394 emmo:AmpereHour,
+        emmo:MilliAmpereHour .
 
 :electrochemistry_b90b1ad7_b9a8_44df_ad45_bfd25aac2e49 a owl:Class ;
     rdfs:label "MinimumChargingTemperature"@en ;
@@ -1366,13 +1433,6 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
     emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=485-02-10" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "total surface of a solid per mass"@en ;
     emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Specific_surface_area"@en .
-
-:electrochemistry_d3c0078e_c1d3_461e_873d_e5c3adf441c5 a owl:Class ;
-    rdfs:label "MiniumumAcceptedCapacity"@en ;
-    rdfs:comment "the minimum acceptable threshold value for the rated capacity of an electrochemical device, as stated by the manufacturer."@en ;
-    rdfs:subClassOf :electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26 ;
-    skos:prefLabel "MiniumumAcceptedCapacity"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the minimum acceptable threshold value for the rated capacity of an electrochemical device, as stated by the manufacturer."@en .
 
 :electrochemistry_d5dc0c1d_0926_4268_89f0_4519a326eabc a owl:Class ;
     rdfs:label "MaximumDischargingPulseDuration"@en ;
@@ -1606,6 +1666,8 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
     skos:prefLabel "DischargingCapacity"@en ;
     emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-14" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electric charge which an energy storage device can deliver under specified discharging conditions"@en ;
+    emmo:EMMO_cc65321f_1964_4f16_aea3_2a8edf2f3394 emmo:AmpereHour,
+        emmo:MilliAmpereHour ;
     :electrochemistry_097ea615_c209_4edd_a1a1_5eea71d98fe8 "wf dis cap"@en ;
     :electrochemistry_1b717a20_17e3_4480_8c60_c4ae94058f05 "Discharge_Capacity (Ah)"@en ;
     :electrochemistry_69022178_77b8_4669_97e2_351d45356e5a "Q discharge/mA.h"@en ;
@@ -1654,6 +1716,8 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
         "Q charge/mA.h"@en ;
     skos:prefLabel "ChargingCapacity"@en ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electric charge which an energy storage device can deliver under specified charging conditions"@en ;
+    emmo:EMMO_cc65321f_1964_4f16_aea3_2a8edf2f3394 emmo:AmpereHour,
+        emmo:MilliAmpereHour ;
     :electrochemistry_097ea615_c209_4edd_a1a1_5eea71d98fe8 "wf chg cap"@en ;
     :electrochemistry_1b717a20_17e3_4480_8c60_c4ae94058f05 "Charge_Capacity (Ah)"@en ;
     :electrochemistry_69022178_77b8_4669_97e2_351d45356e5a "Q charge/mA.h"@en ;
@@ -1953,8 +2017,10 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
     rdfs:comment "suitable approximate value of the voltage used to designate or identify a cell, a battery or an electrochemical system"@en ;
     rdfs:subClassOf emmo:EMMO_17b031fb_4695_49b6_bb69_189ec63df3ee ;
     skos:prefLabel "NominalVoltage"@en ;
+    skos:scopeNote "Nominal voltage is the standardized voltage value assigned to a battery cell or module based on typical operating conditions. It serves as a reference point for battery specifications but does not represent the actual voltage during operation. Actual cell voltage may vary due to factors such as state-of-charge, temperature, and load conditions."@en ;
     emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-31"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "suitable approximate value of the voltage used to designate or identify a cell, a battery or an electrochemical system"@en .
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "suitable approximate value of the voltage used to designate or identify a cell, a battery or an electrochemical system"@en ;
+    emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "Nominal voltage may not accurately reflect voltage under extreme loads or temperatures—always check manufacturer specifications."@en .
 
 :electrochemistry_63a8f9d2_0cf6_484d_b996_2e5c3f0a3c73 a owl:Class ;
     rdfs:label "ElectrodeCoverageDensity"@en ;
@@ -2465,7 +2531,8 @@ and t* through mathematical models, provided that the long-time potential- deter
     rdfs:subClassOf emmo:EMMO_17b031fb_4695_49b6_bb69_189ec63df3ee,
         :electrochemistry_b395a244_3a75_4737_be38_981bfa1277fe ;
     skos:prefLabel "VoltageLimit"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "limit on the voltage of an electrical system"@en .
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "limit on the voltage of an electrical system"@en ;
+    emmo:EMMO_cc65321f_1964_4f16_aea3_2a8edf2f3394 emmo:Volt .
 
 :electrochemistry_75c28dc8_3d7d_4b6e_861e_6c8b1ad7d644 a owl:Class ;
     rdfs:label "ShortCircuitCurrent"@en ;
@@ -2498,6 +2565,21 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
         :electrochemistry_b395a244_3a75_4737_be38_981bfa1277fe ;
     skos:prefLabel "TemperatureLimit"@en ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "limit on the temperature of a system"@en .
+
+:electrochemistry_8abde9d0_84f6_4b4f_a87e_86028a397100 a owl:Class ;
+    rdfs:label "NominalCapacity"@en ;
+    rdfs:comment "the rated capacity that is representative of the typical value associated with a cell as stated by the manufacturer"@en ;
+    rdfs:seeAlso :electrochemistry_a7a4614f_2426_46f3_8475_cda4a9fabfce,
+        :electrochemistry_b7781ebc_90a7_4f19_997f_aed28dee1b01,
+        :electrochemistry_d3c0078e_c1d3_461e_873d_e5c3adf441c5 ;
+    rdfs:subClassOf :electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26 ;
+    skos:prefLabel "NominalCapacity"@en ;
+    skos:scopeNote "The value for 'nominal capacity' is provided by manufacturers as an indication of the expected performance of the device under a set of defined nominal conditions. It serves as a benchmark for comparing different devices."@en ;
+    emmo:EMMO_5f7abc2a_5b50_41c3_8def_c8ba7c3b083e "To ensure meaningful comparisons, nominal capacity values should always be evaluated under matching test conditions."@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the rated capacity that is representative of the typical value associated with a cell as stated by the manufacturer"@en ;
+    emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "While nominal capacity provides a useful reference, actual capacity depends on various factors, including temperature, rate, and state-of-health."@en ;
+    emmo:EMMO_cc65321f_1964_4f16_aea3_2a8edf2f3394 emmo:AmpereHour,
+        emmo:MilliAmpereHour .
 
 :electrochemistry_9ed7210c_c4fa_467b_822d_ba12f885bdf4 a owl:Class ;
     rdfs:label "ConcentrationOverpotential"@en ;
@@ -2554,6 +2636,22 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "[an indicator of the] electric current at which a secondary cell or battery is charged"@en ;
     emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "the charge rate is expressed as the reference current It = Cr/n where Cr is the rated capacity declared by the manufacturer and n is the time base in hours for which the rated capacity is declared"@en .
 
+:electrochemistry_b7781ebc_90a7_4f19_997f_aed28dee1b01 a owl:Class ;
+    rdfs:label "MaximumCapacity"@en ;
+    rdfs:comment "the maximum amount of electric charge that can be reversible stored within an electrochemical device"@en ;
+    rdfs:seeAlso :electrochemistry_8abde9d0_84f6_4b4f_a87e_86028a397100,
+        :electrochemistry_a7a4614f_2426_46f3_8475_cda4a9fabfce,
+        :electrochemistry_d3c0078e_c1d3_461e_873d_e5c3adf441c5 ;
+    rdfs:subClassOf :electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26,
+        :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
+    skos:altLabel "MaximumStorageCapacity"@en ;
+    skos:prefLabel "MaximumCapacity"@en ;
+    skos:scopeNote "Manufacturers define the value for 'maximum capacity' as the upper performance limit that a device in a batch will typically achieve. The maximum capacity is larger than the nominal capacity, and acts as an indicator of the spread in performacne in a given batch of devices."@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the maximum amount of electric charge that can be reversible stored within an electrochemical device"@en ;
+    emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "For real applications, the maximum capacity is affected by environmental conditions, rate of operation, and state-of-heath and can deviate from the reported value."@en ;
+    emmo:EMMO_cc65321f_1964_4f16_aea3_2a8edf2f3394 emmo:AmpereHour,
+        emmo:MilliAmpereHour .
+
 :electrochemistry_b92e382f_5109_4f60_ab5e_c89d340419a9 a owl:Class ;
     rdfs:label "ParticleRadius"@en ;
     rdfs:comment "radius of a particle"@en ;
@@ -2589,6 +2687,21 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
         emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
     skos:prefLabel "PercentQuantity"@en ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a quantity that is expressed as a percentage"@en .
+
+:electrochemistry_d3c0078e_c1d3_461e_873d_e5c3adf441c5 a owl:Class ;
+    rdfs:label "MinimumCapacity"@en ;
+    rdfs:comment "the minimum acceptable threshold value for the rated capacity of an electrochemical device, as stated by the manufacturer."@en ;
+    rdfs:seeAlso :electrochemistry_8abde9d0_84f6_4b4f_a87e_86028a397100,
+        :electrochemistry_a7a4614f_2426_46f3_8475_cda4a9fabfce,
+        :electrochemistry_b7781ebc_90a7_4f19_997f_aed28dee1b01 ;
+    rdfs:subClassOf :electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26 ;
+    skos:altLabel "MiniumumAcceptedCapacity"@en ;
+    skos:prefLabel "MinimumCapacity"@en ;
+    skos:scopeNote "Manufacturers define the value for 'minimum capacity' as the lower performance limit, ensuring that every device meets a minimum standard. In practice, minimum capacity is often about 95-97% of the nominal capacity, acting as a guaranteed lower bound rather than an exact measurement."@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the minimum acceptable threshold value for the rated capacity of an electrochemical device, as stated by the manufacturer."@en ;
+    emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "For real applications, the achieveable minimum capacity is affected by environmental conditions, rate of operation, and state-of-heath and can deviate from the reported value."@en ;
+    emmo:EMMO_cc65321f_1964_4f16_aea3_2a8edf2f3394 emmo:AmpereHour,
+        emmo:MilliAmpereHour .
 
 :electrochemistry_e4d666ee_d637_45cd_a904_dc33941ead4f a owl:Class ;
     rdfs:label "DischargingCurrent"@en ;
@@ -2701,6 +2814,9 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
     emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Electrode_potential" ;
     emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://goldbook.iupac.org/terms/view/E01956" .
 
+emmo:EMMO_17b031fb_4695_49b6_bb69_189ec63df3ee skos:scopeNote "Voltage represents the difference in electric potential between two points in an electric circuit. In electrochemistry, it refers to the potential difference between the electrodes of a battery or electrochemical cell. Voltage influences the driving force of redox reactions and determines energy output in batteries, fuel cells, and electrolysis processes. It is commonly measured in volts (V)."@en ;
+    emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "Voltage is often used interchangeably with electric potential, but technically, voltage refers to a potential difference between two points."@en .
+
 :electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607 a owl:Class ;
     rdfs:label "Diffusivity"@en ;
     rdfs:comment "a measure of the rate at which particles or heat or fluids spread"@en,
@@ -2770,6 +2886,13 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
     rdfs:subClassOf emmo:EMMO_909415d1_7c43_4d5e_bbeb_7e1910159f66 ;
     skos:prefLabel "ElectrochemicalProperty"@en ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a property that is typical in the electrochemistry domain"@en .
+
+:electrochemistry_a7a4614f_2426_46f3_8475_cda4a9fabfce a owl:Class ;
+    rdfs:label "StateOfHealth"@en ;
+    rdfs:comment "An indication of the health of an electrochemical device"@en ;
+    rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
+    skos:prefLabel "StateOfHealth"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An indication of the health of an electrochemical device"@en .
 
 :electrochemistry_f0667139_6428_4e3d_ac0d_08c1dd7f36ea a owl:Class ;
     rdfs:label "StoichiometricCoefficient"@en ;
@@ -2856,14 +2979,6 @@ foaf:Person a owl:Class ;
     skos:prefLabel "CurrentLimit"@en ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "limit on the electric current of an electrical system"@en .
 
-:electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26 a owl:Class ;
-    rdfs:label "RatedCapacity"@en ;
-    rdfs:comment "capacity value of a battery [or electrode or electrochemical device] determined under specified conditions and declared by the manufacturer"@en ;
-    rdfs:subClassOf :electrochemistry_791c1915_a791_4450_acd8_7f94764743b5 ;
-    skos:prefLabel "RatedCapacity"@en ;
-    emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-15"@en ;
-    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "capacity value of a battery [or electrode or electrochemical device] determined under specified conditions and declared by the manufacturer"@en .
-
 :electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526 a owl:Class ;
     rdfs:label "ActivationEnergy"@en ;
     rdfs:comment "the activation energy in an arrhenius formulation"@en ;
@@ -2875,6 +2990,10 @@ foaf:Person a owl:Class ;
     emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Activation_energy"@en ;
     emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.A00102"@en .
 
+skos:note a owl:AnnotationProperty ;
+    rdfs:comment "a general annotation that provides extra context, clarifications, or useful background information"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a general annotation that provides extra context, clarifications, or useful background information"@en .
+
 :electrochemistry_1cd1d777_e67b_47eb_81f1_edac35d9f2c6 a owl:Class ;
     rdfs:label "Overpotential"@en ;
     rdfs:comment "difference between the electrode potential with current flow, and the electrode potential without current flow, i.e. the equilibrium potential"@en,
@@ -2885,7 +3004,9 @@ foaf:Person a owl:Class ;
     skos:altLabel "ElectrodePolarization"@en,
         "Overvoltage"@en,
         "PolarizationPotential"@en ;
+    skos:note "Overpotential is often divided into different contributions: activation overpotential, ohmic overpotential, and concentration overpotential."@en ;
     skos:prefLabel "Overpotential"@en ;
+    skos:scopeNote "Overpotential is the extra voltage required to drive an electrochemical reaction beyond its thermodynamic equilibrium potential. It arises due to kinetic barriers such as activation energy, mass transport limitations, and charge transfer resistance. Overpotential is a key factor in battery efficiency, electrolysis, and corrosion studies, as it affects reaction rates and energy losses."@en ;
     emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-02" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrode potential (E) minus the equilibrium electrode potential (Eeq) of an electrochemical reaction"@en ;
     emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Overpotential"@en ;
@@ -2914,10 +3035,27 @@ foaf:Person a owl:Class ;
         "mAmp-hr"@en ;
     skos:prefLabel "Capacity"@en ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electric charge which an energy storage device can deliver under specified conditions"@en ;
+    emmo:EMMO_cc65321f_1964_4f16_aea3_2a8edf2f3394 emmo:AmpereHour,
+        emmo:MilliAmpereHour ;
     :electrochemistry_097ea615_c209_4edd_a1a1_5eea71d98fe8 "amp-hr"@en ;
     :electrochemistry_811aafc3_0c6d_470e_b67e_ff5c82992609 "Capacity(mAh)"@en ;
     :electrochemistry_8377c1f7_2b09_4632_9a4d_bb318438adbb "cell_coulomb_count_c"@en ;
     :electrochemistry_ea9f4dba_8ca2_419e_9cdf_ce54e9ebbd46 "Capacity (Ah)"@en .
+
+:electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26 a owl:Class ;
+    rdfs:label "RatedCapacity"@en ;
+    rdfs:comment "capacity value of a battery [or electrode or electrochemical device] determined under specified conditions and declared by the manufacturer"@en ;
+    rdfs:seeAlso "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5ebeea80_af22_456b_9087_78c2a8465c58",
+        "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee" ;
+    rdfs:subClassOf :electrochemistry_791c1915_a791_4450_acd8_7f94764743b5 ;
+    skos:prefLabel "RatedCapacity"@en ;
+    skos:scopeNote "The term 'rated capacity' is used by manufacturers to specify the energy storage capability of a product under some controlled test conditions. The value is often determined during a constant current load until the a voltage limit is reached, under controlled temperature conditions. The 'rated capacity' helps to compare performance across different devices and provides a bisis for performing system engineering calculations. It can also be used as a basis for calculating other terms like the C-Rate, state-of-charge, and state-of-health of the device. The rated capacity at beginning of life serves as a reference for capacity-fade analysis during long-term cycling."@en ;
+    emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-15"@en ;
+    emmo:EMMO_5f7abc2a_5b50_41c3_8def_c8ba7c3b083e "The value of rated capacity should be reported together with information on the conditions under which it was determined (e.g. voltage limits, applied current, temperature)."@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "capacity value of a battery [or electrode or electrochemical device] determined under specified conditions and declared by the manufacturer"@en ;
+    emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "The value for rated capacity does not necessarily represent the actual capacity in real-world usage, as factors like temperature, rate, and state-of-health affect the effective capacity."@en ;
+    emmo:EMMO_cc65321f_1964_4f16_aea3_2a8edf2f3394 "https://w3id.org/emmo#AmpereHour"^^xsd:anyURI,
+        "https://w3id.org/emmo#MilliAmpereHour" .
 
 :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b a owl:Class ;
     rdfs:label "OpenCircuitVoltage"@en ;
@@ -2939,13 +3077,17 @@ foaf:Person a owl:Class ;
     rdfs:label "CellVoltage"@en ;
     rdfs:comment "difference of electric potentials measured between identical metallic leads to two electrodes of an electrochemical cell"@en,
         "voltage between the terminals of an electrochemical cell"@en ;
+    rdfs:seeAlso emmo:EMMO_17b031fb_4695_49b6_bb69_189ec63df3ee,
+        emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845 ;
     rdfs:subClassOf emmo:EMMO_17b031fb_4695_49b6_bb69_189ec63df3ee,
         :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
     skos:altLabel "AppliedPotential"@en ;
     skos:hiddenLabel "Ecell/V"@en,
         "Voltage/V"@en,
         "Volts"@en ;
+    skos:note "Cell voltage fluctuates based on factors such as applied current, internal resistance, temperature, and composition."@en ;
     skos:prefLabel "CellVoltage"@en ;
+    skos:scopeNote "Cell voltage represents the instantaneous electrical potential difference between the positive and negative electrodes of an electrochemical cell. It is a key parameter for monitoring battery performance, estimating state-of-charge, and diagnosing potential failures."@en ;
     emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-10" ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "voltage between the terminals of an electrochemical cell"@en ;
     emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.A00424"@en ;
@@ -2956,6 +3098,10 @@ foaf:Person a owl:Class ;
     :electrochemistry_8377c1f7_2b09_4632_9a4d_bb318438adbb "cell_voltage_v"@en ;
     :electrochemistry_a07dd85b_d0df_4d5d_8b0c_14d20ea3fe45 "voltage"@en ;
     :electrochemistry_ea9f4dba_8ca2_419e_9cdf_ce54e9ebbd46 "Potential (V)"@en .
+
+emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845 skos:scopeNote "Electric potential is the amount of electric potential energy per unit charge at a specific point in an electric field. In electrochemistry, it helps describe the energy state of an electrode relative to a reference electrode. It is a fundamental concept in electrode reactions, influencing redox potential and determining the driving force behind electrochemical processes. Electric potential is commonly measured in volts (V) and is essential for understanding electrode kinetics, corrosion processes, and electrochemical equilibrium."@en ;
+    emmo:EMMO_5f7abc2a_5b50_41c3_8def_c8ba7c3b083e "Use a well-defined reference electrode (e.g., Standard Hydrogen Electrode, Ag/AgCl) when measuring electric potential to ensure consistency and comparability."@en ;
+    emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "Electric potential differs from voltage; voltage is the difference in electric potential between two points."@en .
 
 :electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634 a owl:Class ;
     rdfs:label "ElectrochemicalPerformanceQuantity"@en ;
@@ -2974,7 +3120,8 @@ foaf:Person a owl:Class ;
 :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 a owl:Class ;
     rdfs:label "ElectrochemicalQuantity"@en ;
     rdfs:comment "Physical quantities defined within the domain of electrochemistry."@en ;
-    rdfs:subClassOf emmo:EMMO_79751276_b2d0_4e2f_bbd4_99d412f43d55 ;
+    rdfs:subClassOf emmo:EMMO_79751276_b2d0_4e2f_bbd4_99d412f43d55,
+        emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
     skos:prefLabel "ElectrochemicalQuantity"@en ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Physical quantities defined within the domain of electrochemistry."@en .
 
