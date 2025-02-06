@@ -1,0 +1,9 @@
+{
+    "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
+    "@type": "CellVoltage",
+    "hasNumericalPart": {
+        "@type": "RealData",
+        "hasNumberValue": 3.2
+    },
+    "hasMeasurementUnit": "emmo:Volt"
+}
