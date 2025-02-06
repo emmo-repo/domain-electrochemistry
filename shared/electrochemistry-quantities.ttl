@@ -201,6 +201,17 @@ foaf:Person rdf:type owl:Class ;
 emmo:EMMO_1744d51d_0dac_4f48_8b50_fde6c7c2ab39 rdfs:subClassOf :electrochemistry_14d93129_d94d_42ff_a6f2_e8fca36ffec4 .
 
 
+###  https://w3id.org/emmo#EMMO_17b031fb_4695_49b6_bb69_189ec63df3ee
+emmo:EMMO_17b031fb_4695_49b6_bb69_189ec63df3ee skos:scopeNote "Voltage represents the difference in electric potential between two points in an electric circuit. In electrochemistry, it refers to the potential difference between the electrodes of a battery or electrochemical cell. Voltage influences the driving force of redox reactions and determines energy output in batteries, fuel cells, and electrolysis processes. It is commonly measured in volts (V)."@en ;
+                                               emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "Voltage is often used interchangeably with electric potential, but technically, voltage refers to a potential difference between two points."@en .
+
+
+###  https://w3id.org/emmo#EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845
+emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845 skos:scopeNote "Electric potential is the amount of electric potential energy per unit charge at a specific point in an electric field. In electrochemistry, it helps describe the energy state of an electrode relative to a reference electrode. It is a fundamental concept in electrode reactions, influencing redox potential and determining the driving force behind electrochemical processes. Electric potential is commonly measured in volts (V) and is essential for understanding electrode kinetics, corrosion processes, and electrochemical equilibrium."@en ;
+                                               emmo:EMMO_5f7abc2a_5b50_41c3_8def_c8ba7c3b083e "Use a well-defined reference electrode (e.g., Standard Hydrogen Electrode, Ag/AgCl) when measuring electric potential to ensure consistency and comparability."@en ;
+                                               emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "Electric potential differs from voltage; voltage is the difference in electric potential between two points."@en .
+
+
 ###  https://w3id.org/emmo#EMMO_5c78b424_087b_4e31_8c91_6422f1be1e86
 emmo:EMMO_5c78b424_087b_4e31_8c91_6422f1be1e86 owl:equivalentClass :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b .
 
@@ -701,7 +712,9 @@ and t* through mathematical models, provided that the long-time potential- deter
                                                        skos:altLabel "ElectrodePolarization"@en ,
                                                                      "Overvoltage"@en ,
                                                                      "PolarizationPotential"@en ;
+                                                       skos:note "Overpotential is often divided into different contributions: activation overpotential, ohmic overpotential, and concentration overpotential."@en ;
                                                        skos:prefLabel "Overpotential"@en ;
+                                                       skos:scopeNote "Overpotential is the extra voltage required to drive an electrochemical reaction beyond its thermodynamic equilibrium potential. It arises due to kinetic barriers such as activation energy, mass transport limitations, and charge transfer resistance. Overpotential is a key factor in battery efficiency, electrolysis, and corrosion studies, as it affects reaction rates and energy losses."@en ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-02" ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrode potential (E) minus the equilibrium electrode potential (Eeq) of an electrochemical reaction"@en ;
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Overpotential"@en ;
@@ -1473,11 +1486,15 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        rdfs:subClassOf emmo:EMMO_17b031fb_4695_49b6_bb69_189ec63df3ee ,
                                                                        :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                                        rdfs:comment "difference of electric potentials measured between identical metallic leads to two electrodes of an electrochemical cell"@en ;
+                                                       rdfs:seeAlso emmo:EMMO_17b031fb_4695_49b6_bb69_189ec63df3ee ,
+                                                                    emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845 ;
                                                        skos:altLabel "AppliedPotential"@en ;
                                                        skos:hiddenLabel "Ecell/V"@en ,
                                                                         "Voltage/V"@en ,
                                                                         "Volts"@en ;
+                                                       skos:note "Cell voltage fluctuates based on factors such as applied current, internal resistance, temperature, and composition."@en ;
                                                        skos:prefLabel "CellVoltage"@en ;
+                                                       skos:scopeNote "Cell voltage represents the instantaneous electrical potential difference between the positive and negative electrodes of an electrochemical cell. It is a key parameter for monitoring battery performance, estimating state-of-charge, and diagnosing potential failures."@en ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-10" ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "voltage between the terminals of an electrochemical cell"@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.A00424"@en ;
@@ -1860,8 +1877,10 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
 :electrochemistry_639b844a_e801_436b_985d_28926129ead6 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_17b031fb_4695_49b6_bb69_189ec63df3ee ;
                                                        skos:prefLabel "NominalVoltage"@en ;
+                                                       skos:scopeNote "Nominal voltage is the standardized voltage value assigned to a battery cell or module based on typical operating conditions. It serves as a reference point for battery specifications but does not represent the actual voltage during operation. Actual cell voltage may vary due to factors such as state-of-charge, temperature, and load conditions."@en ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-31"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "suitable approximate value of the voltage used to designate or identify a cell, a battery or an electrochemical system"@en .
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "suitable approximate value of the voltage used to designate or identify a cell, a battery or an electrochemical system"@en ;
+                                                       emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "Nominal voltage may not accurately reflect voltage under extreme loads or temperatures—always check manufacturer specifications."@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_639b844a_e801_436b_985d_28926129ead6 ;
