@@ -11,4 +11,7 @@ Most electrochemical datasets are collections of variables or properties, along 
    :maxdepth: 2
    :caption: Understanding data: Contents
 
+   data_encoding_observations
    data_arranging_observations
+   data_metadata
+   
