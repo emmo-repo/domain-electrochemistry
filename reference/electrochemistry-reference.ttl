@@ -71,7 +71,8 @@ schema:name rdf:type owl:AnnotationProperty .
 #################################################################
 
 ###  https://w3id.org/emmo#EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77
-emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 rdf:type owl:InverseFunctionalProperty .
+emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 rdf:type owl:ObjectProperty ,
+                                                        owl:InverseFunctionalProperty .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_056a5fab_3d99_46bd_8eb1_6e89a368e1a7
@@ -230,17 +231,12 @@ emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 rdf:type owl:InverseFunctionalPro
 #    Classes
 #################################################################
 
-###  https://w3id.org/emmo#EMMO_314d0bd5_67ed_437e_a609_36d46147cea7
-emmo:EMMO_314d0bd5_67ed_437e_a609_36d46147cea7 rdf:type owl:Class .
-
-
 ###  https://w3id.org/emmo#EMMO_57d977ab_0036_4779_b59a_e47620afdb9c
 emmo:EMMO_57d977ab_0036_4779_b59a_e47620afdb9c rdfs:subClassOf emmo:EMMO_38b579de_4331_40e0_803d_09efa298e726 .
 
 
 ###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical
 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> rdf:type owl:Class ;
-                                                                                   owl:equivalentClass :electrochemistry_830d02dd_f897_4c3c_95a7_c5e5eafa346a ;
                                                                                    rdfs:subClassOf [ rdf:type owl:Restriction ;
                                                                                                      owl:onProperty emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 ;
                                                                                                      owl:someValuesFrom :electrochemistry_0acd0fc2_1048_4604_8e90_bf4e84bd87df
@@ -318,7 +314,7 @@ emmo:EMMO_57d977ab_0036_4779_b59a_e47620afdb9c rdfs:subClassOf emmo:EMMO_38b579d
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0471ec77_91bc_4a78_be31_b6af613e5966
 :electrochemistry_0471ec77_91bc_4a78_be31_b6af613e5966 rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_314d0bd5_67ed_437e_a609_36d46147cea7 ;
+                                                       rdfs:subClassOf emmo:EMMO_135ab8ea_e028_439e_be64_3e0f9734ea2b ;
                                                        skos:altLabel "Neutralization"@en ;
                                                        skos:prefLabel "Neutralisation"@en ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-01-11" ;
@@ -785,21 +781,6 @@ emmo:EMMO_57d977ab_0036_4779_b59a_e47620afdb9c rdfs:subClassOf emmo:EMMO_38b579d
  ] .
 
 
-###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_137dc19f_a3af_49af_971f_743d27e09f43
-:electrochemistry_137dc19f_a3af_49af_971f_743d27e09f43 rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ,
-                                                                       [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
-                                                                         owl:someValuesFrom :electrochemistry_53fe3f58_0802_41cf_af69_4784fc42cc30
-                                                                       ] ,
-                                                                       [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
-                                                                         owl:someValuesFrom :electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26
-                                                                       ] ;
-                                                       skos:prefLabel "CapacityTest"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a process that measures the total amount of charge an electrochemical device can store and deliver under specified conditions"@en .
-
-
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_14377ecb_5ead_431e_831e_159d622bd0ea
 :electrochemistry_14377ecb_5ead_431e_831e_159d622bd0ea rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627 ;
@@ -904,7 +885,7 @@ emmo:EMMO_57d977ab_0036_4779_b59a_e47620afdb9c rdfs:subClassOf emmo:EMMO_38b579d
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_19abaccd_43be_4048_965c_e4fb63c5951b
 :electrochemistry_19abaccd_43be_4048_965c_e4fb63c5951b rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_314d0bd5_67ed_437e_a609_36d46147cea7 ;
+                                                       rdfs:subClassOf emmo:EMMO_135ab8ea_e028_439e_be64_3e0f9734ea2b ;
                                                        skos:prefLabel "ElectrochemicalPhenomenon"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a chemical phenomenon that is accompanied by the flow of electric current"@en .
 
@@ -1084,7 +1065,20 @@ Aluminum foil"""@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_22725105_c941_4b14_a4a2_fcb627958607
-:electrochemistry_22725105_c941_4b14_a4a2_fcb627958607 rdf:type owl:Class .
+:electrochemistry_22725105_c941_4b14_a4a2_fcb627958607 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 ;
+                                                       skos:altLabel "Amperostat"@en ;
+                                                       skos:prefLabel "Galvanostat"@en ;
+                                                       emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q5519411" ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "instrument which controls the electric current between the working electrode and the auxiliary electrode"@en ;
+                                                       emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Galvanostat"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_22725105_c941_4b14_a4a2_fcb627958607 ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "instrument which controls the electric current between the working electrode and the auxiliary electrode"@en ;
+   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+ ] .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_23b30468_be7b_45a9_bc11_a8219bc3ab8b
@@ -1893,17 +1887,6 @@ Aluminum foil"""@en .
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Gas_evolution_reaction"@en .
 
 
-###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_435b22d4_c441_45ea_8c79_0cbec11fd287
-:electrochemistry_435b22d4_c441_45ea_8c79_0cbec11fd287 rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ,
-                                                                       [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
-                                                                         owl:someValuesFrom :electrochemistry_d3e2d213_d078_4b9a_8beb_62f063e57d69
-                                                                       ] ;
-                                                       skos:prefLabel "CyclingTest"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a process that determines the number of complete charge-discharge cycles an electrochemical device can undergo before its capacity falls below a predefined threshold"@en .
-
-
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_43cd6e14_dd43_41b5_b5b4_344d53841603
 :electrochemistry_43cd6e14_dd43_41b5_b5b4_344d53841603 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_1aec4cc0_82d5_4042_a657_ed7fe291c3d8 ,
@@ -1979,7 +1962,7 @@ Aluminum foil"""@en .
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_46957d35_0f8b_4d92_acb3_aded6ce774a1
 :electrochemistry_46957d35_0f8b_4d92_acb3_aded6ce774a1 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_f4ce4df2_d7e6_470f_8eab_3a911adaaf0f ;
+                                                       rdfs:subClassOf emmo:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce ;
                                                        skos:prefLabel "VoltageControlledProcess"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a process in which the voltage is controlled"@en .
 
@@ -2352,7 +2335,7 @@ Aluminum foil"""@en .
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5548f188_df00_4c05_ae98_7846e92efe36
 :electrochemistry_5548f188_df00_4c05_ae98_7846e92efe36 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_f4ce4df2_d7e6_470f_8eab_3a911adaaf0f ;
+                                                       rdfs:subClassOf emmo:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce ;
                                                        skos:prefLabel "CurrentControlledProcess"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a process in which the electric current is controlled"@en .
 
@@ -3366,14 +3349,6 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                                        emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "carbon black"@en .
 
 
-###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_830d02dd_f897_4c3c_95a7_c5e5eafa346a
-:electrochemistry_830d02dd_f897_4c3c_95a7_c5e5eafa346a rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_472a0ca2_58bf_4618_b561_6fe68bd9fd49 ;
-                                                       owl:deprecated "true"^^xsd:boolean ;
-                                                       skos:prefLabel "ElectrochemicalTestingProcedure"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of evaluating the performance and operational capabilities of an electrochemical device under specific conditions to determine its practical suitability for intended applications"@en .
-
-
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8372fdaa_dc01_4abf_9b75_442d0b28f263
 :electrochemistry_8372fdaa_dc01_4abf_9b75_442d0b28f263 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_83f2b1e9_cb67_4dbf_977f_ba54bbae374f ,
@@ -3601,7 +3576,7 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8a1c9a7b_978c_4421_a9c1_d0b07b42aab9
 :electrochemistry_8a1c9a7b_978c_4421_a9c1_d0b07b42aab9 rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_314d0bd5_67ed_437e_a609_36d46147cea7 ;
+                                                       rdfs:subClassOf emmo:EMMO_135ab8ea_e028_439e_be64_3e0f9734ea2b ;
                                                        skos:prefLabel "ChemicalReaction"@en ;
                                                        emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q36534" ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a process that results in the interconversion of chemical species"@en ;
@@ -3897,17 +3872,6 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                                        rdfs:subClassOf :electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37 ;
                                                        skos:prefLabel "R3032" ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a coin case with a nominal diameter of 30.0 mm and a height of 3.2 mm"@en .
-
-
-###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_99b2b3ad_8efc_48ee_a630_6d805a47efdc
-:electrochemistry_99b2b3ad_8efc_48ee_a630_6d805a47efdc rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ,
-                                                                       [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
-                                                                         owl:someValuesFrom :electrochemistry_53fe3f58_0802_41cf_af69_4784fc42cc30
-                                                                       ] ;
-                                                       skos:prefLabel "CRateTest"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a process that assesses the performance of an electrochemical device at different charge and discharge rates to understand its behavior under various current loads"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9a23f61b_fef0_40f8_84f9_2057f90f6a95
@@ -4465,7 +4429,18 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a9fc3f77_e48e_4bce_b118_044d608722f6
-:electrochemistry_a9fc3f77_e48e_4bce_b118_044d608722f6 rdf:type owl:Class .
+:electrochemistry_a9fc3f77_e48e_4bce_b118_044d608722f6 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 ;
+                                                       skos:prefLabel "Potentiostat"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "measuring instrument for electric current that controls the potential difference between a working electrode and a reference electrode and measures the electric current between a working electrode and an auxiliary electrode."@en ;
+                                                       emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Potentiostat"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_a9fc3f77_e48e_4bce_b118_044d608722f6 ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "measuring instrument for electric current that controls the potential difference between a working electrode and a reference electrode and measures the electric current between a working electrode and an auxiliary electrode."@en ;
+   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+ ] .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_aa5ed981_c11b_4c4f_b1fd_8c432e009484
@@ -5878,7 +5853,7 @@ of other configurations are used."""@en .
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dc1af38d_438e_40c2_8a68_0d631a8f46f2
 :electrochemistry_dc1af38d_438e_40c2_8a68_0d631a8f46f2 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_f4ce4df2_d7e6_470f_8eab_3a911adaaf0f ;
+                                                       rdfs:subClassOf emmo:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce ;
                                                        skos:prefLabel "PowerControlledProcess"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a process in which the electric power is controlled"@en .
 
@@ -6474,10 +6449,6 @@ of other configurations are used."""@en .
                                                        skos:altLabel "P27/148/91" ;
                                                        skos:prefLabel "P2714891" ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a prismatic case with a nominal length of 27 mm, width of 148 mm, and height of 91 mm"@en .
-
-
-###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f4ce4df2_d7e6_470f_8eab_3a911adaaf0f
-:electrochemistry_f4ce4df2_d7e6_470f_8eab_3a911adaaf0f rdf:type owl:Class .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f54474fc_5d07_474b_97ae_f5d0349363b4
