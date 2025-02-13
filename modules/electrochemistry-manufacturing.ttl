@@ -30,7 +30,8 @@
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_062c3df9_1b59_4178_8ba6_55aaaf4e8982
 <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_062c3df9_1b59_4178_8ba6_55aaaf4e8982> rdf:type owl:Class ;
                                                                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3ba4f311_65b2_4e60_a806_5470aa134707> ;
-                                                                                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "ConvectiveDryer"@en .
+                                                                                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "ConvectiveDryer"@en ;
+                                                                                                      emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a dryer that uses convection"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0e5ef5a7_53c6_4d94_bffd_d0318ea0de6b
@@ -168,7 +169,8 @@
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6a351d63_5695_451f_a6b2_13ea1caeff5b
 <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6a351d63_5695_451f_a6b2_13ea1caeff5b> rdf:type owl:Class ;
                                                                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3ba4f311_65b2_4e60_a806_5470aa134707> ;
-                                                                                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "InfraredDryer"@en .
+                                                                                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "InfraredDryer"@en ;
+                                                                                                      emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a dryer that uses infrared"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_707f001f_d2b9_46c2_ac1b_9cd039bcf00f
@@ -311,13 +313,15 @@
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b85ca559_eeef_4763_ac2e_7e658bf64b45
 <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b85ca559_eeef_4763_ac2e_7e658bf64b45> rdf:type owl:Class ;
                                                                                                       rdfs:subClassOf emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
-                                                                                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "ElectrolyteManufacturing"@en .
+                                                                                                      <http://www.w3.org/2004/02/skos/core#prefLabel> "ElectrolyteManufacturing"@en ;
+                                                                                                      emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of manufacturing electrolyte"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ba548845_70e4_4ff9_a8cb_8285b535ff58
 <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ba548845_70e4_4ff9_a8cb_8285b535ff58> rdf:type owl:Class ;
                                                                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4dfccd8e_1a73_41a0_aaa6_daf19efc8174> ;
                                                                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "PlanetaryBallMill"@en ;
+                                                                                                      emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A planetary ball mill"@en ;
                                                                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "consider promoting to domain-manufacturing"@en .
 
 
@@ -361,6 +365,7 @@
 <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d9aba90b_2b90_49c0_aff5_e75a3ae2b424> rdf:type owl:Class ;
                                                                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9e51796f_a99e_4b61_a14d_d5a38cb8219a> ;
                                                                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Kneading"@en ;
+                                                                                                      emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of kneading"@en ;
                                                                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "consider promoting to domain-manufacturing"@en .
 
 
@@ -392,6 +397,7 @@
 <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ead48db0_50de_4e65_99ed_f01736863f41> rdf:type owl:Class ;
                                                                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9e51796f_a99e_4b61_a14d_d5a38cb8219a> ;
                                                                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "DryMixing"@en ;
+                                                                                                      emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of mixing dry components"@en ;
                                                                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "consider promoting to domain-manufacturing"@en .
 
 
