@@ -15,7 +15,9 @@ Most electrochemical datasets are collections of variables or properties, along 
    data_arranging_observations
    data_metadata
    data_metadata_common
-   data_key_values
-   data_tabular
+   data_csv
+   data_parquet
+   data_hdf5
+   data_other_files
    
    

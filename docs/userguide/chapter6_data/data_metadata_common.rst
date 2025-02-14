@@ -124,3 +124,5 @@ Describe the context about the scientific domain of the data, with attributes re
         "@type": "CyclicVoltammetry"
         }
     }
+
+[MISSING MORE DOMAIN SPECIFIC FIELDS?]
