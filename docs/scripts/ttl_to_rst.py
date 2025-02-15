@@ -1,23 +1,20 @@
-from rdflib import Graph
 import os
-
+from rdflib import Graph
 
 
 ########## LOAD TTL ################
 
-
-def load_ttl_from_url(url:str)->Graph:
+def load_ttl_from_file(filepath: str) -> Graph:
+    """Loads a TTL file into an RDFLib Graph."""
     g = Graph()
-    g.parse(url, format="turtle")
+    g.parse(filepath, format="turtle")
     return g
 
 
+########## QUERY TTL ################
 
-
-########## QUERY TLL ################
-
-def extract_terms_info_sparql(g: Graph)-> list:
-
+def extract_terms_info_sparql(g: Graph) -> list:
+    """Extracts terms from the TTL graph using SPARQL."""
     text_entities = []
 
     # SPARQL QUERY #
@@ -68,7 +65,7 @@ def extract_terms_info_sparql(g: Graph)-> list:
     qres = g.query(query)
 
     for hit in qres:    
-        hit_dict = {entity_type:str(entity) for entity_type, entity in zip(list_entity_types, hit)}
+        hit_dict = {entity_type: str(entity) for entity_type, entity in zip(list_entity_types, hit)}
         text_entities.append(hit_dict)
 
     text_entities.sort(key=lambda e: e["prefLabel"])
@@ -76,42 +73,34 @@ def extract_terms_info_sparql(g: Graph)-> list:
     return text_entities
 
 
-########## RENDER HTML TOP ################
+########## RENDER RST HEADER ################
 
 def render_rst_top() -> str:
+    return """
+===================
+Electrochemistry Terms
+===================
 
-    top_rst = """
-===========
-Class Index
-===========
-
+This page lists all terms extracted from the electrochemistry-related ontologies.
 """
 
-    return top_rst
 
-
-
-
-########## RENDER ENTITIES ################
+########## RENDER RST CONTENT ################
 
 def entities_to_rst(entities: list[dict]) -> str:
+    """Converts extracted ontology terms into an RST format."""
     rst = ""
 
     for item in entities:
         if '#' not in item['IRI']:
-            print(f"Skipping IRI without '#': {item['IRI']}")
             continue
 
         iri_prefix, iri_suffix = item['IRI'].split("#")
-
-        rst += ".. raw:: html\n\n"
-        rst += f"   <div id=\"{iri_suffix}\"></div>\n\n"
 
         rst += f"{item['prefLabel']}\n"
         rst += "-" * len(item['prefLabel']) + "\n\n"
         rst += f"* {item['IRI']}\n\n"
 
-        # Map callout annotations to Sphinx admonitions
         callout_mapping = {
             "Tip": "tip",
             "Caution": "caution",
@@ -123,83 +112,58 @@ def entities_to_rst(entities: list[dict]) -> str:
             "Admonition": "admonition"
         }
 
-        # Iterate through all possible callouts and add to the RST
+        callout_rst = ""
         for callout, admonition in callout_mapping.items():
             callout_value = item.get(callout, "").strip()
             if callout_value and callout_value.lower() != "none":
-                rst += f".. {admonition}::\n\n"
-                rst += f"   {callout_value}\n\n"
+                callout_rst += f".. {admonition}::\n\n   {callout_value}\n\n"
 
-        rst += ".. raw:: html\n\n"
-        indent = "  "
-        rst += indent + "<table class=\"element-table\">\n"
-
-        for key, value in item.items():
-            if key not in ['IRI', 'prefLabel'] + list(callout_mapping.keys()) and value not in ["None", ""]:
-                rst += indent + "<tr>\n"
-                rst += indent + f"<td class=\"element-table-key\"><span class=\"element-table-key\">{key}</span></td>\n"
-                if value.startswith("http"):
-                    value = f"""<a href='{value}'>{value}</a>"""
-                else:
-                    value = value.encode('ascii', 'xmlcharrefreplace').decode('utf-8')
-                    value = value.replace('\n', '\n' + indent)
-                rst += indent + f"<td class=\"element-table-value\">{value}</td>\n"
-                rst += indent + "</tr>\n"
-
-        rst += indent + "</table>\n\n"
+        rst += callout_rst
 
     return rst
 
 
-########## RENDER RST BOTTOM ################
-
+########## RENDER RST FOOTER ################
 
 def render_rst_bottom() -> str:
     return """
-    
-        """
+End of Document.
+"""
 
 
 ########### RUN THE RENDERING WORKFLOW ##############
 
 def rendering_workflow():
-    # Adapt based on file structure
-    ttl_modules = []
+    """Compiles all extracted terms into a single RST file."""
+    ttl_files = [
+        {"section title": "Electrochemistry Reference", "path": "./reference/electrochemistry-reference.ttl"},
+        {"section title": "Electrochemistry Quantities", "path": "./reference/electrochemistry-quantities.ttl"},
+        {"section title": "Electrochemistry Manufacturing", "path": "./modules/electrochemistry-manufacturing.ttl"},
+        {"section title": "Electrochemistry Testing", "path": "./modules/electrochemistry-testing.ttl"},
+    ]
 
-    # Check for old structure (root directory)
-    if os.path.isfile("./electrochemicalquantities.ttl"):
-        ttl_modules.append({"section title": "Quantities used in Electrochemistry", "path": "./electrochemicalquantities.ttl"})
-    elif os.path.isfile("./shared/electrochemistry-quantities.ttl"):
-        ttl_modules.append({"section title": "Quantities used in Electrochemistry", "path": "./shared/electrochemistry-quantities.ttl"})
-    else:
-        raise FileNotFoundError("No suitable TTL file found for electrochemical quantities.")
+    rst_filename = "./docs/electrochemistry.rst"
+    rst_content = render_rst_top()
 
-    # Check for the electrochemistry file in the correct directory
-    if os.path.isfile("./electrochemistry.ttl"):
-        ttl_modules.append({"section title": "Electrochemistry Concepts", "path": "./electrochemistry.ttl"})
-    else:
-        raise FileNotFoundError("No suitable TTL file found for electrochemistry concepts.")
+    for module in ttl_files:
+        filepath = module["path"]
+        if os.path.isfile(filepath):
+            g = load_ttl_from_file(filepath)
+            entities_list = extract_terms_info_sparql(g)
 
-    # GENERATE PAGES
-    rst_filename = "electrochemistry.rst"
-    rst = render_rst_top()
+            rst_content += f"\n{module['section title']}\n"
+            rst_content += "=" * len(module['section title']) + "\n\n"
+            rst_content += entities_to_rst(entities_list)
+        else:
+            print(f"Warning: {filepath} not found.")
 
-    for module in ttl_modules:
-        g = load_ttl_from_url(module["path"])
-        entities_list = extract_terms_info_sparql(g)
-        
-        page_title = module["section title"]
-        rst += page_title + "\n"
-        rst += "=" * len(page_title) + "\n\n"
-        rst += entities_to_rst(entities_list)
+    rst_content += render_rst_bottom()
 
-    rst += render_rst_bottom()
+    with open(rst_filename, "w+", encoding="utf-8") as f:
+        f.write(rst_content)
 
-    with open("./docs/" + rst_filename, "w+", encoding="utf-8") as f:
-        f.write(rst)
-
+    print(f"RST file generated: {rst_filename}")
 
 
 if __name__ == "__main__":
-
     rendering_workflow()
