@@ -10,6 +10,9 @@
     <uri name="https://w3id.org/emmo/domain/electrochemistry/0.27.0-beta/modules/electrochemistry-manufacturing" uri="electrochemistry-manufacturing.ttl"/>
     <uri name="https://w3id.org/emmo/domain/electrochemistry/0.27.0-beta/modules/electrochemistry-testing" uri="electrochemistry-testing.ttl"/>
 
+    <uri name="https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/modules/manufacturing-equipment" uri="manufacturing-equipment.ttl"/>
+    <uri name="https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/modules/manufacturing-processes" uri="manufacturing-processes.ttl"/>
+
     <uri name="https://w3id.org/emmo/1.0.0"                                 uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0/emmo.ttl"/>
     <uri name="https://w3id.org/emmo/1.0.0/contributors"                    uri="https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.0/contributors.ttl"/>
 
