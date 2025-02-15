@@ -65,6 +65,15 @@ jobs:
         git add context/context.json
         git diff --staged --quiet || git commit -m "Update context.json file"
 
+    - name: Debug before pull
+      run: |
+        echo "Checking Git status before pull..."
+        git status
+        echo "Listing unstaged changes..."
+        git diff --name-only
+        echo "Listing untracked files..."
+        git ls-files --others --exclude-standard
+
     - name: Pull latest changes
       if: github.event_name == 'push'  # Only pull changes during push events
       run: git pull origin master --rebase
