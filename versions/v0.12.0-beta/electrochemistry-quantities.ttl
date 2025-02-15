@@ -804,6 +804,12 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "maximum voltage limit at which an applied excitation is altered or terminated"@en ;
     emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "term used in the context of primary and secondary cells and batteries"@en .
 
+:electrochemistry_7104c722_d5a5_4bff_ba2f_37e229bb6cce a owl:AnnotationProperty ;
+    rdfs:label "includeDocs"@en ;
+    rdfs:range xsd:boolean ;
+    rdfs:subPropertyOf rdfs:comment ;
+    skos:prefLabel "includeDocs"@en .
+
 :electrochemistry_71f10616_15eb_4dc4_bc8d_ffaac3838af2 a owl:Class ;
     rdfs:label "CurrentChangeLimit"@en ;
     rdfs:comment "the limit on the value of the time change of the electric current"@en ;
@@ -1607,7 +1613,7 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
     :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Reaction rate constant activation energy [J.mol-1]']"@en .
 
-<https://w3id.org/emmo/domain/electrochemistry/shared/electrochemistry-quantities> a owl:Ontology ;
+<https://w3id.org/emmo/domain/electrochemistry/reference/electrochemistry-quantities> a owl:Ontology ;
     dcterms:abstract "This electrochemical quantities ontology is a domain of the Elementary Multiperspective Materials Ontology (EMMO). It is a specialized framework designed to represent and organize knowledge about electrochemical quantities. It is designed to integrate with the electrochemistry domain ontology or other ontologies from the EMMO ecosystem. The main focus of this ontology is to provide machine-readable descriptions of common electrochemical quantities, linking both to the larger descriptions of physical quantities in EMMO as well as other sources of information like the IEC, QUDT, Wikidata, etc. It should be used to support linked data generation in the electrochemistry domain."@en ;
     dcterms:contributor <https://orcid.org/0000-0001-8869-3718>,
         <https://orcid.org/0000-0002-1560-809X>,
@@ -1616,8 +1622,8 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
         <https://orcid.org/0000-0003-2954-1233> ;
     dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
     owl:imports <https://w3id.org/emmo/1.0.0/disciplines/isq> ;
-    owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.26.0-beta/shared/electrochemistry-quantities> ;
-    owl:versionInfo "0.26.0-beta" .
+    owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.27.0-beta/reference/electrochemistry-quantities> ;
+    owl:versionInfo "0.27.0-beta" .
 
 <https://orcid.org/0000-0001-8869-3718> a owl:NamedIndividual,
         foaf:Person ;
@@ -3101,7 +3107,8 @@ skos:note a owl:AnnotationProperty ;
 
 emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845 skos:scopeNote "Electric potential is the amount of electric potential energy per unit charge at a specific point in an electric field. In electrochemistry, it helps describe the energy state of an electrode relative to a reference electrode. It is a fundamental concept in electrode reactions, influencing redox potential and determining the driving force behind electrochemical processes. Electric potential is commonly measured in volts (V) and is essential for understanding electrode kinetics, corrosion processes, and electrochemical equilibrium."@en ;
     emmo:EMMO_5f7abc2a_5b50_41c3_8def_c8ba7c3b083e "Use a well-defined reference electrode (e.g., Standard Hydrogen Electrode, Ag/AgCl) when measuring electric potential to ensure consistency and comparability."@en ;
-    emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "Electric potential differs from voltage; voltage is the difference in electric potential between two points."@en .
+    emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "Electric potential differs from voltage; voltage is the difference in electric potential between two points."@en ;
+    :electrochemistry_7104c722_d5a5_4bff_ba2f_37e229bb6cce true .
 
 :electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634 a owl:Class ;
     rdfs:label "ElectrochemicalPerformanceQuantity"@en ;
