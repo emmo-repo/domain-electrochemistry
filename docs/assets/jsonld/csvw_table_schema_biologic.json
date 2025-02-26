@@ -52,7 +52,7 @@
         "csvw:titles": "Cycle Index",
         "dc:description": "the current cycle number in the test",
         "csvw:propertyUrl": {
-          "@type": "CycleNumber"
+          "@type": "CycleIndex"
         },
         "hasMeasurementUnit": [
           {
@@ -139,7 +139,7 @@
         "csvw:titles": "Discharging Capacity",
         "dc:description": "the capacity that has passed through the cell during discharging",
         "csvw:propertyUrl": {
-          "@type": "DischaringCapacity"
+          "@type": "DischargingCapacity"
         },
         "hasMeasurementUnit": [
           {
@@ -166,7 +166,7 @@
         "csvw:titles": "Charging Capacity",
         "dc:description": "the capacity that has passed through the cell during charging",
         "csvw:propertyUrl": {
-          "@type": "CharingCapacity"
+          "@type": "ChargingCapacity"
         },
         "hasMeasurementUnit": [
           {
@@ -218,7 +218,7 @@
         "csvw:name": "Energy discharge/W.h",
         "csvw:titles": "Disharging Energy",
         "csvw:propertyUrl": {
-          "@type": "DishargingEnergy"
+          "@type": "DischargingEnergy"
         },
         "hasMeasurementUnit": [
           {
@@ -241,4 +241,3 @@
       }
     ]
   }
-  
