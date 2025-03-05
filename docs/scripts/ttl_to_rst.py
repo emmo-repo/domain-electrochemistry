@@ -143,6 +143,8 @@ def entities_to_rst(entities: list[dict]) -> str:
     """Converts extracted ontology terms into an RST format."""
     rst = ""
 
+    callout_keys = {"Tip", "Caution", "Important", "Note", "Danger", "Warning", "Error", "Admonition"}
+
     for item in entities:
         if '#' not in item['IRI']:
             continue
@@ -150,28 +152,32 @@ def entities_to_rst(entities: list[dict]) -> str:
         iri_prefix, iri_suffix = item['IRI'].split("#")
 
         rst += ".. raw:: html\n\n"
-        rst += "   <div id=\"" + iri_suffix + "\"></div>\n\n"
+        rst += f"   <div id=\"{iri_suffix}\"></div>\n\n"
         
-        rst += item['prefLabel'] + "\n"
+        rst += f"{item['prefLabel']}\n"
         rst += "-" * len(item['prefLabel']) + "\n\n"
-        rst += "IRI: " + item['IRI'] + "\n\n"
+        rst += f"IRI: {item['IRI']}\n\n"
 
         rst += ".. raw:: html\n\n"
         indent = "  "
         rst += indent + "<table class=\"element-table\">\n"
-        
-        for key, value in item.items():
-            if key not in ['IRI', 'prefLabel', 'Parent Classes', 'Subclasses', 'Restrictions'] and value not in ["None", ""]:
-                rst += "  <tr>\n"
-                rst += f"    <td class=\"element-table-key\"><span class=\"element-table-key\">{key}</span></td>\n"
 
-                if value.startswith("http"):
-                    value = f"<a href='{value}'>{value}</a>"
-                rst += f"    <td class=\"element-table-value\">{value}</td>\n"
-                rst += "  </tr>\n"
+        # Normal properties (skip callouts and special lists handled later)
+        for key, value in item.items():
+            if key in ['IRI', 'prefLabel', 'Parent Classes', 'Subclasses', 'Restrictions'] or key in callout_keys or value in ["None", ""]:
+                continue
+
+            rst += "  <tr>\n"
+            rst += f"    <td class=\"element-table-key\"><span class=\"element-table-key\">{key}</span></td>\n"
+
+            if value.startswith("http"):
+                value = f"<a href='{value}'>{value}</a>"
+
+            rst += f"    <td class=\"element-table-value\">{value}</td>\n"
+            rst += "  </tr>\n"
 
         # Add parent classes section
-        if item["Parent Classes"]:
+        if item.get("Parent Classes"):
             rst += "  <tr>\n"
             rst += "    <td class=\"element-table-key\"><span class=\"element-table-key\">Parent Classes</span></td>\n"
             rst += "    <td class=\"element-table-value\">"
@@ -181,7 +187,7 @@ def entities_to_rst(entities: list[dict]) -> str:
             rst += "  </tr>\n"
 
         # Add subclasses section
-        if item["Subclasses"]:
+        if item.get("Subclasses"):
             rst += "  <tr>\n"
             rst += "    <td class=\"element-table-key\"><span class=\"element-table-key\">Subclasses</span></td>\n"
             rst += "    <td class=\"element-table-value\">"
@@ -190,6 +196,7 @@ def entities_to_rst(entities: list[dict]) -> str:
             rst += "</td>\n"
             rst += "  </tr>\n"
 
+        # Add restrictions section
         if item.get("Restrictions"):
             for restriction in item["Restrictions"]:
                 rst += "  <tr>\n"
@@ -201,6 +208,7 @@ def entities_to_rst(entities: list[dict]) -> str:
 
         rst += "  </table>\n\n"
 
+        # Add callouts (admonitions) below the table
         callout_mapping = {
             "Tip": "tip",
             "Caution": "caution",
@@ -216,11 +224,15 @@ def entities_to_rst(entities: list[dict]) -> str:
         for callout, admonition in callout_mapping.items():
             callout_value = item.get(callout, "").strip()
             if callout_value and callout_value.lower() != "none":
-                callout_rst += f".. {admonition}::\n\n   {callout_value}\n\n"
+                callout_rst += f".. {admonition}::\n\n"
+                for line in callout_value.splitlines():
+                    callout_rst += f"   {line}\n"
+                callout_rst += "\n"
 
         rst += callout_rst
 
     return rst
+
 
 
 ########## RENDER RST FOOTER ################
