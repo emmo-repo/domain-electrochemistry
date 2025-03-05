@@ -16,7 +16,7 @@ def find_repo_root_with_config():
 
         # Stop if we've reached the filesystem root
         if parent_dir == current_dir:
-            print("❌ ontology_config.yml not found in any parent directory.")
+            print("ontology_config.yml not found in any parent directory.")
             sys.exit(1)
 
         current_dir = parent_dir
@@ -39,10 +39,10 @@ def load_ontology_config():
             emmo_classes = config.get("emmocheck_classes", [])
 
             if not ontology_name or not ttl_files:
-                print("❌ ontology_name or ttl_files missing from ontology_config.yml.")
+                print("ontology_name or ttl_files missing from ontology_config.yml.")
                 sys.exit(1)
 
-            print(f"✅ Loaded ontology_config.yml from: {config_path}")
+            print(f"Loaded ontology_config.yml from: {config_path}")
             return {
                 "ontology_name": ontology_name,
                 "ontology_uri": ontology_uri,
@@ -55,5 +55,5 @@ def load_ontology_config():
             }
 
     except Exception as e:
-        print(f"❌ Failed to load ontology_config.yml: {e}")
+        print(f"Failed to load ontology_config.yml: {e}")
         sys.exit(1)
