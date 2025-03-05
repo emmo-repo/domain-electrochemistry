@@ -196,17 +196,27 @@ def entities_to_rst(entities: list[dict]) -> str:
             rst += "</td>\n"
             rst += "  </tr>\n"
 
-        # Add restrictions section
+        # Add restrictions section - each restriction gets its own row
         if item.get("Restrictions"):
+            # Group restrictions by property_label for cleaner table (optional, but nice)
+            grouped_restrictions = {}
             for restriction in item["Restrictions"]:
+                prop_label = restriction['property_label']
+                target_link = f"<a href='#{restriction['target_iri'].split('#')[-1]}'>{restriction['target_label']}</a>"
+                if prop_label not in grouped_restrictions:
+                    grouped_restrictions[prop_label] = []
+                grouped_restrictions[prop_label].append(target_link)
+
+            for prop_label, target_links in grouped_restrictions.items():
                 rst += "  <tr>\n"
-                rst += f"    <td class=\"element-table-key\"><span class=\"element-table-key\">{restriction['property_label']}</span></td>\n"
-                rst += f"    <td class=\"element-table-value\">"
-                rst += f"<a href='#{restriction['target_iri'].split('#')[-1]}'>{restriction['target_label']}</a>"
+                rst += f"    <td class=\"element-table-key\"><span class=\"element-table-key\">{prop_label}</span></td>\n"
+                rst += "    <td class=\"element-table-value\">"
+                rst += ", ".join(target_links)
                 rst += "</td>\n"
                 rst += "  </tr>\n"
 
         rst += "  </table>\n\n"
+
 
         # Add callouts (admonitions) below the table
         callout_mapping = {
