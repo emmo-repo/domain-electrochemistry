@@ -161,7 +161,7 @@ def entities_to_rst(entities: list[dict]) -> str:
         rst += indent + "<table class=\"element-table\">\n"
         
         for key, value in item.items():
-            if key not in ['IRI', 'prefLabel', 'Parent Classes', 'Subclasses'] and value not in ["None", ""]:
+            if key not in ['IRI', 'prefLabel', 'Parent Classes', 'Subclasses', 'Restrictions'] and value not in ["None", ""]:
                 rst += "  <tr>\n"
                 rst += f"    <td class=\"element-table-key\"><span class=\"element-table-key\">{key}</span></td>\n"
 
