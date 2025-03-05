@@ -81,7 +81,7 @@ def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.or
 config = load_ontology_config()
 
 # Get the inferred_ttl_filename from config
-inferred_ttl_filename = config["output"]["inferred_ttl"]
+inferred_ttl_filename = config["inferred_ttl_filename"]
 
 # Use inferred_ttl_filename from config
 filename = inferred_ttl_filename

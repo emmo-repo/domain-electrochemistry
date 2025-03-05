@@ -5,9 +5,11 @@ def main():
     # Load configuration from ontology_config.yml
     config = load_ontology_config()
 
+    print(config)
+
     ttl_files = config["ttl_files"]
     ontology_name = config["ontology_name"]
-    rst_output_filename = config["output"]["rst_file"]
+    rst_output_filename = config["rst_output_filename"]
 
     # Print environment variables for GitHub Actions
     print(f"ONTOLOGY_NAME={ontology_name}")
