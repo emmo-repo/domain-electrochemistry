@@ -1,32 +1,7 @@
 import requests
 import json
 import sys
-import os
-import yaml
-
-def load_ontology_metadata():
-    """Load ontology metadata (name, uri) from ontology_config.yml."""
-    config_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "ontology_config.yml")
-
-    if not os.path.isfile(config_path):
-        print(f"❌ ontology_config.yml not found at: {config_path}")
-        sys.exit(1)
-
-    try:
-        with open(config_path, 'r', encoding='utf-8') as file:
-            config = yaml.safe_load(file)
-            ontology = config.get("ontology", {})
-            ontology_uri = ontology.get("uri")
-            ontology_name = ontology.get("name")
-
-            if not ontology_uri or not ontology_name:
-                print("❌ ontology_name or ontology_uri missing from ontology_config.yml.")
-                sys.exit(1)
-
-            return ontology_uri, ontology_name
-    except Exception as e:
-        print(f"❌ Failed to load ontology_config.yml: {e}")
-        sys.exit(1)
+from config_loader import load_ontology_config
 
 def fetch_foops_score(ontology_uri):
     url = "https://foops.linkeddata.es/assessOntology"
@@ -46,10 +21,14 @@ def fetch_foops_score(ontology_uri):
         raise Exception(f"Failed to fetch FOOPS score: {response.status_code}")
 
 if __name__ == "__main__":
-    # Load ontology metadata at the top of the script
-    ontology_uri, ontology_name = load_ontology_metadata()
-    if not ontology_uri:
-        print("Error: ontology_uri is not defined in ontology_config.py")
+    # Load ontology configuration
+    config = load_ontology_config()
+
+    ontology_name = config.get("ontology", {}).get("name")
+    ontology_uri = config.get("ontology", {}).get("uri")
+
+    if not ontology_uri or not ontology_name:
+        print("❌ ontology_name or ontology_uri missing from ontology_config.yml.")
         sys.exit(1)
 
     try:

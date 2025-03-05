@@ -1,21 +1,7 @@
 import os
 from rdflib import Graph, URIRef, Literal
 import os
-import yaml
-
-def load_ontology_config():
-    """Loads ontology configuration from ontology_config.yml into variables."""
-    config_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "ontology_config.yml")
-    
-    with open(config_path, "r", encoding="utf-8") as f:
-        config = yaml.safe_load(f)
-
-    ontology_name = config['ontology']['name']
-    ontology_description = config['ontology']['description']
-    ttl_files = config['ttl_files']
-    rst_output_filename = config['output']['rst_file']
-
-    return ontology_name, ontology_description, ttl_files, rst_output_filename
+from config_loader import load_ontology_config
 
 
 ########## LOAD TTL ################
@@ -280,8 +266,13 @@ def rendering_workflow():
     """Compiles all extracted terms into a single RST file."""
 
     
-    ontology_name, ontology_description, ttl_files, rst_output_filename = load_ontology_config()
-    
+    config = load_ontology_config()
+
+    ontology_name = config["ontology_name"]
+    ontology_description = config["ontology_description"]
+    ttl_files = config["ttl_files"]
+    rst_output_filename = config["rst_output_filename"]
+
     rst_filename = rst_output_filename
     rst_content = render_rst_top()
 

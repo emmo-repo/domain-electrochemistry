@@ -3,14 +3,15 @@ from owlrl import DeductiveClosure, OWLRL_Semantics
 import logging
 import sys
 import os
-
-import os
-import sys
 import yaml
 
 def load_ontology_config():
-    """Load ontology_name and ttl_files from ontology_config.yml."""
-    config_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "ontology_config.yml")
+    """Load ontology_name and ttl_files from ontology_config.yml in the repository root."""
+
+    # Locate the repository root by walking up the directory tree.
+    # This works even if the script is inside .github/scripts/
+    repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
+    config_path = os.path.join(repo_root, "ontology_config.yml")
 
     if not os.path.isfile(config_path):
         print(f"❌ ontology_config.yml not found at: {config_path}")

@@ -2,19 +2,9 @@ import rdflib
 from rdflib.namespace import RDF, OWL, SKOS
 import json
 import os
-import yaml
 from urllib.parse import urljoin
 from urllib.request import pathname2url
-
-# Load ontology configuration from YAML
-def load_ontology_config():
-    config_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "ontology_config.yml")
-    with open(config_path, "r", encoding="utf-8") as f:
-        return yaml.safe_load(f)
-
-# Load configuration
-config = load_ontology_config()
-inferred_ttl_filename = config['output']['inferred_ttl']
+from config_loader import load_ontology_config
 
 
 def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.org/2000/01/rdf-schema#label'):
@@ -86,6 +76,12 @@ def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.or
 
     return context
 
+
+# Load configuration once
+ontology_config = load_ontology_config()
+
+# Get the inferred_ttl_filename from config
+inferred_ttl_filename = ontology_config.get("inferred_ttl_filename")
 
 # Use inferred_ttl_filename from config
 filename = inferred_ttl_filename
