@@ -2,12 +2,12 @@ import json
 from config_loader import load_ontology_config
 
 def main():
-    # Load full ontology config
+    # Load configuration from ontology_config.yml
     config = load_ontology_config()
 
-    ontology_name = config['ontology']['name']
-    rst_output_filename = config['output']['rst_file']
-    ttl_files = config['ttl_files']
+    ttl_files = config["ttl_files"]
+    ontology_name = config["ontology_name"]
+    rst_output_filename = config["output"]["rst_file"]
 
     # Print environment variables for GitHub Actions
     print(f"ONTOLOGY_NAME={ontology_name}")

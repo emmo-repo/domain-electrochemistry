@@ -29,13 +29,14 @@ def load_ontology_config():
         with open(config_path, 'r', encoding='utf-8') as file:
             config = yaml.safe_load(file)
 
-            ontology_name = config.get("ontology", {}).get("name")
-            ontology_uri = config.get("ontology", {}).get("uri")
-            ontology_prefix = config.get("ontology", {}).get("prefix")
-            ontology_description = config.get("ontology", {}).get("description")
+            ontology_name = config.get("ontology_name")
+            ontology_uri = config.get("ontology_uri")
+            ontology_prefix = config.get("ontology_prefix")
+            ontology_description = config.get("ontology_description")
             ttl_files = config.get("ttl_files", [])
-            inferred_ttl_filename = config.get("output", {}).get("inferred_ttl_filename")
-            rst_output_filename = config.get("output", {}).get("rst_output_filename")
+            inferred_ttl_filename = config.get("output", {}).get("inferred_ttl")
+            rst_output_filename = config.get("output", {}).get("rst_file")
+            emmo_classes = config.get("emmocheck_classes", [])
 
             if not ontology_name or not ttl_files:
                 print("❌ ontology_name or ttl_files missing from ontology_config.yml.")
@@ -50,7 +51,9 @@ def load_ontology_config():
                 "ttl_files": ttl_files,
                 "inferred_ttl_filename": inferred_ttl_filename,
                 "rst_output_filename": rst_output_filename,
+                "emmocheck_classes": emmo_classes,
             }
+
     except Exception as e:
         print(f"❌ Failed to load ontology_config.yml: {e}")
         sys.exit(1)

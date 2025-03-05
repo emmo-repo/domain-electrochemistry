@@ -3,60 +3,34 @@ from owlrl import DeductiveClosure, OWLRL_Semantics
 import logging
 import sys
 import os
-import yaml
-
-def load_ontology_config():
-    """Load ontology_name and ttl_files from ontology_config.yml in the repository root."""
-
-    # Locate the repository root by walking up the directory tree.
-    # This works even if the script is inside .github/scripts/
-    repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
-    config_path = os.path.join(repo_root, "ontology_config.yml")
-
-    if not os.path.isfile(config_path):
-        print(f"❌ ontology_config.yml not found at: {config_path}")
-        sys.exit(1)
-
-    try:
-        with open(config_path, 'r', encoding='utf-8') as file:
-            config = yaml.safe_load(file)
-
-            ontology_name = config.get("ontology", {}).get("name")
-            ttl_files = config.get("ttl_files", [])
-
-            if not ontology_name or not ttl_files:
-                print("❌ ontology_name or ttl_files missing from ontology_config.yml.")
-                sys.exit(1)
-
-            return ontology_name, ttl_files
-    except Exception as e:
-        print(f"❌ Failed to load ontology_config.yml: {e}")
-        sys.exit(1)
-
-
-ontology_name, ttl_files = load_ontology_config()
+from config_loader import load_ontology_config  # Use config_loader for configuration
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+# Load configuration from ontology_config.yml
+config = load_ontology_config()
+
+ttl_files = config["ttl_files"]
+ontology_name = config["ontology_name"]
+
 # Find the main ontology file - assuming it's the top-level "core" TTL file
-# You can optionally add a "core_file" field to ontology_config.py to be explicit if needed
 main_ontology_file = None
 for ttl_file in ttl_files:
-    if "core" in ttl_file["section title"].lower() or ttl_file["section title"].lower() == "main":
+    if "core" in ttl_file["section_title"].lower() or ttl_file["section_title"].lower() == "main ontology":
         main_ontology_file = ttl_file["path"]
         break
 
-# Fallback - if no "core" or "main" file found, just use the first TTL file
+# Fallback - if no "core" or "main ontology" file found, just use the first TTL file
 if not main_ontology_file and ttl_files:
     main_ontology_file = ttl_files[0]["path"]
 
 if not main_ontology_file:
-    logger.error("No ontology file found in ontology_config.py")
+    logger.error("No ontology file found in ontology_config.yml")
     sys.exit(1)
 
-# Resolve full path to the ontology file
+# Resolve full path to the ontology file (repo root is two levels up from this script)
 repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
 ontology_path = os.path.join(repo_root, main_ontology_file)
 
