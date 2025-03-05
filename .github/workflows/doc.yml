@@ -22,8 +22,11 @@ jobs:
       contents: write
       
     steps:
-    - name: Checkout repository
+    - name: Checkout repository (force clean)
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        clean: true
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -58,16 +61,28 @@ jobs:
         sudo cp -r docs/assets/* docs/_build/html/assets/
         sudo cp context/context.json docs/_build/html/context/
 
-    - name: Commit context.json changes
+    - name: Commit generated changes (context.json & rst files)
       run: |
         git config --local user.email "${{ env.GIT_USER_EMAIL }}"
         git config --local user.name "${{ env.GIT_USER_NAME }}"
-        git add context/context.json
-        git diff --staged --quiet || git commit -m "Update context.json file"
+        git add context/context.json docs/electrochemistry.rst
+        git diff --staged --quiet || git commit -m "Update generated docs files"
 
-    - name: Pull latest changes
-      if: github.event_name == 'push'  # Only pull changes during push events
-      run: git pull origin master --rebase
+    - name: Debug before pull
+      run: |
+        echo "Checking Git status before pull..."
+        git status
+        echo "Listing unstaged changes..."
+        git diff --name-only
+        echo "Listing untracked files..."
+        git ls-files --others --exclude-standard
+
+    - name: Stash changes before pull
+      if: github.event_name == 'push'
+      run: |
+        git stash --include-untracked
+        git pull origin master --rebase
+        git stash pop || echo "No stash to apply"
 
     - name: Push changes
       if: github.event_name == 'push' && github.ref == 'refs/heads/master'  # Only push during push events on master
