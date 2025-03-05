@@ -8,12 +8,14 @@ This page lists all terms extracted from the electrochemistry-related ontologies
 Electrochemistry Reference
 ==========================
 
-.. _electrochemistry_58a20764_c339_4856_983a_05092b5282e8:
+.. raw:: html
+
+   <div id="electrochemistry_58a20764_c339_4856_983a_05092b5282e8"></div>
 
 ACVoltammetrySignal
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_58a20764_c339_4856_983a_05092b5282e8
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_58a20764_c339_4856_983a_05092b5282e8
 
 .. raw:: html
 
@@ -28,12 +30,14 @@ ACVoltammetrySignal
   </tr>
   </table>
 
-.. _electrochemistry_6592d8cc_4ce4_42ca_b010_6bfc4a8444d2:
+.. raw:: html
+
+   <div id="electrochemistry_6592d8cc_4ce4_42ca_b010_6bfc4a8444d2"></div>
 
 AcidicElectrolyte
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6592d8cc_4ce4_42ca_b010_6bfc4a8444d2
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6592d8cc_4ce4_42ca_b010_6bfc4a8444d2
 
 .. raw:: html
 
@@ -56,12 +60,14 @@ AcidicElectrolyte
   </tr>
   </table>
 
-.. _electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc:
+.. raw:: html
+
+   <div id="electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc"></div>
 
 ActiveElectrode
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc
 
 .. raw:: html
 
@@ -84,12 +90,14 @@ ActiveElectrode
   </tr>
   </table>
 
-.. _electrochemistry_79d1b273_58cd_4be6_a250_434817f7c261:
+.. raw:: html
+
+   <div id="electrochemistry_79d1b273_58cd_4be6_a250_434817f7c261"></div>
 
 ActiveMaterial
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79d1b273_58cd_4be6_a250_434817f7c261
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79d1b273_58cd_4be6_a250_434817f7c261
 
 .. raw:: html
 
@@ -116,12 +124,14 @@ ActiveMaterial
   </tr>
   </table>
 
-.. _electrochemistry_81833d8a_b03d_4250_be84_6385415beb01:
+.. raw:: html
+
+   <div id="electrochemistry_81833d8a_b03d_4250_be84_6385415beb01"></div>
 
 ActiveMaterialMix
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_81833d8a_b03d_4250_be84_6385415beb01
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_81833d8a_b03d_4250_be84_6385415beb01
 
 .. raw:: html
 
@@ -140,12 +150,14 @@ ActiveMaterialMix
   </tr>
   </table>
 
-.. _electrochemistry_f6341d7d_7620_48f5_97b2_99b55c349169:
+.. raw:: html
+
+   <div id="electrochemistry_f6341d7d_7620_48f5_97b2_99b55c349169"></div>
 
 ActiveMaterialParticleCracking
 ------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f6341d7d_7620_48f5_97b2_99b55c349169
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f6341d7d_7620_48f5_97b2_99b55c349169
 
 .. raw:: html
 
@@ -160,12 +172,14 @@ ActiveMaterialParticleCracking
   </tr>
   </table>
 
-.. _electrochemistry_0a399f3f_b873_41f5_be1f_9b6df75cc30a:
+.. raw:: html
+
+   <div id="electrochemistry_0a399f3f_b873_41f5_be1f_9b6df75cc30a"></div>
 
 Additive
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0a399f3f_b873_41f5_be1f_9b6df75cc30a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0a399f3f_b873_41f5_be1f_9b6df75cc30a
 
 .. raw:: html
 
@@ -188,12 +202,14 @@ Additive
   </tr>
   </table>
 
-.. _electrochemistry_8b40856f_1ca2_4137_9616_7fb624671909:
+.. raw:: html
+
+   <div id="electrochemistry_8b40856f_1ca2_4137_9616_7fb624671909"></div>
 
 AirElectrode
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8b40856f_1ca2_4137_9616_7fb624671909
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8b40856f_1ca2_4137_9616_7fb624671909
 
 .. raw:: html
 
@@ -208,12 +224,14 @@ AirElectrode
   </tr>
   </table>
 
-.. _electrochemistry_615cff2a_be95_4e65_9471_98db23f4c878:
+.. raw:: html
+
+   <div id="electrochemistry_615cff2a_be95_4e65_9471_98db23f4c878"></div>
 
 AlkalineElectrolyte
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_615cff2a_be95_4e65_9471_98db23f4c878
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_615cff2a_be95_4e65_9471_98db23f4c878
 
 .. raw:: html
 
@@ -236,12 +254,14 @@ AlkalineElectrolyte
   </tr>
   </table>
 
-.. _electrochemistry_a53d6dee_1547_4854_a311_805b4d557298:
+.. raw:: html
+
+   <div id="electrochemistry_a53d6dee_1547_4854_a311_805b4d557298"></div>
 
 AlternatingCurrent
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a53d6dee_1547_4854_a311_805b4d557298
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a53d6dee_1547_4854_a311_805b4d557298
 
 .. raw:: html
 
@@ -276,12 +296,14 @@ AlternatingCurrent
   </tr>
   </table>
 
-.. _electrochemistry_952c8c3a_df21_4dd1_8d8c_380e43dc8c78:
+.. raw:: html
+
+   <div id="electrochemistry_952c8c3a_df21_4dd1_8d8c_380e43dc8c78"></div>
 
 AluminiumBasedElectrode
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_952c8c3a_df21_4dd1_8d8c_380e43dc8c78
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_952c8c3a_df21_4dd1_8d8c_380e43dc8c78
 
 .. raw:: html
 
@@ -296,12 +318,14 @@ AluminiumBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_1c6cef85_811f_45d0_a0fd_2bc2d9369ea4:
+.. raw:: html
+
+   <div id="electrochemistry_1c6cef85_811f_45d0_a0fd_2bc2d9369ea4"></div>
 
 AluminiumInsertionElectrode
 ---------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1c6cef85_811f_45d0_a0fd_2bc2d9369ea4
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1c6cef85_811f_45d0_a0fd_2bc2d9369ea4
 
 .. raw:: html
 
@@ -316,12 +340,14 @@ AluminiumInsertionElectrode
   </tr>
   </table>
 
-.. _electrochemistry_f9e2e676_5cd1_4e22_a776_af45838d4027:
+.. raw:: html
+
+   <div id="electrochemistry_f9e2e676_5cd1_4e22_a776_af45838d4027"></div>
 
 AmmoniaSolution
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f9e2e676_5cd1_4e22_a776_af45838d4027
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f9e2e676_5cd1_4e22_a776_af45838d4027
 
 .. raw:: html
 
@@ -340,12 +366,14 @@ AmmoniaSolution
   </tr>
   </table>
 
-.. _electrochemistry_3f67016b_32b9_4419_a3f8_a5ffb5e92538:
+.. raw:: html
+
+   <div id="electrochemistry_3f67016b_32b9_4419_a3f8_a5ffb5e92538"></div>
 
 AmmoniumChlorideSolution
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3f67016b_32b9_4419_a3f8_a5ffb5e92538
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3f67016b_32b9_4419_a3f8_a5ffb5e92538
 
 .. raw:: html
 
@@ -364,12 +392,14 @@ AmmoniumChlorideSolution
   </tr>
   </table>
 
-.. _electrochemistry_3a77b5e7_9646_4154_bf8f_5f798989e5f3:
+.. raw:: html
+
+   <div id="electrochemistry_3a77b5e7_9646_4154_bf8f_5f798989e5f3"></div>
 
 AnnularWorkingElectrode
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3a77b5e7_9646_4154_bf8f_5f798989e5f3
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3a77b5e7_9646_4154_bf8f_5f798989e5f3
 
 .. raw:: html
 
@@ -388,12 +418,14 @@ AnnularWorkingElectrode
   </tr>
   </table>
 
-.. _electrochemistry_b6319c74_d2ce_48c0_a75a_63156776b302:
+.. raw:: html
+
+   <div id="electrochemistry_b6319c74_d2ce_48c0_a75a_63156776b302"></div>
 
 Anode
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b6319c74_d2ce_48c0_a75a_63156776b302
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b6319c74_d2ce_48c0_a75a_63156776b302
 
 .. raw:: html
 
@@ -424,12 +456,14 @@ Anode
   </tr>
   </table>
 
-.. _electrochemistry_28213033_4c74_441c_81c4_a0cad05f9eb6:
+.. raw:: html
+
+   <div id="electrochemistry_28213033_4c74_441c_81c4_a0cad05f9eb6"></div>
 
 AnodicPolarisation
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_28213033_4c74_441c_81c4_a0cad05f9eb6
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_28213033_4c74_441c_81c4_a0cad05f9eb6
 
 .. raw:: html
 
@@ -452,12 +486,14 @@ AnodicPolarisation
   </tr>
   </table>
 
-.. _electrochemistry_a0580fa9_5073_44af_b33e_7adbc83892d0:
+.. raw:: html
+
+   <div id="electrochemistry_a0580fa9_5073_44af_b33e_7adbc83892d0"></div>
 
 AnodicReaction
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a0580fa9_5073_44af_b33e_7adbc83892d0
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a0580fa9_5073_44af_b33e_7adbc83892d0
 
 .. raw:: html
 
@@ -480,12 +516,14 @@ AnodicReaction
   </tr>
   </table>
 
-.. _electrochemistry_865a40fc_2187_4549_a7e1_37aa2458448f:
+.. raw:: html
+
+   <div id="electrochemistry_865a40fc_2187_4549_a7e1_37aa2458448f"></div>
 
 Anolyte
 -------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_865a40fc_2187_4549_a7e1_37aa2458448f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_865a40fc_2187_4549_a7e1_37aa2458448f
 
 .. raw:: html
 
@@ -504,12 +542,14 @@ Anolyte
   </tr>
   </table>
 
-.. _electrochemistry_38755e67_9d3b_4a82_bd8d_ef40a70379c1:
+.. raw:: html
+
+   <div id="electrochemistry_38755e67_9d3b_4a82_bd8d_ef40a70379c1"></div>
 
 AnolyteTank
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_38755e67_9d3b_4a82_bd8d_ef40a70379c1
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_38755e67_9d3b_4a82_bd8d_ef40a70379c1
 
 .. raw:: html
 
@@ -520,12 +560,14 @@ AnolyteTank
   </tr>
   </table>
 
-.. _electrochemistry_b812e9d0_7c58_4455_b3e7_6847f10c8e8a:
+.. raw:: html
+
+   <div id="electrochemistry_b812e9d0_7c58_4455_b3e7_6847f10c8e8a"></div>
 
 AqueousElectrolyte
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b812e9d0_7c58_4455_b3e7_6847f10c8e8a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b812e9d0_7c58_4455_b3e7_6847f10c8e8a
 
 .. raw:: html
 
@@ -552,12 +594,14 @@ AqueousElectrolyte
   </tr>
   </table>
 
-.. _electrochemistry_b2d11f0d_c1b0_4476_8d17_03b73d31e01f:
+.. raw:: html
+
+   <div id="electrochemistry_b2d11f0d_c1b0_4476_8d17_03b73d31e01f"></div>
 
 AsymmetricMembrane
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b2d11f0d_c1b0_4476_8d17_03b73d31e01f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b2d11f0d_c1b0_4476_8d17_03b73d31e01f
 
 .. raw:: html
 
@@ -584,12 +628,14 @@ AsymmetricMembrane
   </tr>
   </table>
 
-.. _electrochemistry_98d5101e_cd11_4a0d_b856_6fcd8aad132e:
+.. raw:: html
+
+   <div id="electrochemistry_98d5101e_cd11_4a0d_b856_6fcd8aad132e"></div>
 
 BellevilleWasher
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_98d5101e_cd11_4a0d_b856_6fcd8aad132e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_98d5101e_cd11_4a0d_b856_6fcd8aad132e
 
 .. raw:: html
 
@@ -608,12 +654,14 @@ BellevilleWasher
   </tr>
   </table>
 
-.. _electrochemistry_f1c7eacb_9f21_4100_925c_3974f266e06f:
+.. raw:: html
+
+   <div id="electrochemistry_f1c7eacb_9f21_4100_925c_3974f266e06f"></div>
 
 BilayerMembrane
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f1c7eacb_9f21_4100_925c_3974f266e06f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f1c7eacb_9f21_4100_925c_3974f266e06f
 
 .. raw:: html
 
@@ -628,12 +676,14 @@ BilayerMembrane
   </tr>
   </table>
 
-.. _electrochemistry_86be0987_5e21_43ec_b975_8f679999d328:
+.. raw:: html
+
+   <div id="electrochemistry_86be0987_5e21_43ec_b975_8f679999d328"></div>
 
 BimetallicElectrode
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_86be0987_5e21_43ec_b975_8f679999d328
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_86be0987_5e21_43ec_b975_8f679999d328
 
 .. raw:: html
 
@@ -648,12 +698,14 @@ BimetallicElectrode
   </tr>
   </table>
 
-.. _electrochemistry_4839708a_3864_47eb_b719_373ff8874c61:
+.. raw:: html
+
+   <div id="electrochemistry_4839708a_3864_47eb_b719_373ff8874c61"></div>
 
 BimetallicOxideElectrode
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4839708a_3864_47eb_b719_373ff8874c61
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4839708a_3864_47eb_b719_373ff8874c61
 
 .. raw:: html
 
@@ -672,12 +724,14 @@ BimetallicOxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_4e02d727_07fe_41fd_886c_041317342086:
+.. raw:: html
+
+   <div id="electrochemistry_4e02d727_07fe_41fd_886c_041317342086"></div>
 
 BinaryElectrolyte
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4e02d727_07fe_41fd_886c_041317342086
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4e02d727_07fe_41fd_886c_041317342086
 
 .. raw:: html
 
@@ -692,12 +746,14 @@ BinaryElectrolyte
   </tr>
   </table>
 
-.. _electrochemistry_68eb5e35_5bd8_47b1_9b7f_f67224fa291e:
+.. raw:: html
+
+   <div id="electrochemistry_68eb5e35_5bd8_47b1_9b7f_f67224fa291e"></div>
 
 Binder
 ------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_68eb5e35_5bd8_47b1_9b7f_f67224fa291e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_68eb5e35_5bd8_47b1_9b7f_f67224fa291e
 
 .. raw:: html
 
@@ -724,12 +780,14 @@ Binder
   </tr>
   </table>
 
-.. _electrochemistry_eb09ca25_90c9_4b55_9165_76fbf7fb5a46:
+.. raw:: html
+
+   <div id="electrochemistry_eb09ca25_90c9_4b55_9165_76fbf7fb5a46"></div>
 
 BismuthBasedElectrode
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_eb09ca25_90c9_4b55_9165_76fbf7fb5a46
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_eb09ca25_90c9_4b55_9165_76fbf7fb5a46
 
 .. raw:: html
 
@@ -744,12 +802,14 @@ BismuthBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_5186239a_2af7_4dbf_92ca_22e8e583c528:
+.. raw:: html
+
+   <div id="electrochemistry_5186239a_2af7_4dbf_92ca_22e8e583c528"></div>
 
 BlendedActiveElectrode
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5186239a_2af7_4dbf_92ca_22e8e583c528
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5186239a_2af7_4dbf_92ca_22e8e583c528
 
 .. raw:: html
 
@@ -768,12 +828,14 @@ BlendedActiveElectrode
   </tr>
   </table>
 
-.. _electrochemistry_4bdd6359_1422_4c50_ac0c_5d8042dd65fc:
+.. raw:: html
+
+   <div id="electrochemistry_4bdd6359_1422_4c50_ac0c_5d8042dd65fc"></div>
 
 BockrisDevanathanMuellerModel
 -----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4bdd6359_1422_4c50_ac0c_5d8042dd65fc
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4bdd6359_1422_4c50_ac0c_5d8042dd65fc
 
 .. raw:: html
 
@@ -792,12 +854,14 @@ BockrisDevanathanMuellerModel
   </tr>
   </table>
 
-.. _electrochemistry_e0b57b09_68ee_4687_a901_bfb599421972:
+.. raw:: html
+
+   <div id="electrochemistry_e0b57b09_68ee_4687_a901_bfb599421972"></div>
 
 BodePlot
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e0b57b09_68ee_4687_a901_bfb599421972
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e0b57b09_68ee_4687_a901_bfb599421972
 
 .. raw:: html
 
@@ -824,12 +888,14 @@ BodePlot
   </tr>
   </table>
 
-.. _electrochemistry_02aefb7a_d6ce_4b6e_b854_f7b3d641f670:
+.. raw:: html
+
+   <div id="electrochemistry_02aefb7a_d6ce_4b6e_b854_f7b3d641f670"></div>
 
 BoostCharging
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_02aefb7a_d6ce_4b6e_b854_f7b3d641f670
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_02aefb7a_d6ce_4b6e_b854_f7b3d641f670
 
 .. raw:: html
 
@@ -852,12 +918,14 @@ BoostCharging
   </tr>
   </table>
 
-.. _electrochemistry_d48ea516_5cac_4f86_bc88_21b6276c0938:
+.. raw:: html
+
+   <div id="electrochemistry_d48ea516_5cac_4f86_bc88_21b6276c0938"></div>
 
 ButlerVolmerEquation
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d48ea516_5cac_4f86_bc88_21b6276c0938
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d48ea516_5cac_4f86_bc88_21b6276c0938
 
 .. raw:: html
 
@@ -884,12 +952,14 @@ ButlerVolmerEquation
   </tr>
   </table>
 
-.. _electrochemistry_dd4c5ffa_6228_41d8_8a44_a40a2b22723e:
+.. raw:: html
+
+   <div id="electrochemistry_dd4c5ffa_6228_41d8_8a44_a40a2b22723e"></div>
 
 CadmiumBasedElectrode
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dd4c5ffa_6228_41d8_8a44_a40a2b22723e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dd4c5ffa_6228_41d8_8a44_a40a2b22723e
 
 .. raw:: html
 
@@ -904,12 +974,14 @@ CadmiumBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_7cc8b738_3462_4592_ba83_951a8d50fef7:
+.. raw:: html
+
+   <div id="electrochemistry_7cc8b738_3462_4592_ba83_951a8d50fef7"></div>
 
 CaesiumBasedElectrode
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7cc8b738_3462_4592_ba83_951a8d50fef7
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7cc8b738_3462_4592_ba83_951a8d50fef7
 
 .. raw:: html
 
@@ -924,12 +996,14 @@ CaesiumBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_4f2348dd_d9ea_4448_af8c_a4a38f3d04b4:
+.. raw:: html
+
+   <div id="electrochemistry_4f2348dd_d9ea_4448_af8c_a4a38f3d04b4"></div>
 
 CalciumBasedElectrode
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4f2348dd_d9ea_4448_af8c_a4a38f3d04b4
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4f2348dd_d9ea_4448_af8c_a4a38f3d04b4
 
 .. raw:: html
 
@@ -944,12 +1018,14 @@ CalciumBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_90103be0_9096_4f98_89c7_b5db01197858:
+.. raw:: html
+
+   <div id="electrochemistry_90103be0_9096_4f98_89c7_b5db01197858"></div>
 
 CalciumInsertionElectrode
 -------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_90103be0_9096_4f98_89c7_b5db01197858
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_90103be0_9096_4f98_89c7_b5db01197858
 
 .. raw:: html
 
@@ -964,12 +1040,14 @@ CalciumInsertionElectrode
   </tr>
   </table>
 
-.. _electrochemistry_9d97c7ff_b0c7_4ba2_a3cb_c6509b6798a8:
+.. raw:: html
+
+   <div id="electrochemistry_9d97c7ff_b0c7_4ba2_a3cb_c6509b6798a8"></div>
 
 CapacityCalculation
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9d97c7ff_b0c7_4ba2_a3cb_c6509b6798a8
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9d97c7ff_b0c7_4ba2_a3cb_c6509b6798a8
 
 .. raw:: html
 
@@ -984,12 +1062,14 @@ CapacityCalculation
   </tr>
   </table>
 
-.. _electrochemistry_e3d3d21c_cb9a_498c_bdb0_63c964f0d3c6:
+.. raw:: html
+
+   <div id="electrochemistry_e3d3d21c_cb9a_498c_bdb0_63c964f0d3c6"></div>
 
 CapacityFade
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e3d3d21c_cb9a_498c_bdb0_63c964f0d3c6
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e3d3d21c_cb9a_498c_bdb0_63c964f0d3c6
 
 .. raw:: html
 
@@ -1020,12 +1100,14 @@ CapacityFade
   </tr>
   </table>
 
-.. _electrochemistry_f2c33088_224f_4fdb_857a_7cb62e3dddca:
+.. raw:: html
+
+   <div id="electrochemistry_f2c33088_224f_4fdb_857a_7cb62e3dddca"></div>
 
 CarbonBasedElectrode
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f2c33088_224f_4fdb_857a_7cb62e3dddca
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f2c33088_224f_4fdb_857a_7cb62e3dddca
 
 .. raw:: html
 
@@ -1044,12 +1126,14 @@ CarbonBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_85c4b478_645a_459e_8431_5a9d864ca02e:
+.. raw:: html
+
+   <div id="electrochemistry_85c4b478_645a_459e_8431_5a9d864ca02e"></div>
 
 CarbonCloth
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_85c4b478_645a_459e_8431_5a9d864ca02e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_85c4b478_645a_459e_8431_5a9d864ca02e
 
 .. raw:: html
 
@@ -1060,12 +1144,14 @@ CarbonCloth
   </tr>
   </table>
 
-.. _electrochemistry_1c530688_ee63_4683_b38f_80cce7ca75c1:
+.. raw:: html
+
+   <div id="electrochemistry_1c530688_ee63_4683_b38f_80cce7ca75c1"></div>
 
 CarbonFelt
 ----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1c530688_ee63_4683_b38f_80cce7ca75c1
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1c530688_ee63_4683_b38f_80cce7ca75c1
 
 .. raw:: html
 
@@ -1076,12 +1162,14 @@ CarbonFelt
   </tr>
   </table>
 
-.. _electrochemistry_ec6f3d6f_bdf5_418f_9314_3ef2ff528103:
+.. raw:: html
+
+   <div id="electrochemistry_ec6f3d6f_bdf5_418f_9314_3ef2ff528103"></div>
 
 CarbonInkElectrode
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ec6f3d6f_bdf5_418f_9314_3ef2ff528103
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ec6f3d6f_bdf5_418f_9314_3ef2ff528103
 
 .. raw:: html
 
@@ -1100,12 +1188,14 @@ CarbonInkElectrode
   </tr>
   </table>
 
-.. _electrochemistry_5c0fdc09_166e_40a6_ad74_be66f0db51bc:
+.. raw:: html
+
+   <div id="electrochemistry_5c0fdc09_166e_40a6_ad74_be66f0db51bc"></div>
 
 CarbonMonofluorideElectrode
 ---------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5c0fdc09_166e_40a6_ad74_be66f0db51bc
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5c0fdc09_166e_40a6_ad74_be66f0db51bc
 
 .. raw:: html
 
@@ -1120,12 +1210,14 @@ CarbonMonofluorideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_cd615729_8240_487a_a619_cc94656731f2:
+.. raw:: html
+
+   <div id="electrochemistry_cd615729_8240_487a_a619_cc94656731f2"></div>
 
 CarbonPaper
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cd615729_8240_487a_a619_cc94656731f2
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cd615729_8240_487a_a619_cc94656731f2
 
 .. raw:: html
 
@@ -1136,12 +1228,14 @@ CarbonPaper
   </tr>
   </table>
 
-.. _electrochemistry_b0a0dddb_d942_4af2_b6a7_d7165f4253f1:
+.. raw:: html
+
+   <div id="electrochemistry_b0a0dddb_d942_4af2_b6a7_d7165f4253f1"></div>
 
 CarbonPasteElectrode
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b0a0dddb_d942_4af2_b6a7_d7165f4253f1
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b0a0dddb_d942_4af2_b6a7_d7165f4253f1
 
 .. raw:: html
 
@@ -1172,12 +1266,14 @@ CarbonPasteElectrode
   </tr>
   </table>
 
-.. _electrochemistry_573be62a_5aae_4984_9a51_7c50845493df:
+.. raw:: html
+
+   <div id="electrochemistry_573be62a_5aae_4984_9a51_7c50845493df"></div>
 
 CardonDioxideElectrode
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_573be62a_5aae_4984_9a51_7c50845493df
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_573be62a_5aae_4984_9a51_7c50845493df
 
 .. raw:: html
 
@@ -1192,12 +1288,14 @@ CardonDioxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_1aec4cc0_82d5_4042_a657_ed7fe291c3d8:
+.. raw:: html
+
+   <div id="electrochemistry_1aec4cc0_82d5_4042_a657_ed7fe291c3d8"></div>
 
 Case
 ----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1aec4cc0_82d5_4042_a657_ed7fe291c3d8
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1aec4cc0_82d5_4042_a657_ed7fe291c3d8
 
 .. raw:: html
 
@@ -1224,12 +1322,14 @@ Case
   </tr>
   </table>
 
-.. _electrochemistry_8ab1e656_38ff_48e6_ab09_293d76bc9044:
+.. raw:: html
+
+   <div id="electrochemistry_8ab1e656_38ff_48e6_ab09_293d76bc9044"></div>
 
 Catalyst
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8ab1e656_38ff_48e6_ab09_293d76bc9044
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8ab1e656_38ff_48e6_ab09_293d76bc9044
 
 .. raw:: html
 
@@ -1248,12 +1348,14 @@ Catalyst
   </tr>
   </table>
 
-.. _electrochemistry_35c650ab_3b23_4938_b312_1b0dede2e6d5:
+.. raw:: html
+
+   <div id="electrochemistry_35c650ab_3b23_4938_b312_1b0dede2e6d5"></div>
 
 Cathode
 -------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_35c650ab_3b23_4938_b312_1b0dede2e6d5
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_35c650ab_3b23_4938_b312_1b0dede2e6d5
 
 .. raw:: html
 
@@ -1280,12 +1382,14 @@ Cathode
   </tr>
   </table>
 
-.. _electrochemistry_f8e0d532_cf44_403c_9188_e00ee161a3c1:
+.. raw:: html
+
+   <div id="electrochemistry_f8e0d532_cf44_403c_9188_e00ee161a3c1"></div>
 
 CathodeElectrolyteInterphase
 ----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f8e0d532_cf44_403c_9188_e00ee161a3c1
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f8e0d532_cf44_403c_9188_e00ee161a3c1
 
 .. raw:: html
 
@@ -1300,12 +1404,14 @@ CathodeElectrolyteInterphase
   </tr>
   </table>
 
-.. _electrochemistry_187326b9_1089_4122_8e7e_1a0bcba210a1:
+.. raw:: html
+
+   <div id="electrochemistry_187326b9_1089_4122_8e7e_1a0bcba210a1"></div>
 
 CathodicPolarisation
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_187326b9_1089_4122_8e7e_1a0bcba210a1
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_187326b9_1089_4122_8e7e_1a0bcba210a1
 
 .. raw:: html
 
@@ -1328,12 +1434,14 @@ CathodicPolarisation
   </tr>
   </table>
 
-.. _electrochemistry_c936bfbe_7a0c_4185_a317_db1ce2c3c38c:
+.. raw:: html
+
+   <div id="electrochemistry_c936bfbe_7a0c_4185_a317_db1ce2c3c38c"></div>
 
 CathodicProtection
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c936bfbe_7a0c_4185_a317_db1ce2c3c38c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c936bfbe_7a0c_4185_a317_db1ce2c3c38c
 
 .. raw:: html
 
@@ -1360,12 +1468,14 @@ CathodicProtection
   </tr>
   </table>
 
-.. _electrochemistry_f4a1323a_ce2b_4c1a_b89d_c80170110ed6:
+.. raw:: html
+
+   <div id="electrochemistry_f4a1323a_ce2b_4c1a_b89d_c80170110ed6"></div>
 
 CathodicReaction
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f4a1323a_ce2b_4c1a_b89d_c80170110ed6
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f4a1323a_ce2b_4c1a_b89d_c80170110ed6
 
 .. raw:: html
 
@@ -1388,12 +1498,14 @@ CathodicReaction
   </tr>
   </table>
 
-.. _electrochemistry_15b852b5_19cc_49ab_849f_7df6175fb2be:
+.. raw:: html
+
+   <div id="electrochemistry_15b852b5_19cc_49ab_849f_7df6175fb2be"></div>
 
 Catholyte
 ---------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_15b852b5_19cc_49ab_849f_7df6175fb2be
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_15b852b5_19cc_49ab_849f_7df6175fb2be
 
 .. raw:: html
 
@@ -1412,12 +1524,14 @@ Catholyte
   </tr>
   </table>
 
-.. _electrochemistry_9b6853e7_3412_463d_b5a9_82c14acebf7d:
+.. raw:: html
+
+   <div id="electrochemistry_9b6853e7_3412_463d_b5a9_82c14acebf7d"></div>
 
 CatholyteTank
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9b6853e7_3412_463d_b5a9_82c14acebf7d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9b6853e7_3412_463d_b5a9_82c14acebf7d
 
 .. raw:: html
 
@@ -1428,12 +1542,14 @@ CatholyteTank
   </tr>
   </table>
 
-.. _electrochemistry_328c6e36_3706_4d92_abae_432fa3adb2a0:
+.. raw:: html
+
+   <div id="electrochemistry_328c6e36_3706_4d92_abae_432fa3adb2a0"></div>
 
 CellBaffle
 ----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_328c6e36_3706_4d92_abae_432fa3adb2a0
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_328c6e36_3706_4d92_abae_432fa3adb2a0
 
 .. raw:: html
 
@@ -1448,12 +1564,14 @@ CellBaffle
   </tr>
   </table>
 
-.. _electrochemistry_4a5660bd_1c1a_40e5_8a41_463c720d3903:
+.. raw:: html
+
+   <div id="electrochemistry_4a5660bd_1c1a_40e5_8a41_463c720d3903"></div>
 
 CellCan
 -------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4a5660bd_1c1a_40e5_8a41_463c720d3903
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4a5660bd_1c1a_40e5_8a41_463c720d3903
 
 .. raw:: html
 
@@ -1472,12 +1590,14 @@ CellCan
   </tr>
   </table>
 
-.. _electrochemistry_1e33e37e_d7c9_4701_ba6d_a09456a13aaf:
+.. raw:: html
+
+   <div id="electrochemistry_1e33e37e_d7c9_4701_ba6d_a09456a13aaf"></div>
 
 CellLid
 -------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1e33e37e_d7c9_4701_ba6d_a09456a13aaf
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1e33e37e_d7c9_4701_ba6d_a09456a13aaf
 
 .. raw:: html
 
@@ -1496,12 +1616,14 @@ CellLid
   </tr>
   </table>
 
-.. _electrochemistry_efaca8db_a3e0_4188_9c9b_ed0037966725:
+.. raw:: html
+
+   <div id="electrochemistry_efaca8db_a3e0_4188_9c9b_ed0037966725"></div>
 
 CelsiusTemperatureData
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_efaca8db_a3e0_4188_9c9b_ed0037966725
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_efaca8db_a3e0_4188_9c9b_ed0037966725
 
 .. raw:: html
 
@@ -1512,12 +1634,14 @@ CelsiusTemperatureData
   </tr>
   </table>
 
-.. _electrochemistry_bea04148_10d9_4eda_9cd5_8f609d7e9ff8:
+.. raw:: html
+
+   <div id="electrochemistry_bea04148_10d9_4eda_9cd5_8f609d7e9ff8"></div>
 
 CelsiusTemperatureMeasurement
 -----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bea04148_10d9_4eda_9cd5_8f609d7e9ff8
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bea04148_10d9_4eda_9cd5_8f609d7e9ff8
 
 .. raw:: html
 
@@ -1528,12 +1652,14 @@ CelsiusTemperatureMeasurement
   </tr>
   </table>
 
-.. _electrochemistry_2dea31c2_5061_4464_ab76_5336bef23629:
+.. raw:: html
+
+   <div id="electrochemistry_2dea31c2_5061_4464_ab76_5336bef23629"></div>
 
 CelsiusTemperatureMeasurementResult
 -----------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2dea31c2_5061_4464_ab76_5336bef23629
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2dea31c2_5061_4464_ab76_5336bef23629
 
 .. raw:: html
 
@@ -1544,12 +1670,14 @@ CelsiusTemperatureMeasurementResult
   </tr>
   </table>
 
-.. _electrochemistry_d1042a12_e4be_4992_86cb_59420ef4e05c:
+.. raw:: html
+
+   <div id="electrochemistry_d1042a12_e4be_4992_86cb_59420ef4e05c"></div>
 
 ChargeCarrier
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d1042a12_e4be_4992_86cb_59420ef4e05c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d1042a12_e4be_4992_86cb_59420ef4e05c
 
 .. raw:: html
 
@@ -1572,12 +1700,14 @@ ChargeCarrier
   </tr>
   </table>
 
-.. _electrochemistry_46676855_68b0_4096_ac6c_35400111d46d:
+.. raw:: html
+
+   <div id="electrochemistry_46676855_68b0_4096_ac6c_35400111d46d"></div>
 
 ChargeTimePlot
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_46676855_68b0_4096_ac6c_35400111d46d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_46676855_68b0_4096_ac6c_35400111d46d
 
 .. raw:: html
 
@@ -1596,12 +1726,14 @@ ChargeTimePlot
   </tr>
   </table>
 
-.. _electrochemistry_a9873d3d_945b_40ba_b9cd_8dfb64cec88f:
+.. raw:: html
+
+   <div id="electrochemistry_a9873d3d_945b_40ba_b9cd_8dfb64cec88f"></div>
 
 Charging
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a9873d3d_945b_40ba_b9cd_8dfb64cec88f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a9873d3d_945b_40ba_b9cd_8dfb64cec88f
 
 .. raw:: html
 
@@ -1628,12 +1760,14 @@ Charging
   </tr>
   </table>
 
-.. _electrochemistry_bf7bfbcb_0698_47af_8678_af92b2f10414:
+.. raw:: html
+
+   <div id="electrochemistry_bf7bfbcb_0698_47af_8678_af92b2f10414"></div>
 
 ChargingData
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bf7bfbcb_0698_47af_8678_af92b2f10414
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bf7bfbcb_0698_47af_8678_af92b2f10414
 
 .. raw:: html
 
@@ -1644,12 +1778,14 @@ ChargingData
   </tr>
   </table>
 
-.. _electrochemistry_8a1c9a7b_978c_4421_a9c1_d0b07b42aab9:
+.. raw:: html
+
+   <div id="electrochemistry_8a1c9a7b_978c_4421_a9c1_d0b07b42aab9"></div>
 
 ChemicalReaction
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8a1c9a7b_978c_4421_a9c1_d0b07b42aab9
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8a1c9a7b_978c_4421_a9c1_d0b07b42aab9
 
 .. raw:: html
 
@@ -1676,12 +1812,14 @@ ChemicalReaction
   </tr>
   </table>
 
-.. _electrochemistry_510e4061_c4fa_49aa_a052_23ad56098eda:
+.. raw:: html
+
+   <div id="electrochemistry_510e4061_c4fa_49aa_a052_23ad56098eda"></div>
 
 ChromiumBasedElectrode
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_510e4061_c4fa_49aa_a052_23ad56098eda
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_510e4061_c4fa_49aa_a052_23ad56098eda
 
 .. raw:: html
 
@@ -1696,12 +1834,14 @@ ChromiumBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_92147e31_d015_4889_a092_04fbab033f15:
+.. raw:: html
+
+   <div id="electrochemistry_92147e31_d015_4889_a092_04fbab033f15"></div>
 
 CoatedElectrode
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_92147e31_d015_4889_a092_04fbab033f15
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_92147e31_d015_4889_a092_04fbab033f15
 
 .. raw:: html
 
@@ -1726,14 +1866,24 @@ CoatedElectrode
     <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
     <td class="element-table-value"><a href='#electrochemistry_418c59bd_dc9d_438b_bc7c_494fbd1bb4f8'>SingleCoatedElectrode</a>, <a href='#electrochemistry_56f85b19_1384_4e88_b130_cb8e7984db83'>DoubleCoatedElectrode</a>, <a href='#electrochemistry_a1ec9e3c_c624_4848_af13_89a6bc54d77c'>PastedPlate</a></td>
   </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">hasCoating</span></td>
+    <td class="element-table-value"><a href='#electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56'>ElectrodeCoating</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">hasCurrentCollector</span></td>
+    <td class="element-table-value"><a href='#electrochemistry_212af058_3bbb_419f_a9c6_90ba9ebb3706'>CurrentCollector</a></td>
+  </tr>
   </table>
 
-.. _electrochemistry_09a7f560_9ddf_4c32_b067_b213eca5b0a1:
+.. raw:: html
+
+   <div id="electrochemistry_09a7f560_9ddf_4c32_b067_b213eca5b0a1"></div>
 
 Coating
 -------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_09a7f560_9ddf_4c32_b067_b213eca5b0a1
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_09a7f560_9ddf_4c32_b067_b213eca5b0a1
 
 .. raw:: html
 
@@ -1760,12 +1910,14 @@ Coating
   </tr>
   </table>
 
-.. _electrochemistry_7b811780_7251_481b_a4d3_97d437955099:
+.. raw:: html
+
+   <div id="electrochemistry_7b811780_7251_481b_a4d3_97d437955099"></div>
 
 CobaltBasedElectrode
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7b811780_7251_481b_a4d3_97d437955099
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7b811780_7251_481b_a4d3_97d437955099
 
 .. raw:: html
 
@@ -1780,12 +1932,14 @@ CobaltBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_838c115b_6bc9_4ce8_9f8d_86a6bf67742a:
+.. raw:: html
+
+   <div id="electrochemistry_838c115b_6bc9_4ce8_9f8d_86a6bf67742a"></div>
 
 CobaltBasedElectrode
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_838c115b_6bc9_4ce8_9f8d_86a6bf67742a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_838c115b_6bc9_4ce8_9f8d_86a6bf67742a
 
 .. raw:: html
 
@@ -1804,12 +1958,14 @@ CobaltBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_2522cbd8_5382_457f_b9b5_775860f83357:
+.. raw:: html
+
+   <div id="electrochemistry_2522cbd8_5382_457f_b9b5_775860f83357"></div>
 
 Coin
 ----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2522cbd8_5382_457f_b9b5_775860f83357
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2522cbd8_5382_457f_b9b5_775860f83357
 
 .. raw:: html
 
@@ -1824,12 +1980,14 @@ Coin
   </tr>
   </table>
 
-.. _electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37:
+.. raw:: html
+
+   <div id="electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37"></div>
 
 CoinCase
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37
 
 .. raw:: html
 
@@ -1852,12 +2010,14 @@ CoinCase
   </tr>
   </table>
 
-.. _electrochemistry_8a5083b0_cd23_4f8c_99e8_b9ccd6f9f3a2:
+.. raw:: html
+
+   <div id="electrochemistry_8a5083b0_cd23_4f8c_99e8_b9ccd6f9f3a2"></div>
 
 ConcentrationCell
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8a5083b0_cd23_4f8c_99e8_b9ccd6f9f3a2
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8a5083b0_cd23_4f8c_99e8_b9ccd6f9f3a2
 
 .. raw:: html
 
@@ -1884,12 +2044,14 @@ ConcentrationCell
   </tr>
   </table>
 
-.. _electrochemistry_82fef384_8eec_4765_b707_5397054df594:
+.. raw:: html
+
+   <div id="electrochemistry_82fef384_8eec_4765_b707_5397054df594"></div>
 
 ConductiveAdditive
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_82fef384_8eec_4765_b707_5397054df594
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_82fef384_8eec_4765_b707_5397054df594
 
 .. raw:: html
 
@@ -1908,12 +2070,14 @@ ConductiveAdditive
   </tr>
   </table>
 
-.. _electrochemistry_b525a629_a679_464f_bc5b_b49d2fc82686:
+.. raw:: html
+
+   <div id="electrochemistry_b525a629_a679_464f_bc5b_b49d2fc82686"></div>
 
 ConductivityCell
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b525a629_a679_464f_bc5b_b49d2fc82686
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b525a629_a679_464f_bc5b_b49d2fc82686
 
 .. raw:: html
 
@@ -1928,12 +2092,14 @@ ConductivityCell
   </tr>
   </table>
 
-.. _electrochemistry_d8a78cd2_8107_46dd_a198_0b64676efc00:
+.. raw:: html
+
+   <div id="electrochemistry_d8a78cd2_8107_46dd_a198_0b64676efc00"></div>
 
 Connector
 ---------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d8a78cd2_8107_46dd_a198_0b64676efc00
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d8a78cd2_8107_46dd_a198_0b64676efc00
 
 .. raw:: html
 
@@ -1948,12 +2114,14 @@ Connector
   </tr>
   </table>
 
-.. _electrochemistry_83f2b1e9_cb67_4dbf_977f_ba54bbae374f:
+.. raw:: html
+
+   <div id="electrochemistry_83f2b1e9_cb67_4dbf_977f_ba54bbae374f"></div>
 
 ConstantCurrentCharging
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_83f2b1e9_cb67_4dbf_977f_ba54bbae374f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_83f2b1e9_cb67_4dbf_977f_ba54bbae374f
 
 .. raw:: html
 
@@ -1980,12 +2148,14 @@ ConstantCurrentCharging
   </tr>
   </table>
 
-.. _electrochemistry_0cc8f231_0ce5_467e_9c76_29b2c80349ad:
+.. raw:: html
+
+   <div id="electrochemistry_0cc8f231_0ce5_467e_9c76_29b2c80349ad"></div>
 
 ConstantCurrentConstantVoltageCharging
 --------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0cc8f231_0ce5_467e_9c76_29b2c80349ad
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0cc8f231_0ce5_467e_9c76_29b2c80349ad
 
 .. raw:: html
 
@@ -2004,12 +2174,14 @@ ConstantCurrentConstantVoltageCharging
   </tr>
   </table>
 
-.. _electrochemistry_ac6c2371_995a_4fcb_89a2_15cb6615741e:
+.. raw:: html
+
+   <div id="electrochemistry_ac6c2371_995a_4fcb_89a2_15cb6615741e"></div>
 
 ConstantCurrentConstantVoltageCycling
 -------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ac6c2371_995a_4fcb_89a2_15cb6615741e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ac6c2371_995a_4fcb_89a2_15cb6615741e
 
 .. raw:: html
 
@@ -2028,12 +2200,14 @@ ConstantCurrentConstantVoltageCycling
   </tr>
   </table>
 
-.. _electrochemistry_53fe3f58_0802_41cf_af69_4784fc42cc30:
+.. raw:: html
+
+   <div id="electrochemistry_53fe3f58_0802_41cf_af69_4784fc42cc30"></div>
 
 ConstantCurrentDischarging
 --------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_53fe3f58_0802_41cf_af69_4784fc42cc30
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_53fe3f58_0802_41cf_af69_4784fc42cc30
 
 .. raw:: html
 
@@ -2056,12 +2230,14 @@ ConstantCurrentDischarging
   </tr>
   </table>
 
-.. _electrochemistry_84d37a37_88bd_47db_9425_31f73a81d38c:
+.. raw:: html
+
+   <div id="electrochemistry_84d37a37_88bd_47db_9425_31f73a81d38c"></div>
 
 ConstantPotentialPulses
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_84d37a37_88bd_47db_9425_31f73a81d38c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_84d37a37_88bd_47db_9425_31f73a81d38c
 
 .. raw:: html
 
@@ -2076,12 +2252,14 @@ ConstantPotentialPulses
   </tr>
   </table>
 
-.. _electrochemistry_0d3e8340_4229_4fd3_b6dd_763bd566551d:
+.. raw:: html
+
+   <div id="electrochemistry_0d3e8340_4229_4fd3_b6dd_763bd566551d"></div>
 
 ConstantPotentialSignal
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0d3e8340_4229_4fd3_b6dd_763bd566551d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0d3e8340_4229_4fd3_b6dd_763bd566551d
 
 .. raw:: html
 
@@ -2096,12 +2274,14 @@ ConstantPotentialSignal
   </tr>
   </table>
 
-.. _electrochemistry_dcd4a15d_52cf_44fb_b826_df18e4baa89c:
+.. raw:: html
+
+   <div id="electrochemistry_dcd4a15d_52cf_44fb_b826_df18e4baa89c"></div>
 
 ConstantPowerCharging
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dcd4a15d_52cf_44fb_b826_df18e4baa89c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dcd4a15d_52cf_44fb_b826_df18e4baa89c
 
 .. raw:: html
 
@@ -2116,12 +2296,14 @@ ConstantPowerCharging
   </tr>
   </table>
 
-.. _electrochemistry_a2f65954_1ed8_4faf_9efe_597018d03e8d:
+.. raw:: html
+
+   <div id="electrochemistry_a2f65954_1ed8_4faf_9efe_597018d03e8d"></div>
 
 ConstantPowerDischarging
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a2f65954_1ed8_4faf_9efe_597018d03e8d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a2f65954_1ed8_4faf_9efe_597018d03e8d
 
 .. raw:: html
 
@@ -2136,12 +2318,14 @@ ConstantPowerDischarging
   </tr>
   </table>
 
-.. _electrochemistry_acdeaa89_0e99_4941_8821_d5dea3d34912:
+.. raw:: html
+
+   <div id="electrochemistry_acdeaa89_0e99_4941_8821_d5dea3d34912"></div>
 
 ConstantVoltageCharging
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_acdeaa89_0e99_4941_8821_d5dea3d34912
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_acdeaa89_0e99_4941_8821_d5dea3d34912
 
 .. raw:: html
 
@@ -2164,12 +2348,14 @@ ConstantVoltageCharging
   </tr>
   </table>
 
-.. _electrochemistry_9865e4f9_756d_4d94_a6fd_4102ab795f9e:
+.. raw:: html
+
+   <div id="electrochemistry_9865e4f9_756d_4d94_a6fd_4102ab795f9e"></div>
 
 ConstantVoltageDischarging
 --------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9865e4f9_756d_4d94_a6fd_4102ab795f9e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9865e4f9_756d_4d94_a6fd_4102ab795f9e
 
 .. raw:: html
 
@@ -2188,12 +2374,14 @@ ConstantVoltageDischarging
   </tr>
   </table>
 
-.. _electrochemistry_26b19a7c_59ca_4e1b_8fb9_ba061c22531e:
+.. raw:: html
+
+   <div id="electrochemistry_26b19a7c_59ca_4e1b_8fb9_ba061c22531e"></div>
 
 CopperBasedElectrode
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_26b19a7c_59ca_4e1b_8fb9_ba061c22531e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_26b19a7c_59ca_4e1b_8fb9_ba061c22531e
 
 .. raw:: html
 
@@ -2212,12 +2400,14 @@ CopperBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_a8edd38f_f8a5_41fb_9fc7_48f1866fd699:
+.. raw:: html
+
+   <div id="electrochemistry_a8edd38f_f8a5_41fb_9fc7_48f1866fd699"></div>
 
 CopperOxideElectrode
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a8edd38f_f8a5_41fb_9fc7_48f1866fd699
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a8edd38f_f8a5_41fb_9fc7_48f1866fd699
 
 .. raw:: html
 
@@ -2236,12 +2426,14 @@ CopperOxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_fb9bf7cb_dd4b_4391_99a1_628263dd6940:
+.. raw:: html
+
+   <div id="electrochemistry_fb9bf7cb_dd4b_4391_99a1_628263dd6940"></div>
 
 Coulometer
 ----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fb9bf7cb_dd4b_4391_99a1_628263dd6940
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fb9bf7cb_dd4b_4391_99a1_628263dd6940
 
 .. raw:: html
 
@@ -2264,12 +2456,14 @@ Coulometer
   </tr>
   </table>
 
-.. _electrochemistry_871bc4a4_2d17_4b88_9b0f_7ab85f14afea:
+.. raw:: html
+
+   <div id="electrochemistry_871bc4a4_2d17_4b88_9b0f_7ab85f14afea"></div>
 
 CounterElectrode
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_871bc4a4_2d17_4b88_9b0f_7ab85f14afea
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_871bc4a4_2d17_4b88_9b0f_7ab85f14afea
 
 .. raw:: html
 
@@ -2300,12 +2494,14 @@ CounterElectrode
   </tr>
   </table>
 
-.. _electrochemistry_212af058_3bbb_419f_a9c6_90ba9ebb3706:
+.. raw:: html
+
+   <div id="electrochemistry_212af058_3bbb_419f_a9c6_90ba9ebb3706"></div>
 
 CurrentCollector
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_212af058_3bbb_419f_a9c6_90ba9ebb3706
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_212af058_3bbb_419f_a9c6_90ba9ebb3706
 
 .. raw:: html
 
@@ -2332,12 +2528,14 @@ CurrentCollector
   </tr>
   </table>
 
-.. _electrochemistry_5548f188_df00_4c05_ae98_7846e92efe36:
+.. raw:: html
+
+   <div id="electrochemistry_5548f188_df00_4c05_ae98_7846e92efe36"></div>
 
 CurrentControlledProcess
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5548f188_df00_4c05_ae98_7846e92efe36
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5548f188_df00_4c05_ae98_7846e92efe36
 
 .. raw:: html
 
@@ -2352,12 +2550,14 @@ CurrentControlledProcess
   </tr>
   </table>
 
-.. _electrochemistry_78a8f60b_10c2_41ee_9946_d35437e1edb5:
+.. raw:: html
+
+   <div id="electrochemistry_78a8f60b_10c2_41ee_9946_d35437e1edb5"></div>
 
 CurrentHold
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_78a8f60b_10c2_41ee_9946_d35437e1edb5
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_78a8f60b_10c2_41ee_9946_d35437e1edb5
 
 .. raw:: html
 
@@ -2380,12 +2580,14 @@ CurrentHold
   </tr>
   </table>
 
-.. _electrochemistry_b9a72491_8a50_4cac_a131_1e95d72b57ee:
+.. raw:: html
+
+   <div id="electrochemistry_b9a72491_8a50_4cac_a131_1e95d72b57ee"></div>
 
 CurrentPotentialPlot
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b9a72491_8a50_4cac_a131_1e95d72b57ee
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b9a72491_8a50_4cac_a131_1e95d72b57ee
 
 .. raw:: html
 
@@ -2408,12 +2610,14 @@ CurrentPotentialPlot
   </tr>
   </table>
 
-.. _electrochemistry_712c791a_d593_4732_af73_493f7bc50999:
+.. raw:: html
+
+   <div id="electrochemistry_712c791a_d593_4732_af73_493f7bc50999"></div>
 
 CurrentPulseSignal
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_712c791a_d593_4732_af73_493f7bc50999
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_712c791a_d593_4732_af73_493f7bc50999
 
 .. raw:: html
 
@@ -2432,12 +2636,14 @@ CurrentPulseSignal
   </tr>
   </table>
 
-.. _electrochemistry_9f1ffb54_4403_4541_98c1_3a821c6d060f:
+.. raw:: html
+
+   <div id="electrochemistry_9f1ffb54_4403_4541_98c1_3a821c6d060f"></div>
 
 CurrentPulsing
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9f1ffb54_4403_4541_98c1_3a821c6d060f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9f1ffb54_4403_4541_98c1_3a821c6d060f
 
 .. raw:: html
 
@@ -2456,12 +2662,14 @@ CurrentPulsing
   </tr>
   </table>
 
-.. _electrochemistry_b99cff7f_b13f_4075_aa88_62c04f8daacc:
+.. raw:: html
+
+   <div id="electrochemistry_b99cff7f_b13f_4075_aa88_62c04f8daacc"></div>
 
 CurrentTimePlot
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b99cff7f_b13f_4075_aa88_62c04f8daacc
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b99cff7f_b13f_4075_aa88_62c04f8daacc
 
 .. raw:: html
 
@@ -2480,12 +2688,14 @@ CurrentTimePlot
   </tr>
   </table>
 
-.. _electrochemistry_ca48d41c_f5ea_4bf8_84ce_2d67fd9dad98:
+.. raw:: html
+
+   <div id="electrochemistry_ca48d41c_f5ea_4bf8_84ce_2d67fd9dad98"></div>
 
 CycleNumberData
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ca48d41c_f5ea_4bf8_84ce_2d67fd9dad98
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ca48d41c_f5ea_4bf8_84ce_2d67fd9dad98
 
 .. raw:: html
 
@@ -2496,12 +2706,14 @@ CycleNumberData
   </tr>
   </table>
 
-.. _electrochemistry_d2f6f1a6_4dee_4c5e_9a69_32b9fe990d2f:
+.. raw:: html
+
+   <div id="electrochemistry_d2f6f1a6_4dee_4c5e_9a69_32b9fe990d2f"></div>
 
 CycleSeriesDataset
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d2f6f1a6_4dee_4c5e_9a69_32b9fe990d2f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d2f6f1a6_4dee_4c5e_9a69_32b9fe990d2f
 
 .. raw:: html
 
@@ -2512,12 +2724,14 @@ CycleSeriesDataset
   </tr>
   </table>
 
-.. _electrochemistry_d3e2d213_d078_4b9a_8beb_62f063e57d69:
+.. raw:: html
+
+   <div id="electrochemistry_d3e2d213_d078_4b9a_8beb_62f063e57d69"></div>
 
 Cycling
 -------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d3e2d213_d078_4b9a_8beb_62f063e57d69
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d3e2d213_d078_4b9a_8beb_62f063e57d69
 
 .. raw:: html
 
@@ -2548,12 +2762,14 @@ Cycling
   </tr>
   </table>
 
-.. _electrochemistry_780aeb7b_9eb2_4324_ba2d_1a874136b4e5:
+.. raw:: html
+
+   <div id="electrochemistry_780aeb7b_9eb2_4324_ba2d_1a874136b4e5"></div>
 
 Cylindrical
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_780aeb7b_9eb2_4324_ba2d_1a874136b4e5
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_780aeb7b_9eb2_4324_ba2d_1a874136b4e5
 
 .. raw:: html
 
@@ -2568,12 +2784,14 @@ Cylindrical
   </tr>
   </table>
 
-.. _electrochemistry_b1cf9fee_2164_4f95_8204_90f717373a8a:
+.. raw:: html
+
+   <div id="electrochemistry_b1cf9fee_2164_4f95_8204_90f717373a8a"></div>
 
 CylindricalCase
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b1cf9fee_2164_4f95_8204_90f717373a8a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b1cf9fee_2164_4f95_8204_90f717373a8a
 
 .. raw:: html
 
@@ -2592,12 +2810,14 @@ CylindricalCase
   </tr>
   </table>
 
-.. _electrochemistry_34bc54e3_de4c_41f8_8d3a_d77c951ee23a:
+.. raw:: html
+
+   <div id="electrochemistry_34bc54e3_de4c_41f8_8d3a_d77c951ee23a"></div>
 
 Dendrite
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_34bc54e3_de4c_41f8_8d3a_d77c951ee23a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_34bc54e3_de4c_41f8_8d3a_d77c951ee23a
 
 .. raw:: html
 
@@ -2624,12 +2844,14 @@ Dendrite
   </tr>
   </table>
 
-.. _electrochemistry_b49e2355_392f_4e83_b630_7ff4581d767b:
+.. raw:: html
+
+   <div id="electrochemistry_b49e2355_392f_4e83_b630_7ff4581d767b"></div>
 
 DifferentialPotentialPulse
 --------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b49e2355_392f_4e83_b630_7ff4581d767b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b49e2355_392f_4e83_b630_7ff4581d767b
 
 .. raw:: html
 
@@ -2644,12 +2866,14 @@ DifferentialPotentialPulse
   </tr>
   </table>
 
-.. _electrochemistry_50fef664_83c3_4ca5_808c_efaa1acc51b2:
+.. raw:: html
+
+   <div id="electrochemistry_50fef664_83c3_4ca5_808c_efaa1acc51b2"></div>
 
 DiffusionData
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_50fef664_83c3_4ca5_808c_efaa1acc51b2
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_50fef664_83c3_4ca5_808c_efaa1acc51b2
 
 .. raw:: html
 
@@ -2660,12 +2884,14 @@ DiffusionData
   </tr>
   </table>
 
-.. _electrochemistry_40ca9548_910a_48b6_9a26_f94095d349cd:
+.. raw:: html
+
+   <div id="electrochemistry_40ca9548_910a_48b6_9a26_f94095d349cd"></div>
 
 DirectCurrent
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_40ca9548_910a_48b6_9a26_f94095d349cd
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_40ca9548_910a_48b6_9a26_f94095d349cd
 
 .. raw:: html
 
@@ -2696,12 +2922,14 @@ DirectCurrent
   </tr>
   </table>
 
-.. _electrochemistry_885b462e_f6bc_412d_8b94_9425e13af0c7:
+.. raw:: html
+
+   <div id="electrochemistry_885b462e_f6bc_412d_8b94_9425e13af0c7"></div>
 
 DirectCurrent
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_885b462e_f6bc_412d_8b94_9425e13af0c7
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_885b462e_f6bc_412d_8b94_9425e13af0c7
 
 .. raw:: html
 
@@ -2728,12 +2956,14 @@ DirectCurrent
   </tr>
   </table>
 
-.. _electrochemistry_06d8e1ee_924a_4915_998d_33a69f41dadc:
+.. raw:: html
+
+   <div id="electrochemistry_06d8e1ee_924a_4915_998d_33a69f41dadc"></div>
 
 Discharging
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_06d8e1ee_924a_4915_998d_33a69f41dadc
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_06d8e1ee_924a_4915_998d_33a69f41dadc
 
 .. raw:: html
 
@@ -2756,12 +2986,14 @@ Discharging
   </tr>
   </table>
 
-.. _electrochemistry_a17b9fd0_b005_41eb_b685_e212fc4cecea:
+.. raw:: html
+
+   <div id="electrochemistry_a17b9fd0_b005_41eb_b685_e212fc4cecea"></div>
 
 DischargingData
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a17b9fd0_b005_41eb_b685_e212fc4cecea
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a17b9fd0_b005_41eb_b685_e212fc4cecea
 
 .. raw:: html
 
@@ -2772,12 +3004,14 @@ DischargingData
   </tr>
   </table>
 
-.. _electrochemistry_b3b3868f_6edd_4ce8_a984_08f9cf391f90:
+.. raw:: html
+
+   <div id="electrochemistry_b3b3868f_6edd_4ce8_a984_08f9cf391f90"></div>
 
 Dissociation
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b3b3868f_6edd_4ce8_a984_08f9cf391f90
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b3b3868f_6edd_4ce8_a984_08f9cf391f90
 
 .. raw:: html
 
@@ -2804,12 +3038,14 @@ Dissociation
   </tr>
   </table>
 
-.. _electrochemistry_49263a32_eca6_4644_8144_0d3b14c26d0a:
+.. raw:: html
+
+   <div id="electrochemistry_49263a32_eca6_4644_8144_0d3b14c26d0a"></div>
 
 Dissolution
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_49263a32_eca6_4644_8144_0d3b14c26d0a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_49263a32_eca6_4644_8144_0d3b14c26d0a
 
 .. raw:: html
 
@@ -2832,12 +3068,14 @@ Dissolution
   </tr>
   </table>
 
-.. _electrochemistry_56f85b19_1384_4e88_b130_cb8e7984db83:
+.. raw:: html
+
+   <div id="electrochemistry_56f85b19_1384_4e88_b130_cb8e7984db83"></div>
 
 DoubleCoatedElectrode
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_56f85b19_1384_4e88_b130_cb8e7984db83
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_56f85b19_1384_4e88_b130_cb8e7984db83
 
 .. raw:: html
 
@@ -2852,12 +3090,14 @@ DoubleCoatedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_2b50cdac_581f_48b9_87ca_bad5138ab58d:
+.. raw:: html
+
+   <div id="electrochemistry_2b50cdac_581f_48b9_87ca_bad5138ab58d"></div>
 
 DoubleLayer
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2b50cdac_581f_48b9_87ca_bad5138ab58d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2b50cdac_581f_48b9_87ca_bad5138ab58d
 
 .. raw:: html
 
@@ -2884,12 +3124,14 @@ DoubleLayer
   </tr>
   </table>
 
-.. _electrochemistry_ac9723d1_bac0_4109_874e_32849de9299b:
+.. raw:: html
+
+   <div id="electrochemistry_ac9723d1_bac0_4109_874e_32849de9299b"></div>
 
 DoubleLayerModel
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ac9723d1_bac0_4109_874e_32849de9299b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ac9723d1_bac0_4109_874e_32849de9299b
 
 .. raw:: html
 
@@ -2916,12 +3158,14 @@ DoubleLayerModel
   </tr>
   </table>
 
-.. _electrochemistry_b76a778f_253f_4210_a67f_fb6444d0de26:
+.. raw:: html
+
+   <div id="electrochemistry_b76a778f_253f_4210_a67f_fb6444d0de26"></div>
 
 DroppingMercuryElectrode
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b76a778f_253f_4210_a67f_fb6444d0de26
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b76a778f_253f_4210_a67f_fb6444d0de26
 
 .. raw:: html
 
@@ -2948,12 +3192,14 @@ DroppingMercuryElectrode
   </tr>
   </table>
 
-.. _electrochemistry_bbc77932_643b_4603_a4e8_970ef06a76ad:
+.. raw:: html
+
+   <div id="electrochemistry_bbc77932_643b_4603_a4e8_970ef06a76ad"></div>
 
 EdgeInsulator
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bbc77932_643b_4603_a4e8_970ef06a76ad
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bbc77932_643b_4603_a4e8_970ef06a76ad
 
 .. raw:: html
 
@@ -2972,12 +3218,14 @@ EdgeInsulator
   </tr>
   </table>
 
-.. _electrochemistry_276cfa84_3cc0_40c0_9f6a_57a3b776f47c:
+.. raw:: html
+
+   <div id="electrochemistry_276cfa84_3cc0_40c0_9f6a_57a3b776f47c"></div>
 
 ElectricChargeSignal
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_276cfa84_3cc0_40c0_9f6a_57a3b776f47c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_276cfa84_3cc0_40c0_9f6a_57a3b776f47c
 
 .. raw:: html
 
@@ -2992,12 +3240,14 @@ ElectricChargeSignal
   </tr>
   </table>
 
-.. _electrochemistry_4920de95_3a48_4669_b762_5a0b5232b52f:
+.. raw:: html
+
+   <div id="electrochemistry_4920de95_3a48_4669_b762_5a0b5232b52f"></div>
 
 ElectricCurrentData
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4920de95_3a48_4669_b762_5a0b5232b52f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4920de95_3a48_4669_b762_5a0b5232b52f
 
 .. raw:: html
 
@@ -3008,12 +3258,14 @@ ElectricCurrentData
   </tr>
   </table>
 
-.. _electrochemistry_158ae038_c64b_4cc0_aa56_650475490705:
+.. raw:: html
+
+   <div id="electrochemistry_158ae038_c64b_4cc0_aa56_650475490705"></div>
 
 ElectricCurrentMeasurement
 --------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_158ae038_c64b_4cc0_aa56_650475490705
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_158ae038_c64b_4cc0_aa56_650475490705
 
 .. raw:: html
 
@@ -3024,12 +3276,14 @@ ElectricCurrentMeasurement
   </tr>
   </table>
 
-.. _electrochemistry_7beef5fb_a406_4284_b85a_87d55cf46a0e:
+.. raw:: html
+
+   <div id="electrochemistry_7beef5fb_a406_4284_b85a_87d55cf46a0e"></div>
 
 ElectricCurrentMeasurementResult
 --------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7beef5fb_a406_4284_b85a_87d55cf46a0e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7beef5fb_a406_4284_b85a_87d55cf46a0e
 
 .. raw:: html
 
@@ -3040,12 +3294,14 @@ ElectricCurrentMeasurementResult
   </tr>
   </table>
 
-.. _electrochemistry_f693b744_930c_42ac_8e6f_627b22c6da3f:
+.. raw:: html
+
+   <div id="electrochemistry_f693b744_930c_42ac_8e6f_627b22c6da3f"></div>
 
 ElectricCurrentMeasuringSystem
 ------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f693b744_930c_42ac_8e6f_627b22c6da3f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f693b744_930c_42ac_8e6f_627b22c6da3f
 
 .. raw:: html
 
@@ -3056,12 +3312,14 @@ ElectricCurrentMeasuringSystem
   </tr>
   </table>
 
-.. _electrochemistry_904b12e0_4a10_47b0_b7db_592aba215cb6:
+.. raw:: html
+
+   <div id="electrochemistry_904b12e0_4a10_47b0_b7db_592aba215cb6"></div>
 
 ElectricCurrentSignal
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_904b12e0_4a10_47b0_b7db_592aba215cb6
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_904b12e0_4a10_47b0_b7db_592aba215cb6
 
 .. raw:: html
 
@@ -3080,12 +3338,14 @@ ElectricCurrentSignal
   </tr>
   </table>
 
-.. _electrochemistry_3f9b2956_1465_4fe0_b0df_5e4784dac3b6:
+.. raw:: html
+
+   <div id="electrochemistry_3f9b2956_1465_4fe0_b0df_5e4784dac3b6"></div>
 
 ElectricPotentialMeasuringSystem
 --------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3f9b2956_1465_4fe0_b0df_5e4784dac3b6
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3f9b2956_1465_4fe0_b0df_5e4784dac3b6
 
 .. raw:: html
 
@@ -3096,12 +3356,14 @@ ElectricPotentialMeasuringSystem
   </tr>
   </table>
 
-.. _electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7:
+.. raw:: html
+
+   <div id="electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7"></div>
 
 ElectricPotentialSignal
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7
 
 .. raw:: html
 
@@ -3120,12 +3382,14 @@ ElectricPotentialSignal
   </tr>
   </table>
 
-.. _electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c:
+.. raw:: html
+
+   <div id="electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c"></div>
 
 ElectricSignal
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c
 
 .. raw:: html
 
@@ -3140,12 +3404,14 @@ ElectricSignal
   </tr>
   </table>
 
-.. _electrochemistry_5cb5548f_f774_4668_ad02_f0742581f2f1:
+.. raw:: html
+
+   <div id="electrochemistry_5cb5548f_f774_4668_ad02_f0742581f2f1"></div>
 
 Electrocapillarity
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5cb5548f_f774_4668_ad02_f0742581f2f1
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5cb5548f_f774_4668_ad02_f0742581f2f1
 
 .. raw:: html
 
@@ -3172,12 +3438,14 @@ Electrocapillarity
   </tr>
   </table>
 
-.. _electrochemistry_4d6f7f50_b343_4bd6_8612_2b8521a99c9b:
+.. raw:: html
+
+   <div id="electrochemistry_4d6f7f50_b343_4bd6_8612_2b8521a99c9b"></div>
 
 Electrocatalysis
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4d6f7f50_b343_4bd6_8612_2b8521a99c9b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4d6f7f50_b343_4bd6_8612_2b8521a99c9b
 
 .. raw:: html
 
@@ -3200,12 +3468,14 @@ Electrocatalysis
   </tr>
   </table>
 
-.. _electrochemistry_a3b53904_22b1_42a9_a515_c8a3aed7e841:
+.. raw:: html
+
+   <div id="electrochemistry_a3b53904_22b1_42a9_a515_c8a3aed7e841"></div>
 
 Electrocatalyst
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a3b53904_22b1_42a9_a515_c8a3aed7e841
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a3b53904_22b1_42a9_a515_c8a3aed7e841
 
 .. raw:: html
 
@@ -3232,12 +3502,14 @@ Electrocatalyst
   </tr>
   </table>
 
-.. _Electrochemical:
+.. raw:: html
+
+   <div id="Electrochemical"></div>
 
 Electrochemical
 ---------------
 
-* https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical
+IRI: https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical
 
 .. raw:: html
 
@@ -3248,12 +3520,14 @@ Electrochemical
   </tr>
   </table>
 
-.. _electrochemistry_6f2c88c9_5c04_4953_a298_032cc3ab9b77:
+.. raw:: html
+
+   <div id="electrochemistry_6f2c88c9_5c04_4953_a298_032cc3ab9b77"></div>
 
 ElectrochemicalCell
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6f2c88c9_5c04_4953_a298_032cc3ab9b77
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6f2c88c9_5c04_4953_a298_032cc3ab9b77
 
 .. raw:: html
 
@@ -3278,14 +3552,44 @@ ElectrochemicalCell
     <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
     <td class="element-table-value"><a href='#electrochemistry_0acd0fc2_1048_4604_8e90_bf4e84bd87df'>ElectrochemicalDevice</a>, <a href='#electrochemistry_b9bece97_a511_4cb9_88a2_b5bd5c5e5d74'>ThreeElectrodeCell</a>, <a href='#electrochemistry_e248373f_294f_4ca4_9edf_0ad6653bb64f'>GalvanicCell</a>, <a href='#electrochemistry_e931087f_7681_4096_b200_5223bcc47eb4'>ElectrolyticCell</a></td>
   </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">hasElectrolyte</span></td>
+    <td class="element-table-value"><a href='#electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59'>Electrolyte</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">hasElectrode</span></td>
+    <td class="element-table-value"><a href='#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627'>Electrode</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">hasNegativeElectrode</span></td>
+    <td class="element-table-value"><a href='#electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c'>NegativeElectrode</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">hasReferenceElectrode</span></td>
+    <td class="element-table-value"><a href='#electrochemistry_7729c34e_1ae9_403d_b933_1765885e7f29'>ReferenceElectrode</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">hasPositiveElectrode</span></td>
+    <td class="element-table-value"><a href='#electrochemistry_aff732a9_238a_4734_977c_b2ba202af126'>PositiveElectrode</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">hasWorkingElectrode</span></td>
+    <td class="element-table-value"><a href='#electrochemistry_fb988878_ee54_4350_9ee9_228c00c3ad35'>WorkingElectrode</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">hasCounterElectrode</span></td>
+    <td class="element-table-value"><a href='#electrochemistry_871bc4a4_2d17_4b88_9b0f_7ab85f14afea'>CounterElectrode</a></td>
+  </tr>
   </table>
 
-.. _electrochemistry_b5ea31c9_bb10_4276_980e_c3eceb1efc82:
+.. raw:: html
+
+   <div id="electrochemistry_b5ea31c9_bb10_4276_980e_c3eceb1efc82"></div>
 
 ElectrochemicalComponent
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b5ea31c9_bb10_4276_980e_c3eceb1efc82
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b5ea31c9_bb10_4276_980e_c3eceb1efc82
 
 .. raw:: html
 
@@ -3300,12 +3604,14 @@ ElectrochemicalComponent
   </tr>
   </table>
 
-.. _electrochemistry_0a0de817_addc_46a5_8ba2_255d48cdf366:
+.. raw:: html
+
+   <div id="electrochemistry_0a0de817_addc_46a5_8ba2_255d48cdf366"></div>
 
 ElectrochemicalDegradationPhenomenon
 ------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0a0de817_addc_46a5_8ba2_255d48cdf366
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0a0de817_addc_46a5_8ba2_255d48cdf366
 
 .. raw:: html
 
@@ -3324,12 +3630,14 @@ ElectrochemicalDegradationPhenomenon
   </tr>
   </table>
 
-.. _electrochemistry_0acd0fc2_1048_4604_8e90_bf4e84bd87df:
+.. raw:: html
+
+   <div id="electrochemistry_0acd0fc2_1048_4604_8e90_bf4e84bd87df"></div>
 
 ElectrochemicalDevice
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0acd0fc2_1048_4604_8e90_bf4e84bd87df
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0acd0fc2_1048_4604_8e90_bf4e84bd87df
 
 .. raw:: html
 
@@ -3346,14 +3654,20 @@ ElectrochemicalDevice
     <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
     <td class="element-table-value"><a href='#electrochemistry_8d3bf304_78e4_4e99_abe1_6ab429e44ed1'>SealedCell</a>, <a href='#electrochemistry_900d95fb_863d_4142_a96d_369fb39e2639'>ElectrolyticCapacitor</a>, <a href='#electrochemistry_95e4aa95_b7e9_40d7_b78e_4d7dcc31093d'>FlowCell</a>, <a href='#electrochemistry_b525a629_a679_464f_bc5b_b49d2fc82686'>ConductivityCell</a>, <a href='#electrochemistry_c14ae9b3_e4ba_4129_a7b6_afd2d4571de6'>HermeticallySealedCell</a>, <a href='#electrochemistry_c610d869_cc03_44f0_b40d_ca86e945b9c9'>NonSpillableCell</a>, <a href='#electrochemistry_dc6abae7_39b0_4d22_b52e_14d088a4bd5f'>Supercapacitor</a>, <a href='#electrochemistry_ec1dce8b_bb46_41a9_b532_6bed381aa557'>VentedCell</a></td>
   </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">hasCase</span></td>
+    <td class="element-table-value"><a href='#electrochemistry_1aec4cc0_82d5_4042_a657_ed7fe291c3d8'>Case</a></td>
+  </tr>
   </table>
 
-.. _electrochemistry_b91180e7_97ae_49e2_bf82_5bf720e7fa66:
+.. raw:: html
+
+   <div id="electrochemistry_b91180e7_97ae_49e2_bf82_5bf720e7fa66"></div>
 
 ElectrochemicalDoubleLayerCapacitor
 -----------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b91180e7_97ae_49e2_bf82_5bf720e7fa66
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b91180e7_97ae_49e2_bf82_5bf720e7fa66
 
 .. raw:: html
 
@@ -3372,12 +3686,14 @@ ElectrochemicalDoubleLayerCapacitor
   </tr>
   </table>
 
-.. _electrochemistry_9da958fc_f76d_4654_8a78_99b5f98c118c:
+.. raw:: html
+
+   <div id="electrochemistry_9da958fc_f76d_4654_8a78_99b5f98c118c"></div>
 
 ElectrochemicalHalfCell
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9da958fc_f76d_4654_8a78_99b5f98c118c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9da958fc_f76d_4654_8a78_99b5f98c118c
 
 .. raw:: html
 
@@ -3398,14 +3714,24 @@ ElectrochemicalHalfCell
     <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
     <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q903509'>https://www.wikidata.org/wiki/Q903509</a></td>
   </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">hasElectrolyte</span></td>
+    <td class="element-table-value"><a href='#electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59'>Electrolyte</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">hasElectrode</span></td>
+    <td class="element-table-value"><a href='#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627'>Electrode</a></td>
+  </tr>
   </table>
 
-.. _electrochemistry_4bc38e99_1978_4143_a766_fbb57f2cf46e:
+.. raw:: html
+
+   <div id="electrochemistry_4bc38e99_1978_4143_a766_fbb57f2cf46e"></div>
 
 ElectrochemicalImmunity
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4bc38e99_1978_4143_a766_fbb57f2cf46e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4bc38e99_1978_4143_a766_fbb57f2cf46e
 
 .. raw:: html
 
@@ -3428,12 +3754,14 @@ ElectrochemicalImmunity
   </tr>
   </table>
 
-.. _electrochemistry_c052cab7_46eb_4a87_b7a4_05be2572db22:
+.. raw:: html
+
+   <div id="electrochemistry_c052cab7_46eb_4a87_b7a4_05be2572db22"></div>
 
 ElectrochemicalImpedanceSpectroscopyData
 ----------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c052cab7_46eb_4a87_b7a4_05be2572db22
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c052cab7_46eb_4a87_b7a4_05be2572db22
 
 .. raw:: html
 
@@ -3448,12 +3776,14 @@ ElectrochemicalImpedanceSpectroscopyData
   </tr>
   </table>
 
-.. _electrochemistry_50044b99_b858_433b_a32d_23d1e1cf88b2:
+.. raw:: html
+
+   <div id="electrochemistry_50044b99_b858_433b_a32d_23d1e1cf88b2"></div>
 
 ElectrochemicalInterface
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_50044b99_b858_433b_a32d_23d1e1cf88b2
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_50044b99_b858_433b_a32d_23d1e1cf88b2
 
 .. raw:: html
 
@@ -3472,12 +3802,14 @@ ElectrochemicalInterface
   </tr>
   </table>
 
-.. _electrochemistry_ebdb68e9_c4b5_4d57_a042_c0f51d446755:
+.. raw:: html
+
+   <div id="electrochemistry_ebdb68e9_c4b5_4d57_a042_c0f51d446755"></div>
 
 ElectrochemicalMaterial
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ebdb68e9_c4b5_4d57_a042_c0f51d446755
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ebdb68e9_c4b5_4d57_a042_c0f51d446755
 
 .. raw:: html
 
@@ -3492,12 +3824,14 @@ ElectrochemicalMaterial
   </tr>
   </table>
 
-.. _electrochemistry_f49b84d4_e1f9_424c_bb22_8cea23c0a7d4:
+.. raw:: html
+
+   <div id="electrochemistry_f49b84d4_e1f9_424c_bb22_8cea23c0a7d4"></div>
 
 ElectrochemicalMethod
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f49b84d4_e1f9_424c_bb22_8cea23c0a7d4
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f49b84d4_e1f9_424c_bb22_8cea23c0a7d4
 
 .. raw:: html
 
@@ -3508,12 +3842,14 @@ ElectrochemicalMethod
   </tr>
   </table>
 
-.. _electrochemistry_63ea1c9b_0bda_4a69_9745_efb08e6be685:
+.. raw:: html
+
+   <div id="electrochemistry_63ea1c9b_0bda_4a69_9745_efb08e6be685"></div>
 
 ElectrochemicalMigration
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_63ea1c9b_0bda_4a69_9745_efb08e6be685
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_63ea1c9b_0bda_4a69_9745_efb08e6be685
 
 .. raw:: html
 
@@ -3540,12 +3876,14 @@ ElectrochemicalMigration
   </tr>
   </table>
 
-.. _electrochemistry_19abaccd_43be_4048_965c_e4fb63c5951b:
+.. raw:: html
+
+   <div id="electrochemistry_19abaccd_43be_4048_965c_e4fb63c5951b"></div>
 
 ElectrochemicalPhenomenon
 -------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_19abaccd_43be_4048_965c_e4fb63c5951b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_19abaccd_43be_4048_965c_e4fb63c5951b
 
 .. raw:: html
 
@@ -3560,12 +3898,14 @@ ElectrochemicalPhenomenon
   </tr>
   </table>
 
-.. _electrochemistry_ddade648_2033_47b6_bc36_b562a9af591e:
+.. raw:: html
+
+   <div id="electrochemistry_ddade648_2033_47b6_bc36_b562a9af591e"></div>
 
 ElectrochemicalPlot
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ddade648_2033_47b6_bc36_b562a9af591e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ddade648_2033_47b6_bc36_b562a9af591e
 
 .. raw:: html
 
@@ -3580,12 +3920,14 @@ ElectrochemicalPlot
   </tr>
   </table>
 
-.. _electrochemistry_ca0527c1_f682_4eea_aca5_f3ae66a9ddce:
+.. raw:: html
+
+   <div id="electrochemistry_ca0527c1_f682_4eea_aca5_f3ae66a9ddce"></div>
 
 ElectrochemicalPseudocapacitor
 ------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ca0527c1_f682_4eea_aca5_f3ae66a9ddce
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ca0527c1_f682_4eea_aca5_f3ae66a9ddce
 
 .. raw:: html
 
@@ -3608,12 +3950,14 @@ ElectrochemicalPseudocapacitor
   </tr>
   </table>
 
-.. _electrochemistry_a6a69e90_06b5_45b1_83cf_7c0bf39b2914:
+.. raw:: html
+
+   <div id="electrochemistry_a6a69e90_06b5_45b1_83cf_7c0bf39b2914"></div>
 
 ElectrochemicalReaction
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a6a69e90_06b5_45b1_83cf_7c0bf39b2914
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a6a69e90_06b5_45b1_83cf_7c0bf39b2914
 
 .. raw:: html
 
@@ -3644,12 +3988,14 @@ ElectrochemicalReaction
   </tr>
   </table>
 
-.. _electrochemistry_3d805c2a_4801_440e_9e4d_0fa5585c76ae:
+.. raw:: html
+
+   <div id="electrochemistry_3d805c2a_4801_440e_9e4d_0fa5585c76ae"></div>
 
 ElectrochemicalRelation
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3d805c2a_4801_440e_9e4d_0fa5585c76ae
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3d805c2a_4801_440e_9e4d_0fa5585c76ae
 
 .. raw:: html
 
@@ -3664,12 +4010,14 @@ ElectrochemicalRelation
   </tr>
   </table>
 
-.. _electrochemistry_96309fa9_e157_48fe_9fda_41003860a3c0:
+.. raw:: html
+
+   <div id="electrochemistry_96309fa9_e157_48fe_9fda_41003860a3c0"></div>
 
 Electrochemiluminescence
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_96309fa9_e157_48fe_9fda_41003860a3c0
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_96309fa9_e157_48fe_9fda_41003860a3c0
 
 .. raw:: html
 
@@ -3700,12 +4048,14 @@ Electrochemiluminescence
   </tr>
   </table>
 
-.. _electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627:
+.. raw:: html
+
+   <div id="electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627"></div>
 
 Electrode
 ---------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627
 
 .. raw:: html
 
@@ -3734,14 +4084,24 @@ Electrode
     <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
     <td class="element-table-value"><a href='#electrochemistry_14377ecb_5ead_431e_831e_159d622bd0ea'>RectangularElectrode</a>, <a href='#electrochemistry_35c650ab_3b23_4938_b312_1b0dede2e6d5'>Cathode</a>, <a href='#electrochemistry_3663991d_9319_4f7a_922b_f0e428b58801'>PorousElectrode</a>, <a href='#electrochemistry_871bc4a4_2d17_4b88_9b0f_7ab85f14afea'>CounterElectrode</a>, <a href='#electrochemistry_92147e31_d015_4889_a092_04fbab033f15'>CoatedElectrode</a>, <a href='#electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc'>ActiveElectrode</a>, <a href='#electrochemistry_9f466223_e20a_474d_ac4d_6d4b6131c275'>NonPolarizableElectrode</a>, <a href='#electrochemistry_a0a619d7_da95_41f0_8bc3_9c19d636d543'>InertElectrode</a>, <a href='#electrochemistry_a8bfac4f_3f30_4e6d_8d8e_34b1eeecb614'>RoundElectrode</a>, <a href='#electrochemistry_aff732a9_238a_4734_977c_b2ba202af126'>PositiveElectrode</a>, <a href='#electrochemistry_b6319c74_d2ce_48c0_a75a_63156776b302'>Anode</a>, <a href='#electrochemistry_c2024587_3237_474e_8df9_91d10db2df47'>PolarizableElectrode</a>, <a href='#electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c'>NegativeElectrode</a>, <a href='#electrochemistry_f2c33088_224f_4fdb_857a_7cb62e3dddca'>CarbonBasedElectrode</a>, <a href='#electrochemistry_f6fcd255_248d_4603_b128_04dab960a676'>IndicatorElectrode</a>, <a href='#electrochemistry_fb988878_ee54_4350_9ee9_228c00c3ad35'>WorkingElectrode</a></td>
   </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">hasBinder</span></td>
+    <td class="element-table-value"><a href='#electrochemistry_68eb5e35_5bd8_47b1_9b7f_f67224fa291e'>Binder</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">hasActiveMaterial</span></td>
+    <td class="element-table-value"><a href='#electrochemistry_79d1b273_58cd_4be6_a250_434817f7c261'>ActiveMaterial</a></td>
+  </tr>
   </table>
 
-.. _electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56:
+.. raw:: html
+
+   <div id="electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56"></div>
 
 ElectrodeCoating
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
 
 .. raw:: html
 
@@ -3754,14 +4114,28 @@ ElectrodeCoating
     <td class="element-table-key"><span class="element-table-key">Parent Classes</span></td>
     <td class="element-table-value"><a href='#electrochemistry_09a7f560_9ddf_4c32_b067_b213eca5b0a1'>Coating</a></td>
   </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">hasBinder</span></td>
+    <td class="element-table-value"><a href='#electrochemistry_68eb5e35_5bd8_47b1_9b7f_f67224fa291e'>Binder</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">hasAdditive</span></td>
+    <td class="element-table-value"><a href='#electrochemistry_0a399f3f_b873_41f5_be1f_9b6df75cc30a'>Additive</a></td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">hasActiveMaterial</span></td>
+    <td class="element-table-value"><a href='#electrochemistry_79d1b273_58cd_4be6_a250_434817f7c261'>ActiveMaterial</a></td>
+  </tr>
   </table>
 
-.. _electrochemistry_9c73aff8_1c82_4116_a6be_78e21982b69d:
+.. raw:: html
+
+   <div id="electrochemistry_9c73aff8_1c82_4116_a6be_78e21982b69d"></div>
 
 ElectrodeElectrolyteInterface
 -----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9c73aff8_1c82_4116_a6be_78e21982b69d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9c73aff8_1c82_4116_a6be_78e21982b69d
 
 .. raw:: html
 
@@ -3784,12 +4158,14 @@ ElectrodeElectrolyteInterface
   </tr>
   </table>
 
-.. _electrochemistry_d907805f_678b_4ab6_8b56_59631684f84b:
+.. raw:: html
+
+   <div id="electrochemistry_d907805f_678b_4ab6_8b56_59631684f84b"></div>
 
 ElectrodePair
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d907805f_678b_4ab6_8b56_59631684f84b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d907805f_678b_4ab6_8b56_59631684f84b
 
 .. raw:: html
 
@@ -3808,12 +4184,14 @@ ElectrodePair
   </tr>
   </table>
 
-.. _electrochemistry_01260656_ac32_472e_9513_a607366538ec:
+.. raw:: html
+
+   <div id="electrochemistry_01260656_ac32_472e_9513_a607366538ec"></div>
 
 ElectrodePassivation
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_01260656_ac32_472e_9513_a607366538ec
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_01260656_ac32_472e_9513_a607366538ec
 
 .. raw:: html
 
@@ -3844,12 +4222,14 @@ ElectrodePassivation
   </tr>
   </table>
 
-.. _electrochemistry_2e6933aa_4522_4f16_a437_37110e6cbd0d:
+.. raw:: html
+
+   <div id="electrochemistry_2e6933aa_4522_4f16_a437_37110e6cbd0d"></div>
 
 ElectrodePolarisation
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2e6933aa_4522_4f16_a437_37110e6cbd0d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2e6933aa_4522_4f16_a437_37110e6cbd0d
 
 .. raw:: html
 
@@ -3884,12 +4264,14 @@ ElectrodePolarisation
   </tr>
   </table>
 
-.. _electrochemistry_2e3e14f9_4cb8_45b2_908e_47eec893dec8:
+.. raw:: html
+
+   <div id="electrochemistry_2e3e14f9_4cb8_45b2_908e_47eec893dec8"></div>
 
 ElectrodeReaction
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2e3e14f9_4cb8_45b2_908e_47eec893dec8
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2e3e14f9_4cb8_45b2_908e_47eec893dec8
 
 .. raw:: html
 
@@ -3916,12 +4298,14 @@ ElectrodeReaction
   </tr>
   </table>
 
-.. _electrochemistry_27662d03_1bcf_4393_a239_32e31b760839:
+.. raw:: html
+
+   <div id="electrochemistry_27662d03_1bcf_4393_a239_32e31b760839"></div>
 
 ElectrodeStack
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_27662d03_1bcf_4393_a239_32e31b760839
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_27662d03_1bcf_4393_a239_32e31b760839
 
 .. raw:: html
 
@@ -3940,12 +4324,14 @@ ElectrodeStack
   </tr>
   </table>
 
-.. _electrochemistry_f0c24970_4c14_4207_bd78_5f2181a67085:
+.. raw:: html
+
+   <div id="electrochemistry_f0c24970_4c14_4207_bd78_5f2181a67085"></div>
 
 Electrodeposition
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f0c24970_4c14_4207_bd78_5f2181a67085
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f0c24970_4c14_4207_bd78_5f2181a67085
 
 .. raw:: html
 
@@ -3964,12 +4350,14 @@ Electrodeposition
   </tr>
   </table>
 
-.. _electrochemistry_4df84ec1_8a1a_4770_963f_bf48009bd043:
+.. raw:: html
+
+   <div id="electrochemistry_4df84ec1_8a1a_4770_963f_bf48009bd043"></div>
 
 Electrodissolution
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4df84ec1_8a1a_4770_963f_bf48009bd043
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4df84ec1_8a1a_4770_963f_bf48009bd043
 
 .. raw:: html
 
@@ -3984,12 +4372,14 @@ Electrodissolution
   </tr>
   </table>
 
-.. _electrochemistry_e2a1dae1_05e4_4bd1_a39d_0eb10db482bc:
+.. raw:: html
+
+   <div id="electrochemistry_e2a1dae1_05e4_4bd1_a39d_0eb10db482bc"></div>
 
 Electrolysis
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e2a1dae1_05e4_4bd1_a39d_0eb10db482bc
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e2a1dae1_05e4_4bd1_a39d_0eb10db482bc
 
 .. raw:: html
 
@@ -4016,12 +4406,14 @@ Electrolysis
   </tr>
   </table>
 
-.. _electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59:
+.. raw:: html
+
+   <div id="electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59"></div>
 
 Electrolyte
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59
 
 .. raw:: html
 
@@ -4052,12 +4444,14 @@ Electrolyte
   </tr>
   </table>
 
-.. _electrochemistry_554286d4_1f46_44c0_bebc_4ddae00dbce1:
+.. raw:: html
+
+   <div id="electrochemistry_554286d4_1f46_44c0_bebc_4ddae00dbce1"></div>
 
 ElectrolyteAdditive
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_554286d4_1f46_44c0_bebc_4ddae00dbce1
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_554286d4_1f46_44c0_bebc_4ddae00dbce1
 
 .. raw:: html
 
@@ -4072,12 +4466,14 @@ ElectrolyteAdditive
   </tr>
   </table>
 
-.. _electrochemistry_3f6c9e09_5f23_41cc_9f85_7de365cef089:
+.. raw:: html
+
+   <div id="electrochemistry_3f6c9e09_5f23_41cc_9f85_7de365cef089"></div>
 
 ElectrolyteCreep
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3f6c9e09_5f23_41cc_9f85_7de365cef089
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3f6c9e09_5f23_41cc_9f85_7de365cef089
 
 .. raw:: html
 
@@ -4096,12 +4492,14 @@ ElectrolyteCreep
   </tr>
   </table>
 
-.. _electrochemistry_c05692eb_ae92_4e03_b355_f259f9089cb8:
+.. raw:: html
+
+   <div id="electrochemistry_c05692eb_ae92_4e03_b355_f259f9089cb8"></div>
 
 ElectrolyteLevelIndicator
 -------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c05692eb_ae92_4e03_b355_f259f9089cb8
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c05692eb_ae92_4e03_b355_f259f9089cb8
 
 .. raw:: html
 
@@ -4116,12 +4514,14 @@ ElectrolyteLevelIndicator
   </tr>
   </table>
 
-.. _electrochemistry_fa22874b_76a9_4043_8b8f_6086c88746de:
+.. raw:: html
+
+   <div id="electrochemistry_fa22874b_76a9_4043_8b8f_6086c88746de"></div>
 
 ElectrolyteSolution
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fa22874b_76a9_4043_8b8f_6086c88746de
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fa22874b_76a9_4043_8b8f_6086c88746de
 
 .. raw:: html
 
@@ -4144,12 +4544,14 @@ ElectrolyteSolution
   </tr>
   </table>
 
-.. _electrochemistry_900d95fb_863d_4142_a96d_369fb39e2639:
+.. raw:: html
+
+   <div id="electrochemistry_900d95fb_863d_4142_a96d_369fb39e2639"></div>
 
 ElectrolyticCapacitor
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_900d95fb_863d_4142_a96d_369fb39e2639
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_900d95fb_863d_4142_a96d_369fb39e2639
 
 .. raw:: html
 
@@ -4176,12 +4578,14 @@ ElectrolyticCapacitor
   </tr>
   </table>
 
-.. _electrochemistry_e931087f_7681_4096_b200_5223bcc47eb4:
+.. raw:: html
+
+   <div id="electrochemistry_e931087f_7681_4096_b200_5223bcc47eb4"></div>
 
 ElectrolyticCell
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e931087f_7681_4096_b200_5223bcc47eb4
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e931087f_7681_4096_b200_5223bcc47eb4
 
 .. raw:: html
 
@@ -4212,12 +4616,14 @@ ElectrolyticCell
   </tr>
   </table>
 
-.. _electrochemistry_571c1ae9_c4bf_48ab_babf_536153d22a0b:
+.. raw:: html
+
+   <div id="electrochemistry_571c1ae9_c4bf_48ab_babf_536153d22a0b"></div>
 
 ElectrolyticConductivityData
 ----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_571c1ae9_c4bf_48ab_babf_536153d22a0b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_571c1ae9_c4bf_48ab_babf_536153d22a0b
 
 .. raw:: html
 
@@ -4228,12 +4634,14 @@ ElectrolyticConductivityData
   </tr>
   </table>
 
-.. _electrochemistry_5641910f_6e69_4ce4_be84_4b1bf14b8916:
+.. raw:: html
+
+   <div id="electrochemistry_5641910f_6e69_4ce4_be84_4b1bf14b8916"></div>
 
 Electroosmosis
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5641910f_6e69_4ce4_be84_4b1bf14b8916
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5641910f_6e69_4ce4_be84_4b1bf14b8916
 
 .. raw:: html
 
@@ -4260,12 +4668,14 @@ Electroosmosis
   </tr>
   </table>
 
-.. _electrochemistry_a2b92d2e_4431_411e_8da5_a4c08bac2c0e:
+.. raw:: html
+
+   <div id="electrochemistry_a2b92d2e_4431_411e_8da5_a4c08bac2c0e"></div>
 
 Electroplating
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a2b92d2e_4431_411e_8da5_a4c08bac2c0e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a2b92d2e_4431_411e_8da5_a4c08bac2c0e
 
 .. raw:: html
 
@@ -4292,12 +4702,14 @@ Electroplating
   </tr>
   </table>
 
-.. _electrochemistry_cbb95634_450c_4332_980c_d37baadd7619:
+.. raw:: html
+
+   <div id="electrochemistry_cbb95634_450c_4332_980c_d37baadd7619"></div>
 
 EnergyCalculation
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cbb95634_450c_4332_980c_d37baadd7619
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cbb95634_450c_4332_980c_d37baadd7619
 
 .. raw:: html
 
@@ -4312,12 +4724,14 @@ EnergyCalculation
   </tr>
   </table>
 
-.. _electrochemistry_990d19b8_672a_4219_a2b3_0a25bfa13f69:
+.. raw:: html
+
+   <div id="electrochemistry_990d19b8_672a_4219_a2b3_0a25bfa13f69"></div>
 
 EqualizationCharge
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_990d19b8_672a_4219_a2b3_0a25bfa13f69
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_990d19b8_672a_4219_a2b3_0a25bfa13f69
 
 .. raw:: html
 
@@ -4336,12 +4750,14 @@ EqualizationCharge
   </tr>
   </table>
 
-.. _electrochemistry_b7ea60b2_18f4_4588_bf19_55539c8e8888:
+.. raw:: html
+
+   <div id="electrochemistry_b7ea60b2_18f4_4588_bf19_55539c8e8888"></div>
 
 ExchangeCurrentDensityData
 --------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b7ea60b2_18f4_4588_bf19_55539c8e8888
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b7ea60b2_18f4_4588_bf19_55539c8e8888
 
 .. raw:: html
 
@@ -4352,12 +4768,14 @@ ExchangeCurrentDensityData
   </tr>
   </table>
 
-.. _electrochemistry_31b38a1b_5873_454c_ba99_00491497fb43:
+.. raw:: html
+
+   <div id="electrochemistry_31b38a1b_5873_454c_ba99_00491497fb43"></div>
 
 ExpandedMesh
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_31b38a1b_5873_454c_ba99_00491497fb43
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_31b38a1b_5873_454c_ba99_00491497fb43
 
 .. raw:: html
 
@@ -4368,12 +4786,14 @@ ExpandedMesh
   </tr>
   </table>
 
-.. _electrochemistry_1152ae6b_8b57_4d99_912e_40c6a29342fb:
+.. raw:: html
+
+   <div id="electrochemistry_1152ae6b_8b57_4d99_912e_40c6a29342fb"></div>
 
 FaradaysFirstLawOfElectrolysis
 ------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1152ae6b_8b57_4d99_912e_40c6a29342fb
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1152ae6b_8b57_4d99_912e_40c6a29342fb
 
 .. raw:: html
 
@@ -4392,12 +4812,14 @@ FaradaysFirstLawOfElectrolysis
   </tr>
   </table>
 
-.. _electrochemistry_60c5b2e5_164a_4ce6_8409_f386f5e50c03:
+.. raw:: html
+
+   <div id="electrochemistry_60c5b2e5_164a_4ce6_8409_f386f5e50c03"></div>
 
 FaradaysSecondLawOfElectrolysis
 -------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_60c5b2e5_164a_4ce6_8409_f386f5e50c03
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_60c5b2e5_164a_4ce6_8409_f386f5e50c03
 
 .. raw:: html
 
@@ -4412,12 +4834,14 @@ FaradaysSecondLawOfElectrolysis
   </tr>
   </table>
 
-.. _electrochemistry_ae56cce3_7a7c_4e53_bb58_31e0d642d47e:
+.. raw:: html
+
+   <div id="electrochemistry_ae56cce3_7a7c_4e53_bb58_31e0d642d47e"></div>
 
 FlameArrestorVent
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ae56cce3_7a7c_4e53_bb58_31e0d642d47e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ae56cce3_7a7c_4e53_bb58_31e0d642d47e
 
 .. raw:: html
 
@@ -4432,12 +4856,14 @@ FlameArrestorVent
   </tr>
   </table>
 
-.. _electrochemistry_3e7fe02d_c888_4c49_8e05_ccd9785607a6:
+.. raw:: html
+
+   <div id="electrochemistry_3e7fe02d_c888_4c49_8e05_ccd9785607a6"></div>
 
 FloatCharging
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3e7fe02d_c888_4c49_8e05_ccd9785607a6
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3e7fe02d_c888_4c49_8e05_ccd9785607a6
 
 .. raw:: html
 
@@ -4460,12 +4886,14 @@ FloatCharging
   </tr>
   </table>
 
-.. _electrochemistry_95e4aa95_b7e9_40d7_b78e_4d7dcc31093d:
+.. raw:: html
+
+   <div id="electrochemistry_95e4aa95_b7e9_40d7_b78e_4d7dcc31093d"></div>
 
 FlowCell
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_95e4aa95_b7e9_40d7_b78e_4d7dcc31093d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_95e4aa95_b7e9_40d7_b78e_4d7dcc31093d
 
 .. raw:: html
 
@@ -4488,12 +4916,14 @@ FlowCell
   </tr>
   </table>
 
-.. _electrochemistry_339e1ba1_2006_4f22_aac4_3ce75edf1088:
+.. raw:: html
+
+   <div id="electrochemistry_339e1ba1_2006_4f22_aac4_3ce75edf1088"></div>
 
 FluorineDopedTinOxideElectrode
 ------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_339e1ba1_2006_4f22_aac4_3ce75edf1088
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_339e1ba1_2006_4f22_aac4_3ce75edf1088
 
 .. raw:: html
 
@@ -4512,12 +4942,14 @@ FluorineDopedTinOxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_1d5377a7_9f2b_4fdf_958a_7eeadce158d6:
+.. raw:: html
+
+   <div id="electrochemistry_1d5377a7_9f2b_4fdf_958a_7eeadce158d6"></div>
 
 Foil
 ----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1d5377a7_9f2b_4fdf_958a_7eeadce158d6
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1d5377a7_9f2b_4fdf_958a_7eeadce158d6
 
 .. raw:: html
 
@@ -4528,12 +4960,14 @@ Foil
   </tr>
   </table>
 
-.. _electrochemistry_1586ef26_6d30_49e3_ae32_b4c9fc181941:
+.. raw:: html
+
+   <div id="electrochemistry_1586ef26_6d30_49e3_ae32_b4c9fc181941"></div>
 
 FormFactor
 ----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1586ef26_6d30_49e3_ae32_b4c9fc181941
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1586ef26_6d30_49e3_ae32_b4c9fc181941
 
 .. raw:: html
 
@@ -4548,12 +4982,14 @@ FormFactor
   </tr>
   </table>
 
-.. _electrochemistry_cb223440_51bd_4f16_a536_96ec408e7de4:
+.. raw:: html
+
+   <div id="electrochemistry_cb223440_51bd_4f16_a536_96ec408e7de4"></div>
 
 FormationCycling
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cb223440_51bd_4f16_a536_96ec408e7de4
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cb223440_51bd_4f16_a536_96ec408e7de4
 
 .. raw:: html
 
@@ -4568,12 +5004,14 @@ FormationCycling
   </tr>
   </table>
 
-.. _electrochemistry_bd33779c_6f40_4354_ab5d_f6c17396414d:
+.. raw:: html
+
+   <div id="electrochemistry_bd33779c_6f40_4354_ab5d_f6c17396414d"></div>
 
 FuelCell
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bd33779c_6f40_4354_ab5d_f6c17396414d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bd33779c_6f40_4354_ab5d_f6c17396414d
 
 .. raw:: html
 
@@ -4600,12 +5038,14 @@ FuelCell
   </tr>
   </table>
 
-.. _electrochemistry_e248373f_294f_4ca4_9edf_0ad6653bb64f:
+.. raw:: html
+
+   <div id="electrochemistry_e248373f_294f_4ca4_9edf_0ad6653bb64f"></div>
 
 GalvanicCell
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e248373f_294f_4ca4_9edf_0ad6653bb64f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e248373f_294f_4ca4_9edf_0ad6653bb64f
 
 .. raw:: html
 
@@ -4636,12 +5076,14 @@ GalvanicCell
   </tr>
   </table>
 
-.. _electrochemistry_22725105_c941_4b14_a4a2_fcb627958607:
+.. raw:: html
+
+   <div id="electrochemistry_22725105_c941_4b14_a4a2_fcb627958607"></div>
 
 Galvanostat
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_22725105_c941_4b14_a4a2_fcb627958607
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_22725105_c941_4b14_a4a2_fcb627958607
 
 .. raw:: html
 
@@ -4664,12 +5106,14 @@ Galvanostat
   </tr>
   </table>
 
-.. _electrochemistry_79a8802e_8296_459a_b65d_6e5c79e1bf37:
+.. raw:: html
+
+   <div id="electrochemistry_79a8802e_8296_459a_b65d_6e5c79e1bf37"></div>
 
 GalvanostaticCycling
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79a8802e_8296_459a_b65d_6e5c79e1bf37
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79a8802e_8296_459a_b65d_6e5c79e1bf37
 
 .. raw:: html
 
@@ -4684,12 +5128,14 @@ GalvanostaticCycling
   </tr>
   </table>
 
-.. _electrochemistry_ac2ffdd9_09cf_42a7_ba6a_1c6968e9a8a5:
+.. raw:: html
+
+   <div id="electrochemistry_ac2ffdd9_09cf_42a7_ba6a_1c6968e9a8a5"></div>
 
 GalvanostaticIntermittentTitrationTechniqueData
 -----------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ac2ffdd9_09cf_42a7_ba6a_1c6968e9a8a5
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ac2ffdd9_09cf_42a7_ba6a_1c6968e9a8a5
 
 .. raw:: html
 
@@ -4708,12 +5154,14 @@ GalvanostaticIntermittentTitrationTechniqueData
   </tr>
   </table>
 
-.. _electrochemistry_bbb1d95b_72d1_44f6_b07e_a3d7d41ac215:
+.. raw:: html
+
+   <div id="electrochemistry_bbb1d95b_72d1_44f6_b07e_a3d7d41ac215"></div>
 
 GasDiffusionElectrode
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bbb1d95b_72d1_44f6_b07e_a3d7d41ac215
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bbb1d95b_72d1_44f6_b07e_a3d7d41ac215
 
 .. raw:: html
 
@@ -4748,12 +5196,14 @@ GasDiffusionElectrode
   </tr>
   </table>
 
-.. _electrochemistry_0c9017b4_6efd_4e2b_8e24_48b60ebe9315:
+.. raw:: html
+
+   <div id="electrochemistry_0c9017b4_6efd_4e2b_8e24_48b60ebe9315"></div>
 
 GasDissolution
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0c9017b4_6efd_4e2b_8e24_48b60ebe9315
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0c9017b4_6efd_4e2b_8e24_48b60ebe9315
 
 .. raw:: html
 
@@ -4768,12 +5218,14 @@ GasDissolution
   </tr>
   </table>
 
-.. _electrochemistry_4288b145_ba79_4989_92f8_86086679b0fe:
+.. raw:: html
+
+   <div id="electrochemistry_4288b145_ba79_4989_92f8_86086679b0fe"></div>
 
 GasEvolution
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4288b145_ba79_4989_92f8_86086679b0fe
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4288b145_ba79_4989_92f8_86086679b0fe
 
 .. raw:: html
 
@@ -4800,12 +5252,14 @@ GasEvolution
   </tr>
   </table>
 
-.. _electrochemistry_0f827b54_370d_4c63_99a6_80f13b24e55e:
+.. raw:: html
+
+   <div id="electrochemistry_0f827b54_370d_4c63_99a6_80f13b24e55e"></div>
 
 GassingOfACell
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f827b54_370d_4c63_99a6_80f13b24e55e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f827b54_370d_4c63_99a6_80f13b24e55e
 
 .. raw:: html
 
@@ -4824,12 +5278,14 @@ GassingOfACell
   </tr>
   </table>
 
-.. _electrochemistry_d11b0e66_c35b_4da7_80a1_037ce89b77fb:
+.. raw:: html
+
+   <div id="electrochemistry_d11b0e66_c35b_4da7_80a1_037ce89b77fb"></div>
 
 GlassFibreSeparator
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d11b0e66_c35b_4da7_80a1_037ce89b77fb
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d11b0e66_c35b_4da7_80a1_037ce89b77fb
 
 .. raw:: html
 
@@ -4848,12 +5304,14 @@ GlassFibreSeparator
   </tr>
   </table>
 
-.. _electrochemistry_057bb143_639c_472b_99ed_ffa1867f6e63:
+.. raw:: html
+
+   <div id="electrochemistry_057bb143_639c_472b_99ed_ffa1867f6e63"></div>
 
 GlassyCarbonElectrode
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_057bb143_639c_472b_99ed_ffa1867f6e63
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_057bb143_639c_472b_99ed_ffa1867f6e63
 
 .. raw:: html
 
@@ -4872,12 +5330,14 @@ GlassyCarbonElectrode
   </tr>
   </table>
 
-.. _electrochemistry_52547692_f773_4e3f_8c8b_1d9d39bc3c8c:
+.. raw:: html
+
+   <div id="electrochemistry_52547692_f773_4e3f_8c8b_1d9d39bc3c8c"></div>
 
 GoldBasedElectrode
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_52547692_f773_4e3f_8c8b_1d9d39bc3c8c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_52547692_f773_4e3f_8c8b_1d9d39bc3c8c
 
 .. raw:: html
 
@@ -4896,12 +5356,14 @@ GoldBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_6fec8cc1_4e6c_428e_8343_6cf3c286a185:
+.. raw:: html
+
+   <div id="electrochemistry_6fec8cc1_4e6c_428e_8343_6cf3c286a185"></div>
 
 GoldElectrode
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6fec8cc1_4e6c_428e_8343_6cf3c286a185
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6fec8cc1_4e6c_428e_8343_6cf3c286a185
 
 .. raw:: html
 
@@ -4920,12 +5382,14 @@ GoldElectrode
   </tr>
   </table>
 
-.. _electrochemistry_fa54f95d_b49e_43b5_84c3_35520d0fb2f6:
+.. raw:: html
+
+   <div id="electrochemistry_fa54f95d_b49e_43b5_84c3_35520d0fb2f6"></div>
 
 GouyChapmanModel
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fa54f95d_b49e_43b5_84c3_35520d0fb2f6
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fa54f95d_b49e_43b5_84c3_35520d0fb2f6
 
 .. raw:: html
 
@@ -4940,12 +5404,14 @@ GouyChapmanModel
   </tr>
   </table>
 
-.. _electrochemistry_7f168ebc_4c78_459c_9a39_bddaa57e214c:
+.. raw:: html
+
+   <div id="electrochemistry_7f168ebc_4c78_459c_9a39_bddaa57e214c"></div>
 
 GrahameModel
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7f168ebc_4c78_459c_9a39_bddaa57e214c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7f168ebc_4c78_459c_9a39_bddaa57e214c
 
 .. raw:: html
 
@@ -4960,12 +5426,14 @@ GrahameModel
   </tr>
   </table>
 
-.. _electrochemistry_c831d963_629a_41ab_850f_97fb6841b739:
+.. raw:: html
+
+   <div id="electrochemistry_c831d963_629a_41ab_850f_97fb6841b739"></div>
 
 GraphiteElectrode
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c831d963_629a_41ab_850f_97fb6841b739
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c831d963_629a_41ab_850f_97fb6841b739
 
 .. raw:: html
 
@@ -4980,12 +5448,14 @@ GraphiteElectrode
   </tr>
   </table>
 
-.. _electrochemistry_6235cc7c_2eee_432a_93af_47d7e05db007:
+.. raw:: html
+
+   <div id="electrochemistry_6235cc7c_2eee_432a_93af_47d7e05db007"></div>
 
 HardCarbonElectrode
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6235cc7c_2eee_432a_93af_47d7e05db007
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6235cc7c_2eee_432a_93af_47d7e05db007
 
 .. raw:: html
 
@@ -5000,12 +5470,14 @@ HardCarbonElectrode
   </tr>
   </table>
 
-.. _electrochemistry_9bc02662_9799_4593_906d_638a841d7352:
+.. raw:: html
+
+   <div id="electrochemistry_9bc02662_9799_4593_906d_638a841d7352"></div>
 
 HelmholtzModel
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9bc02662_9799_4593_906d_638a841d7352
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9bc02662_9799_4593_906d_638a841d7352
 
 .. raw:: html
 
@@ -5020,12 +5492,14 @@ HelmholtzModel
   </tr>
   </table>
 
-.. _electrochemistry_c14ae9b3_e4ba_4129_a7b6_afd2d4571de6:
+.. raw:: html
+
+   <div id="electrochemistry_c14ae9b3_e4ba_4129_a7b6_afd2d4571de6"></div>
 
 HermeticallySealedCell
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c14ae9b3_e4ba_4129_a7b6_afd2d4571de6
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c14ae9b3_e4ba_4129_a7b6_afd2d4571de6
 
 .. raw:: html
 
@@ -5044,12 +5518,14 @@ HermeticallySealedCell
   </tr>
   </table>
 
-.. _electrochemistry_f54474fc_5d07_474b_97ae_f5d0349363b4:
+.. raw:: html
+
+   <div id="electrochemistry_f54474fc_5d07_474b_97ae_f5d0349363b4"></div>
 
 HybridFlowCell
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f54474fc_5d07_474b_97ae_f5d0349363b4
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f54474fc_5d07_474b_97ae_f5d0349363b4
 
 .. raw:: html
 
@@ -5064,12 +5540,14 @@ HybridFlowCell
   </tr>
   </table>
 
-.. _electrochemistry_c4a778c7_33da_4e1a_960e_402a210bfeff:
+.. raw:: html
+
+   <div id="electrochemistry_c4a778c7_33da_4e1a_960e_402a210bfeff"></div>
 
 HydrogenElectrode
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c4a778c7_33da_4e1a_960e_402a210bfeff
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c4a778c7_33da_4e1a_960e_402a210bfeff
 
 .. raw:: html
 
@@ -5088,12 +5566,14 @@ HydrogenElectrode
   </tr>
   </table>
 
-.. _electrochemistry_77be01ef_49bd_4f2e_bec8_eec0894b8562:
+.. raw:: html
+
+   <div id="electrochemistry_77be01ef_49bd_4f2e_bec8_eec0894b8562"></div>
 
 IncreasingPotentialPulses
 -------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_77be01ef_49bd_4f2e_bec8_eec0894b8562
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_77be01ef_49bd_4f2e_bec8_eec0894b8562
 
 .. raw:: html
 
@@ -5108,12 +5588,14 @@ IncreasingPotentialPulses
   </tr>
   </table>
 
-.. _electrochemistry_f6fcd255_248d_4603_b128_04dab960a676:
+.. raw:: html
+
+   <div id="electrochemistry_f6fcd255_248d_4603_b128_04dab960a676"></div>
 
 IndicatorElectrode
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f6fcd255_248d_4603_b128_04dab960a676
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f6fcd255_248d_4603_b128_04dab960a676
 
 .. raw:: html
 
@@ -5136,12 +5618,14 @@ IndicatorElectrode
   </tr>
   </table>
 
-.. _electrochemistry_7b9db6b3_36f0_4b5d_acbb_9284a9054a09:
+.. raw:: html
+
+   <div id="electrochemistry_7b9db6b3_36f0_4b5d_acbb_9284a9054a09"></div>
 
 IndiumBasedElectrode
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7b9db6b3_36f0_4b5d_acbb_9284a9054a09
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7b9db6b3_36f0_4b5d_acbb_9284a9054a09
 
 .. raw:: html
 
@@ -5156,12 +5640,14 @@ IndiumBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_c63baed9_48dd_4b5c_9e8c_03011010ffb6:
+.. raw:: html
+
+   <div id="electrochemistry_c63baed9_48dd_4b5c_9e8c_03011010ffb6"></div>
 
 IndiumTinOxideElectrode
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c63baed9_48dd_4b5c_9e8c_03011010ffb6
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c63baed9_48dd_4b5c_9e8c_03011010ffb6
 
 .. raw:: html
 
@@ -5180,12 +5666,14 @@ IndiumTinOxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_a0a619d7_da95_41f0_8bc3_9c19d636d543:
+.. raw:: html
+
+   <div id="electrochemistry_a0a619d7_da95_41f0_8bc3_9c19d636d543"></div>
 
 InertElectrode
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a0a619d7_da95_41f0_8bc3_9c19d636d543
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a0a619d7_da95_41f0_8bc3_9c19d636d543
 
 .. raw:: html
 
@@ -5212,12 +5700,14 @@ InertElectrode
   </tr>
   </table>
 
-.. _electrochemistry_757eae08_4d43_42d4_8b4e_8a0bfd2f9a1c:
+.. raw:: html
+
+   <div id="electrochemistry_757eae08_4d43_42d4_8b4e_8a0bfd2f9a1c"></div>
 
 InsertionElectrode
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_757eae08_4d43_42d4_8b4e_8a0bfd2f9a1c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_757eae08_4d43_42d4_8b4e_8a0bfd2f9a1c
 
 .. raw:: html
 
@@ -5240,12 +5730,14 @@ InsertionElectrode
   </tr>
   </table>
 
-.. _electrochemistry_94d9d5e2_9e9b_4eb7_b3ce_f3d658b7ae64:
+.. raw:: html
+
+   <div id="electrochemistry_94d9d5e2_9e9b_4eb7_b3ce_f3d658b7ae64"></div>
 
 Interface
 ---------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_94d9d5e2_9e9b_4eb7_b3ce_f3d658b7ae64
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_94d9d5e2_9e9b_4eb7_b3ce_f3d658b7ae64
 
 .. raw:: html
 
@@ -5272,12 +5764,14 @@ Interface
   </tr>
   </table>
 
-.. _electrochemistry_f78e3c87_01c6_4cc2_b047_30322262e22d:
+.. raw:: html
+
+   <div id="electrochemistry_f78e3c87_01c6_4cc2_b047_30322262e22d"></div>
 
 InterfacialRegion
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f78e3c87_01c6_4cc2_b047_30322262e22d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f78e3c87_01c6_4cc2_b047_30322262e22d
 
 .. raw:: html
 
@@ -5292,12 +5786,14 @@ InterfacialRegion
   </tr>
   </table>
 
-.. _electrochemistry_54e0c2bd_1bb2_4f9c_9b55_5b6cc34651ec:
+.. raw:: html
+
+   <div id="electrochemistry_54e0c2bd_1bb2_4f9c_9b55_5b6cc34651ec"></div>
 
 Interphase
 ----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_54e0c2bd_1bb2_4f9c_9b55_5b6cc34651ec
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_54e0c2bd_1bb2_4f9c_9b55_5b6cc34651ec
 
 .. raw:: html
 
@@ -5320,12 +5816,14 @@ Interphase
   </tr>
   </table>
 
-.. _electrochemistry_402598d9_0eea_405d_b0d0_3b8b79deba6f:
+.. raw:: html
+
+   <div id="electrochemistry_402598d9_0eea_405d_b0d0_3b8b79deba6f"></div>
 
 InterphaseGrowth
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_402598d9_0eea_405d_b0d0_3b8b79deba6f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_402598d9_0eea_405d_b0d0_3b8b79deba6f
 
 .. raw:: html
 
@@ -5340,12 +5838,14 @@ InterphaseGrowth
   </tr>
   </table>
 
-.. _electrochemistry_15325775_6d4c_4192_82f1_e4feca9de426:
+.. raw:: html
+
+   <div id="electrochemistry_15325775_6d4c_4192_82f1_e4feca9de426"></div>
 
 IonExchangeMembrane
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_15325775_6d4c_4192_82f1_e4feca9de426
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_15325775_6d4c_4192_82f1_e4feca9de426
 
 .. raw:: html
 
@@ -5372,12 +5872,14 @@ IonExchangeMembrane
   </tr>
   </table>
 
-.. _electrochemistry_c3f4b34a_0e2c_46f3_baab_4ebd2682d26f:
+.. raw:: html
+
+   <div id="electrochemistry_c3f4b34a_0e2c_46f3_baab_4ebd2682d26f"></div>
 
 IonicLiquidElectrolyte
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c3f4b34a_0e2c_46f3_baab_4ebd2682d26f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c3f4b34a_0e2c_46f3_baab_4ebd2682d26f
 
 .. raw:: html
 
@@ -5400,12 +5902,14 @@ IonicLiquidElectrolyte
   </tr>
   </table>
 
-.. _electrochemistry_3e6a7d5f_3700_46b3_b1b8_f34e37e6f931:
+.. raw:: html
+
+   <div id="electrochemistry_3e6a7d5f_3700_46b3_b1b8_f34e37e6f931"></div>
 
 IridiumBasedElectrode
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3e6a7d5f_3700_46b3_b1b8_f34e37e6f931
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3e6a7d5f_3700_46b3_b1b8_f34e37e6f931
 
 .. raw:: html
 
@@ -5420,12 +5924,14 @@ IridiumBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_cba03815_eaa8_493d_b9e4_52856b57fde6:
+.. raw:: html
+
+   <div id="electrochemistry_cba03815_eaa8_493d_b9e4_52856b57fde6"></div>
 
 IridiumOxideElectrode
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cba03815_eaa8_493d_b9e4_52856b57fde6
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cba03815_eaa8_493d_b9e4_52856b57fde6
 
 .. raw:: html
 
@@ -5444,12 +5950,14 @@ IridiumOxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_5e1136d3_df00_40f7_a4bc_8259341053a1:
+.. raw:: html
+
+   <div id="electrochemistry_5e1136d3_df00_40f7_a4bc_8259341053a1"></div>
 
 IronBasedElectrode
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5e1136d3_df00_40f7_a4bc_8259341053a1
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5e1136d3_df00_40f7_a4bc_8259341053a1
 
 .. raw:: html
 
@@ -5468,12 +5976,14 @@ IronBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_cc4e178c_bc1f_4502_b6c2_33f304ef6bab:
+.. raw:: html
+
+   <div id="electrochemistry_cc4e178c_bc1f_4502_b6c2_33f304ef6bab"></div>
 
 IronBasedElectrode
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cc4e178c_bc1f_4502_b6c2_33f304ef6bab
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cc4e178c_bc1f_4502_b6c2_33f304ef6bab
 
 .. raw:: html
 
@@ -5488,12 +5998,14 @@ IronBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_d2726dd5_69f0_4cb1_bd3c_4c48813e57e7:
+.. raw:: html
+
+   <div id="electrochemistry_d2726dd5_69f0_4cb1_bd3c_4c48813e57e7"></div>
 
 IronDisulfideElectrode
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d2726dd5_69f0_4cb1_bd3c_4c48813e57e7
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d2726dd5_69f0_4cb1_bd3c_4c48813e57e7
 
 .. raw:: html
 
@@ -5508,12 +6020,14 @@ IronDisulfideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_d54f6aac_7cd2_4d52_9bca_2f19bb1eaec4:
+.. raw:: html
+
+   <div id="electrochemistry_d54f6aac_7cd2_4d52_9bca_2f19bb1eaec4"></div>
 
 IronPhosphateBasedElectrode
 ---------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d54f6aac_7cd2_4d52_9bca_2f19bb1eaec4
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d54f6aac_7cd2_4d52_9bca_2f19bb1eaec4
 
 .. raw:: html
 
@@ -5532,12 +6046,14 @@ IronPhosphateBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_a0fcb105_587f_45d8_a89a_46dc8f745069:
+.. raw:: html
+
+   <div id="electrochemistry_a0fcb105_587f_45d8_a89a_46dc8f745069"></div>
 
 Jacket
 ------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a0fcb105_587f_45d8_a89a_46dc8f745069
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a0fcb105_587f_45d8_a89a_46dc8f745069
 
 .. raw:: html
 
@@ -5552,12 +6068,14 @@ Jacket
   </tr>
   </table>
 
-.. _electrochemistry_598ae3d0_76e9_429c_a0e1_8694525cb574:
+.. raw:: html
+
+   <div id="electrochemistry_598ae3d0_76e9_429c_a0e1_8694525cb574"></div>
 
 KohlrauschsLaw
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_598ae3d0_76e9_429c_a0e1_8694525cb574
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_598ae3d0_76e9_429c_a0e1_8694525cb574
 
 .. raw:: html
 
@@ -5576,12 +6094,14 @@ KohlrauschsLaw
   </tr>
   </table>
 
-.. _electrochemistry_5a7a3028_db9e_4045_ab68_054c6afc91fc:
+.. raw:: html
+
+   <div id="electrochemistry_5a7a3028_db9e_4045_ab68_054c6afc91fc"></div>
 
 LawOfMassAction
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5a7a3028_db9e_4045_ab68_054c6afc91fc
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5a7a3028_db9e_4045_ab68_054c6afc91fc
 
 .. raw:: html
 
@@ -5600,12 +6120,14 @@ LawOfMassAction
   </tr>
   </table>
 
-.. _electrochemistry_610f0bc8_557d_455b_a8ed_272d5d1813c9:
+.. raw:: html
+
+   <div id="electrochemistry_610f0bc8_557d_455b_a8ed_272d5d1813c9"></div>
 
 LeadBasedElectrode
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_610f0bc8_557d_455b_a8ed_272d5d1813c9
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_610f0bc8_557d_455b_a8ed_272d5d1813c9
 
 .. raw:: html
 
@@ -5620,12 +6142,14 @@ LeadBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_f6223121_7df5_42f8_902c_d26fa2fc4f04:
+.. raw:: html
+
+   <div id="electrochemistry_f6223121_7df5_42f8_902c_d26fa2fc4f04"></div>
 
 LeadOxideElectrode
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f6223121_7df5_42f8_902c_d26fa2fc4f04
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f6223121_7df5_42f8_902c_d26fa2fc4f04
 
 .. raw:: html
 
@@ -5644,12 +6168,14 @@ LeadOxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_c55ec02c_b727_4df1_97ce_91d7bb5d5e91:
+.. raw:: html
+
+   <div id="electrochemistry_c55ec02c_b727_4df1_97ce_91d7bb5d5e91"></div>
 
 Leakage
 -------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c55ec02c_b727_4df1_97ce_91d7bb5d5e91
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c55ec02c_b727_4df1_97ce_91d7bb5d5e91
 
 .. raw:: html
 
@@ -5668,12 +6194,14 @@ Leakage
   </tr>
   </table>
 
-.. _electrochemistry_23b30468_be7b_45a9_bc11_a8219bc3ab8b:
+.. raw:: html
+
+   <div id="electrochemistry_23b30468_be7b_45a9_bc11_a8219bc3ab8b"></div>
 
 LeclancheElectrolyte
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_23b30468_be7b_45a9_bc11_a8219bc3ab8b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_23b30468_be7b_45a9_bc11_a8219bc3ab8b
 
 .. raw:: html
 
@@ -5688,12 +6216,14 @@ LeclancheElectrolyte
   </tr>
   </table>
 
-.. _electrochemistry_6559c04d_75bc_41ea_8ed8_8d3c09dae6b0:
+.. raw:: html
+
+   <div id="electrochemistry_6559c04d_75bc_41ea_8ed8_8d3c09dae6b0"></div>
 
 LidSealingCompound
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6559c04d_75bc_41ea_8ed8_8d3c09dae6b0
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6559c04d_75bc_41ea_8ed8_8d3c09dae6b0
 
 .. raw:: html
 
@@ -5708,12 +6238,14 @@ LidSealingCompound
   </tr>
   </table>
 
-.. _electrochemistry_fa774456_718a_4a28_ba6a_6f828887c510:
+.. raw:: html
+
+   <div id="electrochemistry_fa774456_718a_4a28_ba6a_6f828887c510"></div>
 
 LinearCurrentRamp
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fa774456_718a_4a28_ba6a_6f828887c510
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fa774456_718a_4a28_ba6a_6f828887c510
 
 .. raw:: html
 
@@ -5728,12 +6260,14 @@ LinearCurrentRamp
   </tr>
   </table>
 
-.. _electrochemistry_29f2a35a_8c09_429d_b9e8_33f3e1fc3671:
+.. raw:: html
+
+   <div id="electrochemistry_29f2a35a_8c09_429d_b9e8_33f3e1fc3671"></div>
 
 LinearPotentialRamp
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_29f2a35a_8c09_429d_b9e8_33f3e1fc3671
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_29f2a35a_8c09_429d_b9e8_33f3e1fc3671
 
 .. raw:: html
 
@@ -5748,12 +6282,14 @@ LinearPotentialRamp
   </tr>
   </table>
 
-.. _electrochemistry_609b340f_3450_4a10_95c2_c457e3eb8a89:
+.. raw:: html
+
+   <div id="electrochemistry_609b340f_3450_4a10_95c2_c457e3eb8a89"></div>
 
 LiquidElectrolyte
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_609b340f_3450_4a10_95c2_c457e3eb8a89
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_609b340f_3450_4a10_95c2_c457e3eb8a89
 
 .. raw:: html
 
@@ -5772,12 +6308,14 @@ LiquidElectrolyte
   </tr>
   </table>
 
-.. _electrochemistry_80fdbd63_9b7a_462b_a8cb_b50f5f6ab182:
+.. raw:: html
+
+   <div id="electrochemistry_80fdbd63_9b7a_462b_a8cb_b50f5f6ab182"></div>
 
 LiquidGalliumElectrode
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_80fdbd63_9b7a_462b_a8cb_b50f5f6ab182
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_80fdbd63_9b7a_462b_a8cb_b50f5f6ab182
 
 .. raw:: html
 
@@ -5792,12 +6330,14 @@ LiquidGalliumElectrode
   </tr>
   </table>
 
-.. _electrochemistry_634467ad_feed_4979_adb2_877d98fe1768:
+.. raw:: html
+
+   <div id="electrochemistry_634467ad_feed_4979_adb2_877d98fe1768"></div>
 
 LiquidJunction
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_634467ad_feed_4979_adb2_877d98fe1768
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_634467ad_feed_4979_adb2_877d98fe1768
 
 .. raw:: html
 
@@ -5816,12 +6356,14 @@ LiquidJunction
   </tr>
   </table>
 
-.. _electrochemistry_9fd49892_cf6d_482e_a6c3_5f763948ec29:
+.. raw:: html
+
+   <div id="electrochemistry_9fd49892_cf6d_482e_a6c3_5f763948ec29"></div>
 
 LiquidMetalElectrode
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9fd49892_cf6d_482e_a6c3_5f763948ec29
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9fd49892_cf6d_482e_a6c3_5f763948ec29
 
 .. raw:: html
 
@@ -5848,12 +6390,14 @@ LiquidMetalElectrode
   </tr>
   </table>
 
-.. _electrochemistry_47346d85_b9be_4480_8993_6307b1c58fcd:
+.. raw:: html
+
+   <div id="electrochemistry_47346d85_b9be_4480_8993_6307b1c58fcd"></div>
 
 LithiumBasedElectrode
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_47346d85_b9be_4480_8993_6307b1c58fcd
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_47346d85_b9be_4480_8993_6307b1c58fcd
 
 .. raw:: html
 
@@ -5872,12 +6416,14 @@ LithiumBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_fd7caf39_0a43_4fbf_958e_a62067aa9007:
+.. raw:: html
+
+   <div id="electrochemistry_fd7caf39_0a43_4fbf_958e_a62067aa9007"></div>
 
 LithiumCobaltOxideElectrode
 ---------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fd7caf39_0a43_4fbf_958e_a62067aa9007
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fd7caf39_0a43_4fbf_958e_a62067aa9007
 
 .. raw:: html
 
@@ -5896,12 +6442,14 @@ LithiumCobaltOxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_55775b50_b9d9_4d68_8cb5_38fcd7b9b54d:
+.. raw:: html
+
+   <div id="electrochemistry_55775b50_b9d9_4d68_8cb5_38fcd7b9b54d"></div>
 
 LithiumElectrode
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_55775b50_b9d9_4d68_8cb5_38fcd7b9b54d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_55775b50_b9d9_4d68_8cb5_38fcd7b9b54d
 
 .. raw:: html
 
@@ -5916,12 +6464,14 @@ LithiumElectrode
   </tr>
   </table>
 
-.. _electrochemistry_e84e691a_df58_465c_9771_7a7fe2212ed5:
+.. raw:: html
+
+   <div id="electrochemistry_e84e691a_df58_465c_9771_7a7fe2212ed5"></div>
 
 LithiumHydroxideSolution
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e84e691a_df58_465c_9771_7a7fe2212ed5
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e84e691a_df58_465c_9771_7a7fe2212ed5
 
 .. raw:: html
 
@@ -5940,12 +6490,14 @@ LithiumHydroxideSolution
   </tr>
   </table>
 
-.. _electrochemistry_4c3ee364_829b_41a4_b895_ca4a041efb2a:
+.. raw:: html
+
+   <div id="electrochemistry_4c3ee364_829b_41a4_b895_ca4a041efb2a"></div>
 
 LithiumInsertionElectrode
 -------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4c3ee364_829b_41a4_b895_ca4a041efb2a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4c3ee364_829b_41a4_b895_ca4a041efb2a
 
 .. raw:: html
 
@@ -5960,12 +6512,14 @@ LithiumInsertionElectrode
   </tr>
   </table>
 
-.. _electrochemistry_1d0f15cb_d6b5_4c27_89ca_fe78adc1ce5b:
+.. raw:: html
+
+   <div id="electrochemistry_1d0f15cb_d6b5_4c27_89ca_fe78adc1ce5b"></div>
 
 LithiumIronPhosphateElectrode
 -----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1d0f15cb_d6b5_4c27_89ca_fe78adc1ce5b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1d0f15cb_d6b5_4c27_89ca_fe78adc1ce5b
 
 .. raw:: html
 
@@ -5984,12 +6538,14 @@ LithiumIronPhosphateElectrode
   </tr>
   </table>
 
-.. _electrochemistry_9109b3f6_112b_456d_ae45_b82c271c656b:
+.. raw:: html
+
+   <div id="electrochemistry_9109b3f6_112b_456d_ae45_b82c271c656b"></div>
 
 LithiumManganeseIronPhosphateElectrode
 --------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9109b3f6_112b_456d_ae45_b82c271c656b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9109b3f6_112b_456d_ae45_b82c271c656b
 
 .. raw:: html
 
@@ -6008,12 +6564,14 @@ LithiumManganeseIronPhosphateElectrode
   </tr>
   </table>
 
-.. _electrochemistry_c231227b_f318_4e59_ad90_6e91072903ed:
+.. raw:: html
+
+   <div id="electrochemistry_c231227b_f318_4e59_ad90_6e91072903ed"></div>
 
 LithiumManganeseOxideElectrode
 ------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c231227b_f318_4e59_ad90_6e91072903ed
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c231227b_f318_4e59_ad90_6e91072903ed
 
 .. raw:: html
 
@@ -6032,12 +6590,14 @@ LithiumManganeseOxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_fffc3dad_6946_4c32_a9d3_f5f311339881:
+.. raw:: html
+
+   <div id="electrochemistry_fffc3dad_6946_4c32_a9d3_f5f311339881"></div>
 
 LithiumManganeseOxideLithiumIronPhosphateElectrode
 --------------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fffc3dad_6946_4c32_a9d3_f5f311339881
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fffc3dad_6946_4c32_a9d3_f5f311339881
 
 .. raw:: html
 
@@ -6056,12 +6616,14 @@ LithiumManganeseOxideLithiumIronPhosphateElectrode
   </tr>
   </table>
 
-.. _electrochemistry_713200a1_952b_49e2_90b7_deba229f6bbe:
+.. raw:: html
+
+   <div id="electrochemistry_713200a1_952b_49e2_90b7_deba229f6bbe"></div>
 
 LithiumManganesePhosphateElectrode
 ----------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_713200a1_952b_49e2_90b7_deba229f6bbe
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_713200a1_952b_49e2_90b7_deba229f6bbe
 
 .. raw:: html
 
@@ -6080,12 +6642,14 @@ LithiumManganesePhosphateElectrode
   </tr>
   </table>
 
-.. _electrochemistry_f19d3b4f_d59b_4a92_a547_54a6f59cc9b4:
+.. raw:: html
+
+   <div id="electrochemistry_f19d3b4f_d59b_4a92_a547_54a6f59cc9b4"></div>
 
 LithiumNickelCobaltAluminumOxideElectrode
 -----------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f19d3b4f_d59b_4a92_a547_54a6f59cc9b4
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f19d3b4f_d59b_4a92_a547_54a6f59cc9b4
 
 .. raw:: html
 
@@ -6104,12 +6668,14 @@ LithiumNickelCobaltAluminumOxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_48e380c3_0441_4761_a80f_3e448cb2f0ba:
+.. raw:: html
+
+   <div id="electrochemistry_48e380c3_0441_4761_a80f_3e448cb2f0ba"></div>
 
 LithiumNickelMananeseCobaltOxideLithiumManganeseOxideElectrode
 --------------------------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_48e380c3_0441_4761_a80f_3e448cb2f0ba
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_48e380c3_0441_4761_a80f_3e448cb2f0ba
 
 .. raw:: html
 
@@ -6128,12 +6694,14 @@ LithiumNickelMananeseCobaltOxideLithiumManganeseOxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_b3eb8c65_5644_45e3_9e17_0be6277c7962:
+.. raw:: html
+
+   <div id="electrochemistry_b3eb8c65_5644_45e3_9e17_0be6277c7962"></div>
 
 LithiumNickelManganeseCobaltOxideElectrode
 ------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b3eb8c65_5644_45e3_9e17_0be6277c7962
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b3eb8c65_5644_45e3_9e17_0be6277c7962
 
 .. raw:: html
 
@@ -6152,12 +6720,14 @@ LithiumNickelManganeseCobaltOxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_098690e3_9010_437e_8042_cee1656efa9b:
+.. raw:: html
+
+   <div id="electrochemistry_098690e3_9010_437e_8042_cee1656efa9b"></div>
 
 LithiumNickelManganeseCobaltOxideLithiumCobaltOxideElectrode
 ------------------------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_098690e3_9010_437e_8042_cee1656efa9b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_098690e3_9010_437e_8042_cee1656efa9b
 
 .. raw:: html
 
@@ -6176,12 +6746,14 @@ LithiumNickelManganeseCobaltOxideLithiumCobaltOxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_41ddf723_245f_4ce8_b9b1_7d9b3b9eea7d:
+.. raw:: html
+
+   <div id="electrochemistry_41ddf723_245f_4ce8_b9b1_7d9b3b9eea7d"></div>
 
 LithiumNickelManganeseOxideElectrode
 ------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_41ddf723_245f_4ce8_b9b1_7d9b3b9eea7d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_41ddf723_245f_4ce8_b9b1_7d9b3b9eea7d
 
 .. raw:: html
 
@@ -6200,12 +6772,14 @@ LithiumNickelManganeseOxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_bb710d71_98fa_48a1_85bc_d8f1ef2200da:
+.. raw:: html
+
+   <div id="electrochemistry_bb710d71_98fa_48a1_85bc_d8f1ef2200da"></div>
 
 LithiumNickelManganeseOxideLithiumIronPhosphateElectrode
 --------------------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bb710d71_98fa_48a1_85bc_d8f1ef2200da
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bb710d71_98fa_48a1_85bc_d8f1ef2200da
 
 .. raw:: html
 
@@ -6224,12 +6798,14 @@ LithiumNickelManganeseOxideLithiumIronPhosphateElectrode
   </tr>
   </table>
 
-.. _electrochemistry_cab66388_3feb_4101_82bc_f4441f0b60e3:
+.. raw:: html
+
+   <div id="electrochemistry_cab66388_3feb_4101_82bc_f4441f0b60e3"></div>
 
 LithiumNickelOxideElectrode
 ---------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cab66388_3feb_4101_82bc_f4441f0b60e3
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cab66388_3feb_4101_82bc_f4441f0b60e3
 
 .. raw:: html
 
@@ -6248,12 +6824,14 @@ LithiumNickelOxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_6d0fe07e_a629_479c_ab24_2846f209bb0b:
+.. raw:: html
+
+   <div id="electrochemistry_6d0fe07e_a629_479c_ab24_2846f209bb0b"></div>
 
 LithiumTitanateElectrode
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6d0fe07e_a629_479c_ab24_2846f209bb0b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6d0fe07e_a629_479c_ab24_2846f209bb0b
 
 .. raw:: html
 
@@ -6272,12 +6850,14 @@ LithiumTitanateElectrode
   </tr>
   </table>
 
-.. _electrochemistry_b5e91259_cd97_4ed6_9ab2_4b18ef68a35a:
+.. raw:: html
+
+   <div id="electrochemistry_b5e91259_cd97_4ed6_9ab2_4b18ef68a35a"></div>
 
 LithiumVanadiumOxideElectrode
 -----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b5e91259_cd97_4ed6_9ab2_4b18ef68a35a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b5e91259_cd97_4ed6_9ab2_4b18ef68a35a
 
 .. raw:: html
 
@@ -6292,12 +6872,14 @@ LithiumVanadiumOxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_2a177462_ff01_4b83_ab9f_032e93c9ec69:
+.. raw:: html
+
+   <div id="electrochemistry_2a177462_ff01_4b83_ab9f_032e93c9ec69"></div>
 
 MagnesiumBasedElectrode
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2a177462_ff01_4b83_ab9f_032e93c9ec69
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2a177462_ff01_4b83_ab9f_032e93c9ec69
 
 .. raw:: html
 
@@ -6312,12 +6894,14 @@ MagnesiumBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_d9888f1f_2226_4ce3_9cb3_91fd9bd1bf22:
+.. raw:: html
+
+   <div id="electrochemistry_d9888f1f_2226_4ce3_9cb3_91fd9bd1bf22"></div>
 
 MagnesiumInsertionElectrode
 ---------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d9888f1f_2226_4ce3_9cb3_91fd9bd1bf22
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d9888f1f_2226_4ce3_9cb3_91fd9bd1bf22
 
 .. raw:: html
 
@@ -6332,12 +6916,14 @@ MagnesiumInsertionElectrode
   </tr>
   </table>
 
-.. _electrochemistry_b1ac8d0c_a215_4e60_82b0_38272eff5131:
+.. raw:: html
+
+   <div id="electrochemistry_b1ac8d0c_a215_4e60_82b0_38272eff5131"></div>
 
 ManganeseBasedElectrode
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b1ac8d0c_a215_4e60_82b0_38272eff5131
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b1ac8d0c_a215_4e60_82b0_38272eff5131
 
 .. raw:: html
 
@@ -6356,12 +6942,14 @@ ManganeseBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_ca4d9efc_70be_441e_b358_d927aa4c36c4:
+.. raw:: html
+
+   <div id="electrochemistry_ca4d9efc_70be_441e_b358_d927aa4c36c4"></div>
 
 ManganeseDioxideElectrode
 -------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ca4d9efc_70be_441e_b358_d927aa4c36c4
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ca4d9efc_70be_441e_b358_d927aa4c36c4
 
 .. raw:: html
 
@@ -6380,12 +6968,14 @@ ManganeseDioxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_468b3b63_b62a_4110_8c7e_40fffd5fdfd6:
+.. raw:: html
+
+   <div id="electrochemistry_468b3b63_b62a_4110_8c7e_40fffd5fdfd6"></div>
 
 ManganesePhosphateBasedElectrode
 --------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_468b3b63_b62a_4110_8c7e_40fffd5fdfd6
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_468b3b63_b62a_4110_8c7e_40fffd5fdfd6
 
 .. raw:: html
 
@@ -6404,12 +6994,14 @@ ManganesePhosphateBasedElectrode
   </tr>
   </table>
 
-.. _MeasurementDataPostProcessing:
+.. raw:: html
+
+   <div id="MeasurementDataPostProcessing"></div>
 
 MeasurementDataPostProcessing
 -----------------------------
 
-* https://w3id.org/emmo/domain/characterisation-methodology/chameo#MeasurementDataPostProcessing
+IRI: https://w3id.org/emmo/domain/characterisation-methodology/chameo#MeasurementDataPostProcessing
 
 .. raw:: html
 
@@ -6424,12 +7016,14 @@ MeasurementDataPostProcessing
   </tr>
   </table>
 
-.. _electrochemistry_df78745e_f9db_4830_88f0_8ce074fcb8ff:
+.. raw:: html
+
+   <div id="electrochemistry_df78745e_f9db_4830_88f0_8ce074fcb8ff"></div>
 
 MercuryElectrode
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_df78745e_f9db_4830_88f0_8ce074fcb8ff
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_df78745e_f9db_4830_88f0_8ce074fcb8ff
 
 .. raw:: html
 
@@ -6452,12 +7046,14 @@ MercuryElectrode
   </tr>
   </table>
 
-.. _electrochemistry_5adb91e0_ffe1_41f3_b779_c6966f65fb0e:
+.. raw:: html
+
+   <div id="electrochemistry_5adb91e0_ffe1_41f3_b779_c6966f65fb0e"></div>
 
 MetalElectrode
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5adb91e0_ffe1_41f3_b779_c6966f65fb0e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5adb91e0_ffe1_41f3_b779_c6966f65fb0e
 
 .. raw:: html
 
@@ -6476,12 +7072,14 @@ MetalElectrode
   </tr>
   </table>
 
-.. _electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5:
+.. raw:: html
+
+   <div id="electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5"></div>
 
 MetalOxideElectrode
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5
 
 .. raw:: html
 
@@ -6500,12 +7098,14 @@ MetalOxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_e94f6d42_35e4_4f9f_bb74_5e0628bbd454:
+.. raw:: html
+
+   <div id="electrochemistry_e94f6d42_35e4_4f9f_bb74_5e0628bbd454"></div>
 
 MonoblocContainer
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e94f6d42_35e4_4f9f_bb74_5e0628bbd454
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e94f6d42_35e4_4f9f_bb74_5e0628bbd454
 
 .. raw:: html
 
@@ -6524,12 +7124,14 @@ MonoblocContainer
   </tr>
   </table>
 
-.. _electrochemistry_1a2eb6db_c927_4039_aea0_8dfab060fd27:
+.. raw:: html
+
+   <div id="electrochemistry_1a2eb6db_c927_4039_aea0_8dfab060fd27"></div>
 
 Mudrib
 ------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1a2eb6db_c927_4039_aea0_8dfab060fd27
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1a2eb6db_c927_4039_aea0_8dfab060fd27
 
 .. raw:: html
 
@@ -6544,12 +7146,14 @@ Mudrib
   </tr>
   </table>
 
-.. _electrochemistry_dc205ac2_314e_415c_a2b6_b12e8359d54c:
+.. raw:: html
+
+   <div id="electrochemistry_dc205ac2_314e_415c_a2b6_b12e8359d54c"></div>
 
 NearNeutralElectrolyte
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dc205ac2_314e_415c_a2b6_b12e8359d54c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dc205ac2_314e_415c_a2b6_b12e8359d54c
 
 .. raw:: html
 
@@ -6572,12 +7176,14 @@ NearNeutralElectrolyte
   </tr>
   </table>
 
-.. _electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c:
+.. raw:: html
+
+   <div id="electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c"></div>
 
 NegativeElectrode
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
 
 .. raw:: html
 
@@ -6604,12 +7210,14 @@ NegativeElectrode
   </tr>
   </table>
 
-.. _electrochemistry_b851c7e9_60bf_4d3d_abe1_8d08d3d85124:
+.. raw:: html
+
+   <div id="electrochemistry_b851c7e9_60bf_4d3d_abe1_8d08d3d85124"></div>
 
 NegativeTerminal
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b851c7e9_60bf_4d3d_abe1_8d08d3d85124
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b851c7e9_60bf_4d3d_abe1_8d08d3d85124
 
 .. raw:: html
 
@@ -6628,12 +7236,14 @@ NegativeTerminal
   </tr>
   </table>
 
-.. _electrochemistry_9d7e5fea_a49a_4a19_a8de_8e24c60e420c:
+.. raw:: html
+
+   <div id="electrochemistry_9d7e5fea_a49a_4a19_a8de_8e24c60e420c"></div>
 
 NernstEinsteinEquation
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9d7e5fea_a49a_4a19_a8de_8e24c60e420c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9d7e5fea_a49a_4a19_a8de_8e24c60e420c
 
 .. raw:: html
 
@@ -6656,12 +7266,14 @@ NernstEinsteinEquation
   </tr>
   </table>
 
-.. _electrochemistry_fe3a6c9a_85b8_4da6_aa4f_71c8de74939e:
+.. raw:: html
+
+   <div id="electrochemistry_fe3a6c9a_85b8_4da6_aa4f_71c8de74939e"></div>
 
 NernstEquation
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fe3a6c9a_85b8_4da6_aa4f_71c8de74939e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fe3a6c9a_85b8_4da6_aa4f_71c8de74939e
 
 .. raw:: html
 
@@ -6684,12 +7296,14 @@ NernstEquation
   </tr>
   </table>
 
-.. _electrochemistry_0471ec77_91bc_4a78_be31_b6af613e5966:
+.. raw:: html
+
+   <div id="electrochemistry_0471ec77_91bc_4a78_be31_b6af613e5966"></div>
 
 Neutralisation
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0471ec77_91bc_4a78_be31_b6af613e5966
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0471ec77_91bc_4a78_be31_b6af613e5966
 
 .. raw:: html
 
@@ -6708,12 +7322,14 @@ Neutralisation
   </tr>
   </table>
 
-.. _electrochemistry_0d2aaaf4_1a8a_4a32_abd8_7d0fdf0ae9d2:
+.. raw:: html
+
+   <div id="electrochemistry_0d2aaaf4_1a8a_4a32_abd8_7d0fdf0ae9d2"></div>
 
 NickelBasedElectrode
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0d2aaaf4_1a8a_4a32_abd8_7d0fdf0ae9d2
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0d2aaaf4_1a8a_4a32_abd8_7d0fdf0ae9d2
 
 .. raw:: html
 
@@ -6732,12 +7348,14 @@ NickelBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_76e461aa_5948_4a68_8337_284d11e0fd7d:
+.. raw:: html
+
+   <div id="electrochemistry_76e461aa_5948_4a68_8337_284d11e0fd7d"></div>
 
 NickelOxideElectrode
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_76e461aa_5948_4a68_8337_284d11e0fd7d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_76e461aa_5948_4a68_8337_284d11e0fd7d
 
 .. raw:: html
 
@@ -6756,12 +7374,14 @@ NickelOxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_344ed3a6_481a_499f_afef_631f1cece9ef:
+.. raw:: html
+
+   <div id="electrochemistry_344ed3a6_481a_499f_afef_631f1cece9ef"></div>
 
 NickelOxideHydroxideElectrode
 -----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_344ed3a6_481a_499f_afef_631f1cece9ef
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_344ed3a6_481a_499f_afef_631f1cece9ef
 
 .. raw:: html
 
@@ -6780,12 +7400,14 @@ NickelOxideHydroxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_5f9a9411_05f9_4576_acd3_81d7d41cfe98:
+.. raw:: html
+
+   <div id="electrochemistry_5f9a9411_05f9_4576_acd3_81d7d41cfe98"></div>
 
 NonAqueousElectrolyte
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5f9a9411_05f9_4576_acd3_81d7d41cfe98
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5f9a9411_05f9_4576_acd3_81d7d41cfe98
 
 .. raw:: html
 
@@ -6808,12 +7430,14 @@ NonAqueousElectrolyte
   </tr>
   </table>
 
-.. _electrochemistry_addf91e1_ba8c_4a3e_b1e9_092e3e1cc2b3:
+.. raw:: html
+
+   <div id="electrochemistry_addf91e1_ba8c_4a3e_b1e9_092e3e1cc2b3"></div>
 
 NonAqueousInorganicElectrolyte
 ------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_addf91e1_ba8c_4a3e_b1e9_092e3e1cc2b3
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_addf91e1_ba8c_4a3e_b1e9_092e3e1cc2b3
 
 .. raw:: html
 
@@ -6828,12 +7452,14 @@ NonAqueousInorganicElectrolyte
   </tr>
   </table>
 
-.. _electrochemistry_9f466223_e20a_474d_ac4d_6d4b6131c275:
+.. raw:: html
+
+   <div id="electrochemistry_9f466223_e20a_474d_ac4d_6d4b6131c275"></div>
 
 NonPolarizableElectrode
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9f466223_e20a_474d_ac4d_6d4b6131c275
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9f466223_e20a_474d_ac4d_6d4b6131c275
 
 .. raw:: html
 
@@ -6852,12 +7478,14 @@ NonPolarizableElectrode
   </tr>
   </table>
 
-.. _electrochemistry_c610d869_cc03_44f0_b40d_ca86e945b9c9:
+.. raw:: html
+
+   <div id="electrochemistry_c610d869_cc03_44f0_b40d_ca86e945b9c9"></div>
 
 NonSpillableCell
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c610d869_cc03_44f0_b40d_ca86e945b9c9
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c610d869_cc03_44f0_b40d_ca86e945b9c9
 
 .. raw:: html
 
@@ -6876,12 +7504,14 @@ NonSpillableCell
   </tr>
   </table>
 
-.. _electrochemistry_83ee23b3_2f5c_4afa_b972_ac85e91d7306:
+.. raw:: html
+
+   <div id="electrochemistry_83ee23b3_2f5c_4afa_b972_ac85e91d7306"></div>
 
 NormalHydrogenElectrode
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_83ee23b3_2f5c_4afa_b972_ac85e91d7306
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_83ee23b3_2f5c_4afa_b972_ac85e91d7306
 
 .. raw:: html
 
@@ -6904,12 +7534,14 @@ NormalHydrogenElectrode
   </tr>
   </table>
 
-.. _electrochemistry_a2b01d05_b472_4cf5_b388_e0914db56324:
+.. raw:: html
+
+   <div id="electrochemistry_a2b01d05_b472_4cf5_b388_e0914db56324"></div>
 
 NyquistPlot
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a2b01d05_b472_4cf5_b388_e0914db56324
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a2b01d05_b472_4cf5_b388_e0914db56324
 
 .. raw:: html
 
@@ -6936,12 +7568,14 @@ NyquistPlot
   </tr>
   </table>
 
-.. _electrochemistry_7cef0da2_8de3_418e_b390_cce9a5d3c129:
+.. raw:: html
+
+   <div id="electrochemistry_7cef0da2_8de3_418e_b390_cce9a5d3c129"></div>
 
 OpenCellFoam
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7cef0da2_8de3_418e_b390_cce9a5d3c129
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7cef0da2_8de3_418e_b390_cce9a5d3c129
 
 .. raw:: html
 
@@ -6964,12 +7598,14 @@ OpenCellFoam
   </tr>
   </table>
 
-.. _electrochemistry_564d31be_91cb_4a8f_8369_2a55f1180499:
+.. raw:: html
+
+   <div id="electrochemistry_564d31be_91cb_4a8f_8369_2a55f1180499"></div>
 
 OrganicElectrolyte
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_564d31be_91cb_4a8f_8369_2a55f1180499
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_564d31be_91cb_4a8f_8369_2a55f1180499
 
 .. raw:: html
 
@@ -6984,12 +7620,14 @@ OrganicElectrolyte
   </tr>
   </table>
 
-.. _electrochemistry_76df6e7b_fc3b_4a1f_98b1_0ca9c0539e4c:
+.. raw:: html
+
+   <div id="electrochemistry_76df6e7b_fc3b_4a1f_98b1_0ca9c0539e4c"></div>
 
 OutputCable
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_76df6e7b_fc3b_4a1f_98b1_0ca9c0539e4c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_76df6e7b_fc3b_4a1f_98b1_0ca9c0539e4c
 
 .. raw:: html
 
@@ -7004,12 +7642,14 @@ OutputCable
   </tr>
   </table>
 
-.. _electrochemistry_9ee6e728_e8f5_4b36_a045_d63da69dfc85:
+.. raw:: html
+
+   <div id="electrochemistry_9ee6e728_e8f5_4b36_a045_d63da69dfc85"></div>
 
 Overcharging
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9ee6e728_e8f5_4b36_a045_d63da69dfc85
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9ee6e728_e8f5_4b36_a045_d63da69dfc85
 
 .. raw:: html
 
@@ -7028,12 +7668,14 @@ Overcharging
   </tr>
   </table>
 
-.. _electrochemistry_e2c91edd_dd01_4309_9735_6fe5280261d4:
+.. raw:: html
+
+   <div id="electrochemistry_e2c91edd_dd01_4309_9735_6fe5280261d4"></div>
 
 OxygenElectrode
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e2c91edd_dd01_4309_9735_6fe5280261d4
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e2c91edd_dd01_4309_9735_6fe5280261d4
 
 .. raw:: html
 
@@ -7048,12 +7690,14 @@ OxygenElectrode
   </tr>
   </table>
 
-.. _electrochemistry_27f95593_47f1_4494_b6bb_ac0733df185d:
+.. raw:: html
+
+   <div id="electrochemistry_27f95593_47f1_4494_b6bb_ac0733df185d"></div>
 
 P12103310
 ---------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_27f95593_47f1_4494_b6bb_ac0733df185d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_27f95593_47f1_4494_b6bb_ac0733df185d
 
 .. raw:: html
 
@@ -7072,12 +7716,14 @@ P12103310
   </tr>
   </table>
 
-.. _electrochemistry_c54fbb75_0528_49c0_97e0_258798a947e4:
+.. raw:: html
+
+   <div id="electrochemistry_c54fbb75_0528_49c0_97e0_258798a947e4"></div>
 
 P1212080
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c54fbb75_0528_49c0_97e0_258798a947e4
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c54fbb75_0528_49c0_97e0_258798a947e4
 
 .. raw:: html
 
@@ -7096,12 +7742,14 @@ P1212080
   </tr>
   </table>
 
-.. _electrochemistry_d1199193_b203_4fcb_971c_ccf6332973ae:
+.. raw:: html
+
+   <div id="electrochemistry_d1199193_b203_4fcb_971c_ccf6332973ae"></div>
 
 P1212081
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d1199193_b203_4fcb_971c_ccf6332973ae
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d1199193_b203_4fcb_971c_ccf6332973ae
 
 .. raw:: html
 
@@ -7120,12 +7768,14 @@ P1212081
   </tr>
   </table>
 
-.. _electrochemistry_4ca551d2_2969_4c18_96ce_db99831ed0af:
+.. raw:: html
+
+   <div id="electrochemistry_4ca551d2_2969_4c18_96ce_db99831ed0af"></div>
 
 P1212085
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4ca551d2_2969_4c18_96ce_db99831ed0af
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4ca551d2_2969_4c18_96ce_db99831ed0af
 
 .. raw:: html
 
@@ -7144,12 +7794,14 @@ P1212085
   </tr>
   </table>
 
-.. _electrochemistry_93358d9b_8976_42d0_84ae_e5a2400c3ea7:
+.. raw:: html
+
+   <div id="electrochemistry_93358d9b_8976_42d0_84ae_e5a2400c3ea7"></div>
 
 P1312085
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_93358d9b_8976_42d0_84ae_e5a2400c3ea7
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_93358d9b_8976_42d0_84ae_e5a2400c3ea7
 
 .. raw:: html
 
@@ -7168,12 +7820,14 @@ P1312085
   </tr>
   </table>
 
-.. _electrochemistry_56def0d5_fe57_40d7_85e3_97872fa2a3e1:
+.. raw:: html
+
+   <div id="electrochemistry_56def0d5_fe57_40d7_85e3_97872fa2a3e1"></div>
 
 P1714891
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_56def0d5_fe57_40d7_85e3_97872fa2a3e1
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_56def0d5_fe57_40d7_85e3_97872fa2a3e1
 
 .. raw:: html
 
@@ -7192,12 +7846,14 @@ P1714891
   </tr>
   </table>
 
-.. _electrochemistry_289da03d_606a_4668_a195_e81627bc80b7:
+.. raw:: html
+
+   <div id="electrochemistry_289da03d_606a_4668_a195_e81627bc80b7"></div>
 
 P1865140
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_289da03d_606a_4668_a195_e81627bc80b7
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_289da03d_606a_4668_a195_e81627bc80b7
 
 .. raw:: html
 
@@ -7216,12 +7872,14 @@ P1865140
   </tr>
   </table>
 
-.. _electrochemistry_d1bf3cdd_d618_40e3_b055_a952ef632157:
+.. raw:: html
+
+   <div id="electrochemistry_d1bf3cdd_d618_40e3_b055_a952ef632157"></div>
 
 P1868107
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d1bf3cdd_d618_40e3_b055_a952ef632157
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d1bf3cdd_d618_40e3_b055_a952ef632157
 
 .. raw:: html
 
@@ -7240,12 +7898,14 @@ P1868107
   </tr>
   </table>
 
-.. _electrochemistry_bba6b94e_c0d7_40bf_a9d6_413ff458397c:
+.. raw:: html
+
+   <div id="electrochemistry_bba6b94e_c0d7_40bf_a9d6_413ff458397c"></div>
 
 P20100141
 ---------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bba6b94e_c0d7_40bf_a9d6_413ff458397c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bba6b94e_c0d7_40bf_a9d6_413ff458397c
 
 .. raw:: html
 
@@ -7264,12 +7924,14 @@ P20100141
   </tr>
   </table>
 
-.. _electrochemistry_0e366263_fded_4509_bddd_392d839013e4:
+.. raw:: html
+
+   <div id="electrochemistry_0e366263_fded_4509_bddd_392d839013e4"></div>
 
 P21148128
 ---------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0e366263_fded_4509_bddd_392d839013e4
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0e366263_fded_4509_bddd_392d839013e4
 
 .. raw:: html
 
@@ -7288,12 +7950,14 @@ P21148128
   </tr>
   </table>
 
-.. _electrochemistry_3b714a22_4212_4f4f_b578_140c357b18de:
+.. raw:: html
+
+   <div id="electrochemistry_3b714a22_4212_4f4f_b578_140c357b18de"></div>
 
 P2117385
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3b714a22_4212_4f4f_b578_140c357b18de
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3b714a22_4212_4f4f_b578_140c357b18de
 
 .. raw:: html
 
@@ -7312,12 +7976,14 @@ P2117385
   </tr>
   </table>
 
-.. _electrochemistry_619c2e56_077d_4bb4_9062_65fb75763651:
+.. raw:: html
+
+   <div id="electrochemistry_619c2e56_077d_4bb4_9062_65fb75763651"></div>
 
 P27148129
 ---------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_619c2e56_077d_4bb4_9062_65fb75763651
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_619c2e56_077d_4bb4_9062_65fb75763651
 
 .. raw:: html
 
@@ -7336,12 +8002,14 @@ P27148129
   </tr>
   </table>
 
-.. _electrochemistry_f4a6a682_fd7c_43df_bed2_df70848d6026:
+.. raw:: html
+
+   <div id="electrochemistry_f4a6a682_fd7c_43df_bed2_df70848d6026"></div>
 
 P2714891
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f4a6a682_fd7c_43df_bed2_df70848d6026
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f4a6a682_fd7c_43df_bed2_df70848d6026
 
 .. raw:: html
 
@@ -7360,12 +8028,14 @@ P2714891
   </tr>
   </table>
 
-.. _electrochemistry_50d9652c_6b68_457c_bd72_f89a8e549bcf:
+.. raw:: html
+
+   <div id="electrochemistry_50d9652c_6b68_457c_bd72_f89a8e549bcf"></div>
 
 P2714898
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_50d9652c_6b68_457c_bd72_f89a8e549bcf
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_50d9652c_6b68_457c_bd72_f89a8e549bcf
 
 .. raw:: html
 
@@ -7384,12 +8054,14 @@ P2714898
   </tr>
   </table>
 
-.. _electrochemistry_a5c1b56f_5c82_4e3b_800e_5a280331348b:
+.. raw:: html
+
+   <div id="electrochemistry_a5c1b56f_5c82_4e3b_800e_5a280331348b"></div>
 
 P2770102
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a5c1b56f_5c82_4e3b_800e_5a280331348b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a5c1b56f_5c82_4e3b_800e_5a280331348b
 
 .. raw:: html
 
@@ -7408,12 +8080,14 @@ P2770102
   </tr>
   </table>
 
-.. _electrochemistry_7018bd4e_6ca1_44eb_a558_6585c0bf8547:
+.. raw:: html
+
+   <div id="electrochemistry_7018bd4e_6ca1_44eb_a558_6585c0bf8547"></div>
 
 P2770120
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7018bd4e_6ca1_44eb_a558_6585c0bf8547
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7018bd4e_6ca1_44eb_a558_6585c0bf8547
 
 .. raw:: html
 
@@ -7432,12 +8106,14 @@ P2770120
   </tr>
   </table>
 
-.. _electrochemistry_afe918c7_0634_40c1_9421_78ea2fe707e3:
+.. raw:: html
+
+   <div id="electrochemistry_afe918c7_0634_40c1_9421_78ea2fe707e3"></div>
 
 P2770131
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_afe918c7_0634_40c1_9421_78ea2fe707e3
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_afe918c7_0634_40c1_9421_78ea2fe707e3
 
 .. raw:: html
 
@@ -7456,12 +8132,14 @@ P2770131
   </tr>
   </table>
 
-.. _electrochemistry_37504d4d_2aff_4f7f_9f46_a24e258028e8:
+.. raw:: html
+
+   <div id="electrochemistry_37504d4d_2aff_4f7f_9f46_a24e258028e8"></div>
 
 P29135214
 ---------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_37504d4d_2aff_4f7f_9f46_a24e258028e8
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_37504d4d_2aff_4f7f_9f46_a24e258028e8
 
 .. raw:: html
 
@@ -7480,12 +8158,14 @@ P29135214
   </tr>
   </table>
 
-.. _electrochemistry_8112c7ba_e58a_463b_8661_b836bb6d7c86:
+.. raw:: html
+
+   <div id="electrochemistry_8112c7ba_e58a_463b_8661_b836bb6d7c86"></div>
 
 P32173115
 ---------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8112c7ba_e58a_463b_8661_b836bb6d7c86
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8112c7ba_e58a_463b_8661_b836bb6d7c86
 
 .. raw:: html
 
@@ -7504,12 +8184,14 @@ P32173115
   </tr>
   </table>
 
-.. _electrochemistry_948234f6_4095_4419_af30_00ab297a7694:
+.. raw:: html
+
+   <div id="electrochemistry_948234f6_4095_4419_af30_00ab297a7694"></div>
 
 P32173225
 ---------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_948234f6_4095_4419_af30_00ab297a7694
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_948234f6_4095_4419_af30_00ab297a7694
 
 .. raw:: html
 
@@ -7528,12 +8210,14 @@ P32173225
   </tr>
   </table>
 
-.. _electrochemistry_41ab11ec_af9f_401d_b80d_474c1dc86cd6:
+.. raw:: html
+
+   <div id="electrochemistry_41ab11ec_af9f_401d_b80d_474c1dc86cd6"></div>
 
 P4014895
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_41ab11ec_af9f_401d_b80d_474c1dc86cd6
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_41ab11ec_af9f_401d_b80d_474c1dc86cd6
 
 .. raw:: html
 
@@ -7552,12 +8236,14 @@ P4014895
   </tr>
   </table>
 
-.. _electrochemistry_36444184_1100_4271_869f_7f2d983aaecb:
+.. raw:: html
+
+   <div id="electrochemistry_36444184_1100_4271_869f_7f2d983aaecb"></div>
 
 P45173115
 ---------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_36444184_1100_4271_869f_7f2d983aaecb
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_36444184_1100_4271_869f_7f2d983aaecb
 
 .. raw:: html
 
@@ -7576,12 +8262,14 @@ P45173115
   </tr>
   </table>
 
-.. _electrochemistry_2c63d7f4_09ba_4ca9_baa2_a1da899bf477:
+.. raw:: html
+
+   <div id="electrochemistry_2c63d7f4_09ba_4ca9_baa2_a1da899bf477"></div>
 
 P45173225
 ---------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2c63d7f4_09ba_4ca9_baa2_a1da899bf477
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2c63d7f4_09ba_4ca9_baa2_a1da899bf477
 
 .. raw:: html
 
@@ -7600,12 +8288,14 @@ P45173225
   </tr>
   </table>
 
-.. _electrochemistry_f9f056bb_a38b_43bd_a6bd_99d618431f4d:
+.. raw:: html
+
+   <div id="electrochemistry_f9f056bb_a38b_43bd_a6bd_99d618431f4d"></div>
 
 PalladiumBasedElectrode
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f9f056bb_a38b_43bd_a6bd_99d618431f4d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f9f056bb_a38b_43bd_a6bd_99d618431f4d
 
 .. raw:: html
 
@@ -7620,12 +8310,14 @@ PalladiumBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_efc4f7ab_850d_443c_a17f_184983021f96:
+.. raw:: html
+
+   <div id="electrochemistry_efc4f7ab_850d_443c_a17f_184983021f96"></div>
 
 ParallelConnection
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_efc4f7ab_850d_443c_a17f_184983021f96
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_efc4f7ab_850d_443c_a17f_184983021f96
 
 .. raw:: html
 
@@ -7644,12 +8336,14 @@ ParallelConnection
   </tr>
   </table>
 
-.. _electrochemistry_d5da9948_e95b_4f12_a2d2_10a48f390c52:
+.. raw:: html
+
+   <div id="electrochemistry_d5da9948_e95b_4f12_a2d2_10a48f390c52"></div>
 
 ParallelSeriesConnection
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d5da9948_e95b_4f12_a2d2_10a48f390c52
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d5da9948_e95b_4f12_a2d2_10a48f390c52
 
 .. raw:: html
 
@@ -7664,12 +8358,14 @@ ParallelSeriesConnection
   </tr>
   </table>
 
-.. _electrochemistry_b79d4f9e_5727_4895_8d7f_5fc18d83eb90:
+.. raw:: html
+
+   <div id="electrochemistry_b79d4f9e_5727_4895_8d7f_5fc18d83eb90"></div>
 
 ParasiticReaction
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b79d4f9e_5727_4895_8d7f_5fc18d83eb90
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b79d4f9e_5727_4895_8d7f_5fc18d83eb90
 
 .. raw:: html
 
@@ -7688,12 +8384,14 @@ ParasiticReaction
   </tr>
   </table>
 
-.. _electrochemistry_e13b7945_65ac_476b_85ee_5cdc59f5c919:
+.. raw:: html
+
+   <div id="electrochemistry_e13b7945_65ac_476b_85ee_5cdc59f5c919"></div>
 
 Particle
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e13b7945_65ac_476b_85ee_5cdc59f5c919
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e13b7945_65ac_476b_85ee_5cdc59f5c919
 
 .. raw:: html
 
@@ -7712,12 +8410,14 @@ Particle
   </tr>
   </table>
 
-.. _electrochemistry_d16eec87_c646_4566_bda6_7d3357cda061:
+.. raw:: html
+
+   <div id="electrochemistry_d16eec87_c646_4566_bda6_7d3357cda061"></div>
 
 PassivationLayer
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d16eec87_c646_4566_bda6_7d3357cda061
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d16eec87_c646_4566_bda6_7d3357cda061
 
 .. raw:: html
 
@@ -7736,12 +8436,14 @@ PassivationLayer
   </tr>
   </table>
 
-.. _electrochemistry_a1ec9e3c_c624_4848_af13_89a6bc54d77c:
+.. raw:: html
+
+   <div id="electrochemistry_a1ec9e3c_c624_4848_af13_89a6bc54d77c"></div>
 
 PastedPlate
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a1ec9e3c_c624_4848_af13_89a6bc54d77c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a1ec9e3c_c624_4848_af13_89a6bc54d77c
 
 .. raw:: html
 
@@ -7764,12 +8466,14 @@ PastedPlate
   </tr>
   </table>
 
-.. _electrochemistry_c84a1d8f_e405_42ba_8c80_bbe3b9c6c66a:
+.. raw:: html
+
+   <div id="electrochemistry_c84a1d8f_e405_42ba_8c80_bbe3b9c6c66a"></div>
 
 PerforatedFoil
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c84a1d8f_e405_42ba_8c80_bbe3b9c6c66a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c84a1d8f_e405_42ba_8c80_bbe3b9c6c66a
 
 .. raw:: html
 
@@ -7780,12 +8484,14 @@ PerforatedFoil
   </tr>
   </table>
 
-.. _electrochemistry_78f75a64_55b6_4243_a35e_3d279c83209b:
+.. raw:: html
+
+   <div id="electrochemistry_78f75a64_55b6_4243_a35e_3d279c83209b"></div>
 
 PhosphoricAcidSolution
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_78f75a64_55b6_4243_a35e_3d279c83209b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_78f75a64_55b6_4243_a35e_3d279c83209b
 
 .. raw:: html
 
@@ -7800,12 +8506,14 @@ PhosphoricAcidSolution
   </tr>
   </table>
 
-.. _electrochemistry_7760b241_775f_4be1_b827_59f9bde9e5b2:
+.. raw:: html
+
+   <div id="electrochemistry_7760b241_775f_4be1_b827_59f9bde9e5b2"></div>
 
 PhotoelectrolyticCell
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7760b241_775f_4be1_b827_59f9bde9e5b2
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7760b241_775f_4be1_b827_59f9bde9e5b2
 
 .. raw:: html
 
@@ -7824,12 +8532,14 @@ PhotoelectrolyticCell
   </tr>
   </table>
 
-.. _electrochemistry_457a8f92_0a19_4773_8114_a42edff32248:
+.. raw:: html
+
+   <div id="electrochemistry_457a8f92_0a19_4773_8114_a42edff32248"></div>
 
 PlateGroup
 ----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_457a8f92_0a19_4773_8114_a42edff32248
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_457a8f92_0a19_4773_8114_a42edff32248
 
 .. raw:: html
 
@@ -7844,12 +8554,14 @@ PlateGroup
   </tr>
   </table>
 
-.. _electrochemistry_d8a9a88e_d437_4fef_bc3c_65a1fe627061:
+.. raw:: html
+
+   <div id="electrochemistry_d8a9a88e_d437_4fef_bc3c_65a1fe627061"></div>
 
 PlatinumBasedElectrode
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d8a9a88e_d437_4fef_bc3c_65a1fe627061
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d8a9a88e_d437_4fef_bc3c_65a1fe627061
 
 .. raw:: html
 
@@ -7868,12 +8580,14 @@ PlatinumBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_2d32a81a_2148_41bd_84fb_467aa8de4a8f:
+.. raw:: html
+
+   <div id="electrochemistry_2d32a81a_2148_41bd_84fb_467aa8de4a8f"></div>
 
 PlatinumElectrode
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2d32a81a_2148_41bd_84fb_467aa8de4a8f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2d32a81a_2148_41bd_84fb_467aa8de4a8f
 
 .. raw:: html
 
@@ -7896,12 +8610,14 @@ PlatinumElectrode
   </tr>
   </table>
 
-.. _electrochemistry_83d2c2d4_ffa9_42f4_9264_a0c59c657607:
+.. raw:: html
+
+   <div id="electrochemistry_83d2c2d4_ffa9_42f4_9264_a0c59c657607"></div>
 
 PolarityReversal
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_83d2c2d4_ffa9_42f4_9264_a0c59c657607
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_83d2c2d4_ffa9_42f4_9264_a0c59c657607
 
 .. raw:: html
 
@@ -7920,12 +8636,14 @@ PolarityReversal
   </tr>
   </table>
 
-.. _electrochemistry_c2024587_3237_474e_8df9_91d10db2df47:
+.. raw:: html
+
+   <div id="electrochemistry_c2024587_3237_474e_8df9_91d10db2df47"></div>
 
 PolarizableElectrode
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c2024587_3237_474e_8df9_91d10db2df47
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c2024587_3237_474e_8df9_91d10db2df47
 
 .. raw:: html
 
@@ -7940,12 +8658,14 @@ PolarizableElectrode
   </tr>
   </table>
 
-.. _electrochemistry_c6d6c0a1_a06b_437a_978f_a469d3071ca9:
+.. raw:: html
+
+   <div id="electrochemistry_c6d6c0a1_a06b_437a_978f_a469d3071ca9"></div>
 
 PolymerElectrolyte
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c6d6c0a1_a06b_437a_978f_a469d3071ca9
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c6d6c0a1_a06b_437a_978f_a469d3071ca9
 
 .. raw:: html
 
@@ -7968,12 +8688,14 @@ PolymerElectrolyte
   </tr>
   </table>
 
-.. _electrochemistry_3663991d_9319_4f7a_922b_f0e428b58801:
+.. raw:: html
+
+   <div id="electrochemistry_3663991d_9319_4f7a_922b_f0e428b58801"></div>
 
 PorousElectrode
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3663991d_9319_4f7a_922b_f0e428b58801
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3663991d_9319_4f7a_922b_f0e428b58801
 
 .. raw:: html
 
@@ -7992,12 +8714,14 @@ PorousElectrode
   </tr>
   </table>
 
-.. _electrochemistry_58413d4e_2885_459e_ac06_8d45e661cf91:
+.. raw:: html
+
+   <div id="electrochemistry_58413d4e_2885_459e_ac06_8d45e661cf91"></div>
 
 PorousSeparator
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_58413d4e_2885_459e_ac06_8d45e661cf91
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_58413d4e_2885_459e_ac06_8d45e661cf91
 
 .. raw:: html
 
@@ -8012,12 +8736,14 @@ PorousSeparator
   </tr>
   </table>
 
-.. _electrochemistry_aff732a9_238a_4734_977c_b2ba202af126:
+.. raw:: html
+
+   <div id="electrochemistry_aff732a9_238a_4734_977c_b2ba202af126"></div>
 
 PositiveElectrode
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
 
 .. raw:: html
 
@@ -8048,12 +8774,14 @@ PositiveElectrode
   </tr>
   </table>
 
-.. _electrochemistry_522f0c0b_cf33_4328_af71_12e38dae6798:
+.. raw:: html
+
+   <div id="electrochemistry_522f0c0b_cf33_4328_af71_12e38dae6798"></div>
 
 PositiveTerminal
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_522f0c0b_cf33_4328_af71_12e38dae6798
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_522f0c0b_cf33_4328_af71_12e38dae6798
 
 .. raw:: html
 
@@ -8072,12 +8800,14 @@ PositiveTerminal
   </tr>
   </table>
 
-.. _electrochemistry_0afe79ed_dc0d_4b3e_88fa_ae0c7b1e88b5:
+.. raw:: html
+
+   <div id="electrochemistry_0afe79ed_dc0d_4b3e_88fa_ae0c7b1e88b5"></div>
 
 PotassiumBasedElectrode
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0afe79ed_dc0d_4b3e_88fa_ae0c7b1e88b5
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0afe79ed_dc0d_4b3e_88fa_ae0c7b1e88b5
 
 .. raw:: html
 
@@ -8092,12 +8822,14 @@ PotassiumBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_26a0dc36_8171_4a84_88dd_0f5dd7cb2d20:
+.. raw:: html
+
+   <div id="electrochemistry_26a0dc36_8171_4a84_88dd_0f5dd7cb2d20"></div>
 
 PotassiumHydroxideSolution
 --------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_26a0dc36_8171_4a84_88dd_0f5dd7cb2d20
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_26a0dc36_8171_4a84_88dd_0f5dd7cb2d20
 
 .. raw:: html
 
@@ -8116,12 +8848,14 @@ PotassiumHydroxideSolution
   </tr>
   </table>
 
-.. _electrochemistry_c183f697_8995_477c_9ccd_5c12d98e3633:
+.. raw:: html
+
+   <div id="electrochemistry_c183f697_8995_477c_9ccd_5c12d98e3633"></div>
 
 PotassiumInsertionElectrode
 ---------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c183f697_8995_477c_9ccd_5c12d98e3633
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c183f697_8995_477c_9ccd_5c12d98e3633
 
 .. raw:: html
 
@@ -8136,12 +8870,14 @@ PotassiumInsertionElectrode
   </tr>
   </table>
 
-.. _electrochemistry_2dd44ff6_425a_4377_b86e_fa2bd567819f:
+.. raw:: html
+
+   <div id="electrochemistry_2dd44ff6_425a_4377_b86e_fa2bd567819f"></div>
 
 PotentialPulse
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2dd44ff6_425a_4377_b86e_fa2bd567819f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2dd44ff6_425a_4377_b86e_fa2bd567819f
 
 .. raw:: html
 
@@ -8156,12 +8892,14 @@ PotentialPulse
   </tr>
   </table>
 
-.. _electrochemistry_cd7d24a5_db31_4d76_97d9_367c809f099e:
+.. raw:: html
+
+   <div id="electrochemistry_cd7d24a5_db31_4d76_97d9_367c809f099e"></div>
 
 PotentialTimePlot
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cd7d24a5_db31_4d76_97d9_367c809f099e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cd7d24a5_db31_4d76_97d9_367c809f099e
 
 .. raw:: html
 
@@ -8180,12 +8918,14 @@ PotentialTimePlot
   </tr>
   </table>
 
-.. _electrochemistry_a9fc3f77_e48e_4bce_b118_044d608722f6:
+.. raw:: html
+
+   <div id="electrochemistry_a9fc3f77_e48e_4bce_b118_044d608722f6"></div>
 
 Potentiostat
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a9fc3f77_e48e_4bce_b118_044d608722f6
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a9fc3f77_e48e_4bce_b118_044d608722f6
 
 .. raw:: html
 
@@ -8200,12 +8940,14 @@ Potentiostat
   </tr>
   </table>
 
-.. _electrochemistry_5a5ef74b_e4a7_4b85_ab21_ae0febebaf58:
+.. raw:: html
+
+   <div id="electrochemistry_5a5ef74b_e4a7_4b85_ab21_ae0febebaf58"></div>
 
 PotentiostaticCycling
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5a5ef74b_e4a7_4b85_ab21_ae0febebaf58
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5a5ef74b_e4a7_4b85_ab21_ae0febebaf58
 
 .. raw:: html
 
@@ -8220,12 +8962,14 @@ PotentiostaticCycling
   </tr>
   </table>
 
-.. _electrochemistry_af751d07_f0b7_43c7_911d_cba864189b2b:
+.. raw:: html
+
+   <div id="electrochemistry_af751d07_f0b7_43c7_911d_cba864189b2b"></div>
 
 Pouch
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_af751d07_f0b7_43c7_911d_cba864189b2b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_af751d07_f0b7_43c7_911d_cba864189b2b
 
 .. raw:: html
 
@@ -8240,12 +8984,14 @@ Pouch
   </tr>
   </table>
 
-.. _electrochemistry_74459386_875c_4303_b774_60125b599d06:
+.. raw:: html
+
+   <div id="electrochemistry_74459386_875c_4303_b774_60125b599d06"></div>
 
 PouchCase
 ---------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_74459386_875c_4303_b774_60125b599d06
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_74459386_875c_4303_b774_60125b599d06
 
 .. raw:: html
 
@@ -8260,12 +9006,14 @@ PouchCase
   </tr>
   </table>
 
-.. _electrochemistry_ee479886_6805_4018_95e1_500185e44215:
+.. raw:: html
+
+   <div id="electrochemistry_ee479886_6805_4018_95e1_500185e44215"></div>
 
 Powder
 ------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ee479886_6805_4018_95e1_500185e44215
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ee479886_6805_4018_95e1_500185e44215
 
 .. raw:: html
 
@@ -8276,12 +9024,14 @@ Powder
   </tr>
   </table>
 
-.. _electrochemistry_dc1af38d_438e_40c2_8a68_0d631a8f46f2:
+.. raw:: html
+
+   <div id="electrochemistry_dc1af38d_438e_40c2_8a68_0d631a8f46f2"></div>
 
 PowerControlledProcess
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dc1af38d_438e_40c2_8a68_0d631a8f46f2
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dc1af38d_438e_40c2_8a68_0d631a8f46f2
 
 .. raw:: html
 
@@ -8296,12 +9046,14 @@ PowerControlledProcess
   </tr>
   </table>
 
-.. _electrochemistry_87340877_e8ed_4061_ac2f_cb1c121e7193:
+.. raw:: html
+
+   <div id="electrochemistry_87340877_e8ed_4061_ac2f_cb1c121e7193"></div>
 
 PowerHold
 ---------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_87340877_e8ed_4061_ac2f_cb1c121e7193
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_87340877_e8ed_4061_ac2f_cb1c121e7193
 
 .. raw:: html
 
@@ -8328,12 +9080,14 @@ PowerHold
   </tr>
   </table>
 
-.. _electrochemistry_f330680b_347e_45b3_9113_5ce09d18d60b:
+.. raw:: html
+
+   <div id="electrochemistry_f330680b_347e_45b3_9113_5ce09d18d60b"></div>
 
 PressureReliefVent
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f330680b_347e_45b3_9113_5ce09d18d60b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f330680b_347e_45b3_9113_5ce09d18d60b
 
 .. raw:: html
 
@@ -8348,12 +9102,14 @@ PressureReliefVent
   </tr>
   </table>
 
-.. _electrochemistry_6775b232_c58a_4303_8164_137261329db6:
+.. raw:: html
+
+   <div id="electrochemistry_6775b232_c58a_4303_8164_137261329db6"></div>
 
 Prismatic
 ---------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6775b232_c58a_4303_8164_137261329db6
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6775b232_c58a_4303_8164_137261329db6
 
 .. raw:: html
 
@@ -8368,12 +9124,14 @@ Prismatic
   </tr>
   </table>
 
-.. _electrochemistry_43cd6e14_dd43_41b5_b5b4_344d53841603:
+.. raw:: html
+
+   <div id="electrochemistry_43cd6e14_dd43_41b5_b5b4_344d53841603"></div>
 
 PrismaticCase
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_43cd6e14_dd43_41b5_b5b4_344d53841603
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_43cd6e14_dd43_41b5_b5b4_344d53841603
 
 .. raw:: html
 
@@ -8392,12 +9150,14 @@ PrismaticCase
   </tr>
   </table>
 
-.. _electrochemistry_11a774f3_d20a_4741_bd81_cae53230bd0c:
+.. raw:: html
+
+   <div id="electrochemistry_11a774f3_d20a_4741_bd81_cae53230bd0c"></div>
 
 ProtonInsertionElectrode
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_11a774f3_d20a_4741_bd81_cae53230bd0c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_11a774f3_d20a_4741_bd81_cae53230bd0c
 
 .. raw:: html
 
@@ -8412,12 +9172,14 @@ ProtonInsertionElectrode
   </tr>
   </table>
 
-.. _electrochemistry_a49d9cd1_bec8_4d1d_9657_d47983e9135d:
+.. raw:: html
+
+   <div id="electrochemistry_a49d9cd1_bec8_4d1d_9657_d47983e9135d"></div>
 
 PseudoOpenCircuitVoltageData
 ----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a49d9cd1_bec8_4d1d_9657_d47983e9135d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a49d9cd1_bec8_4d1d_9657_d47983e9135d
 
 .. raw:: html
 
@@ -8436,12 +9198,14 @@ PseudoOpenCircuitVoltageData
   </tr>
   </table>
 
-.. _electrochemistry_8372fdaa_dc01_4abf_9b75_442d0b28f263:
+.. raw:: html
+
+   <div id="electrochemistry_8372fdaa_dc01_4abf_9b75_442d0b28f263"></div>
 
 PulseCharging
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8372fdaa_dc01_4abf_9b75_442d0b28f263
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8372fdaa_dc01_4abf_9b75_442d0b28f263
 
 .. raw:: html
 
@@ -8456,12 +9220,14 @@ PulseCharging
   </tr>
   </table>
 
-.. _electrochemistry_acdedc56_61da_40ca_aa81_db4c06d82dd5:
+.. raw:: html
+
+   <div id="electrochemistry_acdedc56_61da_40ca_aa81_db4c06d82dd5"></div>
 
 PulseDischarging
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_acdedc56_61da_40ca_aa81_db4c06d82dd5
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_acdedc56_61da_40ca_aa81_db4c06d82dd5
 
 .. raw:: html
 
@@ -8476,12 +9242,14 @@ PulseDischarging
   </tr>
   </table>
 
-.. _electrochemistry_b7f05e67_d7e8_469f_971f_0cb4d4c7e857:
+.. raw:: html
+
+   <div id="electrochemistry_b7f05e67_d7e8_469f_971f_0cb4d4c7e857"></div>
 
 PulseResponseData
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b7f05e67_d7e8_469f_971f_0cb4d4c7e857
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b7f05e67_d7e8_469f_971f_0cb4d4c7e857
 
 .. raw:: html
 
@@ -8496,12 +9264,14 @@ PulseResponseData
   </tr>
   </table>
 
-.. _electrochemistry_e73cb0b7_e2af_4c1a_b05b_503df25a8bf5:
+.. raw:: html
+
+   <div id="electrochemistry_e73cb0b7_e2af_4c1a_b05b_503df25a8bf5"></div>
 
 R1025
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e73cb0b7_e2af_4c1a_b05b_503df25a8bf5
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e73cb0b7_e2af_4c1a_b05b_503df25a8bf5
 
 .. raw:: html
 
@@ -8516,12 +9286,14 @@ R1025
   </tr>
   </table>
 
-.. _electrochemistry_dac5067c_e6f2_4fca_a915_5b7b918ca1c4:
+.. raw:: html
+
+   <div id="electrochemistry_dac5067c_e6f2_4fca_a915_5b7b918ca1c4"></div>
 
 R11108
 ------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dac5067c_e6f2_4fca_a915_5b7b918ca1c4
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dac5067c_e6f2_4fca_a915_5b7b918ca1c4
 
 .. raw:: html
 
@@ -8536,12 +9308,14 @@ R11108
   </tr>
   </table>
 
-.. _electrochemistry_31b7ac6a_b1eb_45e7_a075_b6063080c949:
+.. raw:: html
+
+   <div id="electrochemistry_31b7ac6a_b1eb_45e7_a075_b6063080c949"></div>
 
 R1121
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_31b7ac6a_b1eb_45e7_a075_b6063080c949
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_31b7ac6a_b1eb_45e7_a075_b6063080c949
 
 .. raw:: html
 
@@ -8560,12 +9334,14 @@ R1121
   </tr>
   </table>
 
-.. _electrochemistry_cf6eebea_24f6_48d2_8389_65eba0393762:
+.. raw:: html
+
+   <div id="electrochemistry_cf6eebea_24f6_48d2_8389_65eba0393762"></div>
 
 R1126
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cf6eebea_24f6_48d2_8389_65eba0393762
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cf6eebea_24f6_48d2_8389_65eba0393762
 
 .. raw:: html
 
@@ -8584,12 +9360,14 @@ R1126
   </tr>
   </table>
 
-.. _electrochemistry_39c6f5a0_5dc8_4112_b432_b9fece568ca2:
+.. raw:: html
+
+   <div id="electrochemistry_39c6f5a0_5dc8_4112_b432_b9fece568ca2"></div>
 
 R1130
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_39c6f5a0_5dc8_4112_b432_b9fece568ca2
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_39c6f5a0_5dc8_4112_b432_b9fece568ca2
 
 .. raw:: html
 
@@ -8604,12 +9382,14 @@ R1130
   </tr>
   </table>
 
-.. _electrochemistry_b442217f_02f6_4991_aadf_22d81369223c:
+.. raw:: html
+
+   <div id="electrochemistry_b442217f_02f6_4991_aadf_22d81369223c"></div>
 
 R1131
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b442217f_02f6_4991_aadf_22d81369223c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b442217f_02f6_4991_aadf_22d81369223c
 
 .. raw:: html
 
@@ -8628,12 +9408,14 @@ R1131
   </tr>
   </table>
 
-.. _electrochemistry_21eef598_0799_4cb1_b2d5_6e072a8579a3:
+.. raw:: html
+
+   <div id="electrochemistry_21eef598_0799_4cb1_b2d5_6e072a8579a3"></div>
 
 R1136
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_21eef598_0799_4cb1_b2d5_6e072a8579a3
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_21eef598_0799_4cb1_b2d5_6e072a8579a3
 
 .. raw:: html
 
@@ -8652,12 +9434,14 @@ R1136
   </tr>
   </table>
 
-.. _electrochemistry_abffe8cd_14d3_4437_84e6_5dfc61b057e8:
+.. raw:: html
+
+   <div id="electrochemistry_abffe8cd_14d3_4437_84e6_5dfc61b057e8"></div>
 
 R1142
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_abffe8cd_14d3_4437_84e6_5dfc61b057e8
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_abffe8cd_14d3_4437_84e6_5dfc61b057e8
 
 .. raw:: html
 
@@ -8676,12 +9460,14 @@ R1142
   </tr>
   </table>
 
-.. _electrochemistry_fe054d02_41c7_40e9_8206_3440ab6a67b2:
+.. raw:: html
+
+   <div id="electrochemistry_fe054d02_41c7_40e9_8206_3440ab6a67b2"></div>
 
 R1154
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fe054d02_41c7_40e9_8206_3440ab6a67b2
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fe054d02_41c7_40e9_8206_3440ab6a67b2
 
 .. raw:: html
 
@@ -8700,12 +9486,14 @@ R1154
   </tr>
   </table>
 
-.. _electrochemistry_36e05f2f_d279_4816_b5ae_6bb4cef02736:
+.. raw:: html
+
+   <div id="electrochemistry_36e05f2f_d279_4816_b5ae_6bb4cef02736"></div>
 
 R1216
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_36e05f2f_d279_4816_b5ae_6bb4cef02736
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_36e05f2f_d279_4816_b5ae_6bb4cef02736
 
 .. raw:: html
 
@@ -8720,12 +9508,14 @@ R1216
   </tr>
   </table>
 
-.. _electrochemistry_296b95b0_c4cb_45db_a8ca_f638379870c4:
+.. raw:: html
+
+   <div id="electrochemistry_296b95b0_c4cb_45db_a8ca_f638379870c4"></div>
 
 R1220
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_296b95b0_c4cb_45db_a8ca_f638379870c4
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_296b95b0_c4cb_45db_a8ca_f638379870c4
 
 .. raw:: html
 
@@ -8740,12 +9530,14 @@ R1220
   </tr>
   </table>
 
-.. _electrochemistry_f7e253da_b12e_40b0_ba51_8cb039839ab6:
+.. raw:: html
+
+   <div id="electrochemistry_f7e253da_b12e_40b0_ba51_8cb039839ab6"></div>
 
 R1225
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f7e253da_b12e_40b0_ba51_8cb039839ab6
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f7e253da_b12e_40b0_ba51_8cb039839ab6
 
 .. raw:: html
 
@@ -8760,12 +9552,14 @@ R1225
   </tr>
   </table>
 
-.. _electrochemistry_ce4352a7_f0b1_4f27_9184_6deebf8bbe96:
+.. raw:: html
+
+   <div id="electrochemistry_ce4352a7_f0b1_4f27_9184_6deebf8bbe96"></div>
 
 R1511
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ce4352a7_f0b1_4f27_9184_6deebf8bbe96
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ce4352a7_f0b1_4f27_9184_6deebf8bbe96
 
 .. raw:: html
 
@@ -8784,12 +9578,14 @@ R1511
   </tr>
   </table>
 
-.. _electrochemistry_d5f67a0c_ed56_479d_9b68_6003142f98b0:
+.. raw:: html
+
+   <div id="electrochemistry_d5f67a0c_ed56_479d_9b68_6003142f98b0"></div>
 
 R1616
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d5f67a0c_ed56_479d_9b68_6003142f98b0
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d5f67a0c_ed56_479d_9b68_6003142f98b0
 
 .. raw:: html
 
@@ -8804,12 +9600,14 @@ R1616
   </tr>
   </table>
 
-.. _electrochemistry_f2cf71c1_f2d7_4131_82e0_2701cdecea55:
+.. raw:: html
+
+   <div id="electrochemistry_f2cf71c1_f2d7_4131_82e0_2701cdecea55"></div>
 
 R1632
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f2cf71c1_f2d7_4131_82e0_2701cdecea55
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f2cf71c1_f2d7_4131_82e0_2701cdecea55
 
 .. raw:: html
 
@@ -8824,12 +9622,14 @@ R1632
   </tr>
   </table>
 
-.. _electrochemistry_3d2f9945_2319_4a08_899b_6a5ffabd4925:
+.. raw:: html
+
+   <div id="electrochemistry_3d2f9945_2319_4a08_899b_6a5ffabd4925"></div>
 
 R18650
 ------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3d2f9945_2319_4a08_899b_6a5ffabd4925
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3d2f9945_2319_4a08_899b_6a5ffabd4925
 
 .. raw:: html
 
@@ -8848,12 +9648,14 @@ R18650
   </tr>
   </table>
 
-.. _electrochemistry_9dc236d9_c962_4fcc_94db_911a25241472:
+.. raw:: html
+
+   <div id="electrochemistry_9dc236d9_c962_4fcc_94db_911a25241472"></div>
 
 R19660
 ------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9dc236d9_c962_4fcc_94db_911a25241472
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9dc236d9_c962_4fcc_94db_911a25241472
 
 .. raw:: html
 
@@ -8872,12 +9674,14 @@ R19660
   </tr>
   </table>
 
-.. _electrochemistry_9c0e683b_40d7_4786_b31f_910dd68b2ea8:
+.. raw:: html
+
+   <div id="electrochemistry_9c0e683b_40d7_4786_b31f_910dd68b2ea8"></div>
 
 R2012
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9c0e683b_40d7_4786_b31f_910dd68b2ea8
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9c0e683b_40d7_4786_b31f_910dd68b2ea8
 
 .. raw:: html
 
@@ -8892,12 +9696,14 @@ R2012
   </tr>
   </table>
 
-.. _electrochemistry_30c8fb1b_3c75_49f5_9395_c15dfaf71b12:
+.. raw:: html
+
+   <div id="electrochemistry_30c8fb1b_3c75_49f5_9395_c15dfaf71b12"></div>
 
 R2016
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_30c8fb1b_3c75_49f5_9395_c15dfaf71b12
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_30c8fb1b_3c75_49f5_9395_c15dfaf71b12
 
 .. raw:: html
 
@@ -8912,12 +9718,14 @@ R2016
   </tr>
   </table>
 
-.. _electrochemistry_9017b8b9_e21e_4961_a3c1_c0aeef3fe795:
+.. raw:: html
+
+   <div id="electrochemistry_9017b8b9_e21e_4961_a3c1_c0aeef3fe795"></div>
 
 R2020
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9017b8b9_e21e_4961_a3c1_c0aeef3fe795
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9017b8b9_e21e_4961_a3c1_c0aeef3fe795
 
 .. raw:: html
 
@@ -8932,12 +9740,14 @@ R2020
   </tr>
   </table>
 
-.. _electrochemistry_9ceffffd_b918_48c2_aad9_5db16fa6149d:
+.. raw:: html
+
+   <div id="electrochemistry_9ceffffd_b918_48c2_aad9_5db16fa6149d"></div>
 
 R2025
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9ceffffd_b918_48c2_aad9_5db16fa6149d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9ceffffd_b918_48c2_aad9_5db16fa6149d
 
 .. raw:: html
 
@@ -8952,12 +9762,14 @@ R2025
   </tr>
   </table>
 
-.. _electrochemistry_94497aca_52a0_48e3_9b76_157b050e35b3:
+.. raw:: html
+
+   <div id="electrochemistry_94497aca_52a0_48e3_9b76_157b050e35b3"></div>
 
 R2032
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_94497aca_52a0_48e3_9b76_157b050e35b3
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_94497aca_52a0_48e3_9b76_157b050e35b3
 
 .. raw:: html
 
@@ -8972,12 +9784,14 @@ R2032
   </tr>
   </table>
 
-.. _electrochemistry_fab4bd12_c4ed_417a_92a3_bcb109000d82:
+.. raw:: html
+
+   <div id="electrochemistry_fab4bd12_c4ed_417a_92a3_bcb109000d82"></div>
 
 R2040
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fab4bd12_c4ed_417a_92a3_bcb109000d82
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fab4bd12_c4ed_417a_92a3_bcb109000d82
 
 .. raw:: html
 
@@ -8992,12 +9806,14 @@ R2040
   </tr>
   </table>
 
-.. _electrochemistry_400cb3e0_27b5_4d9a_be80_f86ad2757763:
+.. raw:: html
+
+   <div id="electrochemistry_400cb3e0_27b5_4d9a_be80_f86ad2757763"></div>
 
 R2050
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_400cb3e0_27b5_4d9a_be80_f86ad2757763
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_400cb3e0_27b5_4d9a_be80_f86ad2757763
 
 .. raw:: html
 
@@ -9012,12 +9828,14 @@ R2050
   </tr>
   </table>
 
-.. _electrochemistry_3b048a62_8591_4bf1_8fac_3d647beb9323:
+.. raw:: html
+
+   <div id="electrochemistry_3b048a62_8591_4bf1_8fac_3d647beb9323"></div>
 
 R21700
 ------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3b048a62_8591_4bf1_8fac_3d647beb9323
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3b048a62_8591_4bf1_8fac_3d647beb9323
 
 .. raw:: html
 
@@ -9036,12 +9854,14 @@ R21700
   </tr>
   </table>
 
-.. _electrochemistry_fbf40756_3265_4468_bcdb_88d162afc539:
+.. raw:: html
+
+   <div id="electrochemistry_fbf40756_3265_4468_bcdb_88d162afc539"></div>
 
 R2320
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fbf40756_3265_4468_bcdb_88d162afc539
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fbf40756_3265_4468_bcdb_88d162afc539
 
 .. raw:: html
 
@@ -9056,12 +9876,14 @@ R2320
   </tr>
   </table>
 
-.. _electrochemistry_0689e6fc_cda7_4e04_b1eb_41459a0a4736:
+.. raw:: html
+
+   <div id="electrochemistry_0689e6fc_cda7_4e04_b1eb_41459a0a4736"></div>
 
 R2325
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0689e6fc_cda7_4e04_b1eb_41459a0a4736
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0689e6fc_cda7_4e04_b1eb_41459a0a4736
 
 .. raw:: html
 
@@ -9080,12 +9902,14 @@ R2325
   </tr>
   </table>
 
-.. _electrochemistry_11579b47_cbf8_45ac_aed3_343ea533b346:
+.. raw:: html
+
+   <div id="electrochemistry_11579b47_cbf8_45ac_aed3_343ea533b346"></div>
 
 R2330
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_11579b47_cbf8_45ac_aed3_343ea533b346
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_11579b47_cbf8_45ac_aed3_343ea533b346
 
 .. raw:: html
 
@@ -9100,12 +9924,14 @@ R2330
   </tr>
   </table>
 
-.. _electrochemistry_885ffc4d_2b29_42d6_8597_6fc879c21d60:
+.. raw:: html
+
+   <div id="electrochemistry_885ffc4d_2b29_42d6_8597_6fc879c21d60"></div>
 
 R2335
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_885ffc4d_2b29_42d6_8597_6fc879c21d60
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_885ffc4d_2b29_42d6_8597_6fc879c21d60
 
 .. raw:: html
 
@@ -9120,12 +9946,14 @@ R2335
   </tr>
   </table>
 
-.. _electrochemistry_af92a3ae_e870_4676_9ae7_cda277b1e6e1:
+.. raw:: html
+
+   <div id="electrochemistry_af92a3ae_e870_4676_9ae7_cda277b1e6e1"></div>
 
 R2354
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_af92a3ae_e870_4676_9ae7_cda277b1e6e1
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_af92a3ae_e870_4676_9ae7_cda277b1e6e1
 
 .. raw:: html
 
@@ -9140,12 +9968,14 @@ R2354
   </tr>
   </table>
 
-.. _electrochemistry_a4e7c3d6_45bd_402a_962f_5d4b88af84ff:
+.. raw:: html
+
+   <div id="electrochemistry_a4e7c3d6_45bd_402a_962f_5d4b88af84ff"></div>
 
 R2412
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a4e7c3d6_45bd_402a_962f_5d4b88af84ff
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a4e7c3d6_45bd_402a_962f_5d4b88af84ff
 
 .. raw:: html
 
@@ -9160,12 +9990,14 @@ R2412
   </tr>
   </table>
 
-.. _electrochemistry_11e9f765_4fea_456b_bd8e_4624b9c752ae:
+.. raw:: html
+
+   <div id="electrochemistry_11e9f765_4fea_456b_bd8e_4624b9c752ae"></div>
 
 R2430
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_11e9f765_4fea_456b_bd8e_4624b9c752ae
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_11e9f765_4fea_456b_bd8e_4624b9c752ae
 
 .. raw:: html
 
@@ -9180,12 +10012,14 @@ R2430
   </tr>
   </table>
 
-.. _electrochemistry_aaafc5d6_050a_4c51_b1ca_db5839aad4de:
+.. raw:: html
+
+   <div id="electrochemistry_aaafc5d6_050a_4c51_b1ca_db5839aad4de"></div>
 
 R2450
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_aaafc5d6_050a_4c51_b1ca_db5839aad4de
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_aaafc5d6_050a_4c51_b1ca_db5839aad4de
 
 .. raw:: html
 
@@ -9200,12 +10034,14 @@ R2450
   </tr>
   </table>
 
-.. _electrochemistry_a87d4b9d_ba91_4549_aed4_508d1160c0c0:
+.. raw:: html
+
+   <div id="electrochemistry_a87d4b9d_ba91_4549_aed4_508d1160c0c0"></div>
 
 R2477
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a87d4b9d_ba91_4549_aed4_508d1160c0c0
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a87d4b9d_ba91_4549_aed4_508d1160c0c0
 
 .. raw:: html
 
@@ -9220,12 +10056,14 @@ R2477
   </tr>
   </table>
 
-.. _electrochemistry_95d841eb_2002_4411_9f8e_927d6c60e4b3:
+.. raw:: html
+
+   <div id="electrochemistry_95d841eb_2002_4411_9f8e_927d6c60e4b3"></div>
 
 R26650
 ------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_95d841eb_2002_4411_9f8e_927d6c60e4b3
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_95d841eb_2002_4411_9f8e_927d6c60e4b3
 
 .. raw:: html
 
@@ -9244,12 +10082,14 @@ R26650
   </tr>
   </table>
 
-.. _electrochemistry_f2251de5_0a7d_4887_8bd1_c906db84abee:
+.. raw:: html
+
+   <div id="electrochemistry_f2251de5_0a7d_4887_8bd1_c906db84abee"></div>
 
 R26700
 ------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f2251de5_0a7d_4887_8bd1_c906db84abee
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f2251de5_0a7d_4887_8bd1_c906db84abee
 
 .. raw:: html
 
@@ -9268,12 +10108,14 @@ R26700
   </tr>
   </table>
 
-.. _electrochemistry_6ee40e33_ccbf_410e_a8fa_047a9eae0362:
+.. raw:: html
+
+   <div id="electrochemistry_6ee40e33_ccbf_410e_a8fa_047a9eae0362"></div>
 
 R27660
 ------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6ee40e33_ccbf_410e_a8fa_047a9eae0362
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6ee40e33_ccbf_410e_a8fa_047a9eae0362
 
 .. raw:: html
 
@@ -9292,12 +10134,14 @@ R27660
   </tr>
   </table>
 
-.. _electrochemistry_99475d6c_304c_4d6b_9eca_fbc42f768be5:
+.. raw:: html
+
+   <div id="electrochemistry_99475d6c_304c_4d6b_9eca_fbc42f768be5"></div>
 
 R3032
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_99475d6c_304c_4d6b_9eca_fbc42f768be5
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_99475d6c_304c_4d6b_9eca_fbc42f768be5
 
 .. raw:: html
 
@@ -9312,12 +10156,14 @@ R3032
   </tr>
   </table>
 
-.. _electrochemistry_c066bf32_ed62_4a11_bf4f_25fe6e8e68b5:
+.. raw:: html
+
+   <div id="electrochemistry_c066bf32_ed62_4a11_bf4f_25fe6e8e68b5"></div>
 
 R32134
 ------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c066bf32_ed62_4a11_bf4f_25fe6e8e68b5
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c066bf32_ed62_4a11_bf4f_25fe6e8e68b5
 
 .. raw:: html
 
@@ -9336,12 +10182,14 @@ R32134
   </tr>
   </table>
 
-.. _electrochemistry_ad9cdad6_66e8_471e_a7c6_b79f37c20814:
+.. raw:: html
+
+   <div id="electrochemistry_ad9cdad6_66e8_471e_a7c6_b79f37c20814"></div>
 
 R32700
 ------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ad9cdad6_66e8_471e_a7c6_b79f37c20814
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ad9cdad6_66e8_471e_a7c6_b79f37c20814
 
 .. raw:: html
 
@@ -9360,12 +10208,14 @@ R32700
   </tr>
   </table>
 
-.. _electrochemistry_f58476a9_f008_4502_ac94_2f1ebbce1fe3:
+.. raw:: html
+
+   <div id="electrochemistry_f58476a9_f008_4502_ac94_2f1ebbce1fe3"></div>
 
 R38136
 ------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f58476a9_f008_4502_ac94_2f1ebbce1fe3
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f58476a9_f008_4502_ac94_2f1ebbce1fe3
 
 .. raw:: html
 
@@ -9384,12 +10234,14 @@ R38136
   </tr>
   </table>
 
-.. _electrochemistry_169fb6e4_cbed_4b00_ace0_8731123a35b4:
+.. raw:: html
+
+   <div id="electrochemistry_169fb6e4_cbed_4b00_ace0_8731123a35b4"></div>
 
 R38138
 ------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_169fb6e4_cbed_4b00_ace0_8731123a35b4
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_169fb6e4_cbed_4b00_ace0_8731123a35b4
 
 .. raw:: html
 
@@ -9408,12 +10260,14 @@ R38138
   </tr>
   </table>
 
-.. _electrochemistry_56177336_3ae5_48cb_93ca_a8c73216ea73:
+.. raw:: html
+
+   <div id="electrochemistry_56177336_3ae5_48cb_93ca_a8c73216ea73"></div>
 
 R40108
 ------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_56177336_3ae5_48cb_93ca_a8c73216ea73
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_56177336_3ae5_48cb_93ca_a8c73216ea73
 
 .. raw:: html
 
@@ -9432,12 +10286,14 @@ R40108
   </tr>
   </table>
 
-.. _electrochemistry_6eaa3c0d_e1f3_4c6e_91a6_9b8c5a21b8cb:
+.. raw:: html
+
+   <div id="electrochemistry_6eaa3c0d_e1f3_4c6e_91a6_9b8c5a21b8cb"></div>
 
 R40920
 ------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6eaa3c0d_e1f3_4c6e_91a6_9b8c5a21b8cb
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6eaa3c0d_e1f3_4c6e_91a6_9b8c5a21b8cb
 
 .. raw:: html
 
@@ -9456,12 +10312,14 @@ R40920
   </tr>
   </table>
 
-.. _electrochemistry_027d437e_3bbf_4eda_940b_e509f8d2b993:
+.. raw:: html
+
+   <div id="electrochemistry_027d437e_3bbf_4eda_940b_e509f8d2b993"></div>
 
 R416
 ----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_027d437e_3bbf_4eda_940b_e509f8d2b993
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_027d437e_3bbf_4eda_940b_e509f8d2b993
 
 .. raw:: html
 
@@ -9476,12 +10334,14 @@ R416
   </tr>
   </table>
 
-.. _electrochemistry_1afa2c7e_6ddd_4a9b_9623_40975131a304:
+.. raw:: html
+
+   <div id="electrochemistry_1afa2c7e_6ddd_4a9b_9623_40975131a304"></div>
 
 R46800
 ------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1afa2c7e_6ddd_4a9b_9623_40975131a304
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1afa2c7e_6ddd_4a9b_9623_40975131a304
 
 .. raw:: html
 
@@ -9500,12 +10360,14 @@ R46800
   </tr>
   </table>
 
-.. _electrochemistry_94209cd8_f68f_40e6_ac70_cfb97a16e593:
+.. raw:: html
+
+   <div id="electrochemistry_94209cd8_f68f_40e6_ac70_cfb97a16e593"></div>
 
 R512
 ----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_94209cd8_f68f_40e6_ac70_cfb97a16e593
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_94209cd8_f68f_40e6_ac70_cfb97a16e593
 
 .. raw:: html
 
@@ -9520,12 +10382,14 @@ R512
   </tr>
   </table>
 
-.. _electrochemistry_76318e8e_c1ba_49ac_8029_a951bd9dc955:
+.. raw:: html
+
+   <div id="electrochemistry_76318e8e_c1ba_49ac_8029_a951bd9dc955"></div>
 
 R516
 ----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_76318e8e_c1ba_49ac_8029_a951bd9dc955
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_76318e8e_c1ba_49ac_8029_a951bd9dc955
 
 .. raw:: html
 
@@ -9544,12 +10408,14 @@ R516
   </tr>
   </table>
 
-.. _electrochemistry_0a5038d4_24af_4ea8_8d56_a156faeb98e2:
+.. raw:: html
+
+   <div id="electrochemistry_0a5038d4_24af_4ea8_8d56_a156faeb98e2"></div>
 
 R521
 ----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0a5038d4_24af_4ea8_8d56_a156faeb98e2
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0a5038d4_24af_4ea8_8d56_a156faeb98e2
 
 .. raw:: html
 
@@ -9568,12 +10434,14 @@ R521
   </tr>
   </table>
 
-.. _electrochemistry_b56a95e6_eea5_4a58_99aa_045fd28e75d3:
+.. raw:: html
+
+   <div id="electrochemistry_b56a95e6_eea5_4a58_99aa_045fd28e75d3"></div>
 
 R527
 ----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b56a95e6_eea5_4a58_99aa_045fd28e75d3
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b56a95e6_eea5_4a58_99aa_045fd28e75d3
 
 .. raw:: html
 
@@ -9592,12 +10460,14 @@ R527
   </tr>
   </table>
 
-.. _electrochemistry_69e59b3d_b19d_4f8e_8b9c_84eb64307626:
+.. raw:: html
+
+   <div id="electrochemistry_69e59b3d_b19d_4f8e_8b9c_84eb64307626"></div>
 
 R54137
 ------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_69e59b3d_b19d_4f8e_8b9c_84eb64307626
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_69e59b3d_b19d_4f8e_8b9c_84eb64307626
 
 .. raw:: html
 
@@ -9616,12 +10486,14 @@ R54137
   </tr>
   </table>
 
-.. _electrochemistry_fc9e7ba3_5084_4c2a_b488_c6a96af99232:
+.. raw:: html
+
+   <div id="electrochemistry_fc9e7ba3_5084_4c2a_b488_c6a96af99232"></div>
 
 R54215
 ------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fc9e7ba3_5084_4c2a_b488_c6a96af99232
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fc9e7ba3_5084_4c2a_b488_c6a96af99232
 
 .. raw:: html
 
@@ -9640,12 +10512,14 @@ R54215
   </tr>
   </table>
 
-.. _electrochemistry_dc019f3f_e5f3_4eeb_bab9_a845a02223a0:
+.. raw:: html
+
+   <div id="electrochemistry_dc019f3f_e5f3_4eeb_bab9_a845a02223a0"></div>
 
 R616
 ----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dc019f3f_e5f3_4eeb_bab9_a845a02223a0
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dc019f3f_e5f3_4eeb_bab9_a845a02223a0
 
 .. raw:: html
 
@@ -9664,12 +10538,14 @@ R616
   </tr>
   </table>
 
-.. _electrochemistry_15ec346a_6d3c_4161_95e1_9cf889965f85:
+.. raw:: html
+
+   <div id="electrochemistry_15ec346a_6d3c_4161_95e1_9cf889965f85"></div>
 
 R621
 ----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_15ec346a_6d3c_4161_95e1_9cf889965f85
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_15ec346a_6d3c_4161_95e1_9cf889965f85
 
 .. raw:: html
 
@@ -9688,12 +10564,14 @@ R621
   </tr>
   </table>
 
-.. _electrochemistry_68c1c36e_1548_4247_bae2_fe7102a2c4ff:
+.. raw:: html
+
+   <div id="electrochemistry_68c1c36e_1548_4247_bae2_fe7102a2c4ff"></div>
 
 R626
 ----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_68c1c36e_1548_4247_bae2_fe7102a2c4ff
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_68c1c36e_1548_4247_bae2_fe7102a2c4ff
 
 .. raw:: html
 
@@ -9712,12 +10590,14 @@ R626
   </tr>
   </table>
 
-.. _electrochemistry_6b275583_433f_46f7_aafd_ebc9409257cc:
+.. raw:: html
+
+   <div id="electrochemistry_6b275583_433f_46f7_aafd_ebc9409257cc"></div>
 
 R626
 ----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6b275583_433f_46f7_aafd_ebc9409257cc
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6b275583_433f_46f7_aafd_ebc9409257cc
 
 .. raw:: html
 
@@ -9736,12 +10616,14 @@ R626
   </tr>
   </table>
 
-.. _electrochemistry_bb2faf17_b819_4876_b17f_fa82917cf85d:
+.. raw:: html
+
+   <div id="electrochemistry_bb2faf17_b819_4876_b17f_fa82917cf85d"></div>
 
 R712
 ----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bb2faf17_b819_4876_b17f_fa82917cf85d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bb2faf17_b819_4876_b17f_fa82917cf85d
 
 .. raw:: html
 
@@ -9756,12 +10638,14 @@ R712
   </tr>
   </table>
 
-.. _electrochemistry_34cb7ea7_2436_46e0_806e_a3c7835ae228:
+.. raw:: html
+
+   <div id="electrochemistry_34cb7ea7_2436_46e0_806e_a3c7835ae228"></div>
 
 R716
 ----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_34cb7ea7_2436_46e0_806e_a3c7835ae228
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_34cb7ea7_2436_46e0_806e_a3c7835ae228
 
 .. raw:: html
 
@@ -9780,12 +10664,14 @@ R716
   </tr>
   </table>
 
-.. _electrochemistry_3279f575_1c62_4bf2_a6e8_de4c7ff36f8e:
+.. raw:: html
+
+   <div id="electrochemistry_3279f575_1c62_4bf2_a6e8_de4c7ff36f8e"></div>
 
 R721
 ----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3279f575_1c62_4bf2_a6e8_de4c7ff36f8e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3279f575_1c62_4bf2_a6e8_de4c7ff36f8e
 
 .. raw:: html
 
@@ -9804,12 +10690,14 @@ R721
   </tr>
   </table>
 
-.. _electrochemistry_06db7d9e_d224_4360_b926_734f0349d396:
+.. raw:: html
+
+   <div id="electrochemistry_06db7d9e_d224_4360_b926_734f0349d396"></div>
 
 R726
 ----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_06db7d9e_d224_4360_b926_734f0349d396
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_06db7d9e_d224_4360_b926_734f0349d396
 
 .. raw:: html
 
@@ -9828,12 +10716,14 @@ R726
   </tr>
   </table>
 
-.. _electrochemistry_88100e2c_0f6e_4483_afbf_30029a6702c6:
+.. raw:: html
+
+   <div id="electrochemistry_88100e2c_0f6e_4483_afbf_30029a6702c6"></div>
 
 R731
 ----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_88100e2c_0f6e_4483_afbf_30029a6702c6
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_88100e2c_0f6e_4483_afbf_30029a6702c6
 
 .. raw:: html
 
@@ -9848,12 +10738,14 @@ R731
   </tr>
   </table>
 
-.. _electrochemistry_0c09df01_b251_4f75_b6e3_2578ba1a10c9:
+.. raw:: html
+
+   <div id="electrochemistry_0c09df01_b251_4f75_b6e3_2578ba1a10c9"></div>
 
 R736
 ----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0c09df01_b251_4f75_b6e3_2578ba1a10c9
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0c09df01_b251_4f75_b6e3_2578ba1a10c9
 
 .. raw:: html
 
@@ -9872,12 +10764,14 @@ R736
   </tr>
   </table>
 
-.. _electrochemistry_028069a2_4e03_409e_8af2_4c8df32b5c5e:
+.. raw:: html
+
+   <div id="electrochemistry_028069a2_4e03_409e_8af2_4c8df32b5c5e"></div>
 
 R754
 ----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_028069a2_4e03_409e_8af2_4c8df32b5c5e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_028069a2_4e03_409e_8af2_4c8df32b5c5e
 
 .. raw:: html
 
@@ -9896,12 +10790,14 @@ R754
   </tr>
   </table>
 
-.. _electrochemistry_e0869e7a_36fe_4e33_9843_a5dc19fcb488:
+.. raw:: html
+
+   <div id="electrochemistry_e0869e7a_36fe_4e33_9843_a5dc19fcb488"></div>
 
 R9
 --
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e0869e7a_36fe_4e33_9843_a5dc19fcb488
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e0869e7a_36fe_4e33_9843_a5dc19fcb488
 
 .. raw:: html
 
@@ -9916,12 +10812,14 @@ R9
   </tr>
   </table>
 
-.. _electrochemistry_ebf314c7_81ad_4d77_9da4_b454520fda0e:
+.. raw:: html
+
+   <div id="electrochemistry_ebf314c7_81ad_4d77_9da4_b454520fda0e"></div>
 
 R916
 ----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ebf314c7_81ad_4d77_9da4_b454520fda0e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ebf314c7_81ad_4d77_9da4_b454520fda0e
 
 .. raw:: html
 
@@ -9940,12 +10838,14 @@ R916
   </tr>
   </table>
 
-.. _electrochemistry_eb1c9aa3_ad4f_4f2a_80f6_d6c8a8bc0d9a:
+.. raw:: html
+
+   <div id="electrochemistry_eb1c9aa3_ad4f_4f2a_80f6_d6c8a8bc0d9a"></div>
 
 R921
 ----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_eb1c9aa3_ad4f_4f2a_80f6_d6c8a8bc0d9a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_eb1c9aa3_ad4f_4f2a_80f6_d6c8a8bc0d9a
 
 .. raw:: html
 
@@ -9964,12 +10864,14 @@ R921
   </tr>
   </table>
 
-.. _electrochemistry_a277e420_2483_44d5_a2bc_4e421dea231a:
+.. raw:: html
+
+   <div id="electrochemistry_a277e420_2483_44d5_a2bc_4e421dea231a"></div>
 
 R926
 ----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a277e420_2483_44d5_a2bc_4e421dea231a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a277e420_2483_44d5_a2bc_4e421dea231a
 
 .. raw:: html
 
@@ -9988,12 +10890,14 @@ R926
   </tr>
   </table>
 
-.. _electrochemistry_387e1e59_e511_4acb_b5ec_fa7360ec7557:
+.. raw:: html
+
+   <div id="electrochemistry_387e1e59_e511_4acb_b5ec_fa7360ec7557"></div>
 
 R927
 ----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_387e1e59_e511_4acb_b5ec_fa7360ec7557
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_387e1e59_e511_4acb_b5ec_fa7360ec7557
 
 .. raw:: html
 
@@ -10008,12 +10912,14 @@ R927
   </tr>
   </table>
 
-.. _electrochemistry_9a23f61b_fef0_40f8_84f9_2057f90f6a95:
+.. raw:: html
+
+   <div id="electrochemistry_9a23f61b_fef0_40f8_84f9_2057f90f6a95"></div>
 
 R932
 ----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9a23f61b_fef0_40f8_84f9_2057f90f6a95
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9a23f61b_fef0_40f8_84f9_2057f90f6a95
 
 .. raw:: html
 
@@ -10028,12 +10934,14 @@ R932
   </tr>
   </table>
 
-.. _electrochemistry_d67a0921_15e4_4c73_804e_97b2d66452b8:
+.. raw:: html
+
+   <div id="electrochemistry_d67a0921_15e4_4c73_804e_97b2d66452b8"></div>
 
 R936
 ----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d67a0921_15e4_4c73_804e_97b2d66452b8
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d67a0921_15e4_4c73_804e_97b2d66452b8
 
 .. raw:: html
 
@@ -10052,12 +10960,14 @@ R936
   </tr>
   </table>
 
-.. _electrochemistry_59c041fc_eaa1_40fc_9b3e_1a6aca6119fd:
+.. raw:: html
+
+   <div id="electrochemistry_59c041fc_eaa1_40fc_9b3e_1a6aca6119fd"></div>
 
 Record
 ------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_59c041fc_eaa1_40fc_9b3e_1a6aca6119fd
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_59c041fc_eaa1_40fc_9b3e_1a6aca6119fd
 
 .. raw:: html
 
@@ -10068,12 +10978,14 @@ Record
   </tr>
   </table>
 
-.. _electrochemistry_14377ecb_5ead_431e_831e_159d622bd0ea:
+.. raw:: html
+
+   <div id="electrochemistry_14377ecb_5ead_431e_831e_159d622bd0ea"></div>
 
 RectangularElectrode
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_14377ecb_5ead_431e_831e_159d622bd0ea
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_14377ecb_5ead_431e_831e_159d622bd0ea
 
 .. raw:: html
 
@@ -10088,12 +11000,14 @@ RectangularElectrode
   </tr>
   </table>
 
-.. _electrochemistry_7729c34e_1ae9_403d_b933_1765885e7f29:
+.. raw:: html
+
+   <div id="electrochemistry_7729c34e_1ae9_403d_b933_1765885e7f29"></div>
 
 ReferenceElectrode
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7729c34e_1ae9_403d_b933_1765885e7f29
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7729c34e_1ae9_403d_b933_1765885e7f29
 
 .. raw:: html
 
@@ -10128,12 +11042,14 @@ ReferenceElectrode
   </tr>
   </table>
 
-.. _electrochemistry_0d9ba00d_04bc_4bdc_85af_3380694f6f68:
+.. raw:: html
+
+   <div id="electrochemistry_0d9ba00d_04bc_4bdc_85af_3380694f6f68"></div>
 
 ReversibleHydrogenElectrode
 ---------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0d9ba00d_04bc_4bdc_85af_3380694f6f68
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0d9ba00d_04bc_4bdc_85af_3380694f6f68
 
 .. raw:: html
 
@@ -10156,12 +11072,14 @@ ReversibleHydrogenElectrode
   </tr>
   </table>
 
-.. _electrochemistry_399b10cd_8a2e_47be_96b8_295890bd2460:
+.. raw:: html
+
+   <div id="electrochemistry_399b10cd_8a2e_47be_96b8_295890bd2460"></div>
 
 RhodiumBasedElectrode
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_399b10cd_8a2e_47be_96b8_295890bd2460
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_399b10cd_8a2e_47be_96b8_295890bd2460
 
 .. raw:: html
 
@@ -10176,12 +11094,14 @@ RhodiumBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_6c421175_477f_45e0_8b6c_c3464f5351c5:
+.. raw:: html
+
+   <div id="electrochemistry_6c421175_477f_45e0_8b6c_c3464f5351c5"></div>
 
 RotatingDiskElectrode
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6c421175_477f_45e0_8b6c_c3464f5351c5
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6c421175_477f_45e0_8b6c_c3464f5351c5
 
 .. raw:: html
 
@@ -10212,12 +11132,14 @@ RotatingDiskElectrode
   </tr>
   </table>
 
-.. _electrochemistry_7f4d74cd_d0a5_4908_9da9_7629fe419917:
+.. raw:: html
+
+   <div id="electrochemistry_7f4d74cd_d0a5_4908_9da9_7629fe419917"></div>
 
 RotatingRingDiskElectrode
 -------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7f4d74cd_d0a5_4908_9da9_7629fe419917
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7f4d74cd_d0a5_4908_9da9_7629fe419917
 
 .. raw:: html
 
@@ -10244,12 +11166,14 @@ RotatingRingDiskElectrode
   </tr>
   </table>
 
-.. _electrochemistry_eacb141f_6ab4_491f_8603_a3e025cefc82:
+.. raw:: html
+
+   <div id="electrochemistry_eacb141f_6ab4_491f_8603_a3e025cefc82"></div>
 
 RoundCase
 ---------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_eacb141f_6ab4_491f_8603_a3e025cefc82
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_eacb141f_6ab4_491f_8603_a3e025cefc82
 
 .. raw:: html
 
@@ -10268,12 +11192,14 @@ RoundCase
   </tr>
   </table>
 
-.. _electrochemistry_a8bfac4f_3f30_4e6d_8d8e_34b1eeecb614:
+.. raw:: html
+
+   <div id="electrochemistry_a8bfac4f_3f30_4e6d_8d8e_34b1eeecb614"></div>
 
 RoundElectrode
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a8bfac4f_3f30_4e6d_8d8e_34b1eeecb614
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a8bfac4f_3f30_4e6d_8d8e_34b1eeecb614
 
 .. raw:: html
 
@@ -10292,12 +11218,14 @@ RoundElectrode
   </tr>
   </table>
 
-.. _electrochemistry_7ffe1cb6_f87e_4b4a_8ce7_c98e2a584cb1:
+.. raw:: html
+
+   <div id="electrochemistry_7ffe1cb6_f87e_4b4a_8ce7_c98e2a584cb1"></div>
 
 RutheniumBasedElectrode
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7ffe1cb6_f87e_4b4a_8ce7_c98e2a584cb1
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7ffe1cb6_f87e_4b4a_8ce7_c98e2a584cb1
 
 .. raw:: html
 
@@ -10312,12 +11240,14 @@ RutheniumBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_10a91aba_da41_4309_a926_ddc0f285c2c1:
+.. raw:: html
+
+   <div id="electrochemistry_10a91aba_da41_4309_a926_ddc0f285c2c1"></div>
 
 RutheniumOxideElectrode
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_10a91aba_da41_4309_a926_ddc0f285c2c1
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_10a91aba_da41_4309_a926_ddc0f285c2c1
 
 .. raw:: html
 
@@ -10336,12 +11266,14 @@ RutheniumOxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_637c576e_a50e_47ae_8c74_2024ce4c6d0f:
+.. raw:: html
+
+   <div id="electrochemistry_637c576e_a50e_47ae_8c74_2024ce4c6d0f"></div>
 
 SaltBridge
 ----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_637c576e_a50e_47ae_8c74_2024ce4c6d0f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_637c576e_a50e_47ae_8c74_2024ce4c6d0f
 
 .. raw:: html
 
@@ -10364,12 +11296,14 @@ SaltBridge
   </tr>
   </table>
 
-.. _electrochemistry_82b66bfe_ec25_417b_ba65_b631ddaaca0e:
+.. raw:: html
+
+   <div id="electrochemistry_82b66bfe_ec25_417b_ba65_b631ddaaca0e"></div>
 
 SaturatedCalomelElectrode
 -------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_82b66bfe_ec25_417b_ba65_b631ddaaca0e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_82b66bfe_ec25_417b_ba65_b631ddaaca0e
 
 .. raw:: html
 
@@ -10392,12 +11326,14 @@ SaturatedCalomelElectrode
   </tr>
   </table>
 
-.. _electrochemistry_27a81a51_e8d7_42fb_834f_0d068fa45d89:
+.. raw:: html
+
+   <div id="electrochemistry_27a81a51_e8d7_42fb_834f_0d068fa45d89"></div>
 
 SaturatedSolution
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_27a81a51_e8d7_42fb_834f_0d068fa45d89
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_27a81a51_e8d7_42fb_834f_0d068fa45d89
 
 .. raw:: html
 
@@ -10416,12 +11352,14 @@ SaturatedSolution
   </tr>
   </table>
 
-.. _electrochemistry_8d3bf304_78e4_4e99_abe1_6ab429e44ed1:
+.. raw:: html
+
+   <div id="electrochemistry_8d3bf304_78e4_4e99_abe1_6ab429e44ed1"></div>
 
 SealedCell
 ----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8d3bf304_78e4_4e99_abe1_6ab429e44ed1
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8d3bf304_78e4_4e99_abe1_6ab429e44ed1
 
 .. raw:: html
 
@@ -10440,12 +11378,14 @@ SealedCell
   </tr>
   </table>
 
-.. _electrochemistry_1c0c8f43_7349_4646_94e3_c36727c5c2e3:
+.. raw:: html
+
+   <div id="electrochemistry_1c0c8f43_7349_4646_94e3_c36727c5c2e3"></div>
 
 Seawater
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1c0c8f43_7349_4646_94e3_c36727c5c2e3
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1c0c8f43_7349_4646_94e3_c36727c5c2e3
 
 .. raw:: html
 
@@ -10460,12 +11400,14 @@ Seawater
   </tr>
   </table>
 
-.. _electrochemistry_444992e5_43f8_44a1_9767_b408dbe54330:
+.. raw:: html
+
+   <div id="electrochemistry_444992e5_43f8_44a1_9767_b408dbe54330"></div>
 
 SelfDischarging
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_444992e5_43f8_44a1_9767_b408dbe54330
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_444992e5_43f8_44a1_9767_b408dbe54330
 
 .. raw:: html
 
@@ -10492,12 +11434,14 @@ SelfDischarging
   </tr>
   </table>
 
-.. _electrochemistry_331e6cca_f260_4bf8_af55_35304fe1bbe0:
+.. raw:: html
+
+   <div id="electrochemistry_331e6cca_f260_4bf8_af55_35304fe1bbe0"></div>
 
 Separator
 ---------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_331e6cca_f260_4bf8_af55_35304fe1bbe0
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_331e6cca_f260_4bf8_af55_35304fe1bbe0
 
 .. raw:: html
 
@@ -10532,12 +11476,14 @@ Separator
   </tr>
   </table>
 
-.. _electrochemistry_8c71739c_27c1_4d19_a0ff_02545296af43:
+.. raw:: html
+
+   <div id="electrochemistry_8c71739c_27c1_4d19_a0ff_02545296af43"></div>
 
 SeriesConnection
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8c71739c_27c1_4d19_a0ff_02545296af43
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8c71739c_27c1_4d19_a0ff_02545296af43
 
 .. raw:: html
 
@@ -10552,12 +11498,14 @@ SeriesConnection
   </tr>
   </table>
 
-.. _electrochemistry_bed5b5f9_b89d_45e3_a8c2_81b70ae21847:
+.. raw:: html
+
+   <div id="electrochemistry_bed5b5f9_b89d_45e3_a8c2_81b70ae21847"></div>
 
 SeriesParallelConnection
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bed5b5f9_b89d_45e3_a8c2_81b70ae21847
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bed5b5f9_b89d_45e3_a8c2_81b70ae21847
 
 .. raw:: html
 
@@ -10572,12 +11520,14 @@ SeriesParallelConnection
   </tr>
   </table>
 
-.. _electrochemistry_f47611a2_e081_47f0_b287_3fda5f706154:
+.. raw:: html
+
+   <div id="electrochemistry_f47611a2_e081_47f0_b287_3fda5f706154"></div>
 
 SideReaction
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f47611a2_e081_47f0_b287_3fda5f706154
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f47611a2_e081_47f0_b287_3fda5f706154
 
 .. raw:: html
 
@@ -10612,12 +11562,14 @@ SideReaction
   </tr>
   </table>
 
-.. _electrochemistry_79e12290_d1e5_4c41_916c_18f1e4d7fb51:
+.. raw:: html
+
+   <div id="electrochemistry_79e12290_d1e5_4c41_916c_18f1e4d7fb51"></div>
 
 SiliconBasedElectrode
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79e12290_d1e5_4c41_916c_18f1e4d7fb51
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79e12290_d1e5_4c41_916c_18f1e4d7fb51
 
 .. raw:: html
 
@@ -10632,12 +11584,14 @@ SiliconBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_e8c39ecc_29d1_4172_996e_d5b05dc88015:
+.. raw:: html
+
+   <div id="electrochemistry_e8c39ecc_29d1_4172_996e_d5b05dc88015"></div>
 
 SiliconGraphiteElectrode
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e8c39ecc_29d1_4172_996e_d5b05dc88015
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e8c39ecc_29d1_4172_996e_d5b05dc88015
 
 .. raw:: html
 
@@ -10652,12 +11606,14 @@ SiliconGraphiteElectrode
   </tr>
   </table>
 
-.. _electrochemistry_4143b1c2_2d21_419e_af45_247d4c78ce7e:
+.. raw:: html
+
+   <div id="electrochemistry_4143b1c2_2d21_419e_af45_247d4c78ce7e"></div>
 
 SiliconOxideElectrode
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4143b1c2_2d21_419e_af45_247d4c78ce7e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4143b1c2_2d21_419e_af45_247d4c78ce7e
 
 .. raw:: html
 
@@ -10672,12 +11628,14 @@ SiliconOxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_2fd5964b_0c65_4413_8b8c_849639e6d1e7:
+.. raw:: html
+
+   <div id="electrochemistry_2fd5964b_0c65_4413_8b8c_849639e6d1e7"></div>
 
 SiliconOxideGraphiteElectrode
 -----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2fd5964b_0c65_4413_8b8c_849639e6d1e7
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2fd5964b_0c65_4413_8b8c_849639e6d1e7
 
 .. raw:: html
 
@@ -10692,12 +11650,14 @@ SiliconOxideGraphiteElectrode
   </tr>
   </table>
 
-.. _electrochemistry_f897db90_afd6_42e7_8d1f_0fcba856e45a:
+.. raw:: html
+
+   <div id="electrochemistry_f897db90_afd6_42e7_8d1f_0fcba856e45a"></div>
 
 SilverBasedElectrode
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f897db90_afd6_42e7_8d1f_0fcba856e45a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f897db90_afd6_42e7_8d1f_0fcba856e45a
 
 .. raw:: html
 
@@ -10716,12 +11676,14 @@ SilverBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_6ec59f99_5f26_4a7d_9b90_b52e0f8ad190:
+.. raw:: html
+
+   <div id="electrochemistry_6ec59f99_5f26_4a7d_9b90_b52e0f8ad190"></div>
 
 SilverChlorideElectrode
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6ec59f99_5f26_4a7d_9b90_b52e0f8ad190
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6ec59f99_5f26_4a7d_9b90_b52e0f8ad190
 
 .. raw:: html
 
@@ -10744,12 +11706,14 @@ SilverChlorideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_a462859d_d8bd_48ea_8bde_1576f1248a1e:
+.. raw:: html
+
+   <div id="electrochemistry_a462859d_d8bd_48ea_8bde_1576f1248a1e"></div>
 
 SilverElectrode
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a462859d_d8bd_48ea_8bde_1576f1248a1e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a462859d_d8bd_48ea_8bde_1576f1248a1e
 
 .. raw:: html
 
@@ -10772,12 +11736,14 @@ SilverElectrode
   </tr>
   </table>
 
-.. _electrochemistry_a3745142_b97a_4e19_b7ed_03599f56e81d:
+.. raw:: html
+
+   <div id="electrochemistry_a3745142_b97a_4e19_b7ed_03599f56e81d"></div>
 
 SilverOxideElectrode
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a3745142_b97a_4e19_b7ed_03599f56e81d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a3745142_b97a_4e19_b7ed_03599f56e81d
 
 .. raw:: html
 
@@ -10792,12 +11758,14 @@ SilverOxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_418c59bd_dc9d_438b_bc7c_494fbd1bb4f8:
+.. raw:: html
+
+   <div id="electrochemistry_418c59bd_dc9d_438b_bc7c_494fbd1bb4f8"></div>
 
 SingleCoatedElectrode
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_418c59bd_dc9d_438b_bc7c_494fbd1bb4f8
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_418c59bd_dc9d_438b_bc7c_494fbd1bb4f8
 
 .. raw:: html
 
@@ -10812,12 +11780,14 @@ SingleCoatedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_d61deb36_b397_4811_bf7a_66d8e4578c6e:
+.. raw:: html
+
+   <div id="electrochemistry_d61deb36_b397_4811_bf7a_66d8e4578c6e"></div>
 
 SinusoidalCurrentWaveform
 -------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d61deb36_b397_4811_bf7a_66d8e4578c6e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d61deb36_b397_4811_bf7a_66d8e4578c6e
 
 .. raw:: html
 
@@ -10832,12 +11802,14 @@ SinusoidalCurrentWaveform
   </tr>
   </table>
 
-.. _electrochemistry_c74bb11c_e875_4112_b9cf_00d0890ef1f5:
+.. raw:: html
+
+   <div id="electrochemistry_c74bb11c_e875_4112_b9cf_00d0890ef1f5"></div>
 
 SinusoidalPotentialWaveform
 ---------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c74bb11c_e875_4112_b9cf_00d0890ef1f5
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c74bb11c_e875_4112_b9cf_00d0890ef1f5
 
 .. raw:: html
 
@@ -10852,12 +11824,14 @@ SinusoidalPotentialWaveform
   </tr>
   </table>
 
-.. _electrochemistry_df4dd678_9642_47c9_84dd_4bb09f369f53:
+.. raw:: html
+
+   <div id="electrochemistry_df4dd678_9642_47c9_84dd_4bb09f369f53"></div>
 
 SodiumBasedElectrode
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_df4dd678_9642_47c9_84dd_4bb09f369f53
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_df4dd678_9642_47c9_84dd_4bb09f369f53
 
 .. raw:: html
 
@@ -10872,12 +11846,14 @@ SodiumBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_f8f81b27_1d6c_42d8_a7e9_5a2534102562:
+.. raw:: html
+
+   <div id="electrochemistry_f8f81b27_1d6c_42d8_a7e9_5a2534102562"></div>
 
 SodiumChromiumOxideElectrode
 ----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f8f81b27_1d6c_42d8_a7e9_5a2534102562
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f8f81b27_1d6c_42d8_a7e9_5a2534102562
 
 .. raw:: html
 
@@ -10892,12 +11868,14 @@ SodiumChromiumOxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_ee0278fb_932d_48cd_a20a_c1b89b29d68b:
+.. raw:: html
+
+   <div id="electrochemistry_ee0278fb_932d_48cd_a20a_c1b89b29d68b"></div>
 
 SodiumCobaltOxideElectrode
 --------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ee0278fb_932d_48cd_a20a_c1b89b29d68b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ee0278fb_932d_48cd_a20a_c1b89b29d68b
 
 .. raw:: html
 
@@ -10912,12 +11890,14 @@ SodiumCobaltOxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_9e24d403_8531_416e_a9ec_d1ec5508bcb1:
+.. raw:: html
+
+   <div id="electrochemistry_9e24d403_8531_416e_a9ec_d1ec5508bcb1"></div>
 
 SodiumCobaltPhosphateElectrode
 ------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9e24d403_8531_416e_a9ec_d1ec5508bcb1
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9e24d403_8531_416e_a9ec_d1ec5508bcb1
 
 .. raw:: html
 
@@ -10932,12 +11912,14 @@ SodiumCobaltPhosphateElectrode
   </tr>
   </table>
 
-.. _electrochemistry_ebd01982_6b0c_48e7_90ef_7b7342009449:
+.. raw:: html
+
+   <div id="electrochemistry_ebd01982_6b0c_48e7_90ef_7b7342009449"></div>
 
 SodiumHydroxideSolution
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ebd01982_6b0c_48e7_90ef_7b7342009449
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ebd01982_6b0c_48e7_90ef_7b7342009449
 
 .. raw:: html
 
@@ -10956,12 +11938,14 @@ SodiumHydroxideSolution
   </tr>
   </table>
 
-.. _electrochemistry_d936c767_1530_419c_93f4_59e08f0d702c:
+.. raw:: html
+
+   <div id="electrochemistry_d936c767_1530_419c_93f4_59e08f0d702c"></div>
 
 SodiumInsertionElectrode
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d936c767_1530_419c_93f4_59e08f0d702c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d936c767_1530_419c_93f4_59e08f0d702c
 
 .. raw:: html
 
@@ -10976,12 +11960,14 @@ SodiumInsertionElectrode
   </tr>
   </table>
 
-.. _electrochemistry_8968eb7a_9a65_4286_a596_c31b998df329:
+.. raw:: html
+
+   <div id="electrochemistry_8968eb7a_9a65_4286_a596_c31b998df329"></div>
 
 SodiumIronHexacyanoferrateElectrode
 -----------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8968eb7a_9a65_4286_a596_c31b998df329
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8968eb7a_9a65_4286_a596_c31b998df329
 
 .. raw:: html
 
@@ -10996,12 +11982,14 @@ SodiumIronHexacyanoferrateElectrode
   </tr>
   </table>
 
-.. _electrochemistry_502a98a3_ce47_421f_8e0a_016ed171c900:
+.. raw:: html
+
+   <div id="electrochemistry_502a98a3_ce47_421f_8e0a_016ed171c900"></div>
 
 SodiumIronPhosphateElectrode
 ----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_502a98a3_ce47_421f_8e0a_016ed171c900
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_502a98a3_ce47_421f_8e0a_016ed171c900
 
 .. raw:: html
 
@@ -11016,12 +12004,14 @@ SodiumIronPhosphateElectrode
   </tr>
   </table>
 
-.. _electrochemistry_4edb47d6_107c_40a2_be7c_6b26e9d296da:
+.. raw:: html
+
+   <div id="electrochemistry_4edb47d6_107c_40a2_be7c_6b26e9d296da"></div>
 
 SodiumManganeseHexacyanoferrateElectrode
 ----------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4edb47d6_107c_40a2_be7c_6b26e9d296da
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4edb47d6_107c_40a2_be7c_6b26e9d296da
 
 .. raw:: html
 
@@ -11036,12 +12026,14 @@ SodiumManganeseHexacyanoferrateElectrode
   </tr>
   </table>
 
-.. _electrochemistry_e8d9e091_a56d_4a24_a305_d1bac55cfce3:
+.. raw:: html
+
+   <div id="electrochemistry_e8d9e091_a56d_4a24_a305_d1bac55cfce3"></div>
 
 SodiumManganeseOxideElectrode
 -----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e8d9e091_a56d_4a24_a305_d1bac55cfce3
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e8d9e091_a56d_4a24_a305_d1bac55cfce3
 
 .. raw:: html
 
@@ -11056,12 +12048,14 @@ SodiumManganeseOxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_cc0468a2_1851_4d3d_92a6_b4059db0c056:
+.. raw:: html
+
+   <div id="electrochemistry_cc0468a2_1851_4d3d_92a6_b4059db0c056"></div>
 
 SodiumManganesePhosphateElectrode
 ---------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cc0468a2_1851_4d3d_92a6_b4059db0c056
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cc0468a2_1851_4d3d_92a6_b4059db0c056
 
 .. raw:: html
 
@@ -11076,12 +12070,14 @@ SodiumManganesePhosphateElectrode
   </tr>
   </table>
 
-.. _electrochemistry_103c9e6c_9c26_430a_9fb9_f4f041e970b0:
+.. raw:: html
+
+   <div id="electrochemistry_103c9e6c_9c26_430a_9fb9_f4f041e970b0"></div>
 
 SodiumMetatitanateElectrode
 ---------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_103c9e6c_9c26_430a_9fb9_f4f041e970b0
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_103c9e6c_9c26_430a_9fb9_f4f041e970b0
 
 .. raw:: html
 
@@ -11096,12 +12092,14 @@ SodiumMetatitanateElectrode
   </tr>
   </table>
 
-.. _electrochemistry_4a13e538_4c08_4ba9_8ebc_98a866208e01:
+.. raw:: html
+
+   <div id="electrochemistry_4a13e538_4c08_4ba9_8ebc_98a866208e01"></div>
 
 SodiumNickelPhosphateElectrode
 ------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4a13e538_4c08_4ba9_8ebc_98a866208e01
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4a13e538_4c08_4ba9_8ebc_98a866208e01
 
 .. raw:: html
 
@@ -11116,12 +12114,14 @@ SodiumNickelPhosphateElectrode
   </tr>
   </table>
 
-.. _electrochemistry_c5f51531_1452_4654_82e5_0505491c2c7d:
+.. raw:: html
+
+   <div id="electrochemistry_c5f51531_1452_4654_82e5_0505491c2c7d"></div>
 
 SodiumTitaniumOxideElectrode
 ----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c5f51531_1452_4654_82e5_0505491c2c7d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c5f51531_1452_4654_82e5_0505491c2c7d
 
 .. raw:: html
 
@@ -11136,12 +12136,14 @@ SodiumTitaniumOxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_cff80dd5_19a9_4357_8fb9_410a978153e2:
+.. raw:: html
+
+   <div id="electrochemistry_cff80dd5_19a9_4357_8fb9_410a978153e2"></div>
 
 SodiumTitaniumPhosphateElectrode
 --------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cff80dd5_19a9_4357_8fb9_410a978153e2
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cff80dd5_19a9_4357_8fb9_410a978153e2
 
 .. raw:: html
 
@@ -11156,12 +12158,14 @@ SodiumTitaniumPhosphateElectrode
   </tr>
   </table>
 
-.. _electrochemistry_65c90d8d_9712_4f3f_b830_d8163ec4cfcc:
+.. raw:: html
+
+   <div id="electrochemistry_65c90d8d_9712_4f3f_b830_d8163ec4cfcc"></div>
 
 SolidAmalgamElectrode
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_65c90d8d_9712_4f3f_b830_d8163ec4cfcc
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_65c90d8d_9712_4f3f_b830_d8163ec4cfcc
 
 .. raw:: html
 
@@ -11180,12 +12184,14 @@ SolidAmalgamElectrode
   </tr>
   </table>
 
-.. _electrochemistry_0508a114_544a_4f54_a7de_9b947fb4b618:
+.. raw:: html
+
+   <div id="electrochemistry_0508a114_544a_4f54_a7de_9b947fb4b618"></div>
 
 SolidElectrolyte
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0508a114_544a_4f54_a7de_9b947fb4b618
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0508a114_544a_4f54_a7de_9b947fb4b618
 
 .. raw:: html
 
@@ -11204,12 +12210,14 @@ SolidElectrolyte
   </tr>
   </table>
 
-.. _electrochemistry_ecf136cb_2584_4cb1_98b7_2d2b3d22e40d:
+.. raw:: html
+
+   <div id="electrochemistry_ecf136cb_2584_4cb1_98b7_2d2b3d22e40d"></div>
 
 SolidElectrolyteInterphase
 --------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ecf136cb_2584_4cb1_98b7_2d2b3d22e40d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ecf136cb_2584_4cb1_98b7_2d2b3d22e40d
 
 .. raw:: html
 
@@ -11232,12 +12240,14 @@ SolidElectrolyteInterphase
   </tr>
   </table>
 
-.. _electrochemistry_e3f6eacc_f661_404e_ac16_45d2fa1f5d89:
+.. raw:: html
+
+   <div id="electrochemistry_e3f6eacc_f661_404e_ac16_45d2fa1f5d89"></div>
 
 SpaceChargeLayer
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e3f6eacc_f661_404e_ac16_45d2fa1f5d89
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e3f6eacc_f661_404e_ac16_45d2fa1f5d89
 
 .. raw:: html
 
@@ -11268,12 +12278,14 @@ SpaceChargeLayer
   </tr>
   </table>
 
-.. _electrochemistry_49909cd1_44f4_41b4_877a_82a52845a5cb:
+.. raw:: html
+
+   <div id="electrochemistry_49909cd1_44f4_41b4_877a_82a52845a5cb"></div>
 
 Spacer
 ------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_49909cd1_44f4_41b4_877a_82a52845a5cb
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_49909cd1_44f4_41b4_877a_82a52845a5cb
 
 .. raw:: html
 
@@ -11288,12 +12300,14 @@ Spacer
   </tr>
   </table>
 
-.. _electrochemistry_872b11e1_8bb3_4a2a_af90_bbaa0055d01e:
+.. raw:: html
+
+   <div id="electrochemistry_872b11e1_8bb3_4a2a_af90_bbaa0055d01e"></div>
 
 Spring
 ------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_872b11e1_8bb3_4a2a_af90_bbaa0055d01e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_872b11e1_8bb3_4a2a_af90_bbaa0055d01e
 
 .. raw:: html
 
@@ -11316,12 +12330,14 @@ Spring
   </tr>
   </table>
 
-.. _electrochemistry_0e33278b_639f_412d_9abd_64c3790026ef:
+.. raw:: html
+
+   <div id="electrochemistry_0e33278b_639f_412d_9abd_64c3790026ef"></div>
 
 SquareWavePotentialWaveform
 ---------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0e33278b_639f_412d_9abd_64c3790026ef
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0e33278b_639f_412d_9abd_64c3790026ef
 
 .. raw:: html
 
@@ -11336,12 +12352,14 @@ SquareWavePotentialWaveform
   </tr>
   </table>
 
-.. _electrochemistry_210f3520_1ea3_4c86_aa89_4cd9a3bc5a5a:
+.. raw:: html
+
+   <div id="electrochemistry_210f3520_1ea3_4c86_aa89_4cd9a3bc5a5a"></div>
 
 SquareWaveVoltammetryWaveform
 -----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_210f3520_1ea3_4c86_aa89_4cd9a3bc5a5a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_210f3520_1ea3_4c86_aa89_4cd9a3bc5a5a
 
 .. raw:: html
 
@@ -11356,12 +12374,14 @@ SquareWaveVoltammetryWaveform
   </tr>
   </table>
 
-.. _electrochemistry_626f81db_ae4e_410a_96b8_0582aa2a9434:
+.. raw:: html
+
+   <div id="electrochemistry_626f81db_ae4e_410a_96b8_0582aa2a9434"></div>
 
 StaircaseCurrentRamp
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_626f81db_ae4e_410a_96b8_0582aa2a9434
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_626f81db_ae4e_410a_96b8_0582aa2a9434
 
 .. raw:: html
 
@@ -11376,12 +12396,14 @@ StaircaseCurrentRamp
   </tr>
   </table>
 
-.. _electrochemistry_d359386f_ae2d_4ad4_9616_464e2111b67d:
+.. raw:: html
+
+   <div id="electrochemistry_d359386f_ae2d_4ad4_9616_464e2111b67d"></div>
 
 StaircasePotentialRamp
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d359386f_ae2d_4ad4_9616_464e2111b67d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d359386f_ae2d_4ad4_9616_464e2111b67d
 
 .. raw:: html
 
@@ -11396,12 +12418,14 @@ StaircasePotentialRamp
   </tr>
   </table>
 
-.. _electrochemistry_2a40b878_7d09_49db_91b2_d0ee30192284:
+.. raw:: html
+
+   <div id="electrochemistry_2a40b878_7d09_49db_91b2_d0ee30192284"></div>
 
 StandardHydrogenElectrode
 -------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2a40b878_7d09_49db_91b2_d0ee30192284
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2a40b878_7d09_49db_91b2_d0ee30192284
 
 .. raw:: html
 
@@ -11432,12 +12456,14 @@ StandardHydrogenElectrode
   </tr>
   </table>
 
-.. _electrochemistry_aa5ed981_c11b_4c4f_b1fd_8c432e009484:
+.. raw:: html
+
+   <div id="electrochemistry_aa5ed981_c11b_4c4f_b1fd_8c432e009484"></div>
 
 SternModel
 ----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_aa5ed981_c11b_4c4f_b1fd_8c432e009484
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_aa5ed981_c11b_4c4f_b1fd_8c432e009484
 
 .. raw:: html
 
@@ -11452,12 +12478,14 @@ SternModel
   </tr>
   </table>
 
-.. _electrochemistry_1e72986e_e19f_4c24_8663_cadd4318bd72:
+.. raw:: html
+
+   <div id="electrochemistry_1e72986e_e19f_4c24_8663_cadd4318bd72"></div>
 
 StoichiometricEquation
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1e72986e_e19f_4c24_8663_cadd4318bd72
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1e72986e_e19f_4c24_8663_cadd4318bd72
 
 .. raw:: html
 
@@ -11484,12 +12512,14 @@ StoichiometricEquation
   </tr>
   </table>
 
-.. _electrochemistry_bfbefff0_4df5_47c2_9943_5f42cf268e9e:
+.. raw:: html
+
+   <div id="electrochemistry_bfbefff0_4df5_47c2_9943_5f42cf268e9e"></div>
 
 StrippingChronopotentiometry
 ----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bfbefff0_4df5_47c2_9943_5f42cf268e9e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bfbefff0_4df5_47c2_9943_5f42cf268e9e
 
 .. raw:: html
 
@@ -11504,12 +12534,14 @@ StrippingChronopotentiometry
   </tr>
   </table>
 
-.. _electrochemistry_46ac0fd3_2b8e_40aa_bf5d_19cf1dd39052:
+.. raw:: html
+
+   <div id="electrochemistry_46ac0fd3_2b8e_40aa_bf5d_19cf1dd39052"></div>
 
 StrontiumBasedElectrode
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_46ac0fd3_2b8e_40aa_bf5d_19cf1dd39052
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_46ac0fd3_2b8e_40aa_bf5d_19cf1dd39052
 
 .. raw:: html
 
@@ -11524,12 +12556,14 @@ StrontiumBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_88d2d4bc_4244_4419_a260_ad099a62d580:
+.. raw:: html
+
+   <div id="electrochemistry_88d2d4bc_4244_4419_a260_ad099a62d580"></div>
 
 SulfurBasedElectrode
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_88d2d4bc_4244_4419_a260_ad099a62d580
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_88d2d4bc_4244_4419_a260_ad099a62d580
 
 .. raw:: html
 
@@ -11548,12 +12582,14 @@ SulfurBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_334b3acd_e35d_4d5a_b8b5_6d13cbebbc57:
+.. raw:: html
+
+   <div id="electrochemistry_334b3acd_e35d_4d5a_b8b5_6d13cbebbc57"></div>
 
 SulfuricAcidSolution
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_334b3acd_e35d_4d5a_b8b5_6d13cbebbc57
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_334b3acd_e35d_4d5a_b8b5_6d13cbebbc57
 
 .. raw:: html
 
@@ -11568,12 +12604,14 @@ SulfuricAcidSolution
   </tr>
   </table>
 
-.. _electrochemistry_dc6abae7_39b0_4d22_b52e_14d088a4bd5f:
+.. raw:: html
+
+   <div id="electrochemistry_dc6abae7_39b0_4d22_b52e_14d088a4bd5f"></div>
 
 Supercapacitor
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dc6abae7_39b0_4d22_b52e_14d088a4bd5f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dc6abae7_39b0_4d22_b52e_14d088a4bd5f
 
 .. raw:: html
 
@@ -11608,12 +12646,14 @@ Supercapacitor
   </tr>
   </table>
 
-.. _electrochemistry_1fc5642c_b7b2_43bf_ad20_f96001db8800:
+.. raw:: html
+
+   <div id="electrochemistry_1fc5642c_b7b2_43bf_ad20_f96001db8800"></div>
 
 SupportingElectrolyte
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1fc5642c_b7b2_43bf_ad20_f96001db8800
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1fc5642c_b7b2_43bf_ad20_f96001db8800
 
 .. raw:: html
 
@@ -11640,12 +12680,14 @@ SupportingElectrolyte
   </tr>
   </table>
 
-.. _electrochemistry_cd1b7943_42ce_46bd_8588_1c3161268270:
+.. raw:: html
+
+   <div id="electrochemistry_cd1b7943_42ce_46bd_8588_1c3161268270"></div>
 
 SwagelokCase
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cd1b7943_42ce_46bd_8588_1c3161268270
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cd1b7943_42ce_46bd_8588_1c3161268270
 
 .. raw:: html
 
@@ -11660,12 +12702,14 @@ SwagelokCase
   </tr>
   </table>
 
-.. _electrochemistry_3f70e5c5_67f0_483e_998b_b83b7739c4bc:
+.. raw:: html
+
+   <div id="electrochemistry_3f70e5c5_67f0_483e_998b_b83b7739c4bc"></div>
 
 Terminal
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3f70e5c5_67f0_483e_998b_b83b7739c4bc
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3f70e5c5_67f0_483e_998b_b83b7739c4bc
 
 .. raw:: html
 
@@ -11684,12 +12728,14 @@ Terminal
   </tr>
   </table>
 
-.. _electrochemistry_60bc27f0_8290_4113_8c3b_011433a733c7:
+.. raw:: html
+
+   <div id="electrochemistry_60bc27f0_8290_4113_8c3b_011433a733c7"></div>
 
 TerminalProtector
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_60bc27f0_8290_4113_8c3b_011433a733c7
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_60bc27f0_8290_4113_8c3b_011433a733c7
 
 .. raw:: html
 
@@ -11708,12 +12754,14 @@ TerminalProtector
   </tr>
   </table>
 
-.. _electrochemistry_04f28ce3_251d_429e_aa85_ab3eb45bbcd2:
+.. raw:: html
+
+   <div id="electrochemistry_04f28ce3_251d_429e_aa85_ab3eb45bbcd2"></div>
 
 ThermalRunaway
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_04f28ce3_251d_429e_aa85_ab3eb45bbcd2
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_04f28ce3_251d_429e_aa85_ab3eb45bbcd2
 
 .. raw:: html
 
@@ -11732,12 +12780,14 @@ ThermalRunaway
   </tr>
   </table>
 
-.. _electrochemistry_113e0469_8ae0_407f_892d_4b988f8d8a08:
+.. raw:: html
+
+   <div id="electrochemistry_113e0469_8ae0_407f_892d_4b988f8d8a08"></div>
 
 ThermogalvanicCell
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_113e0469_8ae0_407f_892d_4b988f8d8a08
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_113e0469_8ae0_407f_892d_4b988f8d8a08
 
 .. raw:: html
 
@@ -11768,12 +12818,14 @@ ThermogalvanicCell
   </tr>
   </table>
 
-.. _electrochemistry_4977521c_0438_4659_bc81_1c77fae836bb:
+.. raw:: html
+
+   <div id="electrochemistry_4977521c_0438_4659_bc81_1c77fae836bb"></div>
 
 ThionylChlorideElectrode
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4977521c_0438_4659_bc81_1c77fae836bb
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4977521c_0438_4659_bc81_1c77fae836bb
 
 .. raw:: html
 
@@ -11788,12 +12840,14 @@ ThionylChlorideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_b9bece97_a511_4cb9_88a2_b5bd5c5e5d74:
+.. raw:: html
+
+   <div id="electrochemistry_b9bece97_a511_4cb9_88a2_b5bd5c5e5d74"></div>
 
 ThreeElectrodeCell
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b9bece97_a511_4cb9_88a2_b5bd5c5e5d74
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b9bece97_a511_4cb9_88a2_b5bd5c5e5d74
 
 .. raw:: html
 
@@ -11812,12 +12866,14 @@ ThreeElectrodeCell
   </tr>
   </table>
 
-.. _electrochemistry_58ad1d22_3803_4c95_a137_207cfebe242a:
+.. raw:: html
+
+   <div id="electrochemistry_58ad1d22_3803_4c95_a137_207cfebe242a"></div>
 
 TimeData
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_58ad1d22_3803_4c95_a137_207cfebe242a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_58ad1d22_3803_4c95_a137_207cfebe242a
 
 .. raw:: html
 
@@ -11828,12 +12884,14 @@ TimeData
   </tr>
   </table>
 
-.. _electrochemistry_7fdf65c1_b86a_4cbe_8c06_56321b425d4e:
+.. raw:: html
+
+   <div id="electrochemistry_7fdf65c1_b86a_4cbe_8c06_56321b425d4e"></div>
 
 TimeMeasurement
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7fdf65c1_b86a_4cbe_8c06_56321b425d4e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7fdf65c1_b86a_4cbe_8c06_56321b425d4e
 
 .. raw:: html
 
@@ -11844,12 +12902,14 @@ TimeMeasurement
   </tr>
   </table>
 
-.. _electrochemistry_496c8f31_9732_42c1_8eae_dd73979c06eb:
+.. raw:: html
+
+   <div id="electrochemistry_496c8f31_9732_42c1_8eae_dd73979c06eb"></div>
 
 TimeMeasurementResult
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_496c8f31_9732_42c1_8eae_dd73979c06eb
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_496c8f31_9732_42c1_8eae_dd73979c06eb
 
 .. raw:: html
 
@@ -11860,12 +12920,14 @@ TimeMeasurementResult
   </tr>
   </table>
 
-.. _electrochemistry_7fa74f69_047f_4c86_a02c_e7805d6f5b77:
+.. raw:: html
+
+   <div id="electrochemistry_7fa74f69_047f_4c86_a02c_e7805d6f5b77"></div>
 
 TimeSeriesDataSet
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7fa74f69_047f_4c86_a02c_e7805d6f5b77
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7fa74f69_047f_4c86_a02c_e7805d6f5b77
 
 .. raw:: html
 
@@ -11888,12 +12950,14 @@ TimeSeriesDataSet
   </tr>
   </table>
 
-.. _electrochemistry_31e8052d_bede_43c6_8b41_d51bb24c9489:
+.. raw:: html
+
+   <div id="electrochemistry_31e8052d_bede_43c6_8b41_d51bb24c9489"></div>
 
 TimeSeriesElectricalDataSet
 ---------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_31e8052d_bede_43c6_8b41_d51bb24c9489
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_31e8052d_bede_43c6_8b41_d51bb24c9489
 
 .. raw:: html
 
@@ -11912,12 +12976,14 @@ TimeSeriesElectricalDataSet
   </tr>
   </table>
 
-.. _electrochemistry_a10ede13_c895_4f56_a728_b1aab512b31b:
+.. raw:: html
+
+   <div id="electrochemistry_a10ede13_c895_4f56_a728_b1aab512b31b"></div>
 
 TinBasedElectrode
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a10ede13_c895_4f56_a728_b1aab512b31b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a10ede13_c895_4f56_a728_b1aab512b31b
 
 .. raw:: html
 
@@ -11932,12 +12998,14 @@ TinBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_9c557caa_61e2_4fa9_a517_4bad01a68122:
+.. raw:: html
+
+   <div id="electrochemistry_9c557caa_61e2_4fa9_a517_4bad01a68122"></div>
 
 TitaniumBasedElectrode
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9c557caa_61e2_4fa9_a517_4bad01a68122
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9c557caa_61e2_4fa9_a517_4bad01a68122
 
 .. raw:: html
 
@@ -11956,12 +13024,14 @@ TitaniumBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_d90221a0_0da7_4876_9cac_0e943e445f6f:
+.. raw:: html
+
+   <div id="electrochemistry_d90221a0_0da7_4876_9cac_0e943e445f6f"></div>
 
 TitaniumBasedElectrode
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d90221a0_0da7_4876_9cac_0e943e445f6f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d90221a0_0da7_4876_9cac_0e943e445f6f
 
 .. raw:: html
 
@@ -11976,12 +13046,14 @@ TitaniumBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_76fe8fb2_868e_48eb_95ca_fc6acd6f5fc9:
+.. raw:: html
+
+   <div id="electrochemistry_76fe8fb2_868e_48eb_95ca_fc6acd6f5fc9"></div>
 
 TitaniumDioxideElectrode
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_76fe8fb2_868e_48eb_95ca_fc6acd6f5fc9
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_76fe8fb2_868e_48eb_95ca_fc6acd6f5fc9
 
 .. raw:: html
 
@@ -12000,12 +13072,14 @@ TitaniumDioxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_f57a7dac_2ec2_4d51_b697_01a844c4467f:
+.. raw:: html
+
+   <div id="electrochemistry_f57a7dac_2ec2_4d51_b697_01a844c4467f"></div>
 
 TrasattiBuzzancaModel
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f57a7dac_2ec2_4d51_b697_01a844c4467f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f57a7dac_2ec2_4d51_b697_01a844c4467f
 
 .. raw:: html
 
@@ -12020,12 +13094,14 @@ TrasattiBuzzancaModel
   </tr>
   </table>
 
-.. _electrochemistry_09b9a369_2228_44bd_9b63_8abecfec8650:
+.. raw:: html
+
+   <div id="electrochemistry_09b9a369_2228_44bd_9b63_8abecfec8650"></div>
 
 TriangularCurrentWaveform
 -------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_09b9a369_2228_44bd_9b63_8abecfec8650
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_09b9a369_2228_44bd_9b63_8abecfec8650
 
 .. raw:: html
 
@@ -12040,12 +13116,14 @@ TriangularCurrentWaveform
   </tr>
   </table>
 
-.. _electrochemistry_f9af8440_3629_4558_a944_9dfaf3dfd7ec:
+.. raw:: html
+
+   <div id="electrochemistry_f9af8440_3629_4558_a944_9dfaf3dfd7ec"></div>
 
 TriangularPotentialWaveform
 ---------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f9af8440_3629_4558_a944_9dfaf3dfd7ec
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f9af8440_3629_4558_a944_9dfaf3dfd7ec
 
 .. raw:: html
 
@@ -12060,12 +13138,14 @@ TriangularPotentialWaveform
   </tr>
   </table>
 
-.. _electrochemistry_6b1f594f_2c0a_46a0_8805_d6ab08baa75e:
+.. raw:: html
+
+   <div id="electrochemistry_6b1f594f_2c0a_46a0_8805_d6ab08baa75e"></div>
 
 TubularPlate
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6b1f594f_2c0a_46a0_8805_d6ab08baa75e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6b1f594f_2c0a_46a0_8805_d6ab08baa75e
 
 .. raw:: html
 
@@ -12084,12 +13164,14 @@ TubularPlate
   </tr>
   </table>
 
-.. _electrochemistry_c5fd7b61_40f1_4225_a173_5caa3c5f4773:
+.. raw:: html
+
+   <div id="electrochemistry_c5fd7b61_40f1_4225_a173_5caa3c5f4773"></div>
 
 TungstenBasedElectrode
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c5fd7b61_40f1_4225_a173_5caa3c5f4773
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c5fd7b61_40f1_4225_a173_5caa3c5f4773
 
 .. raw:: html
 
@@ -12104,12 +13186,14 @@ TungstenBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_3fdc81d5_eef3_4408_a6e4_3c51c5b1c8dc:
+.. raw:: html
+
+   <div id="electrochemistry_3fdc81d5_eef3_4408_a6e4_3c51c5b1c8dc"></div>
 
 TungstenOxideElectrode
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3fdc81d5_eef3_4408_a6e4_3c51c5b1c8dc
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3fdc81d5_eef3_4408_a6e4_3c51c5b1c8dc
 
 .. raw:: html
 
@@ -12128,12 +13212,14 @@ TungstenOxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_aac51107_dbe5_4e63_b08a_9d6cf88f4b69:
+.. raw:: html
+
+   <div id="electrochemistry_aac51107_dbe5_4e63_b08a_9d6cf88f4b69"></div>
 
 TwoStepCharging
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_aac51107_dbe5_4e63_b08a_9d6cf88f4b69
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_aac51107_dbe5_4e63_b08a_9d6cf88f4b69
 
 .. raw:: html
 
@@ -12156,12 +13242,14 @@ TwoStepCharging
   </tr>
   </table>
 
-.. _electrochemistry_a2f4dca3_829f_412b_9025_bd7581aad82a:
+.. raw:: html
+
+   <div id="electrochemistry_a2f4dca3_829f_412b_9025_bd7581aad82a"></div>
 
 Valve
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a2f4dca3_829f_412b_9025_bd7581aad82a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a2f4dca3_829f_412b_9025_bd7581aad82a
 
 .. raw:: html
 
@@ -12176,12 +13264,14 @@ Valve
   </tr>
   </table>
 
-.. _electrochemistry_0ee59786_b090_444d_a46d_505797d07ca4:
+.. raw:: html
+
+   <div id="electrochemistry_0ee59786_b090_444d_a46d_505797d07ca4"></div>
 
 VanadiumBasedElectrode
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0ee59786_b090_444d_a46d_505797d07ca4
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0ee59786_b090_444d_a46d_505797d07ca4
 
 .. raw:: html
 
@@ -12200,12 +13290,14 @@ VanadiumBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_cc1f854a_ba6c_436e_bd18_c8b9159bbf52:
+.. raw:: html
+
+   <div id="electrochemistry_cc1f854a_ba6c_436e_bd18_c8b9159bbf52"></div>
 
 VentCap
 -------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cc1f854a_ba6c_436e_bd18_c8b9159bbf52
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cc1f854a_ba6c_436e_bd18_c8b9159bbf52
 
 .. raw:: html
 
@@ -12220,12 +13312,14 @@ VentCap
   </tr>
   </table>
 
-.. _electrochemistry_ec1dce8b_bb46_41a9_b532_6bed381aa557:
+.. raw:: html
+
+   <div id="electrochemistry_ec1dce8b_bb46_41a9_b532_6bed381aa557"></div>
 
 VentedCell
 ----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ec1dce8b_bb46_41a9_b532_6bed381aa557
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ec1dce8b_bb46_41a9_b532_6bed381aa557
 
 .. raw:: html
 
@@ -12244,12 +13338,14 @@ VentedCell
   </tr>
   </table>
 
-.. _electrochemistry_46957d35_0f8b_4d92_acb3_aded6ce774a1:
+.. raw:: html
+
+   <div id="electrochemistry_46957d35_0f8b_4d92_acb3_aded6ce774a1"></div>
 
 VoltageControlledProcess
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_46957d35_0f8b_4d92_acb3_aded6ce774a1
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_46957d35_0f8b_4d92_acb3_aded6ce774a1
 
 .. raw:: html
 
@@ -12264,12 +13360,14 @@ VoltageControlledProcess
   </tr>
   </table>
 
-.. _electrochemistry_4d09ddc4_7e71_4712_afab_b33d8df38983:
+.. raw:: html
+
+   <div id="electrochemistry_4d09ddc4_7e71_4712_afab_b33d8df38983"></div>
 
 VoltageData
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4d09ddc4_7e71_4712_afab_b33d8df38983
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4d09ddc4_7e71_4712_afab_b33d8df38983
 
 .. raw:: html
 
@@ -12280,12 +13378,14 @@ VoltageData
   </tr>
   </table>
 
-.. _electrochemistry_f07be701_9d6a_415b_ac6d_63202297a7a1:
+.. raw:: html
+
+   <div id="electrochemistry_f07be701_9d6a_415b_ac6d_63202297a7a1"></div>
 
 VoltageHold
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f07be701_9d6a_415b_ac6d_63202297a7a1
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f07be701_9d6a_415b_ac6d_63202297a7a1
 
 .. raw:: html
 
@@ -12308,12 +13408,14 @@ VoltageHold
   </tr>
   </table>
 
-.. _electrochemistry_825a749f_dd07_46fb_947c_db286440911e:
+.. raw:: html
+
+   <div id="electrochemistry_825a749f_dd07_46fb_947c_db286440911e"></div>
 
 VoltageMeasurement
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_825a749f_dd07_46fb_947c_db286440911e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_825a749f_dd07_46fb_947c_db286440911e
 
 .. raw:: html
 
@@ -12328,12 +13430,14 @@ VoltageMeasurement
   </tr>
   </table>
 
-.. _electrochemistry_a76072fe_ca6e_48ad_8b4a_ab98a2bc9abb:
+.. raw:: html
+
+   <div id="electrochemistry_a76072fe_ca6e_48ad_8b4a_ab98a2bc9abb"></div>
 
 VoltageMeasurementResult
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a76072fe_ca6e_48ad_8b4a_ab98a2bc9abb
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a76072fe_ca6e_48ad_8b4a_ab98a2bc9abb
 
 .. raw:: html
 
@@ -12344,12 +13448,14 @@ VoltageMeasurementResult
   </tr>
   </table>
 
-.. _electrochemistry_bbae1ef4_0a95_4e7d_9932_1bf939129eef:
+.. raw:: html
+
+   <div id="electrochemistry_bbae1ef4_0a95_4e7d_9932_1bf939129eef"></div>
 
 Voltammogram
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bbae1ef4_0a95_4e7d_9932_1bf939129eef
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bbae1ef4_0a95_4e7d_9932_1bf939129eef
 
 .. raw:: html
 
@@ -12368,12 +13474,14 @@ Voltammogram
   </tr>
   </table>
 
-.. _electrochemistry_1355816f_a2b5_4800_8001_fc888f5d6b1b:
+.. raw:: html
+
+   <div id="electrochemistry_1355816f_a2b5_4800_8001_fc888f5d6b1b"></div>
 
 Voltmeter
 ---------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1355816f_a2b5_4800_8001_fc888f5d6b1b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1355816f_a2b5_4800_8001_fc888f5d6b1b
 
 .. raw:: html
 
@@ -12388,12 +13496,14 @@ Voltmeter
   </tr>
   </table>
 
-.. _electrochemistry_6385e07f_f40d_46b2_b998_c439950d75cb:
+.. raw:: html
+
+   <div id="electrochemistry_6385e07f_f40d_46b2_b998_c439950d75cb"></div>
 
 WaveSpring
 ----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6385e07f_f40d_46b2_b998_c439950d75cb
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6385e07f_f40d_46b2_b998_c439950d75cb
 
 .. raw:: html
 
@@ -12416,12 +13526,14 @@ WaveSpring
   </tr>
   </table>
 
-.. _electrochemistry_fb988878_ee54_4350_9ee9_228c00c3ad35:
+.. raw:: html
+
+   <div id="electrochemistry_fb988878_ee54_4350_9ee9_228c00c3ad35"></div>
 
 WorkingElectrode
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fb988878_ee54_4350_9ee9_228c00c3ad35
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fb988878_ee54_4350_9ee9_228c00c3ad35
 
 .. raw:: html
 
@@ -12452,12 +13564,14 @@ WorkingElectrode
   </tr>
   </table>
 
-.. _electrochemistry_3a69a00e_235a_4948_b369_8ac20116c85e:
+.. raw:: html
+
+   <div id="electrochemistry_3a69a00e_235a_4948_b369_8ac20116c85e"></div>
 
 WovenMesh
 ---------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3a69a00e_235a_4948_b369_8ac20116c85e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3a69a00e_235a_4948_b369_8ac20116c85e
 
 .. raw:: html
 
@@ -12468,12 +13582,14 @@ WovenMesh
   </tr>
   </table>
 
-.. _electrochemistry_d0a26dc2_fde9_4a11_ac26_7c18499d28a5:
+.. raw:: html
+
+   <div id="electrochemistry_d0a26dc2_fde9_4a11_ac26_7c18499d28a5"></div>
 
 ZincBasedElectrode
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d0a26dc2_fde9_4a11_ac26_7c18499d28a5
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d0a26dc2_fde9_4a11_ac26_7c18499d28a5
 
 .. raw:: html
 
@@ -12492,12 +13608,14 @@ ZincBasedElectrode
   </tr>
   </table>
 
-.. _electrochemistry_7393f12f_e3b9_42d6_bffb_e5613f53108f:
+.. raw:: html
+
+   <div id="electrochemistry_7393f12f_e3b9_42d6_bffb_e5613f53108f"></div>
 
 ZincChlorideSolution
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7393f12f_e3b9_42d6_bffb_e5613f53108f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7393f12f_e3b9_42d6_bffb_e5613f53108f
 
 .. raw:: html
 
@@ -12516,12 +13634,14 @@ ZincChlorideSolution
   </tr>
   </table>
 
-.. _electrochemistry_424bf750_7df5_49b5_ba73_ba74397a166b:
+.. raw:: html
+
+   <div id="electrochemistry_424bf750_7df5_49b5_ba73_ba74397a166b"></div>
 
 ZincElectrode
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_424bf750_7df5_49b5_ba73_ba74397a166b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_424bf750_7df5_49b5_ba73_ba74397a166b
 
 .. raw:: html
 
@@ -12536,12 +13656,14 @@ ZincElectrode
   </tr>
   </table>
 
-.. _electrochemistry_245c9442_ca1d_4070_a624_182b92d30b10:
+.. raw:: html
+
+   <div id="electrochemistry_245c9442_ca1d_4070_a624_182b92d30b10"></div>
 
 ZincInsertionElectrode
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_245c9442_ca1d_4070_a624_182b92d30b10
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_245c9442_ca1d_4070_a624_182b92d30b10
 
 .. raw:: html
 
@@ -12556,12 +13678,14 @@ ZincInsertionElectrode
   </tr>
   </table>
 
-.. _electrochemistry_82c70935_0aea_454b_92bf_17fb0b488012:
+.. raw:: html
+
+   <div id="electrochemistry_82c70935_0aea_454b_92bf_17fb0b488012"></div>
 
 ZincOxideElectrode
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_82c70935_0aea_454b_92bf_17fb0b488012
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_82c70935_0aea_454b_92bf_17fb0b488012
 
 .. raw:: html
 
@@ -12580,252 +13704,294 @@ ZincOxideElectrode
   </tr>
   </table>
 
-.. _electrochemistry_eac15067_9594_4eab_a440_b537b0fd2075:
+.. raw:: html
+
+   <div id="electrochemistry_eac15067_9594_4eab_a440_b537b0fd2075"></div>
 
 hasANSICode
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_eac15067_9594_4eab_a440_b537b0fd2075
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_eac15067_9594_4eab_a440_b537b0fd2075
 
 .. raw:: html
 
   <table class="element-table">
   </table>
 
-.. _electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee:
+.. raw:: html
+
+   <div id="electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee"></div>
 
 hasActiveMaterial
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee
 
 .. raw:: html
 
   <table class="element-table">
   </table>
 
-.. _electrochemistry_7df82c48_b599_4b02_bef0_9facc9c39410:
+.. raw:: html
+
+   <div id="electrochemistry_7df82c48_b599_4b02_bef0_9facc9c39410"></div>
 
 hasAdditive
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7df82c48_b599_4b02_bef0_9facc9c39410
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7df82c48_b599_4b02_bef0_9facc9c39410
 
 .. raw:: html
 
   <table class="element-table">
   </table>
 
-.. _electrochemistry_0ac306fd_e98b_4af9_8cd6_5ed34f7f7d8a:
+.. raw:: html
+
+   <div id="electrochemistry_0ac306fd_e98b_4af9_8cd6_5ed34f7f7d8a"></div>
 
 hasAnolyte
 ----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0ac306fd_e98b_4af9_8cd6_5ed34f7f7d8a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0ac306fd_e98b_4af9_8cd6_5ed34f7f7d8a
 
 .. raw:: html
 
   <table class="element-table">
   </table>
 
-.. _electrochemistry_056a5fab_3d99_46bd_8eb1_6e89a368e1a7:
+.. raw:: html
+
+   <div id="electrochemistry_056a5fab_3d99_46bd_8eb1_6e89a368e1a7"></div>
 
 hasBinder
 ---------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_056a5fab_3d99_46bd_8eb1_6e89a368e1a7
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_056a5fab_3d99_46bd_8eb1_6e89a368e1a7
 
 .. raw:: html
 
   <table class="element-table">
   </table>
 
-.. _electrochemistry_3dcfe33d_6825_43c0_a798_68e871a68d39:
+.. raw:: html
+
+   <div id="electrochemistry_3dcfe33d_6825_43c0_a798_68e871a68d39"></div>
 
 hasCase
 -------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3dcfe33d_6825_43c0_a798_68e871a68d39
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3dcfe33d_6825_43c0_a798_68e871a68d39
 
 .. raw:: html
 
   <table class="element-table">
   </table>
 
-.. _electrochemistry_b62a6b15_236a_48bf_a323_ccbfc295f934:
+.. raw:: html
+
+   <div id="electrochemistry_b62a6b15_236a_48bf_a323_ccbfc295f934"></div>
 
 hasCatholyte
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b62a6b15_236a_48bf_a323_ccbfc295f934
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b62a6b15_236a_48bf_a323_ccbfc295f934
 
 .. raw:: html
 
   <table class="element-table">
   </table>
 
-.. _electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383:
+.. raw:: html
+
+   <div id="electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383"></div>
 
 hasCoating
 ----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383
 
 .. raw:: html
 
   <table class="element-table">
   </table>
 
-.. _electrochemistry_c830c469_60c3_4380_8382_4df13a32a1e7:
+.. raw:: html
+
+   <div id="electrochemistry_c830c469_60c3_4380_8382_4df13a32a1e7"></div>
 
 hasConductiveAdditive
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c830c469_60c3_4380_8382_4df13a32a1e7
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c830c469_60c3_4380_8382_4df13a32a1e7
 
 .. raw:: html
 
   <table class="element-table">
   </table>
 
-.. _electrochemistry_e08d43cf_93e4_49c6_bcb6_472be52ae7fc:
+.. raw:: html
+
+   <div id="electrochemistry_e08d43cf_93e4_49c6_bcb6_472be52ae7fc"></div>
 
 hasCounterElectrode
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e08d43cf_93e4_49c6_bcb6_472be52ae7fc
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e08d43cf_93e4_49c6_bcb6_472be52ae7fc
 
 .. raw:: html
 
   <table class="element-table">
   </table>
 
-.. _electrochemistry_cc8c2c5d_cf3d_444d_a7e8_44ec4c06a88e:
+.. raw:: html
+
+   <div id="electrochemistry_cc8c2c5d_cf3d_444d_a7e8_44ec4c06a88e"></div>
 
 hasCurrentCollector
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cc8c2c5d_cf3d_444d_a7e8_44ec4c06a88e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cc8c2c5d_cf3d_444d_a7e8_44ec4c06a88e
 
 .. raw:: html
 
   <table class="element-table">
   </table>
 
-.. _electrochemistry_578c41e9_ee01_4840_9c8c_04ab6e4e6241:
+.. raw:: html
+
+   <div id="electrochemistry_578c41e9_ee01_4840_9c8c_04ab6e4e6241"></div>
 
 hasElectrode
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_578c41e9_ee01_4840_9c8c_04ab6e4e6241
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_578c41e9_ee01_4840_9c8c_04ab6e4e6241
 
 .. raw:: html
 
   <table class="element-table">
   </table>
 
-.. _electrochemistry_3bd08946_4e81_455d_9fca_dc7a5ead9315:
+.. raw:: html
+
+   <div id="electrochemistry_3bd08946_4e81_455d_9fca_dc7a5ead9315"></div>
 
 hasElectrolyte
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3bd08946_4e81_455d_9fca_dc7a5ead9315
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3bd08946_4e81_455d_9fca_dc7a5ead9315
 
 .. raw:: html
 
   <table class="element-table">
   </table>
 
-.. _electrochemistry_c17b514b_57f2_4f72_9b95_c2950dd2aa7f:
+.. raw:: html
+
+   <div id="electrochemistry_c17b514b_57f2_4f72_9b95_c2950dd2aa7f"></div>
 
 hasFormFactor
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c17b514b_57f2_4f72_9b95_c2950dd2aa7f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c17b514b_57f2_4f72_9b95_c2950dd2aa7f
 
 .. raw:: html
 
   <table class="element-table">
   </table>
 
-.. _electrochemistry_1f2d401c_eede_4178_9ff5_e5392bc2cb92:
+.. raw:: html
+
+   <div id="electrochemistry_1f2d401c_eede_4178_9ff5_e5392bc2cb92"></div>
 
 hasIECCode
 ----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1f2d401c_eede_4178_9ff5_e5392bc2cb92
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1f2d401c_eede_4178_9ff5_e5392bc2cb92
 
 .. raw:: html
 
   <table class="element-table">
   </table>
 
-.. _electrochemistry_fd1fae29_a182_4692_98b8_919764b07b00:
+.. raw:: html
+
+   <div id="electrochemistry_fd1fae29_a182_4692_98b8_919764b07b00"></div>
 
 hasInsertedEntity
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fd1fae29_a182_4692_98b8_919764b07b00
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fd1fae29_a182_4692_98b8_919764b07b00
 
 .. raw:: html
 
   <table class="element-table">
   </table>
 
-.. _electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138:
+.. raw:: html
+
+   <div id="electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138"></div>
 
 hasNegativeElectrode
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138
 
 .. raw:: html
 
   <table class="element-table">
   </table>
 
-.. _electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616:
+.. raw:: html
+
+   <div id="electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616"></div>
 
 hasPositiveElectrode
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616
 
 .. raw:: html
 
   <table class="element-table">
   </table>
 
-.. _electrochemistry_5eb197ea_0c3e_4ea2_8392_81152ee91515:
+.. raw:: html
+
+   <div id="electrochemistry_5eb197ea_0c3e_4ea2_8392_81152ee91515"></div>
 
 hasReferenceElectrode
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5eb197ea_0c3e_4ea2_8392_81152ee91515
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5eb197ea_0c3e_4ea2_8392_81152ee91515
 
 .. raw:: html
 
   <table class="element-table">
   </table>
 
-.. _electrochemistry_9317be62_e602_4343_a72d_02c87201b9f6:
+.. raw:: html
+
+   <div id="electrochemistry_9317be62_e602_4343_a72d_02c87201b9f6"></div>
 
 hasSeparator
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9317be62_e602_4343_a72d_02c87201b9f6
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9317be62_e602_4343_a72d_02c87201b9f6
 
 .. raw:: html
 
   <table class="element-table">
   </table>
 
-.. _electrochemistry_c76dbfeb_f3d9_44d4_9cbe_0946924f311f:
+.. raw:: html
+
+   <div id="electrochemistry_c76dbfeb_f3d9_44d4_9cbe_0946924f311f"></div>
 
 hasWorkingElectrode
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c76dbfeb_f3d9_44d4_9cbe_0946924f311f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c76dbfeb_f3d9_44d4_9cbe_0946924f311f
 
 .. raw:: html
 
@@ -12836,12 +14002,14 @@ hasWorkingElectrode
 Electrochemistry Quantities
 ===========================
 
-.. _electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526:
+.. raw:: html
+
+   <div id="electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526"></div>
 
 ActivationEnergy
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526
 
 .. raw:: html
 
@@ -12872,12 +14040,14 @@ ActivationEnergy
   </tr>
   </table>
 
-.. _electrochemistry_56de36fe_e8e1_486c_8d29_061ac8d28c13:
+.. raw:: html
+
+   <div id="electrochemistry_56de36fe_e8e1_486c_8d29_061ac8d28c13"></div>
 
 ActivationEnergyOfChargeCarrierDiffusivityInElectrolyte
 -------------------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_56de36fe_e8e1_486c_8d29_061ac8d28c13
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_56de36fe_e8e1_486c_8d29_061ac8d28c13
 
 .. raw:: html
 
@@ -12892,12 +14062,14 @@ ActivationEnergyOfChargeCarrierDiffusivityInElectrolyte
   </tr>
   </table>
 
-.. _electrochemistry_8c16cb12_41c1_43bd_9e7c_2eea7b06a1f0:
+.. raw:: html
+
+   <div id="electrochemistry_8c16cb12_41c1_43bd_9e7c_2eea7b06a1f0"></div>
 
 ActivationEnergyOfElectrolyteConductivity
 -----------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8c16cb12_41c1_43bd_9e7c_2eea7b06a1f0
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8c16cb12_41c1_43bd_9e7c_2eea7b06a1f0
 
 .. raw:: html
 
@@ -12912,12 +14084,14 @@ ActivationEnergyOfElectrolyteConductivity
   </tr>
   </table>
 
-.. _electrochemistry_86af4487_33c1_4562_a00b_3a8252ffe378:
+.. raw:: html
+
+   <div id="electrochemistry_86af4487_33c1_4562_a00b_3a8252ffe378"></div>
 
 ActivationEnergyOfGuestDiffusivityInNegativeElectrodeActiveMaterial
 -------------------------------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_86af4487_33c1_4562_a00b_3a8252ffe378
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_86af4487_33c1_4562_a00b_3a8252ffe378
 
 .. raw:: html
 
@@ -12932,12 +14106,14 @@ ActivationEnergyOfGuestDiffusivityInNegativeElectrodeActiveMaterial
   </tr>
   </table>
 
-.. _electrochemistry_4d69edda_d2fa_40b0_9c1e_52e08debf578:
+.. raw:: html
+
+   <div id="electrochemistry_4d69edda_d2fa_40b0_9c1e_52e08debf578"></div>
 
 ActivationEnergyOfGuestDiffusivityInPositiveElectrodeActiveMaterial
 -------------------------------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4d69edda_d2fa_40b0_9c1e_52e08debf578
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4d69edda_d2fa_40b0_9c1e_52e08debf578
 
 .. raw:: html
 
@@ -12952,12 +14128,14 @@ ActivationEnergyOfGuestDiffusivityInPositiveElectrodeActiveMaterial
   </tr>
   </table>
 
-.. _electrochemistry_7fa406b0_512a_4d59_9e0c_5d8aba0103ae:
+.. raw:: html
+
+   <div id="electrochemistry_7fa406b0_512a_4d59_9e0c_5d8aba0103ae"></div>
 
 ActivationOverpotential
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7fa406b0_512a_4d59_9e0c_5d8aba0103ae
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7fa406b0_512a_4d59_9e0c_5d8aba0103ae
 
 .. raw:: html
 
@@ -12980,12 +14158,14 @@ ActivationOverpotential
   </tr>
   </table>
 
-.. _electrochemistry_1eeb0e2a_229a_43f1_b197_348d475067ff:
+.. raw:: html
+
+   <div id="electrochemistry_1eeb0e2a_229a_43f1_b197_348d475067ff"></div>
 
 ActiveMassLoading
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1eeb0e2a_229a_43f1_b197_348d475067ff
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1eeb0e2a_229a_43f1_b197_348d475067ff
 
 .. raw:: html
 
@@ -13000,12 +14180,14 @@ ActiveMassLoading
   </tr>
   </table>
 
-.. _electrochemistry_214d925c_76c4_4f69_9afc_056a1ea82fc6:
+.. raw:: html
+
+   <div id="electrochemistry_214d925c_76c4_4f69_9afc_056a1ea82fc6"></div>
 
 AdsorptionCurrent
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_214d925c_76c4_4f69_9afc_056a1ea82fc6
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_214d925c_76c4_4f69_9afc_056a1ea82fc6
 
 .. raw:: html
 
@@ -13028,12 +14210,14 @@ AdsorptionCurrent
   </tr>
   </table>
 
-.. _electrochemistry_abd08921_6f3b_4a48_811e_7685c58aec0b:
+.. raw:: html
+
+   <div id="electrochemistry_abd08921_6f3b_4a48_811e_7685c58aec0b"></div>
 
 AmbientCelsiusTemperature
 -------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_abd08921_6f3b_4a48_811e_7685c58aec0b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_abd08921_6f3b_4a48_811e_7685c58aec0b
 
 .. raw:: html
 
@@ -13044,12 +14228,14 @@ AmbientCelsiusTemperature
   </tr>
   </table>
 
-.. _electrochemistry_39a44af0_0e1a_4859_b550_bdabad64386e:
+.. raw:: html
+
+   <div id="electrochemistry_39a44af0_0e1a_4859_b550_bdabad64386e"></div>
 
 AmbientThermodynamicTemperature
 -------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_39a44af0_0e1a_4859_b550_bdabad64386e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_39a44af0_0e1a_4859_b550_bdabad64386e
 
 .. raw:: html
 
@@ -13060,12 +14246,14 @@ AmbientThermodynamicTemperature
   </tr>
   </table>
 
-.. _electrochemistry_10eb778d_da60_4832_a355_4ee74baea650:
+.. raw:: html
+
+   <div id="electrochemistry_10eb778d_da60_4832_a355_4ee74baea650"></div>
 
 AmplitudeOfAlternatingCurrent
 -----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_10eb778d_da60_4832_a355_4ee74baea650
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_10eb778d_da60_4832_a355_4ee74baea650
 
 .. raw:: html
 
@@ -13084,12 +14272,14 @@ AmplitudeOfAlternatingCurrent
   </tr>
   </table>
 
-.. _electrochemistry_f591a444_89d6_4093_836d_7d53895edce4:
+.. raw:: html
+
+   <div id="electrochemistry_f591a444_89d6_4093_836d_7d53895edce4"></div>
 
 AmplitudeOfAlternatingVoltage
 -----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f591a444_89d6_4093_836d_7d53895edce4
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f591a444_89d6_4093_836d_7d53895edce4
 
 .. raw:: html
 
@@ -13112,12 +14302,14 @@ AmplitudeOfAlternatingVoltage
   </tr>
   </table>
 
-.. _electrochemistry_565c0b10_70fe_441a_b76a_b9a8e08ca7b7:
+.. raw:: html
+
+   <div id="electrochemistry_565c0b10_70fe_441a_b76a_b9a8e08ca7b7"></div>
 
 AnodicOverpotential
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_565c0b10_70fe_441a_b76a_b9a8e08ca7b7
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_565c0b10_70fe_441a_b76a_b9a8e08ca7b7
 
 .. raw:: html
 
@@ -13140,12 +14332,14 @@ AnodicOverpotential
   </tr>
   </table>
 
-.. _electrochemistry_bcb33f7e_5573_4bc2_b636_4ea313a9dd3a:
+.. raw:: html
+
+   <div id="electrochemistry_bcb33f7e_5573_4bc2_b636_4ea313a9dd3a"></div>
 
 AreicCapacity
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bcb33f7e_5573_4bc2_b636_4ea313a9dd3a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bcb33f7e_5573_4bc2_b636_4ea313a9dd3a
 
 .. raw:: html
 
@@ -13172,12 +14366,14 @@ AreicCapacity
   </tr>
   </table>
 
-.. _electrochemistry_269ddd97_1437_4545_b272_0df75a12c68a:
+.. raw:: html
+
+   <div id="electrochemistry_269ddd97_1437_4545_b272_0df75a12c68a"></div>
 
 BaselineCellVoltage
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_269ddd97_1437_4545_b272_0df75a12c68a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_269ddd97_1437_4545_b272_0df75a12c68a
 
 .. raw:: html
 
@@ -13192,12 +14388,14 @@ BaselineCellVoltage
   </tr>
   </table>
 
-.. _electrochemistry_f2f36f22_3738_49dd_b43b_7469db6675df:
+.. raw:: html
+
+   <div id="electrochemistry_f2f36f22_3738_49dd_b43b_7469db6675df"></div>
 
 BoundaryCondition
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f2f36f22_3738_49dd_b43b_7469db6675df
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f2f36f22_3738_49dd_b43b_7469db6675df
 
 .. raw:: html
 
@@ -13212,12 +14410,14 @@ BoundaryCondition
   </tr>
   </table>
 
-.. _electrochemistry_5c34b3b5_c9c4_477d_809a_3f682f995aa9:
+.. raw:: html
+
+   <div id="electrochemistry_5c34b3b5_c9c4_477d_809a_3f682f995aa9"></div>
 
 BruggemanCoefficient
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5c34b3b5_c9c4_477d_809a_3f682f995aa9
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5c34b3b5_c9c4_477d_809a_3f682f995aa9
 
 .. raw:: html
 
@@ -13232,12 +14432,14 @@ BruggemanCoefficient
   </tr>
   </table>
 
-.. _electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee:
+.. raw:: html
+
+   <div id="electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee"></div>
 
 CRate
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee
 
 .. raw:: html
 
@@ -13264,12 +14466,14 @@ CRate
   </tr>
   </table>
 
-.. _electrochemistry_f9e1c862_c510_4b11_9141_bc91045df817:
+.. raw:: html
+
+   <div id="electrochemistry_f9e1c862_c510_4b11_9141_bc91045df817"></div>
 
 CalenderedCoatingThickness
 --------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f9e1c862_c510_4b11_9141_bc91045df817
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f9e1c862_c510_4b11_9141_bc91045df817
 
 .. raw:: html
 
@@ -13284,12 +14488,14 @@ CalenderedCoatingThickness
   </tr>
   </table>
 
-.. _electrochemistry_520995f8_ec9c_4b3c_bb64_2cd691947379:
+.. raw:: html
+
+   <div id="electrochemistry_520995f8_ec9c_4b3c_bb64_2cd691947379"></div>
 
 CalenderedDensity
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_520995f8_ec9c_4b3c_bb64_2cd691947379
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_520995f8_ec9c_4b3c_bb64_2cd691947379
 
 .. raw:: html
 
@@ -13304,12 +14510,14 @@ CalenderedDensity
   </tr>
   </table>
 
-.. _electrochemistry_791c1915_a791_4450_acd8_7f94764743b5:
+.. raw:: html
+
+   <div id="electrochemistry_791c1915_a791_4450_acd8_7f94764743b5"></div>
 
 Capacity
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_791c1915_a791_4450_acd8_7f94764743b5
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_791c1915_a791_4450_acd8_7f94764743b5
 
 .. raw:: html
 
@@ -13336,12 +14544,14 @@ Capacity
   </tr>
   </table>
 
-.. _electrochemistry_c55bcb85_b7b8_4e67_8a78_9a42fe25b6cf:
+.. raw:: html
+
+   <div id="electrochemistry_c55bcb85_b7b8_4e67_8a78_9a42fe25b6cf"></div>
 
 CatalyticCurrent
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c55bcb85_b7b8_4e67_8a78_9a42fe25b6cf
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c55bcb85_b7b8_4e67_8a78_9a42fe25b6cf
 
 .. raw:: html
 
@@ -13364,12 +14574,14 @@ CatalyticCurrent
   </tr>
   </table>
 
-.. _electrochemistry_0853b072_3b80_4864_8147_24ce35407ade:
+.. raw:: html
+
+   <div id="electrochemistry_0853b072_3b80_4864_8147_24ce35407ade"></div>
 
 CathodicOverpotential
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0853b072_3b80_4864_8147_24ce35407ade
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0853b072_3b80_4864_8147_24ce35407ade
 
 .. raw:: html
 
@@ -13392,12 +14604,14 @@ CathodicOverpotential
   </tr>
   </table>
 
-.. _electrochemistry_637ee9c4_4b3f_4d3a_975b_c0572dfe53ce:
+.. raw:: html
+
+   <div id="electrochemistry_637ee9c4_4b3f_4d3a_975b_c0572dfe53ce"></div>
 
 CellCurrent
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_637ee9c4_4b3f_4d3a_975b_c0572dfe53ce
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_637ee9c4_4b3f_4d3a_975b_c0572dfe53ce
 
 .. raw:: html
 
@@ -13416,12 +14630,14 @@ CellCurrent
   </tr>
   </table>
 
-.. _electrochemistry_265bb4d6_5eec_40f6_a3fa_59b3bd08e9af:
+.. raw:: html
+
+   <div id="electrochemistry_265bb4d6_5eec_40f6_a3fa_59b3bd08e9af"></div>
 
 CellPolarisationPotential
 -------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_265bb4d6_5eec_40f6_a3fa_59b3bd08e9af
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_265bb4d6_5eec_40f6_a3fa_59b3bd08e9af
 
 .. raw:: html
 
@@ -13444,12 +14660,14 @@ CellPolarisationPotential
   </tr>
   </table>
 
-.. _electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d:
+.. raw:: html
+
+   <div id="electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d"></div>
 
 CellVoltage
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d
 
 .. raw:: html
 
@@ -13488,12 +14706,18 @@ CellVoltage
   </tr>
   </table>
 
-.. _electrochemistry_4c274506_af5b_4ef1_8217_829ffd459f28:
+.. note::
+
+   Cell voltage fluctuates based on factors such as applied current, internal resistance, temperature, and composition.
+
+.. raw:: html
+
+   <div id="electrochemistry_4c274506_af5b_4ef1_8217_829ffd459f28"></div>
 
 ChargeCarrierDiffusivityInElectrolyte
 -------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4c274506_af5b_4ef1_8217_829ffd459f28
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4c274506_af5b_4ef1_8217_829ffd459f28
 
 .. raw:: html
 
@@ -13508,12 +14732,14 @@ ChargeCarrierDiffusivityInElectrolyte
   </tr>
   </table>
 
-.. _electrochemistry_e3e78df2_d568_4ab7_8c0d_d3a2ee3ae282:
+.. raw:: html
+
+   <div id="electrochemistry_e3e78df2_d568_4ab7_8c0d_d3a2ee3ae282"></div>
 
 ChargeCarrierTransportNumber
 ----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e3e78df2_d568_4ab7_8c0d_d3a2ee3ae282
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e3e78df2_d568_4ab7_8c0d_d3a2ee3ae282
 
 .. raw:: html
 
@@ -13524,12 +14750,14 @@ ChargeCarrierTransportNumber
   </tr>
   </table>
 
-.. _electrochemistry_a5962e05_466d_46a4_8951_bea59d7326e5:
+.. raw:: html
+
+   <div id="electrochemistry_a5962e05_466d_46a4_8951_bea59d7326e5"></div>
 
 ChargeEfficiency
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a5962e05_466d_46a4_8951_bea59d7326e5
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a5962e05_466d_46a4_8951_bea59d7326e5
 
 .. raw:: html
 
@@ -13548,12 +14776,14 @@ ChargeEfficiency
   </tr>
   </table>
 
-.. _electrochemistry_49efb72a_f8e6_4f50_acac_975302200d47:
+.. raw:: html
+
+   <div id="electrochemistry_49efb72a_f8e6_4f50_acac_975302200d47"></div>
 
 ChargeRetention
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_49efb72a_f8e6_4f50_acac_975302200d47
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_49efb72a_f8e6_4f50_acac_975302200d47
 
 .. raw:: html
 
@@ -13576,12 +14806,14 @@ ChargeRetention
   </tr>
   </table>
 
-.. _electrochemistry_a4dfa5c1_55a9_4285_b71d_90cf6613ca31:
+.. raw:: html
+
+   <div id="electrochemistry_a4dfa5c1_55a9_4285_b71d_90cf6613ca31"></div>
 
 ChargeTransferCoefficient
 -------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a4dfa5c1_55a9_4285_b71d_90cf6613ca31
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a4dfa5c1_55a9_4285_b71d_90cf6613ca31
 
 .. raw:: html
 
@@ -13604,12 +14836,14 @@ ChargeTransferCoefficient
   </tr>
   </table>
 
-.. _electrochemistry_a7dc73e2_d4aa_4dfc_8b4d_cb611f1501fb:
+.. raw:: html
+
+   <div id="electrochemistry_a7dc73e2_d4aa_4dfc_8b4d_cb611f1501fb"></div>
 
 ChargingCRate
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a7dc73e2_d4aa_4dfc_8b4d_cb611f1501fb
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a7dc73e2_d4aa_4dfc_8b4d_cb611f1501fb
 
 .. raw:: html
 
@@ -13628,12 +14862,14 @@ ChargingCRate
   </tr>
   </table>
 
-.. _electrochemistry_10763eb0_dbc9_4d34_bd1a_7b8996590d45:
+.. raw:: html
+
+   <div id="electrochemistry_10763eb0_dbc9_4d34_bd1a_7b8996590d45"></div>
 
 ChargingCapacity
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_10763eb0_dbc9_4d34_bd1a_7b8996590d45
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_10763eb0_dbc9_4d34_bd1a_7b8996590d45
 
 .. raw:: html
 
@@ -13656,12 +14892,14 @@ ChargingCapacity
   </tr>
   </table>
 
-.. _electrochemistry_7f073272_8925_4344_995c_a5a6dd1fcde6:
+.. raw:: html
+
+   <div id="electrochemistry_7f073272_8925_4344_995c_a5a6dd1fcde6"></div>
 
 ChargingConstantCurrentPercentage
 ---------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7f073272_8925_4344_995c_a5a6dd1fcde6
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7f073272_8925_4344_995c_a5a6dd1fcde6
 
 .. raw:: html
 
@@ -13676,12 +14914,14 @@ ChargingConstantCurrentPercentage
   </tr>
   </table>
 
-.. _electrochemistry_79551e01_4bc6_4292_916e_08fe28a84600:
+.. raw:: html
+
+   <div id="electrochemistry_79551e01_4bc6_4292_916e_08fe28a84600"></div>
 
 ChargingCurrent
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79551e01_4bc6_4292_916e_08fe28a84600
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79551e01_4bc6_4292_916e_08fe28a84600
 
 .. raw:: html
 
@@ -13696,12 +14936,14 @@ ChargingCurrent
   </tr>
   </table>
 
-.. _electrochemistry_2ab7af60_da58_4243_b3bc_cbb2155cac53:
+.. raw:: html
+
+   <div id="electrochemistry_2ab7af60_da58_4243_b3bc_cbb2155cac53"></div>
 
 ChargingEnergy
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2ab7af60_da58_4243_b3bc_cbb2155cac53
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2ab7af60_da58_4243_b3bc_cbb2155cac53
 
 .. raw:: html
 
@@ -13720,12 +14962,14 @@ ChargingEnergy
   </tr>
   </table>
 
-.. _electrochemistry_31a74e23_bb07_41d0_bb8f_1d8cca157503:
+.. raw:: html
+
+   <div id="electrochemistry_31a74e23_bb07_41d0_bb8f_1d8cca157503"></div>
 
 ChargingEnergyDensity
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_31a74e23_bb07_41d0_bb8f_1d8cca157503
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_31a74e23_bb07_41d0_bb8f_1d8cca157503
 
 .. raw:: html
 
@@ -13740,12 +14984,14 @@ ChargingEnergyDensity
   </tr>
   </table>
 
-.. _electrochemistry_93f000d8_efc1_4364_896c_c9ebc4c7ce3a:
+.. raw:: html
+
+   <div id="electrochemistry_93f000d8_efc1_4364_896c_c9ebc4c7ce3a"></div>
 
 ChargingPRate
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_93f000d8_efc1_4364_896c_c9ebc4c7ce3a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_93f000d8_efc1_4364_896c_c9ebc4c7ce3a
 
 .. raw:: html
 
@@ -13760,12 +15006,14 @@ ChargingPRate
   </tr>
   </table>
 
-.. _electrochemistry_4882cf2f_aab7_4a3a_a103_7f56b55fbed3:
+.. raw:: html
+
+   <div id="electrochemistry_4882cf2f_aab7_4a3a_a103_7f56b55fbed3"></div>
 
 ChargingSpecificCapacity
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4882cf2f_aab7_4a3a_a103_7f56b55fbed3
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4882cf2f_aab7_4a3a_a103_7f56b55fbed3
 
 .. raw:: html
 
@@ -13784,12 +15032,14 @@ ChargingSpecificCapacity
   </tr>
   </table>
 
-.. _electrochemistry_5e4490b8_c1dd_4e00_980b_c484e1bf4904:
+.. raw:: html
+
+   <div id="electrochemistry_5e4490b8_c1dd_4e00_980b_c484e1bf4904"></div>
 
 ChargingSpecificEnergy
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5e4490b8_c1dd_4e00_980b_c484e1bf4904
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5e4490b8_c1dd_4e00_980b_c484e1bf4904
 
 .. raw:: html
 
@@ -13804,12 +15054,14 @@ ChargingSpecificEnergy
   </tr>
   </table>
 
-.. _electrochemistry_79a9e1be_35b0_4c3c_8087_b5f967ca0e87:
+.. raw:: html
+
+   <div id="electrochemistry_79a9e1be_35b0_4c3c_8087_b5f967ca0e87"></div>
 
 ChargingVoltage
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79a9e1be_35b0_4c3c_8087_b5f967ca0e87
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79a9e1be_35b0_4c3c_8087_b5f967ca0e87
 
 .. raw:: html
 
@@ -13824,12 +15076,14 @@ ChargingVoltage
   </tr>
   </table>
 
-.. _electrochemistry_3b938708_e7e4_4ac0_a959_9c04306302e7:
+.. raw:: html
+
+   <div id="electrochemistry_3b938708_e7e4_4ac0_a959_9c04306302e7"></div>
 
 CoatingThickness
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3b938708_e7e4_4ac0_a959_9c04306302e7
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3b938708_e7e4_4ac0_a959_9c04306302e7
 
 .. raw:: html
 
@@ -13848,12 +15102,14 @@ CoatingThickness
   </tr>
   </table>
 
-.. _electrochemistry_5eae657f_5914_4252_85c6_3fc772dea113:
+.. raw:: html
+
+   <div id="electrochemistry_5eae657f_5914_4252_85c6_3fc772dea113"></div>
 
 ConcentrationLimit
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5eae657f_5914_4252_85c6_3fc772dea113
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5eae657f_5914_4252_85c6_3fc772dea113
 
 .. raw:: html
 
@@ -13872,12 +15128,14 @@ ConcentrationLimit
   </tr>
   </table>
 
-.. _electrochemistry_9ed7210c_c4fa_467b_822d_ba12f885bdf4:
+.. raw:: html
+
+   <div id="electrochemistry_9ed7210c_c4fa_467b_822d_ba12f885bdf4"></div>
 
 ConcentrationOverpotential
 --------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9ed7210c_c4fa_467b_822d_ba12f885bdf4
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9ed7210c_c4fa_467b_822d_ba12f885bdf4
 
 .. raw:: html
 
@@ -13912,12 +15170,14 @@ ConcentrationOverpotential
   </tr>
   </table>
 
-.. _electrochemistry_37c38b7e_9ded_481a_85fd_a467f1ee2b9f:
+.. raw:: html
+
+   <div id="electrochemistry_37c38b7e_9ded_481a_85fd_a467f1ee2b9f"></div>
 
 ConstantCurrentChargingCapacity
 -------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_37c38b7e_9ded_481a_85fd_a467f1ee2b9f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_37c38b7e_9ded_481a_85fd_a467f1ee2b9f
 
 .. raw:: html
 
@@ -13936,12 +15196,14 @@ ConstantCurrentChargingCapacity
   </tr>
   </table>
 
-.. _electrochemistry_08833ed2_6324_411a_b34b_fe64c44cd5ef:
+.. raw:: html
+
+   <div id="electrochemistry_08833ed2_6324_411a_b34b_fe64c44cd5ef"></div>
 
 ConstantCurrentDischargingCapacity
 ----------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_08833ed2_6324_411a_b34b_fe64c44cd5ef
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_08833ed2_6324_411a_b34b_fe64c44cd5ef
 
 .. raw:: html
 
@@ -13960,12 +15222,14 @@ ConstantCurrentDischargingCapacity
   </tr>
   </table>
 
-.. _electrochemistry_33e6986c_b35a_4cae_9a94_acb23248065c:
+.. raw:: html
+
+   <div id="electrochemistry_33e6986c_b35a_4cae_9a94_acb23248065c"></div>
 
 ControlProperty
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_33e6986c_b35a_4cae_9a94_acb23248065c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_33e6986c_b35a_4cae_9a94_acb23248065c
 
 .. raw:: html
 
@@ -13984,12 +15248,14 @@ ControlProperty
   </tr>
   </table>
 
-.. _electrochemistry_5696453c_9da7_41e2_bbda_603c1b90a8fc:
+.. raw:: html
+
+   <div id="electrochemistry_5696453c_9da7_41e2_bbda_603c1b90a8fc"></div>
 
 CoulombicEfficiency
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5696453c_9da7_41e2_bbda_603c1b90a8fc
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5696453c_9da7_41e2_bbda_603c1b90a8fc
 
 .. raw:: html
 
@@ -14012,12 +15278,14 @@ CoulombicEfficiency
   </tr>
   </table>
 
-.. _electrochemistry_8de9735b_374a_4a0f_b29f_71a50794cf94:
+.. raw:: html
+
+   <div id="electrochemistry_8de9735b_374a_4a0f_b29f_71a50794cf94"></div>
 
 CrystalizationOverpotential
 ---------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8de9735b_374a_4a0f_b29f_71a50794cf94
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8de9735b_374a_4a0f_b29f_71a50794cf94
 
 .. raw:: html
 
@@ -14040,12 +15308,14 @@ CrystalizationOverpotential
   </tr>
   </table>
 
-.. _electrochemistry_71f10616_15eb_4dc4_bc8d_ffaac3838af2:
+.. raw:: html
+
+   <div id="electrochemistry_71f10616_15eb_4dc4_bc8d_ffaac3838af2"></div>
 
 CurrentChangeLimit
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_71f10616_15eb_4dc4_bc8d_ffaac3838af2
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_71f10616_15eb_4dc4_bc8d_ffaac3838af2
 
 .. raw:: html
 
@@ -14060,12 +15330,14 @@ CurrentChangeLimit
   </tr>
   </table>
 
-.. _electrochemistry_6516ed26_9661_4d81_8c6d_15d2384d17c0:
+.. raw:: html
+
+   <div id="electrochemistry_6516ed26_9661_4d81_8c6d_15d2384d17c0"></div>
 
 CurrentChangeRate
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6516ed26_9661_4d81_8c6d_15d2384d17c0
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6516ed26_9661_4d81_8c6d_15d2384d17c0
 
 .. raw:: html
 
@@ -14080,12 +15352,14 @@ CurrentChangeRate
   </tr>
   </table>
 
-.. _electrochemistry_76e7e556_f47e_47e2_b2ef_67aeed09c63e:
+.. raw:: html
+
+   <div id="electrochemistry_76e7e556_f47e_47e2_b2ef_67aeed09c63e"></div>
 
 CurrentDensityLimit
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_76e7e556_f47e_47e2_b2ef_67aeed09c63e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_76e7e556_f47e_47e2_b2ef_67aeed09c63e
 
 .. raw:: html
 
@@ -14104,12 +15378,14 @@ CurrentDensityLimit
   </tr>
   </table>
 
-.. _electrochemistry_74de2c33_84fc_4c2f_afe1_56d169149114:
+.. raw:: html
+
+   <div id="electrochemistry_74de2c33_84fc_4c2f_afe1_56d169149114"></div>
 
 CurrentLimit
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_74de2c33_84fc_4c2f_afe1_56d169149114
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_74de2c33_84fc_4c2f_afe1_56d169149114
 
 .. raw:: html
 
@@ -14128,12 +15404,14 @@ CurrentLimit
   </tr>
   </table>
 
-.. _electrochemistry_f046d602_22ea_4f9b_9101_319f510d39f0:
+.. raw:: html
+
+   <div id="electrochemistry_f046d602_22ea_4f9b_9101_319f510d39f0"></div>
 
 CurrentScanRate
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f046d602_22ea_4f9b_9101_319f510d39f0
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f046d602_22ea_4f9b_9101_319f510d39f0
 
 .. raw:: html
 
@@ -14148,12 +15426,14 @@ CurrentScanRate
   </tr>
   </table>
 
-.. _electrochemistry_5766a819_c319_48ba_ab9a_ce3bd8fedee8:
+.. raw:: html
+
+   <div id="electrochemistry_5766a819_c319_48ba_ab9a_ce3bd8fedee8"></div>
 
 CycleIndex
 ----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5766a819_c319_48ba_ab9a_ce3bd8fedee8
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5766a819_c319_48ba_ab9a_ce3bd8fedee8
 
 .. raw:: html
 
@@ -14172,12 +15452,14 @@ CycleIndex
   </tr>
   </table>
 
-.. _electrochemistry_ae782b14_88ce_4cdd_9418_12aca00be937:
+.. raw:: html
+
+   <div id="electrochemistry_ae782b14_88ce_4cdd_9418_12aca00be937"></div>
 
 CycleLife
 ---------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ae782b14_88ce_4cdd_9418_12aca00be937
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ae782b14_88ce_4cdd_9418_12aca00be937
 
 .. raw:: html
 
@@ -14200,12 +15482,14 @@ CycleLife
   </tr>
   </table>
 
-.. _electrochemistry_b83c6435_6edf_470e_9725_538a853e08f7:
+.. raw:: html
+
+   <div id="electrochemistry_b83c6435_6edf_470e_9725_538a853e08f7"></div>
 
 D10ParticleSize
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b83c6435_6edf_470e_9725_538a853e08f7
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b83c6435_6edf_470e_9725_538a853e08f7
 
 .. raw:: html
 
@@ -14216,12 +15500,14 @@ D10ParticleSize
   </tr>
   </table>
 
-.. _electrochemistry_92fc0dba_6f11_4019_a8cb_db2a5b1634f5:
+.. raw:: html
+
+   <div id="electrochemistry_92fc0dba_6f11_4019_a8cb_db2a5b1634f5"></div>
 
 D15ParticleSize
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_92fc0dba_6f11_4019_a8cb_db2a5b1634f5
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_92fc0dba_6f11_4019_a8cb_db2a5b1634f5
 
 .. raw:: html
 
@@ -14232,12 +15518,14 @@ D15ParticleSize
   </tr>
   </table>
 
-.. _electrochemistry_62e03250_8987_497b_85d5_1399aca9a0aa:
+.. raw:: html
+
+   <div id="electrochemistry_62e03250_8987_497b_85d5_1399aca9a0aa"></div>
 
 D20ParticleSize
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_62e03250_8987_497b_85d5_1399aca9a0aa
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_62e03250_8987_497b_85d5_1399aca9a0aa
 
 .. raw:: html
 
@@ -14248,12 +15536,14 @@ D20ParticleSize
   </tr>
   </table>
 
-.. _electrochemistry_7f17f6bb_c1f9_4f4a_bfdf_d8974443d07b:
+.. raw:: html
+
+   <div id="electrochemistry_7f17f6bb_c1f9_4f4a_bfdf_d8974443d07b"></div>
 
 D25ParticleSize
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7f17f6bb_c1f9_4f4a_bfdf_d8974443d07b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7f17f6bb_c1f9_4f4a_bfdf_d8974443d07b
 
 .. raw:: html
 
@@ -14264,12 +15554,14 @@ D25ParticleSize
   </tr>
   </table>
 
-.. _electrochemistry_0ed0362e_b7ae_482c_a7d0_2ca2eebda648:
+.. raw:: html
+
+   <div id="electrochemistry_0ed0362e_b7ae_482c_a7d0_2ca2eebda648"></div>
 
 D30ParticleSize
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0ed0362e_b7ae_482c_a7d0_2ca2eebda648
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0ed0362e_b7ae_482c_a7d0_2ca2eebda648
 
 .. raw:: html
 
@@ -14280,12 +15572,14 @@ D30ParticleSize
   </tr>
   </table>
 
-.. _electrochemistry_c1c1288c_97c1_4f1f_8f42_6dfd34d028fd:
+.. raw:: html
+
+   <div id="electrochemistry_c1c1288c_97c1_4f1f_8f42_6dfd34d028fd"></div>
 
 D35ParticleSize
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c1c1288c_97c1_4f1f_8f42_6dfd34d028fd
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c1c1288c_97c1_4f1f_8f42_6dfd34d028fd
 
 .. raw:: html
 
@@ -14296,12 +15590,14 @@ D35ParticleSize
   </tr>
   </table>
 
-.. _electrochemistry_c8abaf09_300a_4008_a42a_2f4a3953ca7a:
+.. raw:: html
+
+   <div id="electrochemistry_c8abaf09_300a_4008_a42a_2f4a3953ca7a"></div>
 
 D40ParticleSize
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c8abaf09_300a_4008_a42a_2f4a3953ca7a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c8abaf09_300a_4008_a42a_2f4a3953ca7a
 
 .. raw:: html
 
@@ -14312,12 +15608,14 @@ D40ParticleSize
   </tr>
   </table>
 
-.. _electrochemistry_9d60c4ab_d9ac_4dda_af0c_c64059326916:
+.. raw:: html
+
+   <div id="electrochemistry_9d60c4ab_d9ac_4dda_af0c_c64059326916"></div>
 
 D45ParticleSize
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9d60c4ab_d9ac_4dda_af0c_c64059326916
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9d60c4ab_d9ac_4dda_af0c_c64059326916
 
 .. raw:: html
 
@@ -14328,12 +15626,14 @@ D45ParticleSize
   </tr>
   </table>
 
-.. _electrochemistry_3cfdfc10_a5cb_4e3e_b1a1_281010d1465c:
+.. raw:: html
+
+   <div id="electrochemistry_3cfdfc10_a5cb_4e3e_b1a1_281010d1465c"></div>
 
 D50ParticleSize
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3cfdfc10_a5cb_4e3e_b1a1_281010d1465c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3cfdfc10_a5cb_4e3e_b1a1_281010d1465c
 
 .. raw:: html
 
@@ -14356,12 +15656,14 @@ D50ParticleSize
   </tr>
   </table>
 
-.. _electrochemistry_b095e977_dbc2_4a9e_9930_6af0dab089f1:
+.. raw:: html
+
+   <div id="electrochemistry_b095e977_dbc2_4a9e_9930_6af0dab089f1"></div>
 
 D55ParticleSize
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b095e977_dbc2_4a9e_9930_6af0dab089f1
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b095e977_dbc2_4a9e_9930_6af0dab089f1
 
 .. raw:: html
 
@@ -14372,12 +15674,14 @@ D55ParticleSize
   </tr>
   </table>
 
-.. _electrochemistry_2e2d92f4_9fd5_4965_b15a_30b43c68e3e5:
+.. raw:: html
+
+   <div id="electrochemistry_2e2d92f4_9fd5_4965_b15a_30b43c68e3e5"></div>
 
 D5ParticleSize
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2e2d92f4_9fd5_4965_b15a_30b43c68e3e5
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2e2d92f4_9fd5_4965_b15a_30b43c68e3e5
 
 .. raw:: html
 
@@ -14388,12 +15692,14 @@ D5ParticleSize
   </tr>
   </table>
 
-.. _electrochemistry_8768c8f4_eaa8_4670_a3a0_91524e59a7f6:
+.. raw:: html
+
+   <div id="electrochemistry_8768c8f4_eaa8_4670_a3a0_91524e59a7f6"></div>
 
 D60ParticleSize
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8768c8f4_eaa8_4670_a3a0_91524e59a7f6
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8768c8f4_eaa8_4670_a3a0_91524e59a7f6
 
 .. raw:: html
 
@@ -14404,12 +15710,14 @@ D60ParticleSize
   </tr>
   </table>
 
-.. _electrochemistry_1be95f7c_7381_4d60_a4fb_25b3db63be97:
+.. raw:: html
+
+   <div id="electrochemistry_1be95f7c_7381_4d60_a4fb_25b3db63be97"></div>
 
 D65ParticleSize
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1be95f7c_7381_4d60_a4fb_25b3db63be97
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1be95f7c_7381_4d60_a4fb_25b3db63be97
 
 .. raw:: html
 
@@ -14420,12 +15728,14 @@ D65ParticleSize
   </tr>
   </table>
 
-.. _electrochemistry_e03f6800_92c5_4218_bb6d_1c919abaa063:
+.. raw:: html
+
+   <div id="electrochemistry_e03f6800_92c5_4218_bb6d_1c919abaa063"></div>
 
 D70ParticleSize
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e03f6800_92c5_4218_bb6d_1c919abaa063
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e03f6800_92c5_4218_bb6d_1c919abaa063
 
 .. raw:: html
 
@@ -14436,12 +15746,14 @@ D70ParticleSize
   </tr>
   </table>
 
-.. _electrochemistry_9cf8e627_a3d2_4f86_9bdc_e0e77996acde:
+.. raw:: html
+
+   <div id="electrochemistry_9cf8e627_a3d2_4f86_9bdc_e0e77996acde"></div>
 
 D75ParticleSize
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9cf8e627_a3d2_4f86_9bdc_e0e77996acde
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9cf8e627_a3d2_4f86_9bdc_e0e77996acde
 
 .. raw:: html
 
@@ -14452,12 +15764,14 @@ D75ParticleSize
   </tr>
   </table>
 
-.. _electrochemistry_97bc06e6_6141_47ec_9e81_fd9e6a5b07c7:
+.. raw:: html
+
+   <div id="electrochemistry_97bc06e6_6141_47ec_9e81_fd9e6a5b07c7"></div>
 
 D80ParticleSize
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_97bc06e6_6141_47ec_9e81_fd9e6a5b07c7
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_97bc06e6_6141_47ec_9e81_fd9e6a5b07c7
 
 .. raw:: html
 
@@ -14468,12 +15782,14 @@ D80ParticleSize
   </tr>
   </table>
 
-.. _electrochemistry_fbaa2d5e_b8f7_4a2f_9497_41c3698eb0ff:
+.. raw:: html
+
+   <div id="electrochemistry_fbaa2d5e_b8f7_4a2f_9497_41c3698eb0ff"></div>
 
 D85ParticleSize
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fbaa2d5e_b8f7_4a2f_9497_41c3698eb0ff
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fbaa2d5e_b8f7_4a2f_9497_41c3698eb0ff
 
 .. raw:: html
 
@@ -14484,12 +15800,14 @@ D85ParticleSize
   </tr>
   </table>
 
-.. _electrochemistry_8e943e12_ecc0_4093_899e_7226be6be7f2:
+.. raw:: html
+
+   <div id="electrochemistry_8e943e12_ecc0_4093_899e_7226be6be7f2"></div>
 
 D90ParticleSize
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8e943e12_ecc0_4093_899e_7226be6be7f2
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8e943e12_ecc0_4093_899e_7226be6be7f2
 
 .. raw:: html
 
@@ -14500,12 +15818,14 @@ D90ParticleSize
   </tr>
   </table>
 
-.. _electrochemistry_02d2d1d1_241c_429b_b4e7_31f2c3dc4835:
+.. raw:: html
+
+   <div id="electrochemistry_02d2d1d1_241c_429b_b4e7_31f2c3dc4835"></div>
 
 D95ParticleSize
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_02d2d1d1_241c_429b_b4e7_31f2c3dc4835
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_02d2d1d1_241c_429b_b4e7_31f2c3dc4835
 
 .. raw:: html
 
@@ -14516,12 +15836,14 @@ D95ParticleSize
   </tr>
   </table>
 
-.. _electrochemistry_1acab8af_9798_45df_a64b_a7030c57a4de:
+.. raw:: html
+
+   <div id="electrochemistry_1acab8af_9798_45df_a64b_a7030c57a4de"></div>
 
 DepthOfDischarge
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1acab8af_9798_45df_a64b_a7030c57a4de
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1acab8af_9798_45df_a64b_a7030c57a4de
 
 .. raw:: html
 
@@ -14544,12 +15866,14 @@ DepthOfDischarge
   </tr>
   </table>
 
-.. _electrochemistry_0ea21f71_d1bd_4714_a260_b991e6d4bcf7:
+.. raw:: html
+
+   <div id="electrochemistry_0ea21f71_d1bd_4714_a260_b991e6d4bcf7"></div>
 
 DeviceDensity
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0ea21f71_d1bd_4714_a260_b991e6d4bcf7
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0ea21f71_d1bd_4714_a260_b991e6d4bcf7
 
 .. raw:: html
 
@@ -14560,12 +15884,14 @@ DeviceDensity
   </tr>
   </table>
 
-.. _electrochemistry_9cba2158_26ba_4dd7_b082_ba66dbb960c7:
+.. raw:: html
+
+   <div id="electrochemistry_9cba2158_26ba_4dd7_b082_ba66dbb960c7"></div>
 
 DeviceLumpedSpecificHeatCapacity
 --------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9cba2158_26ba_4dd7_b082_ba66dbb960c7
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9cba2158_26ba_4dd7_b082_ba66dbb960c7
 
 .. raw:: html
 
@@ -14576,12 +15902,14 @@ DeviceLumpedSpecificHeatCapacity
   </tr>
   </table>
 
-.. _electrochemistry_ccde4e5f_ace4_41d1_b4d8_cbd63e6376e6:
+.. raw:: html
+
+   <div id="electrochemistry_ccde4e5f_ace4_41d1_b4d8_cbd63e6376e6"></div>
 
 DeviceSurfaceArea
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ccde4e5f_ace4_41d1_b4d8_cbd63e6376e6
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ccde4e5f_ace4_41d1_b4d8_cbd63e6376e6
 
 .. raw:: html
 
@@ -14596,12 +15924,14 @@ DeviceSurfaceArea
   </tr>
   </table>
 
-.. _electrochemistry_463950b9_fd8d_48de_a52d_b29cab026391:
+.. raw:: html
+
+   <div id="electrochemistry_463950b9_fd8d_48de_a52d_b29cab026391"></div>
 
 DeviceTemperature
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_463950b9_fd8d_48de_a52d_b29cab026391
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_463950b9_fd8d_48de_a52d_b29cab026391
 
 .. raw:: html
 
@@ -14612,12 +15942,14 @@ DeviceTemperature
   </tr>
   </table>
 
-.. _electrochemistry_b4184e46_c53c_47cc_9bfc_186fd77836a5:
+.. raw:: html
+
+   <div id="electrochemistry_b4184e46_c53c_47cc_9bfc_186fd77836a5"></div>
 
 DeviceVolume
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b4184e46_c53c_47cc_9bfc_186fd77836a5
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b4184e46_c53c_47cc_9bfc_186fd77836a5
 
 .. raw:: html
 
@@ -14628,12 +15960,14 @@ DeviceVolume
   </tr>
   </table>
 
-.. _electrochemistry_10104499_6580_4867_9c5d_b9882c89c2f7:
+.. raw:: html
+
+   <div id="electrochemistry_10104499_6580_4867_9c5d_b9882c89c2f7"></div>
 
 DifferentialCapacity
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_10104499_6580_4867_9c5d_b9882c89c2f7
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_10104499_6580_4867_9c5d_b9882c89c2f7
 
 .. raw:: html
 
@@ -14652,12 +15986,14 @@ DifferentialCapacity
   </tr>
   </table>
 
-.. _electrochemistry_e38f11d0_a16f_4fe8_8ec5_3fe4493b7759:
+.. raw:: html
+
+   <div id="electrochemistry_e38f11d0_a16f_4fe8_8ec5_3fe4493b7759"></div>
 
 DiffuseLayerPotential
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e38f11d0_a16f_4fe8_8ec5_3fe4493b7759
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e38f11d0_a16f_4fe8_8ec5_3fe4493b7759
 
 .. raw:: html
 
@@ -14676,12 +16012,14 @@ DiffuseLayerPotential
   </tr>
   </table>
 
-.. _electrochemistry_17626b8e_dfce_4d3a_ae6c_5a7215d43a90:
+.. raw:: html
+
+   <div id="electrochemistry_17626b8e_dfce_4d3a_ae6c_5a7215d43a90"></div>
 
 DiffusionCurrent
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_17626b8e_dfce_4d3a_ae6c_5a7215d43a90
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_17626b8e_dfce_4d3a_ae6c_5a7215d43a90
 
 .. raw:: html
 
@@ -14716,12 +16054,14 @@ DiffusionCurrent
   </tr>
   </table>
 
-.. _electrochemistry_5fb7a03f_d6dd_47ee_9317_0629681c7d00:
+.. raw:: html
+
+   <div id="electrochemistry_5fb7a03f_d6dd_47ee_9317_0629681c7d00"></div>
 
 DiffusionLimitedCurrent
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5fb7a03f_d6dd_47ee_9317_0629681c7d00
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5fb7a03f_d6dd_47ee_9317_0629681c7d00
 
 .. raw:: html
 
@@ -14748,12 +16088,14 @@ DiffusionLimitedCurrent
   </tr>
   </table>
 
-.. _electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607:
+.. raw:: html
+
+   <div id="electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607"></div>
 
 Diffusivity
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607
 
 .. raw:: html
 
@@ -14772,12 +16114,14 @@ Diffusivity
   </tr>
   </table>
 
-.. _electrochemistry_25e20915_c35d_4bee_ad31_736235a79780:
+.. raw:: html
+
+   <div id="electrochemistry_25e20915_c35d_4bee_ad31_736235a79780"></div>
 
 DischargingCRate
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_25e20915_c35d_4bee_ad31_736235a79780
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_25e20915_c35d_4bee_ad31_736235a79780
 
 .. raw:: html
 
@@ -14804,12 +16148,14 @@ DischargingCRate
   </tr>
   </table>
 
-.. _electrochemistry_0141b5c2_9f15_46f4_82e6_92a104faa476:
+.. raw:: html
+
+   <div id="electrochemistry_0141b5c2_9f15_46f4_82e6_92a104faa476"></div>
 
 DischargingCapacity
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0141b5c2_9f15_46f4_82e6_92a104faa476
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0141b5c2_9f15_46f4_82e6_92a104faa476
 
 .. raw:: html
 
@@ -14836,12 +16182,14 @@ DischargingCapacity
   </tr>
   </table>
 
-.. _electrochemistry_457aed58_6e7e_42d5_9d78_b424c8d60aa3:
+.. raw:: html
+
+   <div id="electrochemistry_457aed58_6e7e_42d5_9d78_b424c8d60aa3"></div>
 
 DischargingConstantCurrentPercentage
 ------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_457aed58_6e7e_42d5_9d78_b424c8d60aa3
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_457aed58_6e7e_42d5_9d78_b424c8d60aa3
 
 .. raw:: html
 
@@ -14856,12 +16204,14 @@ DischargingConstantCurrentPercentage
   </tr>
   </table>
 
-.. _electrochemistry_e4d666ee_d637_45cd_a904_dc33941ead4f:
+.. raw:: html
+
+   <div id="electrochemistry_e4d666ee_d637_45cd_a904_dc33941ead4f"></div>
 
 DischargingCurrent
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e4d666ee_d637_45cd_a904_dc33941ead4f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e4d666ee_d637_45cd_a904_dc33941ead4f
 
 .. raw:: html
 
@@ -14880,12 +16230,14 @@ DischargingCurrent
   </tr>
   </table>
 
-.. _electrochemistry_ca36cbf3_1fed_4b88_9177_b4e16ad00cf7:
+.. raw:: html
+
+   <div id="electrochemistry_ca36cbf3_1fed_4b88_9177_b4e16ad00cf7"></div>
 
 DischargingEnergy
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ca36cbf3_1fed_4b88_9177_b4e16ad00cf7
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ca36cbf3_1fed_4b88_9177_b4e16ad00cf7
 
 .. raw:: html
 
@@ -14904,12 +16256,14 @@ DischargingEnergy
   </tr>
   </table>
 
-.. _electrochemistry_4f14e153_cffb_42bd_9a7f_ae40d51ad2cd:
+.. raw:: html
+
+   <div id="electrochemistry_4f14e153_cffb_42bd_9a7f_ae40d51ad2cd"></div>
 
 DischargingEnergyDensity
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4f14e153_cffb_42bd_9a7f_ae40d51ad2cd
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4f14e153_cffb_42bd_9a7f_ae40d51ad2cd
 
 .. raw:: html
 
@@ -14924,12 +16278,14 @@ DischargingEnergyDensity
   </tr>
   </table>
 
-.. _electrochemistry_b6f33044_1892_41a4_ae89_8683d4225f8d:
+.. raw:: html
+
+   <div id="electrochemistry_b6f33044_1892_41a4_ae89_8683d4225f8d"></div>
 
 DischargingPRate
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b6f33044_1892_41a4_ae89_8683d4225f8d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b6f33044_1892_41a4_ae89_8683d4225f8d
 
 .. raw:: html
 
@@ -14944,12 +16300,14 @@ DischargingPRate
   </tr>
   </table>
 
-.. _electrochemistry_884650fd_6cc6_4ec6_8264_c18fbe6b90ee:
+.. raw:: html
+
+   <div id="electrochemistry_884650fd_6cc6_4ec6_8264_c18fbe6b90ee"></div>
 
 DischargingSpecificCapacity
 ---------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_884650fd_6cc6_4ec6_8264_c18fbe6b90ee
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_884650fd_6cc6_4ec6_8264_c18fbe6b90ee
 
 .. raw:: html
 
@@ -14968,12 +16326,14 @@ DischargingSpecificCapacity
   </tr>
   </table>
 
-.. _electrochemistry_9d57962c_e150_4e64_962b_8fd6a92c9234:
+.. raw:: html
+
+   <div id="electrochemistry_9d57962c_e150_4e64_962b_8fd6a92c9234"></div>
 
 DischargingSpecificEnergy
 -------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9d57962c_e150_4e64_962b_8fd6a92c9234
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9d57962c_e150_4e64_962b_8fd6a92c9234
 
 .. raw:: html
 
@@ -14988,12 +16348,14 @@ DischargingSpecificEnergy
   </tr>
   </table>
 
-.. _electrochemistry_c7b26177_21bf_4787_b656_8e78edf27f88:
+.. raw:: html
+
+   <div id="electrochemistry_c7b26177_21bf_4787_b656_8e78edf27f88"></div>
 
 DischargingVoltage
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c7b26177_21bf_4787_b656_8e78edf27f88
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c7b26177_21bf_4787_b656_8e78edf27f88
 
 .. raw:: html
 
@@ -15016,12 +16378,14 @@ DischargingVoltage
   </tr>
   </table>
 
-.. _electrochemistry_a56fc557_9dea_42e6_b936_e9d62dcaf84f:
+.. raw:: html
+
+   <div id="electrochemistry_a56fc557_9dea_42e6_b936_e9d62dcaf84f"></div>
 
 DoubleLayerCurrent
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a56fc557_9dea_42e6_b936_e9d62dcaf84f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a56fc557_9dea_42e6_b936_e9d62dcaf84f
 
 .. raw:: html
 
@@ -15040,12 +16404,14 @@ DoubleLayerCurrent
   </tr>
   </table>
 
-.. _electrochemistry_4b18c3f9_df10_4259_adb4_cd10842ff0be:
+.. raw:: html
+
+   <div id="electrochemistry_4b18c3f9_df10_4259_adb4_cd10842ff0be"></div>
 
 DropTimeInPolarography
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4b18c3f9_df10_4259_adb4_cd10842ff0be
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4b18c3f9_df10_4259_adb4_cd10842ff0be
 
 .. raw:: html
 
@@ -15064,12 +16430,14 @@ DropTimeInPolarography
   </tr>
   </table>
 
-.. _electrochemistry_14d93129_d94d_42ff_a6f2_e8fca36ffec4:
+.. raw:: html
+
+   <div id="electrochemistry_14d93129_d94d_42ff_a6f2_e8fca36ffec4"></div>
 
 EffectivePorousMediaQuantity
 ----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_14d93129_d94d_42ff_a6f2_e8fca36ffec4
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_14d93129_d94d_42ff_a6f2_e8fca36ffec4
 
 .. raw:: html
 
@@ -15080,12 +16448,14 @@ EffectivePorousMediaQuantity
   </tr>
   </table>
 
-.. _electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5:
+.. raw:: html
+
+   <div id="electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5"></div>
 
 ElectrochemicalControlQuantity
 ------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5
 
 .. raw:: html
 
@@ -15104,12 +16474,14 @@ ElectrochemicalControlQuantity
   </tr>
   </table>
 
-.. _electrochemistry_21745019_2830_4395_bca7_15ddfd266673:
+.. raw:: html
+
+   <div id="electrochemistry_21745019_2830_4395_bca7_15ddfd266673"></div>
 
 ElectrochemicalKineticQuantity
 ------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_21745019_2830_4395_bca7_15ddfd266673
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_21745019_2830_4395_bca7_15ddfd266673
 
 .. raw:: html
 
@@ -15128,12 +16500,14 @@ ElectrochemicalKineticQuantity
   </tr>
   </table>
 
-.. _electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634:
+.. raw:: html
+
+   <div id="electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634"></div>
 
 ElectrochemicalPerformanceQuantity
 ----------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634
 
 .. raw:: html
 
@@ -15152,12 +16526,14 @@ ElectrochemicalPerformanceQuantity
   </tr>
   </table>
 
-.. _electrochemistry_1422cde1_929e_46b6_b0dc_1010eebc5dfd:
+.. raw:: html
+
+   <div id="electrochemistry_1422cde1_929e_46b6_b0dc_1010eebc5dfd"></div>
 
 ElectrochemicalPotential
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1422cde1_929e_46b6_b0dc_1010eebc5dfd
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1422cde1_929e_46b6_b0dc_1010eebc5dfd
 
 .. raw:: html
 
@@ -15188,12 +16564,14 @@ ElectrochemicalPotential
   </tr>
   </table>
 
-.. _electrochemistry_900e357f_2ee3_425a_a0b6_322661117787:
+.. raw:: html
+
+   <div id="electrochemistry_900e357f_2ee3_425a_a0b6_322661117787"></div>
 
 ElectrochemicalProperty
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_900e357f_2ee3_425a_a0b6_322661117787
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_900e357f_2ee3_425a_a0b6_322661117787
 
 .. raw:: html
 
@@ -15208,12 +16586,14 @@ ElectrochemicalProperty
   </tr>
   </table>
 
-.. _electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112:
+.. raw:: html
+
+   <div id="electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112"></div>
 
 ElectrochemicalQuantity
 -----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112
 
 .. raw:: html
 
@@ -15228,12 +16608,14 @@ ElectrochemicalQuantity
   </tr>
   </table>
 
-.. _electrochemistry_8f4b90ef_fea4_47c9_99f5_a9b3290a505d:
+.. raw:: html
+
+   <div id="electrochemistry_8f4b90ef_fea4_47c9_99f5_a9b3290a505d"></div>
 
 ElectrochemicalStabilityLimit
 -----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8f4b90ef_fea4_47c9_99f5_a9b3290a505d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8f4b90ef_fea4_47c9_99f5_a9b3290a505d
 
 .. raw:: html
 
@@ -15248,12 +16630,14 @@ ElectrochemicalStabilityLimit
   </tr>
   </table>
 
-.. _electrochemistry_2d896559_eee3_447c_9759_87c854a4266a:
+.. raw:: html
+
+   <div id="electrochemistry_2d896559_eee3_447c_9759_87c854a4266a"></div>
 
 ElectrochemicalThermodynamicQuantity
 ------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2d896559_eee3_447c_9759_87c854a4266a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2d896559_eee3_447c_9759_87c854a4266a
 
 .. raw:: html
 
@@ -15272,12 +16656,14 @@ ElectrochemicalThermodynamicQuantity
   </tr>
   </table>
 
-.. _electrochemistry_4a450a27_b84a_4c70_a3a9_15ec30e2f30b:
+.. raw:: html
+
+   <div id="electrochemistry_4a450a27_b84a_4c70_a3a9_15ec30e2f30b"></div>
 
 ElectrochemicalTransportQuantity
 --------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4a450a27_b84a_4c70_a3a9_15ec30e2f30b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4a450a27_b84a_4c70_a3a9_15ec30e2f30b
 
 .. raw:: html
 
@@ -15296,12 +16682,14 @@ ElectrochemicalTransportQuantity
   </tr>
   </table>
 
-.. _electrochemistry_129926b6_fc30_441d_b359_29b44c988514:
+.. raw:: html
+
+   <div id="electrochemistry_129926b6_fc30_441d_b359_29b44c988514"></div>
 
 ElectrochemicalWindow
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_129926b6_fc30_441d_b359_29b44c988514
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_129926b6_fc30_441d_b359_29b44c988514
 
 .. raw:: html
 
@@ -15328,12 +16716,14 @@ ElectrochemicalWindow
   </tr>
   </table>
 
-.. _electrochemistry_bad1b6f4_1b26_40e2_b552_6d53873e3973:
+.. raw:: html
+
+   <div id="electrochemistry_bad1b6f4_1b26_40e2_b552_6d53873e3973"></div>
 
 ElectrochemicallyActiveSurfaceArea
 ----------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bad1b6f4_1b26_40e2_b552_6d53873e3973
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bad1b6f4_1b26_40e2_b552_6d53873e3973
 
 .. raw:: html
 
@@ -15356,12 +16746,14 @@ ElectrochemicallyActiveSurfaceArea
   </tr>
   </table>
 
-.. _electrochemistry_63a8f9d2_0cf6_484d_b996_2e5c3f0a3c73:
+.. raw:: html
+
+   <div id="electrochemistry_63a8f9d2_0cf6_484d_b996_2e5c3f0a3c73"></div>
 
 ElectrodeCoverageDensity
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_63a8f9d2_0cf6_484d_b996_2e5c3f0a3c73
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_63a8f9d2_0cf6_484d_b996_2e5c3f0a3c73
 
 .. raw:: html
 
@@ -15384,12 +16776,14 @@ ElectrodeCoverageDensity
   </tr>
   </table>
 
-.. _electrochemistry_fa7790d6_07bb_4b0f_9965_55966828f5f3:
+.. raw:: html
+
+   <div id="electrochemistry_fa7790d6_07bb_4b0f_9965_55966828f5f3"></div>
 
 ElectrodeGeometricSurfaceArea
 -----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fa7790d6_07bb_4b0f_9965_55966828f5f3
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fa7790d6_07bb_4b0f_9965_55966828f5f3
 
 .. raw:: html
 
@@ -15408,12 +16802,14 @@ ElectrodeGeometricSurfaceArea
   </tr>
   </table>
 
-.. _electrochemistry_f509645f_eb27_470e_9112_7ab828ed40d3:
+.. raw:: html
+
+   <div id="electrochemistry_f509645f_eb27_470e_9112_7ab828ed40d3"></div>
 
 ElectrodePotential
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f509645f_eb27_470e_9112_7ab828ed40d3
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f509645f_eb27_470e_9112_7ab828ed40d3
 
 .. raw:: html
 
@@ -15448,12 +16844,14 @@ ElectrodePotential
   </tr>
   </table>
 
-.. _electrochemistry_a82e16c3_b766_482f_be94_b8e9af37f6fc:
+.. raw:: html
+
+   <div id="electrochemistry_a82e16c3_b766_482f_be94_b8e9af37f6fc"></div>
 
 ElectrodeRealSurfaceArea
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a82e16c3_b766_482f_be94_b8e9af37f6fc
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a82e16c3_b766_482f_be94_b8e9af37f6fc
 
 .. raw:: html
 
@@ -15472,12 +16870,14 @@ ElectrodeRealSurfaceArea
   </tr>
   </table>
 
-.. _electrochemistry_47ab1dad_cc09_4fd8_af23_acb36fb680dd:
+.. raw:: html
+
+   <div id="electrochemistry_47ab1dad_cc09_4fd8_af23_acb36fb680dd"></div>
 
 ElectrodeSurfaceArea
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_47ab1dad_cc09_4fd8_af23_acb36fb680dd
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_47ab1dad_cc09_4fd8_af23_acb36fb680dd
 
 .. raw:: html
 
@@ -15500,12 +16900,14 @@ ElectrodeSurfaceArea
   </tr>
   </table>
 
-.. _electrochemistry_83928dce_9746_4452_a9f9_da4366a20ca4:
+.. raw:: html
+
+   <div id="electrochemistry_83928dce_9746_4452_a9f9_da4366a20ca4"></div>
 
 ElectrolyteContainment
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_83928dce_9746_4452_a9f9_da4366a20ca4
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_83928dce_9746_4452_a9f9_da4366a20ca4
 
 .. raw:: html
 
@@ -15524,12 +16926,14 @@ ElectrolyteContainment
   </tr>
   </table>
 
-.. _electrochemistry_ce74d2dc_d496_4116_b2fb_3e83d88bc744:
+.. raw:: html
+
+   <div id="electrochemistry_ce74d2dc_d496_4116_b2fb_3e83d88bc744"></div>
 
 ElectronicConductivity
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ce74d2dc_d496_4116_b2fb_3e83d88bc744
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ce74d2dc_d496_4116_b2fb_3e83d88bc744
 
 .. raw:: html
 
@@ -15548,12 +16952,14 @@ ElectronicConductivity
   </tr>
   </table>
 
-.. _electrochemistry_4aa1b96e_44a0_4b1a_a0ac_723d0223d80b:
+.. raw:: html
+
+   <div id="electrochemistry_4aa1b96e_44a0_4b1a_a0ac_723d0223d80b"></div>
 
 EnergyDensity
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4aa1b96e_44a0_4b1a_a0ac_723d0223d80b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4aa1b96e_44a0_4b1a_a0ac_723d0223d80b
 
 .. raw:: html
 
@@ -15580,12 +16986,14 @@ EnergyDensity
   </tr>
   </table>
 
-.. _electrochemistry_79198264_cdf5_4fc3_8bcf_e5140a52547a:
+.. raw:: html
+
+   <div id="electrochemistry_79198264_cdf5_4fc3_8bcf_e5140a52547a"></div>
 
 EnergyEfficiency
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79198264_cdf5_4fc3_8bcf_e5140a52547a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79198264_cdf5_4fc3_8bcf_e5140a52547a
 
 .. raw:: html
 
@@ -15608,12 +17016,14 @@ EnergyEfficiency
   </tr>
   </table>
 
-.. _electrochemistry_d91940f0_c8b6_4505_9b68_6bf6cfc5c544:
+.. raw:: html
+
+   <div id="electrochemistry_d91940f0_c8b6_4505_9b68_6bf6cfc5c544"></div>
 
 EquilibriumElectrodePotential
 -----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d91940f0_c8b6_4505_9b68_6bf6cfc5c544
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d91940f0_c8b6_4505_9b68_6bf6cfc5c544
 
 .. raw:: html
 
@@ -15648,12 +17058,14 @@ EquilibriumElectrodePotential
   </tr>
   </table>
 
-.. _electrochemistry_ccde24bb_790a_40ca_a06e_cea156a61031:
+.. raw:: html
+
+   <div id="electrochemistry_ccde24bb_790a_40ca_a06e_cea156a61031"></div>
 
 ExchangeCurrent
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ccde24bb_790a_40ca_a06e_cea156a61031
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ccde24bb_790a_40ca_a06e_cea156a61031
 
 .. raw:: html
 
@@ -15676,12 +17088,14 @@ ExchangeCurrent
   </tr>
   </table>
 
-.. _electrochemistry_e9fd9ef9_adfe_46cb_b2f9_4558468a25e7:
+.. raw:: html
+
+   <div id="electrochemistry_e9fd9ef9_adfe_46cb_b2f9_4558468a25e7"></div>
 
 ExchangeCurrentDensity
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e9fd9ef9_adfe_46cb_b2f9_4558468a25e7
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e9fd9ef9_adfe_46cb_b2f9_4558468a25e7
 
 .. raw:: html
 
@@ -15708,12 +17122,14 @@ ExchangeCurrentDensity
   </tr>
   </table>
 
-.. _electrochemistry_2a2f59b7_aa16_40aa_9c8b_0de8a2720456:
+.. raw:: html
+
+   <div id="electrochemistry_2a2f59b7_aa16_40aa_9c8b_0de8a2720456"></div>
 
 FaradaicCurrent
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2a2f59b7_aa16_40aa_9c8b_0de8a2720456
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2a2f59b7_aa16_40aa_9c8b_0de8a2720456
 
 .. raw:: html
 
@@ -15748,12 +17164,14 @@ FaradaicCurrent
   </tr>
   </table>
 
-.. _electrochemistry_77f9d496_555e_4ae2_ae80_f297ef8335ca:
+.. raw:: html
+
+   <div id="electrochemistry_77f9d496_555e_4ae2_ae80_f297ef8335ca"></div>
 
 FaradayConstant
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_77f9d496_555e_4ae2_ae80_f297ef8335ca
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_77f9d496_555e_4ae2_ae80_f297ef8335ca
 
 .. raw:: html
 
@@ -15780,12 +17198,14 @@ FaradayConstant
   </tr>
   </table>
 
-.. _electrochemistry_50674621_09ae_4f03_8ee9_3997b88c8b2a:
+.. raw:: html
+
+   <div id="electrochemistry_50674621_09ae_4f03_8ee9_3997b88c8b2a"></div>
 
 FinishingCRate
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_50674621_09ae_4f03_8ee9_3997b88c8b2a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_50674621_09ae_4f03_8ee9_3997b88c8b2a
 
 .. raw:: html
 
@@ -15812,12 +17232,14 @@ FinishingCRate
   </tr>
   </table>
 
-.. _electrochemistry_b21de1ef_6c15_4d63_b320_c9b96fbf186f:
+.. raw:: html
+
+   <div id="electrochemistry_b21de1ef_6c15_4d63_b320_c9b96fbf186f"></div>
 
 FormalElectrodePotential
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b21de1ef_6c15_4d63_b320_c9b96fbf186f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b21de1ef_6c15_4d63_b320_c9b96fbf186f
 
 .. raw:: html
 
@@ -15840,12 +17262,14 @@ FormalElectrodePotential
   </tr>
   </table>
 
-.. _electrochemistry_50247e71_75fe_4986_959e_fd06c6be98db:
+.. raw:: html
+
+   <div id="electrochemistry_50247e71_75fe_4986_959e_fd06c6be98db"></div>
 
 GuestDiffusivityInNegativeElectrodeActiveMaterial
 -------------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_50247e71_75fe_4986_959e_fd06c6be98db
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_50247e71_75fe_4986_959e_fd06c6be98db
 
 .. raw:: html
 
@@ -15860,12 +17284,14 @@ GuestDiffusivityInNegativeElectrodeActiveMaterial
   </tr>
   </table>
 
-.. _electrochemistry_e59188bb_ce66_49f6_84aa_ecb98e76941e:
+.. raw:: html
+
+   <div id="electrochemistry_e59188bb_ce66_49f6_84aa_ecb98e76941e"></div>
 
 GuestDiffusivityInPositiveElectrodeActiveMaterial
 -------------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e59188bb_ce66_49f6_84aa_ecb98e76941e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e59188bb_ce66_49f6_84aa_ecb98e76941e
 
 .. raw:: html
 
@@ -15880,12 +17306,14 @@ GuestDiffusivityInPositiveElectrodeActiveMaterial
   </tr>
   </table>
 
-.. _electrochemistry_c4d551db_db17_4c33_92e6_aec71638afbc:
+.. raw:: html
+
+   <div id="electrochemistry_c4d551db_db17_4c33_92e6_aec71638afbc"></div>
 
 HalfPeakPotential
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c4d551db_db17_4c33_92e6_aec71638afbc
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c4d551db_db17_4c33_92e6_aec71638afbc
 
 .. raw:: html
 
@@ -15908,12 +17336,14 @@ HalfPeakPotential
   </tr>
   </table>
 
-.. _electrochemistry_2ae53fc6_d44d_41c9_acaf_c5606e6a981d:
+.. raw:: html
+
+   <div id="electrochemistry_2ae53fc6_d44d_41c9_acaf_c5606e6a981d"></div>
 
 HalfWavePotential
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2ae53fc6_d44d_41c9_acaf_c5606e6a981d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2ae53fc6_d44d_41c9_acaf_c5606e6a981d
 
 .. raw:: html
 
@@ -15936,12 +17366,14 @@ HalfWavePotential
   </tr>
   </table>
 
-.. _electrochemistry_0089729b_5890_4c15_aa09_1244d41f8626:
+.. raw:: html
+
+   <div id="electrochemistry_0089729b_5890_4c15_aa09_1244d41f8626"></div>
 
 ImaginaryElectricImpedance
 --------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0089729b_5890_4c15_aa09_1244d41f8626
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0089729b_5890_4c15_aa09_1244d41f8626
 
 .. raw:: html
 
@@ -15952,12 +17384,14 @@ ImaginaryElectricImpedance
   </tr>
   </table>
 
-.. _electrochemistry_2cfea66b_756d_4642_986f_9a41abbd7034:
+.. raw:: html
+
+   <div id="electrochemistry_2cfea66b_756d_4642_986f_9a41abbd7034"></div>
 
 InactiveMassLoading
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2cfea66b_756d_4642_986f_9a41abbd7034
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2cfea66b_756d_4642_986f_9a41abbd7034
 
 .. raw:: html
 
@@ -15972,12 +17406,14 @@ InactiveMassLoading
   </tr>
   </table>
 
-.. _electrochemistry_098f98dc_e015_4dbd_b358_a7ac3b3ecff3:
+.. raw:: html
+
+   <div id="electrochemistry_098f98dc_e015_4dbd_b358_a7ac3b3ecff3"></div>
 
 InitialChargeCarrierConcentrationInElectrolyte
 ----------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_098f98dc_e015_4dbd_b358_a7ac3b3ecff3
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_098f98dc_e015_4dbd_b358_a7ac3b3ecff3
 
 .. raw:: html
 
@@ -15988,12 +17424,14 @@ InitialChargeCarrierConcentrationInElectrolyte
   </tr>
   </table>
 
-.. _electrochemistry_2c4c2626_7db5_440c_a65e_95ed2986ee01:
+.. raw:: html
+
+   <div id="electrochemistry_2c4c2626_7db5_440c_a65e_95ed2986ee01"></div>
 
 InitialCondition
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2c4c2626_7db5_440c_a65e_95ed2986ee01
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2c4c2626_7db5_440c_a65e_95ed2986ee01
 
 .. raw:: html
 
@@ -16008,12 +17446,14 @@ InitialCondition
   </tr>
   </table>
 
-.. _electrochemistry_74861991_7da2_4e0f_b6c1_b16713f538bf:
+.. raw:: html
+
+   <div id="electrochemistry_74861991_7da2_4e0f_b6c1_b16713f538bf"></div>
 
 InitialDischargingVoltage
 -------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_74861991_7da2_4e0f_b6c1_b16713f538bf
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_74861991_7da2_4e0f_b6c1_b16713f538bf
 
 .. raw:: html
 
@@ -16036,12 +17476,14 @@ InitialDischargingVoltage
   </tr>
   </table>
 
-.. _electrochemistry_9c9b80a4_a00b_4b91_8e17_3a7831f2bf2f:
+.. raw:: html
+
+   <div id="electrochemistry_9c9b80a4_a00b_4b91_8e17_3a7831f2bf2f"></div>
 
 InititalThermodynamicTemperature
 --------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9c9b80a4_a00b_4b91_8e17_3a7831f2bf2f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9c9b80a4_a00b_4b91_8e17_3a7831f2bf2f
 
 .. raw:: html
 
@@ -16052,12 +17494,14 @@ InititalThermodynamicTemperature
   </tr>
   </table>
 
-.. _electrochemistry_a24f8581_a5a4_41a4_bb45_d0fdd5c0d810:
+.. raw:: html
+
+   <div id="electrochemistry_a24f8581_a5a4_41a4_bb45_d0fdd5c0d810"></div>
 
 InstantaneousCurrent
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a24f8581_a5a4_41a4_bb45_d0fdd5c0d810
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a24f8581_a5a4_41a4_bb45_d0fdd5c0d810
 
 .. raw:: html
 
@@ -16088,12 +17532,14 @@ InstantaneousCurrent
   </tr>
   </table>
 
-.. _electrochemistry_5973f91a_fa6b_49c9_ba46_3ecc1c2253d2:
+.. raw:: html
+
+   <div id="electrochemistry_5973f91a_fa6b_49c9_ba46_3ecc1c2253d2"></div>
 
 InstantaneousPower
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5973f91a_fa6b_49c9_ba46_3ecc1c2253d2
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5973f91a_fa6b_49c9_ba46_3ecc1c2253d2
 
 .. raw:: html
 
@@ -16108,12 +17554,14 @@ InstantaneousPower
   </tr>
   </table>
 
-.. _electrochemistry_f94678d6_1386_48fc_8e54_024921924401:
+.. raw:: html
+
+   <div id="electrochemistry_f94678d6_1386_48fc_8e54_024921924401"></div>
 
 InternalApparentResistance
 --------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f94678d6_1386_48fc_8e54_024921924401
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f94678d6_1386_48fc_8e54_024921924401
 
 .. raw:: html
 
@@ -16136,12 +17584,14 @@ InternalApparentResistance
   </tr>
   </table>
 
-.. _electrochemistry_0c9655c6_6b0b_4819_a219_f286ad196fa9:
+.. raw:: html
+
+   <div id="electrochemistry_0c9655c6_6b0b_4819_a219_f286ad196fa9"></div>
 
 InternalConductance
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0c9655c6_6b0b_4819_a219_f286ad196fa9
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0c9655c6_6b0b_4819_a219_f286ad196fa9
 
 .. raw:: html
 
@@ -16160,12 +17610,14 @@ InternalConductance
   </tr>
   </table>
 
-.. _electrochemistry_9bf40017_3f58_4030_ada7_cb37a3dfda2d:
+.. raw:: html
+
+   <div id="electrochemistry_9bf40017_3f58_4030_ada7_cb37a3dfda2d"></div>
 
 InternalResistance
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9bf40017_3f58_4030_ada7_cb37a3dfda2d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9bf40017_3f58_4030_ada7_cb37a3dfda2d
 
 .. raw:: html
 
@@ -16200,12 +17652,14 @@ InternalResistance
   </tr>
   </table>
 
-.. _electrochemistry_8177eae6_1631_430d_99f2_942669bcb784:
+.. raw:: html
+
+   <div id="electrochemistry_8177eae6_1631_430d_99f2_942669bcb784"></div>
 
 IonConcentration
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8177eae6_1631_430d_99f2_942669bcb784
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8177eae6_1631_430d_99f2_942669bcb784
 
 .. raw:: html
 
@@ -16224,12 +17678,14 @@ IonConcentration
   </tr>
   </table>
 
-.. _electrochemistry_25dabdc2_68bf_4a38_8cbe_11be017358bc:
+.. raw:: html
+
+   <div id="electrochemistry_25dabdc2_68bf_4a38_8cbe_11be017358bc"></div>
 
 IonicConductivity
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_25dabdc2_68bf_4a38_8cbe_11be017358bc
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_25dabdc2_68bf_4a38_8cbe_11be017358bc
 
 .. raw:: html
 
@@ -16256,12 +17712,14 @@ IonicConductivity
   </tr>
   </table>
 
-.. _electrochemistry_ff7797ed_9ef7_40d0_872b_2c215cd54578:
+.. raw:: html
+
+   <div id="electrochemistry_ff7797ed_9ef7_40d0_872b_2c215cd54578"></div>
 
 IsopotentialPoint
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ff7797ed_9ef7_40d0_872b_2c215cd54578
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ff7797ed_9ef7_40d0_872b_2c215cd54578
 
 .. raw:: html
 
@@ -16284,12 +17742,14 @@ IsopotentialPoint
   </tr>
   </table>
 
-.. _electrochemistry_98b6e9d7_d5df_46a5_87dd_79642b8b2e4b:
+.. raw:: html
+
+   <div id="electrochemistry_98b6e9d7_d5df_46a5_87dd_79642b8b2e4b"></div>
 
 KineticCurrent
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_98b6e9d7_d5df_46a5_87dd_79642b8b2e4b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_98b6e9d7_d5df_46a5_87dd_79642b8b2e4b
 
 .. raw:: html
 
@@ -16312,12 +17772,14 @@ KineticCurrent
   </tr>
   </table>
 
-.. _electrochemistry_b395a244_3a75_4737_be38_981bfa1277fe:
+.. raw:: html
+
+   <div id="electrochemistry_b395a244_3a75_4737_be38_981bfa1277fe"></div>
 
 LimitQuantity
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b395a244_3a75_4737_be38_981bfa1277fe
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b395a244_3a75_4737_be38_981bfa1277fe
 
 .. raw:: html
 
@@ -16336,12 +17798,14 @@ LimitQuantity
   </tr>
   </table>
 
-.. _electrochemistry_d5ac8868_d318_4065_aa23_72140ae888ae:
+.. raw:: html
+
+   <div id="electrochemistry_d5ac8868_d318_4065_aa23_72140ae888ae"></div>
 
 LimitingCurrent
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d5ac8868_d318_4065_aa23_72140ae888ae
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d5ac8868_d318_4065_aa23_72140ae888ae
 
 .. raw:: html
 
@@ -16364,12 +17828,14 @@ LimitingCurrent
   </tr>
   </table>
 
-.. _electrochemistry_a17ee4e0_c81a_4a64_9ecb_9c6fa022cf4d:
+.. raw:: html
+
+   <div id="electrochemistry_a17ee4e0_c81a_4a64_9ecb_9c6fa022cf4d"></div>
 
 LimitingMolarConductivity
 -------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a17ee4e0_c81a_4a64_9ecb_9c6fa022cf4d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a17ee4e0_c81a_4a64_9ecb_9c6fa022cf4d
 
 .. raw:: html
 
@@ -16388,12 +17854,14 @@ LimitingMolarConductivity
   </tr>
   </table>
 
-.. _electrochemistry_08b6d07a_0f6c_4932_afbd_fb6b699164ae:
+.. raw:: html
+
+   <div id="electrochemistry_08b6d07a_0f6c_4932_afbd_fb6b699164ae"></div>
 
 LowerCRateLimit
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_08b6d07a_0f6c_4932_afbd_fb6b699164ae
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_08b6d07a_0f6c_4932_afbd_fb6b699164ae
 
 .. raw:: html
 
@@ -16408,12 +17876,14 @@ LowerCRateLimit
   </tr>
   </table>
 
-.. _electrochemistry_7db845e7_0e5b_47d4_b954_2a2b8e85deea:
+.. raw:: html
+
+   <div id="electrochemistry_7db845e7_0e5b_47d4_b954_2a2b8e85deea"></div>
 
 LowerCurrentLimit
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7db845e7_0e5b_47d4_b954_2a2b8e85deea
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7db845e7_0e5b_47d4_b954_2a2b8e85deea
 
 .. raw:: html
 
@@ -16428,12 +17898,14 @@ LowerCurrentLimit
   </tr>
   </table>
 
-.. _electrochemistry_b66d6553_6136_4754_902a_707e414210c2:
+.. raw:: html
+
+   <div id="electrochemistry_b66d6553_6136_4754_902a_707e414210c2"></div>
 
 LowerFrequencyLimit
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b66d6553_6136_4754_902a_707e414210c2
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b66d6553_6136_4754_902a_707e414210c2
 
 .. raw:: html
 
@@ -16448,12 +17920,14 @@ LowerFrequencyLimit
   </tr>
   </table>
 
-.. _electrochemistry_534dd59c_904c_45d9_8550_ae9d2eb6bbc9:
+.. raw:: html
+
+   <div id="electrochemistry_534dd59c_904c_45d9_8550_ae9d2eb6bbc9"></div>
 
 LowerVoltageLimit
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_534dd59c_904c_45d9_8550_ae9d2eb6bbc9
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_534dd59c_904c_45d9_8550_ae9d2eb6bbc9
 
 .. raw:: html
 
@@ -16480,12 +17954,14 @@ LowerVoltageLimit
   </tr>
   </table>
 
-.. _electrochemistry_c955c089_6ee1_41a2_95fc_d534c5cfd3d5:
+.. raw:: html
+
+   <div id="electrochemistry_c955c089_6ee1_41a2_95fc_d534c5cfd3d5"></div>
 
 MassLoading
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c955c089_6ee1_41a2_95fc_d534c5cfd3d5
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c955c089_6ee1_41a2_95fc_d534c5cfd3d5
 
 .. raw:: html
 
@@ -16504,12 +17980,14 @@ MassLoading
   </tr>
   </table>
 
-.. _electrochemistry_b7781ebc_90a7_4f19_997f_aed28dee1b01:
+.. raw:: html
+
+   <div id="electrochemistry_b7781ebc_90a7_4f19_997f_aed28dee1b01"></div>
 
 MaximumCapacity
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b7781ebc_90a7_4f19_997f_aed28dee1b01
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b7781ebc_90a7_4f19_997f_aed28dee1b01
 
 .. raw:: html
 
@@ -16532,12 +18010,18 @@ MaximumCapacity
   </tr>
   </table>
 
-.. _electrochemistry_4a354510_4dc2_4803_8845_f4024a1a7260:
+.. caution::
+
+   For real applications, the maximum capacity is affected by environmental conditions, rate of operation, and state-of-heath and can deviate from the reported value.
+
+.. raw:: html
+
+   <div id="electrochemistry_4a354510_4dc2_4803_8845_f4024a1a7260"></div>
 
 MaximumChargingTemperature
 --------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4a354510_4dc2_4803_8845_f4024a1a7260
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4a354510_4dc2_4803_8845_f4024a1a7260
 
 .. raw:: html
 
@@ -16552,12 +18036,14 @@ MaximumChargingTemperature
   </tr>
   </table>
 
-.. _electrochemistry_47287d09_6108_45ca_ac65_8b9451b1065e:
+.. raw:: html
+
+   <div id="electrochemistry_47287d09_6108_45ca_ac65_8b9451b1065e"></div>
 
 MaximumConcentration
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_47287d09_6108_45ca_ac65_8b9451b1065e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_47287d09_6108_45ca_ac65_8b9451b1065e
 
 .. raw:: html
 
@@ -16576,12 +18062,14 @@ MaximumConcentration
   </tr>
   </table>
 
-.. _electrochemistry_39d8a6ee_cd55_4855_8b5b_d42bef95ac78:
+.. raw:: html
+
+   <div id="electrochemistry_39d8a6ee_cd55_4855_8b5b_d42bef95ac78"></div>
 
 MaximumContinuousChargingCurrent
 --------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_39d8a6ee_cd55_4855_8b5b_d42bef95ac78
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_39d8a6ee_cd55_4855_8b5b_d42bef95ac78
 
 .. raw:: html
 
@@ -16600,12 +18088,14 @@ MaximumContinuousChargingCurrent
   </tr>
   </table>
 
-.. _electrochemistry_ba7ac581_0e13_4815_b888_013c378932f5:
+.. raw:: html
+
+   <div id="electrochemistry_ba7ac581_0e13_4815_b888_013c378932f5"></div>
 
 MaximumContinuousDischargingCurrent
 -----------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ba7ac581_0e13_4815_b888_013c378932f5
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ba7ac581_0e13_4815_b888_013c378932f5
 
 .. raw:: html
 
@@ -16624,12 +18114,14 @@ MaximumContinuousDischargingCurrent
   </tr>
   </table>
 
-.. _electrochemistry_d5dc0c1d_0926_4268_89f0_4519a326eabc:
+.. raw:: html
+
+   <div id="electrochemistry_d5dc0c1d_0926_4268_89f0_4519a326eabc"></div>
 
 MaximumDischargingPulseDuration
 -------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d5dc0c1d_0926_4268_89f0_4519a326eabc
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d5dc0c1d_0926_4268_89f0_4519a326eabc
 
 .. raw:: html
 
@@ -16644,12 +18136,14 @@ MaximumDischargingPulseDuration
   </tr>
   </table>
 
-.. _electrochemistry_de612af2_a029_4a02_8090_4a75ab13271d:
+.. raw:: html
+
+   <div id="electrochemistry_de612af2_a029_4a02_8090_4a75ab13271d"></div>
 
 MaximumDischargingTemperature
 -----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_de612af2_a029_4a02_8090_4a75ab13271d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_de612af2_a029_4a02_8090_4a75ab13271d
 
 .. raw:: html
 
@@ -16664,12 +18158,14 @@ MaximumDischargingTemperature
   </tr>
   </table>
 
-.. _electrochemistry_1b2a7137_64d4_483a_8437_dcb3bedcb6da:
+.. raw:: html
+
+   <div id="electrochemistry_1b2a7137_64d4_483a_8437_dcb3bedcb6da"></div>
 
 MaximumPulseChargingCurrent
 ---------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1b2a7137_64d4_483a_8437_dcb3bedcb6da
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1b2a7137_64d4_483a_8437_dcb3bedcb6da
 
 .. raw:: html
 
@@ -16688,12 +18184,14 @@ MaximumPulseChargingCurrent
   </tr>
   </table>
 
-.. _electrochemistry_3e54f9e3_a31d_4821_9bfb_ef953a42c35b:
+.. raw:: html
+
+   <div id="electrochemistry_3e54f9e3_a31d_4821_9bfb_ef953a42c35b"></div>
 
 MaximumPulseDischargingCurrent
 ------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3e54f9e3_a31d_4821_9bfb_ef953a42c35b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3e54f9e3_a31d_4821_9bfb_ef953a42c35b
 
 .. raw:: html
 
@@ -16712,12 +18210,14 @@ MaximumPulseDischargingCurrent
   </tr>
   </table>
 
-.. _electrochemistry_95ef8c3c_62fe_467f_b5d4_dd0cd18a7ea8:
+.. raw:: html
+
+   <div id="electrochemistry_95ef8c3c_62fe_467f_b5d4_dd0cd18a7ea8"></div>
 
 MaximumStoichiometricCoefficient
 --------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_95ef8c3c_62fe_467f_b5d4_dd0cd18a7ea8
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_95ef8c3c_62fe_467f_b5d4_dd0cd18a7ea8
 
 .. raw:: html
 
@@ -16732,12 +18232,14 @@ MaximumStoichiometricCoefficient
   </tr>
   </table>
 
-.. _electrochemistry_1cdeedbf_7f9a_4e1f_a297_204a6e16b718:
+.. raw:: html
+
+   <div id="electrochemistry_1cdeedbf_7f9a_4e1f_a297_204a6e16b718"></div>
 
 MaximumStorageEnergy
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1cdeedbf_7f9a_4e1f_a297_204a6e16b718
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1cdeedbf_7f9a_4e1f_a297_204a6e16b718
 
 .. raw:: html
 
@@ -16752,12 +18254,14 @@ MaximumStorageEnergy
   </tr>
   </table>
 
-.. _electrochemistry_0ea4d188_9701_4699_a5ca_812a98a9afa7:
+.. raw:: html
+
+   <div id="electrochemistry_0ea4d188_9701_4699_a5ca_812a98a9afa7"></div>
 
 MaximumStorageTemperature
 -------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0ea4d188_9701_4699_a5ca_812a98a9afa7
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0ea4d188_9701_4699_a5ca_812a98a9afa7
 
 .. raw:: html
 
@@ -16772,12 +18276,14 @@ MaximumStorageTemperature
   </tr>
   </table>
 
-.. _electrochemistry_cc519a19_b8d5_4e3f_b893_3a884888ad79:
+.. raw:: html
+
+   <div id="electrochemistry_cc519a19_b8d5_4e3f_b893_3a884888ad79"></div>
 
 MaximumTemperature
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cc519a19_b8d5_4e3f_b893_3a884888ad79
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cc519a19_b8d5_4e3f_b893_3a884888ad79
 
 .. raw:: html
 
@@ -16796,12 +18302,14 @@ MaximumTemperature
   </tr>
   </table>
 
-.. _electrochemistry_601ff226_59b9_460b_90f5_2593450d96fa:
+.. raw:: html
+
+   <div id="electrochemistry_601ff226_59b9_460b_90f5_2593450d96fa"></div>
 
 MembranePotential
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_601ff226_59b9_460b_90f5_2593450d96fa
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_601ff226_59b9_460b_90f5_2593450d96fa
 
 .. raw:: html
 
@@ -16824,12 +18332,14 @@ MembranePotential
   </tr>
   </table>
 
-.. _electrochemistry_22cec04f_c7f3_4ff8_a34b_e512379c9dcb:
+.. raw:: html
+
+   <div id="electrochemistry_22cec04f_c7f3_4ff8_a34b_e512379c9dcb"></div>
 
 MigrationCurrent
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_22cec04f_c7f3_4ff8_a34b_e512379c9dcb
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_22cec04f_c7f3_4ff8_a34b_e512379c9dcb
 
 .. raw:: html
 
@@ -16852,12 +18362,14 @@ MigrationCurrent
   </tr>
   </table>
 
-.. _electrochemistry_d3c0078e_c1d3_461e_873d_e5c3adf441c5:
+.. raw:: html
+
+   <div id="electrochemistry_d3c0078e_c1d3_461e_873d_e5c3adf441c5"></div>
 
 MinimumCapacity
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d3c0078e_c1d3_461e_873d_e5c3adf441c5
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d3c0078e_c1d3_461e_873d_e5c3adf441c5
 
 .. raw:: html
 
@@ -16880,12 +18392,18 @@ MinimumCapacity
   </tr>
   </table>
 
-.. _electrochemistry_b90b1ad7_b9a8_44df_ad45_bfd25aac2e49:
+.. caution::
+
+   For real applications, the achieveable minimum capacity is affected by environmental conditions, rate of operation, and state-of-heath and can deviate from the reported value.
+
+.. raw:: html
+
+   <div id="electrochemistry_b90b1ad7_b9a8_44df_ad45_bfd25aac2e49"></div>
 
 MinimumChargingTemperature
 --------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b90b1ad7_b9a8_44df_ad45_bfd25aac2e49
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b90b1ad7_b9a8_44df_ad45_bfd25aac2e49
 
 .. raw:: html
 
@@ -16900,12 +18418,14 @@ MinimumChargingTemperature
   </tr>
   </table>
 
-.. _electrochemistry_2a1de79f_e927_45a2_9619_3799a0d61e9b:
+.. raw:: html
+
+   <div id="electrochemistry_2a1de79f_e927_45a2_9619_3799a0d61e9b"></div>
 
 MinimumDischargingTemperature
 -----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2a1de79f_e927_45a2_9619_3799a0d61e9b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2a1de79f_e927_45a2_9619_3799a0d61e9b
 
 .. raw:: html
 
@@ -16920,12 +18440,14 @@ MinimumDischargingTemperature
   </tr>
   </table>
 
-.. _electrochemistry_86324806_4263_4d80_b5af_1a7be844ab5b:
+.. raw:: html
+
+   <div id="electrochemistry_86324806_4263_4d80_b5af_1a7be844ab5b"></div>
 
 MinimumStoichiometricCoefficient
 --------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_86324806_4263_4d80_b5af_1a7be844ab5b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_86324806_4263_4d80_b5af_1a7be844ab5b
 
 .. raw:: html
 
@@ -16940,12 +18462,14 @@ MinimumStoichiometricCoefficient
   </tr>
   </table>
 
-.. _electrochemistry_0ddfd57a_d338_4690_be45_b26884ed6302:
+.. raw:: html
+
+   <div id="electrochemistry_0ddfd57a_d338_4690_be45_b26884ed6302"></div>
 
 MinimumStorageTemperature
 -------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0ddfd57a_d338_4690_be45_b26884ed6302
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0ddfd57a_d338_4690_be45_b26884ed6302
 
 .. raw:: html
 
@@ -16960,12 +18484,14 @@ MinimumStorageTemperature
   </tr>
   </table>
 
-.. _electrochemistry_a9873707_8103_4bb4_9e51_83db1e89b1bd:
+.. raw:: html
+
+   <div id="electrochemistry_a9873707_8103_4bb4_9e51_83db1e89b1bd"></div>
 
 MiniumumConcentration
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a9873707_8103_4bb4_9e51_83db1e89b1bd
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a9873707_8103_4bb4_9e51_83db1e89b1bd
 
 .. raw:: html
 
@@ -16980,12 +18506,14 @@ MiniumumConcentration
   </tr>
   </table>
 
-.. _electrochemistry_4747c51d_86ab_4684_a4fb_b05f5c405ea3:
+.. raw:: html
+
+   <div id="electrochemistry_4747c51d_86ab_4684_a4fb_b05f5c405ea3"></div>
 
 MiniumumTemperature
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4747c51d_86ab_4684_a4fb_b05f5c405ea3
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4747c51d_86ab_4684_a4fb_b05f5c405ea3
 
 .. raw:: html
 
@@ -17004,12 +18532,14 @@ MiniumumTemperature
   </tr>
   </table>
 
-.. _electrochemistry_7fe804b8_6126_4132_be8f_b4985d61b1f6:
+.. raw:: html
+
+   <div id="electrochemistry_7fe804b8_6126_4132_be8f_b4985d61b1f6"></div>
 
 MolarElectrochemicalPotential
 -----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7fe804b8_6126_4132_be8f_b4985d61b1f6
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7fe804b8_6126_4132_be8f_b4985d61b1f6
 
 .. raw:: html
 
@@ -17032,12 +18562,14 @@ MolarElectrochemicalPotential
   </tr>
   </table>
 
-.. _electrochemistry_05012606_b93d_4016_bbc7_8a927efdf723:
+.. raw:: html
+
+   <div id="electrochemistry_05012606_b93d_4016_bbc7_8a927efdf723"></div>
 
 NPRatio
 -------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_05012606_b93d_4016_bbc7_8a927efdf723
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_05012606_b93d_4016_bbc7_8a927efdf723
 
 .. raw:: html
 
@@ -17056,12 +18588,14 @@ NPRatio
   </tr>
   </table>
 
-.. _electrochemistry_fda9539d_5232_471c_8945_b9a8ec7247fe:
+.. raw:: html
+
+   <div id="electrochemistry_fda9539d_5232_471c_8945_b9a8ec7247fe"></div>
 
 NegativeElectrodeActivationEnergyOfReaction
 -------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fda9539d_5232_471c_8945_b9a8ec7247fe
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fda9539d_5232_471c_8945_b9a8ec7247fe
 
 .. raw:: html
 
@@ -17076,12 +18610,14 @@ NegativeElectrodeActivationEnergyOfReaction
   </tr>
   </table>
 
-.. _electrochemistry_21da0fe9_9fb6_4840_a12f_fbcc1ba84fb3:
+.. raw:: html
+
+   <div id="electrochemistry_21da0fe9_9fb6_4840_a12f_fbcc1ba84fb3"></div>
 
 NegativeElectrodeActiveMaterialGuestStoichiometricCoefficientAtSOC0
 -------------------------------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_21da0fe9_9fb6_4840_a12f_fbcc1ba84fb3
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_21da0fe9_9fb6_4840_a12f_fbcc1ba84fb3
 
 .. raw:: html
 
@@ -17096,12 +18632,14 @@ NegativeElectrodeActiveMaterialGuestStoichiometricCoefficientAtSOC0
   </tr>
   </table>
 
-.. _electrochemistry_8c336ae9_1818_4b08_a660_4bb83b28351f:
+.. raw:: html
+
+   <div id="electrochemistry_8c336ae9_1818_4b08_a660_4bb83b28351f"></div>
 
 NegativeElectrodeActiveMaterialGuestStoichiometricCoefficientAtSOC100
 ---------------------------------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8c336ae9_1818_4b08_a660_4bb83b28351f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8c336ae9_1818_4b08_a660_4bb83b28351f
 
 .. raw:: html
 
@@ -17116,12 +18654,14 @@ NegativeElectrodeActiveMaterialGuestStoichiometricCoefficientAtSOC100
   </tr>
   </table>
 
-.. _electrochemistry_e808a26a_5812_49e9_894c_b793c7fe0c38:
+.. raw:: html
+
+   <div id="electrochemistry_e808a26a_5812_49e9_894c_b793c7fe0c38"></div>
 
 NegativeElectrodeActiveMaterialMaximumGuestConcentration
 --------------------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e808a26a_5812_49e9_894c_b793c7fe0c38
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e808a26a_5812_49e9_894c_b793c7fe0c38
 
 .. raw:: html
 
@@ -17136,12 +18676,14 @@ NegativeElectrodeActiveMaterialMaximumGuestConcentration
   </tr>
   </table>
 
-.. _electrochemistry_0e2f4fe6_570a_4d13_81e9_de1d4f9987af:
+.. raw:: html
+
+   <div id="electrochemistry_0e2f4fe6_570a_4d13_81e9_de1d4f9987af"></div>
 
 NegativeElectrodeActiveMaterialOpenCircuitVoltage
 -------------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0e2f4fe6_570a_4d13_81e9_de1d4f9987af
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0e2f4fe6_570a_4d13_81e9_de1d4f9987af
 
 .. raw:: html
 
@@ -17156,12 +18698,14 @@ NegativeElectrodeActiveMaterialOpenCircuitVoltage
   </tr>
   </table>
 
-.. _electrochemistry_bfe553c2_a63e_49b6_a209_0855dfc39724:
+.. raw:: html
+
+   <div id="electrochemistry_bfe553c2_a63e_49b6_a209_0855dfc39724"></div>
 
 NegativeElectrodeActiveMaterialParticleRadius
 ---------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bfe553c2_a63e_49b6_a209_0855dfc39724
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bfe553c2_a63e_49b6_a209_0855dfc39724
 
 .. raw:: html
 
@@ -17176,12 +18720,14 @@ NegativeElectrodeActiveMaterialParticleRadius
   </tr>
   </table>
 
-.. _electrochemistry_c5f9b91e_a770_4e9b_837e_fa2a76019111:
+.. raw:: html
+
+   <div id="electrochemistry_c5f9b91e_a770_4e9b_837e_fa2a76019111"></div>
 
 NegativeElectrodeActiveMaterialVolumetricSurfaceArea
 ----------------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c5f9b91e_a770_4e9b_837e_fa2a76019111
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c5f9b91e_a770_4e9b_837e_fa2a76019111
 
 .. raw:: html
 
@@ -17196,12 +18742,14 @@ NegativeElectrodeActiveMaterialVolumetricSurfaceArea
   </tr>
   </table>
 
-.. _electrochemistry_5cb403c4_4f28_46cb_81c4_21c5c47ef14a:
+.. raw:: html
+
+   <div id="electrochemistry_5cb403c4_4f28_46cb_81c4_21c5c47ef14a"></div>
 
 NegativeElectrodeCoatingPorosity
 --------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5cb403c4_4f28_46cb_81c4_21c5c47ef14a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5cb403c4_4f28_46cb_81c4_21c5c47ef14a
 
 .. raw:: html
 
@@ -17212,12 +18760,14 @@ NegativeElectrodeCoatingPorosity
   </tr>
   </table>
 
-.. _electrochemistry_cdc91ec0_9fc5_4551_bbd9_6824c2920124:
+.. raw:: html
+
+   <div id="electrochemistry_cdc91ec0_9fc5_4551_bbd9_6824c2920124"></div>
 
 NegativeElectrodeCoatingThickness
 ---------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cdc91ec0_9fc5_4551_bbd9_6824c2920124
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cdc91ec0_9fc5_4551_bbd9_6824c2920124
 
 .. raw:: html
 
@@ -17232,12 +18782,14 @@ NegativeElectrodeCoatingThickness
   </tr>
   </table>
 
-.. _electrochemistry_be3da3e2_58a9_4e58_adc2_7336d312717c:
+.. raw:: html
+
+   <div id="electrochemistry_be3da3e2_58a9_4e58_adc2_7336d312717c"></div>
 
 NegativeElectrodeElectronicConductivity
 ---------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_be3da3e2_58a9_4e58_adc2_7336d312717c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_be3da3e2_58a9_4e58_adc2_7336d312717c
 
 .. raw:: html
 
@@ -17252,12 +18804,14 @@ NegativeElectrodeElectronicConductivity
   </tr>
   </table>
 
-.. _electrochemistry_eac57b09_5cc9_41d7_b2c8_40218d7fd47c:
+.. raw:: html
+
+   <div id="electrochemistry_eac57b09_5cc9_41d7_b2c8_40218d7fd47c"></div>
 
 NegativeElectrodeEntropicChangeCoefficient
 ------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_eac57b09_5cc9_41d7_b2c8_40218d7fd47c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_eac57b09_5cc9_41d7_b2c8_40218d7fd47c
 
 .. raw:: html
 
@@ -17272,12 +18826,14 @@ NegativeElectrodeEntropicChangeCoefficient
   </tr>
   </table>
 
-.. _electrochemistry_c5dcb1a2_f2cf_421a_b8ae_47a88a61fce3:
+.. raw:: html
+
+   <div id="electrochemistry_c5dcb1a2_f2cf_421a_b8ae_47a88a61fce3"></div>
 
 NegativeElectrodeReactionRateConstant
 -------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c5dcb1a2_f2cf_421a_b8ae_47a88a61fce3
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c5dcb1a2_f2cf_421a_b8ae_47a88a61fce3
 
 .. raw:: html
 
@@ -17292,12 +18848,14 @@ NegativeElectrodeReactionRateConstant
   </tr>
   </table>
 
-.. _electrochemistry_14577b99_a8a9_4358_9bc5_ab8c401dd34b:
+.. raw:: html
+
+   <div id="electrochemistry_14577b99_a8a9_4358_9bc5_ab8c401dd34b"></div>
 
 NetFaradaicCurrent
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_14577b99_a8a9_4358_9bc5_ab8c401dd34b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_14577b99_a8a9_4358_9bc5_ab8c401dd34b
 
 .. raw:: html
 
@@ -17316,12 +18874,14 @@ NetFaradaicCurrent
   </tr>
   </table>
 
-.. _electrochemistry_8abde9d0_84f6_4b4f_a87e_86028a397100:
+.. raw:: html
+
+   <div id="electrochemistry_8abde9d0_84f6_4b4f_a87e_86028a397100"></div>
 
 NominalCapacity
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8abde9d0_84f6_4b4f_a87e_86028a397100
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8abde9d0_84f6_4b4f_a87e_86028a397100
 
 .. raw:: html
 
@@ -17344,12 +18904,22 @@ NominalCapacity
   </tr>
   </table>
 
-.. _electrochemistry_639b844a_e801_436b_985d_28926129ead6:
+.. tip::
+
+   To ensure meaningful comparisons, nominal capacity values should always be evaluated under matching test conditions.
+
+.. caution::
+
+   While nominal capacity provides a useful reference, actual capacity depends on various factors, including temperature, rate, and state-of-health.
+
+.. raw:: html
+
+   <div id="electrochemistry_639b844a_e801_436b_985d_28926129ead6"></div>
 
 NominalVoltage
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_639b844a_e801_436b_985d_28926129ead6
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_639b844a_e801_436b_985d_28926129ead6
 
 .. raw:: html
 
@@ -17368,12 +18938,18 @@ NominalVoltage
   </tr>
   </table>
 
-.. _electrochemistry_482173dc_7779_4f12_982c_b19f2cda2dac:
+.. caution::
+
+   Nominal voltage may not accurately reflect voltage under extreme loads or temperatures—always check manufacturer specifications.
+
+.. raw:: html
+
+   <div id="electrochemistry_482173dc_7779_4f12_982c_b19f2cda2dac"></div>
 
 NumberOfCellsConnectedInParallel
 --------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_482173dc_7779_4f12_982c_b19f2cda2dac
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_482173dc_7779_4f12_982c_b19f2cda2dac
 
 .. raw:: html
 
@@ -17388,12 +18964,14 @@ NumberOfCellsConnectedInParallel
   </tr>
   </table>
 
-.. _electrochemistry_9d6a52ed_a53d_4327_a391_f173677a4b1d:
+.. raw:: html
+
+   <div id="electrochemistry_9d6a52ed_a53d_4327_a391_f173677a4b1d"></div>
 
 NumberOfCellsConnectedInSeries
 ------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9d6a52ed_a53d_4327_a391_f173677a4b1d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9d6a52ed_a53d_4327_a391_f173677a4b1d
 
 .. raw:: html
 
@@ -17408,12 +18986,14 @@ NumberOfCellsConnectedInSeries
   </tr>
   </table>
 
-.. _electrochemistry_abfadc99_6e43_4d37_9b04_7fc5b0f327ae:
+.. raw:: html
+
+   <div id="electrochemistry_abfadc99_6e43_4d37_9b04_7fc5b0f327ae"></div>
 
 NumberOfElectronsTransferred
 ----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_abfadc99_6e43_4d37_9b04_7fc5b0f327ae
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_abfadc99_6e43_4d37_9b04_7fc5b0f327ae
 
 .. raw:: html
 
@@ -17440,12 +19020,14 @@ NumberOfElectronsTransferred
   </tr>
   </table>
 
-.. _electrochemistry_47608fd0_cc0d_457e_9141_051935029e3a:
+.. raw:: html
+
+   <div id="electrochemistry_47608fd0_cc0d_457e_9141_051935029e3a"></div>
 
 NumberOfFiniteVolumeCells
 -------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_47608fd0_cc0d_457e_9141_051935029e3a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_47608fd0_cc0d_457e_9141_051935029e3a
 
 .. raw:: html
 
@@ -17460,12 +19042,14 @@ NumberOfFiniteVolumeCells
   </tr>
   </table>
 
-.. _electrochemistry_e73586eb_8475_4879_a43e_087c702ea6bf:
+.. raw:: html
+
+   <div id="electrochemistry_e73586eb_8475_4879_a43e_087c702ea6bf"></div>
 
 NumberOfFiniteVolumeCellsInX
 ----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e73586eb_8475_4879_a43e_087c702ea6bf
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e73586eb_8475_4879_a43e_087c702ea6bf
 
 .. raw:: html
 
@@ -17480,12 +19064,14 @@ NumberOfFiniteVolumeCellsInX
   </tr>
   </table>
 
-.. _electrochemistry_c2a85d02_c6b4_42df_b5ed_a9904ec34a5c:
+.. raw:: html
+
+   <div id="electrochemistry_c2a85d02_c6b4_42df_b5ed_a9904ec34a5c"></div>
 
 NumberOfFiniteVolumeCellsInY
 ----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c2a85d02_c6b4_42df_b5ed_a9904ec34a5c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c2a85d02_c6b4_42df_b5ed_a9904ec34a5c
 
 .. raw:: html
 
@@ -17500,12 +19086,14 @@ NumberOfFiniteVolumeCellsInY
   </tr>
   </table>
 
-.. _electrochemistry_a5e00e3a_736c_4200_8d04_ed222fe07037:
+.. raw:: html
+
+   <div id="electrochemistry_a5e00e3a_736c_4200_8d04_ed222fe07037"></div>
 
 NumberOfFiniteVolumeCellsInZ
 ----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a5e00e3a_736c_4200_8d04_ed222fe07037
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a5e00e3a_736c_4200_8d04_ed222fe07037
 
 .. raw:: html
 
@@ -17520,12 +19108,14 @@ NumberOfFiniteVolumeCellsInZ
   </tr>
   </table>
 
-.. _electrochemistry_88dd2bce_fb17_4705_905d_892681812290:
+.. raw:: html
+
+   <div id="electrochemistry_88dd2bce_fb17_4705_905d_892681812290"></div>
 
 NumberOfIterations
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_88dd2bce_fb17_4705_905d_892681812290
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_88dd2bce_fb17_4705_905d_892681812290
 
 .. raw:: html
 
@@ -17536,12 +19126,14 @@ NumberOfIterations
   </tr>
   </table>
 
-.. _electrochemistry_03a6ce70_5085_4683_bb4e_fc3c18f7143a:
+.. raw:: html
+
+   <div id="electrochemistry_03a6ce70_5085_4683_bb4e_fc3c18f7143a"></div>
 
 OhmicOverpotential
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_03a6ce70_5085_4683_bb4e_fc3c18f7143a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_03a6ce70_5085_4683_bb4e_fc3c18f7143a
 
 .. raw:: html
 
@@ -17564,12 +19156,14 @@ OhmicOverpotential
   </tr>
   </table>
 
-.. _electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b:
+.. raw:: html
+
+   <div id="electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b"></div>
 
 OpenCircuitVoltage
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b
 
 .. raw:: html
 
@@ -17608,12 +19202,14 @@ OpenCircuitVoltage
   </tr>
   </table>
 
-.. _electrochemistry_1cd1d777_e67b_47eb_81f1_edac35d9f2c6:
+.. raw:: html
+
+   <div id="electrochemistry_1cd1d777_e67b_47eb_81f1_edac35d9f2c6"></div>
 
 Overpotential
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1cd1d777_e67b_47eb_81f1_edac35d9f2c6
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1cd1d777_e67b_47eb_81f1_edac35d9f2c6
 
 .. raw:: html
 
@@ -17656,12 +19252,18 @@ Overpotential
   </tr>
   </table>
 
-.. _electrochemistry_c4120ce7_f1ff_4917_b59e_002454a65040:
+.. note::
+
+   Overpotential is often divided into different contributions: activation overpotential, ohmic overpotential, and concentration overpotential.
+
+.. raw:: html
+
+   <div id="electrochemistry_c4120ce7_f1ff_4917_b59e_002454a65040"></div>
 
 PRate
 -----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c4120ce7_f1ff_4917_b59e_002454a65040
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c4120ce7_f1ff_4917_b59e_002454a65040
 
 .. raw:: html
 
@@ -17680,12 +19282,14 @@ PRate
   </tr>
   </table>
 
-.. _electrochemistry_b92e382f_5109_4f60_ab5e_c89d340419a9:
+.. raw:: html
+
+   <div id="electrochemistry_b92e382f_5109_4f60_ab5e_c89d340419a9"></div>
 
 ParticleRadius
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b92e382f_5109_4f60_ab5e_c89d340419a9
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b92e382f_5109_4f60_ab5e_c89d340419a9
 
 .. raw:: html
 
@@ -17704,12 +19308,14 @@ ParticleRadius
   </tr>
   </table>
 
-.. _electrochemistry_382b10dc_83aa_4e77_a1d5_1edd06fd1e05:
+.. raw:: html
+
+   <div id="electrochemistry_382b10dc_83aa_4e77_a1d5_1edd06fd1e05"></div>
 
 PeakCurrent
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_382b10dc_83aa_4e77_a1d5_1edd06fd1e05
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_382b10dc_83aa_4e77_a1d5_1edd06fd1e05
 
 .. raw:: html
 
@@ -17732,12 +19338,14 @@ PeakCurrent
   </tr>
   </table>
 
-.. _electrochemistry_e4a221e0_afc9_4464_91d4_e0c8ecdf79e8:
+.. raw:: html
+
+   <div id="electrochemistry_e4a221e0_afc9_4464_91d4_e0c8ecdf79e8"></div>
 
 PeakPotential
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e4a221e0_afc9_4464_91d4_e0c8ecdf79e8
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e4a221e0_afc9_4464_91d4_e0c8ecdf79e8
 
 .. raw:: html
 
@@ -17760,12 +19368,14 @@ PeakPotential
   </tr>
   </table>
 
-.. _electrochemistry_cf386c1e_e62b_43ef_9b0e_e5e58935d63f:
+.. raw:: html
+
+   <div id="electrochemistry_cf386c1e_e62b_43ef_9b0e_e5e58935d63f"></div>
 
 PercentQuantity
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cf386c1e_e62b_43ef_9b0e_e5e58935d63f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cf386c1e_e62b_43ef_9b0e_e5e58935d63f
 
 .. raw:: html
 
@@ -17780,12 +19390,14 @@ PercentQuantity
   </tr>
   </table>
 
-.. _electrochemistry_8430be19_6cae_4a15_a570_3c15d0d190eb:
+.. raw:: html
+
+   <div id="electrochemistry_8430be19_6cae_4a15_a570_3c15d0d190eb"></div>
 
 PercentUnit
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8430be19_6cae_4a15_a570_3c15d0d190eb
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8430be19_6cae_4a15_a570_3c15d0d190eb
 
 .. raw:: html
 
@@ -17796,12 +19408,14 @@ PercentUnit
   </tr>
   </table>
 
-.. _electrochemistry_16a5de33_a2ca_4563_80d4_6caeb08d97ca:
+.. raw:: html
+
+   <div id="electrochemistry_16a5de33_a2ca_4563_80d4_6caeb08d97ca"></div>
 
 Polarity
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_16a5de33_a2ca_4563_80d4_6caeb08d97ca
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_16a5de33_a2ca_4563_80d4_6caeb08d97ca
 
 .. raw:: html
 
@@ -17820,12 +19434,14 @@ Polarity
   </tr>
   </table>
 
-.. _electrochemistry_80920875_62ac_4e29_b970_ec4316e76aa5:
+.. raw:: html
+
+   <div id="electrochemistry_80920875_62ac_4e29_b970_ec4316e76aa5"></div>
 
 PositiveElectrodeActiveMaterialGuestStoichiometricCoefficientAtSOC0
 -------------------------------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_80920875_62ac_4e29_b970_ec4316e76aa5
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_80920875_62ac_4e29_b970_ec4316e76aa5
 
 .. raw:: html
 
@@ -17840,12 +19456,14 @@ PositiveElectrodeActiveMaterialGuestStoichiometricCoefficientAtSOC0
   </tr>
   </table>
 
-.. _electrochemistry_99041897_5c08_40ed_9118_3e77e9b0e191:
+.. raw:: html
+
+   <div id="electrochemistry_99041897_5c08_40ed_9118_3e77e9b0e191"></div>
 
 PositiveElectrodeActiveMaterialGuestStoichiometricCoefficientAtSOC100
 ---------------------------------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_99041897_5c08_40ed_9118_3e77e9b0e191
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_99041897_5c08_40ed_9118_3e77e9b0e191
 
 .. raw:: html
 
@@ -17860,12 +19478,14 @@ PositiveElectrodeActiveMaterialGuestStoichiometricCoefficientAtSOC100
   </tr>
   </table>
 
-.. _electrochemistry_c69a9d55_823f_4113_a305_ebc89dde7de3:
+.. raw:: html
+
+   <div id="electrochemistry_c69a9d55_823f_4113_a305_ebc89dde7de3"></div>
 
 PositiveElectrodeActiveMaterialMaximumGuestConcentration
 --------------------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c69a9d55_823f_4113_a305_ebc89dde7de3
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c69a9d55_823f_4113_a305_ebc89dde7de3
 
 .. raw:: html
 
@@ -17880,12 +19500,14 @@ PositiveElectrodeActiveMaterialMaximumGuestConcentration
   </tr>
   </table>
 
-.. _electrochemistry_52ab4fdd_f945_4541_9ce6_cd6fd3a05861:
+.. raw:: html
+
+   <div id="electrochemistry_52ab4fdd_f945_4541_9ce6_cd6fd3a05861"></div>
 
 PositiveElectrodeActiveMaterialOpenCircuitVoltage
 -------------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_52ab4fdd_f945_4541_9ce6_cd6fd3a05861
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_52ab4fdd_f945_4541_9ce6_cd6fd3a05861
 
 .. raw:: html
 
@@ -17900,12 +19522,14 @@ PositiveElectrodeActiveMaterialOpenCircuitVoltage
   </tr>
   </table>
 
-.. _electrochemistry_58400817_3282_46e5_942e_3a1538631403:
+.. raw:: html
+
+   <div id="electrochemistry_58400817_3282_46e5_942e_3a1538631403"></div>
 
 PositiveElectrodeActiveMaterialParticleRadius
 ---------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_58400817_3282_46e5_942e_3a1538631403
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_58400817_3282_46e5_942e_3a1538631403
 
 .. raw:: html
 
@@ -17920,12 +19544,14 @@ PositiveElectrodeActiveMaterialParticleRadius
   </tr>
   </table>
 
-.. _electrochemistry_0a1e73c5_e91b_4365_88d4_1e1f476bf776:
+.. raw:: html
+
+   <div id="electrochemistry_0a1e73c5_e91b_4365_88d4_1e1f476bf776"></div>
 
 PositiveElectrodeActiveMaterialVolumetricSurfaceArea
 ----------------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0a1e73c5_e91b_4365_88d4_1e1f476bf776
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0a1e73c5_e91b_4365_88d4_1e1f476bf776
 
 .. raw:: html
 
@@ -17940,12 +19566,14 @@ PositiveElectrodeActiveMaterialVolumetricSurfaceArea
   </tr>
   </table>
 
-.. _electrochemistry_7481c4c9_c247_4248_a045_a1077230acba:
+.. raw:: html
+
+   <div id="electrochemistry_7481c4c9_c247_4248_a045_a1077230acba"></div>
 
 PositiveElectrodeCoatingPorosity
 --------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7481c4c9_c247_4248_a045_a1077230acba
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7481c4c9_c247_4248_a045_a1077230acba
 
 .. raw:: html
 
@@ -17956,12 +19584,14 @@ PositiveElectrodeCoatingPorosity
   </tr>
   </table>
 
-.. _electrochemistry_62f5beeb_6d1e_442a_8048_3ebe08882964:
+.. raw:: html
+
+   <div id="electrochemistry_62f5beeb_6d1e_442a_8048_3ebe08882964"></div>
 
 PositiveElectrodeCoatingThickness
 ---------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_62f5beeb_6d1e_442a_8048_3ebe08882964
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_62f5beeb_6d1e_442a_8048_3ebe08882964
 
 .. raw:: html
 
@@ -17976,12 +19606,14 @@ PositiveElectrodeCoatingThickness
   </tr>
   </table>
 
-.. _electrochemistry_43f77743_1af6_4a0f_9cc6_285c2a450549:
+.. raw:: html
+
+   <div id="electrochemistry_43f77743_1af6_4a0f_9cc6_285c2a450549"></div>
 
 PositiveElectrodeElectronicConductivity
 ---------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_43f77743_1af6_4a0f_9cc6_285c2a450549
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_43f77743_1af6_4a0f_9cc6_285c2a450549
 
 .. raw:: html
 
@@ -17996,12 +19628,14 @@ PositiveElectrodeElectronicConductivity
   </tr>
   </table>
 
-.. _electrochemistry_9d558b56_d3b8_429a_a4e2_d2ffab895e42:
+.. raw:: html
+
+   <div id="electrochemistry_9d558b56_d3b8_429a_a4e2_d2ffab895e42"></div>
 
 PositiveElectrodeEntropicChangeCoefficient
 ------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9d558b56_d3b8_429a_a4e2_d2ffab895e42
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9d558b56_d3b8_429a_a4e2_d2ffab895e42
 
 .. raw:: html
 
@@ -18016,12 +19650,14 @@ PositiveElectrodeEntropicChangeCoefficient
   </tr>
   </table>
 
-.. _electrochemistry_404126e0_cb1b_44e4_98dc_2474185767a1:
+.. raw:: html
+
+   <div id="electrochemistry_404126e0_cb1b_44e4_98dc_2474185767a1"></div>
 
 PositiveElectrodeReactionRateConstant
 -------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_404126e0_cb1b_44e4_98dc_2474185767a1
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_404126e0_cb1b_44e4_98dc_2474185767a1
 
 .. raw:: html
 
@@ -18036,12 +19672,14 @@ PositiveElectrodeReactionRateConstant
   </tr>
   </table>
 
-.. _electrochemistry_56b9cd1f_5397_4385_9292_30d93d9e7a05:
+.. raw:: html
+
+   <div id="electrochemistry_56b9cd1f_5397_4385_9292_30d93d9e7a05"></div>
 
 PostiveElectrodeActivationEnergyOfReaction
 ------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_56b9cd1f_5397_4385_9292_30d93d9e7a05
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_56b9cd1f_5397_4385_9292_30d93d9e7a05
 
 .. raw:: html
 
@@ -18056,12 +19694,14 @@ PostiveElectrodeActivationEnergyOfReaction
   </tr>
   </table>
 
-.. _electrochemistry_264f40d1_17c9_4bc7_9c47_5cfb18132278:
+.. raw:: html
+
+   <div id="electrochemistry_264f40d1_17c9_4bc7_9c47_5cfb18132278"></div>
 
 PotentialScanRate
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_264f40d1_17c9_4bc7_9c47_5cfb18132278
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_264f40d1_17c9_4bc7_9c47_5cfb18132278
 
 .. raw:: html
 
@@ -18080,12 +19720,14 @@ PotentialScanRate
   </tr>
   </table>
 
-.. _electrochemistry_136744ff_0563_4df7_aa03_4219d70392a0:
+.. raw:: html
+
+   <div id="electrochemistry_136744ff_0563_4df7_aa03_4219d70392a0"></div>
 
 PotentiometricSelectivityCoefficient
 ------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_136744ff_0563_4df7_aa03_4219d70392a0
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_136744ff_0563_4df7_aa03_4219d70392a0
 
 .. raw:: html
 
@@ -18112,12 +19754,14 @@ PotentiometricSelectivityCoefficient
   </tr>
   </table>
 
-.. _electrochemistry_a7eb870c_4ef7_4ccd_85e8_4b7b726d7a2a:
+.. raw:: html
+
+   <div id="electrochemistry_a7eb870c_4ef7_4ccd_85e8_4b7b726d7a2a"></div>
 
 PowerDensity
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a7eb870c_4ef7_4ccd_85e8_4b7b726d7a2a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a7eb870c_4ef7_4ccd_85e8_4b7b726d7a2a
 
 .. raw:: html
 
@@ -18136,12 +19780,14 @@ PowerDensity
   </tr>
   </table>
 
-.. _electrochemistry_83fbc038_0c2e_4d04_91d7_cdf30f8a5535:
+.. raw:: html
+
+   <div id="electrochemistry_83fbc038_0c2e_4d04_91d7_cdf30f8a5535"></div>
 
 Prismatic
 ---------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_83fbc038_0c2e_4d04_91d7_cdf30f8a5535
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_83fbc038_0c2e_4d04_91d7_cdf30f8a5535
 
 .. raw:: html
 
@@ -18160,12 +19806,14 @@ Prismatic
   </tr>
   </table>
 
-.. _electrochemistry_346519a4_006c_496d_8f36_74e38814ed2d:
+.. raw:: html
+
+   <div id="electrochemistry_346519a4_006c_496d_8f36_74e38814ed2d"></div>
 
 PulseCurrent
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_346519a4_006c_496d_8f36_74e38814ed2d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_346519a4_006c_496d_8f36_74e38814ed2d
 
 .. raw:: html
 
@@ -18188,12 +19836,14 @@ PulseCurrent
   </tr>
   </table>
 
-.. _electrochemistry_3cd0e74e_292c_48ed_a831_4cb8753d9a56:
+.. raw:: html
+
+   <div id="electrochemistry_3cd0e74e_292c_48ed_a831_4cb8753d9a56"></div>
 
 PulseDuration
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3cd0e74e_292c_48ed_a831_4cb8753d9a56
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3cd0e74e_292c_48ed_a831_4cb8753d9a56
 
 .. raw:: html
 
@@ -18220,12 +19870,14 @@ PulseDuration
   </tr>
   </table>
 
-.. _electrochemistry_762ba55f_9b56_4c31_865f_cff2e7d0a94b:
+.. raw:: html
+
+   <div id="electrochemistry_762ba55f_9b56_4c31_865f_cff2e7d0a94b"></div>
 
 PulseMagnitude
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_762ba55f_9b56_4c31_865f_cff2e7d0a94b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_762ba55f_9b56_4c31_865f_cff2e7d0a94b
 
 .. raw:: html
 
@@ -18240,12 +19892,14 @@ PulseMagnitude
   </tr>
   </table>
 
-.. _electrochemistry_4d2b102b_3515_4591_b079_69232c44f9dc:
+.. raw:: html
+
+   <div id="electrochemistry_4d2b102b_3515_4591_b079_69232c44f9dc"></div>
 
 PulseVoltage
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4d2b102b_3515_4591_b079_69232c44f9dc
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4d2b102b_3515_4591_b079_69232c44f9dc
 
 .. raw:: html
 
@@ -18264,12 +19918,14 @@ PulseVoltage
   </tr>
   </table>
 
-.. _electrochemistry_2705525b_7512_48bf_825b_f2d0409bede4:
+.. raw:: html
+
+   <div id="electrochemistry_2705525b_7512_48bf_825b_f2d0409bede4"></div>
 
 QuarterTransitionTimePotential
 ------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2705525b_7512_48bf_825b_f2d0409bede4
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2705525b_7512_48bf_825b_f2d0409bede4
 
 .. raw:: html
 
@@ -18288,12 +19944,14 @@ QuarterTransitionTimePotential
   </tr>
   </table>
 
-.. _electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26:
+.. raw:: html
+
+   <div id="electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26"></div>
 
 RatedCapacity
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26
 
 .. raw:: html
 
@@ -18324,12 +19982,22 @@ RatedCapacity
   </tr>
   </table>
 
-.. _electrochemistry_da215d1a_196a_465f_9de8_89f6fbb76982:
+.. tip::
+
+   The value of rated capacity should be reported together with information on the conditions under which it was determined (e.g. voltage limits, applied current, temperature).
+
+.. caution::
+
+   The value for rated capacity does not necessarily represent the actual capacity in real-world usage, as factors like temperature, rate, and state-of-health affect the effective capacity.
+
+.. raw:: html
+
+   <div id="electrochemistry_da215d1a_196a_465f_9de8_89f6fbb76982"></div>
 
 RatedEnergy
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_da215d1a_196a_465f_9de8_89f6fbb76982
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_da215d1a_196a_465f_9de8_89f6fbb76982
 
 .. raw:: html
 
@@ -18348,12 +20016,14 @@ RatedEnergy
   </tr>
   </table>
 
-.. _electrochemistry_f4fadc4e_ca7d_4e4e_89cf_eacf45b4041e:
+.. raw:: html
+
+   <div id="electrochemistry_f4fadc4e_ca7d_4e4e_89cf_eacf45b4041e"></div>
 
 ReactionOverpotential
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f4fadc4e_ca7d_4e4e_89cf_eacf45b4041e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f4fadc4e_ca7d_4e4e_89cf_eacf45b4041e
 
 .. raw:: html
 
@@ -18380,12 +20050,14 @@ ReactionOverpotential
   </tr>
   </table>
 
-.. _electrochemistry_e2514bf9_d012_4990_b68b_6f37443f18f6:
+.. raw:: html
+
+   <div id="electrochemistry_e2514bf9_d012_4990_b68b_6f37443f18f6"></div>
 
 ReactionRate
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e2514bf9_d012_4990_b68b_6f37443f18f6
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e2514bf9_d012_4990_b68b_6f37443f18f6
 
 .. raw:: html
 
@@ -18412,12 +20084,14 @@ ReactionRate
   </tr>
   </table>
 
-.. _electrochemistry_0335e3f6_d1d8_4daa_8376_a9285f1bc9f1:
+.. raw:: html
+
+   <div id="electrochemistry_0335e3f6_d1d8_4daa_8376_a9285f1bc9f1"></div>
 
 ReactionRateConstant
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0335e3f6_d1d8_4daa_8376_a9285f1bc9f1
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0335e3f6_d1d8_4daa_8376_a9285f1bc9f1
 
 .. raw:: html
 
@@ -18444,12 +20118,14 @@ ReactionRateConstant
   </tr>
   </table>
 
-.. _electrochemistry_abf986d2_90d5_4746_b42b_89dc7cc1bf0f:
+.. raw:: html
+
+   <div id="electrochemistry_abf986d2_90d5_4746_b42b_89dc7cc1bf0f"></div>
 
 RealElectricImpedance
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_abf986d2_90d5_4746_b42b_89dc7cc1bf0f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_abf986d2_90d5_4746_b42b_89dc7cc1bf0f
 
 .. raw:: html
 
@@ -18468,12 +20144,14 @@ RealElectricImpedance
   </tr>
   </table>
 
-.. _electrochemistry_838a927f_775e_4c6d_8e39_7865548608c2:
+.. raw:: html
+
+   <div id="electrochemistry_838a927f_775e_4c6d_8e39_7865548608c2"></div>
 
 Record
 ------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_838a927f_775e_4c6d_8e39_7865548608c2
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_838a927f_775e_4c6d_8e39_7865548608c2
 
 .. raw:: html
 
@@ -18488,12 +20166,14 @@ Record
   </tr>
   </table>
 
-.. _electrochemistry_73f169de_d189_4d7c_893f_a2549771825c:
+.. raw:: html
+
+   <div id="electrochemistry_73f169de_d189_4d7c_893f_a2549771825c"></div>
 
 RecoveredCapacity
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_73f169de_d189_4d7c_893f_a2549771825c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_73f169de_d189_4d7c_893f_a2549771825c
 
 .. raw:: html
 
@@ -18512,12 +20192,14 @@ RecoveredCapacity
   </tr>
   </table>
 
-.. _electrochemistry_db40df7e_1aa5_49a7_85cb_2aa2c1c70489:
+.. raw:: html
+
+   <div id="electrochemistry_db40df7e_1aa5_49a7_85cb_2aa2c1c70489"></div>
 
 ReferenceThermodynamicTemperature
 ---------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_db40df7e_1aa5_49a7_85cb_2aa2c1c70489
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_db40df7e_1aa5_49a7_85cb_2aa2c1c70489
 
 .. raw:: html
 
@@ -18528,12 +20210,14 @@ ReferenceThermodynamicTemperature
   </tr>
   </table>
 
-.. _electrochemistry_526bf81a_0572_49ff_a8cc_85efc343c1c2:
+.. raw:: html
+
+   <div id="electrochemistry_526bf81a_0572_49ff_a8cc_85efc343c1c2"></div>
 
 ResidualActiveMass
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_526bf81a_0572_49ff_a8cc_85efc343c1c2
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_526bf81a_0572_49ff_a8cc_85efc343c1c2
 
 .. raw:: html
 
@@ -18552,12 +20236,14 @@ ResidualActiveMass
   </tr>
   </table>
 
-.. _electrochemistry_d47985f1_6bd7_4c4f_894f_13a6cab38bb5:
+.. raw:: html
+
+   <div id="electrochemistry_d47985f1_6bd7_4c4f_894f_13a6cab38bb5"></div>
 
 ResidualCapacity
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d47985f1_6bd7_4c4f_894f_13a6cab38bb5
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d47985f1_6bd7_4c4f_894f_13a6cab38bb5
 
 .. raw:: html
 
@@ -18576,12 +20262,14 @@ ResidualCapacity
   </tr>
   </table>
 
-.. _electrochemistry_07e219c3_890f_488f_bd96_bee8e445d764:
+.. raw:: html
+
+   <div id="electrochemistry_07e219c3_890f_488f_bd96_bee8e445d764"></div>
 
 ResidualCurrent
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_07e219c3_890f_488f_bd96_bee8e445d764
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_07e219c3_890f_488f_bd96_bee8e445d764
 
 .. raw:: html
 
@@ -18608,12 +20296,14 @@ ResidualCurrent
   </tr>
   </table>
 
-.. _electrochemistry_1a104474_c326_4a29_ac26_26a05ac8f72c:
+.. raw:: html
+
+   <div id="electrochemistry_1a104474_c326_4a29_ac26_26a05ac8f72c"></div>
 
 ResponseTimeAtAnISE
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1a104474_c326_4a29_ac26_26a05ac8f72c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1a104474_c326_4a29_ac26_26a05ac8f72c
 
 .. raw:: html
 
@@ -18632,12 +20322,14 @@ ResponseTimeAtAnISE
   </tr>
   </table>
 
-.. _electrochemistry_2678a656_4a27_4706_8dde_b0a93e9b92fa:
+.. raw:: html
+
+   <div id="electrochemistry_2678a656_4a27_4706_8dde_b0a93e9b92fa"></div>
 
 RestingTime
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2678a656_4a27_4706_8dde_b0a93e9b92fa
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2678a656_4a27_4706_8dde_b0a93e9b92fa
 
 .. raw:: html
 
@@ -18656,12 +20348,14 @@ RestingTime
   </tr>
   </table>
 
-.. _electrochemistry_b8d4042d_329a_450f_9088_2fc0e16a8667:
+.. raw:: html
+
+   <div id="electrochemistry_b8d4042d_329a_450f_9088_2fc0e16a8667"></div>
 
 RetainedCapacity
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b8d4042d_329a_450f_9088_2fc0e16a8667
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b8d4042d_329a_450f_9088_2fc0e16a8667
 
 .. raw:: html
 
@@ -18676,12 +20370,14 @@ RetainedCapacity
   </tr>
   </table>
 
-.. _electrochemistry_1900143f_cbc0_415f_9057_9382022a7bfe:
+.. raw:: html
+
+   <div id="electrochemistry_1900143f_cbc0_415f_9057_9382022a7bfe"></div>
 
 RotatingDiskSpeed
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1900143f_cbc0_415f_9057_9382022a7bfe
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1900143f_cbc0_415f_9057_9382022a7bfe
 
 .. raw:: html
 
@@ -18696,12 +20392,14 @@ RotatingDiskSpeed
   </tr>
   </table>
 
-.. _electrochemistry_52ac73c7_763c_4fda_93cd_a2db9dfc2dab:
+.. raw:: html
+
+   <div id="electrochemistry_52ac73c7_763c_4fda_93cd_a2db9dfc2dab"></div>
 
 SamplingInterval
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_52ac73c7_763c_4fda_93cd_a2db9dfc2dab
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_52ac73c7_763c_4fda_93cd_a2db9dfc2dab
 
 .. raw:: html
 
@@ -18720,12 +20418,14 @@ SamplingInterval
   </tr>
   </table>
 
-.. _electrochemistry_ecb6dfdf_bd3d_4339_8a1c_d32abbef30ba:
+.. raw:: html
+
+   <div id="electrochemistry_ecb6dfdf_bd3d_4339_8a1c_d32abbef30ba"></div>
 
 SamplingTime
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ecb6dfdf_bd3d_4339_8a1c_d32abbef30ba
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ecb6dfdf_bd3d_4339_8a1c_d32abbef30ba
 
 .. raw:: html
 
@@ -18744,12 +20444,14 @@ SamplingTime
   </tr>
   </table>
 
-.. _electrochemistry_a4858e4d_dd3b_48ce_97ba_3eeb8571b633:
+.. raw:: html
+
+   <div id="electrochemistry_a4858e4d_dd3b_48ce_97ba_3eeb8571b633"></div>
 
 SeparatorPorosity
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a4858e4d_dd3b_48ce_97ba_3eeb8571b633
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a4858e4d_dd3b_48ce_97ba_3eeb8571b633
 
 .. raw:: html
 
@@ -18760,12 +20462,14 @@ SeparatorPorosity
   </tr>
   </table>
 
-.. _electrochemistry_47288277_4aed_447e_b659_0c975d031406:
+.. raw:: html
+
+   <div id="electrochemistry_47288277_4aed_447e_b659_0c975d031406"></div>
 
 SeparatorThickness
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_47288277_4aed_447e_b659_0c975d031406
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_47288277_4aed_447e_b659_0c975d031406
 
 .. raw:: html
 
@@ -18776,12 +20480,14 @@ SeparatorThickness
   </tr>
   </table>
 
-.. _electrochemistry_e8ec76bf_2a60_4982_8cde_02dfbd2e626f:
+.. raw:: html
+
+   <div id="electrochemistry_e8ec76bf_2a60_4982_8cde_02dfbd2e626f"></div>
 
 ShelfLife
 ---------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e8ec76bf_2a60_4982_8cde_02dfbd2e626f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e8ec76bf_2a60_4982_8cde_02dfbd2e626f
 
 .. raw:: html
 
@@ -18804,12 +20510,14 @@ ShelfLife
   </tr>
   </table>
 
-.. _electrochemistry_75c28dc8_3d7d_4b6e_861e_6c8b1ad7d644:
+.. raw:: html
+
+   <div id="electrochemistry_75c28dc8_3d7d_4b6e_861e_6c8b1ad7d644"></div>
 
 ShortCircuitCurrent
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_75c28dc8_3d7d_4b6e_861e_6c8b1ad7d644
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_75c28dc8_3d7d_4b6e_861e_6c8b1ad7d644
 
 .. raw:: html
 
@@ -18832,12 +20540,14 @@ ShortCircuitCurrent
   </tr>
   </table>
 
-.. _electrochemistry_68059d94_4c21_4065_b329_07faeebc7e87:
+.. raw:: html
+
+   <div id="electrochemistry_68059d94_4c21_4065_b329_07faeebc7e87"></div>
 
 SignalReferencePotential
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_68059d94_4c21_4065_b329_07faeebc7e87
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_68059d94_4c21_4065_b329_07faeebc7e87
 
 .. raw:: html
 
@@ -18860,12 +20570,14 @@ SignalReferencePotential
   </tr>
   </table>
 
-.. _electrochemistry_1e3dc60d_dd6b_47d6_8161_70004fc5ee30:
+.. raw:: html
+
+   <div id="electrochemistry_1e3dc60d_dd6b_47d6_8161_70004fc5ee30"></div>
 
 SpecificCapacity
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1e3dc60d_dd6b_47d6_8161_70004fc5ee30
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1e3dc60d_dd6b_47d6_8161_70004fc5ee30
 
 .. raw:: html
 
@@ -18896,12 +20608,14 @@ SpecificCapacity
   </tr>
   </table>
 
-.. _electrochemistry_c762a928_5a74_46fd_9929_4ac2d7a3a8d7:
+.. raw:: html
+
+   <div id="electrochemistry_c762a928_5a74_46fd_9929_4ac2d7a3a8d7"></div>
 
 SpecificPower
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c762a928_5a74_46fd_9929_4ac2d7a3a8d7
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c762a928_5a74_46fd_9929_4ac2d7a3a8d7
 
 .. raw:: html
 
@@ -18916,12 +20630,14 @@ SpecificPower
   </tr>
   </table>
 
-.. _electrochemistry_cf54e7c1_f359_4715_b61d_0350b890d597:
+.. raw:: html
+
+   <div id="electrochemistry_cf54e7c1_f359_4715_b61d_0350b890d597"></div>
 
 SpecificSurfaceArea
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cf54e7c1_f359_4715_b61d_0350b890d597
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cf54e7c1_f359_4715_b61d_0350b890d597
 
 .. raw:: html
 
@@ -18948,12 +20664,14 @@ SpecificSurfaceArea
   </tr>
   </table>
 
-.. _electrochemistry_327eb3e1_f74a_4076_96de_5a2e3f63cb65:
+.. raw:: html
+
+   <div id="electrochemistry_327eb3e1_f74a_4076_96de_5a2e3f63cb65"></div>
 
 SquareWaveCurrent
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_327eb3e1_f74a_4076_96de_5a2e3f63cb65
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_327eb3e1_f74a_4076_96de_5a2e3f63cb65
 
 .. raw:: html
 
@@ -18976,12 +20694,14 @@ SquareWaveCurrent
   </tr>
   </table>
 
-.. _electrochemistry_7fc10197_41d9_4c1e_a107_928f03eb2d36:
+.. raw:: html
+
+   <div id="electrochemistry_7fc10197_41d9_4c1e_a107_928f03eb2d36"></div>
 
 StandardElectrodePotential
 --------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7fc10197_41d9_4c1e_a107_928f03eb2d36
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7fc10197_41d9_4c1e_a107_928f03eb2d36
 
 .. raw:: html
 
@@ -19013,12 +20733,14 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
   </tr>
   </table>
 
-.. _electrochemistry_8b2aaa50_bbe1_45da_8778_8898326246a2:
+.. raw:: html
+
+   <div id="electrochemistry_8b2aaa50_bbe1_45da_8778_8898326246a2"></div>
 
 StateOfCharge
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8b2aaa50_bbe1_45da_8778_8898326246a2
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8b2aaa50_bbe1_45da_8778_8898326246a2
 
 .. raw:: html
 
@@ -19041,12 +20763,14 @@ StateOfCharge
   </tr>
   </table>
 
-.. _electrochemistry_a7a4614f_2426_46f3_8475_cda4a9fabfce:
+.. raw:: html
+
+   <div id="electrochemistry_a7a4614f_2426_46f3_8475_cda4a9fabfce"></div>
 
 StateOfHealth
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a7a4614f_2426_46f3_8475_cda4a9fabfce
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a7a4614f_2426_46f3_8475_cda4a9fabfce
 
 .. raw:: html
 
@@ -19061,12 +20785,14 @@ StateOfHealth
   </tr>
   </table>
 
-.. _electrochemistry_ae108db7_8765_4329_9908_059277dee586:
+.. raw:: html
+
+   <div id="electrochemistry_ae108db7_8765_4329_9908_059277dee586"></div>
 
 StepCapacity
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ae108db7_8765_4329_9908_059277dee586
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ae108db7_8765_4329_9908_059277dee586
 
 .. raw:: html
 
@@ -19081,12 +20807,14 @@ StepCapacity
   </tr>
   </table>
 
-.. _electrochemistry_85e39686_9658_4c74_bb91_a935704c174a:
+.. raw:: html
+
+   <div id="electrochemistry_85e39686_9658_4c74_bb91_a935704c174a"></div>
 
 StepDuration
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_85e39686_9658_4c74_bb91_a935704c174a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_85e39686_9658_4c74_bb91_a935704c174a
 
 .. raw:: html
 
@@ -19101,12 +20829,14 @@ StepDuration
   </tr>
   </table>
 
-.. _electrochemistry_d78b696d_9832_4352_a264_28a2ea7d82e4:
+.. raw:: html
+
+   <div id="electrochemistry_d78b696d_9832_4352_a264_28a2ea7d82e4"></div>
 
 StepIndex
 ---------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d78b696d_9832_4352_a264_28a2ea7d82e4
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d78b696d_9832_4352_a264_28a2ea7d82e4
 
 .. raw:: html
 
@@ -19125,12 +20855,14 @@ StepIndex
   </tr>
   </table>
 
-.. _electrochemistry_6769536b_5320_4b48_a2d8_ac285ec635a8:
+.. raw:: html
+
+   <div id="electrochemistry_6769536b_5320_4b48_a2d8_ac285ec635a8"></div>
 
 StepSignalCurrent
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6769536b_5320_4b48_a2d8_ac285ec635a8
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6769536b_5320_4b48_a2d8_ac285ec635a8
 
 .. raw:: html
 
@@ -19145,12 +20877,14 @@ StepSignalCurrent
   </tr>
   </table>
 
-.. _electrochemistry_0bf1ed19_2fc9_4e6d_87ec_62015985a9a6:
+.. raw:: html
+
+   <div id="electrochemistry_0bf1ed19_2fc9_4e6d_87ec_62015985a9a6"></div>
 
 StepSignalVoltage
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0bf1ed19_2fc9_4e6d_87ec_62015985a9a6
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0bf1ed19_2fc9_4e6d_87ec_62015985a9a6
 
 .. raw:: html
 
@@ -19165,12 +20899,14 @@ StepSignalVoltage
   </tr>
   </table>
 
-.. _electrochemistry_80ca00f8_c891_4493_87a2_7d39b9d1e098:
+.. raw:: html
+
+   <div id="electrochemistry_80ca00f8_c891_4493_87a2_7d39b9d1e098"></div>
 
 StepTime
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_80ca00f8_c891_4493_87a2_7d39b9d1e098
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_80ca00f8_c891_4493_87a2_7d39b9d1e098
 
 .. raw:: html
 
@@ -19185,12 +20921,14 @@ StepTime
   </tr>
   </table>
 
-.. _electrochemistry_2d58b059_2ef0_418e_9337_13aa2de4b07f:
+.. raw:: html
+
+   <div id="electrochemistry_2d58b059_2ef0_418e_9337_13aa2de4b07f"></div>
 
 StepType
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2d58b059_2ef0_418e_9337_13aa2de4b07f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2d58b059_2ef0_418e_9337_13aa2de4b07f
 
 .. raw:: html
 
@@ -19209,12 +20947,14 @@ StepType
   </tr>
   </table>
 
-.. _electrochemistry_f0667139_6428_4e3d_ac0d_08c1dd7f36ea:
+.. raw:: html
+
+   <div id="electrochemistry_f0667139_6428_4e3d_ac0d_08c1dd7f36ea"></div>
 
 StoichiometricCoefficient
 -------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f0667139_6428_4e3d_ac0d_08c1dd7f36ea
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f0667139_6428_4e3d_ac0d_08c1dd7f36ea
 
 .. raw:: html
 
@@ -19237,12 +20977,14 @@ StoichiometricCoefficient
   </tr>
   </table>
 
-.. _electrochemistry_f22bd1ec_faca_4335_92a5_a1687154c622:
+.. raw:: html
+
+   <div id="electrochemistry_f22bd1ec_faca_4335_92a5_a1687154c622"></div>
 
 StoichiometricCoefficientAtSOC0
 -------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f22bd1ec_faca_4335_92a5_a1687154c622
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f22bd1ec_faca_4335_92a5_a1687154c622
 
 .. raw:: html
 
@@ -19261,12 +21003,14 @@ StoichiometricCoefficientAtSOC0
   </tr>
   </table>
 
-.. _electrochemistry_38ab058e_3912_48c2_a7eb_76d25d000820:
+.. raw:: html
+
+   <div id="electrochemistry_38ab058e_3912_48c2_a7eb_76d25d000820"></div>
 
 StoichiometricCoefficientAtSOC100
 ---------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_38ab058e_3912_48c2_a7eb_76d25d000820
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_38ab058e_3912_48c2_a7eb_76d25d000820
 
 .. raw:: html
 
@@ -19285,12 +21029,14 @@ StoichiometricCoefficientAtSOC100
   </tr>
   </table>
 
-.. _electrochemistry_46376e5d_9627_4514_9881_9e62083625c3:
+.. raw:: html
+
+   <div id="electrochemistry_46376e5d_9627_4514_9881_9e62083625c3"></div>
 
 StoredEnergy
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_46376e5d_9627_4514_9881_9e62083625c3
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_46376e5d_9627_4514_9881_9e62083625c3
 
 .. raw:: html
 
@@ -19317,12 +21063,14 @@ StoredEnergy
   </tr>
   </table>
 
-.. _electrochemistry_05cf26ef_782a_4f66_a196_7004dd973f8e:
+.. raw:: html
+
+   <div id="electrochemistry_05cf26ef_782a_4f66_a196_7004dd973f8e"></div>
 
 SurfaceArea
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_05cf26ef_782a_4f66_a196_7004dd973f8e
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_05cf26ef_782a_4f66_a196_7004dd973f8e
 
 .. raw:: html
 
@@ -19349,12 +21097,14 @@ SurfaceArea
   </tr>
   </table>
 
-.. _electrochemistry_7f381c19_cf07_47a8_ab10_0b14d46901e8:
+.. raw:: html
+
+   <div id="electrochemistry_7f381c19_cf07_47a8_ab10_0b14d46901e8"></div>
 
 SurfaceAreaPerVolume
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7f381c19_cf07_47a8_ab10_0b14d46901e8
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7f381c19_cf07_47a8_ab10_0b14d46901e8
 
 .. raw:: html
 
@@ -19365,12 +21115,14 @@ SurfaceAreaPerVolume
   </tr>
   </table>
 
-.. _electrochemistry_60741c58_a10d_4aa6_bb68_0066a6ff8e30:
+.. raw:: html
+
+   <div id="electrochemistry_60741c58_a10d_4aa6_bb68_0066a6ff8e30"></div>
 
 SurfaceOverpotential
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_60741c58_a10d_4aa6_bb68_0066a6ff8e30
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_60741c58_a10d_4aa6_bb68_0066a6ff8e30
 
 .. raw:: html
 
@@ -19393,12 +21145,14 @@ SurfaceOverpotential
   </tr>
   </table>
 
-.. _electrochemistry_5ce6a328_713c_4383_ad63_26c902c30e34:
+.. raw:: html
+
+   <div id="electrochemistry_5ce6a328_713c_4383_ad63_26c902c30e34"></div>
 
 TappedDensity
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5ce6a328_713c_4383_ad63_26c902c30e34
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5ce6a328_713c_4383_ad63_26c902c30e34
 
 .. raw:: html
 
@@ -19413,12 +21167,14 @@ TappedDensity
   </tr>
   </table>
 
-.. _electrochemistry_8f3ab19f_ce22_424e_a9bf_d5cedb815374:
+.. raw:: html
+
+   <div id="electrochemistry_8f3ab19f_ce22_424e_a9bf_d5cedb815374"></div>
 
 TemperatureCoefficientOfTheCapacity
 -----------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8f3ab19f_ce22_424e_a9bf_d5cedb815374
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8f3ab19f_ce22_424e_a9bf_d5cedb815374
 
 .. raw:: html
 
@@ -19437,12 +21193,14 @@ TemperatureCoefficientOfTheCapacity
   </tr>
   </table>
 
-.. _electrochemistry_3bb5ae23_59fa_4bc7_9495_803eb6719f28:
+.. raw:: html
+
+   <div id="electrochemistry_3bb5ae23_59fa_4bc7_9495_803eb6719f28"></div>
 
 TemperatureCoefficientOfTheOpenCircuitVoltage
 ---------------------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3bb5ae23_59fa_4bc7_9495_803eb6719f28
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3bb5ae23_59fa_4bc7_9495_803eb6719f28
 
 .. raw:: html
 
@@ -19465,12 +21223,14 @@ TemperatureCoefficientOfTheOpenCircuitVoltage
   </tr>
   </table>
 
-.. _electrochemistry_82fce40c_434d_4640_a3d2_e26379b6acae:
+.. raw:: html
+
+   <div id="electrochemistry_82fce40c_434d_4640_a3d2_e26379b6acae"></div>
 
 TemperatureLimit
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_82fce40c_434d_4640_a3d2_e26379b6acae
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_82fce40c_434d_4640_a3d2_e26379b6acae
 
 .. raw:: html
 
@@ -19489,12 +21249,14 @@ TemperatureLimit
   </tr>
   </table>
 
-.. _electrochemistry_44a67eb4_52e8_433c_aef7_a928c2b9906c:
+.. raw:: html
+
+   <div id="electrochemistry_44a67eb4_52e8_433c_aef7_a928c2b9906c"></div>
 
 TerminationQuantity
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_44a67eb4_52e8_433c_aef7_a928c2b9906c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_44a67eb4_52e8_433c_aef7_a928c2b9906c
 
 .. raw:: html
 
@@ -19509,12 +21271,14 @@ TerminationQuantity
   </tr>
   </table>
 
-.. _electrochemistry_27b3799c_250c_4332_8b71_7992c4a7bb05:
+.. raw:: html
+
+   <div id="electrochemistry_27b3799c_250c_4332_8b71_7992c4a7bb05"></div>
 
 TestTime
 --------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_27b3799c_250c_4332_8b71_7992c4a7bb05
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_27b3799c_250c_4332_8b71_7992c4a7bb05
 
 .. raw:: html
 
@@ -19533,12 +21297,14 @@ TestTime
   </tr>
   </table>
 
-.. _electrochemistry_372c89d0_adab_4585_9662_33c912acef23:
+.. raw:: html
+
+   <div id="electrochemistry_372c89d0_adab_4585_9662_33c912acef23"></div>
 
 TheoreticalCapacity
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_372c89d0_adab_4585_9662_33c912acef23
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_372c89d0_adab_4585_9662_33c912acef23
 
 .. raw:: html
 
@@ -19557,12 +21323,18 @@ TheoreticalCapacity
   </tr>
   </table>
 
-.. _electrochemistry_df9e9d49_12fa_4794_b482_e0dcd2a7bb66:
+.. caution::
+
+   The value of the practically achieve able capacity is often much lower than the theoretical value.
+
+.. raw:: html
+
+   <div id="electrochemistry_df9e9d49_12fa_4794_b482_e0dcd2a7bb66"></div>
 
 TotalCapacity
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_df9e9d49_12fa_4794_b482_e0dcd2a7bb66
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_df9e9d49_12fa_4794_b482_e0dcd2a7bb66
 
 .. raw:: html
 
@@ -19577,12 +21349,14 @@ TotalCapacity
   </tr>
   </table>
 
-.. _electrochemistry_4a30ff40_3ffa_4a08_9134_36dbe718bee1:
+.. raw:: html
+
+   <div id="electrochemistry_4a30ff40_3ffa_4a08_9134_36dbe718bee1"></div>
 
 TotalDuration
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4a30ff40_3ffa_4a08_9134_36dbe718bee1
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4a30ff40_3ffa_4a08_9134_36dbe718bee1
 
 .. raw:: html
 
@@ -19593,12 +21367,14 @@ TotalDuration
   </tr>
   </table>
 
-.. _electrochemistry_0f986d97_445f_4075_a5ce_ddde598a47a9:
+.. raw:: html
+
+   <div id="electrochemistry_0f986d97_445f_4075_a5ce_ddde598a47a9"></div>
 
 TotalEnergy
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f986d97_445f_4075_a5ce_ddde598a47a9
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f986d97_445f_4075_a5ce_ddde598a47a9
 
 .. raw:: html
 
@@ -19613,12 +21389,14 @@ TotalEnergy
   </tr>
   </table>
 
-.. _electrochemistry_8541f8b7_c55e_452d_b3f8_db29dcb2a61d:
+.. raw:: html
+
+   <div id="electrochemistry_8541f8b7_c55e_452d_b3f8_db29dcb2a61d"></div>
 
 TotalMassLoading
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8541f8b7_c55e_452d_b3f8_db29dcb2a61d
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8541f8b7_c55e_452d_b3f8_db29dcb2a61d
 
 .. raw:: html
 
@@ -19633,12 +21411,14 @@ TotalMassLoading
   </tr>
   </table>
 
-.. _electrochemistry_6d981c04_3ace_4f1b_b0f8_770776cceb6f:
+.. raw:: html
+
+   <div id="electrochemistry_6d981c04_3ace_4f1b_b0f8_770776cceb6f"></div>
 
 TotalNumberOfCycles
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6d981c04_3ace_4f1b_b0f8_770776cceb6f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6d981c04_3ace_4f1b_b0f8_770776cceb6f
 
 .. raw:: html
 
@@ -19653,12 +21433,14 @@ TotalNumberOfCycles
   </tr>
   </table>
 
-.. _electrochemistry_ae9882de_d6a2_4525_a84f_80947c10f1cb:
+.. raw:: html
+
+   <div id="electrochemistry_ae9882de_d6a2_4525_a84f_80947c10f1cb"></div>
 
 TransitionTime
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ae9882de_d6a2_4525_a84f_80947c10f1cb
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ae9882de_d6a2_4525_a84f_80947c10f1cb
 
 .. raw:: html
 
@@ -19681,12 +21463,14 @@ TransitionTime
   </tr>
   </table>
 
-.. _electrochemistry_3dac5115_6337_40a6_a2ab_317087fe3b45:
+.. raw:: html
+
+   <div id="electrochemistry_3dac5115_6337_40a6_a2ab_317087fe3b45"></div>
 
 UpperCurrentLimit
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3dac5115_6337_40a6_a2ab_317087fe3b45
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3dac5115_6337_40a6_a2ab_317087fe3b45
 
 .. raw:: html
 
@@ -19701,12 +21485,14 @@ UpperCurrentLimit
   </tr>
   </table>
 
-.. _electrochemistry_666f0b69_9c74_49a3_80b3_96a188332462:
+.. raw:: html
+
+   <div id="electrochemistry_666f0b69_9c74_49a3_80b3_96a188332462"></div>
 
 UpperFrequencyLimit
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_666f0b69_9c74_49a3_80b3_96a188332462
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_666f0b69_9c74_49a3_80b3_96a188332462
 
 .. raw:: html
 
@@ -19721,12 +21507,14 @@ UpperFrequencyLimit
   </tr>
   </table>
 
-.. _electrochemistry_6dcd5baf_58cd_43f5_a692_51508e036c88:
+.. raw:: html
+
+   <div id="electrochemistry_6dcd5baf_58cd_43f5_a692_51508e036c88"></div>
 
 UpperVoltageLimit
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6dcd5baf_58cd_43f5_a692_51508e036c88
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6dcd5baf_58cd_43f5_a692_51508e036c88
 
 .. raw:: html
 
@@ -19749,12 +21537,14 @@ UpperVoltageLimit
   </tr>
   </table>
 
-.. _electrochemistry_09e64707_a17d_4405_84cc_ee9d91ed32ef:
+.. raw:: html
+
+   <div id="electrochemistry_09e64707_a17d_4405_84cc_ee9d91ed32ef"></div>
 
 VoltageChangeLimit
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_09e64707_a17d_4405_84cc_ee9d91ed32ef
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_09e64707_a17d_4405_84cc_ee9d91ed32ef
 
 .. raw:: html
 
@@ -19773,12 +21563,14 @@ VoltageChangeLimit
   </tr>
   </table>
 
-.. _electrochemistry_f6f45881_9bf1_4cf5_988b_de79dab718ef:
+.. raw:: html
+
+   <div id="electrochemistry_f6f45881_9bf1_4cf5_988b_de79dab718ef"></div>
 
 VoltageChangeRate
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f6f45881_9bf1_4cf5_988b_de79dab718ef
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f6f45881_9bf1_4cf5_988b_de79dab718ef
 
 .. raw:: html
 
@@ -19801,12 +21593,14 @@ VoltageChangeRate
   </tr>
   </table>
 
-.. _electrochemistry_5ebeea80_af22_456b_9087_78c2a8465c58:
+.. raw:: html
+
+   <div id="electrochemistry_5ebeea80_af22_456b_9087_78c2a8465c58"></div>
 
 VoltageLimit
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5ebeea80_af22_456b_9087_78c2a8465c58
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5ebeea80_af22_456b_9087_78c2a8465c58
 
 .. raw:: html
 
@@ -19825,12 +21619,14 @@ VoltageLimit
   </tr>
   </table>
 
-.. _electrochemistry_db37b358_b2f0_4e06_b6ae_8c56c8fbb6ba:
+.. raw:: html
+
+   <div id="electrochemistry_db37b358_b2f0_4e06_b6ae_8c56c8fbb6ba"></div>
 
 VolumePercent
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_db37b358_b2f0_4e06_b6ae_8c56c8fbb6ba
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_db37b358_b2f0_4e06_b6ae_8c56c8fbb6ba
 
 .. raw:: html
 
@@ -19845,12 +21641,14 @@ VolumePercent
   </tr>
   </table>
 
-.. _electrochemistry_e6b63190_acac_4e78_9cba_fb2b10bbe910:
+.. raw:: html
+
+   <div id="electrochemistry_e6b63190_acac_4e78_9cba_fb2b10bbe910"></div>
 
 VolumetricCapacity
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e6b63190_acac_4e78_9cba_fb2b10bbe910
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e6b63190_acac_4e78_9cba_fb2b10bbe910
 
 .. raw:: html
 
@@ -19873,12 +21671,14 @@ VolumetricCapacity
   </tr>
   </table>
 
-.. _electrochemistry_a5571263_f153_448f_84a3_cd18092cf8fa:
+.. raw:: html
+
+   <div id="electrochemistry_a5571263_f153_448f_84a3_cd18092cf8fa"></div>
 
 VolumetricSurfaceArea
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a5571263_f153_448f_84a3_cd18092cf8fa
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a5571263_f153_448f_84a3_cd18092cf8fa
 
 .. raw:: html
 
@@ -19909,12 +21709,14 @@ VolumetricSurfaceArea
   </tr>
   </table>
 
-.. _electrochemistry_2c0e66c8_d58d_44b2_b0ce_ba55194bd505:
+.. raw:: html
+
+   <div id="electrochemistry_2c0e66c8_d58d_44b2_b0ce_ba55194bd505"></div>
 
 WeightPercent
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2c0e66c8_d58d_44b2_b0ce_ba55194bd505
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2c0e66c8_d58d_44b2_b0ce_ba55194bd505
 
 .. raw:: html
 
@@ -19929,12 +21731,14 @@ WeightPercent
   </tr>
   </table>
 
-.. _electrochemistry_c39b2498_783e_48e1_9814_6164bd99823c:
+.. raw:: html
+
+   <div id="electrochemistry_c39b2498_783e_48e1_9814_6164bd99823c"></div>
 
 WorkingPotentialRange
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c39b2498_783e_48e1_9814_6164bd99823c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c39b2498_783e_48e1_9814_6164bd99823c
 
 .. raw:: html
 
@@ -19953,12 +21757,14 @@ WorkingPotentialRange
   </tr>
   </table>
 
-.. _EMMO_709ee08d_76b1_4fee_be22_925412ac313b:
+.. raw:: html
+
+   <div id="EMMO_709ee08d_76b1_4fee_be22_925412ac313b"></div>
 
 admonition
 ----------
 
-* https://w3id.org/emmo#EMMO_709ee08d_76b1_4fee_be22_925412ac313b
+IRI: https://w3id.org/emmo#EMMO_709ee08d_76b1_4fee_be22_925412ac313b
 
 .. raw:: html
 
@@ -19969,12 +21775,14 @@ admonition
   </tr>
   </table>
 
-.. _electrochemistry_a07dd85b_d0df_4d5d_8b0c_14d20ea3fe45:
+.. raw:: html
+
+   <div id="electrochemistry_a07dd85b_d0df_4d5d_8b0c_14d20ea3fe45"></div>
 
 arbinLabel
 ----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a07dd85b_d0df_4d5d_8b0c_14d20ea3fe45
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a07dd85b_d0df_4d5d_8b0c_14d20ea3fe45
 
 .. raw:: html
 
@@ -19985,12 +21793,14 @@ arbinLabel
   </tr>
   </table>
 
-.. _electrochemistry_1b717a20_17e3_4480_8c60_c4ae94058f05:
+.. raw:: html
+
+   <div id="electrochemistry_1b717a20_17e3_4480_8c60_c4ae94058f05"></div>
 
 batteryArchiveLabel
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1b717a20_17e3_4480_8c60_c4ae94058f05
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1b717a20_17e3_4480_8c60_c4ae94058f05
 
 .. raw:: html
 
@@ -20001,24 +21811,28 @@ batteryArchiveLabel
   </tr>
   </table>
 
-.. _electrochemistry_e5e86474_8623_48ea_a1cf_502bdb10aa14:
+.. raw:: html
+
+   <div id="electrochemistry_e5e86474_8623_48ea_a1cf_502bdb10aa14"></div>
 
 battmoKey
 ---------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e5e86474_8623_48ea_a1cf_502bdb10aa14
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e5e86474_8623_48ea_a1cf_502bdb10aa14
 
 .. raw:: html
 
   <table class="element-table">
   </table>
 
-.. _electrochemistry_69022178_77b8_4669_97e2_351d45356e5a:
+.. raw:: html
+
+   <div id="electrochemistry_69022178_77b8_4669_97e2_351d45356e5a"></div>
 
 biologicLabel
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_69022178_77b8_4669_97e2_351d45356e5a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_69022178_77b8_4669_97e2_351d45356e5a
 
 .. raw:: html
 
@@ -20029,24 +21843,28 @@ biologicLabel
   </tr>
   </table>
 
-.. _electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37:
+.. raw:: html
+
+   <div id="electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37"></div>
 
 bpxKey
 ------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37
 
 .. raw:: html
 
   <table class="element-table">
   </table>
 
-.. _EMMO_b6730304_cabc_4104_b415_14218466445c:
+.. raw:: html
+
+   <div id="EMMO_b6730304_cabc_4104_b415_14218466445c"></div>
 
 caution
 -------
 
-* https://w3id.org/emmo#EMMO_b6730304_cabc_4104_b415_14218466445c
+IRI: https://w3id.org/emmo#EMMO_b6730304_cabc_4104_b415_14218466445c
 
 .. raw:: html
 
@@ -20057,24 +21875,28 @@ caution
   </tr>
   </table>
 
-.. _electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30:
+.. raw:: html
+
+   <div id="electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30"></div>
 
 cidemodKey
 ----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30
 
 .. raw:: html
 
   <table class="element-table">
   </table>
 
-.. _EMMO_95317324_4b53_4665_a087_82c3a2a0540b:
+.. raw:: html
+
+   <div id="EMMO_95317324_4b53_4665_a087_82c3a2a0540b"></div>
 
 danger
 ------
 
-* https://w3id.org/emmo#EMMO_95317324_4b53_4665_a087_82c3a2a0540b
+IRI: https://w3id.org/emmo#EMMO_95317324_4b53_4665_a087_82c3a2a0540b
 
 .. raw:: html
 
@@ -20085,12 +21907,14 @@ danger
   </tr>
   </table>
 
-.. _EMMO_32214c66_8bce_40f5_b22d_5059f6cf571b:
+.. raw:: html
+
+   <div id="EMMO_32214c66_8bce_40f5_b22d_5059f6cf571b"></div>
 
 error
 -----
 
-* https://w3id.org/emmo#EMMO_32214c66_8bce_40f5_b22d_5059f6cf571b
+IRI: https://w3id.org/emmo#EMMO_32214c66_8bce_40f5_b22d_5059f6cf571b
 
 .. raw:: html
 
@@ -20101,12 +21925,14 @@ error
   </tr>
   </table>
 
-.. _EMMO_4c8480cf_56de_41da_8699_f12a9033313a:
+.. raw:: html
+
+   <div id="EMMO_4c8480cf_56de_41da_8699_f12a9033313a"></div>
 
 important
 ---------
 
-* https://w3id.org/emmo#EMMO_4c8480cf_56de_41da_8699_f12a9033313a
+IRI: https://w3id.org/emmo#EMMO_4c8480cf_56de_41da_8699_f12a9033313a
 
 .. raw:: html
 
@@ -20117,24 +21943,28 @@ important
   </tr>
   </table>
 
-.. _electrochemistry_7104c722_d5a5_4bff_ba2f_37e229bb6cce:
+.. raw:: html
+
+   <div id="electrochemistry_7104c722_d5a5_4bff_ba2f_37e229bb6cce"></div>
 
 includeDocs
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7104c722_d5a5_4bff_ba2f_37e229bb6cce
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7104c722_d5a5_4bff_ba2f_37e229bb6cce
 
 .. raw:: html
 
   <table class="element-table">
   </table>
 
-.. _electrochemistry_8377c1f7_2b09_4632_9a4d_bb318438adbb:
+.. raw:: html
+
+   <div id="electrochemistry_8377c1f7_2b09_4632_9a4d_bb318438adbb"></div>
 
 indigoLabel
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8377c1f7_2b09_4632_9a4d_bb318438adbb
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8377c1f7_2b09_4632_9a4d_bb318438adbb
 
 .. raw:: html
 
@@ -20145,12 +21975,14 @@ indigoLabel
   </tr>
   </table>
 
-.. _electrochemistry_097ea615_c209_4edd_a1a1_5eea71d98fe8:
+.. raw:: html
+
+   <div id="electrochemistry_097ea615_c209_4edd_a1a1_5eea71d98fe8"></div>
 
 maccorLabel
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_097ea615_c209_4edd_a1a1_5eea71d98fe8
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_097ea615_c209_4edd_a1a1_5eea71d98fe8
 
 .. raw:: html
 
@@ -20161,12 +21993,14 @@ maccorLabel
   </tr>
   </table>
 
-.. _electrochemistry_811aafc3_0c6d_470e_b67e_ff5c82992609:
+.. raw:: html
+
+   <div id="electrochemistry_811aafc3_0c6d_470e_b67e_ff5c82992609"></div>
 
 newareLabel
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_811aafc3_0c6d_470e_b67e_ff5c82992609
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_811aafc3_0c6d_470e_b67e_ff5c82992609
 
 .. raw:: html
 
@@ -20177,12 +22011,14 @@ newareLabel
   </tr>
   </table>
 
-.. _electrochemistry_ea9f4dba_8ca2_419e_9cdf_ce54e9ebbd46:
+.. raw:: html
+
+   <div id="electrochemistry_ea9f4dba_8ca2_419e_9cdf_ce54e9ebbd46"></div>
 
 novonixLabel
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ea9f4dba_8ca2_419e_9cdf_ce54e9ebbd46
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ea9f4dba_8ca2_419e_9cdf_ce54e9ebbd46
 
 .. raw:: html
 
@@ -20193,12 +22029,14 @@ novonixLabel
   </tr>
   </table>
 
-.. _EMMO_5f7abc2a_5b50_41c3_8def_c8ba7c3b083e:
+.. raw:: html
+
+   <div id="EMMO_5f7abc2a_5b50_41c3_8def_c8ba7c3b083e"></div>
 
 tip
 ---
 
-* https://w3id.org/emmo#EMMO_5f7abc2a_5b50_41c3_8def_c8ba7c3b083e
+IRI: https://w3id.org/emmo#EMMO_5f7abc2a_5b50_41c3_8def_c8ba7c3b083e
 
 .. raw:: html
 
@@ -20209,12 +22047,14 @@ tip
   </tr>
   </table>
 
-.. _EMMO_cc65321f_1964_4f16_aea3_2a8edf2f3394:
+.. raw:: html
+
+   <div id="EMMO_cc65321f_1964_4f16_aea3_2a8edf2f3394"></div>
 
 typicalUnit
 -----------
 
-* https://w3id.org/emmo#EMMO_cc65321f_1964_4f16_aea3_2a8edf2f3394
+IRI: https://w3id.org/emmo#EMMO_cc65321f_1964_4f16_aea3_2a8edf2f3394
 
 .. raw:: html
 
@@ -20225,12 +22065,14 @@ typicalUnit
   </tr>
   </table>
 
-.. _EMMO_0fa6566e_500f_4d24_baa9_b2b22c9a0b72:
+.. raw:: html
+
+   <div id="EMMO_0fa6566e_500f_4d24_baa9_b2b22c9a0b72"></div>
 
 warning
 -------
 
-* https://w3id.org/emmo#EMMO_0fa6566e_500f_4d24_baa9_b2b22c9a0b72
+IRI: https://w3id.org/emmo#EMMO_0fa6566e_500f_4d24_baa9_b2b22c9a0b72
 
 .. raw:: html
 
@@ -20245,12 +22087,14 @@ warning
 Electrochemistry Manufacturing
 ==============================
 
-.. _electrochemistry_bed8f6c8_18d3_4af0_a0f3_d83bfa80498b:
+.. raw:: html
+
+   <div id="electrochemistry_bed8f6c8_18d3_4af0_a0f3_d83bfa80498b"></div>
 
 BinderSolution
 --------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bed8f6c8_18d3_4af0_a0f3_d83bfa80498b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bed8f6c8_18d3_4af0_a0f3_d83bfa80498b
 
 .. raw:: html
 
@@ -20261,12 +22105,14 @@ BinderSolution
   </tr>
   </table>
 
-.. _electrochemistry_91e931b3_9bc8_4490_8a9c_3202fc8338bd:
+.. raw:: html
+
+   <div id="electrochemistry_91e931b3_9bc8_4490_8a9c_3202fc8338bd"></div>
 
 BinderSolutionMixing
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_91e931b3_9bc8_4490_8a9c_3202fc8338bd
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_91e931b3_9bc8_4490_8a9c_3202fc8338bd
 
 .. raw:: html
 
@@ -20277,12 +22123,14 @@ BinderSolutionMixing
   </tr>
   </table>
 
-.. _electrochemistry_6a2d9bd3_3695_4827_b3f7_3bba9b947129:
+.. raw:: html
+
+   <div id="electrochemistry_6a2d9bd3_3695_4827_b3f7_3bba9b947129"></div>
 
 CellPackaging
 -------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6a2d9bd3_3695_4827_b3f7_3bba9b947129
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6a2d9bd3_3695_4827_b3f7_3bba9b947129
 
 .. raw:: html
 
@@ -20297,12 +22145,14 @@ CellPackaging
   </tr>
   </table>
 
-.. _electrochemistry_dade3372_c229_47f2_b3c5_6ebb97a0f670:
+.. raw:: html
+
+   <div id="electrochemistry_dade3372_c229_47f2_b3c5_6ebb97a0f670"></div>
 
 CylindricalCellElectrolyteFilling
 ---------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dade3372_c229_47f2_b3c5_6ebb97a0f670
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dade3372_c229_47f2_b3c5_6ebb97a0f670
 
 .. raw:: html
 
@@ -20317,12 +22167,14 @@ CylindricalCellElectrolyteFilling
   </tr>
   </table>
 
-.. _electrochemistry_19a5cf32_2310_4ee8_a888_0d7bd8edc729:
+.. raw:: html
+
+   <div id="electrochemistry_19a5cf32_2310_4ee8_a888_0d7bd8edc729"></div>
 
 CylindricalCellPackaging
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_19a5cf32_2310_4ee8_a888_0d7bd8edc729
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_19a5cf32_2310_4ee8_a888_0d7bd8edc729
 
 .. raw:: html
 
@@ -20337,12 +22189,14 @@ CylindricalCellPackaging
   </tr>
   </table>
 
-.. _electrochemistry_0e5ef5a7_53c6_4d94_bffd_d0318ea0de6b:
+.. raw:: html
+
+   <div id="electrochemistry_0e5ef5a7_53c6_4d94_bffd_d0318ea0de6b"></div>
 
 DryMixture
 ----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0e5ef5a7_53c6_4d94_bffd_d0318ea0de6b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0e5ef5a7_53c6_4d94_bffd_d0318ea0de6b
 
 .. raw:: html
 
@@ -20353,12 +22207,14 @@ DryMixture
   </tr>
   </table>
 
-.. _electrochemistry_5076e90b_ed93_4845_87b1_e26bc8a4f0fe:
+.. raw:: html
+
+   <div id="electrochemistry_5076e90b_ed93_4845_87b1_e26bc8a4f0fe"></div>
 
 ElectrochemicalDeviceAging
 --------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5076e90b_ed93_4845_87b1_e26bc8a4f0fe
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5076e90b_ed93_4845_87b1_e26bc8a4f0fe
 
 .. raw:: html
 
@@ -20369,12 +22225,14 @@ ElectrochemicalDeviceAging
   </tr>
   </table>
 
-.. _electrochemistry_f2a034b6_401d_46bf_a258_cca87932c7af:
+.. raw:: html
+
+   <div id="electrochemistry_f2a034b6_401d_46bf_a258_cca87932c7af"></div>
 
 ElectrochemicalDeviceAssembly
 -----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f2a034b6_401d_46bf_a258_cca87932c7af
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f2a034b6_401d_46bf_a258_cca87932c7af
 
 .. raw:: html
 
@@ -20385,12 +22243,14 @@ ElectrochemicalDeviceAssembly
   </tr>
   </table>
 
-.. _electrochemistry_acd4bba1_e0f2_4114_b8f8_963645c5dac5:
+.. raw:: html
+
+   <div id="electrochemistry_acd4bba1_e0f2_4114_b8f8_963645c5dac5"></div>
 
 ElectrochemicalDeviceFinishing
 ------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_acd4bba1_e0f2_4114_b8f8_963645c5dac5
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_acd4bba1_e0f2_4114_b8f8_963645c5dac5
 
 .. raw:: html
 
@@ -20401,12 +22261,14 @@ ElectrochemicalDeviceFinishing
   </tr>
   </table>
 
-.. _electrochemistry_cd5a6260_5d89_4a14_8e19_5f64742b64ac:
+.. raw:: html
+
+   <div id="electrochemistry_cd5a6260_5d89_4a14_8e19_5f64742b64ac"></div>
 
 ElectrochemicalDeviceManufacturing
 ----------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cd5a6260_5d89_4a14_8e19_5f64742b64ac
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cd5a6260_5d89_4a14_8e19_5f64742b64ac
 
 .. raw:: html
 
@@ -20417,12 +22279,14 @@ ElectrochemicalDeviceManufacturing
   </tr>
   </table>
 
-.. _electrochemistry_38a2b407_3be9_4b66_86cf_b961cdffb4c9:
+.. raw:: html
+
+   <div id="electrochemistry_38a2b407_3be9_4b66_86cf_b961cdffb4c9"></div>
 
 ElectrodeCalendering
 --------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_38a2b407_3be9_4b66_86cf_b961cdffb4c9
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_38a2b407_3be9_4b66_86cf_b961cdffb4c9
 
 .. raw:: html
 
@@ -20433,12 +22297,14 @@ ElectrodeCalendering
   </tr>
   </table>
 
-.. _electrochemistry_cfcf6ca6_70e9_4369_9314_7f20b3efbf21:
+.. raw:: html
+
+   <div id="electrochemistry_cfcf6ca6_70e9_4369_9314_7f20b3efbf21"></div>
 
 ElectrodeCoating
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cfcf6ca6_70e9_4369_9314_7f20b3efbf21
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cfcf6ca6_70e9_4369_9314_7f20b3efbf21
 
 .. raw:: html
 
@@ -20449,12 +22315,14 @@ ElectrodeCoating
   </tr>
   </table>
 
-.. _electrochemistry_36c2e19c_cb1a_41e9_bcd5_baf9dfd21905:
+.. raw:: html
+
+   <div id="electrochemistry_36c2e19c_cb1a_41e9_bcd5_baf9dfd21905"></div>
 
 ElectrodeDrying
 ---------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_36c2e19c_cb1a_41e9_bcd5_baf9dfd21905
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_36c2e19c_cb1a_41e9_bcd5_baf9dfd21905
 
 .. raw:: html
 
@@ -20465,12 +22333,14 @@ ElectrodeDrying
   </tr>
   </table>
 
-.. _electrochemistry_aaeb3c53_3199_4851_95d1_9cf1503a1b4b:
+.. raw:: html
+
+   <div id="electrochemistry_aaeb3c53_3199_4851_95d1_9cf1503a1b4b"></div>
 
 ElectrodeManufacturing
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_aaeb3c53_3199_4851_95d1_9cf1503a1b4b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_aaeb3c53_3199_4851_95d1_9cf1503a1b4b
 
 .. raw:: html
 
@@ -20481,12 +22351,14 @@ ElectrodeManufacturing
   </tr>
   </table>
 
-.. _electrochemistry_b50d66be_092e_4aca_b8fd_59aa30e47d7c:
+.. raw:: html
+
+   <div id="electrochemistry_b50d66be_092e_4aca_b8fd_59aa30e47d7c"></div>
 
 ElectrodeNotching
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b50d66be_092e_4aca_b8fd_59aa30e47d7c
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b50d66be_092e_4aca_b8fd_59aa30e47d7c
 
 .. raw:: html
 
@@ -20497,12 +22369,14 @@ ElectrodeNotching
   </tr>
   </table>
 
-.. _electrochemistry_eeafeec2_2969_4886_b572_07ce39d3ee63:
+.. raw:: html
+
+   <div id="electrochemistry_eeafeec2_2969_4886_b572_07ce39d3ee63"></div>
 
 ElectrodeSeparation
 -------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_eeafeec2_2969_4886_b572_07ce39d3ee63
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_eeafeec2_2969_4886_b572_07ce39d3ee63
 
 .. raw:: html
 
@@ -20513,12 +22387,14 @@ ElectrodeSeparation
   </tr>
   </table>
 
-.. _electrochemistry_5096e449_4d92_420e_ae6d_0e156f6e4ebd:
+.. raw:: html
+
+   <div id="electrochemistry_5096e449_4d92_420e_ae6d_0e156f6e4ebd"></div>
 
 ElectrodeSlitting
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5096e449_4d92_420e_ae6d_0e156f6e4ebd
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5096e449_4d92_420e_ae6d_0e156f6e4ebd
 
 .. raw:: html
 
@@ -20529,12 +22405,14 @@ ElectrodeSlitting
   </tr>
   </table>
 
-.. _electrochemistry_a490e278_8c6d_4a89_ad0e_ffa48366cd75:
+.. raw:: html
+
+   <div id="electrochemistry_a490e278_8c6d_4a89_ad0e_ffa48366cd75"></div>
 
 ElectrodeStacking
 -----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a490e278_8c6d_4a89_ad0e_ffa48366cd75
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a490e278_8c6d_4a89_ad0e_ffa48366cd75
 
 .. raw:: html
 
@@ -20545,12 +22423,14 @@ ElectrodeStacking
   </tr>
   </table>
 
-.. _electrochemistry_707f001f_d2b9_46c2_ac1b_9cd039bcf00f:
+.. raw:: html
+
+   <div id="electrochemistry_707f001f_d2b9_46c2_ac1b_9cd039bcf00f"></div>
 
 ElectrodeWinding
 ----------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_707f001f_d2b9_46c2_ac1b_9cd039bcf00f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_707f001f_d2b9_46c2_ac1b_9cd039bcf00f
 
 .. raw:: html
 
@@ -20561,12 +22441,14 @@ ElectrodeWinding
   </tr>
   </table>
 
-.. _electrochemistry_ff7f5ab4_d0c0_4455_9bcc_3d80346e90ee:
+.. raw:: html
+
+   <div id="electrochemistry_ff7f5ab4_d0c0_4455_9bcc_3d80346e90ee"></div>
 
 ElectrolyteFilling
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ff7f5ab4_d0c0_4455_9bcc_3d80346e90ee
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ff7f5ab4_d0c0_4455_9bcc_3d80346e90ee
 
 .. raw:: html
 
@@ -20581,12 +22463,14 @@ ElectrolyteFilling
   </tr>
   </table>
 
-.. _electrochemistry_b85ca559_eeef_4763_ac2e_7e658bf64b45:
+.. raw:: html
+
+   <div id="electrochemistry_b85ca559_eeef_4763_ac2e_7e658bf64b45"></div>
 
 ElectrolyteManufacturing
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b85ca559_eeef_4763_ac2e_7e658bf64b45
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b85ca559_eeef_4763_ac2e_7e658bf64b45
 
 .. raw:: html
 
@@ -20597,12 +22481,14 @@ ElectrolyteManufacturing
   </tr>
   </table>
 
-.. _electrochemistry_dbc73810_d334_40b8_b73a_7ad2c0b3615f:
+.. raw:: html
+
+   <div id="electrochemistry_dbc73810_d334_40b8_b73a_7ad2c0b3615f"></div>
 
 PouchCellElectrolyteFilling
 ---------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dbc73810_d334_40b8_b73a_7ad2c0b3615f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dbc73810_d334_40b8_b73a_7ad2c0b3615f
 
 .. raw:: html
 
@@ -20617,12 +22503,14 @@ PouchCellElectrolyteFilling
   </tr>
   </table>
 
-.. _electrochemistry_d5e99e1f_049c_4111_b97f_613eb652492a:
+.. raw:: html
+
+   <div id="electrochemistry_d5e99e1f_049c_4111_b97f_613eb652492a"></div>
 
 PouchCellPackaging
 ------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d5e99e1f_049c_4111_b97f_613eb652492a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d5e99e1f_049c_4111_b97f_613eb652492a
 
 .. raw:: html
 
@@ -20637,12 +22525,14 @@ PouchCellPackaging
   </tr>
   </table>
 
-.. _electrochemistry_99a4c4b9_90d1_41ef_9073_894d9b35e751:
+.. raw:: html
+
+   <div id="electrochemistry_99a4c4b9_90d1_41ef_9073_894d9b35e751"></div>
 
 PrismaticCellElectrolyteFilling
 -------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_99a4c4b9_90d1_41ef_9073_894d9b35e751
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_99a4c4b9_90d1_41ef_9073_894d9b35e751
 
 .. raw:: html
 
@@ -20657,12 +22547,14 @@ PrismaticCellElectrolyteFilling
   </tr>
   </table>
 
-.. _electrochemistry_1a532a1a_a48c_4b08_854c_4f6c212c8b59:
+.. raw:: html
+
+   <div id="electrochemistry_1a532a1a_a48c_4b08_854c_4f6c212c8b59"></div>
 
 PrismaticCellPackaging
 ----------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1a532a1a_a48c_4b08_854c_4f6c212c8b59
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1a532a1a_a48c_4b08_854c_4f6c212c8b59
 
 .. raw:: html
 
@@ -20677,12 +22569,14 @@ PrismaticCellPackaging
   </tr>
   </table>
 
-.. _electrochemistry_13fad803_de44_490d_a77e_c330c9168087:
+.. raw:: html
+
+   <div id="electrochemistry_13fad803_de44_490d_a77e_c330c9168087"></div>
 
 Slurry
 ------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_13fad803_de44_490d_a77e_c330c9168087
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_13fad803_de44_490d_a77e_c330c9168087
 
 .. raw:: html
 
@@ -20693,12 +22587,14 @@ Slurry
   </tr>
   </table>
 
-.. _electrochemistry_c1ac455d_964c_4435_a9f0_d7339c44f4bb:
+.. raw:: html
+
+   <div id="electrochemistry_c1ac455d_964c_4435_a9f0_d7339c44f4bb"></div>
 
 bvco
 ----
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c1ac455d_964c_4435_a9f0_d7339c44f4bb
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c1ac455d_964c_4435_a9f0_d7339c44f4bb
 
 .. raw:: html
 
@@ -20709,12 +22605,14 @@ bvco
 Electrochemistry Testing
 ========================
 
-.. _electrochemistry_99b2b3ad_8efc_48ee_a630_6d805a47efdc:
+.. raw:: html
+
+   <div id="electrochemistry_99b2b3ad_8efc_48ee_a630_6d805a47efdc"></div>
 
 CRateTest
 ---------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_99b2b3ad_8efc_48ee_a630_6d805a47efdc
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_99b2b3ad_8efc_48ee_a630_6d805a47efdc
 
 .. raw:: html
 
@@ -20725,12 +22623,14 @@ CRateTest
   </tr>
   </table>
 
-.. _electrochemistry_137dc19f_a3af_49af_971f_743d27e09f43:
+.. raw:: html
+
+   <div id="electrochemistry_137dc19f_a3af_49af_971f_743d27e09f43"></div>
 
 CapacityTest
 ------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_137dc19f_a3af_49af_971f_743d27e09f43
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_137dc19f_a3af_49af_971f_743d27e09f43
 
 .. raw:: html
 
@@ -20741,12 +22641,14 @@ CapacityTest
   </tr>
   </table>
 
-.. _electrochemistry_25d01d13_3ca5_4619_98c1_8ebbd01ad794:
+.. raw:: html
+
+   <div id="electrochemistry_25d01d13_3ca5_4619_98c1_8ebbd01ad794"></div>
 
 ContinuousServiceTest
 ---------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_25d01d13_3ca5_4619_98c1_8ebbd01ad794
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_25d01d13_3ca5_4619_98c1_8ebbd01ad794
 
 .. raw:: html
 
@@ -20761,12 +22663,14 @@ ContinuousServiceTest
   </tr>
   </table>
 
-.. _electrochemistry_435b22d4_c441_45ea_8c79_0cbec11fd287:
+.. raw:: html
+
+   <div id="electrochemistry_435b22d4_c441_45ea_8c79_0cbec11fd287"></div>
 
 CyclingTest
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_435b22d4_c441_45ea_8c79_0cbec11fd287
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_435b22d4_c441_45ea_8c79_0cbec11fd287
 
 .. raw:: html
 
@@ -20777,12 +22681,14 @@ CyclingTest
   </tr>
   </table>
 
-.. _electrochemistry_f4ce4df2_d7e6_470f_8eab_3a911adaaf0f:
+.. raw:: html
+
+   <div id="electrochemistry_f4ce4df2_d7e6_470f_8eab_3a911adaaf0f"></div>
 
 ElectrochemicalMeasurementProcess
 ---------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f4ce4df2_d7e6_470f_8eab_3a911adaaf0f
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f4ce4df2_d7e6_470f_8eab_3a911adaaf0f
 
 .. raw:: html
 
@@ -20793,12 +22699,14 @@ ElectrochemicalMeasurementProcess
   </tr>
   </table>
 
-.. _electrochemistry_830d02dd_f897_4c3c_95a7_c5e5eafa346a:
+.. raw:: html
+
+   <div id="electrochemistry_830d02dd_f897_4c3c_95a7_c5e5eafa346a"></div>
 
 ElectrochemicalTestingProcedure
 -------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_830d02dd_f897_4c3c_95a7_c5e5eafa346a
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_830d02dd_f897_4c3c_95a7_c5e5eafa346a
 
 .. raw:: html
 
@@ -20809,12 +22717,14 @@ ElectrochemicalTestingProcedure
   </tr>
   </table>
 
-.. _electrochemistry_279ecc9f_bfbc_4108_ae40_3c1c0f735e60:
+.. raw:: html
+
+   <div id="electrochemistry_279ecc9f_bfbc_4108_ae40_3c1c0f735e60"></div>
 
 FrequencyResponseAnalyser
 -------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_279ecc9f_bfbc_4108_ae40_3c1c0f735e60
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_279ecc9f_bfbc_4108_ae40_3c1c0f735e60
 
 .. raw:: html
 
@@ -20829,12 +22739,14 @@ FrequencyResponseAnalyser
   </tr>
   </table>
 
-.. _electrochemistry_916b1863_f417_4b94_9407_9d749ada9ed5:
+.. raw:: html
+
+   <div id="electrochemistry_916b1863_f417_4b94_9407_9d749ada9ed5"></div>
 
 PotentiometricStrippingAnalysis
 -------------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_916b1863_f417_4b94_9407_9d749ada9ed5
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_916b1863_f417_4b94_9407_9d749ada9ed5
 
 .. raw:: html
 
@@ -20849,12 +22761,14 @@ PotentiometricStrippingAnalysis
   </tr>
   </table>
 
-.. _electrochemistry_00244072_8d24_4e34_9f6a_c7b2b132b2c8:
+.. raw:: html
+
+   <div id="electrochemistry_00244072_8d24_4e34_9f6a_c7b2b132b2c8"></div>
 
 PseudoOpenCircuitVoltageTest
 ----------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_00244072_8d24_4e34_9f6a_c7b2b132b2c8
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_00244072_8d24_4e34_9f6a_c7b2b132b2c8
 
 .. raw:: html
 
@@ -20865,12 +22779,14 @@ PseudoOpenCircuitVoltageTest
   </tr>
   </table>
 
-.. _electrochemistry_c7e37e88_ed86_4acd_99ee_b6a2a5fcbd24:
+.. raw:: html
+
+   <div id="electrochemistry_c7e37e88_ed86_4acd_99ee_b6a2a5fcbd24"></div>
 
 ReferencePerformanceTest
 ------------------------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c7e37e88_ed86_4acd_99ee_b6a2a5fcbd24
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c7e37e88_ed86_4acd_99ee_b6a2a5fcbd24
 
 .. raw:: html
 
@@ -20881,12 +22797,14 @@ ReferencePerformanceTest
   </tr>
   </table>
 
-.. _electrochemistry_35469eeb_7fc3_4317_a4b5_b3be7015444b:
+.. raw:: html
+
+   <div id="electrochemistry_35469eeb_7fc3_4317_a4b5_b3be7015444b"></div>
 
 Resting
 -------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_35469eeb_7fc3_4317_a4b5_b3be7015444b
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_35469eeb_7fc3_4317_a4b5_b3be7015444b
 
 .. raw:: html
 
@@ -20897,12 +22815,14 @@ Resting
   </tr>
   </table>
 
-.. _electrochemistry_c91164b8_5e56_4c94_bad1_d7ada576b0e7:
+.. raw:: html
+
+   <div id="electrochemistry_c91164b8_5e56_4c94_bad1_d7ada576b0e7"></div>
 
 StorageTest
 -----------
 
-* https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c91164b8_5e56_4c94_bad1_d7ada576b0e7
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c91164b8_5e56_4c94_bad1_d7ada576b0e7
 
 .. raw:: html
 
