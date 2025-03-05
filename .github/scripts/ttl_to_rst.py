@@ -3,6 +3,12 @@ from rdflib import Graph, URIRef, Literal
 import os
 from config_loader import load_ontology_config
 
+config = load_ontology_config()
+
+ontology_name = config["ontology_name"]
+ontology_description = config["ontology_description"]
+ttl_files = config["ttl_files"]
+rst_output_filename = config["rst_output_filename"]
 
 ########## LOAD TTL ################
 
@@ -265,13 +271,6 @@ End of Document.
 def rendering_workflow():
     """Compiles all extracted terms into a single RST file."""
 
-    
-    config = load_ontology_config()
-
-    ontology_name = config["ontology_name"]
-    ontology_description = config["ontology_description"]
-    ttl_files = config["ttl_files"]
-    rst_output_filename = config["rst_output_filename"]
 
     rst_filename = rst_output_filename
     rst_content = render_rst_top()

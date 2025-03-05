@@ -15,7 +15,7 @@ def main():
         sys.exit(1)
 
     for entry in ttl_files:
-        title = entry["section title"]
+        title = entry["section_title"]
         path = entry["path"]
 
         if not os.path.isfile(path):
