@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     - name: Set up Python 3.9
       uses: actions/setup-python@v4
@@ -22,67 +22,14 @@ jobs:
         pip install -U setuptools wheel
         pip install -r requirements.txt
 
-    - name: Run EMMO Check - electrochemistry
+    - name: Load ontology configuration
+      id: load-config
       run: |
-        if [ -f "electrochemistry.ttl" ]; then
-          emmocheck --verbose --url-from-catalog \
-            --skip test_namespace \
-            --skip test_quantity_dimension \
-            --configfile=.github/utils/emmocheck_config.yml \
-            electrochemistry.ttl
-        else
-          echo "electrochemistry.ttl not found!"
-          exit 1
-        fi
+        echo "Loading ontology configuration..."
+        TTL_FILES_JSON=$(python -c 'from ontology_config import ttl_files; import json; print(json.dumps(ttl_files))')
+        echo "TTL_FILES_JSON=$TTL_FILES_JSON" >> $GITHUB_ENV
 
-    - name: Run EMMO Check - electrochemistry-quantities
-      run: |
-        if [ -f "reference/electrochemistry-quantities.ttl" ]; then
-          emmocheck --verbose --url-from-catalog \
-            --skip test_namespace \
-            --skip test_quantity_dimension \
-            --configfile=.github/utils/emmocheck_config.yml \
-            reference/electrochemistry-quantities.ttl
-        else
-          echo "reference/electrochemistry-quantities.ttl not found!"
-          exit 1
-        fi
-
-    - name: Run EMMO Check - electrochemistry-reference
-      run: |
-        if [ -f "reference/electrochemistry-reference.ttl" ]; then
-          emmocheck --verbose --url-from-catalog \
-            --skip test_namespace \
-            --skip test_quantity_dimension \
-            --configfile=.github/utils/emmocheck_config.yml \
-            reference/electrochemistry-reference.ttl
-        else
-          echo "reference/electrochemistry-reference.ttl not found!"
-          exit 1
-        fi
-
-    - name: Run EMMO Check - electrochemistry-manufacturing
-      run: |
-        if [ -f "modules/electrochemistry-manufacturing.ttl" ]; then
-          emmocheck --verbose --url-from-catalog \
-            --skip test_namespace \
-            --skip test_quantity_dimension \
-            --configfile=.github/utils/emmocheck_config.yml \
-            modules/electrochemistry-manufacturing.ttl
-        else
-          echo "modules/electrochemistry-manufacturing.ttl not found!"
-          exit 1
-        fi
-
-    - name: Run EMMO Check - electrochemistry-testing
-      run: |
-        if [ -f "modules/electrochemistry-testing.ttl" ]; then
-          emmocheck --verbose --url-from-catalog \
-            --skip test_namespace \
-            --skip test_quantity_dimension \
-            --configfile=.github/utils/emmocheck_config.yml \
-            modules/electrochemistry-testing.ttl
-        else
-          echo "modules/electrochemistry-testing.ttl not found!"
-          exit 1
-        fi
+    - name: Run EMMO Check for all configured TTL files
+      run: python .github/scripts/run_emmocheck.py
+      
+    

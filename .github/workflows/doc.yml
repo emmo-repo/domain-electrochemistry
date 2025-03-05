@@ -38,8 +38,21 @@ jobs:
         python -m pip install --upgrade pip
         pip install Markdown==3.4.3 rdflib==6.3.2 pandoc
 
+    - name: Load ontology configuration
+      run: |
+        echo "Loading ontology configuration..."
+        echo "ONTOLOGY_NAME=$(python -c 'from ontology_config import ontology_name; print(ontology_name)')" >> $GITHUB_ENV
+        echo "RST_FILE=$(python -c 'from ontology_config import rst_output_filename; print(rst_output_filename)')" >> $GITHUB_ENV
+        TTL_FILES=$(python -c 'from ontology_config import ttl_files; print(" ".join([f["path"] for f in ttl_files]))')
+        if [ -z "$TTL_FILES" ]; then
+            echo "Warning: No TTL files found in ontology_config.py."
+        fi
+        echo "TTL_FILES=$TTL_FILES" >> $GITHUB_ENV
+        echo "Loaded TTL files: $TTL_FILES"
+        echo "DOC_DATE=$(date +%Y%m%d)" >> $GITHUB_ENV
+
     - name: Render documentation from TTL files
-      run: python docs/scripts/ttl_to_rst.py
+      run: python .github/scripts/ttl_to_rst.py
 
     - name: Build HTML
       uses: ammaraskar/sphinx-action@master
@@ -48,7 +61,7 @@ jobs:
         pre-build-command: "apt-get update -y; apt-get install -y pandoc"
 
     - name: Create context file from TTL
-      run: python docs/scripts/ttl_to_context.py
+      run: python .github/scripts/ttl_to_context.py
 
     - name: Ensure HTML directories exist
       run: |
@@ -65,8 +78,8 @@ jobs:
       run: |
         git config --local user.email "${{ env.GIT_USER_EMAIL }}"
         git config --local user.name "${{ env.GIT_USER_NAME }}"
-        git add context/context.json docs/electrochemistry.rst
-        git diff --staged --quiet || git commit -m "Update generated docs files"
+        git add context/context.json ${{ env.RST_FILE }}
+        git diff --staged --quiet || git commit -m "Update generated docs files for ${{ env.ONTOLOGY_NAME }}"
 
     - name: Debug before pull
       run: |
@@ -85,67 +98,54 @@ jobs:
         git stash pop || echo "No stash to apply"
 
     - name: Push changes
-      if: github.event_name == 'push' && github.ref == 'refs/heads/master'  # Only push during push events on master
+      if: github.event_name == 'push' && github.ref == 'refs/heads/master'
       run: git push origin HEAD:master
 
     - name: Fetch all tags and process TTL files
       run: |
         git fetch --tags
-        git tag | while read TAG; do
-          sudo mkdir -p "docs/_build/html/versions/$TAG"
-
-          TTL_FILES=(
-            "reference/electrochemistry-quantities.ttl"
-            "reference/electrochemistry-reference.ttl"
-            "modules/electrochemistry-manufacturing.ttl"
-            "modules/electrochemistry-testing.ttl"
-            "electrochemistry.ttl"
-          )
-
-          for FILE in "${TTL_FILES[@]}"; do
-            if [ -f "$FILE" ]; then
-              OUTPUT_FILE="${FILE/.ttl/-foops.ttl}"
-              python docs/scripts/apply_foops_recommendations.py "$FILE" "$OUTPUT_FILE"
-              sudo cp "$OUTPUT_FILE" "docs/_build/html/versions/$TAG/$(basename "$FILE")"
-            else
-              echo "Warning: $FILE not found!"
+        IFS=' ' read -r -a TTL_FILES <<< "${{ env.TTL_FILES }}"
+    
+        for TAG in $(git tag); do
+            sudo mkdir -p "docs/_build/html/versions/$TAG"
+            for FILE in "${TTL_FILES[@]}"; do
+                if [ -f "$FILE" ]; then
+                    OUTPUT_FILE="${FILE/.ttl/-foops.ttl}"
+                    python .github/scripts/apply_foops_recommendations.py "$FILE" "$OUTPUT_FILE"
+                    sudo cp "$OUTPUT_FILE" "docs/_build/html/versions/$TAG/$(basename "$FILE")"
+                else
+                    echo "Warning: $FILE not found!"
+                fi
+            done
+    
+            if [ -d "context" ]; then
+                sudo mkdir -p "docs/_build/html/versions/$TAG/context"
+                sudo cp "context/context.json" "docs/_build/html/versions/$TAG/context"
             fi
-          done
-
-          if [ -d "context" ]; then
-            sudo mkdir -p "docs/_build/html/versions/$TAG/context"
-            sudo cp "context/context.json" "docs/_build/html/versions/$TAG/context"
-          fi
         done
 
     - name: Copy TTL files to HTML directory
       run: |
-        TTL_FILES=(
-          "reference/electrochemistry-quantities.ttl"
-          "reference/electrochemistry-reference.ttl"
-          "modules/electrochemistry-manufacturing.ttl"
-          "modules/electrochemistry-testing.ttl"
-          "electrochemistry.ttl"
-        )
-
+        IFS=' ' read -r -a TTL_FILES <<< "${{ env.TTL_FILES }}"
+    
         for FILE in "${TTL_FILES[@]}"; do
-          if [ -f "$FILE" ]; then
-            OUTPUT_FILE="${FILE/.ttl/-foops.ttl}"
-            python docs/scripts/apply_foops_recommendations.py "$FILE" "$OUTPUT_FILE"
-            sudo cp "$OUTPUT_FILE" "docs/_build/html/$(basename "$FILE")"
-          else
-            echo "Warning: $FILE not found!"
-          fi
+            if [ -f "$FILE" ]; then
+                OUTPUT_FILE="${FILE/.ttl/-foops.ttl}"
+                python .github/scripts/apply_foops_recommendations.py "$FILE" "$OUTPUT_FILE"
+                sudo cp "$OUTPUT_FILE" "docs/_build/html/$(basename "$FILE")"
+            else
+                echo "Warning: $FILE not found!"
+            fi
         done
 
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: documentationHTML
+        name: "${{ env.ONTOLOGY_NAME }}_Documentation_${{ env.DOC_DATE }}"
         path: docs/_build/html/
 
     - name: Deploy
-      if: github.ref == 'refs/heads/master' && github.event_name == 'push'  # Only deploy during push events on master
+      if: github.ref == 'refs/heads/master' && github.event_name == 'push'
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
