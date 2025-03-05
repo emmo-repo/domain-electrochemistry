@@ -97,9 +97,32 @@ def entities_to_rst(entities: list[dict]) -> str:
 
         iri_prefix, iri_suffix = item['IRI'].split("#")
 
-        rst += f"{item['prefLabel']}\n"
+        rst += ".. raw:: html\n\n"
+        rst += "   <div id=\"" + iri_suffix + "\"></div>\n\n"
+        
+        rst += item['prefLabel'] + "\n"
         rst += "-" * len(item['prefLabel']) + "\n\n"
-        rst += f"* {item['IRI']}\n\n"
+        rst += "* " + item['IRI'] + "\n\n"
+
+        rst += ".. raw:: html\n\n"
+        indent = "  "
+        rst += indent + "<table class=\"element-table\">\n"
+        
+        for key, value in item.items():
+            if key not in ['IRI', 'prefLabel'] and value not in ["None", ""]:
+                rst += indent + "<tr>\n"
+                rst += indent + "<td class=\"element-table-key\"><span class=\"element-table-key\">" + key + "</span></td>\n"
+                
+                if value.startswith("http"):
+                    value = f"""<a href='{value}'>{value}</a>"""
+                else:
+                    value = value.encode('ascii', 'xmlcharrefreplace').decode('utf-8')
+                    value = value.replace('\n', '\n' + indent)
+
+                rst += indent + "<td class=\"element-table-value\">" + value + "</td>\n"
+                rst += indent + "</tr>\n"
+        
+        rst += indent + "</table>\n\n"
 
         callout_mapping = {
             "Tip": "tip",
