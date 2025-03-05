@@ -1,5 +1,5 @@
 import os
-from rdflib import Graph
+from rdflib import Graph, URIRef, Literal
 
 
 ########## LOAD TTL ################
@@ -14,10 +14,9 @@ def load_ttl_from_file(filepath: str) -> Graph:
 ########## QUERY TTL ################
 
 def extract_terms_info_sparql(g: Graph) -> list:
-    """Extracts terms from the TTL graph using SPARQL."""
+    """Extracts terms from the TTL graph using SPARQL, including parent and subclass links."""
     text_entities = []
 
-    # SPARQL QUERY #
     PREFIXES = """
         PREFIX emmo: <https://w3id.org/emmo#>
         PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
@@ -25,10 +24,10 @@ def extract_terms_info_sparql(g: Graph) -> list:
         """
 
     list_entity_types = [
-        "IRI", "prefLabel", "Elucidation", "Alternative Label(s)", 
-        "IEC Reference", "IUPAC Reference", "Wikipedia Reference", 
+        "IRI", "prefLabel", "Elucidation", "Alternative Label(s)",
+        "IEC Reference", "IUPAC Reference", "Wikipedia Reference",
         "Wikidata Reference", "Comment", 
-        "Tip", "Caution", "Important", "Note", "Danger", "Error", 
+        "Tip", "Caution", "Important", "Note", "Danger", "Error",
         "Warning", "Admonition"
     ]
 
@@ -40,7 +39,7 @@ def extract_terms_info_sparql(g: Graph) -> list:
                ?error ?warning ?admonition
         WHERE {
             ?iri skos:prefLabel ?prefLabel.
-            
+
             OPTIONAL { ?iri emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ?elucidation . }
             OPTIONAL { ?iri skos:altLabel ?altLabel . }
             OPTIONAL { ?iri emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f ?iecref . }
@@ -49,7 +48,6 @@ def extract_terms_info_sparql(g: Graph) -> list:
             OPTIONAL { ?iri emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 ?wikidataref . }
             OPTIONAL { ?iri rdfs:comment ?comment . }
 
-            # Extract callout annotations
             OPTIONAL { ?iri emmo:EMMO_b6730304_cabc_4104_b415_14218466445c ?caution . }
             OPTIONAL { ?iri emmo:EMMO_5f7abc2a_5b50_41c3_8def_c8ba7c3b083e ?tip . }
             OPTIONAL { ?iri emmo:EMMO_4c8480cf_56de_41da_8699_f12a9033313a ?important . }
@@ -61,16 +59,43 @@ def extract_terms_info_sparql(g: Graph) -> list:
         }
         GROUP BY ?iri ?prefLabel ?elucidation ?caution ?tip ?important ?note ?danger ?error ?warning ?admonition
         """
-        
+    
     qres = g.query(query)
 
     for hit in qres:    
         hit_dict = {entity_type: str(entity) for entity_type, entity in zip(list_entity_types, hit)}
+
+        # Fetch direct parents (rdfs:subClassOf)
+        parents = []
+        parent_query = PREFIXES + """
+            SELECT ?parent ?parentLabel WHERE {
+                <%s> rdfs:subClassOf ?parent .
+                ?parent skos:prefLabel ?parentLabel .
+            }
+        """ % hit_dict['IRI']
+        for row in g.query(parent_query):
+            parent_iri, parent_label = row
+            parents.append((str(parent_iri), str(parent_label)))
+        hit_dict["Parent Classes"] = parents
+
+        # Fetch direct subclasses
+        subclasses = []
+        subclass_query = PREFIXES + """
+            SELECT ?subclass ?subclassLabel WHERE {
+                ?subclass rdfs:subClassOf <%s> .
+                ?subclass skos:prefLabel ?subclassLabel .
+            }
+        """ % hit_dict['IRI']
+        for row in g.query(subclass_query):
+            subclass_iri, subclass_label = row
+            subclasses.append((str(subclass_iri), str(subclass_label)))
+        hit_dict["Subclasses"] = subclasses
+
         text_entities.append(hit_dict)
 
     text_entities.sort(key=lambda e: e["prefLabel"])
-
     return text_entities
+
 
 
 ########## RENDER RST HEADER ################
@@ -88,7 +113,7 @@ This page lists all terms extracted from the electrochemistry-related ontologies
 ########## RENDER RST CONTENT ################
 
 def entities_to_rst(entities: list[dict]) -> str:
-    """Converts extracted ontology terms into an RST format."""
+    """Converts extracted ontology terms into an RST format, including parent/subclass links."""
     rst = ""
 
     for item in entities:
@@ -97,51 +122,47 @@ def entities_to_rst(entities: list[dict]) -> str:
 
         iri_prefix, iri_suffix = item['IRI'].split("#")
 
-        rst += ".. raw:: html\n\n"
-        rst += "   <div id=\"" + iri_suffix + "\"></div>\n\n"
+        # Add Sphinx anchor for permalinks
+        rst += f".. _{iri_suffix}:\n\n"
         
-        rst += item['prefLabel'] + "\n"
+        rst += f"{item['prefLabel']}\n"
         rst += "-" * len(item['prefLabel']) + "\n\n"
-        rst += "* " + item['IRI'] + "\n\n"
+        rst += f"* {item['IRI']}\n\n"
 
         rst += ".. raw:: html\n\n"
-        indent = "  "
-        rst += indent + "<table class=\"element-table\">\n"
-        
+        rst += "  <table class=\"element-table\">\n"
+
         for key, value in item.items():
-            if key not in ['IRI', 'prefLabel'] and value not in ["None", ""]:
-                rst += indent + "<tr>\n"
-                rst += indent + "<td class=\"element-table-key\"><span class=\"element-table-key\">" + key + "</span></td>\n"
-                
+            if key not in ['IRI', 'prefLabel', 'Parent Classes', 'Subclasses'] and value not in ["None", ""]:
+                rst += "  <tr>\n"
+                rst += f"    <td class=\"element-table-key\"><span class=\"element-table-key\">{key}</span></td>\n"
+
                 if value.startswith("http"):
-                    value = f"""<a href='{value}'>{value}</a>"""
-                else:
-                    value = value.encode('ascii', 'xmlcharrefreplace').decode('utf-8')
-                    value = value.replace('\n', '\n' + indent)
+                    value = f"<a href='{value}'>{value}</a>"
+                rst += f"    <td class=\"element-table-value\">{value}</td>\n"
+                rst += "  </tr>\n"
 
-                rst += indent + "<td class=\"element-table-value\">" + value + "</td>\n"
-                rst += indent + "</tr>\n"
-        
-        rst += indent + "</table>\n\n"
+        # Add parent classes section
+        if item["Parent Classes"]:
+            rst += "  <tr>\n"
+            rst += "    <td class=\"element-table-key\"><span class=\"element-table-key\">Parent Classes</span></td>\n"
+            rst += "    <td class=\"element-table-value\">"
+            parent_links = [f"<a href='#{iri.split('#')[-1]}'>{label}</a>" for iri, label in item["Parent Classes"]]
+            rst += ", ".join(parent_links)
+            rst += "</td>\n"
+            rst += "  </tr>\n"
 
-        callout_mapping = {
-            "Tip": "tip",
-            "Caution": "caution",
-            "Important": "important",
-            "Note": "note",
-            "Danger": "danger",
-            "Warning": "warning",
-            "Error": "error",
-            "Admonition": "admonition"
-        }
+        # Add subclasses section
+        if item["Subclasses"]:
+            rst += "  <tr>\n"
+            rst += "    <td class=\"element-table-key\"><span class=\"element-table-key\">Subclasses</span></td>\n"
+            rst += "    <td class=\"element-table-value\">"
+            subclass_links = [f"<a href='#{iri.split('#')[-1]}'>{label}</a>" for iri, label in item["Subclasses"]]
+            rst += ", ".join(subclass_links)
+            rst += "</td>\n"
+            rst += "  </tr>\n"
 
-        callout_rst = ""
-        for callout, admonition in callout_mapping.items():
-            callout_value = item.get(callout, "").strip()
-            if callout_value and callout_value.lower() != "none":
-                callout_rst += f".. {admonition}::\n\n   {callout_value}\n\n"
-
-        rst += callout_rst
+        rst += "  </table>\n\n"
 
     return rst
 
