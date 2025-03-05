@@ -2,22 +2,16 @@ import json
 from config_loader import load_ontology_config
 
 def main():
-    # Load configuration from ontology_config.yml
     config = load_ontology_config()
 
-    print(config)
+    # ✅ Only output valid `key=value` lines for GitHub Actions
+    print(f"ONTOLOGY_NAME={config['ontology_name']}")
+    print(f"ONTOLOGY_URI={config['ontology_uri']}")
+    print(f"RST_FILE={config['rst_output_filename']}")
+    print(f"INFERRED_TTL_FILENAME={config['inferred_ttl_filename']}")
 
-    ttl_files = config["ttl_files"]
-    ontology_name = config["ontology_name"]
-    rst_output_filename = config["rst_output_filename"]
-
-    # Print environment variables for GitHub Actions
-    print(f"ONTOLOGY_NAME={ontology_name}")
-
-    # Prepare JSON version of ttl_files paths only (used by run_emmocheck.py)
-    ttl_paths = [f["path"] for f in ttl_files]
-    print(f"TTL_FILES_JSON={json.dumps(ttl_paths)}")
-
+    ttl_files_json = json.dumps([f['path'] for f in config['ttl_files']])
+    print(f"TTL_FILES_JSON={ttl_files_json}")
 
 if __name__ == "__main__":
     main()
