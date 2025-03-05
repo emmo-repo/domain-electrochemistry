@@ -22,7 +22,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install rdflib owlrl
+        pip install rdflib owlrl PyYAML
 
     - name: Run reasoning script
       run: |
