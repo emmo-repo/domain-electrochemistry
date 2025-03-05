@@ -281,8 +281,8 @@ def rendering_workflow():
             g = load_ttl_from_file(filepath)
             entities_list = extract_terms_info_sparql(g)
 
-            rst_content += f"\n{module['section title']}\n"
-            rst_content += "=" * len(module['section title']) + "\n\n"
+            rst_content += f"\n{module['section_title']}\n"
+            rst_content += "=" * len(module['section_title']) + "\n\n"
             rst_content += entities_to_rst(entities_list)
         else:
             print(f"Warning: {filepath} not found.")
