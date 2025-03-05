@@ -14693,10 +14693,6 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4ebe2ef1_eea
     <td class="element-table-value">difference of electric potentials measured between identical metallic leads to two electrodes of an electrochemical cell</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">Note</span></td>
-    <td class="element-table-value">Cell voltage fluctuates based on factors such as applied current, internal resistance, temperature, and composition.</td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">Parent Classes</span></td>
     <td class="element-table-value"><a href='#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112'>ElectrochemicalQuantity</a></td>
   </tr>
@@ -18001,10 +17997,6 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b7781ebc_90a
     <td class="element-table-value">MaximumStorageCapacity</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">Caution</span></td>
-    <td class="element-table-value">For real applications, the maximum capacity is affected by environmental conditions, rate of operation, and state-of-heath and can deviate from the reported value.</td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">Parent Classes</span></td>
     <td class="element-table-value"><a href='#electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26'>RatedCapacity</a>, <a href='#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112'>ElectrochemicalQuantity</a></td>
   </tr>
@@ -18381,10 +18373,6 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d3c0078e_c1d
   <tr>
     <td class="element-table-key"><span class="element-table-key">Alternative Label(s)</span></td>
     <td class="element-table-value">MiniumumAcceptedCapacity</td>
-  </tr>
-  <tr>
-    <td class="element-table-key"><span class="element-table-key">Caution</span></td>
-    <td class="element-table-value">For real applications, the achieveable minimum capacity is affected by environmental conditions, rate of operation, and state-of-heath and can deviate from the reported value.</td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">Parent Classes</span></td>
@@ -18891,14 +18879,6 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8abde9d0_84f
     <td class="element-table-value">the rated capacity that is representative of the typical value associated with a cell as stated by the manufacturer</td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">Tip</span></td>
-    <td class="element-table-value">To ensure meaningful comparisons, nominal capacity values should always be evaluated under matching test conditions.</td>
-  </tr>
-  <tr>
-    <td class="element-table-key"><span class="element-table-key">Caution</span></td>
-    <td class="element-table-value">While nominal capacity provides a useful reference, actual capacity depends on various factors, including temperature, rate, and state-of-health.</td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">Parent Classes</span></td>
     <td class="element-table-value"><a href='#electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26'>RatedCapacity</a></td>
   </tr>
@@ -18931,10 +18911,6 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_639b844a_e80
   <tr>
     <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
     <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-31'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-31</a></td>
-  </tr>
-  <tr>
-    <td class="element-table-key"><span class="element-table-key">Caution</span></td>
-    <td class="element-table-value">Nominal voltage may not accurately reflect voltage under extreme loads or temperatures—always check manufacturer specifications.</td>
   </tr>
   </table>
 
@@ -19237,10 +19213,6 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1cd1d777_e67
   <tr>
     <td class="element-table-key"><span class="element-table-key">Comment</span></td>
     <td class="element-table-value">difference between the electrode potential with current flow, and the electrode potential without current flow, i.e. the equilibrium potential</td>
-  </tr>
-  <tr>
-    <td class="element-table-key"><span class="element-table-key">Note</span></td>
-    <td class="element-table-value">Overpotential is often divided into different contributions: activation overpotential, ohmic overpotential, and concentration overpotential.</td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">Parent Classes</span></td>
@@ -19963,14 +19935,6 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9b3b4668_079
   <tr>
     <td class="element-table-key"><span class="element-table-key">IEC Reference</span></td>
     <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-15'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-15</a></td>
-  </tr>
-  <tr>
-    <td class="element-table-key"><span class="element-table-key">Tip</span></td>
-    <td class="element-table-value">The value of rated capacity should be reported together with information on the conditions under which it was determined (e.g. voltage limits, applied current, temperature).</td>
-  </tr>
-  <tr>
-    <td class="element-table-key"><span class="element-table-key">Caution</span></td>
-    <td class="element-table-value">The value for rated capacity does not necessarily represent the actual capacity in real-world usage, as factors like temperature, rate, and state-of-health affect the effective capacity.</td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">Parent Classes</span></td>
@@ -21312,10 +21276,6 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_372c89d0_ada
   <tr>
     <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
     <td class="element-table-value">the amount of electric charge that can be stored in a material, component, or device, under infinitely low current, and derived from first principles</td>
-  </tr>
-  <tr>
-    <td class="element-table-key"><span class="element-table-key">Caution</span></td>
-    <td class="element-table-value">The value of the practically achieve able capacity is often much lower than the theoretical value.</td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">Parent Classes</span></td>
