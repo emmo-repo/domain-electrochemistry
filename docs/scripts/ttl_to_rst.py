@@ -14,13 +14,14 @@ def load_ttl_from_file(filepath: str) -> Graph:
 ########## QUERY TTL ################
 
 def extract_terms_info_sparql(g: Graph) -> list:
-    """Extracts terms from the TTL graph using SPARQL, including parent and subclass links."""
+    """Extracts terms from the TTL graph using SPARQL, including parent, subclass, and restriction links."""
     text_entities = []
 
     PREFIXES = """
         PREFIX emmo: <https://w3id.org/emmo#>
         PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        PREFIX owl: <http://www.w3.org/2002/07/owl#>
         """
 
     list_entity_types = [
@@ -59,10 +60,10 @@ def extract_terms_info_sparql(g: Graph) -> list:
         }
         GROUP BY ?iri ?prefLabel ?elucidation ?caution ?tip ?important ?note ?danger ?error ?warning ?admonition
         """
-    
+
     qres = g.query(query)
 
-    for hit in qres:    
+    for hit in qres:
         hit_dict = {entity_type: str(entity) for entity_type, entity in zip(list_entity_types, hit)}
 
         # Fetch direct parents (rdfs:subClassOf)
@@ -91,10 +92,36 @@ def extract_terms_info_sparql(g: Graph) -> list:
             subclasses.append((str(subclass_iri), str(subclass_label)))
         hit_dict["Subclasses"] = subclasses
 
+        # Fetch OWL Restrictions (object property + someValuesFrom)
+        restrictions = []
+        restriction_query = PREFIXES + """
+            SELECT ?prop ?propLabel ?target ?targetLabel WHERE {
+                <%s> rdfs:subClassOf [
+                    rdf:type owl:Restriction ;
+                    owl:onProperty ?prop ;
+                    owl:someValuesFrom ?target
+                ] .
+                ?prop skos:prefLabel ?propLabel .
+                ?target skos:prefLabel ?targetLabel .
+            }
+        """ % hit_dict['IRI']
+
+        for row in g.query(restriction_query):
+            prop_iri, prop_label, target_iri, target_label = map(str, row)
+            restrictions.append({
+                "property_iri": prop_iri,
+                "property_label": prop_label,
+                "target_iri": target_iri,
+                "target_label": target_label,
+            })
+
+        hit_dict["Restrictions"] = restrictions
+
         text_entities.append(hit_dict)
 
     text_entities.sort(key=lambda e: e["prefLabel"])
     return text_entities
+
 
 
 
@@ -113,7 +140,7 @@ This page lists all terms extracted from the electrochemistry-related ontologies
 ########## RENDER RST CONTENT ################
 
 def entities_to_rst(entities: list[dict]) -> str:
-    """Converts extracted ontology terms into an RST format, including parent/subclass links."""
+    """Converts extracted ontology terms into an RST format."""
     rst = ""
 
     for item in entities:
@@ -122,18 +149,19 @@ def entities_to_rst(entities: list[dict]) -> str:
 
         iri_prefix, iri_suffix = item['IRI'].split("#")
 
-        # Add Sphinx anchor for permalinks
-        rst += f".. _{iri_suffix}:\n\n"
+        rst += ".. raw:: html\n\n"
+        rst += "   <div id=\"" + iri_suffix + "\"></div>\n\n"
         
-        rst += f"{item['prefLabel']}\n"
+        rst += item['prefLabel'] + "\n"
         rst += "-" * len(item['prefLabel']) + "\n\n"
-        rst += f"* {item['IRI']}\n\n"
+        rst += "IRI: " + item['IRI'] + "\n\n"
 
         rst += ".. raw:: html\n\n"
-        rst += "  <table class=\"element-table\">\n"
-
+        indent = "  "
+        rst += indent + "<table class=\"element-table\">\n"
+        
         for key, value in item.items():
-            if key not in ['IRI', 'prefLabel', 'Parent Classes', 'Subclasses'] and value not in ["None", ""]:
+            if key not in ['IRI', 'prefLabel', 'Parent Classes', 'Subclasses', 'Restrictions'] and value not in ["None", ""]:
                 rst += "  <tr>\n"
                 rst += f"    <td class=\"element-table-key\"><span class=\"element-table-key\">{key}</span></td>\n"
 
@@ -162,7 +190,35 @@ def entities_to_rst(entities: list[dict]) -> str:
             rst += "</td>\n"
             rst += "  </tr>\n"
 
+        if item.get("Restrictions"):
+            for restriction in item["Restrictions"]:
+                rst += "  <tr>\n"
+                rst += f"    <td class=\"element-table-key\"><span class=\"element-table-key\">{restriction['property_label']}</span></td>\n"
+                rst += f"    <td class=\"element-table-value\">"
+                rst += f"<a href='#{restriction['target_iri'].split('#')[-1]}'>{restriction['target_label']}</a>"
+                rst += "</td>\n"
+                rst += "  </tr>\n"
+
         rst += "  </table>\n\n"
+
+        callout_mapping = {
+            "Tip": "tip",
+            "Caution": "caution",
+            "Important": "important",
+            "Note": "note",
+            "Danger": "danger",
+            "Warning": "warning",
+            "Error": "error",
+            "Admonition": "admonition"
+        }
+
+        callout_rst = ""
+        for callout, admonition in callout_mapping.items():
+            callout_value = item.get(callout, "").strip()
+            if callout_value and callout_value.lower() != "none":
+                callout_rst += f".. {admonition}::\n\n   {callout_value}\n\n"
+
+        rst += callout_rst
 
     return rst
 
