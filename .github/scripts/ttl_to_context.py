@@ -2,10 +2,19 @@ import rdflib
 from rdflib.namespace import RDF, OWL, SKOS
 import json
 import os
+import yaml
 from urllib.parse import urljoin
 from urllib.request import pathname2url
-import warnings
-from ontology_config import inferred_ttl_filename
+
+# Load ontology configuration from YAML
+def load_ontology_config():
+    config_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "ontology_config.yml")
+    with open(config_path, "r", encoding="utf-8") as f:
+        return yaml.safe_load(f)
+
+# Load configuration
+config = load_ontology_config()
+inferred_ttl_filename = config['output']['inferred_ttl']
 
 
 def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.org/2000/01/rdf-schema#label'):
@@ -22,7 +31,7 @@ def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.or
     """
     g = rdflib.Graph()
     g.parse(ttl_file, format='ttl')
-    
+
     CHAMEO = rdflib.Namespace("https://w3id.org/emmo/domain/chameo#")
     g.bind('chameo', CHAMEO)
 
@@ -30,9 +39,9 @@ def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.or
     g.bind('emmo', EMMO)
 
     context = {}
-    object_properties  = {}
+    object_properties = {}
     other_entries = {}
-    namespace_prefixes= {}
+    namespace_prefixes = {}
     predicate = rdflib.URIRef(predicate_uri)
     label = rdflib.URIRef(label_uri)
     existing_keys = set()
@@ -46,15 +55,11 @@ def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.or
                     "@id": str(s),
                     "@type": "@id"
                 }
-                
-                
+
         elif p == predicate:
             # Normal context entry
-            # Use the label as key if it exists
-            #label_value = g.value(s, label) if g.value(s, label) else str(s)
             label_value = str(s)
             other_entries[str(o)] = str(label_value)
-            
 
     # Add namespace prefixes to the context
     for prefix, uri in g.namespace_manager.namespaces():
@@ -74,29 +79,36 @@ def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.or
             **sorted_other_entries
         }
     }
-    
+
     print("Namespaces:")
     for prefix, uri in g.namespace_manager.namespaces():
         print(f"{prefix}: {uri}")
 
-    
     return context
 
 
+# Use inferred_ttl_filename from config
 filename = inferred_ttl_filename
+
+# Parent directory two levels up
 parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 file_path = os.path.join(parent_dir, '..', filename)
 
 # Convert the file path to a file URI
 file_uri = urljoin('file:', pathname2url(file_path))
 
+# Predicate URI for prefLabel
 predicate_uri = 'http://www.w3.org/2004/02/skos/core#prefLabel'
 context = generate_jsonld_context(file_uri, predicate_uri)
 
-# Determine the path for saving the context file in the same directory as the HTML docs
+# Save JSON-LD context file in the `context` folder
 context_file_path = os.path.join(os.path.dirname(parent_dir), 'context/context.json')
 
+# Ensure the context directory exists
+os.makedirs(os.path.dirname(context_file_path), exist_ok=True)
+
 # Save to JSON file
-with open(context_file_path, 'w') as f:
+with open(context_file_path, 'w', encoding='utf-8') as f:
     json.dump(context, f, indent=4)
 
+print(f"✅ JSON-LD context saved to {context_file_path}")

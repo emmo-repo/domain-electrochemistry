@@ -4,12 +4,36 @@ import logging
 import sys
 import os
 
-# Import ontology_config
-try:
-    from ontology_config import ontology_name, ttl_files
-except ImportError:
-    print("Error: Could not import ontology_config. Ensure ontology_config.py is in the Python path.")
-    sys.exit(1)
+import os
+import sys
+import yaml
+
+def load_ontology_config():
+    """Load ontology_name and ttl_files from ontology_config.yml."""
+    config_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "ontology_config.yml")
+
+    if not os.path.isfile(config_path):
+        print(f"❌ ontology_config.yml not found at: {config_path}")
+        sys.exit(1)
+
+    try:
+        with open(config_path, 'r', encoding='utf-8') as file:
+            config = yaml.safe_load(file)
+
+            ontology_name = config.get("ontology", {}).get("name")
+            ttl_files = config.get("ttl_files", [])
+
+            if not ontology_name or not ttl_files:
+                print("❌ ontology_name or ttl_files missing from ontology_config.yml.")
+                sys.exit(1)
+
+            return ontology_name, ttl_files
+    except Exception as e:
+        print(f"❌ Failed to load ontology_config.yml: {e}")
+        sys.exit(1)
+
+
+ontology_name, ttl_files = load_ontology_config()
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)

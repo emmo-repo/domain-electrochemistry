@@ -22,14 +22,9 @@ jobs:
         pip install -U setuptools wheel
         pip install -r requirements.txt
 
-    - name: Load ontology configuration
-      id: load-config
+    - name: Load ontology configuration from YAML
       run: |
-        echo "Loading ontology configuration..."
-        TTL_FILES_JSON=$(python -c 'from ontology_config import ttl_files; import json; print(json.dumps(ttl_files))')
-        echo "TTL_FILES_JSON=$TTL_FILES_JSON" >> $GITHUB_ENV
+        python .github/scripts/load_ontology_config.py >> $GITHUB_ENV
 
     - name: Run EMMO Check for all configured TTL files
       run: python .github/scripts/run_emmocheck.py
-      
-    

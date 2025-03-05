@@ -38,19 +38,10 @@ jobs:
         python -m pip install --upgrade pip
         pip install Markdown==3.4.3 rdflib==6.3.2 pandoc
 
-    - name: Load ontology configuration
+    - name: Load ontology configuration from YAML
       run: |
-        echo "Loading ontology configuration..."
-        echo "ONTOLOGY_NAME=$(python -c 'from ontology_config import ontology_name; print(ontology_name)')" >> $GITHUB_ENV
-        echo "RST_FILE=$(python -c 'from ontology_config import rst_output_filename; print(rst_output_filename)')" >> $GITHUB_ENV
-        TTL_FILES=$(python -c 'from ontology_config import ttl_files; print(" ".join([f["path"] for f in ttl_files]))')
-        if [ -z "$TTL_FILES" ]; then
-            echo "Warning: No TTL files found in ontology_config.py."
-        fi
-        echo "TTL_FILES=$TTL_FILES" >> $GITHUB_ENV
-        echo "Loaded TTL files: $TTL_FILES"
-        echo "DOC_DATE=$(date +%Y%m%d)" >> $GITHUB_ENV
-
+        python .github/scripts/load_ontology_config.py >> $GITHUB_ENV
+  
     - name: Render documentation from TTL files
       run: python .github/scripts/ttl_to_rst.py
 

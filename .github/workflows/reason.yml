@@ -26,5 +26,5 @@ jobs:
 
     - name: Run reasoning script
       run: |
-        cd .github/scripts
-        python check_reasoner.py
+        python .github/scripts/check_reasoner.py
+
