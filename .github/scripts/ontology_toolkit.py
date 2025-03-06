@@ -240,10 +240,6 @@ This page lists all terms extracted from the {ontology_name.lower()} ontologies.
 
 {ontology_description}
 
-.. contents::
-   :depth: 2
-   :local:
-
 """
 
 
