@@ -92,6 +92,11 @@ jobs:
       if: github.event_name == 'push' && github.ref == 'refs/heads/master'
       run: git push origin HEAD:master
 
+    - name: Load TTL Files into ENV
+      run: |
+        TTL_FILES=$(python .github/scripts/ontology_toolkit.py --print-ttl-files)
+        echo "TTL_FILES=$TTL_FILES" >> $GITHUB_ENV
+
     - name: Fetch all tags and process TTL files
       run: |
         git fetch --tags
@@ -114,11 +119,10 @@ jobs:
                 sudo cp "context/context.json" "docs/_build/html/versions/$TAG/context"
             fi
         done
-
-    - name: Copy TTL files to HTML directory
+    
+    - name: Apply FOOPS Recommendations to Each File
       run: |
         IFS=' ' read -r -a TTL_FILES <<< "${{ env.TTL_FILES }}"
-    
         for FILE in "${TTL_FILES[@]}"; do
             if [ -f "$FILE" ]; then
                 OUTPUT_FILE="${FILE/.ttl/-foops.ttl}"
@@ -128,6 +132,7 @@ jobs:
                 echo "Warning: $FILE not found!"
             fi
         done
+      
 
     - name: Upload artifacts
       uses: actions/upload-artifact@v4

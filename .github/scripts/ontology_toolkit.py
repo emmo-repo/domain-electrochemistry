@@ -4,6 +4,10 @@ import os
 import sys
 import yaml
 
+def print_ttl_files():
+    config = load_ontology_config()
+    print(" ".join([file['path'] for file in config['ttl_files']]))
+
 def find_repo_root_with_config():
     """Recursively search upward from the current script location until ontology_config.yml is found."""
     current_dir = os.path.abspath(os.path.dirname(__file__))
@@ -63,6 +67,14 @@ def load_ontology_config():
 
 def main():
     config = load_ontology_config()
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--print-ttl-files", action="store_true", help="Prints space-separated list of TTL files for GitHub Actions.")
+    args = parser.parse_args()
+
+    if args.print_ttl_files:
+        print_ttl_files()
 
     # ✅ Only output valid `key=value` lines for GitHub Actions
     print(f"ONTOLOGY_NAME={config['ontology_name']}")
