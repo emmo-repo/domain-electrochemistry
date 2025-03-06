@@ -3,9 +3,9 @@
 Domain Electrochemistry Terms
 =============================
 
-This page lists all terms extracted from the domain electrochemistry ontologies.
+The ontology for electrochemical systems.
 
-Ontology for describing electrochemical systems.
+This page lists all terms extracted from the domain electrochemistry ontology. It is intended to serve as a reference resource. 
 
 
 Electrochemistry Reference
