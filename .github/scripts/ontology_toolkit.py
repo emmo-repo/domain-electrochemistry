@@ -36,6 +36,8 @@ def load_ontology_config():
 
             return {
                 "ontology_name": config.get("ontology_name"),
+                "ontology_noun": config.get("ontology_noun"),
+                "ontology_adjective": config.get("ontology_adjective"),
                 "ontology_uri": config.get("ontology_uri"),
                 "ontology_prefix": config.get("ontology_prefix"),
                 "ontology_description": config.get("ontology_description"),
