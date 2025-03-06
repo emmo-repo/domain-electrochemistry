@@ -1,12 +1,16 @@
 
-===================
-Electrochemistry Terms
-===================
+Domain Electrochemistry Terms
+=============================
 
-This page lists all terms extracted from the electrochemistry-related ontologies.
+This page lists all terms extracted from the domain electrochemistry ontologies.
+
+Ontology for describing electrochemical systems.
 
 Electrochemistry Reference
 ==========================
+
+
+----
 
 .. raw:: html
 
@@ -29,6 +33,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_58a20764_c33
     <td class="element-table-value"><a href='#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7'>ElectricPotentialSignal</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -60,6 +67,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6592d8cc_4ce
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc"></div>
@@ -89,6 +99,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9a823d64_9d1
     <td class="element-table-value"><a href='#electrochemistry_0afe79ed_dc0d_4b3e_88fa_ae0c7b1e88b5'>PotassiumBasedElectrode</a>, <a href='#electrochemistry_0d2aaaf4_1a8a_4a32_abd8_7d0fdf0ae9d2'>NickelBasedElectrode</a>, <a href='#electrochemistry_0ee59786_b090_444d_a46d_505797d07ca4'>VanadiumBasedElectrode</a>, <a href='#electrochemistry_26b19a7c_59ca_4e1b_8fb9_ba061c22531e'>CopperBasedElectrode</a>, <a href='#electrochemistry_2a177462_ff01_4b83_ab9f_032e93c9ec69'>MagnesiumBasedElectrode</a>, <a href='#electrochemistry_399b10cd_8a2e_47be_96b8_295890bd2460'>RhodiumBasedElectrode</a>, <a href='#electrochemistry_3e6a7d5f_3700_46b3_b1b8_f34e37e6f931'>IridiumBasedElectrode</a>, <a href='#electrochemistry_468b3b63_b62a_4110_8c7e_40fffd5fdfd6'>ManganesePhosphateBasedElectrode</a>, <a href='#electrochemistry_46ac0fd3_2b8e_40aa_bf5d_19cf1dd39052'>StrontiumBasedElectrode</a>, <a href='#electrochemistry_47346d85_b9be_4480_8993_6307b1c58fcd'>LithiumBasedElectrode</a>, <a href='#electrochemistry_4f2348dd_d9ea_4448_af8c_a4a38f3d04b4'>CalciumBasedElectrode</a>, <a href='#electrochemistry_510e4061_c4fa_49aa_a052_23ad56098eda'>ChromiumBasedElectrode</a>, <a href='#electrochemistry_5186239a_2af7_4dbf_92ca_22e8e583c528'>BlendedActiveElectrode</a>, <a href='#electrochemistry_52547692_f773_4e3f_8c8b_1d9d39bc3c8c'>GoldBasedElectrode</a>, <a href='#electrochemistry_5adb91e0_ffe1_41f3_b779_c6966f65fb0e'>MetalElectrode</a>, <a href='#electrochemistry_5c0fdc09_166e_40a6_ad74_be66f0db51bc'>CarbonMonofluorideElectrode</a>, <a href='#electrochemistry_5e1136d3_df00_40f7_a4bc_8259341053a1'>IronBasedElectrode</a>, <a href='#electrochemistry_610f0bc8_557d_455b_a8ed_272d5d1813c9'>LeadBasedElectrode</a>, <a href='#electrochemistry_6235cc7c_2eee_432a_93af_47d7e05db007'>HardCarbonElectrode</a>, <a href='#electrochemistry_757eae08_4d43_42d4_8b4e_8a0bfd2f9a1c'>InsertionElectrode</a>, <a href='#electrochemistry_79e12290_d1e5_4c41_916c_18f1e4d7fb51'>SiliconBasedElectrode</a>, <a href='#electrochemistry_7b811780_7251_481b_a4d3_97d437955099'>CobaltBasedElectrode</a>, <a href='#electrochemistry_7b9db6b3_36f0_4b5d_acbb_9284a9054a09'>IndiumBasedElectrode</a>, <a href='#electrochemistry_7cc8b738_3462_4592_ba83_951a8d50fef7'>CaesiumBasedElectrode</a>, <a href='#electrochemistry_7ffe1cb6_f87e_4b4a_8ce7_c98e2a584cb1'>RutheniumBasedElectrode</a>, <a href='#electrochemistry_838c115b_6bc9_4ce8_9f8d_86a6bf67742a'>CobaltBasedElectrode</a>, <a href='#electrochemistry_88d2d4bc_4244_4419_a260_ad099a62d580'>SulfurBasedElectrode</a>, <a href='#electrochemistry_952c8c3a_df21_4dd1_8d8c_380e43dc8c78'>AluminiumBasedElectrode</a>, <a href='#electrochemistry_9c557caa_61e2_4fa9_a517_4bad01a68122'>TitaniumBasedElectrode</a>, <a href='#electrochemistry_a10ede13_c895_4f56_a728_b1aab512b31b'>TinBasedElectrode</a>, <a href='#electrochemistry_b1ac8d0c_a215_4e60_82b0_38272eff5131'>ManganeseBasedElectrode</a>, <a href='#electrochemistry_c5fd7b61_40f1_4225_a173_5caa3c5f4773'>TungstenBasedElectrode</a>, <a href='#electrochemistry_c831d963_629a_41ab_850f_97fb6841b739'>GraphiteElectrode</a>, <a href='#electrochemistry_cc4e178c_bc1f_4502_b6c2_33f304ef6bab'>IronBasedElectrode</a>, <a href='#electrochemistry_d0a26dc2_fde9_4a11_ac26_7c18499d28a5'>ZincBasedElectrode</a>, <a href='#electrochemistry_d2726dd5_69f0_4cb1_bd3c_4c48813e57e7'>IronDisulfideElectrode</a>, <a href='#electrochemistry_d54f6aac_7cd2_4d52_9bca_2f19bb1eaec4'>IronPhosphateBasedElectrode</a>, <a href='#electrochemistry_d8a9a88e_d437_4fef_bc3c_65a1fe627061'>PlatinumBasedElectrode</a>, <a href='#electrochemistry_d90221a0_0da7_4876_9cac_0e943e445f6f'>TitaniumBasedElectrode</a>, <a href='#electrochemistry_dd4c5ffa_6228_41d8_8a44_a40a2b22723e'>CadmiumBasedElectrode</a>, <a href='#electrochemistry_df4dd678_9642_47c9_84dd_4bb09f369f53'>SodiumBasedElectrode</a>, <a href='#electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5'>MetalOxideElectrode</a>, <a href='#electrochemistry_eb09ca25_90c9_4b55_9165_76fbf7fb5a46'>BismuthBasedElectrode</a>, <a href='#electrochemistry_f897db90_afd6_42e7_8d1f_0fcba856e45a'>SilverBasedElectrode</a>, <a href='#electrochemistry_f9f056bb_a38b_43bd_a6bd_99d618431f4d'>PalladiumBasedElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -124,6 +137,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79d1b273_58c
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_81833d8a_b03d_4250_be84_6385415beb01"></div>
@@ -150,6 +166,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_81833d8a_b03
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_f6341d7d_7620_48f5_97b2_99b55c349169"></div>
@@ -171,6 +190,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f6341d7d_762
     <td class="element-table-value"><a href='#electrochemistry_19abaccd_43be_4048_965c_e4fb63c5951b'>ElectrochemicalPhenomenon</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -202,6 +224,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0a399f3f_b87
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_8b40856f_1ca2_4137_9616_7fb624671909"></div>
@@ -223,6 +248,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8b40856f_1ca
     <td class="element-table-value"><a href='#electrochemistry_bbb1d95b_72d1_44f6_b07e_a3d7d41ac215'>GasDiffusionElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -253,6 +281,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_615cff2a_be9
     <td class="element-table-value"><a href='#electrochemistry_26a0dc36_8171_4a84_88dd_0f5dd7cb2d20'>PotassiumHydroxideSolution</a>, <a href='#electrochemistry_e84e691a_df58_465c_9771_7a7fe2212ed5'>LithiumHydroxideSolution</a>, <a href='#electrochemistry_ebd01982_6b0c_48e7_90ef_7b7342009449'>SodiumHydroxideSolution</a>, <a href='#electrochemistry_f9e2e676_5cd1_4e22_a776_af45838d4027'>AmmoniaSolution</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -296,6 +327,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a53d6dee_154
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_952c8c3a_df21_4dd1_8d8c_380e43dc8c78"></div>
@@ -318,6 +352,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_952c8c3a_df2
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_1c6cef85_811f_45d0_a0fd_2bc2d9369ea4"></div>
@@ -339,6 +376,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1c6cef85_811
     <td class="element-table-value"><a href='#electrochemistry_757eae08_4d43_42d4_8b4e_8a0bfd2f9a1c'>InsertionElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -366,6 +406,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f9e2e676_5cd
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_3f67016b_32b9_4419_a3f8_a5ffb5e92538"></div>
@@ -392,6 +435,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3f67016b_32b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_3a77b5e7_9646_4154_bf8f_5f798989e5f3"></div>
@@ -417,6 +463,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3a77b5e7_964
     <td class="element-table-value"><a href='#electrochemistry_fb988878_ee54_4350_9ee9_228c00c3ad35'>WorkingElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -456,6 +505,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b6319c74_d2c
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_28213033_4c74_441c_81c4_a0cad05f9eb6"></div>
@@ -485,6 +537,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_28213033_4c7
     <td class="element-table-value"><a href='#electrochemistry_2e6933aa_4522_4f16_a437_37110e6cbd0d'>ElectrodePolarisation</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -516,6 +571,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a0580fa9_507
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_865a40fc_2187_4549_a7e1_37aa2458448f"></div>
@@ -542,6 +600,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_865a40fc_218
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_38755e67_9d3b_4a82_bd8d_ef40a70379c1"></div>
@@ -559,6 +620,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_38755e67_9d3
     <td class="element-table-value">a tank for holding anolyte</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -594,6 +658,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b812e9d0_7c5
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_b2d11f0d_c1b0_4476_8d17_03b73d31e01f"></div>
@@ -628,6 +695,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b2d11f0d_c1b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_98d5101e_cd11_4a0d_b856_6fcd8aad132e"></div>
@@ -654,6 +724,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_98d5101e_cd1
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_f1c7eacb_9f21_4100_925c_3974f266e06f"></div>
@@ -676,6 +749,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f1c7eacb_9f2
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_86be0987_5e21_43ec_b975_8f679999d328"></div>
@@ -697,6 +773,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_86be0987_5e2
     <td class="element-table-value"><a href='#electrochemistry_5186239a_2af7_4dbf_92ca_22e8e583c528'>BlendedActiveElectrode</a>, <a href='#electrochemistry_5adb91e0_ffe1_41f3_b779_c6966f65fb0e'>MetalElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -724,6 +803,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4839708a_386
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_4e02d727_07fe_41fd_886c_041317342086"></div>
@@ -745,6 +827,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4e02d727_07f
     <td class="element-table-value"><a href='#electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59'>Electrolyte</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -780,6 +865,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_68eb5e35_5bd
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_eb09ca25_90c9_4b55_9165_76fbf7fb5a46"></div>
@@ -801,6 +889,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_eb09ca25_90c
     <td class="element-table-value"><a href='#electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc'>ActiveElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -828,6 +919,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5186239a_2af
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_4bdd6359_1422_4c50_ac0c_5d8042dd65fc"></div>
@@ -853,6 +947,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4bdd6359_142
     <td class="element-table-value"><a href='#electrochemistry_ac9723d1_bac0_4109_874e_32849de9299b'>DoubleLayerModel</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -888,6 +985,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e0b57b09_68e
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_02aefb7a_d6ce_4b6e_b854_f7b3d641f670"></div>
@@ -917,6 +1017,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_02aefb7a_d6c
     <td class="element-table-value"><a href='#electrochemistry_a9873d3d_945b_40ba_b9cd_8dfb64cec88f'>Charging</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -952,6 +1055,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d48ea516_5ca
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_dd4c5ffa_6228_41d8_8a44_a40a2b22723e"></div>
@@ -973,6 +1079,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dd4c5ffa_622
     <td class="element-table-value"><a href='#electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc'>ActiveElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -996,6 +1105,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7cc8b738_346
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_4f2348dd_d9ea_4448_af8c_a4a38f3d04b4"></div>
@@ -1017,6 +1129,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4f2348dd_d9e
     <td class="element-table-value"><a href='#electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc'>ActiveElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -1040,6 +1155,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_90103be0_909
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_9d97c7ff_b0c7_4ba2_a3cb_c6509b6798a8"></div>
@@ -1061,6 +1179,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9d97c7ff_b0c
     <td class="element-table-value"><a href='#MeasurementDataPostProcessing'>MeasurementDataPostProcessing</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -1100,6 +1221,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e3d3d21c_cb9
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_f2c33088_224f_4fdb_857a_7cb62e3dddca"></div>
@@ -1126,6 +1250,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f2c33088_224
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_85c4b478_645a_459e_8431_5a9d864ca02e"></div>
@@ -1144,6 +1271,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_85c4b478_645
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_1c530688_ee63_4683_b38f_80cce7ca75c1"></div>
@@ -1161,6 +1291,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1c530688_ee6
     <td class="element-table-value">a non-woven mat of randomly oriented carbon fibers, providing excellent thermal insulation, chemical resistance, and high surface area for various industrial and electrochemical applications</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -1188,6 +1321,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ec6f3d6f_bdf
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_5c0fdc09_166e_40a6_ad74_be66f0db51bc"></div>
@@ -1210,6 +1346,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5c0fdc09_166
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_cd615729_8240_487a_a619_cc94656731f2"></div>
@@ -1227,6 +1366,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cd615729_824
     <td class="element-table-value">a thin, flat material composed of compressed carbon fibers, used in fuel cells and other electrochemical devices for its high electrical conductivity and gas permeability</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -1266,6 +1408,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b0a0dddb_d94
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_573be62a_5aae_4984_9a51_7c50845493df"></div>
@@ -1287,6 +1432,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_573be62a_5aa
     <td class="element-table-value"><a href='#electrochemistry_bbb1d95b_72d1_44f6_b07e_a3d7d41ac215'>GasDiffusionElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -1322,6 +1470,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1aec4cc0_82d
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_8ab1e656_38ff_48e6_ab09_293d76bc9044"></div>
@@ -1347,6 +1498,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8ab1e656_38f
     <td class="element-table-value"><a href='#electrochemistry_a3b53904_22b1_42a9_a515_c8a3aed7e841'>Electrocatalyst</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -1382,6 +1536,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_35c650ab_3b2
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_f8e0d532_cf44_403c_9188_e00ee161a3c1"></div>
@@ -1403,6 +1560,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f8e0d532_cf4
     <td class="element-table-value"><a href='#electrochemistry_ecf136cb_2584_4cb1_98b7_2d2b3d22e40d'>SolidElectrolyteInterphase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -1433,6 +1593,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_187326b9_108
     <td class="element-table-value"><a href='#electrochemistry_2e6933aa_4522_4f16_a437_37110e6cbd0d'>ElectrodePolarisation</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -1468,6 +1631,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c936bfbe_7a0
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_f4a1323a_ce2b_4c1a_b89d_c80170110ed6"></div>
@@ -1498,6 +1664,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f4a1323a_ce2
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_15b852b5_19cc_49ab_849f_7df6175fb2be"></div>
@@ -1524,6 +1693,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_15b852b5_19c
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_9b6853e7_3412_463d_b5a9_82c14acebf7d"></div>
@@ -1541,6 +1713,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9b6853e7_341
     <td class="element-table-value">a tank for holding catholyte</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -1563,6 +1738,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_328c6e36_370
     <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-13'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-13</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -1590,6 +1768,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4a5660bd_1c1
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_1e33e37e_d7c9_4701_ba6d_a09456a13aaf"></div>
@@ -1616,6 +1797,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1e33e37e_d7c
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_efaca8db_a3e0_4188_9c9b_ed0037966725"></div>
@@ -1633,6 +1817,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_efaca8db_a3e
     <td class="element-table-value">celsius temperature data, usually resulting from an electrochemical measurement process</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -1652,6 +1839,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bea04148_10d
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_2dea31c2_5061_4464_ab76_5336bef23629"></div>
@@ -1669,6 +1859,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2dea31c2_506
     <td class="element-table-value">a measurement of the value of the temperature in units of degree Celsius</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -1700,6 +1893,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d1042a12_e4b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_46676855_68b0_4096_ac6c_35400111d46d"></div>
@@ -1725,6 +1921,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_46676855_68b
     <td class="element-table-value"><a href='#electrochemistry_ddade648_2033_47b6_bc36_b562a9af591e'>ElectrochemicalPlot</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -1760,6 +1959,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a9873d3d_945
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_bf7bfbcb_0698_47af_8678_af92b2f10414"></div>
@@ -1777,6 +1979,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bf7bfbcb_069
     <td class="element-table-value">data that is obtained from experiment or simulation during a charging process</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -1812,6 +2017,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8a1c9a7b_978
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_510e4061_c4fa_49aa_a052_23ad56098eda"></div>
@@ -1833,6 +2041,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_510e4061_c4f
     <td class="element-table-value"><a href='#electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc'>ActiveElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -1876,6 +2087,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_92147e31_d01
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_09a7f560_9ddf_4c32_b067_b213eca5b0a1"></div>
@@ -1910,6 +2124,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_09a7f560_9dd
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_7b811780_7251_481b_a4d3_97d437955099"></div>
@@ -1931,6 +2148,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7b811780_725
     <td class="element-table-value"><a href='#electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc'>ActiveElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -1958,6 +2178,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_838c115b_6bc
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_2522cbd8_5382_457f_b9b5_775860f83357"></div>
@@ -1979,6 +2202,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2522cbd8_538
     <td class="element-table-value"><a href='#electrochemistry_1586ef26_6d30_49e3_ae32_b4c9fc181941'>FormFactor</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -2009,6 +2235,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3979cd56_625
     <td class="element-table-value"><a href='#electrochemistry_027d437e_3bbf_4eda_940b_e509f8d2b993'>R416</a>, <a href='#electrochemistry_028069a2_4e03_409e_8af2_4c8df32b5c5e'>R754</a>, <a href='#electrochemistry_0689e6fc_cda7_4e04_b1eb_41459a0a4736'>R2325</a>, <a href='#electrochemistry_06db7d9e_d224_4360_b926_734f0349d396'>R726</a>, <a href='#electrochemistry_0a5038d4_24af_4ea8_8d56_a156faeb98e2'>R521</a>, <a href='#electrochemistry_0c09df01_b251_4f75_b6e3_2578ba1a10c9'>R736</a>, <a href='#electrochemistry_11579b47_cbf8_45ac_aed3_343ea533b346'>R2330</a>, <a href='#electrochemistry_11e9f765_4fea_456b_bd8e_4624b9c752ae'>R2430</a>, <a href='#electrochemistry_15ec346a_6d3c_4161_95e1_9cf889965f85'>R621</a>, <a href='#electrochemistry_21eef598_0799_4cb1_b2d5_6e072a8579a3'>R1136</a>, <a href='#electrochemistry_296b95b0_c4cb_45db_a8ca_f638379870c4'>R1220</a>, <a href='#electrochemistry_30c8fb1b_3c75_49f5_9395_c15dfaf71b12'>R2016</a>, <a href='#electrochemistry_31b7ac6a_b1eb_45e7_a075_b6063080c949'>R1121</a>, <a href='#electrochemistry_3279f575_1c62_4bf2_a6e8_de4c7ff36f8e'>R721</a>, <a href='#electrochemistry_34cb7ea7_2436_46e0_806e_a3c7835ae228'>R716</a>, <a href='#electrochemistry_36e05f2f_d279_4816_b5ae_6bb4cef02736'>R1216</a>, <a href='#electrochemistry_387e1e59_e511_4acb_b5ec_fa7360ec7557'>R927</a>, <a href='#electrochemistry_39c6f5a0_5dc8_4112_b432_b9fece568ca2'>R1130</a>, <a href='#electrochemistry_400cb3e0_27b5_4d9a_be80_f86ad2757763'>R2050</a>, <a href='#electrochemistry_68c1c36e_1548_4247_bae2_fe7102a2c4ff'>R626</a>, <a href='#electrochemistry_6b275583_433f_46f7_aafd_ebc9409257cc'>R626</a>, <a href='#electrochemistry_76318e8e_c1ba_49ac_8029_a951bd9dc955'>R516</a>, <a href='#electrochemistry_88100e2c_0f6e_4483_afbf_30029a6702c6'>R731</a>, <a href='#electrochemistry_885ffc4d_2b29_42d6_8597_6fc879c21d60'>R2335</a>, <a href='#electrochemistry_9017b8b9_e21e_4961_a3c1_c0aeef3fe795'>R2020</a>, <a href='#electrochemistry_94209cd8_f68f_40e6_ac70_cfb97a16e593'>R512</a>, <a href='#electrochemistry_94497aca_52a0_48e3_9b76_157b050e35b3'>R2032</a>, <a href='#electrochemistry_99475d6c_304c_4d6b_9eca_fbc42f768be5'>R3032</a>, <a href='#electrochemistry_9a23f61b_fef0_40f8_84f9_2057f90f6a95'>R932</a>, <a href='#electrochemistry_9c0e683b_40d7_4786_b31f_910dd68b2ea8'>R2012</a>, <a href='#electrochemistry_9ceffffd_b918_48c2_aad9_5db16fa6149d'>R2025</a>, <a href='#electrochemistry_a277e420_2483_44d5_a2bc_4e421dea231a'>R926</a>, <a href='#electrochemistry_a4e7c3d6_45bd_402a_962f_5d4b88af84ff'>R2412</a>, <a href='#electrochemistry_a87d4b9d_ba91_4549_aed4_508d1160c0c0'>R2477</a>, <a href='#electrochemistry_aaafc5d6_050a_4c51_b1ca_db5839aad4de'>R2450</a>, <a href='#electrochemistry_abffe8cd_14d3_4437_84e6_5dfc61b057e8'>R1142</a>, <a href='#electrochemistry_af92a3ae_e870_4676_9ae7_cda277b1e6e1'>R2354</a>, <a href='#electrochemistry_b442217f_02f6_4991_aadf_22d81369223c'>R1131</a>, <a href='#electrochemistry_b56a95e6_eea5_4a58_99aa_045fd28e75d3'>R527</a>, <a href='#electrochemistry_bb2faf17_b819_4876_b17f_fa82917cf85d'>R712</a>, <a href='#electrochemistry_ce4352a7_f0b1_4f27_9184_6deebf8bbe96'>R1511</a>, <a href='#electrochemistry_cf6eebea_24f6_48d2_8389_65eba0393762'>R1126</a>, <a href='#electrochemistry_d5f67a0c_ed56_479d_9b68_6003142f98b0'>R1616</a>, <a href='#electrochemistry_d67a0921_15e4_4c73_804e_97b2d66452b8'>R936</a>, <a href='#electrochemistry_dac5067c_e6f2_4fca_a915_5b7b918ca1c4'>R11108</a>, <a href='#electrochemistry_dc019f3f_e5f3_4eeb_bab9_a845a02223a0'>R616</a>, <a href='#electrochemistry_e0869e7a_36fe_4e33_9843_a5dc19fcb488'>R9</a>, <a href='#electrochemistry_e73cb0b7_e2af_4c1a_b05b_503df25a8bf5'>R1025</a>, <a href='#electrochemistry_eb1c9aa3_ad4f_4f2a_80f6_d6c8a8bc0d9a'>R921</a>, <a href='#electrochemistry_ebf314c7_81ad_4d77_9da4_b454520fda0e'>R916</a>, <a href='#electrochemistry_f2cf71c1_f2d7_4131_82e0_2701cdecea55'>R1632</a>, <a href='#electrochemistry_f7e253da_b12e_40b0_ba51_8cb039839ab6'>R1225</a>, <a href='#electrochemistry_fab4bd12_c4ed_417a_92a3_bcb109000d82'>R2040</a>, <a href='#electrochemistry_fbf40756_3265_4468_bcdb_88d162afc539'>R2320</a>, <a href='#electrochemistry_fe054d02_41c7_40e9_8206_3440ab6a67b2'>R1154</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -2044,6 +2273,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8a5083b0_cd2
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_82fef384_8eec_4765_b707_5397054df594"></div>
@@ -2070,6 +2302,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_82fef384_8ee
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_b525a629_a679_464f_bc5b_b49d2fc82686"></div>
@@ -2092,6 +2327,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b525a629_a67
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_d8a78cd2_8107_46dd_a198_0b64676efc00"></div>
@@ -2113,6 +2351,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d8a78cd2_810
     <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-37'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-37</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -2148,6 +2389,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_83f2b1e9_cb6
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_0cc8f231_0ce5_467e_9c76_29b2c80349ad"></div>
@@ -2174,6 +2418,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0cc8f231_0ce
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_ac6c2371_995a_4fcb_89a2_15cb6615741e"></div>
@@ -2199,6 +2446,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ac6c2371_995
     <td class="element-table-value"><a href='#electrochemistry_d3e2d213_d078_4b9a_8beb_62f063e57d69'>Cycling</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -2230,6 +2480,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_53fe3f58_080
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_84d37a37_88bd_47db_9425_31f73a81d38c"></div>
@@ -2251,6 +2504,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_84d37a37_88b
     <td class="element-table-value"><a href='#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7'>ElectricPotentialSignal</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -2274,6 +2530,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0d3e8340_422
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_dcd4a15d_52cf_44fb_b826_df18e4baa89c"></div>
@@ -2296,6 +2555,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dcd4a15d_52c
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_a2f65954_1ed8_4faf_9efe_597018d03e8d"></div>
@@ -2317,6 +2579,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a2f65954_1ed
     <td class="element-table-value"><a href='#electrochemistry_87340877_e8ed_4061_ac2f_cb1c121e7193'>PowerHold</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -2348,6 +2613,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_acdeaa89_0e9
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_9865e4f9_756d_4d94_a6fd_4102ab795f9e"></div>
@@ -2373,6 +2641,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9865e4f9_756
     <td class="element-table-value"><a href='#electrochemistry_06d8e1ee_924a_4915_998d_33a69f41dadc'>Discharging</a>, <a href='#electrochemistry_f07be701_9d6a_415b_ac6d_63202297a7a1'>VoltageHold</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -2400,6 +2671,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_26b19a7c_59c
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_a8edd38f_f8a5_41fb_9fc7_48f1866fd699"></div>
@@ -2425,6 +2699,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a8edd38f_f8a
     <td class="element-table-value"><a href='#electrochemistry_26b19a7c_59ca_4e1b_8fb9_ba061c22531e'>CopperBasedElectrode</a>, <a href='#electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5'>MetalOxideElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -2455,6 +2732,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fb9bf7cb_dd4
     <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q905539'>https://www.wikidata.org/wiki/Q905539</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -2494,6 +2774,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_871bc4a4_2d1
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_212af058_3bbb_419f_a9c6_90ba9ebb3706"></div>
@@ -2528,6 +2811,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_212af058_3bb
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_5548f188_df00_4c05_ae98_7846e92efe36"></div>
@@ -2549,6 +2835,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5548f188_df0
     <td class="element-table-value"><a href='#electrochemistry_78a8f60b_10c2_41ee_9946_d35437e1edb5'>CurrentHold</a>, <a href='#electrochemistry_79a8802e_8296_459a_b65d_6e5c79e1bf37'>GalvanostaticCycling</a>, <a href='#electrochemistry_9f1ffb54_4403_4541_98c1_3a821c6d060f'>CurrentPulsing</a>, <a href='#electrochemistry_bfbefff0_4df5_47c2_9943_5f42cf268e9e'>StrippingChronopotentiometry</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -2580,6 +2869,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_78a8f60b_10c
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_b9a72491_8a50_4cac_a131_1e95d72b57ee"></div>
@@ -2610,6 +2902,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b9a72491_8a5
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_712c791a_d593_4732_af73_493f7bc50999"></div>
@@ -2635,6 +2930,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_712c791a_d59
     <td class="element-table-value"><a href='#electrochemistry_904b12e0_4a10_47b0_b7db_592aba215cb6'>ElectricCurrentSignal</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -2662,6 +2960,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9f1ffb54_440
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_b99cff7f_b13f_4075_aa88_62c04f8daacc"></div>
@@ -2688,6 +2989,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b99cff7f_b13
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_ca48d41c_f5ea_4bf8_84ce_2d67fd9dad98"></div>
@@ -2706,6 +3010,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ca48d41c_f5e
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_d2f6f1a6_4dee_4c5e_9a69_32b9fe990d2f"></div>
@@ -2723,6 +3030,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d2f6f1a6_4de
     <td class="element-table-value">a series of data points indexed in cycle order</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -2762,6 +3072,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d3e2d213_d07
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_780aeb7b_9eb2_4324_ba2d_1a874136b4e5"></div>
@@ -2783,6 +3096,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_780aeb7b_9eb
     <td class="element-table-value"><a href='#electrochemistry_1586ef26_6d30_49e3_ae32_b4c9fc181941'>FormFactor</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -2809,6 +3125,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b1cf9fee_216
     <td class="element-table-value"><a href='#electrochemistry_169fb6e4_cbed_4b00_ace0_8731123a35b4'>R38138</a>, <a href='#electrochemistry_1afa2c7e_6ddd_4a9b_9623_40975131a304'>R46800</a>, <a href='#electrochemistry_3b048a62_8591_4bf1_8fac_3d647beb9323'>R21700</a>, <a href='#electrochemistry_3d2f9945_2319_4a08_899b_6a5ffabd4925'>R18650</a>, <a href='#electrochemistry_56177336_3ae5_48cb_93ca_a8c73216ea73'>R40108</a>, <a href='#electrochemistry_69e59b3d_b19d_4f8e_8b9c_84eb64307626'>R54137</a>, <a href='#electrochemistry_6eaa3c0d_e1f3_4c6e_91a6_9b8c5a21b8cb'>R40920</a>, <a href='#electrochemistry_6ee40e33_ccbf_410e_a8fa_047a9eae0362'>R27660</a>, <a href='#electrochemistry_95d841eb_2002_4411_9f8e_927d6c60e4b3'>R26650</a>, <a href='#electrochemistry_9dc236d9_c962_4fcc_94db_911a25241472'>R19660</a>, <a href='#electrochemistry_ad9cdad6_66e8_471e_a7c6_b79f37c20814'>R32700</a>, <a href='#electrochemistry_c066bf32_ed62_4a11_bf4f_25fe6e8e68b5'>R32134</a>, <a href='#electrochemistry_f2251de5_0a7d_4887_8bd1_c906db84abee'>R26700</a>, <a href='#electrochemistry_f58476a9_f008_4502_ac94_2f1ebbce1fe3'>R38136</a>, <a href='#electrochemistry_fc9e7ba3_5084_4c2a_b488_c6a96af99232'>R54215</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -2844,6 +3163,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_34bc54e3_de4
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_b49e2355_392f_4e83_b630_7ff4581d767b"></div>
@@ -2866,6 +3188,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b49e2355_392
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_50fef664_83c3_4ca5_808c_efaa1acc51b2"></div>
@@ -2883,6 +3208,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_50fef664_83c
     <td class="element-table-value">data that describes the mass diffusivity of some particle under some stated conditions</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -2922,6 +3250,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_40ca9548_910
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_885b462e_f6bc_412d_8b94_9425e13af0c7"></div>
@@ -2956,6 +3287,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_885b462e_f6b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_06d8e1ee_924a_4915_998d_33a69f41dadc"></div>
@@ -2986,6 +3320,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_06d8e1ee_924
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_a17b9fd0_b005_41eb_b685_e212fc4cecea"></div>
@@ -3003,6 +3340,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a17b9fd0_b00
     <td class="element-table-value">data that is obtained from experiment or simulation during a discharging process</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -3038,6 +3378,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b3b3868f_6ed
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_49263a32_eca6_4644_8144_0d3b14c26d0a"></div>
@@ -3068,6 +3411,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_49263a32_eca
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_56f85b19_1384_4e88_b130_cb8e7984db83"></div>
@@ -3089,6 +3435,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_56f85b19_138
     <td class="element-table-value"><a href='#electrochemistry_92147e31_d015_4889_a092_04fbab033f15'>CoatedElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -3124,6 +3473,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2b50cdac_581
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_ac9723d1_bac0_4109_874e_32849de9299b"></div>
@@ -3157,6 +3509,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ac9723d1_bac
     <td class="element-table-value"><a href='#electrochemistry_4bdd6359_1422_4c50_ac0c_5d8042dd65fc'>BockrisDevanathanMuellerModel</a>, <a href='#electrochemistry_7f168ebc_4c78_459c_9a39_bddaa57e214c'>GrahameModel</a>, <a href='#electrochemistry_9bc02662_9799_4593_906d_638a841d7352'>HelmholtzModel</a>, <a href='#electrochemistry_aa5ed981_c11b_4c4f_b1fd_8c432e009484'>SternModel</a>, <a href='#electrochemistry_f57a7dac_2ec2_4d51_b697_01a844c4467f'>TrasattiBuzzancaModel</a>, <a href='#electrochemistry_fa54f95d_b49e_43b5_84c3_35520d0fb2f6'>GouyChapmanModel</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -3192,6 +3547,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b76a778f_253
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_bbc77932_643b_4603_a4e8_970ef06a76ad"></div>
@@ -3218,6 +3576,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bbc77932_643
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_276cfa84_3cc0_40c0_9f6a_57a3b776f47c"></div>
@@ -3240,6 +3601,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_276cfa84_3cc
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_4920de95_3a48_4669_b762_5a0b5232b52f"></div>
@@ -3257,6 +3621,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4920de95_3a4
     <td class="element-table-value">electric current data, usually resulting from an electrochemical measurement process</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -3276,6 +3643,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_158ae038_c64
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_7beef5fb_a406_4284_b85a_87d55cf46a0e"></div>
@@ -3294,6 +3664,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7beef5fb_a40
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_f693b744_930c_42ac_8e6f_627b22c6da3f"></div>
@@ -3311,6 +3684,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f693b744_930
     <td class="element-table-value">a system for measuing electric current</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -3338,6 +3714,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_904b12e0_4a1
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_3f9b2956_1465_4fe0_b0df_5e4784dac3b6"></div>
@@ -3355,6 +3734,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3f9b2956_146
     <td class="element-table-value">a system for measuring electric potential</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -3382,6 +3764,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0a03ce7e_d79
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_898971cb_a9fc_4955_8abf_5d7163a9fe6c"></div>
@@ -3403,6 +3788,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_898971cb_a9f
     <td class="element-table-value"><a href='#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7'>ElectricPotentialSignal</a>, <a href='#electrochemistry_276cfa84_3cc0_40c0_9f6a_57a3b776f47c'>ElectricChargeSignal</a>, <a href='#electrochemistry_904b12e0_4a10_47b0_b7db_592aba215cb6'>ElectricCurrentSignal</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -3438,6 +3826,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5cb5548f_f77
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_4d6f7f50_b343_4bd6_8612_2b8521a99c9b"></div>
@@ -3467,6 +3858,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4d6f7f50_b34
     <td class="element-table-value"><a href='#electrochemistry_19abaccd_43be_4048_965c_e4fb63c5951b'>ElectrochemicalPhenomenon</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -3502,6 +3896,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a3b53904_22b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="Electrochemical"></div>
@@ -3519,6 +3916,9 @@ IRI: https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electroche
     <td class="element-table-value">a characterisation method used in electrochemistry</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -3582,6 +3982,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6f2c88c9_5c0
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_b5ea31c9_bb10_4276_980e_c3eceb1efc82"></div>
@@ -3603,6 +4006,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b5ea31c9_bb1
     <td class="element-table-value"><a href='#electrochemistry_09a7f560_9ddf_4c32_b067_b213eca5b0a1'>Coating</a>, <a href='#electrochemistry_0a399f3f_b873_41f5_be1f_9b6df75cc30a'>Additive</a>, <a href='#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627'>Electrode</a>, <a href='#electrochemistry_1aec4cc0_82d5_4042_a657_ed7fe291c3d8'>Case</a>, <a href='#electrochemistry_1e33e37e_d7c9_4701_ba6d_a09456a13aaf'>CellLid</a>, <a href='#electrochemistry_212af058_3bbb_419f_a9c6_90ba9ebb3706'>CurrentCollector</a>, <a href='#electrochemistry_331e6cca_f260_4bf8_af55_35304fe1bbe0'>Separator</a>, <a href='#electrochemistry_4a5660bd_1c1a_40e5_8a41_463c720d3903'>CellCan</a>, <a href='#electrochemistry_637c576e_a50e_47ae_8c74_2024ce4c6d0f'>SaltBridge</a>, <a href='#electrochemistry_68eb5e35_5bd8_47b1_9b7f_f67224fa291e'>Binder</a>, <a href='#electrochemistry_79d1b273_58cd_4be6_a250_434817f7c261'>ActiveMaterial</a>, <a href='#electrochemistry_81833d8a_b03d_4250_be84_6385415beb01'>ActiveMaterialMix</a>, <a href='#electrochemistry_bbc77932_643b_4603_a4e8_970ef06a76ad'>EdgeInsulator</a>, <a href='#electrochemistry_d1042a12_e4be_4992_86cb_59420ef4e05c'>ChargeCarrier</a>, <a href='#electrochemistry_e13b7945_65ac_476b_85ee_5cdc59f5c919'>Particle</a>, <a href='#electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59'>Electrolyte</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -3629,6 +4035,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0a0de817_add
     <td class="element-table-value"><a href='#electrochemistry_e3d3d21c_cb9a_498c_bdb0_63c964f0d3c6'>CapacityFade</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -3660,6 +4069,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0acd0fc2_104
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_b91180e7_97ae_49e2_bf82_5bf720e7fa66"></div>
@@ -3685,6 +4097,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b91180e7_97a
     <td class="element-table-value"><a href='#electrochemistry_dc6abae7_39b0_4d22_b52e_14d088a4bd5f'>Supercapacitor</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -3724,6 +4139,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9da958fc_f76
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_4bc38e99_1978_4143_a766_fbb57f2cf46e"></div>
@@ -3754,6 +4172,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4bc38e99_197
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_c052cab7_46eb_4a87_b7a4_05be2572db22"></div>
@@ -3775,6 +4196,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c052cab7_46e
     <td class="element-table-value">EISData</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -3802,6 +4226,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_50044b99_b85
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_ebdb68e9_c4b5_4d57_a042_c0f51d446755"></div>
@@ -3824,6 +4251,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ebdb68e9_c4b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_f49b84d4_e1f9_424c_bb22_8cea23c0a7d4"></div>
@@ -3841,6 +4271,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f49b84d4_e1f
     <td class="element-table-value">a method used in electrochemistry</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -3876,6 +4309,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_63ea1c9b_0bd
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_19abaccd_43be_4048_965c_e4fb63c5951b"></div>
@@ -3898,6 +4334,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_19abaccd_43b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_ddade648_2033_47b6_bc36_b562a9af591e"></div>
@@ -3919,6 +4358,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ddade648_203
     <td class="element-table-value"><a href='#electrochemistry_46676855_68b0_4096_ac6c_35400111d46d'>ChargeTimePlot</a>, <a href='#electrochemistry_a2b01d05_b472_4cf5_b388_e0914db56324'>NyquistPlot</a>, <a href='#electrochemistry_b99cff7f_b13f_4075_aa88_62c04f8daacc'>CurrentTimePlot</a>, <a href='#electrochemistry_b9a72491_8a50_4cac_a131_1e95d72b57ee'>CurrentPotentialPlot</a>, <a href='#electrochemistry_cd7d24a5_db31_4d76_97d9_367c809f099e'>PotentialTimePlot</a>, <a href='#electrochemistry_e0b57b09_68ee_4687_a901_bfb599421972'>BodePlot</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -3949,6 +4391,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ca0527c1_f68
     <td class="element-table-value"><a href='#electrochemistry_dc6abae7_39b0_4d22_b52e_14d088a4bd5f'>Supercapacitor</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -3988,6 +4433,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a6a69e90_06b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_3d805c2a_4801_440e_9e4d_0fa5585c76ae"></div>
@@ -4009,6 +4457,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3d805c2a_480
     <td class="element-table-value"><a href='#electrochemistry_9d7e5fea_a49a_4a19_a8de_8e24c60e420c'>NernstEinsteinEquation</a>, <a href='#electrochemistry_d48ea516_5cac_4f86_bc88_21b6276c0938'>ButlerVolmerEquation</a>, <a href='#electrochemistry_fe3a6c9a_85b8_4da6_aa4f_71c8de74939e'>NernstEquation</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -4047,6 +4498,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_96309fa9_e15
     <td class="element-table-value"><a href='#electrochemistry_19abaccd_43be_4048_965c_e4fb63c5951b'>ElectrochemicalPhenomenon</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -4094,6 +4548,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f007072_a8d
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56"></div>
@@ -4128,6 +4585,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_403c300e_09b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_9c73aff8_1c82_4116_a6be_78e21982b69d"></div>
@@ -4158,6 +4618,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9c73aff8_1c8
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_d907805f_678b_4ab6_8b56_59631684f84b"></div>
@@ -4183,6 +4646,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d907805f_678
     <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-09'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-09</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -4221,6 +4687,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_01260656_ac3
     <td class="element-table-value"><a href='#electrochemistry_19abaccd_43be_4048_965c_e4fb63c5951b'>ElectrochemicalPhenomenon</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -4264,6 +4733,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2e6933aa_452
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_2e3e14f9_4cb8_45b2_908e_47eec893dec8"></div>
@@ -4298,6 +4770,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2e3e14f9_4cb
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_27662d03_1bcf_4393_a239_32e31b760839"></div>
@@ -4323,6 +4798,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_27662d03_1bc
     <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-08'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-08</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -4350,6 +4828,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f0c24970_4c1
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_4df84ec1_8a1a_4770_963f_bf48009bd043"></div>
@@ -4371,6 +4852,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4df84ec1_8a1
     <td class="element-table-value"><a href='#electrochemistry_2e3e14f9_4cb8_45b2_908e_47eec893dec8'>ElectrodeReaction</a>, <a href='#electrochemistry_49263a32_eca6_4644_8144_0d3b14c26d0a'>Dissolution</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -4405,6 +4889,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e2a1dae1_05e
     <td class="element-table-value"><a href='#electrochemistry_19abaccd_43be_4048_965c_e4fb63c5951b'>ElectrochemicalPhenomenon</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -4444,6 +4931,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fb0d9eef_92a
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_554286d4_1f46_44c0_bebc_4ddae00dbce1"></div>
@@ -4465,6 +4955,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_554286d4_1f4
     <td class="element-table-value"><a href='#electrochemistry_0a399f3f_b873_41f5_be1f_9b6df75cc30a'>Additive</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -4492,6 +4985,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3f6c9e09_5f2
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_c05692eb_ae92_4e03_b355_f259f9089cb8"></div>
@@ -4513,6 +5009,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c05692eb_ae9
     <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-52'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-52</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -4543,6 +5042,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fa22874b_76a
     <td class="element-table-value"><a href='#electrochemistry_1fc5642c_b7b2_43bf_ad20_f96001db8800'>SupportingElectrolyte</a>, <a href='#electrochemistry_564d31be_91cb_4a8f_8369_2a55f1180499'>OrganicElectrolyte</a>, <a href='#electrochemistry_b812e9d0_7c58_4455_b3e7_6847f10c8e8a'>AqueousElectrolyte</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -4577,6 +5079,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_900d95fb_863
     <td class="element-table-value"><a href='#electrochemistry_0acd0fc2_1048_4604_8e90_bf4e84bd87df'>ElectrochemicalDevice</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -4616,6 +5121,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e931087f_768
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_571c1ae9_c4bf_48ab_babf_536153d22a0b"></div>
@@ -4633,6 +5141,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_571c1ae9_c4b
     <td class="element-table-value">data that describes the electrolytic conductivitysome material under some stated conditions</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -4668,6 +5179,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5641910f_6e6
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_a2b92d2e_4431_411e_8da5_a4c08bac2c0e"></div>
@@ -4702,6 +5216,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a2b92d2e_443
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_cbb95634_450c_4332_980c_d37baadd7619"></div>
@@ -4723,6 +5240,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cbb95634_450
     <td class="element-table-value"><a href='#MeasurementDataPostProcessing'>MeasurementDataPostProcessing</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -4750,6 +5270,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_990d19b8_672
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_b7ea60b2_18f4_4588_bf19_55539c8e8888"></div>
@@ -4768,6 +5291,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b7ea60b2_18f
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_31b38a1b_5873_454c_ba99_00491497fb43"></div>
@@ -4785,6 +5311,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_31b38a1b_587
     <td class="element-table-value">a sheet that has been slit and stretched to form a network of diamond-shaped openings, providing structural strength and high surface area for applications like filtration and reinforcement</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -4812,6 +5341,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1152ae6b_8b5
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_60c5b2e5_164a_4ce6_8409_f386f5e50c03"></div>
@@ -4834,6 +5366,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_60c5b2e5_164
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_ae56cce3_7a7c_4e53_bb58_31e0d642d47e"></div>
@@ -4855,6 +5390,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ae56cce3_7a7
     <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-11'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-11</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -4886,6 +5424,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3e7fe02d_c88
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_95e4aa95_b7e9_40d7_b78e_4d7dcc31093d"></div>
@@ -4916,6 +5457,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_95e4aa95_b7e
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_339e1ba1_2006_4f22_aac4_3ce75edf1088"></div>
@@ -4942,6 +5486,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_339e1ba1_200
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_1d5377a7_9f2b_4fdf_958a_7eeadce158d6"></div>
@@ -4959,6 +5506,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1d5377a7_9f2
     <td class="element-table-value">a sheet of material in which the thickness is much smaller than the length and width</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -4982,6 +5532,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1586ef26_6d3
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_cb223440_51bd_4f16_a536_96ec408e7de4"></div>
@@ -5003,6 +5556,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cb223440_51b
     <td class="element-table-value"><a href='#electrochemistry_d3e2d213_d078_4b9a_8beb_62f063e57d69'>Cycling</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -5037,6 +5593,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bd33779c_6f4
     <td class="element-table-value"><a href='#electrochemistry_e248373f_294f_4ca4_9edf_0ad6653bb64f'>GalvanicCell</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -5076,6 +5635,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e248373f_294
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_22725105_c941_4b14_a4a2_fcb627958607"></div>
@@ -5106,6 +5668,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_22725105_c94
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_79a8802e_8296_459a_b65d_6e5c79e1bf37"></div>
@@ -5127,6 +5692,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79a8802e_829
     <td class="element-table-value"><a href='#electrochemistry_5548f188_df00_4c05_ae98_7846e92efe36'>CurrentControlledProcess</a>, <a href='#electrochemistry_d3e2d213_d078_4b9a_8beb_62f063e57d69'>Cycling</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -5153,6 +5721,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ac2ffdd9_09c
     <td class="element-table-value"><a href='#electrochemistry_31e8052d_bede_43c6_8b41_d51bb24c9489'>TimeSeriesElectricalDataSet</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -5196,6 +5767,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bbb1d95b_72d
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_0c9017b4_6efd_4e2b_8e24_48b60ebe9315"></div>
@@ -5217,6 +5791,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0c9017b4_6ef
     <td class="element-table-value"><a href='#electrochemistry_49263a32_eca6_4644_8144_0d3b14c26d0a'>Dissolution</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -5252,6 +5829,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4288b145_ba7
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_0f827b54_370d_4c63_99a6_80f13b24e55e"></div>
@@ -5277,6 +5857,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f827b54_370
     <td class="element-table-value"><a href='#electrochemistry_19abaccd_43be_4048_965c_e4fb63c5951b'>ElectrochemicalPhenomenon</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -5304,6 +5887,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d11b0e66_c35
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_057bb143_639c_472b_99ed_ffa1867f6e63"></div>
@@ -5329,6 +5915,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_057bb143_639
     <td class="element-table-value"><a href='#electrochemistry_a0a619d7_da95_41f0_8bc3_9c19d636d543'>InertElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -5356,6 +5945,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_52547692_f77
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_6fec8cc1_4e6c_428e_8343_6cf3c286a185"></div>
@@ -5382,6 +5974,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6fec8cc1_4e6
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_fa54f95d_b49e_43b5_84c3_35520d0fb2f6"></div>
@@ -5403,6 +5998,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fa54f95d_b49
     <td class="element-table-value"><a href='#electrochemistry_ac9723d1_bac0_4109_874e_32849de9299b'>DoubleLayerModel</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -5426,6 +6024,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7f168ebc_4c7
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_c831d963_629a_41ab_850f_97fb6841b739"></div>
@@ -5447,6 +6048,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c831d963_629
     <td class="element-table-value"><a href='#electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc'>ActiveElectrode</a>, <a href='#electrochemistry_f2c33088_224f_4fdb_857a_7cb62e3dddca'>CarbonBasedElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -5470,6 +6074,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6235cc7c_2ee
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_9bc02662_9799_4593_906d_638a841d7352"></div>
@@ -5491,6 +6098,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9bc02662_979
     <td class="element-table-value"><a href='#electrochemistry_ac9723d1_bac0_4109_874e_32849de9299b'>DoubleLayerModel</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -5518,6 +6128,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c14ae9b3_e4b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_f54474fc_5d07_474b_97ae_f5d0349363b4"></div>
@@ -5539,6 +6152,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f54474fc_5d0
     <td class="element-table-value"><a href='#electrochemistry_95e4aa95_b7e9_40d7_b78e_4d7dcc31093d'>FlowCell</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -5566,6 +6182,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c4a778c7_33d
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_77be01ef_49bd_4f2e_bec8_eec0894b8562"></div>
@@ -5587,6 +6206,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_77be01ef_49b
     <td class="element-table-value"><a href='#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7'>ElectricPotentialSignal</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -5618,6 +6240,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f6fcd255_248
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_7b9db6b3_36f0_4b5d_acbb_9284a9054a09"></div>
@@ -5639,6 +6264,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7b9db6b3_36f
     <td class="element-table-value"><a href='#electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc'>ActiveElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -5665,6 +6293,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c63baed9_48d
     <td class="element-table-value"><a href='#electrochemistry_4839708a_3864_47eb_b719_373ff8874c61'>BimetallicOxideElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -5700,6 +6331,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a0a619d7_da9
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_757eae08_4d43_42d4_8b4e_8a0bfd2f9a1c"></div>
@@ -5729,6 +6363,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_757eae08_4d4
     <td class="element-table-value"><a href='#electrochemistry_11a774f3_d20a_4741_bd81_cae53230bd0c'>ProtonInsertionElectrode</a>, <a href='#electrochemistry_1c6cef85_811f_45d0_a0fd_2bc2d9369ea4'>AluminiumInsertionElectrode</a>, <a href='#electrochemistry_245c9442_ca1d_4070_a624_182b92d30b10'>ZincInsertionElectrode</a>, <a href='#electrochemistry_4c3ee364_829b_41a4_b895_ca4a041efb2a'>LithiumInsertionElectrode</a>, <a href='#electrochemistry_90103be0_9096_4f98_89c7_b5db01197858'>CalciumInsertionElectrode</a>, <a href='#electrochemistry_c183f697_8995_477c_9ccd_5c12d98e3633'>PotassiumInsertionElectrode</a>, <a href='#electrochemistry_d936c767_1530_419c_93f4_59e08f0d702c'>SodiumInsertionElectrode</a>, <a href='#electrochemistry_d9888f1f_2226_4ce3_9cb3_91fd9bd1bf22'>MagnesiumInsertionElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -5764,6 +6401,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_94d9d5e2_9e9
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_f78e3c87_01c6_4cc2_b047_30322262e22d"></div>
@@ -5785,6 +6425,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f78e3c87_01c
     <td class="element-table-value"><a href='#electrochemistry_2b50cdac_581f_48b9_87ca_bad5138ab58d'>DoubleLayer</a>, <a href='#electrochemistry_54e0c2bd_1bb2_4f9c_9b55_5b6cc34651ec'>Interphase</a>, <a href='#electrochemistry_d16eec87_c646_4566_bda6_7d3357cda061'>PassivationLayer</a>, <a href='#electrochemistry_e3f6eacc_f661_404e_ac16_45d2fa1f5d89'>SpaceChargeLayer</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -5816,6 +6459,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_54e0c2bd_1bb
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_402598d9_0eea_405d_b0d0_3b8b79deba6f"></div>
@@ -5837,6 +6483,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_402598d9_0ee
     <td class="element-table-value"><a href='#electrochemistry_19abaccd_43be_4048_965c_e4fb63c5951b'>ElectrochemicalPhenomenon</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -5872,6 +6521,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_15325775_6d4
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_c3f4b34a_0e2c_46f3_baab_4ebd2682d26f"></div>
@@ -5902,6 +6554,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c3f4b34a_0e2
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_3e6a7d5f_3700_46b3_b1b8_f34e37e6f931"></div>
@@ -5923,6 +6578,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3e6a7d5f_370
     <td class="element-table-value"><a href='#electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc'>ActiveElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -5950,6 +6608,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cba03815_eaa
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_5e1136d3_df00_40f7_a4bc_8259341053a1"></div>
@@ -5976,6 +6637,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5e1136d3_df0
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_cc4e178c_bc1f_4502_b6c2_33f304ef6bab"></div>
@@ -5998,6 +6662,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cc4e178c_bc1
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_d2726dd5_69f0_4cb1_bd3c_4c48813e57e7"></div>
@@ -6019,6 +6686,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d2726dd5_69f
     <td class="element-table-value"><a href='#electrochemistry_5e1136d3_df00_40f7_a4bc_8259341053a1'>IronBasedElectrode</a>, <a href='#electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc'>ActiveElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -6046,6 +6716,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d54f6aac_7cd
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_a0fcb105_587f_45d8_a89a_46dc8f745069"></div>
@@ -6067,6 +6740,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a0fcb105_587
     <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-20'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-20</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -6094,6 +6770,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_598ae3d0_76e
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_5a7a3028_db9e_4045_ab68_054c6afc91fc"></div>
@@ -6120,6 +6799,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5a7a3028_db9
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_610f0bc8_557d_455b_a8ed_272d5d1813c9"></div>
@@ -6141,6 +6823,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_610f0bc8_557
     <td class="element-table-value"><a href='#electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc'>ActiveElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -6168,6 +6853,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f6223121_7df
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_c55ec02c_b727_4df1_97ce_91d7bb5d5e91"></div>
@@ -6194,6 +6882,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c55ec02c_b72
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_23b30468_be7b_45a9_bc11_a8219bc3ab8b"></div>
@@ -6215,6 +6906,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_23b30468_be7
     <td class="element-table-value"><a href='#electrochemistry_dc205ac2_314e_415c_a2b6_b12e8359d54c'>NearNeutralElectrolyte</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -6238,6 +6932,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6559c04d_75b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_fa774456_718a_4a28_ba6a_6f828887c510"></div>
@@ -6260,6 +6957,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fa774456_718
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_29f2a35a_8c09_429d_b9e8_33f3e1fc3671"></div>
@@ -6281,6 +6981,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_29f2a35a_8c0
     <td class="element-table-value"><a href='#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7'>ElectricPotentialSignal</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -6308,6 +7011,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_609b340f_345
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_80fdbd63_9b7a_462b_a8cb_b50f5f6ab182"></div>
@@ -6329,6 +7035,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_80fdbd63_9b7
     <td class="element-table-value"><a href='#electrochemistry_9fd49892_cf6d_482e_a6c3_5f763948ec29'>LiquidMetalElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -6355,6 +7064,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_634467ad_fee
     <td class="element-table-value"><a href='#electrochemistry_50044b99_b858_433b_a32d_23d1e1cf88b2'>ElectrochemicalInterface</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -6390,6 +7102,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9fd49892_cf6
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_47346d85_b9be_4480_8993_6307b1c58fcd"></div>
@@ -6415,6 +7130,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_47346d85_b9b
     <td class="element-table-value"><a href='#electrochemistry_55775b50_b9d9_4d68_8cb5_38fcd7b9b54d'>LithiumElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -6442,6 +7160,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fd7caf39_0a4
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_55775b50_b9d9_4d68_8cb5_38fcd7b9b54d"></div>
@@ -6463,6 +7184,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_55775b50_b9d
     <td class="element-table-value"><a href='#electrochemistry_47346d85_b9be_4480_8993_6307b1c58fcd'>LithiumBasedElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -6490,6 +7214,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e84e691a_df5
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_4c3ee364_829b_41a4_b895_ca4a041efb2a"></div>
@@ -6511,6 +7238,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4c3ee364_829
     <td class="element-table-value"><a href='#electrochemistry_757eae08_4d43_42d4_8b4e_8a0bfd2f9a1c'>InsertionElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -6538,6 +7268,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1d0f15cb_d6b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_9109b3f6_112b_456d_ae45_b82c271c656b"></div>
@@ -6563,6 +7296,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9109b3f6_112
     <td class="element-table-value"><a href='#electrochemistry_468b3b63_b62a_4110_8c7e_40fffd5fdfd6'>ManganesePhosphateBasedElectrode</a>, <a href='#electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5'>MetalOxideElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -6590,6 +7326,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c231227b_f31
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_fffc3dad_6946_4c32_a9d3_f5f311339881"></div>
@@ -6615,6 +7354,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fffc3dad_694
     <td class="element-table-value"><a href='#electrochemistry_4839708a_3864_47eb_b719_373ff8874c61'>BimetallicOxideElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -6642,6 +7384,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_713200a1_952
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_f19d3b4f_d59b_4a92_a547_54a6f59cc9b4"></div>
@@ -6667,6 +7412,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f19d3b4f_d59
     <td class="element-table-value"><a href='#electrochemistry_0d2aaaf4_1a8a_4a32_abd8_7d0fdf0ae9d2'>NickelBasedElectrode</a>, <a href='#electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5'>MetalOxideElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -6694,6 +7442,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_48e380c3_044
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_b3eb8c65_5644_45e3_9e17_0be6277c7962"></div>
@@ -6719,6 +7470,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b3eb8c65_564
     <td class="element-table-value"><a href='#electrochemistry_0d2aaaf4_1a8a_4a32_abd8_7d0fdf0ae9d2'>NickelBasedElectrode</a>, <a href='#electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5'>MetalOxideElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -6746,6 +7500,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_098690e3_901
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_41ddf723_245f_4ce8_b9b1_7d9b3b9eea7d"></div>
@@ -6771,6 +7528,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_41ddf723_245
     <td class="element-table-value"><a href='#electrochemistry_0d2aaaf4_1a8a_4a32_abd8_7d0fdf0ae9d2'>NickelBasedElectrode</a>, <a href='#electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5'>MetalOxideElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -6798,6 +7558,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bb710d71_98f
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_cab66388_3feb_4101_82bc_f4441f0b60e3"></div>
@@ -6823,6 +7586,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cab66388_3fe
     <td class="element-table-value"><a href='#electrochemistry_0d2aaaf4_1a8a_4a32_abd8_7d0fdf0ae9d2'>NickelBasedElectrode</a>, <a href='#electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5'>MetalOxideElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -6850,6 +7616,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6d0fe07e_a62
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_b5e91259_cd97_4ed6_9ab2_4b18ef68a35a"></div>
@@ -6871,6 +7640,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b5e91259_cd9
     <td class="element-table-value"><a href='#electrochemistry_0ee59786_b090_444d_a46d_505797d07ca4'>VanadiumBasedElectrode</a>, <a href='#electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5'>MetalOxideElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -6894,6 +7666,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2a177462_ff0
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_d9888f1f_2226_4ce3_9cb3_91fd9bd1bf22"></div>
@@ -6915,6 +7690,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d9888f1f_222
     <td class="element-table-value"><a href='#electrochemistry_757eae08_4d43_42d4_8b4e_8a0bfd2f9a1c'>InsertionElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -6942,6 +7720,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b1ac8d0c_a21
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_ca4d9efc_70be_441e_b358_d927aa4c36c4"></div>
@@ -6967,6 +7748,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ca4d9efc_70b
     <td class="element-table-value"><a href='#electrochemistry_b1ac8d0c_a215_4e60_82b0_38272eff5131'>ManganeseBasedElectrode</a>, <a href='#electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5'>MetalOxideElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -6994,6 +7778,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_468b3b63_b62
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="MeasurementDataPostProcessing"></div>
@@ -7015,6 +7802,9 @@ IRI: https://w3id.org/emmo/domain/characterisation-methodology/chameo#Measuremen
     <td class="element-table-value"><a href='#electrochemistry_9d97c7ff_b0c7_4ba2_a3cb_c6509b6798a8'>CapacityCalculation</a>, <a href='#electrochemistry_cbb95634_450c_4332_980c_d37baadd7619'>EnergyCalculation</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -7046,6 +7836,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_df78745e_f9d
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_5adb91e0_ffe1_41f3_b779_c6966f65fb0e"></div>
@@ -7071,6 +7864,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5adb91e0_ffe
     <td class="element-table-value"><a href='#electrochemistry_424bf750_7df5_49b5_ba73_ba74397a166b'>ZincElectrode</a>, <a href='#electrochemistry_65c90d8d_9712_4f3f_b830_d8163ec4cfcc'>SolidAmalgamElectrode</a>, <a href='#electrochemistry_86be0987_5e21_43ec_b975_8f679999d328'>BimetallicElectrode</a>, <a href='#electrochemistry_9fd49892_cf6d_482e_a6c3_5f763948ec29'>LiquidMetalElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -7098,6 +7894,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e4b6cb36_4da
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_e94f6d42_35e4_4f9f_bb74_5e0628bbd454"></div>
@@ -7124,6 +7923,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e94f6d42_35e
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_1a2eb6db_c927_4039_aea0_8dfab060fd27"></div>
@@ -7145,6 +7947,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1a2eb6db_c92
     <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-18'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-18</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -7175,6 +7980,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dc205ac2_314
     <td class="element-table-value"><a href='#electrochemistry_1c0c8f43_7349_4646_94e3_c36727c5c2e3'>Seawater</a>, <a href='#electrochemistry_23b30468_be7b_45a9_bc11_a8219bc3ab8b'>LeclancheElectrolyte</a>, <a href='#electrochemistry_3f67016b_32b9_4419_a3f8_a5ffb5e92538'>AmmoniumChlorideSolution</a>, <a href='#electrochemistry_7393f12f_e3b9_42d6_bffb_e5613f53108f'>ZincChlorideSolution</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -7210,6 +8018,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c94c041b_8ea
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_b851c7e9_60bf_4d3d_abe1_8d08d3d85124"></div>
@@ -7235,6 +8046,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b851c7e9_60b
     <td class="element-table-value"><a href='#electrochemistry_3f70e5c5_67f0_483e_998b_b83b7739c4bc'>Terminal</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -7266,6 +8080,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9d7e5fea_a49
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_fe3a6c9a_85b8_4da6_aa4f_71c8de74939e"></div>
@@ -7296,6 +8113,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fe3a6c9a_85b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_0471ec77_91bc_4a78_be31_b6af613e5966"></div>
@@ -7321,6 +8141,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0471ec77_91b
     <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-01-11'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-01-11</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -7348,6 +8171,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0d2aaaf4_1a8
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_76e461aa_5948_4a68_8337_284d11e0fd7d"></div>
@@ -7374,6 +8200,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_76e461aa_594
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_344ed3a6_481a_499f_afef_631f1cece9ef"></div>
@@ -7399,6 +8228,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_344ed3a6_481
     <td class="element-table-value"><a href='#electrochemistry_0d2aaaf4_1a8a_4a32_abd8_7d0fdf0ae9d2'>NickelBasedElectrode</a>, <a href='#electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5'>MetalOxideElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -7430,6 +8262,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5f9a9411_05f
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_addf91e1_ba8c_4a3e_b1e9_092e3e1cc2b3"></div>
@@ -7451,6 +8286,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_addf91e1_ba8
     <td class="element-table-value"><a href='#electrochemistry_5f9a9411_05f9_4576_acd3_81d7d41cfe98'>NonAqueousElectrolyte</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -7478,6 +8316,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9f466223_e20
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_c610d869_cc03_44f0_b40d_ca86e945b9c9"></div>
@@ -7503,6 +8344,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c610d869_cc0
     <td class="element-table-value"><a href='#electrochemistry_0acd0fc2_1048_4604_8e90_bf4e84bd87df'>ElectrochemicalDevice</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -7533,6 +8377,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_83ee23b3_2f5
     <td class="element-table-value"><a href='#electrochemistry_7729c34e_1ae9_403d_b933_1765885e7f29'>ReferenceElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -7568,6 +8415,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a2b01d05_b47
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_7cef0da2_8de3_418e_b390_cce9a5d3c129"></div>
@@ -7598,6 +8448,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7cef0da2_8de
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_564d31be_91cb_4a8f_8369_2a55f1180499"></div>
@@ -7620,6 +8473,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_564d31be_91c
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_76df6e7b_fc3b_4a1f_98b1_0ca9c0539e4c"></div>
@@ -7641,6 +8497,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_76df6e7b_fc3
     <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-36'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-36</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -7668,6 +8527,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9ee6e728_e8f
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_e2c91edd_dd01_4309_9735_6fe5280261d4"></div>
@@ -7689,6 +8551,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e2c91edd_dd0
     <td class="element-table-value"><a href='#electrochemistry_bbb1d95b_72d1_44f6_b07e_a3d7d41ac215'>GasDiffusionElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -7716,6 +8581,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_27f95593_47f
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_c54fbb75_0528_49c0_97e0_258798a947e4"></div>
@@ -7741,6 +8609,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c54fbb75_052
     <td class="element-table-value"><a href='#electrochemistry_43cd6e14_dd43_41b5_b5b4_344d53841603'>PrismaticCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -7768,6 +8639,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d1199193_b20
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_4ca551d2_2969_4c18_96ce_db99831ed0af"></div>
@@ -7793,6 +8667,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4ca551d2_296
     <td class="element-table-value"><a href='#electrochemistry_43cd6e14_dd43_41b5_b5b4_344d53841603'>PrismaticCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -7820,6 +8697,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_93358d9b_897
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_56def0d5_fe57_40d7_85e3_97872fa2a3e1"></div>
@@ -7845,6 +8725,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_56def0d5_fe5
     <td class="element-table-value"><a href='#electrochemistry_43cd6e14_dd43_41b5_b5b4_344d53841603'>PrismaticCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -7872,6 +8755,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_289da03d_606
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_d1bf3cdd_d618_40e3_b055_a952ef632157"></div>
@@ -7897,6 +8783,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d1bf3cdd_d61
     <td class="element-table-value"><a href='#electrochemistry_43cd6e14_dd43_41b5_b5b4_344d53841603'>PrismaticCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -7924,6 +8813,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bba6b94e_c0d
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_0e366263_fded_4509_bddd_392d839013e4"></div>
@@ -7949,6 +8841,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0e366263_fde
     <td class="element-table-value"><a href='#electrochemistry_43cd6e14_dd43_41b5_b5b4_344d53841603'>PrismaticCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -7976,6 +8871,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3b714a22_421
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_619c2e56_077d_4bb4_9062_65fb75763651"></div>
@@ -8001,6 +8899,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_619c2e56_077
     <td class="element-table-value"><a href='#electrochemistry_43cd6e14_dd43_41b5_b5b4_344d53841603'>PrismaticCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -8028,6 +8929,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f4a6a682_fd7
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_50d9652c_6b68_457c_bd72_f89a8e549bcf"></div>
@@ -8053,6 +8957,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_50d9652c_6b6
     <td class="element-table-value"><a href='#electrochemistry_43cd6e14_dd43_41b5_b5b4_344d53841603'>PrismaticCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -8080,6 +8987,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a5c1b56f_5c8
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_7018bd4e_6ca1_44eb_a558_6585c0bf8547"></div>
@@ -8105,6 +9015,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7018bd4e_6ca
     <td class="element-table-value"><a href='#electrochemistry_43cd6e14_dd43_41b5_b5b4_344d53841603'>PrismaticCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -8132,6 +9045,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_afe918c7_063
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_37504d4d_2aff_4f7f_9f46_a24e258028e8"></div>
@@ -8157,6 +9073,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_37504d4d_2af
     <td class="element-table-value"><a href='#electrochemistry_43cd6e14_dd43_41b5_b5b4_344d53841603'>PrismaticCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -8184,6 +9103,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8112c7ba_e58
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_948234f6_4095_4419_af30_00ab297a7694"></div>
@@ -8209,6 +9131,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_948234f6_409
     <td class="element-table-value"><a href='#electrochemistry_43cd6e14_dd43_41b5_b5b4_344d53841603'>PrismaticCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -8236,6 +9161,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_41ab11ec_af9
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_36444184_1100_4271_869f_7f2d983aaecb"></div>
@@ -8261,6 +9189,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_36444184_110
     <td class="element-table-value"><a href='#electrochemistry_43cd6e14_dd43_41b5_b5b4_344d53841603'>PrismaticCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -8288,6 +9219,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2c63d7f4_09b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_f9f056bb_a38b_43bd_a6bd_99d618431f4d"></div>
@@ -8309,6 +9243,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f9f056bb_a38
     <td class="element-table-value"><a href='#electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc'>ActiveElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -8336,6 +9273,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_efc4f7ab_850
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_d5da9948_e95b_4f12_a2d2_10a48f390c52"></div>
@@ -8357,6 +9297,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d5da9948_e95
     <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-40'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-40</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -8384,6 +9327,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b79d4f9e_572
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_e13b7945_65ac_476b_85ee_5cdc59f5c919"></div>
@@ -8410,6 +9356,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e13b7945_65a
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_d16eec87_c646_4566_bda6_7d3357cda061"></div>
@@ -8435,6 +9384,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d16eec87_c64
     <td class="element-table-value"><a href='#electrochemistry_ecf136cb_2584_4cb1_98b7_2d2b3d22e40d'>SolidElectrolyteInterphase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -8466,6 +9418,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a1ec9e3c_c62
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_c84a1d8f_e405_42ba_8c80_bbe3b9c6c66a"></div>
@@ -8483,6 +9438,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c84a1d8f_e40
     <td class="element-table-value">a thin sheet that has been punched with a pattern of holes, offering controlled porosity and strength for uses in filtration, sound suppression, and structural components</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -8505,6 +9463,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_78f75a64_55b
     <td class="element-table-value"><a href='#electrochemistry_6592d8cc_4ce4_42ca_b010_6bfc4a8444d2'>AcidicElectrolyte</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -8532,6 +9493,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7760b241_775
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_457a8f92_0a19_4773_8114_a42edff32248"></div>
@@ -8553,6 +9517,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_457a8f92_0a1
     <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-04'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-04</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -8579,6 +9546,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d8a9a88e_d43
     <td class="element-table-value"><a href='#electrochemistry_2d32a81a_2148_41bd_84fb_467aa8de4a8f'>PlatinumElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -8610,6 +9580,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2d32a81a_214
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_83d2c2d4_ffa9_42f4_9264_a0c59c657607"></div>
@@ -8636,6 +9609,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_83d2c2d4_ffa
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_c2024587_3237_474e_8df9_91d10db2df47"></div>
@@ -8657,6 +9633,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c2024587_323
     <td class="element-table-value"><a href='#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627'>Electrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -8688,6 +9667,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c6d6c0a1_a06
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_3663991d_9319_4f7a_922b_f0e428b58801"></div>
@@ -8714,6 +9696,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3663991d_931
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_58413d4e_2885_459e_ac06_8d45e661cf91"></div>
@@ -8735,6 +9720,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_58413d4e_288
     <td class="element-table-value"><a href='#electrochemistry_331e6cca_f260_4bf8_af55_35304fe1bbe0'>Separator</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -8774,6 +9762,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_aff732a9_238
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_522f0c0b_cf33_4328_af71_12e38dae6798"></div>
@@ -8800,6 +9791,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_522f0c0b_cf3
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_0afe79ed_dc0d_4b3e_88fa_ae0c7b1e88b5"></div>
@@ -8821,6 +9815,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0afe79ed_dc0
     <td class="element-table-value"><a href='#electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc'>ActiveElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -8848,6 +9845,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_26a0dc36_817
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_c183f697_8995_477c_9ccd_5c12d98e3633"></div>
@@ -8870,6 +9870,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c183f697_899
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_2dd44ff6_425a_4377_b86e_fa2bd567819f"></div>
@@ -8891,6 +9894,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2dd44ff6_425
     <td class="element-table-value"><a href='#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7'>ElectricPotentialSignal</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -8918,6 +9924,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cd7d24a5_db3
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_a9fc3f77_e48e_4bce_b118_044d608722f6"></div>
@@ -8939,6 +9948,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a9fc3f77_e48
     <td class="element-table-value"><a href='https://en.wikipedia.org/wiki/Potentiostat'>https://en.wikipedia.org/wiki/Potentiostat</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -8962,6 +9974,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5a5ef74b_e4a
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_af751d07_f0b7_43c7_911d_cba864189b2b"></div>
@@ -8983,6 +9998,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_af751d07_f0b
     <td class="element-table-value"><a href='#electrochemistry_1586ef26_6d30_49e3_ae32_b4c9fc181941'>FormFactor</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -9006,6 +10024,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_74459386_875
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_ee479886_6805_4018_95e1_500185e44215"></div>
@@ -9023,6 +10044,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ee479886_680
     <td class="element-table-value">a material comprised of many particles</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -9045,6 +10069,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dc1af38d_438
     <td class="element-table-value"><a href='#electrochemistry_87340877_e8ed_4061_ac2f_cb1c121e7193'>PowerHold</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -9080,6 +10107,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_87340877_e8e
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_f330680b_347e_45b3_9113_5ce09d18d60b"></div>
@@ -9102,6 +10132,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f330680b_347
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_6775b232_c58a_4303_8164_137261329db6"></div>
@@ -9123,6 +10156,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6775b232_c58
     <td class="element-table-value"><a href='#electrochemistry_1586ef26_6d30_49e3_ae32_b4c9fc181941'>FormFactor</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -9150,6 +10186,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_43cd6e14_dd4
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_11a774f3_d20a_4741_bd81_cae53230bd0c"></div>
@@ -9171,6 +10210,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_11a774f3_d20
     <td class="element-table-value"><a href='#electrochemistry_757eae08_4d43_42d4_8b4e_8a0bfd2f9a1c'>InsertionElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -9198,6 +10240,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a49d9cd1_bec
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_8372fdaa_dc01_4abf_9b75_442d0b28f263"></div>
@@ -9219,6 +10264,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8372fdaa_dc0
     <td class="element-table-value"><a href='#electrochemistry_83f2b1e9_cb67_4dbf_977f_ba54bbae374f'>ConstantCurrentCharging</a>, <a href='#electrochemistry_9f1ffb54_4403_4541_98c1_3a821c6d060f'>CurrentPulsing</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -9242,6 +10290,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_acdedc56_61d
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_b7f05e67_d7e8_469f_971f_0cb4d4c7e857"></div>
@@ -9263,6 +10314,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b7f05e67_d7e
     <td class="element-table-value"><a href='#electrochemistry_31e8052d_bede_43c6_8b41_d51bb24c9489'>TimeSeriesElectricalDataSet</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -9286,6 +10340,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e73cb0b7_e2a
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_dac5067c_e6f2_4fca_a915_5b7b918ca1c4"></div>
@@ -9307,6 +10364,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dac5067c_e6f
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -9334,6 +10394,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_31b7ac6a_b1e
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_cf6eebea_24f6_48d2_8389_65eba0393762"></div>
@@ -9360,6 +10423,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cf6eebea_24f
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_39c6f5a0_5dc8_4112_b432_b9fece568ca2"></div>
@@ -9381,6 +10447,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_39c6f5a0_5dc
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -9408,6 +10477,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b442217f_02f
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_21eef598_0799_4cb1_b2d5_6e072a8579a3"></div>
@@ -9433,6 +10505,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_21eef598_079
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -9460,6 +10535,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_abffe8cd_14d
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_fe054d02_41c7_40e9_8206_3440ab6a67b2"></div>
@@ -9486,6 +10564,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fe054d02_41c
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_36e05f2f_d279_4816_b5ae_6bb4cef02736"></div>
@@ -9507,6 +10588,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_36e05f2f_d27
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -9530,6 +10614,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_296b95b0_c4c
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_f7e253da_b12e_40b0_ba51_8cb039839ab6"></div>
@@ -9551,6 +10638,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f7e253da_b12
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -9578,6 +10668,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ce4352a7_f0b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_d5f67a0c_ed56_479d_9b68_6003142f98b0"></div>
@@ -9600,6 +10693,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d5f67a0c_ed5
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_f2cf71c1_f2d7_4131_82e0_2701cdecea55"></div>
@@ -9621,6 +10717,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f2cf71c1_f2d
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -9648,6 +10747,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3d2f9945_231
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_9dc236d9_c962_4fcc_94db_911a25241472"></div>
@@ -9674,6 +10776,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9dc236d9_c96
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_9c0e683b_40d7_4786_b31f_910dd68b2ea8"></div>
@@ -9695,6 +10800,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9c0e683b_40d
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -9718,6 +10826,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_30c8fb1b_3c7
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_9017b8b9_e21e_4961_a3c1_c0aeef3fe795"></div>
@@ -9739,6 +10850,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9017b8b9_e21
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -9762,6 +10876,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9ceffffd_b91
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_94497aca_52a0_48e3_9b76_157b050e35b3"></div>
@@ -9783,6 +10900,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_94497aca_52a
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -9806,6 +10926,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fab4bd12_c4e
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_400cb3e0_27b5_4d9a_be80_f86ad2757763"></div>
@@ -9827,6 +10950,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_400cb3e0_27b
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -9854,6 +10980,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3b048a62_859
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_fbf40756_3265_4468_bcdb_88d162afc539"></div>
@@ -9875,6 +11004,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fbf40756_326
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -9902,6 +11034,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0689e6fc_cda
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_11579b47_cbf8_45ac_aed3_343ea533b346"></div>
@@ -9923,6 +11058,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_11579b47_cbf
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -9946,6 +11084,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_885ffc4d_2b2
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_af92a3ae_e870_4676_9ae7_cda277b1e6e1"></div>
@@ -9967,6 +11108,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_af92a3ae_e87
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -9990,6 +11134,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a4e7c3d6_45b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_11e9f765_4fea_456b_bd8e_4624b9c752ae"></div>
@@ -10011,6 +11158,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_11e9f765_4fe
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -10034,6 +11184,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_aaafc5d6_050
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_a87d4b9d_ba91_4549_aed4_508d1160c0c0"></div>
@@ -10055,6 +11208,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a87d4b9d_ba9
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -10082,6 +11238,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_95d841eb_200
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_f2251de5_0a7d_4887_8bd1_c906db84abee"></div>
@@ -10107,6 +11266,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f2251de5_0a7
     <td class="element-table-value"><a href='#electrochemistry_b1cf9fee_2164_4f95_8204_90f717373a8a'>CylindricalCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -10134,6 +11296,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6ee40e33_ccb
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_99475d6c_304c_4d6b_9eca_fbc42f768be5"></div>
@@ -10155,6 +11320,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_99475d6c_304
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -10182,6 +11350,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c066bf32_ed6
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_ad9cdad6_66e8_471e_a7c6_b79f37c20814"></div>
@@ -10207,6 +11378,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ad9cdad6_66e
     <td class="element-table-value"><a href='#electrochemistry_b1cf9fee_2164_4f95_8204_90f717373a8a'>CylindricalCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -10234,6 +11408,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f58476a9_f00
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_169fb6e4_cbed_4b00_ace0_8731123a35b4"></div>
@@ -10259,6 +11436,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_169fb6e4_cbe
     <td class="element-table-value"><a href='#electrochemistry_b1cf9fee_2164_4f95_8204_90f717373a8a'>CylindricalCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -10286,6 +11466,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_56177336_3ae
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_6eaa3c0d_e1f3_4c6e_91a6_9b8c5a21b8cb"></div>
@@ -10312,6 +11495,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6eaa3c0d_e1f
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_027d437e_3bbf_4eda_940b_e509f8d2b993"></div>
@@ -10333,6 +11519,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_027d437e_3bb
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -10360,6 +11549,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1afa2c7e_6dd
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_94209cd8_f68f_40e6_ac70_cfb97a16e593"></div>
@@ -10381,6 +11573,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_94209cd8_f68
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -10408,6 +11603,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_76318e8e_c1b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_0a5038d4_24af_4ea8_8d56_a156faeb98e2"></div>
@@ -10433,6 +11631,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0a5038d4_24a
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -10460,6 +11661,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b56a95e6_eea
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_69e59b3d_b19d_4f8e_8b9c_84eb64307626"></div>
@@ -10485,6 +11689,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_69e59b3d_b19
     <td class="element-table-value"><a href='#electrochemistry_b1cf9fee_2164_4f95_8204_90f717373a8a'>CylindricalCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -10512,6 +11719,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fc9e7ba3_508
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_dc019f3f_e5f3_4eeb_bab9_a845a02223a0"></div>
@@ -10537,6 +11747,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dc019f3f_e5f
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -10564,6 +11777,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_15ec346a_6d3
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_68c1c36e_1548_4247_bae2_fe7102a2c4ff"></div>
@@ -10589,6 +11805,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_68c1c36e_154
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -10616,6 +11835,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6b275583_433
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_bb2faf17_b819_4876_b17f_fa82917cf85d"></div>
@@ -10637,6 +11859,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bb2faf17_b81
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -10664,6 +11889,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_34cb7ea7_243
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_3279f575_1c62_4bf2_a6e8_de4c7ff36f8e"></div>
@@ -10689,6 +11917,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3279f575_1c6
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -10716,6 +11947,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_06db7d9e_d22
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_88100e2c_0f6e_4483_afbf_30029a6702c6"></div>
@@ -10737,6 +11971,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_88100e2c_0f6
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -10764,6 +12001,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0c09df01_b25
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_028069a2_4e03_409e_8af2_4c8df32b5c5e"></div>
@@ -10790,6 +12030,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_028069a2_4e0
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_e0869e7a_36fe_4e33_9843_a5dc19fcb488"></div>
@@ -10811,6 +12054,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e0869e7a_36f
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -10838,6 +12084,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ebf314c7_81a
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_eb1c9aa3_ad4f_4f2a_80f6_d6c8a8bc0d9a"></div>
@@ -10863,6 +12112,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_eb1c9aa3_ad4
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -10890,6 +12142,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a277e420_248
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_387e1e59_e511_4acb_b5ec_fa7360ec7557"></div>
@@ -10912,6 +12167,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_387e1e59_e51
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_9a23f61b_fef0_40f8_84f9_2057f90f6a95"></div>
@@ -10933,6 +12191,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9a23f61b_fef
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -10960,6 +12221,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d67a0921_15e
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_59c041fc_eaa1_40fc_9b3e_1a6aca6119fd"></div>
@@ -10977,6 +12241,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_59c041fc_eaa
     <td class="element-table-value">a measurement of one or more quantities, usually at a given time</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -10999,6 +12266,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_14377ecb_5ea
     <td class="element-table-value"><a href='#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627'>Electrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -11042,6 +12312,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7729c34e_1ae
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_0d9ba00d_04bc_4bdc_85af_3380694f6f68"></div>
@@ -11072,6 +12345,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0d9ba00d_04b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_399b10cd_8a2e_47be_96b8_295890bd2460"></div>
@@ -11093,6 +12369,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_399b10cd_8a2
     <td class="element-table-value"><a href='#electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc'>ActiveElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -11132,6 +12411,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6c421175_477
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_7f4d74cd_d0a5_4908_9da9_7629fe419917"></div>
@@ -11166,6 +12448,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7f4d74cd_d0a
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_eacb141f_6ab4_491f_8603_a3e025cefc82"></div>
@@ -11191,6 +12476,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_eacb141f_6ab
     <td class="element-table-value"><a href='#electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37'>CoinCase</a>, <a href='#electrochemistry_b1cf9fee_2164_4f95_8204_90f717373a8a'>CylindricalCase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -11218,6 +12506,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a8bfac4f_3f3
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_7ffe1cb6_f87e_4b4a_8ce7_c98e2a584cb1"></div>
@@ -11239,6 +12530,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7ffe1cb6_f87
     <td class="element-table-value"><a href='#electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc'>ActiveElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -11265,6 +12559,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_10a91aba_da4
     <td class="element-table-value"><a href='#electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5'>MetalOxideElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -11296,6 +12593,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_637c576e_a50
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_82b66bfe_ec25_417b_ba65_b631ddaaca0e"></div>
@@ -11326,6 +12626,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_82b66bfe_ec2
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_27a81a51_e8d7_42fb_834f_0d068fa45d89"></div>
@@ -11351,6 +12654,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_27a81a51_e8d
     <td class="element-table-value"><a href='https://doi.org/10.1351/goldbook.S05471'>https://doi.org/10.1351/goldbook.S05471</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -11378,6 +12684,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8d3bf304_78e
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_1c0c8f43_7349_4646_94e3_c36727c5c2e3"></div>
@@ -11399,6 +12708,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1c0c8f43_734
     <td class="element-table-value"><a href='#electrochemistry_dc205ac2_314e_415c_a2b6_b12e8359d54c'>NearNeutralElectrolyte</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -11433,6 +12745,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_444992e5_43f
     <td class="element-table-value"><a href='#electrochemistry_e3d3d21c_cb9a_498c_bdb0_63c964f0d3c6'>CapacityFade</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -11476,6 +12791,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_331e6cca_f26
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_8c71739c_27c1_4d19_a0ff_02545296af43"></div>
@@ -11498,6 +12816,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8c71739c_27c
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_bed5b5f9_b89d_45e3_a8c2_81b70ae21847"></div>
@@ -11519,6 +12840,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bed5b5f9_b89
     <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-42'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-42</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -11562,6 +12886,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f47611a2_e08
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_79e12290_d1e5_4c41_916c_18f1e4d7fb51"></div>
@@ -11583,6 +12910,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79e12290_d1e
     <td class="element-table-value"><a href='#electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc'>ActiveElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -11606,6 +12936,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e8c39ecc_29d
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_4143b1c2_2d21_419e_af45_247d4c78ce7e"></div>
@@ -11628,6 +12961,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4143b1c2_2d2
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_2fd5964b_0c65_4413_8b8c_849639e6d1e7"></div>
@@ -11649,6 +12985,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2fd5964b_0c6
     <td class="element-table-value"><a href='#electrochemistry_5186239a_2af7_4dbf_92ca_22e8e583c528'>BlendedActiveElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -11675,6 +13014,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f897db90_afd
     <td class="element-table-value"><a href='#electrochemistry_a462859d_d8bd_48ea_8bde_1576f1248a1e'>SilverElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -11706,6 +13048,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6ec59f99_5f2
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_a462859d_d8bd_48ea_8bde_1576f1248a1e"></div>
@@ -11736,6 +13081,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a462859d_d8b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_a3745142_b97a_4e19_b7ed_03599f56e81d"></div>
@@ -11757,6 +13105,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a3745142_b97
     <td class="element-table-value"><a href='#electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5'>MetalOxideElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -11780,6 +13131,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_418c59bd_dc9
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_d61deb36_b397_4811_bf7a_66d8e4578c6e"></div>
@@ -11801,6 +13155,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d61deb36_b39
     <td class="element-table-value"><a href='#electrochemistry_a53d6dee_1547_4854_a311_805b4d557298'>AlternatingCurrent</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -11824,6 +13181,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c74bb11c_e87
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_df4dd678_9642_47c9_84dd_4bb09f369f53"></div>
@@ -11845,6 +13205,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_df4dd678_964
     <td class="element-table-value"><a href='#electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc'>ActiveElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -11868,6 +13231,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f8f81b27_1d6
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_ee0278fb_932d_48cd_a20a_c1b89b29d68b"></div>
@@ -11890,6 +13256,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ee0278fb_932
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_9e24d403_8531_416e_a9ec_d1ec5508bcb1"></div>
@@ -11911,6 +13280,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9e24d403_853
     <td class="element-table-value"><a href='#electrochemistry_838c115b_6bc9_4ce8_9f8d_86a6bf67742a'>CobaltBasedElectrode</a>, <a href='#electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5'>MetalOxideElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -11938,6 +13310,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ebd01982_6b0
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_d936c767_1530_419c_93f4_59e08f0d702c"></div>
@@ -11959,6 +13334,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d936c767_153
     <td class="element-table-value"><a href='#electrochemistry_757eae08_4d43_42d4_8b4e_8a0bfd2f9a1c'>InsertionElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -11982,6 +13360,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8968eb7a_9a6
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_502a98a3_ce47_421f_8e0a_016ed171c900"></div>
@@ -12003,6 +13384,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_502a98a3_ce4
     <td class="element-table-value"><a href='#electrochemistry_d54f6aac_7cd2_4d52_9bca_2f19bb1eaec4'>IronPhosphateBasedElectrode</a>, <a href='#electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5'>MetalOxideElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -12026,6 +13410,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4edb47d6_107
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_e8d9e091_a56d_4a24_a305_d1bac55cfce3"></div>
@@ -12047,6 +13434,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e8d9e091_a56
     <td class="element-table-value"><a href='#electrochemistry_b1ac8d0c_a215_4e60_82b0_38272eff5131'>ManganeseBasedElectrode</a>, <a href='#electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5'>MetalOxideElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -12070,6 +13460,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cc0468a2_185
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_103c9e6c_9c26_430a_9fb9_f4f041e970b0"></div>
@@ -12091,6 +13484,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_103c9e6c_9c2
     <td class="element-table-value"><a href='#electrochemistry_9c557caa_61e2_4fa9_a517_4bad01a68122'>TitaniumBasedElectrode</a>, <a href='#electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5'>MetalOxideElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -12114,6 +13510,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4a13e538_4c0
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_c5f51531_1452_4654_82e5_0505491c2c7d"></div>
@@ -12136,6 +13535,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c5f51531_145
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_cff80dd5_19a9_4357_8fb9_410a978153e2"></div>
@@ -12157,6 +13559,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cff80dd5_19a
     <td class="element-table-value"><a href='#electrochemistry_9c557caa_61e2_4fa9_a517_4bad01a68122'>TitaniumBasedElectrode</a>, <a href='#electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5'>MetalOxideElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -12184,6 +13589,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_65c90d8d_971
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_0508a114_544a_4f54_a7de_9b947fb4b618"></div>
@@ -12209,6 +13617,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0508a114_544
     <td class="element-table-value"><a href='#electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59'>Electrolyte</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -12239,6 +13650,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ecf136cb_258
     <td class="element-table-value"><a href='#electrochemistry_f8e0d532_cf44_403c_9188_e00ee161a3c1'>CathodeElectrolyteInterphase</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -12278,6 +13692,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e3f6eacc_f66
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_49909cd1_44f4_41b4_877a_82a52845a5cb"></div>
@@ -12299,6 +13716,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_49909cd1_44f
     <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-10'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-10</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -12330,6 +13750,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_872b11e1_8bb
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_0e33278b_639f_412d_9abd_64c3790026ef"></div>
@@ -12351,6 +13774,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0e33278b_639
     <td class="element-table-value"><a href='#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7'>ElectricPotentialSignal</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -12374,6 +13800,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_210f3520_1ea
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_626f81db_ae4e_410a_96b8_0582aa2a9434"></div>
@@ -12396,6 +13825,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_626f81db_ae4
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_d359386f_ae2d_4ad4_9616_464e2111b67d"></div>
@@ -12417,6 +13849,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d359386f_ae2
     <td class="element-table-value"><a href='#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7'>ElectricPotentialSignal</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -12456,6 +13891,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2a40b878_7d0
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_aa5ed981_c11b_4c4f_b1fd_8c432e009484"></div>
@@ -12477,6 +13915,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_aa5ed981_c11
     <td class="element-table-value"><a href='#electrochemistry_ac9723d1_bac0_4109_874e_32849de9299b'>DoubleLayerModel</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -12512,6 +13953,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1e72986e_e19
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_bfbefff0_4df5_47c2_9943_5f42cf268e9e"></div>
@@ -12534,6 +13978,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bfbefff0_4df
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_46ac0fd3_2b8e_40aa_bf5d_19cf1dd39052"></div>
@@ -12555,6 +14002,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_46ac0fd3_2b8
     <td class="element-table-value"><a href='#electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc'>ActiveElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -12582,6 +14032,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_88d2d4bc_424
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_334b3acd_e35d_4d5a_b8b5_6d13cbebbc57"></div>
@@ -12603,6 +14056,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_334b3acd_e35
     <td class="element-table-value"><a href='#electrochemistry_6592d8cc_4ce4_42ca_b010_6bfc4a8444d2'>AcidicElectrolyte</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -12646,6 +14102,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dc6abae7_39b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_1fc5642c_b7b2_43bf_ad20_f96001db8800"></div>
@@ -12680,6 +14139,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1fc5642c_b7b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_cd1b7943_42ce_46bd_8588_1c3161268270"></div>
@@ -12701,6 +14163,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cd1b7943_42c
     <td class="element-table-value"><a href='#electrochemistry_1aec4cc0_82d5_4042_a657_ed7fe291c3d8'>Case</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -12728,6 +14193,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3f70e5c5_67f
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_60bc27f0_8290_4113_8c3b_011433a733c7"></div>
@@ -12754,6 +14222,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_60bc27f0_829
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_04f28ce3_251d_429e_aa85_ab3eb45bbcd2"></div>
@@ -12779,6 +14250,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_04f28ce3_251
     <td class="element-table-value"><a href='#electrochemistry_19abaccd_43be_4048_965c_e4fb63c5951b'>ElectrochemicalPhenomenon</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -12818,6 +14292,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_113e0469_8ae
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_4977521c_0438_4659_bc81_1c77fae836bb"></div>
@@ -12839,6 +14316,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4977521c_043
     <td class="element-table-value"><a href='#electrochemistry_88d2d4bc_4244_4419_a260_ad099a62d580'>SulfurBasedElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -12866,6 +14346,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b9bece97_a51
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_58ad1d22_3803_4c95_a137_207cfebe242a"></div>
@@ -12883,6 +14366,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_58ad1d22_380
     <td class="element-table-value">time data, usually resulting from an electrochemical measurement process</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -12902,6 +14388,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7fdf65c1_b86
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_496c8f31_9732_42c1_8eae_dd73979c06eb"></div>
@@ -12919,6 +14408,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_496c8f31_973
     <td class="element-table-value">the reseult of a time measurement</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -12950,6 +14442,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7fa74f69_047
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_31e8052d_bede_43c6_8b41_d51bb24c9489"></div>
@@ -12976,6 +14471,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_31e8052d_bed
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_a10ede13_c895_4f56_a728_b1aab512b31b"></div>
@@ -12997,6 +14495,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a10ede13_c89
     <td class="element-table-value"><a href='#electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc'>ActiveElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -13024,6 +14525,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9c557caa_61e
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_d90221a0_0da7_4876_9cac_0e943e445f6f"></div>
@@ -13045,6 +14549,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d90221a0_0da
     <td class="element-table-value"><a href='#electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc'>ActiveElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -13072,6 +14579,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_76fe8fb2_868
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_f57a7dac_2ec2_4d51_b697_01a844c4467f"></div>
@@ -13093,6 +14603,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f57a7dac_2ec
     <td class="element-table-value"><a href='#electrochemistry_ac9723d1_bac0_4109_874e_32849de9299b'>DoubleLayerModel</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -13116,6 +14629,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_09b9a369_222
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_f9af8440_3629_4558_a944_9dfaf3dfd7ec"></div>
@@ -13137,6 +14653,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f9af8440_362
     <td class="element-table-value"><a href='#electrochemistry_0a03ce7e_d79f_412e_a103_b5d74de9f4d7'>ElectricPotentialSignal</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -13164,6 +14683,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6b1f594f_2c0
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_c5fd7b61_40f1_4225_a173_5caa3c5f4773"></div>
@@ -13185,6 +14707,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c5fd7b61_40f
     <td class="element-table-value"><a href='#electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc'>ActiveElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -13211,6 +14736,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3fdc81d5_eef
     <td class="element-table-value"><a href='#electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5'>MetalOxideElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -13242,6 +14770,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_aac51107_dbe
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_a2f4dca3_829f_412b_9025_bd7581aad82a"></div>
@@ -13263,6 +14794,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a2f4dca3_829
     <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-12'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-02-12</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -13290,6 +14824,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0ee59786_b09
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_cc1f854a_ba6c_436e_bd18_c8b9159bbf52"></div>
@@ -13311,6 +14848,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cc1f854a_ba6
     <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-23'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-05-23</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -13338,6 +14878,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ec1dce8b_bb4
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_46957d35_0f8b_4d92_acb3_aded6ce774a1"></div>
@@ -13360,6 +14903,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_46957d35_0f8
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_4d09ddc4_7e71_4712_afab_b33d8df38983"></div>
@@ -13377,6 +14923,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4d09ddc4_7e7
     <td class="element-table-value">voltage data, usually resulting from an electrochemical measurement process</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -13408,6 +14957,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f07be701_9d6
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_825a749f_dd07_46fb_947c_db286440911e"></div>
@@ -13430,6 +14982,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_825a749f_dd0
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_a76072fe_ca6e_48ad_8b4a_ab98a2bc9abb"></div>
@@ -13447,6 +15002,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a76072fe_ca6
     <td class="element-table-value">the result of a voltage measurement</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -13474,6 +15032,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bbae1ef4_0a9
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_1355816f_a2b5_4800_8001_fc888f5d6b1b"></div>
@@ -13495,6 +15056,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1355816f_a2b
     <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=313-01-03'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=313-01-03</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -13525,6 +15089,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6385e07f_f40
     <td class="element-table-value"><a href='#electrochemistry_872b11e1_8bb3_4a2a_af90_bbaa0055d01e'>Spring</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -13564,6 +15131,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fb988878_ee5
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_3a69a00e_235a_4948_b369_8ac20116c85e"></div>
@@ -13581,6 +15151,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3a69a00e_235
     <td class="element-table-value">a fabric-like structure created by interweaving wires or fibres in an over-under pattern, commonly used for filtration, screening, and reinforcement due to its high strength and durability</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -13608,6 +15181,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d0a26dc2_fde
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_7393f12f_e3b9_42d6_bffb_e5613f53108f"></div>
@@ -13634,6 +15210,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7393f12f_e3b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_424bf750_7df5_49b5_ba73_ba74397a166b"></div>
@@ -13656,6 +15235,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_424bf750_7df
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_245c9442_ca1d_4070_a624_182b92d30b10"></div>
@@ -13677,6 +15259,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_245c9442_ca1
     <td class="element-table-value"><a href='#electrochemistry_757eae08_4d43_42d4_8b4e_8a0bfd2f9a1c'>InsertionElectrode</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -13704,6 +15289,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_82c70935_0ae
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_eac15067_9594_4eab_a440_b537b0fd2075"></div>
@@ -13717,6 +15305,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_eac15067_959
 
   <table class="element-table">
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -13732,6 +15323,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_860aa941_5ff
   <table class="element-table">
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_7df82c48_b599_4b02_bef0_9facc9c39410"></div>
@@ -13745,6 +15339,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7df82c48_b59
 
   <table class="element-table">
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -13760,6 +15357,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0ac306fd_e98
   <table class="element-table">
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_056a5fab_3d99_46bd_8eb1_6e89a368e1a7"></div>
@@ -13773,6 +15373,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_056a5fab_3d9
 
   <table class="element-table">
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -13788,6 +15391,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3dcfe33d_682
   <table class="element-table">
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_b62a6b15_236a_48bf_a323_ccbfc295f934"></div>
@@ -13801,6 +15407,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b62a6b15_236
 
   <table class="element-table">
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -13816,6 +15425,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4df9926d_d4f
   <table class="element-table">
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_c830c469_60c3_4380_8382_4df13a32a1e7"></div>
@@ -13829,6 +15441,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c830c469_60c
 
   <table class="element-table">
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -13844,6 +15459,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e08d43cf_93e
   <table class="element-table">
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_cc8c2c5d_cf3d_444d_a7e8_44ec4c06a88e"></div>
@@ -13857,6 +15475,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cc8c2c5d_cf3
 
   <table class="element-table">
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -13872,6 +15493,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_578c41e9_ee0
   <table class="element-table">
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_3bd08946_4e81_455d_9fca_dc7a5ead9315"></div>
@@ -13885,6 +15509,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3bd08946_4e8
 
   <table class="element-table">
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -13900,6 +15527,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c17b514b_57f
   <table class="element-table">
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_1f2d401c_eede_4178_9ff5_e5392bc2cb92"></div>
@@ -13913,6 +15543,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1f2d401c_eed
 
   <table class="element-table">
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -13928,6 +15561,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fd1fae29_a18
   <table class="element-table">
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138"></div>
@@ -13941,6 +15577,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5d299271_3f6
 
   <table class="element-table">
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -13956,6 +15595,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8e9cf965_9f9
   <table class="element-table">
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_5eb197ea_0c3e_4ea2_8392_81152ee91515"></div>
@@ -13970,6 +15612,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5eb197ea_0c3
   <table class="element-table">
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_9317be62_e602_4343_a72d_02c87201b9f6"></div>
@@ -13983,6 +15628,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9317be62_e60
 
   <table class="element-table">
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -14001,6 +15649,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c76dbfeb_f3d
 
 Electrochemistry Quantities
 ===========================
+
+
+----
 
 .. raw:: html
 
@@ -14040,6 +15691,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d7f8cab9_b03
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_56de36fe_e8e1_486c_8d29_061ac8d28c13"></div>
@@ -14061,6 +15715,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_56de36fe_e8e
     <td class="element-table-value"><a href='#electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526'>ActivationEnergy</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -14084,6 +15741,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8c16cb12_41c
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_86af4487_33c1_4562_a00b_3a8252ffe378"></div>
@@ -14106,6 +15766,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_86af4487_33c
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_4d69edda_d2fa_40b0_9c1e_52e08debf578"></div>
@@ -14127,6 +15790,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4d69edda_d2f
     <td class="element-table-value"><a href='#electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526'>ActivationEnergy</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -14158,6 +15824,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7fa406b0_512
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_1eeb0e2a_229a_43f1_b197_348d475067ff"></div>
@@ -14179,6 +15848,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1eeb0e2a_229
     <td class="element-table-value"><a href='#electrochemistry_c955c089_6ee1_41a2_95fc_d534c5cfd3d5'>MassLoading</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -14210,6 +15882,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_214d925c_76c
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_abd08921_6f3b_4a48_811e_7685c58aec0b"></div>
@@ -14228,6 +15903,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_abd08921_6f3
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_39a44af0_0e1a_4859_b550_bdabad64386e"></div>
@@ -14245,6 +15923,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_39a44af0_0e1
     <td class="element-table-value">the ambient thermodynamic temperature</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -14271,6 +15952,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_10eb778d_da6
     <td class="element-table-value"><a href='#electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5'>ElectrochemicalControlQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -14302,6 +15986,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f591a444_89d
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_565c0b10_70fe_441a_b76a_b9a8e08ca7b7"></div>
@@ -14331,6 +16018,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_565c0b10_70f
     <td class="element-table-value"><a href='#electrochemistry_f4fadc4e_ca7d_4e4e_89cf_eacf45b4041e'>ReactionOverpotential</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -14366,6 +16056,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bcb33f7e_557
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_269ddd97_1437_4545_b272_0df75a12c68a"></div>
@@ -14387,6 +16080,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_269ddd97_143
     <td class="element-table-value"><a href='#electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d'>CellVoltage</a>, <a href='#electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5'>ElectrochemicalControlQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -14410,6 +16106,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f2f36f22_373
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_5c34b3b5_c9c4_477d_809a_3f682f995aa9"></div>
@@ -14431,6 +16130,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5c34b3b5_c9c
     <td class="element-table-value">valid in situations where the insulating phase is present in a low volume fraction and represented by random, isotropic spheres</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -14466,6 +16168,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e1fd84eb_acd
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_f9e1c862_c510_4b11_9141_bc91045df817"></div>
@@ -14488,6 +16193,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f9e1c862_c51
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_520995f8_ec9c_4b3c_bb64_2cd691947379"></div>
@@ -14509,6 +16217,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_520995f8_ec9
     <td class="element-table-value"><a href='#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112'>ElectrochemicalQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -14544,6 +16255,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_791c1915_a79
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_c55bcb85_b7b8_4e67_8a78_9a42fe25b6cf"></div>
@@ -14573,6 +16287,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c55bcb85_b7b
     <td class="element-table-value"><a href='#electrochemistry_2a2f59b7_aa16_40aa_9c8b_0de8a2720456'>FaradaicCurrent</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -14604,6 +16321,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0853b072_3b8
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_637ee9c4_4b3f_4d3a_975b_c0572dfe53ce"></div>
@@ -14629,6 +16349,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_637ee9c4_4b3
     <td class="element-table-value"><a href='#electrochemistry_75c28dc8_3d7d_4b6e_861e_6c8b1ad7d644'>ShortCircuitCurrent</a>, <a href='#electrochemistry_79551e01_4bc6_4292_916e_08fe28a84600'>ChargingCurrent</a>, <a href='#electrochemistry_e4d666ee_d637_45cd_a904_dc33941ead4f'>DischargingCurrent</a>, <a href='#electrochemistry_f046d602_22ea_4f9b_9101_319f510d39f0'>CurrentScanRate</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -14659,6 +16382,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_265bb4d6_5ee
     <td class="element-table-value"><a href='#electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d'>CellVoltage</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -14706,6 +16432,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4ebe2ef1_eea
 
    Cell voltage fluctuates based on factors such as applied current, internal resistance, temperature, and composition.
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_4c274506_af5b_4ef1_8217_829ffd459f28"></div>
@@ -14728,6 +16457,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4c274506_af5
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_e3e78df2_d568_4ab7_8c0d_d3a2ee3ae282"></div>
@@ -14745,6 +16477,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e3e78df2_d56
     <td class="element-table-value">transport number of lithium ion in electrolyte</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -14771,6 +16506,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a5962e05_466
     <td class="element-table-value"><a href='#electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634'>ElectrochemicalPerformanceQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -14802,6 +16540,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_49efb72a_f8e
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_a4dfa5c1_55a9_4285_b71d_90cf6613ca31"></div>
@@ -14832,6 +16573,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a4dfa5c1_55a
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_a7dc73e2_d4aa_4dfc_8b4d_cb611f1501fb"></div>
@@ -14857,6 +16601,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a7dc73e2_d4a
     <td class="element-table-value"><a href='#electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee'>CRate</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -14888,6 +16635,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_10763eb0_dbc
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_7f073272_8925_4344_995c_a5a6dd1fcde6"></div>
@@ -14910,6 +16660,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7f073272_892
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_79551e01_4bc6_4292_916e_08fe28a84600"></div>
@@ -14931,6 +16684,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79551e01_4bc
     <td class="element-table-value"><a href='#electrochemistry_637ee9c4_4b3f_4d3a_975b_c0572dfe53ce'>CellCurrent</a>, <a href='#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112'>ElectrochemicalQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -14958,6 +16714,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2ab7af60_da5
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_31a74e23_bb07_41d0_bb8f_1d8cca157503"></div>
@@ -14980,6 +16739,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_31a74e23_bb0
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_93f000d8_efc1_4364_896c_c9ebc4c7ce3a"></div>
@@ -15001,6 +16763,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_93f000d8_efc
     <td class="element-table-value"><a href='#electrochemistry_c4120ce7_f1ff_4917_b59e_002454a65040'>PRate</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -15028,6 +16793,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4882cf2f_aab
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_5e4490b8_c1dd_4e00_980b_c484e1bf4904"></div>
@@ -15050,6 +16818,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5e4490b8_c1d
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_79a9e1be_35b0_4c3c_8087_b5f967ca0e87"></div>
@@ -15071,6 +16842,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79a9e1be_35b
     <td class="element-table-value"><a href='#electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d'>CellVoltage</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -15098,6 +16872,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3b938708_e7e
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_5eae657f_5914_4252_85c6_3fc772dea113"></div>
@@ -15123,6 +16900,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5eae657f_591
     <td class="element-table-value"><a href='#electrochemistry_47287d09_6108_45ca_ac65_8b9451b1065e'>MaximumConcentration</a>, <a href='#electrochemistry_a9873707_8103_4bb4_9e51_83db1e89b1bd'>MiniumumConcentration</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -15166,6 +16946,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9ed7210c_c4f
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_37c38b7e_9ded_481a_85fd_a467f1ee2b9f"></div>
@@ -15191,6 +16974,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_37c38b7e_9de
     <td class="element-table-value"><a href='#electrochemistry_10763eb0_dbc9_4d34_bd1a_7b8996590d45'>ChargingCapacity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -15218,6 +17004,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_08833ed2_632
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_33e6986c_b35a_4cae_9a94_acb23248065c"></div>
@@ -15243,6 +17032,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_33e6986c_b35
     <td class="element-table-value"><a href='#electrochemistry_2c4c2626_7db5_440c_a65e_95ed2986ee01'>InitialCondition</a>, <a href='#electrochemistry_f2f36f22_3738_49dd_b43b_7469db6675df'>BoundaryCondition</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -15274,6 +17066,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5696453c_9da
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_8de9735b_374a_4a0f_b29f_71a50794cf94"></div>
@@ -15304,6 +17099,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8de9735b_374
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_71f10616_15eb_4dc4_bc8d_ffaac3838af2"></div>
@@ -15326,6 +17124,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_71f10616_15e
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_6516ed26_9661_4d81_8c6d_15d2384d17c0"></div>
@@ -15347,6 +17148,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6516ed26_966
     <td class="element-table-value"><a href='#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112'>ElectrochemicalQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -15374,6 +17178,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_76e7e556_f47
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_74de2c33_84fc_4c2f_afe1_56d169149114"></div>
@@ -15400,6 +17207,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_74de2c33_84f
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_f046d602_22ea_4f9b_9101_319f510d39f0"></div>
@@ -15421,6 +17231,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f046d602_22e
     <td class="element-table-value"><a href='#electrochemistry_637ee9c4_4b3f_4d3a_975b_c0572dfe53ce'>CellCurrent</a>, <a href='#electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5'>ElectrochemicalControlQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -15447,6 +17260,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5766a819_c31
     <td class="element-table-value"><a href='#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112'>ElectrochemicalQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -15478,6 +17294,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ae782b14_88c
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_b83c6435_6edf_470e_9725_538a853e08f7"></div>
@@ -15495,6 +17314,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b83c6435_6ed
     <td class="element-table-value">a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 10% of the sample's particles fall.</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -15514,6 +17336,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_92fc0dba_6f1
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_62e03250_8987_497b_85d5_1399aca9a0aa"></div>
@@ -15531,6 +17356,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_62e03250_898
     <td class="element-table-value">a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 20% of the sample's particles fall.</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -15550,6 +17378,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7f17f6bb_c1f
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_0ed0362e_b7ae_482c_a7d0_2ca2eebda648"></div>
@@ -15567,6 +17398,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0ed0362e_b7a
     <td class="element-table-value">a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 30% of the sample's particles fall.</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -15586,6 +17420,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c1c1288c_97c
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_c8abaf09_300a_4008_a42a_2f4a3953ca7a"></div>
@@ -15604,6 +17441,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c8abaf09_300
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_9d60c4ab_d9ac_4dda_af0c_c64059326916"></div>
@@ -15621,6 +17461,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9d60c4ab_d9a
     <td class="element-table-value">a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 45% of the sample's particles fall.</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -15652,6 +17495,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3cfdfc10_a5c
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_b095e977_dbc2_4a9e_9930_6af0dab089f1"></div>
@@ -15669,6 +17515,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b095e977_dbc
     <td class="element-table-value">a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 55% of the sample's particles fall.</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -15688,6 +17537,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2e2d92f4_9fd
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_8768c8f4_eaa8_4670_a3a0_91524e59a7f6"></div>
@@ -15705,6 +17557,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8768c8f4_eaa
     <td class="element-table-value">a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 60% of the sample's particles fall.</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -15724,6 +17579,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1be95f7c_738
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_e03f6800_92c5_4218_bb6d_1c919abaa063"></div>
@@ -15741,6 +17599,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e03f6800_92c
     <td class="element-table-value">a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 10% of the sample's particles fall.</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -15760,6 +17621,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9cf8e627_a3d
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_97bc06e6_6141_47ec_9e81_fd9e6a5b07c7"></div>
@@ -15777,6 +17641,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_97bc06e6_614
     <td class="element-table-value">a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 10% of the sample's particles fall.</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -15796,6 +17663,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fbaa2d5e_b8f
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_8e943e12_ecc0_4093_899e_7226be6be7f2"></div>
@@ -15814,6 +17684,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8e943e12_ecc
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_02d2d1d1_241c_429b_b4e7_31f2c3dc4835"></div>
@@ -15831,6 +17704,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_02d2d1d1_241
     <td class="element-table-value">a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 95% of the sample's particles fall.</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -15862,6 +17738,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1acab8af_979
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_0ea21f71_d1bd_4714_a260_b991e6d4bcf7"></div>
@@ -15880,6 +17759,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0ea21f71_d1b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_9cba2158_26ba_4dd7_b082_ba66dbb960c7"></div>
@@ -15897,6 +17779,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9cba2158_26b
     <td class="element-table-value">the lumped specific heat capacity of an electrochemical device</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -15920,6 +17805,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ccde4e5f_ace
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_463950b9_fd8d_48de_a52d_b29cab026391"></div>
@@ -15938,6 +17826,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_463950b9_fd8
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_b4184e46_c53c_47cc_9bfc_186fd77836a5"></div>
@@ -15955,6 +17846,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b4184e46_c53
     <td class="element-table-value">the total volume of an electrochemical device, determined by its external dimensions</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -15982,6 +17876,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_10104499_658
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_e38f11d0_a16f_4fe8_8ec5_3fe4493b7759"></div>
@@ -16007,6 +17904,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e38f11d0_a16
     <td class="element-table-value"><a href='#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112'>ElectrochemicalQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -16050,6 +17950,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_17626b8e_dfc
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_5fb7a03f_d6dd_47ee_9317_0629681c7d00"></div>
@@ -16084,6 +17987,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5fb7a03f_d6d
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607"></div>
@@ -16109,6 +18015,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_37b24a94_cae
     <td class="element-table-value"><a href='#electrochemistry_4c274506_af5b_4ef1_8217_829ffd459f28'>ChargeCarrierDiffusivityInElectrolyte</a>, <a href='#electrochemistry_50247e71_75fe_4986_959e_fd06c6be98db'>GuestDiffusivityInNegativeElectrodeActiveMaterial</a>, <a href='#electrochemistry_e59188bb_ce66_49f6_84aa_ecb98e76941e'>GuestDiffusivityInPositiveElectrodeActiveMaterial</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -16144,6 +18053,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_25e20915_c35
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_0141b5c2_9f15_46f4_82e6_92a104faa476"></div>
@@ -16178,6 +18090,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0141b5c2_9f1
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_457aed58_6e7e_42d5_9d78_b424c8d60aa3"></div>
@@ -16199,6 +18114,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_457aed58_6e7
     <td class="element-table-value">ConstantCurrentDischargePercentage</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -16226,6 +18144,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e4d666ee_d63
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_ca36cbf3_1fed_4b88_9177_b4e16ad00cf7"></div>
@@ -16252,6 +18173,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ca36cbf3_1fe
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_4f14e153_cffb_42bd_9a7f_ae40d51ad2cd"></div>
@@ -16274,6 +18198,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4f14e153_cff
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_b6f33044_1892_41a4_ae89_8683d4225f8d"></div>
@@ -16295,6 +18222,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b6f33044_189
     <td class="element-table-value"><a href='#electrochemistry_c4120ce7_f1ff_4917_b59e_002454a65040'>PRate</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -16322,6 +18252,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_884650fd_6cc
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_9d57962c_e150_4e64_962b_8fd6a92c9234"></div>
@@ -16343,6 +18276,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9d57962c_e15
     <td class="element-table-value">SpecificEnergyDischarge</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -16374,6 +18310,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c7b26177_21b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_a56fc557_9dea_42e6_b936_e9d62dcaf84f"></div>
@@ -16399,6 +18338,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a56fc557_9de
     <td class="element-table-value"><a href='#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112'>ElectrochemicalQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -16426,6 +18368,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4b18c3f9_df1
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_14d93129_d94d_42ff_a6f2_e8fca36ffec4"></div>
@@ -16443,6 +18388,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_14d93129_d94
     <td class="element-table-value">a physical quantity that is adjusted to consider the effects of porous media structure</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -16470,6 +18418,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c5047d29_4e6
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_21745019_2830_4395_bca7_15ddfd266673"></div>
@@ -16496,6 +18447,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_21745019_283
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634"></div>
@@ -16521,6 +18475,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_02eb0465_4f9
     <td class="element-table-value"><a href='#electrochemistry_1e3dc60d_dd6b_47d6_8161_70004fc5ee30'>SpecificCapacity</a>, <a href='#electrochemistry_46376e5d_9627_4514_9881_9e62083625c3'>StoredEnergy</a>, <a href='#electrochemistry_4aa1b96e_44a0_4b1a_a0ac_723d0223d80b'>EnergyDensity</a>, <a href='#electrochemistry_5696453c_9da7_41e2_bbda_603c1b90a8fc'>CoulombicEfficiency</a>, <a href='#electrochemistry_76e7e556_f47e_47e2_b2ef_67aeed09c63e'>CurrentDensityLimit</a>, <a href='#electrochemistry_79198264_cdf5_4fc3_8bcf_e5140a52547a'>EnergyEfficiency</a>, <a href='#electrochemistry_9bf40017_3f58_4030_ada7_cb37a3dfda2d'>InternalResistance</a>, <a href='#electrochemistry_a5962e05_466d_46a4_8951_bea59d7326e5'>ChargeEfficiency</a>, <a href='#electrochemistry_a7eb870c_4ef7_4ccd_85e8_4b7b726d7a2a'>PowerDensity</a>, <a href='#electrochemistry_ae782b14_88ce_4cdd_9418_12aca00be937'>CycleLife</a>, <a href='#electrochemistry_bcb33f7e_5573_4bc2_b636_4ea313a9dd3a'>AreicCapacity</a>, <a href='#electrochemistry_c762a928_5a74_46fd_9929_4ac2d7a3a8d7'>SpecificPower</a>, <a href='#electrochemistry_e8ec76bf_2a60_4982_8cde_02dfbd2e626f'>ShelfLife</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -16560,6 +18517,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1422cde1_929
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_900e357f_2ee3_425a_a0b6_322661117787"></div>
@@ -16581,6 +18541,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_900e357f_2ee
     <td class="element-table-value"><a href='#electrochemistry_16a5de33_a2ca_4563_80d4_6caeb08d97ca'>Polarity</a>, <a href='#electrochemistry_49efb72a_f8e6_4f50_acac_975302200d47'>ChargeRetention</a>, <a href='#electrochemistry_83928dce_9746_4452_a9f9_da4366a20ca4'>ElectrolyteContainment</a>, <a href='#electrochemistry_83fbc038_0c2e_4d04_91d7_cdf30f8a5535'>Prismatic</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -16604,6 +18567,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_aecc6094_c6a
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_8f4b90ef_fea4_47c9_99f5_a9b3290a505d"></div>
@@ -16625,6 +18591,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8f4b90ef_fea
     <td class="element-table-value"><a href='#electrochemistry_2d896559_eee3_447c_9759_87c854a4266a'>ElectrochemicalThermodynamicQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -16652,6 +18621,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2d896559_eee
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_4a450a27_b84a_4c70_a3a9_15ec30e2f30b"></div>
@@ -16677,6 +18649,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4a450a27_b84
     <td class="element-table-value"><a href='#electrochemistry_0c9655c6_6b0b_4819_a219_f286ad196fa9'>InternalConductance</a>, <a href='#electrochemistry_22cec04f_c7f3_4ff8_a34b_e512379c9dcb'>MigrationCurrent</a>, <a href='#electrochemistry_25dabdc2_68bf_4a38_8cbe_11be017358bc'>IonicConductivity</a>, <a href='#electrochemistry_a17ee4e0_c81a_4a64_9ecb_9c6fa022cf4d'>LimitingMolarConductivity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -16712,6 +18687,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_129926b6_fc3
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_bad1b6f4_1b26_40e2_b552_6d53873e3973"></div>
@@ -16741,6 +18719,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bad1b6f4_1b2
     <td class="element-table-value"><a href='#electrochemistry_47ab1dad_cc09_4fd8_af23_acb36fb680dd'>ElectrodeSurfaceArea</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -16772,6 +18753,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_63a8f9d2_0cf
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_fa7790d6_07bb_4b0f_9965_55966828f5f3"></div>
@@ -16797,6 +18781,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fa7790d6_07b
     <td class="element-table-value"><a href='#electrochemistry_47ab1dad_cc09_4fd8_af23_acb36fb680dd'>ElectrodeSurfaceArea</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -16840,6 +18827,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f509645f_eb2
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_a82e16c3_b766_482f_be94_b8e9af37f6fc"></div>
@@ -16865,6 +18855,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a82e16c3_b76
     <td class="element-table-value"><a href='#electrochemistry_47ab1dad_cc09_4fd8_af23_acb36fb680dd'>ElectrodeSurfaceArea</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -16896,6 +18889,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_47ab1dad_cc0
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_83928dce_9746_4452_a9f9_da4366a20ca4"></div>
@@ -16922,6 +18918,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_83928dce_974
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_ce74d2dc_d496_4116_b2fb_3e83d88bc744"></div>
@@ -16947,6 +18946,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ce74d2dc_d49
     <td class="element-table-value"><a href='#electrochemistry_43f77743_1af6_4a0f_9cc6_285c2a450549'>PositiveElectrodeElectronicConductivity</a>, <a href='#electrochemistry_be3da3e2_58a9_4e58_adc2_7336d312717c'>NegativeElectrodeElectronicConductivity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -16982,6 +18984,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4aa1b96e_44a
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_79198264_cdf5_4fc3_8bcf_e5140a52547a"></div>
@@ -17011,6 +19016,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79198264_cdf
     <td class="element-table-value"><a href='#electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634'>ElectrochemicalPerformanceQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -17054,6 +19062,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d91940f0_c8b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_ccde24bb_790a_40ca_a06e_cea156a61031"></div>
@@ -17083,6 +19094,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ccde24bb_790
     <td class="element-table-value"><a href='#electrochemistry_21745019_2830_4395_bca7_15ddfd266673'>ElectrochemicalKineticQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -17117,6 +19131,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e9fd9ef9_adf
     <td class="element-table-value"><a href='#electrochemistry_21745019_2830_4395_bca7_15ddfd266673'>ElectrochemicalKineticQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -17160,6 +19177,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2a2f59b7_aa1
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_77f9d496_555e_4ae2_ae80_f297ef8335ca"></div>
@@ -17193,6 +19213,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_77f9d496_555
     <td class="element-table-value"><a href='#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112'>ElectrochemicalQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -17228,6 +19251,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_50674621_09a
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_b21de1ef_6c15_4d63_b320_c9b96fbf186f"></div>
@@ -17258,6 +19284,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b21de1ef_6c1
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_50247e71_75fe_4986_959e_fd06c6be98db"></div>
@@ -17280,6 +19309,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_50247e71_75f
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_e59188bb_ce66_49f6_84aa_ecb98e76941e"></div>
@@ -17301,6 +19333,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e59188bb_ce6
     <td class="element-table-value"><a href='#electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607'>Diffusivity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -17332,6 +19367,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c4d551db_db1
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_2ae53fc6_d44d_41c9_acaf_c5606e6a981d"></div>
@@ -17362,6 +19400,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2ae53fc6_d44
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_0089729b_5890_4c15_aa09_1244d41f8626"></div>
@@ -17379,6 +19420,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0089729b_589
     <td class="element-table-value">the imaginary part of the complex electric impedance</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -17402,6 +19446,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2cfea66b_756
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_098f98dc_e015_4dbd_b358_a7ac3b3ecff3"></div>
@@ -17419,6 +19466,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_098f98dc_e01
     <td class="element-table-value">the initial amount concentration of lithium in an electrolyte</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -17441,6 +19491,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2c4c2626_7db
     <td class="element-table-value"><a href='#electrochemistry_33e6986c_b35a_4cae_9a94_acb23248065c'>ControlProperty</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -17472,6 +19525,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_74861991_7da
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_9c9b80a4_a00b_4b91_8e17_3a7831f2bf2f"></div>
@@ -17489,6 +19545,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9c9b80a4_a00
     <td class="element-table-value">the thermodynamic temperature at some point in time designated to be the initial state</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -17528,6 +19587,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a24f8581_a5a
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_5973f91a_fa6b_49c9_ba46_3ecc1c2253d2"></div>
@@ -17549,6 +19611,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5973f91a_fa6
     <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=131-11-30'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=131-11-30</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -17580,6 +19645,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f94678d6_138
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_0c9655c6_6b0b_4819_a219_f286ad196fa9"></div>
@@ -17605,6 +19673,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0c9655c6_6b0
     <td class="element-table-value"><a href='#electrochemistry_4a450a27_b84a_4c70_a3a9_15ec30e2f30b'>ElectrochemicalTransportQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -17648,6 +19719,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9bf40017_3f5
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_8177eae6_1631_430d_99f2_942669bcb784"></div>
@@ -17673,6 +19747,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8177eae6_163
     <td class="element-table-value"><a href='#electrochemistry_2d896559_eee3_447c_9759_87c854a4266a'>ElectrochemicalThermodynamicQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -17708,6 +19785,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_25dabdc2_68b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_ff7797ed_9ef7_40d0_872b_2c215cd54578"></div>
@@ -17737,6 +19817,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ff7797ed_9ef
     <td class="element-table-value"><a href='#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112'>ElectrochemicalQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -17768,6 +19851,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_98b6e9d7_d5d
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_b395a244_3a75_4737_be38_981bfa1277fe"></div>
@@ -17793,6 +19879,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b395a244_3a7
     <td class="element-table-value"><a href='#electrochemistry_08b6d07a_0f6c_4932_afbd_fb6b699164ae'>LowerCRateLimit</a>, <a href='#electrochemistry_5eae657f_5914_4252_85c6_3fc772dea113'>ConcentrationLimit</a>, <a href='#electrochemistry_5ebeea80_af22_456b_9087_78c2a8465c58'>VoltageLimit</a>, <a href='#electrochemistry_74de2c33_84fc_4c2f_afe1_56d169149114'>CurrentLimit</a>, <a href='#electrochemistry_82fce40c_434d_4640_a3d2_e26379b6acae'>TemperatureLimit</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -17824,6 +19913,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d5ac8868_d31
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_a17ee4e0_c81a_4a64_9ecb_9c6fa022cf4d"></div>
@@ -17850,6 +19942,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a17ee4e0_c81
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_08b6d07a_0f6c_4932_afbd_fb6b699164ae"></div>
@@ -17871,6 +19966,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_08b6d07a_0f6
     <td class="element-table-value"><a href='#electrochemistry_b395a244_3a75_4737_be38_981bfa1277fe'>LimitQuantity</a>, <a href='#electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee'>CRate</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -17894,6 +19992,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7db845e7_0e5
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_b66d6553_6136_4754_902a_707e414210c2"></div>
@@ -17915,6 +20016,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b66d6553_613
     <td class="element-table-value"><a href='#electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5'>ElectrochemicalControlQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -17950,6 +20054,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_534dd59c_904
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_c955c089_6ee1_41a2_95fc_d534c5cfd3d5"></div>
@@ -17975,6 +20082,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c955c089_6ee
     <td class="element-table-value"><a href='#electrochemistry_1eeb0e2a_229a_43f1_b197_348d475067ff'>ActiveMassLoading</a>, <a href='#electrochemistry_2cfea66b_756d_4642_986f_9a41abbd7034'>InactiveMassLoading</a>, <a href='#electrochemistry_8541f8b7_c55e_452d_b3f8_db29dcb2a61d'>TotalMassLoading</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -18006,6 +20116,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b7781ebc_90a
 
    For real applications, the maximum capacity is affected by environmental conditions, rate of operation, and state-of-heath and can deviate from the reported value.
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_4a354510_4dc2_4803_8845_f4024a1a7260"></div>
@@ -18027,6 +20140,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4a354510_4dc
     <td class="element-table-value"><a href='#electrochemistry_cc519a19_b8d5_4e3f_b893_3a884888ad79'>MaximumTemperature</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -18054,6 +20170,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_47287d09_610
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_39d8a6ee_cd55_4855_8b5b_d42bef95ac78"></div>
@@ -18079,6 +20198,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_39d8a6ee_cd5
     <td class="element-table-value"><a href='#electrochemistry_74de2c33_84fc_4c2f_afe1_56d169149114'>CurrentLimit</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -18106,6 +20228,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ba7ac581_0e1
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_d5dc0c1d_0926_4268_89f0_4519a326eabc"></div>
@@ -18128,6 +20253,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d5dc0c1d_092
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_de612af2_a029_4a02_8090_4a75ab13271d"></div>
@@ -18149,6 +20277,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_de612af2_a02
     <td class="element-table-value"><a href='#electrochemistry_cc519a19_b8d5_4e3f_b893_3a884888ad79'>MaximumTemperature</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -18176,6 +20307,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1b2a7137_64d
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_3e54f9e3_a31d_4821_9bfb_ef953a42c35b"></div>
@@ -18202,6 +20336,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3e54f9e3_a31
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_95ef8c3c_62fe_467f_b5d4_dd0cd18a7ea8"></div>
@@ -18223,6 +20360,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_95ef8c3c_62f
     <td class="element-table-value"><a href='#electrochemistry_f0667139_6428_4e3d_ac0d_08c1dd7f36ea'>StoichiometricCoefficient</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -18246,6 +20386,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1cdeedbf_7f9
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_0ea4d188_9701_4699_a5ca_812a98a9afa7"></div>
@@ -18267,6 +20410,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0ea4d188_970
     <td class="element-table-value"><a href='#electrochemistry_cc519a19_b8d5_4e3f_b893_3a884888ad79'>MaximumTemperature</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -18293,6 +20439,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cc519a19_b8d
     <td class="element-table-value"><a href='#electrochemistry_0ea4d188_9701_4699_a5ca_812a98a9afa7'>MaximumStorageTemperature</a>, <a href='#electrochemistry_4a354510_4dc2_4803_8845_f4024a1a7260'>MaximumChargingTemperature</a>, <a href='#electrochemistry_de612af2_a029_4a02_8090_4a75ab13271d'>MaximumDischargingTemperature</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -18324,6 +20473,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_601ff226_59b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_22cec04f_c7f3_4ff8_a34b_e512379c9dcb"></div>
@@ -18353,6 +20505,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_22cec04f_c7f
     <td class="element-table-value"><a href='#electrochemistry_4a450a27_b84a_4c70_a3a9_15ec30e2f30b'>ElectrochemicalTransportQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -18384,6 +20539,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d3c0078e_c1d
 
    For real applications, the achieveable minimum capacity is affected by environmental conditions, rate of operation, and state-of-heath and can deviate from the reported value.
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_b90b1ad7_b9a8_44df_ad45_bfd25aac2e49"></div>
@@ -18405,6 +20563,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b90b1ad7_b9a
     <td class="element-table-value"><a href='#electrochemistry_4747c51d_86ab_4684_a4fb_b05f5c405ea3'>MiniumumTemperature</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -18428,6 +20589,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2a1de79f_e92
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_86324806_4263_4d80_b5af_1a7be844ab5b"></div>
@@ -18449,6 +20613,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_86324806_426
     <td class="element-table-value"><a href='#electrochemistry_f0667139_6428_4e3d_ac0d_08c1dd7f36ea'>StoichiometricCoefficient</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -18472,6 +20639,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0ddfd57a_d33
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_a9873707_8103_4bb4_9e51_83db1e89b1bd"></div>
@@ -18493,6 +20663,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a9873707_810
     <td class="element-table-value"><a href='#electrochemistry_5eae657f_5914_4252_85c6_3fc772dea113'>ConcentrationLimit</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -18519,6 +20692,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4747c51d_86a
     <td class="element-table-value"><a href='#electrochemistry_0ddfd57a_d338_4690_be45_b26884ed6302'>MinimumStorageTemperature</a>, <a href='#electrochemistry_2a1de79f_e927_45a2_9619_3799a0d61e9b'>MinimumDischargingTemperature</a>, <a href='#electrochemistry_b90b1ad7_b9a8_44df_ad45_bfd25aac2e49'>MinimumChargingTemperature</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -18550,6 +20726,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7fe804b8_612
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_05012606_b93d_4016_bbc7_8a927efdf723"></div>
@@ -18576,6 +20755,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_05012606_b93
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_fda9539d_5232_471c_8945_b9a8ec7247fe"></div>
@@ -18597,6 +20779,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fda9539d_523
     <td class="element-table-value"><a href='#electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526'>ActivationEnergy</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -18620,6 +20805,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_21da0fe9_9fb
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_8c336ae9_1818_4b08_a660_4bb83b28351f"></div>
@@ -18641,6 +20829,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8c336ae9_181
     <td class="element-table-value"><a href='#electrochemistry_38ab058e_3912_48c2_a7eb_76d25d000820'>StoichiometricCoefficientAtSOC100</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -18664,6 +20855,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e808a26a_581
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_0e2f4fe6_570a_4d13_81e9_de1d4f9987af"></div>
@@ -18685,6 +20879,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0e2f4fe6_570
     <td class="element-table-value"><a href='#electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b'>OpenCircuitVoltage</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -18708,6 +20905,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bfe553c2_a63
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_c5f9b91e_a770_4e9b_837e_fa2a76019111"></div>
@@ -18730,6 +20930,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c5f9b91e_a77
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_5cb403c4_4f28_46cb_81c4_21c5c47ef14a"></div>
@@ -18747,6 +20950,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5cb403c4_4f2
     <td class="element-table-value">this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases.</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -18770,6 +20976,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cdc91ec0_9fc
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_be3da3e2_58a9_4e58_adc2_7336d312717c"></div>
@@ -18791,6 +21000,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_be3da3e2_58a
     <td class="element-table-value"><a href='#electrochemistry_ce74d2dc_d496_4116_b2fb_3e83d88bc744'>ElectronicConductivity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -18814,6 +21026,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_eac57b09_5cc
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_c5dcb1a2_f2cf_421a_b8ae_47a88a61fce3"></div>
@@ -18835,6 +21050,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c5dcb1a2_f2c
     <td class="element-table-value"><a href='#electrochemistry_0335e3f6_d1d8_4daa_8376_a9285f1bc9f1'>ReactionRateConstant</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -18861,6 +21079,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_14577b99_a8a
     <td class="element-table-value"><a href='#electrochemistry_2a2f59b7_aa16_40aa_9c8b_0de8a2720456'>FaradaicCurrent</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -18892,6 +21113,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8abde9d0_84f
 
    While nominal capacity provides a useful reference, actual capacity depends on various factors, including temperature, rate, and state-of-health.
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_639b844a_e801_436b_985d_28926129ead6"></div>
@@ -18918,6 +21142,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_639b844a_e80
 
    Nominal voltage may not accurately reflect voltage under extreme loads or temperatures—always check manufacturer specifications.
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_482173dc_7779_4f12_982c_b19f2cda2dac"></div>
@@ -18940,6 +21167,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_482173dc_777
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_9d6a52ed_a53d_4327_a391_f173677a4b1d"></div>
@@ -18961,6 +21191,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9d6a52ed_a53
     <td class="element-table-value"><a href='#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112'>ElectrochemicalQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -18996,6 +21229,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_abfadc99_6e4
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_47608fd0_cc0d_457e_9141_051935029e3a"></div>
@@ -19017,6 +21253,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_47608fd0_cc0
     <td class="element-table-value"><a href='#electrochemistry_a5e00e3a_736c_4200_8d04_ed222fe07037'>NumberOfFiniteVolumeCellsInZ</a>, <a href='#electrochemistry_c2a85d02_c6b4_42df_b5ed_a9904ec34a5c'>NumberOfFiniteVolumeCellsInY</a>, <a href='#electrochemistry_e73586eb_8475_4879_a43e_087c702ea6bf'>NumberOfFiniteVolumeCellsInX</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -19040,6 +21279,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e73586eb_847
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_c2a85d02_c6b4_42df_b5ed_a9904ec34a5c"></div>
@@ -19061,6 +21303,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c2a85d02_c6b
     <td class="element-table-value"><a href='#electrochemistry_47608fd0_cc0d_457e_9141_051935029e3a'>NumberOfFiniteVolumeCells</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -19084,6 +21329,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a5e00e3a_736
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_88dd2bce_fb17_4705_905d_892681812290"></div>
@@ -19101,6 +21349,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_88dd2bce_fb1
     <td class="element-table-value">the number of times an iterative process should occur</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -19131,6 +21382,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_03a6ce70_508
     <td class="element-table-value"><a href='#electrochemistry_1cd1d777_e67b_47eb_81f1_edac35d9f2c6'>Overpotential</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -19177,6 +21431,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9c657fdc_b9d
     <td class="element-table-value"><a href='#electrochemistry_0e2f4fe6_570a_4d13_81e9_de1d4f9987af'>NegativeElectrodeActiveMaterialOpenCircuitVoltage</a>, <a href='#electrochemistry_52ab4fdd_f945_4541_9ce6_cd6fd3a05861'>PositiveElectrodeActiveMaterialOpenCircuitVoltage</a>, <a href='#electrochemistry_d91940f0_c8b6_4505_9b68_6bf6cfc5c544'>EquilibriumElectrodePotential</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -19228,6 +21485,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1cd1d777_e67
 
    Overpotential is often divided into different contributions: activation overpotential, ohmic overpotential, and concentration overpotential.
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_c4120ce7_f1ff_4917_b59e_002454a65040"></div>
@@ -19254,6 +21514,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c4120ce7_f1f
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_b92e382f_5109_4f60_ab5e_c89d340419a9"></div>
@@ -19279,6 +21542,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b92e382f_510
     <td class="element-table-value"><a href='#electrochemistry_58400817_3282_46e5_942e_3a1538631403'>PositiveElectrodeActiveMaterialParticleRadius</a>, <a href='#electrochemistry_bfe553c2_a63e_49b6_a209_0855dfc39724'>NegativeElectrodeActiveMaterialParticleRadius</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -19310,6 +21576,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_382b10dc_83a
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_e4a221e0_afc9_4464_91d4_e0c8ecdf79e8"></div>
@@ -19340,6 +21609,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e4a221e0_afc
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_cf386c1e_e62b_43ef_9b0e_e5e58935d63f"></div>
@@ -19362,6 +21634,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cf386c1e_e62
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_8430be19_6cae_4a15_a570_3c15d0d190eb"></div>
@@ -19379,6 +21654,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8430be19_6ca
     <td class="element-table-value">unit of percentage</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -19406,6 +21684,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_16a5de33_a2c
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_80920875_62ac_4e29_b970_ec4316e76aa5"></div>
@@ -19427,6 +21708,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_80920875_62a
     <td class="element-table-value"><a href='#electrochemistry_f22bd1ec_faca_4335_92a5_a1687154c622'>StoichiometricCoefficientAtSOC0</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -19450,6 +21734,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_99041897_5c0
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_c69a9d55_823f_4113_a305_ebc89dde7de3"></div>
@@ -19471,6 +21758,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c69a9d55_823
     <td class="element-table-value"><a href='#electrochemistry_47287d09_6108_45ca_ac65_8b9451b1065e'>MaximumConcentration</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -19494,6 +21784,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_52ab4fdd_f94
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_58400817_3282_46e5_942e_3a1538631403"></div>
@@ -19515,6 +21808,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_58400817_328
     <td class="element-table-value"><a href='#electrochemistry_b92e382f_5109_4f60_ab5e_c89d340419a9'>ParticleRadius</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -19538,6 +21834,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0a1e73c5_e91
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_7481c4c9_c247_4248_a045_a1077230acba"></div>
@@ -19555,6 +21854,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7481c4c9_c24
     <td class="element-table-value">this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases.</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -19578,6 +21880,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_62f5beeb_6d1
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_43f77743_1af6_4a0f_9cc6_285c2a450549"></div>
@@ -19599,6 +21904,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_43f77743_1af
     <td class="element-table-value"><a href='#electrochemistry_ce74d2dc_d496_4116_b2fb_3e83d88bc744'>ElectronicConductivity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -19622,6 +21930,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9d558b56_d3b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_404126e0_cb1b_44e4_98dc_2474185767a1"></div>
@@ -19644,6 +21955,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_404126e0_cb1
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_56b9cd1f_5397_4385_9292_30d93d9e7a05"></div>
@@ -19665,6 +21979,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_56b9cd1f_539
     <td class="element-table-value"><a href='#electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526'>ActivationEnergy</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -19691,6 +22008,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_264f40d1_17c
     <td class="element-table-value"><a href='#electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5'>ElectrochemicalControlQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -19726,6 +22046,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_136744ff_056
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_a7eb870c_4ef7_4ccd_85e8_4b7b726d7a2a"></div>
@@ -19752,6 +22075,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a7eb870c_4ef
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_83fbc038_0c2e_4d04_91d7_cdf30f8a5535"></div>
@@ -19777,6 +22103,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_83fbc038_0c2
     <td class="element-table-value"><a href='#electrochemistry_900e357f_2ee3_425a_a0b6_322661117787'>ElectrochemicalProperty</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -19807,6 +22136,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_346519a4_006
     <td class="element-table-value"><a href='#electrochemistry_3e54f9e3_a31d_4821_9bfb_ef953a42c35b'>MaximumPulseDischargingCurrent</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -19842,6 +22174,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3cd0e74e_292
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_762ba55f_9b56_4c31_865f_cff2e7d0a94b"></div>
@@ -19863,6 +22198,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_762ba55f_9b5
     <td class="element-table-value"><a href='https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-03-03'>https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=702-03-03</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -19890,6 +22228,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4d2b102b_351
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_2705525b_7512_48bf_825b_f2d0409bede4"></div>
@@ -19915,6 +22256,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2705525b_751
     <td class="element-table-value"><a href='#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112'>ElectrochemicalQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -19954,6 +22298,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9b3b4668_079
 
    The value for rated capacity does not necessarily represent the actual capacity in real-world usage, as factors like temperature, rate, and state-of-health affect the effective capacity.
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_da215d1a_196a_465f_9de8_89f6fbb76982"></div>
@@ -19979,6 +22326,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_da215d1a_196
     <td class="element-table-value"><a href='#electrochemistry_1cdeedbf_7f9a_4e1f_a297_204a6e16b718'>MaximumStorageEnergy</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -20014,6 +22364,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f4fadc4e_ca7
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_e2514bf9_d012_4990_b68b_6f37443f18f6"></div>
@@ -20047,6 +22400,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e2514bf9_d01
     <td class="element-table-value"><a href='#electrochemistry_21745019_2830_4395_bca7_15ddfd266673'>ElectrochemicalKineticQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -20082,6 +22438,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0335e3f6_d1d
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_abf986d2_90d5_4746_b42b_89dc7cc1bf0f"></div>
@@ -20108,6 +22467,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_abf986d2_90d
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_838a927f_775e_4c6d_8e39_7865548608c2"></div>
@@ -20129,6 +22491,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_838a927f_775
     <td class="element-table-value"><a href='#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112'>ElectrochemicalQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -20156,6 +22521,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_73f169de_d18
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_db40df7e_1aa5_49a7_85cb_2aa2c1c70489"></div>
@@ -20173,6 +22541,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_db40df7e_1aa
     <td class="element-table-value">the thermodynamic temperature that is the reference for a calculation</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -20200,6 +22571,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_526bf81a_057
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_d47985f1_6bd7_4c4f_894f_13a6cab38bb5"></div>
@@ -20225,6 +22599,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d47985f1_6bd
     <td class="element-table-value"><a href='#electrochemistry_791c1915_a791_4450_acd8_7f94764743b5'>Capacity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -20260,6 +22637,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_07e219c3_890
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_1a104474_c326_4a29_ac26_26a05ac8f72c"></div>
@@ -20285,6 +22665,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1a104474_c32
     <td class="element-table-value"><a href='#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112'>ElectrochemicalQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -20312,6 +22695,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2678a656_4a2
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_b8d4042d_329a_450f_9088_2fc0e16a8667"></div>
@@ -20334,6 +22720,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b8d4042d_329
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_1900143f_cbc0_415f_9057_9382022a7bfe"></div>
@@ -20355,6 +22744,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1900143f_cbc
     <td class="element-table-value"><a href='#electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5'>ElectrochemicalControlQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -20382,6 +22774,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_52ac73c7_763
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_ecb6dfdf_bd3d_4339_8a1c_d32abbef30ba"></div>
@@ -20408,6 +22803,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ecb6dfdf_bd3
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_a4858e4d_dd3b_48ce_97ba_3eeb8571b633"></div>
@@ -20426,6 +22824,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a4858e4d_dd3
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_47288277_4aed_447e_b659_0c975d031406"></div>
@@ -20443,6 +22844,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_47288277_4ae
     <td class="element-table-value">the thickness of a separator</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -20474,6 +22878,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e8ec76bf_2a6
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_75c28dc8_3d7d_4b6e_861e_6c8b1ad7d644"></div>
@@ -20504,6 +22911,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_75c28dc8_3d7
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_68059d94_4c21_4065_b329_07faeebc7e87"></div>
@@ -20533,6 +22943,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_68059d94_4c2
     <td class="element-table-value"><a href='#electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5'>ElectrochemicalControlQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -20572,6 +22985,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1e3dc60d_dd6
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_c762a928_5a74_46fd_9929_4ac2d7a3a8d7"></div>
@@ -20593,6 +23009,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c762a928_5a7
     <td class="element-table-value"><a href='#electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634'>ElectrochemicalPerformanceQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -20628,6 +23047,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cf54e7c1_f35
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_327eb3e1_f74a_4076_96de_5a2e3f63cb65"></div>
@@ -20657,6 +23079,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_327eb3e1_f74
     <td class="element-table-value"><a href='#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112'>ElectrochemicalQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -20697,6 +23122,9 @@ G° or ΔrG , written as a reduction with respect to that of the standard hydrog
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_8b2aaa50_bbe1_45da_8778_8898326246a2"></div>
@@ -20727,6 +23155,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8b2aaa50_bbe
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_a7a4614f_2426_46f3_8475_cda4a9fabfce"></div>
@@ -20748,6 +23179,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a7a4614f_242
     <td class="element-table-value"><a href='#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112'>ElectrochemicalQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -20771,6 +23205,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ae108db7_876
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_85e39686_9658_4c74_bb91_a935704c174a"></div>
@@ -20792,6 +23229,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_85e39686_965
     <td class="element-table-value"><a href='#electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5'>ElectrochemicalControlQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -20819,6 +23259,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d78b696d_983
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_6769536b_5320_4b48_a2d8_ac285ec635a8"></div>
@@ -20840,6 +23283,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6769536b_532
     <td class="element-table-value"><a href='#electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5'>ElectrochemicalControlQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -20863,6 +23309,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0bf1ed19_2fc
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_80ca00f8_c891_4493_87a2_7d39b9d1e098"></div>
@@ -20884,6 +23333,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_80ca00f8_c89
     <td class="element-table-value"><a href='#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112'>ElectrochemicalQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -20910,6 +23362,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2d58b059_2ef
     <td class="element-table-value"><a href='#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112'>ElectrochemicalQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -20941,6 +23396,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f0667139_642
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_f22bd1ec_faca_4335_92a5_a1687154c622"></div>
@@ -20967,6 +23425,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f22bd1ec_fac
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_38ab058e_3912_48c2_a7eb_76d25d000820"></div>
@@ -20992,6 +23453,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_38ab058e_391
     <td class="element-table-value"><a href='#electrochemistry_8c336ae9_1818_4b08_a660_4bb83b28351f'>NegativeElectrodeActiveMaterialGuestStoichiometricCoefficientAtSOC100</a>, <a href='#electrochemistry_99041897_5c08_40ed_9118_3e77e9b0e191'>PositiveElectrodeActiveMaterialGuestStoichiometricCoefficientAtSOC100</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -21027,6 +23491,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_46376e5d_962
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_05cf26ef_782a_4f66_a196_7004dd973f8e"></div>
@@ -21061,6 +23528,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_05cf26ef_782
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_7f381c19_cf07_47a8_ab10_0b14d46901e8"></div>
@@ -21078,6 +23548,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7f381c19_cf0
     <td class="element-table-value">the quotient of the surface area of some object and its total volume</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -21109,6 +23582,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_60741c58_a10
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_5ce6a328_713c_4383_ad63_26c902c30e34"></div>
@@ -21130,6 +23606,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5ce6a328_713
     <td class="element-table-value">TapDensity</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -21156,6 +23635,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8f3ab19f_ce2
     <td class="element-table-value"><a href='#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112'>ElectrochemicalQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -21187,6 +23669,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3bb5ae23_59f
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_82fce40c_434d_4640_a3d2_e26379b6acae"></div>
@@ -21213,6 +23698,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_82fce40c_434
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_44a67eb4_52e8_433c_aef7_a928c2b9906c"></div>
@@ -21234,6 +23722,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_44a67eb4_52e
     <td class="element-table-value"><a href='#electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5'>ElectrochemicalControlQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -21261,6 +23752,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_27b3799c_250
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_372c89d0_adab_4585_9662_33c912acef23"></div>
@@ -21287,6 +23781,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_372c89d0_ada
 
    The value of the practically achieve able capacity is often much lower than the theoretical value.
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_df9e9d49_12fa_4794_b482_e0dcd2a7bb66"></div>
@@ -21309,6 +23806,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_df9e9d49_12f
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_4a30ff40_3ffa_4a08_9134_36dbe718bee1"></div>
@@ -21326,6 +23826,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4a30ff40_3ff
     <td class="element-table-value">the total duration of a test</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -21349,6 +23852,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f986d97_445
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_8541f8b7_c55e_452d_b3f8_db29dcb2a61d"></div>
@@ -21371,6 +23877,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8541f8b7_c55
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_6d981c04_3ace_4f1b_b0f8_770776cceb6f"></div>
@@ -21392,6 +23901,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6d981c04_3ac
     <td class="element-table-value"><a href='#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112'>ElectrochemicalQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -21423,6 +23935,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ae9882de_d6a
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_3dac5115_6337_40a6_a2ab_317087fe3b45"></div>
@@ -21445,6 +23960,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3dac5115_633
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_666f0b69_9c74_49a3_80b3_96a188332462"></div>
@@ -21466,6 +23984,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_666f0b69_9c7
     <td class="element-table-value"><a href='#electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5'>ElectrochemicalControlQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -21497,6 +24018,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6dcd5baf_58c
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_09e64707_a17d_4405_84cc_ee9d91ed32ef"></div>
@@ -21522,6 +24046,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_09e64707_a17
     <td class="element-table-value"><a href='#electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5'>ElectrochemicalControlQuantity</a>, <a href='#electrochemistry_f6f45881_9bf1_4cf5_988b_de79dab718ef'>VoltageChangeRate</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -21553,6 +24080,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f6f45881_9bf
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_5ebeea80_af22_456b_9087_78c2a8465c58"></div>
@@ -21579,6 +24109,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5ebeea80_af2
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_db37b358_b2f0_4e06_b6ae_8c56c8fbb6ba"></div>
@@ -21600,6 +24133,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_db37b358_b2f
     <td class="element-table-value"><a href='#electrochemistry_cf386c1e_e62b_43ef_9b0e_e5e58935d63f'>PercentQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -21630,6 +24166,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e6b63190_aca
     <td class="element-table-value"><a href='#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112'>ElectrochemicalQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -21669,6 +24208,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a5571263_f15
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_2c0e66c8_d58d_44b2_b0ce_ba55194bd505"></div>
@@ -21690,6 +24232,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2c0e66c8_d58
     <td class="element-table-value"><a href='#electrochemistry_cf386c1e_e62b_43ef_9b0e_e5e58935d63f'>PercentQuantity</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -21717,6 +24262,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c39b2498_783
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="EMMO_709ee08d_76b1_4fee_be22_925412ac313b"></div>
@@ -21734,6 +24282,9 @@ IRI: https://w3id.org/emmo#EMMO_709ee08d_76b1_4fee_be22_925412ac313b
     <td class="element-table-value">a customized callout for information not covered by default note types</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -21753,6 +24304,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a07dd85b_d0d
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_1b717a20_17e3_4480_8c60_c4ae94058f05"></div>
@@ -21771,6 +24325,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1b717a20_17e
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_e5e86474_8623_48ea_a1cf_502bdb10aa14"></div>
@@ -21784,6 +24341,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e5e86474_862
 
   <table class="element-table">
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -21803,6 +24363,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_69022178_77b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37"></div>
@@ -21816,6 +24379,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0a5b99ee_995
 
   <table class="element-table">
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -21835,6 +24401,9 @@ IRI: https://w3id.org/emmo#EMMO_b6730304_cabc_4104_b415_14218466445c
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30"></div>
@@ -21848,6 +24417,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1b718841_5d7
 
   <table class="element-table">
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -21867,6 +24439,9 @@ IRI: https://w3id.org/emmo#EMMO_95317324_4b53_4665_a087_82c3a2a0540b
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="EMMO_32214c66_8bce_40f5_b22d_5059f6cf571b"></div>
@@ -21884,6 +24459,9 @@ IRI: https://w3id.org/emmo#EMMO_32214c66_8bce_40f5_b22d_5059f6cf571b
     <td class="element-table-value">marks an error or incorrect usage</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -21903,6 +24481,9 @@ IRI: https://w3id.org/emmo#EMMO_4c8480cf_56de_41da_8699_f12a9033313a
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_7104c722_d5a5_4bff_ba2f_37e229bb6cce"></div>
@@ -21916,6 +24497,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7104c722_d5a
 
   <table class="element-table">
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -21935,6 +24519,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8377c1f7_2b0
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_097ea615_c209_4edd_a1a1_5eea71d98fe8"></div>
@@ -21952,6 +24539,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_097ea615_c20
     <td class="element-table-value">the label of a term used in resources from Maccor</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -21971,6 +24561,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_811aafc3_0c6
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_ea9f4dba_8ca2_419e_9cdf_ce54e9ebbd46"></div>
@@ -21988,6 +24581,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ea9f4dba_8ca
     <td class="element-table-value">the label of a term used in resources from Novonix</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -22007,6 +24603,9 @@ IRI: https://w3id.org/emmo#EMMO_5f7abc2a_5b50_41c3_8def_c8ba7c3b083e
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="EMMO_cc65321f_1964_4f16_aea3_2a8edf2f3394"></div>
@@ -22024,6 +24623,9 @@ IRI: https://w3id.org/emmo#EMMO_cc65321f_1964_4f16_aea3_2a8edf2f3394
     <td class="element-table-value">links a quantity to the typical unit(s) that are commonly used</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -22047,6 +24649,9 @@ IRI: https://w3id.org/emmo#EMMO_0fa6566e_500f_4d24_baa9_b2b22c9a0b72
 Electrochemistry Manufacturing
 ==============================
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_bed8f6c8_18d3_4af0_a0f3_d83bfa80498b"></div>
@@ -22065,6 +24670,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bed8f6c8_18d
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_91e931b3_9bc8_4490_8a9c_3202fc8338bd"></div>
@@ -22082,6 +24690,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_91e931b3_9bc
     <td class="element-table-value">the process of mixing binder components to create a binder solution</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -22105,6 +24716,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6a2d9bd3_369
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_dade3372_c229_47f2_b3c5_6ebb97a0f670"></div>
@@ -22126,6 +24740,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dade3372_c22
     <td class="element-table-value"><a href='#electrochemistry_ff7f5ab4_d0c0_4455_9bcc_3d80346e90ee'>ElectrolyteFilling</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -22149,6 +24766,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_19a5cf32_231
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_0e5ef5a7_53c6_4d94_bffd_d0318ea0de6b"></div>
@@ -22166,6 +24786,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0e5ef5a7_53c
     <td class="element-table-value">a mixture comprised of solid constituents</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -22185,6 +24808,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5076e90b_ed9
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_f2a034b6_401d_46bf_a258_cca87932c7af"></div>
@@ -22202,6 +24828,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f2a034b6_401
     <td class="element-table-value">the process of assembling components into an electrochemical device</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -22221,6 +24850,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_acd4bba1_e0f
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_cd5a6260_5d89_4a14_8e19_5f64742b64ac"></div>
@@ -22238,6 +24870,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cd5a6260_5d8
     <td class="element-table-value">the process of manufacturing an electrochemical device</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -22257,6 +24892,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_38a2b407_3be
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_cfcf6ca6_70e9_4369_9314_7f20b3efbf21"></div>
@@ -22274,6 +24912,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cfcf6ca6_70e
     <td class="element-table-value">the process of applying a coating to a substrate to manufacture an electrode</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -22293,6 +24934,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_36c2e19c_cb1
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_aaeb3c53_3199_4851_95d1_9cf1503a1b4b"></div>
@@ -22310,6 +24954,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_aaeb3c53_319
     <td class="element-table-value">the process of manufacturing and electrode</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -22329,6 +24976,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b50d66be_092
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_eeafeec2_2969_4886_b572_07ce39d3ee63"></div>
@@ -22346,6 +24996,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_eeafeec2_296
     <td class="element-table-value">the process of separating individual electrodes from an electrode sheet</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -22365,6 +25018,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5096e449_4d9
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_a490e278_8c6d_4a89_ad0e_ffa48366cd75"></div>
@@ -22383,6 +25039,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a490e278_8c6
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_707f001f_d2b9_46c2_ac1b_9cd039bcf00f"></div>
@@ -22400,6 +25059,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_707f001f_d2b
     <td class="element-table-value">the process of forming a negative electrode, separator, and positive electrode into a wound dry jelly roll</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -22423,6 +25085,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ff7f5ab4_d0c
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_b85ca559_eeef_4763_ac2e_7e658bf64b45"></div>
@@ -22440,6 +25105,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b85ca559_eee
     <td class="element-table-value">the process of manufacturing electrolyte</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -22463,6 +25131,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dbc73810_d33
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_d5e99e1f_049c_4111_b97f_613eb652492a"></div>
@@ -22484,6 +25155,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d5e99e1f_049
     <td class="element-table-value"><a href='#electrochemistry_6a2d9bd3_3695_4827_b3f7_3bba9b947129'>CellPackaging</a></td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -22507,6 +25181,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_99a4c4b9_90d
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_1a532a1a_a48c_4b08_854c_4f6c212c8b59"></div>
@@ -22529,6 +25206,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1a532a1a_a48
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_13fad803_de44_490d_a77e_c330c9168087"></div>
@@ -22546,6 +25226,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_13fad803_de4
     <td class="element-table-value">a semi-liquid mixture, typically composed of particles suspended in a solvent</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -22565,6 +25248,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c1ac455d_964
 Electrochemistry Testing
 ========================
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_99b2b3ad_8efc_48ee_a630_6d805a47efdc"></div>
@@ -22583,6 +25269,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_99b2b3ad_8ef
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_137dc19f_a3af_49af_971f_743d27e09f43"></div>
@@ -22600,6 +25289,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_137dc19f_a3a
     <td class="element-table-value">a process that measures the total amount of charge an electrochemical device can store and deliver under specified conditions</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -22623,6 +25315,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_25d01d13_3ca
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_435b22d4_c441_45ea_8c79_0cbec11fd287"></div>
@@ -22640,6 +25335,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_435b22d4_c44
     <td class="element-table-value">a process that determines the number of complete charge-discharge cycles an electrochemical device can undergo before its capacity falls below a predefined threshold</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -22659,6 +25357,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f4ce4df2_d7e
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_830d02dd_f897_4c3c_95a7_c5e5eafa346a"></div>
@@ -22676,6 +25377,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_830d02dd_f89
     <td class="element-table-value">the process of evaluating the performance and operational capabilities of an electrochemical device under specific conditions to determine its practical suitability for intended applications</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -22699,6 +25403,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_279ecc9f_bfb
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_916b1863_f417_4b94_9407_9d749ada9ed5"></div>
@@ -22721,6 +25428,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_916b1863_f41
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_00244072_8d24_4e34_9f6a_c7b2b132b2c8"></div>
@@ -22738,6 +25448,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_00244072_8d2
     <td class="element-table-value">a test where an electrochemical device is operated at a very low current, approximating equilibrium behaviour, in order to extract a pseudo-open-circuit-voltage profile</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -22757,6 +25470,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c7e37e88_ed8
   </tr>
   </table>
 
+
+----
+
 .. raw:: html
 
    <div id="electrochemistry_35469eeb_7fc3_4317_a4b5_b3be7015444b"></div>
@@ -22774,6 +25490,9 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_35469eeb_7fc
     <td class="element-table-value">a step in an electrochemical testing workflow in which the electrochemical device is held at open-circuit conditions (i.e. cell current = 0 A) and occuring in series with at least one active (i.e. cell current ~= 0 A) step.</td>
   </tr>
   </table>
+
+
+----
 
 .. raw:: html
 
@@ -22801,5 +25520,8 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c91164b8_5e5
   </tr>
   </table>
 
+
+Main Ontology
+=============
 
 End of Document.
