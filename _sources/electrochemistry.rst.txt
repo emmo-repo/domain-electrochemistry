@@ -3,7 +3,9 @@
 Domain Electrochemistry Terms
 =============================
 
-The ontology for electrochemical systems.
+**The ontology for electrochemical systems.**
+
+The Domain Electrochemistry is a domain of the Elementary Multiperspective Materials Ontology (EMMO), for describing electrochemical systems, materials, methods, and data. Its primary objective is to support the creation of FAIR, Linked Data within the field of electrochemistry. This ontology serves as a foundational resource for harmonizing electrochemical knowledge representation, enhancing data interoperability, and accelerating progress in electrocelectrochemicalhemical research and development.
 
 This page lists all terms extracted from the domain electrochemistry ontology. It is intended to serve as a reference resource. 
 

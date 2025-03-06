@@ -1,0 +1,120 @@
+@prefix : <http://emmo.info/emmo/disciplines/units_bigmap#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://emmo.info/emmo/disciplines/units_bigmap> .
+
+<http://emmo.info/emmo/disciplines/units_bigmap> rdf:type owl:Ontology ;
+                                                  owl:versionIRI <http://emmo.info/emmo/1.0.0-beta4/disciplines/units_big_map> ;
+                                                  owl:imports <http://emmo.info/emmo/reference/1.0.0-beta3> .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://emmo.info/emmo#EMMO_0411ee29_98a4_4a8f_b387_b3f0ca65e084
+<http://emmo.info/emmo#EMMO_0411ee29_98a4_4a8f_b387_b3f0ca65e084> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106> ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Milliampere"@en .
+
+
+###  http://emmo.info/emmo#EMMO_17f35fcd_3675_4f90_8742_4ce1e07ea7a3
+<http://emmo.info/emmo#EMMO_17f35fcd_3675_4f90_8742_4ce1e07ea7a3> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4> ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "MilliampereHourPerSquareCentimetre"@en .
+
+
+###  http://emmo.info/emmo#EMMO_19321446_3d34_4f78_a894_6adfb8da96cf
+<http://emmo.info/emmo#EMMO_19321446_3d34_4f78_a894_6adfb8da96cf> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106> ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Millimetre"@en .
+
+
+###  http://emmo.info/emmo#EMMO_2cc59aae_7af2_40a6_9738_d8e65e1f5f16
+<http://emmo.info/emmo#EMMO_2cc59aae_7af2_40a6_9738_d8e65e1f5f16> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e> ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Microlitre"@en .
+
+
+###  http://emmo.info/emmo#EMMO_3a8965ae_7c46_4db9_b05f_cf98eaee7080
+<http://emmo.info/emmo#EMMO_3a8965ae_7c46_4db9_b05f_cf98eaee7080> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106> ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Nanometre"@en .
+
+
+###  http://emmo.info/emmo#EMMO_442ca377_e957_4c7f_948b_3e0e8e5c36f6
+<http://emmo.info/emmo#EMMO_442ca377_e957_4c7f_948b_3e0e8e5c36f6> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_08b308d4_31cd_4779_a784_aa92fc730f39> ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "WattHourPerLitre"@en .
+
+
+###  http://emmo.info/emmo#EMMO_65681aa0_660a_4514_a5e2_d0e98a5e1828
+<http://emmo.info/emmo#EMMO_65681aa0_660a_4514_a5e2_d0e98a5e1828> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_52e4cb25_da39_45e2_a6db_063ec5730499> ,
+                                                                                  <http://emmo.info/emmo#EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106> ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Centimetre"@en .
+
+
+###  http://emmo.info/emmo#EMMO_8075e77b_1377_44b8_a931_5f164e4b8152
+<http://emmo.info/emmo#EMMO_8075e77b_1377_44b8_a931_5f164e4b8152> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e> ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Millilitre"@en .
+
+
+###  http://emmo.info/emmo#EMMO_8fc3e20d_a315_4970_a074_ea2194eb462b
+<http://emmo.info/emmo#EMMO_8fc3e20d_a315_4970_a074_ea2194eb462b> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_08b308d4_31cd_4779_a784_aa92fc730f39> ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "WattHour"@en .
+
+
+###  http://emmo.info/emmo#EMMO_9470cf8e_c3a8_44f4_831d_08014ba619ab
+<http://emmo.info/emmo#EMMO_9470cf8e_c3a8_44f4_831d_08014ba619ab> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e> ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "MilliAmpereHour"@en .
+
+
+###  http://emmo.info/emmo#EMMO_a98bb91c_1659_4a23_9b0c_1e86ca595b92
+<http://emmo.info/emmo#EMMO_a98bb91c_1659_4a23_9b0c_1e86ca595b92> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_08b308d4_31cd_4779_a784_aa92fc730f39> ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "AmpereHour"@en .
+
+
+###  http://emmo.info/emmo#EMMO_ad07420c_e687_46f0_8a6d_ac55878b0dae
+<http://emmo.info/emmo#EMMO_ad07420c_e687_46f0_8a6d_ac55878b0dae> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106> ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "SquareCentimetre"@en .
+
+
+###  http://emmo.info/emmo#EMMO_b2f8da5e_55c8_4274_9308_7c523346df91
+<http://emmo.info/emmo#EMMO_b2f8da5e_55c8_4274_9308_7c523346df91> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4> ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "MilligramPerSquareCentimetre"@en .
+
+
+###  http://emmo.info/emmo#EMMO_b7e05062_ae12_4db0_b67e_023f904f4cc9
+<http://emmo.info/emmo#EMMO_b7e05062_ae12_4db0_b67e_023f904f4cc9> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4> ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "MolePerLitre"@en .
+
+
+###  http://emmo.info/emmo#EMMO_f4e04e68_8c48_44ee_9170_7a465f77cbc3
+<http://emmo.info/emmo#EMMO_f4e04e68_8c48_44ee_9170_7a465f77cbc3> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e> ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Milligram"@en .
+
+
+###  http://emmo.info/emmo#EMMO_f7c13f03_b107_48d9_9a4f_fa7fd69a3f3f
+<http://emmo.info/emmo#EMMO_f7c13f03_b107_48d9_9a4f_fa7fd69a3f3f> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106> ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Micrometre"@en .
+
+
+###  http://emmo.info/emmo#EMMO_fd2967ad_7f16_4d39_9ae4_aa7ea2da3591
+<http://emmo.info/emmo#EMMO_fd2967ad_7f16_4d39_9ae4_aa7ea2da3591> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_08b308d4_31cd_4779_a784_aa92fc730f39> ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "WattHourPerKilogram"@en .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
