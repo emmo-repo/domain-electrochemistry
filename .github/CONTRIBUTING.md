@@ -33,6 +33,7 @@ This repository follows a **branching model** designed to balance ongoing develo
 
 <img src="img/branch-schematic.png" alt="branch-schematic">
 
+
 ## Contribution Workflow
 1. **Fork the Repository.** External contributors should fork the repository into their own GitHub account.
 2. **Create a New Branch.** Name your branch according to the conventions:
