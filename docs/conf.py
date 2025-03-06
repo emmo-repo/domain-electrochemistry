@@ -114,17 +114,34 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'pydata_sphinx_theme'
+html_theme = "pydata_sphinx_theme"
 
-# Theme options are theme-specific and customize the look and feel of a theme
-# further.  For a list of options available for each theme, see the
-# documentation.
+html_theme_options = {
+    "header_links_before_dropdown": 4,
+    "icon_links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/emmo-repo/domain-electrochemistry",
+            "icon": "fab fa-github-square",
+        },
+        {
+            "name": "Ontology Homepage",
+            "url": "https://w3id.org/emmo/domain/electrochemistry",
+            "icon": "fas fa-globe",
+        },
+    ],
+    "search_bar_text": "Search the ontology...",
+    "show_prev_next": False,
+    "navbar_align": "content",
+    "navbar_center": ["navbar-nav"],
+    "footer_start": ["copyright"],
+    "footer_center": ["sphinx-version"],
+    "pygment_light_style": "friendly",
+    "pygment_dark_style": "monokai",
+}
 
-#html_theme_options = {
-#    "navigation_with_keys": True,
-#    "show_nav_level": 2,    # Show at least 2 levels deep
-#    "show_toc_level": 2,    # Control how deep the right-hand TOC should go
-#}
+html_static_path = ["_static"]
+html_title = "Domain Electrochemistry Ontology"
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
