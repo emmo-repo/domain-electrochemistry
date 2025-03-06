@@ -236,9 +236,9 @@ def render_rst_top() -> str:
 {title}
 {underline}
 
-This page lists all terms extracted from the {ontology_name.lower()} ontologies.
-
 {ontology_description}
+
+This page lists all terms extracted from the {ontology_name.lower()} ontology. It is intended to serve as a reference resource. 
 
 """
 

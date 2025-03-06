@@ -1,7 +1,7 @@
 ontology_name: "Domain Electrochemistry"
 ontology_uri: "https://w3id.org/emmo/domain/electrochemistry"
 ontology_prefix: "https://w3id.org/emmo/domain/electrochemistry#"
-ontology_description: "Ontology for describing electrochemical systems."
+ontology_description: "The ontology for electrochemical systems."
 
 ttl_files:
   - section_title: "Electrochemistry Reference"
