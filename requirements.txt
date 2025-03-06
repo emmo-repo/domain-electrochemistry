@@ -2,3 +2,4 @@ EMMOntoPy>=0.4.0,<1
 jupyter
 rdflib
 PyYAML
+owlrl
