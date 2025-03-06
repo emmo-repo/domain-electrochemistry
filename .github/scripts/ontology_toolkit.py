@@ -227,6 +227,8 @@ def render_rst_top() -> str:
 
     ontology_name = config["ontology_name"]
     ontology_description = config["ontology_description"]
+    ontology_adjective = config["ontology_adjective"]
+    ontology_noun = config["ontology_noun"]
 
     title = f"{ontology_name} Terms"
     underline = "=" * len(title)
@@ -236,7 +238,9 @@ def render_rst_top() -> str:
 {title}
 {underline}
 
-{ontology_description}
+**{ontology_description}**
+
+The {ontology_name} is a domain of the Elementary Multiperspective Materials Ontology (EMMO), for describing {ontology_adjective} systems, materials, methods, and data. Its primary objective is to support the creation of FAIR, Linked Data within the field of {ontology_noun}. This ontology serves as a foundational resource for harmonizing {ontology_adjective} knowledge representation, enhancing data interoperability, and accelerating progress in electroc{ontology_adjective}hemical research and development.
 
 This page lists all terms extracted from the {ontology_name.lower()} ontology. It is intended to serve as a reference resource. 
 
