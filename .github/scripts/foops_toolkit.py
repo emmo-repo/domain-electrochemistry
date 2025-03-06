@@ -1,19 +1,51 @@
 import os
-import subprocess
 import json
 import sys
 import requests
+from rdflib import Graph, Namespace, Literal
+from rdflib.namespace import RDFS, SKOS
 from ontology_toolkit import load_ontology_config
 
 
+def add_foops_recommendations(input_file, output_file):
+    """
+    Reads an ontology from a TTL file, adds extra relationships to comply with FOOPS recommendations,
+    and writes the updated ontology to a new TTL file.
+
+    Args:
+        input_file (str): Path to the input TTL file.
+        output_file (str): Path to the output TTL file where updated ontology will be saved.
+    """
+    EMMO = Namespace("https://w3id.org/emmo#")
+
+    with open(input_file, 'r', encoding='utf-8') as file:
+        ttl_content = file.read()
+
+    graph = Graph()
+    graph.parse(data=ttl_content, format='turtle')
+
+    new_triples = []
+
+    # Duplicate skos:prefLabel as rdfs:label
+    for subj, pred, obj in graph.triples((None, SKOS.prefLabel, None)):
+        if isinstance(obj, Literal):
+            new_triples.append((subj, RDFS.label, obj))
+
+    # Duplicate EMMO-specific elucidation annotations as rdfs:comment
+    for subj, pred, obj in graph.triples((None, EMMO.EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9, None)):
+        if isinstance(obj, Literal):
+            new_triples.append((subj, RDFS.comment, obj))
+
+    for triple in new_triples:
+        graph.add(triple)
+
+    graph.serialize(destination=output_file, format='turtle')
+    print(f"✅ FOOPS recommendations applied to {input_file}, saved as {output_file}")
+
+
 def apply_foops_to_file(input_file, output_file):
-    """Applies FOOPS recommendations to a single file."""
-    print(f"Applying FOOPS recommendations to {input_file} -> {output_file}")
-    subprocess.run(
-        ["python", ".github/scripts/apply_foops_recommendations.py", input_file, output_file],
-        check=True
-    )
-    print(f"✅ FOOPS recommendations applied to {input_file}")
+    """Wrapper to apply FOOPS directly within the toolkit (no subprocess)."""
+    add_foops_recommendations(input_file, output_file)
 
 
 def generate_foops_badge():
@@ -29,6 +61,7 @@ def generate_foops_badge():
         headers={"accept": "application/json;charset=UTF-8", "Content-Type": "application/json;charset=UTF-8"},
         data=json.dumps({"ontologyUri": ontology_uri}),
     )
+
     if response.status_code != 200:
         print(f"❌ Failed to fetch FOOPS score (HTTP {response.status_code})")
         sys.exit(1)
@@ -56,10 +89,10 @@ def generate_foops_badge():
 def main():
     import argparse
 
-    parser = argparse.ArgumentParser(description="FOOPS Manager for individual FOOPS tasks.")
+    parser = argparse.ArgumentParser(description="FOOPS Toolkit for applying recommendations and generating badges.")
     parser.add_argument("--apply-to-file", nargs=2, metavar=("INPUT", "OUTPUT"),
-                        help="Apply FOOPS to a single TTL file (input and output file paths).")
-    parser.add_argument("--generate-badge", action="store_true", help="Fetch FOOPS score and generate a badge.")
+                        help="Apply FOOPS recommendations to a single TTL file.")
+    parser.add_argument("--generate-badge", action="store_true", help="Fetch FOOPS score and generate badge.")
 
     args = parser.parse_args()
 
