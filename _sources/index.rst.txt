@@ -3,9 +3,9 @@
    :includehidden:
    :hidden:
 
+   Class Index <electrochemistry>
    Get Started <pages/getstarted>
    Examples <pages/examples>
-   Class Index <electrochemistry>
    User Guide <userguide/index>
    About <pages/about>
    FAQ <pages/faq>
