@@ -136,9 +136,10 @@ jobs:
             # Create directory for this tag
             sudo mkdir -p "docs/_build/html/versions/$TAG"
             
-            # Copy all TTL files for this tag
-            find . -name "*.ttl" | while read FILE; do
-                sudo cp "$FILE" "docs/_build/html/versions/$TAG/$(basename "$FILE")"
+            git ls-tree -r --name-only "$TAG" | grep "\.ttl$" | while read FILE; do
+                if [ -f "$FILE" ]; then
+                    sudo cp "$FILE" "docs/_build/html/versions/$TAG/$(basename "$FILE")"
+                fi
             done
             
             # Copy context.json if present
