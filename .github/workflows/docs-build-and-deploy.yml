@@ -1,4 +1,4 @@
-name: Build Docs and Deploy When Merged
+name: docs
 
 on: 
   push:

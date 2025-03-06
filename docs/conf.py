@@ -121,7 +121,9 @@ html_theme = 'pydata_sphinx_theme'
 # documentation.
 
 html_theme_options = {
-  # "show_nav_level": 4
+    "navigation_with_keys": True,
+    "show_nav_level": 2,    # Show at least 2 levels deep
+    "show_toc_level": 2,    # Control how deep the right-hand TOC should go
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
@@ -163,7 +165,14 @@ html_css_files = ['css/custom.css']
 #html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-#html_sidebars = {}
+html_sidebars = {
+    "**": [
+        "search-field.html",  # Search at the top
+        "sidebar-nav-bs.html",  # Main navigation (left sidebar)
+        "sidebar-secondary-nav.html",  # In-page (local TOC) navigation (right sidebar)
+    ]
+}
+
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.

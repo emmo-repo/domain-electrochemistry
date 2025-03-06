@@ -1,4 +1,4 @@
-name: Validate Ontology Content
+name: checks
 
 on: [pull_request]
 
