@@ -26,5 +26,6 @@ jobs:
       run: |
         python .github/scripts/ontology_toolkit.py >> $GITHUB_ENV
 
-    - name: Run EMMO Check for all configured TTL files
-      run: python .github/scripts/run_emmocheck.py
+    - name: Run EMMO Check
+      run: python .github/scripts/ontology_toolkit.py --run-emmocheck
+      

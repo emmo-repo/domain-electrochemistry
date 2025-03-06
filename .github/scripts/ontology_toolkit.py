@@ -1,6 +1,7 @@
 import json
 import os
 import sys
+import subprocess
 import yaml
 import rdflib
 from rdflib.namespace import RDF, OWL, SKOS, RDFS
@@ -368,6 +369,40 @@ def generate_rst_documentation():
     print(f"✅ RST file generated: {rst_filename}")
 
 
+def run_emmocheck():
+    """Run EMMOCheck on all configured TTL files."""
+    config = load_ontology_config()
+    ttl_files = config["ttl_files"]
+
+    if not ttl_files:
+        print("⚠️ No TTL files found in ontology_config.yml.")
+        sys.exit(1)
+
+    for entry in ttl_files:
+        title = entry["section_title"]
+        path = entry["path"]
+
+        if not os.path.isfile(path):
+            print(f"⚠️ File not found: {path}")
+            sys.exit(1)
+
+        print(f"Running EMMO Check for {title} ({path})...")
+        cmd = [
+            "emmocheck",
+            "--verbose", "--url-from-catalog",
+            "--skip", "test_namespace",
+            "--skip", "test_quantity_dimension",
+            "--configfile", ".github/utils/emmocheck_config.yml",
+            path
+        ]
+
+        result = subprocess.run(cmd)
+        if result.returncode != 0:
+            print(f"❌ EMMO Check failed for {title} ({path})")
+            sys.exit(result.returncode)
+
+    print("✅ All EMMO checks passed.")
+
 ########## Main Entry Point ##########
 
 def main():
@@ -378,6 +413,7 @@ def main():
     parser.add_argument("--print-ttl-files", action="store_true", help="Prints space-separated TTL files.")
     parser.add_argument("--generate-context", action="store_true", help="Generate JSON-LD context.")
     parser.add_argument("--generate-rst", action="store_true", help="Generate RST documentation.")
+    parser.add_argument("--run-emmocheck", action="store_true", help="Run EMMOCheck on all TTL files.")
     args = parser.parse_args()
 
     if args.print_ttl_files:
@@ -388,6 +424,9 @@ def main():
 
     if args.generate_rst:
         generate_rst_documentation()
+
+    if args.run_emmocheck:
+        run_emmocheck()
 
     print(f"ONTOLOGY_NAME={config['ontology_name']}")
     print(f"ONTOLOGY_URI={config['ontology_uri']}")
