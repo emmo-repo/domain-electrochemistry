@@ -165,13 +165,13 @@ html_css_files = ['css/custom.css']
 #html_use_smartypants = True
 
 # Custom sidebar templates, maps document names to template names.
-html_sidebars = {
-    "**": [
-        "search-field.html",  # Search at the top
-        "sidebar-nav-bs.html",  # Main navigation (left sidebar)
-        "sidebar-secondary-nav.html",  # In-page (local TOC) navigation (right sidebar)
-    ]
-}
+#html_sidebars = {
+#    "**": [
+#        "search-field.html",
+#        "sidebar-nav-bs.html",        # Main sidebar navigation
+#        "sidebar-secondary-nav.html", # In-page TOC
+#    ]
+#}
 
 
 # Additional templates that should be rendered to pages, maps page names to
