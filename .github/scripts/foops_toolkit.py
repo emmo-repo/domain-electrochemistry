@@ -96,7 +96,7 @@ def generate_foops_badge():
         print(f"❌ Failed to fetch FOOPS score (HTTP {response.status_code})")
         sys.exit(1)
 
-    score = round(response.json()["overall_score"], 2)
+    score = round(response.json()["overall_score"], 2) * 100
     print(f"✅ FOOPS score: {score}")
 
     color = "green" if score >= 80 else "yellow" if score >= 60 else "red"
