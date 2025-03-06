@@ -114,6 +114,10 @@ jobs:
     - name: Fetch All Tags and Copy TTL Files
       run: |
         git fetch --tags
+
+        # Clear out the versions directory to start fresh
+        sudo rm -rf docs/_build/html/versions
+        sudo mkdir -p docs/_build/html/versions
     
         for TAG in $(git tag); do
             echo "Processing tag: $TAG"

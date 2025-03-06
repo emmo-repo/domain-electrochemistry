@@ -6,15 +6,10 @@ from rdflib import Graph, Namespace, Literal
 from rdflib.namespace import RDFS, SKOS
 from ontology_toolkit import load_ontology_config
 
-
 def add_foops_recommendations(input_file, output_file):
     """
     Reads an ontology from a TTL file, adds extra relationships to comply with FOOPS recommendations,
     and writes the updated ontology to a new TTL file.
-
-    Args:
-        input_file (str): Path to the input TTL file.
-        output_file (str): Path to the output TTL file where updated ontology will be saved.
     """
     EMMO = Namespace("https://w3id.org/emmo#")
 
@@ -48,11 +43,46 @@ def apply_foops_to_file(input_file, output_file):
     add_foops_recommendations(input_file, output_file)
 
 
+def update_readme_badge(repo_root, score):
+    """Updates the FOOPS badge in the README.md with the latest score."""
+    readme_path = os.path.join(repo_root, "README.md")
+
+    # Define new badge markdown (using shields.io to make it look good)
+    color = "brightgreen" if score >= 80 else "yellow" if score >= 60 else "red"
+    new_badge = (
+        f"[![FOOPS Score](https://img.shields.io/badge/FOOPS%20Score-{score}%25-{color})]"
+        "(https://foops.linkeddata.es/FAIR_validator.html)"
+    )
+
+    # Read existing README
+    if not os.path.exists(readme_path):
+        print(f"⚠️ README.md not found at {readme_path}, skipping badge update.")
+        return
+
+    with open(readme_path, "r", encoding="utf-8") as f:
+        readme_content = f.read()
+
+    # Replace existing badge (if found) or insert at the top
+    import re
+    badge_regex = re.compile(r"\[!\[FOOPS Score\]\([^\)]+\)\]\([^\)]+\)")
+    
+    if badge_regex.search(readme_content):
+        updated_content = badge_regex.sub(new_badge, readme_content)
+        print("✅ Updated existing FOOPS badge in README.md")
+    else:
+        updated_content = new_badge + "\n\n" + readme_content
+        print("✅ Added new FOOPS badge to top of README.md")
+
+    # Write updated README
+    with open(readme_path, "w", encoding="utf-8") as f:
+        f.write(updated_content)
+
+
 def generate_foops_badge():
-    """Fetches FOOPS score and generates a badge."""
+    """Fetches FOOPS score, generates a badge, and updates README.md."""
     config = load_ontology_config()
     ontology_uri = config["ontology_uri"]
-    repo_root = config["repo_root"]
+    repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
 
     badge_path = os.path.join(repo_root, "docs/assets/foops_badge.svg")
 
@@ -84,6 +114,9 @@ def generate_foops_badge():
         f.write(badge_svg)
 
     print(f"✅ FOOPS badge generated at {badge_path}")
+
+    # Update README.md with latest score
+    update_readme_badge(repo_root, score)
 
 
 def main():
