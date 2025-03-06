@@ -120,11 +120,11 @@ html_theme = 'pydata_sphinx_theme'
 # further.  For a list of options available for each theme, see the
 # documentation.
 
-html_theme_options = {
-    "navigation_with_keys": True,
-    "show_nav_level": 2,    # Show at least 2 levels deep
-    "show_toc_level": 2,    # Control how deep the right-hand TOC should go
-}
+#html_theme_options = {
+#    "navigation_with_keys": True,
+#    "show_nav_level": 2,    # Show at least 2 levels deep
+#    "show_toc_level": 2,    # Control how deep the right-hand TOC should go
+#}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
