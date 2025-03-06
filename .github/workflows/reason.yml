@@ -24,7 +24,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install rdflib owlrl PyYAML
 
-    - name: Run reasoning script
-      run: |
-        python .github/scripts/check_reasoner.py
+    - name: Run OWL Reasoner Check
+      run: python .github/scripts/ontology_toolkit.py --run-reasoner-check
+    
 

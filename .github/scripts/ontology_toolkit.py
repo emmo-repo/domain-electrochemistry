@@ -8,6 +8,8 @@ from rdflib.namespace import RDF, OWL, SKOS, RDFS
 from urllib.parse import urljoin
 from urllib.request import pathname2url
 from rdflib import Graph
+import logging
+from owlrl import DeductiveClosure, OWLRL_Semantics
 
 def print_ttl_files():
     config = load_ontology_config()
@@ -368,6 +370,7 @@ def generate_rst_documentation():
 
     print(f"✅ RST file generated: {rst_filename}")
 
+########## Check EMMO Conventions ##########
 
 def run_emmocheck():
     """Run EMMOCheck on all configured TTL files."""
@@ -403,6 +406,62 @@ def run_emmocheck():
 
     print("✅ All EMMO checks passed.")
 
+########## Check Reasoner ##########
+
+def run_reasoner_check():
+    """Load the ontology, run OWL 2 RL reasoning, and check for inferred triples."""
+    config = load_ontology_config()
+
+    ttl_files = config["ttl_files"]
+    ontology_name = config["ontology_name"]
+
+    # Find the main ontology file (core or main ontology fallback)
+    main_ontology_file = None
+    for ttl_file in ttl_files:
+        if "core" in ttl_file["section_title"].lower() or ttl_file["section_title"].lower() == "main ontology":
+            main_ontology_file = ttl_file["path"]
+            break
+
+    if not main_ontology_file and ttl_files:
+        main_ontology_file = ttl_files[0]["path"]
+
+    if not main_ontology_file:
+        print("❌ No ontology file found in ontology_config.yml")
+        sys.exit(1)
+
+    # Resolve full path to the ontology file
+    repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
+    ontology_path = os.path.join(repo_root, main_ontology_file)
+
+    if not os.path.isfile(ontology_path):
+        print(f"❌ Ontology file not found at {ontology_path}")
+        sys.exit(1)
+
+    # Load the ontology
+    g = rdflib.Graph()
+    try:
+        g.parse(ontology_path, format='ttl')
+        print(f"✅ Ontology '{ontology_name}' loaded successfully from {ontology_path}")
+    except Exception as e:
+        print(f"❌ Error loading ontology: {e}")
+        sys.exit(1)
+
+    # Perform reasoning
+    try:
+        DeductiveClosure(OWLRL_Semantics).expand(g)
+        print("✅ Reasoning completed successfully")
+    except Exception as e:
+        print(f"❌ Reasoning error: {e}")
+        sys.exit(1)
+
+    # Basic inferred triples check
+    inferred_triples = len(g)
+    if inferred_triples > 0:
+        print(f"✅ Inferred {inferred_triples} triples.")
+    else:
+        print("⚠️ No triples inferred, something might be wrong.")
+        sys.exit(1)
+
 ########## Main Entry Point ##########
 
 def main():
@@ -414,6 +473,7 @@ def main():
     parser.add_argument("--generate-context", action="store_true", help="Generate JSON-LD context.")
     parser.add_argument("--generate-rst", action="store_true", help="Generate RST documentation.")
     parser.add_argument("--run-emmocheck", action="store_true", help="Run EMMOCheck on all TTL files.")
+    parser.add_argument("--run-reasoner-check", action="store_true", help="Run OWL 2 RL reasoner check.")
     args = parser.parse_args()
 
     if args.print_ttl_files:
@@ -427,6 +487,9 @@ def main():
 
     if args.run_emmocheck:
         run_emmocheck()
+
+    if args.run_reasoner_check:
+        run_reasoner_check()
 
     print(f"ONTOLOGY_NAME={config['ontology_name']}")
     print(f"ONTOLOGY_URI={config['ontology_uri']}")
