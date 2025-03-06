@@ -23115,8 +23115,7 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7fc10197_41d
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">Comment</span></td>
-    <td class="element-table-value">E° is related to the standard Gibbs Energy of the electrode reaction, Δr
-G° or ΔrG , written as a reduction with respect to that of the standard hydrogen electrode (SHE) E° = −ΔrG°/zF.</td>
+    <td class="element-table-value">E° is related to the standard Gibbs Energy of the electrode reaction, ΔrG° or ΔrG , written as a reduction with respect to that of the standard hydrogen electrode (SHE) E° = −ΔrG°/zF.</td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">Parent Classes</span></td>

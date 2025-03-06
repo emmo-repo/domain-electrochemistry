@@ -2551,8 +2551,7 @@ and t* through mathematical models, provided that the long-time potential- deter
 
 :electrochemistry_7fc10197_41d9_4c1e_a107_928f03eb2d36 a owl:Class ;
     rdfs:label "StandardElectrodePotential"@en ;
-    rdfs:comment """E° is related to the standard Gibbs Energy of the electrode reaction, Δr
-G° or ΔrG , written as a reduction with respect to that of the standard hydrogen electrode (SHE) E° = −ΔrG°/zF."""@en,
+    rdfs:comment "E° is related to the standard Gibbs Energy of the electrode reaction, ΔrG° or ΔrG , written as a reduction with respect to that of the standard hydrogen electrode (SHE) E° = −ΔrG°/zF."@en,
         "The standard electrode potential of an electrochemical reaction is the standard potential of a hypothetical cell in which the electrode (half cell) at the left of the cell diagram is the standard hydrogen electrode (SHE) and the electrode at the right is the electrode in question. See also line representation of electrochemical cells."@en,
         "equilibrium electrode potential of an electrode under standard conditions"@en,
         "equilibrium electrode potential referenced to the standard hydrogen electrode."@en ;
