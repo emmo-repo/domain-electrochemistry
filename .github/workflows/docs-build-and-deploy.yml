@@ -98,30 +98,35 @@ jobs:
         TTL_FILES=$(python .github/scripts/ontology_toolkit.py --print-ttl-files)
         echo "TTL_FILES=$TTL_FILES" >> $GITHUB_ENV
 
-    - name: Fetch All Tags and Process TTL Files
+    - name: Fetch All Tags and Copy TTL Files
       run: |
         git fetch --tags
-        IFS=' ' read -r -a TTL_FILES <<< "${{ env.TTL_FILES }}"
     
         for TAG in $(git tag); do
+            echo "Processing tag: $TAG"
+            
+            # Checkout the repository at the tag
+            git checkout $TAG
+            
+            # Make directory for this tag's files
             sudo mkdir -p "docs/_build/html/versions/$TAG"
-            for FILE in "${TTL_FILES[@]}"; do
-                if [ -f "$FILE" ]; then
-                    OUTPUT_FILE="${FILE/.ttl/-foops.ttl}"
-                    python .github/scripts/foops_toolkit.py --apply-to-file "$FILE" "$OUTPUT_FILE"
-                    sudo cp "$OUTPUT_FILE" "docs/_build/html/versions/$TAG/$(basename "$FILE")"
-                else
-                    echo "Warning: $FILE not found!"
-                fi
+            
+            # Dynamically find and copy all TTL files (ignores current ontology_config.yml)
+            find . -name "*.ttl" | while read FILE; do
+                sudo cp "$FILE" "docs/_build/html/versions/$TAG/$(basename "$FILE")"
             done
     
-            if [ -d "context" ]; then
+            # Copy context.json if present
+            if [ -f "context/context.json" ]; then
                 sudo mkdir -p "docs/_build/html/versions/$TAG/context"
                 sudo cp "context/context.json" "docs/_build/html/versions/$TAG/context"
             fi
-        done
     
-    - name: Apply FOOPS Recommendations to Each File
+            # Return to master before the next iteration
+            git checkout master
+        done      
+    
+    - name: Apply FOOPS Recommendations to Current Files
       run: |
         IFS=' ' read -r -a TTL_FILES <<< "${{ env.TTL_FILES }}"
         for FILE in "${TTL_FILES[@]}"; do
