@@ -2,7 +2,7 @@ import json
 import os
 import subprocess
 import sys
-from config_loader import load_ontology_config
+from ontology_toolkit import load_ontology_config
 
 
 def main():

@@ -1,7 +1,7 @@
 import requests
 import json
 import sys
-from config_loader import load_ontology_config
+from ontology_toolkit import load_ontology_config
 
 def fetch_foops_score(ontology_uri):
     url = "https://foops.linkeddata.es/assessOntology"

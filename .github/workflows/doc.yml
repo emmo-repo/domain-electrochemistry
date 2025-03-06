@@ -40,7 +40,7 @@ jobs:
 
     - name: Load ontology configuration from YAML
       run: |
-        python .github/scripts/load_ontology_config.py >> $GITHUB_ENV
+        python .github/scripts/ontology_toolkit.py >> $GITHUB_ENV
   
     - name: Render documentation from TTL files
       run: python .github/scripts/ttl_to_rst.py

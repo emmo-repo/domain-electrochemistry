@@ -1,7 +1,7 @@
 import os
 from rdflib import Graph, URIRef, Literal
 import os
-from config_loader import load_ontology_config
+from ontology_toolkit import load_ontology_config
 
 config = load_ontology_config()
 

@@ -4,7 +4,7 @@ import json
 import os
 from urllib.parse import urljoin
 from urllib.request import pathname2url
-from config_loader import load_ontology_config
+from ontology_toolkit import load_ontology_config
 
 
 def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.org/2000/01/rdf-schema#label'):

@@ -3,7 +3,7 @@ from owlrl import DeductiveClosure, OWLRL_Semantics
 import logging
 import sys
 import os
-from config_loader import load_ontology_config  # Use config_loader for configuration
+from ontology_toolkit import load_ontology_config  # Use config_loader for configuration
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)

@@ -24,7 +24,7 @@ jobs:
 
     - name: Load ontology configuration from YAML
       run: |
-        python .github/scripts/load_ontology_config.py >> $GITHUB_ENV
+        python .github/scripts/ontology_toolkit.py >> $GITHUB_ENV
 
     - name: Run EMMO Check for all configured TTL files
       run: python .github/scripts/run_emmocheck.py
