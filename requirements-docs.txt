@@ -1,7 +1,9 @@
 # Core Sphinx Documentation Framework
-Sphinx==5.3.0
+sphinx==8.2.3
+pydata-sphinx-theme==0.16.1
 sphinx-design
-pydata-sphinx-theme==0.13.3
+
+
 
 # Sphinx extensions and plugins
 nbsphinx
