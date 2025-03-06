@@ -18,7 +18,7 @@ def print_ttl_files():
 def find_repo_root_with_config():
     current_dir = os.path.abspath(os.path.dirname(__file__))
     while True:
-        config_path = os.path.join(current_dir, "ontology_config.yml")
+        config_path = os.path.join(current_dir, "config.yml")
         if os.path.isfile(config_path):
             return config_path
 
@@ -253,6 +253,12 @@ def entities_to_rst(entities: list[dict]) -> str:
 
         iri_prefix, iri_suffix = item['IRI'].split("#")
 
+        # Horizontal line for visual separation
+        rst += "\n----\n\n"
+
+        # Create a target anchor so the right-side TOC can link here
+        #rst += f".. _{item['prefLabel']}:\n\n"
+
         rst += ".. raw:: html\n\n"
         rst += f"   <div id=\"{iri_suffix}\"></div>\n\n"
         
@@ -378,7 +384,7 @@ def run_emmocheck():
     ttl_files = config["ttl_files"]
 
     if not ttl_files:
-        print("⚠️ No TTL files found in ontology_config.yml.")
+        print("⚠️ No TTL files found in config.yml.")
         sys.exit(1)
 
     for entry in ttl_files:
@@ -426,7 +432,7 @@ def run_reasoner_check():
         main_ontology_file = ttl_files[0]["path"]
 
     if not main_ontology_file:
-        print("❌ No ontology file found in ontology_config.yml")
+        print("❌ No ontology file found in config.yml")
         sys.exit(1)
 
     # Resolve full path to the ontology file

@@ -7,8 +7,8 @@ on:
       - completed
 
 env:
-  GIT_USER_NAME: BattINFO Developers
-  GIT_USER_EMAIL: "BattINFO@big-map.org"
+  GIT_USER_NAME: "GitHub Actions"
+  GIT_USER_EMAIL: "github-actions[bot]@users.noreply.github.com"
 
 jobs:
   update-badge:
@@ -18,7 +18,7 @@ jobs:
       contents: write
 
     steps:
-    - name: Checkout repository
+    - name: Checkout Repository
       uses: actions/checkout@v2
 
     - name: Set up Python
@@ -26,10 +26,10 @@ jobs:
       with:
         python-version: '3.x'
 
-    - name: Install dependencies
+    - name: Install Dependencies
       run: pip install -r requirements.txt
 
-    - name: Fetch FOOPS score and update badge
+    - name: Fetch FOOPS Score and Update Badge
       run: |
         python .github/scripts/foops_toolkit.py --generate-badge
 
@@ -38,20 +38,20 @@ jobs:
         git config --local user.email "${{ env.GIT_USER_EMAIL }}"
         git config --local user.name "${{ env.GIT_USER_NAME }}"
 
-    - name: Commit any changes before pulling
+    - name: Commit Any Changes Before Pulling
       run: |
         git add -A
         git diff --staged --quiet || git commit -m "Stash changes before pull"
 
-    - name: Pull latest changes
+    - name: Pull Latest Changes
       run: git pull origin master --rebase
 
-    - name: Commit changes
+    - name: Commit Changes
       run: |
         git add README.md
         git diff --staged --quiet || git commit -m "Update FOOPS score badge"
 
-    - name: Push changes
+    - name: Push Changes
       run: git push origin HEAD:master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
