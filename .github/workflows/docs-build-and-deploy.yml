@@ -98,6 +98,12 @@ jobs:
         TTL_FILES=$(python .github/scripts/ontology_toolkit.py --print-ttl-files)
         echo "TTL_FILES=$TTL_FILES" >> $GITHUB_ENV   
     
+        - name: Prepare Directory Structure
+        run: |
+          # Prepare latest and versions directories
+          sudo mkdir -p docs/_build/html/latest/
+          sudo mkdir -p docs/_build/html/versions/
+      
     - name: Apply FOOPS Recommendations to Current Files
       run: |
         IFS=' ' read -r -a TTL_FILES <<< "${{ env.TTL_FILES }}"
@@ -105,19 +111,21 @@ jobs:
             if [ -f "$FILE" ]; then
                 OUTPUT_FILE="${FILE/.ttl/-foops.ttl}"
                 python .github/scripts/foops_toolkit.py --apply-to-file "$FILE" "$OUTPUT_FILE"
-                sudo cp "$OUTPUT_FILE" "docs/_build/html/$(basename "$FILE")"
+                sudo cp "$OUTPUT_FILE" "docs/_build/html/latest/$(basename "$FILE")"
             else
                 echo "Warning: $FILE not found!"
             fi
         done
-
+    
     - name: Fetch All Tags and Copy TTL Files
       run: |
         git fetch --tags
-
+    
         # Clear out the versions directory to start fresh
         sudo rm -rf docs/_build/html/versions
         sudo mkdir -p docs/_build/html/versions
+    
+        ORIGINAL_BRANCH=$(git rev-parse --abbrev-ref HEAD)
     
         for TAG in $(git tag); do
             echo "Processing tag: $TAG"
@@ -125,23 +133,24 @@ jobs:
             # Checkout the repository at the tag
             git checkout $TAG
             
-            # Make directory for this tag's files
+            # Create directory for this tag
             sudo mkdir -p "docs/_build/html/versions/$TAG"
             
-            # Dynamically find and copy all TTL files (ignores current ontology_config.yml)
+            # Copy all TTL files for this tag
             find . -name "*.ttl" | while read FILE; do
                 sudo cp "$FILE" "docs/_build/html/versions/$TAG/$(basename "$FILE")"
             done
-    
+            
             # Copy context.json if present
             if [ -f "context/context.json" ]; then
                 sudo mkdir -p "docs/_build/html/versions/$TAG/context"
                 sudo cp "context/context.json" "docs/_build/html/versions/$TAG/context"
             fi
     
-            # Return to master before the next iteration
-            git checkout master
-        done   
+            # Return to the original branch (could be master, dev, etc.)
+            git checkout $ORIGINAL_BRANCH
+        done
+      
       
     - name: Upload Artifacts
       uses: actions/upload-artifact@v4
