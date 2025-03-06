@@ -43,7 +43,7 @@ jobs:
         python .github/scripts/ontology_toolkit.py >> $GITHUB_ENV
   
     - name: Render documentation from TTL files
-      run: python .github/scripts/ttl_to_rst.py
+      run: python .github/scripts/ontology_toolkit.py --generate-rst
 
     - name: Build HTML
       uses: ammaraskar/sphinx-action@master
@@ -52,7 +52,8 @@ jobs:
         pre-build-command: "apt-get update -y; apt-get install -y pandoc"
 
     - name: Create context file from TTL
-      run: python .github/scripts/ttl_to_context.py
+      run: python .github/scripts/ontology_toolkit.py --generate-context
+      
 
     - name: Ensure HTML directories exist
       run: |
