@@ -31,7 +31,7 @@ jobs:
 
     - name: Fetch FOOPS score and update badge
       run: |
-        python .github/scripts/generate_foops_badge.py
+        python .github/scripts/foops_manager.py --generate-badge
 
     - name: Configure Git
       run: |
