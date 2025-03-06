@@ -20,6 +20,8 @@ jobs:
     steps:
     - name: Checkout Repository
       uses: actions/checkout@v2
+      with:
+        ref: master  # This ensures you're on master
 
     - name: Set up Python
       uses: actions/setup-python@v2
@@ -38,20 +40,16 @@ jobs:
         git config --local user.email "${{ env.GIT_USER_EMAIL }}"
         git config --local user.name "${{ env.GIT_USER_NAME }}"
 
-    - name: Commit Any Changes Before Pulling
+    - name: Commit Changes if Needed
       run: |
-        git add -A
-        git diff --staged --quiet || git commit -m "Stash changes before pull"
-
-    - name: Pull Latest Changes
-      run: git pull origin master --rebase
-
-    - name: Commit Changes
-      run: |
-        git add README.md
-        git diff --staged --quiet || git commit -m "Update FOOPS score badge"
+        git add README.md docs/assets/foops_badge.svg
+        if ! git diff --cached --quiet; then
+          git commit -m "Update FOOPS score badge"
+        else
+          echo "No changes to commit"
+        fi
 
     - name: Push Changes
-      run: git push origin HEAD:master
+      run: git push origin master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
