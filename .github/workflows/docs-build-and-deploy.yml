@@ -111,7 +111,7 @@ jobs:
             if [ -f "$FILE" ]; then
                 OUTPUT_FILE="${FILE/.ttl/-foops.ttl}"
                 python .github/scripts/foops_toolkit.py --apply-to-file "$FILE" "$OUTPUT_FILE"
-                sudo cp "$OUTPUT_FILE" "docs/_build/html/latest/$(basename "$FILE")"
+                sudo cp "$OUTPUT_FILE" "docs/_build/html/$(basename "$FILE")"
             else
                 echo "Warning: $FILE not found!"
             fi
