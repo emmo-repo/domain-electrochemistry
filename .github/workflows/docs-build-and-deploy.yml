@@ -96,7 +96,20 @@ jobs:
     - name: Load TTL Files into ENV
       run: |
         TTL_FILES=$(python .github/scripts/ontology_toolkit.py --print-ttl-files)
-        echo "TTL_FILES=$TTL_FILES" >> $GITHUB_ENV
+        echo "TTL_FILES=$TTL_FILES" >> $GITHUB_ENV   
+    
+    - name: Apply FOOPS Recommendations to Current Files
+      run: |
+        IFS=' ' read -r -a TTL_FILES <<< "${{ env.TTL_FILES }}"
+        for FILE in "${TTL_FILES[@]}"; do
+            if [ -f "$FILE" ]; then
+                OUTPUT_FILE="${FILE/.ttl/-foops.ttl}"
+                python .github/scripts/foops_toolkit.py --apply-to-file "$FILE" "$OUTPUT_FILE"
+                sudo cp "$OUTPUT_FILE" "docs/_build/html/$(basename "$FILE")"
+            else
+                echo "Warning: $FILE not found!"
+            fi
+        done
 
     - name: Fetch All Tags and Copy TTL Files
       run: |
@@ -124,22 +137,8 @@ jobs:
     
             # Return to master before the next iteration
             git checkout master
-        done      
-    
-    - name: Apply FOOPS Recommendations to Current Files
-      run: |
-        IFS=' ' read -r -a TTL_FILES <<< "${{ env.TTL_FILES }}"
-        for FILE in "${TTL_FILES[@]}"; do
-            if [ -f "$FILE" ]; then
-                OUTPUT_FILE="${FILE/.ttl/-foops.ttl}"
-                python .github/scripts/foops_toolkit.py --apply-to-file "$FILE" "$OUTPUT_FILE"
-                sudo cp "$OUTPUT_FILE" "docs/_build/html/$(basename "$FILE")"
-            else
-                echo "Warning: $FILE not found!"
-            fi
-        done
+        done   
       
-
     - name: Upload Artifacts
       uses: actions/upload-artifact@v4
       with:
