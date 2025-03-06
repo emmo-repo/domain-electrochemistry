@@ -236,6 +236,8 @@ def render_rst_top() -> str:
     underline = "=" * len(title)
 
     return f"""
+:html_theme.sidebar_secondary.remove:
+
 {underline}
 {title}
 {underline}
