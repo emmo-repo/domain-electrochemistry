@@ -138,7 +138,7 @@ html_theme_options = {
     "footer_start": ["copyright"],
     "footer_center": ["sphinx-version"],
     "pygment_light_style": "friendly",
-    "pygment_dark_style": "monokai",
+    "pygment_dark_style": "lightbulb",
 }
 
 html_static_path = ["_static"]
