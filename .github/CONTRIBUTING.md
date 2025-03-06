@@ -31,7 +31,8 @@ This repository follows a **branching model** designed to balance ongoing develo
 
 ### Branching Diagram
 
-<img src="img/branching-schematic.png" alt="branching-schematic">
+<img src="img/branch-schematic.png" alt="branch-schematic">
+
 
 ## Contribution Workflow
 1. **Fork the Repository.** External contributors should fork the repository into their own GitHub account.

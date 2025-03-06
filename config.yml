@@ -1,4 +1,7 @@
 ontology_name: "Domain Electrochemistry"
+ontology_adjective: "electrochemical"
+ontology_noun: "electrochemistry"
+ontology_abbreviation: "ECHO"
 ontology_uri: "https://w3id.org/emmo/domain/electrochemistry"
 ontology_prefix: "https://w3id.org/emmo/domain/electrochemistry#"
 ontology_description: "The ontology for electrochemical systems."
