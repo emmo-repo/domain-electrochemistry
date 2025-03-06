@@ -1,0 +1,55 @@
+# Core Sphinx Documentation Framework
+Sphinx==5.3.0
+sphinx-design
+pydata-sphinx-theme==0.13.3
+
+# Sphinx extensions and plugins
+nbsphinx
+sphinx-copybutton
+sphinxcontrib-applehelp==1.0.2
+sphinxcontrib-devhelp==1.0.2
+sphinxcontrib-globalsubs==0.1.1
+sphinxcontrib-htmlhelp==2.0.0
+sphinxcontrib-jsmath==1.0.1
+sphinxcontrib-qthelp==1.0.3
+sphinxcontrib-serializinghtml==1.1.5
+
+# Pygments for syntax highlighting (with accessible theme)
+Pygments==2.17.2
+accessible-pygments==0.0.4
+
+# HTML processing, parsing, and helpers
+beautifulsoup4==4.12.2
+soupsieve==2.4.1
+
+# Internationalization
+Babel==2.14.0
+snowballstemmer==2.2.0
+
+# Core Python libraries (sometimes pulled in by Sphinx but explicitly listed for clarity)
+docutils==0.19
+Jinja2==3.1.3
+MarkupSafe==2.1.3
+packaging==23.2
+
+# Other utilities required by Sphinx builds
+imagesize==1.4.1
+typing_extensions==4.7.1
+zipp==3.15.0
+
+# Direct dependencies needed for ontology documentation generation
+rdflib
+owlrl
+PyYAML
+Markdown==3.4.3
+pandoc
+
+# Networking utilities for extensions that need to fetch remote data
+requests==2.31.0
+certifi==2023.11.17
+charset-normalizer==3.3.2
+idna==3.6
+urllib3==2.0.7
+
+# Metadata parsing (indirect dependency for older versions of Python)
+importlib-metadata==6.7.0

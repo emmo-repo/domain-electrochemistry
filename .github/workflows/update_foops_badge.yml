@@ -27,7 +27,7 @@ jobs:
         python-version: '3.x'
 
     - name: Install dependencies
-      run: pip install requests PyYAML
+      run: pip install requirements.txt
 
     - name: Fetch FOOPS score and update badge
       run: |

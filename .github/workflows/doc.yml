@@ -36,7 +36,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install Markdown==3.4.3 rdflib==6.3.2 pandoc PyYAML requests owlrl
+        pip install requirements-docs.txt
 
     - name: Load ontology configuration from YAML
       run: |
