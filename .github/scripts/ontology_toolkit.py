@@ -384,7 +384,7 @@ def generate_rst_documentation():
     with open(rst_filename, "w+", encoding="utf-8") as f:
         f.write(rst_content)
 
-    print(f"✅ RST file generated: {rst_filename}")
+    print(f"RST file generated: {rst_filename}")
 
 ########## Check EMMO Conventions ##########
 
@@ -394,7 +394,7 @@ def run_emmocheck():
     ttl_files = config["ttl_files"]
 
     if not ttl_files:
-        print("⚠️ No TTL files found in config.yml.")
+        print("No TTL files found in config.yml.")
         sys.exit(1)
 
     for entry in ttl_files:
