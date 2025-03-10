@@ -1,2 +1,4 @@
 # Ignore the virtual environment directory
 .venv/
+docs/_build
+docs/electrochemistry.rst
