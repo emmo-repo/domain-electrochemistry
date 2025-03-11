@@ -28,8 +28,8 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="1.4778115"
-     inkscape:cx="315.33116"
-     inkscape:cy="709.15677"
+     inkscape:cx="400.25402"
+     inkscape:cy="600.88854"
      inkscape:window-width="2276"
      inkscape:window-height="1212"
      inkscape:window-x="2893"
@@ -119,7 +119,16 @@
          id="path6" /></marker></defs><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1"><path
+     id="layer1"><rect
+       style="fill:#ffffff;fill-rule:evenodd;stroke-width:0.793137;stroke:none;fill-opacity:1"
+       id="rect1"
+       width="210.18974"
+       height="66.780907"
+       x="6.8245619e-08"
+       y="118.70171"
+       inkscape:export-filename="example_network.png"
+       inkscape:export-xdpi="600"
+       inkscape:export-ydpi="600" /><path
        style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#4ea1bc;stroke-width:0.654392;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#DartArrow)"
        d="m 40.399233,138.8943 v 6.57669"
        id="path9"
@@ -430,7 +439,7 @@
            transform="matrix(1.0871454,0,0,1.0871454,88.477711,-191.63)"><tspan
              x="-326.58582"
              y="179.51663"
-             id="tspan5"><tspan
+             id="tspan8"><tspan
                style="font-size:3.52778px;text-align:start;text-anchor:start;stroke-width:0.627"
                id="tspan1">###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a6a69e90_06b5_45b1_83cf_7c0bf39b2914</tspan></tspan></text><text
            xml:space="preserve"
@@ -441,29 +450,29 @@
            transform="matrix(1.0871454,0,0,1.0871454,88.341577,-185.34816)"><tspan
              x="-326.58582"
              y="179.51663"
-             id="tspan9"><tspan
+             id="tspan13"><tspan
                style="font-size:3.52778px;text-align:start;text-anchor:start;stroke-width:0.627"
-               id="tspan8">:electrochemistry_a6a69e90_06b5_45b1_83cf_7c0bf39b2914 rdf:type owl:Class ;
+               id="tspan9">:electrochemistry_a6a69e90_06b5_45b1_83cf_7c0bf39b2914 rdf:type owl:Class ;
 </tspan></tspan><tspan
              x="-326.58582"
              y="186.6033"
-             id="tspan15"><tspan
+             id="tspan16"><tspan
                style="font-size:3.52778px;text-align:start;text-anchor:start;stroke-width:0.627"
-               id="tspan13">                        rdfs:subClassOf :electrochemistry_19abaccd_43be_4048_965c_e4fb63c5951b ,
+               id="tspan15">                        rdfs:subClassOf :electrochemistry_19abaccd_43be_4048_965c_e4fb63c5951b ,
 </tspan></tspan><tspan
              x="-326.58582"
              y="193.68997"
-             id="tspan17"><tspan
+             id="tspan18"><tspan
                style="font-size:3.52778px;text-align:start;text-anchor:start;stroke-width:0.627"
-               id="tspan16">                               :electrochemistry_8a1c9a7b_978c_4421_a9c1_d0b07b42aab9 ;
+               id="tspan17">                               :electrochemistry_8a1c9a7b_978c_4421_a9c1_d0b07b42aab9 ;
 </tspan></tspan><tspan
              x="-326.58582"
              y="200.77664"
-             id="tspan19"><tspan
+             id="tspan20"><tspan
    style="font-size:3.52778px;text-align:start;text-anchor:start;stroke-width:0.627"
-   id="tspan18">                        emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f &quot;any process either</tspan><tspan
+   id="tspan19">                        emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f &quot;any process either</tspan><tspan
    y="200.77664"
-   id="tspan20">  </tspan></tspan></text><text
+   id="tspan21">  </tspan></tspan></text><text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.66933px;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;white-space:pre;inline-size:205.195;display:inline;fill:#676767;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.626999;stroke-dasharray:none;stroke-opacity:1"
            x="-326.58582"
@@ -472,35 +481,35 @@
            transform="matrix(1.0871454,0,0,1.0871454,93.333275,-154.68904)"><tspan
              x="-326.58582"
              y="179.51663"
-             id="tspan22"><tspan
-               style="font-size:3.52778px;text-align:start;text-anchor:start;stroke-width:0.627"
-               id="tspan21">caused or accompanied by the passage of an electric current, and involving in most cases the transfer</tspan><tspan
-               y="179.51663"
-               id="tspan23"> </tspan></tspan><tspan
+             id="tspan23"><tspan
+   style="font-size:3.52778px;text-align:start;text-anchor:start;stroke-width:0.627"
+   id="tspan22">caused or accompanied by the passage of an electric current, and involving in most cases the transfer</tspan><tspan
+   y="179.51663"
+   id="tspan24"> </tspan></tspan><tspan
              x="-326.58582"
              y="186.6033"
-             id="tspan25"><tspan
+             id="tspan26"><tspan
                style="font-size:3.52778px;text-align:start;text-anchor:start;stroke-width:0.627"
-               id="tspan24">of electrons between two substances&quot;@en, 
+               id="tspan25">of electrons between two substances&quot;@en, 
 </tspan></tspan><tspan
              x="-326.58582"
              y="193.68997"
-             id="tspan27"><tspan
+             id="tspan28"><tspan
                style="font-size:3.52778px;text-align:start;text-anchor:start;stroke-width:0.627"
-               id="tspan26">&quot;electrochemical reactions occur at electrochemical interfaces&quot;@en ,
+               id="tspan27">&quot;electrochemical reactions occur at electrochemical interfaces&quot;@en ,
 </tspan></tspan><tspan
              x="-326.58582"
              y="200.77664"
-             id="tspan29"><tspan
+             id="tspan30"><tspan
    style="font-size:3.52778px;text-align:start;text-anchor:start;stroke-width:0.627"
-   id="tspan28">&quot;the electrode reaction can also involve other chemical reactions including subreactions on a cell</tspan><tspan
+   id="tspan29">&quot;the electrode reaction can also involve other chemical reactions including subreactions on a cell</tspan><tspan
    y="200.77664"
-   id="tspan30"> </tspan></tspan><tspan
+   id="tspan31"> </tspan></tspan><tspan
              x="-326.58582"
              y="207.86331"
-             id="tspan34"><tspan
+             id="tspan33"><tspan
                style="font-size:3.52778px;text-align:start;text-anchor:start;stroke-width:0.627"
-               id="tspan33">electrode&quot;@en ;</tspan></tspan></text><text
+               id="tspan32">electrode&quot;@en ;</tspan></tspan></text><text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.66933px;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;white-space:pre;inline-size:280.141;display:inline;fill:#0a2a73;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.626999;stroke-dasharray:none;stroke-opacity:1"
            x="-326.58582"
@@ -509,15 +518,15 @@
            transform="matrix(1.0871454,0,0,1.0871454,122.81984,-123.99882)"><tspan
              x="-326.58582"
              y="179.51663"
-             id="tspan36"><tspan
+             id="tspan35"><tspan
                style="font-size:3.52778px;text-align:start;text-anchor:start;stroke-width:0.627"
-               id="tspan35">
+               id="tspan34">
 </tspan></tspan><tspan
              x="-326.58582"
              y="186.6033"
-             id="tspan38"><tspan
+             id="tspan37"><tspan
                style="font-size:3.52778px;text-align:start;text-anchor:start;stroke-width:0.627"
-               id="tspan37">skos:prefLabel &quot;ElectrochemicalReaction&quot;@en ;</tspan></tspan></text><text
+               id="tspan36">skos:prefLabel &quot;ElectrochemicalReaction&quot;@en ;</tspan></tspan></text><text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.66933px;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;white-space:pre;inline-size:280.141;display:inline;fill:#676767;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.626999;stroke-dasharray:none;stroke-opacity:1"
            x="-326.58582"
@@ -526,29 +535,29 @@
            transform="matrix(1.0871454,0,0,1.0871454,122.22356,-116.42964)"><tspan
              x="-326.58582"
              y="179.51663"
-             id="tspan40"><tspan
+             id="tspan39"><tspan
                style="font-size:3.52778px;text-align:start;text-anchor:start;stroke-width:0.627"
-               id="tspan39">
+               id="tspan38">
 </tspan></tspan><tspan
              x="-326.58582"
              y="186.6033"
-             id="tspan42"><tspan
+             id="tspan41"><tspan
                style="font-size:3.52778px;text-align:start;text-anchor:start;stroke-width:0.627"
-               id="tspan41">skos:altLabel &quot;ChargeTransferReaction&quot;@en ;
+               id="tspan40">skos:altLabel &quot;ChargeTransferReaction&quot;@en ;
 </tspan></tspan><tspan
              x="-326.58582"
              y="193.68997"
-             id="tspan44"><tspan
+             id="tspan43"><tspan
                style="font-size:3.52778px;text-align:start;text-anchor:start;stroke-width:0.627"
-               id="tspan43">emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 &quot;https://www.wikidata.org/wiki/Q120892494&quot; ;
+               id="tspan42">emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 &quot;https://www.wikidata.org/wiki/Q120892494&quot; ;
 </tspan></tspan><tspan
              x="-326.58582"
              y="200.77664"
-             id="tspan46"><tspan
+             id="tspan45"><tspan
                style="font-size:3.52778px;text-align:start;text-anchor:start;stroke-width:0.627"
-               id="tspan45">emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f &quot;https://www.electropedia.org/iev/iev.nsf/display?</tspan></tspan><tspan
+               id="tspan44">emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f &quot;https://www.electropedia.org/iev/iev.nsf/display?</tspan></tspan><tspan
              x="-326.58582"
              y="207.86331"
-             id="tspan48"><tspan
+             id="tspan47"><tspan
                style="font-size:3.52778px;text-align:start;text-anchor:start;stroke-width:0.627"
-               id="tspan47">openform&amp;ievref=114-02-01&quot; ,  &quot;https://www.electropedia.org/iev/iev.nsf/display?openform&amp;ievref=482-03-01&quot; ;</tspan></tspan></text></g></g></g></svg>
+               id="tspan46">openform&amp;ievref=114-02-01&quot; ,  &quot;https://www.electropedia.org/iev/iev.nsf/display?openform&amp;ievref=482-03-01&quot; ;</tspan></tspan></text></g></g></g></svg>
