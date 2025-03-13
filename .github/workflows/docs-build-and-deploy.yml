@@ -41,6 +41,8 @@ jobs:
     - name: Load Ontology Configuration from YAML
       run: |
         python .github/scripts/ontology_toolkit.py >> $GITHUB_ENV
+        INFERRED_TTL=$(python -c "import yaml; print(yaml.safe_load(open('config.yml'))['output']['inferred_ttl'])")
+        echo "INFERRED_TTL_FILENAME=$INFERRED_TTL" >> $GITHUB_ENV
 
     - name: Render Documentation from TTL Files
       run: python .github/scripts/ontology_toolkit.py --generate-rst
