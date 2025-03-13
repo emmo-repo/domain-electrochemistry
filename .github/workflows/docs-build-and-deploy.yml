@@ -66,7 +66,12 @@ jobs:
       run: |
         sudo cp -r docs/assets/* docs/_build/html/assets/
         sudo cp context/context.json docs/_build/html/context/
-        sudo cp "${{ env.inferred_ttl }}" docs/_build/html/
+        if [ -f "${{ env.INFERRED_TTL_FILENAME }}" ]; then
+            sudo cp "${{ env.INFERRED_TTL_FILENAME }}" docs/_build/html/
+        else
+            echo "Warning: Inferred TTL file not found!"
+        fi
+  
 
     - name: Commit Generated Changes (context.json & rst files)
       run: |
