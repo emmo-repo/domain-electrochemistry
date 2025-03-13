@@ -11,8 +11,8 @@
                 "hasProperty": {
                     "@type": "MassFraction",
                     "hasNumericalPart": {
-                        "@type": "Real",
-                        "hasNumericalValue": 0.5
+                        "@type": "RealData",
+                        "hasNumberValue": 0.5
                     },
                     "hasMeasurementUnit": "emmo:UnitOne"
                 }
@@ -22,8 +22,8 @@
                 "hasProperty": {
                     "@type": "MassFraction",
                     "hasNumericalPart": {
-                        "@type": "Real",
-                        "hasNumericalValue": 0.5
+                        "@type": "RealData",
+                        "hasNumberValue": 0.5
                     },
                     "hasMeasurementUnit": "emmo:UnitOne"
                 }
@@ -35,8 +35,8 @@
         "hasProperty": {
             "@type": "MassFraction",
             "hasNumericalPart": {
-                "@type": "Real",
-                "hasNumericalValue": 0.124
+                "@type": "RealData",
+                "hasNumberValue": 0.124
             },
             "hasMeasurementUnit": "emmo:UnitOne"
         }

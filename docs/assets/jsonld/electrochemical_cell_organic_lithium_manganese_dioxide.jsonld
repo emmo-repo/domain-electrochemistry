@@ -17,8 +17,8 @@
     "hasProperty": {
         "@type": "NominalVoltage",
         "hasNumericalPart": {
-            "@type": "Real",
-            "hasNumericalValue": 3.0
+            "@type": "RealData",
+            "hasNumberValue": 3.0
         },
         "hasMeasurementUnit": "emmo:Volt"
     }

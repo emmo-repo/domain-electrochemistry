@@ -11,8 +11,8 @@
         "hasProperty": {
             "@type": "Molality",
             "hasNumericalPart": {
-                "@type": "Real",
-                "hasNumericalValue": 1
+                "@type": "RealData",
+                "hasNumberValue": 1
             },
             "hasMeasurementUnit": "emmo:MolePerKiloGram"
         }

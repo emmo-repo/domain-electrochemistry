@@ -27,7 +27,7 @@ What You'll Find in This Guide
 This user guide provides a comprehensive overview of the materials, components, devices, experiments, and data management processes relevant to electrochemistry and battery science. 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
    :caption: User Guide
 
    Preface <chapter0_preface/index>
