@@ -21,8 +21,8 @@
             {
                 "@type": "AmbientCelsiusTemperature",
                 "hasNumericalPart": {
-                    "@type": "Real",
-                    "hasNumericalValue": 25
+                    "@type": "RealData",
+                    "hasNumberValue": 25
                 },
                 "hasMeasurementUnit": "emmo:DegreeCelsius"
             }
@@ -35,8 +35,8 @@
         {
             "@type": "NumberOfIterations",
             "hasNumericalPart": {
-                "@type": "Real",
-                "hasNumericalValue": 10
+                "@type": "RealData",
+                "hasNumberValue": 10
             },
             "hasMeasurementUnit": "emmo:UnitOne"
         }
@@ -112,16 +112,16 @@
             {
                 "@type": "DischargingCurrent",
                 "hasNumericalPart": {
-                    "@type": "Real",
-                    "hasNumericalValue": 1
+                    "@type": "RealData",
+                    "hasNumberValue": 1
                 },
                 "hasMeasurementUnit": "emmo:Ampere"
             },
             {
                 "@type": ["LowerVoltageLimit"],
                 "hasNumericalPart": {
-                    "@type": "Real",
-                    "hasNumericalValue": 2.4
+                    "@type": "RealData",
+                    "hasNumberValue": 2.4
                 },
                 "hasMeasurementUnit": "emmo:Volt"
             }
@@ -132,16 +132,16 @@
                 {
                     "@type": "ChargingCurrent",
                     "hasNumericalPart": {
-                        "@type": "Real",
-                        "hasNumericalValue": 1
+                        "@type": "RealData",
+                        "hasNumberValue": 1
                     },
                     "hasMeasurementUnit": "emmo:Ampere"
                 },
                 {
                     "@type": ["UpperVoltageLimit"],
                     "hasNumericalPart": {
-                        "@type": "Real",
-                        "hasNumericalValue": 4.2
+                        "@type": "RealData",
+                        "hasNumberValue": 4.2
                     },
                     "hasMeasurementUnit": "emmo:Volt"
                 }
@@ -152,16 +152,16 @@
                     {
                         "@type": "ChargingVoltage",
                         "hasNumericalPart": {
-                            "@type": "Real",
-                            "hasNumericalValue": 4.2
+                            "@type": "RealData",
+                            "hasNumberValue": 4.2
                         },
                         "hasMeasurementUnit": "emmo:Volt"
                     },
                     {
                         "@type": ["LowerCurrentLimit"],
                         "hasNumericalPart": {
-                            "@type": "Real",
-                            "hasNumericalValue": 10
+                            "@type": "RealData",
+                            "hasNumberValue": 10
                         },
                         "hasMeasurementUnit": "emmo:MilliAmpere"
                     }

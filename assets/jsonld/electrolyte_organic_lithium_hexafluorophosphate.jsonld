@@ -10,8 +10,8 @@
                 "hasProperty": {
                     "@type": "VolumeFraction",
                     "hasNumericalPart": {
-                        "@type": "Real",
-                        "hasNumericalValue": 0.5
+                        "@type": "RealData",
+                        "hasNumberValue": 0.5
                     },
                     "hasMeasurementUnit": "emmo:UnitOne"
                 }
@@ -21,8 +21,8 @@
                 "hasProperty": {
                     "@type": "VolumeFraction",
                     "hasNumericalPart": {
-                        "@type": "Real",
-                        "hasNumericalValue": 0.5
+                        "@type": "RealData",
+                        "hasNumberValue": 0.5
                     },
                     "hasMeasurementUnit": "emmo:UnitOne"
                 }
@@ -34,8 +34,8 @@
         "hasProperty": {
             "@type": "AmountConcentration",
             "hasNumericalPart": {
-                "@type": "Real",
-                "hasNumericalValue": 1
+                "@type": "RealData",
+                "hasNumberValue": 1
             },
             "hasMeasurementUnit": "emmo:MolePerLitre"
         }

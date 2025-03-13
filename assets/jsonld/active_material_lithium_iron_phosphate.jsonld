@@ -15,8 +15,8 @@
             "hasProperty": {
                 "@type": "MassFraction",
                 "hasNumericalPart": {
-                   "@type": "Real",
-                   "hasNumericalValue": 0.0115
+                   "@type": "RealData",
+                   "hasNumberValue": 0.0115
                 },
                 "hasMeasurementUnit": "emmo:UnitOne"
             }
@@ -26,8 +26,8 @@
             "hasProperty": {
                 "@type": "MassFraction",
                 "hasNumericalPart": {
-                   "@type": "Real",
-                   "hasNumericalValue": 0.0440
+                   "@type": "RealData",
+                   "hasNumberValue": 0.0440
                 },
                 "hasMeasurementUnit": "emmo:UnitOne"
             }
@@ -37,8 +37,8 @@
             "hasProperty": {
                 "@type": "MassFraction",
                 "hasNumericalPart": {
-                   "@type": "Real",
-                   "hasNumericalValue": 0.345
+                   "@type": "RealData",
+                   "hasNumberValue": 0.345
                 },
                 "hasMeasurementUnit": "emmo:UnitOne"
             }
@@ -48,8 +48,8 @@
             "hasProperty": {
                 "@type": "MassFraction",
                 "hasNumericalPart": {
-                   "@type": "Real",
-                   "hasNumericalValue": 0.195
+                   "@type": "RealData",
+                   "hasNumberValue": 0.195
                 },
                 "hasMeasurementUnit": "emmo:UnitOne"
             }
@@ -59,8 +59,8 @@
             "hasProperty": {
                 "@type": "MassFraction",
                 "hasNumericalPart": {
-                   "@type": "Real",
-                   "hasNumericalValue": 0.404
+                   "@type": "RealData",
+                   "hasNumberValue": 0.404
                 },
                 "hasMeasurementUnit": "emmo:UnitOne"
             }
@@ -70,48 +70,48 @@
         {
             "@type": "D10ParticleSize",
             "hasNumericalPart": {
-               "@type": "Real",
-               "hasNumericalValue": 1.0
+               "@type": "RealData",
+               "hasNumberValue": 1.0
             },
             "hasMeasurementUnit": "emmo:MicroMetre"
        },
        {
             "@type": "D50ParticleSize",
             "hasNumericalPart": {
-                "@type": "Real",
-                "hasNumericalValue": 3.5
+                "@type": "RealData",
+                "hasNumberValue": 3.5
             },
             "hasMeasurementUnit": "emmo:MicroMetre"
        },
        {
             "@type": "D90ParticleSize",
             "hasNumericalPart": {
-                "@type": "Real",
-                "hasNumericalValue": 15
+                "@type": "RealData",
+                "hasNumberValue": 15
             },
             "hasMeasurementUnit": "emmo:MicroMetre"
        },
        {
             "@type": "TappedDensity",
             "hasNumericalPart": {
-                "@type": "Real",
-                "hasNumericalValue": 1.45
+                "@type": "RealData",
+                "hasNumberValue": 1.45
             },
             "hasMeasurementUnit": "emmo:GramPerCubicCentiMetre"
        },
        {
             "@type": "SpecificSurfaceArea",
             "hasNumericalPart": {
-                "@type": "Real",
-                "hasNumericalValue": 11.0
+                "@type": "RealData",
+                "hasNumberValue": 11.0
             },
             "hasMeasurementUnit": "emmo:SquareMetrePerGram"
        },
        {
              "@type": "SpecificCapacity",
              "hasNumericalPart": {
-                "@type": "Real",
-                "hasNumericalValue": 150
+                "@type": "RealData",
+                "hasNumberValue": 150
              },
              "hasMeasurementUnit": "emmo:MilliAmpereHourPerGram",
              "isOutputOf": {
@@ -119,8 +119,8 @@
                 "hasMeasurementParameter": {
                     "@type": "CRate",
                     "hasNumericalPart": {
-                        "@type": "Real",
-                        "hasNumericalValue": 0.1
+                        "@type": "RealData",
+                        "hasNumberValue": 0.1
                     },
                     "hasMeasurementUnit": "emmo:AmperePerAmpereHour"
                 }
@@ -129,8 +129,8 @@
        {    
              "@type": "FirstCycleEfficiency",
              "hasNumericalPart": {
-                "@type": "Real",
-                "hasNumericalValue": 0.90
+                "@type": "RealData",
+                "hasNumberValue": 0.90
              },
              "hasMeasurementUnit": "emmo:UnitOne",
              "isOutputOf": {
@@ -139,24 +139,24 @@
                     {
                         "@type": "CRate",
                         "hasNumericalPart": {
-                            "@type": "Real",
-                            "hasNumericalValue": 0.1
+                            "@type": "RealData",
+                            "hasNumberValue": 0.1
                         },
                         "hasMeasurementUnit": "emmo:AmperePerAmpereHour"
                     },
                     {
                         "@type": "UpperVoltageLimit",
                         "hasNumericalPart": {
-                            "@type": "Real",
-                            "hasNumericalValue": 3.65
+                            "@type": "RealData",
+                            "hasNumberValue": 3.65
                         },
                         "hasMeasurementUnit": "emmo:Volt"
                     },
                     {
                         "@type": "LowerVoltageLimit",
                         "hasNumericalPart": {
-                            "@type": "Real",
-                            "hasNumericalValue": 2.00
+                            "@type": "RealData",
+                            "hasNumberValue": 2.00
                         },
                         "hasMeasurementUnit": "emmo:Volt"
                     }

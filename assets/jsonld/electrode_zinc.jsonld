@@ -10,32 +10,32 @@
        {
              "@type": "SpecificCapacity",
              "hasNumericalPart": {
-                "@type": "Real",
-                "hasNumericalValue": 800
+                "@type": "RealData",
+                "hasNumberValue": 800
              },
              "hasMeasurementUnit": "emmo:MilliAmpereHourPerGram"
        },
        {
              "@type": "Thickness",
              "hasNumericalPart": {
-                "@type": "Real",
-                "hasNumericalValue": 250
+                "@type": "RealData",
+                "hasNumberValue": 250
              },
              "hasMeasurementUnit": "emmo:MicroMetre"
        },
        {
              "@type": "Diameter",
              "hasNumericalPart": {
-                "@type": "Real",
-                "hasNumericalValue": 2
+                "@type": "RealData",
+                "hasNumberValue": 2
              },
              "hasMeasurementUnit": "emmo:CentiMetre"
        },
        {
              "@type": "Mass",
              "hasNumericalPart": {
-                "@type": "Real",
-                "hasNumericalValue": 0.56
+                "@type": "RealData",
+                "hasNumberValue": 0.56
              },
              "hasMeasurementUnit": "emmo:Gram"
        }

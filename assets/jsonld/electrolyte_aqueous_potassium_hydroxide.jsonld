@@ -8,8 +8,8 @@
         "hasProperty": {
             "@type": "MassFraction",
             "hasNumericalPart": {
-                "@type": "Real",
-                "hasNumericalValue": 0.3
+                "@type": "RealData",
+                "hasNumberValue": 0.3
             },
             "hasMeasurementUnit": "emmo:UnitOne"
         }
@@ -17,8 +17,8 @@
     "hasProperety": {
         "@type": "Density",
         "hasNumericalPart": {
-            "@type": "Real",
-            "hasNumericalValue": 1.28799
+            "@type": "RealData",
+            "hasNumberValue": 1.28799
         },
         "hasMeasurementUnit": "emmo:GramPerCubicCentiMetre",
         "rdfs:comment": "density at 20 degrees Celsius",

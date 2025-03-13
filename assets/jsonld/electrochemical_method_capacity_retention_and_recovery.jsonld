@@ -23,8 +23,8 @@
             {
                 "@type": "AmbientCelsiusTemperature",
                 "hasNumericalPart": {
-                    "@type": "Real",
-                    "hasNumericalValue": 20
+                    "@type": "RealData",
+                    "hasNumberValue": 20
                 },
                 "hasMeasurementUnit": "emmo:DegreeCelsius"
             }
@@ -36,16 +36,16 @@
             {
                 "@type": "DischargingCRate",
                 "hasNumericalPart": {
-                    "@type": "Real",
-                    "hasNumericalValue": 0.2
+                    "@type": "RealData",
+                    "hasNumberValue": 0.2
                 },
                 "hasMeasurementUnit": "emmo:AmperePerAmpereHour"
             },
             {
                 "@type": ["LowerVoltageLimit", "TerminationQuantity"],
                 "hasNumericalPart": {
-                    "@type": "Real",
-                    "hasNumericalValue": 2.4
+                    "@type": "RealData",
+                    "hasNumberValue": 2.4
                 },
                 "hasMeasurementUnit": "emmo:Volt"
             }
@@ -60,16 +60,16 @@
                     {
                         "@type": "ChargingCRate",
                         "hasNumericalPart": {
-                            "@type": "Real",
-                            "hasNumericalValue": 0.2
+                            "@type": "RealData",
+                            "hasNumberValue": 0.2
                         },
                         "hasMeasurementUnit": "emmo:AmperePerAmpereHour"
                     },
                     {
                         "@type": ["UpperVoltageLimit", "TerminationQuantity"],
                         "hasNumericalPart": {
-                            "@type": "Real",
-                            "hasNumericalValue": 4.2
+                            "@type": "RealData",
+                            "hasNumberValue": 4.2
                         },
                         "hasMeasurementUnit": "emmo:Volt"
                     }
@@ -92,16 +92,16 @@
                         {
                             "@type": "ChargingVoltage",
                             "hasNumericalPart": {
-                                "@type": "Real",
-                                "hasNumericalValue": 4.2
+                                "@type": "RealData",
+                                "hasNumberValue": 4.2
                             },
                             "hasMeasurementUnit": "emmo:Volt"
                         },
                         {
                             "@type": ["LowerCRateLimit", "TerminationQuantity"],
                             "hasNumericalPart": {
-                                "@type": "Real",
-                                "hasNumericalValue": 0.01
+                                "@type": "RealData",
+                                "hasNumberValue": 0.01
                             },
                             "hasMeasurementUnit": "emmo:AmperePerAmpereHour"
                         }
@@ -123,8 +123,8 @@
                         "hasMeasurementParameter": {
                             "@type": ["RestingTime", "TerminationQuantity"],
                             "hasNumericalPart": {
-                                "@type": "Real",
-                                "hasNumericalValue": 28
+                                "@type": "RealData",
+                                "hasNumberValue": 28
                             },
                             "hasMeasurementUnit": "emmo:Day"
                         }
@@ -137,16 +137,16 @@
                     {
                         "@type": "DischargingCRate",
                         "hasNumericalPart": {
-                            "@type": "Real",
-                            "hasNumericalValue": 0.2
+                            "@type": "RealData",
+                            "hasNumberValue": 0.2
                         },
                         "hasMeasurementUnit": "emmo:AmperePerAmpereHour"
                     },
                     {
                         "@type": ["LowerVoltageLimit", "TerminationQuantity"],
                         "hasNumericalPart": {
-                            "@type": "Real",
-                            "hasNumericalValue": 2.4
+                            "@type": "RealData",
+                            "hasNumberValue": 2.4
                         },
                         "hasMeasurementUnit": "emmo:Volt"
                     }
@@ -201,16 +201,16 @@
                                 {
                                     "@type": "ChargingCRate",
                                     "hasNumericalPart": {
-                                        "@type": "Real",
-                                        "hasNumericalValue": 0.2
+                                        "@type": "RealData",
+                                        "hasNumberValue": 0.2
                                     },
                                     "hasMeasurementUnit": "emmo:AmperePerAmpereHour"
                                 },
                                 {
                                     "@type": ["UpperVoltageLimit", "TerminationQuantity"],
                                     "hasNumericalPart": {
-                                        "@type": "Real",
-                                        "hasNumericalValue": 4.2
+                                        "@type": "RealData",
+                                        "hasNumberValue": 4.2
                                     },
                                     "hasMeasurementUnit": "emmo:Volt"
                                 }
@@ -233,16 +233,16 @@
                                     {
                                         "@type": "ChargingVoltage",
                                         "hasNumericalPart": {
-                                            "@type": "Real",
-                                            "hasNumericalValue": 4.2
+                                            "@type": "RealData",
+                                            "hasNumberValue": 4.2
                                         },
                                         "hasMeasurementUnit": "emmo:Volt"
                                     },
                                     {
                                         "@type": ["LowerCRateLimit", "TerminationQuantity"],
                                         "hasNumericalPart": {
-                                            "@type": "Real",
-                                            "hasNumericalValue": 0.01
+                                            "@type": "RealData",
+                                            "hasNumberValue": 0.01
                                         },
                                         "hasMeasurementUnit": "emmo:AmperePerAmpereHour"
                                     }
@@ -265,16 +265,16 @@
                                         {
                                             "@type": "DischargingCRate",
                                             "hasNumericalPart": {
-                                                "@type": "Real",
-                                                "hasNumericalValue": 0.2
+                                                "@type": "RealData",
+                                                "hasNumberValue": 0.2
                                             },
                                             "hasMeasurementUnit": "emmo:AmperePerAmpereHour"
                                         },
                                         {
                                             "@type": ["LowerVoltageLimit", "TerminationQuantity"],
                                             "hasNumericalPart": {
-                                                "@type": "Real",
-                                                "hasNumericalValue": 2.4
+                                                "@type": "RealData",
+                                                "hasNumberValue": 2.4
                                             },
                                             "hasMeasurementUnit": "emmo:Volt"
                                         }

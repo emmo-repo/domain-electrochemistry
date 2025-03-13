@@ -8,32 +8,32 @@
        {
              "@type": "SpecificCapacity",
              "hasNumericalPart": {
-                "@type": "Real",
-                "hasNumericalValue": 212
+                "@type": "RealData",
+                "hasNumberValue": 212
              },
              "hasMeasurementUnit": "emmo:MilliAmpereHourPerGram"
        },
        {    
              "@type": "Density",
              "hasNumericalPart": {
-                "@type": "Real",
-                "hasNumericalValue": 4.65
+                "@type": "RealData",
+                "hasNumberValue": 4.65
              },
              "hasMeasurementUnit": "emmo:GramPerCubicCentiMetre"
        },
        {
              "@type": "D50ParticleSize",
              "hasNumericalPart": {
-                "@type": "Real",
-                "hasNumericalValue": 15
+                "@type": "RealData",
+                "hasNumberValue": 15
              },
              "hasMeasurementUnit": "emmo:MicroMetre"
        },
        {
              "@type": "MolarMass",
              "hasNumericalPart": {
-                "@type": "Real",
-                "hasNumericalValue": 97.27
+                "@type": "RealData",
+                "hasNumberValue": 97.27
              },
              "hasMeasurementUnit": "emmo:GramPerMole"
        }
