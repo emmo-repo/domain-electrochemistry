@@ -5,32 +5,32 @@
        {
              "@type": "Thickness",
              "hasNumericalPart": {
-                "@type": "Real",
-                "hasNumericalValue": 10
+                "@type": "RealData",
+                "hasNumberValue": 10
              },
              "hasMeasurementUnit": "emmo:MicroMetre"
        },
        {
              "@type": "Length",
              "hasNumericalPart": {
-                "@type": "Real",
-                "hasNumericalValue": 100
+                "@type": "RealData",
+                "hasNumberValue": 100
              },
              "hasMeasurementUnit": "emmo:MilliMetre"
        },
        {
              "@type": "Width",
              "hasNumericalPart": {
-                "@type": "Real",
-                "hasNumericalValue": 50
+                "@type": "RealData",
+                "hasNumberValue": 50
              },
              "hasMeasurementUnit": "emmo:MilliMetre"
        },
        {
              "@type": "Mass",
              "hasNumericalPart": {
-                "@type": "Real",
-                "hasNumericalValue": 0.5
+                "@type": "RealData",
+                "hasNumberValue": 0.5
              },
              "hasMeasurementUnit": "emmo:Gram"
        }

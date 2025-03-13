@@ -41,7 +41,9 @@ jobs:
     - name: Load Ontology Configuration from YAML
       run: |
         python .github/scripts/ontology_toolkit.py >> $GITHUB_ENV
-  
+        INFERRED_TTL=$(python -c "import yaml; print(yaml.safe_load(open('config.yml'))['output']['inferred_ttl'])")
+        echo "INFERRED_TTL_FILENAME=$INFERRED_TTL" >> $GITHUB_ENV
+
     - name: Render Documentation from TTL Files
       run: python .github/scripts/ontology_toolkit.py --generate-rst
 
@@ -54,17 +56,22 @@ jobs:
     - name: Create Context File from TTL
       run: python .github/scripts/ontology_toolkit.py --generate-context
       
-
     - name: Ensure HTML Directories Exist
       run: |
         sudo mkdir -p docs/_build/html/context/
         sudo mkdir -p docs/_build/html/assets/
         sudo mkdir -p docs/_build/html/versions/
 
-    - name: Copy Assets and Context to HTML Directory
+    - name: Copy Assets, Context, and Inferred TTL to HTML Directory
       run: |
         sudo cp -r docs/assets/* docs/_build/html/assets/
         sudo cp context/context.json docs/_build/html/context/
+        if [ -f "${{ env.INFERRED_TTL_FILENAME }}" ]; then
+            sudo cp "${{ env.INFERRED_TTL_FILENAME }}" docs/_build/html/
+        else
+            echo "Warning: Inferred TTL file not found!"
+        fi
+  
 
     - name: Commit Generated Changes (context.json & rst files)
       run: |
@@ -97,13 +104,12 @@ jobs:
       run: |
         TTL_FILES=$(python .github/scripts/ontology_toolkit.py --print-ttl-files)
         echo "TTL_FILES=$TTL_FILES" >> $GITHUB_ENV   
-    
+  
     - name: Prepare Directory Structure
       run: |
-        # Prepare latest and versions directories
         sudo mkdir -p docs/_build/html/latest/
         sudo mkdir -p docs/_build/html/versions/
-      
+
     - name: Apply FOOPS Recommendations to Current Files
       run: |
         IFS=' ' read -r -a TTL_FILES <<< "${{ env.TTL_FILES }}"
@@ -116,12 +122,11 @@ jobs:
                 echo "Warning: $FILE not found!"
             fi
         done
-    
+
     - name: Fetch All Tags and Copy TTL Files
       run: |
         git fetch --tags
     
-        # Clear out the versions directory to start fresh
         sudo rm -rf docs/_build/html/versions
         sudo mkdir -p docs/_build/html/versions
     
@@ -130,10 +135,8 @@ jobs:
         for TAG in $(git tag); do
             echo "Processing tag: $TAG"
             
-            # Checkout the repository at the tag
             git checkout $TAG
             
-            # Create directory for this tag
             sudo mkdir -p "docs/_build/html/versions/$TAG"
             
             git ls-tree -r --name-only "$TAG" | grep "\.ttl$" | while read FILE; do
@@ -142,17 +145,14 @@ jobs:
                 fi
             done
             
-            # Copy context.json if present
             if [ -f "context/context.json" ]; then
                 sudo mkdir -p "docs/_build/html/versions/$TAG/context"
                 sudo cp "context/context.json" "docs/_build/html/versions/$TAG/context"
             fi
     
-            # Return to the original branch (could be master, dev, etc.)
             git checkout $ORIGINAL_BRANCH
         done
-      
-      
+  
     - name: Upload Artifacts
       uses: actions/upload-artifact@v4
       with:

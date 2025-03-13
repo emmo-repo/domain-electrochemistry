@@ -21,8 +21,8 @@
             {
                 "@type": "AmbientCelsiusTemperature",
                 "hasNumericalPart": {
-                    "@type": "Real",
-                    "hasNumericalValue": 20
+                    "@type": "RealData",
+                    "hasNumberValue": 20
                 },
                 "hasMeasurementUnit": "emmo:DegreeCelsius"
             }
@@ -46,8 +46,8 @@
                 "hasProperty": {
                     "@type": "AmountConcentration",
                     "hasNumericalPart": {
-                        "@type": "Real",
-                        "hasNumericalValue": 1
+                        "@type": "RealData",
+                        "hasNumberValue": 1
                     },
                     "hasMeasurementUnit": "emmo:MolePerLitre"
                 }
@@ -79,24 +79,24 @@
             {
                 "@type": "PotentialScanRate",
                 "hasNumericalPart": {
-                    "@type": "Real",
-                    "hasNumericalValue": 10
+                    "@type": "RealData",
+                    "hasNumberValue": 10
                 },
                 "hasMeasurementUnit": "emmo:MilliVoltPerSecond"
             },
             {
                 "@type": ["LowerVoltageLimit"],
                 "hasNumericalPart": {
-                    "@type": "Real",
-                    "hasNumericalValue": -0.2
+                    "@type": "RealData",
+                    "hasNumberValue": -0.2
                 },
                 "hasMeasurementUnit": "emmo:Volt"
             },
             {
                 "@type": ["UpperVoltageLimit"],
                 "hasNumericalPart": {
-                    "@type": "Real",
-                    "hasNumericalValue": 1.2
+                    "@type": "RealData",
+                    "hasNumberValue": 1.2
                 },
                 "hasMeasurementUnit": "emmo:Volt"
             }
@@ -107,24 +107,24 @@
                 {
                     "@type": "PotentialScanRate",
                     "hasNumericalPart": {
-                        "@type": "Real",
-                        "hasNumericalValue": 10
+                        "@type": "RealData",
+                        "hasNumberValue": 10
                     },
                     "hasMeasurementUnit": "emmo:MilliVoltPerSecond"
                 },
                 {
                     "@type": ["LowerVoltageLimit"],
                     "hasNumericalPart": {
-                        "@type": "Real",
-                        "hasNumericalValue": -0.2
+                        "@type": "RealData",
+                        "hasNumberValue": -0.2
                     },
                     "hasMeasurementUnit": "emmo:Volt"
                 },
                 {
                     "@type": ["UpperVoltageLimit"],
                     "hasNumericalPart": {
-                        "@type": "Real",
-                        "hasNumericalValue": 1.2
+                        "@type": "RealData",
+                        "hasNumberValue": 1.2
                     },
                     "hasMeasurementUnit": "emmo:Volt"
                 }

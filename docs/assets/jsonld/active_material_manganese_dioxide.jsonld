@@ -1,5 +1,24 @@
 {
     "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
     "@type": ["ActiveMaterial", "ManganeseDioxide", "Powder"],
-    "rdfs:comment": ["This example shows the minimum amount of information describing an active material for terms that are already included in the ontology, e.g. 'ManganeseDioxide'.", "This example does not include any properties or additional information.", "See other examples in this directory for more complete descriptions of active materials."]
+    "rdfs:comment": "An example showing how to describe a manganese dioxide powder active material",
+    "hasProperty": [
+       {    
+             "@type": "Density",
+             "hasNumericalPart": {
+                "@type": "RealData",
+                "hasNumberValue": 5.0
+             },
+             "hasMeasurementUnit": "emmo:GramPerCubicCentiMetre", 
+             "dc:source": "https://chemicalsafety.ilo.org/dyn/icsc/showcard.display?p_version=2&p_card_id=0175"
+       },
+       {
+             "@type": "D50ParticleSize",
+             "hasNumericalPart": {
+                "@type": "RealData",
+                "hasNumberValue": 15
+             },
+             "hasMeasurementUnit": "emmo:MicroMetre"
+       }
+    ]
  }

@@ -33,6 +33,7 @@ autodoc_member_order = 'bysource'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = ['sphinx.ext.intersphinx',
+              'sphinx.ext.viewcode',
               'sphinx.ext.autosectionlabel',
               'sphinx_design',
               'nbsphinx',
@@ -117,7 +118,7 @@ html_theme = "pydata_sphinx_theme"
 
 html_theme_options = {
     "primary_sidebar_end": [],  # No left sidebar
-    "show_nav_level": 0,  # No expanded left sections
+    "show_nav_level": 2,  # No expanded left sections
     "show_toc_level": 0,  # This disables the "On This Page" sidebar everywhere
     'show_sidebar': False,
     "navbar_center": ["navbar-nav"],
