@@ -1,7 +1,7 @@
 {
     "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
-    "@type": ["Zinc", "Foil", "ActiveMaterial"],
-    "rdfs:comment": "An example showing how to describe a zinc foil active material",
+    "@type": ["Material", "Foil", "Zinc"],
+    "rdfs:comment": "An example showing how to describe a zinc foil material",
     "hasProperty": [
        {    
              "@type": ["Density", "ConventionalProperty"],

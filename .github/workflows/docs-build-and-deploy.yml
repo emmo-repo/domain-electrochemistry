@@ -47,11 +47,12 @@ jobs:
     - name: Render Documentation from TTL Files
       run: python .github/scripts/ontology_toolkit.py --generate-rst
 
-    - name: Build HTML
-      uses: ammaraskar/sphinx-action@master
-      with:
-        docs-folder: "docs/"
-        pre-build-command: "apt-get update -y; apt-get install -y pandoc"
+    - name: Install Additional System Dependencies
+      run: sudo apt-get update -y && sudo apt-get install -y pandoc
+    
+    - name: Build Documentation
+      run: |
+        sphinx-build -b html docs/ docs/_build/html/
 
     - name: Create Context File from TTL
       run: python .github/scripts/ontology_toolkit.py --generate-context
