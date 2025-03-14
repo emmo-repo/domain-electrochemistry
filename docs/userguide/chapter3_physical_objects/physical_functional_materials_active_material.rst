@@ -1,3 +1,8 @@
+.. toctree::
+   :hidden:
+      
+   ../../examples/example_zinc.ipynb
+
 Active Material
 ---------------
 
@@ -38,22 +43,100 @@ More detailed examples are available:
 .. grid::
 
     .. grid-item-card::
-        :link: physical_functional_materials_active_material.html
+        :link: ../../examples/example_cobalt_oxide.ipynb
 
-        :octicon:`rocket;1em;sd-text-info`  Zinc
+        :octicon:`rocket;1em;sd-text-info`  Cobalt Oxide
         ^^^^^^^^^^^
         An active material that is common in energy devices
 
     .. grid-item-card::
-        :link: userguide/chapter3_physical_objects/physical_functional_materials_electrolyte_solution.html
+            :link: ../../examples/example_gold.ipynb
 
-        :octicon:`book;1em;sd-text-info`  Platinum
-        ^^^^^^^^^^^
-        An active material that is common in reference electrodes
+            :octicon:`rocket;1em;sd-text-info` Gold
+            ^^^^^^^^^^^
+            An active material that is common in energy devices
 
     .. grid-item-card::
-        :link: userguide/chapter3_physical_objects/physical_functional_materials_electrolyte_solution.html
+            :link: ../../examples/example_iridium_oxide.ipynb
 
-        :octicon:`book;1em;sd-text-info`  Iridium Oxide
+            :octicon:`rocket;1em;sd-text-info`  Iridium Oxide
+            ^^^^^^^^^^^
+            An active material that is common in energy devices
+
+.. grid::
+
+    .. grid-item-card::
+        :link: ../../examples/example_manganese_dioxide.ipynb
+
+        :octicon:`rocket;1em;sd-text-info`  Manganese Dioxide
         ^^^^^^^^^^^
-        An active material that is common in catalysis
+        An active material that is common in energy devices
+
+    .. grid-item-card::
+            :link: ../../examples/example_nickel_oxyhydroxide.ipynb
+
+            :octicon:`rocket;1em;sd-text-info` Nickel Oxyhydroxide
+            ^^^^^^^^^^^
+            An active material that is common in energy devices
+
+    .. grid-item-card::
+            :link: ../../examples/example_nickel.ipynb
+
+            :octicon:`rocket;1em;sd-text-info`  Nickel
+            ^^^^^^^^^^^
+            An active material that is common in energy devices
+
+.. grid::
+
+    .. grid-item-card::
+        :link: ../../examples/example_platinum.ipynb
+
+        :octicon:`rocket;1em;sd-text-info`  Platinum
+        ^^^^^^^^^^^
+        An active material that is common in energy devices
+
+    .. grid-item-card::
+            :link: ../../examples/example_ruthenium_oxide.ipynb
+
+            :octicon:`rocket;1em;sd-text-info` Ruthenium Oxide
+            ^^^^^^^^^^^
+            An active material that is common in energy devices
+
+    .. grid-item-card::
+            :link: ../../examples/example_silver_oxide.ipynb
+
+            :octicon:`rocket;1em;sd-text-info`  Silver Oxide
+            ^^^^^^^^^^^
+            An active material that is common in energy devices
+
+.. grid::
+
+    .. grid-item-card::
+        :link: ../../examples/example_silver.ipynb
+
+        :octicon:`rocket;1em;sd-text-info`  Silver
+        ^^^^^^^^^^^
+        An active material that is common in energy devices
+
+    .. grid-item-card::
+            :link: ../../examples/example_titanium_dioxide.ipynb
+
+            :octicon:`rocket;1em;sd-text-info` Titanium Dioxide
+            ^^^^^^^^^^^
+            An active material that is common in energy devices
+
+    .. grid-item-card::
+            :link: ../../examples/example_zinc_oxide.ipynb
+
+            :octicon:`rocket;1em;sd-text-info`  Zinc Oxide
+            ^^^^^^^^^^^
+            An active material that is common in energy devices
+
+.. grid::
+
+    .. grid-item-card::
+        :link: ../../examples/example_zinc.ipynb
+
+        :octicon:`rocket;1em;sd-text-info`  Zinc
+        ^^^^^^^^^^^
+        An active material that is common in energy devices
