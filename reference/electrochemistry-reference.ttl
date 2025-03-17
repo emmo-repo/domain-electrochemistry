@@ -4750,8 +4750,7 @@ Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous s
                                                        rdfs:subClassOf :electrochemistry_0acd0fc2_1048_4604_8e90_bf4e84bd87df ;
                                                        skos:prefLabel "ConductivityCell"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrochemical cell for conductivity measurements"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """Formed, in theory, by two 1 cm2 reversible electrodes spaced 1 cm apart, providing a uniform distribution of electrical field. In practice, however, a number
-of other configurations are used."""@en .
+                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """Formed, in theory, by two 1 cm2 reversible electrodes spaced 1 cm apart, providing a uniform distribution of electrical field. In practice, however, a number of other configurations are used."""@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_b525a629_a679_464f_bc5b_b49d2fc82686 ;
