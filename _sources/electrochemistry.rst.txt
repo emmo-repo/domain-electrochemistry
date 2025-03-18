@@ -10197,6 +10197,31 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_43cd6e14_dd4
 
 .. raw:: html
 
+   <div id="EMMO_cf80faa4_69d2_46d1_8a2b_f7f63ca244c1"></div>
+
+ProcessParameter
+----------------
+
+IRI: https://w3id.org/emmo#EMMO_cf80faa4_69d2_46d1_8a2b_f7f63ca244c1
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+    <td class="element-table-value">A parameter that describes a process</td>
+  </tr>
+  </table>
+
+.. note::
+
+   consider promoting to EMMO top or middle
+
+
+----
+
+.. raw:: html
+
    <div id="electrochemistry_11a774f3_d20a_4741_bd81_cae53230bd0c"></div>
 
 ProtonInsertionElectrode
@@ -15606,6 +15631,31 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8e9cf965_9f9
 
 .. raw:: html
 
+   <div id="EMMO_08bd340b_9d49_4d60_8ac5_b89f2f442169"></div>
+
+hasProcessParameter
+-------------------
+
+IRI: https://w3id.org/emmo#EMMO_08bd340b_9d49_4d60_8ac5_b89f2f442169
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+    <td class="element-table-value">an object property linking a process to a process parameter</td>
+  </tr>
+  </table>
+
+.. note::
+
+   consider promoting to EMMO top or middle
+
+
+----
+
+.. raw:: html
+
    <div id="electrochemistry_5eb197ea_0c3e_4ea2_8392_81152ee91515"></div>
 
 hasReferenceElectrode
@@ -15935,6 +15985,31 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_39a44af0_0e1
 
 .. raw:: html
 
+   <div id="electrochemistry_398c6427_320d_4df7_bd09_55931eed4922"></div>
+
+AmperePerAmpereHour
+-------------------
+
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_398c6427_320d_4df7_bd09_55931eed4922
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+    <td class="element-table-value">the unit for C-Rate in electrochemistry and related domains</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Parent Classes</span></td>
+    <td class="element-table-value"><a href='#electrochemistry_67930f7b_ad4c_4b21_9b2e_a000e5c153ae'>CRateUnit</a></td>
+  </tr>
+  </table>
+
+
+----
+
+.. raw:: html
+
    <div id="electrochemistry_10eb778d_da60_4832_a355_4ee74baea650"></div>
 
 AmplitudeOfAlternatingCurrent
@@ -16142,6 +16217,31 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5c34b3b5_c9c
 
 .. raw:: html
 
+   <div id="electrochemistry_f3172070_a72c_40db_8cc7_85c76ae97be5"></div>
+
+C
+-
+
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f3172070_a72c_40db_8cc7_85c76ae97be5
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+    <td class="element-table-value">the unit for C-Rate in electrochemistry and related domains</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Parent Classes</span></td>
+    <td class="element-table-value"><a href='#electrochemistry_67930f7b_ad4c_4b21_9b2e_a000e5c153ae'>CRateUnit</a></td>
+  </tr>
+  </table>
+
+
+----
+
+.. raw:: html
+
    <div id="electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee"></div>
 
 CRate
@@ -16171,6 +16271,31 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e1fd84eb_acd
   <tr>
     <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
     <td class="element-table-value"><a href='#electrochemistry_08b6d07a_0f6c_4932_afbd_fb6b699164ae'>LowerCRateLimit</a>, <a href='#electrochemistry_25e20915_c35d_4bee_ad31_736235a79780'>DischargingCRate</a>, <a href='#electrochemistry_50674621_09ae_4f03_8ee9_3997b88c8b2a'>FinishingCRate</a>, <a href='#electrochemistry_a7dc73e2_d4aa_4dfc_8b4d_cb611f1501fb'>ChargingCRate</a></td>
+  </tr>
+  </table>
+
+
+----
+
+.. raw:: html
+
+   <div id="electrochemistry_67930f7b_ad4c_4b21_9b2e_a000e5c153ae"></div>
+
+CRateUnit
+---------
+
+IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_67930f7b_ad4c_4b21_9b2e_a000e5c153ae
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Elucidation</span></td>
+    <td class="element-table-value">the class of units for describing the C-Rate in electrochemistry and related domains</td>
+  </tr>
+  <tr>
+    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
+    <td class="element-table-value"><a href='#electrochemistry_398c6427_320d_4df7_bd09_55931eed4922'>AmperePerAmpereHour</a>, <a href='#electrochemistry_f3172070_a72c_40db_8cc7_85c76ae97be5'>C</a></td>
   </tr>
   </table>
 

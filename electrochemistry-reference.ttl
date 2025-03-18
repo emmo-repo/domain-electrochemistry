@@ -19,6 +19,15 @@ schema:givenName a owl:AnnotationProperty .
 
 schema:name a owl:AnnotationProperty .
 
+emmo:EMMO_08bd340b_9d49_4d60_8ac5_b89f2f442169 a owl:ObjectProperty ;
+    rdfs:label "hasProcessParameter"@en ;
+    rdfs:comment "an object property linking a process to a process parameter"@en ;
+    rdfs:range emmo:EMMO_cf80faa4_69d2_46d1_8a2b_f7f63ca244c1 ;
+    rdfs:subPropertyOf emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
+    skos:note "consider promoting to EMMO top or middle"@en ;
+    skos:prefLabel "hasProcessParameter"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an object property linking a process to a process parameter"@en .
+
 <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> a owl:Class ;
     rdfs:label "Electrochemical"@en ;
     rdfs:comment "a characterisation method used in electrochemistry"@en ;
@@ -2775,10 +2784,10 @@ schema:name a owl:AnnotationProperty .
     owl:backwardCompatibleWith "0.26.0-beta" ;
     owl:imports <https://w3id.org/emmo/domain/characterisation-methodology/chameo>,
         <https://w3id.org/emmo/domain/chemical-substance/0.11.0-beta/chemical-substance>,
-        <https://w3id.org/emmo/domain/electrochemistry/0.27.0-beta/reference/electrochemistry-quantities> ;
+        <https://w3id.org/emmo/domain/electrochemistry/0.28.0-beta/reference/electrochemistry-quantities> ;
     owl:priorVersion "0.26.0-beta" ;
-    owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.27.0-beta/reference/electrochemistry-reference> ;
-    owl:versionInfo "0.27.0-beta" ;
+    owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.28.0-beta/reference/electrochemistry-reference> ;
+    owl:versionInfo "0.28.0-beta" ;
     foaf:logo "https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/gh-pages/assets/img/fig/png/domain-electrochemistry-logo.png" .
 
 <https://orcid.org/0000-0001-8869-3718> a schema:Person ;
@@ -2824,6 +2833,14 @@ schema:name a owl:AnnotationProperty .
     emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "" .
 
 emmo:EMMO_57d977ab_0036_4779_b59a_e47620afdb9c rdfs:subClassOf emmo:EMMO_38b579de_4331_40e0_803d_09efa298e726 .
+
+emmo:EMMO_cf80faa4_69d2_46d1_8a2b_f7f63ca244c1 a owl:Class ;
+    rdfs:label "ProcessParameter"@en ;
+    rdfs:comment "A parameter that describes a process"@en ;
+    rdfs:subClassOf emmo:EMMO_d1d436e7_72fc_49cd_863b_7bfb4ba5276a ;
+    skos:note "consider promoting to EMMO top or middle"@en ;
+    skos:prefLabel "ProcessParameter"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A parameter that describes a process"@en .
 
 :electrochemistry_01260656_ac32_472e_9513_a607366538ec a owl:Class ;
     rdfs:label "ElectrodePassivation"@en ;
