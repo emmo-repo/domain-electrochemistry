@@ -602,7 +602,7 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_865a40fc_218
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">Parent Classes</span></td>
-    <td class="element-table-value"><a href='#electrochemistry_609b340f_3450_4a10_95c2_c457e3eb8a89'>LiquidElectrolyte</a></td>
+    <td class="element-table-value"><a href='#electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59'>Electrolyte</a></td>
   </tr>
   </table>
 
@@ -1695,7 +1695,7 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_15b852b5_19c
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">Parent Classes</span></td>
-    <td class="element-table-value"><a href='#electrochemistry_609b340f_3450_4a10_95c2_c457e3eb8a89'>LiquidElectrolyte</a></td>
+    <td class="element-table-value"><a href='#electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59'>Electrolyte</a></td>
   </tr>
   </table>
 
@@ -4544,14 +4544,6 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f007072_a8d
     <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
     <td class="element-table-value"><a href='#electrochemistry_14377ecb_5ead_431e_831e_159d622bd0ea'>RectangularElectrode</a>, <a href='#electrochemistry_35c650ab_3b23_4938_b312_1b0dede2e6d5'>Cathode</a>, <a href='#electrochemistry_3663991d_9319_4f7a_922b_f0e428b58801'>PorousElectrode</a>, <a href='#electrochemistry_871bc4a4_2d17_4b88_9b0f_7ab85f14afea'>CounterElectrode</a>, <a href='#electrochemistry_92147e31_d015_4889_a092_04fbab033f15'>CoatedElectrode</a>, <a href='#electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc'>ActiveElectrode</a>, <a href='#electrochemistry_9f466223_e20a_474d_ac4d_6d4b6131c275'>NonPolarizableElectrode</a>, <a href='#electrochemistry_a0a619d7_da95_41f0_8bc3_9c19d636d543'>InertElectrode</a>, <a href='#electrochemistry_a8bfac4f_3f30_4e6d_8d8e_34b1eeecb614'>RoundElectrode</a>, <a href='#electrochemistry_aff732a9_238a_4734_977c_b2ba202af126'>PositiveElectrode</a>, <a href='#electrochemistry_b6319c74_d2ce_48c0_a75a_63156776b302'>Anode</a>, <a href='#electrochemistry_c2024587_3237_474e_8df9_91d10db2df47'>PolarizableElectrode</a>, <a href='#electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c'>NegativeElectrode</a>, <a href='#electrochemistry_f2c33088_224f_4fdb_857a_7cb62e3dddca'>CarbonBasedElectrode</a>, <a href='#electrochemistry_f6fcd255_248d_4603_b128_04dab960a676'>IndicatorElectrode</a>, <a href='#electrochemistry_fb988878_ee54_4350_9ee9_228c00c3ad35'>WorkingElectrode</a></td>
   </tr>
-  <tr>
-    <td class="element-table-key"><span class="element-table-key">hasBinder</span></td>
-    <td class="element-table-value"><a href='#electrochemistry_68eb5e35_5bd8_47b1_9b7f_f67224fa291e'>Binder</a></td>
-  </tr>
-  <tr>
-    <td class="element-table-key"><span class="element-table-key">hasActiveMaterial</span></td>
-    <td class="element-table-value"><a href='#electrochemistry_79d1b273_58cd_4be6_a250_434817f7c261'>ActiveMaterial</a></td>
-  </tr>
   </table>
 
 
@@ -4933,7 +4925,7 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fb0d9eef_92a
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
-    <td class="element-table-value"><a href='#electrochemistry_0508a114_544a_4f54_a7de_9b947fb4b618'>SolidElectrolyte</a>, <a href='#electrochemistry_4e02d727_07fe_41fd_886c_041317342086'>BinaryElectrolyte</a>, <a href='#electrochemistry_609b340f_3450_4a10_95c2_c457e3eb8a89'>LiquidElectrolyte</a>, <a href='#electrochemistry_c6d6c0a1_a06b_437a_978f_a469d3071ca9'>PolymerElectrolyte</a></td>
+    <td class="element-table-value"><a href='#electrochemistry_0508a114_544a_4f54_a7de_9b947fb4b618'>SolidElectrolyte</a>, <a href='#electrochemistry_15b852b5_19cc_49ab_849f_7df6175fb2be'>Catholyte</a>, <a href='#electrochemistry_4e02d727_07fe_41fd_886c_041317342086'>BinaryElectrolyte</a>, <a href='#electrochemistry_5f9a9411_05f9_4576_acd3_81d7d41cfe98'>NonAqueousElectrolyte</a>, <a href='#electrochemistry_609b340f_3450_4a10_95c2_c457e3eb8a89'>LiquidElectrolyte</a>, <a href='#electrochemistry_865a40fc_2187_4549_a7e1_37aa2458448f'>Anolyte</a>, <a href='#electrochemistry_c6d6c0a1_a06b_437a_978f_a469d3071ca9'>PolymerElectrolyte</a>, <a href='#electrochemistry_fa22874b_76a9_4043_8b8f_6086c88746de'>ElectrolyteSolution</a></td>
   </tr>
   </table>
 
@@ -5041,7 +5033,7 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fa22874b_76a
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">Parent Classes</span></td>
-    <td class="element-table-value"><a href='#electrochemistry_609b340f_3450_4a10_95c2_c457e3eb8a89'>LiquidElectrolyte</a></td>
+    <td class="element-table-value"><a href='#electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59'>Electrolyte</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
@@ -7011,10 +7003,6 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_609b340f_345
     <td class="element-table-key"><span class="element-table-key">Parent Classes</span></td>
     <td class="element-table-value"><a href='#electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59'>Electrolyte</a></td>
   </tr>
-  <tr>
-    <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
-    <td class="element-table-value"><a href='#electrochemistry_15b852b5_19cc_49ab_849f_7df6175fb2be'>Catholyte</a>, <a href='#electrochemistry_5f9a9411_05f9_4576_acd3_81d7d41cfe98'>NonAqueousElectrolyte</a>, <a href='#electrochemistry_865a40fc_2187_4549_a7e1_37aa2458448f'>Anolyte</a>, <a href='#electrochemistry_fa22874b_76a9_4043_8b8f_6086c88746de'>ElectrolyteSolution</a></td>
-  </tr>
   </table>
 
 
@@ -8260,11 +8248,11 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5f9a9411_05f
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">Parent Classes</span></td>
-    <td class="element-table-value"><a href='#electrochemistry_609b340f_3450_4a10_95c2_c457e3eb8a89'>LiquidElectrolyte</a></td>
+    <td class="element-table-value"><a href='#electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59'>Electrolyte</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">Subclasses</span></td>
-    <td class="element-table-value"><a href='#electrochemistry_564d31be_91cb_4a8f_8369_2a55f1180499'>OrganicElectrolyte</a>, <a href='#electrochemistry_addf91e1_ba8c_4a3e_b1e9_092e3e1cc2b3'>NonAqueousInorganicElectrolyte</a>, <a href='#electrochemistry_c3f4b34a_0e2c_46f3_baab_4ebd2682d26f'>IonicLiquidElectrolyte</a></td>
+    <td class="element-table-value"><a href='#electrochemistry_addf91e1_ba8c_4a3e_b1e9_092e3e1cc2b3'>NonAqueousInorganicElectrolyte</a>, <a href='#electrochemistry_c3f4b34a_0e2c_46f3_baab_4ebd2682d26f'>IonicLiquidElectrolyte</a></td>
   </tr>
   </table>
 
@@ -8475,7 +8463,7 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_564d31be_91c
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">Parent Classes</span></td>
-    <td class="element-table-value"><a href='#electrochemistry_5f9a9411_05f9_4576_acd3_81d7d41cfe98'>NonAqueousElectrolyte</a>, <a href='#electrochemistry_fa22874b_76a9_4043_8b8f_6086c88746de'>ElectrolyteSolution</a></td>
+    <td class="element-table-value"><a href='#electrochemistry_fa22874b_76a9_4043_8b8f_6086c88746de'>ElectrolyteSolution</a></td>
   </tr>
   </table>
 
