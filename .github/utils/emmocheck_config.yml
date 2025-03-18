@@ -1,7 +1,7 @@
 # Configurations used when running emmocheck from the ci_tests workflow
 skip:
   - test_namespace
-  - test_unit_dimension
+  - test_dimensional_unit
 
 test_quantity_dimension:
   exceptions:
@@ -14,7 +14,7 @@ test_quantity_dimension:
     # We ignore reaction rate constant since its dimensionality may vary
     - electrochemistry.ReactionRateConstant
 
-test_unit_dimension:
+test_dimensional_unit:
   exceptions:
     - electrochemistry.PercentUnit
     - electrochemistry.CRateUnit
