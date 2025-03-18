@@ -12,16 +12,16 @@
 @base <https://w3id.org/emmo/domain/electrochemistry/reference/electrochemistry-quantities> .
 
 <https://w3id.org/emmo/domain/electrochemistry/reference/electrochemistry-quantities> rdf:type owl:Ontology ;
-                                                                                    owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.27.0-beta/reference/electrochemistry-quantities> ;
-                                                                                    owl:imports <https://w3id.org/emmo/1.0.0/disciplines/isq> ;
-                                                                                    dcterms:abstract "This electrochemical quantities ontology is a domain of the Elementary Multiperspective Materials Ontology (EMMO). It is a specialized framework designed to represent and organize knowledge about electrochemical quantities. It is designed to integrate with the electrochemistry domain ontology or other ontologies from the EMMO ecosystem. The main focus of this ontology is to provide machine-readable descriptions of common electrochemical quantities, linking both to the larger descriptions of physical quantities in EMMO as well as other sources of information like the IEC, QUDT, Wikidata, etc. It should be used to support linked data generation in the electrochemistry domain."@en ;
-                                                                                    dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
-                                                                                                        <https://orcid.org/0000-0002-1560-809X> ,
-                                                                                                        <https://orcid.org/0000-0002-2547-155X> ;
-                                                                                    dcterms:creator <https://orcid.org/0000-0002-8758-6109> ,
-                                                                                                    <https://orcid.org/0000-0003-2954-1233> ;
-                                                                                    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                                                                    owl:versionInfo "0.27.0-beta" .
+                                                                                       owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.28.0-beta/reference/electrochemistry-quantities> ;
+                                                                                       owl:imports <https://w3id.org/emmo/1.0.0/disciplines/isq> ;
+                                                                                       dcterms:abstract "This electrochemical quantities ontology is a domain of the Elementary Multiperspective Materials Ontology (EMMO). It is a specialized framework designed to represent and organize knowledge about electrochemical quantities. It is designed to integrate with the electrochemistry domain ontology or other ontologies from the EMMO ecosystem. The main focus of this ontology is to provide machine-readable descriptions of common electrochemical quantities, linking both to the larger descriptions of physical quantities in EMMO as well as other sources of information like the IEC, QUDT, Wikidata, etc. It should be used to support linked data generation in the electrochemistry domain."@en ;
+                                                                                       dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
+                                                                                                           <https://orcid.org/0000-0002-1560-809X> ,
+                                                                                                           <https://orcid.org/0000-0002-2547-155X> ;
+                                                                                       dcterms:creator <https://orcid.org/0000-0002-8758-6109> ,
+                                                                                                       <https://orcid.org/0000-0003-2954-1233> ;
+                                                                                       dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                                                                                       owl:versionInfo "0.28.0-beta" .
 
 #################################################################
 #    Annotation properties
@@ -105,6 +105,10 @@ emmo:EMMO_95317324_4b53_4665_a087_82c3a2a0540b rdf:type owl:AnnotationProperty ;
                                                skos:prefLabel "danger"@en ;
                                                emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "indicates a serious risk, often safety-related"@en ;
                                                rdfs:subPropertyOf skos:note .
+
+
+###  https://w3id.org/emmo#EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a
+emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a rdf:type owl:AnnotationProperty .
 
 
 ###  https://w3id.org/emmo#EMMO_b6730304_cabc_4104_b415_14218466445c
@@ -1187,6 +1191,13 @@ and t* through mathematical models, provided that the long-time potential- deter
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the stoichiometric coefficient for a reactive entity in a chemical substance that corresponds to a cell-level state-of-charge of 100%"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_398c6427_320d_4df7_bd09_55931eed4922
+:electrochemistry_398c6427_320d_4df7_bd09_55931eed4922 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_67930f7b_ad4c_4b21_9b2e_a000e5c153ae ;
+                                                       skos:prefLabel "AmperePerAmpereHour"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the unit for C-Rate in electrochemistry and related domains"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_39a44af0_0e1a_4859_b550_bdabad64386e
 :electrochemistry_39a44af0_0e1a_4859_b550_bdabad64386e rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_affe07e4_e9bc_4852_86c6_69e26182a17f ;
@@ -1943,6 +1954,17 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the magnitude of the current step in chronopotentiometry and related techniques"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_67930f7b_ad4c_4b21_9b2e_a000e5c153ae
+:electrochemistry_67930f7b_ad4c_4b21_9b2e_a000e5c153ae rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_9895a1b4_f0a5_4167_ac5e_97db40b8bfcc ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_19d925d0_2cf1_40e5_a391_1a99d68409c9 ;
+                                                                         owl:hasValue "T-1 L0 M0 I0 Θ0 N0 J0"
+                                                                       ] ;
+                                                       skos:prefLabel "CRateUnit"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the class of units for describing the C-Rate in electrochemistry and related domains"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_68059d94_4c21_4065_b329_07faeebc7e87
 :electrochemistry_68059d94_4c21_4065_b329_07faeebc7e87 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ,
@@ -2205,7 +2227,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7fc10197_41d9_4c1e_a107_928f03eb2d36
 :electrochemistry_7fc10197_41d9_4c1e_a107_928f03eb2d36 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_d91940f0_c8b6_4505_9b68_6bf6cfc5c544 ;
-                                                       rdfs:comment """E° is related to the standard Gibbs Energy of the electrode reaction, ΔrG° or ΔrG , written as a reduction with respect to that of the standard hydrogen electrode (SHE) E° = −ΔrG°/zF."""@en ,
+                                                       rdfs:comment "E° is related to the standard Gibbs Energy of the electrode reaction, ΔrG° or ΔrG , written as a reduction with respect to that of the standard hydrogen electrode (SHE) E° = −ΔrG°/zF."@en ,
                                                                     "The standard electrode potential of an electrochemical reaction is the standard potential of a hypothetical cell in which the electrode (half cell) at the left of the cell diagram is the standard hydrogen electrode (SHE) and the electrode at the right is the electrode in question. See also line representation of electrochemical cells."@en ,
                                                                     "equilibrium electrode potential referenced to the standard hydrogen electrode."@en ;
                                                        skos:altLabel "StandardPotential"@en ;
@@ -3507,7 +3529,11 @@ In either case, the magnitude of the catalytic current depends on the applied po
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee
 :electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ,
-                                                                       :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
+                                                                       :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+                                                                         owl:someValuesFrom :electrochemistry_67930f7b_ad4c_4b21_9b2e_a000e5c153ae
+                                                                       ] ;
                                                        rdfs:comment "the quantity CRate is not used for energy-decoupled batteries like Redox Flox batteries"@en ;
                                                        skos:altLabel "CapacityRate"@en ;
                                                        skos:prefLabel "CRate"@en ;
@@ -3719,6 +3745,13 @@ In either case, the magnitude of the catalytic current depends on the applied po
                                                        rdfs:subClassOf :electrochemistry_33e6986c_b35a_4cae_9a94_acb23248065c ;
                                                        skos:prefLabel "BoundaryCondition"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a property whose value is controlled on some surface or domain"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f3172070_a72c_40db_8cc7_85c76ae97be5
+:electrochemistry_f3172070_a72c_40db_8cc7_85c76ae97be5 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_67930f7b_ad4c_4b21_9b2e_a000e5c153ae ;
+                                                       skos:prefLabel "C"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the unit for C-Rate in electrochemistry and related domains"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f4fadc4e_ca7d_4e4e_89cf_eacf45b4041e

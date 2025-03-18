@@ -16,10 +16,10 @@
 @base <https://w3id.org/emmo/domain/reference/electrochemistry-reference> .
 
 <https://w3id.org/emmo/domain/reference/electrochemistry-reference> rdf:type owl:Ontology ;
-                                                                     owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.27.0-beta/reference/electrochemistry-reference> ;
+                                                                     owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.28.0-beta/reference/electrochemistry-reference> ;
                                                                      owl:imports <https://w3id.org/emmo/domain/characterisation-methodology/chameo> ,
                                                                                  <https://w3id.org/emmo/domain/chemical-substance/0.11.0-beta/chemical-substance> ,
-                                                                                 <https://w3id.org/emmo/domain/electrochemistry/0.27.0-beta/reference/electrochemistry-quantities> ;
+                                                                                 <https://w3id.org/emmo/domain/electrochemistry/0.28.0-beta/reference/electrochemistry-quantities> ;
                                                                      dcterms:abstract "This reference module contains the core terms for the electrochmistry domain."@en ;
                                                                      dcterms:bibliographicCitation "https://doi.org/10.5281/zenodo.7693664" ;
                                                                      dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
@@ -43,7 +43,7 @@
                                                                      vann:preferredNamespaceUri "https://w3id.org/emmo/domain/electrochemistry" ;
                                                                      owl:backwardCompatibleWith "0.26.0-beta" ;
                                                                      owl:priorVersion "0.26.0-beta" ;
-                                                                     owl:versionInfo "0.27.0-beta" ;
+                                                                     owl:versionInfo "0.28.0-beta" ;
                                                                      foaf:logo "https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/gh-pages/assets/img/fig/png/domain-electrochemistry-logo.png" .
 
 #################################################################
@@ -69,6 +69,15 @@ schema:name rdf:type owl:AnnotationProperty .
 #################################################################
 #    Object Properties
 #################################################################
+
+###  https://w3id.org/emmo#EMMO_08bd340b_9d49_4d60_8ac5_b89f2f442169
+emmo:EMMO_08bd340b_9d49_4d60_8ac5_b89f2f442169 rdf:type owl:ObjectProperty ;
+                                               rdfs:subPropertyOf emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
+                                               rdfs:range emmo:EMMO_cf80faa4_69d2_46d1_8a2b_f7f63ca244c1 ;
+                                               skos:note "consider promoting to EMMO top or middle"@en ;
+                                               skos:prefLabel "hasProcessParameter"@en ;
+                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an object property linking a process to a process parameter"@en .
+
 
 ###  https://w3id.org/emmo#EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77
 emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 rdf:type owl:ObjectProperty ,
@@ -233,6 +242,14 @@ emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 rdf:type owl:ObjectProperty ,
 
 ###  https://w3id.org/emmo#EMMO_57d977ab_0036_4779_b59a_e47620afdb9c
 emmo:EMMO_57d977ab_0036_4779_b59a_e47620afdb9c rdfs:subClassOf emmo:EMMO_38b579de_4331_40e0_803d_09efa298e726 .
+
+
+###  https://w3id.org/emmo#EMMO_cf80faa4_69d2_46d1_8a2b_f7f63ca244c1
+emmo:EMMO_cf80faa4_69d2_46d1_8a2b_f7f63ca244c1 rdf:type owl:Class ;
+                                               rdfs:subClassOf emmo:EMMO_d1d436e7_72fc_49cd_863b_7bfb4ba5276a ;
+                                               skos:note "consider promoting to EMMO top or middle"@en ;
+                                               skos:prefLabel "ProcessParameter"@en ;
+                                               emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A parameter that describes a process"@en .
 
 
 ###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical

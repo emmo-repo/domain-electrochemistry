@@ -30,3 +30,4 @@ emmocheck_classes:
   - "electrochemistry.ElectrochemicalConstant"
   - "electrochemistry.ReactionRateConstant"
   - "electrochemistry.PercentUnit"
+  - "electrochemistry.CRateUnit"
