@@ -30,7 +30,7 @@ Here is a simple example of a zinc foil active material with a few basic propert
 .. literalinclude:: ../../assets/jsonld/materials/material_zinc.jsonld
    :language: json
 
-In example above, we use multiple inheretance to say that we are something that is ``Zinc``, ``Foil``, and a ``Material``. It is associated to some properties using the ``hasProperty`` relationship. There are different types of properties in EMMO. In this case, we say that the ``Density`` is a ``ConventionalProperty`` because we don't measure it ourselves, rather we accept a value by convention, in this case from a data sheet. The value of the property is expressed according to the SI recommendations as a numerical part and a measurement unit. More information about ``Zinc``, including links to external sources of information like Wikidata and PubChem can be found in the ontology term documentation. 
+In example above, we use multiple inheretance to say that we are something that is ``Zinc`` and a ``Foil``. A ``Foil`` is defined as a more specific sub-class of ``Material`` in the ontology. The zinc foil is associated to some properties using the ``hasProperty`` relationship. There are different types of properties in EMMO. In this case, we say that the ``Density`` is a ``ConventionalProperty`` because we don't measure it ourselves, rather we accept a value by convention, in this case from a data sheet. The value of the property is expressed according to the SI recommendations as a numerical part and a measurement unit. More information about ``Zinc``, including links to external sources of information like Wikidata and PubChem can be found in the ontology term documentation. 
 
 More detailed examples are available:
 
