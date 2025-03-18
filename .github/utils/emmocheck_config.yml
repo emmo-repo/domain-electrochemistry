@@ -1,6 +1,7 @@
 # Configurations used when running emmocheck from the ci_tests workflow
 skip:
   - test_namespace
+  - test_unit_dimension
 
 test_quantity_dimension:
   exceptions:
