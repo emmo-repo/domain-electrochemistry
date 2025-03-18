@@ -28,9 +28,9 @@
                                                  dcterms:created "2022-11-25"^^xsd:date ;
                                                  dcterms:creator <https://orcid.org/0000-0002-8758-6109> ,
                                                                  <https://orcid.org/0000-0003-2954-1233> ;
-                                                 dcterms:issued "2025-02-12"^^xsd:date ;
+                                                 dcterms:issued "2025-03-18"^^xsd:date ;
                                                  dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                                 dcterms:modified "2025-02-12"^^xsd:date ;
+                                                 dcterms:modified "2025-03-18"^^xsd:date ;
                                                  dcterms:publisher "EMMO" ;
                                                  dcterms:source <https://www.electropedia.org> ,
                                                                 <https://doi.org/10.1109/IEEESTD.2016.7552407> ,
@@ -41,8 +41,8 @@
                                                  bibo:status "unstable" ;
                                                  vann:preferredNamespacePrefix "echem" ;
                                                  vann:preferredNamespaceUri "https://w3id.org/emmo/domain/electrochemistry" ;
-                                                 owl:backwardCompatibleWith "0.26.0-beta" ;
-                                                 owl:priorVersion "0.26.0-beta" ;
+                                                 owl:backwardCompatibleWith "0.27.0-beta" ;
+                                                 owl:priorVersion "0.27.0-beta" ;
                                                  owl:versionInfo "0.28.0-beta" ;
                                                  foaf:logo "https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/gh-pages/assets/img/fig/png/domain-electrochemistry-logo.png" .
 
