@@ -3959,32 +3959,28 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6f2c88c9_5c0
     <td class="element-table-value"><a href='#electrochemistry_0acd0fc2_1048_4604_8e90_bf4e84bd87df'>ElectrochemicalDevice</a>, <a href='#electrochemistry_b9bece97_a511_4cb9_88a2_b5bd5c5e5d74'>ThreeElectrodeCell</a>, <a href='#electrochemistry_e248373f_294f_4ca4_9edf_0ad6653bb64f'>GalvanicCell</a>, <a href='#electrochemistry_e931087f_7681_4096_b200_5223bcc47eb4'>ElectrolyticCell</a></td>
   </tr>
   <tr>
-    <td class="element-table-key"><span class="element-table-key">hasElectrolyte</span></td>
-    <td class="element-table-value"><a href='#electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59'>Electrolyte</a></td>
-  </tr>
-  <tr>
     <td class="element-table-key"><span class="element-table-key">hasElectrode</span></td>
     <td class="element-table-value"><a href='#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627'>Electrode</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">hasNegativeElectrode</span></td>
-    <td class="element-table-value"><a href='#electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c'>NegativeElectrode</a></td>
+    <td class="element-table-value"><a href='#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627'>Electrode</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">hasReferenceElectrode</span></td>
-    <td class="element-table-value"><a href='#electrochemistry_7729c34e_1ae9_403d_b933_1765885e7f29'>ReferenceElectrode</a></td>
+    <td class="element-table-value"><a href='#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627'>Electrode</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">hasPositiveElectrode</span></td>
-    <td class="element-table-value"><a href='#electrochemistry_aff732a9_238a_4734_977c_b2ba202af126'>PositiveElectrode</a></td>
+    <td class="element-table-value"><a href='#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627'>Electrode</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">hasWorkingElectrode</span></td>
-    <td class="element-table-value"><a href='#electrochemistry_fb988878_ee54_4350_9ee9_228c00c3ad35'>WorkingElectrode</a></td>
+    <td class="element-table-value"><a href='#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627'>Electrode</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">hasCounterElectrode</span></td>
-    <td class="element-table-value"><a href='#electrochemistry_871bc4a4_2d17_4b88_9b0f_7ab85f14afea'>CounterElectrode</a></td>
+    <td class="element-table-value"><a href='#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627'>Electrode</a></td>
   </tr>
   </table>
 
@@ -4134,10 +4130,6 @@ IRI: https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9da958fc_f76
   <tr>
     <td class="element-table-key"><span class="element-table-key">Wikidata Reference</span></td>
     <td class="element-table-value"><a href='https://www.wikidata.org/wiki/Q903509'>https://www.wikidata.org/wiki/Q903509</a></td>
-  </tr>
-  <tr>
-    <td class="element-table-key"><span class="element-table-key">hasElectrolyte</span></td>
-    <td class="element-table-value"><a href='#electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59'>Electrolyte</a></td>
   </tr>
   <tr>
     <td class="element-table-key"><span class="element-table-key">hasElectrode</span></td>
