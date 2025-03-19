@@ -183,10 +183,10 @@ ns1:electrochemistry_f2a034b6_401d_46bf_a258_cca87932c7af a owl:Class ;
 
 <https://w3id.org/emmo/domain/electrochemistry/modules/electrochemistry-manufacturing> a owl:Ontology ;
     dcterms:abstract "The electrochemistry-manufacturing module is an ontology containing the domain-level terms for describing the manufacturing of electrochemical devices. This ontology features terms that are common to manufacturing many different types of electrochemcial devices (.e.g batteries, supercaps, fuel cells, electrolyzers, etc.). For device-specific manufacturing terms, please refer to the associated domain ontology."@en ;
-    owl:imports <https://w3id.org/emmo/domain/electrochemistry/0.28.3-beta/reference/electrochemistry-reference>,
+    owl:imports <https://w3id.org/emmo/domain/electrochemistry/0.28.4-beta/reference/electrochemistry-reference>,
         <https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/modules/manufacturing-equipment>,
         <https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/modules/manufacturing-processes> ;
-    owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.28.3-beta/modules/electrochemistry-manufacturing> .
+    owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.28.4-beta/modules/electrochemistry-manufacturing> .
 
 ns1:electrochemistry_6a2d9bd3_3695_4827_b3f7_3bba9b947129 a owl:Class ;
     rdfs:label "CellPackaging"@en ;

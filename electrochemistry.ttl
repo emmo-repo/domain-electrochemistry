@@ -28,11 +28,11 @@
     vann:preferredNamespacePrefix "echem" ;
     vann:preferredNamespaceUri "https://w3id.org/emmo/domain/electrochemistry" ;
     owl:backwardCompatibleWith "0.27.0-beta" ;
-    owl:imports <https://w3id.org/emmo/domain/electrochemistry/0.28.3-beta/modules/electrochemistry-manufacturing>,
-        <https://w3id.org/emmo/domain/electrochemistry/0.28.3-beta/modules/electrochemistry-testing>,
-        <https://w3id.org/emmo/domain/electrochemistry/0.28.3-beta/reference/electrochemistry-reference> ;
+    owl:imports <https://w3id.org/emmo/domain/electrochemistry/0.28.4-beta/modules/electrochemistry-manufacturing>,
+        <https://w3id.org/emmo/domain/electrochemistry/0.28.4-beta/modules/electrochemistry-testing>,
+        <https://w3id.org/emmo/domain/electrochemistry/0.28.4-beta/reference/electrochemistry-reference> ;
     owl:priorVersion "0.27.0-beta" ;
-    owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.28.3-beta/electrochemistry> ;
-    owl:versionInfo "0.28.3-beta" ;
+    owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.28.4-beta/electrochemistry> ;
+    owl:versionInfo "0.28.4-beta" ;
     foaf:logo "https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/gh-pages/assets/img/fig/png/domain-electrochemistry-logo.png" .
 

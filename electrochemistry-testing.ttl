@@ -106,8 +106,8 @@
 
 <https://w3id.org/emmo/domain/electrochemistry/modules/electrochemistry-testing> a owl:Ontology ;
     dcterms:abstract "The electrochemistry-testing module is an ontology containing the domain-level terms for describing the testing of electrochemical devices. This ontology features terms that are common to testing many different types of electrochemcial devices (e.g batteries, supercaps, fuel cells, electrolyzers, etc.). For device-specific testing terms, please refer to the associated domain ontology."@en ;
-    owl:imports <https://w3id.org/emmo/domain/electrochemistry/0.28.3-beta/reference/electrochemistry-reference> ;
-    owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.28.3-beta/modules/electrochemistry-testing> .
+    owl:imports <https://w3id.org/emmo/domain/electrochemistry/0.28.4-beta/reference/electrochemistry-reference> ;
+    owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.28.4-beta/modules/electrochemistry-testing> .
 
 :electrochemistry_25d01d13_3ca5_4619_98c1_8ebbd01ad794 a owl:Class ;
     rdfs:label "ContinuousServiceTest"@en ;
