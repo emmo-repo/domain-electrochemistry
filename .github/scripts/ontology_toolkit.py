@@ -165,7 +165,7 @@ def extract_terms_info_sparql(onto: Ontology) -> list:
         hit_dict.update(annotations_en)
 
         parents = [ent for ent in entity.is_a if (isinstance(ent, owlready2.ThingClass) or isinstance(ent, owlready2.PropertyClass))]
-        hit_dict["Parent Classes"] = parents
+        hit_dict["subclassOf"] = parents
 
         # Fetch direct subclasses
         subclasses = list(entity.subclasses())
@@ -182,7 +182,6 @@ def extract_terms_info_sparql(onto: Ontology) -> list:
 
 def render_rst_top() -> str:
     config = load_ontology_config()
-
     ontology_name = config["ontology_name"]
     ontology_description = config["ontology_description"]
     ontology_adjective = config["ontology_adjective"]
@@ -192,17 +191,18 @@ def render_rst_top() -> str:
     underline = "=" * len(title)
 
     return f"""
-:html_theme.sidebar_secondary.remove:
 
 {underline}
 {title}
 {underline}
 
-**{ontology_description}**
+"""
 
-The {ontology_name} is a domain of the Elementary Multiperspective Materials Ontology (EMMO), for describing {ontology_adjective} systems, materials, methods, and data. Its primary objective is to support the creation of FAIR, Linked Data within the field of {ontology_noun}. This ontology serves as a foundational resource for harmonizing {ontology_adjective} knowledge representation, enhancing data interoperability, and accelerating progress in electroc{ontology_adjective}hemical research and development.
+def render_rst_abstract(onto) -> str:
 
-This page lists all terms extracted from the {ontology_name.lower()} ontology. It is intended to serve as a reference resource. 
+    return f"""
+
+{onto.metadata.abstract.en[0]}
 
 """
 
@@ -237,7 +237,7 @@ def entities_to_rst(entities: list[dict]) -> str:
 
         # Normal properties (skip callouts and special lists handled later)
         for key, value in item.items():
-            if key in ['IRI', 'prefLabel', 'Parent Classes', 'Subclasses', 'Restrictions'] or key in callout_keys or value in ["None", ""]:
+            if key in ['IRI', 'prefLabel', 'subclassOf', 'Subclasses', 'Restrictions'] or key in callout_keys or value in ["None", ""]:
                 continue
 
             rst += "  <tr>\n"
@@ -250,13 +250,13 @@ def entities_to_rst(entities: list[dict]) -> str:
             rst += f"    <td class=\"element-table-value\">{value}</td>\n"
             rst += "  </tr>\n"
         # Add parent classes section
-        if item.get("Parent Classes"):
+        if item.get("subclassOf"):
             rst += "  <tr>\n"
-            rst += "    <td class=\"element-table-key\"><span class=\"element-table-key\">Parent Classes</span></td>\n"
+            rst += "    <td class=\"element-table-key\"><span class=\"element-table-key\">subclassOf</span></td>\n"
             rst += "    <td class=\"element-table-value\">"
 
             parent_links = []
-            for parent in item["Parent Classes"]:
+            for parent in item["subclassOf"]:
                 try:
                     parent_links.append(f"<a href='#{parent.iri.split('#')[-1]}'>{parent.prefLabel.get_lang('en')[0]}</a>")
                 except:
@@ -334,7 +334,6 @@ def render_rst_bottom():
 def generate_rst_documentation():
     config = load_ontology_config()
     rst_filename = config["rst_output_filename"]
-
     rst_content = render_rst_top()
 
     for module in config["ttl_files"]:
@@ -343,6 +342,7 @@ def generate_rst_documentation():
             onto = load_ttl_from_file(filepath)
             entities = extract_terms_info_sparql(onto)
             rst_content += f"\n{module['section_title']}\n{'=' * len(module['section_title'])}\n\n"
+            rst_content += render_rst_abstract(onto)
             rst_content += entities_to_rst(entities)
 
     rst_content += render_rst_bottom()
