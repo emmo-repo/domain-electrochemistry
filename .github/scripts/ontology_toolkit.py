@@ -327,22 +327,23 @@ def entities_to_rst(entities: list[dict]) -> str:
 
 
         # Add callouts (admonitions) below the table
-        callout_mapping = {
-            "Tip": "tip",
-            "Caution": "caution",
-            "Important": "important",
-            "Note": "note",
-            "Danger": "danger",
-            "Warning": "warning",
-            "Error": "error",
-            "Admonition": "admonition"
-        }
+        #callout_mapping = {
+        #    "Tip": "tip",
+        #    "Caution": "caution",
+        #    "Important": "important",
+        #    "Note": "note",
+        #    "Danger": "danger",
+        #    "Warning": "warning",
+        #    "Error": "error",
+        #    "Admonition": "admonition"
+        #}
 
         callout_rst = ""
-        for callout, admonition in callout_mapping.items():
+        #for callout, admonition in callout_mapping.items():
+        for callout in callout_keys:
             callout_value = item.get(callout, "").strip()
             if callout_value and callout_value.lower() != "none":
-                callout_rst += f".. {admonition}::\n\n"
+                callout_rst += f".. {callout}::\n\n"
                 for line in callout_value.splitlines():
                     callout_rst += f"   {line}\n"
                 callout_rst += "\n"
