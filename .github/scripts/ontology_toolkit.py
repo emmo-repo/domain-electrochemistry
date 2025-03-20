@@ -157,12 +157,15 @@ def extract_terms_info_sparql(onto: Ontology) -> list:
         #    continue
 
         annotations = entity.get_annotations()
+        long_annotations = ['example', 'comment']
         annotations_en = {
-                key: '; '.join(_extract_all_annotations(item))
+            key: _extract_all_annotations(item) if key in long_annotations 
+            else '; '.join(_extract_all_annotations(item))
             for key, item in annotations.items()
         }
 
         hit_dict.update(annotations_en)
+
 
         parents = [ent for ent in entity.is_a if (isinstance(ent, owlready2.ThingClass) or isinstance(ent, owlready2.PropertyClass))]
         hit_dict["subclassOf"] = parents
@@ -238,17 +241,20 @@ def entities_to_rst(entities: list[dict]) -> str:
         # Normal properties (skip callouts and special lists handled later)
         for key, value in item.items():
             ls.append(key)
-            if key in ['IRI', 'prefLabel', 'subclassOf', 'subclasses', 'restrictions', 'comment'] or key in callout_keys or value in ["None", ""]:
+            if key in ['IRI', 'prefLabel', 'subclassOf', 'subclasses', 'restrictions'] or key in callout_keys or value in ["None", ""]:
                 continue
 
-            rst += "  <tr>\n"
-            rst += f"    <td class=\"element-table-key\"><span class=\"element-table-key\">{key}</span></td>\n"
+            if not isinstance(value, list):
+                value = [value]
+            
+            for val in value:
+                rst += "  <tr>\n"
+                rst += f"    <td class=\"element-table-key\"><span class=\"element-table-key\">{key}</span></td>\n"
 
-            if value.startswith("http"):
-                value = f"<a href='{value}'>{value}</a>"
-
-            rst += f"    <td class=\"element-table-value\">{value}</td>\n"
-            rst += "  </tr>\n"
+                if val.startswith("http"):
+                    val = f"<a href='{val}'>{val}</a>"
+                rst += f"    <td class=\"element-table-value\">{val}</td>\n"
+                rst += "  </tr>\n"
         
         
         def _get_links(item, key):
@@ -283,6 +289,19 @@ def entities_to_rst(entities: list[dict]) -> str:
             rst += "</td>\n"
             rst += "  </tr>\n"
 
+        # Add comments section
+        #if item.get("comment"):
+        #    print(item)
+        #    print(value)
+        #    print(key)
+        #    rst += "  <tr>\n"
+        #    rst += "    <td class=\"element-table-key\"><span class=\"element-table-key\">comments</span></td>\n"
+        #    rst += "    <td class=\"element-table-value\">"
+        #    rst += f"    <td class=\"element-table-value\">{value}</td>\n"
+        #   
+        #    rst += "</td>\n"
+        #    rst += "  </tr>\n"
+ 
         # Add restrictions section - each restriction gets its own row
         if item.get("restrictions"):
             # Group restrictions by property_label for cleaner table (optional, but nice)
