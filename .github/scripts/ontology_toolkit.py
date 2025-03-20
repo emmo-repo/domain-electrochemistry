@@ -169,10 +169,11 @@ def extract_terms_info_sparql(onto: Ontology) -> list:
 
         # Fetch direct subclasses
         subclasses = list(entity.subclasses())
+        hit_dict["subclasses"] = subclasses
 
-        # Fetch OWL Restrictions (object property + someValuesFrom)
+        # Fetch OWL restrictions (object property + someValuesFrom)
         restrictions = [restriction for restriction in entity.is_a if isinstance(restriction, owlready2.Restriction)]
-        hit_dict["Restrictions"] = restrictions
+        hit_dict["restrictions"] = restrictions
 
         text_entities.append(hit_dict)
 
@@ -211,8 +212,8 @@ def entities_to_rst(entities: list[dict]) -> str:
     """Converts extracted ontology terms into an RST format."""
     rst = ""
 
-    callout_keys = {"Tip", "Caution", "Important", "Note", "Danger", "Warning", "Error", "Admonition"}
-
+    callout_keys = {"tip", "caution", "important", "note", "danger", "warning", "error", "admonition"}
+    ls = []
     for item in entities:
         if '#' not in item['IRI']:
             continue
@@ -234,54 +235,59 @@ def entities_to_rst(entities: list[dict]) -> str:
         rst += ".. raw:: html\n\n"
         indent = "  "
         rst += indent + "<table class=\"element-table\">\n"
-
         # Normal properties (skip callouts and special lists handled later)
         for key, value in item.items():
-            if key in ['IRI', 'prefLabel', 'subclassOf', 'Subclasses', 'Restrictions'] or key in callout_keys or value in ["None", ""]:
+            ls.append(key)
+            if key in ['IRI', 'prefLabel', 'subclassOf', 'subclasses', 'restrictions', 'comment'] or key in callout_keys or value in ["None", ""]:
                 continue
 
             rst += "  <tr>\n"
             rst += f"    <td class=\"element-table-key\"><span class=\"element-table-key\">{key}</span></td>\n"
 
-            #print(value)
             if value.startswith("http"):
                 value = f"<a href='{value}'>{value}</a>"
 
             rst += f"    <td class=\"element-table-value\">{value}</td>\n"
             rst += "  </tr>\n"
+        
+        
+        def _get_links(item, key):
+            links = []
+            for ent in item[key]:
+                try:
+                    links.append(f"<a href='#{ent.iri.split('#')[-1]}'>{ent.prefLabel.get_lang('en')[0]}</a>")
+                except (IndexError, AttributeError):
+                    links.append(f"<a href='#{ent.iri.split('#')[-1]}'>{ent}</a>")
+            return links
+        
         # Add parent classes section
         if item.get("subclassOf"):
             rst += "  <tr>\n"
             rst += "    <td class=\"element-table-key\"><span class=\"element-table-key\">subclassOf</span></td>\n"
             rst += "    <td class=\"element-table-value\">"
 
-            parent_links = []
-            for parent in item["subclassOf"]:
-                try:
-                    parent_links.append(f"<a href='#{parent.iri.split('#')[-1]}'>{parent.prefLabel.get_lang('en')[0]}</a>")
-                except:
-                    parent_links.append(f"<a href='#{parent.iri.split('#')[-1]}'>{parent}</a>")
-
+            parent_links = _get_links(item, "subclassOf")
             
             rst += ", ".join(parent_links)
             rst += "</td>\n"
             rst += "  </tr>\n"
 
         # Add subclasses section
-        if item.get("Subclasses"):
+        if item.get("subclasses"):
             rst += "  <tr>\n"
-            rst += "    <td class=\"element-table-key\"><span class=\"element-table-key\">Subclasses</span></td>\n"
+            rst += "    <td class=\"element-table-key\"><span class=\"element-table-key\">subclasses</span></td>\n"
             rst += "    <td class=\"element-table-value\">"
-            subclass_links = [f"<a href='#{iri.split('#')[-1]}'>{label}</a>" for iri, label in item["Subclasses"]]
+            
+            subclass_links = _get_links(item, "subclasses")
             rst += ", ".join(subclass_links)
             rst += "</td>\n"
             rst += "  </tr>\n"
 
         # Add restrictions section - each restriction gets its own row
-        if item.get("Restrictions"):
+        if item.get("restrictions"):
             # Group restrictions by property_label for cleaner table (optional, but nice)
             grouped_restrictions = {}
-            for restriction in item["Restrictions"]:
+            for restriction in item["restrictions"]:
                 try:
                     target_link = f"<a href='#{restriction.value.iri.split('#')[-1]}'>{restriction.value}</a>"
                 except AttributeError:
@@ -298,7 +304,6 @@ def entities_to_rst(entities: list[dict]) -> str:
                 rst += ", ".join(target_links)
                 rst += "</td>\n"
                 rst += "  </tr>\n"
-
         rst += "  </table>\n\n"
 
 
