@@ -2,3 +2,5 @@
 .venv/
 docs/_build
 docs/electrochemistry.rst
+
+build/
