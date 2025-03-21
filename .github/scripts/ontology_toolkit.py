@@ -214,6 +214,8 @@ def render_rst_abstract(onto) -> str:
 def entities_to_rst(entities: list[dict]) -> str:
     """Converts extracted ontology terms into an RST format."""
     rst = ""
+    
+    IMAGE_EXTENSIONS = (".png", ".jpg", ".jpeg", ".gif", ".svg")
 
     callout_keys = {"tip", "caution", "important", "note", "danger", "warning", "error", "admonition"}
     ls = []
@@ -250,11 +252,21 @@ def entities_to_rst(entities: list[dict]) -> str:
             for val in value:
                 rst += "  <tr>\n"
                 rst += f"    <td class=\"element-table-key\"><span class=\"element-table-key\">{key}</span></td>\n"
-
                 if val.startswith("http"):
-                    val = f"<a href='{val}'>{val}</a>"
+                    if val.lower().endswith(tuple(IMAGE_EXTENSIONS)):
+                        val = (
+                            f'<a href="{val}">'
+                            f'<img src="{val}" alt="{val}" '
+                            f'style="max-width:400px; max-height:300px;"/>'
+                            f'</a>'
+                        )
+                        
+                    else:
+                        val = f"<a href='{val}'>{val}</a>"
+
                 rst += f"    <td class=\"element-table-value\">{val}</td>\n"
                 rst += "  </tr>\n"
+            
         
         
         def _get_links(item, key):
@@ -324,19 +336,6 @@ def entities_to_rst(entities: list[dict]) -> str:
                 rst += "</td>\n"
                 rst += "  </tr>\n"
         rst += "  </table>\n\n"
-
-
-        # Add callouts (admonitions) below the table
-        #callout_mapping = {
-        #    "Tip": "tip",
-        #    "Caution": "caution",
-        #    "Important": "important",
-        #    "Note": "note",
-        #    "Danger": "danger",
-        #    "Warning": "warning",
-        #    "Error": "error",
-        #    "Admonition": "admonition"
-        #}
 
         callout_rst = ""
         #for callout, admonition in callout_mapping.items():
