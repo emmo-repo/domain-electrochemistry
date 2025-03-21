@@ -212,6 +212,47 @@ def render_rst_abstract(onto) -> str:
 
 """
 
+def _get_links(item, key): 
+    """Get HTML links for a list of entities."""
+    links = []
+    for ent in item[key]:
+        full_iri = ent.iri
+        try:
+            val = ent.prefLabel.get_lang('en')[0]
+        except (IndexError, AttributeError):
+            val = ent
+        links.append(_html_links(full_iri, display_text=val))
+
+    return links
+
+def _linkify_manchester(text: str, onto) -> str:
+   """
+   Convert manchester notation as string to HTML links.
+   """
+   def _replace(match):
+       word = match.group(0)
+       try:
+           full = onto[word].iri
+           return _html_links(full, word)
+       except (KeyError, AttributeError):
+           return word
+
+   return re.sub(r"\w+", _replace, text)
+
+def _html_links(full_iri, display_text):
+    """Create the HTML code so that links lead to 
+    the correct fragment in the document if possibe, 
+    otherwise link to the full IRI"""
+    fragment_iri = full_iri.split('#')[-1]
+    return (
+        f"<a href='#{fragment_iri}' "
+        f"onclick=\""
+        f"if(!document.getElementById('{fragment_iri}'))"
+        f"{{window.location.href='{full_iri}'; return false;}}"
+        f"\">"
+        f"{display_text}</a>"
+    )
+
 
 def entities_to_rst(entities: list[dict], onto: Ontology) -> str:
     """Converts extracted ontology terms into an RST format."""
@@ -272,34 +313,11 @@ def entities_to_rst(entities: list[dict], onto: Ontology) -> str:
                             f"\">"
                             f"{val}</a>"
                         )
- 
-
-                        
 
                 rst += f"    <td class=\"element-table-value\">{val}</td>\n"
                 rst += "  </tr>\n"
             
         
-        
-        def _get_links(item, key): #  Clean up this and maybe join with _linkify_text
-            links = []
-            for ent in item[key]:
-                full_iri = ent.iri
-                fragment_iri = full_iri.split('#')[-1]
-                try:
-                    val = ent.prefLabel.get_lang('en')[0]
-                except (IndexError, AttributeError):
-                    val = ent
-                links.append(
-                    f"<a href='#{fragment_iri}' "
-                    f"onclick=\""
-                    f"if(!document.getElementById('{fragment_iri}'))"
-                    f"{{{{window.location.href='{full_iri}'; return false;}}}}"
-                    f"\">"
-                    f"{val}</a>"
-                )
-
-            return links
         
         # Add parent classes section
         if item.get("subclassOf"):
@@ -324,36 +342,13 @@ def entities_to_rst(entities: list[dict], onto: Ontology) -> str:
             rst += "</td>\n"
             rst += "  </tr>\n"
 
-
-        def _linkify_text(text: str, onto) -> str:
-            """
-            Wrap each alphanumeric token in <a>…</a>, preserving all punctuation/spaces.
-            """
-            def _replace(match):
-                word = match.group(0)
-                try:
-                    full = onto[word].iri
-                    fragment = full.split("#")[-1]
-                    return (
-                        f"<a href='#{fragment}' "
-                        f"onclick=\""
-                            f"if(!document.getElementById('{fragment}'))"
-                            f"{{window.location.href='{full}'; return false;}}"
-                        f"\">"
-                        f"{word}</a>"
-                    )
-                except (KeyError, AttributeError):
-                    return word
-
-            return re.sub(r"\w+", _replace, text)
-
         # Add restrictions section - each restriction gets its own row
         if item.get("restrictions"):
             # Group restrictions by property_label for cleaner table (optional, but nice)
             grouped_restrictions = {}
             for restriction in item["restrictions"]:
                 original = asstring(restriction)
-                linked = _linkify_text(original, onto)
+                linked = _linkify_manchester(original, onto)
                 grouped_restrictions.setdefault(restriction.property, []).append(linked)
             
             for _, restriction_type in grouped_restrictions.items():
