@@ -1,6 +1,7 @@
 import json
 import os
 import sys
+import re
 import subprocess
 import yaml
 import rdflib
@@ -11,6 +12,7 @@ from rdflib import Graph
 import logging
 from owlrl import DeductiveClosure, OWLRL_Semantics
 from ontopy.ontology import Ontology
+from ontopy.utils import asstring
 import owlready2
 
 def print_ttl_files():
@@ -211,7 +213,7 @@ def render_rst_abstract(onto) -> str:
 """
 
 
-def entities_to_rst(entities: list[dict]) -> str:
+def entities_to_rst(entities: list[dict], onto: Ontology) -> str:
     """Converts extracted ontology terms into an RST format."""
     rst = ""
     
@@ -262,20 +264,41 @@ def entities_to_rst(entities: list[dict]) -> str:
                         )
                         
                     else:
-                        val = f"<a href='{val}'>{val}</a>"
+                        val = (
+                            f"<a href='#{val}' "
+                            f"onclick=\""
+                                f"if(!document.getElementById('{val}'))"
+                                f"{{window.location.href='{val}'; return false;}}"
+                            f"\">"
+                            f"{val}</a>"
+                        )
+ 
+
+                        
 
                 rst += f"    <td class=\"element-table-value\">{val}</td>\n"
                 rst += "  </tr>\n"
             
         
         
-        def _get_links(item, key):
+        def _get_links(item, key): #  Clean up this and maybe join with _linkify_text
             links = []
             for ent in item[key]:
+                full_iri = ent.iri
+                fragment_iri = full_iri.split('#')[-1]
                 try:
-                    links.append(f"<a href='#{ent.iri.split('#')[-1]}'>{ent.prefLabel.get_lang('en')[0]}</a>")
+                    val = ent.prefLabel.get_lang('en')[0]
                 except (IndexError, AttributeError):
-                    links.append(f"<a href='#{ent.iri.split('#')[-1]}'>{ent}</a>")
+                    val = ent
+                links.append(
+                    f"<a href='#{fragment_iri}' "
+                    f"onclick=\""
+                    f"if(!document.getElementById('{fragment_iri}'))"
+                    f"{{{{window.location.href='{full_iri}'; return false;}}}}"
+                    f"\">"
+                    f"{val}</a>"
+                )
+
             return links
         
         # Add parent classes section
@@ -301,40 +324,46 @@ def entities_to_rst(entities: list[dict]) -> str:
             rst += "</td>\n"
             rst += "  </tr>\n"
 
-        # Add comments section
-        #if item.get("comment"):
-        #    print(item)
-        #    print(value)
-        #    print(key)
-        #    rst += "  <tr>\n"
-        #    rst += "    <td class=\"element-table-key\"><span class=\"element-table-key\">comments</span></td>\n"
-        #    rst += "    <td class=\"element-table-value\">"
-        #    rst += f"    <td class=\"element-table-value\">{value}</td>\n"
-        #   
-        #    rst += "</td>\n"
-        #    rst += "  </tr>\n"
- 
+
+        def _linkify_text(text: str, onto) -> str:
+            """
+            Wrap each alphanumeric token in <a>…</a>, preserving all punctuation/spaces.
+            """
+            def _replace(match):
+                word = match.group(0)
+                try:
+                    full = onto[word].iri
+                    fragment = full.split("#")[-1]
+                    return (
+                        f"<a href='#{fragment}' "
+                        f"onclick=\""
+                            f"if(!document.getElementById('{fragment}'))"
+                            f"{{window.location.href='{full}'; return false;}}"
+                        f"\">"
+                        f"{word}</a>"
+                    )
+                except (KeyError, AttributeError):
+                    return word
+
+            return re.sub(r"\w+", _replace, text)
+
         # Add restrictions section - each restriction gets its own row
         if item.get("restrictions"):
             # Group restrictions by property_label for cleaner table (optional, but nice)
             grouped_restrictions = {}
             for restriction in item["restrictions"]:
-                try:
-                    target_link = f"<a href='#{restriction.value.iri.split('#')[-1]}'>{restriction.value}</a>"
-                except AttributeError:
-                    target_link = f"<a href='#{restriction.value}'>{restriction.value}</a>"
-
-                if restriction.property not in grouped_restrictions:
-                    grouped_restrictions[restriction.property] = []
-                grouped_restrictions[restriction.property].append(target_link)
-
-            for prop_label, target_links in grouped_restrictions.items():
-                rst += "  <tr>\n"
-                rst += f"    <td class=\"element-table-key\"><span class=\"element-table-key\">{restriction.property}</span></td>\n"
-                rst += "    <td class=\"element-table-value\">"
-                rst += ", ".join(target_links)
-                rst += "</td>\n"
-                rst += "  </tr>\n"
+                original = asstring(restriction)
+                linked = _linkify_text(original, onto)
+                grouped_restrictions.setdefault(restriction.property, []).append(linked)
+            
+            for _, restriction_type in grouped_restrictions.items():
+                for res in restriction_type:
+                    rst += "  <tr>\n"
+                    rst += f"    <td class=\"element-table-key\"><span class=\"element-table-key\">restriction</span></td>\n"
+                    rst += "    <td class=\"element-table-value\">"
+                    rst += res
+                    rst += "</td>\n"
+                    rst += "  </tr>\n"
         rst += "  </table>\n\n"
 
         callout_rst = ""
@@ -367,7 +396,7 @@ def generate_rst_documentation():
             entities = extract_terms_info_sparql(onto)
             rst_content += f"\n{module['section_title']}\n{'=' * len(module['section_title'])}\n\n"
             rst_content += render_rst_abstract(onto)
-            rst_content += entities_to_rst(entities)
+            rst_content += entities_to_rst(entities, onto)
 
     rst_content += render_rst_bottom()
 
