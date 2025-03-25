@@ -1090,8 +1090,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                        emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q120907411" ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=485-06-07" ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A good electron conductor support designed to transfer electrons from the external circuit to the active materials of the cell."@en ;
-                                                       emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """Copper foil
-Aluminum foil"""@en .
+                                                       emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """Copper foil, Aluminum foil"""@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_212af058_3bbb_419f_a9c6_90ba9ebb3706 ;
@@ -3090,8 +3089,7 @@ Aluminum foil"""@en .
                                                        emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q653954" ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-15"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electrode with a well-defined and constant equilibrium potential with respect to which it is possible to measure or calculate electrode potentials of other electrodes by including them in an appropriate electrochemical cell."@en ;
-                                                       emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """The standard hydrogen electrode represents the primary standard in electrochemistry. Elec- trodes of the 2nd kind, such as Ag | AgCl, Hg | Hg2
-Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous solutions containing ions Cl^{−}, SO_4^{2−}, and OH^{−}, respectively."""@en ;
+                                                       emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """The standard hydrogen electrode represents the primary standard in electrochemistry. Elec- trodes of the 2nd kind, such as Ag | AgCl, Hg | Hg2, Cl2, Hg | Hg2SO4, and Hg | HgO, can be used as reference electrodes in aqueous solutions containing ions Cl^{−}, SO_4^{2−}, and OH^{−}, respectively."""@en ;
                                                        emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Electrode that maintains an essentially constant potential under the conditions prevailing in an electrochemical measurement, and that serves for observation, measurement, or control of the potential of the indicator or working electrode."@en ,
                                                                                                       "In potentiometry, under zero current condition, the essentially constant potential is achieved by ensuring a constant composition of solution in contact with the electrode forming a half-cell. Practical reference half-cells are generally non-polarizable electrodes of the 2nd kind (metal | insoluble salt | ion), constructed so that their electrolyte solutions serve as salt bridges to the solutions under investigation."@en ,
                                                                                                       "“Double” junction reference electrodes are recommended when the reference electrolyte contains interfering components."@en ;
