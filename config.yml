@@ -7,6 +7,8 @@ ontology_prefix: "https://w3id.org/emmo/domain/electrochemistry#"
 ontology_description: "The ontology for electrochemical systems."
 
 ttl_files:
+  - section_title: "Electrochemistry Domain Ontology (ECHO)"
+    path: "electrochemistry.ttl"
   - section_title: "Electrochemistry Reference"
     path: "reference/electrochemistry-reference.ttl"
   - section_title: "Electrochemistry Quantities"
@@ -15,8 +17,6 @@ ttl_files:
     path: "modules/electrochemistry-manufacturing.ttl"
   - section_title: "Electrochemistry Testing"
     path: "modules/electrochemistry-testing.ttl"
-  - section_title: "Main Ontology"
-    path: "electrochemistry.ttl"
 
 output:
   inferred_ttl: "electrochemistry-inferred.ttl"

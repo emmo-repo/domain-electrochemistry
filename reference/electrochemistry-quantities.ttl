@@ -670,8 +670,7 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                                          owl:someValuesFrom emmo:EMMO_02e894c3_b793_4197_b120_3442e08f58d1
                                                                        ] ;
                                                        rdfs:comment "Buck and Lindner suggest a slope of 0.6 mV min-1 ."@en ,
-                                                                    """Previously defined response times t95 (corresponding to the 95% change of the potential span) and t* (to 1 mV from the steady value) require prior knowledge of steady-state E values that may not be available. These descriptive quantities underestimate practical response times of ion-selective electrodes in clinical applications where the total span may be narrower than 10 mV. The response time expressed in terms of ΔE/Δt (i.e., rate of cell potential variation with time) seems to be the best choice among non-ideal options. It can be related to t95
-and t* through mathematical models, provided that the long-time potential- determining processes are identified."""@en ;
+                                                                    """Previously defined response times t95 (corresponding to the 95% change of the potential span) and t* (to 1 mV from the steady value) require prior knowledge of steady-state E values that may not be available. These descriptive quantities underestimate practical response times of ion-selective electrodes in clinical applications where the total span may be narrower than 10 mV. The response time expressed in terms of ΔE/Δt (i.e., rate of cell potential variation with time) seems to be the best choice among non-ideal options. It can be related to t95 and t* through mathematical models, provided that the long-time potential- determining processes are identified."""@en ;
                                                        skos:prefLabel "ResponseTimeAtAnISE"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Duration between the time when an ion-selective electrode and an external reference electrode (the two completing the ion-selective electrode cell) are brought into contact with a sample solution (or the time at which the activity of the ion of interest in solution is changed) and the first time at which the slope of the cell potential vs. time plot (ΔE/Δt) becomes equal to a limiting value selected on the basis of the experimental conditions and/or requirements concerning accuracy."@en .
 
@@ -1376,9 +1375,7 @@ and t* through mathematical models, provided that the long-time potential- deter
                                                        rdfs:subClassOf :electrochemistry_05cf26ef_782a_4f66_a196_7004dd973f8e ,
                                                                        :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                                        rdfs:comment "A"@en ,
-                                                                    """The geometric area, A_{geom} , is the interfacial area, determined on the assumption that the interface is truly flat (2-dimensional) and calculated using the geometric data of the involved surfaces.
-
-The real (true) area, A_{real}, takes into account non-idealities of the interface (roughness, porosity, etc.) and can be measured by a variety of electrochemical methods. The electroactive area is the area calculated from experiments with model electroactive species and may be different from the real surface area in cases where not all of the surface is electrochemically active or accessible."""@en ;
+                                                                    """The geometric area, A_{geom} , is the interfacial area, determined on the assumption that the interface is truly flat (2-dimensional) and calculated using the geometric data of the involved surfaces. The real (true) area, A_{real}, takes into account non-idealities of the interface (roughness, porosity, etc.) and can be measured by a variety of electrochemical methods. The electroactive area is the area calculated from experiments with model electroactive species and may be different from the real surface area in cases where not all of the surface is electrochemically active or accessible."""@en ;
                                                        skos:prefLabel "ElectrodeSurfaceArea"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "area of electrode - solution interface."@en .
 
@@ -3200,16 +3197,7 @@ The real (true) area, A_{real}, takes into account non-idealities of the interfa
 :electrochemistry_c55bcb85_b7b8_4e67_8a78_9a42fe25b6cf rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_2a2f59b7_aa16_40aa_9c8b_0de8a2720456 ;
                                                        rdfs:comment "I_{cat}"@en ,
-                                                                    """In either of the two following situations, the current increase is termed a catalytic current:
-
-(i) The scheme below generates a catalytic or regenerative current:
-
-B±e→ B′
-B' + A → B
-
-(ii) The presence at the electrode-solution interface of a substance, which may be added or generated by an electrochemical reaction, decreases the overpotential for the electrochemical reaction of B.
-
-In either case, the magnitude of the catalytic current depends on the applied potential. If the current observed with a mixture of A and B is lower than the sum of the separate currents, the term non-additive current should be used."""@en ;
+                                                                    """In either of the two following situations, the current increase is termed a catalytic current: (i) The scheme below generates a catalytic or regenerative current: B±e→ B′, B' + A → B (ii) The presence at the electrode-solution interface of a substance, which may be added or generated by an electrochemical reaction, decreases the overpotential for the electrochemical reaction of B. In either case, the magnitude of the catalytic current depends on the applied potential. If the current observed with a mixture of A and B is lower than the sum of the separate currents, the term non-additive current should be used."""@en ;
                                                        skos:prefLabel "CatalyticCurrent"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "faradaic current measured in a solution containing two electroactive substances, A and B, that exceeds the sum of the faradaic currents that would be obtained for A and B separately under the same experimental conditions"@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.C00889"@en .

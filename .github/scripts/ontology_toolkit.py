@@ -1,6 +1,7 @@
 import json
 import os
 import sys
+import re
 import subprocess
 import yaml
 import rdflib
@@ -10,6 +11,10 @@ from urllib.request import pathname2url
 from rdflib import Graph
 import logging
 from owlrl import DeductiveClosure, OWLRL_Semantics
+from ontopy.ontology import Ontology
+from ontopy.utils import asstring
+from ontopy.patch import get_preferred_label
+import owlready2
 
 def print_ttl_files():
     config = load_ontology_config()
@@ -109,124 +114,116 @@ def create_jsonld_context_file():
 ########## RST Documentation Generation (ttl_to_rst logic) ##########
 
 def load_ttl_from_file(filepath):
-    g = rdflib.Graph()
-    g.parse(filepath, format="turtle")
-    return g
+    from ontopy import get_ontology
+    onto = get_ontology(filepath).load()
+    return onto
+
+def _extract_all_annotations(value_list):
+    '''Help Function to extract both the text of a locstr and just str
+    from annotations. For now only choosing english. Note that this is a bit of a hack since not all annotations
+    are implemented as a locstr as they should. Perhaps this should be fixed in 
+    emmocheck instead?'''
+    result = []
+    for elem in value_list:
+        # For plain strings: only include if its type is exactly str.
+        if type(elem) is str:
+            result.append(elem)
+        # For locstr strings: include if its language is English.
+        elif hasattr(elem, "lang") and elem.lang == "en":
+            result.append(elem)
+    return result
 
 
-def extract_terms_info_sparql(g: Graph) -> list:
+
+# Standard IRIs for the built‑in annotation properties
+ANNOTATION_RANK = {
+    "prefLabel": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "altLabel":  "http://www.w3.org/2004/02/skos/core#altLabel",
+    "elucidation": "https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",  
+    "comment": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "example": "http://www.w3.org/2004/02/skos/core#example",
+    "seeAlso": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+    "isDefinedBy": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+}
+
+
+def _sorted_annotations(onto: Ontology):
+    # Resolve IRIs → AnnotationProperty instances (in defined order)
+    priorities = [
+        onto[iri]
+        for iri in ANNOTATION_RANK.values()
+        if onto[iri] is not None
+    ]
+
+    def rank(prop):
+        # Exact match for the first three anchors
+        if prop in priorities[:3]:
+
+            return priorities.index(prop)
+
+        # Otherwise find the earliest anchor among its ancestors
+        ancestors = set(prop.ancestors())
+        for idx, anchor in enumerate(priorities[3:], start=3):
+            if anchor in ancestors:
+                return idx
+
+        # Anything else falls to the bottom
+        return len(priorities)
+
+    all_props = list(onto.annotation_properties(imported=True))
+    return sorted(all_props, key=rank)
+
+
+
+def extract_terms_info_sparql(onto: Ontology) -> list:
     """Extracts terms from the TTL graph using SPARQL, including parent, subclass, and restriction links."""
     text_entities = []
 
-    PREFIXES = """
-        PREFIX emmo: <https://w3id.org/emmo#>
-        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        PREFIX owl: <http://www.w3.org/2002/07/owl#>
-        """
+    config = load_ontology_config()
 
-    list_entity_types = [
-        "IRI", "prefLabel", "Elucidation", "Alternative Label(s)",
-        "IEC Reference", "IUPAC Reference", "Wikipedia Reference",
-        "Wikidata Reference", "Comment", 
-        "Tip", "Caution", "Important", "Note", "Danger", "Error",
-        "Warning", "Admonition"
-    ]
+    all_annotations = _sorted_annotations(onto)
+    for entity in onto.get_entities(imported=False):
+        hit_dict = {'IRI': entity.iri}
+        # This is a bit of a hack, need to have a better way to be sure that we only 
+        # consider terms defined in the current ontology (and not just referenes here)
+        if not entity.iri.split('#')[0] == config["ontology_prefix"].rstrip('#/'):
+            continue
+            
 
-    query = PREFIXES + """
-        SELECT ?iri ?prefLabel ?elucidation 
-               (GROUP_CONCAT(?altLabel; SEPARATOR=", ") AS ?altLabels) 
-               ?iecref ?iupacref ?wikipediaref ?wikidataref 
-               ?comment ?tip ?caution ?important ?note ?danger
-               ?error ?warning ?admonition
-        WHERE {
-            ?iri skos:prefLabel ?prefLabel.
+        #if not (isinstance(entity, owlready2.ThingClass) or isinstance(entity, owlready2.PropertyClass)):
+        #    continue
 
-            OPTIONAL { ?iri emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ?elucidation . }
-            OPTIONAL { ?iri skos:altLabel ?altLabel . }
-            OPTIONAL { ?iri emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f ?iecref . }
-            OPTIONAL { ?iri emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 ?iupacref . }
-            OPTIONAL { ?iri emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d ?wikipediaref . }
-            OPTIONAL { ?iri emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 ?wikidataref . }
-            OPTIONAL { ?iri rdfs:comment ?comment . }
-
-            OPTIONAL { ?iri emmo:EMMO_b6730304_cabc_4104_b415_14218466445c ?caution . }
-            OPTIONAL { ?iri emmo:EMMO_5f7abc2a_5b50_41c3_8def_c8ba7c3b083e ?tip . }
-            OPTIONAL { ?iri emmo:EMMO_4c8480cf_56de_41da_8699_f12a9033313a ?important . }
-            OPTIONAL { ?iri skos:note ?note . }
-            OPTIONAL { ?iri emmo:EMMO_95317324_4b53_4665_a087_82c3a2a0540b ?danger . }
-            OPTIONAL { ?iri emmo:EMMO_32214c66_8bce_40f5_b22d_5059f6cf571b ?error . }
-            OPTIONAL { ?iri emmo:EMMO_0fa6566e_500f_4d24_baa9_b2b22c9a0b72 ?warning . }
-            OPTIONAL { ?iri emmo:EMMO_709ee08d_76b1_4fee_be22_925412ac313b ?admonition . }
+        annotations = {a: a._get_values_for_class(entity) for a in all_annotations if a._get_values_for_class(entity)}
+        #annotations=entity.get_annotations()
+        long_annotations = ['http://www.w3.org/2004/02/skos/core#example', 'https://w3id.org/emmo#EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f']
+        annotations_en = {
+            key: _extract_all_annotations(item) if key.iri in long_annotations 
+            else '; '.join(_extract_all_annotations(item))
+            for key, item in annotations.items()
         }
-        GROUP BY ?iri ?prefLabel ?elucidation ?caution ?tip ?important ?note ?danger ?error ?warning ?admonition
-        """
 
-    qres = g.query(query)
+        hit_dict.update(annotations_en)
 
-    for hit in qres:
-        hit_dict = {entity_type: str(entity) for entity_type, entity in zip(list_entity_types, hit)}
 
-        # Fetch direct parents (rdfs:subClassOf)
-        parents = []
-        parent_query = PREFIXES + """
-            SELECT ?parent ?parentLabel WHERE {
-                <%s> rdfs:subClassOf ?parent .
-                ?parent skos:prefLabel ?parentLabel .
-            }
-        """ % hit_dict['IRI']
-        for row in g.query(parent_query):
-            parent_iri, parent_label = row
-            parents.append((str(parent_iri), str(parent_label)))
-        hit_dict["Parent Classes"] = parents
+        parents = [ent for ent in entity.is_a if (isinstance(ent, owlready2.ThingClass) or isinstance(ent, owlready2.PropertyClass))]
+        hit_dict["subclassOf"] = parents
 
         # Fetch direct subclasses
-        subclasses = []
-        subclass_query = PREFIXES + """
-            SELECT ?subclass ?subclassLabel WHERE {
-                ?subclass rdfs:subClassOf <%s> .
-                ?subclass skos:prefLabel ?subclassLabel .
-            }
-        """ % hit_dict['IRI']
-        for row in g.query(subclass_query):
-            subclass_iri, subclass_label = row
-            subclasses.append((str(subclass_iri), str(subclass_label)))
-        hit_dict["Subclasses"] = subclasses
+        subclasses = list(entity.subclasses())
+        hit_dict["subclasses"] = subclasses
 
-        # Fetch OWL Restrictions (object property + someValuesFrom)
-        restrictions = []
-        restriction_query = PREFIXES + """
-            SELECT ?prop ?propLabel ?target ?targetLabel WHERE {
-                <%s> rdfs:subClassOf [
-                    rdf:type owl:Restriction ;
-                    owl:onProperty ?prop ;
-                    owl:someValuesFrom ?target
-                ] .
-                ?prop skos:prefLabel ?propLabel .
-                ?target skos:prefLabel ?targetLabel .
-            }
-        """ % hit_dict['IRI']
-
-        for row in g.query(restriction_query):
-            prop_iri, prop_label, target_iri, target_label = map(str, row)
-            restrictions.append({
-                "property_iri": prop_iri,
-                "property_label": prop_label,
-                "target_iri": target_iri,
-                "target_label": target_label,
-            })
-
-        hit_dict["Restrictions"] = restrictions
+        # Fetch OWL restrictions (object property + someValuesFrom)
+        restrictions = [restriction for restriction in entity.is_a if isinstance(restriction, owlready2.Restriction)]
+        hit_dict["restrictions"] = restrictions
 
         text_entities.append(hit_dict)
 
-    text_entities.sort(key=lambda e: e["prefLabel"])
+    text_entities.sort(key=lambda e: e[onto.prefLabel])
     return text_entities
 
 
 def render_rst_top() -> str:
     config = load_ontology_config()
-
     ontology_name = config["ontology_name"]
     ontology_description = config["ontology_description"]
     ontology_adjective = config["ontology_adjective"]
@@ -236,27 +233,85 @@ def render_rst_top() -> str:
     underline = "=" * len(title)
 
     return f"""
-:html_theme.sidebar_secondary.remove:
 
 {underline}
 {title}
 {underline}
 
-**{ontology_description}**
+"""
 
-The {ontology_name} is a domain of the Elementary Multiperspective Materials Ontology (EMMO), for describing {ontology_adjective} systems, materials, methods, and data. Its primary objective is to support the creation of FAIR, Linked Data within the field of {ontology_noun}. This ontology serves as a foundational resource for harmonizing {ontology_adjective} knowledge representation, enhancing data interoperability, and accelerating progress in electroc{ontology_adjective}hemical research and development.
+def render_rst_abstract(onto) -> str:
 
-This page lists all terms extracted from the {ontology_name.lower()} ontology. It is intended to serve as a reference resource. 
+    return f"""
+
+{onto.metadata.abstract.en[0]}
 
 """
 
+def _get_links(item, key): 
+    """Get HTML links for a list of entitities that
+    can be fetched from the ontology as keys."""
+    links = []
+    for ent in item[key]:
+        full_iri = ent.iri
+        try:
+            val = ent.prefLabel.get_lang('en')[0]
+        except (IndexError, AttributeError):
+            val = ent
+        links.append(_html_links(full_iri, display_text=val))
 
-def entities_to_rst(entities: list[dict]) -> str:
+    return links
+
+def _linkify_manchester(text: str, onto) -> str:
+   """
+   Convert manchester notation as string to HTML links.
+   """
+   def _replace(match):
+       word = match.group(0)
+       try:
+           full = onto[word].iri
+           return _html_links(full, word)
+       except (KeyError, AttributeError):
+           return word
+
+   return re.sub(r"\w+", _replace, text)
+
+def _html_links(full_iri, display_text):
+    """Create the HTML code so that links lead to 
+    the correct fragment in the same document if possibe, 
+    otherwise link to the full IRI"""
+    fragment_iri = full_iri.split('#')[-1]
+    return (
+        f"<a href='#{fragment_iri}' "
+        f"onclick=\""
+        f"if(!document.getElementById('{fragment_iri}'))"
+        f"{{window.location.href='{full_iri}'; return false;}}"
+        f"\">"
+        f"{display_text}</a>"
+    )
+
+def _add_table_row(rst, key, value):
+    try:
+        key = get_preferred_label(key)
+    except AttributeError:
+        key = key
+    rst += "  <tr>\n"
+    rst += f"    <td class=\"element-table-key\"><span class=\"element-table-key\">{key}</span></td>\n"
+    rst += "    <td class=\"element-table-value\">"
+    rst += value
+    rst += "</td>\n"
+    rst += "  </tr>\n"
+    return rst
+
+
+def entities_to_rst(entities: list[dict], onto: Ontology) -> str:
     """Converts extracted ontology terms into an RST format."""
     rst = ""
+    
+    IMAGE_EXTENSIONS = (".png", ".jpg", ".jpeg", ".gif", ".svg")
 
-    callout_keys = {"Tip", "Caution", "Important", "Note", "Danger", "Warning", "Error", "Admonition"}
-
+    callout_keys = {"tip", "caution", "important", "note", "danger", "warning", "error", "admonition"}
+    ls = []
     for item in entities:
         if '#' not in item['IRI']:
             continue
@@ -268,91 +323,77 @@ def entities_to_rst(entities: list[dict]) -> str:
 
         # Create a target anchor so the right-side TOC can link here
         #rst += f".. _{item['prefLabel']}:\n\n"
-
         rst += ".. raw:: html\n\n"
         rst += f"   <div id=\"{iri_suffix}\"></div>\n\n"
-        
-        rst += f"{item['prefLabel']}\n"
-        rst += "-" * len(item['prefLabel']) + "\n\n"
+        rst += f"{item[onto.prefLabel]}\n"
+        rst += "-" * len(item[onto.prefLabel]) + "\n\n"
         rst += f"IRI: {item['IRI']}\n\n"
 
         rst += ".. raw:: html\n\n"
         indent = "  "
         rst += indent + "<table class=\"element-table\">\n"
-
         # Normal properties (skip callouts and special lists handled later)
         for key, value in item.items():
-            if key in ['IRI', 'prefLabel', 'Parent Classes', 'Subclasses', 'Restrictions'] or key in callout_keys or value in ["None", ""]:
+            ls.append(key)
+            if key in ['IRI', 'prefLabel', 'subclassOf', 'subclasses', 'restrictions'] or key in callout_keys or value in ["None", ""]:
                 continue
 
-            rst += "  <tr>\n"
-            rst += f"    <td class=\"element-table-key\"><span class=\"element-table-key\">{key}</span></td>\n"
+            if not isinstance(value, list):
+                value = [value]
+            
+            for val in value:
+                if val.startswith("http"):
+                    if val.lower().endswith(tuple(IMAGE_EXTENSIONS)):
+                        val = (
+                            f'<a href="{val}">'
+                            f'<img src="{val}" alt="{val}" '
+                            f'style="max-width:400px; max-height:300px;"/>'
+                            f'</a>'
+                        )
+                        
+                    else:
+                        val = _html_links(val,val)
 
-            if value.startswith("http"):
-                value = f"<a href='{value}'>{value}</a>"
-
-            rst += f"    <td class=\"element-table-value\">{value}</td>\n"
-            rst += "  </tr>\n"
-
-        # Add parent classes section
-        if item.get("Parent Classes"):
-            rst += "  <tr>\n"
-            rst += "    <td class=\"element-table-key\"><span class=\"element-table-key\">Parent Classes</span></td>\n"
-            rst += "    <td class=\"element-table-value\">"
-            parent_links = [f"<a href='#{iri.split('#')[-1]}'>{label}</a>" for iri, label in item["Parent Classes"]]
-            rst += ", ".join(parent_links)
-            rst += "</td>\n"
-            rst += "  </tr>\n"
-
-        # Add subclasses section
-        if item.get("Subclasses"):
-            rst += "  <tr>\n"
-            rst += "    <td class=\"element-table-key\"><span class=\"element-table-key\">Subclasses</span></td>\n"
-            rst += "    <td class=\"element-table-value\">"
-            subclass_links = [f"<a href='#{iri.split('#')[-1]}'>{label}</a>" for iri, label in item["Subclasses"]]
-            rst += ", ".join(subclass_links)
-            rst += "</td>\n"
-            rst += "  </tr>\n"
+                rst = _add_table_row(rst, key, val) 
+        
 
         # Add restrictions section - each restriction gets its own row
-        if item.get("Restrictions"):
+        if item.get("restrictions"):
             # Group restrictions by property_label for cleaner table (optional, but nice)
             grouped_restrictions = {}
-            for restriction in item["Restrictions"]:
-                prop_label = restriction['property_label']
-                target_link = f"<a href='#{restriction['target_iri'].split('#')[-1]}'>{restriction['target_label']}</a>"
-                if prop_label not in grouped_restrictions:
-                    grouped_restrictions[prop_label] = []
-                grouped_restrictions[prop_label].append(target_link)
+            for restriction in item["restrictions"]:
+                original = asstring(restriction)
+                linked = _linkify_manchester(original, onto)
+                grouped_restrictions.setdefault(restriction.property, []).append(linked)
+            
+            for _, restriction_type in grouped_restrictions.items():
+                for res in restriction_type:
+                    to_add = res
+                    rst = _add_table_row(rst, 'restriction', to_add)
 
-            for prop_label, target_links in grouped_restrictions.items():
-                rst += "  <tr>\n"
-                rst += f"    <td class=\"element-table-key\"><span class=\"element-table-key\">{prop_label}</span></td>\n"
-                rst += "    <td class=\"element-table-value\">"
-                rst += ", ".join(target_links)
-                rst += "</td>\n"
-                rst += "  </tr>\n"
+        # Add parent classes section
+        if item.get("subclassOf"):
+
+            parent_links = _get_links(item, "subclassOf")
+            to_add = ", ".join(parent_links)
+            rst = _add_table_row(rst, 'subclassOf',to_add)
+            
+        # Add subclasses section
+        if item.get("subclasses"):
+            
+            subclass_links = _get_links(item, "subclasses")
+            to_add = ", ".join(subclass_links)
+            rst = _add_table_row(rst, 'subclasses', to_add)
+
 
         rst += "  </table>\n\n"
-
-
-        # Add callouts (admonitions) below the table
-        callout_mapping = {
-            "Tip": "tip",
-            "Caution": "caution",
-            "Important": "important",
-            "Note": "note",
-            "Danger": "danger",
-            "Warning": "warning",
-            "Error": "error",
-            "Admonition": "admonition"
-        }
-
+        
         callout_rst = ""
-        for callout, admonition in callout_mapping.items():
+        #for callout, admonition in callout_mapping.items():
+        for callout in callout_keys:
             callout_value = item.get(callout, "").strip()
             if callout_value and callout_value.lower() != "none":
-                callout_rst += f".. {admonition}::\n\n"
+                callout_rst += f".. {callout}::\n\n"
                 for line in callout_value.splitlines():
                     callout_rst += f"   {line}\n"
                 callout_rst += "\n"
@@ -368,16 +409,16 @@ def render_rst_bottom():
 def generate_rst_documentation():
     config = load_ontology_config()
     rst_filename = config["rst_output_filename"]
-
     rst_content = render_rst_top()
 
     for module in config["ttl_files"]:
         filepath = module["path"]
         if os.path.isfile(filepath):
-            g = load_ttl_from_file(filepath)
-            entities = extract_terms_info_sparql(g)
+            onto = load_ttl_from_file(filepath)
+            entities = extract_terms_info_sparql(onto)
             rst_content += f"\n{module['section_title']}\n{'=' * len(module['section_title'])}\n\n"
-            rst_content += entities_to_rst(entities)
+            rst_content += render_rst_abstract(onto)
+            rst_content += entities_to_rst(entities, onto)
 
     rst_content += render_rst_bottom()
 
@@ -479,6 +520,9 @@ def run_reasoner_check():
         sys.exit(1)
 
 ########## Main Entry Point ##########
+
+#def run_ontodoc():
+
 
 def main():
     config = load_ontology_config()
