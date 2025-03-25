@@ -13,6 +13,7 @@ import logging
 from owlrl import DeductiveClosure, OWLRL_Semantics
 from ontopy.ontology import Ontology
 from ontopy.utils import asstring
+from ontopy.patch import get_preferred_label
 import owlready2
 
 def print_ttl_files():
@@ -133,35 +134,70 @@ def _extract_all_annotations(value_list):
     return result
 
 
+
+# Standard IRIs for the built‑in annotation properties
+ANNOTATION_RANK = {
+    "prefLabel": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "altLabel":  "http://www.w3.org/2004/02/skos/core#altLabel",
+    "elucidation": "https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9",  
+    "comment": "http://www.w3.org/2000/01/rdf-schema#comment",
+    "example": "http://www.w3.org/2004/02/skos/core#example",
+    "seeAlso": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+    "isDefinedBy": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+}
+
+
+def _sorted_annotations(onto: Ontology):
+    # Resolve IRIs → AnnotationProperty instances (in defined order)
+    priorities = [
+        onto[iri]
+        for iri in ANNOTATION_RANK.values()
+        if onto[iri] is not None
+    ]
+
+    def rank(prop):
+        # Exact match for the first three anchors
+        if prop in priorities[:3]:
+
+            return priorities.index(prop)
+
+        # Otherwise find the earliest anchor among its ancestors
+        ancestors = set(prop.ancestors())
+        for idx, anchor in enumerate(priorities[3:], start=3):
+            if anchor in ancestors:
+                return idx
+
+        # Anything else falls to the bottom
+        return len(priorities)
+
+    all_props = list(onto.annotation_properties(imported=True))
+    return sorted(all_props, key=rank)
+
+
+
 def extract_terms_info_sparql(onto: Ontology) -> list:
     """Extracts terms from the TTL graph using SPARQL, including parent, subclass, and restriction links."""
     text_entities = []
 
-    list_entity_types = [
-        "IRI", "prefLabel", "Elucidation", "Alternative Label(s)",
-        "IEC Reference", "IUPAC Reference", "Wikipedia Reference",
-        "Wikidata Reference", "Comment", 
-        "Tip", "Caution", "Important", "Note", "Danger", "Error",
-        "Warning", "Admonition"
-    ]
-
     config = load_ontology_config()
 
+    all_annotations = _sorted_annotations(onto)
     for entity in onto.get_entities(imported=False):
         hit_dict = {'IRI': entity.iri}
         # This is a bit of a hack, need to have a better way to be sure that we only 
         # consider terms defined in the current ontology (and not just referenes here)
         if not entity.iri.split('#')[0] == config["ontology_prefix"].rstrip('#/'):
             continue
- 
+            
 
         #if not (isinstance(entity, owlready2.ThingClass) or isinstance(entity, owlready2.PropertyClass)):
         #    continue
 
-        annotations = entity.get_annotations()
-        long_annotations = ['example', 'comment']
+        annotations = {a: a._get_values_for_class(entity) for a in all_annotations if a._get_values_for_class(entity)}
+        #annotations=entity.get_annotations()
+        long_annotations = ['http://www.w3.org/2004/02/skos/core#example', 'https://w3id.org/emmo#EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f']
         annotations_en = {
-            key: _extract_all_annotations(item) if key in long_annotations 
+            key: _extract_all_annotations(item) if key.iri in long_annotations 
             else '; '.join(_extract_all_annotations(item))
             for key, item in annotations.items()
         }
@@ -182,7 +218,7 @@ def extract_terms_info_sparql(onto: Ontology) -> list:
 
         text_entities.append(hit_dict)
 
-    text_entities.sort(key=lambda e: e["prefLabel"])
+    text_entities.sort(key=lambda e: e[onto.prefLabel])
     return text_entities
 
 
@@ -213,7 +249,8 @@ def render_rst_abstract(onto) -> str:
 """
 
 def _get_links(item, key): 
-    """Get HTML links for a list of entities."""
+    """Get HTML links for a list of entitities that
+    can be fetched from the ontology as keys."""
     links = []
     for ent in item[key]:
         full_iri = ent.iri
@@ -241,7 +278,7 @@ def _linkify_manchester(text: str, onto) -> str:
 
 def _html_links(full_iri, display_text):
     """Create the HTML code so that links lead to 
-    the correct fragment in the document if possibe, 
+    the correct fragment in the same document if possibe, 
     otherwise link to the full IRI"""
     fragment_iri = full_iri.split('#')[-1]
     return (
@@ -252,6 +289,19 @@ def _html_links(full_iri, display_text):
         f"\">"
         f"{display_text}</a>"
     )
+
+def _add_table_row(rst, key, value):
+    try:
+        key = get_preferred_label(key)
+    except AttributeError:
+        key = key
+    rst += "  <tr>\n"
+    rst += f"    <td class=\"element-table-key\"><span class=\"element-table-key\">{key}</span></td>\n"
+    rst += "    <td class=\"element-table-value\">"
+    rst += value
+    rst += "</td>\n"
+    rst += "  </tr>\n"
+    return rst
 
 
 def entities_to_rst(entities: list[dict], onto: Ontology) -> str:
@@ -273,11 +323,10 @@ def entities_to_rst(entities: list[dict], onto: Ontology) -> str:
 
         # Create a target anchor so the right-side TOC can link here
         #rst += f".. _{item['prefLabel']}:\n\n"
-
         rst += ".. raw:: html\n\n"
         rst += f"   <div id=\"{iri_suffix}\"></div>\n\n"
-        rst += f"{item['prefLabel']}\n"
-        rst += "-" * len(item['prefLabel']) + "\n\n"
+        rst += f"{item[onto.prefLabel]}\n"
+        rst += "-" * len(item[onto.prefLabel]) + "\n\n"
         rst += f"IRI: {item['IRI']}\n\n"
 
         rst += ".. raw:: html\n\n"
@@ -293,8 +342,6 @@ def entities_to_rst(entities: list[dict], onto: Ontology) -> str:
                 value = [value]
             
             for val in value:
-                rst += "  <tr>\n"
-                rst += f"    <td class=\"element-table-key\"><span class=\"element-table-key\">{key}</span></td>\n"
                 if val.startswith("http"):
                     if val.lower().endswith(tuple(IMAGE_EXTENSIONS)):
                         val = (
@@ -305,42 +352,10 @@ def entities_to_rst(entities: list[dict], onto: Ontology) -> str:
                         )
                         
                     else:
-                        val = (
-                            f"<a href='#{val}' "
-                            f"onclick=\""
-                                f"if(!document.getElementById('{val}'))"
-                                f"{{window.location.href='{val}'; return false;}}"
-                            f"\">"
-                            f"{val}</a>"
-                        )
+                        val = _html_links(val,val)
 
-                rst += f"    <td class=\"element-table-value\">{val}</td>\n"
-                rst += "  </tr>\n"
-            
+                rst = _add_table_row(rst, key, val) 
         
-        
-        # Add parent classes section
-        if item.get("subclassOf"):
-            rst += "  <tr>\n"
-            rst += "    <td class=\"element-table-key\"><span class=\"element-table-key\">subclassOf</span></td>\n"
-            rst += "    <td class=\"element-table-value\">"
-
-            parent_links = _get_links(item, "subclassOf")
-            
-            rst += ", ".join(parent_links)
-            rst += "</td>\n"
-            rst += "  </tr>\n"
-
-        # Add subclasses section
-        if item.get("subclasses"):
-            rst += "  <tr>\n"
-            rst += "    <td class=\"element-table-key\"><span class=\"element-table-key\">subclasses</span></td>\n"
-            rst += "    <td class=\"element-table-value\">"
-            
-            subclass_links = _get_links(item, "subclasses")
-            rst += ", ".join(subclass_links)
-            rst += "</td>\n"
-            rst += "  </tr>\n"
 
         # Add restrictions section - each restriction gets its own row
         if item.get("restrictions"):
@@ -353,14 +368,26 @@ def entities_to_rst(entities: list[dict], onto: Ontology) -> str:
             
             for _, restriction_type in grouped_restrictions.items():
                 for res in restriction_type:
-                    rst += "  <tr>\n"
-                    rst += f"    <td class=\"element-table-key\"><span class=\"element-table-key\">restriction</span></td>\n"
-                    rst += "    <td class=\"element-table-value\">"
-                    rst += res
-                    rst += "</td>\n"
-                    rst += "  </tr>\n"
-        rst += "  </table>\n\n"
+                    to_add = res
+                    rst = _add_table_row(rst, 'restriction', to_add)
 
+        # Add parent classes section
+        if item.get("subclassOf"):
+
+            parent_links = _get_links(item, "subclassOf")
+            to_add = ", ".join(parent_links)
+            rst = _add_table_row(rst, 'subclassOf',to_add)
+            
+        # Add subclasses section
+        if item.get("subclasses"):
+            
+            subclass_links = _get_links(item, "subclasses")
+            to_add = ", ".join(subclass_links)
+            rst = _add_table_row(rst, 'subclasses', to_add)
+
+
+        rst += "  </table>\n\n"
+        
         callout_rst = ""
         #for callout, admonition in callout_mapping.items():
         for callout in callout_keys:
