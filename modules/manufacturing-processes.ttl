@@ -10,7 +10,9 @@
 
 <https://w3id.org/emmo/domain/manufacturing/modules/manufacturing-processes> rdf:type owl:Ontology ;
                                                                                         owl:versionIRI <https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/modules/manufacturing-processes> ;
-                                                                                        owl:imports <https://w3id.org/emmo/1.0.0> ;
+                                                                                        owl:imports <https://w3id.org/emmo/1.0.0/disciplines/manufacturing> ,
+                                                                                                    <https://w3id.org/emmo/1.0.0/mereocausality> ,
+                                                                                                    <https://w3id.org/emmo/1.0.0/reference/agency> ;
                                                                                         <http://purl.org/dc/terms/abstract> "Terms for describing manufacturing processes"@en .
 
 ###  https://w3id.org/emmo/domain/manufacturing#manufacturing_22b49463_ec07_4c9e_9b85_d004039b0d99
