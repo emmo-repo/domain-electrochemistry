@@ -26,7 +26,7 @@
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_137dc19f_a3af_49af_971f_743d27e09f43
 :electrochemistry_137dc19f_a3af_49af_971f_743d27e09f43 rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ,
+                                                       rdfs:subClassOf :Electrochemical ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
                                                                          owl:someValuesFrom :electrochemistry_53fe3f58_0802_41cf_af69_4784fc42cc30
@@ -42,7 +42,7 @@
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_435b22d4_c441_45ea_8c79_0cbec11fd287
 :electrochemistry_435b22d4_c441_45ea_8c79_0cbec11fd287 rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ,
+                                                       rdfs:subClassOf :Electrochemical ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
                                                                          owl:someValuesFrom :electrochemistry_d3e2d213_d078_4b9a_8beb_62f063e57d69
@@ -63,7 +63,7 @@
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_99b2b3ad_8efc_48ee_a630_6d805a47efdc
 :electrochemistry_99b2b3ad_8efc_48ee_a630_6d805a47efdc rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ,
+                                                       rdfs:subClassOf :Electrochemical ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
                                                                          owl:someValuesFrom :electrochemistry_53fe3f58_0802_41cf_af69_4784fc42cc30
@@ -75,7 +75,7 @@
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_00244072_8d24_4e34_9f6a_c7b2b132b2c8
 :electrochemistry_00244072_8d24_4e34_9f6a_c7b2b132b2c8 rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ;
+                                                       rdfs:subClassOf :Electrochemical ;
                                                        skos:prefLabel "PseudoOpenCircuitVoltageTest"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a test where an electrochemical device is operated at a very low current, approximating equilibrium behaviour, in order to extract a pseudo-open-circuit-voltage profile"@en .
 
@@ -83,7 +83,7 @@
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_25d01d13_3ca5_4619_98c1_8ebbd01ad794
 :electrochemistry_25d01d13_3ca5_4619_98c1_8ebbd01ad794 rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ,
+                                                       rdfs:subClassOf :Electrochemical ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
                                                                          owl:someValuesFrom :electrochemistry_06d8e1ee_924a_4915_998d_33a69f41dadc
@@ -174,14 +174,14 @@
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c7e37e88_ed86_4acd_99ee_b6a2a5fcbd24
 :electrochemistry_c7e37e88_ed86_4acd_99ee_b6a2a5fcbd24 rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ;
+                                                       rdfs:subClassOf :Electrochemical ;
                                                        skos:prefLabel "ReferencePerformanceTest"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a periodic assessment of battery degradation during life testing"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c91164b8_5e56_4c94_bad1_d7ada576b0e7
 :electrochemistry_c91164b8_5e56_4c94_bad1_d7ada576b0e7 rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ,
+                                                       rdfs:subClassOf :Electrochemical ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
                                                                          owl:someValuesFrom <https://w3id.org/emmo/domain/characterisation-methodology/chameo#OpenCircuitHold>
