@@ -9,24 +9,31 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
+@prefix chems: <https://w3id.org/emmo/domain/chemical-substance#> .
 @prefix schema: <https://schema.org/> .
-@prefix chemsub: <https://w3id.org/emmo/domain/chemical-substance#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix annotations: <https://w3id.org/emmo/top/annotations#> .
-@base <https://w3id.org/emmo/domain/electrochemistry/modules/electrochemistry-testing> .
+@base <https://w3id.org/emmo/domain/electrochemistry#> .
 
 <https://w3id.org/emmo/domain/electrochemistry/modules/electrochemistry-testing> rdf:type owl:Ontology ;
-                                                                                  owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.28.4-beta/modules/electrochemistry-testing> ;
-                                                                                  owl:imports <https://w3id.org/emmo/domain/electrochemistry/0.28.4-beta/reference/electrochemistry-reference> ;
+                                                                                  owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.28.5-beta/modules/electrochemistry-testing> ;
+                                                                                  owl:imports <https://w3id.org/emmo/domain/electrochemistry/0.28.5-beta/reference/electrochemistry-reference> ;
                                                                                   dcterms:abstract "The electrochemistry-testing module is an ontology containing the domain-level terms for describing the testing of electrochemical devices. This ontology features terms that are common to testing many different types of electrochemcial devices (e.g batteries, supercaps, fuel cells, electrolyzers, etc.). For device-specific testing terms, please refer to the associated domain ontology."@en .
 
 #################################################################
 #    Classes
 #################################################################
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_00244072_8d24_4e34_9f6a_c7b2b132b2c8
+:electrochemistry_00244072_8d24_4e34_9f6a_c7b2b132b2c8 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :Electrochemical ;
+                                                       skos:prefLabel "PseudoOpenCircuitVoltageTest"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a test where an electrochemical device is operated at a very low current, approximating equilibrium behaviour, in order to extract a pseudo-open-circuit-voltage profile"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_137dc19f_a3af_49af_971f_743d27e09f43
 :electrochemistry_137dc19f_a3af_49af_971f_743d27e09f43 rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ,
+                                                       rdfs:subClassOf :Electrochemical ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
                                                                          owl:someValuesFrom :electrochemistry_53fe3f58_0802_41cf_af69_4784fc42cc30
@@ -39,51 +46,9 @@
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a process that measures the total amount of charge an electrochemical device can store and deliver under specified conditions"@en .
 
 
-
-###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_435b22d4_c441_45ea_8c79_0cbec11fd287
-:electrochemistry_435b22d4_c441_45ea_8c79_0cbec11fd287 rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ,
-                                                                       [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
-                                                                         owl:someValuesFrom :electrochemistry_d3e2d213_d078_4b9a_8beb_62f063e57d69
-                                                                       ] ;
-                                                       skos:prefLabel "CyclingTest"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a process that determines the number of complete charge-discharge cycles an electrochemical device can undergo before its capacity falls below a predefined threshold"@en .
-
-
-
-###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_830d02dd_f897_4c3c_95a7_c5e5eafa346a
-:electrochemistry_830d02dd_f897_4c3c_95a7_c5e5eafa346a rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_472a0ca2_58bf_4618_b561_6fe68bd9fd49 ;
-                                                       owl:deprecated "true"^^xsd:boolean ;
-                                                       skos:prefLabel "ElectrochemicalTestingProcedure"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of evaluating the performance and operational capabilities of an electrochemical device under specific conditions to determine its practical suitability for intended applications"@en .
-
-
-
-###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_99b2b3ad_8efc_48ee_a630_6d805a47efdc
-:electrochemistry_99b2b3ad_8efc_48ee_a630_6d805a47efdc rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ,
-                                                                       [ rdf:type owl:Restriction ;
-                                                                         owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
-                                                                         owl:someValuesFrom :electrochemistry_53fe3f58_0802_41cf_af69_4784fc42cc30
-                                                                       ] ;
-                                                       skos:prefLabel "CRateTest"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a process that assesses the performance of an electrochemical device at different charge and discharge rates to understand its behavior under various current loads"@en .
-
-
-
-###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_00244072_8d24_4e34_9f6a_c7b2b132b2c8
-:electrochemistry_00244072_8d24_4e34_9f6a_c7b2b132b2c8 rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ;
-                                                       skos:prefLabel "PseudoOpenCircuitVoltageTest"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a test where an electrochemical device is operated at a very low current, approximating equilibrium behaviour, in order to extract a pseudo-open-circuit-voltage profile"@en .
-
-
-
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_25d01d13_3ca5_4619_98c1_8ebbd01ad794
 :electrochemistry_25d01d13_3ca5_4619_98c1_8ebbd01ad794 rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ,
+                                                       rdfs:subClassOf :Electrochemical ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
                                                                          owl:someValuesFrom :electrochemistry_06d8e1ee_924a_4915_998d_33a69f41dadc
@@ -122,6 +87,25 @@
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a step in an electrochemical testing workflow in which the electrochemical device is held at open-circuit conditions (i.e. cell current = 0 A) and occuring in series with at least one active (i.e. cell current ~= 0 A) step."@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_435b22d4_c441_45ea_8c79_0cbec11fd287
+:electrochemistry_435b22d4_c441_45ea_8c79_0cbec11fd287 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :Electrochemical ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
+                                                                         owl:someValuesFrom :electrochemistry_d3e2d213_d078_4b9a_8beb_62f063e57d69
+                                                                       ] ;
+                                                       skos:prefLabel "CyclingTest"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a process that determines the number of complete charge-discharge cycles an electrochemical device can undergo before its capacity falls below a predefined threshold"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_830d02dd_f897_4c3c_95a7_c5e5eafa346a
+:electrochemistry_830d02dd_f897_4c3c_95a7_c5e5eafa346a rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_472a0ca2_58bf_4618_b561_6fe68bd9fd49 ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       skos:prefLabel "ElectrochemicalTestingProcedure"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of evaluating the performance and operational capabilities of an electrochemical device under specific conditions to determine its practical suitability for intended applications"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_916b1863_f417_4b94_9407_9d749ada9ed5
 :electrochemistry_916b1863_f417_4b94_9407_9d749ada9ed5 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_5548f188_df00_4c05_ae98_7846e92efe36 ;
@@ -132,6 +116,20 @@
                                                                                                       "the accumulation is similar to that used in stripping voltammetry"@en ,
                                                                                                       "the stripping potentiogram shows staircase curves of potential as a function of time. Frequently, the first derivative is displayed (dE/dt=f(t)), as this produces peak-shaped signals. The time between transitions (peaks) is proportional to the concentration of analyte in the test solution"@en ,
                                                                                                       "the time between changes in potential in step 2 is related to the concentration of analyte in the solution"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_916b1863_f417_4b94_9407_9d749ada9ed5 ;
+   owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
+   owl:annotatedTarget "the stripping potentiogram shows staircase curves of potential as a function of time. Frequently, the first derivative is displayed (dE/dt=f(t)), as this produces peak-shaped signals. The time between transitions (peaks) is proportional to the concentration of analyte in the test solution"@en ;
+   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+ ] .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_916b1863_f417_4b94_9407_9d749ada9ed5 ;
+   owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
+   owl:annotatedTarget "the time between changes in potential in step 2 is related to the concentration of analyte in the solution"@en ;
+   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+ ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_916b1863_f417_4b94_9407_9d749ada9ed5 ;
@@ -154,34 +152,28 @@
    dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource :electrochemistry_916b1863_f417_4b94_9407_9d749ada9ed5 ;
-   owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
-   owl:annotatedTarget "the stripping potentiogram shows staircase curves of potential as a function of time. Frequently, the first derivative is displayed (dE/dt=f(t)), as this produces peak-shaped signals. The time between transitions (peaks) is proportional to the concentration of analyte in the test solution"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
- ] .
 
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource :electrochemistry_916b1863_f417_4b94_9407_9d749ada9ed5 ;
-   owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
-   owl:annotatedTarget "the time between changes in potential in step 2 is related to the concentration of analyte in the solution"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
- ] .
-
-
-
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_99b2b3ad_8efc_48ee_a630_6d805a47efdc
+:electrochemistry_99b2b3ad_8efc_48ee_a630_6d805a47efdc rdf:type owl:Class ;
+                                                       rdfs:subClassOf :Electrochemical ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
+                                                                         owl:someValuesFrom :electrochemistry_53fe3f58_0802_41cf_af69_4784fc42cc30
+                                                                       ] ;
+                                                       skos:prefLabel "CRateTest"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a process that assesses the performance of an electrochemical device at different charge and discharge rates to understand its behavior under various current loads"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c7e37e88_ed86_4acd_99ee_b6a2a5fcbd24
 :electrochemistry_c7e37e88_ed86_4acd_99ee_b6a2a5fcbd24 rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ;
+                                                       rdfs:subClassOf :Electrochemical ;
                                                        skos:prefLabel "ReferencePerformanceTest"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a periodic assessment of battery degradation during life testing"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c91164b8_5e56_4c94_bad1_d7ada576b0e7
 :electrochemistry_c91164b8_5e56_4c94_bad1_d7ada576b0e7 rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ,
+                                                       rdfs:subClassOf :Electrochemical ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
                                                                          owl:someValuesFrom <https://w3id.org/emmo/domain/characterisation-methodology/chameo#OpenCircuitHold>
@@ -226,5 +218,4 @@
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The measurement step in an electrochemical testing procedure or characterization method with output data for voltage, current, time, and temperature."@en .
 
 
-
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
