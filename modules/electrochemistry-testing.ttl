@@ -9,15 +9,15 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann: <http://purl.org/vocab/vann/> .
+@prefix chems: <https://w3id.org/emmo/domain/chemical-substance#> .
 @prefix schema: <https://schema.org/> .
-@prefix chemsub: <https://w3id.org/emmo/domain/chemical-substance#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix annotations: <https://w3id.org/emmo/top/annotations#> .
-@base <https://w3id.org/emmo/domain/electrochemistry/modules/electrochemistry-testing> .
+@base <https://w3id.org/emmo/domain/electrochemistry#> .
 
 <https://w3id.org/emmo/domain/electrochemistry/modules/electrochemistry-testing> rdf:type owl:Ontology ;
-                                                                                  owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.28.4-beta/modules/electrochemistry-testing> ;
-                                                                                  owl:imports <https://w3id.org/emmo/domain/electrochemistry/0.28.4-beta/reference/electrochemistry-reference> ;
+                                                                                  owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.28.5-beta/modules/electrochemistry-testing> ;
+                                                                                  owl:imports <https://w3id.org/emmo/domain/electrochemistry/0.28.5-beta/reference/electrochemistry-reference> ;
                                                                                   dcterms:abstract "The electrochemistry-testing module is an ontology containing the domain-level terms for describing the testing of electrochemical devices. This ontology features terms that are common to testing many different types of electrochemcial devices (e.g batteries, supercaps, fuel cells, electrolyzers, etc.). For device-specific testing terms, please refer to the associated domain ontology."@en .
 
 #################################################################
@@ -65,7 +65,7 @@
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_137dc19f_a3af_49af_971f_743d27e09f43
 :electrochemistry_137dc19f_a3af_49af_971f_743d27e09f43 rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ,
+                                                       rdfs:subClassOf :Electrochemical ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
                                                                          owl:someValuesFrom :electrochemistry_53fe3f58_0802_41cf_af69_4784fc42cc30
@@ -80,7 +80,7 @@
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_25d01d13_3ca5_4619_98c1_8ebbd01ad794
 :electrochemistry_25d01d13_3ca5_4619_98c1_8ebbd01ad794 rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ,
+                                                       rdfs:subClassOf :Electrochemical ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
                                                                          owl:someValuesFrom :electrochemistry_06d8e1ee_924a_4915_998d_33a69f41dadc
@@ -198,14 +198,14 @@
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c7e37e88_ed86_4acd_99ee_b6a2a5fcbd24
 :electrochemistry_c7e37e88_ed86_4acd_99ee_b6a2a5fcbd24 rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ;
+                                                       rdfs:subClassOf :Electrochemical ;
                                                        skos:prefLabel "ReferencePerformanceTest"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a periodic assessment of battery degradation during life testing"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c91164b8_5e56_4c94_bad1_d7ada576b0e7
 :electrochemistry_c91164b8_5e56_4c94_bad1_d7ada576b0e7 rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ,
+                                                       rdfs:subClassOf :Electrochemical ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
                                                                          owl:someValuesFrom <https://w3id.org/emmo/domain/characterisation-methodology/chameo#OpenCircuitHold>

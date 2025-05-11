@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/emmo/domain/electrochemistry#> .
+@prefix : <https://w3id.org/emmo/domain/electrochemistry#> .                                                                                                                                                                                                                      
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -12,7 +12,7 @@
 @base <https://w3id.org/emmo/domain/electrochemistry/reference/electrochemistry-quantities> .
 
 <https://w3id.org/emmo/domain/electrochemistry/reference/electrochemistry-quantities> rdf:type owl:Ontology ;
-                                                                                       owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.28.4-beta/reference/electrochemistry-quantities> ;
+                                                                                       owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.28.5-beta/reference/electrochemistry-quantities> ;
                                                                                        owl:imports <https://w3id.org/emmo/1.0.0/disciplines/isq> ;
                                                                                        dcterms:abstract "This electrochemical quantities ontology is a domain of the Elementary Multiperspective Materials Ontology (EMMO). It is a specialized framework designed to represent and organize knowledge about electrochemical quantities. It is designed to integrate with the electrochemistry domain ontology or other ontologies from the EMMO ecosystem. The main focus of this ontology is to provide machine-readable descriptions of common electrochemical quantities, linking both to the larger descriptions of physical quantities in EMMO as well as other sources of information like the IEC, QUDT, Wikidata, etc. It should be used to support linked data generation in the electrochemistry domain."@en ;
                                                                                        dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
@@ -21,7 +21,7 @@
                                                                                        dcterms:creator <https://orcid.org/0000-0002-8758-6109> ,
                                                                                                        <https://orcid.org/0000-0003-2954-1233> ;
                                                                                        dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                                                                       owl:versionInfo "0.28.4-beta" .
+                                                                                       owl:versionInfo "0.28.5-beta" .
 
 #################################################################
 #    Annotation properties
@@ -872,8 +872,7 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_25e20915_c35d_4bee_ad31_736235a79780
 :electrochemistry_25e20915_c35d_4bee_ad31_736235a79780 rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ,
-                                                                       :electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee ;
+                                                       rdfs:subClassOf :electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee ;
                                                        rdfs:comment "the discharge rate is calculated as the rated capacity divided by the corresponding discharge time which results in an electric current"@en ,
                                                                     "the quantity DRate is not used for energy-decoupled batteries like Redox Flox batteries"@en ;
                                                        rdfs:seeAlso "CRate"@en ;
@@ -2982,8 +2981,7 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112
 :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_79751276_b2d0_4e2f_bbd4_99d412f43d55 ,
-                                                                       emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
+                                                       rdfs:subClassOf emmo:EMMO_79751276_b2d0_4e2f_bbd4_99d412f43d55 ;
                                                        skos:prefLabel "ElectrochemicalQuantity"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Physical quantities defined within the domain of electrochemistry."@en .
 
@@ -3541,8 +3539,7 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee
 :electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ,
-                                                                       :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
+                                                       rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
                                                                          owl:someValuesFrom :electrochemistry_67930f7b_ad4c_4b21_9b2e_a000e5c153ae
