@@ -16,9 +16,41 @@
 @base <https://w3id.org/emmo/domain/electrochemistry#> .
 
 <https://w3id.org/emmo/domain/electrochemistry/modules/electrochemistry-testing> rdf:type owl:Ontology ;
-                                                                                  owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.28.5-beta/modules/electrochemistry-testing> ;
-                                                                                  owl:imports <https://w3id.org/emmo/domain/electrochemistry/0.28.5-beta/reference/electrochemistry-reference> ;
+                                                                                  owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.29.0-beta/modules/electrochemistry-testing> ;
+                                                                                  owl:imports <https://w3id.org/emmo/domain/electrochemistry/0.29.0-beta/reference/electrochemistry-reference> ;
                                                                                   dcterms:abstract "The electrochemistry-testing module is an ontology containing the domain-level terms for describing the testing of electrochemical devices. This ontology features terms that are common to testing many different types of electrochemcial devices (e.g batteries, supercaps, fuel cells, electrolyzers, etc.). For device-specific testing terms, please refer to the associated domain ontology."@en .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_52702560_2034_4369_ab7f_28e8bb32680c
+:electrochemistry_52702560_2034_4369_ab7f_28e8bb32680c rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
+                                                       skos:prefLabel "hasTestEquipment"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a property linking an electrochemical test to the equipment that is used to carry out the test."@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5998f7c1_d8e3_4c55_8170_c358e1b0c93c
+:electrochemistry_5998f7c1_d8e3_4c55_8170_c358e1b0c93c rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
+                                                       skos:prefLabel "hasTestObject"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a property linking an electrochemical test to the object being tested"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e55f2798_55c8_4fc5_9abb_2f8ac101f3b8
+:electrochemistry_e55f2798_55c8_4fc5_9abb_2f8ac101f3b8 rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
+                                                       skos:prefLabel "hasControlParameter"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a property that links a task to a parameter that is controlled during the task"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e6a7d617_a581_4782_8374_37d3305e0258
+:electrochemistry_e6a7d617_a581_4782_8374_37d3305e0258 rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
+                                                       skos:prefLabel "hasTerminationParameter"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a property that links a task to a parameter that determines the termination condition for that task"@en .
+
 
 #################################################################
 #    Classes
@@ -26,7 +58,7 @@
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_00244072_8d24_4e34_9f6a_c7b2b132b2c8
 :electrochemistry_00244072_8d24_4e34_9f6a_c7b2b132b2c8 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :Electrochemical ;
+                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ;
                                                        skos:prefLabel "PseudoOpenCircuitVoltageTest"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a test where an electrochemical device is operated at a very low current, approximating equilibrium behaviour, in order to extract a pseudo-open-circuit-voltage profile"@en .
 
@@ -89,7 +121,7 @@
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_435b22d4_c441_45ea_8c79_0cbec11fd287
 :electrochemistry_435b22d4_c441_45ea_8c79_0cbec11fd287 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :Electrochemical ,
+                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
                                                                          owl:someValuesFrom :electrochemistry_d3e2d213_d078_4b9a_8beb_62f063e57d69
@@ -155,7 +187,7 @@
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_99b2b3ad_8efc_48ee_a630_6d805a47efdc
 :electrochemistry_99b2b3ad_8efc_48ee_a630_6d805a47efdc rdf:type owl:Class ;
-                                                       rdfs:subClassOf :Electrochemical ,
+                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
                                                                          owl:someValuesFrom :electrochemistry_53fe3f58_0802_41cf_af69_4784fc42cc30
@@ -218,4 +250,4 @@
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The measurement step in an electrochemical testing procedure or characterization method with output data for voltage, current, time, and temperature."@en .
 
 
-###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

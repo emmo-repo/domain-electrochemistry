@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/emmo/domain/electrochemistry#> .                                                                                                                                                                                                                      
+@prefix : <https://w3id.org/emmo/domain/electrochemistry#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -12,7 +12,7 @@
 @base <https://w3id.org/emmo/domain/electrochemistry/reference/electrochemistry-quantities> .
 
 <https://w3id.org/emmo/domain/electrochemistry/reference/electrochemistry-quantities> rdf:type owl:Ontology ;
-                                                                                       owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.28.5-beta/reference/electrochemistry-quantities> ;
+                                                                                       owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.29.0-beta/reference/electrochemistry-quantities> ;
                                                                                        owl:imports <https://w3id.org/emmo/1.0.0/disciplines/isq> ;
                                                                                        dcterms:abstract "This electrochemical quantities ontology is a domain of the Elementary Multiperspective Materials Ontology (EMMO). It is a specialized framework designed to represent and organize knowledge about electrochemical quantities. It is designed to integrate with the electrochemistry domain ontology or other ontologies from the EMMO ecosystem. The main focus of this ontology is to provide machine-readable descriptions of common electrochemical quantities, linking both to the larger descriptions of physical quantities in EMMO as well as other sources of information like the IEC, QUDT, Wikidata, etc. It should be used to support linked data generation in the electrochemistry domain."@en ;
                                                                                        dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
@@ -21,7 +21,7 @@
                                                                                        dcterms:creator <https://orcid.org/0000-0002-8758-6109> ,
                                                                                                        <https://orcid.org/0000-0003-2954-1233> ;
                                                                                        dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                                                                       owl:versionInfo "0.28.5-beta" .
+                                                                                       owl:versionInfo "0.29.0-beta" .
 
 #################################################################
 #    Annotation properties
@@ -249,6 +249,27 @@ emmo:EMMO_e218c625_6a39_47a9_8d08_a2ef41c152a9 rdfs:subClassOf :electrochemistry
 emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry_25dabdc2_68bf_4a38_8cbe_11be017358bc ;
                                                :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Electrolyte','Conductivity [S.m-1]']"@en ;
                                                :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['electrolyte','ionic_conductivity','value']"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#AmperePerAmpereHour
+:AmperePerAmpereHour rdf:type owl:Class ;
+                     rdfs:subClassOf :electrochemistry_67930f7b_ad4c_4b21_9b2e_a000e5c153ae ;
+                     skos:prefLabel "AmperePerAmpereHour"@en ;
+                     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the unit for C-Rate in electrochemistry and related domains"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#C
+:C rdf:type owl:Class ;
+   rdfs:subClassOf :electrochemistry_67930f7b_ad4c_4b21_9b2e_a000e5c153ae ;
+   skos:prefLabel "C"@en ;
+   emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the unit for C-Rate in electrochemistry and related domains"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#WattPerWattHour
+:WattPerWattHour rdf:type owl:Class ;
+                 rdfs:subClassOf :electrochemistry_2e9ccb34_6da6_4715_89ba_90913f436b41 ;
+                 skos:prefLabel "WattPerWattHour"@en ;
+                 emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the unit for P-Rate in electrochemistry and related domains"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0089729b_5890_4c15_aa09_1244d41f8626
@@ -670,7 +691,7 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                                          owl:someValuesFrom emmo:EMMO_02e894c3_b793_4197_b120_3442e08f58d1
                                                                        ] ;
                                                        rdfs:comment "Buck and Lindner suggest a slope of 0.6 mV min-1 ."@en ,
-                                                                    """Previously defined response times t95 (corresponding to the 95% change of the potential span) and t* (to 1 mV from the steady value) require prior knowledge of steady-state E values that may not be available. These descriptive quantities underestimate practical response times of ion-selective electrodes in clinical applications where the total span may be narrower than 10 mV. The response time expressed in terms of ΔE/Δt (i.e., rate of cell potential variation with time) seems to be the best choice among non-ideal options. It can be related to t95 and t* through mathematical models, provided that the long-time potential- determining processes are identified."""@en ;
+                                                                    "Previously defined response times t95 (corresponding to the 95% change of the potential span) and t* (to 1 mV from the steady value) require prior knowledge of steady-state E values that may not be available. These descriptive quantities underestimate practical response times of ion-selective electrodes in clinical applications where the total span may be narrower than 10 mV. The response time expressed in terms of ΔE/Δt (i.e., rate of cell potential variation with time) seems to be the best choice among non-ideal options. It can be related to t95 and t* through mathematical models, provided that the long-time potential- determining processes are identified."@en ;
                                                        skos:prefLabel "ResponseTimeAtAnISE"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Duration between the time when an ion-selective electrode and an external reference electrode (the two completing the ion-selective electrode cell) are brought into contact with a sample solution (or the time at which the activity of the ion of interest in solution is changed) and the first time at which the slope of the cell potential vs. time plot (ΔE/Δt) becomes equal to a limiting value selected on the basis of the experimental conditions and/or requirements concerning accuracy."@en .
 
@@ -1085,6 +1106,17 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 5% of the sample's particles fall."@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2e9ccb34_6da6_4715_89ba_90913f436b41
+:electrochemistry_2e9ccb34_6da6_4715_89ba_90913f436b41 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_9895a1b4_f0a5_4167_ac5e_97db40b8bfcc ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_19d925d0_2cf1_40e5_a391_1a99d68409c9 ;
+                                                                         owl:hasValue "T-1 L0 M0 I0 Θ0 N0 J0"
+                                                                       ] ;
+                                                       skos:prefLabel "PRateUnit"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the class of units for describing the C-Rate in electrochemistry and related domains"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_31a74e23_bb07_41d0_bb8f_1d8cca157503
 :electrochemistry_31a74e23_bb07_41d0_bb8f_1d8cca157503 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_4aa1b96e_44a0_4b1a_a0ac_723d0223d80b ;
@@ -1187,13 +1219,6 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        rdfs:subClassOf :electrochemistry_f0667139_6428_4e3d_ac0d_08c1dd7f36ea ;
                                                        skos:prefLabel "StoichiometricCoefficientAtSOC100"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the stoichiometric coefficient for a reactive entity in a chemical substance that corresponds to a cell-level state-of-charge of 100%"@en .
-
-
-###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_398c6427_320d_4df7_bd09_55931eed4922
-:electrochemistry_398c6427_320d_4df7_bd09_55931eed4922 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_67930f7b_ad4c_4b21_9b2e_a000e5c153ae ;
-                                                       skos:prefLabel "AmperePerAmpereHour"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the unit for C-Rate in electrochemistry and related domains"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_39a44af0_0e1a_4859_b550_bdabad64386e
@@ -1374,7 +1399,7 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        rdfs:subClassOf :electrochemistry_05cf26ef_782a_4f66_a196_7004dd973f8e ,
                                                                        :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                                        rdfs:comment "A"@en ,
-                                                                    """The geometric area, A_{geom} , is the interfacial area, determined on the assumption that the interface is truly flat (2-dimensional) and calculated using the geometric data of the involved surfaces. The real (true) area, A_{real}, takes into account non-idealities of the interface (roughness, porosity, etc.) and can be measured by a variety of electrochemical methods. The electroactive area is the area calculated from experiments with model electroactive species and may be different from the real surface area in cases where not all of the surface is electrochemically active or accessible."""@en ;
+                                                                    "The geometric area, A_{geom} , is the interfacial area, determined on the assumption that the interface is truly flat (2-dimensional) and calculated using the geometric data of the involved surfaces. The real (true) area, A_{real}, takes into account non-idealities of the interface (roughness, porosity, etc.) and can be measured by a variety of electrochemical methods. The electroactive area is the area calculated from experiments with model electroactive species and may be different from the real surface area in cases where not all of the surface is electrochemically active or accessible."@en ;
                                                        skos:prefLabel "ElectrodeSurfaceArea"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "area of electrode - solution interface."@en .
 
@@ -2107,6 +2132,14 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "fundamental physical constant representing molar elementary charge"@en ;
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Faraday_constant"@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.F02325"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_786a8649_425f_4a2d_b6c8_8a36501b6d49
+:electrochemistry_786a8649_425f_4a2d_b6c8_8a36501b6d49 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_791c1915_a791_4450_acd8_7f94764743b5 ;
+                                                       rdfs:seeAlso :electrochemistry_df9e9d49_12fa_4794_b482_e0dcd2a7bb66 ;
+                                                       skos:prefLabel "NetCapacity"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the net electric charge accumulated in an electrochemical device over time, starting from zero and calculated as the time integral of current with sign preserved, such that charging increases the value and discharging decreases it"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79198264_cdf5_4fc3_8bcf_e5140a52547a
@@ -3195,7 +3228,7 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 :electrochemistry_c55bcb85_b7b8_4e67_8a78_9a42fe25b6cf rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_2a2f59b7_aa16_40aa_9c8b_0de8a2720456 ;
                                                        rdfs:comment "I_{cat}"@en ,
-                                                                    """In either of the two following situations, the current increase is termed a catalytic current: (i) The scheme below generates a catalytic or regenerative current: B±e→ B′, B' + A → B (ii) The presence at the electrode-solution interface of a substance, which may be added or generated by an electrochemical reaction, decreases the overpotential for the electrochemical reaction of B. In either case, the magnitude of the catalytic current depends on the applied potential. If the current observed with a mixture of A and B is lower than the sum of the separate currents, the term non-additive current should be used."""@en ;
+                                                                    "In either of the two following situations, the current increase is termed a catalytic current: (i) The scheme below generates a catalytic or regenerative current: B±e→ B′, B' + A → B (ii) The presence at the electrode-solution interface of a substance, which may be added or generated by an electrochemical reaction, decreases the overpotential for the electrochemical reaction of B. In either case, the magnitude of the catalytic current depends on the applied potential. If the current observed with a mixture of A and B is lower than the sum of the separate currents, the term non-additive current should be used."@en ;
                                                        skos:prefLabel "CatalyticCurrent"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "faradaic current measured in a solution containing two electroactive substances, A and B, that exceeds the sum of the faradaic currents that would be obtained for A and B separately under the same experimental conditions"@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.C00889"@en .
@@ -3501,8 +3534,9 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_df9e9d49_12fa_4794_b482_e0dcd2a7bb66
 :electrochemistry_df9e9d49_12fa_4794_b482_e0dcd2a7bb66 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_791c1915_a791_4450_acd8_7f94764743b5 ;
+                                                       rdfs:seeAlso :electrochemistry_786a8649_425f_4a2d_b6c8_8a36501b6d49 ;
                                                        skos:prefLabel "TotalCapacity"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the total amount of electric charge that has passed through an electrochemical device within a defined time interval"@en .
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the total amount of electric charge that has cumulatively passed through an electrochemical device within a defined time interval, increasing monotonically over time"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e03f6800_92c5_4218_bb6d_1c919abaa063
@@ -3730,13 +3764,6 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        rdfs:subClassOf :electrochemistry_33e6986c_b35a_4cae_9a94_acb23248065c ;
                                                        skos:prefLabel "BoundaryCondition"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a property whose value is controlled on some surface or domain"@en .
-
-
-###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f3172070_a72c_40db_8cc7_85c76ae97be5
-:electrochemistry_f3172070_a72c_40db_8cc7_85c76ae97be5 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_67930f7b_ad4c_4b21_9b2e_a000e5c153ae ;
-                                                       skos:prefLabel "C"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the unit for C-Rate in electrochemistry and related domains"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f4fadc4e_ca7d_4e4e_89cf_eacf45b4041e
