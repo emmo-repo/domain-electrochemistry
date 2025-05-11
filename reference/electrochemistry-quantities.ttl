@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/emmo/domain/electrochemistry#> .                                                                                                                                                                                                                      
+@prefix : <https://w3id.org/emmo/domain/electrochemistry#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -12,7 +12,7 @@
 @base <https://w3id.org/emmo/domain/electrochemistry/reference/electrochemistry-quantities> .
 
 <https://w3id.org/emmo/domain/electrochemistry/reference/electrochemistry-quantities> rdf:type owl:Ontology ;
-                                                                                       owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.28.5-beta/reference/electrochemistry-quantities> ;
+                                                                                       owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.29.0-beta/reference/electrochemistry-quantities> ;
                                                                                        owl:imports <https://w3id.org/emmo/1.0.0/disciplines/isq> ;
                                                                                        dcterms:abstract "This electrochemical quantities ontology is a domain of the Elementary Multiperspective Materials Ontology (EMMO). It is a specialized framework designed to represent and organize knowledge about electrochemical quantities. It is designed to integrate with the electrochemistry domain ontology or other ontologies from the EMMO ecosystem. The main focus of this ontology is to provide machine-readable descriptions of common electrochemical quantities, linking both to the larger descriptions of physical quantities in EMMO as well as other sources of information like the IEC, QUDT, Wikidata, etc. It should be used to support linked data generation in the electrochemistry domain."@en ;
                                                                                        dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
@@ -21,7 +21,7 @@
                                                                                        dcterms:creator <https://orcid.org/0000-0002-8758-6109> ,
                                                                                                        <https://orcid.org/0000-0003-2954-1233> ;
                                                                                        dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                                                                       owl:versionInfo "0.28.5-beta" .
+                                                                                       owl:versionInfo "0.29.0-beta" .
 
 #################################################################
 #    Annotation properties
@@ -2134,6 +2134,14 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.F02325"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_786a8649_425f_4a2d_b6c8_8a36501b6d49
+:electrochemistry_786a8649_425f_4a2d_b6c8_8a36501b6d49 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_791c1915_a791_4450_acd8_7f94764743b5 ;
+                                                       rdfs:seeAlso :electrochemistry_df9e9d49_12fa_4794_b482_e0dcd2a7bb66 ;
+                                                       skos:prefLabel "NetCapacity"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the net electric charge accumulated in an electrochemical device over time, starting from zero and calculated as the time integral of current with sign preserved, such that charging increases the value and discharging decreases it"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79198264_cdf5_4fc3_8bcf_e5140a52547a
 :electrochemistry_79198264_cdf5_4fc3_8bcf_e5140a52547a rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ,
@@ -3526,8 +3534,9 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_df9e9d49_12fa_4794_b482_e0dcd2a7bb66
 :electrochemistry_df9e9d49_12fa_4794_b482_e0dcd2a7bb66 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_791c1915_a791_4450_acd8_7f94764743b5 ;
+                                                       rdfs:seeAlso :electrochemistry_786a8649_425f_4a2d_b6c8_8a36501b6d49 ;
                                                        skos:prefLabel "TotalCapacity"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the total amount of electric charge that has passed through an electrochemical device within a defined time interval"@en .
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the total amount of electric charge that has cumulatively passed through an electrochemical device within a defined time interval, increasing monotonically over time"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e03f6800_92c5_4218_bb6d_1c919abaa063
