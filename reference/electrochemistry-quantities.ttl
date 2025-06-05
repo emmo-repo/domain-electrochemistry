@@ -12,7 +12,7 @@
 @base <https://w3id.org/emmo/domain/electrochemistry/reference/electrochemistry-quantities> .
 
 <https://w3id.org/emmo/domain/electrochemistry/reference/electrochemistry-quantities> rdf:type owl:Ontology ;
-                                                                                       owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.29.0-beta/reference/electrochemistry-quantities> ;
+                                                                                       owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.30.0-beta/reference/electrochemistry-quantities> ;
                                                                                        owl:imports <https://w3id.org/emmo/1.0.0/disciplines/isq> ;
                                                                                        dcterms:abstract "This electrochemical quantities ontology is a domain of the Elementary Multiperspective Materials Ontology (EMMO). It is a specialized framework designed to represent and organize knowledge about electrochemical quantities. It is designed to integrate with the electrochemistry domain ontology or other ontologies from the EMMO ecosystem. The main focus of this ontology is to provide machine-readable descriptions of common electrochemical quantities, linking both to the larger descriptions of physical quantities in EMMO as well as other sources of information like the IEC, QUDT, Wikidata, etc. It should be used to support linked data generation in the electrochemistry domain."@en ;
                                                                                        dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
@@ -21,7 +21,7 @@
                                                                                        dcterms:creator <https://orcid.org/0000-0002-8758-6109> ,
                                                                                                        <https://orcid.org/0000-0003-2954-1233> ;
                                                                                        dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                                                                       owl:versionInfo "0.29.0-beta" .
+                                                                                       owl:versionInfo "0.30.0-beta" .
 
 #################################################################
 #    Annotation properties
@@ -362,6 +362,22 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Surface_area"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_077de429_ea41_444c_8571_6a832ae62637
+:electrochemistry_077de429_ea41_444c_8571_6a832ae62637 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_7c8007b0_58a7_4486_bf1c_4772852caca0 ;
+                                                       rdfs:seeAlso :electrochemistry_d5ac8868_d318_4065_aa23_72140ae888ae ;
+                                                       skos:prefLabel "LimitingCurrentDensity"@en ;
+                                                       emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-13"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "maximum electric current density that can be achieved for an electrode reaction at a given concentration of a electrochemically active material in the presence of a large excess of supporting electrolyte"@en .
+
+[ rdf:type owl:Axiom ;
+   owl:annotatedSource :electrochemistry_077de429_ea41_444c_8571_6a832ae62637 ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "maximum electric current density that can be achieved for an electrode reaction at a given concentration of a electrochemically active material in the presence of a large excess of supporting electrolyte"@en ;
+   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
+ ] .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_07e219c3_890f_488f_bd96_bee8e445d764
 :electrochemistry_07e219c3_890f_488f_bd96_bee8e445d764 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88 ,
@@ -598,16 +614,16 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_1422cde1_929e_46b6_b0dc_1010eebc5dfd ;
-   owl:annotatedProperty rdfs:comment ;
-   owl:annotatedTarget "in quantum mechanical terms, electrochemical potential is defined as the energy level of the electron orbitals in the species that have a 50 percent probability of occupancy"@en ;
-   dcterms:source "J. Newman and K. E. Thmoas-Alyea, Electrochemical Systems, 3rd ed. Hoboken, New Jersey: John Wiley & Sons, 2004."
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "the chemical potential of an ion in the presence of an electric potential"@en ;
+   dcterms:source "Atkins and DePaula, Aktins' Physical Chemistry, 8th ed., p.952"
  ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_1422cde1_929e_46b6_b0dc_1010eebc5dfd ;
-   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-   owl:annotatedTarget "the chemical potential of an ion in the presence of an electric potential"@en ;
-   dcterms:source "Atkins and DePaula, Aktins' Physical Chemistry, 8th ed., p.952"
+   owl:annotatedProperty rdfs:comment ;
+   owl:annotatedTarget "in quantum mechanical terms, electrochemical potential is defined as the energy level of the electron orbitals in the species that have a 50 percent probability of occupancy"@en ;
+   dcterms:source "J. Newman and K. E. Thmoas-Alyea, Electrochemical Systems, 3rd ed. Hoboken, New Jersey: John Wiley & Sons, 2004."
  ] .
 
 
@@ -995,6 +1011,13 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        :electrochemistry_8377c1f7_2b09_4632_9a4d_bb318438adbb "time_s"@en ;
                                                        :electrochemistry_a07dd85b_d0df_4d5d_8b0c_14d20ea3fe45 "test_time"@en ;
                                                        :electrochemistry_ea9f4dba_8ca2_419e_9cdf_ce54e9ebbd46 "Run Time (h)"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2a16f139_ab9c_4034_bd21_eabd2e1202e8
+:electrochemistry_2a16f139_ab9c_4034_bd21_eabd2e1202e8 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_76e7e556_f47e_47e2_b2ef_67aeed09c63e ;
+                                                       skos:prefLabel "UpperCurrentDensityLimit"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the upper bounding limit placed on the current density used in the definition of an electrochemical testing protocol"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2a1de79f_e927_45a2_9619_3799a0d61e9b
@@ -2112,15 +2135,7 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        rdfs:subClassOf emmo:EMMO_7c8007b0_58a7_4486_bf1c_4772852caca0 ,
                                                                        :electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634 ;
                                                        skos:prefLabel "CurrentDensityLimit"@en ;
-                                                       emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-13" ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "maximum electric current density that can be achieved for an electrode reaction at a given concentration of a electrochemically active material in the presence of a large excess of supporting electrolyte"@en .
-
-[ rdf:type owl:Axiom ;
-   owl:annotatedSource :electrochemistry_76e7e556_f47e_47e2_b2ef_67aeed09c63e ;
-   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-   owl:annotatedTarget "maximum electric current density that can be achieved for an electrode reaction at a given concentration of a electrochemically active material in the presence of a large excess of supporting electrolyte"@en ;
-   dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
- ] .
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a limit placed on the electric current density of an electrical system"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_77f9d496_555e_4ae2_ae80_f297ef8335ca
@@ -2925,6 +2940,13 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        :electrochemistry_1b717a20_17e3_4480_8c60_c4ae94058f05 "Environmental_Temperature (C)"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_abdd3bbb_403a_4cb3_b522_50d027492a68
+:electrochemistry_abdd3bbb_403a_4cb3_b522_50d027492a68 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_76e7e556_f47e_47e2_b2ef_67aeed09c63e ;
+                                                       skos:prefLabel "LowerCurrentDensityLimit"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the lower bounding limit placed on the current density used in the definition of an electrochemical testing protocol"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_abf986d2_90d5_4746_b42b_89dc7cc1bf0f
 :electrochemistry_abf986d2_90d5_4746_b42b_89dc7cc1bf0f rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_79a02de5_b884_4eab_bc18_f67997d597a2 ;
@@ -3428,7 +3450,8 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d5ac8868_d318_4065_aa23_72140ae888ae
 :electrochemistry_d5ac8868_d318_4065_aa23_72140ae888ae rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_2a2f59b7_aa16_40aa_9c8b_0de8a2720456 ;
-                                                       rdfs:comment "A limiting current is reached when the overpotential is sufficiently large that the faradaic current is deter- mined solely by the ability to supply electroactive species by mass transport. A limiting current is there- fore independent of applied potential over a corresponding finite potential range. A limiting current may have the character of an adsorption, catalytic, diffusion, or kinetic current, and may include a migration current."@en ;
+                                                       rdfs:comment "A limiting current is reached when the overpotential is sufficiently large that the faradaic current is determined solely by the ability to supply electroactive species by mass transport. A limiting current is therefore independent of applied potential over a corresponding finite potential range. A limiting current may have the character of an adsorption, catalytic, diffusion, or kinetic current, and may include a migration current."@en ;
+                                                       rdfs:seeAlso :electrochemistry_077de429_ea41_444c_8571_6a832ae62637 ;
                                                        skos:prefLabel "LimitingCurrent"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "faradaic current that is approached as the rate of the charge-transfer process is increased by varying the applied potential, being greater than the rate of mass transport controlled by diffusion"@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://goldbook.iupac.org/terms/view/L03532"@en .
