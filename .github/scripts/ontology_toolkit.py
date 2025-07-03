@@ -88,6 +88,18 @@ def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.or
         }
     }
 
+    # Manual additions for deprecated or external terms
+    manual_additions = {
+        "hasNumericalValue": "https://w3id.org/emmo#EMMO_faf79f53_749d_40b2_807c_d34244c192f4",
+        "hasNext": {
+            "@id": "https://w3id.org/emmo#EMMO_499e24a5_5072_4c83_8625_fe3f96ae4a8d",
+            "@type": "@id"
+        },
+    }
+
+    # Inject manual additions into context
+    context["@context"].update(manual_additions)
+
     return context
 
 
