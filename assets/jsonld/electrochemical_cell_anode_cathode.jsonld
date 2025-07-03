@@ -1,0 +1,17 @@
+{
+    "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
+    "@type": "ElectrochemicalCell",
+    "rdfs:label": "Demo Electrochemical Cell with Anode/Cathode",
+    "rdfs:comment": ["This is a simple example to show the basic format to describe an electrochemical cell using anode and cathode terms.", "Be conscious of the meaning of anode and cathode when using these terms. In a secondary cell, the role of anode and cathode switch during charging and discharging processes.", "An electrochemical cell is just the combination of at least two electrodes in contact with an electrolyte. A functioning device with a case and terminals is an 'ElectrochemicalDevice'"],
+    "hasElectrode": [
+        {
+            "@type": "Anode"
+        },
+        {
+            "@type": "Cathode"
+        }
+    ],
+    "hasElectrolyte": {
+        "@type": "Electrolyte"
+    }
+}
