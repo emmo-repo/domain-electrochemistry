@@ -16,6 +16,35 @@ from ontopy.utils import asstring
 from ontopy.patch import get_preferred_label
 import owlready2
 
+import re
+
+def _linkify_value(val: str) -> str:
+    """
+    If `val` contains one or more IRIs, return them as separate links.
+    - If exactly one IRI and it's an image, embed the image.
+    - Otherwise, link each IRI separately and join with '; '.
+    """
+    if not isinstance(val, str):
+        return val
+
+    # find IRIs (separated by ; , or whitespace)
+    urls = re.findall(r'https?://[^\s;,]+', val)
+    if not urls:
+        return val
+
+    # single image → embed
+    if len(urls) == 1 and urls[0].lower().endswith((".png", ".jpg", ".jpeg", ".gif", ".svg")):
+        u = urls[0]
+        return (f'<a href="{u}"><img src="{u}" alt="{u}" '
+                f'style="max-width:400px; max-height:300px;"/></a>')
+
+    # otherwise, link each separately, showing full IRI as label
+    links = []
+    for u in urls:
+        links.append(_html_links(u, u))  # use full IRI as label
+    return '; '.join(links)
+
+
 def print_ttl_files():
     config = load_ontology_config()
     print(" ".join([file['path'] for file in config['ttl_files']]))
@@ -305,100 +334,165 @@ def _add_table_row(rst, key, value):
 
 
 def entities_to_rst(entities: list[dict], onto: Ontology) -> str:
-    """Converts extracted ontology terms into an RST format."""
+    """Converts extracted ontology terms into an RST format (with proper callouts)."""
     rst = ""
-    
     IMAGE_EXTENSIONS = (".png", ".jpg", ".jpeg", ".gif", ".svg")
 
-    callout_keys = {"tip", "caution", "important", "note", "danger", "warning", "error", "admonition"}
-    ls = []
+    # ---------- helpers ----------
+    def _pref_label(obj) -> str | None:
+        try:
+            lbl = get_preferred_label(obj)
+            return str(lbl).strip() if lbl else None
+        except Exception:
+            return None
+
+    def _norm(s: str) -> str:
+        # normalize to test categories: lowercase, remove non-alphanum
+        import re
+        return re.sub(r"[^a-z0-9]+", "", s.lower())
+
+    def _canon_key(k) -> str:
+        """Canonical key for logic (derived from preferred label; fallback to IRI/name)."""
+        if isinstance(k, str):
+            return _norm(k)
+        lbl = _pref_label(k)
+        if lbl:
+            return _norm(lbl)
+        iri = getattr(k, "iri", None)
+        if iri:
+            frag = iri.split("#")[-1].split("/")[-1]
+            return _norm(frag)
+        name = getattr(k, "name", None)
+        return _norm(name or str(k))
+
+    def _display_key(k) -> str:
+        """Pretty label for table left column (use preferred label if available)."""
+        lbl = _pref_label(k)
+        if lbl:
+            return lbl
+        # fallbacks: IRI fragment, name, or str
+        iri = getattr(k, "iri", None)
+        if iri:
+            return iri.split("#")[-1].split("/")[-1]
+        return getattr(k, "name", None) or str(k)
+
+    def _txt(val) -> str:
+        if val is None:
+            return ""
+        if isinstance(val, (list, tuple)):
+            return "\n\n".join(str(x).strip() for x in val if str(x).strip()).strip()
+        return str(val).strip()
+
+    def _indent(block: str, n: int = 3) -> str:
+        pad = " " * n
+        return "\n".join((pad + ln) if ln.strip() else "" for ln in block.splitlines())
+
+    # normalized (via _norm) labels that should render as admonitions
+    CALLOUTS = {
+        # admonition type -> (directive, optional title)
+        # "elucidation": ("admonition", "Elucidation"),
+        "note":        ("note", None),
+        "comment":     ("note", None),       # treat rdfs:comment as a note (optional)
+        "scopenote":   ("note", None),
+        "example":     ("admonition", "Example"),
+        "tip":         ("tip", None),
+        "caution":     ("caution", None),
+        "warning":     ("warning", None),
+        "important":   ("important", None),
+        "danger":      ("danger", None),
+        "error":       ("error", None),
+    }
+
+    # keys (normalized) never shown in the table
+    TABLE_SKIP_BASE = {"iri", "preflabel", "subclassof", "subclasses", "restrictions"}
+
     for item in entities:
         if '#' not in item['IRI']:
             continue
 
         iri_prefix, iri_suffix = item['IRI'].split("#")
 
-        # Horizontal line for visual separation
+        # ---- section header
         rst += "\n----\n\n"
-
-        # Create a target anchor so the right-side TOC can link here
-        #rst += f".. _{item['prefLabel']}:\n\n"
         rst += ".. raw:: html\n\n"
         rst += f"   <div id=\"{iri_suffix}\"></div>\n\n"
-        rst += f"{item[onto.prefLabel]}\n"
-        rst += "-" * len(item[onto.prefLabel]) + "\n\n"
+        title = item[onto.prefLabel]
+        rst += f"{title}\n{'-' * len(title)}\n\n"
         rst += f"IRI: {item['IRI']}\n\n"
 
+        # ---- normalize keys once (and keep pretty display names)
+        norm = {}          # canonical key -> value
+        display_name = {}  # canonical key -> pretty label for table
+        for k, v in item.items():
+            ck = _canon_key(k)
+            norm[ck] = v
+            display_name[ck] = _display_key(k)
+
+        # - skip table fields: base + all callouts
+        TABLE_SKIP = set(TABLE_SKIP_BASE) | set(CALLOUTS.keys())
+
+        # ---- table (non-callout props)
         rst += ".. raw:: html\n\n"
-        indent = "  "
-        rst += indent + "<table class=\"element-table\">\n"
-        # Normal properties (skip callouts and special lists handled later)
-        for key, value in item.items():
-            ls.append(key)
-            if key in ['IRI', 'prefLabel', 'subclassOf', 'subclasses', 'restrictions'] or key in callout_keys or value in ["None", ""]:
+        rst += "  <table class=\"element-table\">\n"
+
+        for ck, value in norm.items():
+            if ck in TABLE_SKIP or value in ("None", "", None):
                 continue
 
-            if not isinstance(value, list):
-                value = [value]
-            
-            for val in value:
-                if val.startswith("http"):
-                    if val.lower().endswith(tuple(IMAGE_EXTENSIONS)):
-                        val = (
-                            f'<a href="{val}">'
-                            f'<img src="{val}" alt="{val}" '
-                            f'style="max-width:400px; max-height:300px;"/>'
-                            f'</a>'
-                        )
-                        
-                    else:
-                        val = _html_links(val,val)
+            vals = value if isinstance(value, list) else [value]
+            for val in vals:
+                val = _linkify_value(val)
+                rst = _add_table_row(rst, display_name.get(ck, ck), val)
 
-                rst = _add_table_row(rst, key, val) 
-        
-
-        # Add restrictions section - each restriction gets its own row
+        # ---- restrictions (single row, plain list; safe HTML)
         if item.get("restrictions"):
-            # Group restrictions by property_label for cleaner table (optional, but nice)
-            grouped_restrictions = {}
-            for restriction in item["restrictions"]:
-                original = asstring(restriction)
-                linked = _linkify_manchester(original, onto)
-                grouped_restrictions.setdefault(restriction.property, []).append(linked)
-            
-            for _, restriction_type in grouped_restrictions.items():
-                for res in restriction_type:
-                    to_add = res
-                    rst = _add_table_row(rst, 'restriction', to_add)
+            restr_strings = []
+            for r in item["restrictions"]:
+                original = asstring(r)
+                restr_strings.append(_linkify_manchester(original, onto))
 
-        # Add parent classes section
-        if item.get("subclassOf"):
+            # de-duplicate but keep order
+            restr_strings = list(dict.fromkeys(restr_strings))
 
-            parent_links = _get_links(item, "subclassOf")
-            to_add = ", ".join(parent_links)
-            rst = _add_table_row(rst, 'subclassOf',to_add)
-            
-        # Add subclasses section
-        if item.get("subclasses"):
-            
-            subclass_links = _get_links(item, "subclasses")
-            to_add = ", ".join(subclass_links)
-            rst = _add_table_row(rst, 'subclasses', to_add)
+            # build a self-contained snippet to prevent table misalignment
+            items_html = "".join(f"<li>{s}</li>" for s in restr_strings)
+            val_html = f"<div class=\"restriction-list\"><ul>{items_html}</ul></div>"
 
+            label = "restrictions"
+            rst = _add_table_row(rst, label, val_html)
+
+
+        # ---- subclassOf / subclasses
+        if norm.get("subclassof"):
+            rst = _add_table_row(rst, 'subclassOf', ", ".join(_get_links(item, "subclassOf")))
+        if norm.get("subclasses"):
+            rst = _add_table_row(rst, 'subclasses', ", ".join(_get_links(item, "subclasses")))
 
         rst += "  </table>\n\n"
-        
-        callout_rst = ""
-        #for callout, admonition in callout_mapping.items():
-        for callout in callout_keys:
-            callout_value = item.get(callout, "").strip()
-            if callout_value and callout_value.lower() != "none":
-                callout_rst += f".. {callout}::\n\n"
-                for line in callout_value.splitlines():
-                    callout_rst += f"   {line}\n"
-                callout_rst += "\n"
 
-        rst += callout_rst
+        # ---- callouts (admonitions) after the table
+        for ck, (directive, title_txt) in CALLOUTS.items():
+            raw = norm.get(ck)
+            if not raw:
+                continue
+
+            # normalize to a list of “items to render”
+            if isinstance(raw, (list, tuple)):
+                items = [str(x).strip() for x in raw if str(x).strip()]
+            else:
+                # split a single string on blank lines into separate items
+                items = [p.strip() for p in str(raw).split("\n\n") if p.strip()]
+
+            if not items:
+                continue
+
+            for item_text in items:
+                if directive == "admonition":
+                    hdr = title_txt or (display_name.get(ck, ck).capitalize())
+                    rst += f".. admonition:: {hdr}\n\n"
+                else:
+                    rst += f".. {directive}::\n\n"
+                rst += _indent(item_text) + "\n\n"
 
     return rst
 

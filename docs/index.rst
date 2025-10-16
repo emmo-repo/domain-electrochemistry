@@ -4,7 +4,7 @@
    :hidden:
 
    Class Index <electrochemistry>
-   Get Started <pages/getstarted>
+   Get Started <pages/get-started>
    Examples <pages/examples>
    User Guide <userguide/index>
    About <pages/about>
@@ -51,7 +51,7 @@ Check out these resources to get started!
 .. grid::
 
     .. grid-item-card::
-        :link: pages/getstarted.html
+        :link: pages/get-started.html
 
         :octicon:`rocket;1em;sd-text-info`  Get Started
         ^^^^^^^^^^^

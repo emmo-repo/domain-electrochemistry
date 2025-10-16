@@ -57,6 +57,8 @@ source_suffix = '.rst'
 # The master toctree document.
 master_doc = 'index'
 
+smartquotes = False
+
 # General information about the project.
 project = 'BattInfo'
 copyright = '2021-2023'
