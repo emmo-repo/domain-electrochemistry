@@ -1,0 +1,15 @@
+{
+    "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
+    "@type": "Electrode",
+    "hasActiveMaterial": {
+       "@type": ["Zinc", "Foil"],
+       "hasProperty": {
+         "@type": "Density",
+         "hasNumericalPart": {
+           "@type": "RealData",
+           "hasNumberValue": 7.14
+         },
+         "hasMeasurementUnit": "emmo:GramPerCubicCentimetre"
+       }
+    }
+}

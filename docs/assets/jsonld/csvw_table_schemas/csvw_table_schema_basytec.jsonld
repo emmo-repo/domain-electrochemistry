@@ -1,0 +1,166 @@
+{
+    "@context": "https://w3id.org/emmo/domain/battery/context",
+    "@type": "csvw:TableSchema",
+    "csvw:columns": [
+      {
+        "@type": "csvw:Column",
+        "csvw:name": "time",
+        "csvw:titles": "Test Time",
+        "dc:description": "time of the current data point relative to the start of the test",
+        "csvw:propertyUrl": {
+          "@type": "TestTime"
+        },
+        "hasMeasurementUnit": [
+          {
+            "@id": "emmo:Hour"
+          },
+          {
+            "@id": "unit:HR"
+          }
+        ],
+        "schema:unitCode": [
+          {
+            "@id": "emmo:Hour"
+          },
+          {
+            "@id": "unit:HR"
+          }
+        ],
+        "csvw:datatype": "xsd:decimal",
+        "csvw:required": "true"
+      },
+      {
+        "@type": "csvw:Column",
+        "csvw:name": "cycle",
+        "csvw:titles": "Cycle Index",
+        "dc:description": "the current cycle number in the test",
+        "csvw:propertyUrl": {
+          "@type": "CycleIndex"
+        },
+        "hasMeasurementUnit": [
+          {
+            "@id": "emmo:UnitOne"
+          },
+          {
+            "@id": "unit:UNITLESS"
+          }
+        ],
+        "schema:unitCode": [
+          {
+            "@id": "emmo:UnitOne"
+          },
+          {
+            "@id": "unit:UNITLESS"
+          }
+        ],
+        "csvw:datatype": "xsd:integer",
+        "csvw:required": "false"
+      },
+      {
+        "@type": "csvw:Column",
+        "csvw:name": "volt",
+        "csvw:titles": "Voltage",
+        "csvw:propertyUrl": {
+          "@type": "CellVoltage"
+        },
+        "hasMeasurementUnit": [
+          {
+            "@id": "emmo:Volt"
+          },
+          {
+            "@id": "unit:V"
+          }
+        ],
+        "schema:unitCode": [
+          {
+            "@id": "emmo:Volt"
+          },
+          {
+            "@id": "unit:V"
+          }
+        ],
+        "csvw:datatype": "xsd:decimal",
+        "csvw:required": "true"
+      },
+      {
+        "@type": "csvw:Column",
+        "csvw:name": "curr",
+        "csvw:titles": "Current",
+        "csvw:propertyUrl": {
+          "@type": "CellCurrent"
+        },
+        "hasMeasurementUnit": [
+          {
+            "@id": "emmo:Ampere"
+          },
+          {
+            "@id": "unit:A"
+          }
+        ],
+        "schema:unitCode": [
+          {
+            "@id": "emmo:Ampere"
+          },
+          {
+            "@id": "unit:A"
+          }
+        ],
+        "csvw:datatype": "xsd:decimal",
+        "csvw:required": "true"
+      },
+      {
+        "@type": "csvw:Column",
+        "csvw:name": "ah",
+        "csvw:titles": "Capacity",
+        "csvw:propertyUrl": {
+          "@type": "Capacity"
+        },
+        "hasMeasurementUnit": [
+          {
+            "@id": "emmo:AmpereHour"
+          },
+          {
+            "@id": "unit:A-HR"
+          }
+        ],
+        "schema:unitCode": [
+          {
+            "@id": "emmo:AmpereHour"
+          },
+          {
+            "@id": "unit:A-HR"
+          }
+        ],
+        "csvw:datatype": "xsd:decimal",
+        "csvw:required": "false"
+      },
+      {
+        "@type": "csvw:Column",
+        "csvw:name": "ah-step",
+        "csvw:titles": "Step Capacity",
+        "csvw:propertyUrl": {
+          "@type": "StepCapacity"
+        },
+        "hasMeasurementUnit": [
+          {
+            "@id": "emmo:AmpereHour"
+          },
+          {
+            "@id": "unit:A-HR"
+          }
+        ],
+        "schema:unitCode": [
+          {
+            "@id": "emmo:AmpereHour"
+          },
+          {
+            "@id": "unit:A-HR"
+          }
+        ],
+        "csvw:datatype": "xsd:decimal",
+        "csvw:required": "false"
+      }
+    ],
+    "csvw:primaryKey": "time"
+  }
+  

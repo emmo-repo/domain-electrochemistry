@@ -107,10 +107,6 @@ emmo:EMMO_95317324_4b53_4665_a087_82c3a2a0540b rdf:type owl:AnnotationProperty ;
                                                rdfs:subPropertyOf skos:note .
 
 
-###  https://w3id.org/emmo#EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a
-emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a rdf:type owl:AnnotationProperty .
-
-
 ###  https://w3id.org/emmo#EMMO_b6730304_cabc_4104_b415_14218466445c
 emmo:EMMO_b6730304_cabc_4104_b415_14218466445c rdf:type owl:AnnotationProperty ;
                                                skos:prefLabel "caution"@en ;
@@ -967,11 +963,11 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        rdfs:seeAlso "ElectrochemicalImpedanceSpectroscopy" ;
                                                        skos:prefLabel "BaselineCellVoltage"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "In electrochemical measurements, the voltage of an electrochemical cell to which a voltage signal is superimposed."@en ;
-                                                       emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "in EIS, an alternating voltage signal is superimposed to a baseline voltage, which can be the open circuit potential or a fixed cell voltage"@en .
+                                                       skos:example "in EIS, an alternating voltage signal is superimposed to a baseline voltage, which can be the open circuit potential or a fixed cell voltage"@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_269ddd97_1437_4545_b272_0df75a12c68a ;
-   owl:annotatedProperty emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a ;
+   owl:annotatedProperty skos:example ;
    owl:annotatedTarget "in EIS, an alternating voltage signal is superimposed to a baseline voltage, which can be the open circuit potential or a fixed cell voltage"@en ;
    dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
@@ -1226,7 +1222,7 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                                     "Since the concentration of an electroactive substance at the electrode-solution interface decreases mono- tonically, the faradaic current due to its electrooxidation or electroreduction increases monotonically with time because of the increasing concentration gradient of the electroactive substance, the concentra- tion of which remains constant in the bulk. The maximum current value is passed when the transport rate of electroactive substance to the electrode-solution interface starts to be lower than the rate at which it is removed by reaction at the electrode. The result of these two competing processes leads to the peak- shaped I-E dependence."@en ;
                                                        skos:prefLabel "PeakCurrent"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "in dynamic voltammetric techniques, the maximum value of the faradaic current attained by varying the applied potential in the current-potential or I-E curve"@en ;
-                                                       emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "Typical examples of imposed potential programmes in dynamic voltammetric techniques resulting in peak-shaped responses are linear-scan voltammetry, cyclic voltammetry, ac voltammetry, differential pulse voltammetry, square-wave voltammetry, stripping voltammetry, and derivative techniques."@en ;
+                                                       skos:example "Typical examples of imposed potential programmes in dynamic voltammetric techniques resulting in peak-shaped responses are linear-scan voltammetry, cyclic voltammetry, ac voltammetry, differential pulse voltammetry, square-wave voltammetry, stripping voltammetry, and derivative techniques."@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://goldbook.iupac.org/terms/view/P04457"@en .
 
 [ rdf:type owl:Axiom ;
@@ -3558,7 +3554,8 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 :electrochemistry_df9e9d49_12fa_4794_b482_e0dcd2a7bb66 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_791c1915_a791_4450_acd8_7f94764743b5 ;
                                                        rdfs:seeAlso :electrochemistry_786a8649_425f_4a2d_b6c8_8a36501b6d49 ;
-                                                       skos:prefLabel "TotalCapacity"@en ;
+                                                       skos:altLabel "TotalCapacity"@en ;
+                                                       skos:prefLabel "CumulativeCapacity"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the total amount of electric charge that has cumulatively passed through an electrochemical device within a defined time interval, increasing monotonically over time"@en .
 
 
