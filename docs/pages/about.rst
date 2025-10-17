@@ -68,8 +68,3 @@ Acknowledgements
 This project has received support from European Union research and innovation programs, under grant agreement numbers:
 
 -  957189 - `BIG-MAP <http://www.big-map.eu/>`__
-
-License
--------
-
-The Battery Interface Domain Ontology is released under the `Creative Commons Attribution 4.0 International <https://creativecommons.org/licenses/by/4.0/legalcode>`__ license (CC BY 4.0).
