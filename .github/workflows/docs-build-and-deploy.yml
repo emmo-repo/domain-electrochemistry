@@ -9,15 +9,72 @@ on:
       - '*'  # To ensure it runs on all PRs
 
 env:
+  ONTOLOGY_NAME: electrochemistry
+  ONTOLOGY_IRI: https://w3id.org/emmo/domain/electrochemistry
   GIT_USER_NAME: "GitHub Actions"
   GIT_USER_EMAIL: "github-actions[bot]@users.noreply.github.com"
+concurrency: pages-${{ github.ref }}
     
 jobs:
 
-  updatepages:
-    
+  build-ontologies:
     runs-on: ubuntu-latest
-    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: 3.11
+
+    - name: Cache pip
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements*.txt', '.github/workflows/docs-build-and-deploy.yml') }}
+        restore-keys: ${{ runner.os }}-pip-
+
+    - name: Install EMMOntoPy
+      run: |
+        pip install --upgrade pip
+        pip install git+https://github.com/emmo-repo/EMMOntoPy.git@master
+
+    - name: Install ROBOT
+      run: |
+        mkdir -p bin
+        wget -nv https://github.com/ontodev/robot/releases/download/v1.9.6/robot.jar
+        mv robot.jar bin/.
+        curl https://raw.githubusercontent.com/ontodev/robot/master/bin/robot > bin/robot
+        chmod +x bin/robot
+
+    - name: Build dependencies, squashed, and inferred ontologies
+      run: |
+        mkdir -p build
+        cp README.md build/.
+        ontoconvert \
+            -saw \
+            --namespace="emmo:https://w3id.org/emmo#" \
+            ${ONTOLOGY_NAME}-dependencies.ttl \
+            build/${ONTOLOGY_NAME}-dependencies.ttl
+        ontoconvert \
+            -sawe \
+            --base-iri="${ONTOLOGY_IRI}#" \
+            --iri="${ONTOLOGY_IRI}" \
+            ${ONTOLOGY_NAME}.ttl \
+            build/${ONTOLOGY_NAME}.ttl
+        bin/robot reason --reasoner HermiT --input build/${ONTOLOGY_NAME}.ttl --output build/${ONTOLOGY_NAME}-inferred.ttl
+
+    - name: Upload processed ontologies
+      uses: actions/upload-artifact@v4
+      with:
+        name: ontology-build
+        path: build/
+        if-no-files-found: error
+
+  updatepages:
+    runs-on: ubuntu-latest
+    needs: build-ontologies
     permissions:
       contents: write
       
@@ -28,10 +85,36 @@ jobs:
         fetch-depth: 0
         clean: true
 
+    - name: Download processed ontologies
+      uses: actions/download-artifact@v4
+      with:
+        name: ontology-build
+        path: build
+
+    - name: Rewrite config.yml to use processed TTLs
+      run: |
+        python - <<'PY'
+        import os, yaml
+        cfg = yaml.safe_load(open("config.yml"))
+        for entry in cfg.get("ttl_files", []):
+            entry["path"] = os.path.join("build", os.path.basename(entry["path"]))
+        inf = cfg.get("output", {}).get("inferred_ttl")
+        if inf:
+            cfg["output"]["inferred_ttl"] = os.path.join("build", os.path.basename(inf))
+        yaml.safe_dump(cfg, open("config.yml", "w"))
+        PY
+
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.10'
+
+    - name: Cache pip
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('requirements-docs.txt', '.github/workflows/docs-build-and-deploy.yml') }}
+        restore-keys: ${{ runner.os }}-pip-
 
     - name: Install Dependencies
       run: |
@@ -39,10 +122,7 @@ jobs:
         pip install -r requirements-docs.txt
 
     - name: Load Ontology Configuration from YAML
-      run: |
-        python .github/scripts/ontology_toolkit.py >> $GITHUB_ENV
-        INFERRED_TTL=$(python -c "import yaml; print(yaml.safe_load(open('config.yml'))['output']['inferred_ttl'])")
-        echo "INFERRED_TTL_FILENAME=$INFERRED_TTL" >> $GITHUB_ENV
+      run: python .github/scripts/ontology_toolkit.py >> $GITHUB_ENV
 
     - name: Render Documentation from TTL Files
       run: python .github/scripts/ontology_toolkit.py --generate-rst
@@ -72,6 +152,7 @@ jobs:
         else
             echo "Warning: Inferred TTL file not found!"
         fi
+        sudo cp build/*.ttl docs/_build/html/ || true
   
 
     - name: Commit Generated Changes (context.json & rst files)
