@@ -1,13 +1,19 @@
-name: Deploy ontology on GitHub Pages
+name: Deploy on GitHub Pages
 on:
   push:
-    branches: [master]
+    branches:
+      - master
+      - main
+      - dev
+      - '[0-9]+.[0-9]+.[0-9]+'
+      - '[0-9]+.[0-9]+.[0-9]+-*'
+
+env:
+  ONTOLOGY_NAME: electrochemistry
+  ONTOLOGY_IRI: https://w3id.org/emmo/domain/electrochemistry
 
 permissions:
   contents: write
-
-env:
-  ONTOLOGY: electrochemistry
 
 
 jobs:
@@ -27,16 +33,47 @@ jobs:
     - name: Install EMMOntoPy
       run: |
         pip install --upgrade pip
-        pip install EMMOntoPy
+        pip install git+https://github.com/emmo-repo/EMMOntoPy.git@master
 
-    - name: Create squashed and inferred ontology
+    - name: Install ROBOT
+      run: |
+        mkdir bin
+        wget -nv https://github.com/ontodev/robot/releases/download/v1.9.6/robot.jar
+        mv robot.jar bin/.
+        curl https://raw.githubusercontent.com/ontodev/robot/master/bin/robot > bin/robot
+        chmod +x bin/robot
+        ls -l bin/
+
+    - name: Create dependencies, squashed and inferred ontologies
       run: |
         mkdir build
-        ontoconvert -saw --base-iri="https://w3id.org/emmo/domain/$ONTOLOGY#" --iri="https://w3id.org/emmo/domain/$ONTOLOGY" $ONTOLOGY.ttl build/$ONTOLOGY.ttl
-        ontoconvert -saw --base-iri="https://w3id.org/emmo/domain/$ONTOLOGY#" --iri="https://w3id.org/emmo/domain/$ONTOLOGY" $ONTOLOGY.ttl build/$ONTOLOGY-inferred.ttl --infer=HermiT
+        cp README.md build/.
+        ontoconvert \
+            -saw \
+            --namespace="emmo:https://w3id.org/emmo#" \
+            ${ONTOLOGY_NAME}-dependencies.ttl \
+            build/${ONTOLOGY_NAME}-dependencies.ttl
+        ontoconvert \
+            -sawe \
+            --base-iri="${ONTOLOGY_IRI}#" \
+            --iri="${ONTOLOGY_IRI}" \
+            ${ONTOLOGY_NAME}.ttl \
+            build/${ONTOLOGY_NAME}.ttl
+        bin/robot reason --reasoner HermiT --input build/${ONTOLOGY_NAME}.ttl --output build/${ONTOLOGY_NAME}-inferred.ttl
+
+        # HermiT (when run via EMMOntoPy) doesn't support custom datatypes. Use ROBOT instead
+        #ontoconvert \
+        #    -sawe \
+        #    --base-iri="${ONTOLOGY_IRI}#" \
+        #    --iri="${ONTOLOGY_IRI}" \
+        #    --infer=HermiT \
+        #    ${ONTOLOGY_NAME}.ttl \
+        #    build/${ONTOLOGY_NAME}-inferred.ttl
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: build
         branch: gh-pages
+        clean: false
+        single-commit: true
