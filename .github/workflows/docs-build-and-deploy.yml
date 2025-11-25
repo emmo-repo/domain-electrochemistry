@@ -212,27 +212,20 @@ jobs:
         sudo rm -rf docs/_build/html/versions
         sudo mkdir -p docs/_build/html/versions
     
-        ORIGINAL_BRANCH=$(git rev-parse --abbrev-ref HEAD)
-    
         for TAG in $(git tag); do
             echo "Processing tag: $TAG"
-            
-            git checkout $TAG
             
             sudo mkdir -p "docs/_build/html/versions/$TAG"
             
             git ls-tree -r --name-only "$TAG" | grep "\.ttl$" | while read FILE; do
-                if [ -f "$FILE" ]; then
-                    sudo cp "$FILE" "docs/_build/html/versions/$TAG/$(basename "$FILE")"
-                fi
+                TARGET="docs/_build/html/versions/$TAG/$(basename "$FILE")"
+                git show "$TAG:$FILE" > "$TARGET" 2>/dev/null || echo "Skipping missing $FILE in $TAG"
             done
             
-            if [ -f "context/context.json" ]; then
+            if git show "$TAG:context/context.json" > /tmp/context.json 2>/dev/null; then
                 sudo mkdir -p "docs/_build/html/versions/$TAG/context"
-                sudo cp "context/context.json" "docs/_build/html/versions/$TAG/context"
+                sudo cp /tmp/context.json "docs/_build/html/versions/$TAG/context/context.json"
             fi
-    
-            git checkout $ORIGINAL_BRANCH
         done
   
     - name: Upload Artifacts
