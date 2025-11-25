@@ -17,8 +17,8 @@ permissions:
 
 
 jobs:
-  deploy-on-ghpages:
-    #concurrency: ci-${{ github.ref }}  # Recommended if you intend to make multiple deployments in quick succession.
+  build-ontologies:
+    concurrency: pages-${{ github.ref }}
     runs-on: ubuntu-latest
 
     steps:
@@ -29,6 +29,13 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: 3.11
+
+    - name: Cache pip
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements*.txt', '.github/workflows/cd_ghpages.yml') }}
+        restore-keys: ${{ runner.os }}-pip-
 
     - name: Install EMMOntoPy
       run: |
@@ -70,10 +77,9 @@ jobs:
         #    ${ONTOLOGY_NAME}.ttl \
         #    build/${ONTOLOGY_NAME}-inferred.ttl
 
-    - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4
+    - name: Upload processed ontologies
+      uses: actions/upload-artifact@v4
       with:
-        folder: build
-        branch: gh-pages
-        clean: false
-        single-commit: true
+        name: ontology-build
+        path: build/
+        if-no-files-found: error
