@@ -1,0 +1,43 @@
+{
+    "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
+    "@type": "Electrolyte",
+    "rdfs:label": "1 M Lithium Hexafluorophosphate in 1:1 EC:DMC",
+    "hasSolvent": {
+        "@type": "Solvent",
+        "hasConstituent": [
+            {
+                "@type": "EthyleneCarbonate",
+                "hasProperty": {
+                    "@type": "VolumeFraction",
+                    "hasNumericalPart": {
+                        "@type": "RealData",
+                        "hasNumberValue": 0.5
+                    },
+                    "hasMeasurementUnit": "emmo:UnitOne"
+                }
+            },
+            {
+                "@type": "DimethylCarbonate",
+                "hasProperty": {
+                    "@type": "VolumeFraction",
+                    "hasNumericalPart": {
+                        "@type": "RealData",
+                        "hasNumberValue": 0.5
+                    },
+                    "hasMeasurementUnit": "emmo:UnitOne"
+                }
+            }
+        ]
+    },
+    "hasSolute": {
+        "@type": "LithiumHexafluorophosphate",
+        "hasProperty": {
+            "@type": "AmountConcentration",
+            "hasNumericalPart": {
+                "@type": "RealData",
+                "hasNumberValue": 1
+            },
+            "hasMeasurementUnit": "emmo:MolePerLitre"
+        }
+    }
+}

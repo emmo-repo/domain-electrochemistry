@@ -1,0 +1,421 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Example: Zinc Powder from a Supplier\n",
+        "\n",
+        "Let's describe an instance of some zinc powder with a set of properties defined in the specification sheet from the manufacturer!\n",
+        "\n",
+        "This example covers a few topics:  \n",
+        "\n",
+        "- How to describe a resource using ontology terms and JSON-LD **[Basic]**\n",
+        "- How to run a simple query using SPARQL **[Moderate]**  \n",
+        "- How to use the ontology to fetch more information from other sources **[Advanced]**  \n",
+        "\n",
+        "A live version of this notebook is available on Google Colab [here](https://colab.research.google.com/drive/19PxdZDPcKda8Ji6Nyzsz-_8KJFgNkmCa?usp=sharing)\n"
+      ],
+      "metadata": {
+        "id": "1wseTQGaB4x9"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Describe the powder using ontology terms in JSON-LD **[Basic]**\n",
+        "In this example, we will describe a [commercially available zinc powder](https://www.sigmaaldrich.com/NO/en/product/aldrich/324930) that is available from the chemical company [Sigma Aldrich](https://www.wikidata.org/wiki/Q680841). We will first describe some general information (e.g. what it is, who manufactured it, where more information can be found, etc.) and then we will describe a simple property of the powder.\n",
+        "\n",
+        "The JSON-LD description that we will use is:"
+      ],
+      "metadata": {
+        "id": "jcTVz9-DEh3m"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "jsonld = {\n",
+        "  \"@context\": \"https://w3id.org/emmo/domain/electrochemistry/context\",\n",
+        "  \"@type\": [\"Zinc\", \"Powder\"],\n",
+        "  \"schema:manufacturer\": {\n",
+        "      \"@id\": \"https://www.wikidata.org/wiki/Q680841\",\n",
+        "      \"schema:name\": \"Sigma-Aldrich\"\n",
+        "  },\n",
+        "  \"schema:productID\": \"324930\",\n",
+        "  \"schema:url\": \"https://www.sigmaaldrich.com/NO/en/product/aldrich/324930\",\n",
+        "  \"hasProperty\": [\n",
+        "      {\n",
+        "        \"@type\": [\"D95ParticleSize\", \"ConventionalProperty\"],\n",
+        "        \"hasNumericalPart\": {\n",
+        "              \"@type\": \"Real\",\n",
+        "              \"hasNumericalValue\": 150\n",
+        "        },\n",
+        "        \"hasMeasurementUnit\": \"emmo:MicroMetre\",\n",
+        "        \"dc:source\": \"https://www.sigmaaldrich.com/NO/en/product/aldrich/324930\"\n",
+        "      }\n",
+        "  ]\n",
+        "}"
+      ],
+      "metadata": {
+        "id": "gohQKEBrF2QP"
+      },
+      "execution_count": 31,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Let's break this description down, little by little.\n",
+        "\n",
+        "**@context**: the context is a hallmark of JSON-LD descriptions that provides a kind of dictionary to help translate between human-readable labels and machine-readable IRIs. You can use the [generic context](https://w3id.org/emmo/domain/electrochemistry/context) available from the domain ontology, or define your own.\n",
+        "\n",
+        "**@type**: describes the parent class(es) of the individual thing we are describing. While most things will only have one parent, it is possible to inherit from multiple parents. In this example, our thing inherits from both Zinc and Powder - becoming a Zinc Powder.\n",
+        "\n",
+        "The next three properties use the [schema.org vocabulary](https://schema.org/) to make some generic statements about the product, such as its manufacturer, product ID, and URL. Notice that the value of **schema:manufacturer** is a node with an **@id** value of https://www.wikidata.org/wiki/Q680841 and described by a property **schema:name**. This allows us to consistently refer to the manufacturer by a persistent and uniquie identifier (e.g. its wikidata URL) and describe it with a human-readable name (\"Sigma-Aldrich\").\n",
+        "\n",
+        "We use the EMMO term **hasProperty** to assign the value and unit to a quantity. We again use **@type** to give information about the type of property we are defining. In this case, we again use multiple inheretance to state that this is the **D95ParticleSize** and it is a **ConventionalProperty**. A **ConventionalProperty** is an EMMO term that indicates that the property is obtained by convention (e.g. from a manufacturer's specification sheet) rather than being explicitly measured.\n",
+        "\n",
+        "Quantities always have two parts: a number and a unit. This is achieved in EMMO rules through the use of **hasNumericalPart** and **hasMeasurementUnit**. In this case, we say that the numerical part is a real number with a value of 150 and the measurement unit is micrometre. Finally, we can use the [Dublin Core](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/) terms to define a source for where this information came from, such as a URL or other persistent and unique identifier (e.g. a DOI).\n",
+        "\n",
+        "But JSON-LD just offers a handy way to generate human-readable linked data graphs. To really take advantage of its potential, we need to convert it into a machine-readable graph for querying and other operations."
+      ],
+      "metadata": {
+        "id": "J7NtqC0S55uw"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### Parse this description into a graph\n",
+        "Now let's see how a machine would process this data by reading it into a Graph! First, we install and import the python dependencies that we need for this example."
+      ],
+      "metadata": {
+        "id": "in30p-x4H91Y"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Install and import dependencies\n",
+        "!pip install jsonschema rdflib requests matplotlib > /dev/null\n",
+        "\n",
+        "import json, rdflib, requests, sys\n",
+        "from IPython.display import Image, display\n",
+        "import matplotlib.pyplot as plt"
+      ],
+      "metadata": {
+        "id": "wk4sFl_eA2ML"
+      },
+      "execution_count": 32,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "We create the graph using a very handy python package called [rdflib](https://rdflib.readthedocs.io/en/stable/), which provides us a way to parse our JSON-LD data, run some queries using the language [SPARQL](https://en.wikipedia.org/wiki/SPARQL), and serialize the graph in any RDF compatible format (e.g. JSON-LD, Turtle, etc.)."
+      ],
+      "metadata": {
+        "id": "lotp-0QABV-2"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Create a new graph\n",
+        "g = rdflib.Graph()\n",
+        "\n",
+        "# Parse our json-ld data into the graph\n",
+        "g.parse(data=json.dumps(jsonld), format=\"json-ld\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zWibLw6NIrrq",
+        "outputId": "20883907-f711-44df-a48e-6b4b95ae3c72"
+      },
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "<Graph identifier=Nb5552bc1d06041c895f1772067933789 (<class 'rdflib.graph.Graph'>)>"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 33
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Query the graph using SPARQL [Moderate]\n",
+        "\n",
+        "Now, let's write a SPARQL query to get back some information...like what is the name of the manufacturer?\n",
+        "\n",
+        "SPARQL queries reflect the same basic subject-predicate-object (node-edge-node) structure of triples. Variables can be used in place of any of the three parts to query for triples that match the pattern. Multiple lines can be combined to yield more advanced queries.\n",
+        "\n",
+        "In this example, we say that we are looking for the value of some variable `?manufacturerName` that matches the patterns:\n",
+        "\n",
+        "```\n",
+        "?thing schema:manufacturer ?manufacturer .\n",
+        "```\n",
+        "&\n",
+        "```\n",
+        "?manufacturer schema:name ?manufacturerName .\n",
+        "```\n",
+        "Roughly translated into English, the query reads: select all values for the variable manufacturerName, where a thing is manufactured by some manufacturer and the manufacturer has a name manufacturerName. We can execute this query on the grpah using rdflib:"
+      ],
+      "metadata": {
+        "id": "C-w1TbxkI4W5"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "query_txt = \"\"\"\n",
+        "PREFIX schema: <https://schema.org/>\n",
+        "\n",
+        "SELECT ?manufacturerName\n",
+        "WHERE {\n",
+        "  ?thing schema:manufacturer ?manufacturer .\n",
+        "  ?manufacturer schema:name ?manufacturerName .\n",
+        "}\n",
+        "\"\"\"\n",
+        "\n",
+        "# Execute the SPARQL query\n",
+        "results = g.query(query_txt)\n",
+        "\n",
+        "# Print the results\n",
+        "for row in results:\n",
+        "    print(row)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6bXHGG4cI-kr",
+        "outputId": "eeea0a58-c894-4c9e-8f86-3d2724d6e338"
+      },
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(rdflib.term.Literal('Sigma-Aldrich'),)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "We can now see that the name of the manufacturer is 'Sigma-Aldrich'."
+      ],
+      "metadata": {
+        "id": "P9T9HG3OhvGG"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "## Fetch additional information from other sources [Advanced]\n",
+        "Ontologies contain a lot of information about the meaning of things, but they don't always contain an exhaustive list of all the properties. Instead, they often point to other sources where that information exists rather than duplicating it. Let's see how you can use the ontology to fetch additional information from other sources.\n",
+        "\n",
+        "[Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page) is a free and open knowledge base that can be read and edited by both humans and machines. Wikidata acts as central storage for the structured data of its Wikimedia sister projects including Wikipedia, Wikivoyage, Wiktionary, Wikisource, and others. EMMO ontologies often include links to Wikidata terms where applicable to provide users with additional information. Let's give it a try!\n",
+        "\n",
+        "First, we parse the ontology into the knowledge graph and retrieve the IRIs for the terms that we are interested in. In this case, we want to retrieve more information about Zinc from Wikidata, so we query the ontology to find Zinc's Wikidata ID."
+      ],
+      "metadata": {
+        "id": "b7LJC8BubFce"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Parse the ontology into the knowledge graph\n",
+        "ontology = \"https://w3id.org/emmo/domain/electrochemistry/inferred\"\n",
+        "g.parse(ontology, format='turtle')\n",
+        "\n",
+        "# Fetch the context\n",
+        "context_url = 'https://w3id.org/emmo/domain/electrochemistry/context'\n",
+        "response = requests.get(context_url)\n",
+        "context_data = response.json()\n",
+        "\n",
+        "# Look for the IRI of Zinc in the context\n",
+        "zinc_iri = context_data.get('@context', {}).get('Zinc')\n",
+        "wikidata_iri = context_data.get('@context', {}).get('wikidataReference')\n",
+        "\n",
+        "# Query the ontology to find the wikidata id for zinc\n",
+        "query_txt = \"\"\"\n",
+        "SELECT ?wikidataId\n",
+        "WHERE {\n",
+        "    <%s> <%s> ?wikidataId .\n",
+        "}\n",
+        "\"\"\" % (zinc_iri, wikidata_iri)\n",
+        "\n",
+        "results = g.query(query_txt)\n",
+        "for row in results:\n",
+        "    wikidata_id = row.wikidataId.split('/')[-1]\n",
+        "\n",
+        "print(f\"The Wikidata ID of Zinc: {wikidata_id}\")\n",
+        "print(f\"The whole URL is: {row.wikidataId}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ntT1Rf_yM6sZ",
+        "outputId": "23daa886-416f-40e7-a77c-adff02326cd2"
+      },
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The Wikidata ID of Zinc: Q758\n",
+            "The whole URL is: https://www.wikidata.org/wiki/Q758\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Now that we have the Wikidata ID for Zinc, we can query their SPARQL endpoint to retrieve some property. Let's ask it for the atomic mass."
+      ],
+      "metadata": {
+        "id": "XGXFrNa5dKSr"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Query the Wikidata knowledge graph for more information about zinc\n",
+        "wikidata_endpoint = \"https://query.wikidata.org/sparql\"\n",
+        "\n",
+        "# SPARQL query to get the atomic mass of zinc (Q758)\n",
+        "query = \"\"\"\n",
+        "SELECT ?mass WHERE {\n",
+        "  wd:%s wdt:P2067 ?mass .\n",
+        "}\n",
+        "\"\"\" % wikidata_id\n",
+        "\n",
+        "# Execute the request\n",
+        "response = requests.get(wikidata_endpoint, params={'query': query, 'format': 'json'})\n",
+        "data = response.json()\n",
+        "\n",
+        "# Extract and print the mass value\n",
+        "mass = data['results']['bindings'][0]['mass']['value']\n",
+        "print(f\"Wikidata says the atomic mass of zinc is: {mass}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zTBOZAf-dWQQ",
+        "outputId": "f51dc763-23ff-4e5d-9c66-b04b6175725d"
+      },
+      "execution_count": 36,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Wikidata says the atomic mass of zinc is: 65.38\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "We can also retrieve more complex data. For example, let's ask Wikidata to show us an image of zinc."
+      ],
+      "metadata": {
+        "id": "-xdSIS6Idy5m"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# SPARQL query to get the image of zinc (Q758)\n",
+        "query = \"\"\"\n",
+        "SELECT ?image WHERE {\n",
+        "  wd:%s wdt:P18 ?image .\n",
+        "}\n",
+        "\"\"\" % wikidata_id\n",
+        "\n",
+        "# Execute the request\n",
+        "response = requests.get(wikidata_endpoint, params={'query': query, 'format': 'json'})\n",
+        "data = response.json()\n",
+        "\n",
+        "# Extract and display the image URL\n",
+        "if data['results']['bindings']:\n",
+        "    image_url = data['results']['bindings'][0]['image']['value']\n",
+        "    print(f\"Image of Zinc: {image_url}\")\n",
+        "    display(Image(url=image_url, width=300))  # Adjust width and height as needed\n",
+        "\n",
+        "else:\n",
+        "    print(\"No image found for Zinc.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 222
+        },
+        "id": "T7bkBY0sNqNY",
+        "outputId": "017fbe89-fa0c-465e-fb67-1f7a3a85e606"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Image of Zinc: http://commons.wikimedia.org/wiki/Special:FilePath/Zinc%20fragment%20sublimed%20and%201cm3%20cube.jpg\n"
+          ]
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/html": [
+              "<img src=\"http://commons.wikimedia.org/wiki/Special:FilePath/Zinc%20fragment%20sublimed%20and%201cm3%20cube.jpg\" width=\"300\"/>"
+            ],
+            "text/plain": [
+              "<IPython.core.display.Image object>"
+            ]
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Isn't that cool?! And we're just scratching the surface of what is possible with linked data, ontologies, and knowledge graphs. Keep checking out more examples to explore the possibilities!"
+      ],
+      "metadata": {
+        "id": "NRFBjj_C-Mpl"
+      }
+    }
+  ]
+}

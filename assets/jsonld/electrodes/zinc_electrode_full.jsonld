@@ -1,0 +1,51 @@
+{
+    "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
+    "@type": "Electrode",
+    "rdfs:label": "Demo Zinc Electrode",
+    "rdfs:comment": ["This example shows how to describe an electrode using the 'hasActiveMaterial' property.", "Using 'hasActiveMaterial' with 'Zinc' is equivalent to using the 'ZincElectrode' term in the ontology.", "Electrode types that are needed to describe IEC regulated electrochemical cell definitions are included in the ontology (e.g. 'ZincElectrode'). Use 'hasActiveMaterial' as a more flexible alternative to define other electrode types that are outside the scope of specific regulations."],
+    "hasActiveMaterial": {
+       "@type": ["Zinc", "Foil"],
+       "hasProperty": {
+         "@type": "Density",
+         "hasNumericalPart": {
+           "@type": "RealData",
+           "hasNumberValue": 7.14
+         },
+         "hasMeasurementUnit": "emmo:GramPerCubicCentimetre"
+       }
+    },
+    "hasProperty": [
+       {
+             "@type": "SpecificCapacity",
+             "hasNumericalPart": {
+                "@type": "RealData",
+                "hasNumberValue": 800
+             },
+             "hasMeasurementUnit": "emmo:MilliAmpereHourPerGram"
+       },
+       {
+             "@type": "Thickness",
+             "hasNumericalPart": {
+                "@type": "RealData",
+                "hasNumberValue": 250
+             },
+             "hasMeasurementUnit": "emmo:MicroMetre"
+       },
+       {
+             "@type": "Diameter",
+             "hasNumericalPart": {
+                "@type": "RealData",
+                "hasNumberValue": 2
+             },
+             "hasMeasurementUnit": "emmo:CentiMetre"
+       },
+       {
+             "@type": "Mass",
+             "hasNumericalPart": {
+                "@type": "RealData",
+                "hasNumberValue": 0.56
+             },
+             "hasMeasurementUnit": "emmo:Gram"
+       }
+    ]
+ }

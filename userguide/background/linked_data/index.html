@@ -1,0 +1,715 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Introduction to Linked Data &#8212; Domain Electrochemistry Ontology</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=fe783a2f" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'userguide/background/linked_data/index';</script>
+    <link rel="icon" href="../../../_static/battinfologo.ico"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Introduction to JSON-LD" href="linked_data_jsonld.html" />
+    <link rel="prev" title="RDF Formats" href="../rdf/rdf_formats.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the ontology..."
+         aria-label="Search the ontology..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/battinfologo.jpg" class="logo__image only-light" alt="Domain Electrochemistry Ontology - Home"/>
+    <img src="../../../_static/battinfologo.jpg" class="logo__image only-dark pst-js-only" alt="Domain Electrochemistry Ontology - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../electrochemistry.html">
+    Class Index
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../../index.html">
+    User Guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../pages/examples.html">
+    Examples
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../pages/about.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../pages/faq.html">
+    FAQ
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/emmo-repo/domain-electrochemistry" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-github-square fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://w3id.org/emmo/domain/electrochemistry" title="Ontology Homepage" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-globe fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Ontology Homepage</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../electrochemistry.html">
+    Class Index
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../../index.html">
+    User Guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../pages/examples.html">
+    Examples
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../pages/about.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../pages/faq.html">
+    FAQ
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/emmo-repo/domain-electrochemistry" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-github-square fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://w3id.org/emmo/domain/electrochemistry" title="Ontology Homepage" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-globe fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Ontology Homepage</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Background</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../ontology/index.html">What is an Ontology?</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../ontology/ontology_structure.html">Ontology Structure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ontology/ontology_capabilities.html">Ontology Capabilities</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../rdf/index.html">Resource Description Framework (RDF)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../rdf/rdf_identifiers.html">Identifiers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rdf/rdf_classes_properties_triples.html">Classes, Properties, and Triples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rdf/rdf_graphs.html">RDF Graphs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../rdf/rdf_formats.html">RDF Formats</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">Introduction to Linked Data</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="linked_data_jsonld.html">Introduction to JSON-LD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="linked_data_jsonld.html">Introduction to JSON-LD</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../emmo/index.html">Elementary Multiperspective Materials Ontology (EMMO)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../emmo/emmo_units.html">Units</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../emmo/emmo_properties_and_quantities.html">Properties and Quantities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../emmo/emmo_measurements.html">Measurements in EMMO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../emmo/emmo_processes.html">Processes in EMMO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../emmo/emmo_wholes_and_parts.html">Describing Wholes and Parts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../emmo/emmo_naming_conventions.html">Naming Conventions</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../electrochemical_systems/index.html">Electrochemical Systems</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../electrochemical_systems/materials.html">Materials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../electrochemical_systems/electrodes.html">Electrodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../electrochemical_systems/electrolytes.html">Electrolytes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../electrochemical_systems/electrochemical_cells.html">Electrochemical Cells</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../electrochemical_systems/electrochemical_devices.html">Electrochemical Devices</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../testing/index.html">Testing</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../testing/discharging_test.html">Discharge Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../testing/electrochemical_impedance_spectroscopy_test.html">Electrochemical Impedance Spectroscopy (EIS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../testing/cyclic_voltammetry_test.html">Cyclic Voltammetry (CV) Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../testing/galvanostatic_cycling_test.html">Galvanostatic Charge–Discharge Test</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../datasets/index.html">Datasets</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">User Guide</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Background</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Introduction to Linked Data</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="introduction-to-linked-data">
+<h1>Introduction to Linked Data<a class="headerlink" href="#introduction-to-linked-data" title="Link to this heading">#</a></h1>
+<p>Data often exists in silos, scattered across different formats and systems. Linked data breaks down these walls by creating meaningful connections between pieces of information, making it easier to share, combine, and understand data in a unified way. It’s like building a world wide web for your data, where every table, property, and source of information is hyperlinked together.</p>
+<p>Put simply, linked data is a way to structure and connect data, so that it can be better understood and utilized. The linked data framework is designed to be understood by both humans and machines. It represents data as a network graph of interconnected data points, each described using a shared vocabulary and unique identifiers. By linking pieces of information, linked data facilitates interoperability between systems and helps users extract meaningful insights across different datasets.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="linked_data_jsonld.html">Introduction to JSON-LD</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="linked_data_jsonld.html#why-json-ld">Why JSON-LD?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="linked_data_jsonld.html#key-features">Key Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="linked_data_jsonld.html#getting-started-with-json-ld">Getting Started with JSON-LD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="linked_data_jsonld.html#advantages-of-json-ld">Advantages of JSON-LD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="linked_data_jsonld.html#example-electrochemical-cell-in-json-ld">Example: Electrochemical Cell in JSON-LD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="linked_data_jsonld.html#learn-more">Learn More</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>---</p>
+<section id="background">
+<h2>Background<a class="headerlink" href="#background" title="Link to this heading">#</a></h2>
+<p>Linked data is a key component of the Semantic Web, an idea introduced by Sir Tim Berners-Lee in the early 2000s. The goal of the Semantic Web is to make the web smarter by allowing machines to not only display information but also understand and process it. This would improve the connection between data, making information more useful and accessible.</p>
+<p>At the core of linked data is the <strong>Resource Description Framework (RDF)</strong>, which organizes information as <strong>triples</strong>. A triple is a three-part statement, comprised of a subject, a predicate, and an object. Triples are like node-edge-node structures, that can be combined to create a network graph of inforamtion. For example, we can create conceptual triples like:</p>
+<ul class="simple">
+<li><p><strong>subject:</strong> &quot;MarieCurie&quot;</p></li>
+<li><p><strong>predicate:</strong> &quot;birthDate&quot;</p></li>
+<li><p><strong>object:</strong> &quot;1867-11-07&quot;</p></li>
+</ul>
+<p>and</p>
+<ul class="simple">
+<li><p><strong>subject:</strong> &quot;MarieCurie&quot;</p></li>
+<li><p><strong>predicate:</strong> &quot;spouse&quot;</p></li>
+<li><p><strong>object:</strong> &quot;PierreCurie&quot;</p></li>
+</ul>
+<p>When combined, these triples form a graph of interconnected data, enabling the definition of relationships that make it easier to explore related information.</p>
+<p>Today, linked data is foundational to modern search engines and knowledge graphs. For instance, Google uses linked data in the <a class="reference external" href="https://blog.google/products/search/introducing-knowledge-graph-things-not/">Google Knowledge Graph</a>, which powers rich search results by connecting facts about people, places, and things from various sources. <a class="reference external" href="https://www.wikidata.org/">Wikidata</a>, a structured data hub for Wikipedia, relies heavily on linked data principles to link information about millions of topics. These technologies enable search engines to deliver more relevant and precise results by understanding relationships between data, making the web more interconnected and useful for both people and machines.</p>
+</section>
+<section id="key-concepts-in-linked-data">
+<h2>Key Concepts in Linked Data<a class="headerlink" href="#key-concepts-in-linked-data" title="Link to this heading">#</a></h2>
+<p>The <a class="reference external" href="https://www.w3.org/TR/sparql11-query/">**Resource Description Framework (RDF)** &lt;https://www.w3.org/RDF/&gt;`__is the foundational model for representing information in linked data. It structures data as a set of triples, each consisting of a subject, predicate, and object. These triples are used to create graphs where each node (subject or object) is connected by edges (predicates). RDF graphs can be stored in a variety of supported formats, including **JSON-LD** and **Turtle**. Data stored in RDF graphs can be semantically queried using the query language `**SPARQL**</a>.</p>
+<p>In linked data, every resource (such as a battery, material, or test result) is identified by a <a class="reference external" href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier">**Uniform Resource Identifier (URI)**</a>. URIs ensure that each entity is globally unique and can be referenced unambiguously across datasets. URIs are limited to using US-ASCII characters.
+A more expansive identifier standard called <a class="reference external" href="https://en.wikipedia.org/wiki/Internationalized_Resource_Identifier">**Internationalized Resource Identifier (IRI)**</a> is an extension of the URI standard that can contain most characters from the Universal Character Set.</p>
+<p>An <strong>ontology</strong> is a formal vocabulary that defines the relationships and concepts within a domain, providing a shared language for describing data. Ontologies in linked data use RDF to standardize the meanings of terms, ensuring that the same concept is understood consistently across different datasets.</p>
+</section>
+<section id="why-linked-data-matters">
+<h2>Why Linked Data Matters<a class="headerlink" href="#why-linked-data-matters" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Interoperability</strong>: Data from different sources can work together seamlessly.</p></li>
+<li><p><strong>Discoverability</strong>: Links make it easy to find related data across the web.</p></li>
+<li><p><strong>Reusability</strong>: Structured and linked data ensures it can be reused in different contexts.</p></li>
+<li><p><strong>Automation</strong>: Machines can understand and process linked data to power intelligent systems.</p></li>
+</ul>
+</section>
+<section id="the-5-stars-of-linked-data">
+<h2>The 5 Stars of Linked Data<a class="headerlink" href="#the-5-stars-of-linked-data" title="Link to this heading">#</a></h2>
+<p>Sir Tim Berners-Lee introduced a <a class="reference external" href="https://www.w3.org/2011/gld/wiki/5_Star_Linked_Data">5-star system</a> to encourage better data practices:</p>
+<ol class="arabic simple">
+<li><p>⭐ <strong>Available on the Web (in any format)</strong>: Data is accessible online.
+- Example: A PDF file of a dataset.</p></li>
+<li><p>⭐⭐ <strong>Available in a structured format</strong>: Data is machine-readable (e.g., Excel, CSV).
+- Example: An Excel file instead of a PDF.</p></li>
+<li><p>⭐⭐⭐ <strong>Uses non-proprietary formats</strong>: Data is in open formats (e.g., CSV instead of Excel).
+- Example: A CSV file instead of a proprietary Excel format.</p></li>
+<li><p>⭐⭐⭐⭐ <strong>Uses URIs to identify things</strong>: Data uses URIs to link concepts and entities.
+- Example: A dataset about books where each book has a unique URI.</p></li>
+<li><p>⭐⭐⭐⭐⭐ <strong>Linked to other data</strong>: Data is interlinked with other datasets, creating a web of data.
+- Example: A dataset about books that links to author profiles, publishers, and related genres.</p></li>
+</ol>
+<p>The goal is to encourage datasets to move toward 5-star Linked Data for maximum accessibility, interoperability, and usefulness.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Getting Started with Linked Data</p>
+<ol class="arabic simple">
+<li><p><strong>Start Small</strong>: Begin by structuring your data using a simple format like JSON-LD.</p></li>
+<li><p><strong>Adopt Standards</strong>: Use well-defined vocabularies and ontologies (e.g., Schema.org, EMMO).</p></li>
+<li><p><strong>Link to External Data</strong>: Connect your dataset to relevant URIs in other datasets.</p></li>
+<li><p><strong>Publish Your Data</strong>: Make it accessible on the web and document its structure.</p></li>
+</ol>
+</div>
+</section>
+<section id="linked-data-resources">
+<h2>Linked Data Resources<a class="headerlink" href="#linked-data-resources" title="Link to this heading">#</a></h2>
+<p>Linked data resources are the vocabularies that make linked data possible. These vocabularies define the structure and meaning of data, allowing different datasets to connect and communicate in a standardized way. There are many vocabularies available, each suited to specific needs or domains, but all of them work together to support interoperability and meaningful data exchange. Below are some of the key linked data resources that are widely used to organize and describe information across various fields.</p>
+<section id="rdf-schema-rdfs">
+<h3>RDF Schema (RDFS)<a class="headerlink" href="#rdf-schema-rdfs" title="Link to this heading">#</a></h3>
+<p>RDF Schema (RDFS) is a framework that extends RDF (Resource Description Framework) by providing a basic vocabulary to describe relationships between resources. RDFS introduces concepts like classes and properties to allow more expressive descriptions of data. It also supports hierarchical structures through subclasses and sub properties, which allow users to define more specific relationships under broader categories. For example, you can define that a &quot;Student&quot; is a subclass of &quot;Person,&quot; or that &quot;birthPlace&quot; is a sub property of &quot;location.&quot;</p>
+<p>RDFS helps establish the foundational structure of linked data, allowing different resources to be described in a standardized and meaningful way, making it a key building block for ontologies.</p>
+</section>
+<section id="dublin-core-dc-terms">
+<h3>Dublin Core (DC) Terms<a class="headerlink" href="#dublin-core-dc-terms" title="Link to this heading">#</a></h3>
+<p>Dublin Core is a set of standardized metadata terms used for describing digital resources, such as titles, creators, and subjects. These terms provide a flexible, widely adopted vocabulary for describing web content in a structured way.</p>
+</section>
+<section id="schema-org">
+<h3>Schema.org<a class="headerlink" href="#schema-org" title="Link to this heading">#</a></h3>
+<p>Schema.org is a collaborative effort supported by major search engines like Google, Bing, and Yahoo to provide a shared vocabulary for structuring data on the web. Schema.org defines types and properties to describe common entities, such as people, places, and events, allowing websites and data providers to structure their information in a way that search engines and applications can easily interpret.</p>
+<p>For example, the Person type in Schema.org can have properties like name, birthDate, and jobTitle, while the Event type includes properties like startDate and location. Schema.org’s simplicity and broad adoption make it an ideal starting point for building interoperable linked data on the web.</p>
+</section>
+<section id="csv-on-the-web-csvw">
+<h3>CSV on the Web (CSVW)<a class="headerlink" href="#csv-on-the-web-csvw" title="Link to this heading">#</a></h3>
+<p>CSV on the Web (CSVW) is a standard that defines how to represent metadata about CSV files to make them more accessible as linked data. CSVW helps transform tabular data (like CSV files) into structured, machine-readable formats by describing the columns, datatypes, and relationships in a CSV file. With CSVW, you can:</p>
+<ul class="simple">
+<li><p>Define the structure of a CSV file (e.g., what each column represents).</p></li>
+<li><p>Validate the data (e.g., ensure columns contain the correct datatypes).</p></li>
+<li><p>Link the CSV data to external resources (e.g., linking values to related entities via URIs).</p></li>
+</ul>
+<p>By using CSVW, even simple CSV files can be turned into linked data that is interoperable across the web, bridging the gap between traditional tabular data and more advanced linked data formats.</p>
+</section>
+<section id="data-catalogue-vocabulary-dcat">
+<h3>Data Catalogue Vocabulary (DCAT)<a class="headerlink" href="#data-catalogue-vocabulary-dcat" title="Link to this heading">#</a></h3>
+<p>DCAT (Data Catalogue Vocabulary) is a W3C standard used for describing datasets and data catalogues, making it easier to share, discover, and integrate data across different platforms. DCAT provides a vocabulary for publishing metadata about datasets, including:</p>
+<ul class="simple">
+<li><p>Dataset: Describes a collection of data, such as a research dataset or a government dataset</p></li>
+<li><p>Catalogue: Describes a collection of datasets, such as a data repository or a catalogue of open data.</p></li>
+<li><p>Distribution: Describes how the dataset is made available (e.g., as a downloadable file or API).</p></li>
+</ul>
+<p>DCAT plays a crucial role in the open data movement, helping governments, organizations, and researchers publish their datasets in a standardized way, making them easier to find and reuse. By linking datasets to their descriptions, DCAT enables data cataloguing systems to interoperate, allowing users to search for and retrieve datasets more efficiently.</p>
+<ul class="simple">
+<li><p>[Linked Data Principles](<a class="reference external" href="https://www.w3.org/DesignIssues/LinkedData.html">https://www.w3.org/DesignIssues/LinkedData.html</a>)</p></li>
+<li><p>[SPARQL Query Language](<a class="reference external" href="https://www.w3.org/TR/sparql11-query/">https://www.w3.org/TR/sparql11-query/</a>)</p></li>
+<li><p>[Open Data Handbook](<a class="reference external" href="https://opendatahandbook.org/">https://opendatahandbook.org/</a>)</p></li>
+</ul>
+<p>Contents:</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="linked_data_jsonld.html">Introduction to JSON-LD</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="linked_data_jsonld.html#why-json-ld">Why JSON-LD?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="linked_data_jsonld.html#key-features">Key Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="linked_data_jsonld.html#getting-started-with-json-ld">Getting Started with JSON-LD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="linked_data_jsonld.html#advantages-of-json-ld">Advantages of JSON-LD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="linked_data_jsonld.html#example-electrochemical-cell-in-json-ld">Example: Electrochemical Cell in JSON-LD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="linked_data_jsonld.html#learn-more">Learn More</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>---</p>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concepts-in-linked-data">Key Concepts in Linked Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-linked-data-matters">Why Linked Data Matters</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-5-stars-of-linked-data">The 5 Stars of Linked Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linked-data-resources">Linked Data Resources</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rdf-schema-rdfs">RDF Schema (RDFS)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dublin-core-dc-terms">Dublin Core (DC) Terms</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#schema-org">Schema.org</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#csv-on-the-web-csvw">CSV on the Web (CSVW)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-catalogue-vocabulary-dcat">Data Catalogue Vocabulary (DCAT)</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/userguide/background/linked_data/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2021-2023.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__center">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

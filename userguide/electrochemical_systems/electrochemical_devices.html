@@ -1,0 +1,826 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Electrochemical Devices &#8212; Domain Electrochemistry Ontology</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/custom.css?v=fe783a2f" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'userguide/electrochemical_systems/electrochemical_devices';</script>
+    <link rel="icon" href="../../_static/battinfologo.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Electrochemical Testing" href="../testing/index.html" />
+    <link rel="prev" title="Electrochemical Cells" href="electrochemical_cells.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the ontology..."
+         aria-label="Search the ontology..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/battinfologo.jpg" class="logo__image only-light" alt="Domain Electrochemistry Ontology - Home"/>
+    <img src="../../_static/battinfologo.jpg" class="logo__image only-dark pst-js-only" alt="Domain Electrochemistry Ontology - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../electrochemistry.html">
+    Class Index
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    User Guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../pages/examples.html">
+    Examples
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../pages/about.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../pages/faq.html">
+    FAQ
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/emmo-repo/domain-electrochemistry" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-github-square fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://w3id.org/emmo/domain/electrochemistry" title="Ontology Homepage" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-globe fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Ontology Homepage</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../electrochemistry.html">
+    Class Index
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
+    User Guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../pages/examples.html">
+    Examples
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../pages/about.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../pages/faq.html">
+    FAQ
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/emmo-repo/domain-electrochemistry" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-github-square fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://w3id.org/emmo/domain/electrochemistry" title="Ontology Homepage" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-globe fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Ontology Homepage</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../background/index.html">Background</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../background/ontology/index.html">What is an Ontology?</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../background/ontology/ontology_structure.html">Ontology Structure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../background/ontology/ontology_capabilities.html">Ontology Capabilities</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../background/rdf/index.html">Resource Description Framework (RDF)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../background/rdf/rdf_identifiers.html">Identifiers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../background/rdf/rdf_classes_properties_triples.html">Classes, Properties, and Triples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../background/rdf/rdf_graphs.html">RDF Graphs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../background/rdf/rdf_formats.html">RDF Formats</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../background/linked_data/index.html">Introduction to Linked Data</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../background/linked_data/linked_data_jsonld.html">Introduction to JSON-LD</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../background/linked_data/linked_data_jsonld.html">Introduction to JSON-LD</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../background/emmo/index.html">Elementary Multiperspective Materials Ontology (EMMO)</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../background/emmo/emmo_units.html">Units</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../background/emmo/emmo_properties_and_quantities.html">Properties and Quantities</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../background/emmo/emmo_measurements.html">Measurements in EMMO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../background/emmo/emmo_processes.html">Processes in EMMO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../background/emmo/emmo_wholes_and_parts.html">Describing Wholes and Parts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../background/emmo/emmo_naming_conventions.html">Naming Conventions</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Electrochemical Systems</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="materials.html">Materials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electrodes.html">Electrodes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electrolytes.html">Electrolytes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electrochemical_cells.html">Electrochemical Cells</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Electrochemical Devices</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../testing/index.html">Testing</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../testing/discharging_test.html">Discharge Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../testing/electrochemical_impedance_spectroscopy_test.html">Electrochemical Impedance Spectroscopy (EIS)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../testing/cyclic_voltammetry_test.html">Cyclic Voltammetry (CV) Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../testing/galvanostatic_cycling_test.html">Galvanostatic Charge–Discharge Test</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../datasets/index.html">Datasets</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">User Guide</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Describing Electrochemical Systems</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Electrochemical Devices</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="electrochemical-devices">
+<h1>Electrochemical Devices<a class="headerlink" href="#electrochemical-devices" title="Link to this heading">#</a></h1>
+<p>An <strong>electrochemical device</strong> is an engineered system designed to <strong>perform a function</strong> based on one or more electrochemical cells. While an <strong>ElectrochemicalCell</strong> represents the <em>active domain</em> of reactions — where ions and electrons move — an <strong>ElectrochemicalDevice</strong> represents the <em>assembled, functional product</em> that can store, deliver, or convert energy.</p>
+<div class="admonition-electrochemical-device-vs-electrochemical-cell admonition">
+<p class="admonition-title">Electrochemical Device vs. Electrochemical Cell</p>
+<p><strong>ElectrochemicalCell</strong>
+The <em>reactive unit</em> where oxidation and reduction occur. Includes electrodes, electrolyte, separator, and other internal components.</p>
+<p><strong>ElectrochemicalDevice</strong>
+The <em>functional system</em> that contains one or more cells, along with housing, terminals, connectors, safety elements, and packaging. It represents something you can <em>use</em> or <em>handle</em> in practice — such as a button cell, pouch cell, or battery pack.</p>
+<p>In short:
+- A <strong>cell</strong> describes <em>how electrochemistry happens</em>.
+- A <strong>device</strong> describes <em>how that cell is packaged, connected, and used</em>.</p>
+</div>
+<p>Common subclasses include:</p>
+<ul class="simple">
+<li><p><strong>BatteryCell</strong> — a self-contained rechargeable or primary energy storage unit</p></li>
+<li><p><strong>BatteryPack</strong> — multiple cells connected in series or parallel</p></li>
+<li><p><strong>Supercapacitor</strong>, <strong>FuelCell</strong>, <strong>Electrolyzer</strong>, <strong>FlowBattery</strong>, etc. — systems built for specific applications</p></li>
+</ul>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="assets/img/fig/png/electrochemical_device_structure.png"><img alt="Structure of an electrochemical device" src="assets/img/fig/png/electrochemical_device_structure.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-text">An electrochemical device contains one or more cells plus mechanical and electrical subsystems.</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="guidelines-for-use">
+<h2>Guidelines for Use<a class="headerlink" href="#guidelines-for-use" title="Link to this heading">#</a></h2>
+<p>Follow these steps to describe an <strong>ElectrochemicalDevice</strong> in the ontology.</p>
+<section id="identify-the-device-type">
+<h3>1. Identify the Device Type<a class="headerlink" href="#identify-the-device-type" title="Link to this heading">#</a></h3>
+<p>Start with the <cite>ElectrochemicalDevice</cite> class or one of its more specific subclasses, depending on function.</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://w3id.org/emmo/domain/electrochemistry/context&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ElectrochemicalDevice&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Subclasses include:</p>
+<ul class="simple">
+<li><p><cite>BatteryCell</cite></p></li>
+<li><p><cite>BatteryPack</cite></p></li>
+<li><p><cite>Supercapacitor</cite></p></li>
+<li><p><cite>FuelCell</cite></p></li>
+<li><p><cite>Electrolyzer</cite></p></li>
+<li><p><cite>FlowBattery</cite></p></li>
+</ul>
+</section>
+<section id="define-contained-cells">
+<h3>2. Define Contained Cells<a class="headerlink" href="#define-contained-cells" title="Link to this heading">#</a></h3>
+<p>Use the property <cite>hasCell</cite> (a subproperty of <cite>emmo:hasPart</cite>) to connect the device to its internal cells.</p>
+<p><strong>Example: device containing one electrochemical cell</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://w3id.org/emmo/domain/electrochemistry/context&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;BatteryCell&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;hasCell&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ElectrochemicalCell&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;hasElectrode&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PositiveElectrode&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;NegativeElectrode&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="p">],</span>
+<span class="w">    </span><span class="nt">&quot;hasElectrolyte&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LiquidElectrolyte&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;hasSeparator&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Separator&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>For multi-cell configurations (packs, stacks, modules), <cite>hasCell</cite> can connect to a list of cell instances, allowing topological descriptions such as <em>series</em> or <em>parallel</em> connections.</p>
+</section>
+<section id="describe-mechanical-and-electrical-components">
+<h3>3. Describe Mechanical and Electrical Components<a class="headerlink" href="#describe-mechanical-and-electrical-components" title="Link to this heading">#</a></h3>
+<p>Devices include additional structural and functional elements that do not belong to the cell itself.</p>
+<ul class="simple">
+<li><p><cite>hasCase</cite> — the enclosure or packaging (e.g., pouch, can, shell)</p></li>
+<li><p><cite>hasTerminal</cite> — the electrical connection points (positive/negative tabs, leads)</p></li>
+<li><p><cite>hasSafetyComponent</cite> — fuses, vents, valves, or protection circuits</p></li>
+<li><p><cite>hasSensor</cite> — temperature, voltage, or pressure sensors</p></li>
+<li><p><cite>hasElectronicController</cite> — management or regulation electronics</p></li>
+</ul>
+<p><strong>Example: pouch battery device</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://w3id.org/emmo/domain/electrochemistry/context&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;BatteryCell&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;hasCell&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ElectrochemicalCell&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;hasCase&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PouchCase&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;hasTerminal&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PositiveTerminal&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;NegativeTerminal&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="assign-device-properties">
+<h3>4. Assign Device Properties<a class="headerlink" href="#assign-device-properties" title="Link to this heading">#</a></h3>
+<p>Device-level properties capture overall performance, geometry, and application-relevant characteristics.</p>
+<p>Common examples:</p>
+<ul class="simple">
+<li><p><cite>NominalVoltage</cite></p></li>
+<li><p><cite>RatedCapacity</cite></p></li>
+<li><p><cite>SpecificEnergy</cite></p></li>
+<li><p><cite>SpecificPower</cite></p></li>
+<li><p><cite>CycleLife</cite></p></li>
+<li><p><cite>Mass</cite> or <cite>Volume</cite></p></li>
+</ul>
+<p><strong>Example: defining device properties</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;BatteryCell&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;hasProperty&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;NominalVoltage&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;hasNumericalPart&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;RealData&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;hasNumberValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">3.7</span><span class="w"> </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;hasMeasurementUnit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;emmo:Volt&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;RatedCapacity&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;hasNumericalPart&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;RealData&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;hasNumberValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">4.8</span><span class="w"> </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;hasMeasurementUnit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;emmo:AmpereHour&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SpecificEnergy&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;hasNumericalPart&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;RealData&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;hasNumberValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">250</span><span class="w"> </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;hasMeasurementUnit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;emmo:WattHourPerKilogram&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>These quantitative properties make it possible to query or compare devices using semantic reasoning or SHACL validation.</p>
+</section>
+<section id="model-subsystems-and-hierarchies">
+<h3>5. Model Subsystems and Hierarchies<a class="headerlink" href="#model-subsystems-and-hierarchies" title="Link to this heading">#</a></h3>
+<p>Devices can contain <strong>subsystems</strong>, allowing recursive representation from component → module → pack → system.</p>
+<div class="line-block">
+<div class="line">Device level | Typical relation | Example |</div>
+</div>
+<p><a href="#id2"><span class="problematic" id="id3">|---------------|</span></a>------------------<a href="#id4"><span class="problematic" id="id5">|----------|</span></a>
+| <strong>BatteryCell</strong> | <cite>hasCell</cite> | Contains one cell |
+| <strong>BatteryModule</strong> | <cite>hasComponent</cite> | Contains multiple cells with interconnections |
+| <strong>BatteryPack</strong> | <cite>hasSubSystem</cite> | Contains multiple modules plus electronics |
+| <strong>EnergyStorageSystem</strong> | <cite>hasSubSystem</cite> | Contains a battery pack and inverter |</p>
+<p><strong>Example: hierarchical pack structure</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;@context&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://w3id.org/emmo/domain/electrochemistry/context&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;BatteryPack&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;hasSubSystem&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;BatteryModule&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;hasComponent&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">      </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;BatteryCell&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">      </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;BatteryCell&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;hasElectronicController&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;BatteryManagementSystem&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="specialized-device-classes">
+<h2>Specialized Device Classes<a class="headerlink" href="#specialized-device-classes" title="Link to this heading">#</a></h2>
+<section id="fuelcell">
+<h3>FuelCell<a class="headerlink" href="#fuelcell" title="Link to this heading">#</a></h3>
+<p>Converts chemical fuel and oxidant into electricity.</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FuelCell&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;hasCell&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ElectrochemicalCell&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;hasReactant&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Hydrogen&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;hasOxidant&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Oxygen&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;hasElectrolyte&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PolymerElectrolyte&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="electrolyzer">
+<h3>Electrolyzer<a class="headerlink" href="#electrolyzer" title="Link to this heading">#</a></h3>
+<p>Performs the reverse of a fuel cell, using electricity to split compounds.</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Electrolyzer&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;hasCell&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ElectrochemicalCell&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;hasInput&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Water&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;hasOutput&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Hydrogen&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<section id="supercapacitor">
+<h3>Supercapacitor<a class="headerlink" href="#supercapacitor" title="Link to this heading">#</a></h3>
+<p>Stores energy through double-layer capacitance or pseudocapacitance.</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Supercapacitor&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;hasElectrode&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ActivatedCarbonElectrode&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ActivatedCarbonElectrode&quot;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;hasElectrolyte&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;OrganicElectrolyte&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;hasProperty&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SpecificPower&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;hasNumericalPart&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;@type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;RealData&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;hasNumberValue&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;hasMeasurementUnit&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;emmo:WattPerKilogram&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="reasoning-and-hierarchical-relations">
+<h2>Reasoning and Hierarchical Relations<a class="headerlink" href="#reasoning-and-hierarchical-relations" title="Link to this heading">#</a></h2>
+<p>Because all composition relations (<cite>hasCell</cite>, <cite>hasComponent</cite>, <cite>hasSubSystem</cite>, etc.)
+are subproperties of <cite>emmo:hasPart</cite>, reasoning engines can infer containment across levels.</p>
+<dl class="simple">
+<dt>::</dt><dd><p>If a BatteryPack hasSubSystem BatteryModule,
+and BatteryModule hasComponent BatteryCell,
+then BatteryPack hasPart BatteryCell.</p>
+</dd>
+</dl>
+<p>This makes high-level queries (e.g., “find all materials used in this pack”) automatically reach down to cell-level data.</p>
+</section>
+<section id="best-practices">
+<h2>Best Practices<a class="headerlink" href="#best-practices" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Use <strong>ElectrochemicalDevice</strong> (or its subclasses) for <em>functional products</em>, not raw electrochemical systems.</p></li>
+<li><p>Connect internal cells using <cite>hasCell</cite> and mechanical/electrical parts using their respective relations.</p></li>
+<li><p>Keep device-level and cell-level properties distinct — e.g., energy density at the device level vs. electrode capacity at the cell level.</p></li>
+<li><p>Use the same <cite>hasProperty</cite> pattern for all quantitative characteristics.</p></li>
+<li><p>For multi-cell systems, clearly model hierarchy (pack → module → cell).</p></li>
+<li><p>If modeling data from datasheets, mark such values as <cite>ConventionalProperty</cite> when not directly measured.</p></li>
+</ul>
+</section>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h2>
+<p>An <strong>ElectrochemicalDevice</strong> is a functional system that contains one or more <strong>ElectrochemicalCells</strong>,
+along with supporting mechanical, electrical, and safety components.</p>
+<div class="line-block">
+<div class="line">Concept | Relation | Example |</div>
+</div>
+<p><a href="#id6"><span class="problematic" id="id7">|----------|</span></a>-----------<a href="#id8"><span class="problematic" id="id9">|----------|</span></a>
+| <strong>ElectrochemicalDevice</strong> | <cite>hasCell</cite>, <cite>hasCase</cite>, <cite>hasTerminal</cite> | pouch cell with aluminum laminate case |
+| <strong>BatteryPack</strong> | <cite>hasSubSystem</cite> | pack with modules and BMS |
+| <strong>FuelCell</strong> | <cite>hasReactant</cite>, <cite>hasOxidant</cite>, <cite>hasElectrolyte</cite> | H₂–O₂ fuel cell |
+| <strong>Supercapacitor</strong> | <cite>hasElectrode</cite>, <cite>hasElectrolyte</cite> | activated carbon capacitor |
+| <strong>Relations</strong> | <cite>hasPart</cite>, <cite>hasSubSystem</cite>, <cite>hasComponent</cite> | transitive structure supports reasoning |</p>
+<p>By modeling devices this way, you can describe entire electrochemical systems —
+from single cells to full battery packs — with a consistent, interoperable ontology that links structure, materials, and performance.</p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#guidelines-for-use">Guidelines for Use</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identify-the-device-type">1. Identify the Device Type</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#define-contained-cells">2. Define Contained Cells</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#describe-mechanical-and-electrical-components">3. Describe Mechanical and Electrical Components</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-device-properties">4. Assign Device Properties</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#model-subsystems-and-hierarchies">5. Model Subsystems and Hierarchies</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#specialized-device-classes">Specialized Device Classes</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#fuelcell">FuelCell</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#electrolyzer">Electrolyzer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#supercapacitor">Supercapacitor</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reasoning-and-hierarchical-relations">Reasoning and Hierarchical Relations</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#best-practices">Best Practices</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/userguide/electrochemical_systems/electrochemical_devices.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2021-2023.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__center">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

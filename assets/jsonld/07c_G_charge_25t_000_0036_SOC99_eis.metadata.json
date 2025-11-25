@@ -1,0 +1,222 @@
+{
+    "@context": [
+        "https://w3id.org/emmo/domain/battery/context",
+        {
+            "vcard": "http://www.w3.org/2006/vcard/ns#",
+            "csvw": "http://www.w3.org/ns/csvw#",
+            "dqv": "http://www.w3.org/ns/dqv#",
+            "unit": "http://qudt.org/vocab/unit/"
+        }
+    ],
+    "@type": "dcat:Dataset",
+    "owl:versionInfo": "1.0.0",
+    "dc:identifier": "https://doi.org/10.1234/example.doi",
+    "dc:title": "07c_G_charge_25t_000_0036_SOC99_eish",
+    "dc:description": "A CSV file containing the results of a EIS test obtained from an INR18650-MJ1 battery cell manufactured by LG Chem.",
+    "dc:subject": ["battery", "li-ion", "EIS"],
+    "dc:language": "en",
+    "dc:license": {
+      "@id": "http://opendefinition.org/licenses/cc-by/"
+    },
+    "dc:accessRights": "public",
+    "dc:publisher": {
+      "@type": "schema:Organization",
+      "@id": "https://ror.org/04bwf3e34",
+      "schema:name": "German Aerospace Centre"
+    },
+    "dc:creator": {
+    "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-9019-2290",
+      "schema:name": "Yannick Kuhn",
+      "schema:affiliation": {
+        "@id": "https://ror.org/04bwf3e34",
+        "schema:name": "German Aerospace Centre"
+      }
+    },
+    "dc:contributor": {
+    "@type": "schema:Person",
+      "@id": "https://orcid.org/0000-0002-8758-6109",
+      "schema:name": "Simon Clark",
+      "schema:affiliation": {
+    "@type": "schema:Organization",
+        "@id": "https://ror.org/01f677e56",
+        "schema:name": "SINTEF"
+      }
+    },
+    "dc:modified": {
+      "@value": "2023-09-22",
+      "@type": "xsd:date"
+    },
+    "dc:created": {
+      "@value": "2023-09-22",
+      "@type": "xsd:date"
+    },
+    "dc:hasVersion": "1.0.0",
+    "dc:format": "text/csv",
+  
+    "schema:name": "07c_G_charge_25t_000_0036_SOC99_eish",
+    "schema:description": "A CSV file containing the results of a EIS test obtained from an INR18650-MJ1 battery cell manufactured by LG Chem.",
+    "schema:version": "1.0.0",
+    "schema:contactPoint": {
+      "@type": "schema:ContactPoint",
+      "schema:contactType": "corresponding author",
+      "schema:email": "mailto:birger.horstmann@dlr.de"
+    },
+    "schema:encodingFormat": "text/x-comma-separated-values",
+    "schema:contentSize": 6554,
+  
+    "dcat:keyword": ["battery", "li-ion", "EIS", "electrochemistry", "LG Chem"],
+    "dcat:distribution": {
+      "@type": "dcat:Distribution",
+      "dcat:accessURL": "https://kadi-dlr.hiu-batteries.de/records/2904/files/9b6e21d4-c275-4fd6-99a1-d0751c1d7eef",
+      "dcat:format": "text/csv",
+      "dcat:byteSize": 6554
+    },
+    "dcat:contactPoint": {
+      "@type": "vcard:Person",
+      "vcard:fn": "Corresponding Author",
+      "vcard:hasEmail": "mailto:birger.horstmann@dlr.de"
+    },
+    "dcat:version": "1.0.0",
+    "dcat:conformsTo": {
+      "@id": "https://www.w3.org/TR/vocab-dcat/"
+    },
+  
+    "csvw:url": "https://kadi-dlr.hiu-batteries.de/records/2904/files/9b6e21d4-c275-4fd6-99a1-d0751c1d7eef",
+    "csvw:tableSchema": {
+        "@type": "csv:TableSchema",
+        "csvw:columns": [
+      {
+        "@type": "csvw:Column",
+        "csvw:name": "f",
+        "csvw:titles": "Frequency",
+        "csvw:propertyUrl": {
+          "@type": "Frequency"
+        },
+        "hasMeasurementUnit": [
+          {
+            "@id": "emmo:Hertz"
+          },
+          {
+            "@id": "unit:HZ"
+          }
+        ],
+        "schema:unitCode": [
+          {
+            "@id": "emmo:Hertz"
+          },
+          {
+            "@id": "unit:HZ"
+          }
+        ],
+        "csvw:datatype": "xsd:decimal",
+        "csvw:required": "true"
+      },
+      {
+        "@type": "csvw:Column",
+        "csvw:name": "abs",
+        "csvw:titles": "Absolute Impedance",
+        "csvw:propertyUrl": {
+          "@type": "ElectricImpedance"
+        },
+        "hasMeasurementUnit": [
+          {
+            "@id": "emmo:Ohm"
+          },
+          {
+            "@id": "unit:OHM"
+          }
+        ],
+        "schema:unitCode": [
+          {
+            "@id": "emmo:Ohm"
+          },
+          {
+            "@id": "unit:OHM"
+          }
+        ],
+        "csvw:datatype": "xsd:decimal",
+        "csvw:required": "true"
+      },
+      {
+        "@type": "csvw:Column",
+        "csvw:name": "phase",
+        "csvw:titles": "Phase Angle",
+        "csvw:propertyUrl": {
+          "@type": "PhaseAngle"
+        },
+        "hasMeasurementUnit": [
+          {
+            "@id": "emmo:Radian"
+          },
+          {
+            "@id": "unit:RAD"
+          }
+        ],
+        "schema:unitCode": [
+          {
+            "@id": "emmo:Radian"
+          },
+          {
+            "@id": "unit:RAD"
+          }
+        ],
+        "csvw:datatype": "xsd:decimal",
+        "csvw:required": "true"
+      },
+      {
+        "@type": "csvw:Column",
+        "csvw:name": "Zreal",
+        "csvw:titles": "Real Part of the Impedance",
+        "csvw:propertyUrl": {
+          "@type": "RealElectricImpedance"
+        },
+        "hasMeasurementUnit": [
+          {
+            "@id": "emmo:Ohm"
+          },
+          {
+            "@id": "unit:OHM"
+          }
+        ],
+        "schema:unitCode": [
+          {
+            "@id": "emmo:Ohm"
+          },
+          {
+            "@id": "unit:OHM"
+          }
+        ],
+        "csvw:datatype": "xsd:integer",
+        "csvw:required": "true"
+      },
+      {
+        "@type": "csvw:Column",
+        "csvw:name": "-Zimag",
+        "csvw:titles": "Imaginary Part of the Impedance",
+        "csvw:propertyUrl": {
+          "@type": "ImaginaryElectricImpedance"
+        },
+        "hasMeasurementUnit": [
+          {
+            "@id": "emmo:Ohm"
+          },
+          {
+            "@id": "unit:OHM"
+          }
+        ],
+        "schema:unitCode": [
+          {
+            "@id": "emmo:Ohm"
+          },
+          {
+            "@id": "unit:OHM"
+          }
+        ],
+        "csvw:datatype": "xsd:integer",
+        "csvw:required": "true"
+      }
+    ],
+    "csvw:primaryKey": "f"
+    }
+  }

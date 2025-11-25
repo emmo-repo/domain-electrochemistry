@@ -1,0 +1,588 @@
+{
+    "@context": "https://w3id.org/emmo/domain/battery/context",
+    "@type": "csvw:TableSchema",
+    "@id": "https://w3id.org/emmo/application/cycler-data#",
+    "dc:identifier": "https://doi.org/10.1234/example.doi",
+    "dc:title": "Maccor Cycler Data Table Schema",
+    "dc:description": "A table schema describing csv files exported from battery cycler equipment manufactured by Maccor",
+    "dc:subject": ["battery", "data", "maccor", "cycler", "cycling", "schema"],
+    "dc:language": "en",
+    "dc:license": {
+        "@id": "https://spdx.org/licenses/MIT.html"
+    },
+    "dc:accessRights": "public",
+    "dc:publisher": {
+        "@type": "schema:ResearchOrganization",
+        "@id": "https://ror.org/01f677e56",
+        "schema:name": "SINTEF AS"
+    },
+    "dc:creator": {
+        "@type": "schema:Person",
+        "@id": "https://orcid.org/0000-0002-8758-6109",
+        "schema:name": "Simon Clark",
+        "schema:affiliation": {
+            "@type": "schema:ResearchOrganization",
+            "@id": "https://ror.org/01f677e56",
+            "schema:name": "SINTEF"
+        }
+    },
+    "dc:modified": {
+        "@value": "2024-07-03",
+        "@type": "xsd:date"
+    },
+    "dc:created": {
+        "@value": "2024-07-03",
+        "@type": "xsd:date"
+    },
+    "dc:hasVersion": "1.0.0",
+    "dc:format": "application/ld+json",
+    "schema:name": "Maccor Cycler Data Table Schema",
+    "schema:description": "A table schema describing csv files exported from battery cycler equipment manufactured by Maccor",
+    "schema:version": "1.0.0",
+    "schema:contactPoint": {
+        "@type": "schema:ContactPoint",
+        "schema:contactType": "creator",
+        "schema:email": "mailto:simon.clark@sintef.no"
+    },
+    "schema:encodingFormat": "application/ld+json",
+    "csvw:columns": [
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "rec#",
+            "dc:description": "index of a data point",
+            "csvw:titles": "Record Number",
+            "csvw:datatype": "xsd:integer",
+            "csvw:required": "true"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "Cyc#",
+            "csvw:titles": "Cycle Number",
+            "dc:description": "the current cycle number in the test",
+            "csvw:propertyUrl": {
+              "@type": "CycleNumber"
+            },
+            "hasMeasurementUnit": [
+              {
+                "@id": "emmo:UnitOne"
+              },
+              {
+                "@id": "unit:UNITLESS"
+              }
+            ],
+            "schema:unitCode": [
+              {
+                "@id": "emmo:UnitOne"
+              },
+              {
+                "@id": "unit:UNITLESS"
+              }
+            ],
+            "csvw:datatype": "xsd:integer",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "step",
+            "csvw:titles": "Step Number",
+            "dc:description": "the number of the currently running step",
+            "csvw:propertyUrl": {
+              "@type": "StepIndex"
+            },
+            "hasMeasurementUnit": [
+              {
+                "@id": "emmo:UnitOne"
+              },
+              {
+                "@id": "unit:UNITLESS"
+              }
+            ],
+            "schema:unitCode": [
+              {
+                "@id": "emmo:UnitOne"
+              },
+              {
+                "@id": "unit:UNITLESS"
+              }
+            ],
+            "csvw:datatype": "xsd:integer",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "test (sec)",
+            "csvw:titles": "Test Time",
+            "dc:description": "time of the current data point relative to the start of the test",
+            "csvw:propertyUrl": {
+            "@type": "TestTime"
+            },
+            "hasMeasurementUnit": [
+            {
+                "@id": "emmo:Second"
+            },
+            {
+                "@id": "unit:SEC"
+            }
+            ],
+            "schema:unitCode": [
+            {
+                "@id": "emmo:Second"
+            },
+            {
+                "@id": "unit:SEC"
+            }
+            ],
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "true"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "step (sec)",
+            "csvw:titles": "Step Time",
+            "dc:description": "time of the data point relative to the start of the current step",
+            "csvw:propertyUrl": {
+            "@type": "StepTime"
+            },
+            "hasMeasurementUnit": [
+            {
+                "@id": "emmo:Second"
+            },
+            {
+                "@id": "unit:SEC"
+            }
+            ],
+            "schema:unitCode": [
+            {
+                "@id": "emmo:Second"
+            },
+            {
+                "@id": "unit:SEC"
+            }
+            ],
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "amp-hr",
+            "csvw:titles": "Capacity",
+            "dc:description": "the channel capacity",
+            "csvw:propertyUrl": {
+            "@type": "Capacity"
+            },
+            "hasMeasurementUnit": [
+            {
+                "@id": "emmo:AmpereHour"
+            },
+            {
+                "@id": "unit:A-HR"
+            }
+            ],
+            "schema:unitCode": [
+            {
+                "@id": "emmo:AmpereHour"
+            },
+            {
+                "@id": "unit:A-HR"
+            }
+            ],
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "watt-hr",
+            "csvw:titles": "Energy",
+            "csvw:propertyUrl": {
+            "@type": "BatteryEnergy"
+            },
+            "hasMeasurementUnit": [
+            {
+                "@id": "emmo:WattHour"
+            },
+            {
+                "@id": "unit:W-HR"
+            }
+            ],
+            "schema:unitCode": [
+            {
+                "@id": "emmo:WattHour"
+            },
+            {
+                "@id": "unit:W-HR"
+            }
+            ],
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "amps",
+            "csvw:titles": "Current",
+            "csvw:propertyUrl": {
+            "@type": "CellCurrent"
+            },
+            "hasMeasurementUnit": [
+            {
+                "@id": "emmo:Ampere"
+            },
+            {
+                "@id": "unit:A"
+            }
+            ],
+            "schema:unitCode": [
+            {
+                "@id": "emmo:Ampere"
+            },
+            {
+                "@id": "unit:A"
+            }
+            ],
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "true"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "volts",
+            "csvw:titles": "Voltage",
+            "csvw:propertyUrl": {
+            "@type": "CellVoltage"
+            },
+            "hasMeasurementUnit": [
+            {
+                "@id": "emmo:Volt"
+            },
+            {
+                "@id": "unit:V"
+            }
+            ],
+            "schema:unitCode": [
+            {
+                "@id": "emmo:Volt"
+            },
+            {
+                "@id": "unit:V"
+            }
+            ],
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "true"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "state",
+            "dc:description": "the charging or discharging state of a battery",
+            "csvw:titles": "State",
+            "csvw:datatype": "xsd:string",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "es",
+            "dc:description": "unknown",
+            "csvw:titles": "es",
+            "csvw:datatype": "xsd:string",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "dpt time",
+            "csvw:titles": "DateTime",
+            "dc:description": "datetime of the current data point",
+            "csvw:propertyUrl": {
+              "@type": "Time"
+            },
+            "csvw:datatype": "xsd:dateTime",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "acimp/ohms",
+            "csvw:titles": "AC Impedance",
+            "dc:description": "the AC impedance of a cell",
+            "csvw:propertyUrl": {
+                "@type": "ElectricImpedance"
+            },
+            "hasMeasurementUnit": [
+            {
+                "@id": "emmo:Ohm"
+            },
+            {
+                "@id": "unit:OHM"
+            }
+            ],
+            "schema:unitCode": [
+            {
+                "@id": "emmo:Ohm"
+            },
+            {
+                "@id": "unit:OHM"
+            }
+            ],
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "dcir/ohms",
+            "csvw:titles": "DC Internal Resistance",
+            "dc:description": "the DC internal resistance of a cell",
+            "csvw:propertyUrl": {
+                "@type": "InternalResistance"
+            },
+            "hasMeasurementUnit": [
+            {
+                "@id": "emmo:Ohm"
+            },
+            {
+                "@id": "unit:OHM"
+            }
+            ],
+            "schema:unitCode": [
+            {
+                "@id": "emmo:Ohm"
+            },
+            {
+                "@id": "unit:OHM"
+            }
+            ],
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "wf chg cap",
+            "csvw:titles": "Charging Capacity",
+            "dc:description": "the charging capacity",
+            "csvw:propertyUrl": {
+            "@type": "ChargingCapacity"
+            },
+            "hasMeasurementUnit": [
+            {
+                "@id": "emmo:AmpereHour"
+            },
+            {
+                "@id": "unit:A-HR"
+            }
+            ],
+            "schema:unitCode": [
+            {
+                "@id": "emmo:AmpereHour"
+            },
+            {
+                "@id": "unit:A-HR"
+            }
+            ],
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "wf dis cap",
+            "csvw:titles": "Discharging Capacity",
+            "dc:description": "the discharging capacity",
+            "csvw:propertyUrl": {
+            "@type": "DischargingCapacity"
+            },
+            "hasMeasurementUnit": [
+            {
+                "@id": "emmo:AmpereHour"
+            },
+            {
+                "@id": "unit:A-HR"
+            }
+            ],
+            "schema:unitCode": [
+            {
+                "@id": "emmo:AmpereHour"
+            },
+            {
+                "@id": "unit:A-HR"
+            }
+            ],
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "wf chg e",
+            "csvw:titles": "Charging Energy",
+            "csvw:propertyUrl": {
+            "@type": "ChargingEnergy"
+            },
+            "hasMeasurementUnit": [
+            {
+                "@id": "emmo:WattHour"
+            },
+            {
+                "@id": "unit:W-HR"
+            }
+            ],
+            "schema:unitCode": [
+            {
+                "@id": "emmo:WattHour"
+            },
+            {
+                "@id": "unit:W-HR"
+            }
+            ],
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "wf dis e",
+            "csvw:titles": "Discharging Energy",
+            "csvw:propertyUrl": {
+            "@type": "DischargingEnergy"
+            },
+            "hasMeasurementUnit": [
+            {
+                "@id": "emmo:WattHour"
+            },
+            {
+                "@id": "unit:W-HR"
+            }
+            ],
+            "schema:unitCode": [
+            {
+                "@id": "emmo:WattHour"
+            },
+            {
+                "@id": "unit:W-HR"
+            }
+            ],
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "range",
+            "dc:description": "unknown",
+            "csvw:titles": "range",
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "var1",
+            "dc:description": "unknown",
+            "csvw:titles": "variable 1",
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "var2",
+            "dc:description": "unknown",
+            "csvw:titles": "variable 2",
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "var3",
+            "dc:description": "unknown",
+            "csvw:titles": "variable 3",
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "var4",
+            "dc:description": "unknown",
+            "csvw:titles": "variable 4",
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "var5",
+            "dc:description": "unknown",
+            "csvw:titles": "variable 5",
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "var6",
+            "dc:description": "unknown",
+            "csvw:titles": "variable 6",
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "var7",
+            "dc:description": "unknown",
+            "csvw:titles": "variable 7",
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "var8",
+            "dc:description": "unknown",
+            "csvw:titles": "varibale 8",
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "var9",
+            "dc:description": "unknown",
+            "csvw:titles": "variable 9",
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "var10",
+            "dc:description": "unknown",
+            "csvw:titles": "variable 10",
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "var11",
+            "dc:description": "unknown",
+            "csvw:titles": "variable 11",
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "var12",
+            "dc:description": "unknown",
+            "csvw:titles": "variable 12",
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "var13",
+            "dc:description": "unknown",
+            "csvw:titles": "variable 13",
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "var14",
+            "dc:description": "unknown",
+            "csvw:titles": "variable 14",
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "false"
+        },
+        {
+            "@type": "csvw:Column",
+            "csvw:name": "var15",
+            "dc:description": "unknown",
+            "csvw:titles": "variable 15",
+            "csvw:datatype": "xsd:decimal",
+            "csvw:required": "false"
+        }
+    ],
+    "csvw:primaryKey": "rec#"
+  }
+  

@@ -1,0 +1,24 @@
+{
+    "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
+    "@type": ["ActiveMaterial", "ManganeseDioxide", "Powder"],
+    "rdfs:comment": "An example showing how to describe a manganese dioxide powder active material",
+    "hasProperty": [
+       {    
+             "@type": "Density",
+             "hasNumericalPart": {
+                "@type": "RealData",
+                "hasNumberValue": 5.0
+             },
+             "hasMeasurementUnit": "emmo:GramPerCubicCentiMetre", 
+             "dc:source": "https://chemicalsafety.ilo.org/dyn/icsc/showcard.display?p_version=2&p_card_id=0175"
+       },
+       {
+             "@type": "D50ParticleSize",
+             "hasNumericalPart": {
+                "@type": "RealData",
+                "hasNumberValue": 15
+             },
+             "hasMeasurementUnit": "emmo:MicroMetre"
+       }
+    ]
+ }
