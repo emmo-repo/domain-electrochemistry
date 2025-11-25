@@ -2,8 +2,8 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
 <https://w3id.org/emmo/domain/electrochemistry/depencencies> rdf:type owl:Ontology ;
-    owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.30.0-beta/depencencies> ;
-    owl:imports <https://w3id.org/emmo/domain/electrochemistry/0.30.0-beta/modules/electrochemistry-manufacturing> ,
-                                                            <https://w3id.org/emmo/domain/electrochemistry/0.30.0-beta/modules/electrochemistry-testing> ,
-                                                            <https://w3id.org/emmo/domain/electrochemistry/0.30.0-beta/reference/electrochemistry-reference> .
+    owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.31.0/depencencies> ;
+    owl:imports <https://w3id.org/emmo/domain/electrochemistry/0.31.0/modules/electrochemistry-manufacturing> ,
+                                                            <https://w3id.org/emmo/domain/electrochemistry/0.31.0/modules/electrochemistry-testing> ,
+                                                            <https://w3id.org/emmo/domain/electrochemistry/0.31.0/reference/electrochemistry-reference> .
                                                  
