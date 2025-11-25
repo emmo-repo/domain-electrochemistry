@@ -1,0 +1,236 @@
+@prefix : <https://w3id.org/emmo/domain/manufacturing#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix emmo: <https://w3id.org/emmo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://www.schema.org#> .
+@base <https://w3id.org/emmo/domain/manufacturing#> .
+
+<https://w3id.org/emmo/domain/manufacturing/modules/manufacturing-equipment> rdf:type owl:Ontology ;
+                                                                              owl:versionIRI <https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/modules/manufacturing-equipment> ;
+                                                                              owl:imports <https://w3id.org/emmo/1.0.0> ;
+                                                                              <http://purl.org/dc/terms/abstract> "Terms describing common types of equipment used in manufacturing."@en .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_062c3df9_1b59_4178_8ba6_55aaaf4e8982
+:manufacturing_062c3df9_1b59_4178_8ba6_55aaaf4e8982 rdf:type owl:Class ;
+                                                    rdfs:subClassOf :manufacturing_3ba4f311_65b2_4e60_a806_5470aa134707 ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "ConvectiveDryer"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a heating system that uses circulating hot gas (often air) to uniformly dry or cure materials"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_0aabe282_24c8_4775_a504_879a7b28f591
+:manufacturing_0aabe282_24c8_4775_a504_879a7b28f591 rdf:type owl:Class ;
+                                                    rdfs:subClassOf emmo:EMMO_86a305d1_7644_48be_b84c_1f976679b904 ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SealingEquipment"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "equipment used for sealing"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_1216b7e8_08ee_4d13_8555_b70d25414e3d
+:manufacturing_1216b7e8_08ee_4d13_8555_b70d25414e3d rdf:type owl:Class ;
+                                                    rdfs:subClassOf :manufacturing_d831fea4_2a9b_4217_a116_a8746ca68004 ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "UltrasonicWelder"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a system that uses high-frequency ultrasonic vibrations to bond materials together"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_191ccc03_88c2_4b04_a699_264e5efb4aba
+:manufacturing_191ccc03_88c2_4b04_a699_264e5efb4aba rdf:type owl:Class ;
+                                                    rdfs:subClassOf :manufacturing_dd4b9e93_0f07_45cb_b9c7_e3dacdf37e24 ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "DieCutter"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a mechanical press that stamps materials into predefined shapes using sharp-edged dies"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_313fe19c_afc4_4454_94c1_8859f80fb3e6
+:manufacturing_313fe19c_afc4_4454_94c1_8859f80fb3e6 rdf:type owl:Class ;
+                                                    rdfs:subClassOf emmo:EMMO_86ca9b93_1183_4b65_81b8_c0fcd3bba5ad ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Tank"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a device that is used as a container for some material, usually liquid or gas"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_3ba4f311_65b2_4e60_a806_5470aa134707
+:manufacturing_3ba4f311_65b2_4e60_a806_5470aa134707 rdf:type owl:Class ;
+                                                    rdfs:subClassOf emmo:EMMO_86a305d1_7644_48be_b84c_1f976679b904 ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Dryer"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a device that is intended to reduce the liquid content of an object"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_3fb94e7d_0feb_404d_b213_e498a61ec021
+:manufacturing_3fb94e7d_0feb_404d_b213_e498a61ec021 rdf:type owl:Class ;
+                                                    rdfs:subClassOf emmo:EMMO_86a305d1_7644_48be_b84c_1f976679b904 ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Coater"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a device used to apply a coating"@en ;
+                                                    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "consider promoting to domain-manufacturing"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_4dfccd8e_1a73_41a0_aaa6_daf19efc8174
+:manufacturing_4dfccd8e_1a73_41a0_aaa6_daf19efc8174 rdf:type owl:Class ;
+                                                    rdfs:subClassOf :manufacturing_58ad3ee8_b724_4b30_a894_81ff9b75a051 ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "BallMill"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a grinding device used to reduce particle size in powders through mechanical impact and friction"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_58ad3ee8_b724_4b30_a894_81ff9b75a051
+:manufacturing_58ad3ee8_b724_4b30_a894_81ff9b75a051 rdf:type owl:Class ;
+                                                    rdfs:subClassOf emmo:EMMO_86a305d1_7644_48be_b84c_1f976679b904 ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Mixer"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a device used for mixing"@en ;
+                                                    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "consider promoting to domain-manufacturing"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_5b544639_23fc_46fd_b946_c0f8eff89092
+:manufacturing_5b544639_23fc_46fd_b946_c0f8eff89092 rdf:type owl:Class ;
+                                                    rdfs:subClassOf :manufacturing_3ba4f311_65b2_4e60_a806_5470aa134707 ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "FreezeDryer"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a system that removes moisture from materials by sublimation under low temperature and vacuum conditions"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_5e5007fb_70e0_4a35_a113_f7700461451c
+:manufacturing_5e5007fb_70e0_4a35_a113_f7700461451c rdf:type owl:Class ;
+                                                    rdfs:subClassOf :manufacturing_3fb94e7d_0feb_404d_b213_e498a61ec021 ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "DoctorBladeCoater"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a tool that spreads a liquid layer onto a surface at a controlled thickness using a blade"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_64e75a01_89de_469c_b644_3268601f260c
+:manufacturing_64e75a01_89de_469c_b644_3268601f260c rdf:type owl:Class ;
+                                                    rdfs:subClassOf :manufacturing_d831fea4_2a9b_4217_a116_a8746ca68004 ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SpotWelder"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a welding machine that joins metal components by applying localized heat and pressure"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_6a351d63_5695_451f_a6b2_13ea1caeff5b
+:manufacturing_6a351d63_5695_451f_a6b2_13ea1caeff5b rdf:type owl:Class ;
+                                                    rdfs:subClassOf :manufacturing_3ba4f311_65b2_4e60_a806_5470aa134707 ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "InfraredDryer"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a drying system that uses infrared radiation to rapidly evaporate solvents from coated materials"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_753e1ac9_77f6_420a_a121_72282af553bf
+:manufacturing_753e1ac9_77f6_420a_a121_72282af553bf rdf:type owl:Class ;
+                                                    rdfs:subClassOf :manufacturing_3fb94e7d_0feb_404d_b213_e498a61ec021 ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SlotDieCoater"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a precision coating system that applies thin films to substrates with uniform thickness"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_7d153b4a_1baf_4832_b8ea_a961ec467c59
+:manufacturing_7d153b4a_1baf_4832_b8ea_a961ec467c59 rdf:type owl:Class ;
+                                                    rdfs:subClassOf emmo:EMMO_86a305d1_7644_48be_b84c_1f976679b904 ;
+                                                    <http://www.w3.org/2004/02/skos/core#altLabel> "CalenderingMachine"@en ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Calenderer"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a machine that compresses materials between rollers to achieve a specific thickness or smoothness"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_8f5650f9_4044_4f37_8331_0fb6cbc59960
+:manufacturing_8f5650f9_4044_4f37_8331_0fb6cbc59960 rdf:type owl:Class ;
+                                                    rdfs:subClassOf :manufacturing_3fb94e7d_0feb_404d_b213_e498a61ec021 ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SprayCoater"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a device that atomizes liquids into fine droplets and sprays them onto a surface for uniform coating"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_8fd71e8c_2673_43dd_a6d9_6e9c57695060
+:manufacturing_8fd71e8c_2673_43dd_a6d9_6e9c57695060 rdf:type owl:Class ;
+                                                    rdfs:subClassOf :manufacturing_3ba4f311_65b2_4e60_a806_5470aa134707 ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "VacuunDryer"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an enclosed chamber that dries materials under reduced pressure to prevent oxidation or heat degradation"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_929d8b9e_7809_43d7_adde_980be7ffa0e7
+:manufacturing_929d8b9e_7809_43d7_adde_980be7ffa0e7 rdf:type owl:Class ;
+                                                    rdfs:subClassOf :manufacturing_58ad3ee8_b724_4b30_a894_81ff9b75a051 ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "PlanetaryMixer"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a mixing system where the agitator rotates around its own axis while revolving around a central axis"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_9a456ce3_a29e_46db_8b07_1f5b9d07d3d1
+:manufacturing_9a456ce3_a29e_46db_8b07_1f5b9d07d3d1 rdf:type owl:Class ;
+                                                    rdfs:subClassOf :manufacturing_58ad3ee8_b724_4b30_a894_81ff9b75a051 ;
+                                                    <http://www.w3.org/2004/02/skos/core#altLabel> "RAM"@en ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "ResonantAcousticMixer"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a resonant acoustic mixer"@en ;
+                                                    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "consider promoting to domain-manufacturing"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_b4da5cb5_6b8a_431f_a853_d8d00a69b84e
+:manufacturing_b4da5cb5_6b8a_431f_a853_d8d00a69b84e rdf:type owl:Class ;
+                                                    rdfs:subClassOf :manufacturing_58ad3ee8_b724_4b30_a894_81ff9b75a051 ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "UltrasonicMixer"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a device that uses high-frequency sound waves to break apart and evenly distribute particles in liquids"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_ba548845_70e4_4ff9_a8cb_8285b535ff58
+:manufacturing_ba548845_70e4_4ff9_a8cb_8285b535ff58 rdf:type owl:Class ;
+                                                    rdfs:subClassOf :manufacturing_4dfccd8e_1a73_41a0_aaa6_daf19efc8174 ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "PlanetaryBallMill"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A planetary ball mill"@en ;
+                                                    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "consider promoting to domain-manufacturing"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_c39f680c_9782_402a_8439_7f72d0ee4162
+:manufacturing_c39f680c_9782_402a_8439_7f72d0ee4162 rdf:type owl:Class ;
+                                                    rdfs:subClassOf :manufacturing_58ad3ee8_b724_4b30_a894_81ff9b75a051 ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "HighShearMixer"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a machine that rapidly disperses and homogenizes materials by applying high shear forces"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_ce041fe3_a1a0_4d17_aab1_cffdb4ad99e1
+:manufacturing_ce041fe3_a1a0_4d17_aab1_cffdb4ad99e1 rdf:type owl:Class ;
+                                                    rdfs:subClassOf :manufacturing_dd4b9e93_0f07_45cb_b9c7_e3dacdf37e24 ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SlittingMachine"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a device that cuts large rolls of material into narrower strips with high precision"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_d831fea4_2a9b_4217_a116_a8746ca68004
+:manufacturing_d831fea4_2a9b_4217_a116_a8746ca68004 rdf:type owl:Class ;
+                                                    rdfs:subClassOf emmo:EMMO_86a305d1_7644_48be_b84c_1f976679b904 ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "WeldingEquipment"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "equipment used in welding"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_dd16cd71_ae35_4b97_aafa_450212e9c8a7
+:manufacturing_dd16cd71_ae35_4b97_aafa_450212e9c8a7 rdf:type owl:Class ;
+                                                    rdfs:subClassOf :manufacturing_3fb94e7d_0feb_404d_b213_e498a61ec021 ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "SpinCoater"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a high-speed rotating platform used to evenly spread thin liquid films on flat surfaces"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_dd4b9e93_0f07_45cb_b9c7_e3dacdf37e24
+:manufacturing_dd4b9e93_0f07_45cb_b9c7_e3dacdf37e24 rdf:type owl:Class ;
+                                                    rdfs:subClassOf emmo:EMMO_86a305d1_7644_48be_b84c_1f976679b904 ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "CuttingEquipment"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "equipment used for cutting"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_f7621111_c265_42cd_9e0a_d32efb08cdfa
+:manufacturing_f7621111_c265_42cd_9e0a_d32efb08cdfa rdf:type owl:Class ;
+                                                    rdfs:subClassOf :manufacturing_0aabe282_24c8_4775_a504_879a7b28f591 ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "HeatSealer"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a system that uses heat and pressure to seal thermoplastic materials together"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_f9cecad1_136c_4696_bdbb_c32da5723684
+:manufacturing_f9cecad1_136c_4696_bdbb_c32da5723684 rdf:type owl:Class ;
+                                                    rdfs:subClassOf :manufacturing_0aabe282_24c8_4775_a504_879a7b28f591 ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "VacuumSealer"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a machine that removes air from a package and seals it under vacuum conditions"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_fa078ba6_d7f5_4ae1_aa98_f01343324847
+:manufacturing_fa078ba6_d7f5_4ae1_aa98_f01343324847 rdf:type owl:Class ;
+                                                    rdfs:subClassOf :manufacturing_dd4b9e93_0f07_45cb_b9c7_e3dacdf37e24 ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "LaserCutter"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a precision cutting tool that uses a high-energy laser beam to cut or engrave materials"@en .
+
+
+###  https://w3id.org/emmo/domain/manufacturing#manufacturing_fa4e9a9e_ad17_41fc_a43e_5be672750980
+:manufacturing_fa4e9a9e_ad17_41fc_a43e_5be672750980 rdf:type owl:Class ;
+                                                    rdfs:subClassOf emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 ;
+                                                    <http://www.w3.org/2004/02/skos/core#prefLabel> "Pump"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a device used to move liquid or gas"@en .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
