@@ -17,7 +17,7 @@
 
 <https://w3id.org/emmo/domain/electrochemistry> rdf:type owl:Ontology ;
                                                  owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.31.0/electrochemistry> ;
-                                                 owl:imports <https://w3id.org/emmo/domain/electrochemistry/0.31.0/electrochemistry-dependencies> ;
+                                                 owl:imports <https://w3id.org/emmo/domain/electrochemistry/electrochemistry-dependencies> ;
                                                  dcterms:abstract "This reference module contains the core terms for the electrochmistry domain."@en ;
                                                  dcterms:bibliographicCitation "https://doi.org/10.5281/zenodo.7693664" ;
                                                  dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,

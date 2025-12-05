@@ -11,8 +11,8 @@
 <https://w3id.org/emmo/domain/electrochemistry/modules/electrochemistry-manufacturing> rdf:type owl:Ontology ;
                                                                                         owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.31.0/modules/electrochemistry-manufacturing> ;
                                                                                         owl:imports <https://w3id.org/emmo/domain/electrochemistry/reference/electrochemistry-reference> ,
-                                                                                                    <https://w3id.org/emmo/domain/manufacturing/0.1.1/modules/manufacturing-equipment> ,
-                                                                                                    <https://w3id.org/emmo/domain/manufacturing/0.1.1/modules/manufacturing-processes> ;
+                                                                                                    <https://w3id.org/emmo/domain/manufacturing/modules/manufacturing-equipment> ,
+                                                                                                    <https://w3id.org/emmo/domain/manufacturing/modules/manufacturing-processes> ;
                                                                                         <http://purl.org/dc/terms/abstract> "The electrochemistry-manufacturing module is an ontology containing the domain-level terms for describing the manufacturing of electrochemical devices. This ontology features terms that are common to manufacturing many different types of electrochemcial devices (.e.g batteries, supercaps, fuel cells, electrolyzers, etc.). For device-specific manufacturing terms, please refer to the associated domain ontology."@en .
 
 #################################################################
