@@ -49,3 +49,7 @@ docs = [
 
 [tool.ontology]
 robot_version = "1.9.6"
+
+[tool.hatch.build.targets.wheel]
+# No Python package is shipped; this project just centralises shared tooling deps.
+packages = []
