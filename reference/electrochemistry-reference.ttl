@@ -14,15 +14,15 @@
 @prefix schema: <https://schema.org/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix annotations: <https://w3id.org/emmo/top/annotations#> .
-@base <https://w3id.org/emmo/domain/reference/electrochemistry-reference> .
+@base <https://w3id.org/emmo/domain/electrochemistry#> .
 
 <https://w3id.org/emmo/domain/reference/electrochemistry-reference> rdf:type owl:Ontology ;
-                                                                     owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.30.0-beta/reference/electrochemistry-reference> ;
-                                                                     owl:imports <https://w3id.org/emmo/1.0.0> ,
+                                                                     owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.31.1/reference/electrochemistry-reference> ;
+                                                                     owl:imports <https://w3id.org/emmo/1.0.2> ,
                                                                                  <https://w3id.org/emmo/domain/characterisation-methodology/1.0.0/chameo> ,
-                                                                                 <https://w3id.org/emmo/domain/chemical-substance/0.12.2-beta/chemical-substance> ,
-                                                                                 <https://w3id.org/emmo/domain/electrochemistry/0.30.0-beta/reference/electrochemistry-quantities> ;
-                                                                     dcterms:abstract "This reference module contains the core terms for the electrochmistry domain."@en ;
+                                                                                 <https://w3id.org/emmo/domain/chemical-substance/0.12.3/chemical-substance> ,
+                                                                                 <https://w3id.org/emmo/domain/electrochemistry/0.31.1/reference/electrochemistry-quantities> ;
+                                                                     dcterms:abstract "This reference module contains the core terms for the electrochemistry domain."@en ;
                                                                      dcterms:bibliographicCitation "https://doi.org/10.5281/zenodo.7693664" ;
                                                                      dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
                                                                                          <https://orcid.org/0000-0002-1560-809X> ,
@@ -31,7 +31,7 @@
                                                                      dcterms:creator <https://orcid.org/0000-0002-8758-6109> ,
                                                                                      <https://orcid.org/0000-0003-2954-1233> ;
                                                                      dcterms:issued "2025-02-12"^^xsd:date ;
-                                                                     dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+                                                                     dcterms:license <https://creativecommons.org/licenses/by/4.0/legalcode> ;
                                                                      dcterms:modified "2025-02-12"^^xsd:date ;
                                                                      dcterms:publisher "EMMO" ;
                                                                      dcterms:source <https://www.electropedia.org> ,
@@ -43,9 +43,9 @@
                                                                      bibo:status "unstable" ;
                                                                      vann:preferredNamespacePrefix "echem" ;
                                                                      vann:preferredNamespaceUri "https://w3id.org/emmo/domain/electrochemistry" ;
-                                                                     owl:backwardCompatibleWith "0.26.0-beta" ;
-                                                                     owl:priorVersion "0.26.0-beta" ;
-                                                                     owl:versionInfo "0.30.0-beta" ;
+                                                                     owl:backwardCompatibleWith <https://w3id.org/emmo/domain/electrochemistry/0.26.0-beta/reference/electrochemistry-reference> ;
+                                                                     owl:priorVersion <https://w3id.org/emmo/domain/electrochemistry/0.26.0-beta/reference/electrochemistry-reference> ;
+                                                                     owl:versionInfo "0.31.1" ;
                                                                      foaf:logo "https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/gh-pages/assets/img/fig/png/domain-electrochemistry-logo.png" .
 
 #################################################################
@@ -448,7 +448,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_0508a114_544a_4f54_a7de_9b947fb4b618 ;
    owl:annotatedProperty emmo:EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84 ;
    owl:annotatedTarget "a solid electrolyte is a solid material where the predominant charge carriers are ions."@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -466,28 +466,28 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_057bb143_639c_472b_99ed_ffa1867f6e63 ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "electrode made of glassy carbon material with an intertwined graphitic ribbon structure, formed by pyrolysis of a resol precursor at temperatures up to 3000 °C"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_057bb143_639c_472b_99ed_ffa1867f6e63 ;
    owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
    owl:annotatedTarget "extremely resistant to many chemicals, impermeable to gases and liquids, and has good electrical conductivity, high hardness and strength, and biocompatibility"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_057bb143_639c_472b_99ed_ffa1867f6e63 ;
    owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
    owl:annotatedTarget "glassy carbon combines glass-like mechanical characteristics with physical properties similar to graphite, owing to its “graphene ribbon” structure"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_057bb143_639c_472b_99ed_ffa1867f6e63 ;
    owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
    owl:annotatedTarget "one of the most frequently used working electrodes"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -766,7 +766,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627 ;
    owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
    owl:annotatedTarget "Electron conductor in an electrochemical cell connected to the external circuit."@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -850,7 +850,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_1152ae6b_8b57_4d99_912e_40c6a29342fb ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "mass m of electrochemically-transformed substance is proportional to the charge Q passed, m ∝ Q."@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -1116,7 +1116,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_1fc5642c_b7b2_43bf_ad20_f96001db8800 ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "electrolyte solution, the ions of which are electroinactive in the range of applied potential being studied, and whose ionic strength (and, therefore, contribution to the overall conductivity) is usually much greater than the concentration of an electroactive substance to be dissolved in it."@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -1327,7 +1327,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_2d32a81a_2148_41bd_84fb_467aa8de4a8f ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "foil, wire, disc, or mesh electrode made of platinum, which is the most commonly used metallic working electrode in electrochemistry"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -2459,7 +2459,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_60c5b2e5_164a_4ce6_8409_f386f5e50c03 ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "when the same electric charge (quantity of electricity) Q is passed through several electrolytes, the mass, m_i, of the substances deposited are proportional to their respective chemical equivalent molar mass, M_i/z_i."@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -2525,7 +2525,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_637c576e_a50e_47ae_8c74_2024ce4c6d0f ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "means of making electrolytic connection between two half cells without introducing a significant liquid junction potential."@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -2598,7 +2598,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_65c90d8d_9712_4f3f_b830_d8163ec4cfcc ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "electrode made of a solid amalgam of an appropriate metal"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -2675,7 +2675,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_6c421175_477f_45e0_8b6c_c3464f5351c5 ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "A disc electrode that is embedded in the centre of a cylinder which rotates in solution around the longitudinal cylinder axis."@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -2805,7 +2805,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_6fec8cc1_4e6c_428e_8343_6cf3c286a185 ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "foil, wire or disc electrode made of gold which is easily fabricated into a variety of electrode geometries"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -2933,7 +2933,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_7729c34e_1ae9_403d_b933_1765885e7f29 ;
    owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
    owl:annotatedTarget "Electrode that maintains an essentially constant potential under the conditions prevailing in an electrochemical measurement, and that serves for observation, measurement, or control of the potential of the indicator or working electrode."@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -3059,7 +3059,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_7f4d74cd_d0a5_4908_9da9_7629fe419917 ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "a second annular working electrode positioned concentric with a rotating disc electrode to make a rotating ring-disc electrode (RRDE)"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -3218,7 +3218,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_86be0987_5e21_43ec_b975_8f679999d328 ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "electrode containing two different metals (e.g. platinum and ruthenium) on its surface (e.g. to modify its electrocatalytic properties)"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -3240,7 +3240,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_871bc4a4_2d17_4b88_9b0f_7ab85f14afea ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "electrode whose function is to carry the electric current flowing through the electrical circuit of an electrochemical cell, the electrochemical processes on its surface not being of interest"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -3705,7 +3705,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_9f466223_e20a_474d_ac4d_6d4b6131c275 ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "an electrode that holds its potential essentially constant by efficiently allowing electric current to pass"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -3898,7 +3898,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_a462859d_d8bd_48ea_8bde_1576f1248a1e ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "electrode in the form of foil, mesh, wire, rod, tube, powder, pellets, or single crystal of silver"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -4119,7 +4119,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_b0a0dddb_d942_4af2_b6a7_d7165f4253f1 ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "Electrode of a composite of carbon powder and a pasting liquid (including mineral oil, Nujol, bromoform, bromonaphthalene)."@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -4275,7 +4275,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_b76a778f_253f_4210_a67f_fb6444d0de26 ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "mercury electrode formed by sequence of mercury drops falling from a small aperture"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -4372,7 +4372,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_b9bece97_a511_4cb9_88a2_b5bd5c5e5d74 ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "electrochemical cell with a working electrode, reference electrode, and auxiliary electrode"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -4531,7 +4531,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_c2024587_3237_474e_8df9_91d10db2df47 ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "electrode whose potential changes with an applied potential"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -4562,7 +4562,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_c3f4b34a_0e2c_46f3_baab_4ebd2682d26f ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "An ionic liquid is an electrolyte composed of a salt that is liquid below 100 °C. Ionic liquids have found uses in electrochemical analysis, because their unconventional properties include a negligible vapor pressure, a high thermal and electrochemical stability, and exceptional dissolution properties for both organic and inorganic chemical species."@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -5126,7 +5126,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_df78745e_f9db_4830_88f0_8ce074fcb8ff ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "liquid metal electrode used in polarography"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -5161,7 +5161,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_e248373f_294f_4ca4_9edf_0ad6653bb64f ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "electrochemical cell in which chemical reactions occur spontaneously and chemical energy is converted into electrical energy."@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 [ rdf:type owl:Axiom ;
@@ -5322,7 +5322,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_e931087f_7681_4096_b200_5223bcc47eb4 ;
    owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
    owl:annotatedTarget "Electrochemical cell in which electrical energy is converted into chemical energy."@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -5425,7 +5425,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_ec6f3d6f_bdf5_418f_9314_3ef2ff528103 ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "development of a carbon paste electrode that is screen printed using a carbon/polymer mixture of suitable composition"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -5720,7 +5720,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_f6fcd255_248d_4603_b128_04dab960a676 ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "electrode that responds to one, or more than one, species in the solution being investigated, with no appreciable change of bulk solution composition during the measurement"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -5806,14 +5806,14 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 :electrochemistry_fa54f95d_b49e_43b5_84c3_35520d0fb2f6 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_ac9723d1_bac0_4109_874e_32849de9299b ;
                                                        skos:prefLabel "GouyChapmanModel"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an extension of the Helmholtz model that describes the distribution of ions as a function of distance from the electrode surface to the bulk of the electroylte"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an extension of the Helmholtz model that describes the distribution of ions as a function of distance from the electrode surface to the bulk of the electrolyte"@en ;
                                                        emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this model fails for highly charged double layers"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fab4bd12_c4ed_417a_92a3_bcb109000d82
 :electrochemistry_fab4bd12_c4ed_417a_92a3_bcb109000d82 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37 ;
-                                                       skos:prefLabel "R2040" ;
+                                                       skos:prefLabel "R2040"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a coin case with a nominal diameter of 20.0 mm and a height of 4.0 mm"@en .
 
 
@@ -5850,7 +5850,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59 ;
    owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
    owl:annotatedTarget "conducting medium in which the flow of electric current is accompanied by the movement of ions"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 [ rdf:type owl:Axiom ;
@@ -5864,7 +5864,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59 ;
    owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
    owl:annotatedTarget "substance that provides ions on dissolution in a solvent or on melting"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -5886,14 +5886,14 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedSource :electrochemistry_fb988878_ee54_4350_9ee9_228c00c3ad35 ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "electrode at which one or more electroactive substances undergo reaction in the solution being investigated"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fbf40756_3265_4468_bcdb_88d162afc539
 :electrochemistry_fbf40756_3265_4468_bcdb_88d162afc539 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37 ;
-                                                       skos:prefLabel "R2320" ;
+                                                       skos:prefLabel "R2320"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a coin case with a nominal diameter of 23.0 mm and a height of 2.0 mm"@en .
 
 
@@ -5922,8 +5922,8 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fe054d02_41c7_40e9_8206_3440ab6a67b2
 :electrochemistry_fe054d02_41c7_40e9_8206_3440ab6a67b2 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37 ;
-                                                       skos:altLabel "R44" ;
-                                                       skos:prefLabel "R1154" ;
+                                                       skos:altLabel "R44"@en ;
+                                                       skos:prefLabel "R1154"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a coin case with a nominal diameter of 11.6 mm and a height of 5.4 mm"@en .
 
 
@@ -5962,54 +5962,60 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 
 ###  https://orcid.org/0000-0001-8869-3718
 <https://orcid.org/0000-0001-8869-3718> rdf:type schema:Person ;
-                                        rdfs:label "Francesca Lønstad Bleken" ;
-                                        skos:prefLabel "Francesca Lønstad Bleken" ;
-                                        schema:additionalName "Lønstad" ;
-                                        schema:familyName "Bleken" ;
-                                        schema:givenName "Francesca" ;
-                                        schema:name "Francesca Lønstad Bleken" ;
+                                        rdfs:label "Francesca Lønstad Bleken"@en ;
+                                        skos:prefLabel "Francesca Lønstad Bleken"@en ;
+                                        schema:additionalName "Lønstad"@en ;
+                                        schema:familyName "Bleken"@en ;
+                                        schema:givenName "Francesca"@en ;
+                                        schema:name "Francesca Lønstad Bleken"@en ;
                                         emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "" .
 
 
 ###  https://orcid.org/0000-0002-1560-809X
 <https://orcid.org/0000-0002-1560-809X> rdf:type schema:Person ;
-                                        rdfs:label "Jesper Friis" ;
-                                        skos:prefLabel "Jesper Friis" ;
-                                        schema:familyName "Friis" ;
-                                        schema:givenName "Jesper" ;
-                                        schema:name "Jesper Friis" ;
+                                        rdfs:label "Jesper Friis"@en ;
+                                        skos:prefLabel "Jesper Friis"@en ;
+                                        schema:familyName "Friis"@en ;
+                                        schema:givenName "Jesper"@en ;
+                                        schema:name "Jesper Friis"@en ;
                                         emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "" .
 
 
 ###  https://orcid.org/0000-0002-2547-155X
 <https://orcid.org/0000-0002-2547-155X> rdf:type schema:Person ;
-                                        rdfs:label "Casper Welzel Andersen" ;
-                                        skos:prefLabel "Casper Welzel Andersen" ;
-                                        schema:additionalName "Welzel" ;
-                                        schema:familyName "Andersen" ;
-                                        schema:givenName "Casper" ;
-                                        schema:name "Casper Welzel Andersen" ;
+                                        rdfs:label "Casper Welzel Andersen"@en ;
+                                        skos:prefLabel "Casper Welzel Andersen"@en ;
+                                        schema:additionalName "Welzel"@en ;
+                                        schema:familyName "Andersen"@en ;
+                                        schema:givenName "Casper"@en ;
+                                        schema:name "Casper Welzel Andersen"@en ;
                                         emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "" .
 
 
 ###  https://orcid.org/0000-0002-8758-6109
 <https://orcid.org/0000-0002-8758-6109> rdf:type schema:Person ;
-                                        rdfs:label "Simon Clark" ;
-                                        skos:prefLabel "Simon Clark" ;
-                                        schema:familyName "Clark" ;
-                                        schema:givenName "Simon" ;
-                                        schema:name "Simon Clark" ;
+                                        rdfs:label "Simon Clark"@en ;
+                                        skos:prefLabel "Simon Clark"@en ;
+                                        schema:familyName "Clark"@en ;
+                                        schema:givenName "Simon"@en ;
+                                        schema:name "Simon Clark"@en ;
                                         emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "" .
 
 
 ###  https://orcid.org/0000-0003-2954-1233
 <https://orcid.org/0000-0003-2954-1233> rdf:type schema:Person ;
-                                        rdfs:label "Eibar Flores" ;
-                                        skos:prefLabel "Eibar Flores" ;
-                                        schema:familyName "Flores" ;
-                                        schema:givenName "Eibar" ;
-                                        schema:name "Eibar Flores" ;
+                                        rdfs:label "Eibar Flores"@en ;
+                                        skos:prefLabel "Eibar Flores"@en ;
+                                        schema:familyName "Flores"@en ;
+                                        schema:givenName "Eibar"@en ;
+                                        schema:name "Eibar Flores"@en ;
                                         emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "" .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+
+
+
+
+
+

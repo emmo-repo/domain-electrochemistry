@@ -16,7 +16,8 @@ from ontopy.utils import asstring
 from ontopy.patch import get_preferred_label
 import owlready2
 
-import re
+logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+LOGGER = logging.getLogger(__name__)
 
 def _linkify_value(val: str) -> str:
     """
@@ -50,6 +51,11 @@ def print_ttl_files():
     print(" ".join([file['path'] for file in config['ttl_files']]))
 
 def find_repo_root_with_config():
+    """Locate config.yml, honoring CONFIG_PATH override."""
+    override = os.environ.get("CONFIG_PATH")
+    if override and os.path.isfile(override):
+        return os.path.abspath(override)
+
     current_dir = os.path.abspath(os.path.dirname(__file__))
     while True:
         config_path = os.path.join(current_dir, "config.yml")
@@ -58,30 +64,33 @@ def find_repo_root_with_config():
 
         parent_dir = os.path.dirname(current_dir)
         if parent_dir == current_dir:
+            LOGGER.error("config.yml not found (searched up from %s)", os.path.dirname(__file__))
             sys.exit(1)
 
         current_dir = parent_dir
 
 def load_ontology_config():
+    """Load config.yml with clear error reporting."""
     config_path = find_repo_root_with_config()
     try:
         with open(config_path, 'r', encoding='utf-8') as file:
             config = yaml.safe_load(file)
-
-            return {
-                "ontology_name": config.get("ontology_name"),
-                "ontology_noun": config.get("ontology_noun"),
-                "ontology_adjective": config.get("ontology_adjective"),
-                "ontology_uri": config.get("ontology_uri"),
-                "ontology_prefix": config.get("ontology_prefix"),
-                "ontology_description": config.get("ontology_description"),
-                "ttl_files": config.get("ttl_files", []),
-                "inferred_ttl_filename": config.get("output", {}).get("inferred_ttl"),
-                "rst_output_filename": config.get("output", {}).get("rst_file"),
-                "emmocheck_classes": config.get("emmocheck_classes", []),
-            }
-    except Exception as e:
+    except Exception as exc:
+        LOGGER.error("Failed to load config.yml at %s: %s", config_path, exc)
         sys.exit(1)
+
+    return {
+        "ontology_name": config.get("ontology_name"),
+        "ontology_noun": config.get("ontology_noun"),
+        "ontology_adjective": config.get("ontology_adjective"),
+        "ontology_uri": config.get("ontology_uri"),
+        "ontology_prefix": config.get("ontology_prefix"),
+        "ontology_description": config.get("ontology_description"),
+        "ttl_files": config.get("ttl_files", []),
+        "inferred_ttl_filename": config.get("output", {}).get("inferred_ttl"),
+        "rst_output_filename": config.get("output", {}).get("rst_file"),
+        "emmocheck_classes": config.get("emmocheck_classes", []),
+    }
 
 
 ########## JSON-LD Context Generation (ttl_to_context logic) ##########
@@ -159,18 +168,13 @@ def load_ttl_from_file(filepath):
     onto = get_ontology(filepath).load()
     return onto
 
-def _extract_all_annotations(value_list):
-    '''Help Function to extract both the text of a locstr and just str
-    from annotations. For now only choosing english. Note that this is a bit of a hack since not all annotations
-    are implemented as a locstr as they should. Perhaps this should be fixed in 
-    emmocheck instead?'''
+def _extract_all_annotations(value_list, lang="en"):
+    """Extract text values, prioritizing a language (default: en)."""
     result = []
     for elem in value_list:
-        # For plain strings: only include if its type is exactly str.
-        if type(elem) is str:
+        if isinstance(elem, str):
             result.append(elem)
-        # For locstr strings: include if its language is English.
-        elif hasattr(elem, "lang") and elem.lang == "en":
+        elif hasattr(elem, "lang") and elem.lang == lang:
             result.append(elem)
     return result
 
@@ -549,10 +553,10 @@ def run_emmocheck():
         path = entry["path"]
 
         if not os.path.isfile(path):
-            print(f"⚠️ File not found: {path}")
+            LOGGER.error("File not found: %s", path)
             sys.exit(1)
 
-        print(f"Running EMMO Check for {title} ({path})...")
+        LOGGER.info("Running EMMO Check for %s (%s)...", title, path)
         cmd = [
             "emmocheck",
             "--verbose", "--url-from-catalog",
@@ -564,10 +568,10 @@ def run_emmocheck():
 
         result = subprocess.run(cmd)
         if result.returncode != 0:
-            print(f"❌ EMMO Check failed for {title} ({path})")
+            LOGGER.error("EMMO Check failed for %s (%s)", title, path)
             sys.exit(result.returncode)
 
-    print("✅ All EMMO checks passed.")
+    LOGGER.info("All EMMO checks passed.")
 
 ########## Check Reasoner ##########
 
@@ -589,7 +593,7 @@ def run_reasoner_check():
         main_ontology_file = ttl_files[0]["path"]
 
     if not main_ontology_file:
-        print("❌ No ontology file found in config.yml")
+        LOGGER.error("No ontology file found in config.yml")
         sys.exit(1)
 
     # Resolve full path to the ontology file
@@ -597,33 +601,33 @@ def run_reasoner_check():
     ontology_path = os.path.join(repo_root, main_ontology_file)
 
     if not os.path.isfile(ontology_path):
-        print(f"❌ Ontology file not found at {ontology_path}")
+        LOGGER.error("Ontology file not found at %s", ontology_path)
         sys.exit(1)
 
     # Load the ontology
     g = rdflib.Graph()
     try:
-        g.parse(ontology_path, format='ttl')
-        print(f"✅ Ontology '{ontology_name}' loaded successfully from {ontology_path}")
+        g.parse(ontology_path, format="ttl")
+        LOGGER.info("Ontology '%s' loaded successfully from %s", ontology_name, ontology_path)
     except Exception as e:
-        print(f"❌ Error loading ontology: {e}")
+        LOGGER.error("Error loading ontology: %s", e)
         sys.exit(1)
 
     # Perform reasoning
     try:
         DeductiveClosure(OWLRL_Semantics).expand(g)
-        print("✅ Reasoning completed successfully")
+        LOGGER.info("Reasoning completed successfully (OWL RL)")
     except Exception as e:
-        print(f"❌ Reasoning error: {e}")
+        LOGGER.error("Reasoning error: %s", e)
         sys.exit(1)
 
     # Basic inferred triples check
     inferred_triples = len(g)
     if inferred_triples > 0:
-        print(f"✅ Inferred {inferred_triples} triples.")
+        LOGGER.info("Inferred %s triples.", inferred_triples)
     else:
-        print("⚠️ No triples inferred, something might be wrong.")
-        sys.exit(1)
+        LOGGER.error("No triples inferred, something might be wrong.")
+        sys.exit(1)
 
 ########## Main Entry Point ##########
 
@@ -668,3 +672,21 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
