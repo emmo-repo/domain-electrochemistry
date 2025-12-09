@@ -961,9 +961,9 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        rdfs:subClassOf :electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d ,
                                                                        :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ;
                                                        rdfs:seeAlso "ElectrochemicalImpedanceSpectroscopy" ;
+                                                       skos:example "in EIS, an alternating voltage signal is superimposed to a baseline voltage, which can be the open circuit potential or a fixed cell voltage"@en ;
                                                        skos:prefLabel "BaselineCellVoltage"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "In electrochemical measurements, the voltage of an electrochemical cell to which a voltage signal is superimposed."@en ;
-                                                       skos:example "in EIS, an alternating voltage signal is superimposed to a baseline voltage, which can be the open circuit potential or a fixed cell voltage"@en .
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "In electrochemical measurements, the voltage of an electrochemical cell to which a voltage signal is superimposed."@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_269ddd97_1437_4545_b272_0df75a12c68a ;
@@ -1220,9 +1220,9 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                                        :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                                        rdfs:comment "I_{p}"@en ,
                                                                     "Since the concentration of an electroactive substance at the electrode-solution interface decreases mono- tonically, the faradaic current due to its electrooxidation or electroreduction increases monotonically with time because of the increasing concentration gradient of the electroactive substance, the concentra- tion of which remains constant in the bulk. The maximum current value is passed when the transport rate of electroactive substance to the electrode-solution interface starts to be lower than the rate at which it is removed by reaction at the electrode. The result of these two competing processes leads to the peak- shaped I-E dependence."@en ;
+                                                       skos:example "Typical examples of imposed potential programmes in dynamic voltammetric techniques resulting in peak-shaped responses are linear-scan voltammetry, cyclic voltammetry, ac voltammetry, differential pulse voltammetry, square-wave voltammetry, stripping voltammetry, and derivative techniques."@en ;
                                                        skos:prefLabel "PeakCurrent"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "in dynamic voltammetric techniques, the maximum value of the faradaic current attained by varying the applied potential in the current-potential or I-E curve"@en ;
-                                                       skos:example "Typical examples of imposed potential programmes in dynamic voltammetric techniques resulting in peak-shaped responses are linear-scan voltammetry, cyclic voltammetry, ac voltammetry, differential pulse voltammetry, square-wave voltammetry, stripping voltammetry, and derivative techniques."@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://goldbook.iupac.org/terms/view/P04457"@en .
 
 [ rdf:type owl:Axiom ;
@@ -2540,6 +2540,14 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        rdfs:subClassOf emmo:EMMO_909415d1_7c43_4d5e_bbeb_7e1910159f66 ;
                                                        skos:prefLabel "ElectrochemicalProperty"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a property that is typical in the electrochemistry domain"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9171ef9b_65b6_4536_9a1b_cb2b38961311
+:electrochemistry_9171ef9b_65b6_4536_9a1b_cb2b38961311 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_6ee9304e_54b7_4594_8354_0790138dffb8 ;
+                                                       skos:prefLabel "TabOffset"@en ;
+                                                       emmo:EMMO_157fdf31_6387_42be_8e72_10530519214a "https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/dev/docs/assets/img/fig/png/CurrentCollectorTab.png" ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the perpendicular distance between the nearest pair of parallel edges belonging to the tab base and the current collector"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_92fc0dba_6f11_4019_a8cb_db2a5b1634f5
