@@ -328,6 +328,10 @@ emmo:EMMO_472a0ca2_58bf_4618_b561_6fe68bd9fd49 rdfs:subClassOf [ rdf:type owl:Re
 emmo:EMMO_57d977ab_0036_4779_b59a_e47620afdb9c rdfs:subClassOf emmo:EMMO_38b579de_4331_40e0_803d_09efa298e726 .
 
 
+###  https://w3id.org/emmo#EMMO_68390bfb_e307_479d_8f78_d66d8773cb1d
+emmo:EMMO_68390bfb_e307_479d_8f78_d66d8773cb1d rdf:type owl:Class .
+
+
 ###  https://w3id.org/emmo#EMMO_82fc8506_1f84_4add_9683_abea077bd1e3
 emmo:EMMO_82fc8506_1f84_4add_9683_abea077bd1e3 rdfs:subClassOf [ rdf:type owl:Restriction ;
                                                                  owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
@@ -1126,6 +1130,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                        skos:altLabel "ElectrodeCurrentCollector"@en ;
                                                        skos:example "Copper foil, Aluminum foil"@en ;
                                                        skos:prefLabel "CurrentCollector"@en ;
+                                                       skos:related :electrochemistry_6913368b_39cf_42da_ac51_c1b508930ac5 ;
                                                        emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q120907411" ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=485-06-07" ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A good electron conductor support designed to transfer electrons from the external circuit to the active materials of the cell."@en .
@@ -2626,6 +2631,27 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                        emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q863583" ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "material or substance that holds or draws other materials together to form a cohesive whole"@en ;
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Binder_(material)"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6913368b_39cf_42da_ac51_c1b508930ac5
+:electrochemistry_6913368b_39cf_42da_ac51_c1b508930ac5 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_b5ea31c9_bb10_4276_980e_c3eceb1efc82 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
+                                                                         owl:someValuesFrom emmo:EMMO_08bcf1d6_e719_46c8_bb21_24bc9bf34dba
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
+                                                                         owl:someValuesFrom emmo:EMMO_e4de48b1_dabb_4490_ac2b_040f926c64f0
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
+                                                                         owl:someValuesFrom :electrochemistry_9171ef9b_65b6_4536_9a1b_cb2b38961311
+                                                                       ] ;
+                                                       skos:prefLabel "CurrentCollectorTab"@en ;
+                                                       skos:related :electrochemistry_212af058_3bbb_419f_a9c6_90ba9ebb3706 ;
+                                                       emmo:EMMO_157fdf31_6387_42be_8e72_10530519214a "https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/dev/docs/assets/img/fig/png/CurrentCollectorTab.png" ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a part of the current collector that provides an interface between the electrode and the external electrical interface"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_69e59b3d_b19d_4f8e_8b9c_84eb64307626

@@ -1,5 +1,6 @@
 {
     "@context": {
+        "bibo": "http://purl.org/ontology/bibo/",
         "brick": "https://brickschema.org/schema/Brick#",
         "csvw": "http://www.w3.org/ns/csvw#",
         "dc": "http://purl.org/dc/elements/1.1/",
@@ -10,6 +11,9 @@
         "doap": "http://usefulinc.com/ns/doap#",
         "foaf": "http://xmlns.com/foaf/0.1/",
         "geo": "http://www.opengis.net/ont/geosparql#",
+        "locn": "http://www.w3.org/ns/locn#",
+        "ns1": "https://w3id.org/emmo#",
+        "ns2": "https://w3id.org/emmo/domain/chemical-substance#",
         "odrl": "http://www.w3.org/ns/odrl/2/",
         "org": "http://www.w3.org/ns/org#",
         "owl": "http://www.w3.org/2002/07/owl#",
@@ -23,6 +27,7 @@
         "skos": "http://www.w3.org/2004/02/skos/core#",
         "sosa": "http://www.w3.org/ns/sosa/",
         "ssn": "http://www.w3.org/ns/ssn/",
+        "swrl": "http://www.w3.org/2003/11/swrl#",
         "time": "http://www.w3.org/2006/time#",
         "vann": "http://purl.org/vocab/vann/",
         "void": "http://rdfs.org/ns/void#",
@@ -61,7 +66,7 @@
             "@id": "https://w3id.org/emmo#EMMO_f09e1d0a_07ce_4121_8c89_5bd67b7e8116",
             "@type": "@id"
         },
-        "directlyCausedBye": {
+        "directlyCausedBy": {
             "@id": "https://w3id.org/emmo#EMMO_11501e0a_4442_4bd0_8483_7ea6dc8ba444",
             "@type": "@id"
         },
@@ -189,6 +194,14 @@
             "@id": "https://w3id.org/emmo#EMMO_eeb8118c_b290_4f57_b0f8_bd65bb6d77ad",
             "@type": "@id"
         },
+        "hasChemicalComposition": {
+            "@id": "https://w3id.org/emmo#EMMO_51f426a6_af4a_4e91_a392_2b0bb635e2d5",
+            "@type": "@id"
+        },
+        "hasChemicalSpecies": {
+            "@id": "https://w3id.org/emmo#EMMO_7aec67a4_fb96_47c6_80a3_8fea557b2cbb",
+            "@type": "@id"
+        },
         "hasChemicalSymbol": {
             "@id": "https://w3id.org/emmo#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a",
             "@type": "@id"
@@ -281,12 +294,24 @@
             "@id": "https://w3id.org/emmo#EMMO_c58c799e_cc6c_4310_a3f1_78da70705b2a",
             "@type": "@id"
         },
+        "hasDeterminedProperty": {
+            "@id": "https://w3id.org/emmo#EMMO_802b7639_9498_4b47_ad45_1a087fe8fb85",
+            "@type": "@id"
+        },
+        "hasDeterminedValue": {
+            "@id": "https://w3id.org/emmo#EMMO_963b7cf2_3358_463e_86fa_2e8ef00704d9",
+            "@type": "@id"
+        },
         "hasDirectPart": {
             "@id": "https://w3id.org/emmo#EMMO_814b6b76_e0ca_4953_a832_d1816fb695f1",
             "@type": "@id"
         },
         "hasDistinctPart": {
             "@id": "https://w3id.org/emmo#EMMO_1328d112_e731_4e56_b9b9_6b6cdd495cd6",
+            "@type": "@id"
+        },
+        "hasElectrochemicalCell": {
+            "@id": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1784d824_15bd_4eff_9e40_61e23be6f979",
             "@type": "@id"
         },
         "hasElectrode": {
@@ -389,8 +414,12 @@
             "@id": "https://w3id.org/emmo#EMMO_663859e5_add3_4c9e_96fb_c99399de278d",
             "@type": "@id"
         },
-        "hasLab": {
-            "@id": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#hasLab",
+        "hasLaboratory": {
+            "@id": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#hasLaboratory",
+            "@type": "@id"
+        },
+        "hasLayer": {
+            "@id": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6164a2b0_7fd7_4059_8567_3dcce90b1dec",
             "@type": "@id"
         },
         "hasLevelOfAutomation": {
@@ -399,6 +428,10 @@
         },
         "hasManufacturedOutput": {
             "@id": "https://w3id.org/emmo#EMMO_0e86a108_9d4d_4582_8126_f0c527d81901",
+            "@type": "@id"
+        },
+        "hasMeasuredObject": {
+            "@id": "https://w3id.org/emmo#EMMO_ae081613_1d3a_49af_ba03_7195fcc9ebba",
             "@type": "@id"
         },
         "hasMeasuredProperty": {
@@ -554,7 +587,15 @@
             "@id": "https://w3id.org/emmo#EMMO_a9a9d824_5ba1_4dac_a407_e42bf63350ca",
             "@type": "@id"
         },
-        "hasQuantity": {
+        "hasQuantityPart": {
+            "@id": "https://w3id.org/emmo#EMMO_95d706e4_8b16_48a1_8dfd_40ccd4df1c12",
+            "@type": "@id"
+        },
+        "hasQuantityValue": {
+            "@id": "https://w3id.org/emmo#EMMO_88b84515_a0df_47bb_8166_c7c8b893c1d8",
+            "@type": "@id"
+        },
+        "hasQuantityValuePart": {
             "@id": "https://w3id.org/emmo#EMMO_5d73661e_e710_4844_ab9b_a85b7e68576a",
             "@type": "@id"
         },
@@ -630,6 +671,10 @@
             "@id": "https://w3id.org/emmo#EMMO_9e3ad976_b179_4315_b51e_7e874df583dc",
             "@type": "@id"
         },
+        "hasSimulatedObject": {
+            "@id": "https://w3id.org/emmo#EMMO_ad0bdf66_93c4_4a4d_8e1d_57ec850b1741",
+            "@type": "@id"
+        },
         "hasSingleMember": {
             "@id": "https://w3id.org/emmo#EMMO_6b7276a4_4b9d_440a_b577_0277539c0fc4",
             "@type": "@id"
@@ -652,6 +697,10 @@
         },
         "hasSpatioTemporalTile": {
             "@id": "https://w3id.org/emmo#EMMO_7efab93d_c8fe_49c7_ba8e_d21d13b38c85",
+            "@type": "@id"
+        },
+        "hasSpeciesPart": {
+            "@id": "https://w3id.org/emmo#EMMO_18fdd2cd_4b0a_43a5_a938_66d8290a066c",
             "@type": "@id"
         },
         "hasStage": {
@@ -858,12 +907,20 @@
             "@id": "https://w3id.org/emmo#EMMO_86726b7c_b208_4690_893e_0cc798fac974",
             "@type": "@id"
         },
+        "isJunctionPartOf": {
+            "@id": "https://w3id.org/emmo#EMMO_f37fc69b_d6fd_44de_9c66_3c70b2efb7f4",
+            "@type": "@id"
+        },
         "isLeftBy": {
             "@id": "https://w3id.org/emmo#EMMO_bed37b1f_0479_4b61_bd49_54e25f414222",
             "@type": "@id"
         },
         "isMemberOf": {
             "@id": "https://w3id.org/emmo#EMMO_0949a7de_78dc_421d_8603_3b685cb927a3",
+            "@type": "@id"
+        },
+        "isNonTemporalPartOf": {
+            "@id": "https://w3id.org/emmo#EMMO_2332d7a4_2fbe_4a36_a10f_5c8efcce29d6",
             "@type": "@id"
         },
         "isNotCauseOf": {
@@ -922,16 +979,16 @@
             "@id": "https://w3id.org/emmo#EMMO_451ce6e1_9742_4e04_9bf8_acfcc81876f1",
             "@type": "@id"
         },
-        "isProcessedTo": {
-            "@id": "https://w3id.org/emmo#EMMO_571a8adb_f38f_4122_8754_044ea2490cd0",
-            "@type": "@id"
-        },
         "isProperPartOf": {
             "@id": "https://w3id.org/emmo#EMMO_559ab98c_1c7d_4794_996c_8c1d8d56381c",
             "@type": "@id"
         },
         "isPropertyFor": {
             "@id": "https://w3id.org/emmo#EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d",
+            "@type": "@id"
+        },
+        "isQuantityValueFor": {
+            "@id": "https://w3id.org/emmo#EMMO_a97351bc_1b1b_4157_95b7_0a60ac56b8e2",
             "@type": "@id"
         },
         "isRedundantPartOf": {
@@ -966,6 +1023,14 @@
             "@id": "https://w3id.org/emmo#EMMO_c792cf6b_097b_4a9a_9fc8_cb693cd5fdf3",
             "@type": "@id"
         },
+        "isSpatialPartOf": {
+            "@id": "https://w3id.org/emmo#EMMO_f1503598_03af_4fec_a860_ebc77aa92832",
+            "@type": "@id"
+        },
+        "isTemporalPartOf": {
+            "@id": "https://w3id.org/emmo#EMMO_f722a7a9_864d_4896_a331_f90141f90a0a",
+            "@type": "@id"
+        },
         "isThroughOverlappedBy": {
             "@id": "https://w3id.org/emmo#EMMO_d78b940d_4e2a_4a46_816b_da89029adc19",
             "@type": "@id"
@@ -976,6 +1041,14 @@
         },
         "leaves": {
             "@id": "https://w3id.org/emmo#EMMO_eb3ffec6_3d69_4633_a3b1_088ad53cb00b",
+            "@type": "@id"
+        },
+        "manufacturedBy": {
+            "@id": "https://w3id.org/emmo#EMMO_b24af630_0758_447e_a04d_a0e95db9b4fa",
+            "@type": "@id"
+        },
+        "manufacturedWith": {
+            "@id": "https://w3id.org/emmo#EMMO_b1c64830_45c7_499d_9a72_68f517d57823",
             "@type": "@id"
         },
         "mereological": {
@@ -1008,6 +1081,14 @@
         },
         "precedes": {
             "@id": "https://w3id.org/emmo#EMMO_499e24a5_5072_4c83_8625_fe3f96ae4a8d",
+            "@type": "@id"
+        },
+        "processedFrom": {
+            "@id": "https://w3id.org/emmo#EMMO_7821eeb8_5e44_452b_90e9_3db03bbef241",
+            "@type": "@id"
+        },
+        "processedTo": {
+            "@id": "https://w3id.org/emmo#EMMO_571a8adb_f38f_4122_8754_044ea2490cd0",
             "@type": "@id"
         },
         "properOverlaps": {
@@ -1098,7 +1179,6 @@
         "ActiveMassLoading": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1eeb0e2a_229a_43f1_b197_348d475067ff",
         "ActiveMaterial": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79d1b273_58cd_4be6_a250_434817f7c261",
         "ActiveMaterialMix": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_81833d8a_b03d_4250_be84_6385415beb01",
-        "ActiveMaterialParticleCracking": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f6341d7d_7620_48f5_97b2_99b55c349169",
         "ActivePower": "https://w3id.org/emmo#EMMO_2c9f993c_5b30_40a5_a471_808f7eb719db",
         "Activity": "https://w3id.org/emmo#EMMO_c20dd550_7241_4ca4_b5b1_0d300ab03b6c",
         "ActivityCoefficient": "https://w3id.org/emmo#EMMO_3434b127_1820_43a7_9e13_b96f25e66ee8",
@@ -1108,7 +1188,7 @@
         "ActivityOfSolvent": "https://w3id.org/emmo#EMMO_2ed364b1_affe_4711_a83f_74bfd57b94ad",
         "Additive": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0a399f3f_b873_41f5_be1f_9b6df75cc30a",
         "AdditiveManufacturing": "https://w3id.org/emmo#EMMO_03eb9b46_8ff0_4fcd_b1a0_73f65ae7434e",
-        "AdhamHashibon": "https://w3id.org/emmo#AdhamHashibon",
+        "AdhamHashibon": "https://orcid.org/0000-0003-0514-9229",
         "Admittance": "https://w3id.org/emmo#EMMO_4fb35ebc_0f3f_4cda_b181_a5334bc2b114",
         "AdsorptionCurrent": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_214d925c_76c4_4f69_9afc_056a1ea82fc6",
         "AdsorptiveStrippingVoltammetry": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#AdsorptiveStrippingVoltammetry",
@@ -1212,6 +1292,7 @@
         "AnalyticalElectronMicroscopy": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#AnalyticalElectronMicroscopy",
         "Angle": "https://w3id.org/emmo#EMMO_f3dd74c0_f480_49e8_9764_33b78638c235",
         "AngularAcceleration": "https://w3id.org/emmo#EMMO_77c53503_48b5_4811_a1a5_6bb4425e0bbf",
+        "AngularDisplacement": "https://w3id.org/emmo#EMMO_16d72037_3243_4018_ac6c_0015f661d3c3",
         "AngularFrequency": "https://w3id.org/emmo#EMMO_f4a30d7e_8e8b_41e6_9695_d33a68f54f4b",
         "AngularFrequencyUnit": "https://w3id.org/emmo#EMMO_78487bf1_c0bc_4db8_99dd_d8b7cc8b3bac",
         "AngularMeasure": "https://w3id.org/emmo#EMMO_930ce8d9_6cde_4ef9_9cb2_a98a63852b96",
@@ -1219,11 +1300,10 @@
         "AngularMomentumUnit": "https://w3id.org/emmo#EMMO_501f9b3a_c469_48f7_9281_2e6a8d805d7a",
         "AngularReciprocalLatticeVector": "https://w3id.org/emmo#EMMO_7254c8be_965d_4b3c_b3be_12c5578bee7c",
         "AngularVelocity": "https://w3id.org/emmo#EMMO_bd325ef5_4127_420c_83d3_207b3e2184fd",
-        "AngularWaveNumber": "https://w3id.org/emmo#EMMO_e4791212_5a13_4aa6_aac2_08704550dcc3",
         "AngularWavenumber": "https://w3id.org/emmo#EMMO_ba236f43_7f94_4386_9673_9122952e928b",
         "Anion": "https://w3id.org/emmo/domain/chemical-substance#substance_5a5e8609_83bf_46d1_a1b0_eaafa27aaed4",
         "Annealing": "https://w3id.org/emmo#EMMO_9900d51c_bdd3_40e8_aa82_ad1aa7092f71",
-        "AnnedeBaas": "https://w3id.org/emmo#AnnedeBaas",
+        "AnnedeBaas": "https://orcid.org/0009-0007-5850-6628",
         "AnnularWorkingElectrode": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3a77b5e7_9646_4154_bf8f_5f798989e5f3",
         "Anode": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b6319c74_d2ce_48c0_a75a_63156776b302",
         "AnodicOverpotential": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_565c0b10_70fe_441a_b76a_b9a8e08ca7b7",
@@ -1278,6 +1358,7 @@
         "ArsenicSymbol": "https://w3id.org/emmo#EMMO_0ba17fb4-6149-5332-b65f-0639ace42edf",
         "ArtificialAgency": "https://w3id.org/emmo#EMMO_fe527062_5869_46af_a351_f81d0ca18fad",
         "ArtificialIntelligence": "https://w3id.org/emmo#EMMO_7cb03f8e_6062_4106_9ffb_38cbe8eaa5f6",
+        "ArtificialMaterial": "https://w3id.org/emmo#EMMO_b418c9ac_be7c_42d1_862c_64f655ced6c5",
         "Assembled": "https://w3id.org/emmo#EMMO_52bbaaee_1145_4be3_8a5c_b366851ea1b9",
         "AssemblyLine": "https://w3id.org/emmo#EMMO_d64920b5_acd0_4e29_893e_ae03b3d7cdaf",
         "Assemblying": "https://w3id.org/emmo#EMMO_912ac3a2_a124_4233_92dd_06c9aebea46c",
@@ -1414,7 +1495,7 @@
         "ButanoicAcid": "https://w3id.org/emmo/domain/chemical-substance#substance_78a1367d_61b4_40a4_9c22_fdd0017f535f",
         "ButlerVolmerEquation": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d48ea516_5cac_4f86_bc88_21b6276c0938",
         "ByteData": "https://w3id.org/emmo#EMMO_3c87fd89_b0f0_477a_86b6_d949c2b982ee",
-        "C": "https://w3id.org/emmo#EMMO_36a9bf69_483b_42fd_8a0c_7ac9206320bc",
+        "C": "https://w3id.org/emmo/domain/electrochemistry#C",
         "CASRN": "https://w3id.org/emmo#EMMO_d2a47cd8_662f_438f_855a_b4378eb992ff",
         "CPlusPlus": "https://w3id.org/emmo#EMMO_64aba1e5_24b7_4140_8eb4_676c35698e79",
         "CRate": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e1fd84eb_acdb_4b2c_b90c_e899d552a3ee",
@@ -1602,7 +1683,6 @@
         "ChemicalElement": "https://w3id.org/emmo#EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf",
         "ChemicalEntity": "https://w3id.org/emmo#EMMO_47338839_6cca_4a8e_b565_3c4d5517e2c0",
         "ChemicalFormula": "https://w3id.org/emmo#EMMO_9236d0aa_cb39_43a1_bbdd_6a2a714951c8",
-        "ChemicalMaterial": "https://w3id.org/emmo#EMMO_8a41ed1b_64f9_4be7_9b60_01fcece45075",
         "ChemicalName": "https://w3id.org/emmo#EMMO_26586828_3b8c_4d8b_9c6c_0bc2502f26ae",
         "ChemicalNomenclature": "https://w3id.org/emmo#EMMO_643d99dd_fae6_4121_a76f_47f486a4480b",
         "ChemicalPotential": "https://w3id.org/emmo#EMMO_88fc5d1b_d3ab_4626_b24c_915ebe7400ca",
@@ -1612,7 +1692,6 @@
         "ChemicalSubstance": "https://w3id.org/emmo#EMMO_df96cbb6_b5ee_4222_8eab_b3675df24bea",
         "ChemicalSymbol": "https://w3id.org/emmo#EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7",
         "ChemicalSymbolicConstruct": "https://w3id.org/emmo#EMMO_bd8db028_aec2_4a44_ad93_1a9f8270f72c",
-        "ChemicallyDefinedMaterial": "https://w3id.org/emmo#EMMO_a96e2152_40e7_409c_a53a_fdb9f141eb6a",
         "ChipboardManufacturing": "https://w3id.org/emmo#EMMO_375aaa5a_998f_4626_83e0_c7d7e52a6565",
         "ChloricAcid": "https://w3id.org/emmo/domain/chemical-substance#substance_19292fbf_8a09_45a0_b807_f643253a333c",
         "Chlorine": "https://w3id.org/emmo/domain/chemical-substance#substance_43aef3e7_12aa_44b2_9d0f_973e634bfbe0",
@@ -1633,7 +1712,6 @@
         "Circle": "https://w3id.org/emmo#EMMO_b2a234a8_579a_422c_9305_b8f7e72c76cd",
         "CitricAcid": "https://w3id.org/emmo/domain/chemical-substance#substance_b258c23a_748e_4f92_9d55_354b92c298df",
         "ClassicalData": "https://w3id.org/emmo#EMMO_ed257e78_8b59_44c3_9d61_06c261184f55",
-        "ClassicallyDefinedMaterial": "https://w3id.org/emmo#EMMO_39348191_08fd_4bb6_9b1e_012d5b2f1ff6",
         "Cleaning": "https://w3id.org/emmo#EMMO_92eaefcb_50be_4237_9ec0_4a019ce24921",
         "CoatedElectrode": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_92147e31_d015_4889_a092_04fbab033f15",
         "Coater": "https://w3id.org/emmo/domain/manufacturing#manufacturing_3fb94e7d_0feb_404d_b213_e498a61ec021",
@@ -1664,9 +1742,9 @@
         "CobaltSaltCompound": "https://w3id.org/emmo/domain/chemical-substance#substance_bc76f17d_931a_4728_9663_9f8ed208d5e4",
         "CobaltSymbol": "https://w3id.org/emmo#EMMO_4aa59242-76e7-5cce-a126-c7e9c657e7ad",
         "Coded": "https://w3id.org/emmo#EMMO_7286b164_df4c_4c14_a4b5_d41ad9c121f3",
-        "CodedByObservation": "https://w3id.org.org/emmo#EMMO_3d03a403_facd_48c6_b75e_7ab8b9299218",
-        "CodedByStructure": "https://w3id.org.org/emmo#EMMO_38f31ba5_348f_4ac2_9a67_a62b5dd7aadd",
-        "CodedBySubjectivity": "https://w3id.org.org/emmo#EMMO_4292fdcd_bbba_4d99_95c6_daa533d952ef",
+        "CodedByObservation": "https://w3id.org/emmo#EMMO_3d03a403_facd_48c6_b75e_7ab8b9299218",
+        "CodedByStructure": "https://w3id.org/emmo#EMMO_38f31ba5_348f_4ac2_9a67_a62b5dd7aadd",
+        "CodedBySubjectivity": "https://w3id.org/emmo#EMMO_4292fdcd_bbba_4d99_95c6_daa533d952ef",
         "CoefficientOfFriction": "https://w3id.org/emmo#EMMO_a18a3e9b_7e3d_44bf_9640_c8634e770ba8",
         "CoefficientOfHeatTransfer": "https://w3id.org/emmo#EMMO_43b349fc_c7ed_480d_b0ca_9db84b700813",
         "CoefficientOfThermalExpansion": "https://w3id.org/emmo#EMMO_80f3d95d_b1fd_46c0_b98a_b6b611b47105",
@@ -1685,6 +1763,7 @@
         "CommandLanguage": "https://w3id.org/emmo#EMMO_c8fe15d0_caf7_46f7_883c_0e98081987f1",
         "CommercialProduct": "https://w3id.org/emmo#EMMO_00b85655_f20c_4e83_b90e_094e8ea7e48f",
         "Communicating": "https://w3id.org/emmo#EMMO_8ced4dcc_ba95_4e5f_a54d_68b928c367a0",
+        "CompactMaterial": "https://w3id.org/emmo#EMMO_9ebb6e14_c656_4568_abfa_f7f193ea14ac",
         "CompiledLanguage": "https://w3id.org/emmo#EMMO_1461e904_a2bf_4558_ad74_2706f5706b34",
         "ComplexPower": "https://w3id.org/emmo#EMMO_c7bc281c_0f58_431c_a66f_04be575fae7e",
         "Component": "https://w3id.org/emmo#EMMO_f76884f7_964e_488e_9bb7_1b2453e9e817",
@@ -1828,12 +1907,14 @@
         "CubicMilliMetre": "https://w3id.org/emmo#CubicMilliMetre",
         "CubicMilliMetrePerCubicMetre": "https://w3id.org/emmo#CubicMilliMetrePerCubicMetre",
         "Cumene": "https://w3id.org/emmo/domain/chemical-substance#substance_4ebc1929_2acd_4afb_8a13_6b2f70e2956c",
+        "CumulativeCapacity": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_df9e9d49_12fa_4794_b482_e0dcd2a7bb66",
         "CurieTemperature": "https://w3id.org/emmo#EMMO_6b5af5a8_a2d8_4353_a1d6_54c9f778343d",
         "CuriumAtom": "https://w3id.org/emmo#EMMO_08522112-0872-599f-9d81-81889333254e",
         "CuriumSymbol": "https://w3id.org/emmo#EMMO_c97277f7-f011-51bb-aeb8-5e8b1f3f711c",
         "CurrentChangeLimit": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_71f10616_15eb_4dc4_bc8d_ffaac3838af2",
         "CurrentChangeRate": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6516ed26_9661_4d81_8c6d_15d2384d17c0",
         "CurrentCollector": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_212af058_3bbb_419f_a9c6_90ba9ebb3706",
+        "CurrentCollectorTab": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6913368b_39cf_42da_ac51_c1b508930ac5",
         "CurrentControlledProcess": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5548f188_df00_4c05_ae98_7846e92efe36",
         "CurrentDensityLimit": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_76e7e556_f47e_47e2_b2ef_67aeed09c63e",
         "CurrentHold": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_78a8f60b_10c2_41ee_9946_d35437e1edb5",
@@ -1890,17 +1971,17 @@
         "DataAcquisitionRate": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#DataAcquisitionRate",
         "DataAnalysis": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#DataAnalysis",
         "DataBasedSimulationSoftware": "https://w3id.org/emmo#EMMO_a4b14b83_9392_4a5f_a2e8_b2b58793f59b",
-        "DataByDiscretness": "https://w3id.org.org/emmo#EMMO_c66ad523_3937_485e_91bb_ad488ddb373f",
-        "DataByNature": "https://w3id.org.org/emmo#EMMO_1e1cfc11_aa1a_44d4_a8d0_31e26deb2d19",
-        "DataByNumerical": "https://w3id.org.org/emmo#EMMO_f0fec2df_41f0_4412_b28a_592858c065f0",
-        "DataByStructure": "https://w3id.org.org/emmo#EMMO_1a40459e_10d8_49b3_bb8c_c3595fb1d0bb",
+        "DataByDiscretness": "https://w3id.org/emmo#EMMO_c66ad523_3937_485e_91bb_ad488ddb373f",
+        "DataByNature": "https://w3id.org/emmo#EMMO_1e1cfc11_aa1a_44d4_a8d0_31e26deb2d19",
+        "DataByNumerical": "https://w3id.org/emmo#EMMO_f0fec2df_41f0_4412_b28a_592858c065f0",
+        "DataByStructure": "https://w3id.org/emmo#EMMO_1a40459e_10d8_49b3_bb8c_c3595fb1d0bb",
         "DataExchangeLanguage": "https://w3id.org/emmo#EMMO_13fea749_0b3b_4756_9c81_22cce620fc25",
         "DataFiltering": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#DataFiltering",
         "DataNormalisation": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#DataNormalisation",
         "DataPostProcessing": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#DataPostProcessing",
         "DataPreparation": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#DataPreparation",
         "DataProcessing": "https://w3id.org/emmo#EMMO_1c7f2dfe_0db4_4bf6_a0f6_853054a34ead",
-        "DataProcessingApplication": "https://w3id.org/emmo#EMMO_cbf42aa6_9e11_4be8_932a_ae3c792ab17d",
+        "DataProcessingSoftware": "https://w3id.org/emmo#EMMO_cbf42aa6_9e11_4be8_932a_ae3c792ab17d",
         "DataQuality": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#DataQuality",
         "Database": "https://w3id.org/emmo#EMMO_1beed5ca_2bab_425d_bbe6_db6fab6ffe64",
         "Dataset": "https://w3id.org/emmo#EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a",
@@ -1910,7 +1991,7 @@
         "Datum": "https://w3id.org/emmo#EMMO_50d6236a_7667_4883_8ae1_9bb5d190423a",
         "Day": "https://w3id.org/emmo#Day",
         "DebyeAngularFrequency": "https://w3id.org/emmo#EMMO_65ec122c_b67f_4009_8b16_2df7dfae118a",
-        "DebyeAngularWaveNumber": "https://w3id.org/emmo#EMMO_76acb5d8_5ab8_484b_8354_7f7612f39c17",
+        "DebyeAngularWavenumber": "https://w3id.org/emmo#EMMO_76acb5d8_5ab8_484b_8354_7f7612f39c17",
         "DebyeTemperature": "https://w3id.org/emmo#EMMO_74cfc811_6e04_4fe4_aea5_6a5cc09f6571",
         "DebyeWallerFactor": "https://w3id.org/emmo#EMMO_485720e7_b24a_4149_86eb_9985b2bea4da",
         "Deca": "https://w3id.org/emmo#EMMO_e07a252a_6913_49d6_9038_37a258b2d95e",
@@ -1964,6 +2045,7 @@
         "Device": "https://w3id.org/emmo#EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8",
         "DeviceDensity": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0ea21f71_d1bd_4714_a260_b991e6d4bcf7",
         "DeviceLumpedSpecificHeatCapacity": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9cba2158_26ba_4dd7_b082_ba66dbb960c7",
+        "DeviceSample": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#DeviceSample",
         "DeviceSurfaceArea": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ccde4e5f_ace4_41d1_b4d8_cbd63e6376e6",
         "DeviceTemperature": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_463950b9_fd8d_48de_a52d_b29cab026391",
         "DeviceVolume": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b4184e46_c53c_47cc_9bfc_186fd77836a5",
@@ -2007,14 +2089,14 @@
         "DimethylCarbonate": "https://w3id.org/emmo/domain/chemical-substance#substance_c4a7d7bd_497e_457e_b858_ff73254266d0",
         "DimethylSulfate": "https://w3id.org/emmo/domain/chemical-substance#substance_3c8fb431_7d9d_4a89_a494_708df34f44d3",
         "DimethylSulfoxide": "https://w3id.org/emmo/domain/chemical-substance#substance_ea68e1a4_6be8_4686_8701_ba88b40d00b7",
-        "Dimethylformamide": "https://w3id.org/emmo/domain/chemical-substance#substance_817d1989_4d6d_4c32_9951_85973afc538d",
+        "Dimethylformamide": "https://w3id.org/emmo/domain/chemical-substance#substance_769bdc09_f533_4fde_bb53_20339d5bfcb7",
         "Dimethylpropyleneurea": "https://w3id.org/emmo/domain/chemical-substance#substance_945c68da_3baf_4da6_b794_dca7aebc4ca7",
         "Dioxolane": "https://w3id.org/emmo/domain/chemical-substance#substance_0e235e95_739d_443a_ad4b_97ef1edb9c89",
         "DippingForms": "https://w3id.org/emmo#EMMO_a09a5342_cad4_40fa_a619_a5af0867cb8f",
         "DipropylSulfone": "https://w3id.org/emmo/domain/chemical-substance#substance_f6eb3754_2ccb_406d_b407_c989a7e1b4f9",
         "DirectCoulometryAtControlledCurrent": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#DirectCoulometryAtControlledCurrent",
         "DirectCoulometryAtControlledPotential": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#DirectCoulometryAtControlledPotential",
-        "DirectCurrent": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_885b462e_f6bc_412d_8b94_9425e13af0c7",
+        "DirectCurrent": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_40ca9548_910a_48b6_9a26_f94095d349cd",
         "DirectCurrentInternalResistance": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#DirectCurrentInternalResistance",
         "DirectionAndEnergyDistributionOfCrossSection": "https://w3id.org/emmo#EMMO_0e0ee94d_70be_4b7e_afcc_320e62a94974",
         "DirectionDistributionOfCrossSection": "https://w3id.org/emmo#EMMO_748ff828_763b_4290_adb9_e05376d4136a",
@@ -2100,6 +2182,7 @@
         "ElectricConductivityPerAmountUnit": "https://w3id.org/emmo#EMMO_89113866_31a4_4d19_bc83_7f7c1661ab73",
         "ElectricConductivityUnit": "https://w3id.org/emmo#EMMO_86ffe1bb_d457_4948_9e39_35f363b9a9fe",
         "ElectricCurrent": "https://w3id.org/emmo#EMMO_c995ae70_3b84_4ebb_bcfc_69e6a281bb88",
+        "ElectricCurrentAreaUnit": "https://w3id.org/emmo#EMMO_c18abee6_8c62_4f04_aac2_55aa1a1fc551",
         "ElectricCurrentAssistedSintering": "https://w3id.org/emmo#EMMO_5a5cf124_1ece_4b8e_ae63_edc2b5ee573a",
         "ElectricCurrentData": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4920de95_3a48_4669_b762_5a0b5232b52f",
         "ElectricCurrentDensity": "https://w3id.org/emmo#EMMO_7c8007b0_58a7_4486_bf1c_4772852caca0",
@@ -2187,7 +2270,7 @@
         "Electrochemiluminescence": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_96309fa9_e157_48fe_9fda_41003860a3c0",
         "Electrode": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627",
         "ElectrodeCalendering": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_38a2b407_3be9_4b66_86cf_b961cdffb4c9",
-        "ElectrodeCoating": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cfcf6ca6_70e9_4369_9314_7f20b3efbf21",
+        "ElectrodeCoating": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56",
         "ElectrodeCoverageDensity": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_63a8f9d2_0cf6_484d_b996_2e5c3f0a3c73",
         "ElectrodeDrying": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_36c2e19c_cb1a_41e9_bcd5_baf9dfd21905",
         "ElectrodeElectrolyteInterface": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9c73aff8_1c82_4116_a6be_78e21982b69d",
@@ -2225,6 +2308,7 @@
         "ElectrolyticDeposition": "https://w3id.org/emmo#EMMO_a139c6d5_1a0b_4605_a6c0_9f383539f9b1",
         "ElectromagneticEnergyDensity": "https://w3id.org/emmo#EMMO_48540672_f1ee_4848_982f_0cd5ec396a84",
         "ElectromagneticQuantity": "https://w3id.org/emmo#EMMO_af794e9d_dc7d_4756_83e1_2cd0e2ec864e",
+        "Electron": "https://w3id.org/emmo#EMMO_730f2e31_ca78_410f_a5e1_4043217a41ab",
         "ElectronAffinity": "https://w3id.org/emmo#EMMO_3cae45cc_3b57_469c_a695_713735886f31",
         "ElectronBackscatterDiffraction": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#ElectronBackscatterDiffraction",
         "ElectronCharge": "https://w3id.org/emmo#EMMO_cc01751d_dd05_429b_9d0c_1b7a74d1f277",
@@ -2236,18 +2320,16 @@
         "ElectronicConductivity": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ce74d2dc_d496_4116_b2fb_3e83d88bc744",
         "ElectronicModel": "https://w3id.org/emmo#EMMO_6eca09be_17e9_445e_abc9_000aa61b7a11",
         "Electroosmosis": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5641910f_6e69_4ce4_be84_4b1bf14b8916",
-        "Electroplating": "https://w3id.org/emmo#EMMO_30e3edb5_0977_4b9b_9aed_5a4d16c1c07c",
-        "ElementalMaterial": "https://w3id.org/emmo#EMMO_a086af15_a7c3_404c_b4ce_c8e4466f1b4b",
+        "Electroplating": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a2b92d2e_4431_411e_8da5_a4c08bac2c0e",
         "ElementalSubstance": "https://w3id.org/emmo#EMMO_436b11bd_1756_4821_9f14_c9ed6b67552e",
         "ElementaryBoson": "https://w3id.org/emmo#EMMO_cafd0f10_ce85_48b9_9a36_2b0af141ce21",
         "ElementaryCharge": "https://w3id.org/emmo#EMMO_58a650f0_a638_4743_8439_535a325e5c4c",
-        "ElementaryElectron": "https://w3id.org/emmo#EMMO_730f2e31_ca78_410f_a5e1_4043217a41ab",
         "ElementaryFermion": "https://w3id.org/emmo#EMMO_820619ca_b23e_4c7a_8543_18a17722abc0",
         "ElementaryParticle": "https://w3id.org/emmo#EMMO_7b79b2ac_3cf2_4d3b_8cdc_bcabb59d869e",
         "ElementaryPhoton": "https://w3id.org/emmo#EMMO_c1a6e72c_de7a_48db_8f45_32c0be019291",
         "ElementaryQuark": "https://w3id.org/emmo#EMMO_99a8eece_40bf_4f26_832c_f290ca664767",
         "Ellipsometry": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#Ellipsometry",
-        "EmanueleGhedini": "https://w3id.org/emmo#EmanueleGhedini",
+        "EmanueleGhedini": "https://orcid.org/0000-0003-3805-8761",
         "EmpiricalFormula": "https://w3id.org/emmo#EMMO_6afdb7e8_2a0b_444d_bde3_8d67d98180c0",
         "EmpiricalSimulationSoftware": "https://w3id.org/emmo#EMMO_67c70dcd_2adf_4e6c_b3f8_f33dd1512487",
         "Emulsion": "https://w3id.org/emmo#EMMO_40e18c93_a1b5_49ff_b06a_d9d932d1fb65",
@@ -2276,7 +2358,7 @@
         "EntropyPerMassUnit": "https://w3id.org/emmo#EMMO_7cef5aae_baae_42d1_959a_ee70a7cf7a73",
         "EntropyUnit": "https://w3id.org/emmo#EMMO_3ecff38b_b3cf_4a78_b49f_8580abf8715b",
         "EnvironmentalScanningElectronMicroscopy": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#EnvironmentalScanningElectronMicroscopy",
-        "EqualizationCharge": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_990d19b8_672a_4219_a2b3_0a25bfa13f69",
+        "EqualizationCharging": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_990d19b8_672a_4219_a2b3_0a25bfa13f69",
         "Equals": "https://w3id.org/emmo#EMMO_535d75a4_1972_40bc_88c6_ca566386934f",
         "Equation": "https://w3id.org/emmo#EMMO_e56ee3eb_7609_4ae1_8bed_51974f0960a6",
         "EquilibriumConstant": "https://w3id.org/emmo#EMMO_066937f0_ea5c_4b06_8739_53f66d5ef89e",
@@ -2336,7 +2418,7 @@
         "FemtoMole": "https://w3id.org/emmo#FemtoMole",
         "FemtoMolePerKilogram": "https://w3id.org/emmo#FemtoMolePerKilogram",
         "FemtoPrefixedUnit": "https://w3id.org/emmo#EMMO_23bfe79a_cade_48f1_9a8c_fd96e6bac8ba",
-        "FermiAnglularWaveNumber": "https://w3id.org/emmo#EMMO_6aad14ae_5ca1_4d19_aa6c_56448ff534b6",
+        "FermiAnglularWavenumber": "https://w3id.org/emmo#EMMO_6aad14ae_5ca1_4d19_aa6c_56448ff534b6",
         "FermiEnergy": "https://w3id.org/emmo#EMMO_9eb2d590_2115_4edd_aa8e_345d60921765",
         "FermiTemperature": "https://w3id.org/emmo#EMMO_fdd744f7_72e5_4060_86a7_93ff361237d6",
         "Fermion": "https://w3id.org/emmo#EMMO_53dced52_34f6_4cf0_8a99_ddf451861543",
@@ -2395,8 +2477,8 @@
         "Fractography": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#Fractography",
         "Francesca Lonstad Bleken": "https://orcid.org/0000-0001-8869-3718",
         "Francesca L\u00f8nstad Bleken": "https://orcid.org/0000-0001-8869-3718",
-        "FrancescaLonstadBleken": "https://w3id.org/emmo#FrancescaBleken",
-        "FrancescoZaccarini": "https://w3id.org/emmo#FrancescoZaccarini",
+        "FrancescaBleken": "https://orcid.org/0000-0001-8869-3718",
+        "FrancescoZaccarini": "https://orcid.org/0009-0008-8009-5009",
         "FranciumAtom": "https://w3id.org/emmo#EMMO_291a1550-d4cb-5934-b0db-0ea3c6a23932",
         "FranciumSymbol": "https://w3id.org/emmo#EMMO_c3a05192-7d78-5190-bc3e-3ea44cfc9d19",
         "FreeForming": "https://w3id.org/emmo#EMMO_7432b843_cfd2_4345_a3d2_eaa539b27e61",
@@ -2413,7 +2495,6 @@
         "Fugacity": "https://w3id.org/emmo#EMMO_9e2ab15a_f1c7_435b_91ff_bc774e6ba4e7",
         "FullSemiosis": "https://w3id.org/emmo#EMMO_ea5a4079_dbca_4ae7_80f4_415643f95257",
         "FunctionalIcon": "https://w3id.org/emmo#EMMO_c7013b53_3071_410b_a5e4_a8d266dcdfb5",
-        "FunctionallyDefinedMaterial": "https://w3id.org/emmo#EMMO_8820f251_ad36_43f4_a693_c0e86a89cc1f",
         "Fundamental": "https://w3id.org/emmo#EMMO_57c75ca1_bf8a_42bc_85d9_58cfe38c7df2",
         "FundamentalLatticeVector": "https://w3id.org/emmo#EMMO_03d32783_3780_43c3_8b73_7efe9aeeed54",
         "FundamentalPhysicalSystem": "https://w3id.org/emmo#EMMO_43a4e80d_6ae9_45ed_8cfb_fd0a5339bf87",
@@ -2453,8 +2534,8 @@
         "Gel": "https://w3id.org/emmo#EMMO_3995e22d_5720_4dcf_ba3b_d0ce03f514c6",
         "GenericPhysicalSystem": "https://w3id.org/emmo#EMMO_b295158f_fda4_4124_ab58_d9ea4ccfca5a",
         "Geometrical": "https://w3id.org/emmo#EMMO_b5957cef_a287_442d_a3ce_fd39f20ba1cd",
-        "GeorgJSchmitz": "https://w3id.org/emmo#GeorgSchmitz",
-        "GerhardGoldbeck": "https://w3id.org/emmo#GerhardGoldbeck",
+        "GeorgSchmitz": "https://orcid.org/0000-0003-4065-9742",
+        "GerhardGoldbeck": "https://orcid.org/0000-0002-4181-2852",
         "Germanium": "https://w3id.org/emmo/domain/chemical-substance#substance_37c4342f_3c3f_47d3_97f0_761c8c877933",
         "GermaniumAtom": "https://w3id.org/emmo#EMMO_694e27a2-f3ee-5a3e-8851-d6f78d79d84e",
         "GermaniumSymbol": "https://w3id.org/emmo#EMMO_6b670dce-5692-5505-9688-8f735b325214",
@@ -2510,7 +2591,7 @@
         "GravitySintering": "https://w3id.org/emmo#EMMO_3ec45f3b_677d_4e71_be75_6f8966b4f808",
         "Gray": "https://w3id.org/emmo#Gray",
         "GrayPerSecond": "https://w3id.org/emmo#GrayPerSecond",
-        "Grinding": "https://w3id.org/emmo#EMMO_2138677c_845a_4bc2_8be7_7b0a07b4777d",
+        "Grinding": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#Grinding",
         "GroupVelocity": "https://w3id.org/emmo#EMMO_fa957390_cdfb_4dda_b160_94ae25bd2254",
         "GrowingCrystal": "https://w3id.org/emmo#EMMO_662e94ea_babe_4709_af8f_b669931076bc",
         "GrueneisenParamter": "https://w3id.org/emmo#EMMO_dc1370b5_3902_4652_8736_0804d88dd128",
@@ -2599,6 +2680,7 @@
         "HybridMatter": "https://w3id.org/emmo#EMMO_1c16bb7f_5400_4498_8ef2_54392908da4e",
         "HydrazoicAcid": "https://w3id.org/emmo/domain/chemical-substance#substance_52c1076c_9349_44f7_8067_4de36bd49e10",
         "HydrodynamicVoltammetry": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#HydrodynamicVoltammetry",
+        "Hydrogen": "https://w3id.org/emmo/domain/chemical-substance#substance_c42ceab7_0d11_44ef_af71_be32524b1078",
         "HydrogenAtom": "https://w3id.org/emmo#EMMO_5a4790e5-b11b-5a0c-80e4-81515c27a560",
         "HydrogenBromide": "https://w3id.org/emmo/domain/chemical-substance#substance_acb8c003_6453_49d8_ad93_456cc99d5d10",
         "HydrogenChloride": "https://w3id.org/emmo/domain/chemical-substance#substance_aa740290_2568_4b54_9d0f_2edc88e333ba",
@@ -2760,7 +2842,7 @@
         "Java": "https://w3id.org/emmo#EMMO_09007bc0_b5f2_4fb9_af01_caf948cf2044",
         "JavaScript": "https://w3id.org/emmo#EMMO_161bef57_cc59_4246_8249_19dbdae96e7b",
         "Jesper Friis": "https://orcid.org/0000-0002-1560-809X",
-        "JesperFriis": "https://w3id.org/emmo#JesperFriis",
+        "JesperFriis": "https://orcid.org/0000-0002-1560-809X",
         "Join": "https://w3id.org/emmo#EMMO_c7ee175d_4c25_45cb_b74e_71435b11b77d",
         "JoinManufacturing": "https://w3id.org/emmo#EMMO_6ab555fd_5803_4f03_82e8_127c01aabfea",
         "JosephsonConstant": "https://w3id.org/emmo#EMMO_ba380bc6_2bfd_4f11_94c7_b3cbaafd1631",
@@ -3196,6 +3278,12 @@
         "MassUnit": "https://w3id.org/emmo#EMMO_77e9dc31_5b19_463e_b000_44c6e79f98aa",
         "MassieuFunction": "https://w3id.org/emmo#EMMO_c39d6a20_b987_49db_addb_a498635b89ff",
         "Material": "https://w3id.org/emmo#EMMO_4207e895_8b83_4318_996a_72cfb32acd94",
+        "MaterialByClassicalMaterialsScience": "https://w3id.org/emmo#EMMO_39348191_08fd_4bb6_9b1e_012d5b2f1ff6",
+        "MaterialByCompactness": "https://w3id.org/emmo#EMMO_9ec16158_9118_4886_be97_4310f02f7571",
+        "MaterialByForceResponse": "https://w3id.org/emmo#EMMO_d8a7aac9_984a_4254_ab3b_7d8b1c061149",
+        "MaterialByFunction": "https://w3id.org/emmo#EMMO_8820f251_ad36_43f4_a693_c0e86a89cc1f",
+        "MaterialByOrigin": "https://w3id.org/emmo#EMMO_ddb62e5b_9a1f_4d10_8cd8_32655301bfc9",
+        "MaterialBySize": "https://w3id.org/emmo#EMMO_e4e80813_f379_4091_b017_ee059811f806",
         "MaterialByStructure": "https://w3id.org/emmo#EMMO_f00fb163_48c9_4c59_b6c2_4205c082aa54",
         "MaterialByType": "https://w3id.org/emmo#EMMO_4db521a3_f80f_436b_b9c7_e4b52b1383ea",
         "MaterialLaw": "https://w3id.org/emmo#EMMO_f19ff3b4_6bfe_4c41_a2b2_9affd39c140b",
@@ -3215,8 +3303,8 @@
         "Matrix": "https://w3id.org/emmo#EMMO_1cba0b27_15d0_4326_933f_379d0b3565b6",
         "MatrixData": "https://w3id.org/emmo#EMMO_2ff657b6_1c9f_4335_bba2_ea4428422977",
         "Matter": "https://w3id.org/emmo#EMMO_5b2222df_4da6_442f_8244_96e9e45887d1",
-        "MatterByStructure": "https://w3id.org.org/emmo#EMMO_41cecfc2_bb6b_45f3_b6cc_e7740d931afe",
-        "MatterByType": "https://w3id.org.org/emmo#EMMO_43d0bb2c_bb0e_4312_a0de_084c29ff7f9e",
+        "MatterByStructure": "https://w3id.org/emmo#EMMO_41cecfc2_bb6b_45f3_b6cc_e7740d931afe",
+        "MatterByType": "https://w3id.org/emmo#EMMO_43d0bb2c_bb0e_4312_a0de_084c29ff7f9e",
         "Maximal": "https://w3id.org/emmo#EMMO_b4494d69_6393_4eb4_8346_7fedd4df0bc5",
         "MaximumBetaParticleEnergy": "https://w3id.org/emmo#EMMO_d364e5e0_9652_4295_8f85_bd1297497377",
         "MaximumCapacity": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b7781ebc_90a7_4f19_997f_aed28dee1b01",
@@ -3334,6 +3422,7 @@
         "MetrologicalReference": "https://w3id.org/emmo#EMMO_18ce5200_00f5_45bb_8c6f_6fb128cd41ae",
         "MetrologicalSymbol": "https://w3id.org/emmo#EMMO_50a3552e_859a_4ff7_946d_76d537cabce6",
         "MetrologicalUncertainty": "https://w3id.org/emmo#EMMO_847724b7_acef_490e_9f0d_67da967f2812",
+        "MichaelNoeske": "https://orcid.org/0000-0002-5417-6808",
         "Micro": "https://w3id.org/emmo#EMMO_6da1b965_768c_4cf0_8873_44f2035133ba",
         "MicroAmpere": "https://w3id.org/emmo#MicroAmpere",
         "MicroBecquerel": "https://w3id.org/emmo#MicroBecquerel",
@@ -3449,7 +3538,7 @@
         "MilliWattPerSquareMetrePerNanoMetre": "https://w3id.org/emmo#MilliWattPerSquareMetrePerNanoMetre",
         "MilliWattPerSquareMetrePerNanoMetrePerSteradian": "https://w3id.org/emmo#MilliWattPerSquareMetrePerNanoMetrePerSteradian",
         "MilliWeber": "https://w3id.org/emmo#MilliWeber",
-        "Milling": "https://w3id.org/emmo#EMMO_44f91d47_3faf_48e2_844c_d44bbe3e22f6",
+        "Milling": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#Milling",
         "Minimal": "https://w3id.org/emmo#EMMO_0914449c_ef24_4372_b669_9cdd13b59fed",
         "MinimumCapacity": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d3c0078e_c1d3_461e_873d_e5c3adf441c5",
         "MinimumChargingTemperature": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b90b1ad7_b9a8_44df_ad45_bfd25aac2e49",
@@ -3773,12 +3862,13 @@
         "Osmometry": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#Osmometry",
         "OsmoticCoefficientOfSolvent": "https://w3id.org/emmo#EMMO_987594e7_c152_4f76_88cf_a80874a864fd",
         "OsmoticPressure": "https://w3id.org/emmo#EMMO_19c5c2b2_463b_4e41_bd50_4f7239aa62d9",
-        "OtelloMRoscioni": "https://w3id.org/emmo#OtelloRoscioni",
+        "OtelloRoscioni": "https://orcid.org/0000-0001-7815-6636",
         "OutlierRemoval": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#OutlierRemoval",
         "OutputCable": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_76df6e7b_fc3b_4a1f_98b1_0ca9c0539e4c",
         "Overcharging": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9ee6e728_e8f5_4b36_a045_d63da69dfc85",
         "Overpotential": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1cd1d777_e67b_47eb_81f1_edac35d9f2c6",
         "OxalicAcid": "https://w3id.org/emmo/domain/chemical-substance#substance_cfcaa487_a7ee_401b_902a_afc68158a02f",
+        "Oxidation": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c6a35be8_7ce2_415b_be9e_3a5ff9a7f2ad",
         "OxidationNumber": "https://w3id.org/emmo#EMMO_26922e28_b266_46c1_b93e_4940633ba5e4",
         "Oxygen": "https://w3id.org/emmo/domain/chemical-substance#substance_28df7242_f3a7_44e5_bd60_fb16796539c1",
         "OxygenAtom": "https://w3id.org/emmo#EMMO_48be0f49-9e7f-51c1-96ce-88e7794a13b0",
@@ -3833,6 +3923,7 @@
         "ParticipantByAgency": "https://w3id.org/emmo#EMMO_cede9297_c60d_4487_9207_62ac963202b5",
         "Particle": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e13b7945_65ac_476b_85ee_5cdc59f5c919",
         "ParticleConcentration": "https://w3id.org/emmo#EMMO_3f97cf06_fde4_4c2d_b867_d7983228a1ff",
+        "ParticleCracking": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f6341d7d_7620_48f5_97b2_99b55c349169",
         "ParticleCurrentDensity": "https://w3id.org/emmo#EMMO_1fa63b54_64d7_40fa_9c8c_003bd61664d1",
         "ParticleEmissionRate": "https://w3id.org/emmo#EMMO_444de087_cecb_4b21_a24c_529aa31e0f4a",
         "ParticleFluence": "https://w3id.org/emmo#EMMO_246af1cb_2f80_4ff7_9add_c1dd4cfdcc93",
@@ -3858,7 +3949,6 @@
         "PastedPlate": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a1ec9e3c_c624_4848_af13_89a6bc54d77c",
         "Path": "https://w3id.org/emmo#EMMO_e94a9156_fb6c_4e16_88ee_829ac9933155",
         "PathLength": "https://w3id.org/emmo#EMMO_a0ce1017_0467_473b_8af8_0ddf4621b0be",
-        "PaulLudwigMichaelNoeske": "https://w3id.org/emmo#MichaelNorske",
         "PeakCurrent": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_382b10dc_83aa_4e77_a1d5_1edd06fd1e05",
         "PeakPotential": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e4a221e0_afc9_4464_91d4_e0c8ecdf79e8",
         "Peening": "https://w3id.org/emmo#EMMO_dc0874e8_36e1_44df_947d_0d7c81167a09",
@@ -3929,7 +4019,7 @@
         "Permittivity": "https://w3id.org/emmo#EMMO_0ee5779e_d798_4ee5_9bfe_c392d5bea112",
         "PermittivityUnit": "https://w3id.org/emmo#EMMO_5f89cb0c_3171_47ee_b2ab_027a07c34c4b",
         "Persistence": "https://w3id.org/emmo#EMMO_e04884d9_eda6_487e_93d5_7722d7eda96b",
-        "Person": "http://xmlns.com/foaf/0.1/Person",
+        "Person": "https://schema.org/Person",
         "Perspective": "https://w3id.org/emmo#EMMO_49267eba_5548_4163_8f36_518d65b583f9",
         "Peta": "https://w3id.org/emmo#EMMO_d7c74480_a568_4470_acff_f18b499cc850",
         "PetaCoulomb": "https://w3id.org/emmo#PetaCoulomb",
@@ -3954,10 +4044,10 @@
         "PhysicalConstant": "https://w3id.org/emmo#EMMO_b953f2b1_c8d1_4dd9_b630_d3ef6580c2bb",
         "PhysicalLaw": "https://w3id.org/emmo#EMMO_9c32fd69_f480_4130_83b3_fb25d9face14",
         "PhysicalObject": "https://w3id.org/emmo#EMMO_38b579de_4331_40e0_803d_09efa298e726",
-        "PhysicalObjectByBond": "https://w3id.org.org/emmo#EMMO_0f3e0646_4f06_4588_9779_6a4f05c5a8d6",
+        "PhysicalObjectByBond": "https://w3id.org/emmo#EMMO_0f3e0646_4f06_4588_9779_6a4f05c5a8d6",
         "PhysicalParticle": "https://w3id.org/emmo#EMMO_a15cea10_9946_4d2b_95c5_cfc333fd2abb",
-        "PhysicalParticleByBond": "https://w3id.org.org/emmo#EMMO_b32fe85d_2f7b_4972_9dd7_7cf20d4bba59",
-        "PhysicalParticleBySpin": "https://w3id.org.org/emmo#EMMO_2c07a731_84f9_4883_9e58_2bc073abda29",
+        "PhysicalParticleByBond": "https://w3id.org/emmo#EMMO_b32fe85d_2f7b_4972_9dd7_7cf20d4bba59",
+        "PhysicalParticleBySpin": "https://w3id.org/emmo#EMMO_2c07a731_84f9_4883_9e58_2bc073abda29",
         "PhysicalPhenomenon": "https://w3id.org/emmo#EMMO_5cc4e111_3eb1_44a3_9369_5af3846cf605",
         "PhysicalQuantity": "https://w3id.org/emmo#EMMO_02c0621e_a527_4790_8a0f_2bb51973c819",
         "PhysicalQuantiyByDefinition": "https://w3id.org/emmo#EMMO_9159bb16_8a70_49f9_bac4_f5cf2a82c39a",
@@ -4099,7 +4189,7 @@
         "PouchCase": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_74459386_875c_4303_b774_60125b599d06",
         "PouchCellElectrolyteFilling": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dbc73810_d334_40b8_b73a_7ad2c0b3615f",
         "PouchCellPackaging": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d5e99e1f_049c_4111_b97f_613eb652492a",
-        "Powder": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ee479886_6805_4018_95e1_500185e44215",
+        "Powder": "https://w3id.org/emmo#EMMO_29a15bcd_e219_4afc_9f82_9d3fceb666cd",
         "PowderCoating": "https://w3id.org/emmo#EMMO_658b8bca_203a_49a6_920b_96b5baf5e199",
         "Power": "https://w3id.org/emmo#EMMO_09b9021b_f97b_43eb_b83d_0a764b472bc2",
         "PowerAreaUnit": "https://w3id.org/emmo#EMMO_bf106e62_ce1c_4ccc_9f45_c10326078a5a",
@@ -4181,8 +4271,8 @@
         "Pyridine": "https://w3id.org/emmo/domain/chemical-substance#substance_f1e874cf_3e5e_46e3_9bb9_0befc3f7361a",
         "PyruvicAcid": "https://w3id.org/emmo/domain/chemical-substance#substance_feb95008_db3a_4506_b7ff_6263befa0d64",
         "Python": "https://w3id.org/emmo#EMMO_add2e29d_6d87_4b78_9706_588e25557093",
-        "QualifiedRole": "http://w3id.org/emmo#EMMO_946b5162_95b0_4801_81d4_efef43842a0d",
-        "QualifiedWhole": "http://w3id.org/emmo#EMMO_eb50c9cb_9576_4a61_95ec_f81fb8218187",
+        "QualifiedRole": "https://w3id.org/emmo#EMMO_946b5162_95b0_4801_81d4_efef43842a0d",
+        "QualifiedWhole": "https://w3id.org/emmo#EMMO_eb50c9cb_9576_4a61_95ec_f81fb8218187",
         "QualityFactor": "https://w3id.org/emmo#EMMO_0658e7df_ffd9_4779_82fc_62efe0a7f3b1",
         "Quantity": "https://w3id.org/emmo#EMMO_0650c031_42b6_4f0a_b62d_d88f071da6bf",
         "QuantityByPhysicalNature": "https://w3id.org/emmo#EMMO_dbbbf0ed_a446_4f9e_877c_8c46e7842f43",
@@ -4257,7 +4347,7 @@
         "R54215": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fc9e7ba3_5084_4c2a_b488_c6a96af99232",
         "R616": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dc019f3f_e5f3_4eeb_bab9_a845a02223a0",
         "R621": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_15ec346a_6d3c_4161_95e1_9cf889965f85",
-        "R626": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_68c1c36e_1548_4247_bae2_fe7102a2c4ff",
+        "R626": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6b275583_433f_46f7_aafd_ebc9409257cc",
         "R712": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bb2faf17_b819_4876_b17f_fa82917cf85d",
         "R716": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_34cb7ea7_2436_46e0_806e_a3c7835ae228",
         "R721": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3279f575_1c62_4bf2_a6e8_de4c7ff36f8e",
@@ -4306,7 +4396,6 @@
         "ReactionRate": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e2514bf9_d012_4990_b68b_6f37443f18f6",
         "ReactionRateConstant": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0335e3f6_d1d8_4daa_8376_a9285f1bc9f1",
         "ReactionSintering": "https://w3id.org/emmo#EMMO_2b524942_4e3e_403a_b4ab_2b53750f3d3b",
-        "ReactiveMaterial": "https://w3id.org/emmo#EMMO_68390bfb_e307_479d_8f78_d66d8773cb1d",
         "ReactiveNonMetalElementalSubstance": "https://w3id.org/emmo/domain/chemical-substance#substance_78400dc0_97b0_4d59_8ea6_30bb703f428c",
         "ReactivePower": "https://w3id.org/emmo#EMMO_d8030875_6d89_4645_9728_bbc3b8690609",
         "ReactorTimeConstant": "https://w3id.org/emmo#EMMO_b03dfad7_eab8_4949_9d10_dd4fd12faaef",
@@ -4321,9 +4410,11 @@
         "ReciprocalSquareEnergyUnit": "https://w3id.org/emmo#EMMO_87b5dd20_e4fe_422d_9e70_1eee54ec9496",
         "ReciprocalVolume": "https://w3id.org/emmo#EMMO_ca369738_78de_470b_8631_be83f75e45a3",
         "RecombinationCoefficient": "https://w3id.org/emmo#EMMO_65b794a4_cf52_4d0a_88c4_2c479537b30a",
-        "Record": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_838a927f_775e_4c6d_8e39_7865548608c2",
+        "Record": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_59c041fc_eaa1_40fc_9b3e_1a6aca6119fd",
         "RecoveredCapacity": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_73f169de_d189_4d7c_893f_a2549771825c",
         "RectangularElectrode": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_14377ecb_5ead_431e_831e_159d622bd0ea",
+        "RedoxReaction": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2d366f85_a644_4b3e_a641_fce81e72d158",
+        "Reduction": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_109a38d4_daaa_4748_a803_044fb7c97673",
         "Reductionistic": "https://w3id.org/emmo#EMMO_15db234d_ecaf_4715_9838_4b4ec424fb13",
         "Redundant": "https://w3id.org/emmo#EMMO_bbca6dfa_7463_4e8d_8280_35862ff50ce0",
         "ReferenceElectrode": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7729c34e_1ae9_403d_b933_1765885e7f29",
@@ -4391,7 +4482,6 @@
         "RotatingDiskElectrode": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6c421175_477f_45e0_8b6c_c3464f5351c5",
         "RotatingDiskSpeed": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1900143f_cbc0_415f_9057_9382022a7bfe",
         "RotatingRingDiskElectrode": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7f4d74cd_d0a5_4908_9da9_7629fe419917",
-        "Rotation": "https://w3id.org/emmo#EMMO_16d72037_3243_4018_ac6c_0015f661d3c3",
         "RotationalDisplacement": "https://w3id.org/emmo#EMMO_dfd22e00_993b_40cc_a4ad_1134c1e3007a",
         "RotationalFrequency": "https://w3id.org/emmo#EMMO_3789d3c5_77f4_456e_b7ed_40e670f47e52",
         "RoundCase": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_eacb141f_6ab4_491f_8603_a3e025cefc82",
@@ -4438,6 +4528,7 @@
         "SamariumSymbol": "https://w3id.org/emmo#EMMO_96252ae5-c061-5ba0-80a4-774e5d949e06",
         "Sample": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#Sample",
         "SampleExtraction": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#SampleExtraction",
+        "SampleExtractionByCutting": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#SampleExtractionByCutting",
         "SampleExtractionInstrument": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#SampleExtractionInstrument",
         "SampleInspection": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#SampleInspection",
         "SampleInspectionInstrument": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#SampleInspectionInstrument",
@@ -4473,7 +4564,7 @@
         "SealedCell": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8d3bf304_78e4_4e99_abe1_6ab429e44ed1",
         "SealingEquipment": "https://w3id.org/emmo/domain/manufacturing#manufacturing_0aabe282_24c8_4775_a504_879a7b28f591",
         "Seawater": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1c0c8f43_7349_4646_94e3_c36727c5c2e3",
-        "SebastianoMoruzzi": "https://w3id.org/emmo#SebastianoMoruzzi",
+        "SebastianoMoruzzi": "https://orcid.org/0000-0001-9189-2400",
         "Second": "https://w3id.org/emmo#Second",
         "SecondAxialMomentOfArea": "https://w3id.org/emmo#EMMO_700cd058_a54d_4104_97ab_887ad865409e",
         "SecondPerMetre": "https://w3id.org/emmo#SecondPerMetre",
@@ -4547,16 +4638,15 @@
         "SilverOxideElectrode": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a3745142_b97a_4e19_b7ed_03599f56e81d",
         "SilverSymbol": "https://w3id.org/emmo#EMMO_e82869a8-32a8-5d57-81a8-e2d618976f23",
         "Simon Clark": "https://orcid.org/0000-0002-8758-6109",
-        "SimonClark": "https://w3id.org/emmo#SimonClark",
+        "SimonClark": "https://orcid.org/0000-0002-8758-6109",
         "Simulation": "https://w3id.org/emmo#EMMO_9335cf09_431f_4613_9dab_ce4ceaca965b",
-        "SimulationApplication": "https://w3id.org/emmo#EMMO_8b66ada5_510c_44bd_a8d8_3c64d301a5e9",
         "SimulationLanguage": "https://w3id.org/emmo#EMMO_03d4cd70_0d16_4403_b68c_d41a9117f981",
+        "SimulationSoftware": "https://w3id.org/emmo#EMMO_8b66ada5_510c_44bd_a8d8_3c64d301a5e9",
         "SingleCoatedElectrode": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_418c59bd_dc9d_438b_bc7c_494fbd1bb4f8",
         "SingleComponentComposition": "https://w3id.org/emmo#EMMO_172e2c96_180b_40f8_a3e7_b624471f40c2",
         "Sintering": "https://w3id.org/emmo#EMMO_03441eb3_d1fd_4906_b953_b83312d7589e",
         "SinusoidalCurrentWaveform": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d61deb36_b397_4811_bf7a_66d8e4578c6e",
         "SinusoidalPotentialWaveform": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c74bb11c_e875_4112_b9cf_00d0890ef1f5",
-        "SizeDefinedMaterial": "https://w3id.org/emmo#EMMO_e4e80813_f379_4091_b017_ee059811f806",
         "SlittingMachine": "https://w3id.org/emmo/domain/manufacturing#manufacturing_ce041fe3_a1a0_4d17_aab1_cffdb4ad99e1",
         "SlotDieCoater": "https://w3id.org/emmo/domain/manufacturing#manufacturing_753e1ac9_77f6_420a_a121_72282af553bf",
         "SlowingDownArea": "https://w3id.org/emmo#EMMO_6d7158f3_7d96_498f_9cf3_31f4798f31c6",
@@ -4650,8 +4740,8 @@
         "SpatialTiling": "https://w3id.org/emmo#EMMO_8944581c_64da_46a9_be29_7074f7cc8098",
         "SpatioTemporalTessellation": "https://w3id.org/emmo#EMMO_e12dcfa4_c9f1_4546_9a12_8457c052e6ba",
         "SpatioTemporalTile": "https://w3id.org/emmo#EMMO_2e46d966_9f14_4673_821e_7c7cf2957926",
-        "SpatioTemporalTileByConnection": "https://w3id.org.org/emmo#EMMO_41c5f63b_f0e7_475e_bfac_a92027585979",
-        "SpatioTemporalTileByPosition": "https://w3id.org.org/emmo#EMMO_5e38e44b_a0d1_4afc_a876_95095c0a589f",
+        "SpatioTemporalTileByConnection": "https://w3id.org/emmo#EMMO_41c5f63b_f0e7_475e_bfac_a92027585979",
+        "SpatioTemporalTileByPosition": "https://w3id.org/emmo#EMMO_5e38e44b_a0d1_4afc_a876_95095c0a589f",
         "SpecialUnit": "https://w3id.org/emmo#EMMO_3ee80521_3c23_4dd1_935d_9d522614a3e2",
         "SpecificActivity": "https://w3id.org/emmo#EMMO_5adcbbb9_4325_4c23_ac50_62c77569e9c4",
         "SpecificCapacity": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1e3dc60d_dd6b_47d6_8161_70004fc5ee30",
@@ -4853,7 +4943,7 @@
         "SwagelokCase": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cd1b7943_42ce_46bd_8588_1c3161268270",
         "Symbol": "https://w3id.org/emmo#EMMO_a1083d0a_c1fb_471f_8e20_a98f881ad527",
         "Symbolic": "https://w3id.org/emmo#EMMO_057e7d57_aff0_49de_911a_8861d85cef40",
-        "SymbolicByStructure": "https://w3id.org.org/emmo#EMMO_1141d225_fe90_4230_82c6_31cab6a4e3fe",
+        "SymbolicByStructure": "https://w3id.org/emmo#EMMO_1141d225_fe90_4230_82c6_31cab6a4e3fe",
         "SymbolicConstruct": "https://w3id.org/emmo#EMMO_89a0c87c_0804_4013_937a_6fe234d9499c",
         "SymbolicData": "https://w3id.org/emmo#EMMO_70bbb94e_2ca7_4d73_ba01_6397f134d172",
         "Synchrotron": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#Synchrotron",
@@ -4862,6 +4952,7 @@
         "SystemUnit": "https://w3id.org/emmo#EMMO_3eb993a1_61ae_4a20_b168_dda853f51c14",
         "TDI": "https://w3id.org/emmo/domain/chemical-substance#substance_57015be9_f515_4e00_b914_e8130d596bcb",
         "TFP": "https://w3id.org/emmo/domain/chemical-substance#substance_f6460d8d_5d5e_452d_8853_bdec3796a90e",
+        "TabOffset": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9171ef9b_65b6_4536_9a1b_cb2b38961311",
         "Tank": "https://w3id.org/emmo/domain/manufacturing#manufacturing_313fe19c_afc4_4454_94c1_8859f80fb3e6",
         "Tantalum": "https://w3id.org/emmo/domain/chemical-substance#substance_ed314de3_c1d7_4901_9fd7_539c6e3de550",
         "TantalumAtom": "https://w3id.org/emmo#EMMO_dbe54798-a21f-519f-9d52-e6ab2c2e28cb",
@@ -4870,8 +4961,8 @@
         "TartaricAcid": "https://w3id.org/emmo/domain/chemical-substance#substance_4a00b074_17b5_417c_996b_d0ac47041030",
         "TartronicAcid": "https://w3id.org/emmo/domain/chemical-substance#substance_7550d4bb_59fd_41a3_aecb_4d45a03eaa28",
         "Task": "https://w3id.org/emmo#EMMO_4299e344_a321_4ef2_a744_bacfcce80afc",
-        "TaskByFlow": "https://w3id.org.org/emmo#EMMO_1a6ddb13_49ff_4305_97a1_d1458d51c066",
-        "TaskByPosition": "https://w3id.org.org/emmo#EMMO_180bd73b_0c5d_4b1f_ba12_4309c5a50d49",
+        "TaskByFlow": "https://w3id.org/emmo#EMMO_1a6ddb13_49ff_4305_97a1_d1458d51c066",
+        "TaskByPosition": "https://w3id.org/emmo#EMMO_180bd73b_0c5d_4b1f_ba12_4309c5a50d49",
         "TaskTile": "https://w3id.org/emmo#EMMO_9f6ec830_c59f_46aa_8a22_945ba20b6ea3",
         "Technetium": "https://w3id.org/emmo/domain/chemical-substance#substance_0f29d712_f329_4b17_abeb_5df9bf4fb321",
         "TechnetiumAtom": "https://w3id.org/emmo#EMMO_9c803415-5978-5525-9de9-fcf0a2098b4c",
@@ -4922,7 +5013,7 @@
         "TetraFluoroBorate": "https://w3id.org/emmo/domain/chemical-substance#substance_2c939a73_6363_435a_bbc4_4f6ae02f30d1",
         "TetraethylOrthosilicate": "https://w3id.org/emmo/domain/chemical-substance#substance_385410f6_0c03_4942_b35f_52a664b5622c",
         "Tetraglyme": "https://w3id.org/emmo/domain/chemical-substance#substance_75322d4d_cdab_44c6_a8ea_5eca76bcfbd1",
-        "Tetrahydrofuran": "https://w3id.org/emmo/domain/chemical-substance#substance_16864b33_aa8e_451d_ad8e_b0af5f18769a",
+        "Tetrahydrofuran": "https://w3id.org/emmo/domain/chemical-substance#substance_a6d037e0_233e_4fb2_ba36_2f5b9263a450",
         "TetrapotassiumHeptaiodobismuthate": "https://w3id.org/emmo/domain/chemical-substance#substance_dbbedf09_18c4_416a_99c2_f381a74d2551",
         "Thallium": "https://w3id.org/emmo/domain/chemical-substance#substance_6970bc02_dfe3_40c7_b20d_03c6cc0707bb",
         "ThalliumAtom": "https://w3id.org/emmo#EMMO_bcf70555-8df3-5a39-b26a-a5e802d17a37",
@@ -4964,7 +5055,7 @@
         "ThomsonCoefficient": "https://w3id.org/emmo#EMMO_950256cd_c286_4793_b9f7_a3f922d0c354",
         "ThoriumAtom": "https://w3id.org/emmo#EMMO_59d342fd-1ace-5b68-9d0d-ed4ff9f55d63",
         "ThoriumSymbol": "https://w3id.org/emmo#EMMO_e9fbc98d-3ac1-5a2d-a354-6e3ba1412157",
-        "ThreeElectrodeCell": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b9bece97_a511_4cb9_88a2_b5bd5c5e5d74",
+        "ThreeElectrodeElectrochemicalCell": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b9bece97_a511_4cb9_88a2_b5bd5c5e5d74",
         "ThreeManifold": "https://w3id.org/emmo#EMMO_46f0f8df_4dc6_418f_8036_10427a3a288e",
         "ThreeMeSulfolane": "https://w3id.org/emmo/domain/chemical-substance#substance_5d128b6c_3e70_470c_b24e_0b953ef76486",
         "ThreeMeTwoOxazolidinone": "https://w3id.org/emmo/domain/chemical-substance#substance_6326d9bb_de83_4f60_beb3_3117280f8ab5",
@@ -5009,7 +5100,6 @@
         "Torus": "https://w3id.org/emmo#EMMO_86060335_31c2_4820_b433_27c64aea0366",
         "TotalAngularMomentum": "https://w3id.org/emmo#EMMO_de649cb1_7ec0_4a2e_ad55_d84e4ccd88b0",
         "TotalAngularMomentumQuantumNumber": "https://w3id.org/emmo#EMMO_8b960a48_8017_4cc0_8e38_27d9237b7e0d",
-        "TotalCapacity": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_df9e9d49_12fa_4794_b482_e0dcd2a7bb66",
         "TotalComposition": "https://w3id.org/emmo#EMMO_0eabfde6_c6c5_4b1f_bf10_e4e0e06e9b2e",
         "TotalCrossSection": "https://w3id.org/emmo#EMMO_ee98501a_5036_48b5_902b_4c68c6eeec1e",
         "TotalCurrent": "https://w3id.org/emmo#EMMO_614c1bd9_93df_4248_861c_44b86d854739",
@@ -5057,6 +5147,7 @@
         "UltrasonicTesting": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#UltrasonicTesting",
         "UltrasonicWelder": "https://w3id.org/emmo/domain/manufacturing#manufacturing_1216b7e8_08ee_4d13_8555_b70d25414e3d",
         "UltrasonicWelding": "https://w3id.org/emmo/domain/manufacturing#manufacturing_4be3647b_6ae8_4f4a_b812_c1426080ff70",
+        "UltravioletVisibleSpectroscopy": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#UltravioletVisibleSpectroscopy",
         "Uncoded": "https://w3id.org/emmo#EMMO_6e78433a_dbb9_409a_a7c0_4037f79d4ed8",
         "UndefinedEdgeCutting": "https://w3id.org/emmo#EMMO_24788d59_32f5_4339_a42a_43a102ec14a8",
         "Understanding": "https://w3id.org/emmo#EMMO_21abaf92_62dd_488d_9ec3_8e5e8586b8ec",
@@ -5295,7 +5386,6 @@
         "hasJSONValue": "https://w3id.org/emmo#EMMO_712f46a1_0aaa_4a41_b681_b10e1cc05233",
         "hasManufacturer": "https://w3id.org/emmo/domain/characterisation-methodology/chameo#hasManufacturer",
         "hasNumberValue": "https://w3id.org/emmo#EMMO_faf79f53_749d_40b2_807c_d34244c192f4",
-        "hasORCID": "https://w3id.org/emmo#EMMO_e117f976_7a5d_4508_bf85_9226dca58e1f",
         "hasPrefixMultiplier": "https://w3id.org/emmo#EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f",
         "hasPrefixSymbol": "https://w3id.org/emmo#EMMO_d85162ec_6d62_4cdb_a5b9_f092285e5b7f",
         "hasSIConversionMultiplier": "https://w3id.org/emmo#EMMO_8189b42e_0995_423a_a26c_51168b27c3cf",

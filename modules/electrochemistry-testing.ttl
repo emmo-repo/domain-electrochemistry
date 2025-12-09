@@ -206,7 +206,7 @@
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_00244072_8d24_4e34_9f6a_c7b2b132b2c8
 :electrochemistry_00244072_8d24_4e34_9f6a_c7b2b132b2c8 rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ;
+                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#ElectrochemicalTesting> ;
                                                        skos:prefLabel "PseudoOpenCircuitVoltageTest"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a test where an electrochemical device is operated at a very low current, approximating equilibrium behaviour, in order to extract a pseudo-open-circuit-voltage profile"@en .
 
@@ -269,7 +269,7 @@
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_435b22d4_c441_45ea_8c79_0cbec11fd287
 :electrochemistry_435b22d4_c441_45ea_8c79_0cbec11fd287 rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ,
+                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#ElectrochemicalTesting> ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
                                                                          owl:someValuesFrom :electrochemistry_d3e2d213_d078_4b9a_8beb_62f063e57d69
@@ -682,6 +682,7 @@
                                    owl:someValuesFrom chameo:SamplePreparation
                                  ] ;
                  skos:prefLabel "Electrochemical"@en ;
+                 owl:equivalentClass chameo:ElectrochemicalTesting ;
                  emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "In electrochemical characterization, the measurement of potential, charge, or current is used to determine an analyte's concentration or to characterize an analyte's chemical reactivity"@en .
 
 
@@ -1350,7 +1351,7 @@
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_99b2b3ad_8efc_48ee_a630_6d805a47efdc
 :electrochemistry_99b2b3ad_8efc_48ee_a630_6d805a47efdc rdf:type owl:Class ;
-                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#Electrochemical> ,
+                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/characterisation-methodology/chameo#ElectrochemicalTesting> ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
                                                                          owl:someValuesFrom :electrochemistry_53fe3f58_0802_41cf_af69_4784fc42cc30
