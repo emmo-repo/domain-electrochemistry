@@ -66,15 +66,15 @@ jobs:
         ontoconvert \
             -saw \
             --namespace="emmo:https://w3id.org/emmo#" \
-            ${ONTOLOGY_NAME}-dependencies.ttl \
-            build/${ONTOLOGY_NAME}-dependencies.ttl
+            "${ONTOLOGY_NAME}-dependencies.ttl" \
+            "build/${ONTOLOGY_NAME}-dependencies.ttl"
         ontoconvert \
             -sawe \
             --base-iri="${ONTOLOGY_URI}#" \
             --iri="${ONTOLOGY_URI}" \
-            ${ONTOLOGY_NAME}.ttl \
-            build/${ONTOLOGY_NAME}.ttl
-        bin/robot reason --reasoner HermiT --input build/${ONTOLOGY_NAME}.ttl --output build/${ONTOLOGY_NAME}-inferred.ttl
+            "${ONTOLOGY_NAME}.ttl" \
+            "build/${ONTOLOGY_NAME}.ttl"
+        bin/robot reason --reasoner HermiT --input "build/${ONTOLOGY_NAME}.ttl" --output "build/${ONTOLOGY_NAME}-inferred.ttl"
 
     - name: Upload processed ontologies
       uses: actions/upload-artifact@v4
