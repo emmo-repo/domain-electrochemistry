@@ -76,38 +76,82 @@ def update_readme_badge(repo_root: str, score: float) -> None:
         f.write(updated_content)
 
 
-def fetch_foops_score(ontology_uri: str) -> float:
-    """Fetch FOOPS score for the given ontology URI."""
+def _try_assess_uri(uri: str) -> float | None:
+    """POST to FOOPS for a single URI and return a percentage score, or None on failure."""
     try:
         response = requests.post(
             "https://foops.linkeddata.es/assessOntology",
-            headers={"accept": "application/json;charset=UTF-8", "Content-Type": "application/json;charset=UTF-8"},
-            data=json.dumps({"ontologyUri": ontology_uri}),
-            timeout=60,
+            headers={
+                "accept": "application/json;charset=UTF-8",
+                "Content-Type": "application/json;charset=UTF-8",
+            },
+            json={"ontologyUri": uri},
+            timeout=120,
         )
-        response.raise_for_status()
     except Exception as exc:
-        LOGGER.error("Failed to fetch FOOPS score: %s", exc)
-        sys.exit(1)
+        LOGGER.warning("FOOPS request failed for %s: %s", uri, exc)
+        return None
+
+    if response.status_code >= 500:
+        LOGGER.warning("FOOPS returned %s for %s: %s", response.status_code, uri, response.text.strip())
+        return None
 
     try:
+        response.raise_for_status()
         score_value = float(response.json()["overall_score"])
+        return round(score_value * 100, 2)
     except Exception as exc:
-        LOGGER.error("Failed to parse FOOPS score from response: %s", exc)
-        sys.exit(1)
+        LOGGER.warning("Unable to parse FOOPS response for %s: %s; body=%s", uri, exc, response.text.strip())
+        return None
 
-    return round(score_value * 100, 2)
+
+def fetch_foops_score(config: dict) -> float:
+    """Fetch FOOPS score using primary URI with sensible fallbacks for resiliency."""
+    ontology_uri = config["ontology_uri"]
+    ttl_files = config.get("ttl_files") or []
+
+    branch = (
+        os.environ.get("GITHUB_REF_NAME")
+        or os.environ.get("GITHUB_HEAD_REF")
+        or os.environ.get("GITHUB_DEFAULT_BRANCH")
+        or os.environ.get("GITHUB_REF", "").split("/")[-1]
+        or "main"
+    )
+    repo = os.environ.get("GITHUB_REPOSITORY")
+
+    candidate_uris: list[str] = [ontology_uri]
+
+    # Raw GitHub URL fallback (avoids FOOPS choking on redirects or w3id handling).
+    if repo and ttl_files:
+        ttl_name = os.path.basename(ttl_files[0].get("path", ""))
+        if ttl_name:
+            candidate_uris.append(f"https://raw.githubusercontent.com/{repo}/{branch}/{ttl_name}")
+
+    # Smaller ontology variant that FOOPS accepts when the full file triggers 500.
+    candidate_uris.append(ontology_uri.rstrip("/") + "/dependencies")
+
+    seen = set()
+    for uri in candidate_uris:
+        if uri in seen:
+            continue
+        seen.add(uri)
+        score = _try_assess_uri(uri)
+        if score is not None:
+            LOGGER.info("FOOPS score from %s", uri)
+            return score
+
+    LOGGER.error("FOOPS failed for all URIs: %s", ", ".join(candidate_uris))
+    sys.exit(1)
 
 
 def generate_foops_badge() -> None:
     """Fetch FOOPS score, generate a badge, and update README.md."""
     config = load_ontology_config()
-    ontology_uri = config["ontology_uri"]
     repo_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
 
     badge_path = os.path.join(repo_root, "docs/assets/foops_badge.svg")
 
-    score = fetch_foops_score(ontology_uri)
+    score = fetch_foops_score(config)
     LOGGER.info("FOOPS score: %s", score)
 
     color = "brightgreen" if score >= 80 else "yellow" if score >= 60 else "red"
