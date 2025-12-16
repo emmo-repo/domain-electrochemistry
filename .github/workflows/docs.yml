@@ -6,13 +6,13 @@ on:
       - 'master'
   pull_request:
     branches:
-      - '*'  # To ensure it runs on all PRs
+      - '*'  # run on all PRs
 
 env:
-  ONTOLOGY_NAME: electrochemistry
-  ONTOLOGY_IRI: https://w3id.org/emmo/domain/electrochemistry
+  CONFIG_PATH: config.yml
   GIT_USER_NAME: "GitHub Actions"
   GIT_USER_EMAIL: "github-actions[bot]@users.noreply.github.com"
+  ROBOT_VERSION: "1.9.6"
 concurrency: pages-${{ github.ref }}
     
 jobs:
@@ -32,20 +32,31 @@ jobs:
       uses: actions/cache@v4
       with:
         path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements*.txt', '.github/workflows/docs-build-and-deploy.yml') }}
+        key: ${{ runner.os }}-pip-${{ hashFiles('pyproject.toml', '.github/workflows/docs.yml') }}
         restore-keys: ${{ runner.os }}-pip-
 
-    - name: Install EMMOntoPy
+    - name: Install Python dependencies (core + docs)
       run: |
         pip install --upgrade pip
-        pip install git+https://github.com/emmo-repo/EMMOntoPy.git@master
+        pip install ".[docs]"
+
+    - name: Load ontology configuration
+      run: python .github/scripts/ontology_toolkit.py >> $GITHUB_ENV
+
+    - name: Cache ROBOT
+      uses: actions/cache@v4
+      with:
+        path: ~/.cache/robot
+        key: robot-${{ env.ROBOT_VERSION }}
 
     - name: Install ROBOT
       run: |
-        mkdir -p bin
-        wget -nv https://github.com/ontodev/robot/releases/download/v1.9.6/robot.jar
-        mv robot.jar bin/.
-        curl https://raw.githubusercontent.com/ontodev/robot/master/bin/robot > bin/robot
+        mkdir -p ~/.cache/robot bin
+        if [ ! -f "$HOME/.cache/robot/robot-${ROBOT_VERSION}.jar" ]; then
+          wget -nv "https://github.com/ontodev/robot/releases/download/v${ROBOT_VERSION}/robot.jar" -O $HOME/.cache/robot/robot-${ROBOT_VERSION}.jar
+        fi
+        ln -sf $HOME/.cache/robot/robot-${ROBOT_VERSION}.jar bin/robot.jar
+        curl -s https://raw.githubusercontent.com/ontodev/robot/master/bin/robot > bin/robot
         chmod +x bin/robot
 
     - name: Build dependencies, squashed, and inferred ontologies
@@ -55,15 +66,15 @@ jobs:
         ontoconvert \
             -saw \
             --namespace="emmo:https://w3id.org/emmo#" \
-            ${ONTOLOGY_NAME}-dependencies.ttl \
-            build/${ONTOLOGY_NAME}-dependencies.ttl
+            "${ONTOLOGY_FILE_BASE}-dependencies.ttl" \
+            "build/${ONTOLOGY_FILE_BASE}-dependencies.ttl"
         ontoconvert \
             -sawe \
-            --base-iri="${ONTOLOGY_IRI}#" \
-            --iri="${ONTOLOGY_IRI}" \
-            ${ONTOLOGY_NAME}.ttl \
-            build/${ONTOLOGY_NAME}.ttl
-        bin/robot reason --reasoner HermiT --input build/${ONTOLOGY_NAME}.ttl --output build/${ONTOLOGY_NAME}-inferred.ttl
+            --base-iri="${ONTOLOGY_URI}#" \
+            --iri="${ONTOLOGY_URI}" \
+            "${ONTOLOGY_FILE_BASE}.ttl" \
+            "build/${ONTOLOGY_FILE_BASE}.ttl"
+        bin/robot reason --reasoner HermiT --input "build/${ONTOLOGY_FILE_BASE}.ttl" --output "build/${ONTOLOGY_FILE_BASE}-inferred.ttl"
 
     - name: Upload processed ontologies
       uses: actions/upload-artifact@v4
@@ -107,29 +118,31 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: '3.10'
+        python-version: '3.11'
 
     - name: Cache pip
       uses: actions/cache@v4
       with:
         path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('requirements-docs.txt', '.github/workflows/docs-build-and-deploy.yml') }}
+        key: ${{ runner.os }}-pip-${{ hashFiles('pyproject.toml', '.github/workflows/docs.yml') }}
         restore-keys: ${{ runner.os }}-pip-
 
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements-docs.txt
+        pip install ".[docs]"
 
-    - name: Load Ontology Configuration from YAML
+    - name: Install Pandoc
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y pandoc
+
+    - name: Load ontology configuration
       run: python .github/scripts/ontology_toolkit.py >> $GITHUB_ENV
 
     - name: Render Documentation from TTL Files
       run: python .github/scripts/ontology_toolkit.py --generate-rst
 
-    - name: Install Additional System Dependencies
-      run: sudo apt-get update -y && sudo apt-get install -y pandoc
-    
     - name: Build Documentation
       run: |
         sphinx-build -b html docs/ docs/_build/html/
@@ -139,20 +152,20 @@ jobs:
       
     - name: Ensure HTML Directories Exist
       run: |
-        sudo mkdir -p docs/_build/html/context/
-        sudo mkdir -p docs/_build/html/assets/
-        sudo mkdir -p docs/_build/html/versions/
+        mkdir -p docs/_build/html/context/
+        mkdir -p docs/_build/html/assets/
+        mkdir -p docs/_build/html/versions/
 
     - name: Copy Assets, Context, and Inferred TTL to HTML Directory
       run: |
-        sudo cp -r docs/assets/* docs/_build/html/assets/
-        sudo cp context/context.json docs/_build/html/context/
+        cp -r docs/assets/* docs/_build/html/assets/
+        cp context/context.json docs/_build/html/context/
         if [ -f "${{ env.INFERRED_TTL_FILENAME }}" ]; then
-            sudo cp "${{ env.INFERRED_TTL_FILENAME }}" docs/_build/html/
+            cp "${{ env.INFERRED_TTL_FILENAME }}" docs/_build/html/
         else
             echo "Warning: Inferred TTL file not found!"
         fi
-        sudo cp build/*.ttl docs/_build/html/ || true
+        cp build/*.ttl docs/_build/html/ || true
   
 
     - name: Commit Generated Changes (context.json & rst files)
@@ -189,8 +202,8 @@ jobs:
   
     - name: Prepare Directory Structure
       run: |
-        sudo mkdir -p docs/_build/html/latest/
-        sudo mkdir -p docs/_build/html/versions/
+        mkdir -p docs/_build/html/latest/
+        mkdir -p docs/_build/html/versions/
 
     - name: Apply FOOPS Recommendations to Current Files
       run: |
@@ -199,23 +212,24 @@ jobs:
             if [ -f "$FILE" ]; then
                 OUTPUT_FILE="${FILE/.ttl/-foops.ttl}"
                 python .github/scripts/foops_toolkit.py --apply-to-file "$FILE" "$OUTPUT_FILE"
-                sudo cp "$OUTPUT_FILE" "docs/_build/html/$(basename "$FILE")"
+                cp "$OUTPUT_FILE" "docs/_build/html/$(basename "$FILE")"
             else
                 echo "Warning: $FILE not found!"
             fi
         done
 
     - name: Fetch All Tags and Copy TTL Files
+      if: github.event_name == 'push' && github.ref == 'refs/heads/master'
       run: |
         git fetch --tags
     
-        sudo rm -rf docs/_build/html/versions
-        sudo mkdir -p docs/_build/html/versions
+        rm -rf docs/_build/html/versions
+        mkdir -p docs/_build/html/versions
     
         for TAG in $(git tag); do
             echo "Processing tag: $TAG"
             
-            sudo mkdir -p "docs/_build/html/versions/$TAG"
+            mkdir -p "docs/_build/html/versions/$TAG"
             
             git ls-tree -r --name-only "$TAG" | grep "\.ttl$" | while read FILE; do
                 TARGET="docs/_build/html/versions/$TAG/$(basename "$FILE")"
@@ -223,8 +237,8 @@ jobs:
             done
             
             if git show "$TAG:context/context.json" > /tmp/context.json 2>/dev/null; then
-                sudo mkdir -p "docs/_build/html/versions/$TAG/context"
-                sudo cp /tmp/context.json "docs/_build/html/versions/$TAG/context/context.json"
+                mkdir -p "docs/_build/html/versions/$TAG/context"
+                cp /tmp/context.json "docs/_build/html/versions/$TAG/context/context.json"
             fi
         done
   

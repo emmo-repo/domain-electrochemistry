@@ -19,7 +19,7 @@
 <https://w3id.org/emmo/domain/electrochemistry/modules/electrochemistry-testing> rdf:type owl:Ontology ;
                                                                                   owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.31.1/modules/electrochemistry-testing> ;
                                                                                   owl:imports <https://w3id.org/emmo/domain/electrochemistry/0.31.1/reference/electrochemistry-reference> ;
-                                                                                  dcterms:abstract "The electrochemistry-testing module is an ontology containing the domain-level terms for describing the testing of electrochemical devices. This ontology features terms that are common to testing many different types of electrochemcial devices (e.g batteries, supercaps, fuel cells, electrolyzers, etc.). For device-specific testing terms, please refer to the associated domain ontology."@en .
+                                                                                  dcterms:abstract "The electrochemistry-testing module is an ontology containing the domain-level terms for describing the testing of electrochemical devices. This ontology features terms that are common to testing many different types of electrochemical devices (e.g batteries, supercaps, fuel cells, electrolyzers, etc.). For device-specific testing terms, please refer to the associated domain ontology."@en .
 
 #################################################################
 #    Object Properties
@@ -70,7 +70,7 @@
    owl:annotatedSource :electrochemistry_22725105_c941_4b14_a4a2_fcb627958607 ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "instrument which controls the electric current between the working electrode and the auxiliary electrode"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -85,7 +85,7 @@
    owl:annotatedSource :electrochemistry_a9fc3f77_e48e_4bce_b118_044d608722f6 ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "measuring instrument for electric current that controls the potential difference between a working electrode and a reference electrode and measures the electric current between a working electrode and an auxiliary electrode."@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
  
  
@@ -838,7 +838,7 @@
    owl:annotatedSource :electrochemistry_fb9bf7cb_dd4b_4391_99a1_628263dd6940 ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "measuring instrument to obtain the electrical charge passed in an experiment, or to produce a known amount of substance in a titration."@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -952,7 +952,7 @@
    owl:annotatedSource :electrochemistry_b9a72491_8a50_4cac_a131_1e95d72b57ee ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "plot of current versus applied potential (I-E) for a given system"@en ;
-   dcterms:source """Pingarrón, José M., et al. \"Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019).\" Pure and Applied Chemistry
+   dcterms:source """Pingarron José M., et al. \"Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019).\" Pure and Applied Chemistry
  92.4 (2020): 641-694. DOI: https://doi.org/10.1515/pac-2018-0109"""
  ] .
 
@@ -1054,7 +1054,7 @@
    owl:annotatedSource :electrochemistry_bbae1ef4_0a95_4e7d_9932_1bf939129eef ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "current-potential curve in a voltammetry experiment"@en ;
-   dcterms:source """Pingarrón, José M., et al. \"Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019).\" Pure and Applied Chemistry
+   dcterms:source """Pingarron José M., et al. \"Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019).\" Pure and Applied Chemistry
  92.4 (2020): 641-694. DOI: https://doi.org/10.1515/pac-2018-0109"""
  ] .
 
@@ -1215,7 +1215,7 @@
    owl:annotatedSource :electrochemistry_885b462e_f6bc_412d_8b94_9425e13af0c7 ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "electric current that flows in a constant direction, i.e. a current with a constant sign"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -1317,35 +1317,35 @@
    owl:annotatedSource :electrochemistry_916b1863_f417_4b94_9407_9d749ada9ed5 ;
    owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
    owl:annotatedTarget "the stripping potentiogram shows staircase curves of potential as a function of time. Frequently, the first derivative is displayed (dE/dt=f(t)), as this produces peak-shaped signals. The time between transitions (peaks) is proportional to the concentration of analyte in the test solution"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_916b1863_f417_4b94_9407_9d749ada9ed5 ;
    owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
    owl:annotatedTarget "the time between changes in potential in step 2 is related to the concentration of analyte in the solution"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_916b1863_f417_4b94_9407_9d749ada9ed5 ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "two-step electrochemical measurement in which 1) material is accumulated at an electrode and 2) the material is removed by chemical reaction or electrochemically at constant current with measurement of electrode potential"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_916b1863_f417_4b94_9407_9d749ada9ed5 ;
    owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
    owl:annotatedTarget "historically for the analysis of metal ions, mercury ions were added to the test solution to form a mercury amalgam when reduced. Alternatively, an HMDE or MFE was used and the oxidizing agent added after amalgam formation. However, the toxicity of mercury and its compounds have all but precluded the present-day use of mercury"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_916b1863_f417_4b94_9407_9d749ada9ed5 ;
    owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
    owl:annotatedTarget "the accumulation is similar to that used in stripping voltammetry"@en ;
-   dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
+   dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
 
 
@@ -1415,3 +1415,4 @@
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+

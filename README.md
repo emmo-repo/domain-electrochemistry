@@ -19,9 +19,9 @@ Reference documentation is available [here](https://emmo-repo.github.io/domain-e
 
 Here is some information to help you get started working with the ontology in python and creating you own instances of Linked Data. For more information, please see the [Getting Started](https://emmo-repo.github.io/domain-electrochemistry/pages/getstarted.html) and [Examples](https://emmo-repo.github.io/domain-electrochemistry/pages/examples.html) section of the documentation. 
 
-## Protégé
+## Protege
 
-Protege is a open-source graphical editor for exploring and editing ontologies. You can explore the pre-inferred ontology in a [web-based instance](https://webprotege.stanford.edu/#projects/1f6fd01b-b127-4bc0-a998-ee269797be87/edit/Classes) (requires registering for a free account). Some suggested entry points for new users are:  
+Protege is an open-source graphical editor for exploring and editing ontologies. You can explore the pre-inferred ontology in a [web-based instance](https://webprotege.stanford.edu/#projects/1f6fd01b-b127-4bc0-a998-ee269797be87/edit/Classes) (requires registering for a free account). Some suggested entry points for new users are:  
 - [ElectrochemicalCell](https://webprotege.stanford.edu/#projects/1f6fd01b-b127-4bc0-a998-ee269797be87/edit/Classes?selection=Class(%3Chttps://w3id.org/emmo/domain/electrochemistry%23electrochemistry_6f2c88c9_5c04_4953_a298_032cc3ab9b77%3E))
 - [Electrode](https://webprotege.stanford.edu/#projects/1f6fd01b-b127-4bc0-a998-ee269797be87/edit/Classes?selection=Class(%3Chttps://w3id.org/emmo/domain/electrochemistry%23electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627%3E))
 - [Electrolyte](https://webprotege.stanford.edu/#projects/1f6fd01b-b127-4bc0-a998-ee269797be87/edit/Classes?selection=Class(%3Chttps://w3id.org/emmo/domain/electrochemistry%23electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59%3E))  
@@ -162,3 +162,14 @@ This project has received support from European Union research and innovation pr
 
 [1]: https://github.com/emmo-repo/EMMO
 [2]: https://www.big-map.eu
+
+## Metadata policy (headers)
+
+- Use IRIs (not strings) for `dcterms:license`, `owl:versionIRI`, `owl:priorVersion`, `owl:backwardCompatibleWith`; keep base and version IRIs aligned across modules.
+- Include `vann:preferredNamespacePrefix`/`Uri`, `dcterms:abstract`@en, `dcterms:title`@en, and `bibo:doi`; add `foaf:logo` if available.
+- For every class/property/individual, prefer `rdfs:label`@en and `skos:prefLabel`@en; definitions/notes/examples should be language-tagged (`@en`) and reuse EMMO annotation properties where possible.
+- Add `rdfs:isDefinedBy` pointing to the module IRI when appropriate; keep `owl:imports` minimal and acyclic.
+- Prefixes: use `https://schema.org/`, `https://w3id.org/emmo#`, `http://purl.org/dc/terms/`, `http://www.w3.org/2004/02/skos/core#`, and avoid per-file variations.
+
+
+
