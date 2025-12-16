@@ -627,7 +627,7 @@ def run_reasoner_check():
         LOGGER.info("Inferred %s triples.", inferred_triples)
     else:
         LOGGER.error("No triples inferred, something might be wrong.")
-        sys.exit(1)
+        sys.exit(1)
 
 ########## Main Entry Point ##########
 
@@ -666,6 +666,8 @@ def main():
     print(f"ONTOLOGY_IRI={config['ontology_uri']}")  # alias for legacy workflow env usage
     print(f"RST_FILE={config['rst_output_filename']}")
     print(f"INFERRED_TTL_FILENAME={config['inferred_ttl_filename']}")
+    # Base filename (stem) used for TTLs on disk, avoids spaces in ontology_name
+    print(f"ONTOLOGY_FILE_BASE={config['ontology_noun']}")
 
     ttl_files_json = json.dumps([f['path'] for f in config['ttl_files']])
     print(f"TTL_FILES_JSON={ttl_files_json}")
@@ -673,7 +675,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 
 
 
