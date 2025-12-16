@@ -1,7 +1,7 @@
 [![FOOPS Score](https://img.shields.io/badge/FOOPS%20Score-83.0%25-brightgreen)](https://foops.linkeddata.es/FAIR_validator.html)
-![checks](https://github.com/emmo-repo/domain-electrochemistry/actions/workflows/ontology-validation.yml/badge.svg)
-![docs](https://github.com/emmo-repo/domain-electrochemistry/actions/workflows/docs-build-and-deploy.yml/badge.svg)
-[![unstable](http://badges.github.io/stability-badges/dist/unstable.svg)](http://github.com/badges/stability-badges)  
+![checks](https://github.com/emmo-repo/domain-electrochemistry/actions/workflows/validation.yml/badge.svg?branch=master)
+![docs](https://github.com/emmo-repo/domain-electrochemistry/actions/workflows/docs.yml/badge.svg?branch=master)
+[![unstable](http://badges.github.io/stability-badges/dist/unstable.svg)](http://github.com/badges/stability-badges)
 
 [![DOI](https://zenodo.org/badge/570454941.svg)](https://zenodo.org/badge/latestdoi/570454941)  
 
