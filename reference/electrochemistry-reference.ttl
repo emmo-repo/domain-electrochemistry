@@ -20,7 +20,7 @@
                                                                      owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.31.1/reference/electrochemistry-reference> ;
                                                                      owl:imports <https://w3id.org/emmo/1.0.2> ,
                                                                                  <https://w3id.org/emmo/domain/characterisation-methodology/1.0.0/chameo> ,
-                                                                                 <https://w3id.org/emmo/domain/chemical-substance/0.12.3/chemical-substance> ,
+                                                                                 <https://w3id.org/emmo/domain/chemical-substance/0.12.4/chemical-substance> ,
                                                                                  <https://w3id.org/emmo/domain/electrochemistry/0.31.1/reference/electrochemistry-quantities> ;
                                                                      dcterms:abstract "This reference module contains the core terms for the electrochemistry domain."@en ;
                                                                      dcterms:bibliographicCitation "https://doi.org/10.5281/zenodo.7693664" ;

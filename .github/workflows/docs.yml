@@ -9,8 +9,7 @@ on:
       - '*'  # run on all PRs
 
 env:
-  ONTOLOGY_NAME: electrochemistry
-  ONTOLOGY_IRI: https://w3id.org/emmo/domain/electrochemistry
+  CONFIG_PATH: config.yml
   GIT_USER_NAME: "GitHub Actions"
   GIT_USER_EMAIL: "github-actions[bot]@users.noreply.github.com"
   ROBOT_VERSION: "1.9.6"
@@ -41,6 +40,9 @@ jobs:
         pip install --upgrade pip
         pip install ".[docs]"
 
+    - name: Load ontology configuration
+      run: python .github/scripts/ontology_toolkit.py >> $GITHUB_ENV
+
     - name: Cache ROBOT
       uses: actions/cache@v4
       with:
@@ -68,8 +70,8 @@ jobs:
             build/${ONTOLOGY_NAME}-dependencies.ttl
         ontoconvert \
             -sawe \
-            --base-iri="${ONTOLOGY_IRI}#" \
-            --iri="${ONTOLOGY_IRI}" \
+            --base-iri="${ONTOLOGY_URI}#" \
+            --iri="${ONTOLOGY_URI}" \
             ${ONTOLOGY_NAME}.ttl \
             build/${ONTOLOGY_NAME}.ttl
         bin/robot reason --reasoner HermiT --input build/${ONTOLOGY_NAME}.ttl --output build/${ONTOLOGY_NAME}-inferred.ttl
@@ -130,7 +132,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install ".[docs]"
 
-    - name: Load Ontology Configuration from YAML
+    - name: Load ontology configuration
       run: python .github/scripts/ontology_toolkit.py >> $GITHUB_ENV
 
     - name: Render Documentation from TTL Files

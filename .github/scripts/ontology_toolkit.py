@@ -663,6 +663,7 @@ def main():
 
     print(f"ONTOLOGY_NAME={config['ontology_name']}")
     print(f"ONTOLOGY_URI={config['ontology_uri']}")
+    print(f"ONTOLOGY_IRI={config['ontology_uri']}")  # alias for legacy workflow env usage
     print(f"RST_FILE={config['rst_output_filename']}")
     print(f"INFERRED_TTL_FILENAME={config['inferred_ttl_filename']}")
 
