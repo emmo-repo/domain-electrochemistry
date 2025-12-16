@@ -8,12 +8,12 @@
     
     
     <uri name="https://w3id.org/emmo/domain/characterisation-methodology/1.0.0/chameo" uri="https://raw.githubusercontent.com/emmo-repo/domain-characterisation-methodology/refs/heads/main/chameo.ttl"/>
-    <uri name="https://w3id.org/emmo/domain/electrochemistry/0.31.1/electrochemistry" uri="electrochemistry.ttl"/>
-    <uri name="https://w3id.org/emmo/domain/electrochemistry/0.31.1/reference/electrochemistry-quantities" uri="./reference/electrochemistry-quantities.ttl"/>
-    <uri name="https://w3id.org/emmo/domain/electrochemistry/0.31.1/reference/electrochemistry-reference" uri="./reference/electrochemistry-reference.ttl"/>
-    <uri name="https://w3id.org/emmo/domain/electrochemistry/0.31.1/modules/electrochemistry-manufacturing" uri="./modules/electrochemistry-manufacturing.ttl"/>
-    <uri name="https://w3id.org/emmo/domain/electrochemistry/0.31.1/modules/electrochemistry-testing" uri="./modules/electrochemistry-testing.ttl"/>
-    <uri name="https://w3id.org/emmo/domain/electrochemistry/0.31.1/dependencies" uri="./electrochemistry-dependencies.ttl"/>
+    <uri name="https://w3id.org/emmo/domain/electrochemistry/0.31.2/electrochemistry" uri="electrochemistry.ttl"/>
+    <uri name="https://w3id.org/emmo/domain/electrochemistry/0.31.2/reference/electrochemistry-quantities" uri="./reference/electrochemistry-quantities.ttl"/>
+    <uri name="https://w3id.org/emmo/domain/electrochemistry/0.31.2/reference/electrochemistry-reference" uri="./reference/electrochemistry-reference.ttl"/>
+    <uri name="https://w3id.org/emmo/domain/electrochemistry/0.31.2/modules/electrochemistry-manufacturing" uri="./modules/electrochemistry-manufacturing.ttl"/>
+    <uri name="https://w3id.org/emmo/domain/electrochemistry/0.31.2/modules/electrochemistry-testing" uri="./modules/electrochemistry-testing.ttl"/>
+    <uri name="https://w3id.org/emmo/domain/electrochemistry/0.31.2/dependencies" uri="./electrochemistry-dependencies.ttl"/>
 
     <uri name="https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/modules/manufacturing-equipment" uri="./modules/manufacturing-equipment.ttl"/>
     <uri name="https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/modules/manufacturing-processes" uri="./modules/manufacturing-processes.ttl"/>

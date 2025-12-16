@@ -140,8 +140,11 @@ def fetch_foops_score(config: dict) -> float:
             LOGGER.info("FOOPS score from %s", uri)
             return score
 
-    LOGGER.error("FOOPS failed for all URIs: %s", ", ".join(candidate_uris))
-    sys.exit(1)
+    LOGGER.warning(
+        "FOOPS failed for all URIs (tried: %s). Returning score 0 so docs build continues.",
+        ", ".join(candidate_uris),
+    )
+    return 0.0
 
 
 def generate_foops_badge() -> None:
