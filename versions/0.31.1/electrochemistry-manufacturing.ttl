@@ -1,0 +1,217 @@
+@prefix : <https://w3id.org/emmo/domain/electrochemistry#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix emmo: <https://w3id.org/emmo#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://www.schema.org#> .
+@base <https://w3id.org/emmo/domain/electrochemistry#> .
+
+<https://w3id.org/emmo/domain/electrochemistry/modules/electrochemistry-manufacturing> rdf:type owl:Ontology ;
+                                                                                        owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.31.1/modules/electrochemistry-manufacturing> ;
+                                                                                        owl:imports <https://w3id.org/emmo/domain/electrochemistry/0.31.1/reference/electrochemistry-reference> ,
+                                                                                                    <https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/modules/manufacturing-equipment> ,
+                                                                                                    <https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/modules/manufacturing-processes> ;
+                                                                                        <http://purl.org/dc/terms/abstract> "The electrochemistry-manufacturing module is an ontology containing the domain-level terms for describing the manufacturing of electrochemical devices. This ontology features terms that are common to manufacturing many different types of electrochemcial devices (.e.g batteries, supercaps, fuel cells, electrolyzers, etc.). For device-specific manufacturing terms, please refer to the associated domain ontology."@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c1ac455d_964c_4435_a9f0_d7339c44f4bb
+:electrochemistry_c1ac455d_964c_4435_a9f0_d7339c44f4bb rdf:type owl:AnnotationProperty ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "bvco"@en ;
+                                                       rdfs:subPropertyOf rdfs:seeAlso .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0e5ef5a7_53c6_4d94_bffd_d0318ea0de6b
+:electrochemistry_0e5ef5a7_53c6_4d94_bffd_d0318ea0de6b rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_77e2e601_5ecb_450b_b563_92f096997832 ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "DryMixture"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a mixture comprised of solid constituents"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_13fad803_de44_490d_a77e_c330c9168087
+:electrochemistry_13fad803_de44_490d_a77e_c330c9168087 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_0e030040_98a7_49b2_a871_dced1f3a6131 ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "Slurry"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a semi-liquid mixture, typically composed of particles suspended in a solvent"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_19a5cf32_2310_4ee8_a888_0d7bd8edc729
+:electrochemistry_19a5cf32_2310_4ee8_a888_0d7bd8edc729 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_6a2d9bd3_3695_4827_b3f7_3bba9b947129 ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "CylindricalCellPackaging"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of insering a dry jelly roll into a cylindrical cell container"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1a532a1a_a48c_4b08_854c_4f6c212c8b59
+:electrochemistry_1a532a1a_a48c_4b08_854c_4f6c212c8b59 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_6a2d9bd3_3695_4827_b3f7_3bba9b947129 ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "PrismaticCellPackaging"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of inserting a dry jelly roll into a prismatic cell container"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_36c2e19c_cb1a_41e9_bcd5_baf9dfd21905
+:electrochemistry_36c2e19c_cb1a_41e9_bcd5_baf9dfd21905 rdf:type owl:Class ;
+                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/manufacturing#manufacturing_96bf8eb5_c325_42e7_a761_73f105fda1be> ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "ElectrodeDrying"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of drying an electrode"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_38a2b407_3be9_4b66_86cf_b961cdffb4c9
+:electrochemistry_38a2b407_3be9_4b66_86cf_b961cdffb4c9 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "ElectrodeCalendering"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of calendering an electrode"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5076e90b_ed93_4845_87b1_e26bc8a4f0fe
+:electrochemistry_5076e90b_ed93_4845_87b1_e26bc8a4f0fe rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "ElectrochemicalDeviceAging"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of aging an electrochemical device as part of the manufacturing process"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5096e449_4d92_420e_ae6d_0e156f6e4ebd
+:electrochemistry_5096e449_4d92_420e_ae6d_0e156f6e4ebd rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "ElectrodeSlitting"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of slitting an electrode into smaller sections"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6a2d9bd3_3695_4827_b3f7_3bba9b947129
+:electrochemistry_6a2d9bd3_3695_4827_b3f7_3bba9b947129 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "CellPackaging"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of insering a dry cell assembly into a container"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_707f001f_d2b9_46c2_ac1b_9cd039bcf00f
+:electrochemistry_707f001f_d2b9_46c2_ac1b_9cd039bcf00f rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "ElectrodeWinding"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of forming a negative electrode, separator, and positive electrode into a wound dry jelly roll"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_91e931b3_9bc8_4490_8a9c_3202fc8338bd
+:electrochemistry_91e931b3_9bc8_4490_8a9c_3202fc8338bd rdf:type owl:Class ;
+                                                       rdfs:subClassOf <https://w3id.org/emmo/domain/manufacturing#manufacturing_9e51796f_a99e_4b61_a14d_d5a38cb8219a> ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "BinderSolutionMixing"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of mixing binder components to create a binder solution"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_99a4c4b9_90d1_41ef_9073_894d9b35e751
+:electrochemistry_99a4c4b9_90d1_41ef_9073_894d9b35e751 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_ff7f5ab4_d0c0_4455_9bcc_3d80346e90ee ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "PrismaticCellElectrolyteFilling"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of filling an electrolyte in a prismatic cell"@en ;
+                                                       :electrochemistry_c1ac455d_964c_4435_a9f0_d7339c44f4bb "https://bvco.ontology.link/BVCO_b5540155_6bab_4d81_bf3d_41c171d63a0f" .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a490e278_8c6d_4a89_ad0e_ffa48366cd75
+:electrochemistry_a490e278_8c6d_4a89_ad0e_ffa48366cd75 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "ElectrodeStacking"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of stacking layers of negative electrode, separator, and positive electrode to create a dry stack"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_aaeb3c53_3199_4851_95d1_9cf1503a1b4b
+:electrochemistry_aaeb3c53_3199_4851_95d1_9cf1503a1b4b rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "ElectrodeManufacturing"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of manufacturing and electrode"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_acd4bba1_e0f2_4114_b8f8_963645c5dac5
+:electrochemistry_acd4bba1_e0f2_4114_b8f8_963645c5dac5 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "ElectrochemicalDeviceFinishing"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of preparing an electrochemical device for its intended functional performance"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b50d66be_092e_4aca_b8fd_59aa30e47d7c
+:electrochemistry_b50d66be_092e_4aca_b8fd_59aa30e47d7c rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "ElectrodeNotching"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of notching tabs into an electrode sheet"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b85ca559_eeef_4763_ac2e_7e658bf64b45
+:electrochemistry_b85ca559_eeef_4763_ac2e_7e658bf64b45 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "ElectrolyteManufacturing"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of manufacturing electrolyte"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bed8f6c8_18d3_4af0_a0f3_d83bfa80498b
+:electrochemistry_bed8f6c8_18d3_4af0_a0f3_d83bfa80498b rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_4b3e2374_52a1_4420_8e3f_3ae6b9bf7dff ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "BinderSolution"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a liquid solution comprising binder dispersed in a solvent"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cd5a6260_5d89_4a14_8e19_5f64742b64ac
+:electrochemistry_cd5a6260_5d89_4a14_8e19_5f64742b64ac rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "ElectrochemicalDeviceManufacturing"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of manufacturing an electrochemical device"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cfcf6ca6_70e9_4369_9314_7f20b3efbf21
+:electrochemistry_cfcf6ca6_70e9_4369_9314_7f20b3efbf21 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "ElectrodeCoating"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of applying a coating to a substrate to manufacture an electrode"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d5e99e1f_049c_4111_b97f_613eb652492a
+:electrochemistry_d5e99e1f_049c_4111_b97f_613eb652492a rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_6a2d9bd3_3695_4827_b3f7_3bba9b947129 ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "PouchCellPackaging"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of inserting a dry electrode stack into a pouch cell container"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dade3372_c229_47f2_b3c5_6ebb97a0f670
+:electrochemistry_dade3372_c229_47f2_b3c5_6ebb97a0f670 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_ff7f5ab4_d0c0_4455_9bcc_3d80346e90ee ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "CylindricalCellElectrolyteFilling"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of filling an electrolyte into a cylindrical cell"@en ;
+                                                       :electrochemistry_c1ac455d_964c_4435_a9f0_d7339c44f4bb "https://bvco.ontology.link/BVCO_b1153b0b_1c2d_4890_aa1b_f9ed3ab0747a" .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_dbc73810_d334_40b8_b73a_7ad2c0b3615f
+:electrochemistry_dbc73810_d334_40b8_b73a_7ad2c0b3615f rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_ff7f5ab4_d0c0_4455_9bcc_3d80346e90ee ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "PouchCellElectrolyteFilling"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of filling an electrolyte in a pouch cell"@en ;
+                                                       :electrochemistry_c1ac455d_964c_4435_a9f0_d7339c44f4bb "https://bvco.ontology.link/BVCO_0c42fa38_503b_4fe4_90a6_c27730627514" .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_eeafeec2_2969_4886_b572_07ce39d3ee63
+:electrochemistry_eeafeec2_2969_4886_b572_07ce39d3ee63 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "ElectrodeSeparation"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of separating individual electrodes from an electrode sheet"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f2a034b6_401d_46bf_a258_cca87932c7af
+:electrochemistry_f2a034b6_401d_46bf_a258_cca87932c7af rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "ElectrochemicalDeviceAssembly"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of assembling components into an electrochemical device"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ff7f5ab4_d0c0_4455_9bcc_3d80346e90ee
+:electrochemistry_ff7f5ab4_d0c0_4455_9bcc_3d80346e90ee rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "ElectrolyteFilling"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the insertion of liquid electrolyte into an electrochemical device"@en .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
