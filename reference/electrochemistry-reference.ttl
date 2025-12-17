@@ -14,7 +14,7 @@
 @prefix schema: <https://schema.org/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix annotations: <https://w3id.org/emmo/top/annotations#> .
-@base <https://w3id.org/emmo/domain/electrochemistry#> .
+@base <https://w3id.org/emmo/domain/reference/electrochemistry-reference> .
 
 <https://w3id.org/emmo/domain/reference/electrochemistry-reference> rdf:type owl:Ontology ;
                                                                      owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.31.2/reference/electrochemistry-reference> ;
@@ -1226,7 +1226,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 :electrochemistry_27f95593_47f1_4494_b6bb_ac0733df185d rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_43cd6e14_dd43_41b5_b5b4_344d53841603 ;
                                                        skos:altLabel "P12/103/310" ;
-                                                       skos:prefLabel "P12/103/310" ;
+                                                       skos:prefLabel "P12103310" ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a prismatic case with a nominal length of 12 mm, width of 103 mm, and height of 310 mm"@en .
 
 
@@ -1259,6 +1259,15 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                        rdfs:subClassOf :electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37 ;
                                                        skos:prefLabel "R1220" ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a coin case with a nominal diameter of 12.5 mm and a height of 2.0 mm"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_29c4a743_e39e_4c32_b933_2213fe8d7625
+:electrochemistry_29c4a743_e39e_4c32_b933_2213fe8d7625 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_564d31be_91cb_4a8f_8369_2a55f1180499 ;
+                                                       skos:prefLabel "LP30"@en ;
+                                                       emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "the label originated as a commercial/product code used by electrolyte suppliers and subsequently adopted as informal community shorthand in publications and laboratory practice"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An electrolyte mixutre with the nominal recipe EC/DMC (1/1, wt/wt) + LiPF6 (11.8%,wt)"@en ;
+                                                       emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "not an IEC, IUPAC, or ISO standardized designation; do not infer composition from the code alone; the same label is sometimes used with small vendor- or era-dependent variations"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2a177462_ff01_4b83_ab9f_032e93c9ec69
@@ -1946,6 +1955,15 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
  ] .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_464ef51d_0484_4477_8fab_869b658023fe
+:electrochemistry_464ef51d_0484_4477_8fab_869b658023fe rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_564d31be_91cb_4a8f_8369_2a55f1180499 ;
+                                                       skos:prefLabel "LP47"@en ;
+                                                       emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "the label originated as a commercial/product code used by electrolyte suppliers and subsequently adopted as informal community shorthand in publications and laboratory practice"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An electrolyte with the nominal recipe EC/DEC (3/7, wt/wt) + LiPF6 (13.1%,wt)"@en ;
+                                                       emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "not an IEC, IUPAC, or ISO standardized designation; do not infer composition from the code alone; the same label is sometimes used with small vendor- or era-dependent variations"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_468b3b63_b62a_4110_8c7e_40fffd5fdfd6
 :electrochemistry_468b3b63_b62a_4110_8c7e_40fffd5fdfd6 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc ;
@@ -2342,6 +2360,15 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a separator with a porosity greater than 0"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_596a1b64_f5ac_4fe1_b5ae_a6e9845d3bab
+:electrochemistry_596a1b64_f5ac_4fe1_b5ae_a6e9845d3bab rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_564d31be_91cb_4a8f_8369_2a55f1180499 ;
+                                                       skos:prefLabel "LP71"@en ;
+                                                       emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "the label originated as a commercial/product code used by electrolyte suppliers and subsequently adopted as informal community shorthand in publications and laboratory practice"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An electrolyte with the nominal recipe EC/DEC/DMC (1/1/1, wt/wt/wt) + LiPF6 (12.4%,wt)"@en ;
+                                                       emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "not an IEC, IUPAC, or ISO standardized designation; do not infer composition from the code alone; the same label is sometimes used with small vendor- or era-dependent variations"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_598ae3d0_76e9_429c_a0e1_8694525cb574
 :electrochemistry_598ae3d0_76e9_429c_a0e1_8694525cb574 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_f19ff3b4_6bfe_4c41_a2b2_9affd39c140b ;
@@ -2662,6 +2689,15 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a cylindrical case with a nominal diameter of 54 mm and height of 137 mm"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6b0d3c26_821a_4881_9ebd_fb439c190183
+:electrochemistry_6b0d3c26_821a_4881_9ebd_fb439c190183 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_564d31be_91cb_4a8f_8369_2a55f1180499 ;
+                                                       skos:prefLabel "LP57"@en ;
+                                                       emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "the label originated as a commercial/product code used by electrolyte suppliers and subsequently adopted as informal community shorthand in publications and laboratory practice"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An electrolyte with the nominal recipe EC/EMC (3/7, wt/wt) + LiPF6 (12.7%,wt)"@en ;
+                                                       emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "not an IEC, IUPAC, or ISO standardized designation; do not infer composition from the code alone; the same label is sometimes used with small vendor- or era-dependent variations"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6b1f594f_2c0a_46a0_8805_d6ab08baa75e
 :electrochemistry_6b1f594f_2c0a_46a0_8805_d6ab08baa75e rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126 ;
@@ -2867,6 +2903,15 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                        skos:prefLabel "PouchCase"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a soft pouch case that is described by its length, width, and height"@en ;
                                                        emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "often represented in cell designations by the letter P"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_750eba5a_2a26_4a2b_8a2b_c09ae185a432
+:electrochemistry_750eba5a_2a26_4a2b_8a2b_c09ae185a432 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_564d31be_91cb_4a8f_8369_2a55f1180499 ;
+                                                       skos:prefLabel "LP40"@en ;
+                                                       emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "the label originated as a commercial/product code used by electrolyte suppliers and subsequently adopted as informal community shorthand in publications and laboratory practice"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An electrolyte with the nominal recipe EC/DEC (1/1, wt/wt) + LiPF6 (12.4%,wt)"@en ;
+                                                       emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "not an IEC, IUPAC, or ISO standardized designation; do not infer composition from the code alone; the same label is sometimes used with small vendor- or era-dependent variations"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_757eae08_4d43_42d4_8b4e_8a0bfd2f9a1c
@@ -3133,6 +3178,15 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedTarget "blend containing a material which reacts chemically to produce electrical energy with other constituents and additives"@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_826f50dc_e01e_4bb1_b6f5_183b58478cde
+:electrochemistry_826f50dc_e01e_4bb1_b6f5_183b58478cde rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_564d31be_91cb_4a8f_8369_2a55f1180499 ;
+                                                       skos:prefLabel "LP100"@en ;
+                                                       emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "the label originated as a commercial/product code used by electrolyte suppliers and subsequently adopted as informal community shorthand in publications and laboratory practice"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An electrolyte with the nominal capacity EC/PC/DMC (1/1/3,wt/wt/wt) + LiPF6 (11.46%,wt)"@en ;
+                                                       emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "not an IEC, IUPAC, or ISO standardized designation; do not infer composition from the code alone; the same label is sometimes used with small vendor- or era-dependent variations"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_82b66bfe_ec25_417b_ba65_b631ddaaca0e
@@ -3477,6 +3531,15 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedTarget "cell electrode consisting of a current collector and active material"@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_933234b6_43f0_46ed_bc1c_3751f8bc7fe5
+:electrochemistry_933234b6_43f0_46ed_bc1c_3751f8bc7fe5 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_564d31be_91cb_4a8f_8369_2a55f1180499 ;
+                                                       skos:prefLabel "LF100"@en ;
+                                                       emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "the label originated as a commercial/product code used by electrolyte suppliers and subsequently adopted as informal community shorthand in publications and laboratory practice"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An electroltte with the nominal recipeEC/PC/DMC (1/1/3,wt/wt/wt) + LiFSI (13.74%,wt)"@en ;
+                                                       emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "not an IEC, IUPAC, or ISO standardized designation; do not infer composition from the code alone; the same label is sometimes used with small vendor- or era-dependent variations"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_93358d9b_8976_42d0_84ae_e5a2400c3ea7
@@ -4400,6 +4463,15 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedTarget "electrochemical cell with a working electrode, reference electrode, and auxiliary electrode"@en ;
    dcterms:source "J. M. Pingarron et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bad4fdeb_5290_4fa1_8b49_193f7762dce4
+:electrochemistry_bad4fdeb_5290_4fa1_8b49_193f7762dce4 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_564d31be_91cb_4a8f_8369_2a55f1180499 ;
+                                                       skos:prefLabel "LP50"@en ;
+                                                       emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "the label originated as a commercial/product code used by electrolyte suppliers and subsequently adopted as informal community shorthand in publications and laboratory practice"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An electrolyte with the nominal recipe EC/EMC (1/1, wt/wt) + LiPF6 (12.2%,wt)"@en ;
+                                                       emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "not an IEC, IUPAC, or ISO standardized designation; do not infer composition from the code alone; the same label is sometimes used with small vendor- or era-dependent variations"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bb2faf17_b819_4876_b17f_fa82917cf85d
@@ -6039,9 +6111,3 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
-
-
-
-
-
-
