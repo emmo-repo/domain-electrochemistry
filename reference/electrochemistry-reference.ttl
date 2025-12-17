@@ -1226,7 +1226,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 :electrochemistry_27f95593_47f1_4494_b6bb_ac0733df185d rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_43cd6e14_dd43_41b5_b5b4_344d53841603 ;
                                                        skos:altLabel "P12/103/310" ;
-                                                       skos:prefLabel "P12103310" ;
+                                                       skos:prefLabel "P12/103/310" ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a prismatic case with a nominal length of 12 mm, width of 103 mm, and height of 310 mm"@en .
 
 
