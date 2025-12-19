@@ -17,11 +17,11 @@
 @base <https://w3id.org/emmo/domain/reference/electrochemistry-reference> .
 
 <https://w3id.org/emmo/domain/reference/electrochemistry-reference> rdf:type owl:Ontology ;
-                                                                     owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.31.2/reference/electrochemistry-reference> ;
+                                                                     owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.32.0/reference/electrochemistry-reference> ;
                                                                      owl:imports <https://w3id.org/emmo/1.0.2> ,
                                                                                  <https://w3id.org/emmo/domain/characterisation-methodology/1.0.0/chameo> ,
-                                                                                 <https://w3id.org/emmo/domain/chemical-substance/0.12.4/chemical-substance> ,
-                                                                                 <https://w3id.org/emmo/domain/electrochemistry/0.31.2/reference/electrochemistry-quantities> ;
+                                                                                 <https://w3id.org/emmo/domain/chemical-substance/0.13.1/chemical-substance> ,
+                                                                                 <https://w3id.org/emmo/domain/electrochemistry/0.32.0/reference/electrochemistry-quantities> ;
                                                                      dcterms:abstract "This reference module contains the core terms for the electrochemistry domain."@en ;
                                                                      dcterms:bibliographicCitation "https://doi.org/10.5281/zenodo.7693664" ;
                                                                      dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
@@ -45,7 +45,7 @@
                                                                      vann:preferredNamespaceUri "https://w3id.org/emmo/domain/electrochemistry" ;
                                                                      owl:backwardCompatibleWith <https://w3id.org/emmo/domain/electrochemistry/0.26.0-beta/reference/electrochemistry-reference> ;
                                                                      owl:priorVersion <https://w3id.org/emmo/domain/electrochemistry/0.26.0-beta/reference/electrochemistry-reference> ;
-                                                                     owl:versionInfo "0.31.2" ;
+                                                                     owl:versionInfo "0.32.0" ;
                                                                      foaf:logo "https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/gh-pages/assets/img/fig/png/domain-electrochemistry-logo.png" .
 
 #################################################################
@@ -895,6 +895,15 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode in the shape of a rectangle"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_14df0300_de16_4298_94ae_48652e250b78
+:electrochemistry_14df0300_de16_4298_94ae_48652e250b78 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_f76884f7_964e_488e_9bb7_1b2453e9e817 ;
+                                                       skos:prefLabel "GasCompartment"@en ;
+                                                       skos:related :electrochemistry_c2e3af24_a76b_4bab_9b48_57f21455d721 ,
+                                                                    :electrochemistry_fe51c981_a5c7_414d_90c9_3f44c7e75154 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an internal compartment of the electrochemical flow cell through which gas flows"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_15325775_6d4c_4192_82f1_e4feca9de426
 :electrochemistry_15325775_6d4c_4192_82f1_e4feca9de426 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_331e6cca_f260_4bf8_af55_35304fe1bbe0 ;
@@ -924,7 +933,9 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 :electrochemistry_15b852b5_19cc_49ab_849f_7df6175fb2be rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59 ;
                                                        skos:prefLabel "Catholyte"@en ;
-                                                       skos:related :electrochemistry_35c650ab_3b23_4938_b312_1b0dede2e6d5 ;
+                                                       skos:related :electrochemistry_35c650ab_3b23_4938_b312_1b0dede2e6d5 ,
+                                                                    :electrochemistry_9b6853e7_3412_463d_b5a9_82c14acebf7d ,
+                                                                    :electrochemistry_c2e3af24_a76b_4bab_9b48_57f21455d721 ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-18"@en ;
                                                        emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Greek kathodos ('way down') + lytēs (, ‘looser’)"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrolyte on the cathode side of an electrochemical cell that is divided into compartments."@en ;
@@ -1642,6 +1653,9 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 :electrochemistry_38755e67_9d3b_4a82_bd8d_ef40a70379c1 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_f76884f7_964e_488e_9bb7_1b2453e9e817 ;
                                                        skos:prefLabel "AnolyteTank"@en ;
+                                                       skos:related :electrochemistry_865a40fc_2187_4549_a7e1_37aa2458448f ,
+                                                                    :electrochemistry_9b6853e7_3412_463d_b5a9_82c14acebf7d ,
+                                                                    :electrochemistry_fe51c981_a5c7_414d_90c9_3f44c7e75154 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a tank for holding anolyte"@en ;
                                                        emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "usually used in a flow cell system"@en .
 
@@ -2230,6 +2244,15 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                        rdfs:subClassOf :electrochemistry_9a823d64_9d10_4a29_9cbd_9bbdad7985bc ;
                                                        skos:prefLabel "BlendedActiveElectrode"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an active electrode with a blend of two or more active materials"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_51c9716c_75c8_40d1_a782_c6810bda1433
+:electrochemistry_51c9716c_75c8_40d1_a782_c6810bda1433 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_f76884f7_964e_488e_9bb7_1b2453e9e817 ;
+                                                       skos:prefLabel "Substrate"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the underlying material or surface onto which a coating, layer, or treatment is applied, serving as the base that supports and interacts with the added material."@en ;
+                                                       emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Substrate_(materials_science)" ;
+                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://goldbook.iupac.org/terms/view/S06084" .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_522f0c0b_cf33_4328_af71_12e38dae6798
@@ -3266,7 +3289,9 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 :electrochemistry_865a40fc_2187_4549_a7e1_37aa2458448f rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59 ;
                                                        skos:prefLabel "Anolyte"@en ;
-                                                       skos:related :electrochemistry_b6319c74_d2ce_48c0_a75a_63156776b302 ;
+                                                       skos:related :electrochemistry_38755e67_9d3b_4a82_bd8d_ef40a70379c1 ,
+                                                                    :electrochemistry_b6319c74_d2ce_48c0_a75a_63156776b302 ,
+                                                                    :electrochemistry_fe51c981_a5c7_414d_90c9_3f44c7e75154 ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-19" ;
                                                        emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Greek anodos ('way up') + lytēs (, ‘looser’)"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrolyte on the anode side of an electrochemical cell that is divided into compartments"@en ;
@@ -3604,7 +3629,11 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_95e4aa95_b7e9_40d7_b78e_4d7dcc31093d
 :electrochemistry_95e4aa95_b7e9_40d7_b78e_4d7dcc31093d rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_0acd0fc2_1048_4604_8e90_bf4e84bd87df ;
+                                                       rdfs:subClassOf :electrochemistry_0acd0fc2_1048_4604_8e90_bf4e84bd87df ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_dba27ca1_33c9_4443_a912_1519ce4c39ec ;
+                                                                         owl:someValuesFrom :electrochemistry_b87124e6_bc69_4216_ab48_2140249801a1
+                                                                       ] ;
                                                        skos:altLabel "ElectrochemicalFlowCell"@en ;
                                                        skos:prefLabel "FlowCell"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrochemical device in which the active materials are flowed through the cell from an external source"@en .
@@ -3671,6 +3700,9 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 :electrochemistry_9b6853e7_3412_463d_b5a9_82c14acebf7d rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_f76884f7_964e_488e_9bb7_1b2453e9e817 ;
                                                        skos:prefLabel "CatholyteTank"@en ;
+                                                       skos:related :electrochemistry_15b852b5_19cc_49ab_849f_7df6175fb2be ,
+                                                                    :electrochemistry_38755e67_9d3b_4a82_bd8d_ef40a70379c1 ,
+                                                                    :electrochemistry_c2e3af24_a76b_4bab_9b48_57f21455d721 ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a tank for holding catholyte"@en ;
                                                        emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "usually used in a flow cell system"@en .
 
@@ -3781,6 +3813,13 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                        owl:deprecated "true"^^xsd:boolean ;
                                                        skos:prefLabel "SodiumCobaltPhosphateElectrode"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrode in which the active material is sodium cobalt phosphate"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9e2f4509_e3f1_4bff_a5f4_8792c372e338
+:electrochemistry_9e2f4509_e3f1_4bff_a5f4_8792c372e338 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_ec7464a9_d99d_45f8_965b_4e9230ea8356 ;
+                                                       skos:prefLabel "ElectrospunMesh"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a nonwoven mesh made by electrospinning, in which an electric field draws polymer jets into ultra-thin fibers that form a porous, interconnected network with high surface area with tunable porosity and fiber diameter."@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9f466223_e20a_474d_ac4d_6d4b6131c275
@@ -4004,6 +4043,17 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                        skos:altLabel "P27/70/102" ;
                                                        skos:prefLabel "P2770102" ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a prismatic case with a nominal length of 27 mm, width of 70 mm, and height of 102 mm"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a6232fa7_ec1e_4529_bb9f_3598d3d0b106
+:electrochemistry_a6232fa7_ec1e_4529_bb9f_3598d3d0b106 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_95e4aa95_b7e9_40d7_b78e_4d7dcc31093d ;
+                                                       rdfs:seeAlso "https://www.iea.org/energy-system/low-emission-fuels/electrolysers" ;
+                                                       skos:altLabel "Electrolyzer"@en ;
+                                                       skos:prefLabel "Electrolyser"@en ;
+                                                       skos:related :electrochemistry_e2a1dae1_05e4_4bd1_a39d_0eb10db482bc ;
+                                                       emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q125141087" ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a device that performs electrolysis."@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a6a69e90_06b5_45b1_83cf_7c0bf39b2914
@@ -4430,6 +4480,16 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
  ] .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b87124e6_bc69_4216_ab48_2140249801a1
+:electrochemistry_b87124e6_bc69_4216_ab48_2140249801a1 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_f76884f7_964e_488e_9bb7_1b2453e9e817 ;
+                                                       skos:note "Flow field design affects pressure drop, mass transport, and overall cell performance."@en ;
+                                                       skos:prefLabel "FlowField"@en ;
+                                                       skos:related :electrochemistry_95e4aa95_b7e9_40d7_b78e_4d7dcc31093d ,
+                                                                    :electrochemistry_bd33779c_6f40_4354_ab5d_f6c17396414d ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a flow field is the structured channel network that distributes reactants across the electrode surface and facilitates the removal of products."@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b91180e7_97ae_49e2_bf82_5bf720e7fa66
 :electrochemistry_b91180e7_97ae_49e2_bf82_5bf720e7fa66 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_dc6abae7_39b0_4d22_b52e_14d088a4bd5f ;
@@ -4549,7 +4609,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bd33779c_6f40_4354_ab5d_f6c17396414d
 :electrochemistry_bd33779c_6f40_4354_ab5d_f6c17396414d rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_0acd0fc2_1048_4604_8e90_bf4e84bd87df ;
+                                                       rdfs:subClassOf :electrochemistry_95e4aa95_b7e9_40d7_b78e_4d7dcc31093d ;
                                                        skos:prefLabel "FuelCell"@en ;
                                                        emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q180253"@en ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-03-05"@en ;
@@ -4645,6 +4705,17 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                        skos:altLabel "LMOElectrode"@en ;
                                                        skos:prefLabel "LithiumManganeseOxideElectrode"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrode in which the active material is lithium manganese oxide"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c2e3af24_a76b_4bab_9b48_57f21455d721
+:electrochemistry_c2e3af24_a76b_4bab_9b48_57f21455d721 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_f76884f7_964e_488e_9bb7_1b2453e9e817 ;
+                                                       skos:note "CatholyteTank holds the anolyte typically outside of the eletrochemical cell, where the term CatholyteCompartment describes a space inside the electrochemical flow cell."@en ;
+                                                       skos:prefLabel "CatholyteCompartment"@en ;
+                                                       skos:related :electrochemistry_14df0300_de16_4298_94ae_48652e250b78 ,
+                                                                    :electrochemistry_15b852b5_19cc_49ab_849f_7df6175fb2be ,
+                                                                    :electrochemistry_fe51c981_a5c7_414d_90c9_3f44c7e75154 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an internal compartment of the electrochemical flow cell through which catholyte flows"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c3f4b34a_0e2c_46f3_baab_4ebd2682d26f
@@ -6035,6 +6106,17 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                        emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "An expression of the Law of Mass Action."@en ,
                                                                                                       "E_{eq} = E^0 - (R*T/(z*F))*ln(Q)" ;
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Nernst_equation" .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fe51c981_a5c7_414d_90c9_3f44c7e75154
+:electrochemistry_fe51c981_a5c7_414d_90c9_3f44c7e75154 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_f76884f7_964e_488e_9bb7_1b2453e9e817 ;
+                                                       skos:note "AnolyteTank holds the anolyte typically outside of the eletrochemical cell, where the term AnolyteCompartment describes a space inside the electrochemical flow cell."@en ;
+                                                       skos:prefLabel "AnolyteCompartment"@en ;
+                                                       skos:related :electrochemistry_14df0300_de16_4298_94ae_48652e250b78 ,
+                                                                    :electrochemistry_865a40fc_2187_4549_a7e1_37aa2458448f ,
+                                                                    :electrochemistry_c2e3af24_a76b_4bab_9b48_57f21455d721 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an internal compartment of the electrochemical flow cell through which anolyte flows"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fffc3dad_6946_4c32_a9d3_f5f311339881
