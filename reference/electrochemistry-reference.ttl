@@ -17,11 +17,11 @@
 @base <https://w3id.org/emmo/domain/reference/electrochemistry-reference> .
 
 <https://w3id.org/emmo/domain/reference/electrochemistry-reference> rdf:type owl:Ontology ;
-                                                                     owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.32.0/reference/electrochemistry-reference> ;
+                                                                     owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.33.0/reference/electrochemistry-reference> ;
                                                                      owl:imports <https://w3id.org/emmo/1.0.2> ,
                                                                                  <https://w3id.org/emmo/domain/characterisation-methodology/1.0.0/chameo> ,
-                                                                                 <https://w3id.org/emmo/domain/chemical-substance/0.13.1/chemical-substance> ,
-                                                                                 <https://w3id.org/emmo/domain/electrochemistry/0.32.0/reference/electrochemistry-quantities> ;
+                                                                                 <https://w3id.org/emmo/domain/chemical-substance/0.13.2/chemical-substance> ,
+                                                                                 <https://w3id.org/emmo/domain/electrochemistry/0.33.0/reference/electrochemistry-quantities> ;
                                                                      dcterms:abstract "This reference module contains the core terms for the electrochemistry domain."@en ;
                                                                      dcterms:bibliographicCitation "https://doi.org/10.5281/zenodo.7693664" ;
                                                                      dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
@@ -45,7 +45,7 @@
                                                                      vann:preferredNamespaceUri "https://w3id.org/emmo/domain/electrochemistry" ;
                                                                      owl:backwardCompatibleWith <https://w3id.org/emmo/domain/electrochemistry/0.26.0-beta/reference/electrochemistry-reference> ;
                                                                      owl:priorVersion <https://w3id.org/emmo/domain/electrochemistry/0.26.0-beta/reference/electrochemistry-reference> ;
-                                                                     owl:versionInfo "0.32.0" ;
+                                                                     owl:versionInfo "0.33.0" ;
                                                                      foaf:logo "https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/gh-pages/assets/img/fig/png/domain-electrochemistry-logo.png" .
 
 #################################################################
@@ -1969,6 +1969,14 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
  ] .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4586bc75_3370_4190_bbf8_33d2e0a77aa4
+:electrochemistry_4586bc75_3370_4190_bbf8_33d2e0a77aa4 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_15325775_6d4c_4192_82f1_e4feca9de426 ;
+                                                       skos:prefLabel "AnionExchangeMembrane"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a selective barrier that permits the passage of anions while obstructing the passage of cations"@en ;
+                                                       emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Anion-exchange_membrane"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_464ef51d_0484_4477_8fab_869b658023fe
 :electrochemistry_464ef51d_0484_4477_8fab_869b658023fe rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_564d31be_91cb_4a8f_8369_2a55f1180499 ;
@@ -3451,6 +3459,13 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                        skos:prefLabel "AirElectrode"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a gas diffusion electrode in which the gas is air"@en ;
                                                        emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The reaction occuring in an air electrode is typically the oxygen reduction reaction (ORR)."@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8b6192f2_0b45_46fb_8316_f75d93953428
+:electrochemistry_8b6192f2_0b45_46fb_8316_f75d93953428 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_15325775_6d4c_4192_82f1_e4feca9de426 ;
+                                                       skos:prefLabel "CationExchangeMembrane"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a selective barrier that permits the passage of cations while obstructing the passage of anions"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8c71739c_27c1_4d19_a0ff_02545296af43
