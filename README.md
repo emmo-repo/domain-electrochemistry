@@ -6,7 +6,7 @@
 [![DOI](https://zenodo.org/badge/570454941.svg)](https://zenodo.org/badge/latestdoi/570454941)  
 
 <!-- markdownlint-disable MD033 -->
-# Electrochemistry Domain Ontology  
+# Electrochemistry Domain Ontology   
 
 <img src="docs/assets/img/fig/svg/domain-electrochemistry-logo.svg" alt="domain-electrochemistry-logo" width="100%">
 
