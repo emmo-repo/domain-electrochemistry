@@ -9,10 +9,10 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix annotations: <https://w3id.org/emmo/top/annotations#> .
-@base <https://w3id.org/emmo/domain/electrochemistry/reference/electrochemistry-quantities> .
+@base <https://w3id.org/emmo/domain/electrochemistry#> .
 
 <https://w3id.org/emmo/domain/electrochemistry/reference/electrochemistry-quantities> rdf:type owl:Ontology ;
-                                                                                       owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.33.0/reference/electrochemistry-quantities> ;
+                                                                                       owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.34.0/reference/electrochemistry-quantities> ;
                                                                                        owl:imports <https://w3id.org/emmo/1.0.2/disciplines/isq> ;
                                                                                        dcterms:abstract "This electrochemical quantities ontology is a domain of the Elementary Multiperspective Materials Ontology (EMMO). It is a specialized framework designed to represent and organize knowledge about electrochemical quantities. It is designed to integrate with the electrochemistry domain ontology or other ontologies from the EMMO ecosystem. The main focus of this ontology is to provide machine-readable descriptions of common electrochemical quantities, linking both to the larger descriptions of physical quantities in EMMO as well as other sources of information like the IEC, QUDT, Wikidata, etc. It should be used to support linked data generation in the electrochemistry domain."@en ;
                                                                                        dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
@@ -21,7 +21,7 @@
                                                                                        dcterms:creator <https://orcid.org/0000-0002-8758-6109> ,
                                                                                                        <https://orcid.org/0000-0003-2954-1233> ;
                                                                                        dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                                                                       owl:versionInfo "0.33.0" .
+                                                                                       owl:versionInfo "0.34.0" .
 
 #################################################################
 #    Annotation properties
@@ -693,6 +693,16 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
    owl:annotatedTarget "rotational frequency of a rotating component in a rotating disk electrode"@en ;
    dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_19e27aa3_0970_43a6_86d3_e3cdd956134d
+:electrochemistry_19e27aa3_0970_43a6_86d3_e3cdd956134d rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_46376e5d_9627_4514_9881_9e62083625c3 ;
+                                                       rdfs:seeAlso "RatedEnergy" ;
+                                                       skos:note "Conventional designation value for the energy content of a battery, used to identify and label a product class. The nominal energy is a rounded or representative figure (not a manufacturer's guarantee) and may differ from energy measured under actual operating conditions."@en ;
+                                                       skos:prefLabel "NominalEnergy"@en ;
+                                                       emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=631-02-07" ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "conventional designation value for battery energy content, used as a product label"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1a104474_c326_4a29_ac26_26a05ac8f72c
@@ -1382,6 +1392,17 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        :electrochemistry_1b717a20_17e3_4480_8c60_c4ae94058f05 "Cell_Temperature (C)"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_469b9516_a96d_4aa2_b8e5_05ae982e2084
+:electrochemistry_469b9516_a96d_4aa2_b8e5_05ae982e2084 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_5696453c_9da7_41e2_bbda_603c1b90a8fc ;
+                                                       skos:altLabel "FirstCycleCoulombicEfficiency"@en ,
+                                                                     "ICE"@en ;
+                                                       skos:prefLabel "InitialCoulombicEfficiency"@en ;
+                                                       skos:scopeNote "Often used in lithium-ion cell characterisation; especially significant for graphite, silicon, and other anode materials that form an SEI layer on the first cycle."@en ;
+                                                       emmo:EMMO_4c8480cf_56de_41da_8699_f12a9033313a "Captures irreversible first-cycle losses that permanently reduce deliverable capacity and cannot be recovered by subsequent cycling. Must not be conflated with CoulombicEfficiency measured in later cycles."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The ratio of electrical charge delivered in the first discharge to the charge consumed in the first charge of an electrochemical cell, expressed as a percentage."@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_47287d09_6108_45ca_ac65_8b9451b1065e
 :electrochemistry_47287d09_6108_45ca_ac65_8b9451b1065e rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_5eae657f_5914_4252_85c6_3fc772dea113 ;
@@ -2061,6 +2082,18 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                                                                       emmo:MilliAmpereHour .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_743c71a3_b80c_42e3_92fa_13a67b8167df
+:electrochemistry_743c71a3_b80c_42e3_92fa_13a67b8167df rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634 ;
+                                                       skos:note "Commonly measured at 25 °C, 35 °C, and 45 °C with cells held at 50% or 100% state of charge; Arrhenius or power-law models are used to extrapolate to operational lifetime."@en ;
+                                                       skos:prefLabel "CalendarLife"@en ;
+                                                       skos:scopeNote "Characterises time-dependent degradation that occurs independently of cycling load. Particularly relevant for automotive (typically 15-year targets) and stationary storage (20+ year targets) applications."@en ;
+                                                       emmo:EMMO_4c8480cf_56de_41da_8699_f12a9033313a "CalendarLife and CycleLife are independent quantities. A cell may reach calendar end-of-life before its rated cycle count if stored at elevated temperature or high state of charge for extended periods."@en ;
+                                                       emmo:EMMO_5f7abc2a_5b50_41c3_8def_c8ba7c3b083e "End-of-life is typically defined as 80% capacity retention or 20% power fade relative to initial values; the criterion used must be stated alongside the value."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The time elapsed from initial commissioning until an electrochemical cell or battery reaches a defined end-of-life criterion under specified storage or use conditions, independent of the number of charge–discharge cycles performed."@en ;
+                                                       emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "Strongly dependent on storage temperature and state of charge. Values reported without these conditions specified cannot be meaningfully compared. Accelerated ageing tests at elevated temperature require validated time–temperature superposition models to extrapolate to use conditions."@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7481c4c9_c247_4248_a045_a1077230acba
 :electrochemistry_7481c4c9_c247_4248_a045_a1077230acba rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_3a6578ac_aee0_43b9_9bc6_1eb208c8c9a9 ;
@@ -2215,6 +2248,18 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        rdfs:subClassOf :electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d ;
                                                        skos:prefLabel "ChargingVoltage"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "voltage between the terminals of a cell or battery when being charged"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7b3eb826_b968_493a_8396_cc3a5f09ecb3
+:electrochemistry_7b3eb826_b968_493a_8396_cc3a5f09ecb3 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_9bf40017_3f58_4030_ada7_cb37a3dfda2d ;
+                                                       rdfs:seeAlso "ACInternalResistance" ;
+                                                       skos:altLabel "DCIR"@en ;
+                                                       skos:note "Encompasses contributions from ohmic resistance and from electrochemical kinetic processes — charge-transfer resistance and short-timescale diffusion — active within the measurement interval. Typically reported in milliohms (mΩ)"@en ;
+                                                       skos:prefLabel "DCInternalResistance"@en ;
+                                                       skos:scopeNote "Used to characterise power capability and resistive losses under pulsed discharge conditions; a standard output of the Hybrid Pulse Power Characterisation (HPPC) protocol."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Internal resistance of an electrochemical cell determined from the voltage response to a direct-current pulse, calculated as ΔV/ΔI at a specified elapsed time after pulse onset."@en ;
+                                                       emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "Values are not directly comparable between measurements made with different pulse durations or current magnitudes. Measurement conditions must be reported alongside the value."@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7db845e7_0e5b_47d4_b954_2a2b8e85deea
@@ -2571,6 +2616,18 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The maximum allowed value for stoichiometric coefficient for an entity in a chemical substance"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_964cd426_f3cf_4a52_8c5d_0490cf48edb5
+:electrochemistry_964cd426_f3cf_4a52_8c5d_0490cf48edb5 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_9bf40017_3f58_4030_ada7_cb37a3dfda2d ;
+                                                       skos:altLabel "ACIR"@en ;
+                                                       skos:note "Determined by electrochemical impedance spectroscopy or by a single-frequency AC perturbation technique. Typically reported in milliohms (mΩ)."@en ;
+                                                       skos:prefLabel "ACInternalResistance"@en ;
+                                                       skos:scopeNote "At 1 kHz, reactive contributions from double-layer capacitance and Warburg diffusion are suppressed for typical battery geometries, making the result a practical approximation of ohmic resistance."@en ;
+                                                       emmo:EMMO_4c8480cf_56de_41da_8699_f12a9033313a "The measurement frequency must be stated alongside the value. At frequencies above a few kilohertz, inductive reactance from cell tabs and interconnects can dominate the measured impedance."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The magnitude of the complex impedance of an electrochemical cell at a specified alternating-current frequency, typically 1 kHz."@en ;
+                                                       emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "Characteristically lower than DCInternalResistance because electrochemical kinetic contributions are excluded at the measurement frequency. The two quantities must not be used interchangeably."@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_97bc06e6_6141_47ec_9e81_fd9e6a5b07c7
 :electrochemistry_97bc06e6_6141_47ec_9e81_fd9e6a5b07c7 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
@@ -2916,8 +2973,8 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a82e16c3_b766_482f_be94_b8e9af37f6fc
 :electrochemistry_a82e16c3_b766_482f_be94_b8e9af37f6fc rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_47ab1dad_cc09_4fd8_af23_acb36fb680dd ;
-                                                       rdfs:comment "A_{real}" ,
-                                                                    "the electroactive area is the area calculated from experiments with model electroactive species and may be different from the real surface area in cases where not all of the surface is electrochemically active or accessible"@en ;
+                                                       rdfs:comment "the electroactive area is the area calculated from experiments with model electroactive species and may be different from the real surface area in cases where not all of the surface is electrochemically active or accessible"@en ,
+                                                                    "A_{real}" ;
                                                        skos:prefLabel "ElectrodeRealSurfaceArea"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "surface area of an electrode that takes into account non-idealities of the interface (roughness, porosity, etc.) and can be measured by a variety of electrochemical methods"@en .
 
@@ -3215,6 +3272,15 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
    owl:annotatedTarget "range of electrode potentials of a given working electrode in a given electrolyte, where the electric current from reactions of the electrode or electrolyte is negligible compared with the current from reactions of the system under investigation"@en ;
    dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
  ] .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c3e97d58_1854_4c23_bb42_d2972172865e
+:electrochemistry_c3e97d58_1854_4c23_bb42_d2972172865e rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634 ;
+                                                       skos:note "Arises from internal parasitic reactions including electrolyte oxidation at the positive electrode, SEI instability at the negative electrode, and electronic leakage through the separator."@en ;
+                                                       skos:prefLabel "SelfDischargeRate"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The rate at which the deliverable capacity of an electrochemical cell decreases during open-circuit storage under specified conditions, in the absence of an external load."@en ;
+                                                       emmo:EMMO_b6730304_cabc_4104_b415_14218466445c "Strongly temperature- and state-of-charge-dependent. Values reported without these conditions specified cannot be meaningfully compared."@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c4120ce7_f1ff_4917_b59e_002454a65040
@@ -3533,6 +3599,7 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_da215d1a_196a_465f_9de8_89f6fbb76982
 :electrochemistry_da215d1a_196a_465f_9de8_89f6fbb76982 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_46376e5d_9627_4514_9881_9e62083625c3 ;
+                                                       rdfs:seeAlso "NominalEnergy" ;
                                                        skos:prefLabel "RatedEnergy"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the amount of energy that an electrochemical device can store under some specific conditions"@en .
 
@@ -3998,4 +4065,4 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                         foaf:name "Eibar Flores" .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
