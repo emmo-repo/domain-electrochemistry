@@ -47,6 +47,9 @@ docs = [
   "pypandoc-binary>=1.14",
 ]
 
+[project.scripts]
+bump-version = "domain_electrochemistry_tooling.bump_version:main"
+
 [tool.ontology]
 robot_version = "1.9.6"
 
