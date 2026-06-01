@@ -26,9 +26,9 @@
                                                  dcterms:created "2022-11-25"^^xsd:date ;
                                                  dcterms:creator <https://orcid.org/0000-0002-8758-6109> ,
                                                                  <https://orcid.org/0000-0003-2954-1233> ;
-                                                 dcterms:issued "2026-01-16"^^xsd:date ;
+                                                 dcterms:issued "2026-06-01"^^xsd:date ;
                                                  dcterms:license <https://creativecommons.org/licenses/by/4.0/legalcode> ;
-                                                 dcterms:modified "2026-01-16"^^xsd:date ;
+                                                 dcterms:modified "2026-06-01"^^xsd:date ;
                                                  dcterms:publisher "EMMO" ;
                                                  dcterms:source <https://www.electropedia.org> ,
                                                                 <https://doi.org/10.1109/IEEESTD.2016.7552407> ,
