@@ -14,14 +14,14 @@
 @prefix schema: <https://schema.org/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix annotations: <https://w3id.org/emmo/top/annotations#> .
-@base <https://w3id.org/emmo/domain/reference/electrochemistry-reference> .
+@base <https://w3id.org/emmo/domain/electrochemistry#> .
 
 <https://w3id.org/emmo/domain/reference/electrochemistry-reference> rdf:type owl:Ontology ;
-                                                                     owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.34.0/reference/electrochemistry-reference> ;
+                                                                     owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.35.0/reference/electrochemistry-reference> ;
                                                                      owl:imports <https://w3id.org/emmo/1.0.2> ,
                                                                                  <https://w3id.org/emmo/domain/characterisation-methodology/chameo> ,
-                                                                                 <https://w3id.org/emmo/domain/chemical-substance/0.13.2/chemical-substance> ,
-                                                                                 <https://w3id.org/emmo/domain/electrochemistry/0.34.0/reference/electrochemistry-quantities> ;
+                                                                                 <https://w3id.org/emmo/domain/chemical-substance/0.14.0/chemical-substance> ,
+                                                                                 <https://w3id.org/emmo/domain/electrochemistry/0.35.0/reference/electrochemistry-quantities> ;
                                                                      dcterms:abstract "This reference module contains the core terms for the electrochemistry domain."@en ;
                                                                      dcterms:bibliographicCitation "https://doi.org/10.5281/zenodo.7693664" ;
                                                                      dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
@@ -43,9 +43,9 @@
                                                                      bibo:status "unstable" ;
                                                                      vann:preferredNamespacePrefix "echem" ;
                                                                      vann:preferredNamespaceUri "https://w3id.org/emmo/domain/electrochemistry" ;
-                                                                     owl:backwardCompatibleWith <https://w3id.org/emmo/domain/electrochemistry/0.33.0/reference/electrochemistry-reference> ;
-                                                                     owl:priorVersion <https://w3id.org/emmo/domain/electrochemistry/0.33.0/reference/electrochemistry-reference> ;
-                                                                     owl:versionInfo "0.34.0" ;
+                                                                     owl:backwardCompatibleWith <https://w3id.org/emmo/domain/electrochemistry/0.34.0/reference/electrochemistry-reference> ;
+                                                                     owl:priorVersion <https://w3id.org/emmo/domain/electrochemistry/0.34.0/reference/electrochemistry-reference> ;
+                                                                     owl:versionInfo "0.35.0" ;
                                                                      foaf:logo "https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/gh-pages/assets/img/fig/png/domain-electrochemistry-logo.png" .
 
 #################################################################
@@ -134,7 +134,7 @@ emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 rdf:type owl:ObjectProperty ,
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383
 :electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383 rdf:type owl:ObjectProperty ;
-                                                       rdfs:subPropertyOf emmo:EMMO_dba27ca1_33c9_4443_a912_1519ce4c39ec ;
+                                                       rdfs:subPropertyOf emmo:EMMO_3c7f239f_e833_4a2b_98a1_c88831770c1b ;
                                                        rdfs:range :electrochemistry_09a7f560_9ddf_4c32_b067_b213eca5b0a1 ;
                                                        skos:prefLabel "hasCoating"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "relates a component to a coating that covers its surface to provide protective, functional, or structural properties"@en .
@@ -209,6 +209,14 @@ emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 rdf:type owl:ObjectProperty ,
                                                        rdfs:range :electrochemistry_fb0d9eef_92af_4628_8814_e065ca255d59 ;
                                                        skos:prefLabel "hasCatholyte"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "relates a system to the portion of the electrolyte that is in contact with the cathode"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bb061d4c_55d9_4df4_9128_2ef56a85fd81
+:electrochemistry_bb061d4c_55d9_4df4_9128_2ef56a85fd81 rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf emmo:EMMO_3c7f239f_e833_4a2b_98a1_c88831770c1b ;
+                                                       rdfs:range :electrochemistry_51c9716c_75c8_40d1_a782_c6810bda1433 ;
+                                                       skos:prefLabel "hasSubstrate"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "relates a holistic system to the underlying material or surface onto which a coating, layer, or treatment is applied, serving as the base that supports and interacts with the added material."@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c17b514b_57f2_4f72_9b95_c2950dd2aa7f
@@ -972,6 +980,18 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a cylindrical case with a nominal diameter of 38 mm and height of 138 mm"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1824ce17_25b7_45bf_bbf3_d314ff5025ff
+:electrochemistry_1824ce17_25b7_45bf_bbf3_d314ff5025ff rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5 ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
+                                                                         owl:someValuesFrom chems:substance_fd587814_4556_4909_8690_9d539d612e2a
+                                                                       ] ;
+                                                       skos:altLabel "HgOElectrode"@en ;
+                                                       skos:prefLabel "MercuryOxideElectrode"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrode in which the active material is mercury(II) oxide"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_187326b9_1089_4122_8e7e_1a0bcba210a1
 :electrochemistry_187326b9_1089_4122_8e7e_1a0bcba210a1 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_2e6933aa_4522_4f16_a437_37110e6cbd0d ;
@@ -986,6 +1006,15 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
    owl:annotatedTarget "electrode polarization associated with a cathodic reaction"@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_18f2199b_c50c_49ec_bd17_a37626ca5e63
+:electrochemistry_18f2199b_c50c_49ec_bd17_a37626ca5e63 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_ec7464a9_d99d_45f8_965b_4e9230ea8356 ;
+                                                       skos:prefLabel "Mesh"@en ;
+                                                       emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q24503377" ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a manufactured material consisting of interconnected fibers or strands forming a porous network with high surface area, whose porosity and structural characteristics can be tuned depending on the fabrication method and material system."@en ;
+                                                       emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Mesh" .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_19abaccd_43be_4048_965c_e4fb63c5951b
@@ -1438,7 +1467,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_31b38a1b_5873_454c_ba99_00491497fb43
 :electrochemistry_31b38a1b_5873_454c_ba99_00491497fb43 rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_ec7464a9_d99d_45f8_965b_4e9230ea8356 ;
+                                                       rdfs:subClassOf :electrochemistry_18f2199b_c50c_49ec_bd17_a37626ca5e63 ;
                                                        skos:prefLabel "ExpandedMesh"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a sheet that has been slit and stretched to form a network of diamond-shaped openings, providing structural strength and high surface area for applications like filtration and reinforcement"@en .
 
@@ -1449,6 +1478,13 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                        skos:altLabel "R55" ;
                                                        skos:prefLabel "R1121" ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a coin case with a nominal diameter of 11.6 mm and a height of 2.1 mm"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_31ca858c_a281_4d69_b1fb_e75e455bdace
+:electrochemistry_31ca858c_a281_4d69_b1fb_e75e455bdace rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_14df0300_de16_4298_94ae_48652e250b78 ;
+                                                       skos:prefLabel "NegativeElectrodeGasCompartment"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an internal compartment of the electrochemical flow cell in contact with the negative electrode through which gas flows"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3279f575_1c62_4bf2_a6e8_de4c7ff36f8e
@@ -1691,7 +1727,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3a69a00e_235a_4948_b369_8ac20116c85e
 :electrochemistry_3a69a00e_235a_4948_b369_8ac20116c85e rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_ec7464a9_d99d_45f8_965b_4e9230ea8356 ;
+                                                       rdfs:subClassOf :electrochemistry_18f2199b_c50c_49ec_bd17_a37626ca5e63 ;
                                                        skos:prefLabel "WovenMesh"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a fabric-like structure created by interweaving wires or fibres in an over-under pattern, commonly used for filtration, screening, and reinforcement due to its high strength and durability"@en .
 
@@ -3449,6 +3485,15 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "substance that increases chemical reaction speed, and which is conserved after the reaction"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8ae1ee53_5866_4d94_8715_35e90626fa55
+:electrochemistry_8ae1ee53_5866_4d94_8715_35e90626fa55 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627 ;
+                                                       skos:note "An ImmersionElectrode is a common electrochemical configuration where the electrode operates fully submerged in a liquid electrolyte, distinct from the existing terms GasDiffusionElectrode and AirElectrode. Addition of this term improves clarity when modelling electrode–electrolyte interfaces and complements existing electrode classifications."@en ;
+                                                       skos:prefLabel "ImmersionElectrode"@en ;
+                                                       skos:scopeNote "This concept contrasts with gas-diffusion and partially wetted electrodes by explicitly requiring full immersion in a liquid phase, which impacts transport phenomena, reaction kinetics, and modelling assumptions.e"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode designed to operate fully immersed in a liquid electrolyte"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8b40856f_1ca2_4137_9616_7fb624671909
 :electrochemistry_8b40856f_1ca2_4137_9616_7fb624671909 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_bbb1d95b_72d1_44f6_b07e_a3d7d41ac215 ,
@@ -3832,7 +3877,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9e2f4509_e3f1_4bff_a5f4_8792c372e338
 :electrochemistry_9e2f4509_e3f1_4bff_a5f4_8792c372e338 rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_ec7464a9_d99d_45f8_965b_4e9230ea8356 ;
+                                                       rdfs:subClassOf :electrochemistry_18f2199b_c50c_49ec_bd17_a37626ca5e63 ;
                                                        skos:prefLabel "ElectrospunMesh"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a nonwoven mesh made by electrospinning, in which an electric field draws polymer jets into ultra-thin fibers that form a porous, interconnected network with high surface area with tunable porosity and fiber diameter."@en .
 
@@ -4633,6 +4678,13 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Fuel_cell"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bdee18cf_1522_474e_8b2f_43f73545ae0f
+:electrochemistry_bdee18cf_1522_474e_8b2f_43f73545ae0f rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_14df0300_de16_4298_94ae_48652e250b78 ;
+                                                       skos:prefLabel "PositiveElectrodeGasCompartment"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an internal compartment of the electrochemical flow cell in contact with the positive electrode through which gas flows"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bed5b5f9_b89d_45e3_a8c2_81b70ae21847
 :electrochemistry_bed5b5f9_b89d_45e3_a8c2_81b70ae21847 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_52bbaaee_1145_4be3_8a5c_b366851ea1b9 ;
@@ -5071,8 +5123,8 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                        rdfs:subClassOf :electrochemistry_b5ea31c9_bb10_4276_980e_c3eceb1efc82 ;
                                                        skos:example "electron, hole, ion"@en ;
                                                        skos:prefLabel "ChargeCarrier"@en ;
-                                                       emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q865807" ,
-                                                                                                      "https://www.wikidata.org/wiki/Q865807"@en ;
+                                                       emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q865807"@en ,
+                                                                                                      "https://www.wikidata.org/wiki/Q865807" ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a generic denomination of particles or quasiparticles responsible for electric charge transport."@en ;
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Charge_carrier"@en .
 
@@ -5765,6 +5817,16 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
  ] .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f42746ba_724c_4ab9_aa04_61b062f23076
+:electrochemistry_f42746ba_724c_4ab9_aa04_61b062f23076 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_f76884f7_964e_488e_9bb7_1b2453e9e817 ;
+                                                       skos:note "Electrochemical (flow) cells require gaskets to seal the electrolyte compartments and define the active electrode area through compression. Gaskets are a distinct, functionally critical cell component that determines compression ratio, contact resistance, and electrolyte leakage."@en ;
+                                                       skos:prefLabel "Gasket"@en ;
+                                                       skos:scopeNote "Gaskets in electrochemical (flow) cells are typically made from polymer materials (e.g. PTFE, Viton, silicone) and their thickness directly determines electrode compression, which affects mass transport and contact resistance. They are a required component in any flow cell metadata description alongside electrodes, membrane, and flow field. The term is distinct from Separator and Membrane which describe ionically active components, whereas a gasket is purely a mechanical sealing element."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A deformable sealing component placed between cell assembly layers to prevent fluid leakage and define the active electrode area through controlled compression."@en ;
+                                                       emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Gasket" .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f47611a2_e081_47f0_b287_3fda5f706154
 :electrochemistry_f47611a2_e081_47f0_b287_3fda5f706154 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_8a1c9a7b_978c_4421_a9c1_d0b07b42aab9 ;
@@ -6207,4 +6269,4 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                         emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "" .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

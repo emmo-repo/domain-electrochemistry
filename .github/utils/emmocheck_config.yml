@@ -3,6 +3,11 @@ skip:
   - test_namespace
   - test_dimensional_unit
 
+test_description:
+  exceptions:
+    # External vocabulary terms that do not follow EMMO annotation conventions
+    - schema.org.Product
+
 test_quantity_dimension:
   exceptions:
     - electrochemistry.ElectrochemicalQuantity
