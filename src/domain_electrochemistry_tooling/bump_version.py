@@ -37,6 +37,8 @@ TTL_FILES = [
 # OASIS XML catalog files that map versioned IRIs to local paths.
 CATALOG_FILES = [
     "catalog-v001.xml",
+    "reference/catalog-v001.xml",
+    "modules/catalog-v001.xml",
     "application/catalog-v001.xml",
 ]
 
