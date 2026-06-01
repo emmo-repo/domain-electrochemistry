@@ -14,7 +14,7 @@
 @prefix schema: <https://schema.org/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix annotations: <https://w3id.org/emmo/top/annotations#> .
-@base <https://w3id.org/emmo/domain/electrochemistry/modules/electrochemistry-testing> .
+@base <https://w3id.org/emmo/domain/electrochemistry#> .
 
 <https://w3id.org/emmo/domain/electrochemistry/modules/electrochemistry-testing> rdf:type owl:Ontology ;
                                                                                   owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.34.0/modules/electrochemistry-testing> ;
@@ -56,6 +56,10 @@
 #################################################################
 #    Classes
 #################################################################
+
+###  https://schema.org/Product
+schema:Product rdf:type owl:Class .
+
 
 ###  https://w3id.org/emmo/domain/characterisation-methodology/chameo#ElectrochemicalTesting
 chameo:ElectrochemicalTesting owl:equivalentClass :Electrochemical .
@@ -589,9 +593,9 @@ chameo:ElectrochemicalTesting owl:equivalentClass :Electrochemical .
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_77524199_0925_4bd0_82d3_bfef58fa1bc1
 :electrochemistry_77524199_0925_4bd0_82d3_bfef58fa1bc1 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_22725105_c941_4b14_a4a2_fcb627958607 ,
-                                                                       :electrochemistry_a9fc3f77_e48e_4bce_b118_044d608722f6 ,
-                                                                       schema:Product ;
+                                                       rdfs:subClassOf schema:Product ,
+                                                                       :electrochemistry_22725105_c941_4b14_a4a2_fcb627958607 ,
+                                                                       :electrochemistry_a9fc3f77_e48e_4bce_b118_044d608722f6 ;
                                                        rdfs:seeAlso "https://www.biologic.net/products/vsp-3e-potentiostat/" ;
                                                        skos:altLabel "VSP-3e"@en ;
                                                        skos:prefLabel "VSP3e"@en ;
@@ -612,7 +616,8 @@ chameo:ElectrochemicalTesting owl:equivalentClass :Electrochemical .
                                                                          owl:onProperty emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 ;
                                                                          owl:someValuesFrom :electrochemistry_22725105_c941_4b14_a4a2_fcb627958607
                                                                        ] ;
-                                                       skos:altLabel "GalvanostaticProcess"@en ;
+                                                       skos:altLabel "ConstantCurrentOperation"@en ,
+                                                                     "GalvanostaticProcess"@en ;
                                                        skos:prefLabel "CurrentHold"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a process in which the electric current is kept constant"@en .
 
@@ -882,6 +887,21 @@ chameo:ElectrochemicalTesting owl:equivalentClass :Electrochemical .
                                                                        ] ;
                                                        skos:prefLabel "CRateTest"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a process that assesses the performance of an electrochemical device at different charge and discharge rates to understand its behavior under various current loads"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9aea1d9e_2eed_4336_bc5d_61f14fae7b2f
+:electrochemistry_9aea1d9e_2eed_4336_bc5d_61f14fae7b2f rdf:type owl:Class ;
+                                                       rdfs:subClassOf chameo:ElectrochemicalTesting ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                                         owl:someValuesFrom :electrochemistry_a6232fa7_ec1e_4529_bb9f_3598d3d0b106
+                                                                       ] ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
+                                                                         owl:someValuesFrom :electrochemistry_bfe3c49b_a94d_4990_b3ea_535335d12a3d
+                                                                       ] ;
+                                                       skos:prefLabel "ElectrolysisTest"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a test performed on an electrolyser"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9d97c7ff_b0c7_4ba2_a3cb_c6509b6798a8
@@ -1215,6 +1235,13 @@ chameo:ElectrochemicalTesting owl:equivalentClass :Electrochemical .
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electroanalytical technique that involves applying a constant current to a working electrode to strip previously deposited analyte from the electrode surface while measuring the potential change over time"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bfe3c49b_a94d_4990_b3ea_535335d12a3d
+:electrochemistry_bfe3c49b_a94d_4990_b3ea_535335d12a3d rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_0f6f0120_c079_4d95_bb11_4ddee05e530e ;
+                                                       skos:prefLabel "ElectrolysisTestResult"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "result of an electrolysis test"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c052cab7_46eb_4a87_b7a4_05be2572db22
 :electrochemistry_c052cab7_46eb_4a87_b7a4_05be2572db22 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a ;
@@ -1530,4 +1557,4 @@ chameo:ElectrochemicalTesting owl:equivalentClass :Electrochemical .
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a potentiostat manufactured by BioLogic"@en .
 
 
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi

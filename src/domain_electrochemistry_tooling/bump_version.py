@@ -5,9 +5,9 @@ that reference the current ontology version, and advances owl:priorVersion /
 owl:backwardCompatibleWith to point at the version being superseded.
 
 Usage (after pip install -e .):
-    bump-version --minor             # 0.33.0 → 0.34.0
-    bump-version --patch             # 0.33.0 → 0.33.1
-    bump-version --major             # 0.33.0 → 1.0.0
+    bump-version --minor             # 0.33.0 ->0.34.0
+    bump-version --patch             # 0.33.0 ->0.33.1
+    bump-version --major             # 0.33.0 ->1.0.0
     bump-version --version 0.35.0    # set explicit target version
     bump-version --minor --dry-run   # preview changes without writing
 """
@@ -169,9 +169,9 @@ def main(argv: list[str] | None = None) -> None:
         """),
     )
     bump_group = parser.add_mutually_exclusive_group(required=True)
-    bump_group.add_argument("--major", action="store_true", help="X.y.z → X+1.0.0")
-    bump_group.add_argument("--minor", action="store_true", help="x.Y.z → x.Y+1.0")
-    bump_group.add_argument("--patch", action="store_true", help="x.y.Z → x.y.Z+1")
+    bump_group.add_argument("--major", action="store_true", help="X.y.z ->X+1.0.0")
+    bump_group.add_argument("--minor", action="store_true", help="x.Y.z ->x.Y+1.0")
+    bump_group.add_argument("--patch", action="store_true", help="x.y.Z ->x.y.Z+1")
     bump_group.add_argument("--version", metavar="X.Y.Z", help="Set an explicit target version")
     parser.add_argument(
         "--dry-run",
@@ -200,7 +200,7 @@ def main(argv: list[str] | None = None) -> None:
         return
 
     mode = "DRY RUN" if args.dry_run else "BUMPING"
-    print(f"{mode}: {old_ver} → {new_ver}\n")
+    print(f"{mode}: {old_ver} ->{new_ver}\n")
 
     total_lines_changed = 0
     files_changed = 0
@@ -215,7 +215,7 @@ def main(argv: list[str] | None = None) -> None:
         print(f"  {rel_path}  ({n} line{'s' if n != 1 else ''}):")
         for lineno, old_line, new_line in changes:
             print(f"    L{lineno}  {old_line.strip()}")
-            print(f"        → {new_line.strip()}")
+            print(f"        ->{new_line.strip()}")
         print()
 
     if total_lines_changed == 0:
