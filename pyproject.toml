@@ -47,6 +47,10 @@ docs = [
   "pypandoc-binary>=1.14",
 ]
 
+dev = [
+  "pytest",
+]
+
 [project.scripts]
 bump-version = "domain_electrochemistry_tooling.bump_version:main"
 
