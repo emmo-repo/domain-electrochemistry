@@ -1,42 +1,93 @@
 name: validation
 
-on: [pull_request]
+on:
+  pull_request:
+  push:
+    branches: [dev, main, master]
+  schedule:
+    # Weekly drift check (dependencies, moving-target imports, w3id changes)
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
 
 env:
   CONFIG_PATH: config.yml
 
 jobs:
+  structure:
+    name: Structure & version consistency
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+
+      - name: Install dependencies (core + dev)
+        run: |
+          uv sync --locked --extra dev
+          echo "$PWD/.venv/bin" >> $GITHUB_PATH
+
+      - name: Parse all source TTL files
+        run: |
+          python - <<'PY'
+          import glob, sys, rdflib
+          bad = 0
+          for f in sorted(glob.glob("**/*.ttl", recursive=True)):
+              if ".venv" in f or "/build/" in f or f.endswith("-inferred.ttl"):
+                  continue
+              try:
+                  rdflib.Graph().parse(f, format="turtle")
+                  print(f"ok    {f}")
+              except Exception as e:
+                  print(f"FAIL  {f}: {e}")
+                  bad += 1
+          sys.exit(1 if bad else 0)
+          PY
+
+      - name: Check version consistency (bump-version --check)
+        run: bump-version --check
+
+      - name: Check catalog/imports consistency
+        run: python .github/scripts/check_catalog_imports.py .
+
+      - name: Run tooling tests
+        run: pytest tests/ -q
+
   emmocheck:
     name: EMMO Check
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: "3.11"
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
 
-    - name: Cache pip
-      uses: actions/cache@v4
-      with:
-        path: ~/.cache/pip
-        key: ${{ runner.os }}-pip-${{ hashFiles('pyproject.toml') }}
-        restore-keys: ${{ runner.os }}-pip-
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
 
-    - name: Install Dependencies (core)
-      run: |
-        python -m pip install --upgrade pip
-        pip install .  # pull deps from pyproject
+      - name: Install Dependencies (core)
+        run: |
+          uv sync --locked
+          echo "$PWD/.venv/bin" >> $GITHUB_PATH
 
-    - name: Load Ontology Configuration from YAML
-      run: |
-        python .github/scripts/ontology_toolkit.py >> $GITHUB_ENV
+      - name: Load Ontology Configuration from YAML
+        run: python .github/scripts/ontology_toolkit.py >> $GITHUB_ENV
 
-    - name: Run EMMO Check
-      run: python .github/scripts/ontology_toolkit.py --run-emmocheck
+      - name: Run EMMO Check
+        run: python .github/scripts/ontology_toolkit.py --run-emmocheck
 
-    - name: Run OWL Reasoner Check
-      run: python .github/scripts/ontology_toolkit.py --run-reasoner-check
+      - name: Run OWL Reasoner Check
+        run: python .github/scripts/ontology_toolkit.py --run-reasoner-check

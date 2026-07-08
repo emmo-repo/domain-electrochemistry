@@ -76,6 +76,39 @@ Minor updates that do **not** break existing data, such as:
 - If the change could break existing data, it requires at least a **minor** version bump.
 - If the change could break tools parsing the ontology (due to moved or renamed terms), it likely requires a **major** version bump.
 
+## Term Lifecycle & IRI Stability
+
+An IRI is a permanent contract with everyone who has used it. We therefore treat term and ontology IRIs as immutable.
+
+- **Never delete a published term.** If a term is obsolete, deprecate it:
+  ```turtle
+  :substance_1234... owl:deprecated true ;
+      rdfs:comment "Deprecated in 0.15.0: superseded by a more precise term."@en ;
+      dcterms:isReplacedBy :substance_5678... .   # when a replacement exists
+  ```
+  Deprecated terms remain in the ontology so existing data keeps resolving.
+- **Never rename or re-path an IRI in place.** Introduce a new IRI and deprecate the old one as above. Changing an ontology IRI, a module IRI, or a term IRI is a **breaking change** and additionally requires:
+  1. Explicit maintainer approval (open an issue with the old → new mapping and an impact analysis first).
+  2. A [w3id.org](https://github.com/perma-id/w3id.org) redirect update, coordinated with the EMMO maintainers — w3id rules are not under this repository's sole control.
+  3. A `CHANGELOG.md` entry and a major-version bump if downstream parsers could break.
+- **Automated agents may _propose_ IRI changes** (as a written proposal) but must never execute them without the approval above.
+
+## Release Runbook
+
+Releases are cut from `main`/`master` after changes have settled on `dev`.
+
+1. **Bump the version** on a release branch off `dev`:
+   ```bash
+   bump-version --patch      # or --minor / --major / --version X.Y.Z
+   bump-version --check      # verify every versioned URI + catalog agree
+   ```
+   This updates all `owl:versionIRI` / `owl:imports` / `owl:versionInfo` / catalog entries, advances `owl:priorVersion` + `owl:backwardCompatibleWith`, and refreshes `dcterms:issued` / `dcterms:modified`.
+2. **Update `CHANGELOG.md`**: move items from `[Unreleased]` into the new version section.
+3. **Open a PR to `dev`**, then merge `dev` → `main`/`master` once `validation` is green.
+4. **Tag and push**: `git tag vX.Y.Z && git push origin vX.Y.Z`.
+   The `release` workflow then creates the GitHub Release (attaching the ontology artifacts) and the Zenodo webhook mints a versioned DOI. Do **not** create the release manually — the tag drives it.
+5. Confirm the Zenodo record and the `gh-pages` published files updated.
+
 ## Commit Message Guidelines
 Use clear, descriptive commit messages. Recommended format:
 

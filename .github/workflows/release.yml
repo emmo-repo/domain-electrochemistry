@@ -1,0 +1,67 @@
+name: release
+
+# Fires when a release tag is pushed (see CONTRIBUTING "Release runbook").
+# Creates/updates the GitHub Release for the tag and attaches the ontology
+# artifacts. Creating the GitHub Release is what triggers the Zenodo archival
+# webhook, minting a versioned DOI.
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    name: Publish GitHub Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+
+      - name: Install dependencies (core + dev)
+        run: |
+          uv sync --locked --extra dev
+          echo "$PWD/.venv/bin" >> $GITHUB_PATH
+
+      # Guardrails: a tag must never ship an internally inconsistent release.
+      - name: Verify tag matches ontology version
+        run: |
+          TAG="${GITHUB_REF_NAME#v}"
+          bump-version --check
+          python - "$TAG" <<'PY'
+          import sys, re, yaml, pathlib
+          tag = sys.argv[1]
+          cfg = yaml.safe_load(open("config.yml"))
+          main = cfg["version_tooling"]["main_ttl"]
+          txt = pathlib.Path(main).read_text(encoding="utf-8")
+          ver = re.search(r'owl:versionInfo\s+"(\d+\.\d+\.\d+)"', txt).group(1)
+          if ver != tag:
+              sys.exit(f"Tag v{tag} does not match owl:versionInfo {ver} in {main}")
+          print(f"OK: tag v{tag} matches ontology version {ver}")
+          PY
+
+      - name: Check catalog/imports consistency
+        run: python .github/scripts/check_catalog_imports.py .
+
+      # Attaches the root-level ontology files: main ttl, -dependencies.ttl,
+      # -inferred.ttl, and the top-level catalog. Sub-directory modules remain
+      # available at the tag and via the catalog / w3id redirects.
+      - name: Create GitHub Release and attach artifacts
+        uses: softprops/action-gh-release@v2
+        with:
+          generate_release_notes: true
+          files: |
+            *.ttl
+            catalog-v001.xml
