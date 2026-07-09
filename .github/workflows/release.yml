@@ -1,15 +1,19 @@
 name: release
 
-# Fires when a release tag is pushed (see CONTRIBUTING "Release runbook").
+# Runs when a GitHub Release is published or edited, and via manual dispatch.
 # Regenerates the squashed + inferred ontology from source, verifies the tag
-# matches the ontology version, then creates the GitHub Release and attaches the
-# build artifacts. The inferred ontology is a build artifact (not tracked in git);
-# it is produced here so every release ships a freshly reasoned copy.
-# Creating the GitHub Release is what triggers the Zenodo archival webhook.
+# matches the ontology version, then attaches the build artifacts to the release.
+# The inferred ontology is a build artifact (not tracked in git); it is produced
+# here so every release ships a freshly reasoned copy. Publishing the release is
+# what triggers the Zenodo archival webhook.
+#
+# The trigger is release-based (not tag-push) so it fires regardless of tag
+# naming ("0.35.1" or "v0.35.1") and matches the "create a GitHub Release" runbook.
+# For manual dispatch, select the release's tag as the ref.
 on:
-  push:
-    tags:
-      - "v*"
+  release:
+    types: [published, edited]
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -96,10 +100,9 @@ jobs:
               "build/${ONTOLOGY_FILE_BASE}.ttl"
           bin/robot reason --reasoner HermiT --input "build/${ONTOLOGY_FILE_BASE}.ttl" --output "build/${ONTOLOGY_FILE_BASE}-inferred.ttl"
 
-      - name: Create GitHub Release and attach artifacts
+      - name: Attach build artifacts to the release
         uses: softprops/action-gh-release@v2
         with:
-          generate_release_notes: true
           files: |
             build/*.ttl
             catalog-v001.xml

@@ -105,9 +105,11 @@ Releases are cut from `main`/`master` after changes have settled on `dev`.
    This updates all `owl:versionIRI` / `owl:imports` / `owl:versionInfo` / catalog entries, advances `owl:priorVersion` + `owl:backwardCompatibleWith`, and refreshes `dcterms:issued` / `dcterms:modified`.
 2. **Update `CHANGELOG.md`**: move items from `[Unreleased]` into the new version section.
 3. **Open a PR to `dev`**, then merge `dev` → `main`/`master` once `validation` is green.
-4. **Tag and push**: `git tag vX.Y.Z && git push origin vX.Y.Z`.
-   The `release` workflow then creates the GitHub Release (attaching the ontology artifacts) and the Zenodo webhook mints a versioned DOI. Do **not** create the release manually — the tag drives it.
-5. Confirm the Zenodo record and the `gh-pages` published files updated.
+4. **Create the GitHub Release** for the new version — from the Releases UI (New release, tag `X.Y.Z` on the merged `main`/`master` commit, write or auto-generate notes) or `gh release create X.Y.Z --target main --generate-notes`. Use a bare `X.Y.Z` tag to match this repository's existing tags (a `vX.Y.Z` tag also works — the workflow is tag-name agnostic).
+   Publishing the release creates the tag, triggers the Zenodo webhook (versioned DOI), and runs the `release` workflow, which regenerates the squashed + inferred ontology from source and attaches them as release assets.
+5. Confirm the `release` workflow succeeded (release now has the `*-inferred.ttl` and squashed `.ttl` assets), the Zenodo record was created, and the `gh-pages` published files updated.
+
+> If a release was published while the `release` workflow was missing or misconfigured, you do **not** need to re-tag: edit the release and save (fires `release: edited`), or run the `release` workflow manually via **Actions → release → Run workflow** with the release's tag selected as the ref. Either rebuilds and attaches the assets to the existing release.
 
 ## Commit Message Guidelines
 Use clear, descriptive commit messages. Recommended format:
