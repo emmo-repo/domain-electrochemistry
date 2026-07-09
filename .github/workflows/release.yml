@@ -45,22 +45,33 @@ jobs:
           uv sync --locked --extra dev
           echo "$PWD/.venv/bin" >> $GITHUB_PATH
 
-      # Guardrail: a tag must never ship an internally inconsistent release.
-      - name: Verify tag matches ontology version
+      # Resolve the ontology version and verify internal consistency.
+      - name: Resolve ontology version
+        id: ver
         run: |
-          TAG="${GITHUB_REF_NAME#v}"
           bump-version --check
-          python - "$TAG" <<'PY'
-          import sys, re, yaml, pathlib
-          tag = sys.argv[1]
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import re, yaml, pathlib
           cfg = yaml.safe_load(open("config.yml"))
           main = cfg["version_tooling"]["main_ttl"]
-          txt = pathlib.Path(main).read_text(encoding="utf-8")
-          ver = re.search(r'owl:versionInfo\s+"(\d+\.\d+\.\d+)"', txt).group(1)
-          if ver != tag:
-              sys.exit(f"Tag v{tag} does not match owl:versionInfo {ver} in {main}")
-          print(f"OK: tag v{tag} matches ontology version {ver}")
+          ver = re.search(r'owl:versionInfo\s+"(\d+\.\d+\.\d+)"',
+                          pathlib.Path(main).read_text(encoding="utf-8")).group(1)
+          print(f"version={ver}")
           PY
+
+      # On release / tag events the ref must equal the ontology version (a tag
+      # must never ship an inconsistent release). Manual workflow_dispatch is
+      # allowed from any ref and attaches to the release whose tag matches the
+      # ontology's versionInfo (see tag_name on the attach step below).
+      - name: Verify ref matches ontology version
+        if: github.event_name != 'workflow_dispatch'
+        run: |
+          REF="${GITHUB_REF_NAME#v}"
+          if [ "$REF" != "${{ steps.ver.outputs.version }}" ]; then
+            echo "Ref '$GITHUB_REF_NAME' does not match ontology version ${{ steps.ver.outputs.version }} — refusing to publish."
+            exit 1
+          fi
+          echo "OK: ref $GITHUB_REF_NAME matches ontology version ${{ steps.ver.outputs.version }}"
 
       - name: Check catalog/imports consistency
         run: python .github/scripts/check_catalog_imports.py .
@@ -103,6 +114,7 @@ jobs:
       - name: Attach build artifacts to the release
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ steps.ver.outputs.version }}
           files: |
             build/*.ttl
             catalog-v001.xml
