@@ -1,9 +1,11 @@
 name: release
 
 # Fires when a release tag is pushed (see CONTRIBUTING "Release runbook").
-# Creates/updates the GitHub Release for the tag and attaches the ontology
-# artifacts. Creating the GitHub Release is what triggers the Zenodo archival
-# webhook, minting a versioned DOI.
+# Regenerates the squashed + inferred ontology from source, verifies the tag
+# matches the ontology version, then creates the GitHub Release and attaches the
+# build artifacts. The inferred ontology is a build artifact (not tracked in git);
+# it is produced here so every release ships a freshly reasoned copy.
+# Creating the GitHub Release is what triggers the Zenodo archival webhook.
 on:
   push:
     tags:
@@ -12,9 +14,13 @@ on:
 permissions:
   contents: write
 
+env:
+  CONFIG_PATH: config.yml
+  ROBOT_VERSION: "1.9.6"
+
 jobs:
   publish:
-    name: Publish GitHub Release
+    name: Build artifacts and publish GitHub Release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -35,7 +41,7 @@ jobs:
           uv sync --locked --extra dev
           echo "$PWD/.venv/bin" >> $GITHUB_PATH
 
-      # Guardrails: a tag must never ship an internally inconsistent release.
+      # Guardrail: a tag must never ship an internally inconsistent release.
       - name: Verify tag matches ontology version
         run: |
           TAG="${GITHUB_REF_NAME#v}"
@@ -55,13 +61,45 @@ jobs:
       - name: Check catalog/imports consistency
         run: python .github/scripts/check_catalog_imports.py .
 
-      # Attaches the root-level ontology files: main ttl, -dependencies.ttl,
-      # -inferred.ttl, and the top-level catalog. Sub-directory modules remain
-      # available at the tag and via the catalog / w3id redirects.
+      - name: Load ontology configuration
+        run: python .github/scripts/ontology_toolkit.py >> $GITHUB_ENV
+
+      - name: Cache ROBOT
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/robot
+          key: robot-${{ env.ROBOT_VERSION }}
+
+      - name: Install ROBOT
+        run: |
+          mkdir -p ~/.cache/robot bin
+          if [ ! -f "$HOME/.cache/robot/robot-${ROBOT_VERSION}.jar" ]; then
+            wget -nv "https://github.com/ontodev/robot/releases/download/v${ROBOT_VERSION}/robot.jar" -O $HOME/.cache/robot/robot-${ROBOT_VERSION}.jar
+          fi
+          ln -sf $HOME/.cache/robot/robot-${ROBOT_VERSION}.jar bin/robot.jar
+          curl -s https://raw.githubusercontent.com/ontodev/robot/master/bin/robot > bin/robot
+          chmod +x bin/robot
+
+      - name: Build squashed and inferred ontologies
+        run: |
+          mkdir -p build
+          ontoconvert \
+              -saw \
+              --namespace="emmo:https://w3id.org/emmo#" \
+              "${ONTOLOGY_FILE_BASE}-dependencies.ttl" \
+              "build/${ONTOLOGY_FILE_BASE}-dependencies.ttl"
+          ontoconvert \
+              -sawe \
+              --base-iri="${ONTOLOGY_URI}#" \
+              --iri="${ONTOLOGY_URI}" \
+              "${ONTOLOGY_FILE_BASE}.ttl" \
+              "build/${ONTOLOGY_FILE_BASE}.ttl"
+          bin/robot reason --reasoner HermiT --input "build/${ONTOLOGY_FILE_BASE}.ttl" --output "build/${ONTOLOGY_FILE_BASE}-inferred.ttl"
+
       - name: Create GitHub Release and attach artifacts
         uses: softprops/action-gh-release@v2
         with:
           generate_release_notes: true
           files: |
-            *.ttl
+            build/*.ttl
             catalog-v001.xml

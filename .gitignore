@@ -122,3 +122,7 @@ desktop.ini
 .settings/
 .project
 cache/
+
+# Generated ontology artifacts (built by CI: docs -> gh-pages, release -> GitHub Release assets)
+*-inferred.ttl
+build/

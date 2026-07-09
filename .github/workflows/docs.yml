@@ -216,22 +216,32 @@ jobs:
 
     - name: Fetch All Tags and Copy TTL Files
       if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         git fetch --tags
-    
+
         rm -rf docs/_build/html/versions
         mkdir -p docs/_build/html/versions
-    
+
         for TAG in $(git tag); do
             echo "Processing tag: $TAG"
-            
+
             mkdir -p "docs/_build/html/versions/$TAG"
-            
+
             git ls-tree -r --name-only "$TAG" | grep "\.ttl$" | while read FILE; do
                 TARGET="docs/_build/html/versions/$TAG/$(basename "$FILE")"
                 git show "$TAG:$FILE" > "$TARGET" 2>/dev/null || echo "Skipping missing $FILE in $TAG"
             done
-            
+
+            # The inferred ontology is a build artifact (not tracked in git). For tags
+            # released after it was untracked, pull it from that tag's GitHub Release.
+            if ! ls "docs/_build/html/versions/$TAG/"*-inferred.ttl >/dev/null 2>&1; then
+                gh release download "$TAG" --pattern "*-inferred.ttl" \
+                    --dir "docs/_build/html/versions/$TAG" 2>/dev/null \
+                    || echo "No inferred asset in release $TAG"
+            fi
+
             if git show "$TAG:context/context.json" > /tmp/context.json 2>/dev/null; then
                 mkdir -p "docs/_build/html/versions/$TAG/context"
                 cp /tmp/context.json "docs/_build/html/versions/$TAG/context/context.json"
