@@ -7,6 +7,7 @@ on:
   pull_request:
     branches:
       - '*'  # run on all PRs
+  workflow_dispatch:  # manual runs: redeploy docs and backfill the versions/ archive
 
 env:
   CONFIG_PATH: config.yml
@@ -181,14 +182,14 @@ jobs:
         git ls-files --others --exclude-standard
 
     - name: Stash Changes Before Pull
-      if: github.event_name == 'push'
+      if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
       run: |
         git stash --include-untracked
         git pull origin master --rebase
         git stash pop || echo "No stash to apply"
 
     - name: Push Changes
-      if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+      if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/master'
       run: git push origin HEAD:master
 
     - name: Load TTL Files into ENV
@@ -215,7 +216,7 @@ jobs:
         done
 
     - name: Fetch All Tags and Copy TTL Files
-      if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+      if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/master'
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
@@ -255,7 +256,7 @@ jobs:
         path: docs/_build/html/
 
     - name: Deploy
-      if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+      if: github.ref == 'refs/heads/master' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
