@@ -15,6 +15,8 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: Se
 
 ### Changed
 - Updated the CHAMEO import to 1.0.2 and the chemical-substance import to 0.15.0 (import + all catalogs). Both dependencies import EMMO 1.0.2, matching this ontology.
+- Disentangled coulombic and faradaic efficiency (#179). The IRI carrying the IEV 114-03-07 definition (fraction of charge driving the desired reaction) is now labelled `FaradaicEfficiency`; the IRI carrying the IEV 482-05-39 battery definition (discharge-to-charge ratio) is now labelled `CoulombicEfficiency` (altLabel ChargeEfficiency). `InitialCoulombicEfficiency` re-parented accordingly. IRI semantics unchanged — labels and one subClassOf only; consumers that pinned battery coulombic efficiency to the faradaic IRI should re-point.
+- Annotated `HalfCellDevice` and `ThreeElectrodeCellDevice`.
 
 ## [0.35.1] - 2026-07-08
 
