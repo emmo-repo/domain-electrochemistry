@@ -5,6 +5,10 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: Se
 
 ## [Unreleased]
 
+### Added
+- Cell component classes in electrochemistry-reference: `Seal`, `WoundStack` (altLabels JellyRoll, SwissRoll), `SafetyVent`, `CurrentInterruptDevice` (altLabel CID), `InsulatorRing`, `CeramicCoating`.
+- Quantity classes in electrochemistry-quantities: `MinimumOperatingTemperature`, `MaximumOperatingTemperature`, `TypicalCapacity`, `DryCoatingThickness`.
+
 ### Changed
 - Updated the CHAMEO import to 1.0.2 and the chemical-substance import to 0.15.0 (import + all catalogs). Both dependencies import EMMO 1.0.2, matching this ontology.
 

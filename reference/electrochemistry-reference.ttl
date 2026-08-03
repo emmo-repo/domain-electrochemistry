@@ -1145,6 +1145,15 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
  ] .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1f5ed349_d69b_4c38_bae3_1a7663bfc0ef
+:electrochemistry_1f5ed349_d69b_4c38_bae3_1a7663bfc0ef rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_f76884f7_964e_488e_9bb7_1b2453e9e817 ;
+                                                       skos:altLabel "CID"@en ;
+                                                       skos:prefLabel "CurrentInterruptDevice"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "safety component that permanently interrupts the electric current path between an electrode and its terminal when the internal pressure of the cell exceeds a predetermined limit"@en ;
+                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "commonly integrated in the cap assembly of cylindrical lithium-ion cells, where it protects against overpressure caused by e.g. overcharging; its activation is irreversible and permanently disables the cell"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1fc5642c_b7b2_43bf_ad20_f96001db8800
 :electrochemistry_1fc5642c_b7b2_43bf_ad20_f96001db8800 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_fa22874b_76a9_4043_8b8f_6086c88746de ;
@@ -1362,6 +1371,14 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                                      "P45/173/225" ;
                                                        skos:prefLabel "P45173225" ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a prismatic case with a nominal length of 45 mm, width of 173 mm, and height of 225 mm"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2ce60513_7218_446d_8af3_26ef7b7330c2
+:electrochemistry_2ce60513_7218_446d_8af3_26ef7b7330c2 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_f76884f7_964e_488e_9bb7_1b2453e9e817 ;
+                                                       skos:prefLabel "InsulatorRing"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "ring-shaped component of electrically insulating material that separates cell components of opposite polarity from each other"@en ;
+                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "in a cylindrical cell, insulator rings are typically placed between the wound stack and the case bottom or the cap assembly to prevent internal short circuits"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2d32a81a_2148_41bd_84fb_467aa8de4a8f
@@ -1723,6 +1740,18 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                        rdfs:subClassOf :electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37 ;
                                                        skos:prefLabel "R1130" ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a coin case with a nominal diameter of 11.5 mm and a height of 3.0 mm"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3a3ca61d_8b81_4a1a_abc1_9900fe1dba5b
+:electrochemistry_3a3ca61d_8b81_4a1a_abc1_9900fe1dba5b rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_52bbaaee_1145_4be3_8a5c_b366851ea1b9 ;
+                                                       skos:altLabel "JellyRoll"@en ,
+                                                                     "SwissRoll"@en ;
+                                                       skos:prefLabel "WoundStack"@en ;
+                                                       emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q16972391" ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "assembly in which long strips of electrode and separator layers are wound into a spiral"@en ;
+                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "used in cylindrical and some prismatic cell designs, in contrast to stacked designs in which the electrode and separator layers are cut into sheets and layered on top of each other"@en ;
+                                                       emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Jelly_roll_(battery)"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3a69a00e_235a_4948_b369_8ac20116c85e
@@ -2176,6 +2205,15 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                        skos:altLabel "P12/120/85" ;
                                                        skos:prefLabel "P1212085" ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a prismatic case with a nominal length of 12 mm, width of 120 mm, and height of 85 mm"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4d12272e_8097_402a_9756_b6b02c3aaa9a
+:electrochemistry_4d12272e_8097_402a_9756_b6b02c3aaa9a rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_f76884f7_964e_488e_9bb7_1b2453e9e817 ;
+                                                       skos:altLabel "PressureReliefVent"@en ;
+                                                       skos:prefLabel "SafetyVent"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "component that opens to release gas from the interior of a cell when the internal pressure exceeds a predetermined limit, in order to prevent bursting of the cell"@en ;
+                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "in cylindrical lithium-ion cells the safety vent is typically realised as a scored membrane or rupture disc in the cap assembly; venting is irreversible"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4d6f7f50_b343_4bd6_8612_2b8521a99c9b
@@ -4180,6 +4218,14 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                        emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "the combination with lithium metal and an organic electrolyte is designated using IEC electrochemical system letter code G"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a9a1f909_eaf1_47bd_bf4b_68c5ded32c5f
+:electrochemistry_a9a1f909_eaf1_47bd_bf4b_68c5ded32c5f rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_09a7f560_9ddf_4c32_b067_b213eca5b0a1 ;
+                                                       skos:prefLabel "CeramicCoating"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "coating consisting of ceramic particles, such as alumina or boehmite, applied to a substrate to improve its thermal and mechanical stability"@en ;
+                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "in lithium-ion cells, ceramic coatings are commonly applied to polyolefin separators to reduce thermal shrinkage, or to electrode surfaces to improve safety"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_aa5ed981_c11b_4c4f_b1fd_8c432e009484
 :electrochemistry_aa5ed981_c11b_4c4f_b1fd_8c432e009484 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_ac9723d1_bac0_4109_874e_32849de9299b ;
@@ -5172,6 +5218,16 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                        skos:prefLabel "IronDisulfideElectrode"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode in which the primary active material consists of iron disulfide or iron disulfide compounds."@en ;
                                                        emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "the combination with lithium metal and an organic electrolyte is designated using IEC electrochemical system letter code F"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d3a135f6_ac0c_4f94_b9dd_b1bcf1ba2800
+:electrochemistry_d3a135f6_ac0c_4f94_b9dd_b1bcf1ba2800 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_f76884f7_964e_488e_9bb7_1b2453e9e817 ;
+                                                       skos:prefLabel "Seal"@en ;
+                                                       emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q17004810" ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "component that closes the openings of a cell or battery container to prevent leakage of electrolyte and ingress of moisture or air"@en ;
+                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "sealing is achieved by e.g. gaskets compressed by crimping, welded joints, or adhesives, depending on the cell format"@en ;
+                                                       emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Seal_(mechanical)"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d48ea516_5cac_4f86_bc88_21b6276c0938
