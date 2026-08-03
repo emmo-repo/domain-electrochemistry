@@ -11,6 +11,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: Se
 - Cell component classes in electrochemistry-reference: `Seal`, `WoundStack` (altLabels JellyRoll, SwissRoll), `SafetyVent`, `CurrentInterruptDevice` (altLabel CID), `InsulatorRing`, `CeramicCoating`.
 - Quantity classes in electrochemistry-quantities: `MinimumOperatingTemperature`, `MaximumOperatingTemperature`, `TypicalCapacity`, `DryCoatingThickness`.
 - Scheduled (weekly + post-release) CI check that the public w3id.org IRIs resolve, ported from domain-chemical-substance.
+- The docs workflow now also redeploys automatically after each successful release (`workflow_run`), so the `versions/` archive picks up the new inferred release asset without a manual dispatch.
 
 ### Changed
 - Updated the CHAMEO import to 1.0.2 and the chemical-substance import to 0.15.0 (import + all catalogs). Both dependencies import EMMO 1.0.2, matching this ontology.

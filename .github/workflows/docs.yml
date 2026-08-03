@@ -1,6 +1,6 @@
 name: docs
 
-on: 
+on:
   push:
     branches:
       - 'master'
@@ -8,6 +8,10 @@ on:
     branches:
       - '*'  # run on all PRs
   workflow_dispatch:  # manual runs: redeploy docs and backfill the versions/ archive
+  workflow_run:  # redeploy after each release so versions/ picks up the new inferred asset
+    workflows: ["release"]
+    types:
+      - completed
 
 env:
   CONFIG_PATH: config.yml
@@ -20,6 +24,8 @@ jobs:
 
   build-ontologies:
     runs-on: ubuntu-latest
+    # For post-release runs, only redeploy if the release workflow succeeded.
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     steps:
     - name: Checkout
       uses: actions/checkout@v4
@@ -182,14 +188,14 @@ jobs:
         git ls-files --others --exclude-standard
 
     - name: Stash Changes Before Pull
-      if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+      if: github.event_name != 'pull_request'
       run: |
         git stash --include-untracked
         git pull origin master --rebase
         git stash pop || echo "No stash to apply"
 
     - name: Push Changes
-      if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/master'
+      if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
       run: git push origin HEAD:master
 
     - name: Load TTL Files into ENV
@@ -216,7 +222,7 @@ jobs:
         done
 
     - name: Fetch All Tags and Copy TTL Files
-      if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/master'
+      if: github.event_name != 'pull_request' && github.ref == 'refs/heads/master'
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
@@ -256,7 +262,7 @@ jobs:
         path: docs/_build/html/
 
     - name: Deploy
-      if: github.ref == 'refs/heads/master' && (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+      if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
