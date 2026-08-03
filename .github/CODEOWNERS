@@ -1,0 +1,8 @@
+# Code owners are auto-requested for review on PRs touching matching paths.
+# TODO(maintainers): replace the placeholder with real GitHub handles before enabling.
+# Example:
+#   *                      @your-github-handle
+#   *.ttl                  @ontology-maintainer
+#   .github/               @tooling-maintainer
+
+# * @REPLACE-WITH-GITHUB-HANDLE

@@ -12,7 +12,7 @@
 @base <https://w3id.org/emmo/domain/electrochemistry#> .
 
 <https://w3id.org/emmo/domain/electrochemistry/reference/electrochemistry-quantities> rdf:type owl:Ontology ;
-                                                                                       owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.35.0/reference/electrochemistry-quantities> ;
+                                                                                       owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.36.0/reference/electrochemistry-quantities> ;
                                                                                        owl:imports <https://w3id.org/emmo/1.0.2/disciplines/isq> ;
                                                                                        dcterms:abstract "This electrochemical quantities ontology is a domain of the Elementary Multiperspective Materials Ontology (EMMO). It is a specialized framework designed to represent and organize knowledge about electrochemical quantities. It is designed to integrate with the electrochemistry domain ontology or other ontologies from the EMMO ecosystem. The main focus of this ontology is to provide machine-readable descriptions of common electrochemical quantities, linking both to the larger descriptions of physical quantities in EMMO as well as other sources of information like the IEC, QUDT, Wikidata, etc. It should be used to support linked data generation in the electrochemistry domain."@en ;
                                                                                        dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
@@ -21,7 +21,7 @@
                                                                                        dcterms:creator <https://orcid.org/0000-0002-8758-6109> ,
                                                                                                        <https://orcid.org/0000-0003-2954-1233> ;
                                                                                        dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                                                                       owl:versionInfo "0.35.0" .
+                                                                                       owl:versionInfo "0.36.0" .
 
 #################################################################
 #    Annotation properties
@@ -419,6 +419,14 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the capacity obtained during constant current discharging of an electrochemical device"@en ;
                                                        emmo:EMMO_cc65321f_1964_4f16_aea3_2a8edf2f3394 emmo:AmpereHour ,
                                                                                                       emmo:MilliAmpereHour .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_08a73f4b_3242_4356_af24_68ba0bf66d51
+:electrochemistry_08a73f4b_3242_4356_af24_68ba0bf66d51 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_4747c51d_86ab_4684_a4fb_b05f5c405ea3 ;
+                                                       skos:prefLabel "MinimumOperatingTemperature"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the minimum temperature at which a device is specified to operate"@en ;
+                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "for batteries, the minimum operating temperature is often specified separately for charging and discharging"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_08b6d07a_0f6c_4932_afbd_fb6b699164ae
@@ -1205,6 +1213,14 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                                      "PulseMagnitudeCurrent"@en ;
                                                        skos:prefLabel "PulseCurrent"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the magnitude of a current pulse applied to an electrochemical cell during pulsed potentiometry and related techniques"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_34d6cdd9_d3a7_4302_a54d_9dbd8a3b5e68
+:electrochemistry_34d6cdd9_d3a7_4302_a54d_9dbd8a3b5e68 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_791c1915_a791_4450_acd8_7f94764743b5 ;
+                                                       skos:prefLabel "TypicalCapacity"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the capacity that a device typically delivers under manufacturer-specified reference conditions"@en ;
+                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "commonly reported on datasheets as the mean capacity of produced cells, in contrast to the rated or minimum guaranteed capacity"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_372c89d0_adab_4585_9662_33c912acef23
@@ -3519,6 +3535,14 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Specific_surface_area"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d10b3c03_8d4c_4aa2_882f_5d8f680a85ed
+:electrochemistry_d10b3c03_8d4c_4aa2_882f_5d8f680a85ed rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_3b938708_e7e4_4ac0_a959_9c04306302e7 ;
+                                                       skos:prefLabel "DryCoatingThickness"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the thickness of a coating after drying, when the solvent has been removed"@en ;
+                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "in electrode manufacturing, the dry coating thickness is usually measured after drying and before calendering"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d3c0078e_c1d3_461e_873d_e5c3adf441c5
 :electrochemistry_d3c0078e_c1d3_461e_873d_e5c3adf441c5 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26 ;
@@ -3823,6 +3847,14 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
    owl:annotatedTarget "duration, under specific conditions, at the end of which a battery [ or electrochemical device ] has retained the ability to perform a specified function"@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e999bd7d_93ad_47fb_8d8d_dd667e4ef553
+:electrochemistry_e999bd7d_93ad_47fb_8d8d_dd667e4ef553 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_cc519a19_b8d5_4e3f_b893_3a884888ad79 ;
+                                                       skos:prefLabel "MaximumOperatingTemperature"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the maximum temperature at which a device is specified to operate"@en ;
+                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "for batteries, the maximum operating temperature is often specified separately for charging and discharging"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e9fd9ef9_adfe_46cb_b2f9_4558468a25e7

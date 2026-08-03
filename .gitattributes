@@ -1,0 +1,15 @@
+# Normalize line endings: text files are LF in the repository and on checkout.
+* text=auto
+*.ttl text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.xml text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.rst text eol=lf
+*.cff text eol=lf
+*.svg text eol=lf
+*.png binary
+*.jpg binary
+*.drawio binary

@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this ontology, please cite it using this metadata."
+title: "Electrochemistry Domain Ontology"
+type: dataset
+authors:
+  - family-names: Clark
+    given-names: Simon
+    orcid: "https://orcid.org/0000-0002-8758-6109"
+  - family-names: Flores
+    given-names: Eibar
+    orcid: "https://orcid.org/0000-0003-2954-1233"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.7693664"
+    description: "Concept DOI for all versions (Zenodo)"
+repository-code: "https://github.com/emmo-repo/domain-electrochemistry"
+url: "https://w3id.org/emmo/domain/electrochemistry"
+license: CC-BY-4.0
+version: "0.35.1"
+date-released: "2026-07-08"
+keywords:
+  - ontology
+  - EMMO
+  - semantic web
+  - FAIR data
+  - electrochemistry

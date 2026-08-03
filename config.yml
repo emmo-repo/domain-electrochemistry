@@ -31,3 +31,20 @@ emmocheck_classes:
   - "electrochemistry.ReactionRateConstant"
   - "electrochemistry.PercentUnit"
   - "electrochemistry.CRateUnit"
+
+version_tooling:
+  main_ttl: "electrochemistry.ttl"
+  ttl_files:
+    - "electrochemistry.ttl"
+    - "electrochemistry-dependencies.ttl"
+    - "modules/electrochemistry-manufacturing.ttl"
+    - "modules/electrochemistry-testing.ttl"
+    - "reference/electrochemistry-reference.ttl"
+    - "reference/electrochemistry-quantities.ttl"
+  catalog_files:
+    - "catalog-v001.xml"
+    - "reference/catalog-v001.xml"
+    - "modules/catalog-v001.xml"
+    - "application/catalog-v001.xml"
+  uri_segments:
+    - "emmo/domain/electrochemistry/"

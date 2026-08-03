@@ -1,0 +1,44 @@
+name: iri-resolution
+
+# Verifies that the ontology's public w3id.org IRIs actually dereference:
+# the unversioned ontology IRI, the versionIRI the live document declares,
+# and its versioned imports must all return parseable Turtle.
+#
+# Runs on a weekly schedule and after each release (w3id/redirect health is
+# an external liveness property, so it is deliberately NOT a PR gate: an
+# outage should not block unrelated changes). Failures surface here, loudly.
+#
+# The check follows the LIVE ontology's own versionIRI, so a merged but
+# not-yet-released version bump does not fail the check.
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["release"]
+    types:
+      - completed
+
+jobs:
+  check:
+    name: Check public IRI resolution
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install rdflib pyyaml
+
+      - name: Wait for redirect propagation (post-release runs only)
+        if: github.event_name == 'workflow_run'
+        run: sleep 120
+
+      - name: Check IRI resolution
+        run: python .github/scripts/check_iri_resolution.py

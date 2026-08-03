@@ -151,6 +151,10 @@ The import structure is summarized in the following table:
 
 *IRI directs to human readable documentation if called from the web browser and to the source .ttl file if called from an application.
 
+## Incubating modules
+
+The files `modules/manufacturing-equipment.ttl` and `modules/manufacturing-processes.ttl` declare the namespace `https://w3id.org/emmo/domain/manufacturing` (0.1.0-beta). They are **incubating** content intended for a future `domain-manufacturing` repository: they are not imported by the released electrochemistry ontology, are not part of its inferred closure, and their IRIs must be considered unstable until they move to their own repository.
+
 # Acknowledgements
 
 <img src="docs/assets/img/Flag_of_Europe.png" alt="EU-Flag" width="100">

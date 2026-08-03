@@ -1,0 +1,120 @@
+name: release
+
+# Runs when a GitHub Release is published or edited, and via manual dispatch.
+# Regenerates the squashed + inferred ontology from source, verifies the tag
+# matches the ontology version, then attaches the build artifacts to the release.
+# The inferred ontology is a build artifact (not tracked in git); it is produced
+# here so every release ships a freshly reasoned copy. Publishing the release is
+# what triggers the Zenodo archival webhook.
+#
+# The trigger is release-based (not tag-push) so it fires regardless of tag
+# naming ("0.35.1" or "v0.35.1") and matches the "create a GitHub Release" runbook.
+# For manual dispatch, select the release's tag as the ref.
+on:
+  release:
+    types: [published, edited]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  CONFIG_PATH: config.yml
+  ROBOT_VERSION: "1.9.6"
+
+jobs:
+  publish:
+    name: Build artifacts and publish GitHub Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+
+      - name: Install dependencies (core + dev)
+        run: |
+          uv sync --locked --extra dev
+          echo "$PWD/.venv/bin" >> $GITHUB_PATH
+
+      # Resolve the ontology version and verify internal consistency.
+      - name: Resolve ontology version
+        id: ver
+        run: |
+          bump-version --check
+          python - <<'PY' >> "$GITHUB_OUTPUT"
+          import re, yaml, pathlib
+          cfg = yaml.safe_load(open("config.yml"))
+          main = cfg["version_tooling"]["main_ttl"]
+          ver = re.search(r'owl:versionInfo\s+"(\d+\.\d+\.\d+)"',
+                          pathlib.Path(main).read_text(encoding="utf-8")).group(1)
+          print(f"version={ver}")
+          PY
+
+      # On release / tag events the ref must equal the ontology version (a tag
+      # must never ship an inconsistent release). Manual workflow_dispatch is
+      # allowed from any ref and attaches to the release whose tag matches the
+      # ontology's versionInfo (see tag_name on the attach step below).
+      - name: Verify ref matches ontology version
+        if: github.event_name != 'workflow_dispatch'
+        run: |
+          REF="${GITHUB_REF_NAME#v}"
+          if [ "$REF" != "${{ steps.ver.outputs.version }}" ]; then
+            echo "Ref '$GITHUB_REF_NAME' does not match ontology version ${{ steps.ver.outputs.version }} — refusing to publish."
+            exit 1
+          fi
+          echo "OK: ref $GITHUB_REF_NAME matches ontology version ${{ steps.ver.outputs.version }}"
+
+      - name: Check catalog/imports consistency
+        run: python .github/scripts/check_catalog_imports.py .
+
+      - name: Load ontology configuration
+        run: python .github/scripts/ontology_toolkit.py >> $GITHUB_ENV
+
+      - name: Cache ROBOT
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/robot
+          key: robot-${{ env.ROBOT_VERSION }}
+
+      - name: Install ROBOT
+        run: |
+          mkdir -p ~/.cache/robot bin
+          if [ ! -f "$HOME/.cache/robot/robot-${ROBOT_VERSION}.jar" ]; then
+            wget -nv "https://github.com/ontodev/robot/releases/download/v${ROBOT_VERSION}/robot.jar" -O $HOME/.cache/robot/robot-${ROBOT_VERSION}.jar
+          fi
+          ln -sf $HOME/.cache/robot/robot-${ROBOT_VERSION}.jar bin/robot.jar
+          curl -s https://raw.githubusercontent.com/ontodev/robot/master/bin/robot > bin/robot
+          chmod +x bin/robot
+
+      - name: Build squashed and inferred ontologies
+        run: |
+          mkdir -p build
+          ontoconvert \
+              -saw \
+              --namespace="emmo:https://w3id.org/emmo#" \
+              "${ONTOLOGY_FILE_BASE}-dependencies.ttl" \
+              "build/${ONTOLOGY_FILE_BASE}-dependencies.ttl"
+          ontoconvert \
+              -sawe \
+              --base-iri="${ONTOLOGY_URI}#" \
+              --iri="${ONTOLOGY_URI}" \
+              "${ONTOLOGY_FILE_BASE}.ttl" \
+              "build/${ONTOLOGY_FILE_BASE}.ttl"
+          bin/robot reason --reasoner HermiT --input "build/${ONTOLOGY_FILE_BASE}.ttl" --output "build/${ONTOLOGY_FILE_BASE}-inferred.ttl"
+
+      - name: Attach build artifacts to the release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.ver.outputs.version }}
+          files: |
+            build/*.ttl
+            catalog-v001.xml
