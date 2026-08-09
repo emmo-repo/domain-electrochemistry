@@ -12,7 +12,7 @@
 @base <https://w3id.org/emmo/domain/electrochemistry#> .
 
 <https://w3id.org/emmo/domain/electrochemistry/reference/electrochemistry-quantities> rdf:type owl:Ontology ;
-                                                                                       owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.36.0/reference/electrochemistry-quantities> ;
+                                                                                       owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.37.0/reference/electrochemistry-quantities> ;
                                                                                        owl:imports <https://w3id.org/emmo/1.0.2/disciplines/isq> ;
                                                                                        dcterms:abstract "This electrochemical quantities ontology is a domain of the Elementary Multiperspective Materials Ontology (EMMO). It is a specialized framework designed to represent and organize knowledge about electrochemical quantities. It is designed to integrate with the electrochemistry domain ontology or other ontologies from the EMMO ecosystem. The main focus of this ontology is to provide machine-readable descriptions of common electrochemical quantities, linking both to the larger descriptions of physical quantities in EMMO as well as other sources of information like the IEC, QUDT, Wikidata, etc. It should be used to support linked data generation in the electrochemistry domain."@en ;
                                                                                        dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
@@ -21,7 +21,7 @@
                                                                                        dcterms:creator <https://orcid.org/0000-0002-8758-6109> ,
                                                                                                        <https://orcid.org/0000-0003-2954-1233> ;
                                                                                        dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                                                                       owl:versionInfo "0.36.0" .
+                                                                                       owl:versionInfo "0.37.0" .
 
 #################################################################
 #    Annotation properties
@@ -295,11 +295,32 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        :electrochemistry_a07dd85b_d0df_4d5d_8b0c_14d20ea3fe45 "discharge_capacity"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_029a501f_01f9_4bef_8d43_d1b7a6b59073
+:electrochemistry_029a501f_01f9_4bef_8d43_d1b7a6b59073 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
+                                                       rdfs:seeAlso :electrochemistry_49efb72a_f8e6_4f50_acac_975302200d47 ;
+                                                       skos:altLabel "CapacityRecovery"@en ,
+                                                                     "RecoveredCapacity"@en ;
+                                                       skos:note "defined in IEC 61960-3, 3.1 as charge (capacity) recovery; together with charge retention it separates reversible self-discharge from permanent capacity loss"@en ;
+                                                       skos:prefLabel "ChargeRecovery"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the ratio of the capacity that a cell can deliver after storage followed by a recharge to a stated reference capacity, commonly expressed as a percentage"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_02d2d1d1_241c_429b_b4e7_31f2c3dc4835
 :electrochemistry_02d2d1d1_241c_429b_b4e7_31f2c3dc4835 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_128ec7dc_04e3_48ff_86ac_f0f9896ad9cc ;
                                                        skos:prefLabel "D95ParticleSize"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 95% of the sample's particles fall."@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_02dc55b3_18a1_438e_bee0_ab77670cb2d5
+:electrochemistry_02dc55b3_18a1_438e_bee0_ab77670cb2d5 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
+                                                       rdfs:seeAlso :electrochemistry_49efb72a_f8e6_4f50_acac_975302200d47 ,
+                                                                    :electrochemistry_743c71a3_b80c_42e3_92fa_13a67b8167df ,
+                                                                    :electrochemistry_ae782b14_88ce_4cdd_9418_12aca00be937 ;
+                                                       skos:prefLabel "EndOfLifeCapacityThreshold"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the value of capacity retention below which a cell is considered to have reached its end of life, commonly set between 70 and 80 percent of the reference capacity and used as the criterion in cycle life and calendar life specifications"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634
@@ -1505,7 +1526,9 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_49efb72a_f8e6_4f50_acac_975302200d47
 :electrochemistry_49efb72a_f8e6_4f50_acac_975302200d47 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_900e357f_2ee3_425a_a0b6_322661117787 ;
-                                                       rdfs:seeAlso "SelfDischarge"@en ;
+                                                       rdfs:seeAlso :electrochemistry_029a501f_01f9_4bef_8d43_d1b7a6b59073 ,
+                                                                    :electrochemistry_a7a4614f_2426_46f3_8475_cda4a9fabfce ,
+                                                                    "SelfDischarge"@en ;
                                                        skos:altLabel "CapacityRetention"@en ;
                                                        skos:prefLabel "ChargeRetention"@en ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-35" ;
@@ -1592,6 +1615,14 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Diffusivity activation energy [J.mol-1]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','active_materials',0,'diffusion_constant','arrhenius','activation_energy']"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4e6c4e9d_64cb_4c24_a0f3_5b4146ebbeb0
+:electrochemistry_4e6c4e9d_64cb_4c24_a0f3_5b4146ebbeb0 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_5973f91a_fa6b_49c9_ba46_3ecc1c2253d2 ;
+                                                       skos:altLabel "PowerCapability"@en ;
+                                                       skos:prefLabel "MaximumPower"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the highest power that a cell is rated to deliver under stated conditions for a stated duration"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d
@@ -1834,6 +1865,16 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        :electrochemistry_8377c1f7_2b09_4632_9a4d_bb318438adbb "cell_power_w"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5b59a86e_99b4_493e_ae12_33ae8b5ec7c0
+:electrochemistry_5b59a86e_99b4_493e_ae12_33ae8b5ec7c0 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634 ;
+                                                       rdfs:seeAlso :electrochemistry_e3d3d21c_cb9a_498c_bdb0_63c964f0d3c6 ;
+                                                       skos:altLabel "CapacityFadePerCycle"@en ;
+                                                       skos:note "neither IEC nor IUPAC define a fade-rate quantity; this class codifies common practice in the battery literature, where capacity fade is reported per cycle or per unit of time"@en ;
+                                                       skos:prefLabel "CapacityFadeRate"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the rate at which the deliverable capacity of a cell decreases as a consequence of capacity fade, expressed per cycle or per unit of time"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5c34b3b5_c9c4_477d_809a_3f682f995aa9
 :electrochemistry_5c34b3b5_c9c4_477d_809a_3f682f995aa9 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_ba882f34_0d71_4e4f_9d92_0c076c633a2c ;
@@ -2029,6 +2070,17 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        skos:prefLabel "CurrentChangeRate"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the first order time rate of change of electric current"@en ;
                                                        :electrochemistry_ea9f4dba_8ca2_419e_9cdf_ce54e9ebbd46 "dIdt (V/h)"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_652b94f1_290d_4d9e_820a_eda4c71eb90d
+:electrochemistry_652b94f1_290d_4d9e_820a_eda4c71eb90d rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_0141b5c2_9f15_46f4_82e6_92a104faa476 ;
+                                                       rdfs:seeAlso :electrochemistry_49efb72a_f8e6_4f50_acac_975302200d47 ,
+                                                                    :electrochemistry_e3d3d21c_cb9a_498c_bdb0_63c964f0d3c6 ;
+                                                       skos:altLabel "LostCapacity"@en ;
+                                                       skos:prefLabel "CapacityLoss"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the difference between a stated reference capacity, typically the rated capacity or the capacity measured at the beginning of life, and the capacity that a cell can deliver under stated conditions"@en ;
+                                                       emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Capacity_loss"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_666f0b69_9c74_49a3_80b3_96a188332462
@@ -2627,6 +2679,14 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the perpendicular distance between the nearest pair of parallel edges belonging to the tab base and the current collector"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_917660a7_2d98_4564_9ce7_6b5d1087de2c
+:electrochemistry_917660a7_2d98_4564_9ce7_6b5d1087de2c rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
+                                                       skos:note "commonly written as the P/E ratio in cell and pack engineering; no formal definition exists in IEC or IUPAC vocabularies"@en ;
+                                                       skos:prefLabel "PowerToEnergyRatio"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the ratio of the power that a cell can deliver to its energy content under stated conditions, characterising the balance between power capability and energy capacity of a cell design"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_92fc0dba_6f11_4019_a8cb_db2a5b1634f5
 :electrochemistry_92fc0dba_6f11_4019_a8cb_db2a5b1634f5 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_128ec7dc_04e3_48ff_86ac_f0f9896ad9cc ;
@@ -2895,6 +2955,13 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        rdfs:subClassOf emmo:EMMO_c1c8ac3c_8a1c_4777_8e0b_14c1f9f9b0c6 ;
                                                        skos:prefLabel "PoreSize"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "characteristic size of a pore, usually expressed as the representative diameter of an equivalent spherical pore"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a3d54f83_4dc2_4833_acc2_c8652702d9b7
+:electrochemistry_a3d54f83_4dc2_4833_acc2_c8652702d9b7 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_0adabf6f_7404_44cb_9f65_32d83d8101a3 ;
+                                                       skos:prefLabel "ChargingTime"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the duration required to charge a cell from a stated initial state to a stated end-of-charge condition under a stated charging regime"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a4858e4d_dd3b_48ce_97ba_3eeb8571b633
@@ -3340,6 +3407,14 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                                        :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                                        skos:prefLabel "PRate"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an indicator of the electric power at which an electrochemical device is operated"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c413d29a_b814_4d88_8db0_0fd0171cff11
+:electrochemistry_c413d29a_b814_4d88_8db0_0fd0171cff11 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_79198264_cdf5_4fc3_8bcf_e5140a52547a ;
+                                                       rdfs:seeAlso :electrochemistry_a5962e05_466d_46a4_8951_bea59d7326e5 ;
+                                                       skos:prefLabel "RoundTripEnergyEfficiency"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the ratio of the energy delivered by a cell during discharging to the energy supplied during the preceding charging over one complete cycle under stated conditions"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c4d551db_db17_4c33_92e6_aec71638afbc
