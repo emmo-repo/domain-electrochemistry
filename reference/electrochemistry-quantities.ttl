@@ -250,15 +250,19 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 ###  https://w3id.org/emmo/domain/electrochemistry#AmperePerAmpereHour
 :AmperePerAmpereHour rdf:type owl:Class ;
                      rdfs:subClassOf :electrochemistry_67930f7b_ad4c_4b21_9b2e_a000e5c153ae ;
+                     skos:altLabel "C"@en ;
                      skos:prefLabel "AmperePerAmpereHour"@en ;
                      emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the unit for C-Rate in electrochemistry and related domains"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#C
 :C rdf:type owl:Class ;
-   rdfs:subClassOf :electrochemistry_67930f7b_ad4c_4b21_9b2e_a000e5c153ae ;
+   rdfs:subClassOf :AmperePerAmpereHour ;
+   dcterms:isReplacedBy :AmperePerAmpereHour ;
+   owl:deprecated "true"^^xsd:boolean ;
    skos:prefLabel "C"@en ;
-   emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the unit for C-Rate in electrochemistry and related domains"@en .
+   emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the unit for C-Rate in electrochemistry and related domains"@en ;
+   skos:note "deprecated because it duplicated AmperePerAmpereHour and its single-letter label collided with the Latin letter C in EMMO; C is retained as an altLabel on AmperePerAmpereHour and CRateUnit"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#WattPerWattHour
@@ -2106,6 +2110,7 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                                          owl:onProperty emmo:EMMO_19d925d0_2cf1_40e5_a391_1a99d68409c9 ;
                                                                          owl:hasValue "T-1 L0 M0 I0 Θ0 N0 J0"
                                                                        ] ;
+                                                       skos:altLabel "C"@en ;
                                                        skos:prefLabel "CRateUnit"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the class of units for describing the C-Rate in electrochemistry and related domains"@en .
 
@@ -2475,10 +2480,13 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_838a927f_775e_4c6d_8e39_7865548608c2
 :electrochemistry_838a927f_775e_4c6d_8e39_7865548608c2 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
+                                                       rdfs:subClassOf :electrochemistry_59c041fc_eaa1_40fc_9b3e_1a6aca6119fd ;
+                                                       dcterms:isReplacedBy :electrochemistry_59c041fc_eaa1_40fc_9b3e_1a6aca6119fd ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
                                                        skos:hiddenLabel "Rec#"@en ;
                                                        skos:prefLabel "Record"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an entry in a dataset, typically consisting of one line."@en .
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an entry in a dataset, typically consisting of one line."@en ;
+                                                       skos:note "deprecated as a duplicate of the Record class in the testing module, which carries the canonical elucidation"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_83928dce_9746_4452_a9f9_da4366a20ca4

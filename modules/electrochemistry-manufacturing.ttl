@@ -166,8 +166,10 @@
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cfcf6ca6_70e9_4369_9314_7f20b3efbf21
 :electrochemistry_cfcf6ca6_70e9_4369_9314_7f20b3efbf21 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
-                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "ElectrodeCoating"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of applying a coating to a substrate to manufacture an electrode"@en .
+                                                       <http://www.w3.org/2004/02/skos/core#altLabel> "ElectrodeCoating"@en ;
+                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "ElectrodeCoatingProcess"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of applying a coating to a substrate to manufacture an electrode"@en ;
+                                                       <http://www.w3.org/2004/02/skos/core#note> "renamed from ElectrodeCoating to resolve the label collision with the electrode coating layer class in the reference module"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d5e99e1f_049c_4111_b97f_613eb652492a
