@@ -17,11 +17,11 @@
 @base <https://w3id.org/emmo/domain/electrochemistry#> .
 
 <https://w3id.org/emmo/domain/reference/electrochemistry-reference> rdf:type owl:Ontology ;
-                                                                     owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.37.1/reference/electrochemistry-reference> ;
+                                                                     owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.37.2/reference/electrochemistry-reference> ;
                                                                      owl:imports <https://w3id.org/emmo/1.0.2> ,
                                                                                  <https://w3id.org/emmo/domain/characterisation-methodology/1.0.2/chameo> ,
                                                                                  <https://w3id.org/emmo/domain/chemical-substance/0.15.0/chemical-substance> ,
-                                                                                 <https://w3id.org/emmo/domain/electrochemistry/0.37.1/reference/electrochemistry-quantities> ;
+                                                                                 <https://w3id.org/emmo/domain/electrochemistry/0.37.2/reference/electrochemistry-quantities> ;
                                                                      dcterms:abstract "This reference module contains the core terms for the electrochemistry domain."@en ;
                                                                      dcterms:bibliographicCitation "https://doi.org/10.5281/zenodo.7693664" ;
                                                                      dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
@@ -43,9 +43,9 @@
                                                                      bibo:status "unstable" ;
                                                                      vann:preferredNamespacePrefix "echem" ;
                                                                      vann:preferredNamespaceUri "https://w3id.org/emmo/domain/electrochemistry" ;
-                                                                     owl:backwardCompatibleWith <https://w3id.org/emmo/domain/electrochemistry/0.37.0/reference/electrochemistry-reference> ;
-                                                                     owl:priorVersion <https://w3id.org/emmo/domain/electrochemistry/0.37.0/reference/electrochemistry-reference> ;
-                                                                     owl:versionInfo "0.37.1" ;
+                                                                     owl:backwardCompatibleWith <https://w3id.org/emmo/domain/electrochemistry/0.37.1/reference/electrochemistry-reference> ;
+                                                                     owl:priorVersion <https://w3id.org/emmo/domain/electrochemistry/0.37.1/reference/electrochemistry-reference> ;
+                                                                     owl:versionInfo "0.37.2" ;
                                                                      foaf:logo "https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/gh-pages/assets/img/fig/png/domain-electrochemistry-logo.png" .
 
 #################################################################
@@ -1090,13 +1090,20 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_1d0f15cb_d6b5_4c27_89ca_fe78adc1ce5b
 :electrochemistry_1d0f15cb_d6b5_4c27_89ca_fe78adc1ce5b rdf:type owl:Class ;
+                                                       owl:equivalentClass [ owl:intersectionOf ( :electrochemistry_d54f6aac_7cd2_4d52_9bca_2f19bb1eaec4
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
+                                                                                                   owl:someValuesFrom <https://w3id.org/emmo/domain/chemical-substance#substance_aa8e9cc4_5f66_4307_b1c8_26fac7653a90>
+                                                                                                 ]
+                                                                                               ) ;
+                                                                             rdf:type owl:Class
+                                                                             ] ;
                                                        rdfs:subClassOf :electrochemistry_d54f6aac_7cd2_4d52_9bca_2f19bb1eaec4 ,
                                                                        :electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5 ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
                                                                          owl:someValuesFrom chems:substance_aa8e9cc4_5f66_4307_b1c8_26fac7653a90
                                                                        ] ;
-                                                       owl:deprecated "true"^^xsd:boolean ;
                                                        skos:altLabel "LFPElectrode"@en ;
                                                        skos:prefLabel "LithiumIronPhosphateElectrode"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrode in which the active material is lithium iron phosphate"@en .
@@ -2867,13 +2874,20 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_6d0fe07e_a629_479c_ab24_2846f209bb0b
 :electrochemistry_6d0fe07e_a629_479c_ab24_2846f209bb0b rdf:type owl:Class ;
+                                                       owl:equivalentClass [ owl:intersectionOf ( :electrochemistry_9c557caa_61e2_4fa9_a517_4bad01a68122
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
+                                                                                                   owl:someValuesFrom <https://w3id.org/emmo/domain/chemical-substance#substance_acdb232f_8041_4e11_8a11_5db2d2baae4d>
+                                                                                                 ]
+                                                                                               ) ;
+                                                                             rdf:type owl:Class
+                                                                             ] ;
                                                        rdfs:subClassOf :electrochemistry_9c557caa_61e2_4fa9_a517_4bad01a68122 ,
                                                                        :electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5 ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
                                                                          owl:someValuesFrom chems:substance_acdb232f_8041_4e11_8a11_5db2d2baae4d
                                                                        ] ;
-                                                       owl:deprecated "true"^^xsd:boolean ;
                                                        skos:altLabel "LTOElectrode"@en ;
                                                        skos:prefLabel "LithiumTitanateElectrode"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrode in which the active material is lithium titanate"@en .
@@ -3654,9 +3668,16 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9109b3f6_112b_456d_ae45_b82c271c656b
 :electrochemistry_9109b3f6_112b_456d_ae45_b82c271c656b rdf:type owl:Class ;
+                                                       owl:equivalentClass [ owl:intersectionOf ( :electrochemistry_468b3b63_b62a_4110_8c7e_40fffd5fdfd6
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
+                                                                                                   owl:someValuesFrom <https://w3id.org/emmo/domain/chemical-substance#substance_40c605fd_4e47_4e90_a055_185f749d834c>
+                                                                                                 ]
+                                                                                               ) ;
+                                                                             rdf:type owl:Class
+                                                                             ] ;
                                                        rdfs:subClassOf :electrochemistry_468b3b63_b62a_4110_8c7e_40fffd5fdfd6 ,
                                                                        :electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5 ;
-                                                       owl:deprecated "true"^^xsd:boolean ;
                                                        skos:altLabel "LMFPElectrode"@en ;
                                                        skos:prefLabel "LithiumManganeseIronPhosphateElectrode"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrode in which the active material is lithium manganese iron phosphate"@en .
@@ -4454,13 +4475,20 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b3eb8c65_5644_45e3_9e17_0be6277c7962
 :electrochemistry_b3eb8c65_5644_45e3_9e17_0be6277c7962 rdf:type owl:Class ;
+                                                       owl:equivalentClass [ owl:intersectionOf ( :electrochemistry_0d2aaaf4_1a8a_4a32_abd8_7d0fdf0ae9d2
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
+                                                                                                   owl:someValuesFrom <https://w3id.org/emmo/domain/chemical-substance#substance_3ac62305_acd6_4312_9e31_4f824bd2530d>
+                                                                                                 ]
+                                                                                               ) ;
+                                                                             rdf:type owl:Class
+                                                                             ] ;
                                                        rdfs:subClassOf :electrochemistry_0d2aaaf4_1a8a_4a32_abd8_7d0fdf0ae9d2 ,
                                                                        :electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5 ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
                                                                          owl:someValuesFrom chems:substance_3ac62305_acd6_4312_9e31_4f824bd2530d
                                                                        ] ;
-                                                       owl:deprecated "true"^^xsd:boolean ;
                                                        skos:altLabel "NMCElectrode"@en ;
                                                        skos:prefLabel "LithiumNickelManganeseCobaltOxideElectrode"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrode in which the active material is lithium nickel manganese cobalt"@en .
@@ -4843,13 +4871,20 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c231227b_f318_4e59_ad90_6e91072903ed
 :electrochemistry_c231227b_f318_4e59_ad90_6e91072903ed rdf:type owl:Class ;
+                                                       owl:equivalentClass [ owl:intersectionOf ( :electrochemistry_b1ac8d0c_a215_4e60_82b0_38272eff5131
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
+                                                                                                   owl:someValuesFrom <https://w3id.org/emmo/domain/chemical-substance#substance_e8fafdc8_6cd3_4dd0_9630_10ca8e3f1827>
+                                                                                                 ]
+                                                                                               ) ;
+                                                                             rdf:type owl:Class
+                                                                             ] ;
                                                        rdfs:subClassOf :electrochemistry_b1ac8d0c_a215_4e60_82b0_38272eff5131 ,
                                                                        :electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5 ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
                                                                          owl:someValuesFrom chems:substance_e8fafdc8_6cd3_4dd0_9630_10ca8e3f1827
                                                                        ] ;
-                                                       owl:deprecated "true"^^xsd:boolean ;
                                                        skos:altLabel "LMOElectrode"@en ;
                                                        skos:prefLabel "LithiumManganeseOxideElectrode"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrode in which the active material is lithium manganese oxide"@en .
@@ -5592,6 +5627,14 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e8c39ecc_29d1_4172_996e_d5b05dc88015
 :electrochemistry_e8c39ecc_29d1_4172_996e_d5b05dc88015 rdf:type owl:Class ;
+                                                       owl:equivalentClass [ owl:intersectionOf ( :electrochemistry_5186239a_2af7_4dbf_92ca_22e8e583c528
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
+                                                                                                   owl:someValuesFrom <https://w3id.org/emmo/domain/chemical-substance#substance_3f061928_e90f_4414_9308_d4c843ebb79a>
+                                                                                                 ]
+                                                                                               ) ;
+                                                                             rdf:type owl:Class
+                                                                             ] ;
                                                        rdfs:subClassOf :electrochemistry_5186239a_2af7_4dbf_92ca_22e8e583c528 ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
@@ -5601,7 +5644,6 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                                          owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
                                                                          owl:someValuesFrom chems:substance_d53259a7_0d9c_48b9_a6c1_4418169df303
                                                                        ] ;
-                                                       owl:deprecated "true"^^xsd:boolean ;
                                                        skos:prefLabel "SiliconGraphiteElectrode"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode with blended silicon and graphite active materials"@en .
 
@@ -6248,13 +6290,20 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fd7caf39_0a43_4fbf_958e_a62067aa9007
 :electrochemistry_fd7caf39_0a43_4fbf_958e_a62067aa9007 rdf:type owl:Class ;
+                                                       owl:equivalentClass [ owl:intersectionOf ( :electrochemistry_838c115b_6bc9_4ce8_9f8d_86a6bf67742a
+                                                                                                 [ rdf:type owl:Restriction ;
+                                                                                                   owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
+                                                                                                   owl:someValuesFrom <https://w3id.org/emmo/domain/chemical-substance#substance_4c62d334_a124_40b3_9fd1_fe713d01a6af>
+                                                                                                 ]
+                                                                                               ) ;
+                                                                             rdf:type owl:Class
+                                                                             ] ;
                                                        rdfs:subClassOf :electrochemistry_838c115b_6bc9_4ce8_9f8d_86a6bf67742a ,
                                                                        :electrochemistry_e4b6cb36_4dac_49e3_871d_40bcfca943a5 ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ;
                                                                          owl:someValuesFrom chems:substance_4c62d334_a124_40b3_9fd1_fe713d01a6af
                                                                        ] ;
-                                                       owl:deprecated "true"^^xsd:boolean ;
                                                        skos:altLabel "LCOElectrode"@en ;
                                                        skos:prefLabel "LithiumCobaltOxideElectrode"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrode in which the active material is lithium cobalt oxide"@en .
