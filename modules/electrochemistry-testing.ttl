@@ -399,13 +399,13 @@ chameo:ElectrochemicalTesting owl:equivalentClass :Electrochemical .
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_40ca9548_910a_48b6_9a26_f94095d349cd
 :electrochemistry_40ca9548_910a_48b6_9a26_f94095d349cd rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_904b12e0_4a10_47b0_b7db_592aba215cb6 ;
-                                                       skos:altLabel "ConstantCurrentSignal"@en ,
-                                                                     "DC"@en ;
-                                                       skos:prefLabel "DirectCurrent"@en ;
-                                                       emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q5163647" ;
+                                                       skos:altLabel "DC"@en ;
+                                                       skos:note "renamed from DirectCurrent to resolve the label collision with the direct current quantity kind; the former elucidation and references described constant current, but a direct current need not be constant in magnitude"@en ;
+                                                       skos:prefLabel "DirectCurrentSignal"@en ;
+                                                       emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q159241" ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=131-11-22" ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Signal consisting of a constant electric current."@en ;
-                                                       emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Constant_current" .
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a signal in which the electric current flows in a single direction; the magnitude may be constant or vary in time"@en ;
+                                                       emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Direct_current" .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_435b22d4_c441_45ea_8c79_0cbec11fd287

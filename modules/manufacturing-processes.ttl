@@ -27,17 +27,19 @@
 
 ###  https://w3id.org/emmo/domain/manufacturing#manufacturing_4be3647b_6ae8_4f4a_b812_c1426080ff70
 :manufacturing_4be3647b_6ae8_4f4a_b812_c1426080ff70 rdf:type owl:Class ;
-                                                    rdfs:subClassOf :manufacturing_4f2342ed_84f2_46ba_90c2_5732da7cc993 ;
+                                                    rdfs:subClassOf emmo:EMMO_06c415dc_ba26_407d_b596_283bd4d9a66f ;
                                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "UltrasonicWelding"@en ;
                                                     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the processes of joining two or more components using the method of ultrasonic welding"@en .
 
 
 ###  https://w3id.org/emmo/domain/manufacturing#manufacturing_4f2342ed_84f2_46ba_90c2_5732da7cc993
 :manufacturing_4f2342ed_84f2_46ba_90c2_5732da7cc993 rdf:type owl:Class ;
-                                                    rdfs:subClassOf emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
+                                                    rdfs:subClassOf emmo:EMMO_06c415dc_ba26_407d_b596_283bd4d9a66f ;
+                                                    <http://purl.org/dc/terms/isReplacedBy> emmo:EMMO_06c415dc_ba26_407d_b596_283bd4d9a66f ;
+                                                    owl:deprecated "true"^^xsd:boolean ;
                                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "Welding"@en ;
-                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of joining two components by welding"@en ;
-                                                    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "consider promoting to domain-manufacturing"@en .
+                                                    <http://www.w3.org/2004/02/skos/core#note> "deprecated in favour of the Welding class in EMMO core"@en ;
+                                                    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of joining two components by welding"@en .
 
 
 ###  https://w3id.org/emmo/domain/manufacturing#manufacturing_7843b91b_b6bd_4e0b_a70d_3bb614294edc
@@ -74,7 +76,7 @@
 
 ###  https://w3id.org/emmo/domain/manufacturing#manufacturing_b702be65_01ab_40c2_b766_9edf695b0240
 :manufacturing_b702be65_01ab_40c2_b766_9edf695b0240 rdf:type owl:Class ;
-                                                    rdfs:subClassOf :manufacturing_4f2342ed_84f2_46ba_90c2_5732da7cc993 ;
+                                                    rdfs:subClassOf emmo:EMMO_06c415dc_ba26_407d_b596_283bd4d9a66f ;
                                                     <http://www.w3.org/2004/02/skos/core#prefLabel> "LaserWelding"@en ;
                                                     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the process of joining two or more components using laser welding"@en .
 

@@ -2764,10 +2764,13 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_68c1c36e_1548_4247_bae2_fe7102a2c4ff
 :electrochemistry_68c1c36e_1548_4247_bae2_fe7102a2c4ff rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_3979cd56_6256_414d_966c_7f723bf71e37 ;
+                                                       rdfs:subClassOf :electrochemistry_6b275583_433f_46f7_aafd_ebc9409257cc ;
+                                                       dcterms:isReplacedBy :electrochemistry_6b275583_433f_46f7_aafd_ebc9409257cc ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
                                                        skos:altLabel "R66" ;
                                                        skos:prefLabel "R626" ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a coin case with a nominal diameter of 6.8 mm and a height of 2.6 mm"@en .
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a coin case with a nominal diameter of 6.8 mm and a height of 2.6 mm"@en ;
+                                                       skos:note "deprecated as a verbatim duplicate of the R626 class electrochemistry_6b275583"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_68eb5e35_5bd8_47b1_9b7f_f67224fa291e
@@ -4059,7 +4062,11 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a2b92d2e_4431_411e_8da5_a4c08bac2c0e
 :electrochemistry_a2b92d2e_4431_411e_8da5_a4c08bac2c0e rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_f0c24970_4c14_4207_bd78_5f2181a67085 ;
+                                                       rdfs:subClassOf :electrochemistry_f0c24970_4c14_4207_bd78_5f2181a67085 ,
+                                                                       emmo:EMMO_30e3edb5_0977_4b9b_9aed_5a4d16c1c07c ;
+                                                       dcterms:isReplacedBy emmo:EMMO_30e3edb5_0977_4b9b_9aed_5a4d16c1c07c ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       skos:note "deprecated in favour of the Electroplating class in EMMO core"@en ;
                                                        skos:altLabel "Galvanizing"@en ;
                                                        skos:prefLabel "Electroplating"@en ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-04-17"@en ;
@@ -5802,9 +5809,13 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ;
                                                                          owl:someValuesFrom :electrochemistry_b83c6435_6edf_470e_9725_538a853e08f7
-                                                                       ] ;
+                                                                       ] ,
+                                                                       emmo:EMMO_29a15bcd_e219_4afc_9f82_9d3fceb666cd ;
+                                                       dcterms:isReplacedBy emmo:EMMO_29a15bcd_e219_4afc_9f82_9d3fceb666cd ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
                                                        skos:prefLabel "Powder"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a material comprised of many particles"@en .
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a material comprised of many particles"@en ;
+                                                       skos:note "deprecated in favour of the Powder class in EMMO core; the domain-specific composition restrictions remain on this class for reference"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_efc4f7ab_850d_443c_a17f_184983021f96
