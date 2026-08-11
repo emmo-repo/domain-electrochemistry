@@ -42,6 +42,11 @@ extensions = ['sphinx.ext.intersphinx',
 
 autosectionlabel_prefix_document = True
 
+# Never execute notebooks at build time: outputs must be committed. This
+# removes the build's network dependency on w3id.org (the notebooks load the
+# ontology remotely) and keeps builds reproducible.
+nbsphinx_execute = 'never'
+
 global_substitutions = {
 }
 
