@@ -61,6 +61,47 @@ jobs:
       - name: Run tooling tests
         run: pytest tests/ -q
 
+  docs-warnings:
+    # Non-blocking guardrail: reports the Sphinx nitpicky warning count
+    # against the committed baseline. The job fails visibly if the count
+    # grows, but continue-on-error keeps it from blocking merges until the
+    # docs cleanup phases bring the baseline to zero.
+    name: Docs warning count (non-blocking)
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+
+      - name: Install dependencies (core + docs)
+        run: |
+          uv sync --locked --extra docs
+          echo "$PWD/.venv/bin" >> $GITHUB_PATH
+
+      - name: Build docs with nitpicky warnings
+        run: |
+          sphinx-build -n -q -b html docs docs/_build/lint -w warnings.log || true
+          count=$(wc -l < warnings.log)
+          baseline=$(tr -d '[:space:]' < docs/sphinx-warning-baseline.txt)
+          echo "### Sphinx warnings: ${count} (baseline: ${baseline})" >> "$GITHUB_STEP_SUMMARY"
+          if [ "$count" -gt "$baseline" ]; then
+            echo "Warning count increased from ${baseline} to ${count}:" >> "$GITHUB_STEP_SUMMARY"
+            tail -50 warnings.log | sed 's/^/    /' >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          elif [ "$count" -lt "$baseline" ]; then
+            echo "Warning count dropped to ${count} - update docs/sphinx-warning-baseline.txt to lock in the gain." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
   emmocheck:
     name: EMMO Check
     runs-on: ubuntu-latest
