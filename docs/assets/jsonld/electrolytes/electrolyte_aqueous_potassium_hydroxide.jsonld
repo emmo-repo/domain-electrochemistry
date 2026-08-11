@@ -11,7 +11,7 @@
                 "@type": "RealData",
                 "hasNumberValue": 0.3
             },
-            "hasMeasurementUnit": "emmo:UnitOne"
+            "hasMeasurementUnit": "UnitOne"
         }
     },
     "hasProperety": {
@@ -20,7 +20,7 @@
             "@type": "RealData",
             "hasNumberValue": 1.28799
         },
-        "hasMeasurementUnit": "emmo:GramPerCubicCentiMetre",
+        "hasMeasurementUnit": "GramPerCubicCentiMetre",
         "rdfs:comment": "density at 20 degrees Celsius",
         "dcterms:source": "https://doi.org/10.1021/ja01849a054"
     }

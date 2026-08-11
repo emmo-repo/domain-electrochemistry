@@ -5,5 +5,5 @@
         "@type": "RealData",
         "hasNumberValue": 3.2
     },
-    "hasMeasurementUnit": "emmo:Volt"
+    "hasMeasurementUnit": "Volt"
 }

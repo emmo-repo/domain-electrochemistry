@@ -89,7 +89,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:UnitOne"
+            "@id": "UnitOne"
           },
           {
             "@id": "unit:UNITLESS"
@@ -97,7 +97,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:UnitOne"
+            "@id": "UnitOne"
           },
           {
             "@id": "unit:UNITLESS"
@@ -116,7 +116,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:UnitOne"
+            "@id": "UnitOne"
           },
           {
             "@id": "unit:UNITLESS"
@@ -124,7 +124,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:UnitOne"
+            "@id": "UnitOne"
           },
           {
             "@id": "unit:UNITLESS"
@@ -142,7 +142,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:MilliAmpere"
+            "@id": "MilliAmpere"
           },
           {
             "@id": "unit:MilliA"
@@ -150,7 +150,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:MilliAmpere"
+            "@id": "MilliAmpere"
           },
           {
             "@id": "unit:MilliA"
@@ -168,7 +168,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:Volt"
+            "@id": "Volt"
           },
           {
             "@id": "unit:V"
@@ -176,7 +176,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:Volt"
+            "@id": "Volt"
           },
           {
             "@id": "unit:V"
@@ -194,7 +194,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:MilliAmpereHour"
+            "@id": "MilliAmpereHour"
           },
           {
             "@id": "unit:MilliA-HR"
@@ -202,7 +202,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:MilliAmpereHour"
+            "@id": "MilliAmpereHour"
           },
           {
             "@id": "unit:MilliA-HR"
@@ -220,7 +220,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:MilliAmpereHour"
+            "@id": "MilliAmpereHour"
           },
           {
             "@id": "unit:MilliA-HR"
@@ -228,7 +228,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:MilliAmpereHour"
+            "@id": "MilliAmpereHour"
           },
           {
             "@id": "unit:MilliA-HR"
@@ -246,7 +246,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:MilliWattHour"
+            "@id": "MilliWattHour"
           },
           {
             "@id": "unit:MilliW-HR"
@@ -254,7 +254,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:MilliWattHour"
+            "@id": "MilliWattHour"
           },
           {
             "@id": "unit:MilliW-HR"
@@ -272,7 +272,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:MilliWattHour"
+            "@id": "MilliWattHour"
           },
           {
             "@id": "unit:MilliW-HR"
@@ -280,7 +280,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:MilliWattHour"
+            "@id": "MilliWattHour"
           },
           {
             "@id": "unit:MilliW-HR"
@@ -298,7 +298,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:Ohm"
+            "@id": "Ohm"
           },
           {
             "@id": "unit:OHM"
@@ -306,7 +306,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:Ohm"
+            "@id": "Ohm"
           },
           {
             "@id": "unit:OHM"
@@ -324,7 +324,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:MilliAmpereHour"
+            "@id": "MilliAmpereHour"
           },
           {
             "@id": "unit:MilliA-HR"
@@ -332,7 +332,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:MilliAmpereHour"
+            "@id": "MilliAmpereHour"
           },
           {
             "@id": "unit:MilliA-HR"
@@ -350,7 +350,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:MilliAmpereHourPerGram"
+            "@id": "MilliAmpereHourPerGram"
           },
           {
             "@id": "unit:MilliA-HR-PER-GM"
@@ -358,7 +358,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:MilliAmpereHourPerGram"
+            "@id": "MilliAmpereHourPerGram"
           },
           {
             "@id": "unit:MilliA-HR-PER-GM"
@@ -376,7 +376,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:MilliWattHour"
+            "@id": "MilliWattHour"
           },
           {
             "@id": "unit:MilliW-HR"
@@ -384,7 +384,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:MilliWattHour"
+            "@id": "MilliWattHour"
           },
           {
             "@id": "unit:MilliW-HR"
@@ -402,7 +402,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:MilliWattHourPerGram"
+            "@id": "MilliWattHourPerGram"
           },
           {
             "@id": "unit:MilliW-HR-PER-GM"
@@ -410,7 +410,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:MilliWattHourPerGram"
+            "@id": "MilliWattHourPerGram"
           },
           {
             "@id": "unit:MilliW-HR-PER-GM"
@@ -429,7 +429,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:DegreeCelsius"
+            "@id": "DegreeCelsius"
           },
           {
             "@id": "unit:DEG_C"
@@ -437,7 +437,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:DegreeCelsius"
+            "@id": "DegreeCelsius"
           },
           {
             "@id": "unit:DEG_C"
@@ -456,7 +456,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:DegreeCelsius"
+            "@id": "DegreeCelsius"
           },
           {
             "@id": "unit:DEG_C"
@@ -464,7 +464,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:DegreeCelsius"
+            "@id": "DegreeCelsius"
           },
           {
             "@id": "unit:DEG_C"
@@ -483,7 +483,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:DegreeCelsius"
+            "@id": "DegreeCelsius"
           },
           {
             "@id": "unit:DEG_C"
@@ -491,7 +491,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:DegreeCelsius"
+            "@id": "DegreeCelsius"
           },
           {
             "@id": "unit:DEG_C"
@@ -510,7 +510,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:MilliWatt"
+            "@id": "MilliWatt"
           },
           {
             "@id": "unit:MilliW"
@@ -518,7 +518,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:MilliWatt"
+            "@id": "MilliWatt"
           },
           {
             "@id": "unit:MilliW"
@@ -534,7 +534,7 @@
         "dc:description": "differential capacity",
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:MilliAmpereHourPerVolt"
+            "@id": "MilliAmpereHourPerVolt"
           },
           {
             "@id": "unit:MilliA-HR-PER-V"
@@ -542,7 +542,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:MilliAmpereHourPerVolt"
+            "@id": "MilliAmpereHourPerVolt"
           },
           {
             "@id": "unit:MilliA-HR-PER-V"
@@ -558,7 +558,7 @@
         "dc:description": "differential specific capacity",
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:MilliAmpereHourPerVoltGram"
+            "@id": "MilliAmpereHourPerVoltGram"
           },
           {
             "@id": "unit:MilliA-HR-PER-V-GM"
@@ -566,7 +566,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:MilliAmpereHourPerVoltGram"
+            "@id": "MilliAmpereHourPerVoltGram"
           },
           {
             "@id": "unit:MilliA-HR-PER-V-GM"
@@ -585,7 +585,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:DegreeCelsius"
+            "@id": "DegreeCelsius"
           },
           {
             "@id": "unit:DEG_C"
@@ -593,7 +593,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:DegreeCelsius"
+            "@id": "DegreeCelsius"
           },
           {
             "@id": "unit:DEG_C"

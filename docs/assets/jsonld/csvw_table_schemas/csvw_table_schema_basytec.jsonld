@@ -12,7 +12,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:Hour"
+            "@id": "Hour"
           },
           {
             "@id": "unit:HR"
@@ -20,7 +20,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:Hour"
+            "@id": "Hour"
           },
           {
             "@id": "unit:HR"
@@ -39,7 +39,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:UnitOne"
+            "@id": "UnitOne"
           },
           {
             "@id": "unit:UNITLESS"
@@ -47,7 +47,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:UnitOne"
+            "@id": "UnitOne"
           },
           {
             "@id": "unit:UNITLESS"
@@ -65,7 +65,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:Volt"
+            "@id": "Volt"
           },
           {
             "@id": "unit:V"
@@ -73,7 +73,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:Volt"
+            "@id": "Volt"
           },
           {
             "@id": "unit:V"
@@ -91,7 +91,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:Ampere"
+            "@id": "Ampere"
           },
           {
             "@id": "unit:A"
@@ -99,7 +99,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:Ampere"
+            "@id": "Ampere"
           },
           {
             "@id": "unit:A"
@@ -117,7 +117,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:AmpereHour"
+            "@id": "AmpereHour"
           },
           {
             "@id": "unit:A-HR"
@@ -125,7 +125,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:AmpereHour"
+            "@id": "AmpereHour"
           },
           {
             "@id": "unit:A-HR"
@@ -143,7 +143,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:AmpereHour"
+            "@id": "AmpereHour"
           },
           {
             "@id": "unit:A-HR"
@@ -151,7 +151,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:AmpereHour"
+            "@id": "AmpereHour"
           },
           {
             "@id": "unit:A-HR"

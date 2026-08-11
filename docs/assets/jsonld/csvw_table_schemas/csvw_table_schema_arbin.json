@@ -64,7 +64,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:Second"
+            "@id": "Second"
           },
           {
             "@id": "unit:SEC"
@@ -72,7 +72,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:Second"
+            "@id": "Second"
           },
           {
             "@id": "unit:SEC"
@@ -102,7 +102,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:Second"
+            "@id": "Second"
           },
           {
             "@id": "unit:SEC"
@@ -110,7 +110,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:Second"
+            "@id": "Second"
           },
           {
             "@id": "unit:SEC"
@@ -129,7 +129,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:UnitOne"
+            "@id": "UnitOne"
           },
           {
             "@id": "unit:UNITLESS"
@@ -137,7 +137,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:UnitOne"
+            "@id": "UnitOne"
           },
           {
             "@id": "unit:UNITLESS"
@@ -156,7 +156,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:UnitOne"
+            "@id": "UnitOne"
           },
           {
             "@id": "unit:UNITLESS"
@@ -164,7 +164,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:UnitOne"
+            "@id": "UnitOne"
           },
           {
             "@id": "unit:UNITLESS"
@@ -182,7 +182,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:Ampere"
+            "@id": "Ampere"
           },
           {
             "@id": "unit:A"
@@ -190,7 +190,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:Ampere"
+            "@id": "Ampere"
           },
           {
             "@id": "unit:A"
@@ -208,7 +208,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:Volt"
+            "@id": "Volt"
           },
           {
             "@id": "unit:V"
@@ -216,7 +216,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:Volt"
+            "@id": "Volt"
           },
           {
             "@id": "unit:V"
@@ -234,7 +234,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:AmpereHour"
+            "@id": "AmpereHour"
           },
           {
             "@id": "unit:A-HR"
@@ -242,7 +242,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:AmpereHour"
+            "@id": "AmpereHour"
           },
           {
             "@id": "unit:A-HR"
@@ -260,7 +260,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:AmpereHour"
+            "@id": "AmpereHour"
           },
           {
             "@id": "unit:A-HR"
@@ -268,7 +268,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:AmpereHour"
+            "@id": "AmpereHour"
           },
           {
             "@id": "unit:A-HR"
@@ -286,7 +286,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:WattHour"
+            "@id": "WattHour"
           },
           {
             "@id": "unit:W-HR"
@@ -294,7 +294,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:WattHour"
+            "@id": "WattHour"
           },
           {
             "@id": "unit:W-HR"
@@ -312,7 +312,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:WattHour"
+            "@id": "WattHour"
           },
           {
             "@id": "unit:W-HR"
@@ -320,7 +320,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:WattHour"
+            "@id": "WattHour"
           },
           {
             "@id": "unit:W-HR"
@@ -338,7 +338,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:VoltPerSecond"
+            "@id": "VoltPerSecond"
           },
           {
             "@id": "unit:V-PER-SEC"
@@ -346,7 +346,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:VoltPerSecond"
+            "@id": "VoltPerSecond"
           },
           {
             "@id": "unit:V-PER-SEC"
@@ -364,7 +364,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:Ohm"
+            "@id": "Ohm"
           },
           {
             "@id": "unit:OHM"
@@ -372,7 +372,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:Ohm"
+            "@id": "Ohm"
           },
           {
             "@id": "unit:OHM"
@@ -390,7 +390,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:DegreeCelsius"
+            "@id": "DegreeCelsius"
           },
           {
             "@id": "unit:DEG_C"
@@ -398,7 +398,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:DegreeCelsius"
+            "@id": "DegreeCelsius"
           },
           {
             "@id": "unit:DEG_C"

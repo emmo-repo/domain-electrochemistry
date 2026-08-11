@@ -13,7 +13,7 @@
                         "@type": "RealData",
                         "hasNumberValue": 0.5
                     },
-                    "hasMeasurementUnit": "emmo:UnitOne"
+                    "hasMeasurementUnit": "UnitOne"
                 }
             },
             {
@@ -24,7 +24,7 @@
                         "@type": "RealData",
                         "hasNumberValue": 0.5
                     },
-                    "hasMeasurementUnit": "emmo:UnitOne"
+                    "hasMeasurementUnit": "UnitOne"
                 }
             }
         ]
@@ -37,7 +37,7 @@
                 "@type": "RealData",
                 "hasNumberValue": 1
             },
-            "hasMeasurementUnit": "emmo:MolePerLitre"
+            "hasMeasurementUnit": "MolePerLitre"
         }
     }
 }

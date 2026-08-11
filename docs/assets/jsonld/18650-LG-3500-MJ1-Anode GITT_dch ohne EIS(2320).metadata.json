@@ -105,7 +105,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:Second"
+            "@id": "Second"
           },
           {
             "@id": "unit:SEC"
@@ -113,7 +113,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:Second"
+            "@id": "Second"
           },
           {
             "@id": "unit:SEC"
@@ -131,7 +131,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:Ampere"
+            "@id": "Ampere"
           },
           {
             "@id": "unit:A"
@@ -139,7 +139,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:Ampere"
+            "@id": "Ampere"
           },
           {
             "@id": "unit:A"
@@ -157,7 +157,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:Volt"
+            "@id": "Volt"
           },
           {
             "@id": "unit:V"
@@ -165,7 +165,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:Volt"
+            "@id": "Volt"
           },
           {
             "@id": "unit:V"

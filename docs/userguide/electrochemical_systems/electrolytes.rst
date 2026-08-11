@@ -15,13 +15,6 @@ Common electrolyte classes include:
 - **PolymerElectrolyte** — polymer matrices that host ionic conduction  
 - **IonicLiquidElectrolyte** — molten salts or room-temperature ionic liquids  
 
-.. figure:: ../../assets/img/fig/png/electrolyte_types.png
-   :align: center
-   :alt: Electrolyte types
-   :width: 75%
-
-   Overview of major electrolyte types and their compositions.
-
 Guidelines for Use
 ------------------
 
@@ -92,12 +85,13 @@ Attach quantitative or descriptive properties to components using `hasProperty`.
        "molecularFormula": "KOH",
        "hasProperty": {
          "@type": "AmountConcentration",
-         "hasNumericalPart": { "@type": "RealData", "hasNumberValue": 1.0 },
-         "hasMeasurementUnit": "emmo:MolePerLitre"
+         "hasNumericalPart": { "@type": "RealData", "hasNumberValue": 1000 },
+         "hasMeasurementUnit": "MolePerCubicMetre"
        }
      }
    }
 
+The concentration is given in the SI-coherent unit ``MolePerCubicMetre`` (1000 mol/m³ = 1 mol/L) because the ontology does not yet define a mole-per-litre unit.
 
 4. Assign Properties to the Electrolyte
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -106,10 +100,10 @@ Beyond component-level data, the **electrolyte as a whole** has measurable bulk 
 
 Common examples include:
 
-- `IonicConductivity`  
-- `Viscosity`  
-- `Density`  
-- `DielectricConstant`  
+- `IonicConductivity`
+- `DynamicViscosity`
+- `Density`
+- `RelativePermittivity`
 
 **Example: aqueous KOH electrolyte with conductivity and viscosity**
 
@@ -121,13 +115,13 @@ Common examples include:
      "hasProperty": [
        {
          "@type": "IonicConductivity",
-         "hasNumericalPart": { "@type": "RealData", "hasNumberValue": 0.12 },
-         "hasMeasurementUnit": "emmo:SiemensPerCentimetre"
+         "hasNumericalPart": { "@type": "RealData", "hasNumberValue": 12 },
+         "hasMeasurementUnit": "SiemensPerMetre"
        },
        {
-         "@type": "Viscosity",
+         "@type": "DynamicViscosity",
          "hasNumericalPart": { "@type": "RealData", "hasNumberValue": 1.0 },
-         "hasMeasurementUnit": "emmo:MilliPascalSecond"
+         "hasMeasurementUnit": "MilliPascalSecond"
        }
      ],
      "hasSolvent": { "@type": "Water" },
@@ -136,8 +130,8 @@ Common examples include:
        "molecularFormula": "KOH",
        "hasProperty": {
          "@type": "AmountConcentration",
-         "hasNumericalPart": { "@type": "RealData", "hasNumberValue": 1.0 },
-         "hasMeasurementUnit": "emmo:MolePerLitre"
+         "hasNumericalPart": { "@type": "RealData", "hasNumberValue": 1000 },
+         "hasMeasurementUnit": "MolePerCubicMetre"
        }
      }
    }
@@ -151,19 +145,22 @@ Below are examples for common types beyond aqueous solutions.
 Solid Electrolyte
 """""""""""""""""
 
-Solid electrolytes are typically crystalline or glassy ionic conductors, often modeled as individual materials rather than mixtures.
+Solid electrolytes are typically crystalline or glassy ionic conductors, often modeled as individual materials rather than mixtures. When the ontology has no named class for a specific compound (here LiPON), type it as a `ChemicalCompound` and identify it with `molecularFormula`.
 
 .. code-block:: json
 
    {
      "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
      "@type": "SolidElectrolyte",
-     "hasConstituent": { "@type": "LithiumPhosphorusOxynitride" },
+     "hasConstituent": {
+       "@type": "ChemicalCompound",
+       "molecularFormula": "Li2.9PO3.3N0.46"
+     },
      "hasProperty": [
        {
          "@type": "IonicConductivity",
-         "hasNumericalPart": { "@type": "RealData", "hasNumberValue": 1.5e-4 },
-         "hasMeasurementUnit": "emmo:SiemensPerCentimetre"
+         "hasNumericalPart": { "@type": "RealData", "hasNumberValue": 0.015 },
+         "hasMeasurementUnit": "SiemensPerMetre"
        }
      ]
    }
@@ -171,20 +168,19 @@ Solid electrolytes are typically crystalline or glassy ionic conductors, often m
 Polymer Electrolyte
 """""""""""""""""""
 
-Polymer electrolytes consist of a polymer matrix and a dissolved salt, optionally with additives.
+Polymer electrolytes consist of a polymer matrix and a dissolved salt, optionally with additives. The matrix is a constituent; the salt keeps its solute role.
 
 .. code-block:: json
 
    {
      "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
      "@type": "PolymerElectrolyte",
-     "hasPolymerMatrix": { "@type": "PolyEthyleneOxide" },
+     "hasConstituent": { "@type": "PolyethyleneGlycol" },
      "hasSolute": { "@type": "LithiumTriflate" },
-     "hasAdditive": { "@type": "SilicaNanoparticle" },
      "hasProperty": {
        "@type": "IonicConductivity",
-       "hasNumericalPart": { "@type": "RealData", "hasNumberValue": 8e-5 },
-       "hasMeasurementUnit": "emmo:SiemensPerCentimetre"
+       "hasNumericalPart": { "@type": "RealData", "hasNumberValue": 0.008 },
+       "hasMeasurementUnit": "SiemensPerMetre"
      }
    }
 
@@ -198,39 +194,45 @@ Ionic liquids can be modeled as self-contained ionic systems where the solvent a
    {
      "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
      "@type": "IonicLiquidElectrolyte",
-     "hasConstituent": { "@type": "1-Ethyl-3-MethylimidazoliumTetrafluoroborate" },
+     "hasConstituent": {
+       "@type": "ChemicalCompound",
+       "molecularFormula": "C6H11BF4N2"
+     },
      "hasProperty": {
-       "@type": "Viscosity",
+       "@type": "DynamicViscosity",
        "hasNumericalPart": { "@type": "RealData", "hasNumberValue": 35 },
-       "hasMeasurementUnit": "emmo:MilliPascalSecond"
+       "hasMeasurementUnit": "MilliPascalSecond"
      }
    }
+
+The constituent here is 1-ethyl-3-methylimidazolium tetrafluoroborate, identified by molecular formula since the ontology has no named class for it.
 
 
 
 Reasoning and Relations
 -----------------------
 
-Because relations like `hasSolvent`, `hasSolute`, and `hasAdditive` are **subproperties of `hasConstituent`**,  
+Because relations like `hasSolvent`, `hasSolute`, and `hasAdditive` are **subproperties of `hasConstituent`**,
 reasoning engines can automatically infer composition relationships such as:
 
-::
+.. code-block:: text
+
    If Electrolyte hasSolvent Water,
    then Electrolyte hasConstituent Water.
 
 This allows generic queries for `hasConstituent` to retrieve all relevant parts, regardless of their specific role.
 
-Likewise, defining `IonicConductivity` or `Viscosity` as subclasses of `Property` enables unit and dimensional validation — ensuring, for example, that only compatible units are used.
+Likewise, defining `IonicConductivity` or `DynamicViscosity` as subclasses of `Property` enables unit and dimensional validation — ensuring, for example, that only compatible units are used.
 
 Best Practices
 --------------
 
-- Always include at least one **solvent** and one **solute** for liquid electrolytes.  
-- Use **quantitative properties** for concentrations, conductivities, or viscosities.  
-- Avoid duplicating roles: a compound should appear once as `hasSolute`, `hasSolvent`, or `hasAdditive`.  
-- Use **non-SI units** (e.g., `MolePerLitre`, `MilliPascalSecond`) where standard in the field but still formally defined in EMMO.  
-- For polymer or solid electrolytes, prefer `hasConstituent` or domain-specific relations (`hasPolymerMatrix`, `hasSalt`) over solvent/solute roles.  
-- Reference materials (like “LiPF6” or “Water”) using ontology terms that include external links (e.g., Wikidata, PubChem) for interoperability.  
+- Always include at least one **solvent** and one **solute** for liquid electrolytes.
+- Use **quantitative properties** for concentrations, conductivities, or viscosities.
+- Avoid duplicating roles: a compound should appear once as `hasSolute`, `hasSolvent`, or `hasAdditive`.
+- Reference units by their bare context label (`SiemensPerMetre`, `MilliPascalSecond`). When the field-standard unit is not in the ontology (mole per litre, for instance), convert the value to an available unit like `MolePerCubicMetre`.
+- For polymer or solid electrolytes, prefer `hasConstituent` over solvent/solute roles when the roles do not apply.
+- Reference materials (like "LiPF6" or "Water") using ontology terms that include external links (e.g., Wikidata, PubChem) for interoperability; fall back to `ChemicalCompound` plus `molecularFormula` for compounds the ontology does not name.
 
 
 Summary
@@ -239,12 +241,27 @@ Summary
 Electrolytes are **ion-conducting media** whose structure and composition determine electrochemical performance.  
 The ontology provides a modular way to represent electrolytes of any kind — liquid, solid, or polymeric — and to connect their materials and properties logically.
 
-| Concept | Relation | Example |
-|----------|-----------|----------|
-| **ElectrolyteSolution** | `hasSolvent`, `hasSolute`, `hasAdditive` | water–KOH solution |
-| **SolidElectrolyte** | `hasConstituent` | LiPON film |
-| **PolymerElectrolyte** | `hasPolymerMatrix`, `hasSolute` | PEO–LiTFSI |
-| **Electrolyte** | `hasProperty` | ionic conductivity, viscosity |
-| **Relations** | `hasConstituent` (superproperty) | enables reasoning across types |
+.. list-table::
+   :header-rows: 1
+   :widths: 30 40 30
+
+   * - Concept
+     - Relation
+     - Example
+   * - **ElectrolyteSolution**
+     - `hasSolvent`, `hasSolute`, `hasAdditive`
+     - water-KOH solution
+   * - **SolidElectrolyte**
+     - `hasConstituent`
+     - LiPON film
+   * - **PolymerElectrolyte**
+     - `hasConstituent`, `hasSolute`
+     - polymer matrix with lithium triflate
+   * - **Electrolyte**
+     - `hasProperty`
+     - ionic conductivity, viscosity
+   * - **Relations**
+     - `hasConstituent` (superproperty)
+     - enables reasoning across types
 
 By following these conventions, you can describe electrolytes in a consistent, machine-readable way that supports data linking, querying, and reasoning across electrochemical domains.
