@@ -11,7 +11,7 @@
            "@type": "RealData",
            "hasNumberValue": 7.14
          },
-         "hasMeasurementUnit": "emmo:GramPerCubicCentimetre"
+         "hasMeasurementUnit": "GramPerCubicCentiMetre"
        }
     },
     "hasProperty": [
@@ -21,7 +21,7 @@
                 "@type": "RealData",
                 "hasNumberValue": 800
              },
-             "hasMeasurementUnit": "emmo:MilliAmpereHourPerGram"
+             "hasMeasurementUnit": "MilliAmpereHourPerGram"
        },
        {
              "@type": "Thickness",
@@ -29,7 +29,7 @@
                 "@type": "RealData",
                 "hasNumberValue": 250
              },
-             "hasMeasurementUnit": "emmo:MicroMetre"
+             "hasMeasurementUnit": "MicroMetre"
        },
        {
              "@type": "Diameter",
@@ -37,7 +37,7 @@
                 "@type": "RealData",
                 "hasNumberValue": 2
              },
-             "hasMeasurementUnit": "emmo:CentiMetre"
+             "hasMeasurementUnit": "CentiMetre"
        },
        {
              "@type": "Mass",
@@ -45,7 +45,7 @@
                 "@type": "RealData",
                 "hasNumberValue": 0.56
              },
-             "hasMeasurementUnit": "emmo:Gram"
+             "hasMeasurementUnit": "Gram"
        }
     ]
  }

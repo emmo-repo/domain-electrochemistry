@@ -9,7 +9,7 @@
                 "@type": "RealData",
                 "hasNumberValue": 7.1
              },
-             "hasMeasurementUnit": "emmo:GramPerCubicCentiMetre", 
+             "hasMeasurementUnit": "GramPerCubicCentiMetre", 
              "dc:source": "https://chemicalsafety.ilo.org/dyn/icsc/showcard.display?p_version=2&p_card_id=1205"
        },
        {
@@ -18,7 +18,7 @@
                 "@type": "RealData",
                 "hasNumberValue": 100
              },
-             "hasMeasurementUnit": "emmo:MicroMetre"
+             "hasMeasurementUnit": "MicroMetre"
        },
        {
              "@type": "SpecificCapacity",
@@ -26,7 +26,7 @@
                 "@type": "RealData",
                 "hasNumberValue": 820
              },
-             "hasMeasurementUnit": "emmo:MilliAmpereHourPerGram"
+             "hasMeasurementUnit": "MilliAmpereHourPerGram"
        }
     ]
  }

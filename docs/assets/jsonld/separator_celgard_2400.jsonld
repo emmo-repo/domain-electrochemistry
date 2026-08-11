@@ -14,7 +14,7 @@
                 "@type": "RealData",
                 "hasNumberValue": 25
              },
-             "hasMeasurementUnit": "emmo:MicroMetre",
+             "hasMeasurementUnit": "MicroMetre",
              "dc:source": "https://www.celgard.com/storage/components/2400_com_october2021_20033.pdf"
        },
        {
@@ -23,7 +23,7 @@
                 "@type": "RealData",
                 "hasNumberValue": 0.41
              },
-             "hasMeasurementUnit": "emmo:UnitOne",
+             "hasMeasurementUnit": "UnitOne",
              "dc:source": "https://www.celgard.com/storage/components/2400_com_october2021_20033.pdf"
        }
     ]

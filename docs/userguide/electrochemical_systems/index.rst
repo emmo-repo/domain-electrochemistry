@@ -81,7 +81,7 @@ Each part can itself be decomposed into smaller parts or described by its materi
               "hasBinder":         { "@type": "PolyvinylideneFluoride"},
               "hasAdditive":       { "@type": "CarbonBlack"}
           },
-          "hasCurrentCollector": { "@type": ["Aluminum", "Foil"]}
+          "hasCurrentCollector": { "@type": ["Aluminium", "Foil"]}
       }
 
 
@@ -105,14 +105,19 @@ Attach these using `hasProperty`.
         "hasProperty": {
           "@type": "Mass",
           "hasNumericalPart": { "@type": "RealData", "hasNumberValue": 1.25 },
-          "hasMeasurementUnit": "emmo:Gram"
+          "hasMeasurementUnit": "Gram"
         }
       }
 
-You can also distinguish whether the value is **measured**, **modelled**, or **conventional** by using subclasses such as:
-- `MeasuredProperty`
-- `ModelledProperty`
-- `ConventionalProperty`
+.. admonition:: Units are bare context terms
+   :class: tip
+
+   Reference units by their bare label from the context (``"Gram"``, ``"Volt"``, ``"MicroMetre"``), never with a prefix like ``emmo:Gram`` - no such prefix is defined, so prefixed values do not resolve to IRIs. For dimensionless quantities such as mass fractions, use ``UnitOne``. Some EMMO units (ampere-hour, for example) are not yet part of this domain's context; for those, either give the full IRI (``"https://w3id.org/emmo#AmpereHour"``) or convert the value to a context unit such as ``Coulomb``.
+
+.. admonition:: Measured, modelled, or conventional?
+   :class: tip
+
+   EMMO distinguishes how a property value came to be. Type the property with ``MeasuredProperty`` when the value comes from a measurement, ``ModelledProperty`` when it comes from a simulation or calculation, and ``ConventionalProperty`` when it is declared by convention - a datasheet value, for instance. Combine them with the quantity class: ``"@type": ["Density", "ConventionalProperty"]``.
 
 4. Link to processes and measurements
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -129,7 +134,7 @@ Use `hasParticipant`, `hasInput`, and `hasOutput` to describe their role in a pr
       :linenos:
 
       {
-        "@type": "ChargingProcess",
+        "@type": "Charging",
         "hasInput": { "@id": "ex:DischargedCell" },
         "hasOutput": { "@id": "ex:ChargedCell" },
         "hasParticipant": [
@@ -139,7 +144,7 @@ Use `hasParticipant`, `hasInput`, and `hasOutput` to describe their role in a pr
         ]
       }
 
-This pattern links the physical system (`ElectrochemicalCell`) to the activity (`ChargingProcess`) that changes its state.
+This pattern links the physical system (`ElectrochemicalCell`) to the process (`Charging`) that changes its state.
 
 Example: Putting It All Together
 --------------------------------
@@ -158,40 +163,40 @@ Here is a minimal but complete description of an **electrochemical device** buil
         "@context": "https://w3id.org/emmo/domain/electrochemistry/context",
         "@type": "ElectrochemicalDevice",
         "hasPositiveElectrode": {
-            "@type": "Electrode",
-            "hasCoating": [
-              {
+            "@type": "PositiveElectrode",
+            "hasCoating": {
                 "@type": "ElectrodeCoating",
                 "hasActiveMaterial": { "@type": "LithiumIronPhosphate"},
                 "hasBinder":         { "@type": "PolyvinylideneFluoride"},
                 "hasAdditive":       { "@type": "CarbonBlack"}
               },
-            "hasCurrentCollector": { "@type": ["Aluminum", "Foil"]}
-            ]
+            "hasCurrentCollector": { "@type": ["Aluminium", "Foil"]}
           },
         "hasNegativeElectrode": {
             "@type": "NegativeElectrode",
-            "hasCoating": { 
+            "hasCoating": {
                 "@type": "ElectrodeCoating",
-                "hasActiveMaterial": { "@type": "Graphite"},
+                "hasActiveMaterial": { "@type": "Graphite"}
               },
             "hasCurrentCollector": { "@type": ["Copper", "Foil"]}
           },
         "hasElectrolyte": { "@type": "LiquidElectrolyte" },
-        "hasSeparator": { "@type": "MicroporousPolymerSeparator" },
+        "hasSeparator": { "@type": "Separator" },
         "hasProperty": [
           {
             "@type": "NominalVoltage",
-            "hasNumericalPart": { "hasNumberValue": 3.6 },
-            "hasMeasurementUnit": "emmo:Volt"
+            "hasNumericalPart": { "@type": "RealData", "hasNumberValue": 3.6 },
+            "hasMeasurementUnit": "Volt"
           },
           {
             "@type": "NominalCapacity",
-            "hasNumericalPart": { "hasNumberValue": 1.2 },
-            "hasMeasurementUnit": "emmo:AmpereHour"
+            "hasNumericalPart": { "@type": "RealData", "hasNumberValue": 4320 },
+            "hasMeasurementUnit": "Coulomb"
           }
         ]
       }
+
+   The nominal capacity is given in coulombs (4320 C = 1.2 Ah) because the ampere-hour unit is not yet part of this domain's context. Giving the full IRI ``"https://w3id.org/emmo#AmpereHour"`` with the value 1.2 works equally well.
 
 This structure is modular, readable, and machine-interpretable — enabling you to query, validate, and link the data across experiments, simulations, and repositories.
 
@@ -211,4 +216,3 @@ Best Practices
    electrodes
    electrolytes
    electrochemical_cells
-   electrochemical_devices

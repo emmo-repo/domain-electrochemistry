@@ -26,7 +26,7 @@
                     "@type": "RealData",
                     "hasNumberValue": 20
                 },
-                "hasMeasurementUnit": "emmo:DegreeCelsius"
+                "hasMeasurementUnit": "DegreeCelsius"
             }
         ]
     },
@@ -36,7 +36,7 @@
             "@type": "RealData",
             "hasNumberValue": 4
         },
-        "hasMeasurementUnit": "emmo:UnitOne"
+        "hasMeasurementUnit": "UnitOne"
     },
     "hasTask": {
         "@type": ["SamplePreparation", "ConstantCurrentDischarging"],
@@ -47,7 +47,7 @@
                     "@type": "RealData",
                     "hasNumberValue": 0.2
                 },
-                "hasMeasurementUnit": "emmo:AmperePerAmpereHour"
+                "hasMeasurementUnit": "AmperePerAmpereHour"
             },
             {
                 "@type": ["LowerVoltageLimit", "TerminationQuantity"],
@@ -55,7 +55,7 @@
                     "@type": "RealData",
                     "hasNumberValue": 2.4
                 },
-                "hasMeasurementUnit": "emmo:Volt"
+                "hasMeasurementUnit": "Volt"
             }
         ],
         "hasNext": {
@@ -71,7 +71,7 @@
                             "@type": "RealData",
                             "hasNumberValue": 0.2
                         },
-                        "hasMeasurementUnit": "emmo:AmperePerAmpereHour"
+                        "hasMeasurementUnit": "AmperePerAmpereHour"
                     },
                     {
                         "@type": ["UpperVoltageLimit", "TerminationQuantity"],
@@ -79,7 +79,7 @@
                             "@type": "RealData",
                             "hasNumberValue": 4.2
                         },
-                        "hasMeasurementUnit": "emmo:Volt"
+                        "hasMeasurementUnit": "Volt"
                     }
                 ],
                 "hasInput": {
@@ -103,7 +103,7 @@
                                 "@type": "RealData",
                                 "hasNumberValue": 4.2
                             },
-                            "hasMeasurementUnit": "emmo:Volt"
+                            "hasMeasurementUnit": "Volt"
                         },
                         {
                             "@type": ["LowerCRateLimit", "TerminationQuantity"],
@@ -111,7 +111,7 @@
                                 "@type": "RealData",
                                 "hasNumberValue": 0.01
                             },
-                            "hasMeasurementUnit": "emmo:AmperePerAmpereHour"
+                            "hasMeasurementUnit": "AmperePerAmpereHour"
                         }
                     ],
                     "hasInput": {
@@ -134,7 +134,7 @@
                                 "@type": "RealData",
                                 "hasNumberValue": 1
                             },
-                            "hasMeasurementUnit": "emmo:Hour"
+                            "hasMeasurementUnit": "Hour"
                         }
                     }
                 }
@@ -148,7 +148,7 @@
                             "@type": "RealData",
                             "hasNumberValue": 0.2
                         },
-                        "hasMeasurementUnit": "emmo:AmperePerAmpereHour"
+                        "hasMeasurementUnit": "AmperePerAmpereHour"
                     },
                     {
                         "@type": ["LowerVoltageLimit", "TerminationQuantity"],
@@ -156,7 +156,7 @@
                             "@type": "RealData",
                             "hasNumberValue": 2.4
                         },
-                        "hasMeasurementUnit": "emmo:Volt"
+                        "hasMeasurementUnit": "Volt"
                     }
                 ],
                 "hasInput": {

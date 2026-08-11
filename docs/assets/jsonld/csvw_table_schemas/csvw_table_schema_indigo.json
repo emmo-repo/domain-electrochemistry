@@ -56,7 +56,7 @@
             },
             "hasMeasurementUnit": [
               {
-                "@id": "emmo:Coulomb"
+                "@id": "Coulomb"
               },
               {
                 "@id": "unit:C"
@@ -64,7 +64,7 @@
             ],
             "schema:unitCode": [
               {
-                "@id": "emmo:Coulomb"
+                "@id": "Coulomb"
               },
               {
                 "@id": "unit:C"
@@ -82,7 +82,7 @@
             },
             "hasMeasurementUnit": [
               {
-                "@id": "emmo:Ampere"
+                "@id": "Ampere"
               },
               {
                 "@id": "unit:A"
@@ -90,7 +90,7 @@
             ],
             "schema:unitCode": [
               {
-                "@id": "emmo:Ampere"
+                "@id": "Ampere"
               },
               {
                 "@id": "unit:A"
@@ -108,7 +108,7 @@
             },
             "hasMeasurementUnit": [
               {
-                "@id": "emmo:Joule"
+                "@id": "Joule"
               },
               {
                 "@id": "unit:J"
@@ -116,7 +116,7 @@
             ],
             "schema:unitCode": [
               {
-                "@id": "emmo:Joule"
+                "@id": "Joule"
               },
               {
                 "@id": "unit:J"
@@ -142,7 +142,7 @@
             },
             "hasMeasurementUnit": [
               {
-                "@id": "emmo:Watt"
+                "@id": "Watt"
               },
               {
                 "@id": "unit:W"
@@ -150,7 +150,7 @@
             ],
             "schema:unitCode": [
               {
-                "@id": "emmo:Watt"
+                "@id": "Watt"
               },
               {
                 "@id": "unit:W"
@@ -168,7 +168,7 @@
             },
             "hasMeasurementUnit": [
               {
-                "@id": "emmo:DegreeCelsius"
+                "@id": "DegreeCelsius"
               },
               {
                 "@id": "unit:DEG_C"
@@ -176,7 +176,7 @@
             ],
             "schema:unitCode": [
               {
-                "@id": "emmo:DegreeCelsius"
+                "@id": "DegreeCelsius"
               },
               {
                 "@id": "unit:DEG_C"
@@ -194,7 +194,7 @@
             },
             "hasMeasurementUnit": [
               {
-                "@id": "emmo:Volt"
+                "@id": "Volt"
               },
               {
                 "@id": "unit:V"
@@ -202,7 +202,7 @@
             ],
             "schema:unitCode": [
               {
-                "@id": "emmo:Volt"
+                "@id": "Volt"
               },
               {
                 "@id": "unit:V"
@@ -221,7 +221,7 @@
             },
             "hasMeasurementUnit": [
             {
-                "@id": "emmo:UnitOne"
+                "@id": "UnitOne"
             },
             {
                 "@id": "unit:UNITLESS"
@@ -229,7 +229,7 @@
             ],
             "schema:unitCode": [
             {
-                "@id": "emmo:UnitOne"
+                "@id": "UnitOne"
             },
             {
                 "@id": "unit:UNITLESS"
@@ -272,7 +272,7 @@
             },
             "hasMeasurementUnit": [
             {
-                "@id": "emmo:MicroSecond"
+                "@id": "MicroSecond"
             },
             {
                 "@id": "unit:MicroSEC"
@@ -280,7 +280,7 @@
             ],
             "schema:unitCode": [
             {
-                "@id": "emmo:MicroSecond"
+                "@id": "MicroSecond"
             },
             {
                 "@id": "unit:MicroSEC"
@@ -299,7 +299,7 @@
             },
             "hasMeasurementUnit": [
             {
-                "@id": "emmo:Second"
+                "@id": "Second"
             },
             {
                 "@id": "unit:SEC"
@@ -307,7 +307,7 @@
             ],
             "schema:unitCode": [
             {
-                "@id": "emmo:Second"
+                "@id": "Second"
             },
             {
                 "@id": "unit:SEC"

@@ -14,7 +14,7 @@
                         "@type": "RealData",
                         "hasNumberValue": 0.5
                     },
-                    "hasMeasurementUnit": "emmo:UnitOne"
+                    "hasMeasurementUnit": "UnitOne"
                 }
             },
             {
@@ -25,7 +25,7 @@
                         "@type": "RealData",
                         "hasNumberValue": 0.5
                     },
-                    "hasMeasurementUnit": "emmo:UnitOne"
+                    "hasMeasurementUnit": "UnitOne"
                 }
             }
         ]
@@ -38,7 +38,7 @@
                 "@type": "RealData",
                 "hasNumberValue": 0.124
             },
-            "hasMeasurementUnit": "emmo:UnitOne"
+            "hasMeasurementUnit": "UnitOne"
         }
     }
 }

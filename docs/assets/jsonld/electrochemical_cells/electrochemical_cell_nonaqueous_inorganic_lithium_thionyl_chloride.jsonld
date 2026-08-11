@@ -19,6 +19,6 @@
             "@type": "RealData",
             "hasNumberValue": 3.6
         },
-        "hasMeasurementUnit": "emmo:Volt"
+        "hasMeasurementUnit": "Volt"
     }
 }

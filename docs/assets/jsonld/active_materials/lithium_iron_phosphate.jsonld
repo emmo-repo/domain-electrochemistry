@@ -18,7 +18,7 @@
                    "@type": "RealData",
                    "hasNumberValue": 0.0115
                 },
-                "hasMeasurementUnit": "emmo:UnitOne"
+                "hasMeasurementUnit": "UnitOne"
             }
         },
         {
@@ -29,7 +29,7 @@
                    "@type": "RealData",
                    "hasNumberValue": 0.0440
                 },
-                "hasMeasurementUnit": "emmo:UnitOne"
+                "hasMeasurementUnit": "UnitOne"
             }
         },
         {
@@ -40,7 +40,7 @@
                    "@type": "RealData",
                    "hasNumberValue": 0.345
                 },
-                "hasMeasurementUnit": "emmo:UnitOne"
+                "hasMeasurementUnit": "UnitOne"
             }
         },
         {
@@ -51,7 +51,7 @@
                    "@type": "RealData",
                    "hasNumberValue": 0.195
                 },
-                "hasMeasurementUnit": "emmo:UnitOne"
+                "hasMeasurementUnit": "UnitOne"
             }
         },
         {
@@ -62,7 +62,7 @@
                    "@type": "RealData",
                    "hasNumberValue": 0.404
                 },
-                "hasMeasurementUnit": "emmo:UnitOne"
+                "hasMeasurementUnit": "UnitOne"
             }
         }
     ],
@@ -73,7 +73,7 @@
                "@type": "RealData",
                "hasNumberValue": 1.0
             },
-            "hasMeasurementUnit": "emmo:MicroMetre"
+            "hasMeasurementUnit": "MicroMetre"
        },
        {
             "@type": "D50ParticleSize",
@@ -81,7 +81,7 @@
                 "@type": "RealData",
                 "hasNumberValue": 3.5
             },
-            "hasMeasurementUnit": "emmo:MicroMetre"
+            "hasMeasurementUnit": "MicroMetre"
        },
        {
             "@type": "D90ParticleSize",
@@ -89,7 +89,7 @@
                 "@type": "RealData",
                 "hasNumberValue": 15
             },
-            "hasMeasurementUnit": "emmo:MicroMetre"
+            "hasMeasurementUnit": "MicroMetre"
        },
        {
             "@type": "TappedDensity",
@@ -97,7 +97,7 @@
                 "@type": "RealData",
                 "hasNumberValue": 1.45
             },
-            "hasMeasurementUnit": "emmo:GramPerCubicCentiMetre"
+            "hasMeasurementUnit": "GramPerCubicCentiMetre"
        },
        {
             "@type": "SpecificSurfaceArea",
@@ -105,7 +105,7 @@
                 "@type": "RealData",
                 "hasNumberValue": 11.0
             },
-            "hasMeasurementUnit": "emmo:SquareMetrePerGram"
+            "hasMeasurementUnit": "SquareMetrePerGram"
        },
        {
              "@type": "SpecificCapacity",
@@ -113,7 +113,7 @@
                 "@type": "RealData",
                 "hasNumberValue": 150
              },
-             "hasMeasurementUnit": "emmo:MilliAmpereHourPerGram",
+             "hasMeasurementUnit": "MilliAmpereHourPerGram",
              "isOutputOf": {
                 "@type": "ConstantCurrentDischarging",
                 "hasMeasurementParameter": {
@@ -122,7 +122,7 @@
                         "@type": "RealData",
                         "hasNumberValue": 0.1
                     },
-                    "hasMeasurementUnit": "emmo:AmperePerAmpereHour"
+                    "hasMeasurementUnit": "AmperePerAmpereHour"
                 }
              }
        },
@@ -132,7 +132,7 @@
                 "@type": "RealData",
                 "hasNumberValue": 0.90
              },
-             "hasMeasurementUnit": "emmo:UnitOne",
+             "hasMeasurementUnit": "UnitOne",
              "isOutputOf": {
                 "@type": "ConstantCurrentConstantVoltageCycling",
                 "hasMeasurementParameter": [
@@ -142,7 +142,7 @@
                             "@type": "RealData",
                             "hasNumberValue": 0.1
                         },
-                        "hasMeasurementUnit": "emmo:AmperePerAmpereHour"
+                        "hasMeasurementUnit": "AmperePerAmpereHour"
                     },
                     {
                         "@type": "UpperVoltageLimit",
@@ -150,7 +150,7 @@
                             "@type": "RealData",
                             "hasNumberValue": 3.65
                         },
-                        "hasMeasurementUnit": "emmo:Volt"
+                        "hasMeasurementUnit": "Volt"
                     },
                     {
                         "@type": "LowerVoltageLimit",
@@ -158,7 +158,7 @@
                             "@type": "RealData",
                             "hasNumberValue": 2.00
                         },
-                        "hasMeasurementUnit": "emmo:Volt"
+                        "hasMeasurementUnit": "Volt"
                     }
                 ]
              }

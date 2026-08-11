@@ -95,7 +95,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:Hertz"
+            "@id": "Hertz"
           },
           {
             "@id": "unit:HZ"
@@ -103,7 +103,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:Hertz"
+            "@id": "Hertz"
           },
           {
             "@id": "unit:HZ"
@@ -121,7 +121,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:Ohm"
+            "@id": "Ohm"
           },
           {
             "@id": "unit:OHM"
@@ -129,7 +129,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:Ohm"
+            "@id": "Ohm"
           },
           {
             "@id": "unit:OHM"
@@ -147,7 +147,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:Radian"
+            "@id": "Radian"
           },
           {
             "@id": "unit:RAD"
@@ -155,7 +155,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:Radian"
+            "@id": "Radian"
           },
           {
             "@id": "unit:RAD"
@@ -173,7 +173,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:Ohm"
+            "@id": "Ohm"
           },
           {
             "@id": "unit:OHM"
@@ -181,7 +181,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:Ohm"
+            "@id": "Ohm"
           },
           {
             "@id": "unit:OHM"
@@ -199,7 +199,7 @@
         },
         "hasMeasurementUnit": [
           {
-            "@id": "emmo:Ohm"
+            "@id": "Ohm"
           },
           {
             "@id": "unit:OHM"
@@ -207,7 +207,7 @@
         ],
         "schema:unitCode": [
           {
-            "@id": "emmo:Ohm"
+            "@id": "Ohm"
           },
           {
             "@id": "unit:OHM"

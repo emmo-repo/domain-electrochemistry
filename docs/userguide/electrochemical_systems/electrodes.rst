@@ -23,9 +23,9 @@ An electrode typically consists of:
   - **Binder** — provides mechanical integrity.  
   - **Conductive Additive** — enhances electronic conductivity.  
 
-.. figure:: ../../assets/img/fig/png/electrode_structure.png
+.. figure:: ../../assets/img/fig/png/CoatedElectrode.png
    :align: center
-   :alt: Structure of an electrode
+   :alt: Structure of a coated electrode
    :width: 80%
 
    Example structure of a coated electrode.
@@ -66,7 +66,7 @@ Common examples include **thickness**, **porosity**, **mass loading**, or **spec
            "@type": "RealData",
            "hasNumberValue": 50
          },
-         "hasMeasurementUnit": "emmo:MicroMetre"
+         "hasMeasurementUnit": "MicroMetre"
        }
      ]
    }
@@ -99,21 +99,21 @@ A `SingleCoatedElectrode` has one functional coating on its current collector.
      "@type": "SingleCoatedElectrode",
      "hasCoating": {
        "@type": "ElectrodeCoating",
-       "hasActiveMaterial": { "@type": "LiFePO4" },
-       "hasBinder": { "@type": "PVDF" },
+       "hasActiveMaterial": { "@type": "LithiumIronPhosphate" },
+       "hasBinder": { "@type": "PolyvinylideneFluoride" },
        "hasAdditive": { "@type": "CarbonBlack" }
      },
-     "hasCurrentCollector": { "@type": "AluminiumFoil" },
+     "hasCurrentCollector": { "@type": ["Aluminium", "Foil"] },
      "hasProperty": [
        {
          "@type": "Thickness",
          "hasNumericalPart": { "@type": "RealData", "hasNumberValue": 75 },
-         "hasMeasurementUnit": "emmo:MicroMetre"
+         "hasMeasurementUnit": "MicroMetre"
        }
      ]
    }
 
-This example describes a lithium iron phosphate (LFP) cathode with a single coating applied to an aluminum current collector.
+This example describes a lithium iron phosphate (LFP) cathode with a single coating applied to an aluminium current collector. Note the current collector's type: combining `Aluminium` and `Foil` states both what it is made of and its physical form.
 
 Double Coated Electrode
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -127,24 +127,24 @@ A `DoubleCoatedElectrode` has two coatings applied on opposite sides of the same
      "@type": "DoubleCoatedElectrode",
      "hasCoating": [
        {
-         "@type": "BaseCoating",
-         "hasActiveMaterial": { "@type": "LiNi0.8Mn0.1Co0.1O2" },
-         "hasBinder": { "@type": "PVDF" },
+         "@type": "ElectrodeCoating",
+         "hasActiveMaterial": { "@type": "LithiumNickelManganeseCobaltOxide811" },
+         "hasBinder": { "@type": "PolyvinylideneFluoride" },
          "hasAdditive": { "@type": "CarbonBlack" }
        },
        {
-         "@type": "TopCoating",
-         "hasActiveMaterial": { "@type": "LiMn2O4" },
-         "hasBinder": { "@type": "PVDF" },
+         "@type": "ElectrodeCoating",
+         "hasActiveMaterial": { "@type": "LithiumManganeseOxide" },
+         "hasBinder": { "@type": "PolyvinylideneFluoride" },
          "hasAdditive": { "@type": "CarbonBlack" }
        }
      ],
-     "hasCurrentCollector": { "@type": "AluminiumFoil" },
+     "hasCurrentCollector": { "@type": ["Aluminium", "Foil"] },
      "hasProperty": [
        {
          "@type": "Thickness",
          "hasNumericalPart": { "@type": "RealData", "hasNumberValue": 150 },
-         "hasMeasurementUnit": "emmo:MicroMetre"
+         "hasMeasurementUnit": "MicroMetre"
        }
      ]
    }
@@ -155,14 +155,14 @@ This pattern can also be extended for gradient or layered electrodes.
 Reasoning Implications
 ----------------------
 
-Because `hasCoating`, `hasCurrentCollector`, `hasActiveMaterial`, etc. are all **subproperties of `hasPart`**, reasoning engines can infer relationships such as:
+Because `hasCoating`, `hasCurrentCollector`, `hasActiveMaterial`, etc. are all **subproperties of `hasPart`**, reasoning engines infer the general relation from the specific one:
 
-::
+.. code-block:: text
+
    If Electrode hasCoating Coating,
-   and Coating hasActiveMaterial Material,
-   then Electrode hasPart Material.
+   then Electrode hasPart Coating.
 
-This enables queries like “find all electrodes that contain a given active material,” regardless of how deeply it is nested in the structure.
+A generic query for `hasPart` therefore retrieves coatings, current collectors, and materials without naming each specific relation. To follow the hierarchy through several levels (electrode to coating to material), traverse the part relations in your query.
 
 Best Practices
 --------------
@@ -171,8 +171,8 @@ Best Practices
 - When modeling coatings, prefer `SingleCoatedElectrode` or `DoubleCoatedElectrode` subclasses for clarity.  
 - Include `hasCurrentCollector` even for self-supporting electrodes to maintain consistency.  
 - Use `hasCoating` to encapsulate active, binder, and additive materials.  
-- Represent measurable properties like thickness or porosity through `hasProperty`.  
-- If describing manufacturing variants, you may define coating subclasses (e.g., `BaseCoating`, `TopCoating`) for specific architectures.
+- Represent measurable properties like thickness or porosity through `hasProperty`.
+- If you need to distinguish coating layers (base vs. top), define your own subclasses of `ElectrodeCoating` in an application ontology; the domain ontology deliberately does not name them.
 
 Summary
 -------
@@ -180,12 +180,27 @@ Summary
 Electrodes link **chemical composition**, **geometric structure**, and **functional role** within electrochemical systems.  
 The ontology captures this hierarchy through well-defined relations and specialized subclasses.
 
-| Concept | Relation | Example |
-|----------|-----------|----------|
-| **Electrode** | `hasCoating` | functional layer of active material |
-| **SingleCoatedElectrode** | `hasCoating` | one coating on current collector |
-| **DoubleCoatedElectrode** | `hasCoating` | coatings on both sides |
-| **ElectrodeCoating** | `hasActiveMaterial`, `hasBinder`, `hasAdditive` | describes internal composition |
-| **Electrode** | `hasCurrentCollector` | connects to substrate foil |
+.. list-table::
+   :header-rows: 1
+   :widths: 32 38 30
+
+   * - Concept
+     - Relation
+     - Example
+   * - **Electrode**
+     - `hasCoating`
+     - functional layer of active material
+   * - **SingleCoatedElectrode**
+     - `hasCoating`
+     - one coating on current collector
+   * - **DoubleCoatedElectrode**
+     - `hasCoating`
+     - coatings on both sides
+   * - **ElectrodeCoating**
+     - `hasActiveMaterial`, `hasBinder`, `hasAdditive`
+     - describes internal composition
+   * - **Electrode**
+     - `hasCurrentCollector`
+     - connects to substrate foil
 
 This structure allows for rich, reusable, and machine-interpretable descriptions of electrode architectures across different experimental, modeling, and manufacturing contexts.

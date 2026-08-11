@@ -7,6 +7,6 @@
          "@type": "RealData",
          "hasNumberValue": 7.14
        },
-       "hasMeasurementUnit": "emmo:GramPerCubicCentimetre"
+       "hasMeasurementUnit": "GramPerCubicCentiMetre"
     }
 }

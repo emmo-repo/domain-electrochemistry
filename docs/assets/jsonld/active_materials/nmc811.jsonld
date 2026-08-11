@@ -11,7 +11,7 @@
                 "@type": "RealData",
                 "hasNumberValue": 212
              },
-             "hasMeasurementUnit": "emmo:MilliAmpereHourPerGram"
+             "hasMeasurementUnit": "MilliAmpereHourPerGram"
        },
        {    
              "@type": "Density",
@@ -19,7 +19,7 @@
                 "@type": "RealData",
                 "hasNumberValue": 4.65
              },
-             "hasMeasurementUnit": "emmo:GramPerCubicCentiMetre"
+             "hasMeasurementUnit": "GramPerCubicCentiMetre"
        },
        {
              "@type": "D50ParticleSize",
@@ -27,7 +27,7 @@
                 "@type": "RealData",
                 "hasNumberValue": 15
              },
-             "hasMeasurementUnit": "emmo:MicroMetre"
+             "hasMeasurementUnit": "MicroMetre"
        },
        {
              "@type": "MolarMass",
@@ -35,7 +35,7 @@
                 "@type": "RealData",
                 "hasNumberValue": 97.27
              },
-             "hasMeasurementUnit": "emmo:GramPerMole"
+             "hasMeasurementUnit": "GramPerMole"
        }
     ]
  }

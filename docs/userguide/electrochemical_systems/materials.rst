@@ -80,9 +80,10 @@ Because the ontology defines `ActiveMaterial`, `Binder`, and `Additive` as subcl
 
 For example, a reasoner will infer:
 
-::
-   If A hasActiveMaterial B → A hasPart B  
-   and B is a Material.
+.. code-block:: text
+
+   If A hasActiveMaterial B,
+   then A hasPart B, and B is a Material.
 
 This consistency allows generic SPARQL queries for `hasPart` or `Material` to still return domain-specific relations.
 
@@ -90,7 +91,7 @@ Best Practices
 --------------
 
 - Use **multiple inheritance** to express both chemical identity and physical form.  
-- Attach properties (e.g., `Density`, `ElectricalConductivity`) using `hasProperty`.  
+- Attach properties (e.g., `Density`, `ElectricConductivity`) using `hasProperty`.
 - Use **domain-specific part relations** (`hasActiveMaterial`, `hasBinder`, etc.) whenever possible.  
 - When referencing datasheet or literature values, classify the property as a `ConventionalProperty`.  
 - Reuse material nodes rather than duplicating them — this improves linking and consistency across datasets.
@@ -103,101 +104,101 @@ Detailed notebooks are available for common electrochemical materials:
 .. grid::
 
     .. grid-item-card::
-        :link: ../../examples/materials/example_cobalt_oxide.ipynb
+        :link: ../../examples/materials/example_cobalt_oxide.html
 
         :octicon:`rocket;1em;sd-text-info`  Cobalt Oxide
         ^^^^^^^^^^^
-        An active material that is common in energy devices
+        A transition-metal oxide used in positive electrodes
 
     .. grid-item-card::
-            :link: ../../examples/materials/example_gold.ipynb
+        :link: ../../examples/materials/example_gold.html
 
-            :octicon:`rocket;1em;sd-text-info` Gold
-            ^^^^^^^^^^^
-            An active material that is common in energy devices
+        :octicon:`rocket;1em;sd-text-info`  Gold
+        ^^^^^^^^^^^
+        A noble metal for electrodes and contacts
 
     .. grid-item-card::
-            :link: ../../examples/materials/example_iridium_oxide.ipynb
+        :link: ../../examples/materials/example_iridium_oxide.html
 
-            :octicon:`rocket;1em;sd-text-info`  Iridium Oxide
-            ^^^^^^^^^^^
-            An active material that is common in energy devices
+        :octicon:`rocket;1em;sd-text-info`  Iridium Oxide
+        ^^^^^^^^^^^
+        A catalyst for oxygen evolution in electrolysers
 
 .. grid::
 
     .. grid-item-card::
-        :link: ../../examples/materials/example_manganese_dioxide.ipynb
+        :link: ../../examples/materials/example_manganese_dioxide.html
 
         :octicon:`rocket;1em;sd-text-info`  Manganese Dioxide
         ^^^^^^^^^^^
-        An active material that is common in energy devices
+        The positive electrode material of alkaline cells
 
     .. grid-item-card::
-            :link: ../../examples/materials/example_nickel_oxyhydroxide.ipynb
+        :link: ../../examples/materials/example_nickel_oxyhydroxide.html
 
-            :octicon:`rocket;1em;sd-text-info` Nickel Oxyhydroxide
-            ^^^^^^^^^^^
-            An active material that is common in energy devices
+        :octicon:`rocket;1em;sd-text-info`  Nickel Oxyhydroxide
+        ^^^^^^^^^^^
+        The charged positive phase in nickel-based batteries
 
     .. grid-item-card::
-            :link: ../../examples/materials/example_nickel.ipynb
+        :link: ../../examples/materials/example_nickel.html
 
-            :octicon:`rocket;1em;sd-text-info`  Nickel
-            ^^^^^^^^^^^
-            An active material that is common in energy devices
+        :octicon:`rocket;1em;sd-text-info`  Nickel
+        ^^^^^^^^^^^
+        A base metal for electrodes and current collectors
 
 .. grid::
 
     .. grid-item-card::
-        :link: ../../examples/materials/example_platinum.ipynb
+        :link: ../../examples/materials/example_platinum.html
 
         :octicon:`rocket;1em;sd-text-info`  Platinum
         ^^^^^^^^^^^
-        An active material that is common in energy devices
+        A catalyst metal for fuel cells and reference electrodes
 
     .. grid-item-card::
-            :link: ../../examples/materials/example_ruthenium_oxide.ipynb
+        :link: ../../examples/materials/example_ruthenium_oxide.html
 
-            :octicon:`rocket;1em;sd-text-info` Ruthenium Oxide
-            ^^^^^^^^^^^
-            An active material that is common in energy devices
+        :octicon:`rocket;1em;sd-text-info`  Ruthenium Oxide
+        ^^^^^^^^^^^
+        A pseudocapacitive oxide for supercapacitor electrodes
 
     .. grid-item-card::
-            :link: ../../examples/materials/example_silver_oxide.ipynb
+        :link: ../../examples/materials/example_silver_oxide.html
 
-            :octicon:`rocket;1em;sd-text-info`  Silver Oxide
-            ^^^^^^^^^^^
-            An active material that is common in energy devices
+        :octicon:`rocket;1em;sd-text-info`  Silver Oxide
+        ^^^^^^^^^^^
+        The positive electrode of silver-zinc button cells
 
 .. grid::
 
     .. grid-item-card::
-        :link: ../../examples/materials/example_silver.ipynb
+        :link: ../../examples/materials/example_silver.html
 
         :octicon:`rocket;1em;sd-text-info`  Silver
         ^^^^^^^^^^^
-        An active material that is common in energy devices
+        A highly conductive metal for electrodes and contacts
 
     .. grid-item-card::
-            :link: ../../examples/materials/example_titanium_dioxide.ipynb
+        :link: ../../examples/materials/example_titanium_dioxide.html
 
-            :octicon:`rocket;1em;sd-text-info` Titanium Dioxide
-            ^^^^^^^^^^^
-            An active material that is common in energy devices
+        :octicon:`rocket;1em;sd-text-info`  Titanium Dioxide
+        ^^^^^^^^^^^
+        An oxide used in photoelectrochemistry and coatings
 
     .. grid-item-card::
-            :link: ../../examples/materials/example_zinc_oxide.ipynb
+        :link: ../../examples/materials/example_zinc_oxide.html
 
-            :octicon:`rocket;1em;sd-text-info`  Zinc Oxide
-            ^^^^^^^^^^^
-            An active material that is common in energy devices
+        :octicon:`rocket;1em;sd-text-info`  Zinc Oxide
+        ^^^^^^^^^^^
+        The discharge product of zinc electrodes
 
 .. grid::
 
     .. grid-item-card::
-        :link: ../../examples/materials/example_zinc.ipynb
+        :link: ../../examples/materials/example_zinc.html
 
         :octicon:`rocket;1em;sd-text-info`  Zinc
         ^^^^^^^^^^^
-        An active material that is common in energy devices
+        The classic negative electrode metal of primary cells
 
