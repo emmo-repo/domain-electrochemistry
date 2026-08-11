@@ -112,7 +112,7 @@ Attach these using `hasProperty`.
 .. admonition:: Units are bare context terms
    :class: tip
 
-   Reference units by their bare label from the context (``"Gram"``, ``"Volt"``, ``"MicroMetre"``), never with a prefix like ``emmo:Gram`` - no such prefix is defined, so prefixed values do not resolve to IRIs. For dimensionless quantities such as mass fractions, use ``UnitOne``. If the unit you want is not yet in the ontology (ampere-hour, for example), convert to a coherent SI unit that is, such as ``Coulomb``.
+   Reference units by their bare label from the context (``"Gram"``, ``"Volt"``, ``"MicroMetre"``), never with a prefix like ``emmo:Gram`` - no such prefix is defined, so prefixed values do not resolve to IRIs. For dimensionless quantities such as mass fractions, use ``UnitOne``. Some EMMO units (ampere-hour, for example) are not yet part of this domain's context; for those, either give the full IRI (``"https://w3id.org/emmo#AmpereHour"``) or convert the value to a context unit such as ``Coulomb``.
 
 .. admonition:: Measured, modelled, or conventional?
    :class: tip
@@ -196,7 +196,7 @@ Here is a minimal but complete description of an **electrochemical device** buil
         ]
       }
 
-   The nominal capacity is given in coulombs (4320 C = 1.2 Ah) because the ontology does not yet define an ampere-hour unit.
+   The nominal capacity is given in coulombs (4320 C = 1.2 Ah) because the ampere-hour unit is not yet part of this domain's context. Giving the full IRI ``"https://w3id.org/emmo#AmpereHour"`` with the value 1.2 works equally well.
 
 This structure is modular, readable, and machine-interpretable — enabling you to query, validate, and link the data across experiments, simulations, and repositories.
 

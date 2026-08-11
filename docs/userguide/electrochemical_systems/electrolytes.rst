@@ -91,7 +91,7 @@ Attach quantitative or descriptive properties to components using `hasProperty`.
      }
    }
 
-The concentration is given in the SI-coherent unit ``MolePerCubicMetre`` (1000 mol/m³ = 1 mol/L) because the ontology does not yet define a mole-per-litre unit.
+The concentration is given in the SI-coherent unit ``MolePerCubicMetre`` (1000 mol/m³ = 1 mol/L) because the mole-per-litre unit is not yet part of this domain's context. Giving the full EMMO IRI ``"https://w3id.org/emmo#MolePerLitre"`` with the value 1.0 works equally well.
 
 4. Assign Properties to the Electrolyte
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -230,7 +230,7 @@ Best Practices
 - Always include at least one **solvent** and one **solute** for liquid electrolytes.
 - Use **quantitative properties** for concentrations, conductivities, or viscosities.
 - Avoid duplicating roles: a compound should appear once as `hasSolute`, `hasSolvent`, or `hasAdditive`.
-- Reference units by their bare context label (`SiemensPerMetre`, `MilliPascalSecond`). When the field-standard unit is not in the ontology (mole per litre, for instance), convert the value to an available unit like `MolePerCubicMetre`.
+- Reference units by their bare context label (`SiemensPerMetre`, `MilliPascalSecond`). When the field-standard unit is missing from the context (mole per litre, for instance), give its full EMMO IRI or convert the value to an available unit like `MolePerCubicMetre`.
 - For polymer or solid electrolytes, prefer `hasConstituent` over solvent/solute roles when the roles do not apply.
 - Reference materials (like "LiPF6" or "Water") using ontology terms that include external links (e.g., Wikidata, PubChem) for interoperability; fall back to `ChemicalCompound` plus `molecularFormula` for compounds the ontology does not name.
 
