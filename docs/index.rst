@@ -7,7 +7,7 @@
    User Guide <userguide/index>
    Examples <pages/examples>
    About <pages/about>
-   FAQ <pages/faq>
+   Contribute <pages/contribute>
 
 Electrochemistry Domain Ontology
 ================================
