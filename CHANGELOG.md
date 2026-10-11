@@ -6,18 +6,25 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: Se
 ## [Unreleased]
 
 ### Added
-- `ElectrodeToSeparatorGapWidth` quantity class (#178): width of the spacing between an electrode surface and the adjacent separator or ion-exchange membrane; zero for zero-gap designs. Subclass of EMMO `Distance` and `ElectrochemicalQuantity`.
+- `ElectrodeToSeparatorGapWidth` quantity class (#178): width of the spacing between an electrode surface and the adjacent separator or ion-exchange membrane; zero for zero-gap designs. Subclass of EMMO `Thickness` and `ElectrochemicalQuantity`.
 - `formerLabel` annotation property (sub-property of `skos:hiddenLabel`) carrying prefLabel spellings that were later corrected. The context generator emits its values as extra JSON-LD terms for the same IRI, so data written against an old spelling keeps expanding (#193).
-- Redirect stubs for URLs that existed on the published docs site before pages were moved or removed: `pages/electrochemistry.html` (class index, moved in March 2025), `pages/get-started.html`, `pages/getstarted.html`, `pages/faq.html`, `pages/resources.html`, `pages/tools.html` (#186).
+- Redirect stubs for URLs that existed on the published docs site before pages were moved or removed: `pages/electrochemistry.html` (class index, moved in March 2025), `pages/get-started.html`, `pages/getstarted.html`, `pages/faq.html`, `pages/resources.html`, `pages/tools.html`, `userguide/background/index.html`, `userguide/introduction/index.html` (#186).
+- Docs guardrails (#188): a term linter that checks every `@type`, property key and `hasMeasurementUnit` value in docs examples against the published context (new violations fail, existing ones are baselined in `tests/docs_term_baseline.txt`); a non-blocking Sphinx warning-count job with a committed baseline; notebooks are never executed at build time (`nbsphinx_execute = 'never'`), removing the build's network dependency on w3id.org.
+- Test that every sphinx-design grid-card `:link:` target in the docs sources is a page the build produces (#187).
 - Tests: redirect stubs resolve to real pages; every `formerLabel` resolves in the context; no cycler column name (plain `skos:hiddenLabel` or vendor label property) leaks into the context; every domain prefLabel is a context term.
 
 ### Changed
-- Import `https://w3id.org/emmo/1.0.2/disciplines/units/siacceptedunits` in `electrochemistry-dependencies.ttl` (#191). EMMO 1.0.2's default chain (emmo, disciplines, sisystem) does not reach this module, so `AmpereHour`, `MilliAmpereHour`, `WattHour`, `KiloWattHour`, `MolePerLitre` and `MilliAmpereHourPerGram` were referenced but never declared and had no context term. The context gains 198 unit terms; nothing is removed.
+- Docs project identity in `conf.py` corrected and `docs/ai_resources` moved to the repository root as `ai_resources/` (#189).
+- Import `https://w3id.org/emmo/1.0.2/disciplines/units/siacceptedunits` in `reference/electrochemistry-quantities.ttl`, the module that references those units (#191). EMMO 1.0.2's default chain (emmo, disciplines, sisystem) does not reach this module, so `AmpereHour`, `MilliAmpereHour`, `WattHour`, `KiloWattHour`, `MolePerLitre` and `MilliAmpereHourPerGram` were referenced but never declared and had no context term. The context gains 198 unit terms; nothing is removed. The context now also binds the `emmo` prefix explicitly (the reasoned squash binds none, so rdflib invented `ns1`), which makes the `emmo:AmpereHour`-style CURIEs used throughout the JSON-LD assets expand.
+
+### Removed
+- Docs: the `userguide/background/` chapter (20 pages), `userguide/introduction/`, `userguide/_deprecate/`, the `pages/faq`, `pages/get-started`, `pages/tools` and `pages/resources` pages, and `examples/basic` (#189). Their URLs are kept alive by the redirect stubs listed under Added.
 
 ### Fixed
+- Landing-page and Examples grid cards linked to pages that did not exist (`pages/user-guide.html`, old example paths); repointed (#187, the in-site part of #186).
 - Seven misspelled labels (#193, #162): `CarbonDioxideElectrode` (was Cardon), `LithiumNickelManganeseCobaltOxideLithiumManganeseOxideElectrode` (was Mananese), `PositiveElectrodeActivationEnergyOfReaction` (was Postive), `InitialThermodynamicTemperature` (was Initital), `MinimumTemperature` and `MinimumConcentration` (were Miniumum), altLabel `MinimumAcceptedCapacity`. IRIs unchanged; the old prefLabel spellings stay resolvable through `formerLabel`.
-- Three `bpxKey` values (#194): the positive-electrode stoichiometry keys at SOC0 and SOC100 were swapped (BPX puts the positive electrode at maximum stoichiometry at 0 % SOC); `InitialChargeCarrierConcentrationInElectrolyte` pointed at the BPX 0.x path instead of `State / Initial conditions / Initial electrolyte concentration [mol.m-3]`; `DeviceSurfaceArea` had a duplicated `Parameterisation` segment.
-- README link to `pages/getstarted.html`, which never existed, now points at the user guide.
+- Three `bpxKey` mappings, four annotation values (#194): the positive-electrode stoichiometry keys at SOC0 and SOC100 were swapped (BPX puts the positive electrode at maximum stoichiometry at 0 % SOC); `InitialChargeCarrierConcentrationInElectrolyte` pointed at the pre-1.1 path instead of `State / Initial conditions / Initial electrolyte concentration [mol.m-3]` (BPX 1.1 moved it); `DeviceSurfaceArea` had a duplicated `Parameterisation` segment.
+- README Getting Started link pointed at `pages/getstarted.html`, a page renamed to `get-started` in October 2025 and removed in #189; it now points at the user guide.
 
 ## [0.37.2] - 2026-08-10
 
@@ -32,7 +39,7 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: Se
 ## [0.37.0] - 2026-08-10
 
 ### Added
-- Nine quantity classes in electrochemistry-quantities: `CapacityLoss` (altLabel LostCapacity) and `CapacityFadeRate`, both linked to the existing `CapacityFade` phenomenon; `ChargeRecovery` (IEC 61960-3, 3.1), paired with `ChargeRetention`, which also gains links to `ChargeRecovery` and `StateOfHealth`; `EndOfLifeCapacityThreshold`, linked to `ChargeRetention`, `CycleLife` and `CalendarLife`; `MaximumPower` (altLabel PowerCapability), `ChargingTime`, `PowerToEnergyRatio` and `RoundTripEnergyEfficiency` (subclass of `EnergyEfficiency`, linked to `CoulombicEfficiency`). Community-practice terms without a standards definition (`CapacityFadeRate`, `PowerToEnergyRatio`) say so in `skos:note`. A stubbed `CapacityRetention` class was dropped rather than added, since `ChargeRetention` already carries that altLabel and the IEV 482-03-35 reference.
+- Eight quantity classes in electrochemistry-quantities: `CapacityLoss` (altLabel LostCapacity) and `CapacityFadeRate`, both linked to the existing `CapacityFade` phenomenon; `ChargeRecovery` (IEC 61960-3, 3.1), paired with `ChargeRetention`, which also gains links to `ChargeRecovery` and `StateOfHealth`; `EndOfLifeCapacityThreshold`, linked to `ChargeRetention`, `CycleLife` and `CalendarLife`; `MaximumPower` (altLabel PowerCapability), `ChargingTime`, `PowerToEnergyRatio` and `RoundTripEnergyEfficiency` (subclass of `EnergyEfficiency`, linked to `CoulombicEfficiency`). Community-practice terms without a standards definition (`CapacityFadeRate`, `PowerToEnergyRatio`) say so in `skos:note`. A stubbed `CapacityRetention` class was dropped rather than added, since `ChargeRetention` already carries that altLabel and the IEV 482-03-35 reference.
 
 ## [0.36.0] - 2026-08-03
 
@@ -59,6 +66,8 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: Se
 - `bump-version` replaced by the shared config-driven tool (adds `--check` and date handling) with tests.
 - The inferred ontology (`electrochemistry-inferred.ttl`) is no longer tracked in git — it is a generated build artifact. CI regenerates it and publishes it to gh-pages (`/inferred`, latest) and attaches a freshly reasoned copy to each GitHub Release (per version); the docs workflow backfills the per-version `versions/` archive from Release assets. You no longer generate or commit it by hand.
 
-[Unreleased]: https://github.com/emmo-repo/domain-electrochemistry/compare/v0.36.0...HEAD
-[0.36.0]: https://github.com/emmo-repo/domain-electrochemistry/compare/v0.35.1...v0.36.0
-[0.35.1]: https://github.com/emmo-repo/domain-electrochemistry/releases/tag/v0.35.1
+[Unreleased]: https://github.com/emmo-repo/domain-electrochemistry/compare/0.37.2...HEAD
+[0.37.2]: https://github.com/emmo-repo/domain-electrochemistry/compare/0.37.1...0.37.2
+[0.37.1]: https://github.com/emmo-repo/domain-electrochemistry/compare/0.37.0...0.37.1
+[0.37.0]: https://github.com/emmo-repo/domain-electrochemistry/compare/0.36.0...0.37.0
+[0.36.0]: https://github.com/emmo-repo/domain-electrochemistry/compare/0.35.0...0.36.0
