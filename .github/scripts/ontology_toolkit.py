@@ -269,7 +269,8 @@ def extract_terms_info_sparql(onto: Ontology) -> list:
         hit_dict["subclassOf"] = parents
 
         # Fetch direct subclasses
-        subclasses = list(entity.subclasses())
+        # Deprecated children are not rendered, so do not link to them either.
+        subclasses = [c for c in entity.subclasses() if not _is_deprecated(c)]
         hit_dict["subclasses"] = subclasses
 
         # Fetch OWL restrictions (object property + someValuesFrom)

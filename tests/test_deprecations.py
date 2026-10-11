@@ -14,6 +14,7 @@ so old data still classifies under the successor (issue #192).
 
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 import pytest
@@ -22,6 +23,8 @@ from rdflib import OWL, RDFS, SKOS, URIRef
 from rdflib.namespace import DCTERMS
 
 REPO = Path(__file__).parents[1]
+# CONTRIBUTING: rdfs:comment "Deprecated in X.Y.Z: <reason>"
+DEPRECATION_COMMENT_RE = re.compile(r"^Deprecated in \d+\.\d+\.\d+:")
 BASELINE_FILE = Path(__file__).parent / "deprecated_baseline.txt"
 SOURCE_TTL = (
     [REPO / "electrochemistry.ttl"]
@@ -57,7 +60,7 @@ def _label(s: URIRef) -> str:
 def _has_successor_or_reason(s: URIRef) -> bool:
     if list(SRC.objects(s, DCTERMS.isReplacedBy)):
         return True
-    return any(str(c).startswith("Deprecated in ") for c in SRC.objects(s, RDFS.comment))
+    return any(DEPRECATION_COMMENT_RE.match(str(c)) for c in SRC.objects(s, RDFS.comment))
 
 
 def _members_of_intersection(expr) -> set:
