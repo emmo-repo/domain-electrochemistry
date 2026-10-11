@@ -2118,7 +2118,8 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                                        ] ;
                                                        owl:deprecated "true"^^xsd:boolean ;
                                                        skos:altLabel "NMCLMOElectrode"@en ;
-                                                       skos:prefLabel "LithiumNickelMananeseCobaltOxideLithiumManganeseOxideElectrode"@en ;
+                                                       skos:prefLabel "LithiumNickelManganeseCobaltOxideLithiumManganeseOxideElectrode"@en ;
+                                                       :electrochemistry_02ce9195_42c1_4eb5_85c0_527dedda330c "LithiumNickelMananeseCobaltOxideLithiumManganeseOxideElectrode"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode with blended lithium nickel manganese cobalt oxide (NMC) and lithium manganese oxide (LMO) active materials"@en .
 
 
@@ -2476,7 +2477,8 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_573be62a_5aae_4984_9a51_7c50845493df
 :electrochemistry_573be62a_5aae_4984_9a51_7c50845493df rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_bbb1d95b_72d1_44f6_b07e_a3d7d41ac215 ;
-                                                       skos:prefLabel "CardonDioxideElectrode"@en ;
+                                                       skos:prefLabel "CarbonDioxideElectrode"@en ;
+                                                       :electrochemistry_02ce9195_42c1_4eb5_85c0_527dedda330c "CardonDioxideElectrode"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a gas diffusion electrode in which the active material is carbon dioxide (CO2)"@en .
 
 

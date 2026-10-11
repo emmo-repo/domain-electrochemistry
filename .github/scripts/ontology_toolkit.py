@@ -114,6 +114,20 @@ def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.or
         elif p == predicate:
             other_entries[str(o)] = str(s)
 
+    # Former labels (misspellings corrected in a later release) stay in the
+    # context so existing data keeps expanding. They are carried by the
+    # domain's `formerLabel` annotation property, a sub-property of
+    # skos:hiddenLabel. Only that property is read: plain skos:hiddenLabel
+    # and the vendor column-label properties hold raw cycler column names
+    # that must not become context terms. A current prefLabel always wins.
+    former_label_props = [
+        prop for prop in g.subjects(SKOS.prefLabel, rdflib.Literal("formerLabel", lang="en"))
+        if (prop, RDF.type, OWL.AnnotationProperty) in g
+    ]
+    for prop in former_label_props:
+        for s, o in g.subject_objects(prop):
+            other_entries.setdefault(str(o), str(s))
+
     for prefix, uri in g.namespace_manager.namespaces():
         if len(prefix) >= 2:
             namespace_prefixes[prefix] = str(uri)
