@@ -9,6 +9,7 @@
         "dcmitype": "http://purl.org/dc/dcmitype/",
         "dcterms": "http://purl.org/dc/terms/",
         "doap": "http://usefulinc.com/ns/doap#",
+        "emmo": "https://w3id.org/emmo#",
         "foaf": "http://xmlns.com/foaf/0.1/",
         "geo": "http://www.opengis.net/ont/geosparql#",
         "locn": "http://www.w3.org/ns/locn#",

@@ -5,6 +5,5 @@
     owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.37.2/dependencies> ;
     owl:imports <https://w3id.org/emmo/domain/electrochemistry/0.37.2/modules/electrochemistry-manufacturing> ,
                 <https://w3id.org/emmo/domain/electrochemistry/0.37.2/modules/electrochemistry-testing> ,
-                <https://w3id.org/emmo/domain/electrochemistry/0.37.2/reference/electrochemistry-reference> ,
-                <https://w3id.org/emmo/1.0.2/disciplines/units/siacceptedunits> .
+                <https://w3id.org/emmo/domain/electrochemistry/0.37.2/reference/electrochemistry-reference> .
                                                  

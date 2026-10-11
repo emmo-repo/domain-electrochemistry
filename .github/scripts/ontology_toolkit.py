@@ -118,6 +118,11 @@ def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.or
         if len(prefix) >= 2:
             namespace_prefixes[prefix] = str(uri)
 
+    # The reasoned squash that CI feeds in here binds no prefix for the EMMO
+    # namespace, so rdflib invents one (ns1) and CURIEs such as
+    # "emmo:AmpereHour" in JSON-LD data never expand. Bind it explicitly.
+    namespace_prefixes.setdefault("emmo", "https://w3id.org/emmo#")
+
     context = {
         "@context": {
             **dict(sorted(namespace_prefixes.items())),
