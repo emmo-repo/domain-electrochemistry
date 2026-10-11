@@ -32,7 +32,7 @@ STUBS = sorted(REDIRECTS_DIR.rglob("*.html"))
 
 def test_extra_path_configured():
     conf = (DOCS_DIR / "conf.py").read_text(encoding="utf-8")
-    assert re.search(r"^html_extra_path\s*=\s*\[.*'_redirects'.*\]", conf, re.MULTILINE), (
+    assert re.search(r"""^html_extra_path\s*=\s*\[.*['"]_redirects['"].*\]""", conf, re.MULTILINE), (
         "docs/conf.py must list '_redirects' in html_extra_path, "
         "otherwise the stubs never reach the built site"
     )
