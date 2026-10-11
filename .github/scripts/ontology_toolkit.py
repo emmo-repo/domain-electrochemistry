@@ -220,6 +220,15 @@ def _sorted_annotations(onto: Ontology):
 
 
 
+def _is_deprecated(entity) -> bool:
+    """True when the entity carries owl:deprecated true (any literal form)."""
+    try:
+        values = list(getattr(entity, "deprecated", []) or [])
+    except Exception:  # pragma: no cover - owlready2 quirks
+        values = []
+    return any(str(v).strip().lower() in ("true", "1") for v in values)
+
+
 def extract_terms_info_sparql(onto: Ontology) -> list:
     """Extracts terms from the TTL graph using SPARQL, including parent, subclass, and restriction links."""
     text_entities = []
@@ -233,7 +242,13 @@ def extract_terms_info_sparql(onto: Ontology) -> list:
         # consider terms defined in the current ontology (and not just referenes here)
         if not entity.iri.split('#')[0] == config["ontology_prefix"].rstrip('#/'):
             continue
-            
+
+        # Deprecated terms stay in the ontology (IRIs are permanent) but are
+        # left out of the generated class index, so the docs show only the
+        # vocabulary that should be used for new data.
+        if _is_deprecated(entity):
+            continue
+
 
         #if not (isinstance(entity, owlready2.ThingClass) or isinstance(entity, owlready2.PropertyClass)):
         #    continue

@@ -151,7 +151,7 @@ emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 rdf:type owl:ObjectProperty ,
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138
 :electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138 rdf:type owl:ObjectProperty ;
                                                        rdfs:subPropertyOf :electrochemistry_578c41e9_ee01_4840_9c8c_04ab6e4e6241 ;
-                                                       rdfs:range :electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627 ;
+                                                       rdfs:range :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c ;
                                                        skos:prefLabel "hasNegativeElectrode"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "relates an electrochemical cell to the electrode at which oxidation occurs during discharge"@en .
 
@@ -190,7 +190,7 @@ emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 rdf:type owl:ObjectProperty ,
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616
 :electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectProperty ;
                                                        rdfs:subPropertyOf :electrochemistry_578c41e9_ee01_4840_9c8c_04ab6e4e6241 ;
-                                                       rdfs:range :electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627 ;
+                                                       rdfs:range :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126 ;
                                                        skos:prefLabel "hasPositiveElectrode"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "relates an electrochemical cell to the electrode at which reduction occurs during discharge"@en .
 
