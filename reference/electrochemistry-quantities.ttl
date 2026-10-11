@@ -132,7 +132,7 @@ emmo:EMMO_cc65321f_1964_4f16_aea3_2a8edf2f3394 rdf:type owl:AnnotationProperty ;
 :electrochemistry_02ce9195_42c1_4eb5_85c0_527dedda330c rdf:type owl:AnnotationProperty ;
                                                        rdfs:subPropertyOf skos:hiddenLabel ;
                                                        skos:prefLabel "formerLabel"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a label that this term carried in an earlier release and that was changed, usually to correct a spelling. Retained so that data written against the old label keeps resolving: the JSON-LD context maps it to the same IRI as the current prefLabel. Not for display."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a label that this term carried in an earlier release and that was changed, usually to correct a spelling. Retained so that data written against the old label keeps resolving: the JSON-LD context maps it to the same IRI as the current prefLabel. It is not a display label."@en ;
                                                        rdfs:comment "Unlike the vendor column-label properties, which are also hidden labels, values of this property are emitted into the generated JSON-LD context."@en .
 
 

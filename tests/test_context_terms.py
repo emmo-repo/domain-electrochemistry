@@ -15,6 +15,11 @@ Three things must hold:
   (``maccorLabel``, ``newareLabel``, ...), all of which are sub-properties of
   ``skos:hiddenLabel`` and must stay out (issue #194);
 - every prefLabel declared in this domain's own source files is a context term.
+
+The hidden-label check compares raw column names against context keys, so a
+vendor column that happens to be spelled like a real prefLabel (``Voltage``)
+would trip it; none does today. If that happens, the column name is the thing
+to question, not the test.
 """
 
 from __future__ import annotations
@@ -101,6 +106,16 @@ def test_hidden_label_not_in_context(value: str):
     assert value not in CTX, f"hidden label {value!r} leaked into the context"
 
 
-@pytest.mark.parametrize("label, iri", PREF_LABELS, ids=[l for l, _ in PREF_LABELS])
-def test_pref_label_in_context(label: str, iri: str):
-    assert label in CTX, f"prefLabel {label!r} is not a context term"
+def test_every_pref_label_in_context():
+    """Adding or renaming a term means updating context/context.json in the same PR.
+
+    CI regenerates the context only on master, so a PR to dev that adds a class
+    without adding its prefLabel to the context would publish a term that does
+    not expand. Add the entry by hand in sorted position, or regenerate with
+    ``python .github/scripts/ontology_toolkit.py --generate-context`` against a
+    squashed build (see CONTRIBUTING).
+    """
+    missing = sorted(label for label, _ in PREF_LABELS if label not in CTX)
+    assert not missing, (
+        f"{len(missing)} prefLabel(s) are not context terms: " + ", ".join(missing)
+    )

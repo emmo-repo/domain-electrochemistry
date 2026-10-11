@@ -45,7 +45,7 @@ This repository follows a **branching model** designed to balance ongoing develo
 | Documentation | docs/update-contributor-guide  |
 
 Feature and fix branches should start from dev. Hotfix branches (critical bug fixes for stable releases) should start from main.
-3. **Make Changes.** Follow the ontology modeling guidelines (terminology, structure, annotations). Commit changes with clear, descriptive commit messages. Include tests, examples, or documentation if relevant.
+3. **Make Changes.** Follow the ontology modeling guidelines (terminology, structure, annotations). Commit changes with clear, descriptive commit messages. Include tests, examples, or documentation if relevant. When you add a term or change a `skos:prefLabel`, update `context/context.json` in the same PR: add the label in sorted position mapping to the IRI, or regenerate the file with `python .github/scripts/ontology_toolkit.py --generate-context` against a squashed build. `tests/test_context_terms.py` fails otherwise. A corrected spelling keeps the old one on the class under `formerLabel`, so data written against it keeps resolving.
 4. **Open a Pull Request.** Push your branch to GitHub. Open a pull request (PR) targeting dev. Use the pull request template (if available) and provide a clear description of the change.
 5. **Review and Merge.** Maintainers will review your PR. You may be asked to make revisions. Once approved, the branch will be merged into dev.
 
