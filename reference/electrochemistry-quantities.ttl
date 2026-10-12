@@ -1205,6 +1205,21 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the class of units for describing the C-Rate in electrochemistry and related domains"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2f0b8724_290a_4c52_839b_927948ef8855
+:electrochemistry_2f0b8724_290a_4c52_839b_927948ef8855 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_43003c86_9d15_433b_9789_ee2940920656 ,
+                                                                       :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
+                                                       rdfs:comment "Zero for zero-gap cell designs, where the electrode is pressed directly against the separator or membrane."@en ,
+                                                                    "The gap sets the electrolyte path length between the electrode surface and the separator surface, and with it the ohmic contribution of that electrolyte layer to the cell resistance. In flow cells it also affects electrolyte flow and bubble removal."@en ;
+                                                       skos:altLabel "ElectrodeMembraneGapWidth"@en ,
+                                                                     "ElectrodeToMembraneDistance"@en ,
+                                                                     "ElectrodeToMembraneGapWidth"@en ,
+                                                                     "ElectrodeToSeparatorDistance"@en ;
+                                                       skos:note "neither IEC nor IUPAC define this quantity; this class codifies common usage in the water-electrolysis, CO2-electrolysis and flow-cell literature"@en ;
+                                                       skos:prefLabel "ElectrodeToSeparatorGapWidth"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the width of the spacing between an electrode surface and the adjacent separator or ion-exchange membrane in an electrolysis cell or other electrochemical cell"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_31a74e23_bb07_41d0_bb8f_1d8cca157503
 :electrochemistry_31a74e23_bb07_41d0_bb8f_1d8cca157503 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_4aa1b96e_44a0_4b1a_a0ac_723d0223d80b ;

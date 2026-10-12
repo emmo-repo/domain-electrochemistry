@@ -2271,6 +2271,7 @@
         "ElectrodeStack": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_27662d03_1bcf_4393_a239_32e31b760839",
         "ElectrodeStacking": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a490e278_8c6d_4a89_ad0e_ffa48366cd75",
         "ElectrodeSurfaceArea": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_47ab1dad_cc09_4fd8_af23_acb36fb680dd",
+        "ElectrodeToSeparatorGapWidth": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_2f0b8724_290a_4c52_839b_927948ef8855",
         "ElectrodeWinding": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_707f001f_d2b9_46c2_ac1b_9cd039bcf00f",
         "Electrodeposition": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f0c24970_4c14_4207_bd78_5f2181a67085",
         "Electrodissolution": "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4df84ec1_8a1a_4770_963f_bf48009bd043",
