@@ -16,8 +16,8 @@ identifiers:
 repository-code: "https://github.com/emmo-repo/domain-electrochemistry"
 url: "https://w3id.org/emmo/domain/electrochemistry"
 license: CC-BY-4.0
-version: "0.35.1"
-date-released: "2026-07-08"
+version: "0.38.0"
+date-released: "2026-10-12"
 keywords:
   - ontology
   - EMMO
