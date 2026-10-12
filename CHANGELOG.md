@@ -5,6 +5,8 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: Se
 
 ## [Unreleased]
 
+## [0.39.0] - 2026-10-12
+
 ### Added
 - `OpenCircuitPotential` (altLabels OCP, RestPotential, ZeroCurrentElectrodePotential): the electrode-level quantity, potential of an electrode relative to a reference when no net current flows, under `ElectrodePotential`. `EquilibriumElectrodePotential` now sits under it: an open-circuit potential at which all interfacial equilibria are also established. Branch classes `AnodicBranchOpenCircuitPotential` and `CathodicBranchOpenCircuitPotential` (disjoint with each other and with the equilibrium potential), `OpenCircuitPotentialHysteresis`, and `TemperatureCoefficientOfTheOpenCircuitPotential` (altLabel EntropicChangeCoefficient), the electrode-level sibling of the IEV cell quantity.
 - `EquilibriumCellVoltage` (altLabels EquilibriumCellPotential, ReversibleCellVoltage): the thermodynamic electromotive force, open-circuit voltage with all interfacial equilibria established, equal to minus the reaction Gibbs energy over zF; and `OpenCircuitVoltageHysteresis`.
@@ -88,7 +90,8 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: Se
 - `bump-version` replaced by the shared config-driven tool (adds `--check` and date handling) with tests.
 - The inferred ontology (`electrochemistry-inferred.ttl`) is no longer tracked in git — it is a generated build artifact. CI regenerates it and publishes it to gh-pages (`/inferred`, latest) and attaches a freshly reasoned copy to each GitHub Release (per version); the docs workflow backfills the per-version `versions/` archive from Release assets. You no longer generate or commit it by hand.
 
-[Unreleased]: https://github.com/emmo-repo/domain-electrochemistry/compare/0.38.0...HEAD
+[Unreleased]: https://github.com/emmo-repo/domain-electrochemistry/compare/0.39.0...HEAD
+[0.39.0]: https://github.com/emmo-repo/domain-electrochemistry/compare/0.38.0...0.39.0
 [0.38.0]: https://github.com/emmo-repo/domain-electrochemistry/compare/0.37.2...0.38.0
 [0.37.2]: https://github.com/emmo-repo/domain-electrochemistry/compare/0.37.1...0.37.2
 [0.37.1]: https://github.com/emmo-repo/domain-electrochemistry/compare/0.37.0...0.37.1
