@@ -93,6 +93,10 @@ An IRI is a permanent contract with everyone who has used it. We therefore treat
   3. A `CHANGELOG.md` entry and a major-version bump if downstream parsers could break.
 - **Automated agents may _propose_ IRI changes** (as a written proposal) but must never execute them without the approval above.
 
+### Which quantities get their own class
+
+**A qualified quantity gets its own class only when the qualifier changes what is measured or how the value is determined.** `NominalCapacity`, `MaximumContinuousChargingCurrent` and `AmbientThermodynamicTemperature` pass that test. "Negative electrode coating thickness" does not: it is the same quantity (`CoatingThickness`) on a different object, and the object is already identified by the cell structure (`hasNegativeElectrode`, `hasCoating`, `hasProperty`). Any compound class that is accepted needs a defining axiom (`owl:equivalentClass`) over the terms it combines, so a reasoner can relate it to data stated through the structure. Mappings to a tool's keys or a cycler's column names live with the tool (application ontology, SSSOM file or CSVW schema), not in this ontology.
+
 ## Release Runbook
 
 Releases are cut from `main`/`master` after changes have settled on `dev`.

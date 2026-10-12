@@ -476,7 +476,6 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        rdfs:subClassOf emmo:EMMO_d5be1faf_0c56_4f5a_9b78_581e6dee949f ;
                                                        skos:prefLabel "InitialChargeCarrierConcentrationInElectrolyte"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the initial amount concentration of lithium in an electrolyte"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['State','Initial conditions','Initial electrolyte concentration [mol.m-3]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['electrolyte','initial_concentration','value']"@en .
 
@@ -496,9 +495,35 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0a1e73c5_e91b_4365_88d4_1e1f476bf776
 :electrochemistry_0a1e73c5_e91b_4365_88d4_1e1f476bf776 rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( :electrochemistry_a5571263_f153_448f_84a3_cd18092cf8fa
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty [ owl:inverseOf :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ] ;
+                                                                                                                         owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                              owl:unionOf ( :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
+                                                                                                                                                            [ rdf:type owl:Class ;
+                                                                                                                                                              owl:intersectionOf ( :electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
+                                                                                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                                                                                     owl:onProperty [ owl:inverseOf :electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383 ] ;
+                                                                                                                                                                                     owl:someValuesFrom :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
+                                                                                                                                                                                   ]
+                                                                                                                                                                                 )
+                                                                                                                                                            ]
+                                                                                                                                                          )
+                                                                                                                                            ]
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy :electrochemistry_a5571263_f153_448f_84a3_cd18092cf8fa ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasPositiveElectrode an electrode, the electrode (or its ElectrodeCoating) hasActiveMaterial a material, and the material hasProperty a VolumetricSurfaceArea."@en ;
                                                        rdfs:subClassOf :electrochemistry_a5571263_f153_448f_84a3_cd18092cf8fa ;
                                                        skos:prefLabel "PositiveElectrodeActiveMaterialVolumetricSurfaceArea"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "volumetric surface area of the positive electrode active material"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Surface area per unit volume [m-1]']"@en .
 
 
@@ -541,9 +566,35 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0e2f4fe6_570a_4d13_81e9_de1d4f9987af
 :electrochemistry_0e2f4fe6_570a_4d13_81e9_de1d4f9987af rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty [ owl:inverseOf :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ] ;
+                                                                                                                         owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                              owl:unionOf ( :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
+                                                                                                                                                            [ rdf:type owl:Class ;
+                                                                                                                                                              owl:intersectionOf ( :electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
+                                                                                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                                                                                     owl:onProperty [ owl:inverseOf :electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383 ] ;
+                                                                                                                                                                                     owl:someValuesFrom :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
+                                                                                                                                                                                   ]
+                                                                                                                                                                                 )
+                                                                                                                                                            ]
+                                                                                                                                                          )
+                                                                                                                                            ]
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasNegativeElectrode an electrode, the electrode (or its ElectrodeCoating) hasActiveMaterial a material, and the material hasProperty an OpenCircuitVoltage."@en ;
                                                        rdfs:subClassOf :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b ;
                                                        skos:prefLabel "NegativeElectrodeActiveMaterialOpenCircuitVoltage"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "open-circuit voltage of the negative electrode active material"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','OCP [V]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','active_materials',0,'OCP','value']"@en .
 
@@ -914,9 +965,35 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_21da0fe9_9fb6_4840_a12f_fbcc1ba84fb3
 :electrochemistry_21da0fe9_9fb6_4840_a12f_fbcc1ba84fb3 rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( :electrochemistry_f22bd1ec_faca_4335_92a5_a1687154c622
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty [ owl:inverseOf :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ] ;
+                                                                                                                         owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                              owl:unionOf ( :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
+                                                                                                                                                            [ rdf:type owl:Class ;
+                                                                                                                                                              owl:intersectionOf ( :electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
+                                                                                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                                                                                     owl:onProperty [ owl:inverseOf :electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383 ] ;
+                                                                                                                                                                                     owl:someValuesFrom :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
+                                                                                                                                                                                   ]
+                                                                                                                                                                                 )
+                                                                                                                                                            ]
+                                                                                                                                                          )
+                                                                                                                                            ]
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy :electrochemistry_f22bd1ec_faca_4335_92a5_a1687154c622 ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasNegativeElectrode an electrode, the electrode (or its ElectrodeCoating) hasActiveMaterial a material, and the material hasProperty a StoichiometricCoefficientAtSOC0."@en ;
                                                        rdfs:subClassOf :electrochemistry_f22bd1ec_faca_4335_92a5_a1687154c622 ;
                                                        skos:prefLabel "NegativeElectrodeActiveMaterialGuestStoichiometricCoefficientAtSOC0"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "stoichiometric coefficient of the guest species in the negative electrode active material at 0 % state of charge"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Minimum stoichiometry']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','active_materials',0,'stoichiometry0','value']"@en .
 
@@ -1415,18 +1492,60 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_404126e0_cb1b_44e4_98dc_2474185767a1
 :electrochemistry_404126e0_cb1b_44e4_98dc_2474185767a1 rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( :electrochemistry_0335e3f6_d1d8_4daa_8376_a9285f1bc9f1
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                         owl:intersectionOf ( :electrochemistry_2e3e14f9_4cb8_45b2_908e_47eec893dec8
+                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                                                                                                                owl:someValuesFrom :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
+                                                                                                                                              ]
+                                                                                                                                            )
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy :electrochemistry_0335e3f6_d1d8_4daa_8376_a9285f1bc9f1 ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasPositiveElectrode an electrode, an ElectrodeReaction hasParticipant that electrode, and the reaction hasProperty a ReactionRateConstant."@en ;
                                                        rdfs:subClassOf :electrochemistry_0335e3f6_d1d8_4daa_8376_a9285f1bc9f1 ;
                                                        skos:prefLabel "PositiveElectrodeReactionRateConstant"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "rate constant of the positive electrode reaction"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Reaction rate constant [mol.m-2.s-1]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','active_materials',0,'kinetic_constant','value']"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_43f77743_1af6_4a0f_9cc6_285c2a450549
 :electrochemistry_43f77743_1af6_4a0f_9cc6_285c2a450549 rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( :electrochemistry_ce74d2dc_d496_4116_b2fb_3e83d88bc744
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                         owl:unionOf ( :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
+                                                                                                                                       [ rdf:type owl:Class ;
+                                                                                                                                         owl:intersectionOf ( :electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
+                                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                                owl:onProperty [ owl:inverseOf :electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383 ] ;
+                                                                                                                                                                owl:someValuesFrom :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
+                                                                                                                                                              ]
+                                                                                                                                                            )
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy :electrochemistry_ce74d2dc_d496_4116_b2fb_3e83d88bc744 ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasPositiveElectrode an electrode, and the electrode (or its ElectrodeCoating) hasProperty an ElectronicConductivity."@en ;
                                                        rdfs:subClassOf :electrochemistry_ce74d2dc_d496_4116_b2fb_3e83d88bc744 ;
                                                        skos:prefLabel "PositiveElectrodeElectronicConductivity"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electronic conductivity of the positive electrode"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Conductivity [S.m-1]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','electronic_conductivity','value']"@en .
 
@@ -1621,7 +1740,6 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        rdfs:subClassOf :electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607 ;
                                                        skos:prefLabel "ChargeCarrierDiffusivityInElectrolyte"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the diffusivity of lithium in an electrolyte"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Electrolyte','Diffusivity [m2.s-1]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['electrolyte','diffusion_constant','value']"@en .
 
@@ -1638,10 +1756,42 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4d69edda_d2fa_40b0_9c1e_52e08debf578
 :electrochemistry_4d69edda_d2fa_40b0_9c1e_52e08debf578 rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( :electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                         owl:intersectionOf ( :electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607
+                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                                                                owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                                                                     owl:onProperty [ owl:inverseOf :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ] ;
+                                                                                                                                                                     owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                                                                          owl:unionOf ( :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
+                                                                                                                                                                                                        [ rdf:type owl:Class ;
+                                                                                                                                                                                                          owl:intersectionOf ( :electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
+                                                                                                                                                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                                                                                                                                                 owl:onProperty [ owl:inverseOf :electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383 ] ;
+                                                                                                                                                                                                                                 owl:someValuesFrom :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
+                                                                                                                                                                                                                               ]
+                                                                                                                                                                                                                             )
+                                                                                                                                                                                                        ]
+                                                                                                                                                                                                      )
+                                                                                                                                                                                        ]
+                                                                                                                                                                   ]
+                                                                                                                                              ]
+                                                                                                                                            )
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy :electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526 ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasPositiveElectrode an electrode, the electrode hasActiveMaterial a material, the material hasProperty a Diffusivity, and the diffusivity hasProperty an ActivationEnergy."@en ;
                                                        rdfs:subClassOf :electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526 ;
                                                        skos:prefLabel "ActivationEnergyOfGuestDiffusivityInPositiveElectrodeActiveMaterial"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the activation energy barrier in an Arrhenius expression for the diffusivity of lithium in the positive electrode"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Diffusivity activation energy [J.mol-1]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','active_materials',0,'diffusion_constant','arrhenius','activation_energy']"@en .
 
@@ -1703,10 +1853,35 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_50247e71_75fe_4986_959e_fd06c6be98db
 :electrochemistry_50247e71_75fe_4986_959e_fd06c6be98db rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( :electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty [ owl:inverseOf :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ] ;
+                                                                                                                         owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                              owl:unionOf ( :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
+                                                                                                                                                            [ rdf:type owl:Class ;
+                                                                                                                                                              owl:intersectionOf ( :electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
+                                                                                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                                                                                     owl:onProperty [ owl:inverseOf :electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383 ] ;
+                                                                                                                                                                                     owl:someValuesFrom :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
+                                                                                                                                                                                   ]
+                                                                                                                                                                                 )
+                                                                                                                                                            ]
+                                                                                                                                                          )
+                                                                                                                                            ]
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy :electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607 ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasNegativeElectrode an electrode, the electrode (or its ElectrodeCoating) hasActiveMaterial a material, and the material hasProperty a Diffusivity."@en ;
                                                        rdfs:subClassOf :electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607 ;
                                                        skos:prefLabel "GuestDiffusivityInNegativeElectrodeActiveMaterial"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the diffusivity of lithium in the negative electrode"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Diffusivity [m2.s-1]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','active_materials',0,'diffusion_constant','value']"@en .
 
@@ -1757,9 +1932,35 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_52ab4fdd_f945_4541_9ce6_cd6fd3a05861
 :electrochemistry_52ab4fdd_f945_4541_9ce6_cd6fd3a05861 rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty [ owl:inverseOf :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ] ;
+                                                                                                                         owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                              owl:unionOf ( :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
+                                                                                                                                                            [ rdf:type owl:Class ;
+                                                                                                                                                              owl:intersectionOf ( :electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
+                                                                                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                                                                                     owl:onProperty [ owl:inverseOf :electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383 ] ;
+                                                                                                                                                                                     owl:someValuesFrom :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
+                                                                                                                                                                                   ]
+                                                                                                                                                                                 )
+                                                                                                                                                            ]
+                                                                                                                                                          )
+                                                                                                                                            ]
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasPositiveElectrode an electrode, the electrode (or its ElectrodeCoating) hasActiveMaterial a material, and the material hasProperty an OpenCircuitVoltage."@en ;
                                                        rdfs:subClassOf :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b ;
                                                        skos:prefLabel "PositiveElectrodeActiveMaterialOpenCircuitVoltage"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "open-circuit voltage of the positive electrode active material"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','OCP [V]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','active_materials',0,'OCP','value']"@en .
 
@@ -1840,6 +2041,32 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_56b9cd1f_5397_4385_9292_30d93d9e7a05
 :electrochemistry_56b9cd1f_5397_4385_9292_30d93d9e7a05 rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( :electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                         owl:intersectionOf ( :electrochemistry_0335e3f6_d1d8_4daa_8376_a9285f1bc9f1
+                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                                                                owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                                                     owl:intersectionOf ( :electrochemistry_2e3e14f9_4cb8_45b2_908e_47eec893dec8
+                                                                                                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                                                                                                            owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                                                                                                                                                            owl:someValuesFrom :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
+                                                                                                                                                                                          ]
+                                                                                                                                                                                        )
+                                                                                                                                                                   ]
+                                                                                                                                              ]
+                                                                                                                                            )
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy :electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526 ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasPositiveElectrode an electrode, an ElectrodeReaction hasParticipant that electrode, the reaction hasProperty a ReactionRateConstant, and the rate constant hasProperty an ActivationEnergy."@en ;
                                                        rdfs:subClassOf :electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526 ;
                                                        skos:prefLabel "PositiveElectrodeActivationEnergyOfReaction"@en ;
                                                        :electrochemistry_02ce9195_42c1_4eb5_85c0_527dedda330c "PostiveElectrodeActivationEnergyOfReaction"@en ;
@@ -1852,7 +2079,6 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        rdfs:subClassOf :electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526 ;
                                                        skos:prefLabel "ActivationEnergyOfChargeCarrierDiffusivityInElectrolyte"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the activation energy barrier in an Arrhenius expression for the diffusivity of lithium in an electrolyte"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Electrolyte','Diffusivity activation energy [J.mol-1]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['electrolyte','diffusion_constant','arrhenius','activation_energy']"@en .
 
@@ -1878,9 +2104,35 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_58400817_3282_46e5_942e_3a1538631403
 :electrochemistry_58400817_3282_46e5_942e_3a1538631403 rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( :electrochemistry_b92e382f_5109_4f60_ab5e_c89d340419a9
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty [ owl:inverseOf :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ] ;
+                                                                                                                         owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                              owl:unionOf ( :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
+                                                                                                                                                            [ rdf:type owl:Class ;
+                                                                                                                                                              owl:intersectionOf ( :electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
+                                                                                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                                                                                     owl:onProperty [ owl:inverseOf :electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383 ] ;
+                                                                                                                                                                                     owl:someValuesFrom :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
+                                                                                                                                                                                   ]
+                                                                                                                                                                                 )
+                                                                                                                                                            ]
+                                                                                                                                                          )
+                                                                                                                                            ]
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy :electrochemistry_b92e382f_5109_4f60_ab5e_c89d340419a9 ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasPositiveElectrode an electrode, the electrode (or its ElectrodeCoating) hasActiveMaterial a material, and the material hasProperty a ParticleRadius."@en ;
                                                        rdfs:subClassOf :electrochemistry_b92e382f_5109_4f60_ab5e_c89d340419a9 ;
                                                        skos:prefLabel "PositiveElectrodeActiveMaterialParticleRadius"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "particle radius of the positive electrode active material"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Particle radius [m]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','active_materials',0,'particle_radius','value']"@en .
 
@@ -1922,9 +2174,28 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5cb403c4_4f28_46cb_81c4_21c5c47ef14a
 :electrochemistry_5cb403c4_4f28_46cb_81c4_21c5c47ef14a rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( emmo:EMMO_3a6578ac_aee0_43b9_9bc6_1eb208c8c9a9
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                         owl:intersectionOf ( :electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
+                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                owl:onProperty [ owl:inverseOf :electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383 ] ;
+                                                                                                                                                owl:someValuesFrom :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
+                                                                                                                                              ]
+                                                                                                                                            )
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy emmo:EMMO_3a6578ac_aee0_43b9_9bc6_1eb208c8c9a9 ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasNegativeElectrode an electrode, the electrode hasCoating an ElectrodeCoating, and the coating hasProperty a Porosity."@en ;
                                                        rdfs:subClassOf emmo:EMMO_3a6578ac_aee0_43b9_9bc6_1eb208c8c9a9 ;
                                                        skos:prefLabel "NegativeElectrodeCoatingPorosity"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "porosity of the negative electrode coating"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Porosity']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','porosity','value']"@en .
 
@@ -2030,10 +2301,28 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_62f5beeb_6d1e_442a_8048_3ebe08882964
 :electrochemistry_62f5beeb_6d1e_442a_8048_3ebe08882964 rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( :electrochemistry_3b938708_e7e4_4ac0_a959_9c04306302e7
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                         owl:intersectionOf ( :electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
+                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                owl:onProperty [ owl:inverseOf :electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383 ] ;
+                                                                                                                                                owl:someValuesFrom :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
+                                                                                                                                              ]
+                                                                                                                                            )
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy :electrochemistry_3b938708_e7e4_4ac0_a959_9c04306302e7 ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasPositiveElectrode an electrode, the electrode hasCoating an ElectrodeCoating, and the coating hasProperty a CoatingThickness."@en ;
                                                        rdfs:subClassOf :electrochemistry_3b938708_e7e4_4ac0_a959_9c04306302e7 ;
                                                        skos:prefLabel "PositiveElectrodeCoatingThickness"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "thickness of the positive electrode coating"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Thickness [m]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','thickness','value']"@en .
 
@@ -2211,9 +2500,28 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7481c4c9_c247_4248_a045_a1077230acba
 :electrochemistry_7481c4c9_c247_4248_a045_a1077230acba rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( emmo:EMMO_3a6578ac_aee0_43b9_9bc6_1eb208c8c9a9
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                         owl:intersectionOf ( :electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
+                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                owl:onProperty [ owl:inverseOf :electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383 ] ;
+                                                                                                                                                owl:someValuesFrom :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
+                                                                                                                                              ]
+                                                                                                                                            )
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy emmo:EMMO_3a6578ac_aee0_43b9_9bc6_1eb208c8c9a9 ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasPositiveElectrode an electrode, the electrode hasCoating an ElectrodeCoating, and the coating hasProperty a Porosity."@en ;
                                                        rdfs:subClassOf emmo:EMMO_3a6578ac_aee0_43b9_9bc6_1eb208c8c9a9 ;
                                                        skos:prefLabel "PositiveElectrodeCoatingPorosity"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "porosity of the positive electrode coating"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Porosity']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','porosity','value']"@en .
 
@@ -2468,9 +2776,35 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_80920875_62ac_4e29_b970_ec4316e76aa5
 :electrochemistry_80920875_62ac_4e29_b970_ec4316e76aa5 rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( :electrochemistry_f22bd1ec_faca_4335_92a5_a1687154c622
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty [ owl:inverseOf :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ] ;
+                                                                                                                         owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                              owl:unionOf ( :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
+                                                                                                                                                            [ rdf:type owl:Class ;
+                                                                                                                                                              owl:intersectionOf ( :electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
+                                                                                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                                                                                     owl:onProperty [ owl:inverseOf :electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383 ] ;
+                                                                                                                                                                                     owl:someValuesFrom :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
+                                                                                                                                                                                   ]
+                                                                                                                                                                                 )
+                                                                                                                                                            ]
+                                                                                                                                                          )
+                                                                                                                                            ]
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy :electrochemistry_f22bd1ec_faca_4335_92a5_a1687154c622 ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasPositiveElectrode an electrode, the electrode (or its ElectrodeCoating) hasActiveMaterial a material, and the material hasProperty a StoichiometricCoefficientAtSOC0."@en ;
                                                        rdfs:subClassOf :electrochemistry_f22bd1ec_faca_4335_92a5_a1687154c622 ;
                                                        skos:prefLabel "PositiveElectrodeActiveMaterialGuestStoichiometricCoefficientAtSOC0"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "stoichiometric coefficient of the guest species in the positive electrode active material at 0 % state of charge"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Maximum stoichiometry']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','active_materials',0,'stoichiometry0','value']"@en .
 
@@ -2577,10 +2911,42 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_86af4487_33c1_4562_a00b_3a8252ffe378
 :electrochemistry_86af4487_33c1_4562_a00b_3a8252ffe378 rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( :electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                         owl:intersectionOf ( :electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607
+                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                                                                owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                                                                     owl:onProperty [ owl:inverseOf :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ] ;
+                                                                                                                                                                     owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                                                                          owl:unionOf ( :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
+                                                                                                                                                                                                        [ rdf:type owl:Class ;
+                                                                                                                                                                                                          owl:intersectionOf ( :electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
+                                                                                                                                                                                                                               [ rdf:type owl:Restriction ;
+                                                                                                                                                                                                                                 owl:onProperty [ owl:inverseOf :electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383 ] ;
+                                                                                                                                                                                                                                 owl:someValuesFrom :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
+                                                                                                                                                                                                                               ]
+                                                                                                                                                                                                                             )
+                                                                                                                                                                                                        ]
+                                                                                                                                                                                                      )
+                                                                                                                                                                                        ]
+                                                                                                                                                                   ]
+                                                                                                                                              ]
+                                                                                                                                            )
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy :electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526 ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasNegativeElectrode an electrode, the electrode hasActiveMaterial a material, the material hasProperty a Diffusivity, and the diffusivity hasProperty an ActivationEnergy."@en ;
                                                        rdfs:subClassOf :electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526 ;
                                                        skos:prefLabel "ActivationEnergyOfGuestDiffusivityInNegativeElectrodeActiveMaterial"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the activation energy barrier in an Arrhenius expression for the diffusivity of lithium in the negative electrode"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Diffusivity activation energy [J.mol-1]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','active_materials',0,'diffusion_constant','arrhenius','activation_energy']"@en .
 
@@ -2645,9 +3011,35 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8c336ae9_1818_4b08_a660_4bb83b28351f
 :electrochemistry_8c336ae9_1818_4b08_a660_4bb83b28351f rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( :electrochemistry_38ab058e_3912_48c2_a7eb_76d25d000820
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty [ owl:inverseOf :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ] ;
+                                                                                                                         owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                              owl:unionOf ( :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
+                                                                                                                                                            [ rdf:type owl:Class ;
+                                                                                                                                                              owl:intersectionOf ( :electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
+                                                                                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                                                                                     owl:onProperty [ owl:inverseOf :electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383 ] ;
+                                                                                                                                                                                     owl:someValuesFrom :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
+                                                                                                                                                                                   ]
+                                                                                                                                                                                 )
+                                                                                                                                                            ]
+                                                                                                                                                          )
+                                                                                                                                            ]
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy :electrochemistry_38ab058e_3912_48c2_a7eb_76d25d000820 ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasNegativeElectrode an electrode, the electrode (or its ElectrodeCoating) hasActiveMaterial a material, and the material hasProperty a StoichiometricCoefficientAtSOC100."@en ;
                                                        rdfs:subClassOf :electrochemistry_38ab058e_3912_48c2_a7eb_76d25d000820 ;
                                                        skos:prefLabel "NegativeElectrodeActiveMaterialGuestStoichiometricCoefficientAtSOC100"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "stoichiometric coefficient of the guest species in the negative electrode active material at 100 % state of charge"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Maximum stoichiometry']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','active_materials',0,'stoichiometry1','value']"@en .
 
@@ -2779,9 +3171,35 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_99041897_5c08_40ed_9118_3e77e9b0e191
 :electrochemistry_99041897_5c08_40ed_9118_3e77e9b0e191 rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( :electrochemistry_38ab058e_3912_48c2_a7eb_76d25d000820
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty [ owl:inverseOf :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ] ;
+                                                                                                                         owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                              owl:unionOf ( :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
+                                                                                                                                                            [ rdf:type owl:Class ;
+                                                                                                                                                              owl:intersectionOf ( :electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
+                                                                                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                                                                                     owl:onProperty [ owl:inverseOf :electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383 ] ;
+                                                                                                                                                                                     owl:someValuesFrom :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
+                                                                                                                                                                                   ]
+                                                                                                                                                                                 )
+                                                                                                                                                            ]
+                                                                                                                                                          )
+                                                                                                                                            ]
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy :electrochemistry_38ab058e_3912_48c2_a7eb_76d25d000820 ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasPositiveElectrode an electrode, the electrode (or its ElectrodeCoating) hasActiveMaterial a material, and the material hasProperty a StoichiometricCoefficientAtSOC100."@en ;
                                                        rdfs:subClassOf :electrochemistry_38ab058e_3912_48c2_a7eb_76d25d000820 ;
                                                        skos:prefLabel "PositiveElectrodeActiveMaterialGuestStoichiometricCoefficientAtSOC100"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "stoichiometric coefficient of the guest species in the positive electrode active material at 100 % state of charge"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Minimum stoichiometry']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','active_materials',0,'stoichiometry1','value']"@en .
 
@@ -2887,9 +3305,32 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9d558b56_d3b8_429a_a4e2_d2ffab895e42
 :electrochemistry_9d558b56_d3b8_429a_a4e2_d2ffab895e42 rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( :electrochemistry_3bb5ae23_59fa_4bc7_9495_803eb6719f28
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                         owl:unionOf ( :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
+                                                                                                                                       [ rdf:type owl:Class ;
+                                                                                                                                         owl:intersectionOf ( :electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
+                                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                                owl:onProperty [ owl:inverseOf :electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383 ] ;
+                                                                                                                                                                owl:someValuesFrom :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
+                                                                                                                                                              ]
+                                                                                                                                                            )
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy :electrochemistry_3bb5ae23_59fa_4bc7_9495_803eb6719f28 ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasPositiveElectrode an electrode, and the electrode (or its ElectrodeCoating) hasProperty a TemperatureCoefficientOfTheOpenCircuitVoltage."@en ;
                                                        rdfs:subClassOf :electrochemistry_3bb5ae23_59fa_4bc7_9495_803eb6719f28 ;
                                                        skos:prefLabel "PositiveElectrodeEntropicChangeCoefficient"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "temperature coefficient of the open-circuit voltage (entropic change coefficient) of the positive electrode"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Entropic change coefficient [V.K-1]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','active_materials',0,'entropy_coefficient','value']"@en .
 
@@ -3380,19 +3821,67 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_be3da3e2_58a9_4e58_adc2_7336d312717c
 :electrochemistry_be3da3e2_58a9_4e58_adc2_7336d312717c rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( :electrochemistry_ce74d2dc_d496_4116_b2fb_3e83d88bc744
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                         owl:unionOf ( :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
+                                                                                                                                       [ rdf:type owl:Class ;
+                                                                                                                                         owl:intersectionOf ( :electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
+                                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                                owl:onProperty [ owl:inverseOf :electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383 ] ;
+                                                                                                                                                                owl:someValuesFrom :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
+                                                                                                                                                              ]
+                                                                                                                                                            )
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy :electrochemistry_ce74d2dc_d496_4116_b2fb_3e83d88bc744 ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasNegativeElectrode an electrode, and the electrode (or its ElectrodeCoating) hasProperty an ElectronicConductivity."@en ;
                                                        rdfs:subClassOf :electrochemistry_ce74d2dc_d496_4116_b2fb_3e83d88bc744 ;
                                                        skos:prefLabel "NegativeElectrodeElectronicConductivity"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the electronic conductivity of the negative electrode"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Conductivity [S.m-1]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','electronic_conductivity','value']"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_bfe553c2_a63e_49b6_a209_0855dfc39724
 :electrochemistry_bfe553c2_a63e_49b6_a209_0855dfc39724 rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( :electrochemistry_b92e382f_5109_4f60_ab5e_c89d340419a9
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty [ owl:inverseOf :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ] ;
+                                                                                                                         owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                              owl:unionOf ( :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
+                                                                                                                                                            [ rdf:type owl:Class ;
+                                                                                                                                                              owl:intersectionOf ( :electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
+                                                                                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                                                                                     owl:onProperty [ owl:inverseOf :electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383 ] ;
+                                                                                                                                                                                     owl:someValuesFrom :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
+                                                                                                                                                                                   ]
+                                                                                                                                                                                 )
+                                                                                                                                                            ]
+                                                                                                                                                          )
+                                                                                                                                            ]
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy :electrochemistry_b92e382f_5109_4f60_ab5e_c89d340419a9 ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasNegativeElectrode an electrode, the electrode (or its ElectrodeCoating) hasActiveMaterial a material, and the material hasProperty a ParticleRadius."@en ;
                                                        rdfs:subClassOf :electrochemistry_b92e382f_5109_4f60_ab5e_c89d340419a9 ;
                                                        skos:prefLabel "NegativeElectrodeActiveMaterialParticleRadius"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "particle radius of the negative electrode active material"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Particle radius [m]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','active_materials',0,'particle_radius','value']"@en .
 
@@ -3497,27 +3986,97 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c5dcb1a2_f2cf_421a_b8ae_47a88a61fce3
 :electrochemistry_c5dcb1a2_f2cf_421a_b8ae_47a88a61fce3 rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( :electrochemistry_0335e3f6_d1d8_4daa_8376_a9285f1bc9f1
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                         owl:intersectionOf ( :electrochemistry_2e3e14f9_4cb8_45b2_908e_47eec893dec8
+                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                                                                                                                owl:someValuesFrom :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
+                                                                                                                                              ]
+                                                                                                                                            )
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy :electrochemistry_0335e3f6_d1d8_4daa_8376_a9285f1bc9f1 ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasNegativeElectrode an electrode, an ElectrodeReaction hasParticipant that electrode, and the reaction hasProperty a ReactionRateConstant."@en ;
                                                        rdfs:subClassOf :electrochemistry_0335e3f6_d1d8_4daa_8376_a9285f1bc9f1 ;
                                                        skos:prefLabel "NegativeElectrodeReactionRateConstant"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "rate constant of the negative electrode reaction"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Reaction rate constant [mol.m-2.s-1]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','active_materials',0,'kinetic_constant','value']"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c5f9b91e_a770_4e9b_837e_fa2a76019111
 :electrochemistry_c5f9b91e_a770_4e9b_837e_fa2a76019111 rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( :electrochemistry_a5571263_f153_448f_84a3_cd18092cf8fa
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty [ owl:inverseOf :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ] ;
+                                                                                                                         owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                              owl:unionOf ( :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
+                                                                                                                                                            [ rdf:type owl:Class ;
+                                                                                                                                                              owl:intersectionOf ( :electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
+                                                                                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                                                                                     owl:onProperty [ owl:inverseOf :electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383 ] ;
+                                                                                                                                                                                     owl:someValuesFrom :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
+                                                                                                                                                                                   ]
+                                                                                                                                                                                 )
+                                                                                                                                                            ]
+                                                                                                                                                          )
+                                                                                                                                            ]
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy :electrochemistry_a5571263_f153_448f_84a3_cd18092cf8fa ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasNegativeElectrode an electrode, the electrode (or its ElectrodeCoating) hasActiveMaterial a material, and the material hasProperty a VolumetricSurfaceArea."@en ;
                                                        rdfs:subClassOf :electrochemistry_a5571263_f153_448f_84a3_cd18092cf8fa ;
                                                        skos:prefLabel "NegativeElectrodeActiveMaterialVolumetricSurfaceArea"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "volumetric surface area of the negative electrode active material"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Surface area per unit volume [m-1]']"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c69a9d55_823f_4113_a305_ebc89dde7de3
 :electrochemistry_c69a9d55_823f_4113_a305_ebc89dde7de3 rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( :electrochemistry_47287d09_6108_45ca_ac65_8b9451b1065e
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty [ owl:inverseOf :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ] ;
+                                                                                                                         owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                              owl:unionOf ( :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
+                                                                                                                                                            [ rdf:type owl:Class ;
+                                                                                                                                                              owl:intersectionOf ( :electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
+                                                                                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                                                                                     owl:onProperty [ owl:inverseOf :electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383 ] ;
+                                                                                                                                                                                     owl:someValuesFrom :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
+                                                                                                                                                                                   ]
+                                                                                                                                                                                 )
+                                                                                                                                                            ]
+                                                                                                                                                          )
+                                                                                                                                            ]
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy :electrochemistry_47287d09_6108_45ca_ac65_8b9451b1065e ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasPositiveElectrode an electrode, the electrode (or its ElectrodeCoating) hasActiveMaterial a material, and the material hasProperty a MaximumConcentration."@en ;
                                                        rdfs:subClassOf :electrochemistry_47287d09_6108_45ca_ac65_8b9451b1065e ;
                                                        skos:prefLabel "PositiveElectrodeActiveMaterialMaximumGuestConcentration"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "maximum concentration of lithium in the positive electrode"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Maximum concentration [mol.m-3]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','active_materials',0,'maximum_concentration','value']"@en .
 
@@ -3608,10 +4167,28 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_cdc91ec0_9fc5_4551_bbd9_6824c2920124
 :electrochemistry_cdc91ec0_9fc5_4551_bbd9_6824c2920124 rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( :electrochemistry_3b938708_e7e4_4ac0_a959_9c04306302e7
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                         owl:intersectionOf ( :electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
+                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                owl:onProperty [ owl:inverseOf :electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383 ] ;
+                                                                                                                                                owl:someValuesFrom :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
+                                                                                                                                              ]
+                                                                                                                                            )
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy :electrochemistry_3b938708_e7e4_4ac0_a959_9c04306302e7 ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasNegativeElectrode an electrode, the electrode hasCoating an ElectrodeCoating, and the coating hasProperty a CoatingThickness."@en ;
                                                        rdfs:subClassOf :electrochemistry_3b938708_e7e4_4ac0_a959_9c04306302e7 ;
                                                        skos:prefLabel "NegativeElectrodeCoatingThickness"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "thickness of the negative electrode coating"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Thickness [m]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','thickness','value']"@en .
 
@@ -3862,7 +4439,6 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        rdfs:subClassOf emmo:EMMO_d97b27cb_61a4_4568_a38b_4edd4f224acc ;
                                                        skos:prefLabel "ChargeCarrierTransportNumber"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "transport number of lithium ion in electrolyte"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Electrolyte','Cation transference number']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['electrolyte','transference_number','value']"@en .
 
@@ -3905,10 +4481,35 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e59188bb_ce66_49f6_84aa_ecb98e76941e
 :electrochemistry_e59188bb_ce66_49f6_84aa_ecb98e76941e rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( :electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty [ owl:inverseOf :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ] ;
+                                                                                                                         owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                              owl:unionOf ( :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
+                                                                                                                                                            [ rdf:type owl:Class ;
+                                                                                                                                                              owl:intersectionOf ( :electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
+                                                                                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                                                                                     owl:onProperty [ owl:inverseOf :electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383 ] ;
+                                                                                                                                                                                     owl:someValuesFrom :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
+                                                                                                                                                                                   ]
+                                                                                                                                                                                 )
+                                                                                                                                                            ]
+                                                                                                                                                          )
+                                                                                                                                            ]
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy :electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607 ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasPositiveElectrode an electrode, the electrode (or its ElectrodeCoating) hasActiveMaterial a material, and the material hasProperty a Diffusivity."@en ;
                                                        rdfs:subClassOf :electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607 ;
                                                        skos:prefLabel "GuestDiffusivityInPositiveElectrodeActiveMaterial"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the diffusivity of lithium in the positive electrode"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Diffusivity [m2.s-1]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['positive_electrode','active_materials',0,'diffusion_constant','value']"@en .
 
@@ -3939,10 +4540,35 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e808a26a_5812_49e9_894c_b793c7fe0c38
 :electrochemistry_e808a26a_5812_49e9_894c_b793c7fe0c38 rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( :electrochemistry_47287d09_6108_45ca_ac65_8b9451b1065e
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Restriction ;
+                                                                                                                         owl:onProperty [ owl:inverseOf :electrochemistry_860aa941_5ff9_4452_8a16_7856fad07bee ] ;
+                                                                                                                         owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                              owl:unionOf ( :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
+                                                                                                                                                            [ rdf:type owl:Class ;
+                                                                                                                                                              owl:intersectionOf ( :electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
+                                                                                                                                                                                   [ rdf:type owl:Restriction ;
+                                                                                                                                                                                     owl:onProperty [ owl:inverseOf :electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383 ] ;
+                                                                                                                                                                                     owl:someValuesFrom :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
+                                                                                                                                                                                   ]
+                                                                                                                                                                                 )
+                                                                                                                                                            ]
+                                                                                                                                                          )
+                                                                                                                                            ]
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy :electrochemistry_47287d09_6108_45ca_ac65_8b9451b1065e ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasNegativeElectrode an electrode, the electrode (or its ElectrodeCoating) hasActiveMaterial a material, and the material hasProperty a MaximumConcentration."@en ;
                                                        rdfs:subClassOf :electrochemistry_47287d09_6108_45ca_ac65_8b9451b1065e ;
                                                        skos:prefLabel "NegativeElectrodeActiveMaterialMaximumGuestConcentration"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "maximum concentration of lithium in the negative electrode"@en ;
-                                                       emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Maximum concentration [mol.m-3]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','active_materials',0,'maximum_concentration','value']"@en .
 
@@ -3984,9 +4610,32 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_eac57b09_5cc9_41d7_b2c8_40218d7fd47c
 :electrochemistry_eac57b09_5cc9_41d7_b2c8_40218d7fd47c rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( :electrochemistry_3bb5ae23_59fa_4bc7_9495_803eb6719f28
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                         owl:unionOf ( :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
+                                                                                                                                       [ rdf:type owl:Class ;
+                                                                                                                                         owl:intersectionOf ( :electrochemistry_403c300e_09b9_400b_943b_04e82a3cfb56
+                                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                                owl:onProperty [ owl:inverseOf :electrochemistry_4df9926d_d4f2_4955_93f3_a03c5edc5383 ] ;
+                                                                                                                                                                owl:someValuesFrom :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
+                                                                                                                                                              ]
+                                                                                                                                                            )
+                                                                                                                                       ]
+                                                                                                                                     )
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy :electrochemistry_3bb5ae23_59fa_4bc7_9495_803eb6719f28 ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasNegativeElectrode an electrode, and the electrode (or its ElectrodeCoating) hasProperty a TemperatureCoefficientOfTheOpenCircuitVoltage."@en ;
                                                        rdfs:subClassOf :electrochemistry_3bb5ae23_59fa_4bc7_9495_803eb6719f28 ;
                                                        skos:prefLabel "NegativeElectrodeEntropicChangeCoefficient"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "temperature coefficient of the open-circuit voltage (entropic change coefficient) of the negative electrode"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Entropic change coefficient [V.K-1]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['negative_electrode','active_materials',0,'entropy_coefficient','value']"@en .
 
@@ -4170,9 +4819,35 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fda9539d_5232_471c_8945_b9a8ec7247fe
 :electrochemistry_fda9539d_5232_471c_8945_b9a8ec7247fe rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( :electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                         owl:intersectionOf ( :electrochemistry_0335e3f6_d1d8_4daa_8376_a9285f1bc9f1
+                                                                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                                                                owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                                                                owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                                                                                                     owl:intersectionOf ( :electrochemistry_2e3e14f9_4cb8_45b2_908e_47eec893dec8
+                                                                                                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                                                                                                            owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
+                                                                                                                                                                                            owl:someValuesFrom :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
+                                                                                                                                                                                          ]
+                                                                                                                                                                                        )
+                                                                                                                                                                   ]
+                                                                                                                                              ]
+                                                                                                                                            )
+                                                                                                                       ]
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       dcterms:isReplacedBy :electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526 ;
+                                                       owl:deprecated "true"^^xsd:boolean ;
+                                                       rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasNegativeElectrode an electrode, an ElectrodeReaction hasParticipant that electrode, the reaction hasProperty a ReactionRateConstant, and the rate constant hasProperty an ActivationEnergy."@en ;
                                                        rdfs:subClassOf :electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526 ;
                                                        skos:prefLabel "NegativeElectrodeActivationEnergyOfReaction"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "this is a very specific term with a narrow conceptualization, used mostly as an anchor term for supporting interoperability; a more general term is suitable in most cases."@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "activation energy of the rate constant of the negative electrode reaction"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Reaction rate constant activation energy [J.mol-1]']"@en .
 
 
