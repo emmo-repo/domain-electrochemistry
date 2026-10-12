@@ -4388,7 +4388,8 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_aff732a9_238a_4734_977c_b2ba202af126
 :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627 ;
-                                                       skos:altLabel "PositivePlate"@en ;
+                                                       skos:altLabel "PositivePlate"@en ,
+                                                                     "Positrode"@en ;
                                                        skos:prefLabel "PositiveElectrode"@en ;
                                                        skos:related :electrochemistry_35c650ab_3b23_4938_b312_1b0dede2e6d5 ,
                                                                     :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c ;
@@ -5076,7 +5077,8 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c
 :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627 ;
-                                                       skos:altLabel "NegativePlate"@en ;
+                                                       skos:altLabel "Negatrode"@en ,
+                                                                     "NegativePlate"@en ;
                                                        skos:note "by convention, an oxidation reaction occurs during discharge"@en ;
                                                        skos:prefLabel "NegativeElectrode"@en ;
                                                        skos:related :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126 ,
