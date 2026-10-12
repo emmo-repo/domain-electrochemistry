@@ -159,7 +159,10 @@ html_css_files = ['css/custom.css']
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
 # directly to the root of the documentation.
-#html_extra_path = []
+# Redirect stubs for URLs that existed on the published site before pages were
+# moved or removed (issue #186). Each stub is a meta-refresh to the new
+# location and is copied verbatim into the build root.
+html_extra_path = ['_redirects']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
