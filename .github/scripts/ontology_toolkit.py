@@ -95,6 +95,11 @@ def load_ontology_config():
 
 ########## JSON-LD Context Generation (ttl_to_context logic) ##########
 
+# Annotation property carrying prefLabel spellings that were later corrected (#193).
+FORMER_LABEL = rdflib.URIRef(
+    "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_02ce9195_42c1_4eb5_85c0_527dedda330c"
+)
+
 def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.org/2000/01/rdf-schema#label'):
     g = rdflib.Graph()
     g.parse(ttl_file, format='ttl')
@@ -114,9 +119,30 @@ def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.or
         elif p == predicate:
             other_entries[str(o)] = str(s)
 
+    # Former labels (misspellings corrected in a later release) stay in the
+    # context so existing data keeps expanding. They are carried by the
+    # domain's formerLabel annotation property (matched by IRI, which is the
+    # stable contract; the label is not), a sub-property of
+    # skos:hiddenLabel. Only that property is read: plain skos:hiddenLabel
+    # and the vendor column-label properties hold raw cycler column names
+    # that must not become context terms. A current prefLabel always wins.
+    former_labels = list(g.subject_objects(FORMER_LABEL))
+    if (FORMER_LABEL, RDF.type, OWL.AnnotationProperty) not in g:
+        LOGGER.warning("formerLabel property %s is not in the closure; retired spellings "
+                       "will be missing from the context", FORMER_LABEL)
+    elif not former_labels:
+        LOGGER.warning("formerLabel property is declared but carries no values")
+    for s, o in former_labels:
+        other_entries.setdefault(str(o), str(s))
+
     for prefix, uri in g.namespace_manager.namespaces():
         if len(prefix) >= 2:
             namespace_prefixes[prefix] = str(uri)
+
+    # The reasoned squash that CI feeds in here binds no prefix for the EMMO
+    # namespace, so rdflib invents one (ns1) and CURIEs such as
+    # "emmo:AmpereHour" in JSON-LD data never expand. Bind it explicitly.
+    namespace_prefixes.setdefault("emmo", "https://w3id.org/emmo#")
 
     context = {
         "@context": {
@@ -220,7 +246,32 @@ def _sorted_annotations(onto: Ontology):
 
 
 
-def extract_terms_info_sparql(onto: Ontology) -> list:
+def _is_deprecated(entity) -> bool:
+    """True when the entity carries owl:deprecated true (any literal form)."""
+    try:
+        values = list(getattr(entity, "deprecated", []) or [])
+    except Exception:  # pragma: no cover - owlready2 quirks
+        values = []
+    return any(str(v).strip().lower() in ("true", "1") for v in values)
+
+
+def _replacements_from_ttl(filepath: str) -> dict:
+    """Map term IRI -> [(replacement IRI, label), ...] from dcterms:isReplacedBy.
+
+    Read with rdflib from the module source, since dcterms:isReplacedBy is not a
+    declared annotation property in the ontology and owlready2 does not expose it.
+    """
+    IS_REPLACED_BY = rdflib.URIRef("http://purl.org/dc/terms/isReplacedBy")
+    g = rdflib.Graph()
+    g.parse(filepath, format="turtle")
+    out = {}
+    for s, o in g.subject_objects(IS_REPLACED_BY):
+        label = g.value(o, SKOS.prefLabel)
+        out.setdefault(str(s), []).append((str(o), str(label) if label else str(o).split("#")[-1]))
+    return out
+
+
+def extract_terms_info_sparql(onto: Ontology, replacements: dict = None) -> list:
     """Extracts terms from the TTL graph using SPARQL, including parent, subclass, and restriction links."""
     text_entities = []
 
@@ -233,7 +284,13 @@ def extract_terms_info_sparql(onto: Ontology) -> list:
         # consider terms defined in the current ontology (and not just referenes here)
         if not entity.iri.split('#')[0] == config["ontology_prefix"].rstrip('#/'):
             continue
-            
+
+        # Deprecated terms stay in the class index: a term IRI resolves (via the
+        # w3id 303) to this page's fragment, so dropping the entry would break
+        # dereferencing. They are flagged and sorted after current terms.
+        hit_dict["deprecated"] = _is_deprecated(entity)
+        hit_dict["replacedBy"] = (replacements or {}).get(entity.iri, [])
+
 
         #if not (isinstance(entity, owlready2.ThingClass) or isinstance(entity, owlready2.PropertyClass)):
         #    continue
@@ -263,7 +320,8 @@ def extract_terms_info_sparql(onto: Ontology) -> list:
 
         text_entities.append(hit_dict)
 
-    text_entities.sort(key=lambda e: e[onto.prefLabel])
+    # current terms first, deprecated ones after them; anchors are ids, not positions
+    text_entities.sort(key=lambda e: (bool(e.get("deprecated")), e[onto.prefLabel]))
     return text_entities
 
 
@@ -420,7 +478,8 @@ def entities_to_rst(entities: list[dict], onto: Ontology) -> str:
     }
 
     # keys (normalized) never shown in the table
-    TABLE_SKIP_BASE = {"iri", "preflabel", "subclassof", "subclasses", "restrictions"}
+    TABLE_SKIP_BASE = {"iri", "preflabel", "subclassof", "subclasses", "restrictions",
+                       "deprecated", "replacedby"}
 
     for item in entities:
         if '#' not in item['IRI']:
@@ -435,6 +494,27 @@ def entities_to_rst(entities: list[dict], onto: Ontology) -> str:
         title = item[onto.prefLabel]
         rst += f"{title}\n{'-' * len(title)}\n\n"
         rst += f"IRI: {item['IRI']}\n\n"
+
+        # ---- deprecation marker (the entry itself stays so the IRI keeps resolving)
+        if item.get("deprecated"):
+            links = []
+            for repl_iri, repl_label in item.get("replacedBy") or []:
+                if repl_label == repl_iri.split("#")[-1]:
+                    # replacement lives outside this module: ask the loaded world for its label
+                    try:
+                        ent = onto.world[repl_iri]
+                        repl_label = ent.prefLabel.get_lang("en")[0] if ent is not None else repl_label
+                    except Exception:
+                        pass
+                if repl_iri.startswith(iri_prefix + "#"):
+                    target = "#" + repl_iri.split("#", 1)[1]   # same page
+                else:
+                    target = repl_iri
+                links.append(f"`{repl_label} <{target}>`__")
+            if links:
+                rst += ".. warning::\n\n   **Deprecated.** Use " + ", ".join(links) + " instead.\n\n"
+            else:
+                rst += ".. warning::\n\n   **Deprecated.** No replacement is designated.\n\n"
 
         # ---- normalize keys once (and keep pretty display names)
         norm = {}          # canonical key -> value
@@ -525,7 +605,7 @@ def generate_rst_documentation():
         filepath = module["path"]
         if os.path.isfile(filepath):
             onto = load_ttl_from_file(filepath)
-            entities = extract_terms_info_sparql(onto)
+            entities = extract_terms_info_sparql(onto, _replacements_from_ttl(filepath))
             rst_content += f"\n{module['section_title']}\n{'=' * len(module['section_title'])}\n\n"
             rst_content += render_rst_abstract(onto)
             rst_content += entities_to_rst(entities, onto)

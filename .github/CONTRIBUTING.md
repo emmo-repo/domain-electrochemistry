@@ -45,7 +45,7 @@ This repository follows a **branching model** designed to balance ongoing develo
 | Documentation | docs/update-contributor-guide  |
 
 Feature and fix branches should start from dev. Hotfix branches (critical bug fixes for stable releases) should start from main.
-3. **Make Changes.** Follow the ontology modeling guidelines (terminology, structure, annotations). Commit changes with clear, descriptive commit messages. Include tests, examples, or documentation if relevant.
+3. **Make Changes.** Follow the ontology modeling guidelines (terminology, structure, annotations). Commit changes with clear, descriptive commit messages. Include tests, examples, or documentation if relevant. When you add a term or change a `skos:prefLabel`, update `context/context.json` in the same PR: add the label in sorted position mapping to the IRI, or regenerate the file with `python .github/scripts/ontology_toolkit.py --generate-context` against a squashed build. `tests/test_context_terms.py` fails otherwise. A corrected spelling keeps the old one on the class under `formerLabel`, so data written against it keeps resolving.
 4. **Open a Pull Request.** Push your branch to GitHub. Open a pull request (PR) targeting dev. Use the pull request template (if available) and provide a clear description of the change.
 5. **Review and Merge.** Maintainers will review your PR. You may be asked to make revisions. Once approved, the branch will be merged into dev.
 
@@ -92,6 +92,10 @@ An IRI is a permanent contract with everyone who has used it. We therefore treat
   2. A [w3id.org](https://github.com/perma-id/w3id.org) redirect update, coordinated with the EMMO maintainers — w3id rules are not under this repository's sole control.
   3. A `CHANGELOG.md` entry and a major-version bump if downstream parsers could break.
 - **Automated agents may _propose_ IRI changes** (as a written proposal) but must never execute them without the approval above.
+
+### Which quantities get their own class
+
+**A qualified quantity gets its own class only when the qualifier changes what is measured or how the value is determined.** `NominalCapacity`, `MaximumContinuousChargingCurrent` and `AmbientThermodynamicTemperature` pass that test. "Negative electrode coating thickness" does not: it is the same quantity (`CoatingThickness`) on a different object, and the object is already identified by the cell structure (`hasNegativeElectrode`, `hasCoating`, `hasProperty`). Any compound class that is accepted needs a defining axiom (`owl:equivalentClass`) over the terms it combines, so a reasoner can relate it to data stated through the structure. Mappings to a tool's keys or a cycler's column names live with the tool (application ontology, SSSOM file or CSVW schema), not in this ontology.
 
 ## Release Runbook
 

@@ -17,11 +17,11 @@
 @base <https://w3id.org/emmo/domain/electrochemistry#> .
 
 <https://w3id.org/emmo/domain/reference/electrochemistry-reference> rdf:type owl:Ontology ;
-                                                                     owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.37.2/reference/electrochemistry-reference> ;
+                                                                     owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.38.0/reference/electrochemistry-reference> ;
                                                                      owl:imports <https://w3id.org/emmo/1.0.2> ,
                                                                                  <https://w3id.org/emmo/domain/characterisation-methodology/1.0.2/chameo> ,
                                                                                  <https://w3id.org/emmo/domain/chemical-substance/0.15.0/chemical-substance> ,
-                                                                                 <https://w3id.org/emmo/domain/electrochemistry/0.37.2/reference/electrochemistry-quantities> ;
+                                                                                 <https://w3id.org/emmo/domain/electrochemistry/0.38.0/reference/electrochemistry-quantities> ;
                                                                      dcterms:abstract "This reference module contains the core terms for the electrochemistry domain."@en ;
                                                                      dcterms:bibliographicCitation "https://doi.org/10.5281/zenodo.7693664" ;
                                                                      dcterms:contributor <https://orcid.org/0000-0001-8869-3718> ,
@@ -30,9 +30,9 @@
                                                                      dcterms:created "2022-11-25"^^xsd:date ;
                                                                      dcterms:creator <https://orcid.org/0000-0002-8758-6109> ,
                                                                                      <https://orcid.org/0000-0003-2954-1233> ;
-                                                                     dcterms:issued "2026-08-10"^^xsd:date ;
+                                                                     dcterms:issued "2026-10-12"^^xsd:date ;
                                                                      dcterms:license <https://creativecommons.org/licenses/by/4.0/legalcode> ;
-                                                                     dcterms:modified "2026-08-10"^^xsd:date ;
+                                                                     dcterms:modified "2026-10-12"^^xsd:date ;
                                                                      dcterms:publisher "EMMO" ;
                                                                      dcterms:source <https://www.electropedia.org> ,
                                                                                     <https://doi.org/10.1109/IEEESTD.2016.7552407> ,
@@ -43,9 +43,9 @@
                                                                      bibo:status "unstable" ;
                                                                      vann:preferredNamespacePrefix "echem" ;
                                                                      vann:preferredNamespaceUri "https://w3id.org/emmo/domain/electrochemistry" ;
-                                                                     owl:backwardCompatibleWith <https://w3id.org/emmo/domain/electrochemistry/0.37.1/reference/electrochemistry-reference> ;
-                                                                     owl:priorVersion <https://w3id.org/emmo/domain/electrochemistry/0.37.1/reference/electrochemistry-reference> ;
-                                                                     owl:versionInfo "0.37.2" ;
+                                                                     owl:backwardCompatibleWith <https://w3id.org/emmo/domain/electrochemistry/0.37.2/reference/electrochemistry-reference> ;
+                                                                     owl:priorVersion <https://w3id.org/emmo/domain/electrochemistry/0.37.2/reference/electrochemistry-reference> ;
+                                                                     owl:versionInfo "0.38.0" ;
                                                                      foaf:logo "https://raw.githubusercontent.com/emmo-repo/domain-electrochemistry/gh-pages/assets/img/fig/png/domain-electrochemistry-logo.png" .
 
 #################################################################
@@ -151,7 +151,7 @@ emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 rdf:type owl:ObjectProperty ,
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138
 :electrochemistry_5d299271_3f68_494f_ab96_3db9acdd3138 rdf:type owl:ObjectProperty ;
                                                        rdfs:subPropertyOf :electrochemistry_578c41e9_ee01_4840_9c8c_04ab6e4e6241 ;
-                                                       rdfs:range :electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627 ;
+                                                       rdfs:range :electrochemistry_c94c041b_8ea6_43e7_85cc_d2bce7785b4c ;
                                                        skos:prefLabel "hasNegativeElectrode"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "relates an electrochemical cell to the electrode at which oxidation occurs during discharge"@en .
 
@@ -190,7 +190,7 @@ emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 rdf:type owl:ObjectProperty ,
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616
 :electrochemistry_8e9cf965_9f92_46e8_b678_b50410ce3616 rdf:type owl:ObjectProperty ;
                                                        rdfs:subPropertyOf :electrochemistry_578c41e9_ee01_4840_9c8c_04ab6e4e6241 ;
-                                                       rdfs:range :electrochemistry_0f007072_a8dd_4798_b865_1bf9363be627 ;
+                                                       rdfs:range :electrochemistry_aff732a9_238a_4734_977c_b2ba202af126 ;
                                                        skos:prefLabel "hasPositiveElectrode"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "relates an electrochemical cell to the electrode at which reduction occurs during discharge"@en .
 
@@ -2118,7 +2118,8 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
                                                                        ] ;
                                                        owl:deprecated "true"^^xsd:boolean ;
                                                        skos:altLabel "NMCLMOElectrode"@en ;
-                                                       skos:prefLabel "LithiumNickelMananeseCobaltOxideLithiumManganeseOxideElectrode"@en ;
+                                                       skos:prefLabel "LithiumNickelManganeseCobaltOxideLithiumManganeseOxideElectrode"@en ;
+                                                       :electrochemistry_02ce9195_42c1_4eb5_85c0_527dedda330c "LithiumNickelMananeseCobaltOxideLithiumManganeseOxideElectrode"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "an electrode with blended lithium nickel manganese cobalt oxide (NMC) and lithium manganese oxide (LMO) active materials"@en .
 
 
@@ -2476,7 +2477,8 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:subClassOf [ rdf:type owl:Re
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_573be62a_5aae_4984_9a51_7c50845493df
 :electrochemistry_573be62a_5aae_4984_9a51_7c50845493df rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_bbb1d95b_72d1_44f6_b07e_a3d7d41ac215 ;
-                                                       skos:prefLabel "CardonDioxideElectrode"@en ;
+                                                       skos:prefLabel "CarbonDioxideElectrode"@en ;
+                                                       :electrochemistry_02ce9195_42c1_4eb5_85c0_527dedda330c "CardonDioxideElectrode"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a gas diffusion electrode in which the active material is carbon dioxide (CO2)"@en .
 
 
