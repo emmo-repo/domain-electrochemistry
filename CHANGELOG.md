@@ -5,6 +5,8 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: Se
 
 ## [Unreleased]
 
+## [0.38.0] - 2026-10-12
+
 ### Added
 - `ElectrodeToSeparatorGapWidth` quantity class (#178): width of the spacing between an electrode surface and the adjacent separator or ion-exchange membrane; zero for zero-gap designs. Subclass of EMMO `Thickness` and `ElectrochemicalQuantity`.
 - `formerLabel` annotation property (sub-property of `skos:hiddenLabel`) carrying prefLabel spellings that were later corrected. The context generator emits its values as extra JSON-LD terms for the same IRI, so data written against an old spelling keeps expanding (#193).
@@ -72,7 +74,8 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: Se
 - `bump-version` replaced by the shared config-driven tool (adds `--check` and date handling) with tests.
 - The inferred ontology (`electrochemistry-inferred.ttl`) is no longer tracked in git — it is a generated build artifact. CI regenerates it and publishes it to gh-pages (`/inferred`, latest) and attaches a freshly reasoned copy to each GitHub Release (per version); the docs workflow backfills the per-version `versions/` archive from Release assets. You no longer generate or commit it by hand.
 
-[Unreleased]: https://github.com/emmo-repo/domain-electrochemistry/compare/0.37.2...HEAD
+[Unreleased]: https://github.com/emmo-repo/domain-electrochemistry/compare/0.38.0...HEAD
+[0.38.0]: https://github.com/emmo-repo/domain-electrochemistry/compare/0.37.2...0.38.0
 [0.37.2]: https://github.com/emmo-repo/domain-electrochemistry/compare/0.37.1...0.37.2
 [0.37.1]: https://github.com/emmo-repo/domain-electrochemistry/compare/0.37.0...0.37.1
 [0.37.0]: https://github.com/emmo-repo/domain-electrochemistry/compare/0.36.0...0.37.0
