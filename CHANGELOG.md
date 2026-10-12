@@ -5,6 +5,22 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: Se
 
 ## [Unreleased]
 
+## [0.39.0] - 2026-10-12
+
+### Added
+- (#205 unless noted) `OpenCircuitPotential` (altLabels OCP, RestPotential, ZeroCurrentElectrodePotential; carries the IUPAC 2019 definition of open-circuit potential): the electrode-level quantity, potential of an electrode relative to a reference when no net current flows, under `ElectrodePotential`. `EquilibriumElectrodePotential` now sits under it: an open-circuit potential at which all interfacial equilibria are also established. Branch classes `AnodicBranchOpenCircuitPotential` and `CathodicBranchOpenCircuitPotential` (disjoint with each other and with the equilibrium potential), `OpenCircuitPotentialHysteresis`, and `TemperatureCoefficientOfTheOpenCircuitPotential` (altLabel EntropicChangeCoefficient), the electrode-level sibling of the IEV cell quantity.
+- `EquilibriumCellVoltage` (altLabels ElectromotiveForce, EquilibriumCellPotential, ReversibleCellVoltage): the thermodynamic electromotive force, open-circuit voltage with all interfacial equilibria established, equal to minus the reaction Gibbs energy over zF; and `OpenCircuitVoltageHysteresis`.
+- `GuestDiffusivity`, a defined class (`Diffusivity and isPropertyFor some ActiveMaterial`) and the polarity-free parent the deprecated `GuestDiffusivityIn…ElectrodeActiveMaterial` classes should have had; `GuestChemicalPotential` under EMMO `ChemicalPotential`, the quantity an open-circuit potential curve encodes.
+- BPX-motivated quantities (jsimonclark/BPX application ontology, gap rows): `TransportEfficiency` (inverse MacMullin number, next to Tortuosity and BruggemanCoefficient), `NumberOfElectrodePairs`, `ChargeCarrierInventoryLossFraction` and `ActiveMaterialCapacityLossFraction` (the degradation modes LLI and LAM, as ratios of capacities, chemistry-neutral).
+- altLabels `Negatrode` and `Positrode` on `NegativeElectrode` and `PositiveElectrode` (#204).
+
+### Changed
+- `OpenCircuitVoltage` is now unambiguously the cell-level quantity of IEV 482-03-32: voltage between the terminals of a cell or battery when no current flows. Its elucidation previously described the electrode-level quantity while its IEV reference, parent (`CellVoltage`) and equivalence with EMMO `SourceVoltage` (IEC 80000-6 item 6-36, formerly electromotive force) were cell-level. altLabels `OCP` and `OpenCircuitPotential` move to the new electrode class, together with the IUPAC 2019 definition and comment that were sourced on this class; `ZeroCurrentCellPotential` is added. The elucidation is the IEV wording the class already carried as a sourced comment. **Migration:** data that typed electrode open-circuit potential curves as `OpenCircuitVoltage` should use `OpenCircuitPotential`; the IRI keeps resolving, the typing is just imprecise until migrated.
+- `EquilibriumElectrodePotential` re-parented from `OpenCircuitVoltage` + `ElectrodePotential` to `OpenCircuitPotential`; `skos:related` to `EquilibriumCellVoltage`, `NernstEquation` and `MolarElectrochemicalPotential`.
+- `MolarElectrochemicalPotential` is now a subclass of EMMO `ChemicalPotential` with the IUPAC definition (partial molar Gibbs energy of a charged species at a specified electric potential) and a comment on how equilibrium potentials follow from it; `ElectrochemicalPotential` is elucidated as its per-particle counterpart (it carries an energy unit) and no longer cites the molar IUPAC entry.
+- The deprecated polarity anchors for open-circuit voltage, entropic change coefficient and guest diffusivity (and its activation energy) now point at `OpenCircuitPotential`, `TemperatureCoefficientOfTheOpenCircuitPotential` and `GuestDiffusivity` in their `isReplacedBy`, defining axioms and scope notes.
+- `ChargeCarrierDiffusivityInElectrolyte` elucidation no longer says lithium.
+
 ## [0.38.0] - 2026-10-12
 
 ### Added
@@ -74,7 +90,8 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/); versioning: Se
 - `bump-version` replaced by the shared config-driven tool (adds `--check` and date handling) with tests.
 - The inferred ontology (`electrochemistry-inferred.ttl`) is no longer tracked in git — it is a generated build artifact. CI regenerates it and publishes it to gh-pages (`/inferred`, latest) and attaches a freshly reasoned copy to each GitHub Release (per version); the docs workflow backfills the per-version `versions/` archive from Release assets. You no longer generate or commit it by hand.
 
-[Unreleased]: https://github.com/emmo-repo/domain-electrochemistry/compare/0.38.0...HEAD
+[Unreleased]: https://github.com/emmo-repo/domain-electrochemistry/compare/0.39.0...HEAD
+[0.39.0]: https://github.com/emmo-repo/domain-electrochemistry/compare/0.38.0...0.39.0
 [0.38.0]: https://github.com/emmo-repo/domain-electrochemistry/compare/0.37.2...0.38.0
 [0.37.2]: https://github.com/emmo-repo/domain-electrochemistry/compare/0.37.1...0.37.2
 [0.37.1]: https://github.com/emmo-repo/domain-electrochemistry/compare/0.37.0...0.37.1
