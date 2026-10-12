@@ -537,6 +537,15 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://goldbook.iupac.org/terms/view/P04760" .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0a90e2fc_96a7_4777_a2a1_4f219636b7ac
+:electrochemistry_0a90e2fc_96a7_4777_a2a1_4f219636b7ac rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_e272f229_7b45_4436_9b0b_30391ee4e5be ;
+                                                       rdfs:comment "For an insertion electrode this is the lithiation (or, generally, insertion) branch. It is an open-circuit potential but not an equilibrium electrode potential: the electrode rests in a metastable state."@en ;
+                                                       owl:disjointWith :electrochemistry_d91940f0_c8b6_4505_9b68_6bf6cfc5c544 ;
+                                                       skos:prefLabel "CathodicBranchOpenCircuitPotential"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "open-circuit potential of an electrode on the branch of its hysteresis loop reached under cathodic (reducing) current"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0bf1ed19_2fc9_4e6d_87ec_62015985a9a6
 :electrochemistry_0bf1ed19_2fc9_4e6d_87ec_62015985a9a6 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_c5047d29_4e68_43ee_8355_3e8f05dc70a5 ,
@@ -567,7 +576,7 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0e2f4fe6_570a_4d13_81e9_de1d4f9987af
 :electrochemistry_0e2f4fe6_570a_4d13_81e9_de1d4f9987af rdf:type owl:Class ;
                                                        owl:equivalentClass [ rdf:type owl:Class ;
-                                                                             owl:intersectionOf ( :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b
+                                                                             owl:intersectionOf ( :electrochemistry_e272f229_7b45_4436_9b0b_30391ee4e5be
                                                                                                   [ rdf:type owl:Restriction ;
                                                                                                     owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
                                                                                                     owl:someValuesFrom [ rdf:type owl:Restriction ;
@@ -588,11 +597,11 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                                                                   ]
                                                                                                 )
                                                                            ] ;
-                                                       dcterms:isReplacedBy :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b ;
+                                                       dcterms:isReplacedBy :electrochemistry_e272f229_7b45_4436_9b0b_30391ee4e5be ;
                                                        owl:deprecated "true"^^xsd:boolean ;
                                                        rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
-                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasNegativeElectrode an electrode, the electrode (or its ElectrodeCoating) hasActiveMaterial a material, and the material hasProperty an OpenCircuitVoltage."@en ;
-                                                       rdfs:subClassOf :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasNegativeElectrode an electrode, the electrode (or its ElectrodeCoating) hasActiveMaterial a material, and the material hasProperty an OpenCircuitPotential."@en ;
+                                                       rdfs:subClassOf :electrochemistry_e272f229_7b45_4436_9b0b_30391ee4e5be ;
                                                        skos:prefLabel "NegativeElectrodeActiveMaterialOpenCircuitVoltage"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "open-circuit voltage of the negative electrode active material"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','OCP [V]']"@en ;
@@ -711,12 +720,13 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                                          owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
                                                                          owl:someValuesFrom emmo:EMMO_f6070071_d054_4b17_9d2d_f446f7147d0f
                                                                        ] ;
-                                                       rdfs:comment "in quantum mechanical terms, electrochemical potential is defined as the energy level of the electron orbitals in the species that have a 50 percent probability of occupancy"@en ;
+                                                       rdfs:comment "The quantity defined by IUPAC (electrochemical potential, goldbook E01945) is the molar one, MolarElectrochemicalPotential; this class is its per-particle counterpart, carrying an energy unit."@en ,
+                                                                    "in quantum mechanical terms, electrochemical potential is defined as the energy level of the electron orbitals in the species that have a 50 percent probability of occupancy"@en ;
                                                        skos:prefLabel "ElectrochemicalPotential"@en ;
+                                                       skos:related :electrochemistry_7fe804b8_6126_4132_be8f_b4985d61b1f6 ;
                                                        emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q62525" ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the chemical potential of an ion in the presence of an electric potential"@en ;
-                                                       emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Electrochemical_potential"@en ;
-                                                       emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://goldbook.iupac.org/terms/view/E01945" .
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrochemical potential of a charged species per particle: its chemical potential per particle plus the electrostatic energy of its charge in the local electric potential"@en ;
+                                                       emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Electrochemical_potential"@en .
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_1422cde1_929e_46b6_b0dc_1010eebc5dfd ;
@@ -1349,6 +1359,18 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "commonly reported on datasheets as the mean capacity of produced cells, in contrast to the rated or minimum guaranteed capacity"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_3605456a_e952_4093_98b6_d8c24c37c19e
+:electrochemistry_3605456a_e952_4093_98b6_d8c24c37c19e rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ,
+                                                                       :electrochemistry_4a450a27_b84a_4c70_a3a9_15ec30e2f30b ;
+                                                       rdfs:comment "Under the Bruggeman relation it equals the porosity raised to the Bruggeman coefficient, or the porosity divided by the tortuosity. It is a ratio; BruggemanCoefficient is the exponent."@en ;
+                                                       skos:altLabel "InverseMacMullinNumber"@en ;
+                                                       skos:prefLabel "TransportEfficiency"@en ;
+                                                       skos:related emmo:EMMO_c413d96f_c57b_4c70_9ac1_312db6c009a8 ,
+                                                                    :electrochemistry_5c34b3b5_c9c4_477d_809a_3f682f995aa9 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "ratio of an effective transport coefficient in a porous medium to its value in the bulk phase; the inverse of the MacMullin number"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_372c89d0_adab_4585_9662_33c912acef23
 :electrochemistry_372c89d0_adab_4585_9662_33c912acef23 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_9b3b4668_0795_4a35_9965_2af383497a26 ;
@@ -1739,7 +1761,7 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 :electrochemistry_4c274506_af5b_4ef1_8217_829ffd459f28 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607 ;
                                                        skos:prefLabel "ChargeCarrierDiffusivityInElectrolyte"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the diffusivity of lithium in an electrolyte"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the diffusivity of the charge-carrier species in an electrolyte"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Electrolyte','Diffusivity [m2.s-1]']"@en ;
                                                        :electrochemistry_1b718841_5d72_4071_bb71_fc4a754f5e30 "['electrolyte','diffusion_constant','value']"@en .
 
@@ -1761,7 +1783,7 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                                                                   [ rdf:type owl:Restriction ;
                                                                                                     owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
                                                                                                     owl:someValuesFrom [ rdf:type owl:Class ;
-                                                                                                                         owl:intersectionOf ( :electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607
+                                                                                                                         owl:intersectionOf ( :electrochemistry_fed4582e_0de4_43e1_b51a_e3496697c25d
                                                                                                                                               [ rdf:type owl:Restriction ;
                                                                                                                                                 owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
                                                                                                                                                 owl:someValuesFrom [ rdf:type owl:Restriction ;
@@ -1788,7 +1810,7 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        dcterms:isReplacedBy :electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526 ;
                                                        owl:deprecated "true"^^xsd:boolean ;
                                                        rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
-                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasPositiveElectrode an electrode, the electrode hasActiveMaterial a material, the material hasProperty a Diffusivity, and the diffusivity hasProperty an ActivationEnergy."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasPositiveElectrode an electrode, the electrode hasActiveMaterial a material, the material hasProperty a GuestDiffusivity, and the diffusivity hasProperty an ActivationEnergy."@en ;
                                                        rdfs:subClassOf :electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526 ;
                                                        skos:prefLabel "ActivationEnergyOfGuestDiffusivityInPositiveElectrodeActiveMaterial"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the activation energy barrier in an Arrhenius expression for the diffusivity of lithium in the positive electrode"@en ;
@@ -1854,7 +1876,7 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_50247e71_75fe_4986_959e_fd06c6be98db
 :electrochemistry_50247e71_75fe_4986_959e_fd06c6be98db rdf:type owl:Class ;
                                                        owl:equivalentClass [ rdf:type owl:Class ;
-                                                                             owl:intersectionOf ( :electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607
+                                                                             owl:intersectionOf ( :electrochemistry_fed4582e_0de4_43e1_b51a_e3496697c25d
                                                                                                   [ rdf:type owl:Restriction ;
                                                                                                     owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
                                                                                                     owl:someValuesFrom [ rdf:type owl:Restriction ;
@@ -1875,11 +1897,11 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                                                                   ]
                                                                                                 )
                                                                            ] ;
-                                                       dcterms:isReplacedBy :electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607 ;
+                                                       dcterms:isReplacedBy :electrochemistry_fed4582e_0de4_43e1_b51a_e3496697c25d ;
                                                        owl:deprecated "true"^^xsd:boolean ;
                                                        rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
-                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasNegativeElectrode an electrode, the electrode (or its ElectrodeCoating) hasActiveMaterial a material, and the material hasProperty a Diffusivity."@en ;
-                                                       rdfs:subClassOf :electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607 ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasNegativeElectrode an electrode, the electrode (or its ElectrodeCoating) hasActiveMaterial a material, and the material hasProperty a GuestDiffusivity."@en ;
+                                                       rdfs:subClassOf :electrochemistry_fed4582e_0de4_43e1_b51a_e3496697c25d ;
                                                        skos:prefLabel "GuestDiffusivityInNegativeElectrodeActiveMaterial"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the diffusivity of lithium in the negative electrode"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Diffusivity [m2.s-1]']"@en ;
@@ -1933,7 +1955,7 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_52ab4fdd_f945_4541_9ce6_cd6fd3a05861
 :electrochemistry_52ab4fdd_f945_4541_9ce6_cd6fd3a05861 rdf:type owl:Class ;
                                                        owl:equivalentClass [ rdf:type owl:Class ;
-                                                                             owl:intersectionOf ( :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b
+                                                                             owl:intersectionOf ( :electrochemistry_e272f229_7b45_4436_9b0b_30391ee4e5be
                                                                                                   [ rdf:type owl:Restriction ;
                                                                                                     owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
                                                                                                     owl:someValuesFrom [ rdf:type owl:Restriction ;
@@ -1954,11 +1976,11 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                                                                   ]
                                                                                                 )
                                                                            ] ;
-                                                       dcterms:isReplacedBy :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b ;
+                                                       dcterms:isReplacedBy :electrochemistry_e272f229_7b45_4436_9b0b_30391ee4e5be ;
                                                        owl:deprecated "true"^^xsd:boolean ;
                                                        rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
-                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasPositiveElectrode an electrode, the electrode (or its ElectrodeCoating) hasActiveMaterial a material, and the material hasProperty an OpenCircuitVoltage."@en ;
-                                                       rdfs:subClassOf :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasPositiveElectrode an electrode, the electrode (or its ElectrodeCoating) hasActiveMaterial a material, and the material hasProperty an OpenCircuitPotential."@en ;
+                                                       rdfs:subClassOf :electrochemistry_e272f229_7b45_4436_9b0b_30391ee4e5be ;
                                                        skos:prefLabel "PositiveElectrodeActiveMaterialOpenCircuitVoltage"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "open-circuit voltage of the positive electrode active material"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','OCP [V]']"@en ;
@@ -2002,6 +2024,19 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
    owl:annotatedTarget "specified voltage of a battery at which the battery discharge is terminated."@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_53616dc6_b921_4beb_9ab2_cafa4ba16406
+:electrochemistry_53616dc6_b921_4beb_9ab2_cafa4ba16406 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b ;
+                                                       rdfs:comment "This is the thermodynamic electromotive force of the cell. The measured open-circuit voltage approaches it as the cell relaxes, but need not reach it, for example when an electrode rests on a hysteresis branch."@en ;
+                                                       skos:altLabel "EquilibriumCellPotential"@en ,
+                                                                     "ReversibleCellVoltage"@en ;
+                                                       skos:prefLabel "EquilibriumCellVoltage"@en ;
+                                                       skos:related :electrochemistry_d91940f0_c8b6_4505_9b68_6bf6cfc5c544 ,
+                                                                    :electrochemistry_fe3a6c9a_85b8_4da6_aa4f_71c8de74939e ,
+                                                                    :electrochemistry_7fe804b8_6126_4132_be8f_b4985d61b1f6 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "open-circuit voltage of a cell when all interfacial charge-transfer equilibria are established; equal to minus the reaction Gibbs energy divided by the charge number and the Faraday constant, and to the difference of the equilibrium electrode potentials of the two electrodes"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_565c0b10_70fe_441a_b76a_b9a8e08ca7b7
@@ -2486,6 +2521,16 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                                                                       emmo:MilliAmpereHour .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7418a464_839a_4679_afcb_e0f1030f6149
+:electrochemistry_7418a464_839a_4679_afcb_e0f1030f6149 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_17b031fb_4695_49b6_bb69_189ec63df3ee ,
+                                                                       :electrochemistry_2d896559_eee3_447c_9759_87c854a4266a ;
+                                                       skos:prefLabel "OpenCircuitVoltageHysteresis"@en ;
+                                                       skos:related :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b ,
+                                                                    :electrochemistry_a1202f06_bcac_456f_8315_d20f228e5f28 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "difference between the open-circuit voltages of a cell reached on charge and on discharge at the same state of charge"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_743c71a3_b80c_42e3_92fa_13a67b8167df
 :electrochemistry_743c71a3_b80c_42e3_92fa_13a67b8167df rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_02eb0465_4f94_453c_8c1f_5ddf80134634 ;
@@ -2673,6 +2718,16 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "voltage between the terminals of a cell or battery when being charged"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_79d665cd_8408_4fcc_aa02_551f7c9aea47
+:electrochemistry_79d665cd_8408_4fcc_aa02_551f7c9aea47 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_e272f229_7b45_4436_9b0b_30391ee4e5be ;
+                                                       rdfs:comment "For an insertion electrode this is the delithiation (or, generally, de-insertion) branch. It is an open-circuit potential but not an equilibrium electrode potential: the electrode rests in a metastable state."@en ;
+                                                       owl:disjointWith :electrochemistry_0a90e2fc_96a7_4777_a2a1_4f219636b7ac ,
+                                                                        :electrochemistry_d91940f0_c8b6_4505_9b68_6bf6cfc5c544 ;
+                                                       skos:prefLabel "AnodicBranchOpenCircuitPotential"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "open-circuit potential of an electrode on the branch of its hysteresis loop reached under anodic (oxidising) current"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7b3eb826_b968_493a_8396_cc3a5f09ecb3
 :electrochemistry_7b3eb826_b968_493a_8396_cc3a5f09ecb3 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_9bf40017_3f58_4030_ada7_cb37a3dfda2d ;
@@ -2762,15 +2817,21 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7fe804b8_6126_4132_be8f_b4985d61b1f6
 :electrochemistry_7fe804b8_6126_4132_be8f_b4985d61b1f6 rdf:type owl:Class ;
-                                                       rdfs:subClassOf emmo:EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064 ,
+                                                       rdfs:subClassOf emmo:EMMO_88fc5d1b_d3ab_4626_b24c_915ebe7400ca ,
+                                                                       emmo:EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064 ,
                                                                        :electrochemistry_2d896559_eee3_447c_9759_87c854a4266a ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
                                                                          owl:someValuesFrom emmo:EMMO_0972cb08_48bd_4524_ac03_8a2e7f30f02f
                                                                        ] ;
-                                                       rdfs:comment "Of a substance in a specified phase, the partial molar Gibbs energy of the substance at the specified electric potential."@en ;
+                                                       rdfs:comment "Of a substance in a specified phase, the partial molar Gibbs energy of the substance at the specified electric potential."@en ,
+                                                                    "A charge-transfer reaction is at equilibrium when the electrochemical potentials of its reactants and products balance; the equilibrium electrode potential and the equilibrium cell voltage follow from that condition, which the Nernst equation expresses in terms of activities. This is the quantity IUPAC calls electrochemical potential; ElectrochemicalPotential in this ontology is the per-particle counterpart."@en ;
                                                        skos:prefLabel "MolarElectrochemicalPotential"@en ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrochemical potential per mole."@en ;
+                                                       skos:related :electrochemistry_1422cde1_929e_46b6_b0dc_1010eebc5dfd ,
+                                                                    :electrochemistry_d91940f0_c8b6_4505_9b68_6bf6cfc5c544 ,
+                                                                    :electrochemistry_53616dc6_b921_4beb_9ab2_cafa4ba16406 ,
+                                                                    :electrochemistry_fe3a6c9a_85b8_4da6_aa4f_71c8de74939e ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "partial molar Gibbs energy of a charged species at a specified electric potential: the sum of its chemical potential and the product of its charge number, the Faraday constant and the electric potential"@en ;
                                                        emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://goldbook.iupac.org/terms/view/E01945" .
 
 
@@ -2916,7 +2977,7 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                                                                   [ rdf:type owl:Restriction ;
                                                                                                     owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
                                                                                                     owl:someValuesFrom [ rdf:type owl:Class ;
-                                                                                                                         owl:intersectionOf ( :electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607
+                                                                                                                         owl:intersectionOf ( :electrochemistry_fed4582e_0de4_43e1_b51a_e3496697c25d
                                                                                                                                               [ rdf:type owl:Restriction ;
                                                                                                                                                 owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
                                                                                                                                                 owl:someValuesFrom [ rdf:type owl:Restriction ;
@@ -2943,7 +3004,7 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        dcterms:isReplacedBy :electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526 ;
                                                        owl:deprecated "true"^^xsd:boolean ;
                                                        rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
-                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasNegativeElectrode an electrode, the electrode hasActiveMaterial a material, the material hasProperty a Diffusivity, and the diffusivity hasProperty an ActivationEnergy."@en ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasNegativeElectrode an electrode, the electrode hasActiveMaterial a material, the material hasProperty a GuestDiffusivity, and the diffusivity hasProperty an ActivationEnergy."@en ;
                                                        rdfs:subClassOf :electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526 ;
                                                        skos:prefLabel "ActivationEnergyOfGuestDiffusivityInNegativeElectrodeActiveMaterial"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the activation energy barrier in an Arrhenius expression for the diffusivity of lithium in the negative electrode"@en ;
@@ -3226,6 +3287,16 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
  ] .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9b44a651_afa9_4889_ae07_9ac49ede8ac1
+:electrochemistry_9b44a651_afa9_4889_ae07_9ac49ede8ac1 rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
+                                                       rdfs:comment "The electrode-level counterpart of TemperatureCoefficientOfTheOpenCircuitVoltage (IEV 482-03-33), which is defined for a cell or battery. Cell models use it per electrode as the entropic change coefficient, proportional to the reaction entropy."@en ;
+                                                       skos:altLabel "EntropicChangeCoefficient"@en ;
+                                                       skos:prefLabel "TemperatureCoefficientOfTheOpenCircuitPotential"@en ;
+                                                       skos:related :electrochemistry_3bb5ae23_59fa_4bc7_9495_803eb6719f28 ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "quotient of the change in open-circuit potential of an electrode by the corresponding change in temperature"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9bf40017_3f58_4030_ada7_cb37a3dfda2d
 :electrochemistry_9bf40017_3f58_4030_ada7_cb37a3dfda2d rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_e88f75d6_9a17_4cfc_bdf7_43d7cea5a9a1 ,
@@ -3246,15 +3317,15 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_2d896559_eee3_447c_9759_87c854a4266a ,
                                                                        :electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d ;
-                                                       rdfs:comment "In the case of a reversible electrode system, the OCP is also referred to as the equilibrium electrode potential. Otherwise, it is called the rest potential, or the corrosion potential, depending on the system being studied."@en ,
-                                                                    "voltage of a cell or battery when the discharge current is zero." ;
-                                                       skos:altLabel "OCP"@en ,
+                                                       rdfs:comment "Equal to the open-circuit potential of the positive electrode minus that of the negative electrode, the reference electrode cancelling. The open-circuit potential of a single electrode is OpenCircuitPotential, not this class."@en ,
+                                                                    "IEC 80000-6 names this quantity source voltage (formerly electromotive force): the voltage between the terminals of a source when no current flows through it; hence the equivalence with emmo:SourceVoltage. The thermodynamic electromotive force, the value when all interfacial equilibria are established, is EquilibriumCellVoltage."@en ;
+                                                       skos:altLabel "ElectromotiveForce"@en ,
                                                                      "OCV"@en ,
-                                                                     "OpenCircuitPotential"@en ;
+                                                                     "ZeroCurrentCellPotential"@en ;
                                                        skos:prefLabel "OpenCircuitVoltage"@en ;
                                                        emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q1812203" ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-32" ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrode potential of working electrode relative to the reference electrode when no potential or electric current is being applied to the electrochemical cell"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "voltage between the terminals of a cell or battery when no current flows"@en ;
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Open-circuit_voltage"@en .
 
 [ rdf:type owl:Axiom ;
@@ -3306,7 +3377,7 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9d558b56_d3b8_429a_a4e2_d2ffab895e42
 :electrochemistry_9d558b56_d3b8_429a_a4e2_d2ffab895e42 rdf:type owl:Class ;
                                                        owl:equivalentClass [ rdf:type owl:Class ;
-                                                                             owl:intersectionOf ( :electrochemistry_3bb5ae23_59fa_4bc7_9495_803eb6719f28
+                                                                             owl:intersectionOf ( :electrochemistry_9b44a651_afa9_4889_ae07_9ac49ede8ac1
                                                                                                   [ rdf:type owl:Restriction ;
                                                                                                     owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
                                                                                                     owl:someValuesFrom [ rdf:type owl:Class ;
@@ -3324,11 +3395,11 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                                                                   ]
                                                                                                 )
                                                                            ] ;
-                                                       dcterms:isReplacedBy :electrochemistry_3bb5ae23_59fa_4bc7_9495_803eb6719f28 ;
+                                                       dcterms:isReplacedBy :electrochemistry_9b44a651_afa9_4889_ae07_9ac49ede8ac1 ;
                                                        owl:deprecated "true"^^xsd:boolean ;
                                                        rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
-                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasPositiveElectrode an electrode, and the electrode (or its ElectrodeCoating) hasProperty a TemperatureCoefficientOfTheOpenCircuitVoltage."@en ;
-                                                       rdfs:subClassOf :electrochemistry_3bb5ae23_59fa_4bc7_9495_803eb6719f28 ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasPositiveElectrode an electrode, and the electrode (or its ElectrodeCoating) hasProperty a TemperatureCoefficientOfTheOpenCircuitPotential."@en ;
+                                                       rdfs:subClassOf :electrochemistry_9b44a651_afa9_4889_ae07_9ac49ede8ac1 ;
                                                        skos:prefLabel "PositiveElectrodeEntropicChangeCoefficient"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "temperature coefficient of the open-circuit voltage (entropic change coefficient) of the positive electrode"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Entropic change coefficient [V.K-1]']"@en ;
@@ -3386,6 +3457,16 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
    owl:annotatedTarget "The concentration overpotential of an electrode reaction at a given electrode current density (c.d.) is basically the difference in equilibrium potentials across the diffusion layer. More precisely, it is the potential of a reference electrode (of the same electrode reaction as the working electrode ) with the interfacial concentrations which establish themselves at c.d., relative to the potential of a similar reference electrode with the concentrations of the bulk solution. From such a measured potential difference, with c.d. flowing, one needs to subtract the ohmic potential drop prevailing between the two electrodes."@en ;
    dcterms:source "IUPAC. Compendium of Chemical Terminology, 2nd ed. (the \"Gold Book\"). Compiled by A. D. McNaught and A. Wilkinson. Blackwell Scientific Publications, Oxford (1997). Online version (2019-) created by S. J. Chalk. ISBN 0-9678550-9-8. https://doi.org/10.1351/goldbook."
  ] .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a1202f06_bcac_456f_8315_d20f228e5f28
+:electrochemistry_a1202f06_bcac_456f_8315_d20f228e5f28 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_17b031fb_4695_49b6_bb69_189ec63df3ee ,
+                                                                       :electrochemistry_2d896559_eee3_447c_9759_87c854a4266a ;
+                                                       skos:prefLabel "OpenCircuitPotentialHysteresis"@en ;
+                                                       skos:related :electrochemistry_79d665cd_8408_4fcc_aa02_551f7c9aea47 ,
+                                                                    :electrochemistry_0a90e2fc_96a7_4777_a2a1_4f219636b7ac ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "difference between the open-circuit potentials of an electrode on the anodic branch and on the cathodic branch of its hysteresis loop at the same composition"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a17d029c_f3f1_42e9_918c_456cedfb1b0c
@@ -3588,6 +3669,21 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the minimum amount concentration of a species in a phase, either imposed or naturally occuring"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a9cbffd9_2a4b_46e9_97af_7403a64364da
+:electrochemistry_a9cbffd9_2a4b_46e9_97af_7403a64364da rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_88fc5d1b_d3ab_4626_b24c_915ebe7400ca ,
+                                                                       :electrochemistry_2d896559_eee3_447c_9759_87c854a4266a ,
+                                                                       [ rdf:type owl:Restriction ;
+                                                                         owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                         owl:someValuesFrom :electrochemistry_79d1b273_58cd_4be6_a250_434817f7c261
+                                                                       ] ;
+                                                       rdfs:comment "What the open-circuit potential curve of an insertion electrode encodes: measured against a reference of the same species, the equilibrium open-circuit potential equals minus the difference in guest chemical potential between host and reference, divided by the charge number and the Faraday constant."@en ;
+                                                       skos:prefLabel "GuestChemicalPotential"@en ;
+                                                       skos:related :electrochemistry_e272f229_7b45_4436_9b0b_30391ee4e5be ,
+                                                                    :electrochemistry_fed4582e_0de4_43e1_b51a_e3496697c25d ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "chemical potential of the guest species within the host active material of an insertion electrode"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_abd08921_6f3b_4a48_811e_7685c58aec0b
 :electrochemistry_abd08921_6f3b_4a48_811e_7685c58aec0b rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_66bc9029_f473_45ff_bab9_c3509ff37a22 ;
@@ -3677,6 +3773,18 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        rdfs:subClassOf :electrochemistry_128ec7dc_04e3_48ff_86ac_f0f9896ad9cc ;
                                                        skos:prefLabel "D55ParticleSize"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a statistical measure used in particle size distribution analysis, indicating the particle diameter below which 55% of the sample's particles fall."@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b1b406fe_2579_4f13_b1ac_84fc3fd0e15f
+:electrochemistry_b1b406fe_2579_4f13_b1ac_84fc3fd0e15f rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ,
+                                                                       :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
+                                                       rdfs:comment "In lithium-ion degradation-mode analysis this is the loss of active material (LAM). It is a ratio of capacities, measured from capacity rather than weighed; a mass-based loss would be a MassFraction with its own name."@en ;
+                                                       skos:prefLabel "ActiveMaterialCapacityLossFraction"@en ;
+                                                       skos:related :electrochemistry_652b94f1_290d_4d9e_820a_eda4c71eb90d ,
+                                                                    :electrochemistry_0a0de817_addc_46a5_8ba2_255d48cdf366 ,
+                                                                    :electrochemistry_b9ec3155_16cb_49b4_b23f_3d7a5681328d ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "fraction of the capacity of an electrode's active material lost to degradation: the difference between a reference and the present capacity attributable to active material taking part in the charge-storage reaction, divided by the reference"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b21de1ef_6c15_4d63_b320_c9b96fbf186f
@@ -3773,6 +3881,18 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                                        :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
                                                        skos:prefLabel "ParticleRadius"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "radius of a particle"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_b9ec3155_16cb_49b4_b23f_3d7a5681328d
+:electrochemistry_b9ec3155_16cb_49b4_b23f_3d7a5681328d rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ,
+                                                                       :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
+                                                       rdfs:comment "In lithium-ion degradation-mode analysis this is the loss of lithium inventory (LLI). It is a ratio of capacities, not a mass, volume or amount fraction; a cell can lose cyclable inventory while its electrodes keep their full capacity."@en ;
+                                                       skos:prefLabel "ChargeCarrierInventoryLossFraction"@en ;
+                                                       skos:related :electrochemistry_652b94f1_290d_4d9e_820a_eda4c71eb90d ,
+                                                                    :electrochemistry_0a0de817_addc_46a5_8ba2_255d48cdf366 ,
+                                                                    :electrochemistry_b1b406fe_2579_4f13_b1ac_84fc3fd0e15f ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "fraction of the charge-carrier inventory of a cell lost to degradation, the inventory being expressed as the capacity it could deliver: the difference between a reference and the present inventory capacity, divided by the reference"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ba7ac581_0e13_4815_b888_013c378932f5
@@ -4315,15 +4435,18 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_d91940f0_c8b6_4505_9b68_6bf6cfc5c544
 :electrochemistry_d91940f0_c8b6_4505_9b68_6bf6cfc5c544 rdf:type owl:Class ;
-                                                       rdfs:subClassOf :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b ,
-                                                                       :electrochemistry_f509645f_eb27_470e_9112_7ab828ed40d3 ;
+                                                       rdfs:subClassOf :electrochemistry_e272f229_7b45_4436_9b0b_30391ee4e5be ;
                                                        rdfs:comment "Eeq is related to the standard electrode potential by the Nernst equation."@en ,
                                                                     "Temperature and activities of relevant species must be specified."@en ,
-                                                                    "electrode potential when the electrode reaction is in equilibrium."@en ;
+                                                                    "electrode potential when the electrode reaction is in equilibrium."@en ,
+                                                                    "An open-circuit potential at which, in addition, all interfacial charge-transfer equilibria are established. An electrode at a mixed potential, or an insertion electrode resting on a hysteresis branch, has an open-circuit potential that is not an equilibrium electrode potential."@en ;
                                                        skos:altLabel "EquilibriumPotential"@en ,
                                                                      "NernstPotential"@en ,
                                                                      "ReversiblePotential"@en ;
                                                        skos:prefLabel "EquilibriumElectrodePotential"@en ;
+                                                       skos:related :electrochemistry_53616dc6_b921_4beb_9ab2_cafa4ba16406 ,
+                                                                    :electrochemistry_fe3a6c9a_85b8_4da6_aa4f_71c8de74939e ,
+                                                                    :electrochemistry_7fe804b8_6126_4132_be8f_b4985d61b1f6 ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=114-02-12" ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "potential of an electrode when no electric current flows through the cell and all local charge transfer equilibria across phase boundaries that are represented in the cell diagram (except at possible electrolyte-electrolyte junctions) and local chemical equilibria are established"@en ;
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Reversal_potential"@en .
@@ -4418,6 +4541,22 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Reaction_rate"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e272f229_7b45_4436_9b0b_30391ee4e5be
+:electrochemistry_e272f229_7b45_4436_9b0b_30391ee4e5be rdf:type owl:Class ;
+                                                       rdfs:subClassOf :electrochemistry_f509645f_eb27_470e_9112_7ab828ed40d3 ,
+                                                                       :electrochemistry_2d896559_eee3_447c_9759_87c854a4266a ;
+                                                       rdfs:comment "Equal to the equilibrium electrode potential only when all interfacial charge-transfer equilibria are established. A corroding metal at its mixed potential and an insertion electrode resting on a hysteresis branch both have an open-circuit potential that is not an equilibrium electrode potential."@en ,
+                                                                    "The open-circuit voltage of a two-electrode cell is the difference of the open-circuit potentials of its positive and negative electrodes; see OpenCircuitVoltage."@en ,
+                                                                    "For an insertion electrode measured against a reference electrode of the same species, the equilibrium open-circuit potential equals minus the difference in chemical potential of the guest species between host and reference, divided by the charge number and the Faraday constant; see GuestChemicalPotential."@en ;
+                                                       skos:altLabel "OCP"@en ,
+                                                                     "RestPotential"@en ,
+                                                                     "ZeroCurrentElectrodePotential"@en ;
+                                                       skos:prefLabel "OpenCircuitPotential"@en ;
+                                                       skos:related :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b ,
+                                                                    :electrochemistry_a9cbffd9_2a4b_46e9_97af_7403a64364da ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "potential of an electrode relative to a reference electrode when no net current flows through the electrode"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e38f11d0_a16f_4fe8_8ec5_3fe4493b7759
 :electrochemistry_e38f11d0_a16f_4fe8_8ec5_3fe4493b7759 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_4f2d3939_91b1_4001_b8ab_7d19074bf845 ,
@@ -4482,7 +4621,7 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e59188bb_ce66_49f6_84aa_ecb98e76941e
 :electrochemistry_e59188bb_ce66_49f6_84aa_ecb98e76941e rdf:type owl:Class ;
                                                        owl:equivalentClass [ rdf:type owl:Class ;
-                                                                             owl:intersectionOf ( :electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607
+                                                                             owl:intersectionOf ( :electrochemistry_fed4582e_0de4_43e1_b51a_e3496697c25d
                                                                                                   [ rdf:type owl:Restriction ;
                                                                                                     owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
                                                                                                     owl:someValuesFrom [ rdf:type owl:Restriction ;
@@ -4503,11 +4642,11 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                                                                   ]
                                                                                                 )
                                                                            ] ;
-                                                       dcterms:isReplacedBy :electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607 ;
+                                                       dcterms:isReplacedBy :electrochemistry_fed4582e_0de4_43e1_b51a_e3496697c25d ;
                                                        owl:deprecated "true"^^xsd:boolean ;
                                                        rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
-                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasPositiveElectrode an electrode, the electrode (or its ElectrodeCoating) hasActiveMaterial a material, and the material hasProperty a Diffusivity."@en ;
-                                                       rdfs:subClassOf :electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607 ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasPositiveElectrode an electrode, the electrode (or its ElectrodeCoating) hasActiveMaterial a material, and the material hasProperty a GuestDiffusivity."@en ;
+                                                       rdfs:subClassOf :electrochemistry_fed4582e_0de4_43e1_b51a_e3496697c25d ;
                                                        skos:prefLabel "GuestDiffusivityInPositiveElectrodeActiveMaterial"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the diffusivity of lithium in the positive electrode"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Diffusivity [m2.s-1]']"@en ;
@@ -4611,7 +4750,7 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_eac57b09_5cc9_41d7_b2c8_40218d7fd47c
 :electrochemistry_eac57b09_5cc9_41d7_b2c8_40218d7fd47c rdf:type owl:Class ;
                                                        owl:equivalentClass [ rdf:type owl:Class ;
-                                                                             owl:intersectionOf ( :electrochemistry_3bb5ae23_59fa_4bc7_9495_803eb6719f28
+                                                                             owl:intersectionOf ( :electrochemistry_9b44a651_afa9_4889_ae07_9ac49ede8ac1
                                                                                                   [ rdf:type owl:Restriction ;
                                                                                                     owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
                                                                                                     owl:someValuesFrom [ rdf:type owl:Class ;
@@ -4629,11 +4768,11 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                                                                   ]
                                                                                                 )
                                                                            ] ;
-                                                       dcterms:isReplacedBy :electrochemistry_3bb5ae23_59fa_4bc7_9495_803eb6719f28 ;
+                                                       dcterms:isReplacedBy :electrochemistry_9b44a651_afa9_4889_ae07_9ac49ede8ac1 ;
                                                        owl:deprecated "true"^^xsd:boolean ;
                                                        rdfs:comment "Deprecated in 0.38.0: the electrode polarity and the bearing component belong to the cell structure (hasNegativeElectrode / hasPositiveElectrode, hasCoating, hasActiveMaterial), not to the class name. The class is kept, with a defining axiom, so that data typed with it still classifies and data stated through the structure classifies under it."@en ;
-                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasNegativeElectrode an electrode, and the electrode (or its ElectrodeCoating) hasProperty a TemperatureCoefficientOfTheOpenCircuitVoltage."@en ;
-                                                       rdfs:subClassOf :electrochemistry_3bb5ae23_59fa_4bc7_9495_803eb6719f28 ;
+                                                       skos:scopeNote "State the polarity through the cell structure instead: the cell hasNegativeElectrode an electrode, and the electrode (or its ElectrodeCoating) hasProperty a TemperatureCoefficientOfTheOpenCircuitPotential."@en ;
+                                                       rdfs:subClassOf :electrochemistry_9b44a651_afa9_4889_ae07_9ac49ede8ac1 ;
                                                        skos:prefLabel "NegativeElectrodeEntropicChangeCoefficient"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "temperature coefficient of the open-circuit voltage (entropic change coefficient) of the negative electrode"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Entropic change coefficient [V.K-1]']"@en ;
@@ -4765,6 +4904,16 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        :electrochemistry_ea9f4dba_8ca2_419e_9cdf_ce54e9ebbd46 "dVdt (I/h)"@en .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f7a81b04_6600_4bbf_a70e_5ebbed911069
+:electrochemistry_f7a81b04_6600_4bbf_a70e_5ebbed911069 rdf:type owl:Class ;
+                                                       rdfs:subClassOf emmo:EMMO_41efdf5d_0c9c_4ea0_bb65_f8236e663be5 ,
+                                                                       :electrochemistry_aecc6094_c6a5_4a36_a825_8a497a2ae112 ;
+                                                       skos:prefLabel "NumberOfElectrodePairs"@en ;
+                                                       skos:related :electrochemistry_d907805f_678b_4ab6_8b56_59631684f84b ,
+                                                                    :electrochemistry_482173dc_7779_4f12_982c_b19f2cda2dac ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the number of electrode pairs connected in parallel within an electrochemical cell"@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_f94678d6_1386_48fc_8e54_024921924401
 :electrochemistry_f94678d6_1386_48fc_8e54_024921924401 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_9bf40017_3f58_4030_ada7_cb37a3dfda2d ;
@@ -4849,6 +4998,23 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        skos:prefLabel "NegativeElectrodeActivationEnergyOfReaction"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "activation energy of the rate constant of the negative electrode reaction"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Negative electrode','Reaction rate constant activation energy [J.mol-1]']"@en .
+
+
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_fed4582e_0de4_43e1_b51a_e3496697c25d
+:electrochemistry_fed4582e_0de4_43e1_b51a_e3496697c25d rdf:type owl:Class ;
+                                                       owl:equivalentClass [ rdf:type owl:Class ;
+                                                                             owl:intersectionOf ( :electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty emmo:EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d ;
+                                                                                                    owl:someValuesFrom :electrochemistry_79d1b273_58cd_4be6_a250_434817f7c261
+                                                                                                  ]
+                                                                                                )
+                                                                           ] ;
+                                                       rdfs:subClassOf :electrochemistry_37b24a94_cae0_4d7a_9519_9f7692dec607 ,
+                                                                       :electrochemistry_4a450a27_b84a_4c70_a3a9_15ec30e2f30b ;
+                                                       rdfs:comment "The polarity-free parent of the deprecated GuestDiffusivityInNegativeElectrodeActiveMaterial and GuestDiffusivityInPositiveElectrodeActiveMaterial; which electrode the material belongs to is stated by the cell structure."@en ;
+                                                       skos:prefLabel "GuestDiffusivity"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "diffusivity of the guest species within the active material of an insertion electrode"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_ff7797ed_9ef7_40d0_872b_2c215cd54578
