@@ -129,6 +129,14 @@ emmo:EMMO_cc65321f_1964_4f16_aea3_2a8edf2f3394 rdf:type owl:AnnotationProperty ;
                                                        rdfs:subPropertyOf skos:hiddenLabel .
 
 
+###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_02ce9195_42c1_4eb5_85c0_527dedda330c
+:electrochemistry_02ce9195_42c1_4eb5_85c0_527dedda330c rdf:type owl:AnnotationProperty ;
+                                                       rdfs:subPropertyOf skos:hiddenLabel ;
+                                                       skos:prefLabel "formerLabel"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "a label that this term carried in an earlier release and that was changed, usually to correct a spelling. Retained so that data written against the old label keeps resolving: the JSON-LD context maps it to the same IRI as the current prefLabel. It is not a display label."@en ;
+                                                       rdfs:comment "Unlike the vendor column-label properties, which are also hidden labels, values of this property are emitted into the generated JSON-LD context."@en .
+
+
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37
 :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 rdf:type owl:AnnotationProperty ;
                                                        skos:prefLabel "bpxKey"@en ;
@@ -1481,7 +1489,8 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_4747c51d_86ab_4684_a4fb_b05f5c405ea3
 :electrochemistry_4747c51d_86ab_4684_a4fb_b05f5c405ea3 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_82fce40c_434d_4640_a3d2_e26379b6acae ;
-                                                       skos:prefLabel "MiniumumTemperature"@en ;
+                                                       skos:prefLabel "MinimumTemperature"@en ;
+                                                       :electrochemistry_02ce9195_42c1_4eb5_85c0_527dedda330c "MiniumumTemperature"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the minimum allowable temperature"@en ;
                                                        :electrochemistry_811aafc3_0c6d_470e_b67e_ff5c82992609 "Min-T(C)"@en .
 
@@ -1817,7 +1826,8 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_56b9cd1f_5397_4385_9292_30d93d9e7a05
 :electrochemistry_56b9cd1f_5397_4385_9292_30d93d9e7a05 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_d7f8cab9_b035_4ecd_be63_292672572526 ;
-                                                       skos:prefLabel "PostiveElectrodeActivationEnergyOfReaction"@en ;
+                                                       skos:prefLabel "PositiveElectrodeActivationEnergyOfReaction"@en ;
+                                                       :electrochemistry_02ce9195_42c1_4eb5_85c0_527dedda330c "PostiveElectrodeActivationEnergyOfReaction"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the activation energy barrier in an Arrhenius expression for the positive electrode charge transfer reaction"@en ;
                                                        :electrochemistry_0a5b99ee_995b_4899_a79b_925a4086da37 "['Parameterisation','Positive electrode','Reaction rate constant activation energy [J.mol-1]']"@en .
 
@@ -2839,7 +2849,8 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_9c9b80a4_a00b_4b91_8e17_3a7831f2bf2f
 :electrochemistry_9c9b80a4_a00b_4b91_8e17_3a7831f2bf2f rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_affe07e4_e9bc_4852_86c6_69e26182a17f ;
-                                                       skos:prefLabel "InititalThermodynamicTemperature"@en ;
+                                                       skos:prefLabel "InitialThermodynamicTemperature"@en ;
+                                                       :electrochemistry_02ce9195_42c1_4eb5_85c0_527dedda330c "InititalThermodynamicTemperature"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the thermodynamic temperature at some point in time designated to be the initial state"@en .
 
 
@@ -3116,7 +3127,8 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_a9873707_8103_4bb4_9e51_83db1e89b1bd
 :electrochemistry_a9873707_8103_4bb4_9e51_83db1e89b1bd rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_5eae657f_5914_4252_85c6_3fc772dea113 ;
-                                                       skos:prefLabel "MiniumumConcentration"@en ;
+                                                       skos:prefLabel "MinimumConcentration"@en ;
+                                                       :electrochemistry_02ce9195_42c1_4eb5_85c0_527dedda330c "MiniumumConcentration"@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the minimum amount concentration of a species in a phase, either imposed or naturally occuring"@en .
 
 
@@ -3636,7 +3648,7 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        rdfs:seeAlso :electrochemistry_8abde9d0_84f6_4b4f_a87e_86028a397100 ,
                                                                     :electrochemistry_a7a4614f_2426_46f3_8475_cda4a9fabfce ,
                                                                     :electrochemistry_b7781ebc_90a7_4f19_997f_aed28dee1b01 ;
-                                                       skos:altLabel "MiniumumAcceptedCapacity"@en ;
+                                                       skos:altLabel "MinimumAcceptedCapacity"@en ;
                                                        skos:prefLabel "MinimumCapacity"@en ;
                                                        skos:scopeNote "Manufacturers define the value for 'minimum capacity' as the lower performance limit, ensuring that every device meets a minimum standard. In practice, minimum capacity is often about 95-97% of the nominal capacity, acting as a guaranteed lower bound rather than an exact measurement."@en ;
                                                        emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "the minimum acceptable threshold value for the rated capacity of an electrochemical device, as stated by the manufacturer."@en ;
