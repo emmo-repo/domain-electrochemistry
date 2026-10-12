@@ -12,7 +12,7 @@
 @base <https://w3id.org/emmo/domain/electrochemistry#> .
 
 <https://w3id.org/emmo/domain/electrochemistry/reference/electrochemistry-quantities> rdf:type owl:Ontology ;
-                                                                                       owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.38.0/reference/electrochemistry-quantities> ;
+                                                                                       owl:versionIRI <https://w3id.org/emmo/domain/electrochemistry/0.39.0/reference/electrochemistry-quantities> ;
                                                                                        owl:imports <https://w3id.org/emmo/1.0.2/disciplines/isq> ,
                                                                                                    <https://w3id.org/emmo/1.0.2/disciplines/units/siacceptedunits> ;
                                                                                        dcterms:abstract "This electrochemical quantities ontology is a domain of the Elementary Multiperspective Materials Ontology (EMMO). It is a specialized framework designed to represent and organize knowledge about electrochemical quantities. It is designed to integrate with the electrochemistry domain ontology or other ontologies from the EMMO ecosystem. The main focus of this ontology is to provide machine-readable descriptions of common electrochemical quantities, linking both to the larger descriptions of physical quantities in EMMO as well as other sources of information like the IEC, QUDT, Wikidata, etc. It should be used to support linked data generation in the electrochemistry domain."@en ;
@@ -22,7 +22,7 @@
                                                                                        dcterms:creator <https://orcid.org/0000-0002-8758-6109> ,
                                                                                                        <https://orcid.org/0000-0003-2954-1233> ;
                                                                                        dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
-                                                                                       owl:versionInfo "0.38.0" .
+                                                                                       owl:versionInfo "0.39.0" .
 
 #################################################################
 #    Annotation properties
@@ -729,9 +729,9 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Electrochemical_potential"@en .
 
 [ rdf:type owl:Axiom ;
-   owl:annotatedSource :electrochemistry_1422cde1_929e_46b6_b0dc_1010eebc5dfd ;
+   owl:annotatedSource :electrochemistry_7fe804b8_6126_4132_be8f_b4985d61b1f6 ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-   owl:annotatedTarget "the chemical potential of an ion in the presence of an electric potential"@en ;
+   owl:annotatedTarget "partial molar Gibbs energy of a charged species at a specified electric potential: the sum of its chemical potential and the product of its charge number, the Faraday constant and the electric potential"@en ;
    dcterms:source "Atkins and DePaula, Aktins' Physical Chemistry, 8th ed., p.952"
  ] .
 
@@ -2030,7 +2030,8 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 :electrochemistry_53616dc6_b921_4beb_9ab2_cafa4ba16406 rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b ;
                                                        rdfs:comment "This is the thermodynamic electromotive force of the cell. The measured open-circuit voltage approaches it as the cell relaxes, but need not reach it, for example when an electrode rests on a hysteresis branch."@en ;
-                                                       skos:altLabel "EquilibriumCellPotential"@en ,
+                                                       skos:altLabel "ElectromotiveForce"@en ,
+                                                                     "EquilibriumCellPotential"@en ,
                                                                      "ReversibleCellVoltage"@en ;
                                                        skos:prefLabel "EquilibriumCellVoltage"@en ;
                                                        skos:related :electrochemistry_d91940f0_c8b6_4505_9b68_6bf6cfc5c544 ,
@@ -2818,7 +2819,6 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_7fe804b8_6126_4132_be8f_b4985d61b1f6
 :electrochemistry_7fe804b8_6126_4132_be8f_b4985d61b1f6 rdf:type owl:Class ;
                                                        rdfs:subClassOf emmo:EMMO_88fc5d1b_d3ab_4626_b24c_915ebe7400ca ,
-                                                                       emmo:EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064 ,
                                                                        :electrochemistry_2d896559_eee3_447c_9759_87c854a4266a ,
                                                                        [ rdf:type owl:Restriction ;
                                                                          owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
@@ -3318,18 +3318,17 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        rdfs:subClassOf :electrochemistry_2d896559_eee3_447c_9759_87c854a4266a ,
                                                                        :electrochemistry_4ebe2ef1_eea8_4b10_822d_7a68215bd24d ;
                                                        rdfs:comment "Equal to the open-circuit potential of the positive electrode minus that of the negative electrode, the reference electrode cancelling. The open-circuit potential of a single electrode is OpenCircuitPotential, not this class."@en ,
-                                                                    "IEC 80000-6 names this quantity source voltage (formerly electromotive force): the voltage between the terminals of a source when no current flows through it; hence the equivalence with emmo:SourceVoltage. The thermodynamic electromotive force, the value when all interfacial equilibria are established, is EquilibriumCellVoltage."@en ;
-                                                       skos:altLabel "ElectromotiveForce"@en ,
-                                                                     "OCV"@en ,
+                                                                    "IEC 80000-6 names this quantity source voltage (its former name there was electromotive force): the voltage between the terminals of a source when no current flows through it; hence the equivalence with emmo:SourceVoltage. The electromotive force as IUPAC defines it, with all interfacial equilibria established, is EquilibriumCellVoltage."@en ;
+                                                       skos:altLabel "OCV"@en ,
                                                                      "ZeroCurrentCellPotential"@en ;
                                                        skos:prefLabel "OpenCircuitVoltage"@en ;
                                                        emmo:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q1812203" ;
                                                        emmo:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=482-03-32" ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "voltage between the terminals of a cell or battery when no current flows"@en ;
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "voltage of a cell or battery when the discharge current is zero"@en ;
                                                        emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Open-circuit_voltage"@en .
 
 [ rdf:type owl:Axiom ;
-   owl:annotatedSource :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b ;
+   owl:annotatedSource :electrochemistry_e272f229_7b45_4436_9b0b_30391ee4e5be ;
    owl:annotatedProperty rdfs:comment ;
    owl:annotatedTarget "In the case of a reversible electrode system, the OCP is also referred to as the equilibrium electrode potential. Otherwise, it is called the rest potential, or the corrosion potential, depending on the system being studied."@en ;
    dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
@@ -3337,13 +3336,13 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 
 [ rdf:type owl:Axiom ;
    owl:annotatedSource :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b ;
-   owl:annotatedProperty rdfs:comment ;
-   owl:annotatedTarget "voltage of a cell or battery when the discharge current is zero." ;
+   owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+   owl:annotatedTarget "voltage of a cell or battery when the discharge current is zero"@en ;
    dcterms:source "International Electrotechnical Commission (IEC), IEC 60050 - International Electrotechnical Vocabulary, retrieved from: https://www.electropedia.org"
  ] .
 
 [ rdf:type owl:Axiom ;
-   owl:annotatedSource :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b ;
+   owl:annotatedSource :electrochemistry_e272f229_7b45_4436_9b0b_30391ee4e5be ;
    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
    owl:annotatedTarget "electrode potential of working electrode relative to the reference electrode when no potential or electric current is being applied to the electrochemical cell"@en ;
    dcterms:source "J. M. Pingarrón et al., Terminology of electrochemical methods of analysis (IUPAC Recommendations 2019), Pure and Applied Chemistry, 4, 92, 2020, 641-694. https://doi.org/10.1515/pac-2018-0109"
@@ -4545,7 +4544,8 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
 :electrochemistry_e272f229_7b45_4436_9b0b_30391ee4e5be rdf:type owl:Class ;
                                                        rdfs:subClassOf :electrochemistry_f509645f_eb27_470e_9112_7ab828ed40d3 ,
                                                                        :electrochemistry_2d896559_eee3_447c_9759_87c854a4266a ;
-                                                       rdfs:comment "Equal to the equilibrium electrode potential only when all interfacial charge-transfer equilibria are established. A corroding metal at its mixed potential and an insertion electrode resting on a hysteresis branch both have an open-circuit potential that is not an equilibrium electrode potential."@en ,
+                                                       rdfs:comment "In the case of a reversible electrode system, the OCP is also referred to as the equilibrium electrode potential. Otherwise, it is called the rest potential, or the corrosion potential, depending on the system being studied."@en ,
+                                                                    "Equal to the equilibrium electrode potential only when all interfacial charge-transfer equilibria are established. A corroding metal at its mixed potential and an insertion electrode resting on a hysteresis branch both have an open-circuit potential that is not an equilibrium electrode potential."@en ,
                                                                     "The open-circuit voltage of a two-electrode cell is the difference of the open-circuit potentials of its positive and negative electrodes; see OpenCircuitVoltage."@en ,
                                                                     "For an insertion electrode measured against a reference electrode of the same species, the equilibrium open-circuit potential equals minus the difference in chemical potential of the guest species between host and reference, divided by the charge number and the Faraday constant; see GuestChemicalPotential."@en ;
                                                        skos:altLabel "OCP"@en ,
@@ -4554,7 +4554,7 @@ emmo:EMMO_e6e7277a_1d40_4be5_a3a9_afd3da53d937 rdfs:subClassOf :electrochemistry
                                                        skos:prefLabel "OpenCircuitPotential"@en ;
                                                        skos:related :electrochemistry_9c657fdc_b9d3_4964_907c_f9a6e8c5f52b ,
                                                                     :electrochemistry_a9cbffd9_2a4b_46e9_97af_7403a64364da ;
-                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "potential of an electrode relative to a reference electrode when no net current flows through the electrode"@en .
+                                                       emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "electrode potential of working electrode relative to the reference electrode when no potential or electric current is being applied to the electrochemical cell"@en .
 
 
 ###  https://w3id.org/emmo/domain/electrochemistry#electrochemistry_e38f11d0_a16f_4fe8_8ec5_3fe4493b7759
