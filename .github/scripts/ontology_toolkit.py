@@ -95,6 +95,11 @@ def load_ontology_config():
 
 ########## JSON-LD Context Generation (ttl_to_context logic) ##########
 
+# Annotation property carrying prefLabel spellings that were later corrected (#193).
+FORMER_LABEL = rdflib.URIRef(
+    "https://w3id.org/emmo/domain/electrochemistry#electrochemistry_02ce9195_42c1_4eb5_85c0_527dedda330c"
+)
+
 def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.org/2000/01/rdf-schema#label'):
     g = rdflib.Graph()
     g.parse(ttl_file, format='ttl')
@@ -114,9 +119,30 @@ def generate_jsonld_context(ttl_file, predicate_uri, label_uri='http://www.w3.or
         elif p == predicate:
             other_entries[str(o)] = str(s)
 
+    # Former labels (misspellings corrected in a later release) stay in the
+    # context so existing data keeps expanding. They are carried by the
+    # domain's formerLabel annotation property (matched by IRI, which is the
+    # stable contract; the label is not), a sub-property of
+    # skos:hiddenLabel. Only that property is read: plain skos:hiddenLabel
+    # and the vendor column-label properties hold raw cycler column names
+    # that must not become context terms. A current prefLabel always wins.
+    former_labels = list(g.subject_objects(FORMER_LABEL))
+    if (FORMER_LABEL, RDF.type, OWL.AnnotationProperty) not in g:
+        LOGGER.warning("formerLabel property %s is not in the closure; retired spellings "
+                       "will be missing from the context", FORMER_LABEL)
+    elif not former_labels:
+        LOGGER.warning("formerLabel property is declared but carries no values")
+    for s, o in former_labels:
+        other_entries.setdefault(str(o), str(s))
+
     for prefix, uri in g.namespace_manager.namespaces():
         if len(prefix) >= 2:
             namespace_prefixes[prefix] = str(uri)
+
+    # The reasoned squash that CI feeds in here binds no prefix for the EMMO
+    # namespace, so rdflib invents one (ns1) and CURIEs such as
+    # "emmo:AmpereHour" in JSON-LD data never expand. Bind it explicitly.
+    namespace_prefixes.setdefault("emmo", "https://w3id.org/emmo#")
 
     context = {
         "@context": {

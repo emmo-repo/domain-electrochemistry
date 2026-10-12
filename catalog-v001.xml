@@ -67,7 +67,7 @@
     <uri name="https://w3id.org/emmo/1.0.2/disciplines/units/noncoherentsiunits"      uri="https://raw.githubusercontent.com/emmo-repo/emmo/1.0.2/disciplines/units/noncoherentsiunits.ttl"/>
     <uri name="https://w3id.org/emmo/1.0.2/disciplines/units/siacceptedspecialunits"  uri="https://raw.githubusercontent.com/emmo-repo/emmo/1.0.2/disciplines/units/siacceptedspecialunits.ttl"/>
 
-    <!-- Imported by emmo-full  -->
+    <!-- Imported by emmo-full; siacceptedunits is also imported directly by electrochemistry-quantities (#191) -->
     <uri name="https://w3id.org/emmo/1.0.2/disciplines/units/siacceptedunits"         uri="https://raw.githubusercontent.com/emmo-repo/emmo/1.0.2/disciplines/units/siacceptedunits.ttl"/>
     <uri name="https://w3id.org/emmo/1.0.2/disciplines/units/specialunits"            uri="https://raw.githubusercontent.com/emmo-repo/emmo/1.0.2/disciplines/units/specialunits.ttl"/>
     <uri name="https://w3id.org/emmo/1.0.2/disciplines/units/otherunits"              uri="https://raw.githubusercontent.com/emmo-repo/emmo/1.0.2/disciplines/units/otherunits.ttl"/>
