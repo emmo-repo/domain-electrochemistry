@@ -7,7 +7,7 @@
    User Guide <userguide/index>
    Examples <pages/examples>
    About <pages/about>
-   FAQ <pages/faq>
+   Contribute <pages/contribute>
 
 Electrochemistry Domain Ontology
 ================================
@@ -50,14 +50,14 @@ Check out these resources to get started!
 .. grid::
 
     .. grid-item-card::
-        :link: pages/user-guide.html
+        :link: userguide/index.html
 
         :octicon:`rocket;1em;sd-text-info`  User Guide
         ^^^^^^^^^^^
         Let's go! Here is some information to help you get started
 
     .. grid-item-card::
-        :link: pages/electrochemistry.html
+        :link: electrochemistry.html
 
         :octicon:`book;1em;sd-text-info`  Class Index
         ^^^^^^^^^^^
